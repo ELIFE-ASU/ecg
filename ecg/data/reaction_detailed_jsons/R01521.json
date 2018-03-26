@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "NAD+ (see R01520)", 
+    "definition": "beta-D-Glucose + NADP+ <=> D-Glucono-1,5-lactone + NADPH + H+", 
+    "orthologs": {
+      "K00034": "glucose 1-dehydrogenase [EC:1.1.1.47]"
+    }, 
+    "name": "beta-D-Glucose:NADP+ 1-oxoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.47"
+    ], 
+    "equation": "C00221 + C00006 <=> C00198 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01521", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn00030": "Pentose phosphate pathway"
+    }, 
+    "products": [
+      "C00198", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00221", 
+      "C00006"
+    ]
+  }
+]

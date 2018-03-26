@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "ATP + Pyruvate + H2O <=> AMP + Phosphoenolpyruvate + Orthophosphate", 
+    "orthologs": {
+      "K01007": "pyruvate, water dikinase [EC:2.7.9.2]"
+    }, 
+    "name": "ATP:pyruvate,water phosphotransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.7.9.2"
+    ], 
+    "equation": "C00002 + C00022 + C00001 <=> C00020 + C00074 + C00009", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00199", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00620": "Pyruvate metabolism", 
+      "rn00680": "Methane metabolism", 
+      "rn00720": "Carbon fixation pathways in prokaryotes"
+    }, 
+    "products": [
+      "C00020", 
+      "C00074", 
+      "C00009"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00022", 
+      "C00001"
+    ]
+  }
+]

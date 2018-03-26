@@ -1,0 +1,48 @@
+[
+  {
+    "comment": "three-step reaction (see R09583+R09584+R09585)", 
+    "definition": "L-Tryptophan + 2 Oxygen + 2 NADPH + 2 H+ <=> Indole-3-acetaldehyde oxime + 3 H2O + 2 NADP+ + CO2", 
+    "orthologs": {
+      "K11812": "tryptophan N-monooxygenase [EC:1.14.13.125]", 
+      "K11813": "tryptophan N-monooxygenase [EC:1.14.13.125]"
+    }, 
+    "name": "L-tryptophan,NADPH:oxygen oxidoreductase (N-hydroxylating, decarboxylating)", 
+    "product_stoichiometries": [
+      "3", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.125"
+    ], 
+    "equation": "C00078 + 2 C00007 + 2 C00005 + 2 C00080 <=> C02937 + 3 C00001 + 2 C00006 + C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08160", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00380": "Tryptophan metabolism", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C00006", 
+      "C02937", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C00005", 
+      "C00080", 
+      "C00078"
+    ]
+  }
+]

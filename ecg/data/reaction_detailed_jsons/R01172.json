@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "NADP+ (ec 1.2.1.57, see R01173)", 
+    "definition": "Butanal + CoA + NAD+ <=> Butanoyl-CoA + NADH + H+", 
+    "orthologs": {
+      "K18366": "acetaldehyde/propanal dehydrogenase [EC:1.2.1.10 1.2.1.87]", 
+      "K04072": "acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:1.2.1.10 1.1.1.1]", 
+      "K00132": "acetaldehyde dehydrogenase (acetylating) [EC:1.2.1.10]", 
+      "K04073": "acetaldehyde dehydrogenase [EC:1.2.1.10]"
+    }, 
+    "name": "butanal:NAD+ oxidoreductase (CoA-acylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.10", 
+      "1.2.1.57", 
+      "1.2.1.87"
+    ], 
+    "equation": "C01412 + C00010 + C00003 <=> C00136 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01172", 
+    "pathways": {
+      "rn00650": "Butanoate metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00136", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01412", 
+      "C00010", 
+      "C00003"
+    ]
+  }
+]

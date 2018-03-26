@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "1200-1900-fold preference for erythromycin D over the alternative substrate erythromycin B", 
+    "definition": "Erythromycin B + NADPH + H+ + Oxygen <=> Erythromycin + NADP+ + H2O", 
+    "orthologs": {
+      "K14370": "erythromycin 12 hydroxylase [EC:1.14.13.154]"
+    }, 
+    "name": "erythromycin-B,NADPH:oxygen oxidoreductase (12-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.154"
+    ], 
+    "equation": "C06653 + C00005 + C00080 + C00007 <=> C01912 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05521", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00522": "Biosynthesis of 12-, 14- and 16-membered macrolides"
+    }, 
+    "products": [
+      "C01912", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C06653", 
+      "C00005", 
+      "C00080", 
+      "C00007"
+    ]
+  }
+]

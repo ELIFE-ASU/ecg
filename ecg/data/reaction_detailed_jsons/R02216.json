@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "3beta-hydroxysteroid dehydrogenase/ Delta5-Delta4-isomerase two-step reaction", 
+    "definition": "Pregnenolone + NAD+ <=> Progesterone + NADH + H+", 
+    "orthologs": {
+      "K00070": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase [EC:1.1.1.145 5.3.3.1]", 
+      "K01822": "steroid Delta-isomerase [EC:5.3.3.1]"
+    }, 
+    "name": "Pregnenolone:NAD+ 3-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.145", 
+      "5.3.3.1"
+    ], 
+    "equation": "C01953 + C00003 <=> C00410 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02216", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00410", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01953", 
+      "C00003"
+    ]
+  }
+]

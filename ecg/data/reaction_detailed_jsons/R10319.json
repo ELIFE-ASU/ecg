@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "O-Methylsterigmatocystin + 2 NADPH + 2 H+ + 2 Oxygen <=> Aflatoxin B1 + 2 NADP+ + H2O + Methanol + CO2", 
+    "orthologs": {
+      "K17651": "aflatoxin B synthase [EC:1.14.13.175]"
+    }, 
+    "name": "8-O-methylsterigmatocystin,NADPH:O2 oxidoreductase (aflatoxin-B forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.175"
+    ], 
+    "equation": "C03686 + 2 C00005 + 2 C00080 + 2 C00007 <=> C06800 + 2 C00006 + C00001 + C00132 + C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10319", 
+    "pathways": {
+      "rn00254": "Aflatoxin biosynthesis"
+    }, 
+    "products": [
+      "C00006", 
+      "C06800", 
+      "C00001", 
+      "C00132", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00005", 
+      "C00080", 
+      "C00007", 
+      "C03686"
+    ]
+  }
+]

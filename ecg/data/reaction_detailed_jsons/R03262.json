@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "", 
+    "definition": "Corticosterone + 2 Reduced adrenal ferredoxin + Oxygen + 2 H+ <=> 18-Hydroxycorticosterone + 2 Oxidized adrenal ferredoxin + H2O", 
+    "orthologs": {
+      "K07433": "steroid 11beta-monooxygenase / corticosterone 18-monooxygenase [EC:1.14.15.4 1.14.15.5]"
+    }, 
+    "name": "Corticosterone,reduced-adrenal-ferredoxin:oxygen oxidoreductase (18-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.4", 
+      "1.14.15.5"
+    ], 
+    "equation": "C02140 + 2 C00662 + C00007 + 2 C00080 <=> C01124 + 2 C00667 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03262", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00667", 
+      "C01124", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00662", 
+      "C00080", 
+      "C02140", 
+      "C00007"
+    ]
+  }
+]

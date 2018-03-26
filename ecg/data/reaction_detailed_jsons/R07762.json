@@ -1,0 +1,48 @@
+[
+  {
+    "comment": "", 
+    "definition": "Hexadecanoyl-[acp] + Malonyl-[acyl-carrier protein] <=> 3-Oxostearoyl-[acp] + Acyl-carrier protein + CO2", 
+    "orthologs": {
+      "K11533": "fatty acid synthase, bacteria type [EC:2.3.1.-]", 
+      "K10203": "elongation of very long chain fatty acids protein 6 [EC:2.3.1.199]", 
+      "K00647": "3-oxoacyl-[acyl-carrier-protein] synthase I [EC:2.3.1.41]", 
+      "K10245": "fatty acid elongase 2 [EC:2.3.1.199]", 
+      "K10246": "fatty acid elongase 3 [EC:2.3.1.199]", 
+      "K09458": "3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]"
+    }, 
+    "name": "", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.41", 
+      "2.3.1.179", 
+      "2.3.1.199", 
+      "2.3.1.-"
+    ], 
+    "equation": "C05764 + C01209 <=> C16219 + C00229 + C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07762", 
+    "pathways": {
+      "rn01040": "Biosynthesis of unsaturated fatty acids", 
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis"
+    }, 
+    "products": [
+      "C16219", 
+      "C00229", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C05764", 
+      "C01209"
+    ]
+  }
+]

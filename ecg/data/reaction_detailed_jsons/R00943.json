@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "Tetrahydrofolate + Formate + ATP <=> ADP + Orthophosphate + 10-Formyltetrahydrofolate", 
+    "orthologs": {
+      "K13402": "monofunctional C1-tetrahydrofolate synthase, mitochondrial [EC:6.3.4.3]", 
+      "K01938": "formate--tetrahydrofolate ligase [EC:6.3.4.3]", 
+      "K00288": "methylenetetrahydrofolate dehydrogenase (NADP+) / methenyltetrahydrofolate cyclohydrolase / formyltetrahydrofolate synthetase [EC:1.5.1.5 3.5.4.9 6.3.4.3]"
+    }, 
+    "name": "Formate:tetrahydrofolate ligase (ADP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.4.3"
+    ], 
+    "equation": "C00101 + C00058 + C00002 <=> C00008 + C00009 + C00234", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00943", 
+    "pathways": {
+      "rn00670": "One carbon pool by folate", 
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00008", 
+      "C00009", 
+      "C00234"
+    ], 
+    "substrates": [
+      "C00101", 
+      "C00058", 
+      "C00002"
+    ]
+  }
+]

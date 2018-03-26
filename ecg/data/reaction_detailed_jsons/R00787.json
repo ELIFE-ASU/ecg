@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "NADPH (see R00789) NH3 + H2O <=> NH4OH", 
+    "definition": "Ammonia + 3 NAD+ + 2 H2O <=> Nitrite + 3 NADH + 3 H+", 
+    "orthologs": {
+      "K17877": "nitrite reductase (NAD(P)H) [EC:1.7.1.4]", 
+      "K00362": "nitrite reductase (NADH) large subunit [EC:1.7.1.15]", 
+      "K00363": "nitrite reductase (NADH) small subunit [EC:1.7.1.15]"
+    }, 
+    "name": "ammonia:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "3", 
+      "3", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.7.1.4", 
+      "1.7.1.15"
+    ], 
+    "equation": "C00014 + 3 C00003 + 2 C00001 <=> C00088 + 3 C00004 + 3 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00787", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00004", 
+      "C00080", 
+      "C00088"
+    ], 
+    "substrates": [
+      "C00003", 
+      "C00001", 
+      "C00014"
+    ]
+  }
+]

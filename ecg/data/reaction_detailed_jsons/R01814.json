@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R07213+R04734)", 
+    "definition": "Tetrahydrobiopterin + L-Tryptophan + Oxygen <=> 5-Hydroxy-L-tryptophan + Dihydrobiopterin + H2O", 
+    "orthologs": {
+      "K00502": "tryptophan 5-monooxygenase [EC:1.14.16.4]"
+    }, 
+    "name": "L-Tryptophan,tetrahydrobiopterin:oxygen oxidoreductase (5-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.16.4"
+    ], 
+    "equation": "C00272 + C00078 + C00007 <=> C00643 + C00268 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01814", 
+    "pathways": {
+      "rn00380": "Tryptophan metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00643", 
+      "C00268", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00272", 
+      "C00078", 
+      "C00007"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "multi-step reaction (see R03176+R02644)", 
+    "definition": "Cholesterol + NAD+ <=> Cholest-4-en-3-one + NADH + H+", 
+    "orthologs": {
+      "K16045": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase [EC:1.1.1.145 5.3.3.1]"
+    }, 
+    "name": "cholesterol:NAD+ 3-oxidoreductase; cholest-4-en-3-one delta5-delat4-isomerase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.145", 
+      "5.3.3.1"
+    ], 
+    "equation": "C00187 + C00003 <=> C00599 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09920", 
+    "pathways": {
+      "rn00984": "Steroid degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00599", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00187", 
+      "C00003"
+    ]
+  }
+]

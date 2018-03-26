@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "Coq3", 
+    "definition": "S-Adenosyl-L-methionine + 3-Hexaprenyl-4,5-dihydroxybenzoate <=> S-Adenosyl-L-homocysteine + 3-Hexaprenyl-4-hydroxy-5-methoxybenzoate + H+", 
+    "orthologs": {
+      "K00591": "polyprenyldihydroxybenzoate methyltransferase / 3-demethylubiquinol 3-O-methyltransferase [EC:2.1.1.114 2.1.1.64]"
+    }, 
+    "name": "S-adenosyl-L-methionine:3-hexaprenyl-4,5-dihydroxylate O-methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.114"
+    ], 
+    "equation": "C00019 + C05200 <=> C00021 + C05313 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04711", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00130": "Ubiquinone and other terpenoid-quinone biosynthesis"
+    }, 
+    "products": [
+      "C00021", 
+      "C05313", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00019", 
+      "C05200"
+    ]
+  }
+]

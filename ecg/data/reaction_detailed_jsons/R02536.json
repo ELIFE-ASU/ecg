@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "NADP+ (see R02537)", 
+    "definition": "Phenylacetaldehyde + NAD+ + H2O <=> Phenylacetic acid + NADH + H+", 
+    "orthologs": {
+      "K00129": "aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]", 
+      "K00146": "phenylacetaldehyde dehydrogenase [EC:1.2.1.39]"
+    }, 
+    "name": "Phenylacetaldehyde:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.5", 
+      "1.2.1.39"
+    ], 
+    "equation": "C00601 + C00003 + C00001 <=> C07086 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02536", 
+    "pathways": {
+      "rn00360": "Phenylalanine metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn00643": "Styrene degradation"
+    }, 
+    "products": [
+      "C07086", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00601", 
+      "C00003", 
+      "C00001"
+    ]
+  }
+]

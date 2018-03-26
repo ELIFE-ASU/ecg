@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "multi-step reaction (similar to R10671, R00730+R04460+R07190)", 
+    "definition": "Hexahomomethionine + 2 [Reduced NADPH---hemoprotein reductase] + 2 Oxygen <=> 9-Methylthiononanaldoxime + 2 [Oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O", 
+    "orthologs": {
+      "K12154": "homomethionine N-monooxygenase [EC:1.14.14.42]", 
+      "K12155": "homomethionine N-monooxygenase [EC:1.14.14.42]"
+    }, 
+    "name": "hexahomomethionine,[NADPH---hemoprotein reductase]:oxygen oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "3", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.42"
+    ], 
+    "equation": "C17233 + 2 C03024 + 2 C00007 <=> C17253 + 2 C03161 + C00011 + 3 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08675", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C03161", 
+      "C00001", 
+      "C17253", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C03024", 
+      "C00007", 
+      "C17233"
+    ]
+  }
+]

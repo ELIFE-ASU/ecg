@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "subsequently R01320", 
+    "definition": "S-Adenosyl-L-methionine + Phosphatidyl-N-methylethanolamine <=> S-Adenosyl-L-homocysteine + Phosphatidyl-N-dimethylethanolamine", 
+    "orthologs": {
+      "K00551": "phosphatidylethanolamine N-methyltransferase [EC:2.1.1.17]", 
+      "K00550": "methylene-fatty-acyl-phospholipid synthase [EC:2.1.1.16]", 
+      "K00570": "phosphatidylethanolamine/phosphatidyl-N-methylethanolamine N-methyltransferase [EC:2.1.1.17 2.1.1.71]"
+    }, 
+    "name": "S-adenosyl-L-methionine:phosphatidyl-N-methylethanolamine N-methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.16", 
+      "2.1.1.71"
+    ], 
+    "equation": "C00019 + C01241 <=> C00021 + C04308", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03424", 
+    "pathways": {
+      "rn00564": "Glycerophospholipid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00021", 
+      "C04308"
+    ], 
+    "substrates": [
+      "C00019", 
+      "C01241"
+    ]
+  }
+]

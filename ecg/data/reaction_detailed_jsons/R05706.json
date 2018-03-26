@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "see R05705 (NADH)", 
+    "definition": "Reduced FMN + NADP+ <=> FMN + NADPH + H+", 
+    "orthologs": {
+      "K19286": "FMN reductase [NAD(P)H] [EC:1.5.1.39]", 
+      "K13562": "NAD(P)H:FMN oxidoreductase [EC:1.5.1.-]", 
+      "K19285": "FMN reductase (NADPH) [EC:1.5.1.38]", 
+      "K00299": "FMN reductase [EC:1.5.1.38]"
+    }, 
+    "name": "FMNH2:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.5.1.38", 
+      "1.5.1.39", 
+      "1.5.1.-"
+    ], 
+    "equation": "C01847 + C00006 <=> C00061 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05706", 
+    "pathways": {
+      "rn00740": "Riboflavin metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00061", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01847", 
+      "C00006"
+    ]
+  }
+]

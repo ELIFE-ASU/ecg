@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "pyruvate dehydrogenase complex:dihydrolipoyllysine-residue acetyltransferase a part of multi-step reaction (see R00209, R01699+R02569+R07618) following after R01699", 
+    "definition": "Acetyl-CoA + Enzyme N6-(dihydrolipoyl)lysine <=> CoA + [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine", 
+    "orthologs": {
+      "K00627": "pyruvate dehydrogenase E2 component (dihydrolipoamide acetyltransferase) [EC:2.3.1.12]"
+    }, 
+    "name": "acetyl-CoA:enzyme N6-(dihydrolipoyl)lysine S-acetyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.12"
+    ], 
+    "equation": "C00024 + C15973 <=> C00010 + C16255", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02569", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00620": "Pyruvate metabolism", 
+      "rn00020": "Citrate cycle (TCA cycle)", 
+      "rn00010": "Glycolysis / Gluconeogenesis"
+    }, 
+    "products": [
+      "C00010", 
+      "C16255"
+    ], 
+    "substrates": [
+      "C00024", 
+      "C15973"
+    ]
+  }
+]

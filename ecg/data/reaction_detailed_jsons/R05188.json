@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "multi-step reaction (see map00061)", 
+    "definition": "Acetyl-CoA + n Malonyl-CoA + 2n NADPH + 2n H+ <=> Long-chain fatty acid + n CO2 + 2n NADP+ + (n+1) CoA + n H2O", 
+    "orthologs": {}, 
+    "name": "acyl-CoA:malonyl-CoA C-acyltransferase(decarboxylating, oxoacyl- and enoyl-reducing and thioester-hydrolysing)", 
+    "product_stoichiometries": [
+      "(n+1)", 
+      "n", 
+      "2n", 
+      "n", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.85"
+    ], 
+    "equation": "C00024 + n C00083 + 2n C00005 + 2n C00080 <=> C00638 + n C00011 + 2n C00006 + (n+1) C00010 + n C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "n", 
+      "2n", 
+      "2n", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05188", 
+    "pathways": {}, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C00006", 
+      "C00001", 
+      "C00638"
+    ], 
+    "substrates": [
+      "C00083", 
+      "C00005", 
+      "C00080", 
+      "C00024"
+    ]
+  }
+]

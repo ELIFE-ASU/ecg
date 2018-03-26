@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "two-step reaction (see R08433+R02289)", 
+    "definition": "Tetrahydrofolate + Acetyl-CoA <=> 5-Methyltetrahydrofolate + CoA + CO", 
+    "orthologs": {
+      "K15023": "5-methyltetrahydrofolate corrinoid/iron sulfur protein methyltransferase [EC:2.1.1.258]", 
+      "K00194": "acetyl-CoA decarbonylase/synthase complex subunit delta [EC:2.1.1.245]", 
+      "K00197": "acetyl-CoA decarbonylase/synthase complex subunit gamma [EC:2.1.1.245]", 
+      "K14138": "acetyl-CoA synthase [EC:2.3.1.169]"
+    }, 
+    "name": "", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.258", 
+      "2.3.1.169"
+    ], 
+    "equation": "C00101 + C00024 <=> C00440 + C00010 + C00237", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10243", 
+    "pathways": {
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00440", 
+      "C00010", 
+      "C00237"
+    ], 
+    "substrates": [
+      "C00101", 
+      "C00024"
+    ]
+  }
+]

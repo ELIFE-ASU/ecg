@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "The product sulfur is reactive (e.g. forming hydrodisulfide with cysteine residue)", 
+    "definition": "Parathion + [Reduced NADPH---hemoprotein reductase] + Oxygen <=> Paraoxon + [Oxidized NADPH---hemoprotein reductase] + Sulfur + H2O", 
+    "orthologs": {
+      "K14338": "cytochrome P450 / NADPH-cytochrome P450 reductase [EC:1.14.14.1 1.6.2.4]", 
+      "K00493": "unspecific monooxygenase [EC:1.14.14.1]"
+    }, 
+    "name": "parathion,NADPH---hemoprotein reductase:oxygen oxidoreductase (paraoxon-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.1"
+    ], 
+    "equation": "C06604 + C03024 + C00007 <=> C06606 + C03161 + C00087 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05259", 
+    "pathways": {
+      "rn00627": "Aminobenzoate degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C06606", 
+      "C03161", 
+      "C00087", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C06604", 
+      "C03024", 
+      "C00007"
+    ]
+  }
+]

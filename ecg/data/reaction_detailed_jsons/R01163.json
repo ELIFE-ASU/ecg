@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "second step of two-step reaction (R01158, R03012+R01163) following after R03012", 
+    "definition": "L-Histidinal + H2O + NAD+ <=> L-Histidine + NADH + H+", 
+    "orthologs": {
+      "K14152": "phosphoribosyl-ATP pyrophosphohydrolase / phosphoribosyl-AMP cyclohydrolase / histidinol dehydrogenase [EC:3.6.1.31 3.5.4.19 1.1.1.23]", 
+      "K00013": "histidinol dehydrogenase [EC:1.1.1.23]"
+    }, 
+    "name": "L-histidinal:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.23"
+    ], 
+    "equation": "C01929 + C00001 + C00003 <=> C00135 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01163", 
+    "pathways": {
+      "rn00340": "Histidine metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00135", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01929", 
+      "C00001", 
+      "C00003"
+    ]
+  }
+]

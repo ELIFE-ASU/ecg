@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "two-step reaction (see R06514+R02777)", 
+    "definition": "dTDP-L-rhamnose + NADP+ <=> dTDP-4-oxo-6-deoxy-D-glucose + NADPH + H+", 
+    "orthologs": {
+      "K12451": "3,5-epimerase/4-reductase [EC:5.1.3.- 1.1.1.-]"
+    }, 
+    "name": "dTDP-6-deoxy-L-mannose:NADP+ 4-oxidoreductase (3,5-epimerizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.-"
+    ], 
+    "equation": "C03319 + C00006 <=> C11907 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08935", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00523": "Polyketide sugar unit biosynthesis"
+    }, 
+    "products": [
+      "C11907", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C03319", 
+      "C00006"
+    ]
+  }
+]

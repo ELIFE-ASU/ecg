@@ -1,0 +1,58 @@
+[
+  {
+    "comment": "possibly two-step reaction (similar to R00742 or R04385+R04386)", 
+    "definition": "ATP + Propanoyl-CoA + HCO3- <=> ADP + Orthophosphate + (S)-Methylmalonyl-CoA", 
+    "orthologs": {
+      "K18603": "acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]", 
+      "K19312": "acetyl-CoA/propionyl-CoA carboxylase carboxyl transferase subunit [EC:6.4.1.2 6.4.1.3]", 
+      "K15052": "propionyl-CoA carboxylase [EC:6.4.1.3]", 
+      "K18472": "acetyl-CoA/propionyl-CoA carboxylase carboxyl transferase subunit [EC:6.4.1.2 6.4.1.3]", 
+      "K18605": "biotin carboxyl carrier protein", 
+      "K01966": "propionyl-CoA carboxylase beta chain [EC:6.4.1.3]", 
+      "K01965": "propionyl-CoA carboxylase alpha chain [EC:6.4.1.3]", 
+      "K01964": "acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]", 
+      "K11263": "acetyl-CoA/propionyl-CoA carboxylase, biotin carboxylase, biotin carboxyl carrier protein [EC:6.4.1.2 6.4.1.3 6.3.4.14]", 
+      "K15037": "biotin carboxyl carrier protein", 
+      "K18604": "acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]", 
+      "K15036": "acetyl-CoA/propionyl-CoA carboxylase [EC:6.4.1.2 6.4.1.3]"
+    }, 
+    "name": "propanoyl-CoA:carbon-dioxide ligase (ADP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.4.1.3"
+    ], 
+    "equation": "C00002 + C00100 + C00288 <=> C00008 + C00009 + C00683", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01859", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn00630": "Glyoxylate and dicarboxylate metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00280": "Valine, leucine and isoleucine degradation", 
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn00640": "Propanoate metabolism"
+    }, 
+    "products": [
+      "C00008", 
+      "C00009", 
+      "C00683"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00100", 
+      "C00288"
+    ]
+  }
+]

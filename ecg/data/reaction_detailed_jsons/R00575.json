@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "multi-step reaction (see R00256+R10948+R10949+R01395)", 
+    "definition": "2 ATP + L-Glutamine + HCO3- + H2O <=> 2 ADP + Orthophosphate + L-Glutamate + Carbamoyl phosphate", 
+    "orthologs": {
+      "K01956": "carbamoyl-phosphate synthase small subunit [EC:6.3.5.5]", 
+      "K01954": "carbamoyl-phosphate synthase [EC:6.3.5.5]", 
+      "K01955": "carbamoyl-phosphate synthase large subunit [EC:6.3.5.5]", 
+      "K11540": "carbamoyl-phosphate synthase / aspartate carbamoyltransferase / dihydroorotase [EC:6.3.5.5 2.1.3.2 3.5.2.3]", 
+      "K11541": "carbamoyl-phosphate synthase / aspartate carbamoyltransferase [EC:6.3.5.5 2.1.3.2]"
+    }, 
+    "name": "HCO3-:L-glutamine amido-ligase (ADP-forming, carbamate-phosphorylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.5.5"
+    ], 
+    "equation": "2 C00002 + C00064 + C00288 + C00001 <=> 2 C00008 + C00009 + C00025 + C00169", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00575", 
+    "pathways": {
+      "rn00240": "Pyrimidine metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00250": "Alanine, aspartate and glutamate metabolism"
+    }, 
+    "products": [
+      "C00008", 
+      "C00009", 
+      "C00025", 
+      "C00169"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00064", 
+      "C00288", 
+      "C00001"
+    ]
+  }
+]

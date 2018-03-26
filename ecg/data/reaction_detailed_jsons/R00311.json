@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "Heme + 3 [Reduced NADPH---hemoprotein reductase] + 3 Oxygen <=> Biliverdin + CO + Fe2+ + 3 [Oxidized NADPH---hemoprotein reductase] + 3 H2O", 
+    "orthologs": {
+      "K00510": "heme oxygenase 1 [EC:1.14.14.18]", 
+      "K21418": "heme oxygenase 2 [EC:1.14.14.18]"
+    }, 
+    "name": "protoheme,NADPH---hemoprotein reductase:oxygen oxidoreductase (alpha-methene-oxidizing, hydroxylating)", 
+    "product_stoichiometries": [
+      "3", 
+      "3", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.18"
+    ], 
+    "equation": "C00032 + 3 C03024 + 3 C00007 <=> C00500 + C00237 + C14818 + 3 C03161 + 3 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "3", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00311", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00860": "Porphyrin and chlorophyll metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C03161", 
+      "C00001", 
+      "C00500", 
+      "C00237", 
+      "C14818"
+    ], 
+    "substrates": [
+      "C03024", 
+      "C00007", 
+      "C00032"
+    ]
+  }
+]

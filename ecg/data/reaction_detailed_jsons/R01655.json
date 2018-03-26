@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "", 
+    "definition": "5,10-Methenyltetrahydrofolate + H2O <=> 10-Formyltetrahydrofolate + H+", 
+    "orthologs": {
+      "K13403": "methylenetetrahydrofolate dehydrogenase(NAD+) / 5,10-methenyltetrahydrofolate cyclohydrolase [EC:1.5.1.15 3.5.4.9]", 
+      "K01491": "methylenetetrahydrofolate dehydrogenase (NADP+) / methenyltetrahydrofolate cyclohydrolase [EC:1.5.1.5 3.5.4.9]", 
+      "K00288": "methylenetetrahydrofolate dehydrogenase (NADP+) / methenyltetrahydrofolate cyclohydrolase / formyltetrahydrofolate synthetase [EC:1.5.1.5 3.5.4.9 6.3.4.3]"
+    }, 
+    "name": "5,10-Methenyltetrahydrofolate 5-hydrolase (decyclizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "3.5.4.9"
+    ], 
+    "equation": "C00445 + C00001 <=> C00234 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01655", 
+    "pathways": {
+      "rn00670": "One carbon pool by folate", 
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00234", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00445", 
+      "C00001"
+    ]
+  }
+]

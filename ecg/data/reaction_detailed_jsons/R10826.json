@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "Elongation of C16/C18 acyl-CoAs to very-long-chain acyl CoAs.", 
+    "definition": "Very-long-chain (3R)-3-hydroxyacyl-CoA + NADP+ <=> Very-long-chain 3-oxoacyl-CoA + NADPH + H+", 
+    "orthologs": {
+      "K10251": "17beta-estradiol 17-dehydrogenase / very-long-chain 3-oxoacyl-CoA reductase [EC:1.1.1.62 1.1.1.330]"
+    }, 
+    "name": "very-long-chain-(3R)-3-hydroxyacyl-CoA:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.330"
+    ], 
+    "equation": "C20878 + C00006 <=> C20877 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10826", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00062": "Fatty acid elongation"
+    }, 
+    "products": [
+      "C20877", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C20878", 
+      "C00006"
+    ]
+  }
+]

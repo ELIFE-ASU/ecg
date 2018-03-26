@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "", 
+    "definition": "dTDP-glucose + 2 NAD+ + H2O <=> dTDP-D-glucuronate + 2 NADH + 2 H+", 
+    "orthologs": {
+      "K21331": "dTDP-alpha-D-glucose dehydrogenase [EC:1.1.1.-]"
+    }, 
+    "name": "dTDP-glucose:NAD+ 6-oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.-"
+    ], 
+    "equation": "C00842 + 2 C00003 + C00001 <=> C06017 + 2 C00004 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11471", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00523": "Polyketide sugar unit biosynthesis"
+    }, 
+    "products": [
+      "C00004", 
+      "C00080", 
+      "C06017"
+    ], 
+    "substrates": [
+      "C00003", 
+      "C00842", 
+      "C00001"
+    ]
+  }
+]

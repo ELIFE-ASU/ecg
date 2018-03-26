@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "NADPH (see R03999)", 
+    "definition": "Anthraniloyl-CoA + Oxygen + 2 NADH + 2 H+ <=> 2-Amino-5-oxocyclohex-1-enecarbonyl-CoA + H2O + 2 NAD+", 
+    "orthologs": {
+      "K09461": "anthraniloyl-CoA monooxygenase [EC:1.14.13.40]"
+    }, 
+    "name": "anthranilyl-CoA,NADH:oxygen oxidoreductase (de-aromatizing)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.40"
+    ], 
+    "equation": "C02247 + C00007 + 2 C00004 + 2 C00080 <=> C05165 + C00001 + 2 C00003", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03998", 
+    "pathways": {
+      "rn00627": "Aminobenzoate degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00003", 
+      "C05165", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00004", 
+      "C00080", 
+      "C02247", 
+      "C00007"
+    ]
+  }
+]

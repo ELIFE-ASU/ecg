@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "nonribosomal peptide synthetase", 
+    "definition": "N-Acetyldemethylphosphinothricin + 2 L-Alanine + 3 ATP + H2O <=> N-Acetyldemethylphosphinothricin tripeptide + 3 AMP + 3 Diphosphate", 
+    "orthologs": {
+      "K12912": "peptide synthetase PhsB", 
+      "K12913": "peptide synthetase PhsC", 
+      "K12911": "peptide synthetase PhsA"
+    }, 
+    "name": "N-acetyldemethylphosphinothricin:L-alanine:L-alanine ligase (AMP-forming)", 
+    "product_stoichiometries": [
+      "3", 
+      "3", 
+      "1"
+    ], 
+    "enzymes": [], 
+    "equation": "C17949 + 2 C00041 + 3 C00002 + C00001 <=> C17950 + 3 C00020 + 3 C00013", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "3", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08872", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00440": "Phosphonate and phosphinate metabolism"
+    }, 
+    "products": [
+      "C00020", 
+      "C00013", 
+      "C17950"
+    ], 
+    "substrates": [
+      "C00041", 
+      "C00002", 
+      "C17949", 
+      "C00001"
+    ]
+  }
+]

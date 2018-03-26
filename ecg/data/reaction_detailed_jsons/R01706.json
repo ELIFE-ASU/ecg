@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "the last step (thioester-hydrolysing) of fatty-acid synthase (ec 2.3.1.85, see R05188, map00061)", 
+    "definition": "Hexadecanoyl-[acp] + H2O <=> Acyl-carrier protein + Hexadecanoic acid", 
+    "orthologs": {
+      "K10781": "fatty acyl-ACP thioesterase B [EC:3.1.2.14 3.1.2.21]", 
+      "K00665": "fatty acid synthase, animal type [EC:2.3.1.85]"
+    }, 
+    "name": "hexadecanoyl-[acyl-carrier protein] hydrolase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.85", 
+      "3.1.2.14"
+    ], 
+    "equation": "C05764 + C00001 <=> C00229 + C00249", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01706", 
+    "pathways": {
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00229", 
+      "C00249"
+    ], 
+    "substrates": [
+      "C05764", 
+      "C00001"
+    ]
+  }
+]

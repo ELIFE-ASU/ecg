@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "possibly intermediate (D-alanyl-[acp])", 
+    "definition": "ATP + D-Alanine + Poly(ribitol phosphate) <=> AMP + Diphosphate + O-D-Alanyl-poly(ribitol phosphate)", 
+    "orthologs": {
+      "K14188": "D-alanine--poly(phosphoribitol) ligase subunit 2 [EC:6.1.1.13]", 
+      "K03367": "D-alanine--poly(phosphoribitol) ligase subunit 1 [EC:6.1.1.13]"
+    }, 
+    "name": "D-Alanine:poly(ribitol phosphate) ligase (AMP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.1.1.13"
+    ], 
+    "equation": "C00002 + C00133 + C00653 <=> C00020 + C00013 + C04260", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02718", 
+    "pathways": {
+      "rn00473": "D-Alanine metabolism"
+    }, 
+    "products": [
+      "C00020", 
+      "C00013", 
+      "C04260"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00133", 
+      "C00653"
+    ]
+  }
+]

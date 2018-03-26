@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "There are two proposed pathways for biosynthesis of the malonamate starter unit (see R06641).", 
+    "definition": "Malonamoyl-[acyl-carrier protein] + 8 Malonyl-CoA <=> 18-Carbamoyl-3,5,7,9,11,13,15,17-octaoxooctadecanoyl-[acp] + 8 CO2 + 8 CoA", 
+    "orthologs": {
+      "K05552": "minimal PKS chain-length factor (CLF/KS beta) [EC:2.3.1.- 2.3.1.260 2.3.1.235]", 
+      "K05553": "minimal PKS acyl carrier protein", 
+      "K05551": "minimal PKS ketosynthase (KS/KS alpha) [EC:2.3.1.- 2.3.1.260 2.3.1.235]"
+    }, 
+    "name": "malonyl-CoA:malonamoyl-[acyl-carrier protein] malonyltransferase", 
+    "product_stoichiometries": [
+      "8", 
+      "8", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.260"
+    ], 
+    "equation": "C21430 + 8 C00083 <=> C12441 + 8 C00011 + 8 C00010", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "8", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11516", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00253": "Tetracycline biosynthesis", 
+      "rn01056": "Biosynthesis of type II polyketide backbone"
+    }, 
+    "products": [
+      "C00011", 
+      "C00010", 
+      "C12441"
+    ], 
+    "substrates": [
+      "C00083", 
+      "C21430"
+    ]
+  }
+]

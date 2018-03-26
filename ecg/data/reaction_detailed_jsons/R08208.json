@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "three-step reaction (see R01813+R11762+R11763)", 
+    "definition": "Tetrahydrobiopterin + 2 NADP+ <=> 6-Pyruvoyltetrahydropterin + 2 NADPH + 2 H+", 
+    "orthologs": {
+      "K00072": "sepiapterin reductase [EC:1.1.1.153]"
+    }, 
+    "name": "tetrahydrobiopterin:NADP+ oxidoreductase (6-pyruvoyltetrahydropterin-forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.153"
+    ], 
+    "equation": "C00272 + 2 C00006 <=> C03684 + 2 C00005 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08208", 
+    "pathways": {
+      "rn00790": "Folate biosynthesis"
+    }, 
+    "products": [
+      "C00005", 
+      "C00080", 
+      "C03684"
+    ], 
+    "substrates": [
+      "C00006", 
+      "C00272"
+    ]
+  }
+]

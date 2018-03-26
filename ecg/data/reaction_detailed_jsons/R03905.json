@@ -1,0 +1,49 @@
+[
+  {
+    "comment": "", 
+    "definition": "Glutaminyl-tRNA + L-Glutamate + Orthophosphate + ADP <=> L-Glutamyl-tRNA(Gln) + L-Glutamine + ATP + H2O", 
+    "orthologs": {
+      "K02434": "aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit B [EC:6.3.5.6 6.3.5.7]", 
+      "K02435": "aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C [EC:6.3.5.6 6.3.5.7]", 
+      "K03330": "glutamyl-tRNA(Gln) amidotransferase subunit E [EC:6.3.5.7]", 
+      "K09482": "glutamyl-tRNA(Gln) amidotransferase subunit D [EC:6.3.5.7]", 
+      "K02433": "aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]"
+    }, 
+    "name": "Glu-tRNA(Gln):L-glutamine amido-ligase(ADP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.5.7"
+    ], 
+    "equation": "C02282 + C00025 + C00009 + C00008 <=> C06112 + C00064 + C00002 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03905", 
+    "pathways": {
+      "rn00970": "Aminoacyl-tRNA biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C06112", 
+      "C00064", 
+      "C00002", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C02282", 
+      "C00025", 
+      "C00009", 
+      "C00008"
+    ]
+  }
+]

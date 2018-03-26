@@ -1,0 +1,49 @@
+[
+  {
+    "comment": "multi-step reaction (see R01700+R02570+R07618)", 
+    "definition": "2-Oxoglutarate + CoA + NAD+ <=> Succinyl-CoA + CO2 + NADH + H+", 
+    "orthologs": {
+      "K00164": "2-oxoglutarate dehydrogenase E1 component [EC:1.2.4.2]", 
+      "K00658": "2-oxoglutarate dehydrogenase E2 component (dihydrolipoamide succinyltransferase) [EC:2.3.1.61]", 
+      "K00382": "dihydrolipoamide dehydrogenase [EC:1.8.1.4]"
+    }, 
+    "name": "2-Oxoglutarate dehydrogenase complex", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.4.2", 
+      "1.8.1.4", 
+      "2.3.1.61"
+    ], 
+    "equation": "C00026 + C00010 + C00003 <=> C00091 + C00011 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08549", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00091", 
+      "C00011", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00026", 
+      "C00010", 
+      "C00003"
+    ]
+  }
+]

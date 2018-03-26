@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "multi-step reaction possibly intermediates (quinone methide and 4-hydroxybenzyl alcohol)", 
+    "definition": "4-Cresol + 2 Oxidized ferredoxin + H2O <=> 4-Hydroxybenzaldehyde + 2 Reduced ferredoxin", 
+    "orthologs": {
+      "K05797": "4-cresol dehydrogenase (hydroxylating) flavoprotein subunit [EC:1.17.99.1]", 
+      "K20200": "4-cresol dehydrogenase [hydroxylating] cytochrome subunit"
+    }, 
+    "name": "4-cresol:acceptor oxidoreductase (methyl-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.17.99.1"
+    ], 
+    "equation": "C01468 + 2 C00139 + C00001 <=> C00633 + 2 C00138", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02675", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn00623": "Toluene degradation", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00138", 
+      "C00633"
+    ], 
+    "substrates": [
+      "C00139", 
+      "C01468", 
+      "C00001"
+    ]
+  }
+]

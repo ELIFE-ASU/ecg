@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "N-Acetylneuraminate 9-phosphate + Orthophosphate <=> N-Acetyl-D-mannosamine 6-phosphate + Phosphoenolpyruvate + H2O", 
+    "orthologs": {
+      "K05304": "sialic acid synthase [EC:2.5.1.56 2.5.1.57 2.5.1.132]", 
+      "K01654": "N-acetylneuraminate synthase [EC:2.5.1.56]"
+    }, 
+    "name": "phosphoenolpyruvate:N-acetyl-D-mannosamine-6-phosphate C-(1-carboxyvinyl)transferase (phosphate-hydrolysing, 2-carboxy-2-oxoethyl-forming); N-acetylneuraminate 9-phosphate pyruvate-lyase (pyruvate-phosphorylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.5.1.56", 
+      "2.5.1.57"
+    ], 
+    "equation": "C06241 + C00009 <=> C04257 + C00074 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04435", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C04257", 
+      "C00074", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C06241", 
+      "C00009"
+    ]
+  }
+]

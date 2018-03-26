@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "possibly intermediate", 
+    "definition": "2-Furoyl-CoA + Acceptor + H2O <=> S-(5-Hydroxy-2-furoyl)-CoA + Reduced acceptor", 
+    "orthologs": {
+      "K16877": "2-furoyl-CoA dehydrogenase large subunit [EC:1.3.99.8]", 
+      "K16879": "2-furoyl-CoA dehydrogenase 2Fe-2S iron sulfur subunit [EC:1.3.99.8]", 
+      "K16878": "2-furoyl-CoA dehydrogenase FAD binding subunit [EC:1.3.99.8]"
+    }, 
+    "name": "2-furoyl-CoA:(acceptor) 5-oxidoreductase (hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.3.99.8"
+    ], 
+    "equation": "C00845 + C00028 + C00001 <=> C03724 + C00030", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02987", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn00365": "Furfural degradation"
+    }, 
+    "products": [
+      "C03724", 
+      "C00030"
+    ], 
+    "substrates": [
+      "C00845", 
+      "C00028", 
+      "C00001"
+    ]
+  }
+]

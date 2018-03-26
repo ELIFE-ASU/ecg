@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "NADP+ (ec 1.1.1.183, see R03581)", 
+    "definition": "Geraniol + NAD+ <=> Geranial + NADH + H+", 
+    "orthologs": {
+      "K19653": "geraniol dehydrogenase (NAD+) [EC:1.1.1.347]"
+    }, 
+    "name": "geraniol:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.347"
+    ], 
+    "equation": "C01500 + C00003 <=> C01499 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10308", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00281": "Geraniol degradation"
+    }, 
+    "products": [
+      "C01499", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01500", 
+      "C00003"
+    ]
+  }
+]

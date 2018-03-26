@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R07212+R04734)", 
+    "definition": "Tetrahydrobiopterin + L-Tyrosine + Oxygen <=> 3,4-Dihydroxy-L-phenylalanine + Dihydrobiopterin + H2O", 
+    "orthologs": {
+      "K00501": "tyrosine 3-monooxygenase [EC:1.14.16.2]"
+    }, 
+    "name": "L-Tyrosine,tetrahydrobiopterin:oxygen oxidoreductase (3-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.16.2"
+    ], 
+    "equation": "C00272 + C00082 + C00007 <=> C00355 + C00268 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01815", 
+    "pathways": {
+      "rn00350": "Tyrosine metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00355", 
+      "C00268", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00272", 
+      "C00082", 
+      "C00007"
+    ]
+  }
+]

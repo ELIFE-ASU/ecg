@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "", 
+    "definition": "tRNA(Glu) + L-Glutamate + ATP <=> L-Glutamyl-tRNA(Glu) + Diphosphate + AMP", 
+    "orthologs": {
+      "K01885": "glutamyl-tRNA synthetase [EC:6.1.1.17]", 
+      "K14163": "bifunctional glutamyl/prolyl-tRNA synthetase [EC:6.1.1.17 6.1.1.15]", 
+      "K09698": "nondiscriminating glutamyl-tRNA synthetase [EC:6.1.1.24]"
+    }, 
+    "name": "L-glutamate:tRNA(Glu) ligase (AMP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.1.1.17", 
+      "6.1.1.24"
+    ], 
+    "equation": "C01641 + C00025 + C00002 <=> C02987 + C00013 + C00020", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05578", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00970": "Aminoacyl-tRNA biosynthesis", 
+      "rn00860": "Porphyrin and chlorophyll metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C02987", 
+      "C00013", 
+      "C00020"
+    ], 
+    "substrates": [
+      "C01641", 
+      "C00025", 
+      "C00002"
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "comment": "NADP+ (ec 1.2.1.16, see R00714)", 
+    "definition": "Succinate semialdehyde + NAD+ + H2O <=> Succinate + NADH + H+", 
+    "orthologs": {
+      "K00135": "succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase [EC:1.2.1.16 1.2.1.79 1.2.1.20]", 
+      "K08324": "succinate-semialdehyde dehydrogenase [EC:1.2.1.16 1.2.1.24]", 
+      "K00139": "succinate-semialdehyde dehydrogenase [EC:1.2.1.24]", 
+      "K17761": "succinate-semialdehyde dehydrogenase, mitochondrial [EC:1.2.1.24]"
+    }, 
+    "name": "succinate-semialdehyde:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.16", 
+      "1.2.1.24"
+    ], 
+    "equation": "C00232 + C00003 + C00001 <=> C00042 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00713", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn00250": "Alanine, aspartate and glutamate metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00760": "Nicotinate and nicotinamide metabolism", 
+      "rn00650": "Butanoate metabolism", 
+      "rn00350": "Tyrosine metabolism"
+    }, 
+    "products": [
+      "C00042", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00232", 
+      "C00003", 
+      "C00001"
+    ]
+  }
+]

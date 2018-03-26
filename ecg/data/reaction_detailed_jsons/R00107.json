@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "", 
+    "definition": "NADPH + 2 Aquacob(III)alamin <=> NADP+ + 2 Cob(II)alamin + 2 H2O + H+", 
+    "orthologs": {
+      "K21682": "pyruvate dehydrogenase (NADP+) / aquacobalamin reductase (NADPH) [EC:1.2.1.51 1.16.1.5]"
+    }, 
+    "name": "cob(II)alamin:NADP+ oxidoreductase; NADPH:aquacob(III)alamin oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.16.1.5"
+    ], 
+    "equation": "C00005 + 2 C00992 <=> C00006 + 2 C00541 + 2 C00001 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00107", 
+    "pathways": {
+      "rn00860": "Porphyrin and chlorophyll metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00541", 
+      "C00001", 
+      "C00006", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00992", 
+      "C00005"
+    ]
+  }
+]

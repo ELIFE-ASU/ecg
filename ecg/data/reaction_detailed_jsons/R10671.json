@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "three-step reaction (see R00730+R04460+R07190, similar to R09578, R09579+R09580+R09581)", 
+    "definition": "L-Tyrosine + 2 Oxygen + 2 [Reduced NADPH---hemoprotein reductase] <=> (E)-4-Hydroxyphenylacetaldehyde oxime + 2 [Oxidized NADPH---hemoprotein reductase] + 3 H2O + CO2", 
+    "orthologs": {
+      "K13027": "tyrosine N-monooxygenase [EC:1.14.14.36]"
+    }, 
+    "name": "L-tyrosine,[reduced NADPH-hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "3", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.36"
+    ], 
+    "equation": "C00082 + 2 C00007 + 2 C03024 <=> C04350 + 2 C03161 + 3 C00001 + C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10671", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C03161", 
+      "C00001", 
+      "C04350", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C03024", 
+      "C00082"
+    ]
+  }
+]

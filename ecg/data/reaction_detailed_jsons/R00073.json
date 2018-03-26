@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "the latter part (peroxidase) of multi-step reaction (see R01599, R01590+R00073) following after R01590", 
+    "definition": "Prostaglandin H2 + Acceptor + H2O <=> Prostaglandin G2 + Reduced acceptor", 
+    "orthologs": {
+      "K11987": "prostaglandin-endoperoxide synthase 2 [EC:1.14.99.1]", 
+      "K00509": "prostaglandin-endoperoxide synthase 1 [EC:1.14.99.1]"
+    }, 
+    "name": "reduced acceptor:prostaglandin G2 oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.99.1"
+    ], 
+    "equation": "C00427 + C00028 + C00001 <=> C05956 + C00030", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00073", 
+    "pathways": {
+      "rn00590": "Arachidonic acid metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C05956", 
+      "C00030"
+    ], 
+    "substrates": [
+      "C00427", 
+      "C00028", 
+      "C00001"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (similar to R10052, R04426+R01652)", 
+    "definition": "3-(4'-Methylthio)butylmalic acid + NAD+ <=> 2-Oxo-7-methylthioheptanoic acid + CO2 + NADH + H+", 
+    "orthologs": {
+      "K21360": "3-isopropylmalate/methylthioalkylmalate dehydrogenase [EC:1.1.1.85 1.1.1.-]"
+    }, 
+    "name": "3-(4'-methylthio)butylmalate:NAD+ oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.-"
+    ], 
+    "equation": "C17219 + C00003 <=> C17220 + C00011 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08629", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C17220", 
+      "C00011", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C17219", 
+      "C00003"
+    ]
+  }
+]

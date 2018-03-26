@@ -1,0 +1,36 @@
+[
+  {
+    "comment": "plant incomplete reaction (various side reactions) requiring PLP[CPD:C00018] and Mn2+[CPD:C00034]", 
+    "definition": "L-Phenylalanine + Oxygen <=> 2-Phenylacetamide + CO2", 
+    "orthologs": {
+      "K03782": "catalase-peroxidase [EC:1.11.1.21]"
+    }, 
+    "name": "L-phenylalanine:oxygen oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.11.1.21"
+    ], 
+    "equation": "C00079 + C00007 <=> C02505 + C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00698", 
+    "pathways": {
+      "rn00360": "Phenylalanine metabolism"
+    }, 
+    "products": [
+      "C02505", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00079", 
+      "C00007"
+    ]
+  }
+]

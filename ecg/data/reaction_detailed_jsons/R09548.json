@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R09546+R09547)", 
+    "definition": "Germacra-1(10),4,11(13)-trien-12-ol + 2 NADP+ + H2O <=> Germacrene A acid + 2 NADPH + 2 H+", 
+    "orthologs": {
+      "K15800": "germacrene A oxidase [EC:1.1.1.314 1.14.13.123]"
+    }, 
+    "name": "germacra-1(10),4,11(13)-trien-12-ol:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.314"
+    ], 
+    "equation": "C19676 + 2 C00006 + C00001 <=> C19678 + 2 C00005 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09548", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00909": "Sesquiterpenoid and triterpenoid biosynthesis"
+    }, 
+    "products": [
+      "C00005", 
+      "C00080", 
+      "C19678"
+    ], 
+    "substrates": [
+      "C00006", 
+      "C19676", 
+      "C00001"
+    ]
+  }
+]

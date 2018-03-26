@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "NAD+ (see R01524)", 
+    "definition": "D-Ribitol 5-phosphate + NADP+ <=> D-Ribulose 5-phosphate + NADPH + H+", 
+    "orthologs": {
+      "K21680": "ribulose-5-phosphate 2-dehydrogenase [EC:1.1.1.137]", 
+      "K21681": "ribitol-5-phosphate 2-dehydrogenase (NADP+) / D-ribitol-5-phosphate cytidylyltransferase [EC:1.1.1.405 2.7.7.40]", 
+      "K05352": "ribitol-5-phosphate 2-dehydrogenase (NADP+) [EC:1.1.1.405]"
+    }, 
+    "name": "D-Ribitol-5-phosphate:NADP+ 2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.137", 
+      "1.1.1.405"
+    ], 
+    "equation": "C01068 + C00006 <=> C00199 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01525", 
+    "pathways": {
+      "rn00040": "Pentose and glucuronate interconversions", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00199", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01068", 
+      "C00006"
+    ]
+  }
+]

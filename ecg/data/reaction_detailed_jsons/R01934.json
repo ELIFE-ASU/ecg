@@ -1,0 +1,48 @@
+[
+  {
+    "comment": "two-step reaction (see R04862+R01936), reversible", 
+    "definition": "Homoisocitrate + NAD+ <=> 2-Oxoadipate + CO2 + NADH + H+", 
+    "orthologs": {
+      "K10978": "methanogen homoisocitrate dehydrogenase [EC:1.1.1.87 1.1.1.-]", 
+      "K17753": "isocitrate--homoisocitrate dehydrogenase [EC:1.1.1.286]", 
+      "K05824": "homoisocitrate dehydrogenase [EC:1.1.1.87]"
+    }, 
+    "name": "(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate:NAD+ oxidoreductase (decarboxylating); homoisocitrate:NAD+ oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.87", 
+      "1.1.1.286"
+    ], 
+    "equation": "C05662 + C00003 <=> C00322 + C00011 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01934", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn00300": "Lysine biosynthesis", 
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00322", 
+      "C00011", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C05662", 
+      "C00003"
+    ]
+  }
+]

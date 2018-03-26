@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "", 
+    "definition": "UDP-glucose + Lipopolysaccharide <=> UDP + D-Glucosyllipopolysaccharide", 
+    "orthologs": {
+      "K03276": "UDP-glucose/galactose:(glucosyl)LPS alpha-1,2-glucosyl/galactosyltransferase [EC:2.4.1.-]", 
+      "K03279": "UDP-glucose:(galactosyl)LPS alpha-1,2-glucosyltransferase [EC:2.4.1.58]"
+    }, 
+    "name": "UDPglucose:lipopolysaccharide glucosyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.4.1.58", 
+      "2.4.1.-"
+    ], 
+    "equation": "C00029 + C00338 <=> C00015 + C03859", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01994", 
+    "pathways": {
+      "rn00540": "Lipopolysaccharide biosynthesis"
+    }, 
+    "products": [
+      "C00015", 
+      "C03859"
+    ], 
+    "substrates": [
+      "C00029", 
+      "C00338"
+    ]
+  }
+]

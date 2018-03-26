@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "last step of three-step reaction (see R10068, R06265+R06266+R06267)", 
+    "definition": "13(1)-Oxo-magnesium-protoporphyrin IX 13-monomethyl ester + NADPH + H+ + Oxygen <=> Divinylprotochlorophyllide + NADP+ + 2 H2O", 
+    "orthologs": {
+      "K04035": "magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase [EC:1.14.13.81]"
+    }, 
+    "name": "magnesium-protoporphyrin-IX 13-monomethyl ester,NADPH:oxygen oxidoreductase (hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.81"
+    ], 
+    "equation": "C11830 + C00005 + C00080 + C00007 <=> C11831 + C00006 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06267", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00860": "Porphyrin and chlorophyll metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00001", 
+      "C11831", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C11830", 
+      "C00005", 
+      "C00080", 
+      "C00007"
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "CYP1A1, CYP1B1, CYP2C9, CYP3A4", 
+    "definition": "Benzo[a]pyrene + NADPH + Oxygen + H+ <=> Benzo[a]pyrene-7,8-oxide + NADP+ + H2O", 
+    "orthologs": {
+      "K17719": "cytochrome P450 family 2 subfamily C polypeptide 9 [EC:1.14.14.51 1.14.14.52 1.14.14.53 1.14.14.-]", 
+      "K17689": "cytochrome P450 family 3 subfamily A polypeptide 4 [EC:1.14.13.32 1.14.13.67 1.14.13.97 1.14.13.157 1.14.13.-]", 
+      "K07410": "cytochrome P450 family 1 subfamily B polypeptide 1 [EC:1.14.14.1]", 
+      "K07408": "cytochrome P450 family 1 subfamily A polypeptide 1 [EC:1.14.14.1]"
+    }, 
+    "name": "Benzpyrene,NADPH:oxygen oxidoreductase (RH-hydroxylating or -epoxidizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.-", 
+      "1.14.14.1", 
+      "1.14.14.-"
+    ], 
+    "equation": "C07535 + C00005 + C00007 + C00080 <=> C14850 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07080", 
+    "pathways": {
+      "rn00980": "Metabolism of xenobiotics by cytochrome P450"
+    }, 
+    "products": [
+      "C14850", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C07535", 
+      "C00005", 
+      "C00007", 
+      "C00080"
+    ]
+  }
+]

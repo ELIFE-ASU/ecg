@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "see R04122", 
+    "definition": "Melatonin + [Reduced NADPH---hemoprotein reductase] + Oxygen <=> 6-Hydroxymelatonin + [Oxidized NADPH---hemoprotein reductase] + H2O", 
+    "orthologs": {
+      "K07409": "cytochrome P450 family 1 subfamily A polypeptide 2 [EC:1.14.14.1]", 
+      "K14338": "cytochrome P450 / NADPH-cytochrome P450 reductase [EC:1.14.14.1 1.6.2.4]", 
+      "K07410": "cytochrome P450 family 1 subfamily B polypeptide 1 [EC:1.14.14.1]", 
+      "K07408": "cytochrome P450 family 1 subfamily A polypeptide 1 [EC:1.14.14.1]", 
+      "K00493": "unspecific monooxygenase [EC:1.14.14.1]"
+    }, 
+    "name": "substrate,reduced-flaboprotein:oxygen oxidoreductase (RH-hydroxylating or -epoxidizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.1"
+    ], 
+    "equation": "C01598 + C03024 + C00007 <=> C05643 + C03161 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03629", 
+    "pathways": {
+      "rn00380": "Tryptophan metabolism"
+    }, 
+    "products": [
+      "C05643", 
+      "C03161", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C01598", 
+      "C03024", 
+      "C00007"
+    ]
+  }
+]

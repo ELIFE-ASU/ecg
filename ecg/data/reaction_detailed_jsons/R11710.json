@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "three-step reaction (see R11484+R10437+R11709)", 
+    "definition": "2 S-Adenosyl-L-methionine + Bacteriochlorophyllide c + H2O <=> Bacteriochlorophyllide e + 2 5'-Deoxyadenosine + 2 L-Methionine", 
+    "orthologs": {
+      "K21312": "bacteriochlorophyllide c C-7(1)-hydroxylase [EC:1.17.98.2]"
+    }, 
+    "name": "bacteriochlorophyllide-c:S-adenosyl-L-methionine oxidoreductase (C-7(1)-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.17.98.2"
+    ], 
+    "equation": "2 C00019 + C18161 + C00001 <=> C21582 + 2 C05198 + 2 C00073", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11710", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00860": "Porphyrin and chlorophyll metabolism"
+    }, 
+    "products": [
+      "C05198", 
+      "C00073", 
+      "C21582"
+    ], 
+    "substrates": [
+      "C00019", 
+      "C18161", 
+      "C00001"
+    ]
+  }
+]

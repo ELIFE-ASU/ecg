@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "subsequently R05462", 
+    "definition": "6-Methylpretetramide + NADPH + Oxygen + H+ <=> 4-Hydroxy-6-methylpretetramide + NADP+ + H2O", 
+    "orthologs": {
+      "K14253": "6-methylpretetramide 4-monooxygenase [EC:1.14.13.232]"
+    }, 
+    "name": "6-methylpretetramide,NADPH:oxygen oxidoreductase (4-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.232"
+    ], 
+    "equation": "C06629 + C00005 + C00007 + C00080 <=> C06628 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05463", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01057": "Biosynthesis of type II polyketide products", 
+      "rn00253": "Tetracycline biosynthesis"
+    }, 
+    "products": [
+      "C06628", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C06629", 
+      "C00005", 
+      "C00007", 
+      "C00080"
+    ]
+  }
+]

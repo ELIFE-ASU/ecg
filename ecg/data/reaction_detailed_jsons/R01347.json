@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "Oxidized rubredoxin is re-reduced by NAD(P)H (see R02000, R02002)", 
+    "definition": "Fatty acid + Oxygen + 2 Reduced rubredoxin + 2 H+ <=> omega-Hydroxy fatty acid + 2 Oxidized rubredoxin + H2O", 
+    "orthologs": {
+      "K00496": "alkane 1-monooxygenase [EC:1.14.15.3]"
+    }, 
+    "name": "Fatty acid,reduced rubredoxin:oxygen oxidoreductase (omega-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.3"
+    ], 
+    "equation": "C00162 + C00007 + 2 C00340 + 2 C00080 <=> C03547 + 2 C00435 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01347", 
+    "pathways": {
+      "rn00071": "Fatty acid degradation"
+    }, 
+    "products": [
+      "C00435", 
+      "C03547", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00340", 
+      "C00080", 
+      "C00162", 
+      "C00007"
+    ]
+  }
+]

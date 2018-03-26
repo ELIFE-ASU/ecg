@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "two-step reaction (see R07211+R04734)", 
+    "definition": "Tetrahydrobiopterin + L-Phenylalanine + Oxygen <=> Dihydrobiopterin + L-Tyrosine + H2O", 
+    "orthologs": {
+      "K00500": "phenylalanine-4-hydroxylase [EC:1.14.16.1]"
+    }, 
+    "name": "L-Phenylalanine,tetrahydrobiopterin:oxygen oxidoreductase (4-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.16.1"
+    ], 
+    "equation": "C00272 + C00079 + C00007 <=> C00268 + C00082 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01795", 
+    "pathways": {
+      "rn00360": "Phenylalanine metabolism", 
+      "rn00400": "Phenylalanine, tyrosine and tryptophan biosynthesis", 
+      "rn01100": "Metabolic pathways", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00268", 
+      "C00082", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00272", 
+      "C00079", 
+      "C00007"
+    ]
+  }
+]

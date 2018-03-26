@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "", 
+    "definition": "[Enzyme]-S-sulfanylcysteine + Adenylyl-[sulfur-carrier protein] + Reduced acceptor <=> AMP + Thiocarboxy-[sulfur-carrier protein] + [Enzyme]-cysteine + Acceptor", 
+    "orthologs": {
+      "K21028": "molybdopterin synthase sulfurtransferase [EC:2.8.1.11]", 
+      "K21147": "sulfur-carrier protein adenylyltransferase/sulfurtransferase [EC:2.7.7.80 2.7.7.- 2.8.1.11 2.8.1.-]", 
+      "K03151": "tRNA uracil 4-sulfurtransferase [EC:2.8.1.4]", 
+      "K11996": "adenylyltransferase and sulfurtransferase [EC:2.7.7.80 2.8.1.11]"
+    }, 
+    "name": "[enzyme]-S-sulfanyl-L-cysteine:adenylyl-[sulfur-carrier protein] sulfurtransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.8.1.4", 
+      "2.8.1.11"
+    ], 
+    "equation": "C15812 + C15813 + C00030 <=> C00020 + C15814 + C15811 + C00028", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07461", 
+    "pathways": {
+      "rn00730": "Thiamine metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00020", 
+      "C15814", 
+      "C15811", 
+      "C00028"
+    ], 
+    "substrates": [
+      "C15812", 
+      "C15813", 
+      "C00030"
+    ]
+  }
+]

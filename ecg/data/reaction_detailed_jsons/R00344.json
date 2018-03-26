@@ -1,0 +1,48 @@
+[
+  {
+    "comment": "intermediate (carboxybiotin-[enzyme])", 
+    "definition": "ATP + Pyruvate + HCO3- <=> ADP + Orthophosphate + Oxaloacetate", 
+    "orthologs": {
+      "K01960": "pyruvate carboxylase subunit B [EC:6.4.1.1]", 
+      "K01958": "pyruvate carboxylase [EC:6.4.1.1]", 
+      "K01959": "pyruvate carboxylase subunit A [EC:6.4.1.1]"
+    }, 
+    "name": "Pyruvate:carbon-dioxide ligase (ADP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.4.1.1"
+    ], 
+    "equation": "C00002 + C00022 + C00288 <=> C00008 + C00009 + C00036", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00344", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00620": "Pyruvate metabolism", 
+      "rn00020": "Citrate cycle (TCA cycle)", 
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00008", 
+      "C00009", 
+      "C00036"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00022", 
+      "C00288"
+    ]
+  }
+]

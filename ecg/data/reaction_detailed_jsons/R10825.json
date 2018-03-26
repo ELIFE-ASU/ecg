@@ -1,0 +1,48 @@
+[
+  {
+    "comment": "Elongation of C16/C18 acyl-CoAs to very-long-chain acyl CoAs.", 
+    "definition": "Very-long-chain acyl-CoA + Malonyl-CoA <=> Very-long-chain 3-oxoacyl-CoA + CO2 + CoA", 
+    "orthologs": {
+      "K10205": "elongation of very long chain fatty acids protein 2 [EC:2.3.1.199]", 
+      "K15397": "3-ketoacyl-CoA synthase [EC:2.3.1.199]", 
+      "K10203": "elongation of very long chain fatty acids protein 6 [EC:2.3.1.199]", 
+      "K10244": "elongation of very long chain fatty acids protein 5 [EC:2.3.1.199]", 
+      "K10245": "fatty acid elongase 2 [EC:2.3.1.199]", 
+      "K10246": "fatty acid elongase 3 [EC:2.3.1.199]", 
+      "K10247": "elongation of very long chain fatty acids protein 1 [EC:2.3.1.199]", 
+      "K10248": "elongation of very long chain fatty acids protein 3 [EC:2.3.1.199]", 
+      "K10249": "elongation of very long chain fatty acids protein 4 [EC:2.3.1.199]", 
+      "K10250": "elongation of very long chain fatty acids protein 7 [EC:2.3.1.199]"
+    }, 
+    "name": "very-long-chain acyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.199"
+    ], 
+    "equation": "C20876 + C00083 <=> C20877 + C00011 + C00010", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10825", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00062": "Fatty acid elongation"
+    }, 
+    "products": [
+      "C20877", 
+      "C00011", 
+      "C00010"
+    ], 
+    "substrates": [
+      "C20876", 
+      "C00083"
+    ]
+  }
+]

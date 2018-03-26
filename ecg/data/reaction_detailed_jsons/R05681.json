@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "first step of two-step reaction (see R05837, R05681+R07406)", 
+    "definition": "O-Phospho-4-hydroxy-L-threonine + NAD+ <=> 2-Amino-3-oxo-4-phosphonooxybutyrate + NADH + H+", 
+    "orthologs": {
+      "K00097": "4-hydroxythreonine-4-phosphate dehydrogenase [EC:1.1.1.262]"
+    }, 
+    "name": "NAD-dependent threonine 4-phosphate dehydrogenase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.262"
+    ], 
+    "equation": "C06055 + C00003 <=> C07335 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05681", 
+    "pathways": {
+      "rn01100": "Metabolic pathways", 
+      "rn00750": "Vitamin B6 metabolism"
+    }, 
+    "products": [
+      "C07335", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C06055", 
+      "C00003"
+    ]
+  }
+]

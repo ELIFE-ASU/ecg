@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "L-Asparaginyl-tRNA(Asn) + L-Glutamate + Orthophosphate + ADP <=> L-Aspartyl-tRNA(Asn) + L-Glutamine + ATP + H2O", 
+    "orthologs": {
+      "K02434": "aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit B [EC:6.3.5.6 6.3.5.7]", 
+      "K02435": "aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit C [EC:6.3.5.6 6.3.5.7]", 
+      "K02433": "aspartyl-tRNA(Asn)/glutamyl-tRNA(Gln) amidotransferase subunit A [EC:6.3.5.6 6.3.5.7]"
+    }, 
+    "name": "Asp-tRNA(Asn):L-glutamine amido-ligase (ADP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.5.6"
+    ], 
+    "equation": "C03402 + C00025 + C00009 + C00008 <=> C06113 + C00064 + C00002 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04212", 
+    "pathways": {
+      "rn00970": "Aminoacyl-tRNA biosynthesis"
+    }, 
+    "products": [
+      "C06113", 
+      "C00064", 
+      "C00002", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C03402", 
+      "C00025", 
+      "C00009", 
+      "C00008"
+    ]
+  }
+]

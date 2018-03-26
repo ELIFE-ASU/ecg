@@ -1,0 +1,37 @@
+[
+  {
+    "comment": "multi-step reaction (see R08762+R08763)", 
+    "definition": "4 2-Aminophenol + 3 Oxygen <=> 2 2-Aminophenoxazin-3-one + 6 H2O", 
+    "orthologs": {
+      "K20219": "o-aminophenol oxidase [EC:1.10.3.4]", 
+      "K20204": "grixazone synthase / o-aminophenol oxidase [EC:1.10.3.15 1.10.3.4]"
+    }, 
+    "name": "2-aminophenol:oxygen oxidoreductase (dimerizing)", 
+    "product_stoichiometries": [
+      "2", 
+      "6"
+    ], 
+    "enzymes": [
+      "1.10.3.4"
+    ], 
+    "equation": "4 C01987 + 3 C00007 <=> 2 C02161 + 6 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "4", 
+      "3"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00074", 
+    "pathways": {
+      "rn00380": "Tryptophan metabolism"
+    }, 
+    "products": [
+      "C02161", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C01987", 
+      "C00007"
+    ]
+  }
+]

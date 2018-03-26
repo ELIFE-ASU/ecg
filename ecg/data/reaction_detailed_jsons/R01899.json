@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "the first step of two-step reaction (see R00267, R01899+R00268) subsequently R00268", 
+    "definition": "Isocitrate + NADP+ <=> Oxalosuccinate + NADPH + H+", 
+    "orthologs": {
+      "K00031": "isocitrate dehydrogenase [EC:1.1.1.42]"
+    }, 
+    "name": "Isocitrate:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.42"
+    ], 
+    "equation": "C00311 + C00006 <=> C05379 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01899", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00020": "Citrate cycle (TCA cycle)"
+    }, 
+    "products": [
+      "C05379", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00311", 
+      "C00006"
+    ]
+  }
+]

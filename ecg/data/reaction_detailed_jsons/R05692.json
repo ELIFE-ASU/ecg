@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "two-step reaction (see R07059 + R07060), bifunctional enzyme", 
+    "definition": "GDP-L-fucose + NADP+ <=> GDP-4-dehydro-6-deoxy-D-mannose + NADPH + H+", 
+    "orthologs": {
+      "K02377": "GDP-L-fucose synthase [EC:1.1.1.271]"
+    }, 
+    "name": "GDP-L-fucose:NADP+ 4-oxidoreductase (3,5-epimerizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.271"
+    ], 
+    "equation": "C00325 + C00006 <=> C01222 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05692", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism", 
+      "rn00051": "Fructose and mannose metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C01222", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00325", 
+      "C00006"
+    ]
+  }
+]

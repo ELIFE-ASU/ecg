@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "first step of two-step reaction (see R10055, R07178+R07179)", 
+    "definition": "Violaxanthin + Ascorbate <=> Antheraxanthin + Dehydroascorbate + H2O", 
+    "orthologs": {
+      "K09839": "violaxanthin de-epoxidase [EC:1.23.5.1]"
+    }, 
+    "name": "violaxanthin:ascorbate oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.23.5.1"
+    ], 
+    "equation": "C08614 + C00072 <=> C08579 + C05422 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07178", 
+    "pathways": {
+      "rn00906": "Carotenoid biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C08579", 
+      "C05422", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C08614", 
+      "C00072"
+    ]
+  }
+]

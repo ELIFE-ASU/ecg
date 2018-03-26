@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "the second step of two-step reaction (see R00925, R01354+R00926) following after R01354", 
+    "definition": "Propionyladenylate + CoA <=> AMP + Propanoyl-CoA", 
+    "orthologs": {
+      "K01908": "propionyl-CoA synthetase [EC:6.2.1.17]", 
+      "K01895": "acetyl-CoA synthetase [EC:6.2.1.1]"
+    }, 
+    "name": "Propionyladenylate:CoA propionyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.2.1.1", 
+      "6.2.1.17"
+    ], 
+    "equation": "C05983 + C00010 <=> C00020 + C00100", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00926", 
+    "pathways": {
+      "rn00640": "Propanoate metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00020", 
+      "C00100"
+    ], 
+    "substrates": [
+      "C05983", 
+      "C00010"
+    ]
+  }
+]

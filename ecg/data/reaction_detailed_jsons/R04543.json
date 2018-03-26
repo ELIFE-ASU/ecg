@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "(3R)-3-Hydroxypalmitoyl-[acyl-carrier protein] + NADP+ <=> 3-Oxohexadecanoyl-[acp] + NADPH + H+", 
+    "orthologs": {
+      "K00667": "fatty acid synthase subunit alpha, fungi type [EC:2.3.1.86]", 
+      "K00665": "fatty acid synthase, animal type [EC:2.3.1.85]", 
+      "K00059": "3-oxoacyl-[acyl-carrier protein] reductase [EC:1.1.1.100]", 
+      "K11533": "fatty acid synthase, bacteria type [EC:2.3.1.-]"
+    }, 
+    "name": "(3R)-3-Hydroxypalmitoyl-[acyl-carrier-protein]:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.100", 
+      "2.3.1.85", 
+      "2.3.1.86", 
+      "2.3.1.-"
+    ], 
+    "equation": "C04633 + C00006 <=> C05762 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04543", 
+    "pathways": {
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C05762", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C04633", 
+      "C00006"
+    ]
+  }
+]

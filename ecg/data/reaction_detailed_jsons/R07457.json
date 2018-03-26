@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "possibly two-step reaction (similar to R10669, R07450+R07451)", 
+    "definition": "3-Dehydro-6-deoxoteasterone + 2 Oxygen + 2 [Reduced NADPH---hemoprotein reductase] <=> 3-Dehydroteasterone + 3 H2O + 2 [Oxidized NADPH---hemoprotein reductase]", 
+    "orthologs": {
+      "K12640": "brassinosteroid-6-oxidase 2 [EC:1.14.-.-]", 
+      "K09590": "brassinosteroid-6-oxidase 1 [EC:1.14.-.-]"
+    }, 
+    "name": "3-dehydro-6-deoxoteasterone,NADPH---hemoprotein reductase:oxygen oxidoreductase (3-dehydroteasterone-forming)", 
+    "product_stoichiometries": [
+      "3", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.-.-"
+    ], 
+    "equation": "C15800 + 2 C00007 + 2 C03024 <=> C15792 + 3 C00001 + 2 C03161", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07457", 
+    "pathways": {
+      "rn00905": "Brassinosteroid biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C03161", 
+      "C15792"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C03024", 
+      "C15800"
+    ]
+  }
+]

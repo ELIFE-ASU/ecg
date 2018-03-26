@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R07770+R07771)", 
+    "definition": "ATP + (R)-Lipoate + Apoprotein <=> Protein N6-(lipoyl)lysine + AMP + Diphosphate", 
+    "orthologs": {
+      "K03800": "lipoate---protein ligase [EC:6.3.1.20]"
+    }, 
+    "name": "[lipoyl-carrier protein]-L-lysine:lipoate ligase (AMP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.1.20"
+    ], 
+    "equation": "C00002 + C16241 + C16240 <=> C16237 + C00020 + C00013", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11143", 
+    "pathways": {
+      "rn00785": "Lipoic acid metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C16237", 
+      "C00020", 
+      "C00013"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C16241", 
+      "C16240"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "first step of two-step reaction (see R10079, R03546+R07316) bicarbonate is recycled (see R10092)", 
+    "definition": "Cyanate + H+ + HCO3- <=> CO2 + Carbamate", 
+    "orthologs": {
+      "K01725": "cyanate lyase [EC:4.2.1.104]"
+    }, 
+    "name": "carbamate hydro-lyase; cyanate hydratase; cyanate C-N-lyase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.2.1.104"
+    ], 
+    "equation": "C01417 + C00080 + C00288 <=> C00011 + C01563", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03546", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism"
+    }, 
+    "products": [
+      "C00011", 
+      "C01563"
+    ], 
+    "substrates": [
+      "C01417", 
+      "C00080", 
+      "C00288"
+    ]
+  }
+]

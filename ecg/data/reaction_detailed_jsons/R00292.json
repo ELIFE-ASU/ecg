@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "GYS [KO:K00693] requires glycogenin [KO:K00750] for priming.", 
+    "definition": "UDP-glucose + Amylose <=> UDP + Amylose", 
+    "orthologs": {
+      "K16153": "glycogen phosphorylase/synthase [EC:2.4.1.1 2.4.1.11]", 
+      "K16150": "glycogen synthase [EC:2.4.1.11]", 
+      "K13679": "granule-bound starch synthase [EC:2.4.1.242]", 
+      "K00693": "glycogen synthase [EC:2.4.1.11]", 
+      "K00750": "glycogenin [EC:2.4.1.186]", 
+      "K20812": "glycogen synthase [EC:2.4.1.242]"
+    }, 
+    "name": "UDP-glucose:glycogen 4-alpha-D-glucosyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.4.1.11", 
+      "2.4.1.242"
+    ], 
+    "equation": "C00029 + C00718 <=> C00015 + C00718", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00292", 
+    "pathways": {
+      "rn00500": "Starch and sucrose metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00015", 
+      "C00718"
+    ], 
+    "substrates": [
+      "C00029", 
+      "C00718"
+    ]
+  }
+]

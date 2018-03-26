@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NAD+ (see R03391) multi-step reaction", 
+    "definition": "CDP-4-dehydro-3,6-dideoxy-D-glucose + NADP+ + H2O <=> CDP-4-dehydro-6-deoxy-D-glucose + NADPH + H+", 
+    "orthologs": {
+      "K12452": "CDP-4-dehydro-6-deoxyglucose reductase, E1 [EC:1.17.1.1]", 
+      "K00523": "CDP-4-dehydro-6-deoxyglucose reductase, E3 [EC:1.17.1.1]"
+    }, 
+    "name": "CDP-4-dehydro-3,6-dideoxy-D-glucose:NADP+ 3-oxydoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.17.1.1"
+    ], 
+    "equation": "C04297 + C00006 + C00001 <=> C01219 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03392", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism"
+    }, 
+    "products": [
+      "C01219", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C04297", 
+      "C00006", 
+      "C00001"
+    ]
+  }
+]

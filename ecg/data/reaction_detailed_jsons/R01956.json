@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "subsequently R03445 (non-enzymatic cyclizing)", 
+    "definition": "L-Kynurenine + 2-Oxoglutarate <=> 4-(2-Aminophenyl)-2,4-dioxobutanoate + L-Glutamate", 
+    "orthologs": {
+      "K00825": "kynurenine/2-aminoadipate aminotransferase [EC:2.6.1.7 2.6.1.39]", 
+      "K14264": "kynurenine aminotransferase [EC:2.6.1.7]", 
+      "K00816": "kynurenine---oxoglutarate transaminase / cysteine-S-conjugate beta-lyase / glutamine---phenylpyruvate transaminase [EC:2.6.1.7 4.4.1.13 2.6.1.64]"
+    }, 
+    "name": "L-Kynurenine:2-oxoglutarate aminotransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.6.1.7"
+    ], 
+    "equation": "C00328 + C00026 <=> C01252 + C00025", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01956", 
+    "pathways": {
+      "rn00380": "Tryptophan metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C01252", 
+      "C00025"
+    ], 
+    "substrates": [
+      "C00328", 
+      "C00026"
+    ]
+  }
+]

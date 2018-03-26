@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "two-step reaction (see R00702+R02872)", 
+    "definition": "2 trans,trans-Farnesyl diphosphate + NADPH + H+ <=> Squalene + 2 Diphosphate + NADP+", 
+    "orthologs": {
+      "K00801": "farnesyl-diphosphate farnesyltransferase [EC:2.5.1.21]"
+    }, 
+    "name": "squalene synthase", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.5.1.21"
+    ], 
+    "equation": "2 C00448 + C00005 + C00080 <=> C00751 + 2 C00013 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06223", 
+    "pathways": {
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00013", 
+      "C00751", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C00448", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

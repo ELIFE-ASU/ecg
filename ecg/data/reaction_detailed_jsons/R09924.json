@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "second step of two-step reaction (see R09925, R04366+R09924)", 
+    "definition": "(E)-3,7-Dimethylocta-1,6-diene-3,8-diol + NADH + H+ + Oxygen <=> (6E)-8-Oxolinalool + NAD+ + 2 H2O", 
+    "orthologs": {
+      "K05525": "linalool 8-monooxygenase [EC:1.14.13.151]"
+    }, 
+    "name": "8-hydroxylinalool,NADH:oxygen 8-oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.151"
+    ], 
+    "equation": "C04433 + C00004 + C00080 + C00007 <=> C20221 + C00003 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09924", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00902": "Monoterpenoid biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C20221", 
+      "C00003"
+    ], 
+    "substrates": [
+      "C04433", 
+      "C00004", 
+      "C00080", 
+      "C00007"
+    ]
+  }
+]

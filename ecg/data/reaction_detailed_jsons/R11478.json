@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "Tetracycline + FADH2 + Cl- + Oxygen + H+ <=> Chlortetracycline + FAD + 2 H2O", 
+    "orthologs": {
+      "K14257": "tetracycline 7-halogenase / FADH2 O2-dependent halogenase [EC:1.14.19.49 1.14.19.-]"
+    }, 
+    "name": "tetracycline:FADH2 oxidoreductase (7-halogenating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.19.49"
+    ], 
+    "equation": "C06570 + C01352 + C00698 + C00007 + C00080 <=> C06571 + C00016 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11478", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01057": "Biosynthesis of type II polyketide products", 
+      "rn00253": "Tetracycline biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C06571", 
+      "C00016"
+    ], 
+    "substrates": [
+      "C06570", 
+      "C01352", 
+      "C00698", 
+      "C00007", 
+      "C00080"
+    ]
+  }
+]

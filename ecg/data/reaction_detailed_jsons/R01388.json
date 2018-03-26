@@ -1,0 +1,54 @@
+[
+  {
+    "comment": "NADP+ (see R01392)", 
+    "definition": "D-Glycerate + NAD+ <=> Hydroxypyruvate + NADH + H+", 
+    "orthologs": {
+      "K00090": "glyoxylate/hydroxypyruvate/2-ketogluconate reductase [EC:1.1.1.79 1.1.1.81 1.1.1.215]", 
+      "K15893": "hydroxypyruvate reductase 1", 
+      "K00049": "glyoxylate/hydroxypyruvate reductase [EC:1.1.1.79 1.1.1.81]", 
+      "K15919": "hydroxypyruvate reductase 2", 
+      "K12972": "glyoxylate/hydroxypyruvatereductase [EC:1.1.1.79 1.1.1.81]", 
+      "K00050": "hydroxypyruvate reductase [EC:1.1.1.81]", 
+      "K00018": "glycerate dehydrogenase [EC:1.1.1.29]", 
+      "K00015": "glyoxylate reductase [EC:1.1.1.26]"
+    }, 
+    "name": "D-Glycerate:NAD+ 2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.26", 
+      "1.1.1.29", 
+      "1.1.1.81"
+    ], 
+    "equation": "C00258 + C00003 <=> C00168 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01388", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00630": "Glyoxylate and dicarboxylate metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00680": "Methane metabolism", 
+      "rn00260": "Glycine, serine and threonine metabolism"
+    }, 
+    "products": [
+      "C00168", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00258", 
+      "C00003"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NAD+ (see R02391)", 
+    "definition": "Bilirubin + NADP+ <=> Biliverdin + NADPH + H+", 
+    "orthologs": {
+      "K00214": "biliverdin reductase [EC:1.3.1.24]", 
+      "K05901": "biliverdin reductase / flavin reductase [EC:1.3.1.24 1.5.1.30]"
+    }, 
+    "name": "Bilirubin:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.3.1.24"
+    ], 
+    "equation": "C00486 + C00006 <=> C00500 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02393", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00860": "Porphyrin and chlorophyll metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00500", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00486", 
+      "C00006"
+    ]
+  }
+]

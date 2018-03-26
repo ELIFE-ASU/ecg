@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "L-2-Aminoadipate + L-Valine + L-Cysteine + 3 ATP + H2O <=> delta-(L-2-Aminoadipyl)-L-cysteinyl-D-valine + 3 AMP + 3 Diphosphate", 
+    "orthologs": {
+      "K12743": "N-(5-amino-5-carboxypentanoyl)-L-cysteinyl-D-valine synthase [EC:6.3.2.26]"
+    }, 
+    "name": "L-2-aminohexanedioate:L-cysteine:L-valine ligase (AMP-forming, valine-inverting)", 
+    "product_stoichiometries": [
+      "3", 
+      "3", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.2.26"
+    ], 
+    "equation": "C00956 + C00183 + C00097 + 3 C00002 + C00001 <=> C05556 + 3 C00020 + 3 C00013", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04870", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01100": "Metabolic pathways", 
+      "rn00311": "Penicillin and cephalosporin biosynthesis"
+    }, 
+    "products": [
+      "C00020", 
+      "C00013", 
+      "C05556"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00956", 
+      "C00183", 
+      "C00097", 
+      "C00001"
+    ]
+  }
+]

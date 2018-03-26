@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "L-Selenocystathionine + H2O <=> Selenohomocysteine + Ammonia + Pyruvate", 
+    "orthologs": {
+      "K01760": "cystathionine beta-lyase [EC:4.4.1.8]", 
+      "K14155": "cystathione beta-lyase [EC:4.4.1.8]"
+    }, 
+    "name": "Selenocystathionine L-homocysteine-lyase (deaminating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.4.1.8"
+    ], 
+    "equation": "C05699 + C00001 <=> C05698 + C00014 + C00022", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04941", 
+    "pathways": {
+      "rn00450": "Selenocompound metabolism"
+    }, 
+    "products": [
+      "C05698", 
+      "C00014", 
+      "C00022"
+    ], 
+    "substrates": [
+      "C05699", 
+      "C00001"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "first step of two-step reaction (see R10080, R08203+R08204)", 
+    "definition": "Chlorophyllide + Oxygen + NADPH + H+ <=> 7(1)-Hydroxychlorophyllide a + H2O + NADP+", 
+    "orthologs": {
+      "K13600": "chlorophyllide a oxygenase [EC:1.14.13.122]"
+    }, 
+    "name": "chlorophyllide-a,NADPH:oxygen 7(1)-oxidoreductase (hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.122"
+    ], 
+    "equation": "C02139 + C00007 + C00005 + C00080 <=> C16540 + C00001 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08203", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00860": "Porphyrin and chlorophyll metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C16540", 
+      "C00001", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C02139", 
+      "C00007", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

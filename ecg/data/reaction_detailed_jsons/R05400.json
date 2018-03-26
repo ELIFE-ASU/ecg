@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "nitrobenzene nitroreductase, nbzA first step of two-step reaction (see R11744, R05400+R05401)", 
+    "definition": "Nitrosobenzene + NADPH + H+ <=> Hydroxylaminobenzene + NADP+", 
+    "orthologs": {
+      "K15057": "nitrobenzene nitroreductase [EC:1.7.1.16]"
+    }, 
+    "name": "hydroxylaminobenzene:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.7.1.16"
+    ], 
+    "equation": "C06876 + C00005 + C00080 <=> C02720 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05400", 
+    "pathways": {
+      "rn00627": "Aminobenzoate degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C02720", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C06876", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

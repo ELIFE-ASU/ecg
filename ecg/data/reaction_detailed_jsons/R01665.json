@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "", 
+    "definition": "ATP + dCMP <=> ADP + dCDP", 
+    "orthologs": {
+      "K13800": "UMP-CMP kinase [EC:2.7.4.- 2.7.4.14]", 
+      "K13809": "UMP-CMP kinase 2, mitochondrial [EC:2.7.4.14]", 
+      "K13799": "pantoate ligase / CMP/dCMP kinase [EC:6.3.2.1 2.7.4.25]", 
+      "K00945": "CMP/dCMP kinase [EC:2.7.4.25]"
+    }, 
+    "name": "ATP:dCMP phosphotransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.7.4.14", 
+      "2.7.4.25"
+    ], 
+    "equation": "C00002 + C00239 <=> C00008 + C00705", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01665", 
+    "pathways": {
+      "rn00240": "Pyrimidine metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00008", 
+      "C00705"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00239"
+    ]
+  }
+]

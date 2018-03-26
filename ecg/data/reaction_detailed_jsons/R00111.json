@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "the latter part of multi-step reaction (see R00557, R00558+R00111) following after R00558 NADH (see R10108)", 
+    "definition": "NADPH + 2 N(omega)-Hydroxyarginine + 2 Oxygen + H+ <=> NADP+ + 2 Nitric oxide + 2 L-Citrulline + 2 H2O", 
+    "orthologs": {
+      "K13241": "nitric-oxide synthase, inducible [EC:1.14.13.39]", 
+      "K13240": "nitric-oxide synthase, brain [EC:1.14.13.39]", 
+      "K13242": "nitric-oxide synthase, endothelial [EC:1.14.13.39]", 
+      "K13427": "nitric-oxide synthase, plant [EC:1.14.13.39]"
+    }, 
+    "name": "N-(omega)-Hydroxyarginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.39"
+    ], 
+    "equation": "C00005 + 2 C05933 + 2 C00007 + C00080 <=> C00006 + 2 C00533 + 2 C00327 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00111", 
+    "pathways": {
+      "rn00330": "Arginine and proline metabolism"
+    }, 
+    "products": [
+      "C00533", 
+      "C00327", 
+      "C00001", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C05933", 
+      "C00007", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

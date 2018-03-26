@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "NADH (see R07709)", 
+    "definition": "Salicylate + NADPH + Oxygen + H+ <=> 2,5-Dihydroxybenzoate + NADP+ + H2O", 
+    "orthologs": {
+      "K14578": "naphthalene 1,2-dioxygenase ferredoxin component", 
+      "K18243": "salicylate 5-hydroxylase small subunit [EC:1.14.13.172]", 
+      "K18242": "salicylate 5-hydroxylase large subunit [EC:1.14.13.172]", 
+      "K14581": "naphthalene 1,2-dioxygenase ferredoxin reductase component [EC:1.18.1.7]"
+    }, 
+    "name": "salicylate,NADPH:oxygen oxidoreductase (5-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.172"
+    ], 
+    "equation": "C00805 + C00005 + C00007 + C00080 <=> C00628 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07710", 
+    "pathways": {
+      "rn00626": "Naphthalene degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00628", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00805", 
+      "C00005", 
+      "C00007", 
+      "C00080"
+    ]
+  }
+]

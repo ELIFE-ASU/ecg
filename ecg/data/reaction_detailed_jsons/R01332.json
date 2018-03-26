@@ -1,0 +1,36 @@
+[
+  {
+    "comment": "multi-step reaction endo-hydrolysis (ec 3.2.1.78, see R08612) exo-hydrolysis (ec 3.2.1.25, see R08614)", 
+    "definition": "1,4-beta-D-Mannan + (n-1) H2O <=> n D-Mannose", 
+    "orthologs": {
+      "K01218": "mannan endo-1,4-beta-mannosidase [EC:3.2.1.78]", 
+      "K19355": "mannan endo-1,4-beta-mannosidase [EC:3.2.1.78]"
+    }, 
+    "name": "beta-D-mannan hydrolases", 
+    "product_stoichiometries": [
+      "n"
+    ], 
+    "enzymes": [
+      "3.2.1.25", 
+      "3.2.1.78"
+    ], 
+    "equation": "C02492 + (n-1) C00001 <=> n C00159", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "(n-1)", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01332", 
+    "pathways": {
+      "rn00051": "Fructose and mannose metabolism"
+    }, 
+    "products": [
+      "C00159"
+    ], 
+    "substrates": [
+      "C00001", 
+      "C02492"
+    ]
+  }
+]

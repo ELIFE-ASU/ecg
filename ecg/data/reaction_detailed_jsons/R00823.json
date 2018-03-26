@@ -1,0 +1,51 @@
+[
+  {
+    "comment": "NADPH (see R00825)", 
+    "definition": "Anthranilate + Oxygen + NADH + H+ <=> Catechol + Ammonia + CO2 + NAD+", 
+    "orthologs": {
+      "K18248": "anthranilate 1,2-dioxygenase ferredoxin component", 
+      "K18249": "anthranilate 1,2-dioxygenase ferredoxin reductase component [EC:1.18.1.-]", 
+      "K05600": "anthranilate 1,2-dioxygenase (deaminating, decarboxylating) small subunit [EC:1.14.12.1]", 
+      "K16320": "anthranilate 1,2-dioxygenase small subunit [EC:1.14.12.1]", 
+      "K16319": "anthranilate 1,2-dioxygenase large subunit [EC:1.14.12.1]", 
+      "K11311": "anthranilate 1,2-dioxygenase reductase component [EC:1.18.1.-]", 
+      "K05599": "anthranilate 1,2-dioxygenase (deaminating, decarboxylating) large subunit [EC:1.14.12.1]"
+    }, 
+    "name": "Anthranilate,NADH:oxygen oxidoreductase (1,2-hydroxylating, deaminating, decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.12.1"
+    ], 
+    "equation": "C00108 + C00007 + C00004 + C00080 <=> C00090 + C00014 + C00011 + C00003", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00823", 
+    "pathways": {
+      "rn00627": "Aminobenzoate degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00090", 
+      "C00014", 
+      "C00011", 
+      "C00003"
+    ], 
+    "substrates": [
+      "C00108", 
+      "C00007", 
+      "C00004", 
+      "C00080"
+    ]
+  }
+]

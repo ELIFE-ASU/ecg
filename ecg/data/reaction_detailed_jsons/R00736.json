@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "", 
+    "definition": "L-Tyrosine <=> Tyramine + CO2", 
+    "orthologs": {
+      "K01592": "tyrosine decarboxylase [EC:4.1.1.25]", 
+      "K01593": "aromatic-L-amino-acid decarboxylase [EC:4.1.1.28]", 
+      "K18933": "tyrosine decarboxylase / aspartate 1-decarboxylase [EC:4.1.1.25 4.1.1.11]"
+    }, 
+    "name": "L-tyrosine carboxy-lyase (tyramine-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.1.1.25", 
+      "4.1.1.28"
+    ], 
+    "equation": "C00082 <=> C00483 + C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00736", 
+    "pathways": {
+      "rn00680": "Methane metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00350": "Tyrosine metabolism", 
+      "rn00950": "Isoquinoline alkaloid biosynthesis"
+    }, 
+    "products": [
+      "C00483", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00082"
+    ]
+  }
+]

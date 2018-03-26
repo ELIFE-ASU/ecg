@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "ec 3.2.1.1 and 3.2.1.133 form alpha-maltose [CPD:C00897] ec 3.2.1.2 forms beta-maltose [CPD:C01971]", 
+    "definition": "Starch <=> Dextrin + Maltose", 
+    "orthologs": {
+      "K01176": "alpha-amylase [EC:3.2.1.1]", 
+      "K01177": "beta-amylase [EC:3.2.1.2]", 
+      "K05343": "maltose alpha-D-glucosyltransferase / alpha-amylase [EC:5.4.99.16 3.2.1.1]", 
+      "K01208": "cyclomaltodextrinase / maltogenic alpha-amylase / neopullulanase [EC:3.2.1.54 3.2.1.133 3.2.1.135]", 
+      "K07405": "alpha-amylase [EC:3.2.1.1]", 
+      "K05992": "maltogenic alpha-amylase&#160; [EC:3.2.1.133]"
+    }, 
+    "name": "1,4-alpha-D-Glucan maltohydrolase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "3.2.1.1", 
+      "3.2.1.2", 
+      "3.2.1.133"
+    ], 
+    "equation": "C00369 <=> C00721 + C00208", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02112", 
+    "pathways": {
+      "rn00500": "Starch and sucrose metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00721", 
+      "C00208"
+    ], 
+    "substrates": [
+      "C00369"
+    ]
+  }
+]

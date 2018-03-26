@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "", 
+    "definition": "Linoleoyl-CoA + 2 Ferrocytochrome b5 + Oxygen + 2 H+ <=> gamma-Linolenoyl-CoA + 2 Ferricytochrome b5 + 2 H2O", 
+    "orthologs": {
+      "K10226": "acyl-CoA 6-desaturase (Delta-6 desaturase) [EC:1.14.19.3]"
+    }, 
+    "name": "linoleoyl-CoA,ferrocytochrome b5:oxygen oxidoreductase (6,7 cis-dehydrogenating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.19.3"
+    ], 
+    "equation": "C02050 + 2 C00999 + C00007 + 2 C00080 <=> C03035 + 2 C00996 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03814", 
+    "pathways": {
+      "rn01040": "Biosynthesis of unsaturated fatty acids", 
+      "rn01212": "Fatty acid metabolism"
+    }, 
+    "products": [
+      "C00996", 
+      "C00001", 
+      "C03035"
+    ], 
+    "substrates": [
+      "C00999", 
+      "C00080", 
+      "C02050", 
+      "C00007"
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "second step of two-step reaction (see R00021, R00256+R10086)", 
+    "definition": "L-Glutamate + 2 Oxidized ferredoxin + H2O <=> Ammonia + 2-Oxoglutarate + 2 Reduced ferredoxin + 2 H+", 
+    "orthologs": {
+      "K00284": "glutamate synthase (ferredoxin) [EC:1.4.7.1]"
+    }, 
+    "name": "L-glutamate:ferredoxin oxidoreductase (deaminating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.4.7.1"
+    ], 
+    "equation": "C00025 + 2 C00139 + C00001 <=> C00014 + C00026 + 2 C00138 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10086", 
+    "pathways": {}, 
+    "products": [
+      "C00138", 
+      "C00080", 
+      "C00014", 
+      "C00026"
+    ], 
+    "substrates": [
+      "C00139", 
+      "C00025", 
+      "C00001"
+    ]
+  }
+]

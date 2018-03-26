@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "multi-step reaction intermediate (2-aminoacrylate Schiff base with PLP)", 
+    "definition": "L-Serine + Indole <=> L-Tryptophan + H2O", 
+    "orthologs": {
+      "K01695": "tryptophan synthase alpha chain [EC:4.2.1.20]", 
+      "K06001": "tryptophan synthase beta chain [EC:4.2.1.20]", 
+      "K01696": "tryptophan synthase beta chain [EC:4.2.1.20]"
+    }, 
+    "name": "L-serine hydro-lyase (adding indole; L-tryptophan-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.2.1.20", 
+      "4.2.1.122"
+    ], 
+    "equation": "C00065 + C00463 <=> C00078 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00674", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00400": "Phenylalanine, tyrosine and tryptophan biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00078", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00065", 
+      "C00463"
+    ]
+  }
+]

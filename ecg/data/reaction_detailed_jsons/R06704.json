@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "", 
+    "definition": "Tetracenomycin A2 + 2 Oxygen + H2O + 2 NADPH + 2 H+ <=> Tetracenomycin C + 2 NADP+ + 2 H2O", 
+    "orthologs": {
+      "K15972": "tetracenomycin A2 monooxygenase-dioxygenase [EC:1.14.13.200]"
+    }, 
+    "name": "tetracenomycin-A2,NADPH:oxygen oxidoreductase (tetracenomycin-C-forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.200"
+    ], 
+    "equation": "C12371 + 2 C00007 + C00001 + 2 C00005 + 2 C00080 <=> C06801 + 2 C00006 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06704", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01057": "Biosynthesis of type II polyketide products"
+    }, 
+    "products": [
+      "C00006", 
+      "C00001", 
+      "C06801"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C00005", 
+      "C00080", 
+      "C12371", 
+      "C00001"
+    ]
+  }
+]

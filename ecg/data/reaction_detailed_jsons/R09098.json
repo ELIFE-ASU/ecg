@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R04384+R10000)", 
+    "definition": "Methanol + Coenzyme M <=> 2-(Methylthio)ethanesulfonate + H2O", 
+    "orthologs": {
+      "K14080": "[methyl-Co(III) methanol-specific corrinoid protein]:coenzyme M methyltransferase [EC:2.1.1.246]", 
+      "K14081": "methanol corrinoid protein", 
+      "K04480": "methanol---5-hydroxybenzimidazolylcobamide Co-methyltransferase [EC:2.1.1.90]"
+    }, 
+    "name": "methanol:coenzyme M methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.90", 
+      "2.1.1.246"
+    ], 
+    "equation": "C00132 + C03576 <=> C03920 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09098", 
+    "pathways": {
+      "rn00680": "Methane metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C03920", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00132", 
+      "C03576"
+    ]
+  }
+]

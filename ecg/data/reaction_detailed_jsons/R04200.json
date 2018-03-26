@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "R04201 (NADP)", 
+    "definition": "(2R,4S)-2,4-Diaminopentanoate + H2O + NAD+ <=> 2-Amino-4-oxopentanoic acid + Ammonia + NADH + H+", 
+    "orthologs": {
+      "K21672": "2,4-diaminopentanoate dehydrogenase [EC:1.4.1.12 1.4.1.26]"
+    }, 
+    "name": "D-threo-2,4-diaminopentanoate:NAD+ oxidoreductase (deaminating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.4.1.12", 
+      "1.4.1.26"
+    ], 
+    "equation": "C03943 + C00001 + C00003 <=> C03341 + C00014 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04200", 
+    "pathways": {
+      "rn00472": "D-Arginine and D-ornithine metabolism"
+    }, 
+    "products": [
+      "C03341", 
+      "C00014", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C03943", 
+      "C00001", 
+      "C00003"
+    ]
+  }
+]

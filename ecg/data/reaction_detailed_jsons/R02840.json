@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "NADPH (see R02842) multi-step reaction (see R03176+R02644)", 
+    "definition": "Cortisol + H+ + NADH <=> 11beta,17alpha,21-Trihydroxypregnenolone + NAD+", 
+    "orthologs": {
+      "K00070": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase [EC:1.1.1.145 5.3.3.1]", 
+      "K01822": "steroid Delta-isomerase [EC:5.3.3.1]"
+    }, 
+    "name": "Cortisol delta5-delat4-isomerase; 11beta,17alpha,21-Trihydroxypregnenolone:NAD+ 3-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.145", 
+      "5.3.3.1"
+    ], 
+    "equation": "C00735 + C00080 + C00004 <=> C05489 + C00003", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02840", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis"
+    }, 
+    "products": [
+      "C05489", 
+      "C00003"
+    ], 
+    "substrates": [
+      "C00735", 
+      "C00080", 
+      "C00004"
+    ]
+  }
+]

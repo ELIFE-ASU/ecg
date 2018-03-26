@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "3 Malonyl-CoA + Cinnamoyl-CoA <=> 4 CoA + Pinosylvin + 4 CO2", 
+    "orthologs": {
+      "K13231": "pinosylvin synthase [EC:2.3.1.146]"
+    }, 
+    "name": "Malonyl-CoA:cinnamoyl-CoA malonyltransferase (cyclizing)", 
+    "product_stoichiometries": [
+      "4", 
+      "4", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.146"
+    ], 
+    "equation": "3 C00083 + C00540 <=> 4 C00010 + C01745 + 4 C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02505", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00945": "Stilbenoid, diarylheptanoid and gingerol biosynthesis"
+    }, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C01745"
+    ], 
+    "substrates": [
+      "C00083", 
+      "C00540"
+    ]
+  }
+]

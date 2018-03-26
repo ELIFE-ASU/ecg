@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "two-step reaction (similar to R04854+R03933)", 
+    "definition": "17alpha,20alpha-Dihydroxycholesterol + 2 Oxygen + 4 H+ + 4 Reduced adrenal ferredoxin <=> 17alpha-Hydroxypregnenolone + 4-Methylpentanal + 3 H2O + 4 Oxidized adrenal ferredoxin", 
+    "orthologs": {
+      "K00498": "cholesterol monooxygenase (side-chain-cleaving) [EC:1.14.15.6]"
+    }, 
+    "name": "17alpha,20alpha-Dihydroxycholesterol:oxygen oxidoreductase (side-chain-cleaving)", 
+    "product_stoichiometries": [
+      "3", 
+      "4", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.6"
+    ], 
+    "equation": "C05499 + 2 C00007 + 4 C00080 + 4 C00662 <=> C05138 + C02373 + 3 C00001 + 4 C00667", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "4", 
+      "4", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04676", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C00667", 
+      "C05138", 
+      "C02373"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C00080", 
+      "C00662", 
+      "C05499"
+    ]
+  }
+]

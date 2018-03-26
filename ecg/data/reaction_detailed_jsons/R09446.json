@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NADH (see R02492) P450nor", 
+    "definition": "2 Nitric oxide + NADPH + H+ <=> Nitrous oxide + NADP+ + H2O", 
+    "orthologs": {
+      "K15877": "fungal nitric oxide reductase [EC:1.7.1.14]"
+    }, 
+    "name": "nitrous-oxide:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.7.1.14"
+    ], 
+    "equation": "2 C00533 + C00005 + C00080 <=> C00887 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09446", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00887", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00533", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

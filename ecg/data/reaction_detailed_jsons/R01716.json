@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "two-step reaction (see R00256 + R05552)", 
+    "definition": "Chorismate + L-Glutamine <=> 4-Amino-4-deoxychorismate + L-Glutamate", 
+    "orthologs": {
+      "K01664": "para-aminobenzoate synthetase component II [EC:2.6.1.85]", 
+      "K01665": "para-aminobenzoate synthetase component I [EC:2.6.1.85]", 
+      "K03342": "para-aminobenzoate synthetase / 4-amino-4-deoxychorismate lyase [EC:2.6.1.85 4.1.3.38]", 
+      "K13950": "para-aminobenzoate synthetase [EC:2.6.1.85]"
+    }, 
+    "name": "chorismate:L-glutamine aminotransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.6.1.85"
+    ], 
+    "equation": "C00251 + C00064 <=> C11355 + C00025", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01716", 
+    "pathways": {
+      "rn00790": "Folate biosynthesis"
+    }, 
+    "products": [
+      "C11355", 
+      "C00025"
+    ], 
+    "substrates": [
+      "C00251", 
+      "C00064"
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "P450 monooxygenase, TerP multi-step reaction", 
+    "definition": "Terpendole E + 4 NADPH + 4 Oxygen + 4 H+ <=> 13-Desoxyterpendole I + Formate + 4 NADP+ + 5 H2O", 
+    "orthologs": {
+      "K18392": "cytochrome P450 monooxygenase [EC:1.14.13.-]"
+    }, 
+    "name": "", 
+    "product_stoichiometries": [
+      "4", 
+      "5", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.-"
+    ], 
+    "equation": "C20536 + 4 C00005 + 4 C00007 + 4 C00080 <=> C20542 + C00058 + 4 C00006 + 5 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "4", 
+      "4", 
+      "4", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10376", 
+    "pathways": {
+      "rn00403": "Indole diterpene alkaloid biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites"
+    }, 
+    "products": [
+      "C00006", 
+      "C00001", 
+      "C20542", 
+      "C00058"
+    ], 
+    "substrates": [
+      "C00005", 
+      "C00007", 
+      "C00080", 
+      "C20536"
+    ]
+  }
+]

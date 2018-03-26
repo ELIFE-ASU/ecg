@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "a part of multi-step reaction (ec 4.2.1.20, see R02722, R02340+R00674)", 
+    "definition": "Indoleglycerol phosphate <=> Indole + D-Glyceraldehyde 3-phosphate", 
+    "orthologs": {
+      "K01695": "tryptophan synthase alpha chain [EC:4.2.1.20]", 
+      "K06001": "tryptophan synthase beta chain [EC:4.2.1.20]", 
+      "K01696": "tryptophan synthase beta chain [EC:4.2.1.20]", 
+      "K13222": "indole-3-glycerol-phosphate lyase [EC:4.1.2.8]"
+    }, 
+    "name": "(1S,2R)-1-C-(indol-3-yl)glycerol 3-phosphate D-glyceraldehyde-3-phosphate-lyase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.1.2.8", 
+      "4.2.1.20"
+    ], 
+    "equation": "C03506 <=> C00463 + C00118", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02340", 
+    "pathways": {
+      "rn00402": "Benzoxazinoid biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00400": "Phenylalanine, tyrosine and tryptophan biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00463", 
+      "C00118"
+    ], 
+    "substrates": [
+      "C03506"
+    ]
+  }
+]

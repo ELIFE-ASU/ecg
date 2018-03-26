@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "subsequently R01652", 
+    "definition": "(2R,3S)-3-Isopropylmalate + NAD+ <=> (2S)-2-Isopropyl-3-oxosuccinate + NADH + H+", 
+    "orthologs": {
+      "K21360": "3-isopropylmalate/methylthioalkylmalate dehydrogenase [EC:1.1.1.85 1.1.1.-]", 
+      "K00052": "3-isopropylmalate dehydrogenase [EC:1.1.1.85]"
+    }, 
+    "name": "(2R,3S)-3-isopropylmalate:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.85"
+    ], 
+    "equation": "C04411 + C00003 <=> C04236 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04426", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00290": "Valine, leucine and isoleucine biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C04236", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C04411", 
+      "C00003"
+    ]
+  }
+]

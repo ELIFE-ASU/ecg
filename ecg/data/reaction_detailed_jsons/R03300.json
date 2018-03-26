@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "NADP+ (see R03302)", 
+    "definition": "3,4-Dihydroxyphenylacetaldehyde + NAD+ + H2O <=> 3,4-Dihydroxyphenylacetate + NADH + H+", 
+    "orthologs": {
+      "K00129": "aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]"
+    }, 
+    "name": "3,4-Dihydroxyphenylacetaldehyde:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.5", 
+      "1.2.1.29"
+    ], 
+    "equation": "C04043 + C00003 + C00001 <=> C01161 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03300", 
+    "pathways": {
+      "rn00350": "Tyrosine metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C01161", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C04043", 
+      "C00003", 
+      "C00001"
+    ]
+  }
+]

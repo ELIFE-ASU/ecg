@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "Oxidized ferredoxin is reduced by NADPH (see R01195)", 
+    "definition": "17alpha,21-Dihydroxypregnenolone + 2 Reduced ferredoxin + Oxygen + 2 H+ <=> 11beta,17alpha,21-Trihydroxypregnenolone + 2 Oxidized ferredoxin + H2O", 
+    "orthologs": {
+      "K00497": "steroid 11beta-monooxygenase [EC:1.14.15.4]", 
+      "K07433": "steroid 11beta-monooxygenase / corticosterone 18-monooxygenase [EC:1.14.15.4 1.14.15.5]"
+    }, 
+    "name": "17alpha,21-dihydroxypregnenolone:oxygen oxidoreductase (11-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.4"
+    ], 
+    "equation": "C05487 + 2 C00138 + C00007 + 2 C00080 <=> C05489 + 2 C00139 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04850", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis"
+    }, 
+    "products": [
+      "C00139", 
+      "C05489", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00138", 
+      "C00080", 
+      "C05487", 
+      "C00007"
+    ]
+  }
+]

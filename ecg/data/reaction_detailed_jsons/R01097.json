@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NAD+ (ec 1.1.1.48, see R01094) possibly two-step reaction (R01096+intramolecular rearrangement)", 
+    "definition": "D-Galactose + NADP+ <=> D-Galactono-1,4-lactone + NADPH + H+", 
+    "orthologs": {
+      "K00035": "D-galactose 1-dehydrogenase [EC:1.1.1.48]", 
+      "K22215": "galactose dehydrogenase [EC:1.1.1.48 1.1.1.120]"
+    }, 
+    "name": "D-Galactose:NADP+ 1-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.48", 
+      "1.1.1.120"
+    ], 
+    "equation": "C00124 + C00006 <=> C03383 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01097", 
+    "pathways": {
+      "rn00052": "Galactose metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C03383", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00124", 
+      "C00006"
+    ]
+  }
+]

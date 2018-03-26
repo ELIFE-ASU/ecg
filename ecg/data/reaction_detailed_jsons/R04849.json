@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "multi-step reaction (see R03176+R02644)", 
+    "definition": "11-Deoxycortisol + H+ + NADH <=> 17alpha,21-Dihydroxypregnenolone + NAD+", 
+    "orthologs": {
+      "K00070": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase [EC:1.1.1.145 5.3.3.1]", 
+      "K01822": "steroid Delta-isomerase [EC:5.3.3.1]"
+    }, 
+    "name": "11-Deoxycortisol delta5-delat4-isomerase; 17alpha,21-Dihydroxypregnenolone:NAD+ 3-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.145", 
+      "5.3.3.1"
+    ], 
+    "equation": "C05488 + C00080 + C00004 <=> C05487 + C00003", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04849", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis"
+    }, 
+    "products": [
+      "C05487", 
+      "C00003"
+    ], 
+    "substrates": [
+      "C05488", 
+      "C00080", 
+      "C00004"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "Imidazole glycerol phosphate synthase, hisH/hisF two-step reaction: (1a) Glutamine + H2O = Glutamate + NH3, (1b) NH3 + PRFAR = IGP + AICAR + H2O", 
+    "definition": "N-(5'-Phospho-D-1'-ribulosylformimino)-5-amino-1-(5''-phospho-D-ribosyl)-4-imidazolecarboxamide + L-Glutamine <=> D-erythro-1-(Imidazol-4-yl)glycerol 3-phosphate + 1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide + L-Glutamate", 
+    "orthologs": {
+      "K02500": "cyclase [EC:4.1.3.-]", 
+      "K02501": "glutamine amidotransferase [EC:2.4.2.-]", 
+      "K01663": "glutamine amidotransferase / cyclase [EC:2.4.2.- 4.1.3.-]"
+    }, 
+    "name": "", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.4.2.-", 
+      "4.1.3.-"
+    ], 
+    "equation": "C04916 + C00064 <=> C04666 + C04677 + C00025", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04558", 
+    "pathways": {
+      "rn00340": "Histidine metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C04666", 
+      "C04677", 
+      "C00025"
+    ], 
+    "substrates": [
+      "C04916", 
+      "C00064"
+    ]
+  }
+]

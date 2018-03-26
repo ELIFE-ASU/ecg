@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "(S)-3-Methyl-2-oxopentanoic acid + CoA + 2 Oxidized ferredoxin <=> (S)-2-Methylbutanoyl-CoA + CO2 + 2 Reduced ferredoxin + H+", 
+    "orthologs": {
+      "K00186": "2-oxoisovalerate ferredoxin oxidoreductase, alpha subunit [EC:1.2.7.7]", 
+      "K00187": "2-oxoisovalerate ferredoxin oxidoreductase, beta subunit [EC:1.2.7.7]", 
+      "K00188": "2-oxoisovalerate ferredoxin oxidoreductase, delta subunit [EC:1.2.7.7]", 
+      "K00189": "2-oxoisovalerate ferredoxin oxidoreductase, gamma subunit [EC:1.2.7.7]"
+    }, 
+    "name": "(S)-3-methyl-2-oxopentanoate:ferredoxin oxidoreductase (decarboxylating; CoA-2-methylbutanoylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.7.7"
+    ], 
+    "equation": "C00671 + C00010 + 2 C00139 <=> C15980 + C00011 + 2 C00138 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08567", 
+    "pathways": {
+      "rn00280": "Valine, leucine and isoleucine degradation", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00138", 
+      "C15980", 
+      "C00011", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00139", 
+      "C00671", 
+      "C00010"
+    ]
+  }
+]

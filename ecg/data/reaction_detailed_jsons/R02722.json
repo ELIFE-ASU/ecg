@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "multi-step reaction (see R02340+R00674)", 
+    "definition": "L-Serine + Indoleglycerol phosphate <=> L-Tryptophan + D-Glyceraldehyde 3-phosphate + H2O", 
+    "orthologs": {
+      "K01695": "tryptophan synthase alpha chain [EC:4.2.1.20]", 
+      "K01694": "tryptophan synthase [EC:4.2.1.20]", 
+      "K01696": "tryptophan synthase beta chain [EC:4.2.1.20]", 
+      "K06001": "tryptophan synthase beta chain [EC:4.2.1.20]"
+    }, 
+    "name": "L-serine hydro-lyase [adding 1-C-(indol-3-yl)glycerol 3-phosphate; L-tryptophan and glyceraldehyde-3-phosphate-forming]", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.2.1.20"
+    ], 
+    "equation": "C00065 + C03506 <=> C00078 + C00118 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02722", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00260": "Glycine, serine and threonine metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00400": "Phenylalanine, tyrosine and tryptophan biosynthesis", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00078", 
+      "C00118", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00065", 
+      "C03506"
+    ]
+  }
+]

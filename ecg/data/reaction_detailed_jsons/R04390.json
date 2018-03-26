@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "The last step of three step reaction (R03098 + R04863 + R04390) For reverse direction, one-step reaction (see R03103)", 
+    "definition": "alpha-Aminoadipoyl-S-acyl enzyme + NADPH + H+ <=> L-2-Aminoadipate 6-semialdehyde + Holo-Lys2 + NADP+", 
+    "orthologs": {
+      "K00143": "L-2-aminoadipate reductase [EC:1.2.1.95]"
+    }, 
+    "name": "L-2-aminoadipate-6-semialdehyde:NADP+ 6-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.95"
+    ], 
+    "equation": "C05535 + C00005 + C00080 <=> C04076 + C11482 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04390", 
+    "pathways": {
+      "rn00300": "Lysine biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C04076", 
+      "C11482", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C05535", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

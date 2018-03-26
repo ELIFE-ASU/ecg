@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "second step of two-step reaction (R06223, R00702+R02872) following after R00702", 
+    "definition": "Presqualene diphosphate + NADPH + H+ <=> Diphosphate + Squalene + NADP+", 
+    "orthologs": {
+      "K00801": "farnesyl-diphosphate farnesyltransferase [EC:2.5.1.21]"
+    }, 
+    "name": "presqualene-diphosphate diphosphate-lyase (reducing, squalene-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.3.1.96", 
+      "2.5.1.21"
+    ], 
+    "equation": "C03428 + C00005 + C00080 <=> C00013 + C00751 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02872", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00100": "Steroid biosynthesis", 
+      "rn00909": "Sesquiterpenoid and triterpenoid biosynthesis"
+    }, 
+    "products": [
+      "C00013", 
+      "C00751", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C03428", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

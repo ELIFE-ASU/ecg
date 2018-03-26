@@ -1,0 +1,35 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "L-Serine + Selenohomocysteine <=> L-Selenocystathionine + H2O", 
+    "orthologs": {
+      "K01697": "cystathionine beta-synthase [EC:4.2.1.22]", 
+      "K10150": "cysteine synthase / O-phosphoserine sulfhydrylase / cystathionine beta-synthase [EC:2.5.1.47 2.5.1.65 4.2.1.22]"
+    }, 
+    "name": "L-Serine hydro-lyase (adding homocysteine)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.2.1.22"
+    ], 
+    "equation": "C00065 + C05698 <=> C05699 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04942", 
+    "pathways": {}, 
+    "products": [
+      "C05699", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00065", 
+      "C05698"
+    ]
+  }
+]

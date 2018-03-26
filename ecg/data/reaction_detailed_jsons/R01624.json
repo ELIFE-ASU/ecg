@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "", 
+    "definition": "Acetyl-CoA + Acyl-carrier protein <=> CoA + Acetyl-[acyl-carrier protein]", 
+    "orthologs": {
+      "K00665": "fatty acid synthase, animal type [EC:2.3.1.85]", 
+      "K11533": "fatty acid synthase, bacteria type [EC:2.3.1.-]", 
+      "K00668": "fatty acid synthase subunit beta, fungi type [EC:2.3.1.86]"
+    }, 
+    "name": "acetyl-CoA:[acyl-carrier-protein] S-acetyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.38", 
+      "2.3.1.85", 
+      "2.3.1.86", 
+      "2.3.1.-"
+    ], 
+    "equation": "C00024 + C00229 <=> C00010 + C03939", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01624", 
+    "pathways": {
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00010", 
+      "C03939"
+    ], 
+    "substrates": [
+      "C00024", 
+      "C00229"
+    ]
+  }
+]

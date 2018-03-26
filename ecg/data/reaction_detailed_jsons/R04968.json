@@ -1,0 +1,48 @@
+[
+  {
+    "comment": "", 
+    "definition": "Tetradecanoyl-[acp] + Malonyl-[acyl-carrier protein] <=> 3-Oxohexadecanoyl-[acp] + CO2 + Acyl-carrier protein", 
+    "orthologs": {
+      "K00667": "fatty acid synthase subunit alpha, fungi type [EC:2.3.1.86]", 
+      "K00647": "3-oxoacyl-[acyl-carrier-protein] synthase I [EC:2.3.1.41]", 
+      "K00665": "fatty acid synthase, animal type [EC:2.3.1.85]", 
+      "K11533": "fatty acid synthase, bacteria type [EC:2.3.1.-]", 
+      "K09458": "3-oxoacyl-[acyl-carrier-protein] synthase II [EC:2.3.1.179]"
+    }, 
+    "name": "Tetradecanoyl-[acyl-carrier protein]:malonyl-[acyl-carrier-protein] C-acyltransferase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.41", 
+      "2.3.1.85", 
+      "2.3.1.86", 
+      "2.3.1.179", 
+      "2.3.1.-"
+    ], 
+    "equation": "C05761 + C01209 <=> C05762 + C00011 + C00229", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04968", 
+    "pathways": {
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C05762", 
+      "C00011", 
+      "C00229"
+    ], 
+    "substrates": [
+      "C05761", 
+      "C01209"
+    ]
+  }
+]

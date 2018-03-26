@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "multi-step reaction possibly intermediate (see [CPD:C17234], R08637)", 
+    "definition": "L-Threonine <=> 2-Oxobutanoate + Ammonia", 
+    "orthologs": {
+      "K01754": "threonine dehydratase [EC:4.3.1.19]", 
+      "K17989": "L-serine/L-threonine ammonia-lyase [EC:4.3.1.17 4.3.1.19]"
+    }, 
+    "name": "L-threonine ammonia-lyase (2-oxobutanoate-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.3.1.19"
+    ], 
+    "equation": "C00188 <=> C00109 + C00014", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00996", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00290": "Valine, leucine and isoleucine biosynthesis", 
+      "rn00260": "Glycine, serine and threonine metabolism", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00109", 
+      "C00014"
+    ], 
+    "substrates": [
+      "C00188"
+    ]
+  }
+]

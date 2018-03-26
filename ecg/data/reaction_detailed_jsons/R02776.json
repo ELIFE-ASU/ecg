@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "NAD+ (see R10190)", 
+    "definition": "dTDP-6-deoxy-beta-L-talose + NADP+ <=> dTDP-4-dehydro-beta-L-rhamnose + NADPH + H+", 
+    "orthologs": {
+      "K19652": "dTDP-6-deoxy-L-talose 4-dehydrogenase [NAD(P)+] [EC:1.1.1.344]"
+    }, 
+    "name": "dTDP-6-deoxy-L-talose:NADP+ 4-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.134", 
+      "1.1.1.344"
+    ], 
+    "equation": "C03187 + C00006 <=> C00688 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02776", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00523": "Polyketide sugar unit biosynthesis"
+    }, 
+    "products": [
+      "C00688", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C03187", 
+      "C00006"
+    ]
+  }
+]

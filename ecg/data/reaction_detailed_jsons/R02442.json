@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "flavonoid 3'-hydroxylase flavonoid 3'-monooxygenase", 
+    "definition": "Naringenin + NADPH + H+ + Oxygen <=> Eriodictyol + NADP+ + H2O", 
+    "orthologs": {
+      "K13083": "flavonoid 3',5'-hydroxylase [EC:1.14.13.88]", 
+      "K05280": "flavonoid 3'-monooxygenase [EC:1.14.13.21]"
+    }, 
+    "name": "naringenin,NADPH:oxygen oxidoreductase (3'-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.21", 
+      "1.14.13.88"
+    ], 
+    "equation": "C00509 + C00005 + C00080 + C00007 <=> C05631 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02442", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00941": "Flavonoid biosynthesis"
+    }, 
+    "products": [
+      "C05631", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00509", 
+      "C00005", 
+      "C00080", 
+      "C00007"
+    ]
+  }
+]

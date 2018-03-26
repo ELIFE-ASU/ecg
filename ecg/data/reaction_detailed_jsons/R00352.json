@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "multi-step reaction (see R01322+R00354)", 
+    "definition": "ATP + Citrate + CoA <=> ADP + Orthophosphate + Acetyl-CoA + Oxaloacetate", 
+    "orthologs": {
+      "K01648": "ATP citrate (pro-S)-lyase [EC:2.3.3.8]", 
+      "K15231": "ATP-citrate lyase beta-subunit [EC:2.3.3.8]", 
+      "K15230": "ATP-citrate lyase alpha-subunit [EC:2.3.3.8]"
+    }, 
+    "name": "acetyl-CoA:oxaloacetate C-acetyltransferase [(pro-S)-carboxymethyl-forming, ADP-phosphorylating]", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.3.8"
+    ], 
+    "equation": "C00002 + C00158 + C00010 <=> C00008 + C00009 + C00024 + C00036", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00352", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00020": "Citrate cycle (TCA cycle)", 
+      "rn00720": "Carbon fixation pathways in prokaryotes"
+    }, 
+    "products": [
+      "C00008", 
+      "C00009", 
+      "C00024", 
+      "C00036"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00158", 
+      "C00010"
+    ]
+  }
+]

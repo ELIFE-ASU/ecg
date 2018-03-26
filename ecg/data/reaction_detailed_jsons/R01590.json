@@ -1,0 +1,36 @@
+[
+  {
+    "comment": "the former part (dioxygenase x2) of multi-step reaction (see R01599, R01590+R00073) subsequently R00073", 
+    "definition": "Arachidonate + 2 Oxygen <=> Prostaglandin G2", 
+    "orthologs": {
+      "K11987": "prostaglandin-endoperoxide synthase 2 [EC:1.14.99.1]", 
+      "K00509": "prostaglandin-endoperoxide synthase 1 [EC:1.14.99.1]"
+    }, 
+    "name": "Arachidonate:oxygen oxidoreductase", 
+    "product_stoichiometries": [
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.99.1"
+    ], 
+    "equation": "C00219 + 2 C00007 <=> C05956", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01590", 
+    "pathways": {
+      "rn00590": "Arachidonic acid metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C05956"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C00219"
+    ]
+  }
+]

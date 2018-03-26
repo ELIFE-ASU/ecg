@@ -1,0 +1,34 @@
+[
+  {
+    "comment": "two-step reaction (similar to R01323+R00354, using citrate lyase [acyl-carrier protein] (K01646) instead of CoA)", 
+    "definition": "Citrate <=> Acetate + Oxaloacetate", 
+    "orthologs": {
+      "K01643": "citrate lyase subunit alpha / citrate CoA-transferase [EC:2.8.3.10]", 
+      "K01646": "citrate lyase subunit gamma (acyl carrier protein)", 
+      "K01644": "citrate lyase subunit beta / citryl-CoA lyase [EC:4.1.3.34]"
+    }, 
+    "name": "citrate oxaloacetate-lyase (forming acetate from the pro-S carboxymethyl group of citrate); Citrate oxaloacetate-lyase ((pro-3S)-CH2COO- -->acetate)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.1.3.6"
+    ], 
+    "equation": "C00158 <=> C00033 + C00036", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00362", 
+    "pathways": {}, 
+    "products": [
+      "C00033", 
+      "C00036"
+    ], 
+    "substrates": [
+      "C00158"
+    ]
+  }
+]

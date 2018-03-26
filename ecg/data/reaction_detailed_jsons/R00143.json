@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "not using NADH directly, but electron-transferring (ec 1.7.99.1, see R00284)", 
+    "definition": "Ammonia + NAD+ + H2O <=> Hydroxylamine + NADH + H+", 
+    "orthologs": {
+      "K05601": "hydroxylamine reductase [EC:1.7.99.1]", 
+      "K15864": "nitrite reductase (NO-forming) / hydroxylamine reductase [EC:1.7.2.1 1.7.99.1]"
+    }, 
+    "name": "ammonia:NAD+ oxidoreductase; NADH:hydroxylamine oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.7.1.10", 
+      "1.7.99.1"
+    ], 
+    "equation": "C00014 + C00003 + C00001 <=> C00192 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00143", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism"
+    }, 
+    "products": [
+      "C00192", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00014", 
+      "C00003", 
+      "C00001"
+    ]
+  }
+]

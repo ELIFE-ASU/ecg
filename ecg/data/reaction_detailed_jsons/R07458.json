@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "possibly two-step reaction (similar to R10669, R07450+R07451)", 
+    "definition": "6-Deoxotyphasterol + 2 Oxygen + 2 [Reduced NADPH---hemoprotein reductase] <=> Typhasterol + 3 H2O + 2 [Oxidized NADPH---hemoprotein reductase]", 
+    "orthologs": {
+      "K12640": "brassinosteroid-6-oxidase 2 [EC:1.14.-.-]", 
+      "K09590": "brassinosteroid-6-oxidase 1 [EC:1.14.-.-]"
+    }, 
+    "name": "6-deoxotyphasterol,NADPH---hemoprotein reductase:oxygen oxidoreductase (typhasterol-forming)", 
+    "product_stoichiometries": [
+      "3", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.-.-"
+    ], 
+    "equation": "C15801 + 2 C00007 + 2 C03024 <=> C15793 + 3 C00001 + 2 C03161", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07458", 
+    "pathways": {
+      "rn00905": "Brassinosteroid biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C03161", 
+      "C15793"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C03024", 
+      "C15801"
+    ]
+  }
+]

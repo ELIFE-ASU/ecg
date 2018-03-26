@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "NADP+ (see R02034)", 
+    "definition": "6-Phospho-D-gluconate + NAD+ <=> 6-Phospho-2-dehydro-D-gluconate + NADH + H+", 
+    "orthologs": {
+      "K00032": "phosphogluconate 2-dehydrogenase [EC:1.1.1.43]"
+    }, 
+    "name": "6-Phospho-2-dehydro-D-gluconate:NAD+ 2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.43"
+    ], 
+    "equation": "C00345 + C00003 <=> C01218 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02032", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn00030": "Pentose phosphate pathway"
+    }, 
+    "products": [
+      "C01218", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00345", 
+      "C00003"
+    ]
+  }
+]

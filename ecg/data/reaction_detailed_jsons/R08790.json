@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "CYP80G2", 
+    "definition": "(S)-Reticuline + [Reduced NADPH---hemoprotein reductase] + Oxygen <=> (S)-Corytuberine + [Oxidized NADPH---hemoprotein reductase] + 2 H2O", 
+    "orthologs": {
+      "K13389": "(S)-corytuberine synthase [EC:1.14.19.51]"
+    }, 
+    "name": "(S)-reticuline,NADPH:oxygen oxidoreductase (C-C phenol-coupling; (S)-corytuberine-forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.19.51"
+    ], 
+    "equation": "C02105 + C03024 + C00007 <=> C17591 + C03161 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08790", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00950": "Isoquinoline alkaloid biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C17591", 
+      "C03161"
+    ], 
+    "substrates": [
+      "C02105", 
+      "C03024", 
+      "C00007"
+    ]
+  }
+]

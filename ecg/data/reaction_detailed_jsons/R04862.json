@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "first step of R01934 (R04862 + R01936) subsequently R01936", 
+    "definition": "Homoisocitrate + NAD+ <=> Oxaloglutarate + NADH + H+", 
+    "orthologs": {
+      "K10978": "methanogen homoisocitrate dehydrogenase [EC:1.1.1.87 1.1.1.-]", 
+      "K17753": "isocitrate--homoisocitrate dehydrogenase [EC:1.1.1.286]", 
+      "K05824": "homoisocitrate dehydrogenase [EC:1.1.1.87]"
+    }, 
+    "name": "(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate:NAD+ oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.87", 
+      "1.1.1.286"
+    ], 
+    "equation": "C05662 + C00003 <=> C05533 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04862", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism"
+    }, 
+    "products": [
+      "C05533", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C05662", 
+      "C00003"
+    ]
+  }
+]

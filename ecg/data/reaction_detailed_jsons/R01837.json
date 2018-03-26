@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NADP+ (see R01839)", 
+    "definition": "Dehydroepiandrosterone + NAD+ <=> Androstenedione + NADH + H+", 
+    "orthologs": {
+      "K00070": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase [EC:1.1.1.145 5.3.3.1]", 
+      "K01822": "steroid Delta-isomerase [EC:5.3.3.1]"
+    }, 
+    "name": "3beta-Hydroxyandrost-5-en-17-one:NAD+ 3-oxidoreductase/delta5-delta-4 isomerase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.145", 
+      "5.3.3.1"
+    ], 
+    "equation": "C01227 + C00003 <=> C00280 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01837", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00280", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01227", 
+      "C00003"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "possibly two-step reaction (acetoacetyl-CoA-lyase, thioester-hydrolysing)", 
+    "definition": "(S)-3-Hydroxy-3-methylglutaryl-CoA + CoA <=> Acetyl-CoA + H2O + Acetoacetyl-CoA", 
+    "orthologs": {
+      "K01641": "hydroxymethylglutaryl-CoA synthase [EC:2.3.3.10]"
+    }, 
+    "name": "acetyl-CoA:acetoacetyl-CoA C-acetyltransferase (thioester-hydrolysing, carboxymethyl-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.3.10"
+    ], 
+    "equation": "C00356 + C00010 <=> C00024 + C00001 + C00332", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01978", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00072": "Synthesis and degradation of ketone bodies", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00280": "Valine, leucine and isoleucine degradation", 
+      "rn00650": "Butanoate metabolism", 
+      "rn00900": "Terpenoid backbone biosynthesis"
+    }, 
+    "products": [
+      "C00024", 
+      "C00001", 
+      "C00332"
+    ], 
+    "substrates": [
+      "C00356", 
+      "C00010"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "", 
+    "definition": "Anhydrotetracycline + Oxygen + NADPH + H+ <=> 5a,11a-Dehydrotetracycline + NADP+ + H2O", 
+    "orthologs": {
+      "K14256": "anhydrotetracycline 6-monooxygenase / 5a,11a-dehydrotetracycline 5-monooxygenase [EC:1.14.13.38 1.14.13.234]"
+    }, 
+    "name": "anhydrotetracycline,NADPH:oxygen oxidoreductase (6-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.38"
+    ], 
+    "equation": "C02811 + C00007 + C00005 + C00080 <=> C03206 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04060", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01057": "Biosynthesis of type II polyketide products", 
+      "rn00253": "Tetracycline biosynthesis"
+    }, 
+    "products": [
+      "C03206", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C02811", 
+      "C00007", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

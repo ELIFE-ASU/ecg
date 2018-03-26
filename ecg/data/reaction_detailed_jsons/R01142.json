@@ -1,0 +1,51 @@
+[
+  {
+    "comment": "NADPH (see R01143)", 
+    "definition": "Methane + Oxygen + NADH + H+ <=> Methanol + NAD+ + H2O", 
+    "orthologs": {
+      "K16159": "methane monooxygenase component A gamma chain [EC:1.14.13.25]", 
+      "K16157": "methane monooxygenase component A alpha chain [EC:1.14.13.25]", 
+      "K16162": "methane monooxygenase component D", 
+      "K16158": "methane monooxygenase component A beta chain [EC:1.14.13.25]", 
+      "K16160": "methane monooxygenase regulatory protein B", 
+      "K16161": "methane monooxygenase component C [EC:1.14.13.25]"
+    }, 
+    "name": "Methane,NADH:oxygen oxidoreductase (hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.25"
+    ], 
+    "equation": "C01438 + C00007 + C00004 + C00080 <=> C00132 + C00003 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01142", 
+    "pathways": {
+      "rn00680": "Methane metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01220": "Degradation of aromatic compounds", 
+      "rn01100": "Metabolic pathways", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00132", 
+      "C00003", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C01438", 
+      "C00007", 
+      "C00004", 
+      "C00080"
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "two-step reaction (see R11712+R11713)", 
+    "definition": "2 L-Arginine + 3 Reduced flavodoxin + 4 Oxygen <=> 2 L-Citrulline + 2 Nitric oxide + 3 Oxidized flavodoxin + 4 H2O", 
+    "orthologs": {
+      "K00491": "nitric-oxide synthase, bacterial [EC:1.14.14.47]"
+    }, 
+    "name": "L-arginine,reduced-flavodoxin:oxygen oxidoreductase (nitric-oxide-forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "3", 
+      "4"
+    ], 
+    "enzymes": [
+      "1.14.14.47"
+    ], 
+    "equation": "2 C00062 + 3 C02745 + 4 C00007 <=> 2 C00327 + 2 C00533 + 3 C02869 + 4 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "3", 
+      "4"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11711", 
+    "pathways": {
+      "rn00220": "Arginine biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00327", 
+      "C00533", 
+      "C02869", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00062", 
+      "C02745", 
+      "C00007"
+    ]
+  }
+]

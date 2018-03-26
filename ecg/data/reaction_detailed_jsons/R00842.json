@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NADP+ (ec 1.1.1.94, see R00844)", 
+    "definition": "sn-Glycerol 3-phosphate + NAD+ <=> Glycerone phosphate + NADH + H+", 
+    "orthologs": {
+      "K00006": "glycerol-3-phosphate dehydrogenase (NAD+) [EC:1.1.1.8]", 
+      "K00057": "glycerol-3-phosphate dehydrogenase (NAD(P)+) [EC:1.1.1.94]"
+    }, 
+    "name": "sn-Glycerol-3-phosphate:NAD+ 2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.8", 
+      "1.1.1.94"
+    ], 
+    "equation": "C00093 + C00003 <=> C00111 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00842", 
+    "pathways": {
+      "rn00564": "Glycerophospholipid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites"
+    }, 
+    "products": [
+      "C00111", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00093", 
+      "C00003"
+    ]
+  }
+]

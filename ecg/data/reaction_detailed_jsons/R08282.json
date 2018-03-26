@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "NADP+ (see R08283)", 
+    "definition": "Aldophosphamide + NAD+ + H2O <=> Carboxyphosphamide + NADH + H+", 
+    "orthologs": {
+      "K00129": "aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]"
+    }, 
+    "name": "carboxyphosphamide:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.5"
+    ], 
+    "equation": "C07645 + C00003 + C00001 <=> C07646 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08282", 
+    "pathways": {
+      "rn00982": "Drug metabolism - cytochrome P450"
+    }, 
+    "products": [
+      "C07646", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C07645", 
+      "C00003", 
+      "C00001"
+    ]
+  }
+]

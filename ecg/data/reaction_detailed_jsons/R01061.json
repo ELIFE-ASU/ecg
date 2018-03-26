@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "NADP+ (ec 1.2.1.59, see R01063)", 
+    "definition": "D-Glyceraldehyde 3-phosphate + Orthophosphate + NAD+ <=> 3-Phospho-D-glyceroyl phosphate + NADH + H+", 
+    "orthologs": {
+      "K00150": "glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) [EC:1.2.1.59]", 
+      "K00134": "glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]", 
+      "K10705": "glyceraldehyde-3-phosphate dehydrogenase, spermatogenic [EC:1.2.1.12]"
+    }, 
+    "name": "D-glyceraldehyde-3-phosphate:NAD+ oxidoreductase (phosphorylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.12", 
+      "1.2.1.59"
+    ], 
+    "equation": "C00118 + C00009 + C00003 <=> C00236 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01061", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00710": "Carbon fixation in photosynthetic organisms", 
+      "rn00010": "Glycolysis / Gluconeogenesis", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00236", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00118", 
+      "C00009", 
+      "C00003"
+    ]
+  }
+]

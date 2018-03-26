@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "NADP+ (see R01838)", 
+    "definition": "Testosterone + NAD+ <=> Androstenedione + NADH + H+", 
+    "orthologs": {
+      "K04119": "aldo-keto reductase family 1 member C3 [EC:1.1.1.51 1.1.1.188 1.1.1.213 1.1.1.357]", 
+      "K05296": "3(or 17)beta-hydroxysteroid dehydrogenase [EC:1.1.1.51]", 
+      "K13370": "17beta-estradiol 17-dehydrogenase / 3alpha(17beta)-hydroxysteroid dehydrogenase (NAD+) [EC:1.1.1.62 1.1.1.239]", 
+      "K13368": "17beta-estradiol 17-dehydrogenase / 3alpha(17beta)-hydroxysteroid dehydrogenase (NAD+) [EC:1.1.1.62 1.1.1.239]", 
+      "K13369": "17beta-estradiol 17-dehydrogenase / all-trans-retinol dehydrogenase (NAD+) / 3alpha(17beta)-hydroxysteroid dehydrogenase (NAD+) [EC:1.1.1.62 1.1.1.105 1.1.1.239]"
+    }, 
+    "name": "testosterone:NAD+ 17-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.51", 
+      "1.1.1.239"
+    ], 
+    "equation": "C00535 + C00003 <=> C00280 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01836", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn00984": "Steroid degradation", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00280", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00535", 
+      "C00003"
+    ]
+  }
+]

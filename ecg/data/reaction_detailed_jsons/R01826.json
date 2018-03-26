@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "Phosphoenolpyruvate + D-Erythrose 4-phosphate + H2O <=> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Orthophosphate", 
+    "orthologs": {
+      "K13853": "3-deoxy-7-phosphoheptulonate synthase / chorismate mutase [EC:2.5.1.54 5.4.99.5]", 
+      "K01626": "3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]", 
+      "K03856": "3-deoxy-7-phosphoheptulonate synthase [EC:2.5.1.54]"
+    }, 
+    "name": "Phosphoenolpyruvate:D-erythrose-4-phosphate C-(1-carboxyvinyl)transferase (phosphate hydrolysing, 2-carboxy-2-oxoethyl-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.5.1.54"
+    ], 
+    "equation": "C00074 + C00279 + C00001 <=> C04691 + C00009", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01826", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00400": "Phenylalanine, tyrosine and tryptophan biosynthesis", 
+      "rn01100": "Metabolic pathways", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C04691", 
+      "C00009"
+    ], 
+    "substrates": [
+      "C00074", 
+      "C00279", 
+      "C00001"
+    ]
+  }
+]

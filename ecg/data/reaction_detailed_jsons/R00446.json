@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "first step of two-step reaction (see R10054, R00446+R02317)", 
+    "definition": "L-Lysine + NAD+ + H2O <=> L-2-Aminoadipate 6-semialdehyde + NADH + Ammonia + H+", 
+    "orthologs": {
+      "K19064": "lysine 6-dehydrogenase [EC:1.4.1.18]"
+    }, 
+    "name": "L-lysine:NAD+ 6-oxidoreductase (deaminating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.4.1.18"
+    ], 
+    "equation": "C00047 + C00003 + C00001 <=> C04076 + C00004 + C00014 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00446", 
+    "pathways": {
+      "rn00960": "Tropane, piperidine and pyridine alkaloid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C04076", 
+      "C00004", 
+      "C00014", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00047", 
+      "C00003", 
+      "C00001"
+    ]
+  }
+]

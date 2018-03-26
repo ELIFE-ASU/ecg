@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "", 
+    "definition": "Benzoyl-CoA + NADPH + H+ + Oxygen <=> 2,3-Epoxy-2,3-dihydrobenzoyl-CoA + NADP+ + H2O", 
+    "orthologs": {
+      "K15512": "benzoyl-CoA 2,3-epoxidase subunit B [EC:1.14.13.208]", 
+      "K15511": "benzoyl-CoA 2,3-epoxidase subunit A [EC:1.14.13.208]"
+    }, 
+    "name": "benzoyl-CoA,NADPH:oxygen oxidoreductase (2,3-epoxydizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.208"
+    ], 
+    "equation": "C00512 + C00005 + C00080 + C00007 <=> C19684 + C00006 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09555", 
+    "pathways": {
+      "rn00362": "Benzoate degradation"
+    }, 
+    "products": [
+      "C19684", 
+      "C00006", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00512", 
+      "C00005", 
+      "C00080", 
+      "C00007"
+    ]
+  }
+]

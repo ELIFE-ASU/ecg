@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "", 
+    "definition": "UDP-glucose + H2O + 2 NAD+ <=> UDP-glucuronate + 2 NADH + 2 H+", 
+    "orthologs": {
+      "K00012": "UDPglucose 6-dehydrogenase [EC:1.1.1.22]"
+    }, 
+    "name": "UDP-glucose:NAD+ 6-oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.22"
+    ], 
+    "equation": "C00029 + C00001 + 2 C00003 <=> C00167 + 2 C00004 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00286", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism", 
+      "rn00040": "Pentose and glucuronate interconversions", 
+      "rn01100": "Metabolic pathways", 
+      "rn00053": "Ascorbate and aldarate metabolism"
+    }, 
+    "products": [
+      "C00004", 
+      "C00080", 
+      "C00167"
+    ], 
+    "substrates": [
+      "C00003", 
+      "C00029", 
+      "C00001"
+    ]
+  }
+]

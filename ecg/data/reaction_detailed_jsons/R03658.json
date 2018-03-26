@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "", 
+    "definition": "ATP + L-Lysine + tRNA(Lys) <=> AMP + Diphosphate + L-Lysyl-tRNA", 
+    "orthologs": {
+      "K04566": "lysyl-tRNA synthetase, class I [EC:6.1.1.6]", 
+      "K04567": "lysyl-tRNA synthetase, class II [EC:6.1.1.6]"
+    }, 
+    "name": "L-lysine:tRNALys ligase (AMP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.1.1.6"
+    ], 
+    "equation": "C00002 + C00047 + C01646 <=> C00020 + C00013 + C01931", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03658", 
+    "pathways": {
+      "rn00970": "Aminoacyl-tRNA biosynthesis"
+    }, 
+    "products": [
+      "C00020", 
+      "C00013", 
+      "C01931"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00047", 
+      "C01646"
+    ]
+  }
+]

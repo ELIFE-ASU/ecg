@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "non-enzymatic multi-step reaction this reaction is hastened by superoxide dismutase (ec 1.15.1.1) and catalase (ec 1.11.1.6)", 
+    "definition": "2 3-Hydroxyanthranilate + 4 Oxygen <=> Cinnavalininate + 2 O2.- + 2 Hydrogen peroxide + 2 H+", 
+    "orthologs": {
+      "K03781": "catalase [EC:1.11.1.6]", 
+      "K03782": "catalase-peroxidase [EC:1.11.1.21]"
+    }, 
+    "name": "", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.11.1.6", 
+      "1.11.1.21"
+    ], 
+    "equation": "2 C00632 + 4 C00007 <=> C05640 + 2 C00704 + 2 C00027 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "4"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02670", 
+    "pathways": {
+      "rn00380": "Tryptophan metabolism"
+    }, 
+    "products": [
+      "C00704", 
+      "C00027", 
+      "C00080", 
+      "C05640"
+    ], 
+    "substrates": [
+      "C00632", 
+      "C00007"
+    ]
+  }
+]

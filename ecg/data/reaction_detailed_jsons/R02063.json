@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "three-step reaction see R08754+R08755+R08756", 
+    "definition": "Geranylgeranyl diphosphate + 3 H+ + 3 NADPH <=> Phytyl diphosphate + 3 NADP+", 
+    "orthologs": {
+      "K10960": "geranylgeranyl diphosphate/geranylgeranyl-bacteriochlorophyllide a reductase [EC:1.3.1.83 1.3.1.111]"
+    }, 
+    "name": "geranylgeranyl reductase", 
+    "product_stoichiometries": [
+      "3", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.3.1.83"
+    ], 
+    "equation": "C00353 + 3 C00080 + 3 C00005 <=> C05427 + 3 C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "3", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02063", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00900": "Terpenoid backbone biosynthesis"
+    }, 
+    "products": [
+      "C00006", 
+      "C05427"
+    ], 
+    "substrates": [
+      "C00080", 
+      "C00005", 
+      "C00353"
+    ]
+  }
+]

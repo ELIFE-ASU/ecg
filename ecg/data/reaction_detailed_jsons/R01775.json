@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "NAD+ (see R01773)", 
+    "definition": "L-Homoserine + NADP+ <=> L-Aspartate 4-semialdehyde + NADPH + H+", 
+    "orthologs": {
+      "K12525": "bifunctional aspartokinase / homoserine dehydrogenase 2 [EC:2.7.2.4 1.1.1.3]", 
+      "K12524": "bifunctional aspartokinase / homoserine dehydrogenase 1 [EC:2.7.2.4 1.1.1.3]", 
+      "K00003": "homoserine dehydrogenase [EC:1.1.1.3]"
+    }, 
+    "name": "L-homoserine:NADP+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.3"
+    ], 
+    "equation": "C00263 + C00006 <=> C00441 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01775", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00300": "Lysine biosynthesis", 
+      "rn01230": "Biosynthesis of amino acids", 
+      "rn00270": "Cysteine and methionine metabolism", 
+      "rn00260": "Glycine, serine and threonine metabolism"
+    }, 
+    "products": [
+      "C00441", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00263", 
+      "C00006"
+    ]
+  }
+]

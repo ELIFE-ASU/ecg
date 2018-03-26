@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "", 
+    "definition": "Phenylacetyl-CoA + Oxygen + NADPH + H+ <=> 2-(1,2-Epoxy-1,2-dihydrophenyl)acetyl-CoA + H2O + NADP+", 
+    "orthologs": {
+      "K02609": "ring-1,2-phenylacetyl-CoA epoxidase subunit PaaA [EC:1.14.13.149]", 
+      "K02610": "ring-1,2-phenylacetyl-CoA epoxidase subunit PaaB", 
+      "K02611": "ring-1,2-phenylacetyl-CoA epoxidase subunit PaaC [EC:1.14.13.149]", 
+      "K02612": "ring-1,2-phenylacetyl-CoA epoxidase subunit PaaD", 
+      "K02613": "ring-1,2-phenylacetyl-CoA epoxidase subunit PaaE"
+    }, 
+    "name": "phenylacetyl-CoA:oxygen oxidoreductase (1,2-epoxidizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.149"
+    ], 
+    "equation": "C00582 + C00007 + C00005 + C00080 <=> C20062 + C00001 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09838", 
+    "pathways": {
+      "rn00360": "Phenylalanine metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C20062", 
+      "C00001", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C00582", 
+      "C00007", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

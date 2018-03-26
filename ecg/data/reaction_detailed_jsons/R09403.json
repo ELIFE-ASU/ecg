@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "three-step reaction (see R10027+R10028+R10029) The enzyme can also accept L-valine as substrate, with a lower activity.(1.14.14.38) 3step reaction (similar to R00730+R04460+R07190)", 
+    "definition": "L-Isoleucine + 2 Oxygen + 2 [Reduced NADPH---hemoprotein reductase] <=> (E)-2-Methylbutanal oxime + 2 [Oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O", 
+    "orthologs": {
+      "K14984": "isoleucine N-monooxygenase [EC:1.14.14.39]"
+    }, 
+    "name": "L-isoleucine,[reduced NADPH---hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "3", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.39"
+    ], 
+    "equation": "C00407 + 2 C00007 + 2 C03024 <=> C19491 + 2 C03161 + C00011 + 3 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09403", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C03161", 
+      "C00001", 
+      "C19491", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C03024", 
+      "C00407"
+    ]
+  }
+]

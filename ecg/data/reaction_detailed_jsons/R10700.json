@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "the last step (acyl-CoA-forming) of fatty-acyl-CoA synthase (ec 2.3.1.86, see R05190, map00061)", 
+    "definition": "Hexadecanoyl-[acp] + CoA <=> Palmitoyl-CoA + Acyl-carrier protein", 
+    "orthologs": {
+      "K11533": "fatty acid synthase, bacteria type [EC:2.3.1.-]", 
+      "K00668": "fatty acid synthase subunit beta, fungi type [EC:2.3.1.86]"
+    }, 
+    "name": "palmitoyl-[acp]:CoA S-palmitoyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.86", 
+      "2.3.1.-"
+    ], 
+    "equation": "C05764 + C00010 <=> C00154 + C00229", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10700", 
+    "pathways": {
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00154", 
+      "C00229"
+    ], 
+    "substrates": [
+      "C05764", 
+      "C00010"
+    ]
+  }
+]

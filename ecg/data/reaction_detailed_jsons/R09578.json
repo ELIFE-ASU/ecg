@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "three-step reaction (see R09579+R09580+R09581)", 
+    "definition": "L-Phenylalanine + 2 Oxygen + 2 [Reduced NADPH---hemoprotein reductase] <=> (E)-Phenylacetaldoxime + 2 [Oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O", 
+    "orthologs": {
+      "K12153": "phenylalanine N-monooxygenase [EC:1.14.14.40]"
+    }, 
+    "name": "L-phenylalanine,NADPH:oxygen oxidoreductase (N-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "3", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.40"
+    ], 
+    "equation": "C00079 + 2 C00007 + 2 C03024 <=> C19714 + 2 C03161 + C00011 + 3 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09578", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C03161", 
+      "C00001", 
+      "C19714", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00007", 
+      "C03024", 
+      "C00079"
+    ]
+  }
+]

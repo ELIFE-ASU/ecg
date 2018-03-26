@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "a part step of glycine cleavage system (see R01221, R03425+R04125+R03815)", 
+    "definition": "S-Aminomethyldihydrolipoylprotein + Tetrahydrofolate <=> Dihydrolipoylprotein + 5,10-Methylenetetrahydrofolate + Ammonia", 
+    "orthologs": {
+      "K00605": "aminomethyltransferase [EC:2.1.2.10]"
+    }, 
+    "name": "S-aminomethyldihydrolipoylprotein:(6S)-tetrahydrofolate aminomethyltransferase (ammonia-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.2.10"
+    ], 
+    "equation": "C01242 + C00101 <=> C02972 + C00143 + C00014", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04125", 
+    "pathways": {
+      "rn00670": "One carbon pool by folate", 
+      "rn01100": "Metabolic pathways", 
+      "rn00260": "Glycine, serine and threonine metabolism"
+    }, 
+    "products": [
+      "C02972", 
+      "C00143", 
+      "C00014"
+    ], 
+    "substrates": [
+      "C01242", 
+      "C00101"
+    ]
+  }
+]

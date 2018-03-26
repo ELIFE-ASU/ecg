@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "first step of two-step reaction (R04460+R07190 or R06585), subsequently R07190 and second step of three-step reaction (see R10671, R00730+R04460+R07190)", 
+    "definition": "N-Hydroxy-L-tyrosine + Oxygen + [Reduced NADPH---hemoprotein reductase] <=> N,N-Dihydroxy-L-tyrosine + [Oxidized NADPH---hemoprotein reductase] + H2O", 
+    "orthologs": {
+      "K13027": "tyrosine N-monooxygenase [EC:1.14.14.36]"
+    }, 
+    "name": "N-hydroxy-L-tyrosine,[reduced NADPH-hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.36"
+    ], 
+    "equation": "C03004 + C00007 + C03024 <=> C15503 + C03161 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04460", 
+    "pathways": {
+      "rn00460": "Cyanoamino acid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites"
+    }, 
+    "products": [
+      "C15503", 
+      "C03161", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C03004", 
+      "C00007", 
+      "C03024"
+    ]
+  }
+]

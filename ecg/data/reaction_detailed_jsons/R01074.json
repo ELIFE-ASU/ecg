@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "first step of two-step reaction (R01075, R04562, R04563, R04582 or R04604) subsequently R05145 or R03762", 
+    "definition": "ATP + Biotin <=> Diphosphate + Biotinyl-5'-AMP", 
+    "orthologs": {
+      "K01947": "biotin---[acetyl-CoA-carboxylase] ligase / type III pantothenate kinase [EC:6.3.4.15 2.7.1.33]", 
+      "K03524": "BirA family transcriptional regulator, biotin operon repressor / biotin---[acetyl-CoA-carboxylase] ligase [EC:6.3.4.15]", 
+      "K01942": "biotin---protein ligase [EC:6.3.4.9 6.3.4.10 6.3.4.11 6.3.4.15]"
+    }, 
+    "name": "biotin:CoA ligase (AMP-forming); biotin:apo-[carboxylase] ligase (AMP-forming); ATP:biotin adenylyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.2.1.11", 
+      "6.3.4.9", 
+      "6.3.4.10", 
+      "6.3.4.11", 
+      "6.3.4.15"
+    ], 
+    "equation": "C00002 + C00120 <=> C00013 + C05921", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01074", 
+    "pathways": {
+      "rn00780": "Biotin metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00013", 
+      "C05921"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00120"
+    ]
+  }
+]

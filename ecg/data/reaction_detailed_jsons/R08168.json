@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "two-step reaction (see R08607+R08608)", 
+    "definition": "Indole-3-acetaldehyde oxime + L-Cysteine + NADPH + Oxygen + H+ <=> S-(Indolylmethylthiohydroximoyl)-L-cysteine + NADP+ + 2 H2O", 
+    "orthologs": {
+      "K11818": "aromatic aldoxime N-monooxygenase [EC:1.14.14.45]"
+    }, 
+    "name": "indole-3-acetaldehyde-oxime,NADPH:oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.45"
+    ], 
+    "equation": "C02937 + C00097 + C00005 + C00007 + C00080 <=> C16518 + C00006 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08168", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00380": "Tryptophan metabolism", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C16518", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C02937", 
+      "C00097", 
+      "C00005", 
+      "C00007", 
+      "C00080"
+    ]
+  }
+]

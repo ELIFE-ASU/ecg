@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "6 ATP + 3 2,3-Dihydroxybenzoate + 3 L-Serine <=> Enterochelin + 6 AMP + 6 Diphosphate", 
+    "orthologs": {
+      "K02364": "enterobactin synthetase component F [EC:6.3.2.14]", 
+      "K02363": "2,3-dihydroxybenzoate-AMP ligase [EC:6.3.2.14 2.7.7.58]", 
+      "K02362": "enterobactin synthetase component D [EC:6.3.2.14 2.7.8.-]", 
+      "K01252": "bifunctional isochorismate lyase / aryl carrier protein [EC:3.3.2.1 6.3.2.14]"
+    }, 
+    "name": "2,3-dihydroxybenzoate:L-serine ligase", 
+    "product_stoichiometries": [
+      "6", 
+      "6", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.2.14"
+    ], 
+    "equation": "6 C00002 + 3 C00196 + 3 C00065 <=> C05821 + 6 C00020 + 6 C00013", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "6", 
+      "3", 
+      "3"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07644", 
+    "pathways": {
+      "rn01053": "Biosynthesis of siderophore group nonribosomal peptides", 
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01110": "Biosynthesis of secondary metabolites"
+    }, 
+    "products": [
+      "C00020", 
+      "C00013", 
+      "C05821"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00196", 
+      "C00065"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "O-Phosphoseryl-tRNA:selenocysteinyl-tRNA synthase multi-step reaction", 
+    "definition": "O-Phosphoseryl-tRNA(Sec) + Selenophosphoric acid + H2O <=> L-Selenocysteinyl-tRNA(Sec) + 2 Orthophosphate", 
+    "orthologs": {
+      "K03341": "O-phospho-L-seryl-tRNASec:L-selenocysteinyl-tRNA synthase [EC:2.9.1.2]"
+    }, 
+    "name": "selenophosphate:O-phospho-L-seryl-tRNA(Sec) selenium transferase", 
+    "product_stoichiometries": [
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.9.1.2"
+    ], 
+    "equation": "C16638 + C05172 + C00001 <=> C06482 + 2 C00009", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08224", 
+    "pathways": {
+      "rn00970": "Aminoacyl-tRNA biosynthesis", 
+      "rn00450": "Selenocompound metabolism"
+    }, 
+    "products": [
+      "C00009", 
+      "C06482"
+    ], 
+    "substrates": [
+      "C16638", 
+      "C05172", 
+      "C00001"
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "", 
+    "definition": "Octadecanoyl-[acyl-carrier protein] + 2 Reduced ferredoxin + Oxygen + 2 H+ <=> Oleoyl-[acyl-carrier protein] + 2 Oxidized ferredoxin + 2 H2O", 
+    "orthologs": {
+      "K03921": "acyl-[acyl-carrier-protein] desaturase [EC:1.14.19.2 1.14.19.11 1.14.19.26]", 
+      "K03922": "acyl-[acyl-carrier-protein] desaturase [EC:1.14.19.2]"
+    }, 
+    "name": "stearoyl-[acyl-carrier protein],reduced-ferredoxin:oxygen oxidoreductase (9,10 cis-dehydrogenating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.19.2"
+    ], 
+    "equation": "C04088 + 2 C00138 + C00007 + 2 C00080 <=> C01203 + 2 C00139 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03370", 
+    "pathways": {
+      "rn01040": "Biosynthesis of unsaturated fatty acids", 
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis"
+    }, 
+    "products": [
+      "C00139", 
+      "C00001", 
+      "C01203"
+    ], 
+    "substrates": [
+      "C00138", 
+      "C00080", 
+      "C04088", 
+      "C00007"
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "two-step reaction (see R01899+R00268)", 
+    "definition": "Isocitrate + NADP+ <=> 2-Oxoglutarate + CO2 + NADPH + H+", 
+    "orthologs": {
+      "K00031": "isocitrate dehydrogenase [EC:1.1.1.42]"
+    }, 
+    "name": "Isocitrate:NADP+ oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.42"
+    ], 
+    "equation": "C00311 + C00006 <=> C00026 + C00011 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00267", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn00480": "Glutathione metabolism", 
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00026", 
+      "C00011", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00311", 
+      "C00006"
+    ]
+  }
+]

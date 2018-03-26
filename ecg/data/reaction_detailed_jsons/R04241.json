@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "", 
+    "definition": "ATP + THF-polyglutamate(n) + L-Glutamate <=> ADP + Orthophosphate + THF-polyglutamate(n+1)", 
+    "orthologs": {
+      "K11754": "dihydrofolate synthase / folylpolyglutamate synthase [EC:6.3.2.12 6.3.2.17]", 
+      "K01930": "folylpolyglutamate synthase [EC:6.3.2.17]", 
+      "K22099": "dihydrofolate synthase / folylpolyglutamate synthase [EC:6.3.2.12 6.3.2.17]"
+    }, 
+    "name": "tetrahydropteroyl-gamma-polyglutamate:L-glutamate gamma-ligase (ADP-forming)", 
+    "product_stoichiometries": [
+      "(n+1)", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.3.2.17"
+    ], 
+    "equation": "C00002 + C03541(n) + C00025 <=> C00008 + C00009 + C03541(n+1)", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "(n)", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04241", 
+    "pathways": {
+      "rn00790": "Folate biosynthesis"
+    }, 
+    "products": [
+      "C03541", 
+      "C00008", 
+      "C00009"
+    ], 
+    "substrates": [
+      "C03541", 
+      "C00002", 
+      "C00025"
+    ]
+  }
+]

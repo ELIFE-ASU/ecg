@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (similar to R10052, R04426+R01652)", 
+    "definition": "3-(6'-Methylthio)hexylmalic acid + NAD+ <=> 2-Oxo-9-methylthiononanoic acid + CO2 + NADH + H+", 
+    "orthologs": {
+      "K21360": "3-isopropylmalate/methylthioalkylmalate dehydrogenase [EC:1.1.1.85 1.1.1.-]"
+    }, 
+    "name": "3-(6'-methylthio)hexylmalate:NAD+ oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.-"
+    ], 
+    "equation": "C17227 + C00003 <=> C17228 + C00011 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08642", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C17228", 
+      "C00011", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C17227", 
+      "C00003"
+    ]
+  }
+]

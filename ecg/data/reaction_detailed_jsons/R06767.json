@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "glycosyl transferase, CouM O-methyltransferase, CouP two-step reaction", 
+    "definition": "Coumermic acid + 2 dTDP-5-dimethyl-L-lyxose + 2 S-Adenosyl-L-methionine <=> Coumermycin D + 2 dTDP + 2 S-Adenosyl-L-homocysteine", 
+    "orthologs": {
+      "K12711": "L-demethylnoviosyl transferase [EC:2.4.1.302]", 
+      "K12712": "demethyldecarbamoylnovobiocin O-methyltransferase [EC:2.1.1.285]"
+    }, 
+    "name": "", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [], 
+    "equation": "C12479 + 2 C12481 + 2 C00019 <=> C12480 + 2 C00363 + 2 C00021", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06767", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00401": "Novobiocin biosynthesis"
+    }, 
+    "products": [
+      "C00363", 
+      "C00021", 
+      "C12480"
+    ], 
+    "substrates": [
+      "C12481", 
+      "C00019", 
+      "C12479"
+    ]
+  }
+]

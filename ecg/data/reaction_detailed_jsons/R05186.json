@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "multi-step reaction (similar to R05185)", 
+    "definition": "16 ATP + Nitrogen + 4 Reduced flavodoxin + 16 H2O <=> 16 Orthophosphate + 16 ADP + 4 Oxidized flavodoxin + 2 Ammonia + Hydrogen", 
+    "orthologs": {}, 
+    "name": "reduced flavodoxin:dinitrogen oxidoreductase (ATP-hydrolysing)", 
+    "product_stoichiometries": [
+      "16", 
+      "16", 
+      "4", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.19.6.1"
+    ], 
+    "equation": "16 C00002 + C00697 + 4 C02745 + 16 C00001 <=> 16 C00009 + 16 C00008 + 4 C02869 + 2 C00014 + C00282", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "16", 
+      "4", 
+      "16", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05186", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00009", 
+      "C00008", 
+      "C02869", 
+      "C00014", 
+      "C00282"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C02745", 
+      "C00001", 
+      "C00697"
+    ]
+  }
+]

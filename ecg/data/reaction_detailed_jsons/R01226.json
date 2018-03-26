@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "5,10-Methylenetetrahydrofolate + 3-Methyl-2-oxobutanoic acid + H2O <=> Tetrahydrofolate + 2-Dehydropantoate", 
+    "orthologs": {
+      "K00606": "3-methyl-2-oxobutanoate hydroxymethyltransferase [EC:2.1.2.11]"
+    }, 
+    "name": "5,10-Methylenetetrahydrofolate:3-methyl-2-oxobutanoate hydroxymethyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.2.11"
+    ], 
+    "equation": "C00143 + C00141 + C00001 <=> C00101 + C00966", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01226", 
+    "pathways": {
+      "rn00770": "Pantothenate and CoA biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00101", 
+      "C00966"
+    ], 
+    "substrates": [
+      "C00143", 
+      "C00141", 
+      "C00001"
+    ]
+  }
+]

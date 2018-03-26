@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "", 
+    "definition": "Progesterone + 2 Reduced ferredoxin + Oxygen + 2 H+ <=> 11beta-Hydroxyprogesterone + 2 Oxidized ferredoxin + H2O", 
+    "orthologs": {
+      "K00497": "steroid 11beta-monooxygenase [EC:1.14.15.4]", 
+      "K07433": "steroid 11beta-monooxygenase / corticosterone 18-monooxygenase [EC:1.14.15.4 1.14.15.5]"
+    }, 
+    "name": "progesterone,reduced ferredoxin:oxygen oxidoreductase (11-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.4"
+    ], 
+    "equation": "C00410 + 2 C00138 + C00007 + 2 C00080 <=> C05498 + 2 C00139 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02218", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis"
+    }, 
+    "products": [
+      "C00139", 
+      "C05498", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00138", 
+      "C00080", 
+      "C00410", 
+      "C00007"
+    ]
+  }
+]

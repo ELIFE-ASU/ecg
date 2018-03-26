@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "", 
+    "definition": "CMP-N-acetylneuraminate + 2 Ferrocytochrome b5 + Oxygen + 2 H+ <=> CMP-N-glycoloylneuraminate + 2 Ferricytochrome b5 + H2O", 
+    "orthologs": {
+      "K08080": "CMP-N-acetylneuraminate monooxygenase [EC:1.14.18.2]"
+    }, 
+    "name": "CMP-N-acetylneuraminate,ferrocytochrome-b5:oxygen oxidoreductase (N-acetyl-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.18.2"
+    ], 
+    "equation": "C00128 + 2 C00999 + C00007 + 2 C00080 <=> C03691 + 2 C00996 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01115", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism"
+    }, 
+    "products": [
+      "C00996", 
+      "C03691", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00999", 
+      "C00080", 
+      "C00128", 
+      "C00007"
+    ]
+  }
+]

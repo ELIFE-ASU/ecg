@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "NAD+ (see R03102) two-step reaction (see R02317+R11232)", 
+    "definition": "L-2-Aminoadipate 6-semialdehyde + NADP+ + H2O <=> L-2-Aminoadipate + NADPH + H+", 
+    "orthologs": {
+      "K14085": "aldehyde dehydrogenase family 7 member A1 [EC:1.2.1.31 1.2.1.8 1.2.1.3]"
+    }, 
+    "name": "L-2-aminoadipate-6-semialdehyde:NADP+ 6-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.1.31"
+    ], 
+    "equation": "C04076 + C00006 + C00001 <=> C00956 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03103", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00310": "Lysine degradation"
+    }, 
+    "products": [
+      "C00956", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C04076", 
+      "C00006", 
+      "C00001"
+    ]
+  }
+]

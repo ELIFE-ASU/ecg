@@ -1,0 +1,52 @@
+[
+  {
+    "comment": "", 
+    "definition": "Formylmethanofuran + 2 Oxidized ferredoxin + H2O <=> Methanofuran + 2 Reduced ferredoxin + CO2 + 2 H+", 
+    "orthologs": {
+      "K00205": "4Fe-4S ferredoxin", 
+      "K00204": "4Fe-4S ferredoxin", 
+      "K00201": "formylmethanofuran dehydrogenase subunit B [EC:1.2.7.12]", 
+      "K00200": "formylmethanofuran dehydrogenase subunit A [EC:1.2.7.12]", 
+      "K00203": "formylmethanofuran dehydrogenase subunit D [EC:1.2.7.12]", 
+      "K00202": "formylmethanofuran dehydrogenase subunit C [EC:1.2.7.12]", 
+      "K11261": "formylmethanofuran dehydrogenase subunit E [EC:1.2.7.12]", 
+      "K11260": "4Fe-4S ferredoxin"
+    }, 
+    "name": "formylmethanofuran:ferredoxin oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.2.7.12"
+    ], 
+    "equation": "C01001 + 2 C00139 + C00001 <=> C00862 + 2 C00138 + C00011 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03015", 
+    "pathways": {
+      "rn00680": "Methane metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00138", 
+      "C00080", 
+      "C00862", 
+      "C00011"
+    ], 
+    "substrates": [
+      "C00139", 
+      "C01001", 
+      "C00001"
+    ]
+  }
+]

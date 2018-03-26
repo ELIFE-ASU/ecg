@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "NADP+ (see R01249)", 
+    "definition": "L-Proline + NAD+ <=> 1-Pyrroline-2-carboxylate + NADH + H+", 
+    "orthologs": {
+      "K19742": "1-pyrroline-2-carboxylate reductase [NAD(P)H] [EC:1.5.1.49]", 
+      "K19743": "1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase [NAD(P)H] [EC:1.5.1.1]"
+    }, 
+    "name": "L-proline:NAD+ 2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.5.1.1", 
+      "1.5.1.49"
+    ], 
+    "equation": "C00148 + C00003 <=> C03564 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01246", 
+    "pathways": {
+      "rn00330": "Arginine and proline metabolism"
+    }, 
+    "products": [
+      "C03564", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00148", 
+      "C00003"
+    ]
+  }
+]

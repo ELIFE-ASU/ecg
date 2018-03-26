@@ -1,0 +1,40 @@
+[
+  {
+    "comment": "two-step reaction (see R09510+R09511)", 
+    "definition": "Protein N6,N6-dimethyl-L-lysine + 2 2-Oxoglutarate + 2 Oxygen <=> Protein lysine + 2 Succinate + 2 Formaldehyde + 2 CO2", 
+    "orthologs": {
+      "K10276": "F-box and leucine-rich repeat protein 10/11 [EC:1.14.11.27]"
+    }, 
+    "name": "protein-N6,N6-dimethyl-L-lysine,2-oxoglutarate:oxygen oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.11.27"
+    ], 
+    "equation": "C05545 + 2 C00026 + 2 C00007 <=> C02188 + 2 C00042 + 2 C00067 + 2 C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10056", 
+    "pathways": {}, 
+    "products": [
+      "C00042", 
+      "C00067", 
+      "C00011", 
+      "C02188"
+    ], 
+    "substrates": [
+      "C00026", 
+      "C00007", 
+      "C05545"
+    ]
+  }
+]

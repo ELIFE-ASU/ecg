@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "three-step reaction (see R11358+R11359+R11360)", 
+    "definition": "Cholest-4-en-3-one + 3 NADPH + 3 H+ + 3 Oxygen <=> (25R)-3-Oxocholest-4-en-26-oate + 3 NADP+ + 4 H2O", 
+    "orthologs": {
+      "K16046": "cholest-4-en-3-one 26-monooxygenase [EC:1.14.13.221]"
+    }, 
+    "name": "cholest-4-en-3-one,NADPH:oxygen oxidoreductase [(25R)-3-oxocholest-4-en-26-oate forming]", 
+    "product_stoichiometries": [
+      "3", 
+      "4", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.221"
+    ], 
+    "equation": "C00599 + 3 C00005 + 3 C00080 + 3 C00007 <=> C20839 + 3 C00006 + 4 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "3", 
+      "3", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R11361", 
+    "pathways": {
+      "rn00984": "Steroid degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00006", 
+      "C00001", 
+      "C20839"
+    ], 
+    "substrates": [
+      "C00005", 
+      "C00080", 
+      "C00007", 
+      "C00599"
+    ]
+  }
+]

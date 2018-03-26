@@ -1,0 +1,45 @@
+[
+  {
+    "comment": "two-step reaction (see R05463+R05462) bifunctional enzyme, OxyL", 
+    "definition": "6-Methylpretetramide + 2 NADPH + 2 H+ + 2 Oxygen <=> 4-Keto-anhydrotetracycline + 2 NADP+ + 2 H2O", 
+    "orthologs": {
+      "K14252": "6-methylpretetramide 4-monooxygenase / 4-hydroxy-6-methylpretetramide 12a-monooxygenase [EC:1.14.13.232 1.14.13.233]"
+    }, 
+    "name": "6-methylpretetramide,NADPH:oxygen oxidoreductase (4,12a-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.232", 
+      "1.14.13.233"
+    ], 
+    "equation": "C06629 + 2 C00005 + 2 C00080 + 2 C00007 <=> C06627 + 2 C00006 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09190", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01057": "Biosynthesis of type II polyketide products", 
+      "rn00253": "Tetracycline biosynthesis"
+    }, 
+    "products": [
+      "C00006", 
+      "C00001", 
+      "C06627"
+    ], 
+    "substrates": [
+      "C00005", 
+      "C00080", 
+      "C00007", 
+      "C06629"
+    ]
+  }
+]

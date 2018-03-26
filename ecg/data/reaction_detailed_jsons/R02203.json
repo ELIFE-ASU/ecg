@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "NADH (see R02201)", 
+    "definition": "L-Pipecolate + NADP+ <=> Delta1-Piperideine-2-carboxylate + NADPH + H+", 
+    "orthologs": {
+      "K13609": "delta1-piperideine-2-carboxylate reductase [EC:1.5.1.21]", 
+      "K19743": "1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase [NAD(P)H] [EC:1.5.1.1]"
+    }, 
+    "name": "L-pipecolate:NADP+ 2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.5.1.1", 
+      "1.5.1.21"
+    ], 
+    "equation": "C00408 + C00006 <=> C04092 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02203", 
+    "pathways": {
+      "rn00960": "Tropane, piperidine and pyridine alkaloid biosynthesis", 
+      "rn01100": "Metabolic pathways", 
+      "rn00310": "Lysine degradation"
+    }, 
+    "products": [
+      "C04092", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00408", 
+      "C00006"
+    ]
+  }
+]

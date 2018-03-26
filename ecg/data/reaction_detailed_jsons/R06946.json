@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "zeaxanthin epoxidase first step of two-step reaction (see R10070, R06946+R06947)", 
+    "definition": "Zeaxanthin + 2 Reduced ferredoxin + 2 H+ + Oxygen <=> Antheraxanthin + 2 Oxidized ferredoxin + H2O", 
+    "orthologs": {
+      "K09838": "zeaxanthin epoxidase [EC:1.14.15.21]"
+    }, 
+    "name": "zeaxanthin,NADH:oxygen oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.21"
+    ], 
+    "equation": "C06098 + 2 C00138 + 2 C00080 + C00007 <=> C08579 + 2 C00139 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06946", 
+    "pathways": {
+      "rn00906": "Carotenoid biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00139", 
+      "C08579", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00138", 
+      "C00080", 
+      "C06098", 
+      "C00007"
+    ]
+  }
+]

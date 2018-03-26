@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "two-step reaction (see R00256+R10086)", 
+    "definition": "2 L-Glutamate + 2 Oxidized ferredoxin <=> L-Glutamine + 2-Oxoglutarate + 2 Reduced ferredoxin + 2 H+", 
+    "orthologs": {
+      "K00284": "glutamate synthase (ferredoxin) [EC:1.4.7.1]"
+    }, 
+    "name": "L-glutamate:ferredoxin oxidoreductase (transaminating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.4.7.1"
+    ], 
+    "equation": "2 C00025 + 2 C00139 <=> C00064 + C00026 + 2 C00138 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00021", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn00630": "Glyoxylate and dicarboxylate metabolism"
+    }, 
+    "products": [
+      "C00138", 
+      "C00080", 
+      "C00064", 
+      "C00026"
+    ], 
+    "substrates": [
+      "C00025", 
+      "C00139"
+    ]
+  }
+]

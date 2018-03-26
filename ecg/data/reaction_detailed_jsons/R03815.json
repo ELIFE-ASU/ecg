@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "a part step of glycine cleavage system (see R01221, R03425+R04125+R03815)", 
+    "definition": "Dihydrolipoylprotein + NAD+ <=> Lipoylprotein + NADH + H+", 
+    "orthologs": {
+      "K00382": "dihydrolipoamide dehydrogenase [EC:1.8.1.4]"
+    }, 
+    "name": "dihydrolipoylprotein:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.8.1.4"
+    ], 
+    "equation": "C02972 + C00003 <=> C02051 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03815", 
+    "pathways": {
+      "rn00260": "Glycine, serine and threonine metabolism"
+    }, 
+    "products": [
+      "C02051", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C02972", 
+      "C00003"
+    ]
+  }
+]

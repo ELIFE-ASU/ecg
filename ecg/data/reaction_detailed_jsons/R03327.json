@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NADP+ (see R03328) multi-step reaction (see R03176+R02644)", 
+    "definition": "17alpha-Hydroxypregnenolone + NAD+ <=> 17alpha-Hydroxyprogesterone + NADH + H+", 
+    "orthologs": {
+      "K00070": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase [EC:1.1.1.145 5.3.3.1]", 
+      "K01822": "steroid Delta-isomerase [EC:5.3.3.1]"
+    }, 
+    "name": "17alpha-Hydroxypregnenolone:NAD+ 3-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.145", 
+      "5.3.3.1"
+    ], 
+    "equation": "C05138 + C00003 <=> C01176 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03327", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C01176", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C05138", 
+      "C00003"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "", 
+    "definition": "Protein N(pi)-phospho-L-histidine + D-Mannose <=> Protein histidine + D-Mannose 6-phosphate", 
+    "orthologs": {
+      "K02793": "PTS system, mannose-specific IIA component [EC:2.7.1.191]", 
+      "K02795": "PTS system, mannose-specific IIC component", 
+      "K02794": "PTS system, mannose-specific IIB component [EC:2.7.1.191]", 
+      "K02796": "PTS system, mannose-specific IID component"
+    }, 
+    "name": "protein-N(pi)-phosphohistidine:D-mannose 6-phosphotransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.7.1.191"
+    ], 
+    "equation": "C04261 + C00159 <=> C00615 + C00275", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02630", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism", 
+      "rn00051": "Fructose and mannose metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00615", 
+      "C00275"
+    ], 
+    "substrates": [
+      "C04261", 
+      "C00159"
+    ]
+  }
+]

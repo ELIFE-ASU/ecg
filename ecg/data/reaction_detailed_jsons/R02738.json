@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "", 
+    "definition": "Protein N(pi)-phospho-L-histidine + D-Glucose <=> Protein histidine + alpha-D-Glucose 6-phosphate", 
+    "orthologs": {
+      "K02777": "PTS system, sugar-specific IIA component [EC:2.7.1.-]", 
+      "K20118": "PTS system, glucose-specific IIC component", 
+      "K02791": "PTS system, maltose/glucose-specific IIC component", 
+      "K02790": "PTS system, maltose/glucose-specific IIB component [EC:2.7.1.199 2.7.1.208]", 
+      "K20117": "PTS system, glucose-specific IIB component [EC:2.7.1.199]", 
+      "K20116": "PTS system, glucose-specific IIA component [EC:2.7.1.199]", 
+      "K02779": "PTS system, glucose-specific IIC component", 
+      "K02778": "PTS system, glucose-specific IIB component [EC:2.7.1.199]"
+    }, 
+    "name": "protein-N(pi)-phosphohistidine:D-glucose 6-phosphotransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.7.1.199"
+    ], 
+    "equation": "C04261 + C00031 <=> C00615 + C00668", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02738", 
+    "pathways": {
+      "rn00520": "Amino sugar and nucleotide sugar metabolism", 
+      "rn00010": "Glycolysis / Gluconeogenesis"
+    }, 
+    "products": [
+      "C00615", 
+      "C00668"
+    ], 
+    "substrates": [
+      "C04261", 
+      "C00031"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "3 Malonyl-CoA + p-Coumaroyl-CoA <=> 4 CoA + Resveratrol + 4 CO2", 
+    "orthologs": {
+      "K13232": "stilbene synthase [EC:2.3.1.95]"
+    }, 
+    "name": "Malonyl-CoA:4-coumaroyl-CoA malonyltransferase (cyclizing)", 
+    "product_stoichiometries": [
+      "4", 
+      "4", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.95"
+    ], 
+    "equation": "3 C00083 + C00223 <=> 4 C00010 + C03582 + 4 C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01614", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00945": "Stilbenoid, diarylheptanoid and gingerol biosynthesis"
+    }, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C03582"
+    ], 
+    "substrates": [
+      "C00083", 
+      "C00223"
+    ]
+  }
+]

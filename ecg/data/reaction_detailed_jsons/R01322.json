@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "a part of multi-step reaction (see R00352, R01322+R00354)", 
+    "definition": "ATP + Citrate + CoA <=> ADP + Orthophosphate + (3S)-Citryl-CoA", 
+    "orthologs": {
+      "K15232": "citryl-CoA synthetase large subunit [EC:6.2.1.18]", 
+      "K15233": "citryl-CoA synthetase small subunit"
+    }, 
+    "name": "Citrate:CoA ligase (ADP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.2.1.18"
+    ], 
+    "equation": "C00002 + C00158 + C00010 <=> C00008 + C00009 + C00566", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01322", 
+    "pathways": {
+      "rn00720": "Carbon fixation pathways in prokaryotes", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C00008", 
+      "C00009", 
+      "C00566"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00158", 
+      "C00010"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R08805+R08807)", 
+    "definition": "2 p-Coumaroyl-CoA + Malonyl-CoA + H2O <=> 3 CoA + Bisdemethoxycurcumin + 2 CO2", 
+    "orthologs": {
+      "K17212": "bisdemethoxycurcumin synthase [EC:2.3.1.211]"
+    }, 
+    "name": "4-coumaroyl-CoA:malonyl-CoA 4-coumaryltransferase (bisdemethoxycurcumin-forming)", 
+    "product_stoichiometries": [
+      "3", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.211"
+    ], 
+    "equation": "2 C00223 + C00083 + C00001 <=> 3 C00010 + C17743 + 2 C00011", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10233", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00945": "Stilbenoid, diarylheptanoid and gingerol biosynthesis"
+    }, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C17743"
+    ], 
+    "substrates": [
+      "C00223", 
+      "C00083", 
+      "C00001"
+    ]
+  }
+]

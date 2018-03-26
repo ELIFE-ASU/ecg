@@ -1,0 +1,46 @@
+[
+  {
+    "comment": "", 
+    "definition": "ITP + Succinate + CoA <=> IDP + Orthophosphate + Succinyl-CoA", 
+    "orthologs": {
+      "K01900": "succinyl-CoA synthetase beta subunit [EC:6.2.1.4 6.2.1.5]", 
+      "K01899": "succinyl-CoA synthetase alpha subunit [EC:6.2.1.4 6.2.1.5]"
+    }, 
+    "name": "Succinate:CoA ligase (IDP-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "6.2.1.4"
+    ], 
+    "equation": "C00081 + C00042 + C00010 <=> C00104 + C00009 + C00091", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00727", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism", 
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn01100": "Metabolic pathways", 
+      "rn00020": "Citrate cycle (TCA cycle)"
+    }, 
+    "products": [
+      "C00104", 
+      "C00009", 
+      "C00091"
+    ], 
+    "substrates": [
+      "C00081", 
+      "C00042", 
+      "C00010"
+    ]
+  }
+]

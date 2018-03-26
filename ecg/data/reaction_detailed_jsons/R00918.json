@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "EryA MegA multi-step reaction", 
+    "definition": "Propanoyl-CoA + 6 (S)-Methylmalonyl-CoA + 6 NADPH + 6 H+ <=> 6-Deoxyerythronolide B + 7 CoA + 6 CO2 + H2O + 6 NADP+", 
+    "orthologs": {
+      "K10817": "6-deoxyerythronolide-B synthase [EC:2.3.1.94]"
+    }, 
+    "name": "propanoyl-CoA:(2S)-methylmalonyl-CoA malonyltransferase (cyclizing); propanoyl-CoA:(2S)-methylmalonyl-CoA 2-C-acyltransferase (decarboxylating, oxoacyl-reducing and cyclizing)", 
+    "product_stoichiometries": [
+      "7", 
+      "6", 
+      "6", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.94"
+    ], 
+    "equation": "C00100 + 6 C00683 + 6 C00005 + 6 C00080 <=> C03240 + 7 C00010 + 6 C00011 + C00001 + 6 C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "6", 
+      "6", 
+      "6", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00918", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00522": "Biosynthesis of 12-, 14- and 16-membered macrolides"
+    }, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C00006", 
+      "C03240", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00683", 
+      "C00005", 
+      "C00080", 
+      "C00100"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (see R10015+R10000)", 
+    "definition": "Dimethylamine + Coenzyme M <=> 2-(Methylthio)ethanesulfonate + Methylamine", 
+    "orthologs": {
+      "K14082": "[methyl-Co(III) methylamine-specific corrinoid protein]:coenzyme M methyltransferase [EC:2.1.1.247]", 
+      "K16178": "dimethylamine---corrinoid protein Co-methyltransferase [EC:2.1.1.249]", 
+      "K16179": "dimethylamine corrinoid protein"
+    }, 
+    "name": "dimethylamine:coenzyme M methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.247", 
+      "2.1.1.249"
+    ], 
+    "equation": "C00543 + C03576 <=> C03920 + C00218", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09999", 
+    "pathways": {
+      "rn00680": "Methane metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01200": "Carbon metabolism"
+    }, 
+    "products": [
+      "C03920", 
+      "C00218"
+    ], 
+    "substrates": [
+      "C00543", 
+      "C03576"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "NAD+ (ec 1.1.1.48, see R08544)", 
+    "definition": "D-Galactose + NADP+ <=> D-Galactono-1,5-lactone + NADPH + H+", 
+    "orthologs": {
+      "K18125": "aldose 1-dehydrogenase [NAD(P)+] [EC:1.1.1.359]", 
+      "K18124": "glucose/galactose 1-dehydrogenase (NADP+) [EC:1.1.1.360]"
+    }, 
+    "name": "D-galactose:NADP+ 1-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.48", 
+      "1.1.1.120", 
+      "1.1.1.359", 
+      "1.1.1.360"
+    ], 
+    "equation": "C00124 + C00006 <=> C02669 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01096", 
+    "pathways": {
+      "rn00052": "Galactose metabolism"
+    }, 
+    "products": [
+      "C02669", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00124", 
+      "C00006"
+    ]
+  }
+]

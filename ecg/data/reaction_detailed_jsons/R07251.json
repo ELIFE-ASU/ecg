@@ -1,0 +1,49 @@
+[
+  {
+    "comment": "multi-step reaction Acy-carrier protein is acp domain of LOVB [KO:K20981].", 
+    "definition": "9 Malonyl-CoA + 11 NADPH + 10 H+ + S-Adenosyl-L-methionine + Acyl-carrier protein <=> Dihydromonacolin L-[acyl-carrier protein] + 9 CoA + 9 CO2 + 11 NADP+ + S-Adenosyl-L-homocysteine + 6 H2O", 
+    "orthologs": {
+      "K20981": "lovastatin nonaketide synthase [EC:2.3.1.161]", 
+      "K20982": "lovastatin enoyl reductase [EC:2.3.1.161]"
+    }, 
+    "name": "acyl-CoA:malonyl-CoA C-acyltransferase (dihydromonacolin L-[acp]-forming)", 
+    "product_stoichiometries": [
+      "9", 
+      "9", 
+      "11", 
+      "6", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.161"
+    ], 
+    "equation": "9 C00083 + 11 C00005 + 10 C00080 + C00019 + C00229 <=> C21108 + 9 C00010 + 9 C00011 + 11 C00006 + C00021 + 6 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "9", 
+      "11", 
+      "10", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R07251", 
+    "pathways": {}, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C00006", 
+      "C00001", 
+      "C21108", 
+      "C00021"
+    ], 
+    "substrates": [
+      "C00083", 
+      "C00005", 
+      "C00080", 
+      "C00019", 
+      "C00229"
+    ]
+  }
+]

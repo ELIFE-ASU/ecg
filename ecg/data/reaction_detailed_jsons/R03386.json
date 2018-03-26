@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NADH (see R03385)", 
+    "definition": "3-Hydroxy-2-methylpyridine-5-carboxylate + Oxygen + NADPH + H+ <=> 2-(Acetamidomethylene)succinate + NADP+", 
+    "orthologs": {
+      "K18071": "2-methyl-3-hydroxypyridine 5-carboxylic acid dioxygenase [EC:1.14.12.4]"
+    }, 
+    "name": "3-hydroxy-2-methylpyridine-5-carboxylate,NADPH:oxygen oxidoreductase (decyclizing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.12.4"
+    ], 
+    "equation": "C01270 + C00007 + C00005 + C00080 <=> C01215 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03386", 
+    "pathways": {
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn00750": "Vitamin B6 metabolism"
+    }, 
+    "products": [
+      "C01215", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C01270", 
+      "C00007", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

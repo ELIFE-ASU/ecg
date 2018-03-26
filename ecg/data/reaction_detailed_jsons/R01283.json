@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "multi-step reaction (see R08633+R08637)", 
+    "definition": "L-Homocysteine + H2O <=> Hydrogen sulfide + Ammonia + 2-Oxobutanoate", 
+    "orthologs": {
+      "K17217": "cystathionine gamma-lyase / homocysteine desulfhydrase [EC:4.4.1.1 4.4.1.2]"
+    }, 
+    "name": "L-homocysteine hydrogen-sulfide-lyase (deaminating; 2-oxobutanoate-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.4.1.2"
+    ], 
+    "equation": "C00155 + C00001 <=> C00283 + C00014 + C00109", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01283", 
+    "pathways": {
+      "rn00920": "Sulfur metabolism"
+    }, 
+    "products": [
+      "C00283", 
+      "C00014", 
+      "C00109"
+    ], 
+    "substrates": [
+      "C00155", 
+      "C00001"
+    ]
+  }
+]

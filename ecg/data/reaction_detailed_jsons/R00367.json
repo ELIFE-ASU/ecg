@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "further methylation of sarcosine to N,N-dimethylglycine (ec 2.1.1.156, see R07243)", 
+    "definition": "S-Adenosyl-L-methionine + Glycine <=> S-Adenosyl-L-homocysteine + Sarcosine", 
+    "orthologs": {
+      "K00552": "glycine N-methyltransferase [EC:2.1.1.20]"
+    }, 
+    "name": "S-Adenosyl-L-methionine:glycine N-methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.20", 
+      "2.1.1.156", 
+      "2.1.1.162"
+    ], 
+    "equation": "C00019 + C00037 <=> C00021 + C00213", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00367", 
+    "pathways": {
+      "rn00260": "Glycine, serine and threonine metabolism"
+    }, 
+    "products": [
+      "C00021", 
+      "C00213"
+    ], 
+    "substrates": [
+      "C00019", 
+      "C00037"
+    ]
+  }
+]

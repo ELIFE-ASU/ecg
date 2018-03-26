@@ -1,0 +1,47 @@
+[
+  {
+    "comment": "HEP C-methyltransferase radical SAM", 
+    "definition": "2-Hydroxyethylphosphonate + Methylcobalamin + S-Adenosyl-L-methionine + H+ + e- <=> (S)-2-Hydroxypropylphosphonate + Cob(II)alamin + 5'-Deoxyadenosine + L-Methionine", 
+    "orthologs": {
+      "K12902": "phosphonoacetaldehyde methylase [EC:2.1.1.308]"
+    }, 
+    "name": "methylcobalamin:2-hydroxyethylphosphonate C-methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.308"
+    ], 
+    "equation": "C06451 + C06453 + C00019 + C00080 + C05359 <=> C06452 + C00541 + C05198 + C00073", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08862", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00440": "Phosphonate and phosphinate metabolism"
+    }, 
+    "products": [
+      "C06452", 
+      "C00541", 
+      "C05198", 
+      "C00073"
+    ], 
+    "substrates": [
+      "C06451", 
+      "C06453", 
+      "C00019", 
+      "C00080", 
+      "C05359"
+    ]
+  }
+]

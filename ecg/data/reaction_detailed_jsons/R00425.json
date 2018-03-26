@@ -1,0 +1,42 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "GTP + 3 H2O <=> Formate + 2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one + Diphosphate", 
+    "orthologs": {
+      "K01497": "GTP cyclohydrolase II [EC:3.5.4.25]", 
+      "K14652": "3,4-dihydroxy 2-butanone 4-phosphate synthase / GTP cyclohydrolase II [EC:4.1.99.12 3.5.4.25]"
+    }, 
+    "name": "GTP 7,8-8,9-dihydrolase (diphosphate-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "3.5.4.25"
+    ], 
+    "equation": "C00044 + 3 C00001 <=> C00058 + C01304 + C00013", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00425", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00790": "Folate biosynthesis", 
+      "rn00740": "Riboflavin metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00058", 
+      "C01304", 
+      "C00013"
+    ], 
+    "substrates": [
+      "C00001", 
+      "C00044"
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "first step of R02724 (R01454+R04854+R03933)", 
+    "definition": "Cholesterol + Oxygen + 2 H+ + 2 Reduced adrenal ferredoxin <=> 20alpha-Hydroxycholesterol + H2O + 2 Oxidized adrenal ferredoxin", 
+    "orthologs": {
+      "K00498": "cholesterol monooxygenase (side-chain-cleaving) [EC:1.14.15.6]"
+    }, 
+    "name": "Cholesterol:oxygen oxidoreductase (side-chain-cleaving)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.15.6"
+    ], 
+    "equation": "C00187 + C00007 + 2 C00080 + 2 C00662 <=> C05500 + C00001 + 2 C00667", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01454", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00667", 
+      "C05500", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00080", 
+      "C00662", 
+      "C00187", 
+      "C00007"
+    ]
+  }
+]

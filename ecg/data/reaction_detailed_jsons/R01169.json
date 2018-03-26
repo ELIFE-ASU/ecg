@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "three-step reaction (see R10523+R10524+R04436)", 
+    "definition": "L-Histidine + 3 S-Adenosyl-L-methionine + H+ <=> Hercynine + 3 S-Adenosyl-L-homocysteine", 
+    "orthologs": {
+      "K18911": "L-histidine Nalpha-methyltransferase [EC:2.1.1.44]", 
+      "K20246": "L-histidine Nalpha-methyltransferase / hercynylcysteine S-oxide synthase [EC:2.1.1.44 1.14.99.51]"
+    }, 
+    "name": "S-adenosyl-L-methionine:L-histidine Nalpha-methyltransferase", 
+    "product_stoichiometries": [
+      "3", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.44"
+    ], 
+    "equation": "C00135 + 3 C00019 + C00080 <=> C05575 + 3 C00021", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "3", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01169", 
+    "pathways": {
+      "rn00340": "Histidine metabolism"
+    }, 
+    "products": [
+      "C00021", 
+      "C05575"
+    ], 
+    "substrates": [
+      "C00019", 
+      "C00135", 
+      "C00080"
+    ]
+  }
+]

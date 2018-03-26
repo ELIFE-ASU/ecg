@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "multi-step reaction (9-hydroxylation, cyclization and dehydration)", 
+    "definition": "Pulegone + NADPH + H+ + Oxygen <=> (+)-Menthofuran + NADP+ + 2 H2O", 
+    "orthologs": {
+      "K15093": "(+)-menthofuran synthase [EC:1.14.13.104]"
+    }, 
+    "name": "(+)-pulegone,NADPH:oxygen oxidoreductase (9-hydroxylating)", 
+    "product_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.104"
+    ], 
+    "equation": "C09893 + C00005 + C00080 + C00007 <=> C18025 + C00006 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08923", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00902": "Monoterpenoid biosynthesis"
+    }, 
+    "products": [
+      "C00001", 
+      "C18025", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C09893", 
+      "C00005", 
+      "C00080", 
+      "C00007"
+    ]
+  }
+]

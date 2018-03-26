@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "see R05706 (NADPH)", 
+    "definition": "Reduced FMN + NAD+ <=> FMN + NADH + H+", 
+    "orthologs": {
+      "K14631": "flavin reductase ActVB [EC:1.5.1.-]", 
+      "K05368": "aquacobalamin reductase / NAD(P)H-flavin reductase [EC:1.16.1.3 1.5.1.41]", 
+      "K20146": "nitrilotriacetate monooxygenase reductase component [EC:1.5.1.42]", 
+      "K13562": "NAD(P)H:FMN oxidoreductase [EC:1.5.1.-]", 
+      "K19286": "FMN reductase [NAD(P)H] [EC:1.5.1.39]", 
+      "K00484": "flavin reductase (NADH) [EC:1.5.1.36]"
+    }, 
+    "name": "FMNH2:NAD+ oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.5.1.36", 
+      "1.5.1.39", 
+      "1.5.1.41", 
+      "1.5.1.42", 
+      "1.5.1.-"
+    ], 
+    "equation": "C01847 + C00003 <=> C00061 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05705", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn01057": "Biosynthesis of type II polyketide products", 
+      "rn00740": "Riboflavin metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00061", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01847", 
+      "C00003"
+    ]
+  }
+]

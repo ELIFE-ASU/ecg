@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "", 
+    "definition": "5,10-Methylenetetrahydrofolate + dUMP + NADPH + H+ <=> Tetrahydrofolate + dTMP + NADP+", 
+    "orthologs": {
+      "K03465": "thymidylate synthase (FAD) [EC:2.1.1.148]"
+    }, 
+    "name": "5,10-methylenetetrahydrofolate,NADPH:dUMP C-methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.148"
+    ], 
+    "equation": "C00143 + C00365 + C00005 + C00080 <=> C00101 + C00364 + C00006", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06613", 
+    "pathways": {
+      "rn00670": "One carbon pool by folate", 
+      "rn00240": "Pyrimidine metabolism", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00101", 
+      "C00364", 
+      "C00006"
+    ], 
+    "substrates": [
+      "C00143", 
+      "C00365", 
+      "C00005", 
+      "C00080"
+    ]
+  }
+]

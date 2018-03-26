@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "type I polyketide synthase, PikA1-4", 
+    "definition": "6 (S)-Methylmalonyl-CoA + Malonyl-CoA + 5 NADPH + 5 H+ <=> Narbonolide + 7 CoA + 7 CO2 + 5 NADP+ + 2 H2O", 
+    "orthologs": {
+      "K16000": "narbonolide/10-deoxymethynolide synthase [EC:2.3.1.240 2.3.1.239]", 
+      "K16001": "narbonolide/10-deoxymethynolide synthase [EC:2.3.1.240 2.3.1.239]", 
+      "K16002": "narbonolide/10-deoxymethynolide synthase [EC:2.3.1.240 2.3.1.239]", 
+      "K16003": "narbonolide synthase [EC:2.3.1.240]"
+    }, 
+    "name": "(2S)-methylmalonyl-CoA:malonyl-CoA malonyltransferase (narbonolide forming)", 
+    "product_stoichiometries": [
+      "7", 
+      "7", 
+      "5", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.240"
+    ], 
+    "equation": "6 C00683 + C00083 + 5 C00005 + 5 C00080 <=> C11997 + 7 C00010 + 7 C00011 + 5 C00006 + 2 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "6", 
+      "5", 
+      "5", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R06459", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00522": "Biosynthesis of 12-, 14- and 16-membered macrolides"
+    }, 
+    "products": [
+      "C00010", 
+      "C00011", 
+      "C00006", 
+      "C00001", 
+      "C11997"
+    ], 
+    "substrates": [
+      "C00683", 
+      "C00005", 
+      "C00080", 
+      "C00083"
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "multi-step reaction", 
+    "definition": "Octanoyl-CoA + L-Cysteinyl-protein <=> S-Octanoyl-L-cysteinyl-protein + CoA", 
+    "orthologs": {
+      "K18002": "2-heptyl-4(1H)-quinolone synthase subunit PqsC [EC:2.3.1.230]", 
+      "K18001": "2-heptyl-4(1H)-quinolone synthase subunit PqsB [EC:2.3.1.230]"
+    }, 
+    "name": "octanoyl-CoA:2-aminobenzoylacetate octanoyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.3.1.230"
+    ], 
+    "equation": "C01944 + C21487 <=> C21489 + C00010", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10590", 
+    "pathways": {
+      "rn01130": "Biosynthesis of antibiotics", 
+      "rn00405": "Phenazine biosynthesis"
+    }, 
+    "products": [
+      "C21489", 
+      "C00010"
+    ], 
+    "substrates": [
+      "C01944", 
+      "C21487"
+    ]
+  }
+]

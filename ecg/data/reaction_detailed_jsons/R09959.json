@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "multi-step reaction possibly intermediate (see [CPD:C03684], R04286)", 
+    "definition": "7,8-Dihydroneopterin 3'-triphosphate + H2O <=> 6-Carboxy-5,6,7,8-tetrahydropterin + Acetaldehyde + Triphosphate", 
+    "orthologs": {
+      "K01737": "6-pyruvoyltetrahydropterin/6-carboxytetrahydropterin synthase [EC:4.2.3.12 4.1.2.50]"
+    }, 
+    "name": "7,8-dihydroneopterin 3'-triphosphate acetaldehyde-lyase (6-carboxy-5,6,7,8-tetrahydropterin and triphosphate-forming)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "4.1.2.50"
+    ], 
+    "equation": "C04895 + C00001 <=> C20239 + C00084 + C00536", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09959", 
+    "pathways": {
+      "rn00790": "Folate biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C20239", 
+      "C00084", 
+      "C00536"
+    ], 
+    "substrates": [
+      "C04895", 
+      "C00001"
+    ]
+  }
+]

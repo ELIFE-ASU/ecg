@@ -1,0 +1,53 @@
+[
+  {
+    "comment": "multi-step reaction (see R00002+R00067+R00153+R02802+R04782)", 
+    "definition": "16 ATP + Nitrogen + 8 Reduced ferredoxin + 8 H+ + 16 H2O <=> 16 Orthophosphate + 16 ADP + 8 Oxidized ferredoxin + 2 Ammonia + Hydrogen", 
+    "orthologs": {
+      "K02588": "nitrogenase iron protein NifH [EC:1.18.6.1]", 
+      "K00531": "nitrogenase delta subunit [EC:1.18.6.1]", 
+      "K02591": "nitrogenase molybdenum-iron protein beta chain [EC:1.18.6.1]", 
+      "K02586": "nitrogenase molybdenum-iron protein alpha chain [EC:1.18.6.1]"
+    }, 
+    "name": "reduced ferredoxin:dinitrogen oxidoreductase (ATP-hydrolysing)", 
+    "product_stoichiometries": [
+      "16", 
+      "16", 
+      "8", 
+      "2", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.18.6.1"
+    ], 
+    "equation": "16 C00002 + C00697 + 8 C00138 + 8 C00080 + 16 C00001 <=> 16 C00009 + 16 C00008 + 8 C00139 + 2 C00014 + C00282", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "16", 
+      "8", 
+      "8", 
+      "16", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05185", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00009", 
+      "C00008", 
+      "C00139", 
+      "C00014", 
+      "C00282"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00138", 
+      "C00080", 
+      "C00001", 
+      "C00697"
+    ]
+  }
+]

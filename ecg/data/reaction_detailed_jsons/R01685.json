@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "EC1.4.99.2: probably EC1.4.2.-, TauXY", 
+    "definition": "Taurine + H2O + 2 Ferricytochrome c <=> Sulfoacetaldehyde + Ammonia + 2 Ferrocytochrome c + 2 H+", 
+    "orthologs": {
+      "K07256": "taurine dehydrogenase large subunit [EC:1.4.2.-]", 
+      "K07255": "taurine dehydrogenase small subunit [EC:1.4.2.-]"
+    }, 
+    "name": "taurine:ferricytochrome-c oxidoreductase (deaminating)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.4.2.-"
+    ], 
+    "equation": "C00245 + C00001 + 2 C00125 <=> C00593 + C00014 + 2 C00126 + 2 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01685", 
+    "pathways": {
+      "rn00430": "Taurine and hypotaurine metabolism"
+    }, 
+    "products": [
+      "C00126", 
+      "C00080", 
+      "C00593", 
+      "C00014"
+    ], 
+    "substrates": [
+      "C00125", 
+      "C00245", 
+      "C00001"
+    ]
+  }
+]

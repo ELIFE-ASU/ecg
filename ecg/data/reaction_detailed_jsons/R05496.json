@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "nitrogenase", 
+    "definition": "Acetylene + Reduced ferredoxin + 2 H+ + ATP + H2O <=> Ethylene + Oxidized ferredoxin + ADP + Orthophosphate", 
+    "orthologs": {
+      "K02588": "nitrogenase iron protein NifH [EC:1.18.6.1]", 
+      "K00531": "nitrogenase delta subunit [EC:1.18.6.1]", 
+      "K02591": "nitrogenase molybdenum-iron protein beta chain [EC:1.18.6.1]", 
+      "K02586": "nitrogenase molybdenum-iron protein alpha chain [EC:1.18.6.1]"
+    }, 
+    "name": "reduced ferredoxin:acetylene oxidoreductase (ATP-hydrolysing)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.18.6.1"
+    ], 
+    "equation": "C01548 + C00138 + 2 C00080 + C00002 + C00001 <=> C06547 + C00139 + C00008 + C00009", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05496", 
+    "pathways": {
+      "rn00625": "Chloroalkane and chloroalkene degradation", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C06547", 
+      "C00139", 
+      "C00008", 
+      "C00009"
+    ], 
+    "substrates": [
+      "C00080", 
+      "C01548", 
+      "C00138", 
+      "C00002", 
+      "C00001"
+    ]
+  }
+]

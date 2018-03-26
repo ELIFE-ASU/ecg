@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "", 
+    "definition": "Ammonia + 2 H2O + 6 Ferricytochrome c <=> Nitrite + 6 Ferrocytochrome c + 6 H+", 
+    "orthologs": {
+      "K03385": "nitrite reductase (cytochrome c-552) [EC:1.7.2.2]", 
+      "K04016": "cytochrome c-type biogenesis protein NrfE", 
+      "K15876": "cytochrome c nitrite reductase small subunit"
+    }, 
+    "name": "ammonia:ferricytochrome-c oxidoreductase", 
+    "product_stoichiometries": [
+      "6", 
+      "6", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.7.2.2"
+    ], 
+    "equation": "C00014 + 2 C00001 + 6 C00125 <=> C00088 + 6 C00126 + 6 C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "6", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R05712", 
+    "pathways": {
+      "rn00910": "Nitrogen metabolism", 
+      "rn01120": "Microbial metabolism in diverse environments"
+    }, 
+    "products": [
+      "C00126", 
+      "C00080", 
+      "C00088"
+    ], 
+    "substrates": [
+      "C00001", 
+      "C00125", 
+      "C00014"
+    ]
+  }
+]

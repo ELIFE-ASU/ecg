@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "", 
+    "definition": "Octanoyl-[acp] + NAD+ <=> trans-Oct-2-enoyl-[acp] + NADH + H+", 
+    "orthologs": {
+      "K02371": "enoyl-[acyl-carrier protein] reductase II [EC:1.3.1.9]", 
+      "K00209": "enoyl-[acyl-carrier protein] reductase / trans-2-enoyl-CoA reductase (NAD+) [EC:1.3.1.9 1.3.1.44]", 
+      "K00208": "enoyl-[acyl-carrier protein] reductase I [EC:1.3.1.9 1.3.1.10]", 
+      "K11533": "fatty acid synthase, bacteria type [EC:2.3.1.-]"
+    }, 
+    "name": "octanoyl-[acp]:NAD+ trans-2-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.3.1.9", 
+      "2.3.1.-"
+    ], 
+    "equation": "C05752 + C00003 <=> C05751 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R04958", 
+    "pathways": {
+      "rn01212": "Fatty acid metabolism", 
+      "rn00061": "Fatty acid biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C05751", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C05752", 
+      "C00003"
+    ]
+  }
+]

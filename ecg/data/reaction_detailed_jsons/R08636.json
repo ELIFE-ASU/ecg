@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "two-step reaction (similar to R10052, R04426+R01652)", 
+    "definition": "3-(5'-Methylthio)pentylmalic acid + NAD+ <=> 2-Oxo-8-methylthiooctanoic acid + CO2 + NADH + H+", 
+    "orthologs": {
+      "K21360": "3-isopropylmalate/methylthioalkylmalate dehydrogenase [EC:1.1.1.85 1.1.1.-]"
+    }, 
+    "name": "3-(5'-methylthio)pentylmalate:NAD+ oxidoreductase (decarboxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.-"
+    ], 
+    "equation": "C17223 + C00003 <=> C17224 + C00011 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R08636", 
+    "pathways": {
+      "rn01210": "2-Oxocarboxylic acid metabolism", 
+      "rn00966": "Glucosinolate biosynthesis"
+    }, 
+    "products": [
+      "C17224", 
+      "C00011", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C17223", 
+      "C00003"
+    ]
+  }
+]

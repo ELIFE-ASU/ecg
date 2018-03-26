@@ -1,0 +1,43 @@
+[
+  {
+    "comment": "possibly intermediate (triphosphate, see [CPD:C00536])", 
+    "definition": "Orthophosphate + Diphosphate + S-Adenosyl-L-methionine <=> ATP + L-Methionine + H2O", 
+    "orthologs": {
+      "K00789": "S-adenosylmethionine synthetase [EC:2.5.1.6]"
+    }, 
+    "name": "ATP:L-methionine S-adenosyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.5.1.6"
+    ], 
+    "equation": "C00009 + C00013 + C00019 <=> C00002 + C00073 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00177", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00270": "Cysteine and methionine metabolism", 
+      "rn01100": "Metabolic pathways", 
+      "rn01230": "Biosynthesis of amino acids"
+    }, 
+    "products": [
+      "C00002", 
+      "C00073", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00009", 
+      "C00013", 
+      "C00019"
+    ]
+  }
+]

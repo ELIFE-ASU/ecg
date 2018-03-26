@@ -1,0 +1,39 @@
+[
+  {
+    "comment": "NADP+ (see R02836)", 
+    "definition": "Cortisol + NAD+ <=> Cortisone + NADH + H+", 
+    "orthologs": {
+      "K00071": "corticosteroid 11-beta-dehydrogenase isozyme 2 [EC:1.1.1.-]"
+    }, 
+    "name": "Cortisol:NAD+ 11-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.-"
+    ], 
+    "equation": "C00735 + C00003 <=> C00762 + C00004 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02834", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00762", 
+      "C00004", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C00735", 
+      "C00003"
+    ]
+  }
+]

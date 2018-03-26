@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "aromatase, ARO three successive reactions (R02501+R04761+R03087) subsequently R04761", 
+    "definition": "Testosterone + [Reduced NADPH---hemoprotein reductase] + Oxygen <=> 19-Hydroxytestosterone + [Oxidized NADPH---hemoprotein reductase] + H2O", 
+    "orthologs": {
+      "K07434": "aromatase [EC:1.14.14.14]"
+    }, 
+    "name": "testosterone,NADPH---hemoprotein reductase:oxygen oxidoreductase (19-hydroxylating)", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.14.14"
+    ], 
+    "equation": "C00535 + C03024 + C00007 <=> C05294 + C03161 + C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02501", 
+    "pathways": {
+      "rn00140": "Steroid hormone biosynthesis", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C05294", 
+      "C03161", 
+      "C00001"
+    ], 
+    "substrates": [
+      "C00535", 
+      "C03024", 
+      "C00007"
+    ]
+  }
+]

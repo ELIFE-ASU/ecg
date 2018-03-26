@@ -1,0 +1,53 @@
+[
+  {
+    "comment": "the first step of several ligases (ec 6.3.5.x) using glutamine as amide-N-donor ec 6.3.5.4 (see R00578, R00256+R00483) ec 6.3.5.5 (see R00575, R00256+R10948+R10949+R01395)", 
+    "definition": "L-Glutamine + H2O <=> L-Glutamate + Ammonia", 
+    "orthologs": {
+      "K01956": "carbamoyl-phosphate synthase small subunit [EC:6.3.5.5]", 
+      "K01954": "carbamoyl-phosphate synthase [EC:6.3.5.5]", 
+      "K01955": "carbamoyl-phosphate synthase large subunit [EC:6.3.5.5]", 
+      "K11541": "carbamoyl-phosphate synthase / aspartate carbamoyltransferase [EC:6.3.5.5 2.1.3.2]", 
+      "K11540": "carbamoyl-phosphate synthase / aspartate carbamoyltransferase / dihydroorotase [EC:6.3.5.5 2.1.3.2 3.5.2.3]", 
+      "K05597": "glutamin-(asparagin-)ase [EC:3.5.1.38]", 
+      "K01425": "glutaminase [EC:3.5.1.2]"
+    }, 
+    "name": "L-glutamine amidohydrolase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.4.1.13", 
+      "1.4.7.1", 
+      "3.5.1.2", 
+      "3.5.1.38", 
+      "4.3.3.6", 
+      "6.3.4.2", 
+      "6.3.5.2", 
+      "6.3.5.4", 
+      "6.3.5.5"
+    ], 
+    "equation": "C00064 + C00001 <=> C00025 + C00014", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R00256", 
+    "pathways": {
+      "rn00220": "Arginine biosynthesis", 
+      "rn01100": "Metabolic pathways", 
+      "rn00250": "Alanine, aspartate and glutamate metabolism", 
+      "rn00471": "D-Glutamine and D-glutamate metabolism"
+    }, 
+    "products": [
+      "C00025", 
+      "C00014"
+    ], 
+    "substrates": [
+      "C00064", 
+      "C00001"
+    ]
+  }
+]

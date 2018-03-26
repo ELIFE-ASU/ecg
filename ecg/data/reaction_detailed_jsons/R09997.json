@@ -1,0 +1,37 @@
+[
+  {
+    "comment": "two-step reaction (see R10001+R10000)", 
+    "definition": "Methanethiol + Coenzyme M <=> 2-(Methylthio)ethanesulfonate + Hydrogen sulfide", 
+    "orthologs": {
+      "K16954": "methylthiol:coenzyme M methyltransferase [EC:2.1.1.251]", 
+      "K16955": "methylated-thiol--corrinoid protein"
+    }, 
+    "name": "methanethiol:coenzyme M methyltransferase", 
+    "product_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "2.1.1.251"
+    ], 
+    "equation": "C00409 + C03576 <=> C03920 + C00283", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R09997", 
+    "pathways": {
+      "rn00920": "Sulfur metabolism"
+    }, 
+    "products": [
+      "C03920", 
+      "C00283"
+    ], 
+    "substrates": [
+      "C00409", 
+      "C03576"
+    ]
+  }
+]

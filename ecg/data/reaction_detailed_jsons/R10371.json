@@ -1,0 +1,44 @@
+[
+  {
+    "comment": "two-step reaction", 
+    "definition": "Paspaline + 2 NADPH + 2 H+ + 2 Oxygen <=> Paspaline B + 2 NADP+ + 3 H2O", 
+    "orthologs": {
+      "K18392": "cytochrome P450 monooxygenase [EC:1.14.13.-]", 
+      "K18388": "cytochrome P450 monooxygenase [EC:1.14.13.-]"
+    }, 
+    "name": "paspaline,NADPH:oxygen oxidoreductase", 
+    "product_stoichiometries": [
+      "2", 
+      "3", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.14.13.-"
+    ], 
+    "equation": "C20530 + 2 C00005 + 2 C00080 + 2 C00007 <=> C20587 + 2 C00006 + 3 C00001", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "2", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R10371", 
+    "pathways": {
+      "rn00403": "Indole diterpene alkaloid biosynthesis", 
+      "rn01110": "Biosynthesis of secondary metabolites"
+    }, 
+    "products": [
+      "C00006", 
+      "C00001", 
+      "C20587"
+    ], 
+    "substrates": [
+      "C00005", 
+      "C00080", 
+      "C00007", 
+      "C20530"
+    ]
+  }
+]

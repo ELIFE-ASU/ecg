@@ -1,0 +1,41 @@
+[
+  {
+    "comment": "NAD+ (see R03591)", 
+    "definition": "Morphine + NADP+ <=> Morphinone + NADPH + H+", 
+    "orthologs": {
+      "K03378": "morphine 6-dehydrogenase [EC:1.1.1.218]", 
+      "K13394": "codeinone reductase [EC:1.1.1.247]"
+    }, 
+    "name": "morphine:NAD(P)+ 6-oxidoreductase", 
+    "product_stoichiometries": [
+      "1", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.1.1.218", 
+      "1.1.1.247"
+    ], 
+    "equation": "C01516 + C00006 <=> C01735 + C00005 + C00080", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R03592", 
+    "pathways": {
+      "rn01110": "Biosynthesis of secondary metabolites", 
+      "rn00950": "Isoquinoline alkaloid biosynthesis"
+    }, 
+    "products": [
+      "C01735", 
+      "C00005", 
+      "C00080"
+    ], 
+    "substrates": [
+      "C01516", 
+      "C00006"
+    ]
+  }
+]

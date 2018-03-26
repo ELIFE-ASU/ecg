@@ -1,0 +1,50 @@
+[
+  {
+    "comment": "BadD,BadE,BadF,BadG multi-step reaction", 
+    "definition": "Benzoyl-CoA + Reduced ferredoxin + 2 ATP + 2 H2O <=> Cyclohexa-1,5-diene-1-carbonyl-CoA + Oxidized ferredoxin + 2 Orthophosphate + 2 ADP", 
+    "orthologs": {
+      "K04113": "benzoyl-CoA reductase subunit B [EC:1.3.7.8]", 
+      "K04112": "benzoyl-CoA reductase subunit C [EC:1.3.7.8]", 
+      "K04115": "benzoyl-CoA reductase subunit D [EC:1.3.7.8]", 
+      "K04114": "benzoyl-CoA reductase subunit A [EC:1.3.7.8]"
+    }, 
+    "name": "cyclohexa-1,5-diene-1-carbonyl-CoA:ferredoxin oxidoreductase (aromatizing, ATP-forming)", 
+    "product_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "enzymes": [
+      "1.3.7.8"
+    ], 
+    "equation": "C00512 + C00138 + 2 C00002 + 2 C00001 <=> C06322 + C00139 + 2 C00009 + 2 C00008", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "2", 
+      "2", 
+      "1", 
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R02451", 
+    "pathways": {
+      "rn00362": "Benzoate degradation", 
+      "rn01120": "Microbial metabolism in diverse environments", 
+      "rn01220": "Degradation of aromatic compounds", 
+      "rn01100": "Metabolic pathways"
+    }, 
+    "products": [
+      "C00009", 
+      "C00008", 
+      "C06322", 
+      "C00139"
+    ], 
+    "substrates": [
+      "C00002", 
+      "C00001", 
+      "C00512", 
+      "C00138"
+    ]
+  }
+]

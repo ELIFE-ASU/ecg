@@ -1,0 +1,38 @@
+[
+  {
+    "comment": "intermediate (see [CPD:C01151])", 
+    "definition": "alpha-D-Ribose 1-phosphate <=> D-Ribose 5-phosphate", 
+    "orthologs": {
+      "K01835": "phosphoglucomutase [EC:5.4.2.2]", 
+      "K22199": "phosphopentomutase [EC:5.4.2.7]", 
+      "K15779": "phosphoglucomutase / phosphopentomutase [EC:5.4.2.2 5.4.2.7]", 
+      "K15778": "phosphomannomutase / phosphoglucomutase [EC:5.4.2.8 5.4.2.2]", 
+      "K01839": "phosphopentomutase [EC:5.4.2.7]"
+    }, 
+    "name": "D-Ribose 1,5-phosphomutase", 
+    "product_stoichiometries": [
+      "1"
+    ], 
+    "enzymes": [
+      "5.4.2.2", 
+      "5.4.2.7"
+    ], 
+    "equation": "C00620 <=> C00117", 
+    "glycans": false, 
+    "substrate_stoichiometries": [
+      "1"
+    ], 
+    "rpairs": {}, 
+    "entry_id": "R01057", 
+    "pathways": {
+      "rn00230": "Purine metabolism", 
+      "rn00030": "Pentose phosphate pathway"
+    }, 
+    "products": [
+      "C00117"
+    ], 
+    "substrates": [
+      "C00620"
+    ]
+  }
+]
