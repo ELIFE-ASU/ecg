@@ -185,12 +185,12 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
     ------------------------------------------
     Implemented
     --------------------
-    bipartite-directed-rxnsub (not tested)
-    bipartite-undirected-rxnsub (not tested)
-    unipartite-undirected-rxn (not tested)
-    unipartite-directed-sub (not tested)
-    unipartite-undirected-sub (not tested)
-    unipartite-undirected-subfromdirected --same connection rules used in  (not tested)
+    bipartite-directed-rxnsub
+    bipartite-undirected-rxnsub
+    unipartite-undirected-rxn
+    unipartite-directed-sub
+    unipartite-undirected-sub
+    unipartite-undirected-subfromdirected --same connection rules used in 
                                             "Universal Scaling" paper
     --------------------
     Not yet implemented
@@ -311,7 +311,13 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
         write_json(rxns_missing_from_rxn_edges, rxns_missing_from_edges_outpath+'.json')
 
 def write_graphs_from_many_genomes(fpathdir,gmldir,missingdir,graphtypes=['unipartite-undirected-subfromdirected'],write_dir_to_outfpath=True,write_dir_to_outfname=True,write_header_to_outfname=True,write_fname_to_outfname=True):
+    """
+    Writes multiple EC lists to one or more gml files.
 
+    See `write_graphs_from_one_genome` docstring for details.
+
+    :param fpathdir: the filepath to the directory of genomes
+    """
     for fpath in glob.glob(fpathdir+'*.dat'):
 
         print "Creating gml from: %s ..."%fpath
