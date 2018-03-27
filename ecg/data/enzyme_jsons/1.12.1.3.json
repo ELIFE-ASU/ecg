@@ -1,0 +1,968 @@
+[
+  {
+    "entry_id": "1.12.1.3",
+    "name": "hydrogen dehydrogenase (NADP+)",
+    "names": [
+      "hydrogen dehydrogenase (NADP+)",
+      "NADP+-linked hydrogenase",
+      "NADP+-reducing hydrogenase",
+      "hydrogenase (ambiguous)",
+      "hydrogenase I (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on hydrogen as donor;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "hydrogen:NADP+ oxidoreductase",
+    "reaction": "H2 + NADP+ = H+ + NADPH [RN:R07181]",
+    "all_reac": "R07181",
+    "iubmb_reactions": [
+      "R07181"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "H2 [CPD:C00282]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "products": [
+      "H+ [CPD:C00080]",
+      "NADPH [CPD:C00005]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The protein from the bacterium Desulfovibrio fructosovorans is an iron-sulfur protein that exclusively functions as a hydrogen dehydrogenase [1], while the enzyme from the archaeon Pyrococcus furiosus is a nickel, iron, iron-sulfur protein, that is part of a heterotetrameric complex where the alpha and delta subunits function as a hydrogenase while the beta and gamma subunits function as sulfur reductase (EC 1.12.98.4, sulfhydrogenase). Different from EC 1.12.1.5, hydrogen dehydrogenase [NAD(P)+].",
+    "pathways": {
+    },
+    "orthologs": {
+      "K17992": "NADP-reducing hydrogenase subunit HndB",
+      "K17993": "sulfhydrogenase subunit alpha",
+      "K17994": "sulfhydrogenase subunit delta",
+      "K18330": "NADP-reducing hydrogenase subunit HndA",
+      "K18331": "NADP-reducing hydrogenase subunit HndC",
+      "K18332": "NADP-reducing hydrogenase subunit HndD"
+    },
+    "genes": {
+      "geb": [
+        "GM18_1856",
+        "GM18_1857",
+        "GM18_1858",
+        "GM18_1859"
+      ],
+      "pca": [
+        "Pcar_1602",
+        "Pcar_1603",
+        "Pcar_1604",
+        "Pcar_1605",
+        "Pcar_1633",
+        "Pcar_1634",
+        "Pcar_1635",
+        "Pcar_1636",
+        "Pcar_1844",
+        "Pcar_1845",
+        "Pcar_1846",
+        "Pcar_2708"
+      ],
+      "ppd": [
+        "Ppro_3516",
+        "Ppro_3517",
+        "Ppro_3518"
+      ],
+      "pace": [
+        "A6070_07090",
+        "A6070_07960"
+      ],
+      "pef": [
+        "A7E78_02220"
+      ],
+      "dma": [
+        "DMR_02450",
+        "DMR_02460",
+        "DMR_02470",
+        "DMR_02480"
+      ],
+      "dat": [
+        "HRM2_16520"
+      ],
+      "dti": [
+        "Desti_2752",
+        "Desti_2753"
+      ],
+      "dbr": [
+        "Deba_1519",
+        "Deba_1520"
+      ],
+      "cls": [
+        "CXIVA_23660",
+        "CXIVA_23670",
+        "CXIVA_23680",
+        "CXIVA_23700"
+      ],
+      "clb": [
+        "Clo1100_2676",
+        "Clo1100_2677",
+        "Clo1100_2678",
+        "Clo1100_2680"
+      ],
+      "cace": [
+        "CACET_c32710",
+        "CACET_c32740",
+        "CACET_c35740"
+      ],
+      "cfm": [
+        "BJL90_01765",
+        "BJL90_01785"
+      ],
+      "amt": [
+        "Amet_0638",
+        "Amet_0639",
+        "Amet_0640",
+        "Amet_0641",
+        "Amet_4100"
+      ],
+      "gfe": [
+        "Gferi_20695",
+        "Gferi_20765",
+        "Gferi_22870"
+      ],
+      "cth": [
+        "Cthe_0338",
+        "Cthe_0340",
+        "Cthe_0341",
+        "Cthe_0342"
+      ],
+      "ctx": [
+        "Clo1313_1881",
+        "Clo1313_1882",
+        "Clo1313_1883",
+        "Clo1313_1885"
+      ],
+      "ruk": [
+        "A4V00_14230"
+      ],
+      "cce": [
+        "Ccel_2232",
+        "Ccel_2233",
+        "Ccel_2234",
+        "Ccel_2236"
+      ],
+      "ccl": [
+        "Clocl_1309",
+        "Clocl_1311",
+        "Clocl_1312",
+        "Clocl_1313"
+      ],
+      "esr": [
+        "ES1_19890",
+        "ES1_19910"
+      ],
+      "esu": [
+        "EUS_11300",
+        "EUS_11320"
+      ],
+      "css": [
+        "Cst_c09400",
+        "Cst_c09420",
+        "Cst_c09430",
+        "Cst_c09440"
+      ],
+      "csd": [
+        "Clst_0900",
+        "Clst_0902",
+        "Clst_0903",
+        "Clst_0904"
+      ],
+      "ccel": [
+        "CCDG5_0742"
+      ],
+      "rch": [
+        "RUM_16060",
+        "RUM_16080",
+        "RUM_16090",
+        "RUM_16100"
+      ],
+      "cle": [
+        "Clole_2394",
+        "Clole_2395",
+        "Clole_2396",
+        "Clole_2397"
+      ],
+      "cct": [
+        "CC1_10620",
+        "CC1_10630",
+        "CC1_10640"
+      ],
+      "cpy": [
+        "Cphy_3801",
+        "Cphy_3803",
+        "Cphy_3804",
+        "Cphy_3805"
+      ],
+      "lacy": [
+        "A4V08_10155"
+      ],
+      "csh": [
+        "Closa_3390",
+        "Closa_3392",
+        "Closa_3393",
+        "Closa_3394"
+      ],
+      "hsd": [
+        "SD1D_2323"
+      ],
+      "eac": [
+        "EAL2_c04310"
+      ],
+      "dae": [
+        "Dtox_0172",
+        "Dtox_0173",
+        "Dtox_0174",
+        "Dtox_0176"
+      ],
+      "dku": [
+        "Desku_2307",
+        "Desku_2308",
+        "Desku_2309",
+        "Desku_2311"
+      ],
+      "tjr": [
+        "TherJR_2550",
+        "TherJR_2551",
+        "TherJR_2552"
+      ],
+      "dmi": [
+        "Desmer_4360"
+      ],
+      "ded": [
+        "DHBDCA_p1587",
+        "DHBDCA_p1588",
+        "DHBDCA_p1589",
+        "DHBDCA_p1590",
+        "DHBDCA_p1640"
+      ],
+      "dec": [
+        "DCF50_p1597",
+        "DCF50_p1598",
+        "DCF50_p1599",
+        "DCF50_p1600",
+        "DCF50_p1649"
+      ],
+      "drs": [
+        "DEHRE_11735",
+        "DEHRE_11740",
+        "DEHRE_11745",
+        "DEHRE_11750",
+        "DEHRE_12025"
+      ],
+      "elm": [
+        "ELI_0845",
+        "ELI_0846",
+        "ELI_0847"
+      ],
+      "awo": [
+        "Awo_c26970",
+        "Awo_c26980",
+        "Awo_c26990"
+      ],
+      "ibu": [
+        "IB211_00393"
+      ],
+      "fpla": [
+        "A4U99_03565"
+      ],
+      "tte": [
+        "TTE0892",
+        "TTE0893",
+        "TTE0894"
+      ],
+      "tex": [
+        "Teth514_2138",
+        "Teth514_2139",
+        "Teth514_2140"
+      ],
+      "thx": [
+        "Thet_0795",
+        "Thet_0796",
+        "Thet_0797"
+      ],
+      "tpd": [
+        "Teth39_1456",
+        "Teth39_1457",
+        "Teth39_1458"
+      ],
+      "tit": [
+        "Thit_0828",
+        "Thit_0829",
+        "Thit_0830"
+      ],
+      "tmt": [
+        "Tmath_0867",
+        "Tmath_0868",
+        "Tmath_0869"
+      ],
+      "tbo": [
+        "Thebr_1491",
+        "Thebr_1492",
+        "Thebr_1493"
+      ],
+      "twi": [
+        "Thewi_0978",
+        "Thewi_0979",
+        "Thewi_0980"
+      ],
+      "tep": [
+        "TepRe1_1888",
+        "TepRe1_1889",
+        "TepRe1_1890"
+      ],
+      "tae": [
+        "TepiRe1_2033",
+        "TepiRe1_2034",
+        "TepiRe1_2035"
+      ],
+      "mta": [
+        "Moth_1718"
+      ],
+      "tpz": [
+        "Tph_c18450"
+      ],
+      "csc": [
+        "Csac_1860",
+        "Csac_1862",
+        "Csac_1863",
+        "Csac_1864"
+      ],
+      "ate": [
+        "Athe_1295",
+        "Athe_1297",
+        "Athe_1298",
+        "Athe_1299"
+      ],
+      "cob": [
+        "COB47_1258",
+        "COB47_1259",
+        "COB47_1260",
+        "COB47_1262"
+      ],
+      "chd": [
+        "Calhy_1427",
+        "Calhy_1428",
+        "Calhy_1429",
+        "Calhy_1431"
+      ],
+      "cow": [
+        "Calow_1086",
+        "Calow_1088",
+        "Calow_1089",
+        "Calow_1090"
+      ],
+      "cki": [
+        "Calkr_1280",
+        "Calkr_1282",
+        "Calkr_1283",
+        "Calkr_1284"
+      ],
+      "ckn": [
+        "Calkro_1402",
+        "Calkro_1403",
+        "Calkro_1404",
+        "Calkro_1406"
+      ],
+      "clc": [
+        "Calla_0683",
+        "Calla_0685",
+        "Calla_0686",
+        "Calla_0687"
+      ],
+      "toc": [
+        "Toce_0693",
+        "Toce_0695",
+        "Toce_0696",
+        "Toce_0697"
+      ],
+      "ttm": [
+        "Tthe_1116",
+        "Tthe_1118",
+        "Tthe_1119",
+        "Tthe_1120"
+      ],
+      "tto": [
+        "Thethe_01060",
+        "Thethe_01062",
+        "Thethe_01063",
+        "Thethe_01064"
+      ],
+      "txy": [
+        "Thexy_1580",
+        "Thexy_1581",
+        "Thexy_1582",
+        "Thexy_1584"
+      ],
+      "tsh": [
+        "Tsac_2126",
+        "Tsac_2127",
+        "Tsac_2128",
+        "Tsac_2130"
+      ],
+      "cpo": [
+        "COPRO5265_0177",
+        "COPRO5265_0179",
+        "COPRO5265_0180",
+        "COPRO5265_0181"
+      ],
+      "mas": [
+        "Mahau_1250",
+        "Mahau_1252",
+        "Mahau_1253",
+        "Mahau_1254"
+      ],
+      "nth": [
+        "Nther_0098"
+      ],
+      "hor": [
+        "Hore_06320"
+      ],
+      "has": [
+        "Halsa_1862",
+        "Halsa_1863",
+        "Halsa_1864",
+        "Halsa_1866"
+      ],
+      "hpk": [
+        "Hprae_1627",
+        "Hprae_1628",
+        "Hprae_1629",
+        "Hprae_1631"
+      ],
+      "aar": [
+        "Acear_0268",
+        "Acear_0269",
+        "Acear_0271",
+        "Acear_2301"
+      ],
+      "hhl": [
+        "Halha_0377",
+        "Halha_2285",
+        "Halha_2286",
+        "Halha_2287",
+        "Halha_2289"
+      ],
+      "pft": [
+        "JBW_04039"
+      ],
+      "tur": [
+        "AT726_09495"
+      ],
+      "mbj": [
+        "KQ51_00322",
+        "KQ51_01818"
+      ],
+      "atm": [
+        "ANT_17790"
+      ],
+      "abat": [
+        "CFX1CAM_1216"
+      ],
+      "pbas": [
+        "SMSP2_01580"
+      ],
+      "vbl": [
+        "L21SP4_00380"
+      ],
+      "tbe": [
+        "Trebr_0332",
+        "Trebr_0333"
+      ],
+      "taz": [
+        "TREAZ_3248"
+      ],
+      "tped": [
+        "TPE_0917"
+      ],
+      "scd": [
+        "Spica_2775"
+      ],
+      "ssm": [
+        "Spirs_0474",
+        "Spirs_3688",
+        "Spirs_3689"
+      ],
+      "sta": [
+        "STHERM_c13750",
+        "STHERM_c13760"
+      ],
+      "stq": [
+        "Spith_1508",
+        "Spith_1509"
+      ],
+      "sfc": [
+        "Spiaf_1750",
+        "Spiaf_2407"
+      ],
+      "sbu": [
+        "SpiBuddy_2313",
+        "SpiBuddy_2314"
+      ],
+      "sgp": [
+        "SpiGrapes_2477",
+        "SpiGrapes_2478"
+      ],
+      "slr": [
+        "L21SP2_0274",
+        "L21SP2_0275"
+      ],
+      "epo": [
+        "Epro_0736"
+      ],
+      "tai": [
+        "Taci_0147",
+        "Taci_0148",
+        "Taci_0149",
+        "Taci_0150"
+      ],
+      "aco": [
+        "Amico_1557"
+      ],
+      "tli": [
+        "Tlie_1619"
+      ],
+      "amo": [
+        "Anamo_0024",
+        "Anamo_1679"
+      ],
+      "cpor": [
+        "BED41_00310"
+      ],
+      "bacc": [
+        "BRDCF_p1396",
+        "BRDCF_p1398"
+      ],
+      "pbt": [
+        "ING2E5B_2397",
+        "ING2E5B_2399"
+      ],
+      "pmuc": [
+        "ING2E5A_0853"
+      ],
+      "pet": [
+        "PEIBARAKI_2527"
+      ],
+      "pdi": [
+        "BDI_1042",
+        "BDI_1043",
+        "BDI_1044",
+        "BDI_1045"
+      ],
+      "parc": [
+        "CI960_08930"
+      ],
+      "psac": [
+        "PSM36_3022"
+      ],
+      "osp": [
+        "Odosp_0184",
+        "Odosp_0185",
+        "Odosp_0186",
+        "Odosp_0187"
+      ],
+      "rbc": [
+        "BN938_1638"
+      ],
+      "dori": [
+        "FH5T_03080"
+      ],
+      "blq": [
+        "L21SP5_00769",
+        "L21SP5_00771"
+      ],
+      "asx": [
+        "CDL62_11585"
+      ],
+      "caci": [
+        "CLOAM1184"
+      ],
+      "tma": [
+        "TM0011"
+      ],
+      "tmm": [
+        "Tmari_0008"
+      ],
+      "tmi": [
+        "THEMA_04745"
+      ],
+      "tmw": [
+        "THMA_0007"
+      ],
+      "tmq": [
+        "THMB_0007"
+      ],
+      "tmx": [
+        "THMC_0007"
+      ],
+      "tpt": [
+        "Tpet_0912"
+      ],
+      "trq": [
+        "TRQ2_0934"
+      ],
+      "tna": [
+        "CTN_0687"
+      ],
+      "tnp": [
+        "Tnap_0642"
+      ],
+      "thq": [
+        "T2812B_04725"
+      ],
+      "thz": [
+        "CELL2_04735"
+      ],
+      "thr": [
+        "TRQ7_04910"
+      ],
+      "tle": [
+        "Tlet_1521"
+      ],
+      "tta": [
+        "Theth_1566"
+      ],
+      "phy": [
+        "AJ81_08400"
+      ],
+      "tme": [
+        "Tmel_1171"
+      ],
+      "taf": [
+        "THA_1558"
+      ],
+      "thp": [
+        "BG95_06660"
+      ],
+      "ther": [
+        "Y592_06740"
+      ],
+      "fno": [
+        "Fnod_0994"
+      ],
+      "fpe": [
+        "Ferpe_1120"
+      ],
+      "fia": [
+        "NA23_05535"
+      ],
+      "pmo": [
+        "Pmob_0723",
+        "Pmob_0724",
+        "Pmob_0725",
+        "Pmob_0726"
+      ],
+      "mpz": [
+        "Marpi_1894",
+        "Marpi_1895",
+        "Marpi_1896",
+        "Marpi_1897"
+      ],
+      "marn": [
+        "LN42_10055"
+      ],
+      "dtn": [
+        "DTL3_0214"
+      ],
+      "kol": [
+        "Kole_0181"
+      ],
+      "kpf": [
+        "IX53_02690"
+      ],
+      "mpg": [
+        "Theba_0464"
+      ],
+      "cex": [
+        "CSE_11970"
+      ],
+      "dth": [
+        "DICTH_0768"
+      ],
+      "dtu": [
+        "Dtur_0918"
+      ],
+      "pho": [
+        "PH1292",
+        "PH1294"
+      ],
+      "pab": [
+        "PAB0640",
+        "PAB0641",
+        "PAB1786",
+        "PAB1787"
+      ],
+      "pfu": [
+        "PF0893",
+        "PF0894",
+        "PF1331",
+        "PF1332"
+      ],
+      "pfi": [
+        "PFC_03675",
+        "PFC_03680",
+        "PFC_05870",
+        "PFC_05875"
+      ],
+      "pyn": [
+        "PNA2_1551",
+        "PNA2_1553",
+        "PNA2_1665",
+        "PNA2_1666"
+      ],
+      "pya": [
+        "PYCH_00040",
+        "PYCH_00050",
+        "PYCH_08370",
+        "PYCH_08380"
+      ],
+      "pys": [
+        "Py04_0892",
+        "Py04_0893",
+        "Py04_1129",
+        "Py04_1130"
+      ],
+      "tko": [
+        "TK2069",
+        "TK2070"
+      ],
+      "ton": [
+        "TON_0052",
+        "TON_0053",
+        "TON_0534",
+        "TON_0535"
+      ],
+      "tsi": [
+        "TSIB_0284",
+        "TSIB_0285",
+        "TSIB_1522",
+        "TSIB_1523"
+      ],
+      "tba": [
+        "TERMP_00069",
+        "TERMP_00070",
+        "TERMP_00536",
+        "TERMP_00537"
+      ],
+      "the": [
+        "GQS_02470",
+        "GQS_02475",
+        "GQS_04985",
+        "GQS_04990"
+      ],
+      "tha": [
+        "TAM4_296",
+        "TAM4_701",
+        "TAM4_99"
+      ],
+      "thm": [
+        "CL1_0143",
+        "CL1_0144",
+        "CL1_0643",
+        "CL1_0644"
+      ],
+      "tlt": [
+        "OCC_03062",
+        "OCC_03067",
+        "OCC_12216",
+        "OCC_12221"
+      ],
+      "kcr": [
+        "Kcr_0321",
+        "Kcr_0322"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.12.1.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.12.1.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.12.1.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.12.1.3"
+      ],
+      "CAS": [
+        "9027-05-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "de Luca G",
+          "de Philip P",
+          "Rousset M",
+          "Belaich JP",
+          "Dermoun Z."
+        ],
+        "title": "The NADP-reducing hydrogenase of Desulfovibrio fructosovorans: evidence for a native complex with hydrogen-dependent methyl-viologen-reducing activity.",
+        "journal": "Biochem. Biophys. Res. Commun. 248 (1998) 591-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:9703971]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bryant FO",
+          "Adams MW"
+        ],
+        "title": "Characterization of hydrogenase from the hyperthermophilic archaebacterium, Pyrococcus furiosus.",
+        "journal": "J. Biol. Chem. 264 (1989) 5070-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:2538471]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ma K",
+          "Schicho RN",
+          "Kelly RM",
+          "Adams MW"
+        ],
+        "title": "Hydrogenase of the hyperthermophile Pyrococcus furiosus is an elemental sulfur reductase or sulfhydrogenase: evidence for a sulfur-reducing hydrogenase ancestor.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 90 (1993) 5341-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:8389482]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ma",
+          "K.",
+          "Zhou",
+          "Z.H. and Adams",
+          "M.W."
+        ],
+        "title": "Hydrogen production from pyruvate by enzymes purified from the hyperthermophilic archaeon, Pyrococcus furiosus: A key role for NADPH.",
+        "journal": "FEMS Microbiol. Lett. 122 (1994) 245-250.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "van Haaster DJ",
+          "Silva PJ",
+          "Hagedoorn PL",
+          "Jongejan JA",
+          "Hagen WR"
+        ],
+        "title": "Reinvestigation of the steady-state kinetics and physiological function of the soluble NiFe-hydrogenase I of Pyrococcus furiosus.",
+        "journal": "J. Bacteriol. 190 (2008) 1584-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:18156274]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

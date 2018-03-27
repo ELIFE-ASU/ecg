@@ -1,0 +1,208 @@
+[
+  {
+    "entry_id": "4.3.1.9",
+    "name": "glucosaminate ammonia-lyase",
+    "names": [
+      "glucosaminate ammonia-lyase",
+      "glucosaminic dehydrase",
+      "D-glucosaminate dehydratase",
+      "D-glucosaminic acid dehydrase",
+      "aminodeoxygluconate dehydratase",
+      "2-amino-2-deoxy-D-gluconate hydro-lyase (deaminating)",
+      "aminodeoxygluconate ammonia-lyase",
+      "2-amino-2-deoxy-D-gluconate ammonia-lyase",
+      "D-glucosaminate ammonia-lyase",
+      "D-glucosaminate ammonia-lyase (isomerizing",
+      "2-dehydro-3-deoxy-D-gluconate-forming)"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-nitrogen lyases;",
+      "Ammonia-lyases"
+    ],
+    "sysname": "2-amino-2-deoxy-D-gluconate ammonia-lyase (isomerizing; 2-dehydro-3-deoxy-D-gluconate-forming)",
+    "reaction": "2-amino-2-deoxy-D-gluconate = 2-dehydro-3-deoxy-D-gluconate + NH3 (overall reaction) [RN:R01544]; (1a) 2-amino-2-deoxy-D-gluconate = (2Z,4S,5R)-2-amino-4,5,6-trihydroxyhex-2-enoate + H2O [RN:R10773]; (1b) (2Z,4S,5R)-2-amino-4,5,6-trihydroxyhex-2-enoate = (4S,5R)-4,5,6-trihydroxy-2-iminohexanoate (spontaneous) [RN:R10774]; (1c) (4S,5R)-4,5,6-trihydroxy-2-iminohexanoate + H2O = 2-dehydro-3-deoxy-D-gluconate + NH3 (spontaneous) [RN:R10775]",
+    "all_reac": "R01544 R10773 R10774 R10775; (other) R06132",
+    "iubmb_reactions": [
+      "R01544 R10773 R10774 R10775"
+    ],
+    "kegg_reactions": [
+      "R06132"
+    ],
+    "substrates": [
+      "2-amino-2-deoxy-D-gluconate [CPD:C03752]",
+      "(2Z,4S,5R)-2-amino-4,5,6-trihydroxyhex-2-enoate [CPD:C20844]",
+      "(4S,5R)-4,5,6-trihydroxy-2-iminohexanoate [CPD:C20845]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "2-dehydro-3-deoxy-D-gluconate [CPD:C00204]",
+      "NH3 [CPD:C00014]",
+      "(2Z,4S,5R)-2-amino-4,5,6-trihydroxyhex-2-enoate [CPD:C20844]",
+      "H2O [CPD:C00001]",
+      "(4S,5R)-4,5,6-trihydroxy-2-iminohexanoate [CPD:C20845]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contains pyridoxal phosphate. The enzyme releases an unstable enamine product that tautomerizes to an imine form, which undergoes spontaneous hydrolytic deamination to form the final product.",
+    "pathways": {
+      "ec00030": "Pentose phosphate pathway",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+    },
+    "genes": {
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.3.1.9"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.3.1.9"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.3.1.9"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.3.1.9"
+      ],
+      "CAS": [
+        "37290-91-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Imanaga",
+          "Y."
+        ],
+        "title": "Metabolism of D-glucosamine. III. Enzymic degradation of D-glucosaminic acid.",
+        "journal": "J. Biochem. (Tokyo) 45 (1958) 647-650.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Merrick",
+          "J.M. and Roseman",
+          "S."
+        ],
+        "title": "D-Glucosaminic acid dehydrase.",
+        "journal": "Methods Enzymol. 9 (1966) 657-660.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Iwamoto R",
+          "Imanaga Y",
+          "Soda K."
+        ],
+        "title": "D-glucosaminate dehydratase from Agrobacterium radiobacter. Physicochemical and enzymological properties.",
+        "journal": "J. Biochem. (Tokyo). 91 (1982) 283-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:7068563]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Iwamoto R",
+          "Taniki H",
+          "Koishi J",
+          "Nakura S."
+        ],
+        "title": "D-glucosaminate aldolase activity of D-glucosaminate dehydratase from Pseudomonas fluorescens and its requirement for Mn2+ ion.",
+        "journal": "Biosci. Biotechnol. Biochem. 59 (1995) 408-11.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7766176]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

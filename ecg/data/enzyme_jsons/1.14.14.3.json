@@ -1,0 +1,296 @@
+[
+  {
+    "entry_id": "1.14.14.3",
+    "name": "bacterial luciferase",
+    "names": [
+      "bacterial luciferase",
+      "aldehyde monooxygenase",
+      "luciferase",
+      "Vibrio fischeri luciferase",
+      "alkanal,reduced-FMN:oxygen oxidoreductase (1-hydroxylating, luminescing)",
+      "alkanal,FMNH2:oxygen oxidoreductase (1-hydroxylating, luminescing)",
+      "alkanal monooxygenase (FMN)",
+      "aldehyde,FMNH2:oxygen oxidoreductase (1-hydroxylating, luminescing)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "long-chain-aldehyde,FMNH2:oxygen oxidoreductase (1-hydroxylating, luminescing)",
+    "reaction": "a long-chain aldehyde + FMNH2 + O2 = a long-chain fatty acid + FMN + H2O + hnu [RN:R10551]",
+    "all_reac": "R10551",
+    "iubmb_reactions": [
+      "R10551"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "long-chain aldehyde [CPD:C00609]",
+      "FMNH2 [CPD:C01847]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "long-chain fatty acid [CPD:C00638]",
+      "FMN [CPD:C00061]",
+      "H2O [CPD:C00001]",
+      "hnu [CPD:C00205]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The reaction sequence starts with the incorporation of a molecule of oxygen into reduced FMN bound to the enzyme, forming luciferase peroxyflavin. The peroxyflavin interacts with an aliphatic long-chain aldehyde, producing a highly fluorescent species believed to be luciferase hydroxyflavin. The enzyme is highly specific for reduced FMN and for long-chain aliphatic aldehydes with eight carbons or more. The highest efficiency is achieved with tetradecanal. cf. EC 1.13.12.18, dinoflagellate luciferase.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K00494": "alkanal monooxygenase alpha chain",
+      "K15854": "alkanal monooxygenase beta chain"
+    },
+    "genes": {
+      "plu": [
+        "plu2081",
+        "plu2082"
+      ],
+      "pay": [
+        "PAU_02511",
+        "PAU_02512"
+      ],
+      "ptt": [
+        "VY86_20590",
+        "VY86_20595"
+      ],
+      "vha": [
+        "VIBHAR_06241",
+        "VIBHAR_06242"
+      ],
+      "vca": [
+        "M892_20835",
+        "M892_20840"
+      ],
+      "vfi": [
+        "VF_A0920",
+        "VF_A0921"
+      ],
+      "vfm": [
+        "VFMJ11_A1038",
+        "VFMJ11_A1039"
+      ],
+      "vsa": [
+        "VSAL_II0961",
+        "VSAL_II0962"
+      ],
+      "swd": [
+        "Swoo_3635",
+        "Swoo_3636"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.3"
+      ],
+      "CAS": [
+        "9014-00-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Hastings JW",
+          "Nealson KH."
+        ],
+        "title": "Bacterial bioluminescence.",
+        "journal": "Annu. Rev. Microbiol. 31 (1977) 549-95.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:199107]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hastings JW."
+        ],
+        "title": "Bacterial bioluminescence light emission in the mixed function oxidation of reduced flavin and fatty aldehyde.",
+        "journal": "CRC. Crit. Rev. Biochem. 5 (1978) 163-84.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:363350]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hastings JW",
+          "Presswood RP."
+        ],
+        "title": "Bacterial luciferase: FMNH2-aldehyde oxidase.",
+        "journal": "Methods. Enzymol. 53 (1978) 558-70.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:309549]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nealson KH",
+          "Hastings JW."
+        ],
+        "title": "Bacterial bioluminescence: its control and ecological significance.",
+        "journal": "Microbiol. Rev. 43 (1979) 496-518.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:396467]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Suzuki",
+          "K.",
+          "Kaidoh",
+          "T.",
+          "Katagiri",
+          "M. and Tsuchiya",
+          "T."
+        ],
+        "title": "O2 incorporation into a long-chain fatty-acid during bacterial luminescence.",
+        "journal": "Biochim. Biophys. Acta 722 (1983) 297-301.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kurfurst M",
+          "Ghisla S",
+          "Hastings JW"
+        ],
+        "title": "Characterization and postulated structure of the primary emitter in the bacterial luciferase reaction.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 81 (1984) 2990-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:16593462]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

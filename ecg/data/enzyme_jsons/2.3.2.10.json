@@ -1,0 +1,696 @@
+[
+  {
+    "entry_id": "2.3.2.10",
+    "name": "UDP-N-acetylmuramoylpentapeptide-lysine N6-alanyltransferase",
+    "names": [
+      "UDP-N-acetylmuramoylpentapeptide-lysine N6-alanyltransferase",
+      "alanyl-transfer ribonucleate-uridine diphosphoacetylmuramoylpentapeptide transferase",
+      "UDP-N-acetylmuramoylpentapeptide lysine N6-alanyltransferase",
+      "uridine diphosphoacetylmuramoylpentapeptide lysine N6-alanyltransferase",
+      "L-alanyl-tRNA:UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine 6-N-alanyltransferase",
+      "L-alanyl-tRNA:UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine N6-alanyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Aminoacyltransferases"
+    ],
+    "sysname": "L-alanyl-tRNAAla:UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine N6-alanyltransferase",
+    "reaction": "L-alanyl-tRNAAla + UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine = tRNAAla + UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-N6-(L-alanyl)-L-lysyl-D-alanyl-D-alanine [RN:R04613]",
+    "all_reac": "R04613; (other) R08779",
+    "iubmb_reactions": [
+      "R04613"
+    ],
+    "kegg_reactions": [
+      "R08779"
+    ],
+    "substrates": [
+      "L-alanyl-tRNA(Ala) [CPD:C00886]",
+      "UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine"
+    ],
+    "products": [
+      "tRNA(Ala) [CPD:C01635]",
+      "UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-D-glutamyl-N6-(L-alanyl)-L-lysyl-D-alanyl-D-alanine"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Also acts on L-seryl-tRNASer.",
+    "pathways": {
+      "ec00550": "Peptidoglycan biosynthesis"
+    },
+    "orthologs": {
+      "K05363": "serine/alanine adding enzyme"
+    },
+    "genes": {
+      "baco": [
+        "OXB_0272"
+      ],
+      "spor": [
+        "SporoP33_05385"
+      ],
+      "spop": [
+        "SporoP37_05875"
+      ],
+      "sure": [
+        "SporoP32a_05895"
+      ],
+      "llk": [
+        "LLKF_2319"
+      ],
+      "llx": [
+        "NCDO2118_2181"
+      ],
+      "llc": [
+        "LACR_2372"
+      ],
+      "llm": [
+        "llmg_2352"
+      ],
+      "llr": [
+        "llh_12055"
+      ],
+      "lln": [
+        "LLNZ_12160"
+      ],
+      "lli": [
+        "uc509_2051"
+      ],
+      "llw": [
+        "kw2_2131"
+      ],
+      "lgr": [
+        "LCGT_0589"
+      ],
+      "lgv": [
+        "LCGL_0608"
+      ],
+      "lpk": [
+        "LACPI_0939"
+      ],
+      "spy": [
+        "SPy_0616",
+        "SPy_1205"
+      ],
+      "spz": [
+        "M5005_Spy0511",
+        "M5005_Spy0920"
+      ],
+      "spym": [
+        "M1GAS476_0565",
+        "M1GAS476_0975"
+      ],
+      "spm": [
+        "spyM18_0683",
+        "spyM18_1156"
+      ],
+      "spg": [
+        "SpyM3_0435",
+        "SpyM3_0846"
+      ],
+      "sps": [
+        "SPs1046",
+        "SPs1420"
+      ],
+      "sph": [
+        "MGAS10270_Spy0505",
+        "MGAS10270_Spy1034"
+      ],
+      "spi": [
+        "MGAS10750_Spy0530",
+        "MGAS10750_Spy1069"
+      ],
+      "spj": [
+        "MGAS2096_Spy0523",
+        "MGAS2096_Spy0979"
+      ],
+      "spk": [
+        "MGAS9429_Spy0501",
+        "MGAS9429_Spy1022"
+      ],
+      "spf": [
+        "SpyM50878",
+        "SpyM51352"
+      ],
+      "spa": [
+        "M6_Spy0532",
+        "M6_Spy0909"
+      ],
+      "spb": [
+        "M28_Spy0490",
+        "M28_Spy0892"
+      ],
+      "stg": [
+        "MGAS15252_0537",
+        "MGAS15252_0917"
+      ],
+      "soz": [
+        "Spy49_0518c",
+        "Spy49_0951c"
+      ],
+      "stz": [
+        "SPYALAB49_000543"
+      ],
+      "stx": [
+        "MGAS1882_0534",
+        "MGAS1882_0912"
+      ],
+      "spya": [
+        "A20_0553c",
+        "A20_0956c"
+      ],
+      "spyh": [
+        "L897_02755",
+        "L897_04550"
+      ],
+      "spn": [
+        "SP_0615"
+      ],
+      "spd": [
+        "SPD_0535"
+      ],
+      "spr": [
+        "spr0540"
+      ],
+      "spw": [
+        "SPCG_0575"
+      ],
+      "spx": [
+        "SPG_0558"
+      ],
+      "sne": [
+        "SPN23F05540"
+      ],
+      "spv": [
+        "SPH_0708"
+      ],
+      "snm": [
+        "SP70585_0676"
+      ],
+      "sjj": [
+        "SPJ_0566"
+      ],
+      "spp": [
+        "SPP_0629"
+      ],
+      "snt": [
+        "SPT_0640"
+      ],
+      "snc": [
+        "HMPREF0837_10904"
+      ],
+      "snb": [
+        "SP670_0673"
+      ],
+      "snp": [
+        "SPAP_0601"
+      ],
+      "sni": [
+        "INV104_05130"
+      ],
+      "snv": [
+        "SPNINV200_05420"
+      ],
+      "snx": [
+        "SPNOXC05610"
+      ],
+      "snd": [
+        "MYY_0664"
+      ],
+      "snu": [
+        "SPNA45_01491"
+      ],
+      "spng": [
+        "HMPREF1038_00636"
+      ],
+      "spne": [
+        "SPN034156_16110"
+      ],
+      "spnu": [
+        "SPN034183_05640"
+      ],
+      "spnm": [
+        "SPN994038_05520"
+      ],
+      "spno": [
+        "SPN994039_05530"
+      ],
+      "spnn": [
+        "T308_02900"
+      ],
+      "sag": [
+        "SAG0509",
+        "SAG0510"
+      ],
+      "san": [
+        "gbs0555",
+        "gbs0556"
+      ],
+      "sak": [
+        "SAK_0659",
+        "SAK_0660"
+      ],
+      "sgc": [
+        "A964_0540",
+        "A964_0541"
+      ],
+      "sags": [
+        "SaSA20_0494",
+        "SaSA20_0495"
+      ],
+      "sagl": [
+        "GBS222_0486"
+      ],
+      "sagm": [
+        "BSA_5970",
+        "BSA_5980"
+      ],
+      "sagi": [
+        "MSA_6120",
+        "MSA_6130"
+      ],
+      "sagr": [
+        "SAIL_6260",
+        "SAIL_6270",
+        "SAIL_6280"
+      ],
+      "sagp": [
+        "V193_02835"
+      ],
+      "sagc": [
+        "DN94_02835"
+      ],
+      "sagt": [
+        "GBSCOH1_0492",
+        "GBSCOH1_0493"
+      ],
+      "sage": [
+        "EN72_02930",
+        "EN72_02935"
+      ],
+      "sagg": [
+        "EN73_03005",
+        "EN73_03010"
+      ],
+      "sagn": [
+        "W903_0686",
+        "W903_0687"
+      ],
+      "smu": [
+        "SMU_717"
+      ],
+      "smc": [
+        "SmuNN2025_1280"
+      ],
+      "smj": [
+        "SMULJ23_1281"
+      ],
+      "smut": [
+        "SMUGS5_03160"
+      ],
+      "smua": [
+        "SMUFR_0625"
+      ],
+      "stc": [
+        "str1155"
+      ],
+      "stl": [
+        "stu1155"
+      ],
+      "ste": [
+        "STER_1112"
+      ],
+      "stn": [
+        "STND_1074"
+      ],
+      "stu": [
+        "STH8232_1341"
+      ],
+      "stw": [
+        "Y1U_C0774"
+      ],
+      "sthe": [
+        "T303_06625"
+      ],
+      "sths": [
+        "AVT04_09070"
+      ],
+      "ssa": [
+        "SSA_0862"
+      ],
+      "ssk": [
+        "SSUD12_0367"
+      ],
+      "ssui": [
+        "T15_0381"
+      ],
+      "sgo": [
+        "SGO_1623"
+      ],
+      "sez": [
+        "Sez_1015",
+        "Sez_1319"
+      ],
+      "seq": [
+        "SZO_06490",
+        "SZO_09500"
+      ],
+      "sezo": [
+        "SeseC_01341",
+        "SeseC_01704"
+      ],
+      "sequ": [
+        "Q426_02530",
+        "Q426_04025"
+      ],
+      "seu": [
+        "SEQ_1178",
+        "SEQ_1501"
+      ],
+      "sub": [
+        "SUB0607"
+      ],
+      "sds": [
+        "SDEG_0637",
+        "SDEG_0947"
+      ],
+      "sdg": [
+        "SDE12394_03425",
+        "SDE12394_05320"
+      ],
+      "sda": [
+        "GGS_0612",
+        "GGS_0917"
+      ],
+      "sdc": [
+        "SDSE_0678",
+        "SDSE_0983",
+        "SDSE_0984"
+      ],
+      "sdq": [
+        "SDSE167_0691",
+        "SDSE167_0692",
+        "SDSE167_1051",
+        "SDSE167_1052"
+      ],
+      "sga": [
+        "GALLO_1508"
+      ],
+      "sgg": [
+        "SGGBAA2069_c15300"
+      ],
+      "sgt": [
+        "SGGB_1503"
+      ],
+      "smb": [
+        "smi_1584"
+      ],
+      "sor": [
+        "SOR_1963"
+      ],
+      "stk": [
+        "STP_0096",
+        "STP_0414"
+      ],
+      "stb": [
+        "SGPB_1404"
+      ],
+      "scp": [
+        "HMPREF0833_10855"
+      ],
+      "scf": [
+        "Spaf_1436"
+      ],
+      "ssr": [
+        "SALIVB_1141"
+      ],
+      "stf": [
+        "Ssal_01216"
+      ],
+      "stj": [
+        "SALIVA_0993"
+      ],
+      "strs": [
+        "SSAL8618_04945"
+      ],
+      "ssah": [
+        "HSISS4_00840"
+      ],
+      "std": [
+        "SPPN_03240"
+      ],
+      "smn": [
+        "SMA_1515"
+      ],
+      "sif": [
+        "Sinf_1329"
+      ],
+      "sie": [
+        "SCIM_0530"
+      ],
+      "sib": [
+        "SIR_1111"
+      ],
+      "siu": [
+        "SII_1132"
+      ],
+      "sang": [
+        "SAIN_0586"
+      ],
+      "sanc": [
+        "SANR_0598"
+      ],
+      "sans": [
+        "DK43_07235"
+      ],
+      "scg": [
+        "SCI_0623"
+      ],
+      "scon": [
+        "SCRE_0603"
+      ],
+      "scos": [
+        "SCR2_0603"
+      ],
+      "soi": [
+        "I872_02755"
+      ],
+      "sik": [
+        "K710_0130",
+        "K710_0131",
+        "K710_1338"
+      ],
+      "siq": [
+        "DQ08_00640",
+        "DQ08_06195"
+      ],
+      "sio": [
+        "DW64_00640",
+        "DW64_06190"
+      ],
+      "siz": [
+        "SI82_00740",
+        "SI82_06345"
+      ],
+      "slu": [
+        "KE3_1458"
+      ],
+      "sig": [
+        "N596_04265"
+      ],
+      "sip": [
+        "N597_06110"
+      ],
+      "spat": [
+        "A0O21_02760"
+      ],
+      "lsn": [
+        "LSA_00260"
+      ],
+      "efa": [
+        "EF2658"
+      ],
+      "efl": [
+        "EF62_2819"
+      ],
+      "efi": [
+        "OG1RF_12030"
+      ],
+      "efd": [
+        "EFD32_2218"
+      ],
+      "efs": [
+        "EFS1_2129"
+      ],
+      "efn": [
+        "DENG_02594"
+      ],
+      "efq": [
+        "DR75_1359"
+      ],
+      "ess": [
+        "ATZ33_07540"
+      ],
+      "mps": [
+        "MPTP_1602"
+      ],
+      "mpx": [
+        "MPD5_0449"
+      ],
+      "ooe": [
+        "OEOE_1444"
+      ],
+      "lme": [
+        "LEUM_1773"
+      ],
+      "lmm": [
+        "MI1_07685"
+      ],
+      "lmk": [
+        "LMES_1540"
+      ],
+      "lci": [
+        "LCK_01455"
+      ],
+      "lki": [
+        "LKI_07255"
+      ],
+      "lec": [
+        "LGMK_04890"
+      ],
+      "lcn": [
+        "C270_01475"
+      ],
+      "lgs": [
+        "LEGAS_0406"
+      ],
+      "lge": [
+        "C269_01960"
+      ],
+      "llf": [
+        "BCR17_05370"
+      ],
+      "lgc": [
+        "A9176_03910"
+      ],
+      "wko": [
+        "WKK_02350"
+      ],
+      "wce": [
+        "WS08_1006"
+      ],
+      "wct": [
+        "WS74_1072"
+      ],
+      "wci": [
+        "WS105_1068"
+      ],
+      "wcb": [
+        "AO080_04420",
+        "AO080_09985"
+      ],
+      "wjo": [
+        "FOL01_1588"
+      ],
+      "wpa": [
+        "CO680_00890"
+      ],
+      "euu": [
+        "ADJ67_01780"
+      ],
+      "apr": [
+        "Apre_0286"
+      ],
+      "euc": [
+        "EC1_13930",
+        "EC1_13940"
+      ],
+      "fro": [
+        "AALO17_10780"
+      ],
+      "erb": [
+        "A4V01_18985"
+      ],
+      "ahe": [
+        "Arch_0164"
+      ],
+      "tpy": [
+        "CQ11_04900"
+      ],
+      "tpyo": [
+        "X956_02825"
+      ],
+      "bast": [
+        "BAST_1252"
+      ],
+      "gvg": [
+        "HMPREF0421_20446"
+      ],
+      "gvh": [
+        "HMPREF9231_1109"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.2.10"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.2.10"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.2.10"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.2.10"
+      ],
+      "CAS": [
+        "37257-26-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Plapp R",
+          "Strominger JL."
+        ],
+        "title": "Biosynthesis of the peptidoglycan of bacterial cell walls. 18. Purification and properties of L-alanyl transfer ribonucleic acid-uridine diphosphate-N-acetylmuramyl-pentapeptide transferase from Lactobacillus viridescens.",
+        "journal": "J. Biol. Chem. 245 (1970) 3675-82.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4248527]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

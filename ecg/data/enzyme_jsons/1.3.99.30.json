@@ -1,0 +1,317 @@
+[
+  {
+    "entry_id": "1.3.99.30",
+    "name": "phytoene desaturase (3,4-didehydrolycopene-forming)",
+    "names": [
+      "phytoene desaturase (3,4-didehydrolycopene-forming)",
+      "5-step phytoene desaturase",
+      "five-step phytoene desaturase",
+      "phytoene desaturase (ambiguous)",
+      "Al-1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With unknown physiological acceptors"
+    ],
+    "sysname": "15-cis-phytoene:acceptor oxidoreductase (3,4-didehydrolycopene-forming)",
+    "reaction": "15-cis-phytoene + 5 acceptor = all-trans-3,4-didehydrolycopene + 5 reduced acceptor (overall reaction) [RN:R09703]; (1a) 15-cis-phytoene + acceptor = all-trans-phytofluene + reduced acceptor [RN:R09692]; (1b) all-trans-phytofluene + acceptor = all-trans-zeta-carotene + reduced acceptor [RN:R04787]; (1c) all-trans-zeta-carotene + acceptor = all-trans-neurosporene + reduced acceptor [RN:R04798]; (1d) all-trans-neurosporene + acceptor = all-trans-lycopene + reduced acceptor [RN:R04800]; (1e) all-trans-lycopene + acceptor = all-trans-3,4-didehydrolycopene + reduced acceptor [RN:R07518]",
+    "all_reac": "R04787 R04798 R04800 R07518 R09692 R09703",
+    "iubmb_reactions": [
+      "R04787 R04798 R04800 R07518 R09692 R09703"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "15-cis-phytoene [CPD:C05421]",
+      "acceptor [CPD:C00028]",
+      "all-trans-phytofluene [CPD:C05414]",
+      "all-trans-zeta-carotene [CPD:C05430]",
+      "all-trans-neurosporene [CPD:C05431]",
+      "all-trans-lycopene [CPD:C05432]"
+    ],
+    "products": [
+      "all-trans-3,4-didehydrolycopene [CPD:C15867]",
+      "reduced acceptor [CPD:C00030]",
+      "all-trans-phytofluene [CPD:C05414]",
+      "all-trans-zeta-carotene [CPD:C05430]",
+      "all-trans-neurosporene [CPD:C05431]",
+      "all-trans-lycopene [CPD:C05432]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme is involved in carotenoid biosynthesis and catalyses up to five desaturation steps (cf. EC 1.3.99.28 [phytoene desaturase (neurosporene-forming)], EC 1.3.99.29 [phytoene desaturase (zeta-carotene-forming)] and EC 1.3.99.31 [phytoene desaturase (lycopene-forming)]).",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K15745": "phytoene desaturase (3,4-didehydrolycopene-forming)"
+    },
+    "genes": {
+      "api": [
+        "100159050",
+        "100161380",
+        "100169110",
+        "100169245"
+      ],
+      "dnx": [
+        "107165429",
+        "107165446",
+        "107172433"
+      ],
+      "tut": [
+        "107364307",
+        "107364309",
+        "107365911"
+      ],
+      "vcn": [
+        "VOLCADRAFT_96696"
+      ],
+      "mng": [
+        "MNEG_6064"
+      ],
+      "bpg": [
+        "Bathy15g02080"
+      ],
+      "mis": [
+        "MICPUN_85926"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_36095"
+      ],
+      "ncr": [
+        "NCU00552"
+      ],
+      "nte": [
+        "NEUTE1DRAFT92886"
+      ],
+      "smp": [
+        "SMAC_01244"
+      ],
+      "pan": [
+        "PODANSg3970"
+      ],
+      "fgr": [
+        "FGSG_03065"
+      ],
+      "fpu": [
+        "FPSE_02161"
+      ],
+      "fvr": [
+        "FVEG_10717"
+      ],
+      "fox": [
+        "FOXG_12143"
+      ],
+      "nhe": [
+        "NECHADRAFT_97347"
+      ],
+      "val": [
+        "VDBG_00708"
+      ],
+      "vda": [
+        "VDAG_00320"
+      ],
+      "cfj": [
+        "CFIO01_11136"
+      ],
+      "ela": [
+        "UCREL1_7363"
+      ],
+      "pfy": [
+        "PFICI_09859"
+      ],
+      "ssl": [
+        "SS1G_04340"
+      ],
+      "bfu": [
+        "BC1G_13907"
+      ],
+      "mbe": [
+        "MBM_00660"
+      ],
+      "psco": [
+        "LY89DRAFT_686853"
+      ],
+      "glz": [
+        "GLAREA_08046"
+      ],
+      "aor": [
+        "AOR_1_1270084"
+      ],
+      "ang": [
+        "ANI_1_1482064"
+      ],
+      "afv": [
+        "AFLA_102520"
+      ],
+      "abe": [
+        "ARB_03950"
+      ],
+      "tve": [
+        "TRV_03238"
+      ],
+      "pno": [
+        "SNOG_00342"
+      ],
+      "pte": [
+        "PTT_09941"
+      ],
+      "bze": [
+        "COCCADRAFT_96840"
+      ],
+      "bsc": [
+        "COCSADRAFT_304602"
+      ],
+      "bor": [
+        "COCMIDRAFT_88940"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_101921"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_29348"
+      ],
+      "bcom": [
+        "BAUCODRAFT_120791"
+      ],
+      "npa": [
+        "UCRNP2_7258"
+      ],
+      "tms": [
+        "TREMEDRAFT_34017"
+      ],
+      "shs": [
+        "STEHIDRAFT_99350"
+      ],
+      "uma": [
+        "UMAG_04210"
+      ],
+      "pfp": [
+        "PFL1_06723"
+      ],
+      "pgr": [
+        "PGTG_19044"
+      ],
+      "mlr": [
+        "MELLADRAFT_40795"
+      ],
+      "acan": [
+        "ACA1_391690"
+      ],
+      "smin": [
+        "v1.2.005646.t1"
+      ],
+      "pti": [
+        "PHATR_43904"
+      ],
+      "fcy": [
+        "FRACYDRAFT_195646",
+        "FRACYDRAFT_231974"
+      ],
+      "aaf": [
+        "AURANDRAFT_1353"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_458688"
+      ],
+      "gtt": [
+        "GUITHDRAFT_122289"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.99.30"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.99.30"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.99.30"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.99.30"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Hausmann A",
+          "Sandmann G."
+        ],
+        "title": "A single five-step desaturase is involved in the carotenoid biosynthesis pathway to beta-carotene and torulene in Neurospora crassa.",
+        "journal": "Fungal. Genet. Biol. 30 (2000) 147-53.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11017770]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Estrada AF",
+          "Maier D",
+          "Scherzinger D",
+          "Avalos J",
+          "Al-Babili S"
+        ],
+        "title": "Novel apocarotenoid intermediates in Neurospora crassa mutants imply a new biosynthetic reaction sequence leading to neurosporaxanthin formation.",
+        "journal": "Fungal. Genet. Biol. 45 (2008) 1497-505.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:18812228]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

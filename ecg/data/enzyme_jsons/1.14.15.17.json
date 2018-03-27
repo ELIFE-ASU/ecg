@@ -1,0 +1,570 @@
+[
+  {
+    "entry_id": "1.14.15.17",
+    "name": "pheophorbide a oxygenase",
+    "names": [
+      "pheophorbide a oxygenase",
+      "pheide a monooxygenase",
+      "pheide a oxygenase",
+      "PaO",
+      "PAO"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "pheophorbide-a,ferredoxin:oxygen oxidoreductase (biladiene-forming)",
+    "reaction": "pheophorbide a + 2 reduced ferredoxin [iron-sulfur] cluster + 2 H+ + O2 = red chlorophyll catabolite + 2 oxidized ferredoxin [iron-sulfur] cluster (overall reaction) [RN:R08921]; (1a) pheophorbide a + 2 reduced ferredoxin [iron-sulfur] cluster + 2 H+ + O2 = epoxypheophorbide a + 2 oxidized ferredoxin [iron-sulfur] cluster + H2O [RN:R11227]; (1b) epoxypheophorbide a + H2O = red chlorophyll catabolite (spontaneous) [RN:R11228]",
+    "all_reac": "R08921 R11227 R11228",
+    "iubmb_reactions": [
+      "R08921 R11227 R11228"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "pheophorbide a [CPD:C18021]",
+      "reduced ferredoxin [iron-sulfur] cluster [CPD:C00138]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "epoxypheophorbide a [CPD:C21192]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "red chlorophyll catabolite [CPD:C18022]",
+      "oxidized ferredoxin [iron-sulfur] cluster [CPD:C00139]",
+      "epoxypheophorbide a [CPD:C21192]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme catalyses a key reaction in chlorophyll degradation, which occurs during leaf senescence and fruit ripening in higher plants. The enzyme from Arabidopsis contains a Rieske-type iron-sulfur cluster [2] and requires reduced ferredoxin, which is generated either by NADPH through the pentose-phosphate pathway or by the action of photosystem I [4]. While still attached to this enzyme, the product is rapidly converted into primary fluorescent chlorophyll catabolite by the action of EC 1.3.7.12, red chlorophyll catabolite reductase [2,6]. Pheophorbide b acts as an inhibitor. In 18O2 labelling experiments, only the aldehyde oxygen is labelled, suggesting that the other oxygen atom may originate from H2O [1].",
+    "pathways": {
+      "ec00860": "Porphyrin and chlorophyll metabolism",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K13071": "pheophorbide a oxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT3G44880"
+      ],
+      "aly": [
+        "ARALYDRAFT_905628"
+      ],
+      "crb": [
+        "CARUB_v10016980mg"
+      ],
+      "csat": [
+        "104698851",
+        "104710959",
+        "104780339",
+        "104790741"
+      ],
+      "eus": [
+        "EUTSA_v10002475mg"
+      ],
+      "brp": [
+        "103873062"
+      ],
+      "bna": [
+        "106428543",
+        "106428557",
+        "111202294"
+      ],
+      "boe": [
+        "106314152"
+      ],
+      "thj": [
+        "104810883"
+      ],
+      "cpap": [
+        "110815591"
+      ],
+      "cit": [
+        "102625487"
+      ],
+      "cic": [
+        "CICLE_v10028147mg"
+      ],
+      "tcc": [
+        "18590461"
+      ],
+      "gra": [
+        "105792030"
+      ],
+      "ghi": [
+        "107912983",
+        "107954179"
+      ],
+      "egr": [
+        "104434044"
+      ],
+      "gmx": [
+        "100812162",
+        "778121"
+      ],
+      "pvu": [
+        "PHAVU_011G0867000",
+        "PHAVU_011G0867001"
+      ],
+      "vra": [
+        "106756471"
+      ],
+      "var": [
+        "108340678"
+      ],
+      "ccaj": [
+        "109799081"
+      ],
+      "mtr": [
+        "MTR_4g057200"
+      ],
+      "cam": [
+        "101513298"
+      ],
+      "adu": [
+        "107476453"
+      ],
+      "aip": [
+        "107629280"
+      ],
+      "lja": [
+        "Lj3g3v3032090.1"
+      ],
+      "lang": [
+        "109325727"
+      ],
+      "fve": [
+        "101295785"
+      ],
+      "pper": [
+        "18773030"
+      ],
+      "pmum": [
+        "103326271"
+      ],
+      "mdm": [
+        "103448044"
+      ],
+      "pxb": [
+        "103947727"
+      ],
+      "zju": [
+        "107405855",
+        "107410684"
+      ],
+      "csv": [
+        "101217499"
+      ],
+      "cmo": [
+        "103500779",
+        "103500813"
+      ],
+      "mcha": [
+        "111020548"
+      ],
+      "rcu": [
+        "8275254"
+      ],
+      "jcu": [
+        "105627999"
+      ],
+      "hbr": [
+        "110660525",
+        "110673306"
+      ],
+      "pop": [
+        "POPTR_0004s22680g",
+        "POPTR_0009s00950g"
+      ],
+      "vvi": [
+        "100256831"
+      ],
+      "sly": [
+        "543677"
+      ],
+      "spen": [
+        "107004514"
+      ],
+      "sot": [
+        "102579316"
+      ],
+      "cann": [
+        "107847505"
+      ],
+      "nta": [
+        "107805002",
+        "107817296"
+      ],
+      "nsy": [
+        "104230562"
+      ],
+      "nto": [
+        "104101187"
+      ],
+      "ini": [
+        "109181409"
+      ],
+      "sind": [
+        "105169951"
+      ],
+      "han": [
+        "110887293",
+        "110890956"
+      ],
+      "bvg": [
+        "104902984"
+      ],
+      "soe": [
+        "110787958"
+      ],
+      "nnu": [
+        "104587323",
+        "104604584"
+      ],
+      "osa": [
+        "4331611"
+      ],
+      "dosa": [
+        "Os03t0146400-01"
+      ],
+      "obr": [
+        "102703661"
+      ],
+      "bdi": [
+        "100840185"
+      ],
+      "sbi": [
+        "8085484"
+      ],
+      "zma": [
+        "103631716"
+      ],
+      "sita": [
+        "101766370"
+      ],
+      "pda": [
+        "103723245"
+      ],
+      "egu": [
+        "105043024"
+      ],
+      "mus": [
+        "103982755"
+      ],
+      "dct": [
+        "110105134"
+      ],
+      "atr": [
+        "18432947"
+      ],
+      "smo": [
+        "SELMODRAFT_174928",
+        "SELMODRAFT_177205"
+      ],
+      "ppp": [
+        "PHYPADRAFT_134389",
+        "PHYPADRAFT_150204"
+      ],
+      "cre": [
+        "CHLREDRAFT_113992",
+        "CHLREDRAFT_115086",
+        "CHLREDRAFT_150538",
+        "CHLREDRAFT_150540",
+        "CHLREDRAFT_195950"
+      ],
+      "vcn": [
+        "VOLCADRAFT_100270",
+        "VOLCADRAFT_103059",
+        "VOLCADRAFT_34353",
+        "VOLCADRAFT_34413",
+        "VOLCADRAFT_56359",
+        "VOLCADRAFT_89014",
+        "VOLCADRAFT_89016"
+      ],
+      "mng": [
+        "MNEG_13963",
+        "MNEG_14026",
+        "MNEG_2947",
+        "MNEG_6684",
+        "MNEG_6685",
+        "MNEG_6793",
+        "MNEG_8089",
+        "MNEG_9443"
+      ],
+      "mis": [
+        "MICPUN_59870"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_50506"
+      ],
+      "csl": [
+        "COCSUDRAFT_13198",
+        "COCSUDRAFT_39968",
+        "COCSUDRAFT_46572",
+        "COCSUDRAFT_47272",
+        "COCSUDRAFT_47549",
+        "COCSUDRAFT_57303",
+        "COCSUDRAFT_62940",
+        "COCSUDRAFT_65076",
+        "COCSUDRAFT_67210",
+        "COCSUDRAFT_67947"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_13204",
+        "CHLNCDRAFT_137587",
+        "CHLNCDRAFT_137589",
+        "CHLNCDRAFT_51738",
+        "CHLNCDRAFT_58209"
+      ],
+      "ccp": [
+        "CHC_T00000246001",
+        "CHC_T00003882001",
+        "CHC_T00004024001",
+        "CHC_T00006958001"
+      ],
+      "fcy": [
+        "FRACYDRAFT_235194"
+      ],
+      "aaf": [
+        "AURANDRAFT_32727"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_115527",
+        "EMIHUDRAFT_205252",
+        "EMIHUDRAFT_251574",
+        "EMIHUDRAFT_253642",
+        "EMIHUDRAFT_95263"
+      ],
+      "gtt": [
+        "GUITHDRAFT_159336",
+        "GUITHDRAFT_50255"
+      ],
+      "lep": [
+        "Lepto7376_3660"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.17"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.17"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.17"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.17"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Hortensteiner S",
+          "Wuthrich KL",
+          "Matile P",
+          "Ongania KH",
+          "Krautler B."
+        ],
+        "title": "The key step in chlorophyll breakdown in higher plants. Cleavage of pheophorbide a macrocycle by a monooxygenase.",
+        "journal": "J. Biol. Chem. 273 (1998) 15335-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:9624113]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pruzinska A",
+          "Tanner G",
+          "Anders I",
+          "Roca M",
+          "Hortensteiner S."
+        ],
+        "title": "Chlorophyll breakdown: pheophorbide a oxygenase is a Rieske-type iron-sulfur protein, encoded by the accelerated cell death 1 gene.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 100 (2003) 15259-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:14657372]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chung DW",
+          "Pruzinska A",
+          "Hortensteiner S",
+          "Ort DR."
+        ],
+        "title": "The role of pheophorbide a oxygenase expression and activity in the canola green seed problem.",
+        "journal": "Plant. Physiol. 142 (2006) 88-97.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:16844830]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rodoni S",
+          "Muhlecker W",
+          "Anderl M",
+          "Krautler B",
+          "Moser D",
+          "Thomas H",
+          "Matile P",
+          "Hortensteiner S."
+        ],
+        "title": "Chlorophyll Breakdown in Senescent Chloroplasts (Cleavage of Pheophorbide a in Two Enzymic Steps).",
+        "journal": "Plant. Physiol. 115 (1997) 669-676.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:12223835]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hortensteiner S."
+        ],
+        "title": "Chlorophyll degradation during senescence.",
+        "journal": "Annu. Rev. Plant. Biol. 57 (2006) 55-77.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:16669755]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pruzinska A",
+          "Anders I",
+          "Aubry S",
+          "Schenk N",
+          "Tapernoux-Luthi E",
+          "Muller T",
+          "Krautler B",
+          "Hortensteiner S."
+        ],
+        "title": "In vivo participation of red chlorophyll catabolite reductase in chlorophyll breakdown.",
+        "journal": "Plant. Cell. 19 (2007) 369-87.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:17237353]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,945 @@
+[
+  {
+    "entry_id": "1.14.13.141",
+    "name": "cholest-4-en-3-one 26-monooxygenase [(25S)-3-oxocholest-4-en-26-oate forming]",
+    "names": [
+      "cholest-4-en-3-one 26-monooxygenase [(25S)-3-oxocholest-4-en-26-oate forming]",
+      "CYP125",
+      "CYP125A1",
+      "cholest-4-en-3-one 27-monooxygenase (misleading)",
+      "cholest-4-en-3-one,NADH:oxygen oxidoreductase (26-hydroxylating)",
+      "cholest-4-en-3-one 26-monooxygenase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "cholest-4-en-3-one,NADH:oxygen oxidoreductase [(25S)-3-oxocholest-4-en-26-oate forming]",
+    "reaction": "cholest-4-en-3-one + 3 NADH + 3 H+ + 3 O2 = (25S)-3-oxocholest-4-en-26-oate + 3 NAD+ + 4 H2O (overall reaction) [RN:R11357]; (1a) cholest-4-en-3-one + NADH + H+ + O2 = (25S)-26-hydroxycholest-4-en-3-one + NAD+ + H2O [RN:R09859]; (1b) (25S)-26-hydroxycholest-4-en-3-one + NADH + H+ + O2 = (25S)-26-oxocholest-4-en-3-one + NAD+ + 2 H2O [RN:R11355]; (1c) (25S)-26-oxocholest-4-en-3-one + NADH + H+ + O2 = (25S)-3-oxocholest-4-en-26-oate + NAD+ + H2O [RN:R11356]",
+    "all_reac": "R09859 R11355 R11356 R11357",
+    "iubmb_reactions": [
+      "R09859 R11355 R11356 R11357"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "cholest-4-en-3-one [CPD:C00599]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(25S)-26-hydroxycholest-4-en-3-one [CPD:C20143]",
+      "(25S)-26-oxocholest-4-en-3-one [CPD:C21304]"
+    ],
+    "products": [
+      "(25S)-3-oxocholest-4-en-26-oate [CPD:C21076]",
+      "NAD+ [CPD:C00003]",
+      "H2O [CPD:C00001]",
+      "(25S)-26-hydroxycholest-4-en-3-one [CPD:C20143]",
+      "(25S)-26-oxocholest-4-en-3-one [CPD:C21304]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme, found in several bacterial pathogens, is involved in degradation of the host's cholesterol. It catalyses the hydroxylation of the C-26 carbon, followed by oxidation of the alcohol to the carboxylic acid via the aldehyde intermediate, initiating the degradation of the alkyl side-chain of cholesterol [4]. The products are exclusively in the (25S) configuration. It is a two-component system consisting of a P-450 (heme thiolate) oxygenase (Cyp125) and a ferredoxin reductase (most likely KshB, which is also a part of EC 1.14.13.142, 3-ketosteroid 9alpha-monooxygenase). The enzyme also accepts cholesterol as a substrate. cf. EC 1.14.13.221, cholest-4-en-3-one 27-monooxygenase.",
+    "pathways": {
+      "ec00984": "Steroid degradation",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K15981": "cholest-4-en-3-one 26-monooxygenase"
+    },
+    "genes": {
+      "zal": [
+        "AZF00_12765"
+      ],
+      "hja": [
+        "BST95_05650",
+        "BST95_12090"
+      ],
+      "mtu": [
+        "Rv3545c"
+      ],
+      "mtv": [
+        "RVBD_3545c"
+      ],
+      "mtc": [
+        "MT3649"
+      ],
+      "mra": [
+        "MRA_3584"
+      ],
+      "mtf": [
+        "TBFG_13578"
+      ],
+      "mtb": [
+        "TBMG_03584"
+      ],
+      "mtk": [
+        "TBSG_03611"
+      ],
+      "mtz": [
+        "TBXG_003560"
+      ],
+      "mti": [
+        "MRGA423_22410"
+      ],
+      "mte": [
+        "CCDC5079_3286"
+      ],
+      "mtur": [
+        "CFBS_3761"
+      ],
+      "mtl": [
+        "CCDC5180_3238"
+      ],
+      "mto": [
+        "MTCTRI2_3609"
+      ],
+      "mtd": [
+        "UDA_3545c"
+      ],
+      "mtn": [
+        "ERDMAN_3890"
+      ],
+      "mtj": [
+        "J112_19085"
+      ],
+      "mtub": [
+        "MT7199_3607"
+      ],
+      "mtuc": [
+        "J113_24790"
+      ],
+      "mtue": [
+        "J114_18960"
+      ],
+      "mtx": [
+        "M943_18225"
+      ],
+      "mtuh": [
+        "I917_24870"
+      ],
+      "mtul": [
+        "TBHG_03485"
+      ],
+      "mtut": [
+        "HKBT1_3746"
+      ],
+      "mtuu": [
+        "HKBT2_3755"
+      ],
+      "mtq": [
+        "HKBS1_3758"
+      ],
+      "mbo": [
+        "Mb3575c"
+      ],
+      "mbb": [
+        "BCG_3609c"
+      ],
+      "mbt": [
+        "JTY_3610"
+      ],
+      "mbm": [
+        "BCGMEX_3607c"
+      ],
+      "mbk": [
+        "K60_036830"
+      ],
+      "mbx": [
+        "BCGT_3411"
+      ],
+      "mbz": [
+        "LH58_19200"
+      ],
+      "maf": [
+        "MAF_35570"
+      ],
+      "mce": [
+        "MCAN_35561"
+      ],
+      "mcq": [
+        "BN44_110037"
+      ],
+      "mcv": [
+        "BN43_90043"
+      ],
+      "mcx": [
+        "BN42_90040"
+      ],
+      "mcz": [
+        "BN45_100040"
+      ],
+      "mmic": [
+        "RN08_3921"
+      ],
+      "mpa": [
+        "MAP_0522",
+        "MAP_1614c"
+      ],
+      "mao": [
+        "MAP4_2225",
+        "MAP4_3345"
+      ],
+      "mavi": [
+        "RC58_11070",
+        "RC58_16590"
+      ],
+      "mavu": [
+        "RE97_11080",
+        "RE97_16625"
+      ],
+      "mav": [
+        "MAV_0616",
+        "MAV_2811"
+      ],
+      "mavd": [
+        "NF84_02780",
+        "NF84_12525"
+      ],
+      "mavr": [
+        "LA63_02845",
+        "LA63_12680"
+      ],
+      "mava": [
+        "LA64_02855",
+        "LA64_12670"
+      ],
+      "mit": [
+        "OCO_05260",
+        "OCO_26450",
+        "OCO_44490"
+      ],
+      "mia": [
+        "OCU_05300",
+        "OCU_26300",
+        "OCU_44240"
+      ],
+      "mie": [
+        "LG41_02650",
+        "LG41_12475",
+        "LG41_21075"
+      ],
+      "mir": [
+        "OCQ_05410",
+        "OCQ_25010",
+        "OCQ_45630"
+      ],
+      "mid": [
+        "MIP_00975",
+        "MIP_04041",
+        "MIP_06760"
+      ],
+      "myo": [
+        "OEM_05330",
+        "OEM_24920",
+        "OEM_44690"
+      ],
+      "mchi": [
+        "AN480_02630",
+        "AN480_13920",
+        "AN480_23165"
+      ],
+      "mmal": [
+        "CKJ54_02555",
+        "CKJ54_11950",
+        "CKJ54_21190"
+      ],
+      "msm": [
+        "MSMEG_3524",
+        "MSMEG_5853",
+        "MSMEG_5995"
+      ],
+      "msg": [
+        "MSMEI_3443",
+        "MSMEI_5695",
+        "MSMEI_5834"
+      ],
+      "msb": [
+        "LJ00_17530",
+        "LJ00_28945",
+        "LJ00_29640"
+      ],
+      "msn": [
+        "LI99_17535",
+        "LI99_28950",
+        "LI99_29645"
+      ],
+      "msh": [
+        "LI98_17540",
+        "LI98_28955",
+        "LI98_29650"
+      ],
+      "msa": [
+        "Mycsm_03408",
+        "Mycsm_05668",
+        "Mycsm_05807"
+      ],
+      "mul": [
+        "MUL_4106"
+      ],
+      "mva": [
+        "Mvan_3012",
+        "Mvan_5151",
+        "Mvan_5258"
+      ],
+      "mgi": [
+        "Mflv_1508",
+        "Mflv_1607",
+        "Mflv_3290"
+      ],
+      "msp": [
+        "Mspyr1_08920",
+        "Mspyr1_09930",
+        "Mspyr1_26180"
+      ],
+      "mab": [
+        "MAB_0611",
+        "MAB_0613"
+      ],
+      "mabb": [
+        "MASS_0104",
+        "MASS_0581",
+        "MASS_0583",
+        "MASS_1209"
+      ],
+      "mmv": [
+        "MYCMA_0317",
+        "MYCMA_0319",
+        "MYCMA_0648",
+        "MYCMA_13860"
+      ],
+      "may": [
+        "LA62_00510",
+        "LA62_03090",
+        "LA62_03100",
+        "LA62_06150"
+      ],
+      "mabo": [
+        "NF82_00505",
+        "NF82_03085",
+        "NF82_03095",
+        "NF82_06125"
+      ],
+      "mabl": [
+        "MMASJCM_0105",
+        "MMASJCM_0600",
+        "MMASJCM_0603",
+        "MMASJCM_0964",
+        "MMASJCM_1238"
+      ],
+      "maz": [
+        "LA61_00515",
+        "LA61_03005",
+        "LA61_03015",
+        "LA61_06055"
+      ],
+      "mak": [
+        "LH56_17015",
+        "LH56_19560",
+        "LH56_21850"
+      ],
+      "mys": [
+        "NF92_17485",
+        "NF92_20060",
+        "NF92_20070",
+        "NF92_22505"
+      ],
+      "myc": [
+        "NF90_17490",
+        "NF90_20065",
+        "NF90_20075",
+        "NF90_22515"
+      ],
+      "mche": [
+        "BB28_00505",
+        "BB28_02925",
+        "BB28_02935",
+        "BB28_06010"
+      ],
+      "miz": [
+        "BAB75_00800",
+        "BAB75_03675",
+        "BAB75_03685",
+        "BAB75_06600"
+      ],
+      "mmc": [
+        "Mmcs_2723",
+        "Mmcs_4572",
+        "Mmcs_4677"
+      ],
+      "mkm": [
+        "Mkms_2767",
+        "Mkms_4660",
+        "Mkms_4763"
+      ],
+      "mjl": [
+        "Mjls_2753",
+        "Mjls_4955",
+        "Mjls_5062"
+      ],
+      "mjd": [
+        "JDM601_2803",
+        "JDM601_3609",
+        "JDM601_3682",
+        "JDM601_3692",
+        "JDM601_3693"
+      ],
+      "mmi": [
+        "MMAR_2783",
+        "MMAR_5032"
+      ],
+      "mmae": [
+        "MMARE11_27030",
+        "MMARE11_48420"
+      ],
+      "mrh": [
+        "MycrhN_0940",
+        "MycrhN_2286",
+        "MycrhN_2423",
+        "MycrhN_4947"
+      ],
+      "mmm": [
+        "W7S_02575",
+        "W7S_12840",
+        "W7S_22405"
+      ],
+      "mcb": [
+        "Mycch_2866",
+        "Mycch_4512",
+        "Mycch_4638"
+      ],
+      "mli": [
+        "MULP_02541",
+        "MULP_05284"
+      ],
+      "mkn": [
+        "MKAN_00770",
+        "MKAN_11895",
+        "MKAN_23385"
+      ],
+      "mks": [
+        "LG40_00780",
+        "LG40_23140"
+      ],
+      "mki": [
+        "LH54_00790",
+        "LH54_23270"
+      ],
+      "mne": [
+        "D174_15365",
+        "D174_23810",
+        "D174_24505"
+      ],
+      "myv": [
+        "G155_05185",
+        "G155_16110",
+        "G155_26175"
+      ],
+      "mye": [
+        "AB431_16515",
+        "AB431_25900",
+        "AB431_26415"
+      ],
+      "mgo": [
+        "AFA91_10815",
+        "AFA91_11455",
+        "AFA91_22195"
+      ],
+      "mft": [
+        "XA26_10010",
+        "XA26_33020",
+        "XA26_53050"
+      ],
+      "mhad": [
+        "B586_04585",
+        "B586_11505"
+      ],
+      "mphl": [
+        "MPHLCCUG_00534",
+        "MPHLCCUG_00665",
+        "MPHLCCUG_02457"
+      ],
+      "mvq": [
+        "MYVA_3054",
+        "MYVA_5033",
+        "MYVA_5168"
+      ],
+      "myn": [
+        "MyAD_15090",
+        "MyAD_23355",
+        "MyAD_24040"
+      ],
+      "mll": [
+        "B1R94_24550"
+      ],
+      "mdx": [
+        "BTO20_16195",
+        "BTO20_30765",
+        "BTO20_31395"
+      ],
+      "asd": [
+        "AS9A_0965"
+      ],
+      "nfa": [
+        "NFA_24320",
+        "NFA_25870",
+        "NFA_5180"
+      ],
+      "nfr": [
+        "ERS450000_01508",
+        "ERS450000_03713"
+      ],
+      "ncy": [
+        "NOCYR_0531",
+        "NOCYR_2255",
+        "NOCYR_4383"
+      ],
+      "nbr": [
+        "O3I_002870",
+        "O3I_010355",
+        "O3I_020195"
+      ],
+      "nno": [
+        "NONO_c05330",
+        "NONO_c15420",
+        "NONO_c20300",
+        "NONO_c31770"
+      ],
+      "nsl": [
+        "BOX37_02330",
+        "BOX37_04650",
+        "BOX37_22005"
+      ],
+      "nsr": [
+        "NS506_00434",
+        "NS506_01300",
+        "NS506_05365"
+      ],
+      "rha": [
+        "RHA1_ro04679"
+      ],
+      "rer": [
+        "RER_09260",
+        "RER_15090"
+      ],
+      "rey": [
+        "O5Y_04125",
+        "O5Y_07155",
+        "O5Y_15535"
+      ],
+      "reb": [
+        "XU06_04370",
+        "XU06_07400",
+        "XU06_15770"
+      ],
+      "rop": [
+        "ROP_47780"
+      ],
+      "roa": [
+        "Pd630_LPD01173",
+        "Pd630_LPD01185"
+      ],
+      "req": [
+        "REQ_07240",
+        "REQ_09130",
+        "REQ_27290"
+      ],
+      "rpy": [
+        "Y013_19380"
+      ],
+      "rav": [
+        "AAT18_04130"
+      ],
+      "rhw": [
+        "BFN03_14725"
+      ],
+      "rrz": [
+        "CS378_19765",
+        "CS378_20940"
+      ],
+      "gbr": [
+        "Gbro_3970"
+      ],
+      "gpo": [
+        "GPOL_c42820",
+        "GPOL_c42860"
+      ],
+      "gor": [
+        "KTR9_3902"
+      ],
+      "goq": [
+        "ACH46_17490"
+      ],
+      "gta": [
+        "BCM27_20455"
+      ],
+      "tpr": [
+        "Tpau_3821"
+      ],
+      "dtm": [
+        "BJL86_0735"
+      ],
+      "sma": [
+        "SAVERM_5841"
+      ],
+      "sgr": [
+        "SGR_5169"
+      ],
+      "sgb": [
+        "WQO_09525"
+      ],
+      "scb": [
+        "SCAB_65311"
+      ],
+      "svl": [
+        "Strvi_7419"
+      ],
+      "sct": [
+        "SCAT_1444"
+      ],
+      "scy": [
+        "SCATT_14470"
+      ],
+      "sbh": [
+        "SBI_07560"
+      ],
+      "shy": [
+        "SHJG_3828"
+      ],
+      "sho": [
+        "SHJGH_3593"
+      ],
+      "sve": [
+        "SVEN_2047"
+      ],
+      "sdv": [
+        "BN159_6030"
+      ],
+      "sfi": [
+        "SFUL_1917"
+      ],
+      "sci": [
+        "B446_12240"
+      ],
+      "src": [
+        "M271_33995"
+      ],
+      "salu": [
+        "DC74_2810"
+      ],
+      "sall": [
+        "SAZ_15430"
+      ],
+      "stre": [
+        "GZL_06167"
+      ],
+      "sld": [
+        "T261_5756"
+      ],
+      "strm": [
+        "M444_11810"
+      ],
+      "spri": [
+        "SPRI_5168"
+      ],
+      "scz": [
+        "ABE83_26245"
+      ],
+      "scx": [
+        "AS200_30925"
+      ],
+      "srw": [
+        "TUE45_02924"
+      ],
+      "slc": [
+        "SL103_07525"
+      ],
+      "sclf": [
+        "BB341_20395"
+      ],
+      "sgs": [
+        "AVL59_38775"
+      ],
+      "stsi": [
+        "A4E84_12135"
+      ],
+      "sls": [
+        "SLINC_2675"
+      ],
+      "snr": [
+        "SNOUR_28615"
+      ],
+      "splu": [
+        "LK06_008595"
+      ],
+      "sauo": [
+        "BV401_14835"
+      ],
+      "ssia": [
+        "A7J05_25220"
+      ],
+      "svu": [
+        "B1H20_08570"
+      ],
+      "spun": [
+        "BFF78_29375"
+      ],
+      "kab": [
+        "B7C62_08510"
+      ],
+      "nca": [
+        "Noca_2739"
+      ],
+      "ndk": [
+        "I601_3461",
+        "I601_3462"
+      ],
+      "psim": [
+        "KR76_14335"
+      ],
+      "ngv": [
+        "CDO52_23700"
+      ],
+      "tcu": [
+        "Tcur_3656"
+      ],
+      "sro": [
+        "Sros_8218"
+      ],
+      "noa": [
+        "BKM31_52815"
+      ],
+      "fri": [
+        "FraEuI1c_1505",
+        "FraEuI1c_5098"
+      ],
+      "amd": [
+        "AMED_2551"
+      ],
+      "amn": [
+        "RAM_12965"
+      ],
+      "amm": [
+        "AMES_2524"
+      ],
+      "amz": [
+        "B737_2525"
+      ],
+      "aoi": [
+        "AORI_2528"
+      ],
+      "aja": [
+        "AJAP_26185"
+      ],
+      "amq": [
+        "AMETH_4822"
+      ],
+      "alu": [
+        "BB31_28680"
+      ],
+      "kal": [
+        "KALB_3393"
+      ],
+      "kphy": [
+        "AOZ06_42520"
+      ],
+      "led": [
+        "BBK82_38815"
+      ],
+      "all": [
+        "CRK59579"
+      ],
+      "pmad": [
+        "BAY61_10985"
+      ],
+      "stp": [
+        "Strop_2612"
+      ],
+      "saq": [
+        "Sare_2811"
+      ],
+      "ams": [
+        "AMIS_19330"
+      ],
+      "cai": [
+        "Caci_0773"
+      ],
+      "abai": [
+        "IMCC26256_11916"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.141"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.141"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.141"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.141"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Rosloniec KZ",
+          "Wilbrink MH",
+          "Capyk JK",
+          "Mohn WW",
+          "Ostendorf M",
+          "van der Geize R",
+          "Dijkhuizen L",
+          "Eltis LD"
+        ],
+        "title": "Cytochrome P450 125 (CYP125) catalyses C26-hydroxylation to initiate sterol side-chain degradation in Rhodococcus jostii RHA1.",
+        "journal": "Mol. Microbiol. 74 (2009) 1031-43.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:19843222]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "McLean KJ",
+          "Lafite P",
+          "Levy C",
+          "Cheesman MR",
+          "Mast N",
+          "Pikuleva IA",
+          "Leys D",
+          "Munro AW"
+        ],
+        "title": "The Structure of Mycobacterium tuberculosis CYP125: molecular basis for cholesterol binding in a P450 needed for host infection.",
+        "journal": "J. Biol. Chem. 284 (2009) 35524-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:19846552]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Capyk JK",
+          "Kalscheuer R",
+          "Stewart GR",
+          "Liu J",
+          "Kwon H",
+          "Zhao R",
+          "Okamoto S",
+          "Jacobs WR Jr",
+          "Eltis LD",
+          "Mohn WW"
+        ],
+        "title": "Mycobacterial cytochrome p450 125 (cyp125) catalyzes the terminal hydroxylation of c27 steroids.",
+        "journal": "J. Biol. Chem. 284 (2009) 35534-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:19846551]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ouellet H",
+          "Guan S",
+          "Johnston JB",
+          "Chow ED",
+          "Kells PM",
+          "Burlingame AL",
+          "Cox JS",
+          "Podust LM",
+          "de Montellano PR"
+        ],
+        "title": "Mycobacterium tuberculosis CYP125A1, a steroid C27 monooxygenase that detoxifies intracellularly generated cholest-4-en-3-one.",
+        "journal": "Mol. Microbiol. 77 (2010) 730-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:20545858]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

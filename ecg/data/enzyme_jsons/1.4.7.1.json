@@ -1,0 +1,1126 @@
+[
+  {
+    "entry_id": "1.4.7.1",
+    "name": "glutamate synthase (ferredoxin)",
+    "names": [
+      "glutamate synthase (ferredoxin)",
+      "ferredoxin-dependent glutamate synthase",
+      "ferredoxin-glutamate synthase",
+      "glutamate synthase (ferredoxin-dependent)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH2 group of donors;",
+      "With an iron-sulfur protein as acceptor"
+    ],
+    "sysname": "L-glutamate:ferredoxin oxidoreductase (transaminating)",
+    "reaction": "2 L-glutamate + 2 oxidized ferredoxin = L-glutamine + 2-oxoglutarate + 2 reduced ferredoxin + 2 H+ (overall reaction) [RN:R00021]; (1a) L-glutamate + NH3 = L-glutamine + H2O [RN:R00256]; (1b) L-glutamate + 2 oxidized ferredoxin + H2O = NH3 + 2-oxoglutarate + 2 reduced ferredoxin + 2 H+ [RN:R10086]",
+    "all_reac": "R00021 R00256 R10086",
+    "iubmb_reactions": [
+      "R00021 R00256 R10086"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-glutamate [CPD:C00025]",
+      "oxidized ferredoxin [CPD:C00139]",
+      "NH3 [CPD:C00014]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "L-glutamine [CPD:C00064]",
+      "2-oxoglutarate [CPD:C00026]",
+      "reduced ferredoxin [CPD:C00138]",
+      "H+ [CPD:C00080]",
+      "H2O [CPD:C00001]",
+      "NH3 [CPD:C00014]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Binds a [3Fe-4S] cluster as well as FAD and FMN. The protein is composed of two domains, one hydrolysing L-glutamine to NH3 and L-glutamate (cf. EC 3.5.1.2, glutaminase), the other combining the produced NH3 with 2-oxoglutarate to produce a second molecule of L-glutamate. The NH3 is channeled through a 24 A channel in the active protein. No hydrolysis of glutamine takes place without ferredoxin and 2-oxoglutarate being bound to the protein [5,6].",
+    "pathways": {
+      "ec00630": "Glyoxylate and dicarboxylate metabolism",
+      "ec00910": "Nitrogen metabolism",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K00284": "glutamate synthase (ferredoxin)"
+    },
+    "genes": {
+      "ath": [
+        "AT2G41220",
+        "AT5G04140"
+      ],
+      "aly": [
+        "ARALYDRAFT_483191",
+        "ARALYDRAFT_487193"
+      ],
+      "crb": [
+        "CARUB_v10000026mg",
+        "CARUB_v10022503mg"
+      ],
+      "csat": [
+        "104708708",
+        "104734430",
+        "104768604",
+        "104782609",
+        "104785266",
+        "104793031"
+      ],
+      "eus": [
+        "EUTSA_v10012425mg",
+        "EUTSA_v10016134mg"
+      ],
+      "brp": [
+        "103847326",
+        "103857972",
+        "103865867"
+      ],
+      "bna": [
+        "106352787",
+        "106372522",
+        "106372673",
+        "106391644",
+        "106431110"
+      ],
+      "boe": [
+        "106317861",
+        "106335201",
+        "106342177"
+      ],
+      "thj": [
+        "104803262",
+        "104816414"
+      ],
+      "cit": [
+        "102609089"
+      ],
+      "cic": [
+        "CICLE_v10004137mg"
+      ],
+      "tcc": [
+        "18598741"
+      ],
+      "gra": [
+        "105786202"
+      ],
+      "ghi": [
+        "107921512",
+        "107921972"
+      ],
+      "egr": [
+        "104444178"
+      ],
+      "gmx": [
+        "548016"
+      ],
+      "pvu": [
+        "PHAVU_001G123900g"
+      ],
+      "vra": [
+        "106752554"
+      ],
+      "var": [
+        "108328874"
+      ],
+      "mtr": [
+        "MTR_7g089970"
+      ],
+      "cam": [
+        "101506279"
+      ],
+      "adu": [
+        "107492689"
+      ],
+      "aip": [
+        "107645553"
+      ],
+      "lja": [
+        "Lj1g3v4154900.1"
+      ],
+      "lang": [
+        "109343289"
+      ],
+      "fve": [
+        "101314871"
+      ],
+      "pper": [
+        "18770391"
+      ],
+      "pmum": [
+        "103341391"
+      ],
+      "pxb": [
+        "103928813"
+      ],
+      "zju": [
+        "107433784",
+        "107435873"
+      ],
+      "csv": [
+        "101214380"
+      ],
+      "cmo": [
+        "103486888"
+      ],
+      "rcu": [
+        "8270489"
+      ],
+      "jcu": [
+        "105642370"
+      ],
+      "pop": [
+        "POPTR_0006s03660g",
+        "POPTR_0016s03630g"
+      ],
+      "vvi": [
+        "100233082"
+      ],
+      "sly": [
+        "101246028"
+      ],
+      "spen": [
+        "107013679"
+      ],
+      "sot": [
+        "102600112"
+      ],
+      "nta": [
+        "107781744",
+        "107793691"
+      ],
+      "ini": [
+        "109161932"
+      ],
+      "sind": [
+        "105159899"
+      ],
+      "han": [
+        "110928568"
+      ],
+      "bvg": [
+        "104889481"
+      ],
+      "nnu": [
+        "104611350"
+      ],
+      "osa": [
+        "4344164"
+      ],
+      "obr": [
+        "102718939"
+      ],
+      "bdi": [
+        "100827937"
+      ],
+      "sbi": [
+        "8073135"
+      ],
+      "zma": [
+        "542710"
+      ],
+      "sita": [
+        "101766581"
+      ],
+      "pda": [
+        "103701654",
+        "103716926"
+      ],
+      "egu": [
+        "105049124",
+        "105057601"
+      ],
+      "mus": [
+        "103976157"
+      ],
+      "atr": [
+        "18444596"
+      ],
+      "smo": [
+        "SELMODRAFT_155359",
+        "SELMODRAFT_161275"
+      ],
+      "ppp": [
+        "PHYPADRAFT_180494",
+        "PHYPADRAFT_194139"
+      ],
+      "cre": [
+        "CHLREDRAFT_140487"
+      ],
+      "vcn": [
+        "VOLCADRAFT_127156"
+      ],
+      "olu": [
+        "OSTLU_51965"
+      ],
+      "bpg": [
+        "Bathy12g01040"
+      ],
+      "mis": [
+        "MICPUN_63658"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_70244"
+      ],
+      "csl": [
+        "COCSUDRAFT_22625"
+      ],
+      "cme": [
+        "CymeCp051"
+      ],
+      "gsl": [
+        "Gasu_40050"
+      ],
+      "pti": [
+        "PHATRDRAFT_56605"
+      ],
+      "fcy": [
+        "FRACYDRAFT_225787"
+      ],
+      "tps": [
+        "THAPSDRAFT_269900"
+      ],
+      "gtt": [
+        "GUITHDRAFT_88543"
+      ],
+      "bur": [
+        "Bcep18194_A3499"
+      ],
+      "bcn": [
+        "Bcen_2705"
+      ],
+      "bch": [
+        "Bcen2424_0402"
+      ],
+      "bcm": [
+        "Bcenmc03_0381"
+      ],
+      "bcj": [
+        "BCAL0289"
+      ],
+      "bam": [
+        "Bamb_0321"
+      ],
+      "bac": [
+        "BamMC406_0330"
+      ],
+      "bmu": [
+        "Bmul_0305"
+      ],
+      "bmj": [
+        "BMULJ_02949"
+      ],
+      "bgl": [
+        "bglu_1g03130"
+      ],
+      "bgd": [
+        "bgla_1g03580"
+      ],
+      "rfr": [
+        "Rfer_2933"
+      ],
+      "pna": [
+        "Pnap_0683"
+      ],
+      "vei": [
+        "Veis_2395"
+      ],
+      "vap": [
+        "Vapar_1152"
+      ],
+      "vpe": [
+        "Varpa_1238"
+      ],
+      "glo": [
+        "Glov_3016"
+      ],
+      "gbm": [
+        "Gbem_2866"
+      ],
+      "gem": [
+        "GM21_1350"
+      ],
+      "geb": [
+        "GM18_2725"
+      ],
+      "ade": [
+        "Adeh_0817"
+      ],
+      "acp": [
+        "A2cp1_0869"
+      ],
+      "afw": [
+        "Anae109_0854"
+      ],
+      "ank": [
+        "AnaeK_0865"
+      ],
+      "rsq": [
+        "Rsph17025_2781"
+      ],
+      "bha": [
+        "BH1728"
+      ],
+      "bce": [
+        "BC3646"
+      ],
+      "bcz": [
+        "BCE33L3348"
+      ],
+      "btk": [
+        "BT9727_3397"
+      ],
+      "bcl": [
+        "ABC2035"
+      ],
+      "bpf": [
+        "BpOF4_15820"
+      ],
+      "oih": [
+        "OB3408"
+      ],
+      "pjd": [
+        "Pjdr2_4998"
+      ],
+      "gym": [
+        "GYMC10_5354"
+      ],
+      "ppy": [
+        "PPE_01118"
+      ],
+      "ppo": [
+        "PPM_1088"
+      ],
+      "pms": [
+        "KNP414_07369"
+      ],
+      "pmw": [
+        "B2K_34950"
+      ],
+      "pta": [
+        "HPL003_13840"
+      ],
+      "tco": [
+        "Theco_3158"
+      ],
+      "cbk": [
+        "CLL_A1048"
+      ],
+      "cbt": [
+        "CLH_0984"
+      ],
+      "cbe": [
+        "Cbei_4204"
+      ],
+      "ccb": [
+        "Clocel_2665"
+      ],
+      "ccl": [
+        "Clocl_0016"
+      ],
+      "eha": [
+        "Ethha_2699"
+      ],
+      "bpb": [
+        "bpr_I0123"
+      ],
+      "cle": [
+        "Clole_4244"
+      ],
+      "rho": [
+        "RHOM_09650"
+      ],
+      "csh": [
+        "Closa_2485"
+      ],
+      "ere": [
+        "EUBREC_2274"
+      ],
+      "dsy": [
+        "DSY4385"
+      ],
+      "dhd": [
+        "Dhaf_0946"
+      ],
+      "ddh": [
+        "Desde_0815"
+      ],
+      "ddl": [
+        "Desdi_0684"
+      ],
+      "drm": [
+        "Dred_2805"
+      ],
+      "dae": [
+        "Dtox_3758"
+      ],
+      "dca": [
+        "Desca_0520"
+      ],
+      "dru": [
+        "Desru_0827"
+      ],
+      "pth": [
+        "PTH_0734"
+      ],
+      "sgy": [
+        "Sgly_2702"
+      ],
+      "dor": [
+        "Desor_1655"
+      ],
+      "dai": [
+        "Desaci_0741"
+      ],
+      "dmi": [
+        "Desmer_0878"
+      ],
+      "ded": [
+        "DHBDCA_p1647"
+      ],
+      "dec": [
+        "DCF50_p1656"
+      ],
+      "hmo": [
+        "HM1_1037"
+      ],
+      "eel": [
+        "EUBELI_01411"
+      ],
+      "awo": [
+        "Awo_c07380"
+      ],
+      "ova": [
+        "OBV_07580"
+      ],
+      "tmr": [
+        "Tmar_0631"
+      ],
+      "tnr": [
+        "Thena_0114"
+      ],
+      "has": [
+        "Halsa_0511"
+      ],
+      "vpr": [
+        "Vpar_1637"
+      ],
+      "med": [
+        "MELS_0304"
+      ],
+      "mva": [
+        "Mvan_2822",
+        "Mvan_5698"
+      ],
+      "mgi": [
+        "Mflv_1114",
+        "Mflv_3593"
+      ],
+      "nca": [
+        "Noca_0279"
+      ],
+      "syn": [
+        "sll1499",
+        "sll1502"
+      ],
+      "syz": [
+        "MYO_130230",
+        "MYO_14470"
+      ],
+      "syy": [
+        "SYNGTS_0442",
+        "SYNGTS_2989"
+      ],
+      "syt": [
+        "SYNGTI_0442",
+        "SYNGTI_2988"
+      ],
+      "sys": [
+        "SYNPCCN_0442",
+        "SYNPCCN_2987"
+      ],
+      "syq": [
+        "SYNPCCP_0442",
+        "SYNPCCP_2987"
+      ],
+      "syw": [
+        "SYNW2132"
+      ],
+      "syc": [
+        "syc0650_c"
+      ],
+      "syf": [
+        "Synpcc7942_0890"
+      ],
+      "syd": [
+        "Syncc9605_0326"
+      ],
+      "sye": [
+        "Syncc9902_2016"
+      ],
+      "syg": [
+        "sync_0387"
+      ],
+      "syr": [
+        "SynRCC307_2164"
+      ],
+      "syx": [
+        "SynWH7803_0385"
+      ],
+      "syp": [
+        "SYNPCC7002_A2393"
+      ],
+      "cya": [
+        "CYA_2704"
+      ],
+      "cyb": [
+        "CYB_1253"
+      ],
+      "syne": [
+        "Syn6312_2924"
+      ],
+      "synp": [
+        "Syn7502_00626"
+      ],
+      "tel": [
+        "tll1368"
+      ],
+      "thn": [
+        "NK55_02305"
+      ],
+      "cgc": [
+        "Cyagr_1859"
+      ],
+      "dsl": [
+        "Dacsa_3392"
+      ],
+      "cmp": [
+        "Cha6605_3414",
+        "Cha6605_4807"
+      ],
+      "lep": [
+        "Lepto7376_1007"
+      ],
+      "pseu": [
+        "Pse7367_2837"
+      ],
+      "pma": [
+        "Pro_1668"
+      ],
+      "pmm": [
+        "PMM1512"
+      ],
+      "pmt": [
+        "PMT_1777"
+      ],
+      "pmn": [
+        "PMN2A_1078"
+      ],
+      "pmi": [
+        "PMT9312_1604"
+      ],
+      "pmb": [
+        "A9601_17161"
+      ],
+      "pmc": [
+        "P9515_16921"
+      ],
+      "pmf": [
+        "P9303_23581"
+      ],
+      "pmg": [
+        "P9301_17041"
+      ],
+      "pmh": [
+        "P9215_17801"
+      ],
+      "pmj": [
+        "P9211_16351"
+      ],
+      "pme": [
+        "NATL1_19531"
+      ],
+      "amr": [
+        "AM1_1662",
+        "AM1_6366"
+      ],
+      "mar": [
+        "MAE_07560",
+        "MAE_29110"
+      ],
+      "can": [
+        "Cyan10605_0489"
+      ],
+      "csn": [
+        "Cyast_0608",
+        "Cyast_0917"
+      ],
+      "hao": [
+        "PCC7418_1264",
+        "PCC7418_1589"
+      ],
+      "cyu": [
+        "UCYN_03690"
+      ],
+      "glp": [
+        "Glo7428_3738"
+      ],
+      "cyt": [
+        "cce_4353"
+      ],
+      "cyp": [
+        "PCC8801_3730"
+      ],
+      "cyc": [
+        "PCC7424_1468",
+        "PCC7424_3654"
+      ],
+      "cyn": [
+        "Cyan7425_0526"
+      ],
+      "cyh": [
+        "Cyan8802_3782"
+      ],
+      "cyj": [
+        "Cyan7822_2992",
+        "Cyan7822_4149"
+      ],
+      "ter": [
+        "Tery_0466"
+      ],
+      "mic": [
+        "Mic7113_1425",
+        "Mic7113_6228"
+      ],
+      "arp": [
+        "NIES39_J05540"
+      ],
+      "gei": [
+        "GEI7407_2827"
+      ],
+      "oac": [
+        "Oscil6304_3505",
+        "Oscil6304_4177"
+      ],
+      "oni": [
+        "Osc7112_1580",
+        "Osc7112_2538"
+      ],
+      "cep": [
+        "Cri9333_0783",
+        "Cri9333_3015"
+      ],
+      "gvi": [
+        "gvip210"
+      ],
+      "glj": [
+        "GKIL_0118"
+      ],
+      "ana": [
+        "alr4344"
+      ],
+      "npu": [
+        "Npun_R3877"
+      ],
+      "nos": [
+        "Nos7107_2676"
+      ],
+      "nop": [
+        "Nos7524_4221"
+      ],
+      "ava": [
+        "Ava_1294"
+      ],
+      "naz": [
+        "Aazo_0653"
+      ],
+      "anb": [
+        "ANA_C10135"
+      ],
+      "acy": [
+        "Anacy_2495"
+      ],
+      "csg": [
+        "Cylst_5006"
+      ],
+      "calo": [
+        "Cal7507_2925"
+      ],
+      "calt": [
+        "Cal6303_1504"
+      ],
+      "riv": [
+        "Riv7116_1068"
+      ],
+      "cthe": [
+        "Chro_3057",
+        "Chro_3459"
+      ],
+      "plp": [
+        "Ple7327_4235",
+        "Ple7327_4643"
+      ],
+      "scs": [
+        "Sta7437_2250",
+        "Sta7437_2290"
+      ],
+      "rrs": [
+        "RoseRS_2985"
+      ],
+      "rca": [
+        "Rcas_1903"
+      ],
+      "cau": [
+        "Caur_3258"
+      ],
+      "cag": [
+        "Cagg_0145"
+      ],
+      "chl": [
+        "Chy400_3517"
+      ],
+      "hau": [
+        "Haur_4476"
+      ],
+      "cap": [
+        "CLDAP_26600"
+      ],
+      "dge": [
+        "Dgeo_2626"
+      ],
+      "tra": [
+        "Trad_0209"
+      ],
+      "opr": [
+        "Ocepr_1168"
+      ],
+      "mhd": [
+        "Marky_1283"
+      ],
+      "ttr": [
+        "Tter_0474"
+      ],
+      "ote": [
+        "Oter_0894"
+      ],
+      "caa": [
+        "Caka_1869"
+      ],
+      "ipa": [
+        "Isop_2214"
+      ],
+      "lil": [
+        "LB_286"
+      ],
+      "lic": [
+        "LIC_20220"
+      ],
+      "ctm": [
+        "Cabther_A1316"
+      ],
+      "rmr": [
+        "Rmar_1260"
+      ],
+      "gfo": [
+        "GFO_2908"
+      ],
+      "fjo": [
+        "Fjoh_2161"
+      ],
+      "fbr": [
+        "FBFL15_1970"
+      ],
+      "rbi": [
+        "RB2501_09360"
+      ],
+      "zpr": [
+        "ZPR_3938"
+      ],
+      "fbc": [
+        "FB2170_17446"
+      ],
+      "cao": [
+        "Celal_0768"
+      ],
+      "cly": [
+        "Celly_2035"
+      ],
+      "kdi": [
+        "Krodi_0004"
+      ],
+      "lan": [
+        "Lacal_0603"
+      ],
+      "mrs": [
+        "Murru_0760"
+      ],
+      "cte": [
+        "CT0401"
+      ],
+      "cpc": [
+        "Cpar_1492"
+      ],
+      "cch": [
+        "Cag_0186"
+      ],
+      "cph": [
+        "Cpha266_0628"
+      ],
+      "cpb": [
+        "Cphamn1_0672"
+      ],
+      "cli": [
+        "Clim_1937"
+      ],
+      "pvi": [
+        "Cvib_0558"
+      ],
+      "plt": [
+        "Plut_0502"
+      ],
+      "pph": [
+        "Ppha_0781"
+      ],
+      "paa": [
+        "Paes_0612"
+      ],
+      "cts": [
+        "Ctha_0711",
+        "Ctha_2166"
+      ],
+      "pmo": [
+        "Pmob_1794"
+      ],
+      "mox": [
+        "DAMO_0867"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.4.7.1"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.4.7.1"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.4.7.1"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.4.7.1"
+      ],
+      "CAS": [
+        "62213-56-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Galvan",
+          "F.",
+          "Marquez",
+          "A.J. and Vega",
+          "J.M."
+        ],
+        "title": "Purification and molecular properties of ferredoxin-glutamate synthase from Chlamydomonas reinhardii.",
+        "journal": "Planta 162 (1984) 180-187.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lea PJ",
+          "Miflin BJ."
+        ],
+        "title": "Alternative route for nitrogen assimilation in higher plants.",
+        "journal": "Nature. 251 (1974) 614-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:4423889]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ravasio S",
+          "Dossena L",
+          "Martin-Figueroa E",
+          "Florencio FJ",
+          "Mattevi A",
+          "Morandi P",
+          "Curti B",
+          "Vanoni MA"
+        ],
+        "title": "Properties of the recombinant ferredoxin-dependent glutamate synthase of Synechocystis PCC6803. Comparison with the Azospirillum brasilense NADPH-dependent enzyme and its isolated alpha subunit.",
+        "journal": "Biochemistry. 41 (2002) 8120-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12069605]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Navarro F",
+          "Martin-Figueroa E",
+          "Candau P",
+          "Florencio FJ"
+        ],
+        "title": "Ferredoxin-dependent iron-sulfur flavoprotein glutamate synthase (GlsF) from the Cyanobacterium synechocystis sp. PCC 6803: expression and assembly in Escherichia coli.",
+        "journal": "Arch. Biochem. Biophys. 379 (2000) 267-76.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:10898944]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "van den Heuvel RH",
+          "Ferrari D",
+          "Bossi RT",
+          "Ravasio S",
+          "Curti B",
+          "Vanoni MA",
+          "Florencio FJ",
+          "Mattevi A"
+        ],
+        "title": "Structural studies on the synchronization of catalytic centers in glutamate synthase.",
+        "journal": "J. Biol. Chem. 277 (2002) 24579-83.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:11967268]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "van den Heuvel RH",
+          "Svergun DI",
+          "Petoukhov MV",
+          "Coda A",
+          "Curti B",
+          "Ravasio S",
+          "Vanoni MA",
+          "Mattevi A"
+        ],
+        "title": "The active conformation of glutamate synthase and its binding to ferredoxin.",
+        "journal": "J. Mol. Biol. 330 (2003) 113-28.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:12818206]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

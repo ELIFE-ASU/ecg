@@ -1,0 +1,344 @@
+[
+  {
+    "entry_id": "6.5.1.8",
+    "name": "3'-phosphate/5'-hydroxy nucleic acid ligase",
+    "names": [
+      "3'-phosphate/5'-hydroxy nucleic acid ligase",
+      "rtcB (gene name)"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming phosphoric-ester bonds;",
+      "Ligases that form phosphoric-ester bonds (only sub-subclass identified to date)"
+    ],
+    "sysname": "poly(ribonucleotide)-3'-phosphate:5'-hydroxy-poly(ribonucleotide) ligase (GMP-forming)",
+    "reaction": "(1) (ribonucleotide)n-3'-phosphate + 5'-hydroxy-(ribonucleotide)m + GTP = (ribonucleotide)n+m + GMP + diphosphate (overall reaction); (1a) GTP + [RNA ligase]-L-histidine = 5'-guanosyl [RNA ligase]-Ntau-phosphono-L-histidine + diphosphate; (1b) 5'-guanosyl [RNA ligase]-Ntau-phosphono-L-histidine + (ribonucleotide)n-3'-phosphate = (ribonucleotide)n-3'-(5'-diphosphoguanosine) + [RNA ligase]-L-histidine; (1c) (ribonucleotide)n-3'-(5'-diphosphoguanosine) + 5'-hydroxy-(ribonucleotide)m = (ribonucleotide)n+m + GMP; (2) (ribonucleotide)n-2',3'-cyclophosphate + 5'-hydroxy-(ribonucleotide)m + GTP + H2O = (ribonucleotide)n+m + GMP + diphosphate (overall reaction); (2a) (ribonucleotide)n-2',3'-cyclophosphate + H2O = (ribonucleotide)n-3'-phosphate; (2b) GTP + [RNA ligase]-L-histidine = 5'-guanosyl [RNA ligase]-Ntau-phosphono-L-histidine + diphosphate; (2c) 5'-guanosyl [RNA ligase]-Ntau-phosphono-L-histidine + (ribonucleotide)n-3'-phosphate = (ribonucleotide)n-3'-(5'-diphosphoguanosine) + [RNA ligase]-L-histidine; (2d) (ribonucleotide)n-3'-(5'-diphosphoguanosine) + 5'-hydroxy-(ribonucleotide)m = (ribonucleotide)n+m + GMP",
+    "all_reac": "",
+    "iubmb_reactions": [
+
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(ribonucleotide)n-3'-phosphate",
+      "5'-hydroxy-(ribonucleotide)m",
+      "GTP [CPD:C00044]",
+      "[RNA ligase]-L-histidine",
+      "5'-guanosyl [RNA ligase]-Ntau-phosphono-L-histidine",
+      "(ribonucleotide)n-3'-(5'-diphosphoguanosine)",
+      "(ribonucleotide)n-2',3'-cyclophosphate",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "(ribonucleotide)n+m [CPD:C00046]",
+      "GMP [CPD:C00144]",
+      "diphosphate [CPD:C00013]",
+      "5'-guanosyl [RNA ligase]-Ntau-phosphono-L-histidine",
+      "(ribonucleotide)n-3'-(5'-diphosphoguanosine)",
+      "[RNA ligase]-L-histidine",
+      "(ribonucleotide)n-3'-phosphate"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is a GTP- and Mn2+-dependent 3'-5' nucleic acid ligase with the ability to join RNA with 3'-phosphate or 2',3'-cyclic-phosphate ends to RNA with 5'-hydroxy ends. It can also join DNA with 3'-phosphate ends to DNA with 5'-hydroxy ends, provided the DNA termini are unpaired [6]. The enzyme is found in members of all three kingdoms of life, and is essential in metazoa for the splicing of intron-containing tRNAs. The reaction follows a three-step mechanism with initial activation of the enzyme by GTP hydrolysis, forming a phosphoramide bond between the guanylate and a histidine residue. The guanylate group is transferred to the 3'-phosphate terminus of the substrate, forming the capped structure [DNA/RNA]-3'-(5'-diphosphoguanosine). When a suitable 5'-OH end is available, the enzyme catalyses an attack of the 5'-OH on the capped end to form a 3'-5' phosphodiester splice junction, releasing the guanylate. When acting on an RNA 2',3'-cyclic-phosphate, the enzyme catalyses an additional reaction, hydrolysing the cyclic phosphate to a 3'-phosphate [9]. The metazoan enzyme requires activating cofactors in order to achieve multiple turnover catalysis [8].",
+    "pathways": {
+    },
+    "orthologs": {
+    },
+    "genes": {
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.5.1.8"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.5.1.8"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.5.1.8"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.5.1.8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Tanaka N",
+          "Meineke B",
+          "Shuman S"
+        ],
+        "title": "RtcB, a novel RNA ligase, can catalyze tRNA splicing and HAC1 mRNA splicing in vivo.",
+        "journal": "J. Biol. Chem. 286 (2011) 30253-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:21757685]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tanaka N",
+          "Shuman S"
+        ],
+        "title": "RtcB is the RNA ligase component of an Escherichia coli RNA repair operon.",
+        "journal": "J. Biol. Chem. 286 (2011) 7727-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:21224389]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tanaka N",
+          "Chakravarty AK",
+          "Maughan B",
+          "Shuman S"
+        ],
+        "title": "Novel mechanism of RNA repair by RtcB via sequential 2',3'-cyclic phosphodiesterase and 3'-Phosphate/5'-hydroxyl ligation reactions.",
+        "journal": "J. Biol. Chem. 286 (2011) 43134-43.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:22045815]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Desai KK",
+          "Raines RT"
+        ],
+        "title": "tRNA ligase catalyzes the GTP-dependent ligation of RNA with 3'-phosphate and 5'-hydroxyl termini.",
+        "journal": "Biochemistry. 51 (2012) 1333-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:22320833]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chakravarty AK",
+          "Subbotin R",
+          "Chait BT",
+          "Shuman S"
+        ],
+        "title": "RNA ligase RtcB splices 3'-phosphate and 5'-OH ends via covalent RtcB-(histidinyl)-GMP and polynucleotide-(3')pp(5')G intermediates.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 109 (2012) 6072-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:22474365]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chakravarty AK",
+          "Shuman S"
+        ],
+        "title": "The sequential 2',3'-cyclic phosphodiesterase and 3'-phosphate/5'-OH ligation steps of the RtcB RNA splicing pathway are GTP-dependent.",
+        "journal": "Nucleic. Acids. Res. 40 (2012) 8558-67.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:22730297]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Das U",
+          "Chakravarty AK",
+          "Remus BS",
+          "Shuman S"
+        ],
+        "title": "Rewriting the rules for end joining via enzymatic splicing of DNA 3'-PO4 and 5'-OH ends.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 110 (2013) 20437-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:24218597]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Desai KK",
+          "Beltrame AL",
+          "Raines RT"
+        ],
+        "title": "Coevolution of RtcB and Archease created a multiple-turnover RNA ligase.",
+        "journal": "RNA. 21 (2015) 1866-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:26385509]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Maughan WP",
+          "Shuman S"
+        ],
+        "title": "Distinct Contributions of Enzymic Functional Groups to the 2',3'-Cyclic Phosphodiesterase, 3'-Phosphate Guanylylation, and 3'-ppG/5'-OH Ligation Steps of the Escherichia coli RtcB Nucleic Acid Splicing Pathway.",
+        "journal": "J. Bacteriol. 198 (2016) 1294-304.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:26858100]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

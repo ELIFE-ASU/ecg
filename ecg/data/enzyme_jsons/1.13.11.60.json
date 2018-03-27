@@ -1,0 +1,250 @@
+[
+  {
+    "entry_id": "1.13.11.60",
+    "name": "linoleate 8R-lipoxygenase",
+    "names": [
+      "linoleate 8R-lipoxygenase",
+      "linoleic acid 8R-dioxygenase",
+      "5,8-LDS (bifunctional enzyme)",
+      "7,8-LDS (bifunctional enzyme)",
+      "5,8-linoleate diol synthase (bifunctional enzyme)",
+      "7,8-linoleate diol synthase (bifunctional enzyme)",
+      "PpoA"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on single donors with incorporation of molecular oxygen (oxygenases);",
+      "With incorporation of two atoms of oxygen"
+    ],
+    "sysname": "linoleate:oxygen (8R)-oxidoreductase",
+    "reaction": "linoleate + O2 = (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate [RN:R07061]",
+    "all_reac": "R07061",
+    "iubmb_reactions": [
+      "R07061"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "linoleate [CPD:C01595]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "(8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate [CPD:C14831]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme contains heme [1,4]. The bifunctional enzyme from Aspergillus nidulans uses different heme domains to catalyse two separate reactions. Linoleic acid is oxidized within the N-terminal heme peroxidase domain to (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate, which is subsequently isomerized by the C-terminal P-450 heme thiolate domain to (5S,8R,9Z,12Z)-5,8-dihydroxyoctadeca-9,12-dienoate (cf. EC 5.4.4.5, 9,12-octadecadienoate 8-hydroperoxide 8R-isomerase) [1]. The bifunctional enzyme from Gaeumannomyces graminis also catalyses the oxidation of linoleic acid to (8R,9Z,12Z)-8-hydroperoxyoctadeca-9,12-dienoate, but its second domain isomerizes it to (7S,8S,9Z,12Z)-5,8-dihydroxyoctadeca-9,12-dienoate (cf. EC 5.4.4.6, 9,12-octadecadienoate 8-hydroperoxide 8S-isomerase) [4].",
+    "pathways": {
+      "ec00591": "Linoleic acid metabolism"
+    },
+    "orthologs": {
+      "K17863": "linoleate 8R-lipoxygenase / 9,12-octadecadienoate 8-hydroperoxide 8R-isomerase",
+      "K17864": "linoleate 8R-lipoxygenase / 9,12-octadecadienoate 8-hydroperoxide 8S-isomerase"
+    },
+    "genes": {
+      "pan": [
+        "PODANSg09720"
+      ],
+      "mgr": [
+        "MGG_13239"
+      ],
+      "ani": [
+        "AN1967.2"
+      ],
+      "afm": [
+        "AFUA_4G10770"
+      ],
+      "aor": [
+        "AOR_1_2026154"
+      ],
+      "ang": [
+        "ANI_1_966184"
+      ],
+      "afv": [
+        "AFLA_026790"
+      ],
+      "act": [
+        "ACLA_049940"
+      ],
+      "nfi": [
+        "NFIA_105320"
+      ],
+      "pcs": [
+        "Pc22g06980"
+      ],
+      "cim": [
+        "CIMG_01479"
+      ],
+      "cpw": [
+        "CPC735_049620"
+      ],
+      "pbl": [
+        "PAAG_02631"
+      ],
+      "pbn": [
+        "PADG_01651"
+      ],
+      "ure": [
+        "UREG_05116"
+      ],
+      "abe": [
+        "ARB_02272"
+      ],
+      "tve": [
+        "TRV_04981"
+      ],
+      "aje": [
+        "HCAG_01669"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.13.11.60"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.13.11.60"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.13.11.60"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.13.11.60"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Brodhun F",
+          "Gobel C",
+          "Hornung E",
+          "Feussner I"
+        ],
+        "title": "Identification of PpoA from Aspergillus nidulans as a fusion protein of a fatty acid heme dioxygenase/peroxidase and a cytochrome P450.",
+        "journal": "J. Biol. Chem. 284 (2009) 11792-805.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:19286665]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hamberg M",
+          "Zhang LY",
+          "Brodowsky ID",
+          "Oliw EH."
+        ],
+        "title": "Sequential oxygenation of linoleic acid in the fungus Gaeumannomyces graminis: stereochemistry of dioxygenase and hydroperoxide isomerase reactions.",
+        "journal": "Arch. Biochem. Biophys. 309 (1994) 77-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8117115]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Garscha U",
+          "Oliw E"
+        ],
+        "title": "Pichia expression and mutagenesis of 7,8-linoleate diol synthase change the dioxygenase and hydroperoxide isomerase.",
+        "journal": "Biochem. Biophys. Res. Commun. 373 (2008) 579-83.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:18586008]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Su C",
+          "Oliw EH."
+        ],
+        "title": "Purification and characterization of linoleate 8-dioxygenase from the fungus Gaeumannomyces graminis as a novel hemoprotein.",
+        "journal": "J. Biol. Chem. 271 (1996) 14112-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:8662736]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

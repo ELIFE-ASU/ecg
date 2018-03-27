@@ -1,0 +1,879 @@
+[
+  {
+    "entry_id": "2.4.1.152",
+    "name": "4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase",
+    "names": [
+      "4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase",
+      "Lewis-negative alpha-3-fucosyltransferase",
+      "plasma alpha-3-fucosyltransferase",
+      "guanosine diphosphofucose-glucoside alpha1->3-fucosyltransferase",
+      "galactoside 3-fucosyltransferase",
+      "GDP-L-fucose:1,4-beta-D-galactosyl-N-acetyl-D-glucosaminyl-R 3-L-fucosyltransferase",
+      "GDP-beta-L-fucose:1,4-beta-D-galactosyl-N-acetyl-D-glucosaminyl-R 3-L-fucosyltransferase",
+      "GDP-beta-L-fucose:1,4-beta-D-galactosyl-N-acetyl-D-glucosaminyl-R 3-alpha-L-fucosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "GDP-beta-L-fucose:(1->4)-beta-D-galactosyl-N-acetyl-D-glucosaminyl-R 3-alpha-L-fucosyltransferase",
+    "reaction": "GDP-beta-L-fucose + (1->4)-beta-D-galactosyl-N-acetyl-D-glucosaminyl-R = GDP + (1->4)-beta-D-galactosyl-[alpha-(1->3)-L-fucosyl]-N-acetyl-D-glucosaminyl-R [RN:R03519]",
+    "all_reac": "R03519 > R05904(G) R06025(G) R06038(G) R06039(G); (other) R06075(G) R06076(G) R06095(G)",
+    "iubmb_reactions": [
+      "R03519 > R05904(G) R06025(G) R06038(G) R06039(G)"
+    ],
+    "kegg_reactions": [
+      "R06075(G) R06076(G) R06095(G)"
+    ],
+    "substrates": [
+      "GDP-beta-L-fucose [CPD:C00325]",
+      "(1->4)-beta-D-galactosyl-N-acetyl-D-glucosaminyl-R"
+    ],
+    "products": [
+      "GDP [CPD:C00035]",
+      "(1->4)-beta-D-galactosyl-[alpha-(1->3)-L-fucosyl]-N-acetyl-D-glucosaminyl-R"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Normally acts on a glycoconjugate where R (see reaction) is a glycoprotein or glycolipid. This enzyme fucosylates on O-3 of an N-acetylglucosamine that carries a galactosyl group on O-4, unlike EC 2.4.1.65, 3-galactosyl-N-acetylglucosaminide 4-alpha-L-fucosyltransferase, which fucosylates on O-4 of an N-acetylglucosamine that carries a galactosyl group on O-3.",
+    "pathways": {
+      "ec00515": "Mannose type O-glycan biosynthesis",
+      "ec00601": "Glycosphingolipid biosynthesis - lacto and neolacto series",
+      "ec00603": "Glycosphingolipid biosynthesis - globo and isoglobo series",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K03663": "4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransferase",
+      "K20151": "alpha(1,3/1,4) fucosyltransferase"
+    },
+    "genes": {
+      "hsa": [
+        "10690"
+      ],
+      "ptr": [
+        "449500"
+      ],
+      "pps": [
+        "100995687"
+      ],
+      "ggo": [
+        "101149404"
+      ],
+      "pon": [
+        "100452333"
+      ],
+      "nle": [
+        "100598858"
+      ],
+      "mcc": [
+        "708361"
+      ],
+      "mcf": [
+        "102130080"
+      ],
+      "csab": [
+        "103240132"
+      ],
+      "rro": [
+        "104659030"
+      ],
+      "rbb": [
+        "108538590"
+      ],
+      "cjc": [
+        "100405706"
+      ],
+      "sbq": [
+        "101042637"
+      ],
+      "mmu": [
+        "14348"
+      ],
+      "rno": [
+        "84597"
+      ],
+      "cge": [
+        "100689036"
+      ],
+      "ngi": [
+        "103739272"
+      ],
+      "hgl": [
+        "101722848"
+      ],
+      "ccan": [
+        "109692033"
+      ],
+      "ocu": [
+        "103349852"
+      ],
+      "tup": [
+        "102469465"
+      ],
+      "cfa": [
+        "449027"
+      ],
+      "aml": [
+        "100482132"
+      ],
+      "umr": [
+        "103675890"
+      ],
+      "oro": [
+        "101373062"
+      ],
+      "fca": [
+        "101080384"
+      ],
+      "ptg": [
+        "102953801"
+      ],
+      "aju": [
+        "106980088"
+      ],
+      "bta": [
+        "282853"
+      ],
+      "bom": [
+        "102265797"
+      ],
+      "biu": [
+        "109563638"
+      ],
+      "phd": [
+        "102325045"
+      ],
+      "chx": [
+        "102190604"
+      ],
+      "oas": [
+        "106990120"
+      ],
+      "ssc": [
+        "102160171"
+      ],
+      "cfr": [
+        "102504781"
+      ],
+      "cdk": [
+        "105092259"
+      ],
+      "bacu": [
+        "103013395"
+      ],
+      "lve": [
+        "103076056"
+      ],
+      "ecb": [
+        "100071396"
+      ],
+      "epz": [
+        "103548330"
+      ],
+      "eai": [
+        "106832465"
+      ],
+      "myb": [
+        "102244048"
+      ],
+      "myd": [
+        "102761474"
+      ],
+      "hai": [
+        "109373534"
+      ],
+      "rss": [
+        "109453596"
+      ],
+      "pale": [
+        "102880999"
+      ],
+      "lav": [
+        "100666316"
+      ],
+      "tmu": [
+        "101343680"
+      ],
+      "mdo": [
+        "100020278"
+      ],
+      "shr": [
+        "100925710"
+      ],
+      "oaa": [
+        "100075626"
+      ],
+      "gga": [
+        "771133"
+      ],
+      "mgp": [
+        "100538515"
+      ],
+      "cjo": [
+        "107311931"
+      ],
+      "apla": [
+        "101799797"
+      ],
+      "acyg": [
+        "106035417"
+      ],
+      "tgu": [
+        "100230065"
+      ],
+      "gfr": [
+        "102034715"
+      ],
+      "fab": [
+        "101814999"
+      ],
+      "phi": [
+        "102108313"
+      ],
+      "pmaj": [
+        "107202583"
+      ],
+      "ccw": [
+        "104692122"
+      ],
+      "fpg": [
+        "101916872"
+      ],
+      "fch": [
+        "102057900"
+      ],
+      "clv": [
+        "102090826"
+      ],
+      "egz": [
+        "104135407"
+      ],
+      "aam": [
+        "106489650"
+      ],
+      "asn": [
+        "102381575"
+      ],
+      "amj": [
+        "102560865"
+      ],
+      "pss": [
+        "102445061"
+      ],
+      "cmy": [
+        "102943905"
+      ],
+      "cpic": [
+        "101939838"
+      ],
+      "acs": [
+        "100565195"
+      ],
+      "pvt": [
+        "110074019"
+      ],
+      "pbi": [
+        "103053931"
+      ],
+      "gja": [
+        "107121221"
+      ],
+      "xla": [
+        "100337597",
+        "108716340"
+      ],
+      "xtr": [
+        "548391"
+      ],
+      "npr": [
+        "108788910"
+      ],
+      "dre": [
+        "796410"
+      ],
+      "srx": [
+        "107751748",
+        "107752528",
+        "107752989",
+        "107752990",
+        "107754429",
+        "107755789"
+      ],
+      "sanh": [
+        "107670988",
+        "107670991",
+        "107680752",
+        "107682543",
+        "107682550",
+        "107683254",
+        "107693061",
+        "107699637",
+        "107699665"
+      ],
+      "sgh": [
+        "107549854",
+        "107552177",
+        "107552178",
+        "107552179",
+        "107552180",
+        "107553051",
+        "107553052",
+        "107560043",
+        "107564944",
+        "107583473"
+      ],
+      "ccar": [
+        "109061376",
+        "109064072",
+        "109069167",
+        "109069172",
+        "109069186",
+        "109071560",
+        "109075717",
+        "109097854"
+      ],
+      "ipu": [
+        "108256900",
+        "108263097",
+        "108270007",
+        "108274821"
+      ],
+      "amex": [
+        "103029489",
+        "103039268",
+        "103042515",
+        "103042542",
+        "103044280",
+        "111197691"
+      ],
+      "tru": [
+        "101073723",
+        "101074839",
+        "445968",
+        "445969",
+        "446062"
+      ],
+      "tng": [
+        "GSTEN00006850G001",
+        "GSTEN00006851G001",
+        "GSTEN00007254G001",
+        "GSTEN00007264G001",
+        "GSTEN00009901G001",
+        "GSTEN00009902G001",
+        "GSTEN00010864G001",
+        "GSTEN00029413G001",
+        "GSTEN00031978G001",
+        "GSTEN00031979G001",
+        "GSTEN00031980G001"
+      ],
+      "lco": [
+        "104940156",
+        "109139330"
+      ],
+      "mze": [
+        "101475990"
+      ],
+      "ola": [
+        "100302422",
+        "100302423",
+        "100302424"
+      ],
+      "xma": [
+        "102222498",
+        "102225778",
+        "102231138",
+        "102231995"
+      ],
+      "pret": [
+        "103457330",
+        "103458746",
+        "103458791"
+      ],
+      "csem": [
+        "103378711",
+        "103382673",
+        "103382674",
+        "103382681",
+        "103382682",
+        "103394628",
+        "103394629",
+        "103394630",
+        "103394631"
+      ],
+      "lcf": [
+        "108874965",
+        "108876746",
+        "108876755",
+        "108889252"
+      ],
+      "hcq": [
+        "109517458"
+      ],
+      "bpec": [
+        "110153654",
+        "110164782",
+        "110165578"
+      ],
+      "sasa": [
+        "100195769",
+        "106561893",
+        "106564979",
+        "106571726",
+        "106571727",
+        "106576449",
+        "106576450",
+        "106596297",
+        "106596632",
+        "106601669",
+        "106606824",
+        "106607721",
+        "106608151",
+        "106608177",
+        "106608180",
+        "106608181",
+        "106608194",
+        "106609044",
+        "106609585",
+        "106610592"
+      ],
+      "els": [
+        "105006941",
+        "105017585",
+        "105017586",
+        "105017587",
+        "105024824"
+      ],
+      "sfm": [
+        "108929150",
+        "108929240",
+        "108929252",
+        "108935735"
+      ],
+      "lcm": [
+        "102347013"
+      ],
+      "cmk": [
+        "103178281",
+        "103178282"
+      ],
+      "cin": [
+        "100183411"
+      ],
+      "hpy": [
+        "HP0651"
+      ],
+      "heo": [
+        "C694_01925",
+        "C694_03365"
+      ],
+      "hpj": [
+        "jhp_0596"
+      ],
+      "hpa": [
+        "HPAG1_1013"
+      ],
+      "hps": [
+        "HPSH_05520"
+      ],
+      "hhp": [
+        "HPSH112_03760",
+        "HPSH112_05330"
+      ],
+      "hhq": [
+        "HPSH169_03340",
+        "HPSH169_05305"
+      ],
+      "hhr": [
+        "HPSH417_03150",
+        "HPSH417_05070"
+      ],
+      "hpg": [
+        "HPG27_613"
+      ],
+      "hpp": [
+        "HPP12_0664"
+      ],
+      "hpb": [
+        "HELPY_0720",
+        "HELPY_1046"
+      ],
+      "hpl": [
+        "HPB8_427",
+        "HPB8_428",
+        "HPB8_853",
+        "HPB8_854"
+      ],
+      "hpc": [
+        "HPPC_03535",
+        "HPPC_05220"
+      ],
+      "hca": [
+        "HPPC18_03150",
+        "HPPC18_05315"
+      ],
+      "hpm": [
+        "HPSJM_03315",
+        "HPSJM_05295"
+      ],
+      "hpe": [
+        "HPELS_01320",
+        "HPELS_03280"
+      ],
+      "hpo": [
+        "HMPREF4655_20949",
+        "HMPREF4655_21266"
+      ],
+      "hpi": [
+        "hp908_0664",
+        "hp908_1067"
+      ],
+      "hpq": [
+        "hp2017_0641"
+      ],
+      "hpw": [
+        "hp2018_0642"
+      ],
+      "hpu": [
+        "HPCU_03535",
+        "HPCU_05450"
+      ],
+      "hef": [
+        "HPF16_0660",
+        "HPF16_1018"
+      ],
+      "hpf": [
+        "HPF30_0312",
+        "HPF30_0677"
+      ],
+      "heq": [
+        "HPF32_0329",
+        "HPF32_0668"
+      ],
+      "hex": [
+        "HPF57_0674",
+        "HPF57_1038"
+      ],
+      "hpt": [
+        "HPSAT_03535",
+        "HPSAT_05130"
+      ],
+      "hpz": [
+        "HPKB_0693",
+        "HPKB_1004"
+      ],
+      "hpv": [
+        "HPV225_0659"
+      ],
+      "hpx": [
+        "HMPREF0462_0710",
+        "HMPREF0462_1089"
+      ],
+      "hen": [
+        "HPSNT_03355"
+      ],
+      "hph": [
+        "HPLT_03250",
+        "HPLT_05320"
+      ],
+      "heg": [
+        "HPGAM_03360",
+        "HPGAM_05520"
+      ],
+      "hpn": [
+        "HPIN_03385"
+      ],
+      "hep": [
+        "HPPN120_03460",
+        "HPPN120_05205"
+      ],
+      "heu": [
+        "HPPN135_03215",
+        "HPPN135_05490"
+      ],
+      "hes": [
+        "HPSA_03080",
+        "HPSA_05205"
+      ],
+      "hpys": [
+        "HPSA20_0679"
+      ],
+      "hcn": [
+        "HPB14_03415",
+        "HPB14_05015"
+      ],
+      "hpd": [
+        "KHP_0670",
+        "KHP_0977"
+      ],
+      "hey": [
+        "MWE_0857",
+        "MWE_1252"
+      ],
+      "her": [
+        "C695_01925",
+        "C695_03370"
+      ],
+      "hei": [
+        "C730_01925",
+        "C730_03370"
+      ],
+      "hpya": [
+        "HPAKL117_03085",
+        "HPAKL117_05025"
+      ],
+      "hpyk": [
+        "HPAKL86_04810",
+        "HPAKL86_05545"
+      ],
+      "hpyo": [
+        "HPOK113_0665",
+        "HPOK113_1036"
+      ],
+      "hpyl": [
+        "HPOK310_0645",
+        "HPOK310_0973"
+      ],
+      "hpyb": [
+        "HPOKI102_03755",
+        "HPOKI102_05640"
+      ],
+      "hpyc": [
+        "HPOKI112_03785",
+        "HPOKI112_05675"
+      ],
+      "hpyd": [
+        "HPOKI128_05060"
+      ],
+      "hpye": [
+        "HPOKI154_03330",
+        "HPOKI154_05345"
+      ],
+      "hpyf": [
+        "HPOKI422_03760",
+        "HPOKI422_05665"
+      ],
+      "hpyg": [
+        "HPOKI673_03310",
+        "HPOKI673_05330"
+      ],
+      "hpyh": [
+        "HPOKI828_03320",
+        "HPOKI828_05335"
+      ],
+      "hpyj": [
+        "HPOKI898_03755",
+        "HPOKI898_05650"
+      ],
+      "hpyr": [
+        "K747_05675",
+        "K747_07345"
+      ],
+      "hpyi": [
+        "K750_05570"
+      ],
+      "hpyu": [
+        "K751_02280",
+        "K751_04125"
+      ],
+      "hpym": [
+        "K749_00370",
+        "K749_01980"
+      ],
+      "hem": [
+        "K748_00470",
+        "K748_06920"
+      ],
+      "heb": [
+        "U063_0955",
+        "U063_1387"
+      ],
+      "hez": [
+        "U064_0959",
+        "U064_1392"
+      ],
+      "hac": [
+        "Hac_1063"
+      ],
+      "hfe": [
+        "HFELIS_11760",
+        "HFELIS_11770"
+      ],
+      "hbi": [
+        "HBZC1_11830"
+      ],
+      "hce": [
+        "HCW_04425",
+        "HCW_04430"
+      ],
+      "hcm": [
+        "HCD_06735",
+        "HCD_06740"
+      ],
+      "hcp": [
+        "HCN_0898"
+      ],
+      "hcb": [
+        "HCBAA847_1080"
+      ],
+      "hhm": [
+        "BN341_7650"
+      ],
+      "hty": [
+        "BN2458_PEG1213"
+      ],
+      "hbl": [
+        "XJ32_07195"
+      ],
+      "aak": [
+        "AA2016_0546"
+      ],
+      "magx": [
+        "XM1_1803"
+      ],
+      "magn": [
+        "WV31_16795"
+      ],
+      "lacy": [
+        "A4V08_21495"
+      ],
+      "mup": [
+        "A0256_10515"
+      ],
+      "ndo": [
+        "DDD_2268"
+      ],
+      "wfu": [
+        "AXE80_11260"
+      ],
+      "pwo": [
+        "UX70_C0001G0086"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.152"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.152"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.152"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.152"
+      ],
+      "CAS": [
+        "39279-34-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Johnson PH",
+          "Yates AD",
+          "Watkins WM."
+        ],
+        "title": "Human salivary fucosyltransferases : evidence for two distinct alpha-3-L-fucosyltransferase activities one or which is associated with the Lewis blood group Le gene.",
+        "journal": "Biochem. Biophys. Res. Commun. 100 (1981) 1611-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:7295318]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schachter H",
+          "Narasimhan S",
+          "Gleeson P",
+          "Vella G."
+        ],
+        "title": "Glycosyltransferases involved in elongation of N-glycosidically linked oligosaccharides of the complex or N-acetyllactosamine type.",
+        "journal": "Methods. Enzymol. 98 (1983) 98-134.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6366476]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ma B",
+          "Wang G",
+          "Palcic MM",
+          "Hazes B",
+          "Taylor DE."
+        ],
+        "title": "C-terminal amino acids of Helicobacter pylori alpha1,3/4 fucosyltransferases determine type I and type II transfer.",
+        "journal": "J. Biol. Chem. 278 (2003) 21893-900.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12676935]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

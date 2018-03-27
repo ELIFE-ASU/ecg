@@ -1,0 +1,789 @@
+[
+  {
+    "entry_id": "1.14.19.35",
+    "name": "sn-2 acyl-lipid omega-3 desaturase (ferredoxin)",
+    "names": [
+      "sn-2 acyl-lipid omega-3 desaturase (ferredoxin)",
+      "FAD7",
+      "FAD8"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With oxidation of a pair of donors resulting in the reduction of O2 to two molecules of water"
+    ],
+    "sysname": "(7Z,10Z)-hexadeca-7,10-dienoyl-[glycerolipid],ferredoxin:oxygen oxidoreductase (13,14 cis-dehydrogenating)",
+    "reaction": "(1) a (7Z,10Z)-hexadeca-7,10-dienoyl-[glycerolipid] + 2 reduced ferredoxin [iron-sulfur] cluster + O2 + 2 H+ = a (7Z,10Z,13Z)-hexadeca-7,10,13-trienoyl-[glycerolipid] + 2 oxidized ferredoxin [iron-sulfur] cluster + 2 H2O; (2) a linoleoyl-[glycerolipid] + 2 reduced ferredoxin [iron-sulfur] cluster + O2 + 2 H+ = an alpha-linolenoyl-[glycerolipid] + 2 oxidized ferredoxin [iron-sulfur] cluster + 2 H2O",
+    "all_reac": "",
+    "iubmb_reactions": [
+
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(7Z,10Z)-hexadeca-7,10-dienoyl-[glycerolipid]",
+      "reduced ferredoxin [iron-sulfur] cluster [CPD:C00138]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]",
+      "linoleoyl-[glycerolipid] [CPD:C21529]"
+    ],
+    "products": [
+      "(7Z,10Z,13Z)-hexadeca-7,10,13-trienoyl-[glycerolipid]",
+      "oxidized ferredoxin [iron-sulfur] cluster [CPD:C00139]",
+      "H2O [CPD:C00001]",
+      "alpha-linolenoyl-[glycerolipid] [CPD:C21531]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This plastidial enzyme desaturates 16:2 fatty acids attached to the sn-2 position of glycerolipids to 16:3 fatty acids, and converts18:2 to 18:3 in both the sn-1 and sn-2 positions. It acts on all 16:2- or 18:2-containing chloroplast membrane lipids, including phosphatidylglycerol, monogalactosyldiacylglycerol, digalactosyldiaclyglycerol, and sulfoquinovosyldiacylglycerol. The enzyme introduces a cis double bond at a location 3 carbons away from the methyl end of the fatty acid. The distance from the carboxylic acid end of the molecule does not affect the location of the new double bond. cf. EC 1.14.19.25, acyl-lipid omega-3 desaturase (cytochrome b5) and EC 1.14.19.36, sn-1 acyl-lipid omega-3 desaturase (ferredoxin).",
+    "pathways": {
+    },
+    "orthologs": {
+      "K10257": "acyl-lipid omega-3 desaturase"
+    },
+    "genes": {
+      "rss": [
+        "109440696"
+      ],
+      "cel": [
+        "CELE_W02A2.1",
+        "CELE_Y67H2A.8"
+      ],
+      "cbr": [
+        "CBG01790",
+        "CBG01791"
+      ],
+      "nai": [
+        "NECAME_04015"
+      ],
+      "bmy": [
+        "Bm1_38160"
+      ],
+      "loa": [
+        "LOAG_02175"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_116269",
+        "LOTGIDRAFT_74451"
+      ],
+      "obi": [
+        "106883679"
+      ],
+      "ath": [
+        "AT2G29980",
+        "AT3G11170",
+        "AT5G05580"
+      ],
+      "aly": [
+        "ARALYDRAFT_478456",
+        "ARALYDRAFT_481907",
+        "ARALYDRAFT_487353"
+      ],
+      "crb": [
+        "CARUB_v10001010mg",
+        "CARUB_v10013689mg",
+        "CARUB_v10023252mg"
+      ],
+      "csat": [
+        "104700502",
+        "104708554",
+        "104734563",
+        "104745318",
+        "104749896",
+        "104764868",
+        "104765502",
+        "104768754",
+        "104786676"
+      ],
+      "eus": [
+        "EUTSA_v10013625mg",
+        "EUTSA_v10016786mg",
+        "EUTSA_v10020755mg"
+      ],
+      "brp": [
+        "103850591",
+        "103857278",
+        "103859380",
+        "103859381",
+        "103864998",
+        "103867994",
+        "103870371"
+      ],
+      "bna": [
+        "106353041",
+        "106377255",
+        "106380841",
+        "106387896",
+        "106418556",
+        "106418558",
+        "106422764",
+        "106429840",
+        "106439274",
+        "106446979",
+        "106452545",
+        "111197728"
+      ],
+      "boe": [
+        "106295700",
+        "106314490",
+        "106327053",
+        "106328829",
+        "106335120",
+        "106336554",
+        "106336680"
+      ],
+      "thj": [
+        "104800741",
+        "104816198",
+        "104816543",
+        "104826849"
+      ],
+      "cpap": [
+        "110808059",
+        "110810025",
+        "110820958"
+      ],
+      "cit": [
+        "102611986",
+        "102626347"
+      ],
+      "cic": [
+        "CICLE_v10011691mg",
+        "CICLE_v10028941mg"
+      ],
+      "tcc": [
+        "18585841",
+        "18590479",
+        "18597527"
+      ],
+      "gra": [
+        "105776289",
+        "105780050",
+        "105786551",
+        "105791965",
+        "105799158"
+      ],
+      "ghi": [
+        "107889065",
+        "107891556",
+        "107891614",
+        "107899542",
+        "107931808",
+        "107940880",
+        "107948941",
+        "107956656",
+        "107958053"
+      ],
+      "egr": [
+        "104421068",
+        "104421444"
+      ],
+      "gmx": [
+        "100037456",
+        "100038323",
+        "100217335",
+        "100305351",
+        "100499626",
+        "100799517",
+        "547470",
+        "547715",
+        "732540"
+      ],
+      "pvu": [
+        "PHAVU_006G068600g",
+        "PHAVU_008G098100g",
+        "PHAVU_008G260700g",
+        "PHAVU_010G076200g"
+      ],
+      "vra": [
+        "106759364",
+        "106765282",
+        "106774181"
+      ],
+      "var": [
+        "108329591",
+        "108337050",
+        "108341784",
+        "108347618"
+      ],
+      "ccaj": [
+        "109787870",
+        "109813625",
+        "109815393",
+        "109816410"
+      ],
+      "mtr": [
+        "MTR_3g464330",
+        "MTR_4g015630",
+        "MTR_5g071170",
+        "MTR_7g068780"
+      ],
+      "cam": [
+        "101502461",
+        "101504225",
+        "101513464",
+        "101515266"
+      ],
+      "adu": [
+        "107458340",
+        "107475149",
+        "107484970",
+        "107491190"
+      ],
+      "aip": [
+        "107609767",
+        "107625758",
+        "107639562",
+        "107644755"
+      ],
+      "lja": [
+        "Lj0g3v0123589.1",
+        "Lj1g3v2337910.1",
+        "Lj2g3v2277520.1"
+      ],
+      "lang": [
+        "109330327",
+        "109338970",
+        "109349642",
+        "109350266",
+        "109352644",
+        "109360270",
+        "109361525"
+      ],
+      "fve": [
+        "101306021",
+        "101306861",
+        "101310644",
+        "101312263"
+      ],
+      "pper": [
+        "18772228",
+        "18773198",
+        "18774962",
+        "18785351"
+      ],
+      "pmum": [
+        "103320961",
+        "103320972",
+        "103333043",
+        "103341784"
+      ],
+      "mdm": [
+        "103406655",
+        "103412939",
+        "103417775",
+        "103419381",
+        "103420048",
+        "103430794",
+        "103432837",
+        "103447381",
+        "103447641",
+        "108172883"
+      ],
+      "pxb": [
+        "103930542",
+        "103931220",
+        "103931253",
+        "103936863",
+        "103938921",
+        "103958619",
+        "103966319"
+      ],
+      "zju": [
+        "107404190",
+        "107410758",
+        "107410778",
+        "107430888"
+      ],
+      "csv": [
+        "101209295",
+        "101223135"
+      ],
+      "cmo": [
+        "103497071",
+        "103502871"
+      ],
+      "mcha": [
+        "111023722"
+      ],
+      "rcu": [
+        "8265360",
+        "8286343",
+        "8286466"
+      ],
+      "jcu": [
+        "105628097",
+        "105630235",
+        "105631214",
+        "105646096",
+        "105646580"
+      ],
+      "hbr": [
+        "110648982",
+        "110654511",
+        "110654544",
+        "110657237",
+        "110665331",
+        "110666427"
+      ],
+      "pop": [
+        "POPTR_0001s25980g",
+        "POPTR_0006s10250g",
+        "POPTR_0008s06960g",
+        "POPTR_0010s19510g",
+        "POPTR_0016s12490g"
+      ],
+      "vvi": [
+        "100243349",
+        "100247097",
+        "100251798",
+        "100260414"
+      ],
+      "sly": [
+        "100134915",
+        "109118712",
+        "544203"
+      ],
+      "spen": [
+        "107021758",
+        "107023114",
+        "107023926"
+      ],
+      "sot": [
+        "102596735",
+        "102597287",
+        "102597672"
+      ],
+      "cann": [
+        "107873310",
+        "107873419",
+        "107873420"
+      ],
+      "nta": [
+        "107763446",
+        "107777511",
+        "107783156",
+        "107786526",
+        "107804927",
+        "107807128",
+        "107832399"
+      ],
+      "nsy": [
+        "104237848",
+        "104243629",
+        "104243898",
+        "104248927"
+      ],
+      "nto": [
+        "104090878",
+        "104112653",
+        "104114074"
+      ],
+      "ini": [
+        "109147953",
+        "109164374",
+        "109186614"
+      ],
+      "sind": [
+        "105160895",
+        "105163949",
+        "105167042"
+      ],
+      "han": [
+        "110868642",
+        "110868972",
+        "110872089",
+        "110872729",
+        "110878910",
+        "110885030",
+        "110907224",
+        "110922364"
+      ],
+      "bvg": [
+        "104903256",
+        "104903266"
+      ],
+      "soe": [
+        "110801682",
+        "110801700"
+      ],
+      "nnu": [
+        "104594909",
+        "104602583"
+      ],
+      "osa": [
+        "4332500",
+        "4344389",
+        "4349544",
+        "4351253"
+      ],
+      "dosa": [
+        "Os03t0290300-01",
+        "Os07t0693800-01",
+        "Os11t0104400-01",
+        "Os12t0104400-01"
+      ],
+      "obr": [
+        "102707070",
+        "102715194",
+        "102720167",
+        "102720386"
+      ],
+      "bdi": [
+        "100824939",
+        "100831377",
+        "100840287"
+      ],
+      "sbi": [
+        "8055482",
+        "8072903",
+        "8079958",
+        "8084033",
+        "8084992"
+      ],
+      "zma": [
+        "100281245",
+        "100283566",
+        "103644592",
+        "542222"
+      ],
+      "sita": [
+        "101771745",
+        "101776425",
+        "101785330"
+      ],
+      "pda": [
+        "103706691",
+        "103709505",
+        "103718325"
+      ],
+      "egu": [
+        "105044596",
+        "105046171",
+        "105057100"
+      ],
+      "mus": [
+        "103972340",
+        "103984918",
+        "103986078",
+        "103994000",
+        "103995423",
+        "103996941",
+        "103999859"
+      ],
+      "dct": [
+        "110105024",
+        "110110723",
+        "110110724"
+      ],
+      "atr": [
+        "18433434",
+        "18442202"
+      ],
+      "smo": [
+        "SELMODRAFT_103593",
+        "SELMODRAFT_109519"
+      ],
+      "ppp": [
+        "PHYPADRAFT_105855",
+        "PHYPADRAFT_132768",
+        "PHYPADRAFT_146922",
+        "PHYPADRAFT_183309",
+        "PHYPADRAFT_211380",
+        "PHYPADRAFT_234570",
+        "PHYPADRAFT_55162"
+      ],
+      "cre": [
+        "CHLREDRAFT_56237"
+      ],
+      "vcn": [
+        "VOLCADRAFT_76038"
+      ],
+      "mng": [
+        "MNEG_12033",
+        "MNEG_15487",
+        "MNEG_9648"
+      ],
+      "mis": [
+        "MICPUN_69560"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_3762"
+      ],
+      "csl": [
+        "COCSUDRAFT_67054"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_33387"
+      ],
+      "apro": [
+        "F751_6504"
+      ],
+      "gsl": [
+        "Gasu_25760"
+      ],
+      "ccp": [
+        "CHC_T00009454001"
+      ],
+      "pti": [
+        "PHATRDRAFT_41570"
+      ],
+      "fcy": [
+        "FRACYDRAFT_138896"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_468588"
+      ],
+      "syn": [
+        "sll1441"
+      ],
+      "syz": [
+        "MYO_117450"
+      ],
+      "syy": [
+        "SYNGTS_1727"
+      ],
+      "syt": [
+        "SYNGTI_1727"
+      ],
+      "sys": [
+        "SYNPCCN_1726"
+      ],
+      "syq": [
+        "SYNPCCP_1726"
+      ],
+      "syp": [
+        "SYNPCC7002_A0159"
+      ],
+      "synp": [
+        "Syn7502_00126"
+      ],
+      "cmp": [
+        "Cha6605_3989"
+      ],
+      "lep": [
+        "Lepto7376_2407"
+      ],
+      "len": [
+        "LEP3755_23000"
+      ],
+      "lbo": [
+        "LBWT_51340"
+      ],
+      "amr": [
+        "AM1_3759"
+      ],
+      "mar": [
+        "MAE_34620"
+      ],
+      "mpk": [
+        "VL20_3142"
+      ],
+      "cwa": [
+        "CwatDRAFT_3625"
+      ],
+      "cyt": [
+        "cce_4388"
+      ],
+      "cyn": [
+        "Cyan7425_3182"
+      ],
+      "ter": [
+        "Tery_4492"
+      ],
+      "mic": [
+        "Mic7113_4950"
+      ],
+      "gei": [
+        "GEI7407_2532"
+      ],
+      "oac": [
+        "Oscil6304_4510"
+      ],
+      "oni": [
+        "Osc7112_5416"
+      ],
+      "cep": [
+        "Cri9333_2131"
+      ],
+      "ana": [
+        "all1597"
+      ],
+      "npu": [
+        "Npun_R6230"
+      ],
+      "nos": [
+        "Nos7107_0616"
+      ],
+      "nop": [
+        "Nos7524_4758"
+      ],
+      "non": [
+        "NOS3756_14570"
+      ],
+      "ava": [
+        "Ava_4210"
+      ],
+      "naz": [
+        "Aazo_3556"
+      ],
+      "anb": [
+        "ANA_C20204"
+      ],
+      "acy": [
+        "Anacy_4778"
+      ],
+      "awa": [
+        "AA650_16760"
+      ],
+      "csg": [
+        "Cylst_2674"
+      ],
+      "calo": [
+        "Cal7507_2591"
+      ],
+      "calt": [
+        "Cal6303_1446"
+      ],
+      "calh": [
+        "IJ00_05015"
+      ],
+      "riv": [
+        "Riv7116_4399"
+      ],
+      "ncn": [
+        "BZZ01_14805"
+      ],
+      "cthe": [
+        "Chro_2759"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.19.35"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.19.35"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.19.35"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.19.35"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Iba K",
+          "Gibson S",
+          "Nishiuchi T",
+          "Fuse T",
+          "Nishimura M",
+          "Arondel V",
+          "Hugly S",
+          "Somerville C"
+        ],
+        "title": "A gene encoding a chloroplast omega-3 fatty acid desaturase complements alterations in fatty acid desaturation and chloroplast copy number of the fad7 mutant of Arabidopsis thaliana.",
+        "journal": "J. Biol. Chem. 268 (1993) 24099-105.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8226956]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "McConn M",
+          "Hugly S",
+          "Browse J",
+          "Somerville C"
+        ],
+        "title": "A Mutation at the fad8 Locus of Arabidopsis Identifies a Second Chloroplast [omega]-3 Desaturase.",
+        "journal": "Plant. Physiol. 106 (1994) 1609-1614.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12232435]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Venegas-Caleron M",
+          "Muro-Pastor AM",
+          "Garces R",
+          "Martinez-Force E"
+        ],
+        "title": "Functional characterization of a plastidial omega-3 desaturase from sunflower (Helianthus annuus) in cyanobacteria.",
+        "journal": "Plant. Physiol. Biochem. 44 (2006) 517-25.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:17064923]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

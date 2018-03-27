@@ -1,0 +1,795 @@
+[
+  {
+    "entry_id": "1.14.16.2",
+    "name": "tyrosine 3-monooxygenase",
+    "names": [
+      "tyrosine 3-monooxygenase",
+      "L-tyrosine hydroxylase",
+      "tyrosine 3-hydroxylase",
+      "tyrosine hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced pteridine as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-tyrosine,tetrahydrobiopterin:oxygen oxidoreductase (3-hydroxylating)",
+    "reaction": "L-tyrosine + tetrahydrobiopterin + O2 = L-dopa + 4a-hydroxytetrahydrobiopterin [RN:R07212]",
+    "all_reac": "R07212; (other) R01815",
+    "iubmb_reactions": [
+      "R07212"
+    ],
+    "kegg_reactions": [
+      "R01815"
+    ],
+    "substrates": [
+      "L-tyrosine [CPD:C00082]",
+      "tetrahydrobiopterin [CPD:C00272]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "L-dopa [CPD:C00355]",
+      "4a-hydroxytetrahydrobiopterin [CPD:C15522]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The active centre contains mononuclear iron(II). The enzyme is activated by phosphorylation, catalysed by EC 2.7.11.27, [acetyl-CoA carboxylase] kinase. The 4a-hydroxytetrahydrobiopterin formed can dehydrate to 6,7-dihydrobiopterin, both spontaneously and by the action of EC 4.2.1.96, 4a-hydroxytetrahydrobiopterin dehydratase. The 6,7-dihydrobiopterin can be enzymically reduced back to tetrahydrobiopterin, by EC 1.5.1.34 (6,7-dihydropteridine reductase), or slowly rearranges into the more stable compound 7,8-dihydrobiopterin.",
+    "pathways": {
+      "ec00350": "Tyrosine metabolism",
+      "ec00790": "Folate biosynthesis",
+      "ec00950": "Isoquinoline alkaloid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00501": "tyrosine 3-monooxygenase"
+    },
+    "genes": {
+      "hsa": [
+        "7054"
+      ],
+      "ptr": [
+        "450955"
+      ],
+      "pps": [
+        "100967895"
+      ],
+      "ggo": [
+        "101135345"
+      ],
+      "pon": [
+        "100454349"
+      ],
+      "nle": [
+        "100591963"
+      ],
+      "mcc": [
+        "721137"
+      ],
+      "mcf": [
+        "102134074"
+      ],
+      "csab": [
+        "103238895"
+      ],
+      "rro": [
+        "104677105"
+      ],
+      "rbb": [
+        "108539190"
+      ],
+      "cjc": [
+        "100393454"
+      ],
+      "sbq": [
+        "101037795"
+      ],
+      "mmu": [
+        "21823"
+      ],
+      "rno": [
+        "25085"
+      ],
+      "cge": [
+        "100760127"
+      ],
+      "ngi": [
+        "103738985"
+      ],
+      "hgl": [
+        "101721615"
+      ],
+      "ccan": [
+        "109689795"
+      ],
+      "tup": [
+        "102482570"
+      ],
+      "cfa": [
+        "403444"
+      ],
+      "aml": [
+        "100483681"
+      ],
+      "umr": [
+        "103671121"
+      ],
+      "oro": [
+        "101384343"
+      ],
+      "fca": [
+        "101090720"
+      ],
+      "ptg": [
+        "102954972"
+      ],
+      "aju": [
+        "106971078"
+      ],
+      "bta": [
+        "280707"
+      ],
+      "bom": [
+        "102274970"
+      ],
+      "biu": [
+        "109554672"
+      ],
+      "phd": [
+        "102343816"
+      ],
+      "chx": [
+        "102179849"
+      ],
+      "oas": [
+        "101120619"
+      ],
+      "ssc": [
+        "110259705"
+      ],
+      "cfr": [
+        "102508286"
+      ],
+      "cdk": [
+        "105106406"
+      ],
+      "bacu": [
+        "103020745"
+      ],
+      "lve": [
+        "103086024"
+      ],
+      "ecb": [
+        "100146648"
+      ],
+      "epz": [
+        "103545553"
+      ],
+      "eai": [
+        "106824091"
+      ],
+      "myb": [
+        "102254096"
+      ],
+      "myd": [
+        "102756871"
+      ],
+      "hai": [
+        "109395916"
+      ],
+      "rss": [
+        "109435669"
+      ],
+      "lav": [
+        "100665276"
+      ],
+      "tmu": [
+        "101347132"
+      ],
+      "mdo": [
+        "100021373"
+      ],
+      "shr": [
+        "105751028"
+      ],
+      "oaa": [
+        "100075982"
+      ],
+      "gga": [
+        "395592",
+        "771761"
+      ],
+      "mgp": [
+        "100546438",
+        "723977"
+      ],
+      "cjo": [
+        "107314555",
+        "107314887"
+      ],
+      "apla": [
+        "101794316",
+        "101794610"
+      ],
+      "acyg": [
+        "106035805",
+        "106042638"
+      ],
+      "tgu": [
+        "100217613",
+        "100219119"
+      ],
+      "gfr": [
+        "102039412",
+        "102044418"
+      ],
+      "fab": [
+        "101810723",
+        "101811971"
+      ],
+      "phi": [
+        "102108161",
+        "102111024"
+      ],
+      "pmaj": [
+        "107204189",
+        "107205413"
+      ],
+      "ccw": [
+        "104687428",
+        "104696496"
+      ],
+      "fpg": [
+        "101912036",
+        "101915572"
+      ],
+      "fch": [
+        "102049050",
+        "102055136"
+      ],
+      "clv": [
+        "102087146",
+        "102092212"
+      ],
+      "egz": [
+        "104124906",
+        "104135597"
+      ],
+      "aam": [
+        "106488264",
+        "106497044"
+      ],
+      "asn": [
+        "102378400",
+        "102381461"
+      ],
+      "amj": [
+        "102563069",
+        "102565540"
+      ],
+      "pss": [
+        "102444955",
+        "102446096"
+      ],
+      "cmy": [
+        "102935321",
+        "102941678"
+      ],
+      "cpic": [
+        "101937054",
+        "101942670"
+      ],
+      "acs": [
+        "100561541",
+        "100562555"
+      ],
+      "pvt": [
+        "110076553",
+        "110084772"
+      ],
+      "pbi": [
+        "103048677",
+        "103061496"
+      ],
+      "gja": [
+        "107108457",
+        "107119992"
+      ],
+      "xla": [
+        "100037248",
+        "108710245",
+        "108713461"
+      ],
+      "xtr": [
+        "100488900",
+        "100495856"
+      ],
+      "npr": [
+        "108789610",
+        "108791996"
+      ],
+      "dre": [
+        "30384"
+      ],
+      "srx": [
+        "107707537",
+        "107725618",
+        "107735287",
+        "107736330",
+        "107740562",
+        "107744916"
+      ],
+      "sanh": [
+        "107664872",
+        "107675254",
+        "107682959",
+        "107688572",
+        "107695848"
+      ],
+      "sgh": [
+        "107553859",
+        "107572878",
+        "107577943",
+        "107587609",
+        "107590157"
+      ],
+      "ccar": [
+        "109068217",
+        "109068347",
+        "109077513"
+      ],
+      "ipu": [
+        "108274586",
+        "108279869"
+      ],
+      "amex": [
+        "103023599",
+        "103026162"
+      ],
+      "tru": [
+        "101078018",
+        "446095"
+      ],
+      "tng": [
+        "GSTEN00019792G001",
+        "GSTEN00023797G001"
+      ],
+      "lco": [
+        "104920475",
+        "104926293",
+        "109140780"
+      ],
+      "ncc": [
+        "104945813",
+        "104966229"
+      ],
+      "mze": [
+        "101468237",
+        "101477829"
+      ],
+      "ola": [
+        "101168664",
+        "101171548"
+      ],
+      "xma": [
+        "102216806",
+        "102222085",
+        "102222392"
+      ],
+      "pret": [
+        "103459397",
+        "103466160"
+      ],
+      "csem": [
+        "103380366",
+        "103382582",
+        "103399369",
+        "107988893"
+      ],
+      "lcf": [
+        "108875328",
+        "108897565"
+      ],
+      "hcq": [
+        "109530099",
+        "109530311"
+      ],
+      "bpec": [
+        "110161487",
+        "110165894"
+      ],
+      "sasa": [
+        "106560700",
+        "106576278",
+        "106609447"
+      ],
+      "els": [
+        "105026610",
+        "105030168"
+      ],
+      "sfm": [
+        "108931392",
+        "108942201"
+      ],
+      "lcm": [
+        "102350473",
+        "102359439",
+        "102363425"
+      ],
+      "cmk": [
+        "103179919",
+        "103186002"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_233334"
+      ],
+      "cin": [
+        "493867"
+      ],
+      "spu": [
+        "581094"
+      ],
+      "aplc": [
+        "110973102",
+        "110983460"
+      ],
+      "sko": [
+        "100329060"
+      ],
+      "dme": [
+        "Dmel_CG10118"
+      ],
+      "dpo": [
+        "Dpse_GA10085"
+      ],
+      "dan": [
+        "Dana_GF10892"
+      ],
+      "der": [
+        "Dere_GG15029"
+      ],
+      "dpe": [
+        "Dper_GL13238"
+      ],
+      "dse": [
+        "Dsec_GM13827",
+        "Dsec_GM13828"
+      ],
+      "dsi": [
+        "Dsimw501_GD13115"
+      ],
+      "dwi": [
+        "Dwil_GK12579"
+      ],
+      "dya": [
+        "Dyak_GE20472"
+      ],
+      "dgr": [
+        "Dgri_GH15635"
+      ],
+      "dmo": [
+        "Dmoj_GI12682"
+      ],
+      "dvi": [
+        "Dvir_GJ12666"
+      ],
+      "mde": [
+        "101896218"
+      ],
+      "aga": [
+        "AgaP_AGAP006023"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ014156"
+      ],
+      "ame": [
+        "408930"
+      ],
+      "bim": [
+        "100750025"
+      ],
+      "bter": [
+        "100646624"
+      ],
+      "soc": [
+        "105194448"
+      ],
+      "aec": [
+        "105145056"
+      ],
+      "acep": [
+        "105619344"
+      ],
+      "pbar": [
+        "105423652"
+      ],
+      "hst": [
+        "105182098"
+      ],
+      "cfo": [
+        "105248912"
+      ],
+      "lhu": [
+        "105678075"
+      ],
+      "pgc": [
+        "109861504"
+      ],
+      "nvi": [
+        "100116056"
+      ],
+      "tca": [
+        "654918"
+      ],
+      "dpa": [
+        "109541904"
+      ],
+      "nvl": [
+        "108569991"
+      ],
+      "bmor": [
+        "100270767"
+      ],
+      "dpl": [
+        "KGM_206781"
+      ],
+      "pmac": [
+        "106717258"
+      ],
+      "pxy": [
+        "105380496"
+      ],
+      "api": [
+        "100167369"
+      ],
+      "dnx": [
+        "107161975"
+      ],
+      "phu": [
+        "Phum_PHUM501080"
+      ],
+      "zne": [
+        "110829545"
+      ],
+      "fcd": [
+        "110862051"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_323742"
+      ],
+      "isc": [
+        "IscW_ISCW002330",
+        "IscW_ISCW003802"
+      ],
+      "tut": [
+        "107359687"
+      ],
+      "cel": [
+        "CELE_B0432.5"
+      ],
+      "cbr": [
+        "CBG07026"
+      ],
+      "bmy": [
+        "Bm1_46865"
+      ],
+      "loa": [
+        "LOAG_02149"
+      ],
+      "tsp": [
+        "Tsp_12013"
+      ],
+      "hro": [
+        "HELRODRAFT_66944"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_106041"
+      ],
+      "crg": [
+        "105337798"
+      ],
+      "myi": [
+        "110459086"
+      ],
+      "obi": [
+        "106871451"
+      ],
+      "lak": [
+        "106153195",
+        "106158393"
+      ],
+      "smm": [
+        "Smp_007690"
+      ],
+      "shx": [
+        "MS3_00810"
+      ],
+      "ovi": [
+        "T265_08520"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.16.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.16.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.16.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.16.2"
+      ],
+      "CAS": [
+        "9036-22-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "El Mestikawy S",
+          "Glowinski J",
+          "Hamon M."
+        ],
+        "title": "Tyrosine hydroxylase activation in depolarized dopaminergic terminals--involvement of Ca2+-dependent phosphorylation.",
+        "journal": "Nature. 302 (1983) 830-2.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6133218]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ikeda M",
+          "Levitt M",
+          "Udenfriend S."
+        ],
+        "title": "Phenylalanine as substrate and inhibitor of tyrosine hydroxylase.",
+        "journal": "Arch. Biochem. Biophys. 120 (1967) 420-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6033458]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "NAGATSU T",
+          "LEVITT M",
+          "UDENFRIEND S."
+        ],
+        "title": "TYROSINE HYDROXYLASE. THE INITIAL STEP IN NOREPINEPHRINE BIOSYNTHESIS.",
+        "journal": "J. Biol. Chem. 239 (1964) 2910-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14216443]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pigeon D",
+          "Drissi-Daoudi R",
+          "Gros F",
+          "Thibault J."
+        ],
+        "title": "[Copurification of tyrosine hydroxylase from rat pheochromocytoma by protein kinase]",
+        "journal": "C. R. Acad. Sci. III. 302 (1986) 435-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:2872947]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Goodwill KE",
+          "Sabatier C",
+          "Marks C",
+          "Raag R",
+          "Fitzpatrick PF",
+          "Stevens RC."
+        ],
+        "title": "Crystal structure of tyrosine hydroxylase at 2.3 A and its implications for inherited neurodegenerative diseases.",
+        "journal": "Nat. Struct. Biol. 4 (1997) 578-85.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:9228951]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

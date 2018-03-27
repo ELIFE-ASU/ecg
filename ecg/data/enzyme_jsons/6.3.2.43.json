@@ -1,0 +1,762 @@
+[
+  {
+    "entry_id": "6.3.2.43",
+    "name": "[lysine-biosynthesis-protein LysW]---L-2-aminoadipate ligase",
+    "names": [
+      "[lysine-biosynthesis-protein LysW]---L-2-aminoadipate ligase",
+      "alpha-aminoadipate-lysW ligase lysX (gene name)",
+      "LysX (ambiguous)",
+      "AAA---LysW ligase"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-nitrogen bonds;",
+      "Acid-D-amino-acid ligases (peptide synthases)"
+    ],
+    "sysname": "[lysine-biosynthesis-protein LysW]-C-terminal-L-glutamate:L-2-aminoadipate ligase (ADP-forming)",
+    "reaction": "ATP + [lysine-biosynthesis-protein LysW]-C-terminal-L-glutamate + L-2-aminoadipate = ADP + phosphate + [lysine-biosynthesis-protein LysW]-C-terminal-gamma-(L-2-aminoadip-2-yl)-L-glutamate [RN:R09775]",
+    "all_reac": "R09775",
+    "iubmb_reactions": [
+      "R09775"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "[lysine-biosynthesis-protein LysW]-C-terminal-L-glutamate [CPD:C19885]",
+      "L-2-aminoadipate [CPD:C00956]"
+    ],
+    "products": [
+      "ADP [CPD:C00008]",
+      "phosphate [CPD:C00009]",
+      "[lysine-biosynthesis-protein LysW]-C-terminal-gamma-(L-2-aminoadip-2-yl)-L-glutamate [CPD:C19886]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzymes from the thermophilic bacterium Thermus thermophilus and the thermophilic archaea Sulfolobus acidocaldarius and Sulfolobus tokodaii protect the amino group of L-2-aminoadipate by conjugation to the carrier protein LysW. This reaction is part of the lysine biosynthesis pathway in these organisms.",
+    "pathways": {
+      "ec00300": "Lysine biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K05827": "[lysine-biosynthesis-protein LysW]---L-2-aminoadipate ligase"
+    },
+    "genes": {
+      "enf": [
+        "AKI40_3663"
+      ],
+      "msd": [
+        "MYSTI_01368"
+      ],
+      "ccx": [
+        "COCOR_02065"
+      ],
+      "sauc": [
+        "CA347_99"
+      ],
+      "pms": [
+        "KNP414_04939"
+      ],
+      "pmq": [
+        "PM3016_4341"
+      ],
+      "pmw": [
+        "B2K_22490"
+      ],
+      "pih": [
+        "UB51_14610"
+      ],
+      "pswu": [
+        "SY83_08915"
+      ],
+      "cmd": [
+        "B841_01675"
+      ],
+      "sgr": [
+        "SGR_3478"
+      ],
+      "ssx": [
+        "SACTE_1737"
+      ],
+      "sfa": [
+        "Sfla_0121"
+      ],
+      "strp": [
+        "F750_6903"
+      ],
+      "sci": [
+        "B446_19865"
+      ],
+      "sgu": [
+        "SGLAU_17270"
+      ],
+      "spri": [
+        "SPRI_3646"
+      ],
+      "srw": [
+        "TUE45_06896"
+      ],
+      "spav": [
+        "Spa2297_32325"
+      ],
+      "slc": [
+        "SL103_03060"
+      ],
+      "strt": [
+        "A8713_31065"
+      ],
+      "sesp": [
+        "BN6_56710"
+      ],
+      "ase": [
+        "ACPL_7493"
+      ],
+      "plk": [
+        "CIK06_18345"
+      ],
+      "cai": [
+        "Caci_6289"
+      ],
+      "rrs": [
+        "RoseRS_1059"
+      ],
+      "rca": [
+        "Rcas_3469"
+      ],
+      "cau": [
+        "Caur_0334"
+      ],
+      "cag": [
+        "Cagg_3597"
+      ],
+      "chl": [
+        "Chy400_0359"
+      ],
+      "hau": [
+        "Haur_3306"
+      ],
+      "tro": [
+        "trd_1519",
+        "trd_A0165"
+      ],
+      "sti": [
+        "Sthe_0215",
+        "Sthe_2943"
+      ],
+      "atm": [
+        "ANT_08250",
+        "ANT_12410"
+      ],
+      "cap": [
+        "CLDAP_04850"
+      ],
+      "dra": [
+        "DR_2194"
+      ],
+      "dge": [
+        "Dgeo_1151"
+      ],
+      "ddr": [
+        "Deide_13430"
+      ],
+      "dmr": [
+        "Deima_1350"
+      ],
+      "dgo": [
+        "DGo_CA1538"
+      ],
+      "dpd": [
+        "Deipe_2759"
+      ],
+      "dsw": [
+        "QR90_07825"
+      ],
+      "dch": [
+        "SY84_02035"
+      ],
+      "dab": [
+        "AUC44_07740"
+      ],
+      "dpu": [
+        "SU48_08690"
+      ],
+      "tra": [
+        "Trad_1392"
+      ],
+      "tth": [
+        "TT_C1543"
+      ],
+      "ttj": [
+        "TTHA1907"
+      ],
+      "tts": [
+        "Ththe16_1907"
+      ],
+      "ttl": [
+        "TtJL18_1989"
+      ],
+      "tsc": [
+        "TSC_c01920"
+      ],
+      "thc": [
+        "TCCBUS3UF1_21030"
+      ],
+      "tos": [
+        "Theos_1933"
+      ],
+      "taq": [
+        "TO73_0098"
+      ],
+      "tbc": [
+        "A0O31_00870"
+      ],
+      "mrb": [
+        "Mrub_2724"
+      ],
+      "mre": [
+        "K649_08915"
+      ],
+      "msv": [
+        "Mesil_0438"
+      ],
+      "opr": [
+        "Ocepr_1784"
+      ],
+      "mhd": [
+        "Marky_0668"
+      ],
+      "ttr": [
+        "Tter_0316",
+        "Tter_0318"
+      ],
+      "tai": [
+        "Taci_0444"
+      ],
+      "tli": [
+        "Tlie_1469"
+      ],
+      "amo": [
+        "Anamo_0990"
+      ],
+      "cpor": [
+        "BED41_13050"
+      ],
+      "mro": [
+        "MROS_0165"
+      ],
+      "caby": [
+        "Cabys_3148"
+      ],
+      "hdl": [
+        "HALDL1_01655"
+      ],
+      "hhb": [
+        "Hhub_3648"
+      ],
+      "hje": [
+        "HacjB3_00990"
+      ],
+      "halh": [
+        "HTSR_2057"
+      ],
+      "hhsr": [
+        "HSR6_2133"
+      ],
+      "hsu": [
+        "HLASF_2137"
+      ],
+      "hsf": [
+        "HLASA_2171"
+      ],
+      "hma": [
+        "rrnAC2679"
+      ],
+      "hhi": [
+        "HAH_3083"
+      ],
+      "hhn": [
+        "HISP_15695"
+      ],
+      "hab": [
+        "SG26_07790"
+      ],
+      "nph": [
+        "NP_5258A"
+      ],
+      "nmo": [
+        "Nmlp_1243"
+      ],
+      "hut": [
+        "Huta_1502"
+      ],
+      "hti": [
+        "HTIA_1539"
+      ],
+      "hmu": [
+        "Hmuk_0772"
+      ],
+      "hali": [
+        "BV210_07075"
+      ],
+      "hwa": [
+        "HQ_3714A"
+      ],
+      "hwc": [
+        "Hqrw_4129"
+      ],
+      "hvo": [
+        "HVO_0046"
+      ],
+      "hme": [
+        "HFX_0047"
+      ],
+      "hgi": [
+        "ABY42_00220"
+      ],
+      "hbo": [
+        "Hbor_01730"
+      ],
+      "hla": [
+        "Hlac_2616"
+      ],
+      "htu": [
+        "Htur_0328"
+      ],
+      "hda": [
+        "BB347_12550"
+      ],
+      "nmg": [
+        "Nmag_1761"
+      ],
+      "hxa": [
+        "Halxa_1378"
+      ],
+      "nat": [
+        "NJ7G_0263"
+      ],
+      "npe": [
+        "Natpe_3686"
+      ],
+      "nge": [
+        "Natgr_1612"
+      ],
+      "hru": [
+        "Halru_0399"
+      ],
+      "nou": [
+        "Natoc_0148"
+      ],
+      "sali": [
+        "L593_07885"
+      ],
+      "hlr": [
+        "HALLA_05490"
+      ],
+      "hlc": [
+        "CHINAEXTREME04215"
+      ],
+      "naj": [
+        "B1756_08250"
+      ],
+      "pto": [
+        "PTO1469"
+      ],
+      "fac": [
+        "FACI_IFERC01G0468",
+        "FACI_IFERC01G1527"
+      ],
+      "fai": [
+        "FAD_0508"
+      ],
+      "cdiv": [
+        "CPM_0545"
+      ],
+      "pho": [
+        "PH1721"
+      ],
+      "pab": [
+        "PAB0290"
+      ],
+      "pfu": [
+        "PF0209",
+        "PF1682"
+      ],
+      "pfi": [
+        "PFC_00105",
+        "PFC_10195"
+      ],
+      "pyn": [
+        "PNA2_0329",
+        "PNA2_0499"
+      ],
+      "pys": [
+        "Py04_0364",
+        "Py04_1636"
+      ],
+      "tko": [
+        "TK0278"
+      ],
+      "ths": [
+        "TES1_0507"
+      ],
+      "thv": [
+        "ADU37_CDS10050"
+      ],
+      "tch": [
+        "CHITON_0428",
+        "CHITON_1979"
+      ],
+      "ape": [
+        "APE_1463"
+      ],
+      "acj": [
+        "ACAM_0923"
+      ],
+      "iho": [
+        "Igni_0057"
+      ],
+      "iis": [
+        "EYM_02245"
+      ],
+      "iag": [
+        "Igag_1752"
+      ],
+      "pfm": [
+        "Pyrfu_0740"
+      ],
+      "pdl": [
+        "Pyrde_1837"
+      ],
+      "sso": [
+        "SSO0159"
+      ],
+      "sol": [
+        "Ssol_1137"
+      ],
+      "ssoa": [
+        "SULA_1173"
+      ],
+      "ssol": [
+        "SULB_1174"
+      ],
+      "ssof": [
+        "SULC_1172"
+      ],
+      "sto": [
+        "STK_01920"
+      ],
+      "sai": [
+        "Saci_0754"
+      ],
+      "sacn": [
+        "SacN8_03665"
+      ],
+      "sacr": [
+        "SacRon12I_03650"
+      ],
+      "sacs": [
+        "SUSAZ_03380"
+      ],
+      "sis": [
+        "LS215_2145"
+      ],
+      "sia": [
+        "M1425_1980"
+      ],
+      "sim": [
+        "M1627_2058"
+      ],
+      "sid": [
+        "M164_1986"
+      ],
+      "siy": [
+        "YG5714_2103"
+      ],
+      "sin": [
+        "YN1551_0815"
+      ],
+      "sii": [
+        "LD85_2241"
+      ],
+      "sih": [
+        "SiH_1924"
+      ],
+      "sir": [
+        "SiRe_1851"
+      ],
+      "sic": [
+        "SiL_1833"
+      ],
+      "sula": [
+        "BFU36_05140"
+      ],
+      "mse": [
+        "Msed_0168"
+      ],
+      "mcn": [
+        "Mcup_1905"
+      ],
+      "aho": [
+        "Ahos_0887"
+      ],
+      "aman": [
+        "B6F84_08285"
+      ],
+      "pai": [
+        "PAE1240"
+      ],
+      "pis": [
+        "Pisl_1291"
+      ],
+      "pcl": [
+        "Pcal_1379"
+      ],
+      "pas": [
+        "Pars_0291"
+      ],
+      "pyr": [
+        "P186_2608"
+      ],
+      "pog": [
+        "Pogu_2164"
+      ],
+      "tne": [
+        "Tneu_0259"
+      ],
+      "pyw": [
+        "PYWP30_00341"
+      ],
+      "cma": [
+        "Cmaq_1298"
+      ],
+      "tuz": [
+        "TUZN_0807"
+      ],
+      "ttn": [
+        "TTX_0466"
+      ],
+      "vdi": [
+        "Vdis_0200"
+      ],
+      "vmo": [
+        "VMUT_1538"
+      ],
+      "nmr": [
+        "Nmar_1288",
+        "Nmar_1295"
+      ],
+      "nir": [
+        "NSED_07150",
+        "NSED_07185"
+      ],
+      "nid": [
+        "NPIRD3C_0829",
+        "NPIRD3C_0836"
+      ],
+      "nin": [
+        "NADRNF5_0661",
+        "NADRNF5_0668"
+      ],
+      "nkr": [
+        "NKOR_07270",
+        "NKOR_07310"
+      ],
+      "nct": [
+        "NMSP_0393",
+        "NMSP_0403"
+      ],
+      "csy": [
+        "CENSYa_0124",
+        "CENSYa_0927"
+      ],
+      "nga": [
+        "Ngar_c14560",
+        "Ngar_c29970"
+      ],
+      "nvn": [
+        "NVIE_002660",
+        "NVIE_016500"
+      ],
+      "nev": [
+        "NTE_00733",
+        "NTE_01582"
+      ],
+      "taa": [
+        "NMY3_02221",
+        "NMY3_02228"
+      ],
+      "csu": [
+        "CSUB_C1306"
+      ],
+      "nbv": [
+        "T478_1043",
+        "T478_1050"
+      ],
+      "tah": [
+        "SU86_009045",
+        "SU86_009085"
+      ],
+      "ndv": [
+        "NDEV_1623",
+        "NDEV_1630"
+      ],
+      "kcr": [
+        "Kcr_0812"
+      ],
+      "barb": [
+        "AOA66_0019"
+      ],
+      "hah": [
+        "Halar_1202"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.3.2.43"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.3.2.43"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.3.2.43"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.3.2.43"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Vassylyeva MN",
+          "Sakai H",
+          "Matsuura T",
+          "Sekine S",
+          "Nishiyama M",
+          "Terada T",
+          "Shirouzu M",
+          "Kuramitsu S",
+          "Vassylyev DG",
+          "Yokoyama S"
+        ],
+        "title": "Cloning, expression, purification, crystallization and initial crystallographic analysis of the lysine-biosynthesis LysX protein from Thermus thermophilus HB8.",
+        "journal": "Acta. Crystallogr. D. Biol. Crystallogr. 59 (2003) 1651-2.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12925802]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Horie A",
+          "Tomita T",
+          "Saiki A",
+          "Kono H",
+          "Taka H",
+          "Mineki R",
+          "Fujimura T",
+          "Nishiyama C",
+          "Kuzuyama T",
+          "Nishiyama M."
+        ],
+        "title": "Discovery of proteinaceous N-modification in lysine biosynthesis of Thermus thermophilus.",
+        "journal": "Nat. Chem. Biol. 5 (2009) 673-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:19620981]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ouchi T",
+          "Tomita T",
+          "Horie A",
+          "Yoshida A",
+          "Takahashi K",
+          "Nishida H",
+          "Lassak K",
+          "Taka H",
+          "Mineki R",
+          "Fujimura T",
+          "Kosono S",
+          "Nishiyama C",
+          "Masui R",
+          "Kuramitsu S",
+          "Albers SV",
+          "Kuzuyama T",
+          "Nishiyama M"
+        ],
+        "title": "Lysine and arginine biosyntheses mediated by a common carrier protein in Sulfolobus.",
+        "journal": "Nat. Chem. Biol. 9 (2013) 277-83.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:23434852]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

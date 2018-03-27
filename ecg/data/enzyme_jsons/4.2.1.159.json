@@ -1,0 +1,581 @@
+[
+  {
+    "entry_id": "4.2.1.159",
+    "name": "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose 2,3-dehydratase",
+    "names": [
+      "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose 2,3-dehydratase",
+      "jadO (gene name)",
+      "evaA (gene name)",
+      "megBVI (gene name)",
+      "eryBV (gene name)",
+      "mtmV (gene name)",
+      "oleV (gene name)",
+      "spnO (gene name)",
+      "TDP-4-keto-6-deoxy-D-glucose 2,3-dehydratase",
+      "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose hydro-lyase (dTDP-(2R,6S)-2,4-dihydroxy-6-methyl-2,6-dihydropyran-3-one-forming)"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-oxygen lyases;",
+      "Hydro-lyases"
+    ],
+    "sysname": "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose hydro-lyase (dTDP-2,6-dideoxy-D-glycero-hex-2-enos-4-ulose-forming)",
+    "reaction": "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose = dTDP-3,4-didehydro-2,6-dideoxy-alpha-D-glucose + H2O (overall reaction) [RN:R05518]; (1a) dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose = dTDP-2,6-dideoxy-D-glycero-hex-2-enos-4-ulose + H2O [RN:R06428]; (1b) dTDP-2,6-dideoxy-D-glycero-hex-2-enos-4-ulose = dTDP-3,4-didehydro-2,6-dideoxy-alpha-D-glucose (spontaneous) [RN:R11034]",
+    "all_reac": "R05518 R06428 R11034",
+    "iubmb_reactions": [
+      "R05518 R06428 R11034"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose [CPD:C11907]",
+      "dTDP-2,6-dideoxy-D-glycero-hex-2-enos-4-ulose [CPD:C11930]"
+    ],
+    "products": [
+      "dTDP-3,4-didehydro-2,6-dideoxy-alpha-D-glucose [CPD:C06620]",
+      "H2O [CPD:C00001]",
+      "dTDP-2,6-dideoxy-D-glycero-hex-2-enos-4-ulose [CPD:C11930]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme participates in the biosynthesis of several deoxysugars, including beta-L-4-epi-vancosamine, alpha-L-megosamine, L- and D-olivose, D-oliose, D-mycarose, forosamine and beta-L-digitoxose. In vitro the intermediate can undergo a spontaneous decomposition to maltol [2,3].",
+    "pathways": {
+      "ec00523": "Polyketide sugar unit biosynthesis",
+      "ec01055": "Biosynthesis of vancomycin group antibiotics",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K16435": "dTDP-4-dehydro-6-deoxy-alpha-D-glucopyranose 2,3-dehydratase"
+    },
+    "genes": {
+      "vcx": [
+        "VAA049_3444"
+      ],
+      "gur": [
+        "Gura_4278"
+      ],
+      "gbm": [
+        "Gbem_3308"
+      ],
+      "geo": [
+        "Geob_0428"
+      ],
+      "gem": [
+        "GM21_0940"
+      ],
+      "dma": [
+        "DMR_07580"
+      ],
+      "dsa": [
+        "Desal_3612"
+      ],
+      "hoe": [
+        "IMCC20628_04711"
+      ],
+      "mmr": [
+        "Mmar10_0545"
+      ],
+      "llf": [
+        "BCR17_06565"
+      ],
+      "dor": [
+        "Desor_5131"
+      ],
+      "dmi": [
+        "Desmer_4107"
+      ],
+      "nbr": [
+        "O3I_007495",
+        "O3I_015250"
+      ],
+      "tpr": [
+        "Tpau_3481"
+      ],
+      "sma": [
+        "SAVERM_950"
+      ],
+      "sgr": [
+        "SGR_633"
+      ],
+      "scb": [
+        "SCAB_83991"
+      ],
+      "svl": [
+        "Strvi_3809"
+      ],
+      "sbh": [
+        "SBI_01545",
+        "SBI_06874"
+      ],
+      "sve": [
+        "SVEN_5994"
+      ],
+      "sdv": [
+        "BN159_2519"
+      ],
+      "salb": [
+        "XNR_0600"
+      ],
+      "sals": [
+        "SLNWT_0705",
+        "SLNWT_7313"
+      ],
+      "sfi": [
+        "SFUL_5272"
+      ],
+      "sci": [
+        "B446_13490"
+      ],
+      "src": [
+        "M271_00405",
+        "M271_06420"
+      ],
+      "salu": [
+        "DC74_6604"
+      ],
+      "sall": [
+        "SAZ_34335"
+      ],
+      "svt": [
+        "SVTN_18805"
+      ],
+      "stre": [
+        "GZL_01620"
+      ],
+      "sld": [
+        "T261_6842"
+      ],
+      "sxi": [
+        "SXIM_35760"
+      ],
+      "samb": [
+        "SAM23877_5618"
+      ],
+      "spri": [
+        "SPRI_0250",
+        "SPRI_7103"
+      ],
+      "scx": [
+        "AS200_01290"
+      ],
+      "srw": [
+        "TUE45_01318"
+      ],
+      "sle": [
+        "sle_09630"
+      ],
+      "srn": [
+        "A4G23_02281"
+      ],
+      "spav": [
+        "Spa2297_32825"
+      ],
+      "slc": [
+        "SL103_12590"
+      ],
+      "sclf": [
+        "BB341_29660"
+      ],
+      "sgs": [
+        "AVL59_46210"
+      ],
+      "snr": [
+        "SNOUR_06865",
+        "SNOUR_10090"
+      ],
+      "snw": [
+        "BBN63_25020"
+      ],
+      "sauo": [
+        "BV401_39270"
+      ],
+      "svu": [
+        "B1H20_22670",
+        "B1H20_29860"
+      ],
+      "spun": [
+        "BFF78_11180"
+      ],
+      "kab": [
+        "B7C62_31105"
+      ],
+      "aer": [
+        "AERYTH_15845"
+      ],
+      "nda": [
+        "Ndas_4708"
+      ],
+      "nal": [
+        "B005_1432"
+      ],
+      "ngv": [
+        "CDO52_02795"
+      ],
+      "tcu": [
+        "Tcur_2760"
+      ],
+      "fra": [
+        "Francci3_4134"
+      ],
+      "sen": [
+        "SACE_0717"
+      ],
+      "svi": [
+        "Svir_29870"
+      ],
+      "amd": [
+        "AMED_0645"
+      ],
+      "amn": [
+        "RAM_03295",
+        "RAM_27540"
+      ],
+      "amm": [
+        "AMES_0643",
+        "AMES_5337"
+      ],
+      "amz": [
+        "B737_0644",
+        "B737_5337"
+      ],
+      "aoi": [
+        "AORI_1498"
+      ],
+      "aja": [
+        "AJAP_32030"
+      ],
+      "alu": [
+        "BB31_13395",
+        "BB31_20685"
+      ],
+      "pseh": [
+        "XF36_05045"
+      ],
+      "pseq": [
+        "AD006_29960"
+      ],
+      "pecq": [
+        "AD017_31290"
+      ],
+      "phh": [
+        "AFB00_29740"
+      ],
+      "sesp": [
+        "BN6_58920"
+      ],
+      "kal": [
+        "KALB_6582"
+      ],
+      "kphy": [
+        "AOZ06_22485",
+        "AOZ06_23375"
+      ],
+      "led": [
+        "BBK82_43750"
+      ],
+      "ahm": [
+        "TL08_05635",
+        "TL08_15940"
+      ],
+      "acti": [
+        "UA75_05675",
+        "UA75_16845"
+      ],
+      "acad": [
+        "UA74_05670"
+      ],
+      "ahg": [
+        "AHOG_05435",
+        "AHOG_15160",
+        "AHOG_15195"
+      ],
+      "all": [
+        "CRK56087"
+      ],
+      "pmad": [
+        "BAY61_07755"
+      ],
+      "stp": [
+        "Strop_2181"
+      ],
+      "saq": [
+        "Sare_1267",
+        "Sare_2340"
+      ],
+      "mau": [
+        "Micau_3987"
+      ],
+      "mil": [
+        "ML5_4434"
+      ],
+      "ams": [
+        "AMIS_50580"
+      ],
+      "plk": [
+        "CIK06_11040"
+      ],
+      "aey": [
+        "CDG81_13205"
+      ],
+      "cyi": [
+        "CBM981_2305"
+      ],
+      "bfr": [
+        "BF0809"
+      ],
+      "bfb": [
+        "VU15_03400"
+      ],
+      "bcel": [
+        "BcellWH2_00545",
+        "BcellWH2_00546",
+        "BcellWH2_04965"
+      ],
+      "asx": [
+        "CDL62_18260"
+      ],
+      "ruf": [
+        "TH63_02825"
+      ],
+      "gfo": [
+        "GFO_2035"
+      ],
+      "fbu": [
+        "UJ101_00308",
+        "UJ101_00547"
+      ],
+      "proc": [
+        "Ptc2401_00807"
+      ],
+      "nbv": [
+        "T478_0170"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.2.1.159"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.2.1.159"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.2.1.159"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.2.1.159"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Aguirrezabalaga I",
+          "Olano C",
+          "Allende N",
+          "Rodriguez L",
+          "Brana AF",
+          "Mendez C",
+          "Salas JA."
+        ],
+        "title": "Identification and expression of genes involved in biosynthesis of L-oleandrose and its intermediate L-olivose in the oleandomycin producer Streptomyces antibioticus.",
+        "journal": "Antimicrob. Agents. Chemother. 44 (2000) 1266-75.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10770761]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chen H",
+          "Thomas MG",
+          "Hubbard BK",
+          "Losey HC",
+          "Walsh CT",
+          "Burkart MD."
+        ],
+        "title": "Deoxysugars in glycopeptide antibiotics: enzymatic synthesis of TDP-L-epivancosamine in chloroeremomycin biosynthesis.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 97 (2000) 11942-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11035791]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gonzalez A",
+          "Remsing LL",
+          "Lombo F",
+          "Fernandez MJ",
+          "Prado L",
+          "Brana AF",
+          "Kunzel E",
+          "Rohr J",
+          "Mendez C",
+          "Salas JA."
+        ],
+        "title": "The mtmVUC genes of the mithramycin gene cluster in Streptomyces argillaceus are involved in the biosynthesis of the sugar moieties.",
+        "journal": "Mol. Gen. Genet. 264 (2001) 827-35.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:11254130]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wang L",
+          "White RL",
+          "Vining LC"
+        ],
+        "title": "Biosynthesis of the dideoxysugar component of jadomycin B: genes in the jad cluster of Streptomyces venezuelae ISP5230 for L-digitoxose assembly and transfer to the angucycline aglycone.",
+        "journal": "Microbiology. 148 (2002) 1091-103.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:11932454]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hong L",
+          "Zhao Z",
+          "Melancon CE 3rd",
+          "Zhang H",
+          "Liu HW."
+        ],
+        "title": "In vitro characterization of the enzymes involved in TDP-D-forosamine biosynthesis in the spinosyn pathway of Saccharopolyspora spinosa.",
+        "journal": "J. Am. Chem. Soc. 130 (2008) 4954-67.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:18345667]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Useglio M",
+          "Peiru S",
+          "Rodriguez E",
+          "Labadie GR",
+          "Carney JR",
+          "Gramajo H"
+        ],
+        "title": "TDP-L-megosamine biosynthesis pathway elucidation and megalomicin a production in Escherichia coli.",
+        "journal": "Appl. Environ. Microbiol. 76 (2010) 3869-77.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:20418422]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

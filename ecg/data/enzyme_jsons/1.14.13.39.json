@@ -1,0 +1,1195 @@
+[
+  {
+    "entry_id": "1.14.13.39",
+    "name": "nitric-oxide synthase (NADPH)",
+    "names": [
+      "nitric-oxide synthase (NADPH)",
+      "NOS (gene name)",
+      "nitric oxide synthetase (ambiguous)",
+      "endothelium-derived relaxation factor-forming enzyme",
+      "endothelium-derived relaxing factor synthase",
+      "NO synthase (ambiguous)",
+      "NADPH-diaphorase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-arginine,NADPH:oxygen oxidoreductase (nitric-oxide-forming)",
+    "reaction": "2 L-arginine + 3 NADPH + 3 H+ + 4 O2 = 2 L-citrulline + 2 nitric oxide + 3 NADP+ + 4 H2O (overall reaction) [RN:R00557]; (1a) 2 L-arginine + 2 NADPH + 2 H+ + 2 O2 = 2 Nomega-hydroxy-L-arginine + 2 NADP+ + 2 H2O [RN:R00558]; (1b) 2 Nomega-hydroxy-L-arginine + NADPH + H+ + 2 O2 = 2 L-citrulline + 2 nitric oxide + NADP+ + 2 H2O [RN:R00111]",
+    "all_reac": "R00111 R00557 R00558",
+    "iubmb_reactions": [
+      "R00111 R00557 R00558"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-arginine [CPD:C00062]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "Nomega-hydroxy-L-arginine"
+    ],
+    "products": [
+      "L-citrulline [CPD:C00327]",
+      "nitric oxide [CPD:C00533]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "Nomega-hydroxy-L-arginine"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme consists of linked oxygenase and reductase domains. The eukaryotic enzyme binds FAD, FMN, heme (iron protoporphyrin IX) and tetrahydrobiopterin, and its two domains are linked via a regulatory calmodulin-binding domain. Upon calcium-induced calmodulin binding, the reductase and oxygenase domains form a complex, allowing electrons to flow from NADPH via FAD and FMN to the active center. The reductase domain of the enzyme from the bacterium Sorangium cellulosum utilizes a [2Fe-2S] cluster to transfer the electrons from NADPH to the active center. cf. EC 1.14.14.47, nitric-oxide synthase (flavodoxin).",
+    "pathways": {
+      "ec00220": "Arginine biosynthesis",
+      "ec00330": "Arginine and proline metabolism",
+      "ec00460": "Cyanoamino acid metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K13240": "nitric-oxide synthase, brain",
+      "K13241": "nitric-oxide synthase, inducible",
+      "K13242": "nitric-oxide synthase, endothelial",
+      "K13427": "nitric-oxide synthase, plant"
+    },
+    "genes": {
+      "hsa": [
+        "4842",
+        "4843",
+        "4846"
+      ],
+      "ptr": [
+        "455026",
+        "463893",
+        "467139"
+      ],
+      "pps": [
+        "100974638",
+        "100976546",
+        "100996089"
+      ],
+      "ggo": [
+        "101128007",
+        "101134923",
+        "101147071"
+      ],
+      "pon": [
+        "100433069",
+        "100436584",
+        "100447953"
+      ],
+      "nle": [
+        "100589003",
+        "100592456",
+        "100597250",
+        "100598590"
+      ],
+      "mcc": [
+        "693781",
+        "706921",
+        "714231"
+      ],
+      "mcf": [
+        "102121432",
+        "102123521",
+        "102143504"
+      ],
+      "csab": [
+        "103227233",
+        "103242598",
+        "103242600"
+      ],
+      "rro": [
+        "104666105",
+        "104669357",
+        "104675393",
+        "104675533"
+      ],
+      "rbb": [
+        "108532525",
+        "108539288",
+        "108539916",
+        "108539959"
+      ],
+      "cjc": [
+        "100403192",
+        "100405019",
+        "100895717"
+      ],
+      "sbq": [
+        "101034220",
+        "101034544",
+        "101041016"
+      ],
+      "mmu": [
+        "18125",
+        "18126",
+        "18127"
+      ],
+      "rno": [
+        "24598",
+        "24599",
+        "24600",
+        "497963"
+      ],
+      "cge": [
+        "100758127",
+        "100760062",
+        "100769961"
+      ],
+      "ngi": [
+        "103724501",
+        "103745303",
+        "103745523"
+      ],
+      "hgl": [
+        "101699617",
+        "101711110",
+        "101711993"
+      ],
+      "ccan": [
+        "109686387",
+        "109693015",
+        "109694442"
+      ],
+      "ocu": [
+        "100008833",
+        "100009243",
+        "100009498"
+      ],
+      "tup": [
+        "102471872",
+        "102480558",
+        "102495986"
+      ],
+      "cfa": [
+        "403784",
+        "403822",
+        "477498"
+      ],
+      "aml": [
+        "100468087",
+        "100470060",
+        "100483990"
+      ],
+      "umr": [
+        "103660958",
+        "103661304",
+        "103667420"
+      ],
+      "oro": [
+        "101375441",
+        "101380967",
+        "101382350"
+      ],
+      "fca": [
+        "101087020",
+        "101096463",
+        "101100342"
+      ],
+      "ptg": [
+        "102950049",
+        "102962715",
+        "102967516"
+      ],
+      "aju": [
+        "106969560",
+        "106971710",
+        "106984382"
+      ],
+      "bta": [
+        "282876",
+        "287024",
+        "536132"
+      ],
+      "bom": [
+        "102265893",
+        "102267556",
+        "102280537"
+      ],
+      "biu": [
+        "109557793",
+        "109571319",
+        "109574459"
+      ],
+      "phd": [
+        "102317388",
+        "102325091",
+        "102327398"
+      ],
+      "chx": [
+        "100860742",
+        "102185338",
+        "102185490"
+      ],
+      "oas": [
+        "443073",
+        "443077",
+        "443078",
+        "443533"
+      ],
+      "ssc": [
+        "100520934",
+        "396859",
+        "397557"
+      ],
+      "cfr": [
+        "102508946",
+        "102518523",
+        "102524296"
+      ],
+      "cdk": [
+        "105088198",
+        "105104911",
+        "105105831",
+        "105106782"
+      ],
+      "bacu": [
+        "103003780",
+        "103008209",
+        "103017861"
+      ],
+      "lve": [
+        "103074308",
+        "103087259",
+        "103090138"
+      ],
+      "ecb": [
+        "100051079",
+        "100063339",
+        "791246"
+      ],
+      "epz": [
+        "103540937",
+        "103547950",
+        "103567002",
+        "103567137"
+      ],
+      "eai": [
+        "106823361",
+        "106839766",
+        "106844596"
+      ],
+      "myb": [
+        "102253125",
+        "102256555",
+        "102260489"
+      ],
+      "myd": [
+        "102763635",
+        "102764374",
+        "102768087"
+      ],
+      "hai": [
+        "109382238",
+        "109385084",
+        "109389680"
+      ],
+      "rss": [
+        "109435172",
+        "109447250",
+        "109459480"
+      ],
+      "pale": [
+        "102878456",
+        "102879945",
+        "102884569"
+      ],
+      "lav": [
+        "100668912",
+        "100673992",
+        "100676634"
+      ],
+      "tmu": [
+        "101342004",
+        "101356579",
+        "101356953"
+      ],
+      "mdo": [
+        "100013712",
+        "100018035",
+        "100024271"
+      ],
+      "shr": [
+        "100913437",
+        "100921140",
+        "100927789"
+      ],
+      "oaa": [
+        "100075386",
+        "100079842",
+        "100091599"
+      ],
+      "gga": [
+        "395807",
+        "427721"
+      ],
+      "mgp": [
+        "100538441",
+        "692136"
+      ],
+      "cjo": [
+        "107308662",
+        "107321466",
+        "107322733"
+      ],
+      "apla": [
+        "101798766",
+        "101804455"
+      ],
+      "acyg": [
+        "106043795",
+        "106045554"
+      ],
+      "tgu": [
+        "100230954",
+        "100231414"
+      ],
+      "gfr": [
+        "102042821",
+        "102044468"
+      ],
+      "fab": [
+        "101816936",
+        "101817488",
+        "101820761"
+      ],
+      "phi": [
+        "102106809",
+        "102108817",
+        "102112141"
+      ],
+      "pmaj": [
+        "107211573",
+        "107212812"
+      ],
+      "ccw": [
+        "104690967",
+        "104695038"
+      ],
+      "fpg": [
+        "101916747",
+        "101918492",
+        "101921726"
+      ],
+      "fch": [
+        "102047821",
+        "102048023",
+        "102057360"
+      ],
+      "clv": [
+        "102084237",
+        "102086291",
+        "102093432"
+      ],
+      "egz": [
+        "104121908",
+        "104129871"
+      ],
+      "aam": [
+        "106493898",
+        "106498669",
+        "106500475"
+      ],
+      "asn": [
+        "102375419",
+        "102380334",
+        "102381196"
+      ],
+      "amj": [
+        "102561243",
+        "102575253",
+        "106737013"
+      ],
+      "pss": [
+        "102444149",
+        "102446334"
+      ],
+      "cmy": [
+        "102941829",
+        "102942806",
+        "102946684"
+      ],
+      "cpic": [
+        "101937660",
+        "101941684",
+        "101952927"
+      ],
+      "acs": [
+        "100557597",
+        "100561200",
+        "100562233"
+      ],
+      "pvt": [
+        "110070797",
+        "110082598",
+        "110088446",
+        "110090104"
+      ],
+      "pbi": [
+        "103051066",
+        "103052972",
+        "103054466",
+        "103065136"
+      ],
+      "gja": [
+        "107112296",
+        "107118610",
+        "107119447"
+      ],
+      "xla": [
+        "108704634",
+        "108707179",
+        "108708038",
+        "108708888",
+        "373705"
+      ],
+      "xtr": [
+        "100486016",
+        "100494698",
+        "100497595"
+      ],
+      "npr": [
+        "108785232",
+        "108801680",
+        "108803428",
+        "108804099"
+      ],
+      "dre": [
+        "404036",
+        "563654",
+        "60658"
+      ],
+      "srx": [
+        "107719931",
+        "107726721",
+        "107755829",
+        "107756441"
+      ],
+      "sanh": [
+        "107660266",
+        "107666185",
+        "107667471",
+        "107668720",
+        "107683435",
+        "107704495"
+      ],
+      "sgh": [
+        "107553584",
+        "107588374",
+        "107592916",
+        "107599142",
+        "107599638"
+      ],
+      "ccar": [
+        "109067985",
+        "109079125",
+        "109079156",
+        "109080897",
+        "109103595",
+        "109103596"
+      ],
+      "ipu": [
+        "108255344",
+        "108277518",
+        "108278375"
+      ],
+      "amex": [
+        "103026958",
+        "103031688",
+        "103046065"
+      ],
+      "tru": [
+        "101066909"
+      ],
+      "tng": [
+        "GSTEN00029052G001"
+      ],
+      "lco": [
+        "104923687"
+      ],
+      "ncc": [
+        "104967506"
+      ],
+      "mze": [
+        "101485683"
+      ],
+      "ola": [
+        "100049502"
+      ],
+      "xma": [
+        "102233853"
+      ],
+      "pret": [
+        "103469871"
+      ],
+      "csem": [
+        "103396877",
+        "103397851"
+      ],
+      "lcf": [
+        "108903114"
+      ],
+      "hcq": [
+        "109525272"
+      ],
+      "bpec": [
+        "110155016"
+      ],
+      "sasa": [
+        "100136358",
+        "100136388",
+        "106579827",
+        "106585241"
+      ],
+      "els": [
+        "105013989",
+        "105031277",
+        "109615805"
+      ],
+      "sfm": [
+        "108927312",
+        "108932266"
+      ],
+      "lcm": [
+        "102348281",
+        "102354990"
+      ],
+      "cmk": [
+        "103183299",
+        "103184386"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_116914",
+        "BRAFLDRAFT_120590",
+        "BRAFLDRAFT_290770"
+      ],
+      "cin": [
+        "100183039"
+      ],
+      "spu": [
+        "100888109",
+        "587111"
+      ],
+      "aplc": [
+        "110976884",
+        "110976936"
+      ],
+      "dme": [
+        "Dmel_CG6713"
+      ],
+      "dpo": [
+        "Dpse_GA19805"
+      ],
+      "dan": [
+        "Dana_GF14065"
+      ],
+      "der": [
+        "Dere_GG10354"
+      ],
+      "dpe": [
+        "Dper_GL20528",
+        "Dper_GL26383"
+      ],
+      "dse": [
+        "Dsec_GM11413"
+      ],
+      "dsi": [
+        "Dsimw501_GD22223"
+      ],
+      "dwi": [
+        "Dwil_GK23979"
+      ],
+      "dya": [
+        "Dyak_GE13295"
+      ],
+      "dgr": [
+        "Dgri_GH13337"
+      ],
+      "dmo": [
+        "Dmoj_GI17812"
+      ],
+      "dvi": [
+        "Dvir_GJ17639"
+      ],
+      "mde": [
+        "101891936",
+        "101901197"
+      ],
+      "aga": [
+        "AgaP_AGAP008255",
+        "AgaP_AGAP008257"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ000366",
+        "CpipJ_CPIJ019871"
+      ],
+      "ame": [
+        "503861"
+      ],
+      "bim": [
+        "100749227"
+      ],
+      "bter": [
+        "100650517"
+      ],
+      "soc": [
+        "105200228"
+      ],
+      "aec": [
+        "105149468"
+      ],
+      "acep": [
+        "105625167",
+        "105626831"
+      ],
+      "pbar": [
+        "105432905"
+      ],
+      "hst": [
+        "105183230"
+      ],
+      "cfo": [
+        "105250272"
+      ],
+      "lhu": [
+        "105675559"
+      ],
+      "pgc": [
+        "109856190"
+      ],
+      "nvi": [
+        "100313941"
+      ],
+      "tca": [
+        "655549"
+      ],
+      "dpa": [
+        "109546644"
+      ],
+      "nvl": [
+        "108558954"
+      ],
+      "bmor": [
+        "100144542",
+        "692510"
+      ],
+      "dpl": [
+        "KGM_202094"
+      ],
+      "pmac": [
+        "106718432",
+        "106718546"
+      ],
+      "pxy": [
+        "105388815",
+        "105388816"
+      ],
+      "api": [
+        "100160390"
+      ],
+      "dnx": [
+        "107172687"
+      ],
+      "phu": [
+        "Phum_PHUM176630"
+      ],
+      "zne": [
+        "110828058"
+      ],
+      "fcd": [
+        "110850636"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_314346",
+        "DAPPUDRAFT_49977"
+      ],
+      "isc": [
+        "IscW_ISCW018074"
+      ],
+      "tut": [
+        "107370056"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_197993"
+      ],
+      "crg": [
+        "105322950"
+      ],
+      "myi": [
+        "110460719"
+      ],
+      "obi": [
+        "106875654"
+      ],
+      "lak": [
+        "106163703",
+        "106169208",
+        "106176019"
+      ],
+      "nve": [
+        "NEMVE_v1g110599"
+      ],
+      "epa": [
+        "110235863",
+        "110253339"
+      ],
+      "adf": [
+        "107337967",
+        "107341488",
+        "107355966",
+        "107356244"
+      ],
+      "hmg": [
+        "101240122"
+      ],
+      "tad": [
+        "TRIADDRAFT_18893",
+        "TRIADDRAFT_19964",
+        "TRIADDRAFT_31504"
+      ],
+      "ath": [
+        "AT3G47450"
+      ],
+      "aly": [
+        "ARALYDRAFT_485109"
+      ],
+      "crb": [
+        "CARUB_v10016901mg"
+      ],
+      "csat": [
+        "104711205",
+        "104780543",
+        "104790952"
+      ],
+      "eus": [
+        "EUTSA_v10010252mg"
+      ],
+      "brp": [
+        "103873244"
+      ],
+      "bna": [
+        "106435290",
+        "106451204"
+      ],
+      "boe": [
+        "106336370"
+      ],
+      "thj": [
+        "104819450"
+      ],
+      "cpap": [
+        "110823388"
+      ],
+      "cit": [
+        "102609531"
+      ],
+      "cic": [
+        "CICLE_v10004670mg"
+      ],
+      "tcc": [
+        "18605348"
+      ],
+      "gra": [
+        "105764892"
+      ],
+      "ghi": [
+        "107933448",
+        "107955121"
+      ],
+      "egr": [
+        "104449744"
+      ],
+      "gmx": [
+        "100781340",
+        "100798614"
+      ],
+      "pvu": [
+        "PHAVU_011G015300g"
+      ],
+      "vra": [
+        "106779222"
+      ],
+      "var": [
+        "108338876"
+      ],
+      "ccaj": [
+        "109799300"
+      ],
+      "mtr": [
+        "MTR_2g060420"
+      ],
+      "cam": [
+        "101502582"
+      ],
+      "adu": [
+        "107477402"
+      ],
+      "aip": [
+        "107629644"
+      ],
+      "lja": [
+        "Lj3g3v3640230.1",
+        "Lj3g3v3640230.2"
+      ],
+      "lang": [
+        "109346733"
+      ],
+      "fve": [
+        "101301911",
+        "101307253"
+      ],
+      "pper": [
+        "18787454"
+      ],
+      "pmum": [
+        "103333445"
+      ],
+      "mdm": [
+        "103439617"
+      ],
+      "pxb": [
+        "103959816",
+        "103961947"
+      ],
+      "zju": [
+        "107408397",
+        "107414210"
+      ],
+      "csv": [
+        "101215455"
+      ],
+      "cmo": [
+        "103504692"
+      ],
+      "mcha": [
+        "111026165"
+      ],
+      "rcu": [
+        "8289609"
+      ],
+      "jcu": [
+        "105648618"
+      ],
+      "hbr": [
+        "110662682",
+        "110663877"
+      ],
+      "pop": [
+        "POPTR_0001s00700g"
+      ],
+      "vvi": [
+        "100265605"
+      ],
+      "sly": [
+        "778272"
+      ],
+      "spen": [
+        "107014849"
+      ],
+      "sot": [
+        "102577659"
+      ],
+      "cann": [
+        "107863453"
+      ],
+      "nta": [
+        "107785662",
+        "107819728"
+      ],
+      "nsy": [
+        "104222140"
+      ],
+      "nto": [
+        "104094540"
+      ],
+      "ini": [
+        "109151404"
+      ],
+      "sind": [
+        "105160612"
+      ],
+      "han": [
+        "110915439"
+      ],
+      "bvg": [
+        "104906620"
+      ],
+      "soe": [
+        "110782360"
+      ],
+      "nnu": [
+        "104602366"
+      ],
+      "osa": [
+        "4328006"
+      ],
+      "dosa": [
+        "Os02t0104700-01"
+      ],
+      "obr": [
+        "102721991"
+      ],
+      "bdi": [
+        "100824396"
+      ],
+      "sbi": [
+        "8066480"
+      ],
+      "zma": [
+        "100381773"
+      ],
+      "sita": [
+        "101766392"
+      ],
+      "pda": [
+        "103710739"
+      ],
+      "egu": [
+        "105037128",
+        "105059520"
+      ],
+      "mus": [
+        "103973495"
+      ],
+      "dct": [
+        "110108324"
+      ],
+      "atr": [
+        "18428833"
+      ],
+      "smo": [
+        "SELMODRAFT_164227",
+        "SELMODRAFT_87746"
+      ],
+      "ppp": [
+        "PHYPADRAFT_21462"
+      ],
+      "vcn": [
+        "VOLCADRAFT_120437"
+      ],
+      "mng": [
+        "MNEG_12684"
+      ],
+      "ota": [
+        "OT_ostta04g02630"
+      ],
+      "bpg": [
+        "Bathy06g04850"
+      ],
+      "mis": [
+        "MICPUN_58144"
+      ],
+      "csl": [
+        "COCSUDRAFT_26953"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_141029"
+      ],
+      "apro": [
+        "F751_5878"
+      ],
+      "aor": [
+        "AOR_1_278064"
+      ],
+      "afv": [
+        "AFLA_124500"
+      ],
+      "npa": [
+        "UCRNP2_4118"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.39"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.39"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.39"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.39"
+      ],
+      "CAS": [
+        "125978-95-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Bredt DS",
+          "Snyder SH."
+        ],
+        "title": "Isolation of nitric oxide synthetase, a calmodulin-requiring enzyme.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 87 (1990) 682-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:1689048]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Stuehr DJ",
+          "Kwon NS",
+          "Nathan CF",
+          "Griffith OW",
+          "Feldman PL",
+          "Wiseman J"
+        ],
+        "title": "N omega-hydroxy-L-arginine is an intermediate in the biosynthesis of nitric oxide from L-arginine.",
+        "journal": "J. Biol. Chem. 266 (1991) 6259-63.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:1706713]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Stuehr D",
+          "Pou S",
+          "Rosen GM"
+        ],
+        "title": "Oxygen reduction by nitric-oxide synthases.",
+        "journal": "J. Biol. Chem. 276 (2001) 14533-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:11279231]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Agapie T",
+          "Suseno S",
+          "Woodward JJ",
+          "Stoll S",
+          "Britt RD",
+          "Marletta MA"
+        ],
+        "title": "NO formation by a catalytically self-sufficient bacterial nitric oxide synthase from Sorangium cellulosum.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 106 (2009) 16221-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:19805284]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Foresi N",
+          "Correa-Aragunde N",
+          "Parisi G",
+          "Calo G",
+          "Salerno G",
+          "Lamattina L"
+        ],
+        "title": "Characterization of a nitric oxide synthase from the plant kingdom: NO generation from the green alga Ostreococcus tauri is light irradiance and growth phase dependent.",
+        "journal": "Plant. Cell. 22 (2010) 3816-30.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:21119059]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

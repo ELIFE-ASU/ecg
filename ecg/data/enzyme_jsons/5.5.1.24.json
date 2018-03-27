@@ -1,0 +1,615 @@
+[
+  {
+    "entry_id": "5.5.1.24",
+    "name": "tocopherol cyclase",
+    "names": [
+      "tocopherol cyclase",
+      "VTE1 (gene name)",
+      "SXD1 (gene name)",
+      "delta/gamma-tocopherol lyase (decyclizing)"
+    ],
+    "classes": [
+      "Isomerases;",
+      "Intramolecular lyases;",
+      "Intramolecular lyases (only sub-subclass identified to date)"
+    ],
+    "sysname": "delta/gamma-tocopherol lyase (ring-opening)",
+    "reaction": "(1) delta-tocopherol = 2-methyl-6-phytylbenzene-1,4-diol [RN:R07503]; (2) gamma-tocopherol = 2,3-dimethyl-6-phytylbenzene-1,4-diol [RN:R07502]; (3) delta-tocotrienol = 6-geranylgeranyl-2-methylbenzene-1,4-diol [RN:R10623]; (4) gamma-tocotrienol = 6-geranylgeranyl-2,3-dimethylbenzene-1,4-diol [RN:R10624]",
+    "all_reac": "R07502 R07503 R10623 R10624",
+    "iubmb_reactions": [
+      "R07502 R07503 R10623 R10624"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "delta-tocopherol [CPD:C14151]",
+      "gamma-tocopherol [CPD:C02483]",
+      "delta-tocotrienol [CPD:C14156]",
+      "gamma-tocotrienol [CPD:C14155]"
+    ],
+    "products": [
+      "2-methyl-6-phytylbenzene-1,4-diol [CPD:C15882]",
+      "2,3-dimethyl-6-phytylbenzene-1,4-diol [CPD:C15883]",
+      "6-geranylgeranyl-2-methylbenzene-1,4-diol [CPD:C20737]",
+      "6-geranylgeranyl-2,3-dimethylbenzene-1,4-diol [CPD:C20738]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme has been described from plants and cyanobacteria. It has similar activity with all four listed benzoquinol substrates. Involved in the biosynthesis of vitamin E (tocopherols and tocotrienols).",
+    "pathways": {
+      "ec00130": "Ubiquinone and other terpenoid-quinone biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K09834": "tocopherol cyclase"
+    },
+    "genes": {
+      "ath": [
+        "AT4G32770"
+      ],
+      "aly": [
+        "ARALYDRAFT_491430"
+      ],
+      "crb": [
+        "CARUB_v10004591mg"
+      ],
+      "csat": [
+        "104716894",
+        "104720514",
+        "104721549",
+        "104729992"
+      ],
+      "eus": [
+        "EUTSA_v10025006mg"
+      ],
+      "brp": [
+        "103862197"
+      ],
+      "bna": [
+        "106411207",
+        "106423312",
+        "106423394"
+      ],
+      "boe": [
+        "106301700"
+      ],
+      "thj": [
+        "104803808"
+      ],
+      "cpap": [
+        "110822117"
+      ],
+      "cit": [
+        "102615028"
+      ],
+      "cic": [
+        "CICLE_v10008169mg"
+      ],
+      "tcc": [
+        "18587955"
+      ],
+      "gra": [
+        "105762967",
+        "105769163"
+      ],
+      "ghi": [
+        "107900519",
+        "107906956",
+        "107953842"
+      ],
+      "egr": [
+        "104437768"
+      ],
+      "gmx": [
+        "100791679",
+        "100809310"
+      ],
+      "pvu": [
+        "PHAVU_009G108200g"
+      ],
+      "vra": [
+        "106762339"
+      ],
+      "var": [
+        "108318687"
+      ],
+      "ccaj": [
+        "109801639"
+      ],
+      "mtr": [
+        "MTR_3g110160"
+      ],
+      "cam": [
+        "101502250"
+      ],
+      "adu": [
+        "107470774"
+      ],
+      "aip": [
+        "107623139",
+        "107624241"
+      ],
+      "lja": [
+        "Lj0g3v0238379.1",
+        "Lj0g3v0307759.1"
+      ],
+      "lang": [
+        "109339295"
+      ],
+      "fve": [
+        "101304641"
+      ],
+      "pper": [
+        "18791199"
+      ],
+      "pmum": [
+        "103320200"
+      ],
+      "mdm": [
+        "103428784",
+        "103456033"
+      ],
+      "pxb": [
+        "103937837",
+        "103957110",
+        "103957461"
+      ],
+      "zju": [
+        "107407439",
+        "107407440"
+      ],
+      "csv": [
+        "101206720"
+      ],
+      "cmo": [
+        "103488188"
+      ],
+      "mcha": [
+        "111004926"
+      ],
+      "rcu": [
+        "8271188"
+      ],
+      "jcu": [
+        "105638244"
+      ],
+      "hbr": [
+        "110669879"
+      ],
+      "pop": [
+        "POPTR_0006s25680g",
+        "POPTR_0018s00510g"
+      ],
+      "vvi": [
+        "100268095"
+      ],
+      "sly": [
+        "101263925"
+      ],
+      "spen": [
+        "107026784"
+      ],
+      "sot": [
+        "102577462"
+      ],
+      "cann": [
+        "107839135"
+      ],
+      "nta": [
+        "107798727",
+        "107806714"
+      ],
+      "nsy": [
+        "104221249"
+      ],
+      "nto": [
+        "104098970"
+      ],
+      "ini": [
+        "109178717"
+      ],
+      "sind": [
+        "105164753"
+      ],
+      "han": [
+        "110873807"
+      ],
+      "bvg": [
+        "104885180"
+      ],
+      "soe": [
+        "110775274"
+      ],
+      "nnu": [
+        "104595147"
+      ],
+      "osa": [
+        "4329007"
+      ],
+      "dosa": [
+        "Os02t0276500-01"
+      ],
+      "obr": [
+        "102712058"
+      ],
+      "bdi": [
+        "100846924"
+      ],
+      "sbi": [
+        "8060379"
+      ],
+      "zma": [
+        "541877"
+      ],
+      "sita": [
+        "101764913"
+      ],
+      "pda": [
+        "103702550"
+      ],
+      "egu": [
+        "105040851"
+      ],
+      "mus": [
+        "103995049"
+      ],
+      "dct": [
+        "110106522"
+      ],
+      "atr": [
+        "18426679"
+      ],
+      "smo": [
+        "SELMODRAFT_143592",
+        "SELMODRAFT_172178"
+      ],
+      "ppp": [
+        "PHYPADRAFT_136591",
+        "PHYPADRAFT_159031"
+      ],
+      "cre": [
+        "CHLREDRAFT_101649"
+      ],
+      "vcn": [
+        "VOLCADRAFT_42287"
+      ],
+      "mng": [
+        "MNEG_11580"
+      ],
+      "olu": [
+        "OSTLU_39591"
+      ],
+      "ota": [
+        "OT_ostta01g01855"
+      ],
+      "bpg": [
+        "Bathy01g01730"
+      ],
+      "mis": [
+        "MICPUN_68115"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_33085"
+      ],
+      "csl": [
+        "COCSUDRAFT_12504"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_19624"
+      ],
+      "apro": [
+        "F751_1103"
+      ],
+      "cme": [
+        "CYME_CML326C"
+      ],
+      "gsl": [
+        "Gasu_59390"
+      ],
+      "pti": [
+        "PHATRDRAFT_bd1025"
+      ],
+      "fcy": [
+        "FRACYDRAFT_242143"
+      ],
+      "tps": [
+        "THAPSDRAFT_263019"
+      ],
+      "aaf": [
+        "AURANDRAFT_65060"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_237937",
+        "EMIHUDRAFT_54133",
+        "EMIHUDRAFT_98577"
+      ],
+      "syn": [
+        "slr1737"
+      ],
+      "syz": [
+        "MYO_112090"
+      ],
+      "syy": [
+        "SYNGTS_1199"
+      ],
+      "syt": [
+        "SYNGTI_1199"
+      ],
+      "sys": [
+        "SYNPCCN_1198"
+      ],
+      "syq": [
+        "SYNPCCP_1198"
+      ],
+      "syj": [
+        "D082_16890"
+      ],
+      "syp": [
+        "SYNPCC7002_A0670"
+      ],
+      "cya": [
+        "CYA_0654"
+      ],
+      "cyb": [
+        "CYB_0605"
+      ],
+      "syne": [
+        "Syn6312_3402"
+      ],
+      "synp": [
+        "Syn7502_02454"
+      ],
+      "dsl": [
+        "Dacsa_1404"
+      ],
+      "cmp": [
+        "Cha6605_5219"
+      ],
+      "lep": [
+        "Lepto7376_2265"
+      ],
+      "len": [
+        "LEP3755_10640"
+      ],
+      "let": [
+        "O77CONTIG1_04231"
+      ],
+      "lbo": [
+        "LBWT_47570"
+      ],
+      "hhg": [
+        "XM38_007350"
+      ],
+      "pseu": [
+        "Pse7367_1064"
+      ],
+      "amr": [
+        "AM1_2430"
+      ],
+      "mar": [
+        "MAE_59750"
+      ],
+      "mpk": [
+        "VL20_741"
+      ],
+      "hao": [
+        "PCC7418_3554"
+      ],
+      "cwa": [
+        "CwatDRAFT_6621"
+      ],
+      "glp": [
+        "Glo7428_3471"
+      ],
+      "chon": [
+        "NIES4102_16140"
+      ],
+      "cyt": [
+        "cce_3689"
+      ],
+      "cyp": [
+        "PCC8801_1078"
+      ],
+      "cyc": [
+        "PCC7424_0003"
+      ],
+      "cyn": [
+        "Cyan7425_2596"
+      ],
+      "cyh": [
+        "Cyan8802_1107"
+      ],
+      "cyj": [
+        "Cyan7822_0003"
+      ],
+      "ter": [
+        "Tery_1802"
+      ],
+      "mic": [
+        "Mic7113_1871"
+      ],
+      "arp": [
+        "NIES39_E00630"
+      ],
+      "gei": [
+        "GEI7407_2531"
+      ],
+      "oac": [
+        "Oscil6304_3929"
+      ],
+      "oni": [
+        "Osc7112_5394"
+      ],
+      "mpro": [
+        "BJP34_30130"
+      ],
+      "cep": [
+        "Cri9333_2174"
+      ],
+      "gvi": [
+        "glr3089"
+      ],
+      "glj": [
+        "GKIL_0805"
+      ],
+      "ana": [
+        "all0245"
+      ],
+      "npu": [
+        "Npun_R0149"
+      ],
+      "nos": [
+        "Nos7107_1763"
+      ],
+      "nop": [
+        "Nos7524_3438"
+      ],
+      "non": [
+        "NOS3756_32540"
+      ],
+      "ava": [
+        "Ava_2735"
+      ],
+      "naz": [
+        "Aazo_3505"
+      ],
+      "anb": [
+        "ANA_C10369"
+      ],
+      "acy": [
+        "Anacy_5164"
+      ],
+      "awa": [
+        "AA650_24360"
+      ],
+      "csg": [
+        "Cylst_5807"
+      ],
+      "calo": [
+        "Cal7507_3269"
+      ],
+      "calt": [
+        "Cal6303_4731"
+      ],
+      "calh": [
+        "IJ00_12110"
+      ],
+      "riv": [
+        "Riv7116_0097"
+      ],
+      "fis": [
+        "FIS3754_00340"
+      ],
+      "ncn": [
+        "BZZ01_27980"
+      ],
+      "cthe": [
+        "Chro_1644"
+      ],
+      "plp": [
+        "Ple7327_0186"
+      ],
+      "scs": [
+        "Sta7437_3667"
+      ],
+      "stan": [
+        "STA3757_38860"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "5.5.1.24"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "5.5.1.24"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "5.5.1.24"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "5.5.1.24"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Porfirova S",
+          "Bergmuller E",
+          "Tropf S",
+          "Lemke R",
+          "Dormann P."
+        ],
+        "title": "Isolation of an Arabidopsis mutant lacking vitamin E and identification of a cyclase essential for all tocopherol biosynthesis.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 99 (2002) 12495-500.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12213958]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sattler SE",
+          "Cahoon EB",
+          "Coughlan SJ",
+          "DellaPenna D"
+        ],
+        "title": "Characterization of tocopherol cyclases from higher plants and cyanobacteria. Evolutionary implications for tocopherol synthesis and function.",
+        "journal": "Plant. Physiol. 132 (2003) 2184-95.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12913173]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

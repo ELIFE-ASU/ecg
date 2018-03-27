@@ -1,0 +1,251 @@
+[
+  {
+    "entry_id": "1.14.13.25",
+    "name": "methane monooxygenase (soluble)",
+    "names": [
+      "methane monooxygenase (soluble)",
+      "methane hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "methane,NAD(P)H:oxygen oxidoreductase (hydroxylating)",
+    "reaction": "methane + NAD(P)H + H+ + O2 = methanol + NAD(P)+ + H2O [RN:R01142 R01143]",
+    "all_reac": "R01142 R01143; (other) R02823 R07098 R09141 R09148",
+    "iubmb_reactions": [
+      "R01142 R01143"
+    ],
+    "kegg_reactions": [
+      "R02823 R07098 R09141 R09148"
+    ],
+    "substrates": [
+      "methane [CPD:C01438]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "methanol [CPD:C00132]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is soluble, in contrast to the particulate enzyme, EC 1.14.18.3. Broad specificity; many alkanes can be hydroxylated, and alkenes are converted into the corresponding epoxides; CO is oxidized to CO2, ammonia is oxidized to hydroxylamine, and some aromatic compounds and cyclic alkanes can also be hydroxylated, but more slowly.",
+    "pathways": {
+      "ec00680": "Methane metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K16157": "methane monooxygenase component A alpha chain",
+      "K16158": "methane monooxygenase component A beta chain",
+      "K16159": "methane monooxygenase component A gamma chain",
+      "K16161": "methane monooxygenase component C"
+    },
+    "genes": {
+      "mca": [
+        "MCA1194",
+        "MCA1195",
+        "MCA1198",
+        "MCA1200"
+      ],
+      "mmt": [
+        "Metme_1649",
+        "Metme_1650",
+        "Metme_1652",
+        "Metme_1654"
+      ],
+      "msl": [
+        "Msil_1262",
+        "Msil_1263",
+        "Msil_1265",
+        "Msil_1267"
+      ],
+      "mbry": [
+        "B1812_14115",
+        "B1812_14125",
+        "B1812_14135",
+        "B1812_14140"
+      ],
+      "mmi": [
+        "MMAR_0130",
+        "MMAR_0131"
+      ],
+      "mrh": [
+        "MycrhN_3049",
+        "MycrhN_3050",
+        "MycrhN_3053",
+        "MycrhN_3054"
+      ],
+      "mcb": [
+        "Mycch_5395",
+        "Mycch_5875",
+        "Mycch_5897",
+        "Mycch_5898",
+        "Mycch_5900",
+        "Mycch_5901"
+      ],
+      "nca": [
+        "Noca_4807",
+        "Noca_4809"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.25"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.25"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.25"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.14.13.25"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.25"
+      ],
+      "CAS": [
+        "51961-97-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Colby J",
+          "Stirling DI",
+          "Dalton H."
+        ],
+        "title": "The soluble methane mono-oxygenase of Methylococcus capsulatus (Bath). Its ability to oxygenate n-alkanes, n-alkenes, ethers, and alicyclic, aromatic and heterocyclic compounds.",
+        "journal": "Biochem. J. 165 (1977) 395-402.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:411486]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hyman MR",
+          "Wood PM."
+        ],
+        "title": "Methane oxidation by Nitrosomonas europaea.",
+        "journal": "Biochem. J. 212 (1983) 31-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6870854]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Stirling DI",
+          "Dalton H."
+        ],
+        "title": "Properties of the methane mono-oxygenase from extracts of Methylosinus trichosporium OB3b and evidence for its similarity to the enzyme from Methylococcus capsulatus (Bath).",
+        "journal": "Eur. J. Biochem. 96 (1979) 205-12.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:572296]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tonge GM",
+          "Harrison DE",
+          "Higgins IJ."
+        ],
+        "title": "Purification and properties of the methane mono-oxygenase enzyme system from Methylosinus trichosporium OB3b.",
+        "journal": "Biochem. J. 161 (1977) 333-44.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15544]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

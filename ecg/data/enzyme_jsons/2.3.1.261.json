@@ -1,0 +1,367 @@
+[
+  {
+    "entry_id": "2.3.1.261",
+    "name": "(4-hydroxyphenyl)alkanoate synthase",
+    "names": [
+      "(4-hydroxyphenyl)alkanoate synthase",
+      "msl7 (gene name)",
+      "Pks15/1"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Transferring groups other than aminoacyl groups"
+    ],
+    "sysname": "malonyl-CoA:4-hydroxybenzoyl-[(4-hydroxyphenyl)alkanoate synthase] malonyltransferase [(4-hydroxyphenyl)alkanoate-forming]",
+    "reaction": "(1) 4-hydroxybenzoyl-[(4-hydroxyphenyl)alkanoate synthase] + 8 malonyl-CoA + 16 NADPH + 16 H+ = 17-(4-hydroxyphenyl)heptadecanoyl-[(4-hydroxyphenyl)alkanoate synthase] + 8 CO2 + 8 CoA + 16 NADP+ + 8 H2O [RN:R11615]; (2) 4-hydroxybenzoyl-[(4-hydroxyphenyl)alkanoate synthase] + 9 malonyl-CoA + 18 NADPH + 18 H+ + holo-[(4-hydroxyphenyl)alkanoate synthase] = 19-(4-hydroxyphenyl)nonadecanoyl-[(4-hydroxyphenyl)alkanoate synthase] + 9 CO2 + 9 CoA + 18 NADP+ + 9 H2O [RN:R11616]",
+    "all_reac": "R11615 R11616",
+    "iubmb_reactions": [
+      "R11615 R11616"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "4-hydroxybenzoyl-[(4-hydroxyphenyl)alkanoate synthase]",
+      "malonyl-CoA [CPD:C00083]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "holo-[(4-hydroxyphenyl)alkanoate synthase]"
+    ],
+    "products": [
+      "17-(4-hydroxyphenyl)heptadecanoyl-[(4-hydroxyphenyl)alkanoate synthase]",
+      "CO2 [CPD:C00011]",
+      "CoA [CPD:C00010]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "19-(4-hydroxyphenyl)nonadecanoyl-[(4-hydroxyphenyl)alkanoate synthase]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is part of the biosynthetic pathway of phenolphthiocerol, a lipid that serves as a virulence factor of pathogenic mycobacteria. It catalyses the elongation of 4-hydroxybenzoate that is loaded on its acyl-carrier domain to form (4-hydroxyphenyl)alkanoate intermediates. The enzyme adds either 8 or 9 malonyl-CoA units, resulting in formation of 17-(4-hydroxyphenyl)heptadecanoate or 19-(4-hydroxyphenyl)nonadecanoate, respectively. As the enzyme lacks a thioesterase domain [1], the product remains loaded on the acyl-carrier domain at the end of catalysis, and has to be hydrolysed by an as-yet unknown mechanism.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K12430": "4-hydroxyphenylalkanoate synthase"
+    },
+    "genes": {
+      "mtu": [
+        "Rv2946c",
+        "Rv2947c"
+      ],
+      "mtv": [
+        "RVBD_2946c",
+        "RVBD_2947c"
+      ],
+      "mtc": [
+        "MT3018",
+        "MT3021.1"
+      ],
+      "mra": [
+        "MRA_2973",
+        "MRA_2974"
+      ],
+      "mtf": [
+        "TBFG_12960",
+        "TBFG_12961"
+      ],
+      "mtb": [
+        "TBMG_01024",
+        "TBMG_01026"
+      ],
+      "mtk": [
+        "TBSG_01032",
+        "TBSG_01034"
+      ],
+      "mtz": [
+        "TBXG_001014",
+        "TBXG_003977"
+      ],
+      "mtg": [
+        "MRGA327_18110",
+        "MRGA327_18115",
+        "MRGA327_18120"
+      ],
+      "mti": [
+        "MRGA423_18300",
+        "MRGA423_18305",
+        "MRGA423_18310"
+      ],
+      "mte": [
+        "CCDC5079_2706",
+        "CCDC5079_2707"
+      ],
+      "mtur": [
+        "CFBS_3105",
+        "CFBS_3106"
+      ],
+      "mtl": [
+        "CCDC5180_2670",
+        "CCDC5180_2671"
+      ],
+      "mto": [
+        "MTCTRI2_3004",
+        "MTCTRI2_3005"
+      ],
+      "mtd": [
+        "UDA_2946c",
+        "UDA_2947c"
+      ],
+      "mtn": [
+        "ERDMAN_3229",
+        "ERDMAN_3230"
+      ],
+      "mtj": [
+        "J112_15770",
+        "J112_15775"
+      ],
+      "mtub": [
+        "MT7199_2981",
+        "MT7199_2982"
+      ],
+      "mtuc": [
+        "J113_20515",
+        "J113_20525"
+      ],
+      "mtue": [
+        "J114_15735",
+        "J114_15740"
+      ],
+      "mtuh": [
+        "I917_20695",
+        "I917_20700"
+      ],
+      "mtul": [
+        "TBHG_02876",
+        "TBHG_02877"
+      ],
+      "mtut": [
+        "HKBT1_3093"
+      ],
+      "mtuu": [
+        "HKBT2_3098"
+      ],
+      "mtq": [
+        "HKBS1_3100"
+      ],
+      "mbo": [
+        "Mb2971c"
+      ],
+      "mbb": [
+        "BCG_2968c"
+      ],
+      "mbt": [
+        "JTY_2963"
+      ],
+      "mbm": [
+        "BCGMEX_2963c"
+      ],
+      "mbk": [
+        "K60_030530"
+      ],
+      "mbx": [
+        "BCGT_2784"
+      ],
+      "mbz": [
+        "LH58_15645"
+      ],
+      "maf": [
+        "MAF_29520"
+      ],
+      "mce": [
+        "MCAN_29661",
+        "MCAN_29671"
+      ],
+      "mcq": [
+        "BN44_60422"
+      ],
+      "mcv": [
+        "BN43_40654"
+      ],
+      "mcx": [
+        "BN42_40946"
+      ],
+      "mcz": [
+        "BN45_51358"
+      ],
+      "mmic": [
+        "RN08_3248",
+        "RN08_3249"
+      ],
+      "mle": [
+        "ML0135"
+      ],
+      "mlb": [
+        "MLBr00135"
+      ],
+      "mul": [
+        "MUL_2005"
+      ],
+      "mmi": [
+        "MMAR_1762"
+      ],
+      "mmae": [
+        "MMARE11_00900",
+        "MMARE11_16810",
+        "MMARE11_30210"
+      ],
+      "mli": [
+        "MULP_05771"
+      ],
+      "mkn": [
+        "MKAN_23955"
+      ],
+      "mks": [
+        "LG40_23705"
+      ],
+      "mki": [
+        "LH54_23835"
+      ],
+      "mhad": [
+        "B586_03310"
+      ],
+      "nbr": [
+        "O3I_022435"
+      ],
+      "src": [
+        "M271_39535"
+      ],
+      "spun": [
+        "BFF78_07160"
+      ],
+      "led": [
+        "BBK82_44730"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.1.261"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.1.261"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.1.261"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.1.261"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Sirakova TD",
+          "Thirumala AK",
+          "Dubey VS",
+          "Sprecher H",
+          "Kolattukudy PE"
+        ],
+        "title": "The Mycobacterium tuberculosis pks2 gene encodes the synthase for the hepta- and octamethyl-branched fatty acids required for sulfolipid synthesis.",
+        "journal": "J. Biol. Chem. 276 (2001) 16833-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11278910]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Constant P",
+          "Perez E",
+          "Malaga W",
+          "Laneelle MA",
+          "Saurel O",
+          "Daffe M",
+          "Guilhot C"
+        ],
+        "title": "Role of the pks15/1 gene in the biosynthesis of phenolglycolipids in the Mycobacterium tuberculosis complex. Evidence that all strains synthesize glycosylated p-hydroxybenzoic methyl esters and that strains devoid of phenolglycolipids harbor a frameshift mutation in the pks15/1 gene.",
+        "journal": "J. Biol. Chem. 277 (2002) 38148-58.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12138124]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Simeone R",
+          "Leger M",
+          "Constant P",
+          "Malaga W",
+          "Marrakchi H",
+          "Daffe M",
+          "Guilhot C",
+          "Chalut C"
+        ],
+        "title": "Delineation of the roles of FadD22, FadD26 and FadD29 in the biosynthesis of phthiocerol dimycocerosates and related compounds in Mycobacterium tuberculosis.",
+        "journal": "FEBS. J. 277 (2010) 2715-25.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:20553505]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

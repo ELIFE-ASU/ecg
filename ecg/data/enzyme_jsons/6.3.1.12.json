@@ -1,0 +1,790 @@
+[
+  {
+    "entry_id": "6.3.1.12",
+    "name": "D-aspartate ligase",
+    "names": [
+      "D-aspartate ligase",
+      "Aslfm",
+      "UDP-MurNAc-pentapeptide:D-aspartate ligase",
+      "D-aspartic acid-activating enzyme"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-nitrogen bonds;",
+      "Acid-D-ammonia (or amine) ligases (amide synthases)"
+    ],
+    "sysname": "D-aspartate:[beta-GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-gamma-D-Glu-L-Lys-D-Ala-D-Ala)]n ligase (ADP-forming)",
+    "reaction": "ATP + D-aspartate + [beta-GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-gamma-D-Glu-L-Lys-D-Ala-D-Ala)]n = [beta-GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-gamma-D-Glu-6-N-(beta-D-Asp)-L-Lys-D-Ala-D-Ala)]n + ADP + phosphate [RN:R09590]",
+    "all_reac": "R09590",
+    "iubmb_reactions": [
+      "R09590"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "D-aspartate [CPD:C00402]",
+      "[beta-GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-gamma-D-Glu-L-Lys-D-Ala-D-Ala)]n [CPD:C19695]"
+    ],
+    "products": [
+      "[beta-GlcNAc-(1->4)-Mur2Ac(oyl-L-Ala-gamma-D-Glu-6-N-(beta-D-Asp)-L-Lys-D-Ala-D-Ala)]n [CPD:C19696]",
+      "ADP [CPD:C00008]",
+      "phosphate [CPD:C00009]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme forms part of the peptidoglycan assembly pathway of Gram-positive bacteria grown in medium containing D-Asp. Normally, the side chains the acylate the 6-amino group of the L-lysine residue contain L-Ala-L-Ala but these amino acids are replaced by D-Asp when D-Asp is included in the medium. Hybrid chains containing L-Ala-D-Asp, L-Ala-L-Ala-D-Asp or D-Asp-L-Ala are not formed [4]. The enzyme belongs in the ATP-grasp protein superfamily [3,4]. The enzyme is highly specific for D-aspartate, as L-aspartate, D-glutamate, D-alanine, D-iso-asparagine and D-malic acid are not substrates [4]. In Enterococcus faecium, the substrate D-aspartate is produced by EC 5.1.1.13, aspartate racemase [4]",
+    "pathways": {
+    },
+    "orthologs": {
+      "K17810": "D-aspartate ligase"
+    },
+    "genes": {
+      "baco": [
+        "OXB_0273"
+      ],
+      "lsp": [
+        "Bsph_4214"
+      ],
+      "lgy": [
+        "T479_17810",
+        "T479_20575"
+      ],
+      "lfu": [
+        "HR49_03685",
+        "HR49_06090",
+        "HR49_17980"
+      ],
+      "vil": [
+        "CFK37_06100"
+      ],
+      "vne": [
+        "CFK40_01590"
+      ],
+      "sje": [
+        "AAV35_012250"
+      ],
+      "macr": [
+        "BHM04_09800"
+      ],
+      "siv": [
+        "SSIL_1018"
+      ],
+      "ssil": [
+        "SOLI23_13395"
+      ],
+      "sob": [
+        "CSE16_17060"
+      ],
+      "pln": [
+        "Plano_1114"
+      ],
+      "pku": [
+        "AUO94_10490"
+      ],
+      "prt": [
+        "AUC31_03440"
+      ],
+      "pll": [
+        "I858_001315"
+      ],
+      "pana": [
+        "BBH88_14320"
+      ],
+      "pdg": [
+        "BCM40_09895"
+      ],
+      "phc": [
+        "BBI08_02295"
+      ],
+      "pmar": [
+        "B0X71_04640"
+      ],
+      "ppla": [
+        "BBI15_02310"
+      ],
+      "pfae": [
+        "AJGP001_06780"
+      ],
+      "kur": [
+        "ASO14_443"
+      ],
+      "spsy": [
+        "AZE41_03490"
+      ],
+      "spor": [
+        "SporoP33_05395"
+      ],
+      "spop": [
+        "SporoP37_05885"
+      ],
+      "sure": [
+        "SporoP32a_05905"
+      ],
+      "rst": [
+        "ATY39_11200"
+      ],
+      "lla": [
+        "L93420"
+      ],
+      "llk": [
+        "LLKF_2494"
+      ],
+      "llt": [
+        "CVCAS_2270"
+      ],
+      "lls": [
+        "lilo_2195"
+      ],
+      "lld": [
+        "P620_13190"
+      ],
+      "llx": [
+        "NCDO2118_2348"
+      ],
+      "llc": [
+        "LACR_2532"
+      ],
+      "llm": [
+        "llmg_2505"
+      ],
+      "llr": [
+        "llh_12965"
+      ],
+      "lln": [
+        "LLNZ_12940"
+      ],
+      "lli": [
+        "uc509_2198"
+      ],
+      "llw": [
+        "kw2_2286"
+      ],
+      "llj": [
+        "LG36_2164"
+      ],
+      "ljo": [
+        "LJ_0136"
+      ],
+      "ljf": [
+        "FI9785_203"
+      ],
+      "ljh": [
+        "LJP_0142"
+      ],
+      "ljn": [
+        "T285_00755"
+      ],
+      "lac": [
+        "LBA0159"
+      ],
+      "lai": [
+        "LAC30SC_00730"
+      ],
+      "lad": [
+        "LA14_0159"
+      ],
+      "laf": [
+        "SD55_0156"
+      ],
+      "lsa": [
+        "LCA_0098"
+      ],
+      "lsl": [
+        "LSL_0017"
+      ],
+      "lsi": [
+        "HN6_00013"
+      ],
+      "lsj": [
+        "LSJ_0020"
+      ],
+      "ldb": [
+        "Ldb0210"
+      ],
+      "lbu": [
+        "LBUL_0184"
+      ],
+      "lde": [
+        "LDBND_0201",
+        "LDBND_0269"
+      ],
+      "ldl": [
+        "LBU_0164",
+        "LBU_0244"
+      ],
+      "lbr": [
+        "LVIS_1500"
+      ],
+      "lbk": [
+        "LVISKB_1449"
+      ],
+      "lca": [
+        "LSEI_2148"
+      ],
+      "lpq": [
+        "AF91_03020"
+      ],
+      "lpi": [
+        "LBPG_02069"
+      ],
+      "lpap": [
+        "LBPC_2084"
+      ],
+      "lcb": [
+        "LCABL_23300"
+      ],
+      "lcz": [
+        "LCAZH_2108"
+      ],
+      "lcs": [
+        "LCBD_2316"
+      ],
+      "lce": [
+        "LC2W_2298"
+      ],
+      "lcw": [
+        "BN194_22880"
+      ],
+      "lcl": [
+        "LOCK919_2327"
+      ],
+      "lcx": [
+        "LCA12A_0691"
+      ],
+      "lga": [
+        "LGAS_0136"
+      ],
+      "lre": [
+        "Lreu_1936"
+      ],
+      "lrf": [
+        "LAR_1812"
+      ],
+      "lru": [
+        "HMPREF0538_21143"
+      ],
+      "lrt": [
+        "LRI_1883"
+      ],
+      "lrr": [
+        "N134_10265"
+      ],
+      "lhe": [
+        "lhv_0165"
+      ],
+      "lhl": [
+        "LBHH_0166"
+      ],
+      "lhr": [
+        "R0052_00895"
+      ],
+      "lhv": [
+        "lhe_0172"
+      ],
+      "lhh": [
+        "LBH_0137"
+      ],
+      "lhd": [
+        "HUO_01800"
+      ],
+      "lfe": [
+        "LAF_1396"
+      ],
+      "lfr": [
+        "LC40_0892"
+      ],
+      "lff": [
+        "LBFF_1517"
+      ],
+      "lrh": [
+        "LGG_02152"
+      ],
+      "lrg": [
+        "LRHM_2069"
+      ],
+      "lrl": [
+        "LC705_02159"
+      ],
+      "lra": [
+        "LRHK_2161"
+      ],
+      "lro": [
+        "LOCK900_2113"
+      ],
+      "lrc": [
+        "LOCK908_2222"
+      ],
+      "lcr": [
+        "LCRIS_00154"
+      ],
+      "lam": [
+        "LA2_00865"
+      ],
+      "lay": [
+        "LAB52_00810"
+      ],
+      "lbh": [
+        "Lbuc_1239"
+      ],
+      "lbn": [
+        "LBUCD034_1363"
+      ],
+      "lke": [
+        "WANG_1714"
+      ],
+      "law": [
+        "LACWKB8_1618"
+      ],
+      "lmu": [
+        "LBLM1_00040"
+      ],
+      "lae": [
+        "LBAT_0182"
+      ],
+      "lgn": [
+        "ABM34_06990"
+      ],
+      "lko": [
+        "ABN16_11035"
+      ],
+      "lhi": [
+        "JP39_10020"
+      ],
+      "lku": [
+        "APS55_07070"
+      ],
+      "lgl": [
+        "AO203_02105"
+      ],
+      "lor": [
+        "AYI71_11845"
+      ],
+      "lpar": [
+        "FAM21731_02225"
+      ],
+      "lle": [
+        "AYR59_06085"
+      ],
+      "lpd": [
+        "AYR62_07300"
+      ],
+      "lje": [
+        "BUE77_06145"
+      ],
+      "lcu": [
+        "PL11_008345"
+      ],
+      "lct": [
+        "BI355_1893"
+      ],
+      "lbt": [
+        "AYR52_00460"
+      ],
+      "lcv": [
+        "FBA2_01665"
+      ],
+      "lah": [
+        "LA20533_03115",
+        "LA20533_07885"
+      ],
+      "lamy": [
+        "B1745_00790"
+      ],
+      "ppe": [
+        "PEPE_0661"
+      ],
+      "ppen": [
+        "T256_03525"
+      ],
+      "pce": [
+        "PECL_1167"
+      ],
+      "pdm": [
+        "ADU72_1896"
+      ],
+      "paci": [
+        "A4V11_10130"
+      ],
+      "efc": [
+        "EFAU004_01690"
+      ],
+      "efau": [
+        "EFAU085_01713"
+      ],
+      "efu": [
+        "HMPREF0351_11643"
+      ],
+      "efm": [
+        "M7W_1232"
+      ],
+      "eft": [
+        "M395_05775"
+      ],
+      "ehr": [
+        "EHR_10605"
+      ],
+      "ecas": [
+        "ECBG_00820"
+      ],
+      "emu": [
+        "EMQU_1641"
+      ],
+      "edu": [
+        "LIU_09540"
+      ],
+      "ega": [
+        "AL523_14400"
+      ],
+      "thl": [
+        "TEH_12780"
+      ],
+      "vte": [
+        "BHY08_03300"
+      ],
+      "vpi": [
+        "BW732_06710"
+      ],
+      "asan": [
+        "AWM72_02745"
+      ],
+      "crn": [
+        "CAR_c05710"
+      ],
+      "jep": [
+        "BW721_08140"
+      ],
+      "jda": [
+        "BW727_101893"
+      ],
+      "cct": [
+        "CC1_14460"
+      ],
+      "ibu": [
+        "IB211_00146"
+      ],
+      "fpla": [
+        "A4U99_01395"
+      ],
+      "arl": [
+        "AFL94_15125"
+      ],
+      "ary": [
+        "ATC04_02815"
+      ],
+      "gar": [
+        "AOZ07_15455"
+      ],
+      "nae": [
+        "BHE16_08035"
+      ],
+      "brx": [
+        "BH708_00515",
+        "BH708_00525"
+      ],
+      "brv": [
+        "CFK39_14070",
+        "CFK39_14080"
+      ],
+      "bgg": [
+        "CFK41_10820",
+        "CFK41_10825"
+      ],
+      "brz": [
+        "CFK38_13405",
+        "CFK38_13410"
+      ],
+      "dva": [
+        "DAD186_00630",
+        "DAD186_08110"
+      ],
+      "lmoi": [
+        "VV02_09855"
+      ],
+      "xce": [
+        "Xcel_1887"
+      ],
+      "iva": [
+        "Isova_1754"
+      ],
+      "ido": [
+        "I598_0464",
+        "I598_0465"
+      ],
+      "cet": [
+        "B8281_13815"
+      ],
+      "cceu": [
+        "CBR64_17630"
+      ],
+      "ske": [
+        "Sked_16420"
+      ],
+      "cfl": [
+        "Cfla_1730"
+      ],
+      "cfi": [
+        "Celf_2121"
+      ],
+      "cga": [
+        "Celgi_1490"
+      ],
+      "cez": [
+        "CBP52_05665"
+      ],
+      "serj": [
+        "SGUI_1445"
+      ],
+      "tpy": [
+        "CQ11_07645"
+      ],
+      "tpyo": [
+        "X956_00020"
+      ],
+      "asg": [
+        "FB03_01015"
+      ],
+      "amy": [
+        "ADJ76_02605"
+      ],
+      "aos": [
+        "AXE84_10535"
+      ],
+      "ard": [
+        "AXF14_10095"
+      ],
+      "avu": [
+        "BK816_04640"
+      ],
+      "actp": [
+        "B6G06_04060"
+      ],
+      "bad": [
+        "BAD_1086"
+      ],
+      "badl": [
+        "BADO_1137"
+      ],
+      "bado": [
+        "BBMN23_1231"
+      ],
+      "bde": [
+        "BDP_1523"
+      ],
+      "bdn": [
+        "BBDE_1447"
+      ],
+      "bbi": [
+        "BBIF_0602"
+      ],
+      "bbp": [
+        "BBPR_0578"
+      ],
+      "bbf": [
+        "BBB_0558"
+      ],
+      "bcor": [
+        "BCOR_0477"
+      ],
+      "bii": [
+        "BINDI_0416"
+      ],
+      "bang": [
+        "BBAG_0555"
+      ],
+      "bact": [
+        "AB656_03070"
+      ],
+      "gva": [
+        "HMPREF0424_0466"
+      ],
+      "sij": [
+        "SCIP_0865"
+      ],
+      "pdo": [
+        "PSDT_0275"
+      ],
+      "aeq": [
+        "AEQU_1453"
+      ],
+      "ols": [
+        "Olsu_1290"
+      ],
+      "olo": [
+        "ADJ70_10590"
+      ],
+      "cgo": [
+        "Corgl_0724"
+      ],
+      "caer": [
+        "CSV91_01335"
+      ],
+      "cbac": [
+        "JI75_06365"
+      ],
+      "bdo": [
+        "EL88_10390"
+      ],
+      "bcel": [
+        "BcellWH2_00491"
+      ],
+      "ial": [
+        "IALB_2457"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.3.1.12"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.3.1.12"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.3.1.12"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.3.1.12"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Staudenbauer W",
+          "Strominger JL."
+        ],
+        "title": "Activation of D-aspartic acid for incorporation into peptidoglycan.",
+        "journal": "J. Biol. Chem. 247 (1972) 5095-102.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4262567]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Staudenbauer W",
+          "Willoughby E",
+          "Strominger JL."
+        ],
+        "title": "Further studies of the D-aspartic acid-activating enzyme of Streptococcus faecalis and its attachment to the membrane.",
+        "journal": "J. Biol. Chem. 247 (1972) 5289-96.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:4626717]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Galperin MY",
+          "Koonin EV."
+        ],
+        "title": "A diverse superfamily of enzymes with ATP-dependent carboxylate-amine/thiol ligase activity.",
+        "journal": "Protein. Sci. 6 (1997) 2639-43.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9416615]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bellais S",
+          "Arthur M",
+          "Dubost L",
+          "Hugonnet JE",
+          "Gutmann L",
+          "van Heijenoort J",
+          "Legrand R",
+          "Brouard JP",
+          "Rice L",
+          "Mainardi JL."
+        ],
+        "title": "Aslfm, the D-aspartate ligase responsible for the addition of D-aspartic acid onto the peptidoglycan precursor of Enterococcus faecium.",
+        "journal": "J. Biol. Chem. 281 (2006) 11586-94.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:16510449]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

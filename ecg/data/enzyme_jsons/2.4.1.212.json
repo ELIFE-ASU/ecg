@@ -1,0 +1,1248 @@
+[
+  {
+    "entry_id": "2.4.1.212",
+    "name": "hyaluronan synthase",
+    "names": [
+      "hyaluronan synthase",
+      "spHAS",
+      "seHAS",
+      "Alternating UDP-alpha-N-acetyl-D-glucosamine:beta-D-glucuronosyl-(1->3)-[nascent hyaluronan] 4-N-acetyl-beta-D-glucosaminyltransferase and UDP-alpha-D-glucuronate:N-acetyl-beta-D-glucosaminyl-(1->4)-[nascent hyaluronan] 3-beta-D-glucuronosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "Alternating UDP-N-acetyl-alpha-D-glucosamine:beta-D-glucuronosyl-(1->3)-[nascent hyaluronan] 4-N-acetyl-beta-D-glucosaminyltransferase and UDP-alpha-D-glucuronate:N-acetyl-beta-D-glucosaminyl-(1->4)-[nascent hyaluronan] 3-beta-D-glucuronosyltransferase (configuration-inverting)",
+    "reaction": "(1) UDP-N-acetyl-alpha-D-glucosamine + beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->4)-[nascent hyaluronan] = UDP + N-acetyl-beta-D-glucosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->4)-[nascent hyaluronan] [RN:R05327 R06068]; (2) UDP-alpha-D-glucuronate + N-acetyl-beta-D-glucosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-[nascent hyaluronan] = UDP + beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-[nascent hyaluronan]",
+    "all_reac": "R05327 R06068(G)",
+    "iubmb_reactions": [
+      "R05327 R06068(G)"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-glucosamine [CPD:C00043]",
+      "beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->4)-[nascent hyaluronan]",
+      "UDP-alpha-D-glucuronate [CPD:C00167]",
+      "N-acetyl-beta-D-glucosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-[nascent hyaluronan]"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "N-acetyl-beta-D-glucosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->4)-[nascent hyaluronan]",
+      "beta-D-glucuronosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->4)-beta-D-glucuronosyl-(1->3)-[nascent hyaluronan]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from Streptococcus Group A and Group C requires Mg2+. The enzyme adds GlcNAc to nascent hyaluronan when the non-reducing end is GlcA, but it adds GlcA when the non-reducing end is GlcNAc [3]. The enzyme is highly specific for UDP-GlcNAc and UDP-GlcA; no copolymerization is observed if either is replaced by UDP-Glc, UDP-Gal, UDP-GalNAc or UDP-GalA. Similar enzymes have been found in a variety of organisms.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K00752": "hyaluronan synthase"
+    },
+    "genes": {
+      "hsa": [
+        "3036",
+        "3037",
+        "3038"
+      ],
+      "ptr": [
+        "454195",
+        "468978",
+        "472850"
+      ],
+      "pps": [
+        "100974629",
+        "100978574",
+        "100988254"
+      ],
+      "ggo": [
+        "101133545",
+        "101146377",
+        "109025003"
+      ],
+      "pon": [
+        "100443159",
+        "100453231",
+        "100462167"
+      ],
+      "nle": [
+        "100598098",
+        "100598248",
+        "100603930"
+      ],
+      "mcc": [
+        "703353",
+        "704121",
+        "719773"
+      ],
+      "mcf": [
+        "102114972",
+        "102131327",
+        "102135282"
+      ],
+      "csab": [
+        "103233221",
+        "103235145",
+        "103237364"
+      ],
+      "rro": [
+        "104655585",
+        "104672702",
+        "104676637"
+      ],
+      "rbb": [
+        "108514512",
+        "108516805",
+        "108523658"
+      ],
+      "cjc": [
+        "100398661",
+        "100400259",
+        "100894935"
+      ],
+      "sbq": [
+        "101041294",
+        "101046826",
+        "101048448"
+      ],
+      "mmu": [
+        "15116",
+        "15117",
+        "15118"
+      ],
+      "rno": [
+        "25694",
+        "266805",
+        "282821"
+      ],
+      "cge": [
+        "100751055",
+        "100757895",
+        "103162307"
+      ],
+      "ngi": [
+        "103734806",
+        "103738152",
+        "103750321"
+      ],
+      "hgl": [
+        "101707808",
+        "101717946",
+        "101724130"
+      ],
+      "ccan": [
+        "109677774",
+        "109680355",
+        "109693770"
+      ],
+      "ocu": [
+        "100008626",
+        "100009454",
+        "103345464"
+      ],
+      "tup": [
+        "102483298",
+        "102489956",
+        "102491778"
+      ],
+      "cfa": [
+        "482032",
+        "489739",
+        "611700"
+      ],
+      "aml": [
+        "100471054",
+        "100475331",
+        "100479870"
+      ],
+      "umr": [
+        "103657359",
+        "103661603",
+        "103673621"
+      ],
+      "oro": [
+        "101365887",
+        "101373682",
+        "101385758"
+      ],
+      "fca": [
+        "101093224",
+        "101096124",
+        "101099432"
+      ],
+      "ptg": [
+        "102950235",
+        "102953815",
+        "102955943"
+      ],
+      "aju": [
+        "106972080",
+        "106972980",
+        "106978179"
+      ],
+      "bta": [
+        "281220",
+        "282820",
+        "286824",
+        "515601"
+      ],
+      "bom": [
+        "102278313",
+        "102278597",
+        "102283309",
+        "102284172",
+        "102284450"
+      ],
+      "biu": [
+        "109568300",
+        "109568691",
+        "109572178",
+        "109572268"
+      ],
+      "phd": [
+        "102321398",
+        "102321758",
+        "102327555",
+        "102336090",
+        "102342371"
+      ],
+      "chx": [
+        "102170334",
+        "102170800",
+        "102170999",
+        "102180619"
+      ],
+      "oas": [
+        "101102585",
+        "101110341",
+        "101110602",
+        "101120264"
+      ],
+      "ssc": [
+        "100191062",
+        "100737755",
+        "397120",
+        "408053"
+      ],
+      "cfr": [
+        "102509171",
+        "102517693",
+        "102518631"
+      ],
+      "cdk": [
+        "105088406",
+        "105098322",
+        "105106080"
+      ],
+      "bacu": [
+        "103000737",
+        "103019394"
+      ],
+      "lve": [
+        "103072634",
+        "103077212",
+        "103090515"
+      ],
+      "ecb": [
+        "100009708",
+        "100066947"
+      ],
+      "epz": [
+        "103548360",
+        "103554212",
+        "103566426"
+      ],
+      "eai": [
+        "106822303",
+        "106822467",
+        "106840120"
+      ],
+      "myb": [
+        "102242326",
+        "102245815",
+        "102249515"
+      ],
+      "myd": [
+        "102754470",
+        "102760371",
+        "102768432"
+      ],
+      "hai": [
+        "109378196",
+        "109389272",
+        "109395081"
+      ],
+      "rss": [
+        "109435501",
+        "109438413",
+        "109460909"
+      ],
+      "pale": [
+        "102879345",
+        "102887158",
+        "102894200"
+      ],
+      "lav": [
+        "100660025",
+        "100661528",
+        "100667758"
+      ],
+      "tmu": [
+        "101343848",
+        "101347098",
+        "101348918"
+      ],
+      "mdo": [
+        "100020005",
+        "100025815",
+        "100028664"
+      ],
+      "shr": [
+        "100915210",
+        "100915333",
+        "100935104"
+      ],
+      "oaa": [
+        "100073390",
+        "100077175",
+        "100088892"
+      ],
+      "gga": [
+        "395594",
+        "427564"
+      ],
+      "mgp": [
+        "100542703",
+        "100546088"
+      ],
+      "cjo": [
+        "107310516",
+        "107319480"
+      ],
+      "apla": [
+        "101794398",
+        "101798379"
+      ],
+      "acyg": [
+        "106038507",
+        "106046595"
+      ],
+      "tgu": [
+        "100228837"
+      ],
+      "gfr": [
+        "102044642",
+        "102045061"
+      ],
+      "fab": [
+        "101817917",
+        "101822065"
+      ],
+      "phi": [
+        "102104183",
+        "102113165"
+      ],
+      "pmaj": [
+        "107200974",
+        "107209621"
+      ],
+      "ccw": [
+        "104692667"
+      ],
+      "fpg": [
+        "101913427",
+        "101916039"
+      ],
+      "fch": [
+        "102049447",
+        "102052598"
+      ],
+      "clv": [
+        "102086971",
+        "102087835"
+      ],
+      "egz": [
+        "104123704",
+        "104129686"
+      ],
+      "aam": [
+        "106496322"
+      ],
+      "asn": [
+        "102373237",
+        "102374679",
+        "102388766"
+      ],
+      "amj": [
+        "102573446",
+        "102576462",
+        "106737219"
+      ],
+      "pss": [
+        "102445131",
+        "102448287",
+        "102456379"
+      ],
+      "cmy": [
+        "102929705",
+        "102931765",
+        "102940312",
+        "102945687"
+      ],
+      "cpic": [
+        "101931459",
+        "101940089",
+        "101951574"
+      ],
+      "acs": [
+        "100558635",
+        "100565058",
+        "100566258"
+      ],
+      "pvt": [
+        "110076300",
+        "110080529",
+        "110086505"
+      ],
+      "pbi": [
+        "103051686",
+        "103053107",
+        "103058218"
+      ],
+      "gja": [
+        "107106528",
+        "107111182",
+        "107124383",
+        "107124387"
+      ],
+      "xla": [
+        "108695929",
+        "108705047",
+        "108714068",
+        "108719401",
+        "379383",
+        "398074",
+        "399037",
+        "399146"
+      ],
+      "xtr": [
+        "100145711",
+        "100145746",
+        "100487554",
+        "100491673"
+      ],
+      "npr": [
+        "108784501",
+        "108787718",
+        "108801429"
+      ],
+      "dre": [
+        "260350",
+        "282555",
+        "403130"
+      ],
+      "srx": [
+        "107707160",
+        "107707223",
+        "107714739",
+        "107723422",
+        "107740342",
+        "107743236"
+      ],
+      "sanh": [
+        "107657615",
+        "107672271",
+        "107673001",
+        "107685568",
+        "107686259",
+        "107699477"
+      ],
+      "sgh": [
+        "107569650",
+        "107581653",
+        "107583799",
+        "107596529",
+        "107596747"
+      ],
+      "ccar": [
+        "109052687",
+        "109074192",
+        "109089878",
+        "109091264",
+        "109104953",
+        "109110508"
+      ],
+      "ipu": [
+        "108263934",
+        "108265336",
+        "108265377",
+        "108273246"
+      ],
+      "amex": [
+        "103032071",
+        "103045554",
+        "103047586"
+      ],
+      "tru": [
+        "101071409",
+        "101075370",
+        "101076117"
+      ],
+      "tng": [
+        "GSTEN00005308G001",
+        "GSTEN00013798G001",
+        "GSTEN00035316G001"
+      ],
+      "lco": [
+        "104928081",
+        "104930141",
+        "104932382",
+        "109142400"
+      ],
+      "ncc": [
+        "104949316",
+        "104952136",
+        "104954817"
+      ],
+      "mze": [
+        "101465324",
+        "101466497",
+        "101487664"
+      ],
+      "ola": [
+        "101165478",
+        "101171028",
+        "101174410"
+      ],
+      "xma": [
+        "102217002",
+        "102229462",
+        "102236901"
+      ],
+      "pret": [
+        "103466738",
+        "103478284",
+        "103478477"
+      ],
+      "csem": [
+        "103379751",
+        "103388529",
+        "103388789"
+      ],
+      "lcf": [
+        "108888012",
+        "108890341",
+        "108902235"
+      ],
+      "hcq": [
+        "109520699",
+        "109525696",
+        "109529616"
+      ],
+      "bpec": [
+        "110169489",
+        "110171491",
+        "110171748"
+      ],
+      "sasa": [
+        "106560880",
+        "106573695",
+        "106578351",
+        "106591270",
+        "106592862",
+        "106596886",
+        "106605656"
+      ],
+      "els": [
+        "105016535",
+        "105018589",
+        "105019096"
+      ],
+      "sfm": [
+        "108922203",
+        "108926644",
+        "108940476"
+      ],
+      "lcm": [
+        "102352892",
+        "102359069",
+        "102363484"
+      ],
+      "cmk": [
+        "103173266",
+        "103183203",
+        "103188089"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_103600",
+        "BRAFLDRAFT_127833",
+        "BRAFLDRAFT_244316",
+        "BRAFLDRAFT_244333",
+        "BRAFLDRAFT_244343",
+        "BRAFLDRAFT_257980",
+        "BRAFLDRAFT_96033"
+      ],
+      "pan": [
+        "PODANSg8543"
+      ],
+      "mtm": [
+        "MYCTH_10713"
+      ],
+      "mgr": [
+        "MGG_15353"
+      ],
+      "fox": [
+        "FOXG_08805"
+      ],
+      "tre": [
+        "TRIREDRAFT_122993"
+      ],
+      "plj": [
+        "VFPFJ_06525"
+      ],
+      "pfy": [
+        "PFICI_14978"
+      ],
+      "ssl": [
+        "SS1G_06158"
+      ],
+      "bfu": [
+        "BC1G_01352"
+      ],
+      "mbe": [
+        "MBM_00056",
+        "MBM_01384"
+      ],
+      "psco": [
+        "LY89DRAFT_627847"
+      ],
+      "aor": [
+        "AOR_1_618174"
+      ],
+      "ang": [
+        "ANI_1_1476064"
+      ],
+      "afv": [
+        "AFLA_075840"
+      ],
+      "pno": [
+        "SNOG_10021"
+      ],
+      "bsc": [
+        "COCSADRAFT_45972"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_12516"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_126498"
+      ],
+      "npa": [
+        "UCRNP2_6525",
+        "UCRNP2_705",
+        "UCRNP2_7343",
+        "UCRNP2_7533"
+      ],
+      "ppl": [
+        "POSPLDRAFT_91687"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_137322"
+      ],
+      "shs": [
+        "STEHIDRAFT_105280",
+        "STEHIDRAFT_107339",
+        "STEHIDRAFT_64713"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_28815"
+      ],
+      "aprs": [
+        "BI364_05235"
+      ],
+      "rin": [
+        "ACS15_5509"
+      ],
+      "dma": [
+        "DMR_08420"
+      ],
+      "das": [
+        "Daes_1886"
+      ],
+      "dml": [
+        "Dmul_09820",
+        "Dmul_39050"
+      ],
+      "ccro": [
+        "CMC5_021400"
+      ],
+      "samy": [
+        "DB32_001831"
+      ],
+      "llu": [
+        "AKJ09_05354"
+      ],
+      "mrm": [
+        "A7982_03714"
+      ],
+      "dao": [
+        "Desac_0261"
+      ],
+      "phl": [
+        "KKY_942"
+      ],
+      "bah": [
+        "BAMEG_A0121"
+      ],
+      "bax": [
+        "H9401_5599"
+      ],
+      "bant": [
+        "A16_60215"
+      ],
+      "banr": [
+        "A16R_pXO101260"
+      ],
+      "bans": [
+        "BAPAT_pXO10122"
+      ],
+      "banh": [
+        "HYU01_28605"
+      ],
+      "banv": [
+        "DJ46_5700"
+      ],
+      "bcx": [
+        "BCA_A0112"
+      ],
+      "bal": [
+        "BACI_pCIXO101130"
+      ],
+      "beo": [
+        "BEH_04450"
+      ],
+      "lsp": [
+        "Bsph_0547"
+      ],
+      "lgy": [
+        "T479_18785"
+      ],
+      "lfu": [
+        "HR49_05095"
+      ],
+      "bbe": [
+        "BBR47_57500"
+      ],
+      "gym": [
+        "GYMC10_2037"
+      ],
+      "pih": [
+        "UB51_14975"
+      ],
+      "pib": [
+        "BBD41_04885"
+      ],
+      "spor": [
+        "SporoP33_09435"
+      ],
+      "spop": [
+        "SporoP37_09810"
+      ],
+      "sure": [
+        "SporoP32a_09745"
+      ],
+      "spy": [
+        "SPy_2200"
+      ],
+      "spz": [
+        "M5005_Spy1851"
+      ],
+      "spym": [
+        "M1GAS476_1901"
+      ],
+      "spm": [
+        "spyM18_2236"
+      ],
+      "spg": [
+        "SpyM3_1851"
+      ],
+      "sps": [
+        "SPs1847"
+      ],
+      "sph": [
+        "MGAS10270_Spy1970"
+      ],
+      "spj": [
+        "MGAS2096_Spy1882"
+      ],
+      "spk": [
+        "MGAS9429_Spy1862"
+      ],
+      "spf": [
+        "SpyM51824"
+      ],
+      "spa": [
+        "M6_Spy1869"
+      ],
+      "spb": [
+        "M28_Spy1883",
+        "M28_Spy1884"
+      ],
+      "stg": [
+        "MGAS15252_1740"
+      ],
+      "soz": [
+        "Spy49_1804"
+      ],
+      "stz": [
+        "SPYALAB49_001853"
+      ],
+      "stx": [
+        "MGAS1882_1774"
+      ],
+      "spya": [
+        "A20_1895"
+      ],
+      "spyh": [
+        "L897_09190"
+      ],
+      "spyo": [
+        "STAB901_09020"
+      ],
+      "ste": [
+        "STER_0149"
+      ],
+      "stn": [
+        "STND_0048"
+      ],
+      "sez": [
+        "Sez_0199"
+      ],
+      "seq": [
+        "SZO_01700"
+      ],
+      "sezo": [
+        "SeseC_00231"
+      ],
+      "sequ": [
+        "Q426_08280"
+      ],
+      "seu": [
+        "SEQ_0269"
+      ],
+      "sub": [
+        "SUB1697"
+      ],
+      "stk": [
+        "STP_1716"
+      ],
+      "sik": [
+        "K710_1994"
+      ],
+      "siq": [
+        "DQ08_09415"
+      ],
+      "sio": [
+        "DW64_09395"
+      ],
+      "siz": [
+        "SI82_09370"
+      ],
+      "ess": [
+        "ATZ33_06070"
+      ],
+      "csq": [
+        "CSCA_2368"
+      ],
+      "cck": [
+        "Ccar_02835"
+      ],
+      "cbut": [
+        "ATN24_15250"
+      ],
+      "carg": [
+        "RSJ17_16560"
+      ],
+      "cpy": [
+        "Cphy_2212"
+      ],
+      "cad": [
+        "Curi_c20950"
+      ],
+      "ssg": [
+        "Selsp_0180"
+      ],
+      "sri": [
+        "SELR_02040"
+      ],
+      "puf": [
+        "UFO1_1769"
+      ],
+      "pft": [
+        "JBW_01491"
+      ],
+      "ain": [
+        "Acin_0825"
+      ],
+      "msm": [
+        "MSMEG_0476"
+      ],
+      "msg": [
+        "MSMEI_0464"
+      ],
+      "msb": [
+        "LJ00_02360"
+      ],
+      "msn": [
+        "LI99_02360"
+      ],
+      "msh": [
+        "LI98_02360"
+      ],
+      "msa": [
+        "Mycsm_04036"
+      ],
+      "mcb": [
+        "Mycch_4139"
+      ],
+      "sdv": [
+        "BN159_3692"
+      ],
+      "scw": [
+        "TU94_00560"
+      ],
+      "sxi": [
+        "SXIM_46150"
+      ],
+      "stsi": [
+        "A4E84_30860"
+      ],
+      "sls": [
+        "SLINC_6403"
+      ],
+      "ssia": [
+        "A7J05_01625"
+      ],
+      "ksk": [
+        "KSE_12220"
+      ],
+      "lxy": [
+        "O159_27890"
+      ],
+      "mts": [
+        "MTES_0875"
+      ],
+      "cum": [
+        "NI26_07150"
+      ],
+      "cub": [
+        "BJK06_16440"
+      ],
+      "frp": [
+        "AX769_13460"
+      ],
+      "cphy": [
+        "B5808_16860"
+      ],
+      "bcv": [
+        "Bcav_1161"
+      ],
+      "cfl": [
+        "Cfla_3194"
+      ],
+      "cfi": [
+        "Celf_3613"
+      ],
+      "fre": [
+        "Franean1_7281"
+      ],
+      "fsy": [
+        "FsymDg_0656"
+      ],
+      "aos": [
+        "AXE84_06230"
+      ],
+      "cwo": [
+        "Cwoe_1375"
+      ],
+      "sht": [
+        "KO02_15915"
+      ],
+      "sphn": [
+        "BV902_01765"
+      ],
+      "gfo": [
+        "GFO_0015"
+      ],
+      "grl": [
+        "LPB144_05310"
+      ],
+      "fjo": [
+        "Fjoh_4840"
+      ],
+      "fjg": [
+        "BB050_02730"
+      ],
+      "fpsz": [
+        "AMR72_00595"
+      ],
+      "marm": [
+        "YQ22_09155"
+      ],
+      "mart": [
+        "BTR34_09245"
+      ],
+      "marb": [
+        "CJ263_07270"
+      ],
+      "cao": [
+        "Celal_4149"
+      ],
+      "cly": [
+        "Celly_0658"
+      ],
+      "clh": [
+        "IX49_03045"
+      ],
+      "cbal": [
+        "M667_17100"
+      ],
+      "cbat": [
+        "M666_17120"
+      ],
+      "kdi": [
+        "Krodi_0331"
+      ],
+      "dok": [
+        "MED134_02590"
+      ],
+      "ddo": [
+        "I597_2649"
+      ],
+      "lan": [
+        "Lacal_0533"
+      ],
+      "lvn": [
+        "BWR22_13300"
+      ],
+      "ptq": [
+        "P700755_000315"
+      ],
+      "eao": [
+        "BD94_2931"
+      ],
+      "emn": [
+        "M876_11925"
+      ],
+      "een": [
+        "BBD30_11850"
+      ],
+      "elb": [
+        "VO54_03644"
+      ],
+      "emg": [
+        "BBD33_08290"
+      ],
+      "ego": [
+        "BBD34_04060"
+      ],
+      "egm": [
+        "AYC65_02420"
+      ],
+      "myr": [
+        "MYRA21_2331"
+      ],
+      "mpw": [
+        "MPR_1080"
+      ],
+      "mod": [
+        "AS202_11375"
+      ],
+      "myz": [
+        "BK054_10980"
+      ],
+      "salt": [
+        "AO058_00495"
+      ],
+      "seon": [
+        "BWZ22_11870"
+      ],
+      "fba": [
+        "FIC_01710"
+      ],
+      "sula": [
+        "BFU36_13125"
+      ],
+      "nkr": [
+        "NKOR_02285"
+      ],
+      "nga": [
+        "Ngar_c30470"
+      ],
+      "nvn": [
+        "NVIE_010470",
+        "NVIE_023880",
+        "NVIE_023920"
+      ],
+      "nev": [
+        "NTE_00306",
+        "NTE_02402",
+        "NTE_03155",
+        "NTE_03158"
+      ],
+      "taa": [
+        "NMY3_02483"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.212"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.212"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.212"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.212"
+      ],
+      "CAS": [
+        "39346-43-5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "DeAngelis PL",
+          "Papaconstantinou J",
+          "Weigel PH."
+        ],
+        "title": "Molecular cloning, identification, and sequence of the hyaluronan synthase gene from group A Streptococcus pyogenes.",
+        "journal": "J. Biol. Chem. 268 (1993) 19181-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8366070]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Jing W",
+          "DeAngelis PL."
+        ],
+        "title": "Dissection of the two transferase activities of the Pasteurella multocida hyaluronan synthase: two active sites exist in one polypeptide.",
+        "journal": "Glycobiology. 10 (2000) 883-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10988250]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "DeAngelis PL."
+        ],
+        "title": "Molecular directionality of polysaccharide polymerization by the Pasteurella multocida hyaluronan synthase.",
+        "journal": "J. Biol. Chem. 274 (1999) 26557-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10473619]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tlapak-Simmons VL",
+          "Baron CA",
+          "Weigel PH."
+        ],
+        "title": "Characterization of the purified hyaluronan synthase from Streptococcus equisimilis.",
+        "journal": "Biochemistry. 43 (2004) 9234-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15248781]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

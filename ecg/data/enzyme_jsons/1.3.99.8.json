@@ -1,0 +1,416 @@
+[
+  {
+    "entry_id": "1.3.99.8",
+    "name": "2-furoyl-CoA dehydrogenase",
+    "names": [
+      "2-furoyl-CoA dehydrogenase",
+      "furoyl-CoA hydroxylase",
+      "2-furoyl coenzyme A hydroxylase",
+      "2-furoyl coenzyme A dehydrogenase",
+      "2-furoyl-CoA:(acceptor) 5-oxidoreductase (hydroxylating)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With unknown physiological acceptors"
+    ],
+    "sysname": "2-furoyl-CoA:acceptor 5-oxidoreductase (hydroxylating)",
+    "reaction": "2-furoyl-CoA + H2O + acceptor = S-(5-hydroxy-2-furoyl)-CoA + reduced acceptor [RN:R02987]",
+    "all_reac": "R02987",
+    "iubmb_reactions": [
+      "R02987"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "2-furoyl-CoA [CPD:C00845]",
+      "H2O [CPD:C00001]",
+      "acceptor [CPD:C00028]"
+    ],
+    "products": [
+      "S-(5-hydroxy-2-furoyl)-CoA [CPD:C03724]",
+      "reduced acceptor [CPD:C00030]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A copper protein. The oxygen atom of the -OH produced is derived from water, not O2; the actual oxidative step is probably dehydrogenation of a hydrated form -CHOH-CH2- to -C(OH)=CH-, which tautomerizes non-enzymically to -CO-CH2-, giving (5-oxo-4,5-dihydro-2-furoyl)-CoA. Methylene blue, nitro blue, tetrazolium and a membrane fraction from Pseudomonas putida can act as acceptors.",
+    "pathways": {
+      "ec00365": "Furfural degradation",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K16877": "2-furoyl-CoA dehydrogenase large subunit",
+      "K16878": "2-furoyl-CoA dehydrogenase FAD binding subunit",
+      "K16879": "2-furoyl-CoA dehydrogenase 2Fe-2S iron sulfur subunit"
+    },
+    "genes": {
+      "ppse": [
+        "BN5_2298",
+        "BN5_2299",
+        "BN5_2300"
+      ],
+      "pman": [
+        "OU5_0887",
+        "OU5_0888",
+        "OU5_0889"
+      ],
+      "pstt": [
+        "CH92_11530",
+        "CH92_11535",
+        "CH92_11540"
+      ],
+      "ppuu": [
+        "PputUW4_02623",
+        "PputUW4_02624",
+        "PputUW4_02625"
+      ],
+      "adi": [
+        "B5T_02845",
+        "B5T_02846",
+        "B5T_02847"
+      ],
+      "rpi": [
+        "Rpic_2052",
+        "Rpic_2053",
+        "Rpic_2054"
+      ],
+      "rpf": [
+        "Rpic12D_1744",
+        "Rpic12D_1745",
+        "Rpic12D_1746"
+      ],
+      "rpj": [
+        "N234_37060",
+        "N234_37065",
+        "N234_37070"
+      ],
+      "reu": [
+        "Reut_C5888",
+        "Reut_C5889",
+        "Reut_C5890"
+      ],
+      "reh": [
+        "H16_A1701",
+        "H16_A1702",
+        "H16_A1703"
+      ],
+      "cuh": [
+        "BJN34_36285"
+      ],
+      "bug": [
+        "BC1001_3787",
+        "BC1001_3788",
+        "BC1001_3789"
+      ],
+      "bge": [
+        "BC1002_5745",
+        "BC1002_5746",
+        "BC1002_5747"
+      ],
+      "bgf": [
+        "BC1003_0590",
+        "BC1003_0591",
+        "BC1003_0592"
+      ],
+      "byi": [
+        "BYI23_A013020",
+        "BYI23_A013030",
+        "BYI23_A013040"
+      ],
+      "buq": [
+        "AC233_20840",
+        "AC233_20845",
+        "AC233_20850"
+      ],
+      "buz": [
+        "AYM40_12175"
+      ],
+      "bxe": [
+        "Bxe_A2073",
+        "Bxe_A2074",
+        "Bxe_A2075"
+      ],
+      "bxb": [
+        "DR64_4228",
+        "DR64_4229",
+        "DR64_4230"
+      ],
+      "bph": [
+        "Bphy_6671",
+        "Bphy_6672",
+        "Bphy_6673"
+      ],
+      "bpx": [
+        "BUPH_00361",
+        "BUPH_00362",
+        "BUPH_00363"
+      ],
+      "bpy": [
+        "Bphyt_2183",
+        "Bphyt_2184",
+        "Bphyt_2185"
+      ],
+      "bfn": [
+        "OI25_3188",
+        "OI25_3189",
+        "OI25_3190"
+      ],
+      "bcai": [
+        "K788_0001305",
+        "K788_0001306",
+        "K788_0001307"
+      ],
+      "pdq": [
+        "CL55_00008510"
+      ],
+      "bbro": [
+        "BAU06_03095",
+        "BAU06_14975"
+      ],
+      "bfz": [
+        "BAU07_13320",
+        "BAU07_17250"
+      ],
+      "boh": [
+        "AKI39_05190"
+      ],
+      "amim": [
+        "MIM_c34420",
+        "MIM_c34430",
+        "MIM_c34440"
+      ],
+      "odi": [
+        "ODI_R0528"
+      ],
+      "ack": [
+        "C380_16255",
+        "C380_21260",
+        "C380_21265",
+        "C380_21270"
+      ],
+      "mln": [
+        "A9174_34060",
+        "A9174_34085"
+      ],
+      "bja": [
+        "blr3533",
+        "blr3534",
+        "blr3535"
+      ],
+      "bju": [
+        "BJ6T_61950",
+        "BJ6T_61960",
+        "BJ6T_61970"
+      ],
+      "bjp": [
+        "RN69_30010",
+        "RN69_30015",
+        "RN69_30020"
+      ],
+      "rpc": [
+        "RPC_0848",
+        "RPC_0849",
+        "RPC_0850"
+      ],
+      "bos": [
+        "BSY19_1060"
+      ],
+      "bvv": [
+        "BHK69_28550"
+      ],
+      "mrd": [
+        "Mrad2831_4723",
+        "Mrad2831_4724",
+        "Mrad2831_4725"
+      ],
+      "met": [
+        "M446_1301",
+        "M446_1302",
+        "M446_1303"
+      ],
+      "mno": [
+        "Mnod_3296",
+        "Mnod_3297",
+        "Mnod_3298"
+      ],
+      "mor": [
+        "MOC_3638",
+        "MOC_3639"
+      ],
+      "maqu": [
+        "Maq22A_c13995"
+      ],
+      "mphy": [
+        "MCBMB27_05472"
+      ],
+      "rhz": [
+        "RHPLAN_07940",
+        "RHPLAN_53800"
+      ],
+      "psin": [
+        "CAK95_25375",
+        "CAK95_28845"
+      ],
+      "dsh": [
+        "Dshi_3719",
+        "Dshi_3720",
+        "Dshi_3721"
+      ],
+      "ptp": [
+        "RCA23_c12070",
+        "RCA23_c12080"
+      ],
+      "cmag": [
+        "CBW24_14200"
+      ],
+      "paby": [
+        "Ga0080574_TMP3693"
+      ],
+      "acr": [
+        "Acry_0668",
+        "Acry_0669",
+        "Acry_0670"
+      ],
+      "amv": [
+        "ACMV_11990",
+        "ACMV_12000",
+        "ACMV_12010"
+      ],
+      "azl": [
+        "AZL_a11000",
+        "AZL_a11010",
+        "AZL_a11020"
+      ],
+      "ati": [
+        "AL072_24270",
+        "AL072_24275",
+        "AL072_24280"
+      ],
+      "gka": [
+        "GKP18",
+        "GKP19",
+        "GKP21"
+      ],
+      "gmc": [
+        "GY4MC1_2422",
+        "GY4MC1_2423",
+        "GY4MC1_2425"
+      ],
+      "ggh": [
+        "GHH_c13560",
+        "GHH_c13580",
+        "GHH_c13590"
+      ],
+      "ptl": [
+        "AOT13_10300"
+      ],
+      "anm": [
+        "GFC28_297"
+      ],
+      "anl": [
+        "GFC29_1327"
+      ],
+      "apak": [
+        "AP3564_10395"
+      ],
+      "shv": [
+        "AAT16_04525"
+      ],
+      "pnp": [
+        "IJ22_36540"
+      ],
+      "svl": [
+        "Strvi_4351"
+      ],
+      "src": [
+        "M271_02670"
+      ],
+      "amq": [
+        "AMETH_3079"
+      ],
+      "pdx": [
+        "Psed_5933"
+      ],
+      "psea": [
+        "WY02_08310"
+      ],
+      "sto": [
+        "STK_00930"
+      ],
+      "pyr": [
+        "P186_1143"
+      ],
+      "pog": [
+        "Pogu_1990"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.99.8"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.99.8"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.99.8"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.3.99.8"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.99.8"
+      ],
+      "CAS": [
+        "9068-18-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kitcher JP",
+          "Trudgill PW",
+          "Rees JS."
+        ],
+        "title": "Purification and properties of 2-furoyl-coenzyme A hydroxylase from Pseudomonas putida F2.",
+        "journal": "Biochem. J. 130 (1972) 121-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4655411]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

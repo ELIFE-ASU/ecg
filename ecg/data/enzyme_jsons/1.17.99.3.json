@@ -1,0 +1,519 @@
+[
+  {
+    "entry_id": "1.17.99.3",
+    "name": "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA 24-hydroxylase",
+    "names": [
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA 24-hydroxylase",
+      "trihydroxycoprostanoyl-CoA oxidase",
+      "THC-CoA oxidase",
+      "THCA-CoA oxidase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA oxidase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate 24-hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on CH or CH2 groups;",
+      "With unknown physiological acceptors"
+    ],
+    "sysname": "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA:acceptor 24-oxidoreductase (24R-hydroxylating)",
+    "reaction": "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA + H2O + acceptor = (24R,25R)-3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestan-26-oyl-CoA + reduced acceptor [RN:R07374]",
+    "all_reac": "R07374; (other) R08735 R08740",
+    "iubmb_reactions": [
+      "R07374"
+    ],
+    "kegg_reactions": [
+      "R08735 R08740"
+    ],
+    "substrates": [
+      "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oyl-CoA [CPD:C15613]",
+      "H2O [CPD:C00001]",
+      "acceptor [CPD:C00028]"
+    ],
+    "products": [
+      "(24R,25R)-3alpha,7alpha,12alpha,24-tetrahydroxy-5beta-cholestan-26-oyl-CoA [CPD:C15614]",
+      "reduced acceptor [CPD:C00030]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires ATP. The reaction in mammals possibly involves dehydrogenation to give a 24(25)-double bond followed by hydration [1]. However, in amphibians such as the Oriental fire-bellied toad (Bombina orientalis), it is probable that the product is formed via direct hydroxylation of the saturated side chain of (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate and not via hydration of a 24(25) double bond [5]. In microsomes, the free acid is preferred to the coenzyme A ester, whereas in mitochondria, the coenzyme A ester is preferred to the free-acid form of the substrate [1].",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K10214": "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA 24-hydroxylase"
+    },
+    "genes": {
+      "hsa": [
+        "8309"
+      ],
+      "ptr": [
+        "460479"
+      ],
+      "pps": [
+        "100987633"
+      ],
+      "ggo": [
+        "101135855"
+      ],
+      "pon": [
+        "100173031"
+      ],
+      "nle": [
+        "100579193"
+      ],
+      "mcc": [
+        "701565"
+      ],
+      "mcf": [
+        "102142571"
+      ],
+      "csab": [
+        "103227815"
+      ],
+      "rro": [
+        "104660198"
+      ],
+      "rbb": [
+        "108543617"
+      ],
+      "cjc": [
+        "100404475"
+      ],
+      "sbq": [
+        "101051802"
+      ],
+      "mmu": [
+        "93732"
+      ],
+      "rno": [
+        "252898"
+      ],
+      "cge": [
+        "100766043"
+      ],
+      "ngi": [
+        "103740540"
+      ],
+      "hgl": [
+        "101716015"
+      ],
+      "ccan": [
+        "109697261"
+      ],
+      "ocu": [
+        "100009549"
+      ],
+      "tup": [
+        "102491187"
+      ],
+      "cfa": [
+        "100855488"
+      ],
+      "aml": [
+        "100483316"
+      ],
+      "umr": [
+        "103674276"
+      ],
+      "oro": [
+        "101386426"
+      ],
+      "fca": [
+        "101101039"
+      ],
+      "ptg": [
+        "102972085"
+      ],
+      "aju": [
+        "106968832"
+      ],
+      "bta": [
+        "514969"
+      ],
+      "bom": [
+        "102287053"
+      ],
+      "biu": [
+        "109576197"
+      ],
+      "phd": [
+        "102318717"
+      ],
+      "chx": [
+        "102184385"
+      ],
+      "oas": [
+        "101121460"
+      ],
+      "ssc": [
+        "100516877"
+      ],
+      "cfr": [
+        "102512694"
+      ],
+      "cdk": [
+        "105089810"
+      ],
+      "bacu": [
+        "102999785"
+      ],
+      "lve": [
+        "103086040"
+      ],
+      "ecb": [
+        "100050425"
+      ],
+      "epz": [
+        "103550743"
+      ],
+      "eai": [
+        "106848667"
+      ],
+      "myb": [
+        "102260512"
+      ],
+      "myd": [
+        "102766328"
+      ],
+      "hai": [
+        "109388232"
+      ],
+      "rss": [
+        "109443586"
+      ],
+      "pale": [
+        "102884254"
+      ],
+      "lav": [
+        "100655728"
+      ],
+      "tmu": [
+        "101353097"
+      ],
+      "mdo": [
+        "100028782"
+      ],
+      "shr": [
+        "100924634"
+      ],
+      "oaa": [
+        "100074731"
+      ],
+      "gga": [
+        "416068"
+      ],
+      "mgp": [
+        "100545690"
+      ],
+      "cjo": [
+        "107319785"
+      ],
+      "apla": [
+        "101804343"
+      ],
+      "acyg": [
+        "106035476"
+      ],
+      "tgu": [
+        "100228411"
+      ],
+      "gfr": [
+        "102044390"
+      ],
+      "fab": [
+        "101820029"
+      ],
+      "phi": [
+        "102102070"
+      ],
+      "pmaj": [
+        "107210348"
+      ],
+      "ccw": [
+        "104683332"
+      ],
+      "fpg": [
+        "101910731"
+      ],
+      "fch": [
+        "102048175"
+      ],
+      "clv": [
+        "102092775"
+      ],
+      "egz": [
+        "104134791"
+      ],
+      "aam": [
+        "106489663"
+      ],
+      "asn": [
+        "102380977"
+      ],
+      "amj": [
+        "102563802"
+      ],
+      "pss": [
+        "102450027"
+      ],
+      "cmy": [
+        "102935400"
+      ],
+      "cpic": [
+        "101950611"
+      ],
+      "acs": [
+        "100556696"
+      ],
+      "pvt": [
+        "110079915"
+      ],
+      "pbi": [
+        "103062545"
+      ],
+      "gja": [
+        "107119599"
+      ],
+      "xla": [
+        "414480"
+      ],
+      "xtr": [
+        "548740"
+      ],
+      "npr": [
+        "108791853"
+      ],
+      "lcm": [
+        "102363316"
+      ],
+      "cmk": [
+        "103179753"
+      ],
+      "cin": [
+        "100186223"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.17.99.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.17.99.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.17.99.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.17.99.3"
+      ],
+      "CAS": [
+        "119799-47-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Gustafsson J."
+        ],
+        "title": "Biosynthesis of cholic acid in rat liver. 24-Hydroxylation of 3alpha, 7alpha, 12alpha-trihydroxy-5beta-cholestanoic acid.",
+        "journal": "J. Biol. Chem. 250 (1975) 8243-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:240854]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schepers L",
+          "Van Veldhoven PP",
+          "Casteels M",
+          "Eyssen HJ",
+          "Mannaerts GP."
+        ],
+        "title": "Presence of three acyl-CoA oxidases in rat liver peroxisomes. An inducible fatty acyl-CoA oxidase, a noninducible fatty acyl-CoA oxidase, and a noninducible trihydroxycoprostanoyl-CoA oxidase.",
+        "journal": "J. Biol. Chem. 265 (1990) 5242-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:2156865]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dieuaide-Noubhani M",
+          "Novikov D",
+          "Baumgart E",
+          "Vanhooren JC",
+          "Fransen M",
+          "Goethals M",
+          "Vandekerckhove J",
+          "Van Veldhoven PP",
+          "Mannaerts GP."
+        ],
+        "title": "Further characterization of the peroxisomal 3-hydroxyacyl-CoA dehydrogenases from rat liver. Relationship between the different dehydrogenases and evidence that fatty acids and the C27 bile acids di- and tri-hydroxycoprostanic acids are metabolized by separate multifunctional proteins.",
+        "journal": "Eur. J. Biochem. 240 (1996) 660-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:8856068]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dieuaide-Noubhani M",
+          "Novikov D",
+          "Baumgart E",
+          "Vanhooren JC",
+          "Fransen M",
+          "Goethals M",
+          "Vandekerckhove J",
+          "Van Veldhoven PP",
+          "Mannaerts GP."
+        ],
+        "title": "Further characterization of the peroxisomal 3-hydroxyacyl-CoA dehydrogenases from rat liver. Relationship between the different dehydrogenases and evidence that fatty acids and the C27 bile acids di- and tri-hydroxycoprostanic acids are metabolized by separate multifunctional proteins.",
+        "journal": "Eur. J. Biochem. 240 (1996) 660-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:8856068]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pedersen JI",
+          "Eggertsen G",
+          "Hellman U",
+          "Andersson U",
+          "Bjorkhem I."
+        ],
+        "title": "Molecular cloning and expression of cDNA encoding 3alpha,7alpha,12alpha-trihydroxy-5beta-chole stanoyl-CoA oxidase from rabbit liver.",
+        "journal": "J. Biol. Chem. 272 (1997) 18481-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:9218493]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Russell DW."
+        ],
+        "title": "The enzymes, regulation, and genetics of bile acid synthesis.",
+        "journal": "Annu. Rev. Biochem. 72 (2003) 137-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:12543708]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

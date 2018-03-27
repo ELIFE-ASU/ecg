@@ -1,0 +1,866 @@
+[
+  {
+    "entry_id": "1.14.16.4",
+    "name": "tryptophan 5-monooxygenase",
+    "names": [
+      "tryptophan 5-monooxygenase",
+      "L-tryptophan hydroxylase",
+      "indoleacetic acid-5-hydroxylase",
+      "tryptophan 5-hydroxylase",
+      "tryptophan hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced pteridine as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-tryptophan,tetrahydrobiopterin:oxygen oxidoreductase (5-hydroxylating)",
+    "reaction": "L-tryptophan + tetrahydrobiopterin + O2 = 5-hydroxy-L-tryptophan + 4a-hydroxytetrahydrobiopterin [RN:R07213]",
+    "all_reac": "R07213; (other) R01814",
+    "iubmb_reactions": [
+      "R07213"
+    ],
+    "kegg_reactions": [
+      "R01814"
+    ],
+    "substrates": [
+      "L-tryptophan [CPD:C00078]",
+      "tetrahydrobiopterin [CPD:C00272]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "5-hydroxy-L-tryptophan [CPD:C00643]",
+      "4a-hydroxytetrahydrobiopterin [CPD:C15522]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The active centre contains mononuclear iron(II). The enzyme is activated by phosphorylation, catalysed by a Ca2+-activated protein kinase. The 4a-hydroxytetrahydrobiopterin formed can dehydrate to 6,7-dihydrobiopterin, both spontaneously and by the action of EC 4.2.1.96, 4a-hydroxytetrahydrobiopterin dehydratase. The 6,7-dihydrobiopterin can be enzymically reduced back to tetrahydrobiopterin, by EC 1.5.1.34 (6,7-dihydropteridine reductase), or slowly rearranges into the more stable compound 7,8-dihydrobiopterin.",
+    "pathways": {
+      "ec00380": "Tryptophan metabolism",
+      "ec00790": "Folate biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00502": "tryptophan 5-monooxygenase"
+    },
+    "genes": {
+      "hsa": [
+        "121278",
+        "7166"
+      ],
+      "ptr": [
+        "466453",
+        "467070"
+      ],
+      "pps": [
+        "100977344",
+        "103782654"
+      ],
+      "ggo": [
+        "101132108",
+        "101146582"
+      ],
+      "pon": [
+        "100459809",
+        "103891844"
+      ],
+      "nle": [
+        "100588345",
+        "100601780"
+      ],
+      "mcc": [
+        "664730",
+        "695363"
+      ],
+      "mcf": [
+        "102124167",
+        "102145077"
+      ],
+      "csab": [
+        "103238730",
+        "103239320"
+      ],
+      "rro": [
+        "104667637",
+        "104668095"
+      ],
+      "rbb": [
+        "108526665",
+        "108528377"
+      ],
+      "cjc": [
+        "100403096",
+        "100415029"
+      ],
+      "sbq": [
+        "101051709",
+        "104652952"
+      ],
+      "mmu": [
+        "216343",
+        "21990"
+      ],
+      "rno": [
+        "24848",
+        "317675"
+      ],
+      "cge": [
+        "100763947",
+        "100767923"
+      ],
+      "ngi": [
+        "103734460",
+        "103735331"
+      ],
+      "hgl": [
+        "101710219",
+        "101714361"
+      ],
+      "ccan": [
+        "109675533",
+        "109679995"
+      ],
+      "ocu": [
+        "100009100",
+        "100101558",
+        "100344397"
+      ],
+      "tup": [
+        "102481223",
+        "102487889"
+      ],
+      "cfa": [
+        "481165",
+        "611956"
+      ],
+      "aml": [
+        "100467699",
+        "100472165"
+      ],
+      "umr": [
+        "103656892",
+        "103679407"
+      ],
+      "oro": [
+        "101364741",
+        "101369839"
+      ],
+      "fca": [
+        "101082165",
+        "101098575"
+      ],
+      "ptg": [
+        "102948910",
+        "102969936"
+      ],
+      "aju": [
+        "106967384",
+        "106977480"
+      ],
+      "bta": [
+        "100336620",
+        "781941"
+      ],
+      "bom": [
+        "102269915",
+        "102275621"
+      ],
+      "biu": [
+        "109558652",
+        "109569943"
+      ],
+      "phd": [
+        "102324712",
+        "102328991"
+      ],
+      "chx": [
+        "102174722",
+        "102184739"
+      ],
+      "oas": [
+        "101113620",
+        "101120314"
+      ],
+      "ssc": [
+        "100511002",
+        "100627725"
+      ],
+      "cfr": [
+        "102512650",
+        "102522464"
+      ],
+      "cdk": [
+        "105086665",
+        "105095994"
+      ],
+      "bacu": [
+        "102997866",
+        "103006656"
+      ],
+      "lve": [
+        "103083324",
+        "103087968"
+      ],
+      "ecb": [
+        "100009684",
+        "100056614"
+      ],
+      "epz": [
+        "103559190",
+        "103561950"
+      ],
+      "eai": [
+        "106826108",
+        "106835485"
+      ],
+      "myb": [
+        "102241626",
+        "102244804"
+      ],
+      "myd": [
+        "102753485",
+        "102767513"
+      ],
+      "hai": [
+        "109387680",
+        "109388096"
+      ],
+      "rss": [
+        "109436423",
+        "109456565"
+      ],
+      "pale": [
+        "102882683",
+        "102891331"
+      ],
+      "lav": [
+        "100658860",
+        "100669911",
+        "104847369"
+      ],
+      "tmu": [
+        "101355042",
+        "101360632"
+      ],
+      "mdo": [
+        "100011937",
+        "100020009"
+      ],
+      "shr": [
+        "100915442",
+        "100923184"
+      ],
+      "oaa": [
+        "100090381"
+      ],
+      "gga": [
+        "395799",
+        "408026"
+      ],
+      "mgp": [
+        "100303678",
+        "100549515"
+      ],
+      "cjo": [
+        "107310284",
+        "107314681"
+      ],
+      "apla": [
+        "101793780",
+        "101797806",
+        "106015262"
+      ],
+      "acyg": [
+        "106033856",
+        "106042627",
+        "106046728"
+      ],
+      "tgu": [
+        "100228542",
+        "100229598"
+      ],
+      "gfr": [
+        "102036017",
+        "102041307"
+      ],
+      "fab": [
+        "101817911",
+        "101820220"
+      ],
+      "phi": [
+        "102103962",
+        "102106431"
+      ],
+      "pmaj": [
+        "107204683",
+        "107205260"
+      ],
+      "ccw": [
+        "104685325",
+        "104698473"
+      ],
+      "fpg": [
+        "101914983",
+        "101918183"
+      ],
+      "fch": [
+        "102052919",
+        "102057315"
+      ],
+      "clv": [
+        "102092014",
+        "102095810"
+      ],
+      "egz": [
+        "104123206",
+        "104132957"
+      ],
+      "aam": [
+        "106488161",
+        "106497047"
+      ],
+      "asn": [
+        "102376121",
+        "102380987"
+      ],
+      "amj": [
+        "102560538",
+        "102572294"
+      ],
+      "pss": [
+        "102445658",
+        "102460535"
+      ],
+      "cmy": [
+        "102930035",
+        "102934830"
+      ],
+      "cpic": [
+        "101933912",
+        "101948172"
+      ],
+      "acs": [
+        "100562860",
+        "100564918"
+      ],
+      "pvt": [
+        "110084890",
+        "110088804"
+      ],
+      "pbi": [
+        "103048564",
+        "103061225",
+        "103062013"
+      ],
+      "gja": [
+        "107115340",
+        "107115550"
+      ],
+      "xla": [
+        "108710258",
+        "108713144",
+        "387560"
+      ],
+      "xtr": [
+        "100486097",
+        "100497239"
+      ],
+      "npr": [
+        "108785999",
+        "108788312"
+      ],
+      "dre": [
+        "352943",
+        "407712",
+        "415103"
+      ],
+      "srx": [
+        "107720785",
+        "107735009",
+        "107736051",
+        "107740327",
+        "107740493",
+        "107749937",
+        "107750725",
+        "107755016"
+      ],
+      "sanh": [
+        "107663941",
+        "107670227",
+        "107672314",
+        "107673292",
+        "107686260",
+        "107700369"
+      ],
+      "sgh": [
+        "107553080",
+        "107557706",
+        "107559977",
+        "107564603",
+        "107569655",
+        "107580796",
+        "107583800"
+      ],
+      "ccar": [
+        "109074186",
+        "109074194",
+        "109077220",
+        "109086690",
+        "109110720"
+      ],
+      "ipu": [
+        "108259139",
+        "108263971",
+        "108274454"
+      ],
+      "amex": [
+        "103025693",
+        "103043966",
+        "103046451"
+      ],
+      "tru": [
+        "446047",
+        "446048"
+      ],
+      "tng": [
+        "GSTEN00000448G001",
+        "GSTEN00006938G001"
+      ],
+      "lco": [
+        "104921438",
+        "104932027",
+        "104938290"
+      ],
+      "ncc": [
+        "104952790",
+        "104964093",
+        "104964502",
+        "104965427"
+      ],
+      "mze": [
+        "101480764",
+        "101484460",
+        "101486409"
+      ],
+      "ola": [
+        "101166957",
+        "101170994",
+        "101175562"
+      ],
+      "xma": [
+        "102216868",
+        "102234879",
+        "102236889"
+      ],
+      "pret": [
+        "103462259",
+        "103466377",
+        "103466482"
+      ],
+      "csem": [
+        "103379608",
+        "103380212"
+      ],
+      "lcf": [
+        "108876698",
+        "108891738"
+      ],
+      "hcq": [
+        "109507516",
+        "109518199",
+        "109529786"
+      ],
+      "bpec": [
+        "110162577",
+        "110168313",
+        "110169358"
+      ],
+      "sasa": [
+        "106561539",
+        "106562311",
+        "106584760",
+        "106587468"
+      ],
+      "els": [
+        "105018201",
+        "105018238"
+      ],
+      "sfm": [
+        "108936426",
+        "108941264",
+        "108942210"
+      ],
+      "lcm": [
+        "102362567",
+        "102363250"
+      ],
+      "cmk": [
+        "103174831",
+        "103185330"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_58122"
+      ],
+      "cin": [
+        "100049066"
+      ],
+      "spu": [
+        "578903"
+      ],
+      "aplc": [
+        "110981081"
+      ],
+      "sko": [
+        "100329006"
+      ],
+      "dme": [
+        "Dmel_CG9122"
+      ],
+      "dpo": [
+        "Dpse_GA21560"
+      ],
+      "dan": [
+        "Dana_GF10077"
+      ],
+      "der": [
+        "Dere_GG14621"
+      ],
+      "dpe": [
+        "Dper_GL24728",
+        "Dper_GL25460"
+      ],
+      "dse": [
+        "Dsec_GM14234"
+      ],
+      "dsi": [
+        "Dsimw501_GD13494"
+      ],
+      "dwi": [
+        "Dwil_GK16857"
+      ],
+      "dya": [
+        "Dyak_GE20982"
+      ],
+      "dgr": [
+        "Dgri_GH15664"
+      ],
+      "dmo": [
+        "Dmoj_GI12709"
+      ],
+      "dvi": [
+        "Dvir_GJ12694"
+      ],
+      "mde": [
+        "101893101"
+      ],
+      "aga": [
+        "AgaP_AGAP006020"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ019741"
+      ],
+      "ame": [
+        "411200"
+      ],
+      "bim": [
+        "100742465"
+      ],
+      "bter": [
+        "100647460"
+      ],
+      "soc": [
+        "105194454"
+      ],
+      "aec": [
+        "105145053"
+      ],
+      "acep": [
+        "105619346"
+      ],
+      "pbar": [
+        "105430282"
+      ],
+      "hst": [
+        "105182103"
+      ],
+      "cfo": [
+        "105251016"
+      ],
+      "lhu": [
+        "105678051"
+      ],
+      "pgc": [
+        "109861523"
+      ],
+      "nvi": [
+        "100123183"
+      ],
+      "tca": [
+        "655758"
+      ],
+      "dpa": [
+        "109539121"
+      ],
+      "nvl": [
+        "108562706"
+      ],
+      "bmor": [
+        "101740691"
+      ],
+      "dpl": [
+        "KGM_207185"
+      ],
+      "pmac": [
+        "106717008"
+      ],
+      "pxy": [
+        "105389797"
+      ],
+      "api": [
+        "100158737"
+      ],
+      "dnx": [
+        "107164769"
+      ],
+      "phu": [
+        "Phum_PHUM538550"
+      ],
+      "zne": [
+        "110836317"
+      ],
+      "fcd": [
+        "110856969"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_44381"
+      ],
+      "isc": [
+        "IscW_ISCW000796"
+      ],
+      "tut": [
+        "107363777"
+      ],
+      "loa": [
+        "LOAG_01930"
+      ],
+      "tsp": [
+        "Tsp_05203"
+      ],
+      "hro": [
+        "HELRODRAFT_79745"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_229367"
+      ],
+      "crg": [
+        "105336312"
+      ],
+      "myi": [
+        "110454322"
+      ],
+      "obi": [
+        "106875341"
+      ],
+      "lak": [
+        "106175748"
+      ],
+      "smm": [
+        "Smp_174920"
+      ],
+      "shx": [
+        "MS3_06981"
+      ],
+      "ovi": [
+        "T265_11906"
+      ],
+      "apro": [
+        "F751_2362"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.16.4"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.16.4"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.16.4"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.16.4"
+      ],
+      "CAS": [
+        "9037-21-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Friedman PA",
+          "Kappelman AH",
+          "Kaufman S."
+        ],
+        "title": "Partial purification and characterization of tryptophan hydroxylase from rabbit hindbrain.",
+        "journal": "J. Biol. Chem. 247 (1972) 4165-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4402511]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hamon M",
+          "Bourgoin S",
+          "Artaud F",
+          "Glowinski J."
+        ],
+        "title": "The role of intraneuronal 5-HT and of tryptophan hydroxylase activation in the control of 5-HT synthesis in rat brain slices incubated in K+-enriched medium.",
+        "journal": "J. Neurochem. 33 (1979) 1031-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:315449]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ichiyama A",
+          "Nakamura S",
+          "Nishizuka Y",
+          "Hayaishi O."
+        ],
+        "title": "Enzymic studies on the biosynthesis of serotonin in mammalian brain.",
+        "journal": "J. Biol. Chem. 245 (1970) 1699-709.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:5309585]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Jequier E",
+          "Robinson DS",
+          "Lovenberg W",
+          "Sjoerdsma A."
+        ],
+        "title": "Further studies on tryptophan hydroxylase in rat brainstem and beef pineal.",
+        "journal": "Biochem. Pharmacol. 18 (1969) 1071-81.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:5789774]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wang L",
+          "Erlandsen H",
+          "Haavik J",
+          "Knappskog PM",
+          "Stevens RC."
+        ],
+        "title": "Three-dimensional structure of human tryptophan hydroxylase and its implications for the biosynthesis of the neurotransmitters serotonin and melatonin.",
+        "journal": "Biochemistry. 41 (2002) 12569-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:12379098]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

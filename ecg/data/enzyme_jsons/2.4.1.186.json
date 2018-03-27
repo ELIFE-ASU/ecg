@@ -1,0 +1,1317 @@
+[
+  {
+    "entry_id": "2.4.1.186",
+    "name": "glycogenin glucosyltransferase",
+    "names": [
+      "glycogenin glucosyltransferase",
+      "glycogenin",
+      "priming glucosyltransferase",
+      "UDP-glucose:glycogenin glucosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-alpha-D-glucose:glycogenin alpha-D-glucosyltransferase",
+    "reaction": "UDP-alpha-D-glucose + glycogenin = UDP + alpha-D-glucosylglycogenin [RN:R03681]",
+    "all_reac": "R03681",
+    "iubmb_reactions": [
+      "R03681"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "UDP-alpha-D-glucose [CPD:C00029]",
+      "glycogenin [CPD:C01702]"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "alpha-D-glucosylglycogenin [CPD:C02687]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The first reaction of this enzyme is to catalyse its own glucosylation, normally at Tyr-194 of the protein if this group is free. When Tyr-194 is replaced by Thr or Phe, the enzyme's Mn2+-dependent self-glucosylation activity is lost but its intermolecular transglucosylation ability remains [7]. It continues to glucosylate an existing glucosyl group until a length of about 5--13 residues has been formed. Further lengthening of the glycogen chain is then carried out by EC 2.4.1.11, glycogen (starch) synthase. The enzyme is not highly specific for the donor, using UDP-xylose in addition to UDP-glucose (although not glucosylating or xylosylating a xylosyl group so added). It can also use CDP-glucose and TDP-glucose, but not ADP-glucose or GDP-glucose. Similarly it is not highly specific for the acceptor, using water (i.e. hydrolysing UDP-glucose) among others. Various forms of the enzyme exist, and different forms predominate in different organs. Thus primate liver contains glycogenin-2, of molecular mass 66 kDa, whereas the more widespread form is glycogenin-1, with a molecular mass of 38 kDa.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K00750": "glycogenin"
+    },
+    "genes": {
+      "hsa": [
+        "2992",
+        "8908"
+      ],
+      "ptr": [
+        "460765",
+        "465469"
+      ],
+      "pps": [
+        "100977408",
+        "100995852"
+      ],
+      "ggo": [
+        "101130219",
+        "101153384"
+      ],
+      "pon": [
+        "100431369",
+        "100434629"
+      ],
+      "nle": [
+        "100579312",
+        "100598771"
+      ],
+      "mcc": [
+        "712495",
+        "720568"
+      ],
+      "mcf": [
+        "101926679",
+        "102135191",
+        "102136979"
+      ],
+      "csab": [
+        "103231541",
+        "103241506"
+      ],
+      "rro": [
+        "104671556",
+        "104678275"
+      ],
+      "rbb": [
+        "108518298",
+        "108537905"
+      ],
+      "cjc": [
+        "100405072",
+        "100407906",
+        "108589838"
+      ],
+      "sbq": [
+        "101048137",
+        "101053597"
+      ],
+      "mmu": [
+        "27357"
+      ],
+      "rno": [
+        "81675"
+      ],
+      "cge": [
+        "100751671"
+      ],
+      "ngi": [
+        "103745990"
+      ],
+      "hgl": [
+        "101709254",
+        "101716513"
+      ],
+      "ccan": [
+        "109682828",
+        "109698210"
+      ],
+      "ocu": [
+        "100009058"
+      ],
+      "tup": [
+        "102473120",
+        "102475805"
+      ],
+      "cfa": [
+        "491717",
+        "611614"
+      ],
+      "aml": [
+        "100468752",
+        "100473212"
+      ],
+      "umr": [
+        "103666302",
+        "103681483"
+      ],
+      "oro": [
+        "101375485",
+        "101384616"
+      ],
+      "fca": [
+        "101080946",
+        "101082176"
+      ],
+      "ptg": [
+        "102959321",
+        "102968386"
+      ],
+      "aju": [
+        "106975172",
+        "106982065"
+      ],
+      "bta": [
+        "280812",
+        "505258"
+      ],
+      "bom": [
+        "102265731",
+        "102267728"
+      ],
+      "biu": [
+        "109555288",
+        "109563118"
+      ],
+      "phd": [
+        "102332563",
+        "102338836"
+      ],
+      "chx": [
+        "102175944",
+        "102184201"
+      ],
+      "oas": [
+        "101103289",
+        "101115765"
+      ],
+      "ssc": [
+        "100620160",
+        "102163050"
+      ],
+      "cfr": [
+        "102509684",
+        "102514856"
+      ],
+      "cdk": [
+        "105089507",
+        "105097369"
+      ],
+      "bacu": [
+        "103001146",
+        "103003273"
+      ],
+      "lve": [
+        "103082327",
+        "103089765"
+      ],
+      "ecb": [
+        "100058811",
+        "100064536"
+      ],
+      "epz": [
+        "103558755",
+        "103567712"
+      ],
+      "eai": [
+        "106821913",
+        "106829422"
+      ],
+      "myb": [
+        "102241317",
+        "102244006"
+      ],
+      "myd": [
+        "102758721",
+        "102770013"
+      ],
+      "hai": [
+        "109373337",
+        "109375862"
+      ],
+      "rss": [
+        "109436194",
+        "109438154",
+        "109456498"
+      ],
+      "pale": [
+        "102881568",
+        "102897839"
+      ],
+      "lav": [
+        "100655607",
+        "100674831"
+      ],
+      "tmu": [
+        "101354518",
+        "101357997"
+      ],
+      "mdo": [
+        "100010174",
+        "100012580"
+      ],
+      "shr": [
+        "100926747",
+        "100931311"
+      ],
+      "oaa": [
+        "100075592"
+      ],
+      "gga": [
+        "418660",
+        "425050"
+      ],
+      "mgp": [
+        "100546787",
+        "100549941"
+      ],
+      "cjo": [
+        "107305955",
+        "107318416"
+      ],
+      "apla": [
+        "101789597",
+        "101797402"
+      ],
+      "acyg": [
+        "106035748",
+        "106047693"
+      ],
+      "tgu": [
+        "100219874",
+        "100226558"
+      ],
+      "gfr": [
+        "102031328",
+        "102033549"
+      ],
+      "fab": [
+        "101817442",
+        "101821265"
+      ],
+      "phi": [
+        "102111619",
+        "102114605"
+      ],
+      "pmaj": [
+        "107208822",
+        "107211785"
+      ],
+      "ccw": [
+        "104686004",
+        "104688114"
+      ],
+      "fpg": [
+        "101918206",
+        "101922940"
+      ],
+      "fch": [
+        "102045779",
+        "102056432"
+      ],
+      "clv": [
+        "102093487",
+        "102093817"
+      ],
+      "egz": [
+        "104122295",
+        "104127467"
+      ],
+      "aam": [
+        "106484200",
+        "106491336"
+      ],
+      "asn": [
+        "102371930"
+      ],
+      "amj": [
+        "102570451"
+      ],
+      "pss": [
+        "102455672",
+        "102456769"
+      ],
+      "cmy": [
+        "102942072",
+        "102942316"
+      ],
+      "cpic": [
+        "101931228",
+        "101934586",
+        "101951022"
+      ],
+      "acs": [
+        "100557488",
+        "100562212"
+      ],
+      "pvt": [
+        "110073049",
+        "110075590"
+      ],
+      "pbi": [
+        "103060810",
+        "103068160"
+      ],
+      "gja": [
+        "107123290",
+        "107124665"
+      ],
+      "xla": [
+        "100126641",
+        "398319",
+        "446485",
+        "779133"
+      ],
+      "xtr": [
+        "394883",
+        "496877"
+      ],
+      "npr": [
+        "108785075",
+        "108797305"
+      ],
+      "dre": [
+        "406831",
+        "415152",
+        "561803"
+      ],
+      "srx": [
+        "107709894",
+        "107713835",
+        "107722604",
+        "107734383",
+        "107746642"
+      ],
+      "sanh": [
+        "107680244",
+        "107683486",
+        "107687507",
+        "107688484",
+        "107691603"
+      ],
+      "sgh": [
+        "107550614",
+        "107552233",
+        "107585020",
+        "107588102",
+        "107600139"
+      ],
+      "ccar": [
+        "109049062",
+        "109049371",
+        "109055901",
+        "109055903",
+        "109095157"
+      ],
+      "ipu": [
+        "100528900",
+        "108258917",
+        "108278056"
+      ],
+      "amex": [
+        "103027478",
+        "103032162",
+        "103036357"
+      ],
+      "tru": [
+        "101065299",
+        "101067151",
+        "101076042"
+      ],
+      "tng": [
+        "GSTEN00023934G001",
+        "GSTEN00027092G001",
+        "GSTEN00035964G001"
+      ],
+      "lco": [
+        "104932560",
+        "104935259",
+        "104937198",
+        "109138453",
+        "109139866"
+      ],
+      "ncc": [
+        "104948118",
+        "104951986",
+        "104958466",
+        "104961965"
+      ],
+      "mze": [
+        "101474725",
+        "101478347",
+        "101480939"
+      ],
+      "ola": [
+        "101157097",
+        "101169002",
+        "101169587"
+      ],
+      "xma": [
+        "102221864",
+        "102232525",
+        "106699962"
+      ],
+      "pret": [
+        "103456549",
+        "103458431",
+        "103477311"
+      ],
+      "csem": [
+        "103377265",
+        "103379081",
+        "103389738"
+      ],
+      "lcf": [
+        "108875008",
+        "108881690",
+        "108902577"
+      ],
+      "hcq": [
+        "109517431",
+        "109519486"
+      ],
+      "bpec": [
+        "110154964",
+        "110161075",
+        "110170042"
+      ],
+      "sasa": [
+        "100194801",
+        "106575201",
+        "106575442",
+        "106579759",
+        "106591034"
+      ],
+      "els": [
+        "105019807",
+        "105022511",
+        "105026595"
+      ],
+      "sfm": [
+        "108927809",
+        "108935215"
+      ],
+      "lcm": [
+        "102348178",
+        "102367058"
+      ],
+      "cmk": [
+        "103184449"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_257976"
+      ],
+      "cin": [
+        "100178599"
+      ],
+      "spu": [
+        "754694"
+      ],
+      "aplc": [
+        "110981654"
+      ],
+      "dme": [
+        "Dmel_CG44244"
+      ],
+      "dpo": [
+        "Dpse_GA21819"
+      ],
+      "dan": [
+        "Dana_GF12803"
+      ],
+      "der": [
+        "Dere_GG22100"
+      ],
+      "dpe": [
+        "Dper_GL11328"
+      ],
+      "dse": [
+        "Dsec_GM15817"
+      ],
+      "dsi": [
+        "Dsimw501_GD11576"
+      ],
+      "dwi": [
+        "Dwil_GK15794"
+      ],
+      "dya": [
+        "Dyak_GE12180"
+      ],
+      "dgr": [
+        "Dgri_GH21859"
+      ],
+      "dmo": [
+        "Dmoj_GI20361"
+      ],
+      "dvi": [
+        "Dvir_GJ22086"
+      ],
+      "mde": [
+        "101889378"
+      ],
+      "aga": [
+        "AgaP_AGAP007724"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ013596"
+      ],
+      "ame": [
+        "552421"
+      ],
+      "bim": [
+        "100747793"
+      ],
+      "bter": [
+        "100651605"
+      ],
+      "soc": [
+        "105200552"
+      ],
+      "aec": [
+        "105149519"
+      ],
+      "acep": [
+        "105622442"
+      ],
+      "pbar": [
+        "105429879"
+      ],
+      "hst": [
+        "105188090"
+      ],
+      "cfo": [
+        "105251584"
+      ],
+      "lhu": [
+        "105667339"
+      ],
+      "pgc": [
+        "109853746"
+      ],
+      "nvi": [
+        "100122700"
+      ],
+      "tca": [
+        "656402"
+      ],
+      "dpa": [
+        "109541006"
+      ],
+      "nvl": [
+        "108564230"
+      ],
+      "bmor": [
+        "101741984"
+      ],
+      "dpl": [
+        "KGM_201438"
+      ],
+      "pmac": [
+        "106716920"
+      ],
+      "api": [
+        "100164266"
+      ],
+      "dnx": [
+        "107167815",
+        "107172009"
+      ],
+      "phu": [
+        "Phum_PHUM407280"
+      ],
+      "zne": [
+        "110838406"
+      ],
+      "fcd": [
+        "110852655",
+        "110856296"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_213367"
+      ],
+      "isc": [
+        "IscW_ISCW005321",
+        "IscW_ISCW006112",
+        "IscW_ISCW017044"
+      ],
+      "tut": [
+        "107368895"
+      ],
+      "cel": [
+        "CELE_F56B6.4",
+        "CELE_T25E12.5"
+      ],
+      "cbr": [
+        "CBG13253",
+        "CBG14232"
+      ],
+      "nai": [
+        "NECAME_05664"
+      ],
+      "bmy": [
+        "Bm1_16775"
+      ],
+      "loa": [
+        "LOAG_04688"
+      ],
+      "tsp": [
+        "Tsp_05820"
+      ],
+      "hro": [
+        "HELRODRAFT_71005",
+        "HELRODRAFT_75443",
+        "HELRODRAFT_77815"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_164406",
+        "LOTGIDRAFT_94313"
+      ],
+      "crg": [
+        "105334348"
+      ],
+      "myi": [
+        "110449160"
+      ],
+      "obi": [
+        "106872431"
+      ],
+      "lak": [
+        "106152467",
+        "106161647"
+      ],
+      "smm": [
+        "Smp_008490"
+      ],
+      "shx": [
+        "MS3_09086",
+        "MS3_11115"
+      ],
+      "ovi": [
+        "T265_03971",
+        "T265_08805"
+      ],
+      "nve": [
+        "NEMVE_v1g129041"
+      ],
+      "epa": [
+        "110231378",
+        "110241113",
+        "110253159",
+        "110253175"
+      ],
+      "adf": [
+        "107334631",
+        "107342434",
+        "107345247"
+      ],
+      "hmg": [
+        "100213497"
+      ],
+      "tad": [
+        "TRIADDRAFT_30669"
+      ],
+      "aqu": [
+        "100635890",
+        "105313611",
+        "105314373",
+        "109582384"
+      ],
+      "cpap": [
+        "110817512"
+      ],
+      "gra": [
+        "105792073"
+      ],
+      "aip": [
+        "107629895"
+      ],
+      "lja": [
+        "Lj0g3v0036679.1",
+        "Lj2g3v2001740.1",
+        "Lj4g3v1273430.1"
+      ],
+      "mcha": [
+        "111021355"
+      ],
+      "han": [
+        "110928800"
+      ],
+      "ppp": [
+        "PHYPADRAFT_119507"
+      ],
+      "apro": [
+        "F751_5874"
+      ],
+      "ccp": [
+        "CHC_T00008916001"
+      ],
+      "sce": [
+        "YJL137C",
+        "YKR058W"
+      ],
+      "erc": [
+        "Ecym_5197"
+      ],
+      "kla": [
+        "KLLA0A05709g"
+      ],
+      "lth": [
+        "KLTH0F05632g"
+      ],
+      "vpo": [
+        "Kpol_2001p8"
+      ],
+      "zro": [
+        "ZYRO0D03080g"
+      ],
+      "cgr": [
+        "CAGL0H02695g"
+      ],
+      "ncs": [
+        "NCAS_0B08120"
+      ],
+      "ndi": [
+        "NDAI_0B05430"
+      ],
+      "tpf": [
+        "TPHA_0A02970"
+      ],
+      "tbl": [
+        "TBLA_0D05740"
+      ],
+      "tdl": [
+        "TDEL_0H00940"
+      ],
+      "kaf": [
+        "KAFR_0G00660"
+      ],
+      "ppa": [
+        "PAS_chr4_0847"
+      ],
+      "dha": [
+        "DEHA2F17138g"
+      ],
+      "pic": [
+        "PICST_76484",
+        "PICST_86206"
+      ],
+      "pgu": [
+        "PGUG_00554",
+        "PGUG_04227"
+      ],
+      "spaa": [
+        "SPAPADRAFT_140797",
+        "SPAPADRAFT_63932"
+      ],
+      "lel": [
+        "LELG_02698"
+      ],
+      "cal": [
+        "CAALFM_C101360CA",
+        "CAALFM_C306450WA"
+      ],
+      "ctp": [
+        "CTRG_02219",
+        "CTRG_04437"
+      ],
+      "cot": [
+        "CORT_0B10230"
+      ],
+      "cdu": [
+        "CD36_01260",
+        "CD36_86420"
+      ],
+      "cten": [
+        "CANTEDRAFT_114229"
+      ],
+      "yli": [
+        "YALI0C21065g"
+      ],
+      "clu": [
+        "CLUG_01980",
+        "CLUG_02358"
+      ],
+      "clus": [
+        "A9F13_02g03124",
+        "A9F13_22g00363"
+      ],
+      "caur": [
+        "QG37_03016",
+        "QG37_07486"
+      ],
+      "ncr": [
+        "NCU06698"
+      ],
+      "nte": [
+        "NEUTE1DRAFT143986"
+      ],
+      "smp": [
+        "SMAC_06637"
+      ],
+      "pan": [
+        "PODANSg8384"
+      ],
+      "cthr": [
+        "CTHT_0028360"
+      ],
+      "tmn": [
+        "UCRPA7_1502",
+        "UCRPA7_6926"
+      ],
+      "fgr": [
+        "FGSG_01882"
+      ],
+      "fpu": [
+        "FPSE_05397"
+      ],
+      "nhe": [
+        "NECHADRAFT_123235"
+      ],
+      "tre": [
+        "TRIREDRAFT_72012"
+      ],
+      "maw": [
+        "MAC_08571"
+      ],
+      "maj": [
+        "MAA_03680"
+      ],
+      "cmt": [
+        "CCM_03980"
+      ],
+      "plj": [
+        "VFPFJ_00575"
+      ],
+      "ela": [
+        "UCREL1_5557"
+      ],
+      "pfy": [
+        "PFICI_07572"
+      ],
+      "mbe": [
+        "MBM_09939"
+      ],
+      "glz": [
+        "GLAREA_05505"
+      ],
+      "cim": [
+        "CIMG_03907"
+      ],
+      "ure": [
+        "UREG_02029"
+      ],
+      "pno": [
+        "SNOG_11677"
+      ],
+      "pte": [
+        "PTT_07198"
+      ],
+      "bze": [
+        "COCCADRAFT_30299"
+      ],
+      "bsc": [
+        "COCSADRAFT_40215"
+      ],
+      "bor": [
+        "COCMIDRAFT_8940"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_42477"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_201416"
+      ],
+      "bcom": [
+        "BAUCODRAFT_173853"
+      ],
+      "npa": [
+        "UCRNP2_6840"
+      ],
+      "shs": [
+        "STEHIDRAFT_122228"
+      ],
+      "hir": [
+        "HETIRDRAFT_146131",
+        "HETIRDRAFT_63265"
+      ],
+      "lbc": [
+        "LACBIDRAFT_307138",
+        "LACBIDRAFT_334124"
+      ],
+      "mlr": [
+        "MELLADRAFT_77159"
+      ],
+      "mbr": [
+        "MONBRDRAFT_1946"
+      ],
+      "sre": [
+        "PTSG_12102"
+      ],
+      "tgo": [
+        "TGME49_310400"
+      ],
+      "smin": [
+        "v1.2.002165.t1",
+        "v1.2.009238.t1",
+        "v1.2.025564.t1"
+      ],
+      "tps": [
+        "THAPSDRAFT_7435"
+      ],
+      "aaf": [
+        "AURANDRAFT_14575",
+        "AURANDRAFT_30369",
+        "AURANDRAFT_6116"
+      ],
+      "ngd": [
+        "NGA_2099100"
+      ],
+      "pif": [
+        "PITG_06049",
+        "PITG_18015"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_227604"
+      ],
+      "gtt": [
+        "GUITHDRAFT_110924",
+        "GUITHDRAFT_112607",
+        "GUITHDRAFT_139078",
+        "GUITHDRAFT_48194",
+        "GUITHDRAFT_65972"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_57125",
+        "NAEGRDRAFT_72117",
+        "NAEGRDRAFT_78897"
+      ],
+      "tva": [
+        "TVAG_014980"
+      ],
+      "aak": [
+        "AA2016_0784"
+      ],
+      "mbj": [
+        "KQ51_00532"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.186"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.186"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.186"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.186"
+      ],
+      "CAS": [
+        "117590-73-5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Krisman CR",
+          "Barengo R."
+        ],
+        "title": "A precursor of glycogen biosynthesis: alpha-1,4-glucan-protein.",
+        "journal": "Eur. J. Biochem. 52 (1975) 117-23.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:809265]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pitcher J",
+          "Smythe C",
+          "Campbell DG",
+          "Cohen P."
+        ],
+        "title": "Identification of the 38-kDa subunit of rabbit skeletal muscle glycogen synthase as glycogenin.",
+        "journal": "Eur. J. Biochem. 169 (1987) 497-502.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:3121316]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pitcher J",
+          "Smythe C",
+          "Cohen P."
+        ],
+        "title": "Glycogenin is the priming glucosyltransferase required for the initiation of glycogen biogenesis in rabbit skeletal muscle.",
+        "journal": "Eur. J. Biochem. 176 (1988) 391-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:2970965]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kennedy",
+          "L.D.",
+          "Kirkman",
+          "B.R.",
+          "Lomako",
+          "J.",
+          "Rodriguez",
+          "I.R. and Whelan",
+          "W.J."
+        ],
+        "title": "The biogenesis of rabbit-muscle glycogen.",
+        "journal": "In: Berman, M.C. and Opie, L.A. (Eds.), Membranes and Muscle, ICSU Press/IRL Press, Oxford, 1985, p. 65-84.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rodriguez IR",
+          "Whelan WJ."
+        ],
+        "title": "A novel glycosyl-amino acid linkage: rabbit-muscle glycogen is covalently linked to a protein via tyrosine.",
+        "journal": "Biochem. Biophys. Res. Commun. 132 (1985) 829-36.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:4062948]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lomako J",
+          "Lomako WM",
+          "Whelan WJ."
+        ],
+        "title": "A self-glucosylating protein is the primer for rabbit muscle glycogen biosynthesis.",
+        "journal": "FASEB. J. 2 (1988) 3097-103.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:2973423]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Alonso MD",
+          "Lomako J",
+          "Lomako WM",
+          "Whelan WJ."
+        ],
+        "title": "Catalytic activities of glycogenin additional to autocatalytic self-glucosylation.",
+        "journal": "J. Biol. Chem. 270 (1995) 15315-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:7797519]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Alonso MD",
+          "Lomako J",
+          "Lomako WM",
+          "Whelan WJ."
+        ],
+        "title": "A new look at the biogenesis of glycogen.",
+        "journal": "FASEB. J. 9 (1995) 1126-37.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:7672505]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Mu J",
+          "Roach PJ."
+        ],
+        "title": "Characterization of human glycogenin-2, a self-glucosylating initiator of liver glycogen metabolism.",
+        "journal": "J. Biol. Chem. 273 (1998) 34850-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:9857012]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gibbons BJ",
+          "Roach PJ",
+          "Hurley TD."
+        ],
+        "title": "Crystal structure of the autocatalytic initiator of glycogen biosynthesis, glycogenin.",
+        "journal": "J. Mol. Biol. 319 (2002) 463-77.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "10 [PMID:12051921]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

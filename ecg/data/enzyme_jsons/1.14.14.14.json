@@ -1,0 +1,557 @@
+[
+  {
+    "entry_id": "1.14.14.14",
+    "name": "aromatase",
+    "names": [
+      "aromatase",
+      "CYP19A1 (gene name)",
+      "estrogen synthetase (incorrect)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "testosteronel,NADPH---hemoprotein reductase:oxygen oxidoreductase (17beta-estradiol-forming)",
+    "reaction": "(1) testosterone + 3 O2 + 3 [reduced NADPH---hemoprotein reductase] = 17beta-estradiol + formate + 4 H2O + 3 [oxidized NADPH---hemoprotein reductase] (overall reaction) [RN:R10511]; (1a) testosterone + O2 + [reduced NADPH---hemoprotein reductase] = 19-hydroxytestosterone + H2O + [oxidized NADPH---hemoprotein reductase] [RN:R02501]; (1b) 19-hydroxytestosterone + O2 + [reduced NADPH---hemoprotein reductase] = 19-oxotestosterone + 2 H2O + [oxidized NADPH---hemoprotein reductase] [RN:R04761]; (1c) 19-oxotestosterone + O2 + [reduced NADPH---hemoprotein reductase] = 17beta-estradiol + formate + H2O + [oxidized NADPH---hemoprotein reductase] [RN:R03087]; (2) androst-4-ene-3,17-dione + 3 O2 + 3 [reduced NADPH---hemoprotein reductase] = estrone + formate + 4 H2O + 3 [oxidized NADPH---hemoprotein reductase] (overall reaction) [RN:R10515]; (2a) androst-4-ene-3,17-dione + O2 + [reduced NADPH---hemoprotein reductase] = 19-hydroxyandrost-4-ene-3,17-dione + H2O + [oxidized NADPH---hemoprotein reductase] [RN:R01840]; (2b) 19-hydroxyandrost-4-ene-3,17-dione + O2 + [reduced NADPH---hemoprotein reductase] = 19-oxo-androst-4-ene-3,17-dione + 2 H2O + [oxidized NADPH---hemoprotein reductase] [RN:R04759]; (2c) 19-oxoandrost-4-ene-3,17-dione + O2 + [reduced NADPH---hemoprotein reductase] = estrone + formate + H2O + [oxidized NADPH---hemoprotein reductase] [RN:R02351]",
+    "all_reac": "R01840 R02351 R02501 R03087 R04759 R04761 R10511 R10515",
+    "iubmb_reactions": [
+      "R01840 R02351 R02501 R03087 R04759 R04761 R10511 R10515"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "testosterone [CPD:C00535]",
+      "O2 [CPD:C00007]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "19-hydroxytestosterone [CPD:C05294]",
+      "19-oxotestosterone [CPD:C05295]",
+      "androst-4-ene-3,17-dione [CPD:C00280]",
+      "19-hydroxyandrost-4-ene-3,17-dione [CPD:C05290]",
+      "19-oxoandrost-4-ene-3,17-dione [CPD:C05297]"
+    ],
+    "products": [
+      "17beta-estradiol",
+      "formate [CPD:C00058]",
+      "H2O [CPD:C00001]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "19-hydroxytestosterone [CPD:C05294]",
+      "19-oxotestosterone [CPD:C05295]",
+      "estrone [CPD:C00468]",
+      "19-hydroxyandrost-4-ene-3,17-dione [CPD:C05290]",
+      "19-oxo-androst-4-ene-3,17-dione"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A cytochrome P-450. The enzyme catalyses three sequential hydroxylations of the androgens androst-4-ene-3,17-dione and testosterone, resulting in their aromatization and forming the estrogens estrone and 17beta-estradiol, respectively. The direct electron donor to the enzyme is EC 1.6.2.4, NADPH---hemoprotein reductase.",
+    "pathways": {
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K07434": "aromatase"
+    },
+    "genes": {
+      "hsa": [
+        "1588"
+      ],
+      "ptr": [
+        "453433"
+      ],
+      "pps": [
+        "100984744"
+      ],
+      "ggo": [
+        "101137192"
+      ],
+      "pon": [
+        "100439777"
+      ],
+      "nle": [
+        "100589061"
+      ],
+      "mcc": [
+        "678697"
+      ],
+      "mcf": [
+        "102117886"
+      ],
+      "csab": [
+        "103245629"
+      ],
+      "rro": [
+        "104656901"
+      ],
+      "rbb": [
+        "108544828"
+      ],
+      "cjc": [
+        "100411557"
+      ],
+      "sbq": [
+        "101051393"
+      ],
+      "mmu": [
+        "13075"
+      ],
+      "rno": [
+        "25147"
+      ],
+      "cge": [
+        "100769024"
+      ],
+      "ngi": [
+        "103731396"
+      ],
+      "hgl": [
+        "101702005",
+        "101709897"
+      ],
+      "ccan": [
+        "109675669",
+        "109679172"
+      ],
+      "ocu": [
+        "100328545"
+      ],
+      "tup": [
+        "102503106"
+      ],
+      "cfa": [
+        "494003"
+      ],
+      "aml": [
+        "100464417"
+      ],
+      "umr": [
+        "103676745"
+      ],
+      "oro": [
+        "101383271"
+      ],
+      "fca": [
+        "101094932"
+      ],
+      "ptg": [
+        "102962141"
+      ],
+      "aju": [
+        "106967273"
+      ],
+      "bta": [
+        "281740"
+      ],
+      "bom": [
+        "102277416"
+      ],
+      "biu": [
+        "109565118"
+      ],
+      "phd": [
+        "102343465"
+      ],
+      "chx": [
+        "100861413",
+        "102172726"
+      ],
+      "oas": [
+        "100144423"
+      ],
+      "ssc": [
+        "403331",
+        "403332",
+        "403333"
+      ],
+      "cfr": [
+        "102519005"
+      ],
+      "cdk": [
+        "105086637",
+        "105106135"
+      ],
+      "bacu": [
+        "103011787",
+        "103012080"
+      ],
+      "lve": [
+        "103080853",
+        "103081312"
+      ],
+      "ecb": [
+        "100009712"
+      ],
+      "epz": [
+        "103546924"
+      ],
+      "eai": [
+        "106838329"
+      ],
+      "myb": [
+        "102253564"
+      ],
+      "myd": [
+        "102753728"
+      ],
+      "hai": [
+        "109394298"
+      ],
+      "rss": [
+        "109446840"
+      ],
+      "pale": [
+        "102884354"
+      ],
+      "lav": [
+        "100669426"
+      ],
+      "tmu": [
+        "101350058"
+      ],
+      "mdo": [
+        "100031295"
+      ],
+      "shr": [
+        "100929873"
+      ],
+      "oaa": [
+        "100078619"
+      ],
+      "gga": [
+        "414854"
+      ],
+      "mgp": [
+        "100549427"
+      ],
+      "cjo": [
+        "107318718"
+      ],
+      "apla": [
+        "101791068"
+      ],
+      "acyg": [
+        "106033779"
+      ],
+      "tgu": [
+        "751777"
+      ],
+      "gfr": [
+        "102039345"
+      ],
+      "fab": [
+        "101821137"
+      ],
+      "phi": [
+        "102100785"
+      ],
+      "ccw": [
+        "104684007"
+      ],
+      "fpg": [
+        "101920378"
+      ],
+      "fch": [
+        "102056433"
+      ],
+      "clv": [
+        "102090413"
+      ],
+      "egz": [
+        "104130907"
+      ],
+      "aam": [
+        "106496434"
+      ],
+      "asn": [
+        "102378511"
+      ],
+      "amj": [
+        "102566432"
+      ],
+      "pss": [
+        "102459111"
+      ],
+      "cmy": [
+        "102946653"
+      ],
+      "cpic": [
+        "101943325"
+      ],
+      "acs": [
+        "100565397"
+      ],
+      "pvt": [
+        "110077216"
+      ],
+      "pbi": [
+        "103056596"
+      ],
+      "gja": [
+        "107122388"
+      ],
+      "xla": [
+        "373656"
+      ],
+      "xtr": [
+        "100036594"
+      ],
+      "npr": [
+        "108799589"
+      ],
+      "dre": [
+        "30390",
+        "60640"
+      ],
+      "srx": [
+        "107746936",
+        "107748317"
+      ],
+      "sanh": [
+        "107674832",
+        "107700584"
+      ],
+      "sgh": [
+        "107550624",
+        "107550631",
+        "107571340",
+        "107579804",
+        "107580435",
+        "107588541"
+      ],
+      "ccar": [
+        "109051432",
+        "109068452",
+        "109072133"
+      ],
+      "ipu": [
+        "100304581",
+        "108264511"
+      ],
+      "amex": [
+        "103033668",
+        "103038449"
+      ],
+      "tru": [
+        "100379639",
+        "101076508"
+      ],
+      "tng": [
+        "GSTEN00018058G001",
+        "GSTEN00025591G001"
+      ],
+      "lco": [
+        "104920192",
+        "104932825"
+      ],
+      "ncc": [
+        "104960111",
+        "104962728"
+      ],
+      "mze": [
+        "101468153",
+        "101468629",
+        "106675461"
+      ],
+      "ola": [
+        "100125815",
+        "101174651"
+      ],
+      "xma": [
+        "102231498",
+        "102236527"
+      ],
+      "pret": [
+        "103462065",
+        "103466459"
+      ],
+      "csem": [
+        "103378914",
+        "103380488"
+      ],
+      "lcf": [
+        "108876685",
+        "108887913"
+      ],
+      "hcq": [
+        "109507515",
+        "109509492",
+        "109525752"
+      ],
+      "bpec": [
+        "110169315",
+        "110172912"
+      ],
+      "sasa": [
+        "106562534",
+        "106584746",
+        "106587170"
+      ],
+      "els": [
+        "105018178",
+        "105022679"
+      ],
+      "sfm": [
+        "108942040"
+      ],
+      "lcm": [
+        "102348763"
+      ],
+      "cmk": [
+        "103186779"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_118015",
+        "BRAFLDRAFT_247066"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_50614"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.14"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.14"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.14"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.14"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Thompson EA Jr",
+          "Siiteri PK"
+        ],
+        "title": "The involvement of human placental microsomal cytochrome P-450 in aromatization.",
+        "journal": "J. Biol. Chem. 249 (1974) 5373-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4370479]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fishman J",
+          "Goto J"
+        ],
+        "title": "Mechanism of estrogen biosynthesis. Participation of multiple enzyme sites in placental aromatase hydroxylations.",
+        "journal": "J. Biol. Chem. 256 (1981) 4466-71.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7217091]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kellis JT Jr",
+          "Vickery LE"
+        ],
+        "title": "Purification and characterization of human placental aromatase cytochrome P-450.",
+        "journal": "J. Biol. Chem. 262 (1987) 4413-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3104339]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ghosh D",
+          "Griswold J",
+          "Erman M",
+          "Pangborn W"
+        ],
+        "title": "Structural basis for androgen specificity and oestrogen synthesis in human aromatase.",
+        "journal": "Nature. 457 (2009) 219-23.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:19129847]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

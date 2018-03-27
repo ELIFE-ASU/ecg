@@ -1,0 +1,511 @@
+[
+  {
+    "entry_id": "2.3.1.260",
+    "name": "tetracycline polyketide synthase",
+    "names": [
+      "tetracycline polyketide synthase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Transferring groups other than aminoacyl groups"
+    ],
+    "sysname": "malonyl-CoA:malonamoyl-[OxyC acyl-carrier protein] malonyltransferase",
+    "reaction": "malonamoyl-[OxyC acyl-carrier protein] + 8 malonyl-CoA = 18-carbamoyl-3,5,7,9,11,13,15,17-octaoxooctadecanoyl-[OxyC acyl-carrier protein] + 8 CO2 + 8 CoA [RN:R11516]",
+    "all_reac": "R11516",
+    "iubmb_reactions": [
+      "R11516"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "malonamoyl-[OxyC acyl-carrier protein]",
+      "malonyl-CoA [CPD:C00083]"
+    ],
+    "products": [
+      "18-carbamoyl-3,5,7,9,11,13,15,17-octaoxooctadecanoyl-[OxyC acyl-carrier protein]",
+      "CO2 [CPD:C00011]",
+      "CoA [CPD:C00010]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The synthesis, in the bacterium Streptomyces rimosus, of the tetracycline antibiotics core skeleton requires a minimal polyketide synthase (PKS) consisting of a ketosynthase (KS), a chain length factor (CLF), and an acyl-carrier protein (ACP). Initiation involves an amide-containing starter unit that becomes the C-2 amide that is present in the tetracycline compounds. Following the initiation, the PKS catalyses the iterative condensation of 8 malonyl-CoA molecules to yield the polyketide backbone of tetracycline. Throughout the proccess, the nascent chain is attached to the OxyC acyl-carrier protein.",
+    "pathways": {
+      "ec00253": "Tetracycline biosynthesis",
+      "ec01056": "Biosynthesis of type II polyketide backbone",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K05551": "minimal PKS ketosynthase (KS/KS alpha)",
+      "K05552": "minimal PKS chain-length factor (CLF/KS beta)"
+    },
+    "genes": {
+      "mbd": [
+        "MEBOL_003040",
+        "MEBOL_003041"
+      ],
+      "abf": [
+        "AMK58_25510"
+      ],
+      "nbr": [
+        "O3I_007445",
+        "O3I_007450",
+        "O3I_015110",
+        "O3I_015115"
+      ],
+      "nno": [
+        "NONO_c10800",
+        "NONO_c10810"
+      ],
+      "sco": [
+        "SCO5087",
+        "SCO5088"
+      ],
+      "sma": [
+        "SAVERM_2375",
+        "SAVERM_2376"
+      ],
+      "ssx": [
+        "SACTE_5202",
+        "SACTE_5203",
+        "SACTE_6346",
+        "SACTE_6347"
+      ],
+      "sfa": [
+        "Sfla_5317",
+        "Sfla_5318"
+      ],
+      "sbh": [
+        "SBI_06844",
+        "SBI_06845"
+      ],
+      "shy": [
+        "SHJG_1188",
+        "SHJG_1189"
+      ],
+      "sho": [
+        "SHJGH_1023",
+        "SHJGH_1024"
+      ],
+      "sve": [
+        "SVEN_5977",
+        "SVEN_5980",
+        "SVEN_5981"
+      ],
+      "sdv": [
+        "BN159_2470",
+        "BN159_2471",
+        "BN159_2514",
+        "BN159_2515"
+      ],
+      "sals": [
+        "SLNWT_5121",
+        "SLNWT_5122"
+      ],
+      "strp": [
+        "F750_1305",
+        "F750_1306"
+      ],
+      "sfi": [
+        "SFUL_4002",
+        "SFUL_4003",
+        "SFUL_6285"
+      ],
+      "sci": [
+        "B446_13320",
+        "B446_13325"
+      ],
+      "salu": [
+        "DC74_6590",
+        "DC74_6591"
+      ],
+      "sall": [
+        "SAZ_34270",
+        "SAZ_34275"
+      ],
+      "slv": [
+        "SLIV_12945",
+        "SLIV_12950"
+      ],
+      "sgu": [
+        "SGLAU_26355",
+        "SGLAU_26360",
+        "SGLAU_28975",
+        "SGLAU_28980"
+      ],
+      "svt": [
+        "SVTN_18775",
+        "SVTN_18780",
+        "SVTN_28595",
+        "SVTN_28600"
+      ],
+      "stre": [
+        "GZL_p00214",
+        "GZL_p00215"
+      ],
+      "scw": [
+        "TU94_31825",
+        "TU94_31830"
+      ],
+      "sld": [
+        "T261_0018",
+        "T261_0019",
+        "T261_6830",
+        "T261_6831"
+      ],
+      "sxi": [
+        "SXIM_35600",
+        "SXIM_35610"
+      ],
+      "strm": [
+        "M444_36340"
+      ],
+      "strc": [
+        "AA958_14835",
+        "AA958_14840",
+        "AA958_30255",
+        "AA958_30260"
+      ],
+      "samb": [
+        "SAM23877_0195",
+        "SAM23877_0196",
+        "SAM23877_0207",
+        "SAM23877_0208",
+        "SAM23877_7465",
+        "SAM23877_7466",
+        "SAM23877_7477",
+        "SAM23877_7478"
+      ],
+      "spri": [
+        "SPRI_0266",
+        "SPRI_0267",
+        "SPRI_0278",
+        "SPRI_0280",
+        "SPRI_7073",
+        "SPRI_7075",
+        "SPRI_7086",
+        "SPRI_7087"
+      ],
+      "scz": [
+        "ABE83_16240",
+        "ABE83_16245"
+      ],
+      "scx": [
+        "AS200_01090",
+        "AS200_01095"
+      ],
+      "srw": [
+        "TUE45_01296",
+        "TUE45_01297",
+        "TUE45_01569",
+        "TUE45_01570"
+      ],
+      "strf": [
+        "ASR50_01170",
+        "ASR50_01175",
+        "ASR50_34265",
+        "ASR50_34270"
+      ],
+      "spav": [
+        "Spa2297_32720",
+        "Spa2297_32725"
+      ],
+      "sgs": [
+        "AVL59_46040",
+        "AVL59_46045"
+      ],
+      "sls": [
+        "SLINC_6894",
+        "SLINC_6895"
+      ],
+      "strd": [
+        "NI25_18955",
+        "NI25_18960"
+      ],
+      "svu": [
+        "B1H20_09640",
+        "B1H20_09645"
+      ],
+      "spun": [
+        "BFF78_19350",
+        "BFF78_19355"
+      ],
+      "kab": [
+        "B7C62_31265",
+        "B7C62_31270"
+      ],
+      "kau": [
+        "B6264_18490",
+        "B6264_18495"
+      ],
+      "lmoi": [
+        "VV02_05815",
+        "VV02_05820"
+      ],
+      "tfu": [
+        "Tfu_1218",
+        "Tfu_1219"
+      ],
+      "tcu": [
+        "Tcur_2772",
+        "Tcur_2773"
+      ],
+      "sro": [
+        "Sros_4150",
+        "Sros_4151"
+      ],
+      "noa": [
+        "BKM31_22830",
+        "BKM31_22870"
+      ],
+      "fra": [
+        "Francci3_4100",
+        "Francci3_4101",
+        "Francci3_4148"
+      ],
+      "fri": [
+        "FraEuI1c_1317",
+        "FraEuI1c_1318"
+      ],
+      "svi": [
+        "Svir_33690",
+        "Svir_33700"
+      ],
+      "amd": [
+        "AMED_5434",
+        "AMED_5435"
+      ],
+      "amn": [
+        "RAM_27700",
+        "RAM_27705"
+      ],
+      "amm": [
+        "AMES_5369",
+        "AMES_5370"
+      ],
+      "amz": [
+        "B737_5369",
+        "B737_5370"
+      ],
+      "alu": [
+        "BB31_13420",
+        "BB31_13425"
+      ],
+      "pseq": [
+        "AD006_30015",
+        "AD006_30020"
+      ],
+      "pecq": [
+        "AD017_31230",
+        "AD017_31235"
+      ],
+      "phh": [
+        "AFB00_31125",
+        "AFB00_31130"
+      ],
+      "sesp": [
+        "BN6_40990",
+        "BN6_54860",
+        "BN6_54870"
+      ],
+      "kal": [
+        "KALB_7830",
+        "KALB_7831"
+      ],
+      "kphy": [
+        "AOZ06_32110",
+        "AOZ06_32115"
+      ],
+      "led": [
+        "BBK82_02450",
+        "BBK82_02455"
+      ],
+      "ahm": [
+        "TL08_10465",
+        "TL08_10470"
+      ],
+      "acti": [
+        "UA75_11090",
+        "UA75_11095"
+      ],
+      "acad": [
+        "UA74_11000",
+        "UA74_11005"
+      ],
+      "ahg": [
+        "AHOG_10345",
+        "AHOG_10350"
+      ],
+      "all": [
+        "CRK55091",
+        "CRK55092"
+      ],
+      "pmad": [
+        "BAY61_07805",
+        "BAY61_07810"
+      ],
+      "stp": [
+        "Strop_2223",
+        "Strop_2224"
+      ],
+      "mau": [
+        "Micau_4018",
+        "Micau_4019"
+      ],
+      "mil": [
+        "ML5_4402",
+        "ML5_4403"
+      ],
+      "vma": [
+        "VAB18032_18170",
+        "VAB18032_18175"
+      ],
+      "ams": [
+        "AMIS_50420",
+        "AMIS_50430",
+        "AMIS_50640",
+        "AMIS_50650"
+      ],
+      "actn": [
+        "L083_3108",
+        "L083_3109"
+      ],
+      "plk": [
+        "CIK06_11005",
+        "CIK06_11010"
+      ],
+      "cai": [
+        "Caci_3546",
+        "Caci_3547",
+        "Caci_6485",
+        "Caci_6486"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.1.260"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.1.260"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.1.260"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.1.260"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Thomas",
+          "R. and Williams",
+          "D.J."
+        ],
+        "title": "Oxytetracycline biosynthesis: origin of the carboxamide substituent.",
+        "journal": "J. Chem. Soc., Chem. Commun. (1983) 677-679.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhang W",
+          "Ames BD",
+          "Tsai SC",
+          "Tang Y."
+        ],
+        "title": "Engineered biosynthesis of a novel amidated polyketide, using the malonamyl-specific initiation module from the oxytetracycline polyketide synthase.",
+        "journal": "Appl. Environ. Microbiol. 72 (2006) 2573-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:16597959]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yu L",
+          "Cao N",
+          "Wang L",
+          "Xiao C",
+          "Guo M",
+          "Chu J",
+          "Zhuang Y",
+          "Zhang S"
+        ],
+        "title": "Oxytetracycline biosynthesis improvement in Streptomyces rimosus following duplication of minimal PKS genes.",
+        "journal": "Enzyme. Microb. Technol. 50 (2012) 318-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:22500899]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,635 @@
+[
+  {
+    "entry_id": "1.14.15.21",
+    "name": "zeaxanthin epoxidase",
+    "names": [
+      "zeaxanthin epoxidase",
+      "Zea-epoxidase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "zeaxanthin,reduced ferredoxin:oxygen oxidoreductase",
+    "reaction": "zeaxanthin + 4 reduced ferredoxin [iron-sulfur] cluster + 4 H+ + 2 O2 = violaxanthin + 4 oxidized ferredoxin [iron-sulfur] cluster + 2 H2O (overall reaction) [RN:R10070]; (1a) zeaxanthin + 2 reduced ferredoxin [iron-sulfur] cluster + 2 H+ + O2 = antheraxanthin + 2 oxidized ferredoxin [iron-sulfur] cluster + H2O [RN:R06946]; (1b) antheraxanthin + 2 reduced ferredoxin [iron-sulfur] cluster + 2 H+ + O2 = violaxanthin + 2 oxidized ferredoxin [iron-sulfur] cluster + H2O [RN:R06947]",
+    "all_reac": "R06946 R06947 R10070",
+    "iubmb_reactions": [
+      "R06946 R06947 R10070"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "zeaxanthin [CPD:C06098]",
+      "reduced ferredoxin [iron-sulfur] cluster [CPD:C00138]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "antheraxanthin [CPD:C08579]"
+    ],
+    "products": [
+      "violaxanthin [CPD:C08614]",
+      "oxidized ferredoxin [iron-sulfur] cluster [CPD:C00139]",
+      "H2O [CPD:C00001]",
+      "antheraxanthin [CPD:C08579]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A flavoprotein (FAD) that is active under conditions of low light. Along with EC 1.23.5.1, violaxanthin de-epoxidase, this enzyme forms part of the xanthophyll (or violaxanthin) cycle, which is involved in protecting the plant against damage by excess light. It will also epoxidize lutein in some higher-plant species.",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K09838": "zeaxanthin epoxidase"
+    },
+    "genes": {
+      "ath": [
+        "AT5G67030"
+      ],
+      "aly": [
+        "ARALYDRAFT_496897"
+      ],
+      "crb": [
+        "CARUB_v10026026mg"
+      ],
+      "csat": [
+        "104727329",
+        "104762863"
+      ],
+      "eus": [
+        "EUTSA_v10003769mg"
+      ],
+      "brp": [
+        "103829545",
+        "103837729"
+      ],
+      "bna": [
+        "106358361",
+        "106390346",
+        "111210027"
+      ],
+      "boe": [
+        "106306069",
+        "106319391"
+      ],
+      "thj": [
+        "104819235",
+        "104827149"
+      ],
+      "cpap": [
+        "110814468"
+      ],
+      "cit": [
+        "102577984",
+        "102619293"
+      ],
+      "cic": [
+        "CICLE_v10025089mg",
+        "CICLE_v10027323mg"
+      ],
+      "tcc": [
+        "18611131"
+      ],
+      "gra": [
+        "105803918"
+      ],
+      "ghi": [
+        "107897837",
+        "107913245"
+      ],
+      "egr": [
+        "104418568",
+        "104418569"
+      ],
+      "gmx": [
+        "100778602",
+        "100800186",
+        "100820171"
+      ],
+      "pvu": [
+        "PHAVU_002G018700g",
+        "PHAVU_003G243800g",
+        "PHAVU_011G214600g"
+      ],
+      "vra": [
+        "106755462",
+        "106755730",
+        "106755821",
+        "106768400",
+        "106776942"
+      ],
+      "var": [
+        "108323517",
+        "108335973"
+      ],
+      "ccaj": [
+        "109787680",
+        "109801086",
+        "109817357",
+        "109817363"
+      ],
+      "mtr": [
+        "MTR_4g022850",
+        "MTR_5g017350"
+      ],
+      "cam": [
+        "101492490",
+        "101503567"
+      ],
+      "adu": [
+        "107479906",
+        "107487794",
+        "107492229"
+      ],
+      "aip": [
+        "107626771",
+        "107642776"
+      ],
+      "lja": [
+        "Lj0g3v0062999.1",
+        "Lj2g3v1874610.1",
+        "Lj3g3v0463700.1"
+      ],
+      "lang": [
+        "109332775",
+        "109348163",
+        "109363245"
+      ],
+      "fve": [
+        "101291766",
+        "101306850"
+      ],
+      "pper": [
+        "18770963",
+        "18787006",
+        "18787624"
+      ],
+      "pmum": [
+        "103330551",
+        "103339888",
+        "107881084"
+      ],
+      "mdm": [
+        "103401379",
+        "103403091",
+        "103414285",
+        "103416036",
+        "103421842",
+        "103438489"
+      ],
+      "pxb": [
+        "103935128",
+        "103937745",
+        "103945929",
+        "103947190",
+        "103956812"
+      ],
+      "zju": [
+        "107424800"
+      ],
+      "csv": [
+        "101212903"
+      ],
+      "cmo": [
+        "103497391"
+      ],
+      "mcha": [
+        "111017923"
+      ],
+      "rcu": [
+        "8262901",
+        "8289205"
+      ],
+      "jcu": [
+        "105639709",
+        "105650340"
+      ],
+      "hbr": [
+        "110662928",
+        "110669315"
+      ],
+      "pop": [
+        "POPTR_0001s23620g",
+        "POPTR_0005s18160g",
+        "POPTR_0007s10980g"
+      ],
+      "vvi": [
+        "100232944",
+        "100257960"
+      ],
+      "sly": [
+        "544162"
+      ],
+      "spen": [
+        "107011108"
+      ],
+      "sot": [
+        "102592281"
+      ],
+      "cann": [
+        "107860302"
+      ],
+      "nta": [
+        "107763949",
+        "107797654"
+      ],
+      "nsy": [
+        "104218557"
+      ],
+      "nto": [
+        "104104310"
+      ],
+      "ini": [
+        "109189028",
+        "109189029"
+      ],
+      "sind": [
+        "105161901",
+        "105168657",
+        "105168669",
+        "105177618"
+      ],
+      "han": [
+        "110895635",
+        "110937288"
+      ],
+      "bvg": [
+        "104883753"
+      ],
+      "soe": [
+        "110777504"
+      ],
+      "nnu": [
+        "104597550",
+        "104606289"
+      ],
+      "osa": [
+        "4335984"
+      ],
+      "dosa": [
+        "Os04t0448900-00"
+      ],
+      "obr": [
+        "102712906"
+      ],
+      "bdi": [
+        "100835175"
+      ],
+      "sbi": [
+        "110436123"
+      ],
+      "zma": [
+        "100285076",
+        "103641704"
+      ],
+      "sita": [
+        "101780465",
+        "101781949"
+      ],
+      "pda": [
+        "103712512"
+      ],
+      "egu": [
+        "105058237"
+      ],
+      "mus": [
+        "103992210"
+      ],
+      "dct": [
+        "110097029"
+      ],
+      "atr": [
+        "18432804",
+        "18439793"
+      ],
+      "smo": [
+        "SELMODRAFT_172667",
+        "SELMODRAFT_234460"
+      ],
+      "ppp": [
+        "PHYPADRAFT_186228"
+      ],
+      "cre": [
+        "CHLREDRAFT_53522"
+      ],
+      "vcn": [
+        "VOLCADRAFT_75879"
+      ],
+      "mng": [
+        "MNEG_6252"
+      ],
+      "olu": [
+        "OSTLU_1611"
+      ],
+      "ota": [
+        "OT_ostta02g02500",
+        "OT_ostta16g00670"
+      ],
+      "bpg": [
+        "Bathy07g04390",
+        "Bathy14g02700"
+      ],
+      "mis": [
+        "MICPUN_82567"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_19991",
+        "MICPUCDRAFT_24859"
+      ],
+      "csl": [
+        "COCSUDRAFT_42814"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_138731"
+      ],
+      "apro": [
+        "F751_2668"
+      ],
+      "smin": [
+        "v1.2.016478.t1",
+        "v1.2.016479.t1",
+        "v1.2.019826.t1"
+      ],
+      "pti": [
+        "PHATRDRAFT_45845",
+        "PHATRDRAFT_56488",
+        "PHATRDRAFT_56492"
+      ],
+      "fcy": [
+        "FRACYDRAFT_208380",
+        "FRACYDRAFT_232148",
+        "FRACYDRAFT_260743"
+      ],
+      "tps": [
+        "THAPSDRAFT_261390",
+        "THAPSDRAFT_270370"
+      ],
+      "aaf": [
+        "AURANDRAFT_31758",
+        "AURANDRAFT_71741"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_440259",
+        "EMIHUDRAFT_444553",
+        "EMIHUDRAFT_456674",
+        "EMIHUDRAFT_457120",
+        "EMIHUDRAFT_462793"
+      ],
+      "gtt": [
+        "GUITHDRAFT_159412"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.21"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.21"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.21"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.21"
+      ],
+      "CAS": [
+        "149718-34-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Buch K",
+          "Stransky H",
+          "Hager A."
+        ],
+        "title": "FAD is a further essential cofactor of the NAD(P)H and O2-dependent zeaxanthin-epoxidase.",
+        "journal": "FEBS. Lett. 376 (1995) 45-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8521963]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bugos RC",
+          "Hieber AD",
+          "Yamamoto HY."
+        ],
+        "title": "Xanthophyll cycle enzymes are members of the lipocalin family, the first identified from plants.",
+        "journal": "J. Biol. Chem. 273 (1998) 15321-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:9624110]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Thompson AJ",
+          "Jackson AC",
+          "Parker RA",
+          "Morpeth DR",
+          "Burbidge A",
+          "Taylor IB."
+        ],
+        "title": "Abscisic acid biosynthesis in tomato: regulation of zeaxanthin epoxidase and 9-cis-epoxycarotenoid dioxygenase mRNAs by light/dark cycles, water stress and abscisic acid.",
+        "journal": "Plant. Mol. Biol. 42 (2000) 833-45.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10890531]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hieber AD",
+          "Bugos RC",
+          "Yamamoto HY."
+        ],
+        "title": "Plant lipocalins: violaxanthin de-epoxidase and zeaxanthin epoxidase.",
+        "journal": "Biochim. Biophys. Acta. 1482 (2000) 84-91.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:11058750]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Frommolt R",
+          "Goss R",
+          "Wilhelm C."
+        ],
+        "title": "The de-epoxidase and epoxidase reactions of Mantoniella squamata (Prasinophyceae) exhibit different substrate-specific reaction kinetics compared to spinach.",
+        "journal": "Planta. 213 (2001) 446-56.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:11506368]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Frommolt R",
+          "Goss R",
+          "Wilhelm C."
+        ],
+        "title": "The de-epoxidase and epoxidase reactions of Mantoniella squamata (Prasinophyceae) exhibit different substrate-specific reaction kinetics compared to spinach.",
+        "journal": "Planta. 213 (2001) 446-56.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:11506368]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Matsubara S",
+          "Morosinotto T",
+          "Bassi R",
+          "Christian AL",
+          "Fischer-Schliebs E",
+          "Luttge U",
+          "Orthen B",
+          "Franco AC",
+          "Scarano FR",
+          "Forster B",
+          "Pogson BJ",
+          "Osmond CB."
+        ],
+        "title": "Occurrence of the lutein-epoxide cycle in mistletoes of the Loranthaceae and Viscaceae.",
+        "journal": "Planta. 217 (2003) 868-79.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:12844265]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

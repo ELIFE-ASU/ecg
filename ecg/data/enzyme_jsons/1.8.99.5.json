@@ -1,0 +1,751 @@
+[
+  {
+    "entry_id": "1.8.99.5",
+    "name": "dissimilatory sulfite reductase",
+    "names": [
+      "dissimilatory sulfite reductase",
+      "siroheme sulfite reductase",
+      "hydrogen-sulfide:(acceptor) oxidoreductase (ambiguous)",
+      "DsrAB"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on a sulfur group of donors;",
+      "With unknown physiological acceptors"
+    ],
+    "sysname": "hydrogen-sulfide:[DsrC sulfur-carrier protein],acceptor oxidoreductase",
+    "reaction": "(1) hydrogen sulfide + a [DsrC protein]-disulfide + 2 acceptor + 3 H2O = sulfite + a [DsrC protein]-dithiol + 2 reduced acceptor + 2 H+ (overall reaction); (1a) hydrogen sulfide + a [DsrC protein]-disulfide = a [DsrC protein]-S-sulfanyl-L-cysteine; (1b) a [DsrC protein]-S-sulfanyl-L-cysteine + 2 acceptor + 3 H2O = sulfite + a [DsrC protein]-dithiol + 2 reduced acceptor + 2 H+; (2) a [DsrC protein]-S-sulfanyl-L-cysteine + 3 acceptor + 3 H2O = sulfite + a [DsrC protein]-disulfide + 3 reduced acceptor + 2 H+ (overall reaction); (2a) a [DsrC protein]-S-sulfanyl-L-cysteine + 3 acceptor + 3 H2O = a [DsrC]-S-sulfo-L-cysteine + 3 reduced acceptor + H+; (2b) a [DsrC]-S-sulfo-L-cysteine = sulfite + a [DsrC protein]-disulfide",
+    "all_reac": "(other) R00295 R00861 R08035",
+    "iubmb_reactions": [
+      "(other) R00295 R00861 R08035"
+    ],
+    "kegg_reactions": [
+      "R00295 R00861 R08035"
+    ],
+    "substrates": [
+      "hydrogen sulfide [CPD:C00283]",
+      "[DsrC protein]-disulfide",
+      "acceptor [CPD:C00028]",
+      "H2O [CPD:C00001]",
+      "[DsrC protein]-S-sulfanyl-L-cysteine",
+      "[DsrC]-S-sulfo-L-cysteine"
+    ],
+    "products": [
+      "sulfite [CPD:C00094]",
+      "[DsrC protein]-dithiol",
+      "reduced acceptor [CPD:C00030]",
+      "H+ [CPD:C00080]",
+      "[DsrC protein]-S-sulfanyl-L-cysteine",
+      "[DsrC protein]-disulfide",
+      "[DsrC]-S-sulfo-L-cysteine"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contain siroheme. The enzyme is essential in prokaryotic sulfur-based energy metabolism, including sulfate/sulfite reducing organisms, sulfur-oxidizing bacteria, and organosulfonate reducers. In sulfur reducers it catalyses the reduction of sulfite to sulfide (reaction 1 in the right to left direction), while in sulfur oxidizers it catalyses the opposite reaction (reaction 2 in the left to right direction) [1]. The reaction involves the small protein DsrC, which is present in all the organisms that contain dissimilatory sulfite reductase. During the process an intramolecular disulfide bond is formed between two L-cysteine residues of DsrC. This disulfide can be reduced by a number of proteins including DsrK and TcmB [5]. This enzyme is different from EC 1.8.1.2, assimilatory sulfite reductase (NADPH), and EC 1.8.7.1, assimilatory sulfite reductase (ferredoxin), which are involved in sulfate assimilation.",
+    "pathways": {
+      "ec00633": "Nitrotoluene degradation",
+      "ec00920": "Sulfur metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K11180": "dissimilatory sulfite reductase alpha subunit",
+      "K11181": "dissimilatory sulfite reductase beta subunit"
+    },
+    "genes": {
+      "tig": [
+        "THII_0611",
+        "THII_0612"
+      ],
+      "alv": [
+        "Alvin_1251",
+        "Alvin_1252"
+      ],
+      "tvi": [
+        "Thivi_0544",
+        "Thivi_0545"
+      ],
+      "tmb": [
+        "Thimo_0143",
+        "Thimo_0144"
+      ],
+      "mpur": [
+        "MARPU_10910",
+        "MARPU_10915"
+      ],
+      "aeh": [
+        "Mlg_1653",
+        "Mlg_1654"
+      ],
+      "hha": [
+        "Hhal_1951",
+        "Hhal_1952"
+      ],
+      "tgr": [
+        "Tgr7_2185",
+        "Tgr7_2186"
+      ],
+      "tni": [
+        "TVNIR_0859",
+        "TVNIR_0860",
+        "TVNIR_1766",
+        "TVNIR_1767"
+      ],
+      "tti": [
+        "THITH_11980",
+        "THITH_11985"
+      ],
+      "tbn": [
+        "TBH_C2461",
+        "TBH_C2462"
+      ],
+      "seds": [
+        "AAY24_10390",
+        "AAY24_17300",
+        "AAY24_17305"
+      ],
+      "tho": [
+        "SP60_01865",
+        "SP60_01870"
+      ],
+      "rma": [
+        "Rmag_0869",
+        "Rmag_0870"
+      ],
+      "vok": [
+        "COSY_0794",
+        "COSY_0795"
+      ],
+      "ebh": [
+        "BSEPE_1260",
+        "BSEPE_1261"
+      ],
+      "enm": [
+        "EBS_1783",
+        "EBS_1784"
+      ],
+      "bbag": [
+        "E1O_03050",
+        "E1O_03060"
+      ],
+      "shd": [
+        "SUTH_01443",
+        "SUTH_01444"
+      ],
+      "tbd": [
+        "Tbd_1309",
+        "Tbd_1369",
+        "Tbd_2484",
+        "Tbd_2485"
+      ],
+      "slt": [
+        "Slit_1685",
+        "Slit_1686"
+      ],
+      "sdr": [
+        "SCD_n02074",
+        "SCD_n02717",
+        "SCD_n02718"
+      ],
+      "dvu": [
+        "DVU0402",
+        "DVU0403"
+      ],
+      "dvl": [
+        "Dvul_2531",
+        "Dvul_2532"
+      ],
+      "dvm": [
+        "DvMF_1553",
+        "DvMF_1554"
+      ],
+      "dvg": [
+        "Deval_0364",
+        "Deval_0365"
+      ],
+      "dde": [
+        "Dde_0526",
+        "Dde_0527"
+      ],
+      "dds": [
+        "Ddes_0920",
+        "Ddes_0921",
+        "Ddes_2294",
+        "Ddes_2295"
+      ],
+      "ddn": [
+        "DND132_2809",
+        "DND132_2810"
+      ],
+      "dma": [
+        "DMR_03600",
+        "DMR_03610"
+      ],
+      "dsa": [
+        "Desal_0787",
+        "Desal_0788"
+      ],
+      "daf": [
+        "Desaf_1370",
+        "Desaf_1371"
+      ],
+      "dhy": [
+        "DESAM_20116",
+        "DESAM_20117"
+      ],
+      "dgg": [
+        "DGI_0689",
+        "DGI_0691"
+      ],
+      "dfi": [
+        "AXF13_14280",
+        "AXF13_14285"
+      ],
+      "dpg": [
+        "DESPIGER_1934",
+        "DESPIGER_1935",
+        "DESPIGER_1939",
+        "DESPIGER_1940"
+      ],
+      "das": [
+        "Daes_2984",
+        "Daes_2985"
+      ],
+      "dpi": [
+        "BN4_12627",
+        "BN4_12628"
+      ],
+      "dej": [
+        "AWY79_17895",
+        "AWY79_17900"
+      ],
+      "dba": [
+        "Dbac_0279",
+        "Dbac_0280"
+      ],
+      "doa": [
+        "AXF15_07380",
+        "AXF15_07385"
+      ],
+      "drt": [
+        "Dret_0244",
+        "Dret_0245"
+      ],
+      "dps": [
+        "DP0797",
+        "DP0798"
+      ],
+      "dak": [
+        "DaAHT2_0296",
+        "DaAHT2_0297"
+      ],
+      "dpr": [
+        "Despr_2940",
+        "Despr_2941"
+      ],
+      "dsf": [
+        "UWK_01633",
+        "UWK_01634"
+      ],
+      "dol": [
+        "Dole_2669",
+        "Dole_2670"
+      ],
+      "dml": [
+        "Dmul_28170",
+        "Dmul_28180"
+      ],
+      "dal": [
+        "Dalk_4300",
+        "Dalk_4301"
+      ],
+      "dat": [
+        "HRM2_42390",
+        "HRM2_42400"
+      ],
+      "dto": [
+        "TOL2_C05570",
+        "TOL2_C05580"
+      ],
+      "dao": [
+        "Desac_1622",
+        "Desac_1623"
+      ],
+      "dti": [
+        "Desti_1555",
+        "Desti_1556"
+      ],
+      "sfu": [
+        "Sfum_4042",
+        "Sfum_4043"
+      ],
+      "dbr": [
+        "Deba_0959",
+        "Deba_0960"
+      ],
+      "dav": [
+        "DESACE_07215",
+        "DESACE_07220"
+      ],
+      "rva": [
+        "Rvan_0599",
+        "Rvan_0600"
+      ],
+      "mag": [
+        "amb3367",
+        "amb3368"
+      ],
+      "mgy": [
+        "MGMSRv2__3911",
+        "MGMSRv2__3912"
+      ],
+      "magx": [
+        "XM1_4244",
+        "XM1_4245"
+      ],
+      "magn": [
+        "WV31_00295",
+        "WV31_00300"
+      ],
+      "magq": [
+        "MGMAQ_2110",
+        "MGMAQ_2111"
+      ],
+      "mgm": [
+        "Mmc1_2156",
+        "Mmc1_2157"
+      ],
+      "dsy": [
+        "DSY0309",
+        "DSY0310"
+      ],
+      "dhd": [
+        "Dhaf_0252",
+        "Dhaf_0253"
+      ],
+      "ddh": [
+        "Desde_0266",
+        "Desde_0267"
+      ],
+      "ddl": [
+        "Desdi_0242",
+        "Desdi_0243"
+      ],
+      "drm": [
+        "Dred_3186",
+        "Dred_3187"
+      ],
+      "dae": [
+        "Dtox_0079",
+        "Dtox_0080"
+      ],
+      "dca": [
+        "Desca_2665",
+        "Desca_2666"
+      ],
+      "dku": [
+        "Desku_3492",
+        "Desku_3493"
+      ],
+      "dru": [
+        "Desru_0386",
+        "Desru_0387",
+        "Desru_3723",
+        "Desru_3724"
+      ],
+      "dgi": [
+        "Desgi_4661",
+        "Desgi_4662"
+      ],
+      "dfg": [
+        "B0537_15840",
+        "B0537_15845"
+      ],
+      "dau": [
+        "Daud_2200",
+        "Daud_2201"
+      ],
+      "dor": [
+        "Desor_3302",
+        "Desor_3303"
+      ],
+      "dai": [
+        "Desaci_3004",
+        "Desaci_3005"
+      ],
+      "dmi": [
+        "Desmer_2566",
+        "Desmer_2567"
+      ],
+      "chy": [
+        "CHY_2409",
+        "CHY_2410"
+      ],
+      "mta": [
+        "Moth_1600",
+        "Moth_1601",
+        "Moth_1629",
+        "Moth_1630"
+      ],
+      "adg": [
+        "Adeg_2093",
+        "Adeg_2094"
+      ],
+      "tnr": [
+        "Thena_1366",
+        "Thena_1367"
+      ],
+      "gpa": [
+        "GPA_16660",
+        "GPA_16670",
+        "GPA_16680"
+      ],
+      "cbac": [
+        "JI75_04655",
+        "JI75_04660"
+      ],
+      "cte": [
+        "CT0852",
+        "CT0853",
+        "CT2249"
+      ],
+      "cpc": [
+        "Cpar_0028",
+        "Cpar_0029"
+      ],
+      "clz": [
+        "BIU88_06835",
+        "BIU88_06840",
+        "BIU88_11280"
+      ],
+      "cch": [
+        "Cag_1955",
+        "Cag_1956"
+      ],
+      "cph": [
+        "Cpha266_0128",
+        "Cpha266_0129"
+      ],
+      "cpb": [
+        "Cphamn1_1856",
+        "Cphamn1_1857"
+      ],
+      "cli": [
+        "Clim_0694",
+        "Clim_0695"
+      ],
+      "pvi": [
+        "Cvib_0039",
+        "Cvib_0040"
+      ],
+      "plt": [
+        "Plut_0036",
+        "Plut_0037"
+      ],
+      "pph": [
+        "Ppha_2320",
+        "Ppha_2321"
+      ],
+      "paa": [
+        "Paes_0029",
+        "Paes_0030"
+      ],
+      "proc": [
+        "Ptc2401_00028",
+        "Ptc2401_00029"
+      ],
+      "prs": [
+        "B9H02_00140"
+      ],
+      "pros": [
+        "CHL67_00155",
+        "CHL67_00160"
+      ],
+      "tye": [
+        "THEYE_A1994",
+        "THEYE_A1995"
+      ],
+      "tid": [
+        "Thein_0404",
+        "Thein_0405"
+      ],
+      "top": [
+        "TOPB45_1406",
+        "TOPB45_1407"
+      ],
+      "tcm": [
+        "HL41_05695"
+      ],
+      "cthi": [
+        "THC_0449",
+        "THC_0450"
+      ],
+      "afu": [
+        "AF_0423",
+        "AF_0424"
+      ],
+      "afg": [
+        "AFULGI_00004270",
+        "AFULGI_00004280"
+      ],
+      "apo": [
+        "Arcpr_0139",
+        "Arcpr_0140"
+      ],
+      "ave": [
+        "Arcve_1948",
+        "Arcve_1949"
+      ],
+      "ast": [
+        "Asulf_00915",
+        "Asulf_00916"
+      ],
+      "pai": [
+        "PAE2571",
+        "PAE2572",
+        "PAE2596",
+        "PAE2597"
+      ],
+      "pis": [
+        "Pisl_0170",
+        "Pisl_0171"
+      ],
+      "pcl": [
+        "Pcal_1445",
+        "Pcal_1446",
+        "Pcal_1456",
+        "Pcal_1457"
+      ],
+      "pas": [
+        "Pars_0907",
+        "Pars_0908",
+        "Pars_1212",
+        "Pars_1213",
+        "Pars_1224"
+      ],
+      "pyr": [
+        "P186_1805",
+        "P186_1806",
+        "P186_1813",
+        "P186_1814"
+      ],
+      "pog": [
+        "Pogu_0993",
+        "Pogu_0994",
+        "Pogu_1014",
+        "Pogu_1015",
+        "Pogu_1026",
+        "Pogu_1027"
+      ],
+      "tne": [
+        "Tneu_0344",
+        "Tneu_0345"
+      ],
+      "cma": [
+        "Cmaq_0853",
+        "Cmaq_0854"
+      ],
+      "ttn": [
+        "TTX_0423",
+        "TTX_0424",
+        "TTX_0426",
+        "TTX_0427",
+        "TTX_1187",
+        "TTX_1188"
+      ],
+      "vdi": [
+        "Vdis_2098",
+        "Vdis_2099"
+      ],
+      "vmo": [
+        "VMUT_0501",
+        "VMUT_0502"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.8.99.5"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.8.99.5"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.8.99.5"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.8.99.5"
+      ],
+      "CAS": [
+        "37256-51-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Schedel",
+          "M.",
+          "Vanselow",
+          "M. and Trueper",
+          "H. G."
+        ],
+        "title": "Siroheme sulfite reductase from Chromatium vinosum. Purification and investigation of some of its molecular and catalytic properties.",
+        "journal": "Arch. Microbiol. 121 (1979) 29-36.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Seki Y",
+          "Sogawa N",
+          "Ishimoto M"
+        ],
+        "title": "Siroheme as an active catalyst in sulfite reduction.",
+        "journal": "J. Biochem. 90 (1981) 1487-92.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7338517]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pott AS",
+          "Dahl C."
+        ],
+        "title": "Sirohaem sulfite reductase and other proteins encoded by genes at the dsr locus of Chromatium vinosum are involved in the oxidation of intracellular sulfur.",
+        "journal": "Microbiology. 144 ( Pt 7) (1998) 1881-94.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9695921]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oliveira TF",
+          "Vonrhein C",
+          "Matias PM",
+          "Venceslau SS",
+          "Pereira IA",
+          "Archer M"
+        ],
+        "title": "The crystal structure of Desulfovibrio vulgaris dissimilatory sulfite reductase bound to DsrC provides novel insights into the mechanism of sulfate respiration.",
+        "journal": "J. Biol. Chem. 283 (2008) 34141-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:18829451]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Venceslau SS",
+          "Stockdreher Y",
+          "Dahl C",
+          "Pereira IA"
+        ],
+        "title": "The \"bacterial heterodisulfide\" DsrC is a key protein in dissimilatory sulfur metabolism.",
+        "journal": "Biochim. Biophys. Acta. 1837 (2014) 1148-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:24662917]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

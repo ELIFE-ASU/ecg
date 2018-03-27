@@ -1,0 +1,174 @@
+[
+  {
+    "entry_id": "1.14.13.109",
+    "name": "abieta-7,13-dien-18-ol hydroxylase",
+    "names": [
+      "abieta-7,13-dien-18-ol hydroxylase",
+      "CYP720B1",
+      "PtAO",
+      "abietadienol hydroxylase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "abieta-7,13-dien-18-ol,NADPH:oxygen oxidoreductase (18-hydroxylating)",
+    "reaction": "abieta-7,13-dien-18-ol + NADPH + H+ + O2 = abieta-7,13-dien-18-al + NADP+ + 2 H2O (overall reaction) [RN:R06354]; (1a) abieta-7,13-dien-18-ol + NADPH + H+ + O2 = abieta-7,13-dien-18,18-diol + NADP+ + H2O [RN:R10077]; (1b) abieta-7,13-dien-18,18-diol = abieta-7,13-dien-18-al + H2O (spontaneous) [RN:R10078]",
+    "all_reac": "R06354 R10077 R10078",
+    "iubmb_reactions": [
+      "R06354 R10077 R10078"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "abieta-7,13-dien-18-ol",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "abieta-7,13-dien-18,18-diol [CPD:C20329]"
+    ],
+    "products": [
+      "abieta-7,13-dien-18-al",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "abieta-7,13-dien-18,18-diol [CPD:C20329]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A heme-thiolate protein (P-450). This enzyme catalyses a step in the pathway of abietic acid biosynthesis. The activity has been demonstrated in cell-free stem extracts of Abies grandis (grand fir) and Pinus contorta (lodgepole pine) [1], and the gene encoding the enzyme has been identified in Pinus taeda (loblolly pine) [3]. The recombinant enzyme catalyses the oxidation of multiple diterpene alcohol and aldehydes, including levopimaradienol, isopimara-7,15-dienol, isopimara-7,15-dienal, dehydroabietadienol and dehydroabietadienal. It is not able to oxidize abietadiene.",
+    "pathways": {
+      "ec00904": "Diterpenoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K14040": "abietadienol/abietadienal oxidase"
+    },
+    "genes": {
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.109"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.109"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.109"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.109"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Funk C",
+          "Croteau R"
+        ],
+        "title": "Diterpenoid resin acid biosynthesis in conifers: characterization of two cytochrome P450-dependent monooxygenases and an aldehyde dehydrogenase involved in abietic acid biosynthesis.",
+        "journal": "Arch. Biochem. Biophys. 308 (1994) 258-66.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8311462]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Funk C",
+          "Lewinsohn E",
+          "Vogel BS",
+          "Steele CL",
+          "Croteau R"
+        ],
+        "title": "Regulation of Oleoresinosis in Grand Fir (Abies grandis) (Coordinate Induction of Monoterpene and Diterpene Cyclases and Two Cytochrome P450-Dependent Diterpenoid Hydroxylases by Stem Wounding).",
+        "journal": "Plant. Physiol. 106 (1994) 999-1005.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12232380]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ro DK",
+          "Arimura G",
+          "Lau SY",
+          "Piers E",
+          "Bohlmann J"
+        ],
+        "title": "Loblolly pine abietadienol/abietadienal oxidase PtAO (CYP720B1) is a multifunctional, multisubstrate cytochrome P450 monooxygenase.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 102 (2005) 8060-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:15911762]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

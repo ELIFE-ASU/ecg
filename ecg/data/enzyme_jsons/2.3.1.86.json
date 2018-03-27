@@ -1,0 +1,682 @@
+[
+  {
+    "entry_id": "2.3.1.86",
+    "name": "fatty-acyl-CoA synthase",
+    "names": [
+      "fatty-acyl-CoA synthase",
+      "yeast fatty acid synthase",
+      "FAS1 (gene name)",
+      "FAS2 (gene name)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Transferring groups other than aminoacyl groups"
+    ],
+    "sysname": "acyl-CoA:malonyl-CoA C-acyltransferase (decarboxylating, oxoacyl- and enoyl- reducing)",
+    "reaction": "acetyl-CoA + n malonyl-CoA + 2n NADPH + 4n H+ = long-chain-acyl-CoA + n CoA + n CO2 + 2n NADP+ [RN:R05190]",
+    "all_reac": "R05190; (other) R01624 R01626 R04355 R04428 R04430 R04533 R04534 R04535 R04536 R04537 R04543 R04544 R04566 R04568 R04725 R04726 R04952 R04953 R04954 R04956 R04957 R04959 R04960 R04962 R04963 R04964 R04965 R04967 R04968 R04970 R10700",
+    "iubmb_reactions": [
+      "R05190"
+    ],
+    "kegg_reactions": [
+      "R01624 R01626 R04355 R04428 R04430 R04533 R04534 R04535 R04536 R04537 R04543 R04544 R04566 R04568 R04725 R04726 R04952 R04953 R04954 R04956 R04957 R04959 R04960 R04962 R04963 R04964 R04965 R04967 R04968 R04970 R10700"
+    ],
+    "substrates": [
+      "acetyl-CoA [CPD:C00024]",
+      "malonyl-CoA [CPD:C00083]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "products": [
+      "long-chain-acyl-CoA",
+      "CoA [CPD:C00010]",
+      "CO2 [CPD:C00011]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from yeasts (Ascomycota and Basidiomycota) is a multi-functional protein complex composed of two subunits. One subunit catalyses the reactions EC 1.1.1.100, 3-oxoacyl-[acyl-carrier-protein] reductase and EC 2.3.1.41, 3-oxoacyl-[acyl-carrier-protein] synthase, while the other subunit catalyses the reactions of EC 2.3.1.38, [acyl-carrier-protein] S-acetyltransferase, EC 2.3.1.39, [acyl-carrier-protein] S-malonyltransferase, EC 4.2.1.59, 3-hydroxypalmitoyl-[acyl-carrier-protein] dehydratase, EC 1.3.1.10, enoyl-[acyl-carrier-protein] reductase (NADPH, Si-specific) and EC 1.1.1.279, (R)-3-hydroxyacid ester dehydrogenase. The enzyme differs from the animal enzyme (EC 2.3.1.85) in that the enoyl reductase domain requires FMN as a cofactor, and the ultimate product is an acyl-CoA (usually palmitoyl-CoA) instead of a free fatty acid.",
+    "pathways": {
+      "ec00061": "Fatty acid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00667": "fatty acid synthase subunit alpha, fungi type",
+      "K00668": "fatty acid synthase subunit beta, fungi type"
+    },
+    "genes": {
+      "pxb": [
+        "103941732"
+      ],
+      "sce": [
+        "YKL182W",
+        "YPL231W"
+      ],
+      "ago": [
+        "AGOS_AER085C",
+        "AGOS_AFL138W"
+      ],
+      "erc": [
+        "Ecym_2158",
+        "Ecym_3239"
+      ],
+      "kla": [
+        "KLLA0B02717g",
+        "KLLA0C15983g"
+      ],
+      "lth": [
+        "KLTH0D15070g",
+        "KLTH0G09526g",
+        "KLTH0H03190g"
+      ],
+      "vpo": [
+        "Kpol_1002p24",
+        "Kpol_1055p60"
+      ],
+      "zro": [
+        "ZYRO0B13068g",
+        "ZYRO0E07766g"
+      ],
+      "cgr": [
+        "CAGL0D00528g",
+        "CAGL0E06138g"
+      ],
+      "ncs": [
+        "NCAS_0G01260",
+        "NCAS_0J01680"
+      ],
+      "ndi": [
+        "NDAI_0F01390",
+        "NDAI_0J02670"
+      ],
+      "tpf": [
+        "TPHA_0B02040",
+        "TPHA_0H01860"
+      ],
+      "tbl": [
+        "TBLA_0C02010",
+        "TBLA_0I03120"
+      ],
+      "tdl": [
+        "TDEL_0A06700",
+        "TDEL_0C04130",
+        "TDEL_0E00900"
+      ],
+      "kaf": [
+        "KAFR_0A05730",
+        "KAFR_0F01200"
+      ],
+      "ppa": [
+        "PAS_chr1-1_0008",
+        "PAS_chr1-4_0295"
+      ],
+      "dha": [
+        "DEHA2B08140g",
+        "DEHA2B10032g"
+      ],
+      "pic": [
+        "PICST_80966",
+        "PICST_85125"
+      ],
+      "pgu": [
+        "PGUG_02105",
+        "PGUG_02173"
+      ],
+      "spaa": [
+        "SPAPADRAFT_138494",
+        "SPAPADRAFT_140888"
+      ],
+      "lel": [
+        "LELG_02891",
+        "LELG_02892",
+        "LELG_03854"
+      ],
+      "cal": [
+        "CAALFM_C304830CA",
+        "CAALFM_C500190CA"
+      ],
+      "ctp": [
+        "CTRG_02501",
+        "CTRG_05241"
+      ],
+      "cot": [
+        "CORT_0C01740",
+        "CORT_0E04830"
+      ],
+      "cdu": [
+        "CD36_50220",
+        "CD36_84800"
+      ],
+      "cten": [
+        "CANTEDRAFT_107026",
+        "CANTEDRAFT_110568"
+      ],
+      "yli": [
+        "YALI0B15059g",
+        "YALI0B19382g"
+      ],
+      "clu": [
+        "CLUG_03422",
+        "CLUG_04160"
+      ],
+      "clus": [
+        "A9F13_01g07634",
+        "A9F13_04g03652"
+      ],
+      "caur": [
+        "QG37_06024",
+        "QG37_06992"
+      ],
+      "ncr": [
+        "NCU07307",
+        "NCU07308"
+      ],
+      "nte": [
+        "NEUTE1DRAFT61252",
+        "NEUTE1DRAFT61255"
+      ],
+      "smp": [
+        "SMAC_00840",
+        "SMAC_00841"
+      ],
+      "pan": [
+        "PODANSg3685",
+        "PODANSg3686",
+        "PODANSg8559",
+        "PODANSg8560"
+      ],
+      "ttt": [
+        "THITE_2122453",
+        "THITE_2122457"
+      ],
+      "mtm": [
+        "MYCTH_2310228",
+        "MYCTH_2310232"
+      ],
+      "cthr": [
+        "CTHT_0037740",
+        "CTHT_0037750"
+      ],
+      "mgr": [
+        "MGG_04118",
+        "MGG_12154"
+      ],
+      "tmn": [
+        "UCRPA7_6807",
+        "UCRPA7_6808"
+      ],
+      "fgr": [
+        "FGSG_00036",
+        "FGSG_05321",
+        "FGSG_05322",
+        "FGSG_11656"
+      ],
+      "fpu": [
+        "FPSE_07168",
+        "FPSE_07169",
+        "FPSE_07818",
+        "FPSE_07819"
+      ],
+      "fvr": [
+        "FVEG_04241",
+        "FVEG_04242"
+      ],
+      "fox": [
+        "FOXG_06391",
+        "FOXG_06392",
+        "FOXG_14342",
+        "FOXG_15138"
+      ],
+      "nhe": [
+        "NECHADRAFT_64009",
+        "NECHADRAFT_72277"
+      ],
+      "tre": [
+        "TRIREDRAFT_48788",
+        "TRIREDRAFT_78591"
+      ],
+      "maw": [
+        "MAC_02878",
+        "MAC_02884",
+        "MAC_06764",
+        "MAC_06765",
+        "MAC_07602"
+      ],
+      "maj": [
+        "MAA_01138",
+        "MAA_01139",
+        "MAA_01642",
+        "MAA_10451"
+      ],
+      "cmt": [
+        "CCM_02997",
+        "CCM_02998"
+      ],
+      "plj": [
+        "VFPFJ_00702",
+        "VFPFJ_00704"
+      ],
+      "val": [
+        "VDBG_01018",
+        "VDBG_01020",
+        "VDBG_08384"
+      ],
+      "vda": [
+        "VDAG_00631",
+        "VDAG_00632"
+      ],
+      "cfj": [
+        "CFIO01_03118",
+        "CFIO01_03119"
+      ],
+      "ela": [
+        "UCREL1_11324",
+        "UCREL1_2864",
+        "UCREL1_2866",
+        "UCREL1_3665",
+        "UCREL1_3666"
+      ],
+      "pfy": [
+        "PFICI_02555",
+        "PFICI_02560",
+        "PFICI_04683",
+        "PFICI_04684",
+        "PFICI_09703",
+        "PFICI_09706"
+      ],
+      "ssl": [
+        "SS1G_13073",
+        "SS1G_13074"
+      ],
+      "bfu": [
+        "BC1G_14051",
+        "BC1G_14055"
+      ],
+      "mbe": [
+        "MBM_00558",
+        "MBM_00559"
+      ],
+      "psco": [
+        "LY89DRAFT_624908",
+        "LY89DRAFT_624910",
+        "LY89DRAFT_650084",
+        "LY89DRAFT_784300"
+      ],
+      "glz": [
+        "GLAREA_01152",
+        "GLAREA_01153",
+        "GLAREA_08470",
+        "GLAREA_08471"
+      ],
+      "ani": [
+        "AN3380.2",
+        "AN3381.2",
+        "AN7814.2",
+        "AN7815.2",
+        "AN7873.2",
+        "AN7880.2",
+        "AN9407.2",
+        "AN9408.2"
+      ],
+      "afm": [
+        "AFUA_3G04210",
+        "AFUA_3G04220"
+      ],
+      "aor": [
+        "AOR_1_156104",
+        "AOR_1_158104",
+        "AOR_1_184024",
+        "AOR_1_186024",
+        "AOR_1_26014",
+        "AOR_1_276024",
+        "AOR_1_28014",
+        "AOR_1_300024",
+        "AOR_1_62054",
+        "AOR_1_74054"
+      ],
+      "ang": [
+        "ANI_1_1114084",
+        "ANI_1_1156084",
+        "ANI_1_1466104",
+        "ANI_1_1468104",
+        "ANI_1_202174",
+        "ANI_1_204174",
+        "ANI_1_2056014",
+        "ANI_1_2488074",
+        "ANI_1_2494074",
+        "ANI_1_6014"
+      ],
+      "afv": [
+        "AFLA_038570",
+        "AFLA_038640",
+        "AFLA_089160",
+        "AFLA_089170",
+        "AFLA_116820",
+        "AFLA_116830",
+        "AFLA_117290",
+        "AFLA_117420",
+        "AFLA_139370",
+        "AFLA_139380"
+      ],
+      "act": [
+        "ACLA_060580",
+        "ACLA_060590",
+        "ACLA_093750",
+        "ACLA_093760"
+      ],
+      "nfi": [
+        "NFIA_006480",
+        "NFIA_006490"
+      ],
+      "pcs": [
+        "Pc14g00740",
+        "Pc14g00750",
+        "Pc21g10840",
+        "Pc21g10870"
+      ],
+      "pdp": [
+        "PDIP_67930",
+        "PDIP_67940",
+        "PDIP_87680",
+        "PDIP_87700"
+      ],
+      "cim": [
+        "CIMG_08477",
+        "CIMG_08479",
+        "CIMG_08564",
+        "CIMG_08565"
+      ],
+      "cpw": [
+        "CPC735_061450",
+        "CPC735_061460",
+        "CPC735_062220",
+        "CPC735_062230"
+      ],
+      "pbl": [
+        "PAAG_01524",
+        "PAAG_01525"
+      ],
+      "pbn": [
+        "PADG_00254",
+        "PADG_00255"
+      ],
+      "ure": [
+        "UREG_02553",
+        "UREG_02554",
+        "UREG_04458",
+        "UREG_04459"
+      ],
+      "abe": [
+        "ARB_02752",
+        "ARB_02757",
+        "ARB_06046",
+        "ARB_06048"
+      ],
+      "tve": [
+        "TRV_06188",
+        "TRV_06193",
+        "TRV_06922",
+        "TRV_06923"
+      ],
+      "aje": [
+        "HCAG_07636",
+        "HCAG_07637"
+      ],
+      "pno": [
+        "SNOG_01107",
+        "SNOG_01108",
+        "SNOG_02166",
+        "SNOG_02167",
+        "SNOG_09089",
+        "SNOG_09091"
+      ],
+      "pte": [
+        "PTT_02058",
+        "PTT_02059",
+        "PTT_10814",
+        "PTT_10815",
+        "PTT_18039"
+      ],
+      "bze": [
+        "COCCADRAFT_102373",
+        "COCCADRAFT_113337",
+        "COCCADRAFT_113803",
+        "COCCADRAFT_31318",
+        "COCCADRAFT_7010"
+      ],
+      "bsc": [
+        "COCSADRAFT_235908",
+        "COCSADRAFT_97659"
+      ],
+      "bor": [
+        "COCMIDRAFT_1000",
+        "COCMIDRAFT_82264"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_108403",
+        "MYCGRDRAFT_69244"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_212667",
+        "MYCFIDRAFT_53243"
+      ],
+      "bcom": [
+        "BAUCODRAFT_144102",
+        "BAUCODRAFT_151421",
+        "BAUCODRAFT_62139",
+        "BAUCODRAFT_77435"
+      ],
+      "npa": [
+        "UCRNP2_2698",
+        "UCRNP2_2699",
+        "UCRNP2_3235",
+        "UCRNP2_3239",
+        "UCRNP2_4858",
+        "UCRNP2_7996",
+        "UCRNP2_7999"
+      ],
+      "tml": [
+        "GSTUM_00002095001"
+      ],
+      "spo": [
+        "SPAC4A8.11c",
+        "SPAC926.09c"
+      ],
+      "cne": [
+        "CNE04360",
+        "CNE04370"
+      ],
+      "cnb": [
+        "CNBE4360",
+        "CNBE4370"
+      ],
+      "cgi": [
+        "CGB_E5650C",
+        "CGB_E5660W"
+      ],
+      "tms": [
+        "TREMEDRAFT_40511",
+        "TREMEDRAFT_45355"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_41081",
+        "TRAVEDRAFT_51938"
+      ],
+      "shs": [
+        "STEHIDRAFT_116267"
+      ],
+      "psq": [
+        "PUNSTDRAFT_137436"
+      ],
+      "lbc": [
+        "LACBIDRAFT_296983"
+      ],
+      "mpr": [
+        "MPER_07767",
+        "MPER_12305"
+      ],
+      "cci": [
+        "CC1G_07064"
+      ],
+      "scm": [
+        "SCHCODRAFT_235165",
+        "SCHCODRAFT_82184"
+      ],
+      "abp": [
+        "AGABI1DRAFT134019"
+      ],
+      "abv": [
+        "AGABI2DRAFT146869"
+      ],
+      "pgr": [
+        "PGTG_06184",
+        "PGTG_21688"
+      ],
+      "mlr": [
+        "MELLADRAFT_115404",
+        "MELLADRAFT_39635",
+        "MELLADRAFT_45383",
+        "MELLADRAFT_79679"
+      ],
+      "acan": [
+        "ACA1_069690"
+      ],
+      "pif": [
+        "PITG_10922",
+        "PITG_10926",
+        "PITG_18025"
+      ],
+      "psoj": [
+        "PHYSODRAFT_339257",
+        "PHYSODRAFT_340175",
+        "PHYSODRAFT_340187",
+        "PHYSODRAFT_341458",
+        "PHYSODRAFT_359145"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.1.86"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.1.86"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.1.86"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.1.86"
+      ],
+      "CAS": [
+        "94219-29-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Schweizer E",
+          "Kniep B",
+          "Castorph H",
+          "Holzner U."
+        ],
+        "title": "Pantetheine-free mutants of the yeast fatty-acid-synthetase complex.",
+        "journal": "Eur. J. Biochem. 39 (1973) 353-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4590449]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wakil SJ",
+          "Stoops JK",
+          "Joshi VC."
+        ],
+        "title": "Fatty acid synthesis and its regulation.",
+        "journal": "Annu. Rev. Biochem. 52 (1983) 537-79.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6137188]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tehlivets O",
+          "Scheuringer K",
+          "Kohlwein SD"
+        ],
+        "title": "Fatty acid synthesis and elongation in yeast.",
+        "journal": "Biochim. Biophys. Acta. 1771 (2007) 255-70.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:16950653]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,946 @@
+[
+  {
+    "entry_id": "4.1.99.5",
+    "name": "aldehyde oxygenase (deformylating)",
+    "names": [
+      "aldehyde oxygenase (deformylating)",
+      "decarbonylase",
+      "aldehyde decarbonylase",
+      "octadecanal decarbonylase",
+      "octadecanal alkane-lyase"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-carbon lyases;",
+      "Other carbon-carbon lyases"
+    ],
+    "sysname": "a long-chain aldehyde alkane-lyase",
+    "reaction": "a long-chain aldehyde + O2 + 2 NADPH + 2 H+ = an alkane + formate + H2O + 2 NADP+ [RN:R03728]",
+    "all_reac": "R03728; (other) R09466",
+    "iubmb_reactions": [
+      "R03728"
+    ],
+    "kegg_reactions": [
+      "R09466"
+    ],
+    "substrates": [
+      "long-chain aldehyde [CPD:C00609]",
+      "O2 [CPD:C00007]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "products": [
+      "alkane [CPD:C01371]",
+      "formate [CPD:C00058]",
+      "H2O [CPD:C00001]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contains a diiron center. Involved in the biosynthesis of alkanes. The enzyme from the cyanobacterium Nostoc punctiforme PCC 73102 is only active in vitro in the presence of ferredoxin, ferredoxin reductase and NADPH, and produces mostly C15 and C17 alkanes [2,3]. The enzyme from pea (Pisum sativum) produces alkanes of chain length C18 to C32 and is inhibited by metal-chelating agents [1]. The substrate for this enzyme is formed by EC 1.2.1.80, acyl-[acyl-carrier protein] reductase.",
+    "pathways": {
+      "ec00073": "Cutin, suberine and wax biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K14331": "fatty aldehyde decarbonylase",
+      "K15404": "aldehyde decarbonylase"
+    },
+    "genes": {
+      "ath": [
+        "AT1G02190",
+        "AT1G02205"
+      ],
+      "aly": [
+        "ARALYDRAFT_321478",
+        "ARALYDRAFT_470048",
+        "ARALYDRAFT_887207",
+        "ARALYDRAFT_891843"
+      ],
+      "crb": [
+        "CARUB_v10008547mg",
+        "CARUB_v10008574mg",
+        "CARUB_v10012639mg",
+        "CARUB_v10024836mg"
+      ],
+      "csat": [
+        "104700905",
+        "104758134",
+        "104758142",
+        "104759026",
+        "104770317",
+        "104773539",
+        "104773540",
+        "104773742",
+        "104773743",
+        "104773763",
+        "104773764",
+        "104782202",
+        "104785716",
+        "104787457",
+        "104788709",
+        "104792563",
+        "109124978"
+      ],
+      "eus": [
+        "EUTSA_v10007056mg",
+        "EUTSA_v10009534mg",
+        "EUTSA_v10016375mg"
+      ],
+      "brp": [
+        "103843834",
+        "103857727",
+        "103865622",
+        "103865625",
+        "103867170"
+      ],
+      "bna": [
+        "106392348",
+        "106404754",
+        "106407983",
+        "106410643",
+        "106426031",
+        "106427726",
+        "106437024",
+        "106451050"
+      ],
+      "boe": [
+        "106308419",
+        "106329420",
+        "106329421",
+        "106337750",
+        "106339989",
+        "106342430"
+      ],
+      "thj": [
+        "104799403",
+        "104810724",
+        "104813547"
+      ],
+      "cpap": [
+        "110807870",
+        "110816250"
+      ],
+      "cit": [
+        "102609996",
+        "102610181",
+        "102610308"
+      ],
+      "cic": [
+        "CICLE_v10011291mg",
+        "CICLE_v10019265mg",
+        "CICLE_v10019279mg"
+      ],
+      "tcc": [
+        "108660922",
+        "108663945",
+        "108663946",
+        "18585715",
+        "18590332",
+        "18607120",
+        "18607121",
+        "18607126",
+        "18607128"
+      ],
+      "gra": [
+        "105773703",
+        "105774362",
+        "105779994",
+        "105779995",
+        "105792677"
+      ],
+      "ghi": [
+        "107900564",
+        "107948639",
+        "107954139",
+        "107960346",
+        "107961728",
+        "107962103",
+        "107962106"
+      ],
+      "egr": [
+        "104430284",
+        "104430947",
+        "104431049",
+        "104441318",
+        "104441320",
+        "104441328",
+        "104442842",
+        "104442847",
+        "104442848",
+        "104442849",
+        "108959208"
+      ],
+      "gmx": [
+        "100790115",
+        "100805835",
+        "100818557",
+        "106798072",
+        "106798323"
+      ],
+      "pvu": [
+        "PHAVU_010G040500g",
+        "PHAVU_010G040600g"
+      ],
+      "vra": [
+        "106772969",
+        "106772995",
+        "106773669"
+      ],
+      "var": [
+        "108347155",
+        "108347177",
+        "108347190"
+      ],
+      "ccaj": [
+        "109790836",
+        "109792954",
+        "109814131",
+        "109817909",
+        "109817915"
+      ],
+      "mtr": [
+        "MTR_4g054150",
+        "MTR_4g054290",
+        "MTR_7g090100",
+        "MTR_7g090120",
+        "MTR_7g090140",
+        "MTR_8g009560",
+        "MTR_8g009590"
+      ],
+      "cam": [
+        "101507583",
+        "101508006",
+        "101514081",
+        "101514846"
+      ],
+      "adu": [
+        "107472613",
+        "107472630",
+        "107494920"
+      ],
+      "aip": [
+        "107605303",
+        "107610850",
+        "107618742",
+        "107618743"
+      ],
+      "lja": [
+        "Lj1g3v4156050.1",
+        "Lj3g3v0618210.1",
+        "Lj3g3v0618250.1",
+        "Lj4g3v1120540.1"
+      ],
+      "lang": [
+        "109352187",
+        "109352216",
+        "109361171",
+        "109363612"
+      ],
+      "fve": [
+        "101297683",
+        "101308477",
+        "101311999",
+        "101312286"
+      ],
+      "pper": [
+        "18785414",
+        "18786441",
+        "18787082",
+        "18787499",
+        "18787644",
+        "18787718"
+      ],
+      "pmum": [
+        "103331413",
+        "103331414",
+        "103331441",
+        "103331464",
+        "103344052"
+      ],
+      "mdm": [
+        "103401488",
+        "103406883",
+        "103417529",
+        "103420616",
+        "103424941",
+        "103428452",
+        "103433190",
+        "103438942",
+        "103438959"
+      ],
+      "pxb": [
+        "103929751",
+        "103929753",
+        "103929757",
+        "103932050",
+        "103932052",
+        "103965505",
+        "103965506"
+      ],
+      "zju": [
+        "107403676",
+        "107403677",
+        "107403679",
+        "107403682",
+        "107403845",
+        "107421712",
+        "107421713"
+      ],
+      "csv": [
+        "101203441",
+        "101203691",
+        "101221193",
+        "101222843"
+      ],
+      "cmo": [
+        "103483417",
+        "103483418",
+        "103483426",
+        "103498990"
+      ],
+      "mcha": [
+        "111016028",
+        "111016029",
+        "111016030",
+        "111022778"
+      ],
+      "rcu": [
+        "8266676",
+        "8266677"
+      ],
+      "jcu": [
+        "105637254",
+        "105643380"
+      ],
+      "hbr": [
+        "110638963",
+        "110639725",
+        "110641046",
+        "110649196",
+        "110651908"
+      ],
+      "pop": [
+        "POPTR_0014s15050g",
+        "POPTR_0014s15080g",
+        "POPTR_0014s15110g",
+        "POPTR_0014s17850g"
+      ],
+      "vvi": [
+        "100243849",
+        "100248835",
+        "100250668",
+        "100252221",
+        "100256874",
+        "100261967",
+        "100262701",
+        "100267851",
+        "100854413"
+      ],
+      "sly": [
+        "101252060",
+        "101253677",
+        "101263099",
+        "101267647",
+        "101267934",
+        "101268663"
+      ],
+      "spen": [
+        "107005221",
+        "107005457",
+        "107008221",
+        "107008222",
+        "107014415",
+        "107014566",
+        "107025017"
+      ],
+      "sot": [
+        "102579007",
+        "102579333",
+        "102579884",
+        "102593084",
+        "102595425",
+        "102595750",
+        "102599091",
+        "102599945"
+      ],
+      "cann": [
+        "107844046",
+        "107844196",
+        "107844359",
+        "107851087",
+        "107851578",
+        "107854358",
+        "107868261"
+      ],
+      "nta": [
+        "107759567",
+        "107773304",
+        "107774629",
+        "107778616",
+        "107785373",
+        "107786899",
+        "107800178",
+        "107801545",
+        "107809310",
+        "107817101",
+        "107821267",
+        "107823602"
+      ],
+      "nsy": [
+        "104212478",
+        "104227074",
+        "104228614",
+        "104235229",
+        "104235959",
+        "104240300",
+        "104240303",
+        "104241526",
+        "104244089"
+      ],
+      "nto": [
+        "104084728",
+        "104084731",
+        "104096116",
+        "104097901",
+        "104106154",
+        "104107044",
+        "104107715",
+        "104116100",
+        "108944529"
+      ],
+      "ini": [
+        "109182241",
+        "109182254",
+        "109182262"
+      ],
+      "sind": [
+        "105167221",
+        "105167251",
+        "105173435",
+        "105173436"
+      ],
+      "han": [
+        "110897451",
+        "110897561",
+        "110912685",
+        "110920509"
+      ],
+      "bvg": [
+        "104905209",
+        "104905211"
+      ],
+      "soe": [
+        "110778839",
+        "110792520"
+      ],
+      "nnu": [
+        "104590840",
+        "104596252",
+        "104596253",
+        "104596254",
+        "104611270",
+        "104611276"
+      ],
+      "osa": [
+        "4330012"
+      ],
+      "dosa": [
+        "Os02t0621300-01",
+        "Os10t0471100-01"
+      ],
+      "obr": [
+        "102703957",
+        "102714431"
+      ],
+      "bdi": [
+        "100825208",
+        "100833295",
+        "100833807",
+        "100833914",
+        "100837949"
+      ],
+      "sbi": [
+        "8064469",
+        "8067437",
+        "8072487",
+        "8084204",
+        "8084699"
+      ],
+      "zma": [
+        "100273712",
+        "100280261",
+        "100382841"
+      ],
+      "sita": [
+        "101762753",
+        "101769789",
+        "101772770",
+        "101775794"
+      ],
+      "pda": [
+        "103699030"
+      ],
+      "egu": [
+        "105044200",
+        "105044255",
+        "105055747"
+      ],
+      "mus": [
+        "103971700",
+        "103992720"
+      ],
+      "dct": [
+        "110108758",
+        "110112743"
+      ],
+      "atr": [
+        "18447308",
+        "18447310",
+        "18447313"
+      ],
+      "smo": [
+        "SELMODRAFT_129942",
+        "SELMODRAFT_230422"
+      ],
+      "ppp": [
+        "PHYPADRAFT_177243"
+      ],
+      "ppj": [
+        "RK21_05027"
+      ],
+      "pbc": [
+        "CD58_03975"
+      ],
+      "syn": [
+        "sll0208"
+      ],
+      "syz": [
+        "MYO_122780"
+      ],
+      "syy": [
+        "SYNGTS_2252"
+      ],
+      "syt": [
+        "SYNGTI_2251"
+      ],
+      "sys": [
+        "SYNPCCN_2250"
+      ],
+      "syq": [
+        "SYNPCCP_2250"
+      ],
+      "syj": [
+        "D082_05310"
+      ],
+      "syw": [
+        "SYNW1738"
+      ],
+      "syc": [
+        "syc0050_d"
+      ],
+      "syf": [
+        "Synpcc7942_1593"
+      ],
+      "syd": [
+        "Syncc9605_0728"
+      ],
+      "sye": [
+        "Syncc9902_1635"
+      ],
+      "syg": [
+        "sync_1990"
+      ],
+      "syr": [
+        "SynRCC307_1586"
+      ],
+      "syx": [
+        "SynWH7803_0654"
+      ],
+      "cya": [
+        "CYA_0415"
+      ],
+      "cyb": [
+        "CYB_2442"
+      ],
+      "syne": [
+        "Syn6312_2280"
+      ],
+      "synp": [
+        "Syn7502_03278"
+      ],
+      "synk": [
+        "KR100_05365"
+      ],
+      "synr": [
+        "KR49_12745"
+      ],
+      "synd": [
+        "KR52_13300"
+      ],
+      "syu": [
+        "M744_09020"
+      ],
+      "syh": [
+        "Syncc8109_1976"
+      ],
+      "synw": [
+        "SynWH8103_01989"
+      ],
+      "tel": [
+        "tll1313"
+      ],
+      "thn": [
+        "NK55_03185"
+      ],
+      "cgc": [
+        "Cyagr_0039",
+        "Cyagr_1038"
+      ],
+      "cyi": [
+        "CBM981_0849"
+      ],
+      "dsl": [
+        "Dacsa_2178"
+      ],
+      "cmp": [
+        "Cha6605_4153"
+      ],
+      "len": [
+        "LEP3755_23570"
+      ],
+      "let": [
+        "O77CONTIG1_03123"
+      ],
+      "lbo": [
+        "LBWT_14420"
+      ],
+      "pseu": [
+        "Pse7367_3626"
+      ],
+      "pma": [
+        "Pro_0532"
+      ],
+      "pmm": [
+        "PMM0532"
+      ],
+      "pmt": [
+        "PMT_1231"
+      ],
+      "pmn": [
+        "PMN2A_1863"
+      ],
+      "pmi": [
+        "PMT9312_0532"
+      ],
+      "pmb": [
+        "A9601_05881"
+      ],
+      "pmc": [
+        "P9515_05961"
+      ],
+      "pmf": [
+        "P9303_07791"
+      ],
+      "pmg": [
+        "P9301_05581"
+      ],
+      "pmh": [
+        "P9215_06131"
+      ],
+      "pmj": [
+        "P9211_05351"
+      ],
+      "pme": [
+        "NATL1_05881"
+      ],
+      "prc": [
+        "EW14_0578"
+      ],
+      "prm": [
+        "EW15_0629"
+      ],
+      "amr": [
+        "AM1_4041"
+      ],
+      "mar": [
+        "MAE_53090"
+      ],
+      "mpk": [
+        "VL20_1523"
+      ],
+      "can": [
+        "Cyan10605_1692"
+      ],
+      "hao": [
+        "PCC7418_0961"
+      ],
+      "cyu": [
+        "UCYN_05810"
+      ],
+      "cwa": [
+        "CwatDRAFT_5731"
+      ],
+      "glp": [
+        "Glo7428_0150"
+      ],
+      "gee": [
+        "GM3708_2118"
+      ],
+      "cyt": [
+        "cce_0778"
+      ],
+      "cyp": [
+        "PCC8801_0455"
+      ],
+      "cyn": [
+        "Cyan7425_0398"
+      ],
+      "cyh": [
+        "Cyan8802_0468"
+      ],
+      "ter": [
+        "Tery_2280"
+      ],
+      "mic": [
+        "Mic7113_4535"
+      ],
+      "arp": [
+        "NIES39_M01940"
+      ],
+      "gei": [
+        "GEI7407_1564"
+      ],
+      "oac": [
+        "Oscil6304_2075"
+      ],
+      "oni": [
+        "Osc7112_0944"
+      ],
+      "cep": [
+        "Cri9333_4418"
+      ],
+      "gvi": [
+        "gll3146"
+      ],
+      "glj": [
+        "GKIL_0725"
+      ],
+      "ana": [
+        "alr5283"
+      ],
+      "npu": [
+        "Npun_R1711"
+      ],
+      "nos": [
+        "Nos7107_1028"
+      ],
+      "nop": [
+        "Nos7524_4304"
+      ],
+      "non": [
+        "NOS3756_54760"
+      ],
+      "ava": [
+        "Ava_2533"
+      ],
+      "naz": [
+        "Aazo_3371"
+      ],
+      "anb": [
+        "ANA_C11210"
+      ],
+      "acy": [
+        "Anacy_3389"
+      ],
+      "awa": [
+        "AA650_00525"
+      ],
+      "csg": [
+        "Cylst_0697"
+      ],
+      "calo": [
+        "Cal7507_5586"
+      ],
+      "calt": [
+        "Cal6303_4369"
+      ],
+      "calh": [
+        "IJ00_07390"
+      ],
+      "riv": [
+        "Riv7116_3790"
+      ],
+      "fis": [
+        "FIS3754_06310"
+      ],
+      "ncn": [
+        "BZZ01_14980"
+      ],
+      "cthe": [
+        "Chro_1554"
+      ],
+      "ceo": [
+        "ETSB_0877"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.1.99.5"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.1.99.5"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.1.99.5"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.1.99.5"
+      ],
+      "CAS": [
+        "94185-90-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Cheesbrough TM",
+          "Kolattukudy PE."
+        ],
+        "title": "Alkane biosynthesis by decarbonylation of aldehydes catalyzed by a particulate preparation from Pisum sativum.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 81 (1984) 6613-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6593720]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schirmer A",
+          "Rude MA",
+          "Li X",
+          "Popova E",
+          "del Cardayre SB"
+        ],
+        "title": "Microbial biosynthesis of alkanes.",
+        "journal": "Science. 329 (2010) 559-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:20671186]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Warui DM",
+          "Li N",
+          "Norgaard H",
+          "Krebs C",
+          "Bollinger JM Jr",
+          "Booker SJ"
+        ],
+        "title": "Detection of formate, rather than carbon monoxide, as the stoichiometric coproduct in conversion of fatty aldehydes to alkanes by a cyanobacterial aldehyde decarbonylase.",
+        "journal": "J. Am. Chem. Soc. 133 (2011) 3316-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:21341652]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Li N",
+          "Chang WC",
+          "Warui DM",
+          "Booker SJ",
+          "Krebs C",
+          "Bollinger JM Jr"
+        ],
+        "title": "Evidence for only oxygenative cleavage of aldehydes to alk(a/e)nes and formate by cyanobacterial aldehyde decarbonylases.",
+        "journal": "Biochemistry. 51 (2012) 7908-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:22947199]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

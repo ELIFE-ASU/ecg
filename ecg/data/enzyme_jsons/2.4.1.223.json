@@ -1,0 +1,863 @@
+[
+  {
+    "entry_id": "2.4.1.223",
+    "name": "glucuronosyl-galactosyl-proteoglycan 4-alpha-N-acetylglucosaminyltransferase",
+    "names": [
+      "glucuronosyl-galactosyl-proteoglycan 4-alpha-N-acetylglucosaminyltransferase",
+      "alpha-N-acetylglucosaminyltransferase I",
+      "alpha1,4-N-acetylglucosaminyltransferase",
+      "glucuronosylgalactosyl-proteoglycan 4-alpha-N-acetylglucosaminyltransferase",
+      "UDP-N-acetyl-D-glucosamine:beta-D-glucuronosyl-(1->3)-beta-D-galactosyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-xylosyl-proteoglycan 4IV-alpha-N-acetyl-D-glucosaminyltransferase",
+      "glucuronyl-galactosyl-proteoglycan 4-alpha-N-acetylglucosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-alpha-D-glucosamine:[protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine 4IV-alpha-N-acetyl-D-glucosaminyltransferase (configuration-retaining)",
+    "reaction": "UDP-N-acetyl-alpha-D-glucosamine + [protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine = UDP + [protein]-3-O-(alpha-D-GlcNAc-(1->4)-beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine [RN:R05930 R07397]",
+    "all_reac": "R05930(G) R07397",
+    "iubmb_reactions": [
+      "R05930(G) R07397"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-glucosamine [CPD:C00043]",
+      "[protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine [CPD:C04903]"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "[protein]-3-O-(alpha-D-GlcNAc-(1->4)-beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine [CPD:C15656]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Enzyme involved in the initiation of heparin and heparan sulfate synthesis, transferring GlcNAc to the (GlcA-Gal-Gal-Xyl-)Ser core. Apparently products of both the human EXTL2 and EXTL3 genes can catalyse this reaction. In Caenorhabditis elegans, the product of the rib-2 gene displays this activity as well as that of EC 2.4.1.224, glucuronosyl-N-acetylglucosaminyl-proteoglycan 4-alpha-N-acetylglucosaminyltransferase. For explanation of the use of a superscript in the systematic name, see {iupac/2carb/37#372::2-Carb-37.2}.",
+    "pathways": {
+      "ec00534": "Glycosaminoglycan biosynthesis - heparan sulfate / heparin",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K02369": "alpha-1,4-N-acetylglucosaminyltransferase EXTL2",
+      "K02370": "alpha-1,4-N-acetylglucosaminyltransferase EXTL3"
+    },
+    "genes": {
+      "hsa": [
+        "2135",
+        "2137"
+      ],
+      "ptr": [
+        "457060",
+        "464086"
+      ],
+      "pps": [
+        "100977184",
+        "100984535"
+      ],
+      "ggo": [
+        "101144361",
+        "101153043"
+      ],
+      "pon": [
+        "100454000",
+        "100458560"
+      ],
+      "nle": [
+        "100585000",
+        "100590557"
+      ],
+      "mcc": [
+        "100426593",
+        "712189"
+      ],
+      "mcf": [
+        "101865433",
+        "102129629"
+      ],
+      "csab": [
+        "103215549",
+        "103224361"
+      ],
+      "rro": [
+        "104668244",
+        "104673259"
+      ],
+      "rbb": [
+        "108524175",
+        "108537365"
+      ],
+      "cjc": [
+        "100400452",
+        "100412156"
+      ],
+      "sbq": [
+        "101037632",
+        "101043244"
+      ],
+      "mmu": [
+        "54616",
+        "58193"
+      ],
+      "rno": [
+        "310803",
+        "56819"
+      ],
+      "cge": [
+        "100751999",
+        "100761218"
+      ],
+      "ngi": [
+        "103729989",
+        "103741874"
+      ],
+      "hgl": [
+        "101697847",
+        "101726394"
+      ],
+      "ccan": [
+        "109682613",
+        "109698077"
+      ],
+      "ocu": [
+        "100348721",
+        "100352420"
+      ],
+      "tup": [
+        "102472563",
+        "102478415"
+      ],
+      "cfa": [
+        "479925",
+        "486091"
+      ],
+      "aml": [
+        "100469588",
+        "100480634"
+      ],
+      "umr": [
+        "103669325",
+        "103675952"
+      ],
+      "oro": [
+        "101369733",
+        "101377818"
+      ],
+      "fca": [
+        "101089128",
+        "101095491"
+      ],
+      "ptg": [
+        "102958499",
+        "102961650"
+      ],
+      "aju": [
+        "106976417",
+        "106983017"
+      ],
+      "bta": [
+        "540527",
+        "783970"
+      ],
+      "bom": [
+        "102265657",
+        "102267911",
+        "102273632"
+      ],
+      "biu": [
+        "109556009",
+        "109562800"
+      ],
+      "phd": [
+        "102326761",
+        "102336876"
+      ],
+      "chx": [
+        "102174617",
+        "102178172"
+      ],
+      "oas": [
+        "101108814",
+        "101115079"
+      ],
+      "ssc": [
+        "100152703",
+        "100155305"
+      ],
+      "cfr": [
+        "102507432",
+        "102518222"
+      ],
+      "cdk": [
+        "105084916",
+        "105102072"
+      ],
+      "bacu": [
+        "103001155",
+        "103009480"
+      ],
+      "lve": [
+        "103078702",
+        "103089228"
+      ],
+      "ecb": [
+        "100050181",
+        "100054778"
+      ],
+      "epz": [
+        "103550057",
+        "103567372"
+      ],
+      "eai": [
+        "106832529",
+        "106837773"
+      ],
+      "myb": [
+        "102249572",
+        "102250952"
+      ],
+      "myd": [
+        "102754802",
+        "102764127"
+      ],
+      "hai": [
+        "109371361",
+        "109379533"
+      ],
+      "rss": [
+        "109448136",
+        "109455470"
+      ],
+      "pale": [
+        "102883756",
+        "102889624"
+      ],
+      "lav": [
+        "100658953",
+        "100666182"
+      ],
+      "tmu": [
+        "101345745",
+        "101358076"
+      ],
+      "mdo": [
+        "100030828",
+        "100032966"
+      ],
+      "shr": [
+        "100914736",
+        "100919560"
+      ],
+      "oaa": [
+        "100074116",
+        "100087229",
+        "100091427"
+      ],
+      "gga": [
+        "422022",
+        "424465"
+      ],
+      "mgp": [
+        "100542317",
+        "100549273"
+      ],
+      "cjo": [
+        "107312356",
+        "107317515"
+      ],
+      "apla": [
+        "101791181",
+        "101792118"
+      ],
+      "acyg": [
+        "106038151",
+        "106039416"
+      ],
+      "tgu": [
+        "100228076",
+        "100232258"
+      ],
+      "gfr": [
+        "102041533"
+      ],
+      "fab": [
+        "101818645"
+      ],
+      "phi": [
+        "102105383",
+        "102114416"
+      ],
+      "pmaj": [
+        "107201996",
+        "107208067"
+      ],
+      "ccw": [
+        "104696886",
+        "109143175"
+      ],
+      "fpg": [
+        "101917228",
+        "101920946"
+      ],
+      "fch": [
+        "102049911",
+        "102056733"
+      ],
+      "clv": [
+        "102085730",
+        "102088676"
+      ],
+      "egz": [
+        "104127251"
+      ],
+      "aam": [
+        "106488030",
+        "106499747"
+      ],
+      "asn": [
+        "102377426",
+        "102388723"
+      ],
+      "amj": [
+        "102573600",
+        "102575775"
+      ],
+      "pss": [
+        "102451232",
+        "102462577",
+        "102462903"
+      ],
+      "cmy": [
+        "102930795",
+        "102945736"
+      ],
+      "cpic": [
+        "101935250",
+        "101945022"
+      ],
+      "acs": [
+        "100557117",
+        "100563405"
+      ],
+      "pvt": [
+        "110070203",
+        "110076514"
+      ],
+      "pbi": [
+        "103050271",
+        "103060383"
+      ],
+      "gja": [
+        "107106370",
+        "107107448"
+      ],
+      "xla": [
+        "443929",
+        "444275",
+        "447542"
+      ],
+      "xtr": [
+        "493327",
+        "493398"
+      ],
+      "npr": [
+        "108791470",
+        "108802201"
+      ],
+      "dre": [
+        "493783",
+        "558373"
+      ],
+      "srx": [
+        "107715497",
+        "107715517",
+        "107719384",
+        "107722455",
+        "107745900"
+      ],
+      "sanh": [
+        "107669453",
+        "107681726",
+        "107701317",
+        "107704067"
+      ],
+      "sgh": [
+        "107548434",
+        "107559127",
+        "107560780"
+      ],
+      "ccar": [
+        "109106074",
+        "109112811",
+        "109112812",
+        "109113082"
+      ],
+      "ipu": [
+        "108257719"
+      ],
+      "amex": [
+        "103035439",
+        "103041905"
+      ],
+      "tru": [
+        "101066160",
+        "101068405"
+      ],
+      "tng": [
+        "GSTEN00023018G001",
+        "GSTEN00028414G001"
+      ],
+      "lco": [
+        "104934376",
+        "104936574"
+      ],
+      "ncc": [
+        "104946504",
+        "104951471"
+      ],
+      "mze": [
+        "101467370",
+        "101469432"
+      ],
+      "ola": [
+        "101163453",
+        "101174221"
+      ],
+      "xma": [
+        "102236630",
+        "102237533"
+      ],
+      "pret": [
+        "103457379",
+        "103479408"
+      ],
+      "csem": [
+        "103381243",
+        "103396080"
+      ],
+      "lcf": [
+        "108873476",
+        "108883513"
+      ],
+      "hcq": [
+        "109514670"
+      ],
+      "bpec": [
+        "110158086",
+        "110164237"
+      ],
+      "sasa": [
+        "100380460",
+        "106571659",
+        "106608199"
+      ],
+      "els": [
+        "105007545",
+        "105017562"
+      ],
+      "sfm": [
+        "108924136",
+        "108935058"
+      ],
+      "lcm": [
+        "102348020",
+        "102361988"
+      ],
+      "cmk": [
+        "103188516",
+        "103188850"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_199038"
+      ],
+      "cin": [
+        "100184170"
+      ],
+      "spu": [
+        "585810"
+      ],
+      "aplc": [
+        "110979510",
+        "110979551",
+        "110979555"
+      ],
+      "sko": [
+        "100369934"
+      ],
+      "dme": [
+        "Dmel_CG15110"
+      ],
+      "dpo": [
+        "Dpse_GA13499"
+      ],
+      "dan": [
+        "Dana_GF11490"
+      ],
+      "der": [
+        "Dere_GG21945"
+      ],
+      "dpe": [
+        "Dper_GL11758",
+        "Dper_GL11867",
+        "Dper_GL11868",
+        "Dper_GL11869",
+        "Dper_GL11870",
+        "Dper_GL11871"
+      ],
+      "dse": [
+        "Dsec_GM21933"
+      ],
+      "dsi": [
+        "Dsimw501_GD11429"
+      ],
+      "dwi": [
+        "Dwil_GK17964"
+      ],
+      "dya": [
+        "Dyak_GE12019"
+      ],
+      "dgr": [
+        "Dgri_GH23150"
+      ],
+      "dmo": [
+        "Dmoj_GI18912"
+      ],
+      "dvi": [
+        "Dvir_GJ19767"
+      ],
+      "mde": [
+        "101892286"
+      ],
+      "aga": [
+        "AgaP_AGAP001688"
+      ],
+      "aag": [
+        "5578446"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ016867"
+      ],
+      "bim": [
+        "105680701"
+      ],
+      "bter": [
+        "105666123"
+      ],
+      "soc": [
+        "105200907"
+      ],
+      "aec": [
+        "105154628"
+      ],
+      "acep": [
+        "105620069"
+      ],
+      "pbar": [
+        "105433557"
+      ],
+      "hst": [
+        "105188784"
+      ],
+      "cfo": [
+        "105251656"
+      ],
+      "lhu": [
+        "105674049"
+      ],
+      "pgc": [
+        "109853827"
+      ],
+      "nvi": [
+        "100121031"
+      ],
+      "tca": [
+        "663383"
+      ],
+      "dpa": [
+        "109537502"
+      ],
+      "nvl": [
+        "108567151"
+      ],
+      "bmor": [
+        "101742984"
+      ],
+      "dpl": [
+        "KGM_208641"
+      ],
+      "pmac": [
+        "106712471"
+      ],
+      "pxy": [
+        "105388581"
+      ],
+      "api": [
+        "100167784"
+      ],
+      "dnx": [
+        "107163206"
+      ],
+      "phu": [
+        "Phum_PHUM490250"
+      ],
+      "zne": [
+        "110831980"
+      ],
+      "fcd": [
+        "110846056"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_218850"
+      ],
+      "isc": [
+        "IscW_ISCW011872"
+      ],
+      "tut": [
+        "107366477"
+      ],
+      "cel": [
+        "CELE_K01G5.6"
+      ],
+      "cbr": [
+        "CBG18318"
+      ],
+      "nai": [
+        "NECAME_03534",
+        "NECAME_03535"
+      ],
+      "bmy": [
+        "Bm1_27215"
+      ],
+      "loa": [
+        "LOAG_07208",
+        "LOAG_16451"
+      ],
+      "tsp": [
+        "Tsp_02636"
+      ],
+      "hro": [
+        "HELRODRAFT_83262"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_137450"
+      ],
+      "crg": [
+        "105324021",
+        "105341576"
+      ],
+      "myi": [
+        "110442614"
+      ],
+      "obi": [
+        "106873155",
+        "106874784"
+      ],
+      "lak": [
+        "106152057"
+      ],
+      "smm": [
+        "Smp_073220"
+      ],
+      "shx": [
+        "MS3_10653",
+        "MS3_11145"
+      ],
+      "ovi": [
+        "T265_06473",
+        "T265_07036",
+        "T265_13609"
+      ],
+      "nve": [
+        "NEMVE_v1g235881"
+      ],
+      "epa": [
+        "110234330"
+      ],
+      "adf": [
+        "107341811"
+      ],
+      "hmg": [
+        "100212160"
+      ],
+      "tad": [
+        "TRIADDRAFT_50846"
+      ],
+      "aqu": [
+        "100633921",
+        "100636716",
+        "100640795",
+        "105313463",
+        "105313464",
+        "105314839",
+        "105316428"
+      ],
+      "egr": [
+        "104424321"
+      ],
+      "lja": [
+        "Lj0g3v0015729.1"
+      ],
+      "csv": [
+        "101217063"
+      ],
+      "cmo": [
+        "103501448"
+      ],
+      "soe": [
+        "110802189"
+      ],
+      "smo": [
+        "SELMODRAFT_133103",
+        "SELMODRAFT_133161",
+        "SELMODRAFT_403218",
+        "SELMODRAFT_88187"
+      ],
+      "ppp": [
+        "PHYPADRAFT_146391"
+      ],
+      "bpg": [
+        "Bathy17g01230"
+      ],
+      "ccp": [
+        "CHC_T00009229001"
+      ],
+      "fgr": [
+        "FGSG_13949"
+      ],
+      "fpu": [
+        "FPSE_06328"
+      ],
+      "fox": [
+        "FOXG_04701",
+        "FOXG_13828"
+      ],
+      "nhe": [
+        "NECHADRAFT_45533"
+      ],
+      "tre": [
+        "TRIREDRAFT_56638",
+        "TRIREDRAFT_62377"
+      ],
+      "maw": [
+        "MAC_06017"
+      ],
+      "maj": [
+        "MAA_06147"
+      ],
+      "plj": [
+        "VFPFJ_08221"
+      ],
+      "vda": [
+        "VDAG_08114",
+        "VDAG_10388"
+      ],
+      "sre": [
+        "PTSG_09573"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_54630",
+        "EMIHUDRAFT_74009"
+      ],
+      "tva": [
+        "TVAG_466230"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.223"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.223"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.223"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.223"
+      ],
+      "CAS": [
+        "179241-74-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kitagawa H",
+          "Shimakawa H",
+          "Sugahara K."
+        ],
+        "title": "The tumor suppressor EXT-like gene EXTL2 encodes an alpha1, 4-N-acetylhexosaminyltransferase that transfers N-acetylgalactosamine and N-acetylglucosamine to the common glycosaminoglycan-protein linkage region. The key enzyme for the chain initiation of heparan sulfate.",
+        "journal": "J. Biol. Chem. 274 (1999) 13933-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10318803]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kitagawa H",
+          "Egusa N",
+          "Tamura JI",
+          "Kusche-Gullberg M",
+          "Lindahl U",
+          "Sugahara K."
+        ],
+        "title": "rib-2, a Caenorhabditis elegans homolog of the human tumor suppressor EXT genes encodes a novel alpha1,4-N-acetylglucosaminyltransferase involved in the biosynthetic initiation and elongation of heparan sulfate.",
+        "journal": "J. Biol. Chem. 276 (2001) 4834-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11121397]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

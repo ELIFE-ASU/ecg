@@ -1,0 +1,470 @@
+[
+  {
+    "entry_id": "1.14.15.18",
+    "name": "calcidiol 1-monooxygenase",
+    "names": [
+      "calcidiol 1-monooxygenase",
+      "25-hydroxycholecalciferol 1-hydroxylase",
+      "25-hydroxycholecalciferol 1-monooxygenase",
+      "1-hydroxylase-25-hydroxyvitamin D3",
+      "25-hydroxy D3-1alpha-hydroxylase",
+      "25-hydroxycholecalciferol 1alpha-hydroxylase",
+      "25-hydroxyvitamin D3 1alpha-hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "calcidiol,adrenodoxin:oxygen oxidoreductase (1-hydroxylating)",
+    "reaction": "(1) calcidiol + 2 reduced adrenodoxin + 2 H+ + O2 = calcitriol + 2 oxidized adrenodoxin + H2O [RN:R03610]; (2) secalciferol + 2 reduced adrenodoxin + 2 H+ + O2 = calcitetrol + 2 oxidized adrenodoxin + H2O [RN:R11324]",
+    "all_reac": "R03610 R11324",
+    "iubmb_reactions": [
+      "R03610 R11324"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "calcidiol [CPD:C01561]",
+      "reduced adrenodoxin [CPD:C00662]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "secalciferol [CPD:C07712]"
+    ],
+    "products": [
+      "calcitriol [CPD:C01673]",
+      "oxidized adrenodoxin [CPD:C00667]",
+      "H2O [CPD:C00001]",
+      "calcitetrol [CPD:C18231]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A P-450 (heme-thiolate) enzyme found in mammals.",
+    "pathways": {
+      "ec00100": "Steroid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K07438": "calcidiol 1-monooxygenase (25-hydroxyvitamin D3 1alpha-hydroxylase)"
+    },
+    "genes": {
+      "hsa": [
+        "1594"
+      ],
+      "ptr": [
+        "452027"
+      ],
+      "pps": [
+        "100974264"
+      ],
+      "ggo": [
+        "101146696"
+      ],
+      "pon": [
+        "100443915"
+      ],
+      "nle": [
+        "100594622"
+      ],
+      "mcc": [
+        "715747"
+      ],
+      "mcf": [
+        "102117707"
+      ],
+      "csab": [
+        "103238591"
+      ],
+      "rro": [
+        "104682342"
+      ],
+      "rbb": [
+        "108524407"
+      ],
+      "cjc": [
+        "100388588"
+      ],
+      "sbq": [
+        "101042462"
+      ],
+      "mmu": [
+        "13115"
+      ],
+      "rno": [
+        "114700"
+      ],
+      "cge": [
+        "100760414"
+      ],
+      "ngi": [
+        "103742896"
+      ],
+      "hgl": [
+        "101700851"
+      ],
+      "ccan": [
+        "109686086"
+      ],
+      "ocu": [
+        "100341053"
+      ],
+      "tup": [
+        "102492875"
+      ],
+      "cfa": [
+        "481133"
+      ],
+      "aml": [
+        "100481484"
+      ],
+      "umr": [
+        "103656705"
+      ],
+      "oro": [
+        "101363421"
+      ],
+      "fca": [
+        "100750221"
+      ],
+      "ptg": [
+        "102971063"
+      ],
+      "aju": [
+        "106975877"
+      ],
+      "bta": [
+        "539630"
+      ],
+      "bom": [
+        "102278257"
+      ],
+      "biu": [
+        "109559305"
+      ],
+      "phd": [
+        "102343052"
+      ],
+      "chx": [
+        "102170758"
+      ],
+      "oas": [
+        "101116039"
+      ],
+      "ssc": [
+        "397055"
+      ],
+      "cfr": [
+        "102522811"
+      ],
+      "cdk": [
+        "105100328"
+      ],
+      "bacu": [
+        "103001013"
+      ],
+      "lve": [
+        "103084276"
+      ],
+      "ecb": [
+        "100034100"
+      ],
+      "epz": [
+        "103553643"
+      ],
+      "eai": [
+        "106833020"
+      ],
+      "myb": [
+        "102262846"
+      ],
+      "myd": [
+        "102757775"
+      ],
+      "hai": [
+        "109390756"
+      ],
+      "rss": [
+        "109453000"
+      ],
+      "pale": [
+        "102894468"
+      ],
+      "lav": [
+        "100657886"
+      ],
+      "tmu": [
+        "101355020"
+      ],
+      "mdo": [
+        "100031497"
+      ],
+      "shr": [
+        "100913970"
+      ],
+      "fab": [
+        "101816678"
+      ],
+      "phi": [
+        "102103763"
+      ],
+      "pmaj": [
+        "107199279"
+      ],
+      "clv": [
+        "106146061"
+      ],
+      "asn": [
+        "102386966"
+      ],
+      "amj": [
+        "102574984"
+      ],
+      "pss": [
+        "102443605"
+      ],
+      "cmy": [
+        "102946801"
+      ],
+      "cpic": [
+        "101954100"
+      ],
+      "acs": [
+        "100559713"
+      ],
+      "pvt": [
+        "110074451"
+      ],
+      "pbi": [
+        "103060795"
+      ],
+      "gja": [
+        "107119675"
+      ],
+      "xla": [
+        "108708601",
+        "108709871"
+      ],
+      "xtr": [
+        "448754"
+      ],
+      "npr": [
+        "108791588"
+      ],
+      "dre": [
+        "793309"
+      ],
+      "srx": [
+        "107747831"
+      ],
+      "sanh": [
+        "107684010"
+      ],
+      "sgh": [
+        "107561793"
+      ],
+      "ccar": [
+        "109089182"
+      ],
+      "ipu": [
+        "108254794"
+      ],
+      "amex": [
+        "103035224"
+      ],
+      "tru": [
+        "101062641"
+      ],
+      "tng": [
+        "GSTEN00033821G001"
+      ],
+      "lco": [
+        "104932006",
+        "109142364"
+      ],
+      "ncc": [
+        "104955571"
+      ],
+      "mze": [
+        "101476393"
+      ],
+      "ola": [
+        "101172325"
+      ],
+      "xma": [
+        "102222483"
+      ],
+      "pret": [
+        "103465325"
+      ],
+      "csem": [
+        "103386049"
+      ],
+      "lcf": [
+        "108898968"
+      ],
+      "hcq": [
+        "109522134"
+      ],
+      "bpec": [
+        "110171326"
+      ],
+      "sasa": [
+        "106565446",
+        "106583283"
+      ],
+      "els": [
+        "105017033"
+      ],
+      "sfm": [
+        "108918367",
+        "108939170"
+      ],
+      "lcm": [
+        "102346327"
+      ],
+      "cmk": [
+        "103191415"
+      ],
+      "spu": [
+        "585633"
+      ],
+      "aplc": [
+        "110982206",
+        "110983051"
+      ],
+      "spar": [
+        "SPRG_12800",
+        "SPRG_14730"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.18"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.18"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.18"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.18"
+      ],
+      "CAS": [
+        "9081-36-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Gray RW",
+          "Omdahl JL",
+          "Ghazarian JG",
+          "DeLuca HF."
+        ],
+        "title": "25-Hydroxycholecalciferol-1-hydroxylase. Subcellular location and properties.",
+        "journal": "J. Biol. Chem. 247 (1972) 7528-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4404596]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sakaki T",
+          "Sawada N",
+          "Takeyama K",
+          "Kato S",
+          "Inouye K"
+        ],
+        "title": "Enzymatic properties of mouse 25-hydroxyvitamin D3 1 alpha-hydroxylase expressed in Escherichia coli.",
+        "journal": "Eur. J. Biochem. 259 (1999) 731-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10092858]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sawada N",
+          "Sakaki T",
+          "Kitanaka S",
+          "Takeyama K",
+          "Kato S",
+          "Inouye K"
+        ],
+        "title": "Enzymatic properties of human 25-hydroxyvitamin D3 1alpha-hydroxylase coexpression with adrenodoxin and NADPH-adrenodoxin reductase in Escherichia coli.",
+        "journal": "Eur. J. Biochem. 265 (1999) 950-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10518789]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

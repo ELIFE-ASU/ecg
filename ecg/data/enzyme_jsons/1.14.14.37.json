@@ -1,0 +1,256 @@
+[
+  {
+    "entry_id": "1.14.14.37",
+    "name": "4-hydroxyphenylacetaldehyde oxime monooxygenase",
+    "names": [
+      "4-hydroxyphenylacetaldehyde oxime monooxygenase",
+      "4-hydroxybenzeneacetaldehyde oxime monooxygenase",
+      "cytochrome P450II-dependent monooxygenase",
+      "NADPH-cytochrome P450 reductase (CYP71E1)",
+      "CYP71E1",
+      "4-hydroxyphenylacetaldehyde oxime,NADPH:oxygen oxidoreductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "(E)-4-hydroxyphenylacetaldehyde oxime,[reduced NADPH---hemoprotein reductase]:oxygen oxidoreductase",
+    "reaction": "(E)-4-hydroxyphenylacetaldehyde oxime + [reduced NADPH---hemoprotein reductase] + O2 = (S)-4-hydroxymandelonitrile + [oxidized NADPH---hemoprotein reductase] + 2 H2O (overall reaction) [RN:R05728]; (1a) (E)-4-hydroxyphenylacetaldehyde oxime = (Z)-4-hydroxyphenylacetaldehyde oxime [RN:R11442]; (1b) (Z)-4-hydroxyphenylacetaldehyde oxime = 4-hydroxyphenylacetonitrile + H2O [RN:R04306]; (1c) 4-hydroxyphenylacetonitrile + [reduced NADPH---hemoprotein reductase] + O2 = (S)-4-hydroxymandelonitrile + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R02708]",
+    "all_reac": "R02708 R04306 R05728 R11442",
+    "iubmb_reactions": [
+      "R02708 R04306 R05728 R11442"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(E)-4-hydroxyphenylacetaldehyde oxime [CPD:C04350]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]",
+      "(Z)-4-hydroxyphenylacetaldehyde oxime [CPD:C04353]",
+      "4-hydroxyphenylacetonitrile [CPD:C03766]"
+    ],
+    "products": [
+      "(S)-4-hydroxymandelonitrile [CPD:C03742]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]",
+      "(Z)-4-hydroxyphenylacetaldehyde oxime [CPD:C04353]",
+      "4-hydroxyphenylacetonitrile [CPD:C03766]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytochrome P-450 (heme thiolate) enzyme is involved in the biosynthesis of the cyanogenic glucoside dhurrin in sorghum. It catalyses three different activities - isomerization of the (E) isomer to the (Z) isomer, dehydration, and C-hydroxylation.",
+    "pathways": {
+      "ec00460": "Cyanoamino acid metabolism",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K13029": "4-hydroxyphenylacetaldehyde oxime monooxygenase"
+    },
+    "genes": {
+      "bdi": [
+        "100827324",
+        "100827625"
+      ],
+      "sbi": [
+        "8060872",
+        "8060873"
+      ],
+      "zma": [
+        "100194166"
+      ],
+      "sita": [
+        "101769877",
+        "101783611",
+        "101784688",
+        "101785891"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.37"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.37"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.37"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.37"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "MacFarlane IJ",
+          "Lees EM",
+          "Conn EE."
+        ],
+        "title": "The in vitro biosynthesis of dhurrin, the cyanogenic glycoside of Sorghum bicolor.",
+        "journal": "J. Biol. Chem. 250 (1975) 4708-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:237909]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Shimada M",
+          "Conn EE."
+        ],
+        "title": "The enzymatic conversion of p-hydroxyphenylacetaldoxime to p-hydroxymandelonitrile.",
+        "journal": "Arch. Biochem. Biophys. 180 (1977) 199-207.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:193443]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Busk PK",
+          "Moller BL."
+        ],
+        "title": "Dhurrin synthesis in sorghum is regulated at the transcriptional level and induced by nitrogen fertilization in older plants.",
+        "journal": "Plant. Physiol. 129 (2002) 1222-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12114576]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kristensen C",
+          "Morant M",
+          "Olsen CE",
+          "Ekstrom CT",
+          "Galbraith DW",
+          "Moller BL",
+          "Bak S."
+        ],
+        "title": "Metabolic engineering of dhurrin in transgenic Arabidopsis plants with marginal inadvertent effects on the metabolome and transcriptome.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 102 (2005) 1779-84.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15665094]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Clausen M",
+          "Kannangara RM",
+          "Olsen CE",
+          "Blomstedt CK",
+          "Gleadow RM",
+          "Jorgensen K",
+          "Bak S",
+          "Motawie MS",
+          "Moller BL"
+        ],
+        "title": "The bifurcation of the cyanogenic glucoside and glucosinolate biosynthetic pathways.",
+        "journal": "Plant. J. 84 (2015) 558-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:26361733]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

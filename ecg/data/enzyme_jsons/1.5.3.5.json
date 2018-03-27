@@ -1,0 +1,216 @@
+[
+  {
+    "entry_id": "1.5.3.5",
+    "name": "(S)-6-hydroxynicotine oxidase",
+    "names": [
+      "(S)-6-hydroxynicotine oxidase",
+      "L-6-hydroxynicotine oxidase",
+      "6-hydroxy-L-nicotine oxidase",
+      "6-hydroxy-L-nicotine:oxygen oxidoreductase",
+      "nctB (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH group of donors;",
+      "With oxygen as acceptor"
+    ],
+    "sysname": "(S)-6-hydroxynicotine:oxygen oxidoreductase",
+    "reaction": "(S)-6-hydroxynicotine + H2O + O2 = 1-(6-hydroxypyridin-3-yl)-4-(methylamino)butan-1-one + H2O2 (overall reaction) [RN:R03202]; (1a) (S)-6-hydroxynicotine + O2 = 5-(N-methyl-4,5-dihydro-1H-pyrrol-2-yl)pyridin-2-ol + H2O2 [RN:R11048]; (1b) 5-(N-methyl-4,5-dihydro-1H-pyrrol-2-yl)pyridin-2-ol + H2O = 1-(6-hydroxypyridin-3-yl)-4-(methylamino)butan-1-one (spontaneous) [RN:R11049]",
+    "all_reac": "R03202 R11048 R11049",
+    "iubmb_reactions": [
+      "R03202 R11048 R11049"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(S)-6-hydroxynicotine [CPD:C01056]",
+      "H2O [CPD:C00001]",
+      "O2 [CPD:C00007]",
+      "5-(N-methyl-4,5-dihydro-1H-pyrrol-2-yl)pyridin-2-ol [CPD:C21075]"
+    ],
+    "products": [
+      "1-(6-hydroxypyridin-3-yl)-4-(methylamino)butan-1-one [CPD:C01297]",
+      "H2O2 [CPD:C00027]",
+      "5-(N-methyl-4,5-dihydro-1H-pyrrol-2-yl)pyridin-2-ol [CPD:C21075]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A flavoprotein (FAD). The enzyme, which participates in nicotine degradation, is specific for the (S) isomer of 6-hydroxynicotine. The bacterium Arthrobacter nicotinovorans, in which this enzyme was originally discovered, has a different enzyme that catalyses a similar reaction with the less common (R)-isomer (cf. EC 1.5.3.6, (R)-6-hydroxynicotine oxidase).",
+    "pathways": {
+      "ec00760": "Nicotinate and nicotinamide metabolism",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K19826": "(S)-6-hydroxynicotine oxidase"
+    },
+    "genes": {
+      "rop": [
+        "ROP_27530"
+      ],
+      "roa": [
+        "Pd630_LPD07478"
+      ],
+      "nca": [
+        "Noca_0586"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.5.3.5"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.5.3.5"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.5.3.5"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.5.3.5"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.5.3.5"
+      ],
+      "CAS": [
+        "37256-29-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Decker K",
+          "Bleeg H."
+        ],
+        "title": "Induction and purification of stereospecific nicotine oxidizing enzymes from Arthrobacter oxidans.",
+        "journal": "Biochim. Biophys. Acta. 105 (1965) 313-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:5849820]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dai VD",
+          "Decker K",
+          "Sund H."
+        ],
+        "title": "Purification and properties of L-6-hydroxynicotine oxidase.",
+        "journal": "Eur. J. Biochem. 4 (1968) 95-102.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:5646150]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schenk S",
+          "Hoelz A",
+          "Krauss B",
+          "Decker K"
+        ],
+        "title": "Gene structures and properties of enzymes of the plasmid-encoded nicotine catabolism of Arthrobacter nicotinovorans.",
+        "journal": "J. Mol. Biol. 284 (1998) 1323-39.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9878353]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Qiu J",
+          "Wei Y",
+          "Ma Y",
+          "Wen R",
+          "Wen Y",
+          "Liu W"
+        ],
+        "title": "A novel (S)-6-hydroxynicotine oxidase gene from Shinella sp. strain HZN7.",
+        "journal": "Appl. Environ. Microbiol. 80 (2014) 5552-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:25002425]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

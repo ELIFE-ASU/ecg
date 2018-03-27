@@ -1,0 +1,526 @@
+[
+  {
+    "entry_id": "1.14.15.4",
+    "name": "steroid 11beta-monooxygenase",
+    "names": [
+      "steroid 11beta-monooxygenase",
+      "steroid 11beta-hydroxylase",
+      "steroid 11beta/18-hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "steroid,reduced-adrenodoxin:oxygen oxidoreductase (11beta-hydroxylating)",
+    "reaction": "a steroid + 2 reduced adrenodoxin + O2 + 2 H+ = an 11beta-hydroxysteroid + 2 oxidized adrenodoxin + H2O [RN:R02726]",
+    "all_reac": "R02726 > R02725; (other) R02218 R02843 R03262 R03263 R03329 R03851 R04850 R08949",
+    "iubmb_reactions": [
+      "R02726 > R02725"
+    ],
+    "kegg_reactions": [
+      "R02218 R02843 R03262 R03263 R03329 R03851 R04850 R08949"
+    ],
+    "substrates": [
+      "steroid [CPD:C00377]",
+      "reduced adrenodoxin [CPD:C00662]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]"
+    ],
+    "products": [
+      "11beta-hydroxysteroid [CPD:C01058]",
+      "oxidized adrenodoxin [CPD:C00667]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A heme-thiolate protein (P-450). Also hydroxylates steroids at the 18-position, and converts 18-hydroxycorticosterone into aldosterone.",
+    "pathways": {
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00497": "steroid 11beta-monooxygenase",
+      "K07433": "steroid 11beta-monooxygenase / corticosterone 18-monooxygenase"
+    },
+    "genes": {
+      "hsa": [
+        "1584",
+        "1585"
+      ],
+      "ptr": [
+        "464437"
+      ],
+      "pps": [
+        "100971238",
+        "100971586"
+      ],
+      "ggo": [
+        "101142418"
+      ],
+      "pon": [
+        "100459910"
+      ],
+      "nle": [
+        "100605657"
+      ],
+      "mcc": [
+        "695793",
+        "695914"
+      ],
+      "mcf": [
+        "102136659",
+        "102137301"
+      ],
+      "csab": [
+        "103237546",
+        "103237547"
+      ],
+      "rro": [
+        "104679773",
+        "104679775",
+        "104679810"
+      ],
+      "rbb": [
+        "108536535",
+        "108536550"
+      ],
+      "cjc": [
+        "100415304",
+        "100415667"
+      ],
+      "sbq": [
+        "101048076",
+        "104649940"
+      ],
+      "mmu": [
+        "110115",
+        "13072"
+      ],
+      "rno": [
+        "24294",
+        "353498",
+        "500892"
+      ],
+      "cge": [
+        "100768882",
+        "100771648",
+        "107977023"
+      ],
+      "ngi": [
+        "103748431",
+        "103748432"
+      ],
+      "hgl": [
+        "101700701",
+        "101701311"
+      ],
+      "ccan": [
+        "109681807",
+        "109681816"
+      ],
+      "ocu": [
+        "100328543",
+        "100342863",
+        "103347039"
+      ],
+      "tup": [
+        "102471986",
+        "102484411",
+        "102492986"
+      ],
+      "cfa": [
+        "482071"
+      ],
+      "aml": [
+        "100478197"
+      ],
+      "umr": [
+        "103670616",
+        "103680551"
+      ],
+      "oro": [
+        "101364874"
+      ],
+      "fca": [
+        "101097790"
+      ],
+      "ptg": [
+        "102972244"
+      ],
+      "aju": [
+        "106989683"
+      ],
+      "bta": [
+        "282422",
+        "787628",
+        "787647"
+      ],
+      "bom": [
+        "102272939",
+        "102280195"
+      ],
+      "biu": [
+        "109568177",
+        "109568372",
+        "109568377"
+      ],
+      "phd": [
+        "102327345"
+      ],
+      "chx": [
+        "102188238",
+        "102188517"
+      ],
+      "oas": [
+        "101102377",
+        "767576"
+      ],
+      "ssc": [
+        "110260194"
+      ],
+      "cfr": [
+        "102517728"
+      ],
+      "cdk": [
+        "105106427"
+      ],
+      "bacu": [
+        "103008956",
+        "103009357"
+      ],
+      "lve": [
+        "103089121"
+      ],
+      "ecb": [
+        "100063612",
+        "100063645"
+      ],
+      "epz": [
+        "103543718",
+        "103544682"
+      ],
+      "eai": [
+        "106827552"
+      ],
+      "myb": [
+        "102249727"
+      ],
+      "myd": [
+        "102752229"
+      ],
+      "hai": [
+        "109390820"
+      ],
+      "rss": [
+        "109434846"
+      ],
+      "pale": [
+        "102881458"
+      ],
+      "lav": [
+        "100654178"
+      ],
+      "tmu": [
+        "101354125"
+      ],
+      "mdo": [
+        "100032885"
+      ],
+      "shr": [
+        "100930767"
+      ],
+      "oaa": [
+        "100082065"
+      ],
+      "phi": [
+        "102113159"
+      ],
+      "fpg": [
+        "101918505"
+      ],
+      "fch": [
+        "102046275"
+      ],
+      "asn": [
+        "102375758"
+      ],
+      "amj": [
+        "102575737"
+      ],
+      "cpic": [
+        "101950678"
+      ],
+      "acs": [
+        "100560890"
+      ],
+      "pvt": [
+        "110084842"
+      ],
+      "pbi": [
+        "103058342"
+      ],
+      "gja": [
+        "107116366"
+      ],
+      "xla": [
+        "108718624"
+      ],
+      "xtr": [
+        "101731070"
+      ],
+      "npr": [
+        "108803839",
+        "108804287"
+      ],
+      "dre": [
+        "791124"
+      ],
+      "srx": [
+        "107745157"
+      ],
+      "sanh": [
+        "107698185"
+      ],
+      "sgh": [
+        "107570796"
+      ],
+      "ccar": [
+        "109110857"
+      ],
+      "ipu": [
+        "108263488"
+      ],
+      "amex": [
+        "103026652"
+      ],
+      "tru": [
+        "101075863"
+      ],
+      "tng": [
+        "GSTEN00015374G001"
+      ],
+      "lco": [
+        "104920541"
+      ],
+      "ncc": [
+        "104944920"
+      ],
+      "mze": [
+        "101463871"
+      ],
+      "ola": [
+        "100125822"
+      ],
+      "xma": [
+        "102236274"
+      ],
+      "pret": [
+        "103478110"
+      ],
+      "csem": [
+        "103388284"
+      ],
+      "lcf": [
+        "108885901"
+      ],
+      "hcq": [
+        "109522775"
+      ],
+      "bpec": [
+        "110163163"
+      ],
+      "sasa": [
+        "100136945",
+        "106605739"
+      ],
+      "els": [
+        "105018961"
+      ],
+      "sfm": [
+        "108925533"
+      ],
+      "lcm": [
+        "102345423"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.4"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.4"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.4"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.4"
+      ],
+      "CAS": [
+        "9029-66-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "GRANT JK",
+          "BROWNIE AC."
+        ],
+        "title": "The role of fumarate and TPN in steroid enzymic 11beta-hydroxylation.",
+        "journal": "Biochim. Biophys. Acta. 18 (1955) 433-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:13276417]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "HAYANO M",
+          "DORFMAN RI."
+        ],
+        "title": "On the mechanism of the C11 beta-hydroxylation of steroids.",
+        "journal": "J. Biol. Chem. 211 (1954) 227-35.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13211659]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "TOMKINS GM",
+          "MICHAEL PJ",
+          "CURRAN JF."
+        ],
+        "title": "Studies on the nature of steroid 11-beta hydroxylation.",
+        "journal": "Biochim. Biophys. Acta. 23 (1957) 655-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:13426185]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yanagibashi K",
+          "Haniu M",
+          "Shively JE",
+          "Shen WH",
+          "Hall P."
+        ],
+        "title": "The synthesis of aldosterone by the adrenal cortex. Two zones (fasciculata and glomerulosa) possess one enzyme for 11 beta-, 18-hydroxylation, and aldehyde synthesis.",
+        "journal": "J. Biol. Chem. 261 (1986) 3556-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:3485096]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zuidweg MH."
+        ],
+        "title": "Hydroxylation of Reichstein's compound S with cell-free preparations from Curvularia lunata.",
+        "journal": "Biochim. Biophys. Acta. 152 (1968) 144-58.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:4967077]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

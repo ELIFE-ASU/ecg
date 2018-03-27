@@ -1,0 +1,599 @@
+[
+  {
+    "entry_id": "1.1.2.7",
+    "name": "methanol dehydrogenase (cytochrome c)",
+    "names": [
+      "methanol dehydrogenase (cytochrome c)",
+      "methanol dehydrogenase",
+      "MDH"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-OH group of donors;",
+      "With a cytochrome as acceptor"
+    ],
+    "sysname": "methanol:cytochrome c oxidoreductase",
+    "reaction": "a primary alcohol + 2 ferricytochrome cL = an aldehyde + 2 ferrocytochrome cL + 2 H+ [RN:R10713]",
+    "all_reac": "R10713 > R01146 R09127 R09128",
+    "iubmb_reactions": [
+      "R10713 > R01146 R09127 R09128"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "primary alcohol [CPD:C00226]",
+      "ferricytochrome cL [CPD:C18233]"
+    ],
+    "products": [
+      "aldehyde [CPD:C00071]",
+      "ferrocytochrome cL [CPD:C18234]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A periplasmic quinoprotein alcohol dehydrogenase that only occurs in methylotrophic bacteria. It uses the novel specific cytochrome cL as acceptor. Acts on a wide range of primary alcohols, including ethanol, duodecanol, chloroethanol, cinnamyl alcohol, and also formaldehyde. Activity is stimulated by ammonia or methylamine. It is usually assayed with phenazine methosulfate. Like all other quinoprotein alcohol dehydrogenases it has an 8-bladed 'propeller' structure, a calcium ion bound to the PQQ in the active site and an unusual disulfide ring structure in close proximity to the PQQ. It differs from EC 1.1.2.8, alcohol dehydrogenase (cytochrome c), in having a high affinity for methanol and in having a second essential small subunit (no known function).",
+    "pathways": {
+      "ec00010": "Glycolysis / Gluconeogenesis",
+      "ec00625": "Chloroalkane and chloroalkene degradation",
+      "ec00680": "Methane metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites",
+      "ec01120": "Microbial metabolism in diverse environments",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K14028": "methanol dehydrogenase (cytochrome c) subunit 1",
+      "K14029": "methanol dehydrogenase (cytochrome c) subunit 2"
+    },
+    "genes": {
+      "dko": [
+        "I596_1064",
+        "I596_1067"
+      ],
+      "mca": [
+        "MCA0779",
+        "MCA0782"
+      ],
+      "mmt": [
+        "Metme_4317",
+        "Metme_4320"
+      ],
+      "mdn": [
+        "JT25_020965",
+        "JT25_020980"
+      ],
+      "mdh": [
+        "AYM39_15600",
+        "AYM39_15615"
+      ],
+      "mko": [
+        "MKLM6_3207",
+        "MKLM6_3210"
+      ],
+      "mah": [
+        "MEALZ_3445",
+        "MEALZ_3448"
+      ],
+      "mpsy": [
+        "CEK71_12435",
+        "CEK71_12450"
+      ],
+      "mej": [
+        "Q7A_534",
+        "Q7A_537"
+      ],
+      "mec": [
+        "Q7C_2122",
+        "Q7C_2125"
+      ],
+      "vei": [
+        "Veis_1826",
+        "Veis_1829"
+      ],
+      "mfa": [
+        "Mfla_2041",
+        "Mfla_2044"
+      ],
+      "mei": [
+        "Msip34_0734",
+        "Msip34_0737"
+      ],
+      "mep": [
+        "MPQ_0771",
+        "MPQ_0774"
+      ],
+      "meu": [
+        "ACJ67_10795",
+        "ACJ67_10810"
+      ],
+      "rpc": [
+        "RPC_1907",
+        "RPC_1910"
+      ],
+      "rpe": [
+        "RPE_3136",
+        "RPE_3139"
+      ],
+      "sno": [
+        "Snov_4188",
+        "Snov_4191"
+      ],
+      "mex": [
+        "Mext_4147",
+        "Mext_4150"
+      ],
+      "mea": [
+        "Mex_1p4535",
+        "Mex_1p4538"
+      ],
+      "mdi": [
+        "METDI5141",
+        "METDI5145"
+      ],
+      "mch": [
+        "Mchl_4515",
+        "Mchl_4518"
+      ],
+      "mrd": [
+        "Mrad2831_4207",
+        "Mrad2831_4210"
+      ],
+      "mpo": [
+        "Mpop_4629",
+        "Mpop_4632"
+      ],
+      "mno": [
+        "Mnod_8037",
+        "Mnod_8040"
+      ],
+      "mor": [
+        "MOC_4859",
+        "MOC_4862"
+      ],
+      "meta": [
+        "Y590_20670",
+        "Y590_20685"
+      ],
+      "maqu": [
+        "Maq22A_1p33165",
+        "Maq22A_1p33180"
+      ],
+      "mphy": [
+        "MCBMB27_03721",
+        "MCBMB27_03724"
+      ],
+      "mza": [
+        "B2G69_02645",
+        "B2G69_02660"
+      ],
+      "msl": [
+        "Msil_0471",
+        "Msil_0474"
+      ],
+      "hdn": [
+        "Hden_1320",
+        "Hden_1323"
+      ],
+      "hmc": [
+        "HYPMC_0485",
+        "HYPMC_0488"
+      ],
+      "hni": [
+        "W911_14530",
+        "W911_14545"
+      ],
+      "fil": [
+        "BN1229_v1_2515",
+        "BN1229_v1_2518"
+      ],
+      "fiy": [
+        "BN1229_v1_3398",
+        "BN1229_v1_3401"
+      ],
+      "msc": [
+        "BN69_2570",
+        "BN69_2573"
+      ],
+      "mbry": [
+        "B1812_04775"
+      ],
+      "mtw": [
+        "CQW49_14425",
+        "CQW49_14440"
+      ],
+      "mcg": [
+        "GL4_0421",
+        "GL4_0424"
+      ],
+      "pde": [
+        "Pden_2993",
+        "Pden_2996"
+      ],
+      "pye": [
+        "A6J80_13905",
+        "A6J80_13920"
+      ],
+      "gbe": [
+        "GbCGDNIH1_0344",
+        "GbCGDNIH1_0347"
+      ],
+      "gbh": [
+        "GbCGDNIH2_0344",
+        "GbCGDNIH2_0347"
+      ],
+      "gbc": [
+        "GbCGDNIH3_0344",
+        "GbCGDNIH3_0347"
+      ],
+      "gbs": [
+        "GbCGDNIH4_0344",
+        "GbCGDNIH4_0347"
+      ],
+      "ali": [
+        "AZOLI_p10948",
+        "AZOLI_p10951"
+      ],
+      "ati": [
+        "AL072_18670",
+        "AL072_18685"
+      ],
+      "nao": [
+        "Y958_26250",
+        "Y958_26265"
+      ],
+      "min": [
+        "Minf_0992"
+      ],
+      "mox": [
+        "DAMO_0112",
+        "DAMO_0115"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.1.2.7"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.1.2.7"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.1.2.7"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.1.2.7"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.1.2.7"
+      ],
+      "CAS": [
+        "37205-43-9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Anthony C",
+          "Zatman LJ"
+        ],
+        "title": "The microbial oxidation of methanol. 2. The methanol-oxidizing enzyme of Pseudomonas sp. M 27.",
+        "journal": "Biochem. J. 92 (1964) 614-21.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4378696]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Anthony C",
+          "Zatman LJ"
+        ],
+        "title": "The microbial oxidation of methanol. The prosthetic group of the alcohol dehydrogenase of Pseudomonas sp. M27: a new oxidoreductase prosthetic group.",
+        "journal": "Biochem. J. 104 (1967) 960-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6049934]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Duine JA",
+          "Frank J",
+          "Verwiel PE."
+        ],
+        "title": "Structure and activity of the prosthetic group of methanol dehydrogenase.",
+        "journal": "Eur. J. Biochem. 108 (1980) 187-92.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6250827]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Salisbury SA",
+          "Forrest HS",
+          "Cruse WB",
+          "Kennard O."
+        ],
+        "title": "A novel coenzyme from bacterial primary alcohol dehydrogenases.",
+        "journal": "Nature. 280 (1979) 843-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:471057]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Cox JM",
+          "Day DJ",
+          "Anthony C"
+        ],
+        "title": "The interaction of methanol dehydrogenase and its electron acceptor, cytochrome cL in methylotrophic bacteria.",
+        "journal": "Biochim. Biophys. Acta. 1119 (1992) 97-106.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:1311606]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Blake CC",
+          "Ghosh M",
+          "Harlos K",
+          "Avezoux A",
+          "Anthony C"
+        ],
+        "title": "The active site of methanol dehydrogenase contains a disulphide bridge between adjacent cysteine residues.",
+        "journal": "Nat. Struct. Biol. 1 (1994) 102-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:7656012]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Xia ZX",
+          "He YN",
+          "Dai WW",
+          "White SA",
+          "Boyd GD",
+          "Mathews FS"
+        ],
+        "title": "Detailed active site configuration of a new crystal form of methanol dehydrogenase from Methylophilus W3A1 at 1.9 A resolution.",
+        "journal": "Biochemistry. 38 (1999) 1214-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:9930981]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Afolabi PR",
+          "Mohammed F",
+          "Amaratunga K",
+          "Majekodunmi O",
+          "Dales SL",
+          "Gill R",
+          "Thompson D",
+          "Cooper JB",
+          "Wood SP",
+          "Goodwin PM",
+          "Anthony C"
+        ],
+        "title": "Site-directed mutagenesis and X-ray crystallography of the PQQ-containing quinoprotein methanol dehydrogenase and its electron acceptor, cytochrome c(L).",
+        "journal": "Biochemistry. 40 (2001) 9799-809.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:11502173]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Anthony C",
+          "Williams P"
+        ],
+        "title": "The structure and mechanism of methanol dehydrogenase.",
+        "journal": "Biochim. Biophys. Acta. 1647 (2003) 18-23.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:12686102]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Williams PA",
+          "Coates L",
+          "Mohammed F",
+          "Gill R",
+          "Erskine PT",
+          "Coker A",
+          "Wood SP",
+          "Anthony C",
+          "Cooper JB"
+        ],
+        "title": "The atomic resolution structure of methanol dehydrogenase from Methylobacterium extorquens.",
+        "journal": "Acta. Crystallogr. D. Biol. Crystallogr. 61 (2005) 75-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "10 [PMID:15608378]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

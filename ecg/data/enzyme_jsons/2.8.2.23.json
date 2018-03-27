@@ -1,0 +1,985 @@
+[
+  {
+    "entry_id": "2.8.2.23",
+    "name": "[heparan sulfate]-glucosamine 3-sulfotransferase 1",
+    "names": [
+      "[heparan sulfate]-glucosamine 3-sulfotransferase 1",
+      "heparin-glucosamine 3-O-sulfotransferase",
+      "3'-phosphoadenylyl-sulfate:heparin-glucosamine 3-O-sulfotransferase",
+      "glucosaminyl 3-O-sulfotransferase",
+      "heparan sulfate D-glucosaminyl 3-O-sulfotransferase",
+      "isoform/isozyme 1 (3-OST-1, HS3ST1)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring sulfur-containing groups;",
+      "Sulfotransferases"
+    ],
+    "sysname": "3'-phosphoadenylyl-sulfate:[heparan sulfate]-glucosamine 3-sulfotransferase",
+    "reaction": "3'-phosphoadenylyl sulfate + [heparan sulfate]-glucosamine = adenosine 3',5'-bisphosphate + [heparan sulfate]-glucosamine 3-sulfate [RN:R05798]",
+    "all_reac": "R05798",
+    "iubmb_reactions": [
+      "R05798"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "3'-phosphoadenylyl sulfate [CPD:C00053]",
+      "[heparan sulfate]-glucosamine [CPD:C17141]"
+    ],
+    "products": [
+      "adenosine 3',5'-bisphosphate [CPD:C00054]",
+      "[heparan sulfate]-glucosamine 3-sulfate [CPD:C11553]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme differs from the other [heparan sulfate]-glucosamine 3-sulfotransferases [EC 2.8.2.29 ([heparan sulfate]-glucosamine 3-sulfotransferase 2) and EC 2.8.2.30 ([heparan sulfate]-glucosamine 3-sulfotransferase 3)] by being the most selective for a precursor of the antithrombin-binding site. It has a minimal acceptor sequence of: -> GlcNAc6S-> GlcA-> GlcN2S*+/-6S-> IdoA2S-> GlcN2S-> , the asterisk marking the target (symbols as in {iupac/2carb/38::2-Carb-38}) using +/- to mean the presence or absence of a substituent, and > to separate a predominant structure from a minor one. Thus Glc(N2S > NAc) means a residue of glucosamine where the N carries a sulfo group mainly but occasionally an acetyl group.) [1-4]. It can also modify other precursor sequences within heparan sulfate but this action does not create functional antithrombin-binding sites. These precursors are variants of the consensus sequence: -> Glc(N2S > NAc)+/-6S-> GlcA-> GlcN2S*+/-6S-> GlcA > IdoA+/-2S-> Glc(N2S/NAc)+/-6S-> [5]. If the heparan sulfate substrate lacks 2-O-sulfation of GlcA residues, then enzyme specificity is expanded to modify selected glucosamine residues preceded by IdoA as well as GlcA [6].",
+    "pathways": {
+      "ec00534": "Glycosaminoglycan biosynthesis - heparan sulfate / heparin"
+    },
+    "orthologs": {
+      "K01024": "[heparan sulfate]-glucosamine 3-sulfotransferase 1",
+      "K08104": "[heparan sulfate]-glucosamine 3-sulfotransferase 5"
+    },
+    "genes": {
+      "hsa": [
+        "222537",
+        "9957"
+      ],
+      "ptr": [
+        "471144",
+        "744298"
+      ],
+      "pps": [
+        "100967734",
+        "100979280"
+      ],
+      "ggo": [
+        "101134668",
+        "101154208"
+      ],
+      "pon": [
+        "100445561",
+        "100449950"
+      ],
+      "nle": [
+        "100592585",
+        "100601459"
+      ],
+      "mcc": [
+        "693684",
+        "713374"
+      ],
+      "mcf": [
+        "101865986",
+        "102141292"
+      ],
+      "csab": [
+        "103240530",
+        "103246360"
+      ],
+      "rro": [
+        "104657111",
+        "104657730"
+      ],
+      "rbb": [
+        "108512071",
+        "108529481"
+      ],
+      "cjc": [
+        "100392281",
+        "100402689"
+      ],
+      "sbq": [
+        "101038172",
+        "101043463"
+      ],
+      "mmu": [
+        "15476",
+        "319415"
+      ],
+      "rno": [
+        "294449",
+        "84406"
+      ],
+      "cge": [
+        "100759378",
+        "100763965"
+      ],
+      "ngi": [
+        "103728889",
+        "103733777"
+      ],
+      "hgl": [
+        "101698728",
+        "101710328"
+      ],
+      "ccan": [
+        "109677593",
+        "109694636"
+      ],
+      "ocu": [
+        "100343879",
+        "100346980"
+      ],
+      "tup": [
+        "102468225",
+        "102481838"
+      ],
+      "cfa": [
+        "403672",
+        "481968"
+      ],
+      "aml": [
+        "100478675",
+        "105241055"
+      ],
+      "umr": [
+        "103658356",
+        "103676972"
+      ],
+      "oro": [
+        "101364972",
+        "101380812"
+      ],
+      "fca": [
+        "101088412",
+        "101090103"
+      ],
+      "ptg": [
+        "102952040",
+        "102965928"
+      ],
+      "aju": [
+        "106968920",
+        "106975621"
+      ],
+      "bta": [
+        "538691",
+        "540355"
+      ],
+      "bom": [
+        "102279879",
+        "102279923"
+      ],
+      "biu": [
+        "109560679",
+        "109563804"
+      ],
+      "phd": [
+        "102325819",
+        "102327107"
+      ],
+      "chx": [
+        "102169088",
+        "102176690"
+      ],
+      "oas": [
+        "101104909",
+        "101107448"
+      ],
+      "ssc": [
+        "100155403",
+        "100628223"
+      ],
+      "cfr": [
+        "102503844",
+        "102515681"
+      ],
+      "cdk": [
+        "105085126",
+        "105099225"
+      ],
+      "bacu": [
+        "103015413",
+        "103016478"
+      ],
+      "lve": [
+        "103068414",
+        "103089700"
+      ],
+      "ecb": [
+        "100056091",
+        "100066938"
+      ],
+      "epz": [
+        "103561316"
+      ],
+      "eai": [
+        "106847041",
+        "106847606"
+      ],
+      "myb": [
+        "102239991",
+        "102241744"
+      ],
+      "myd": [
+        "102756820",
+        "102773229"
+      ],
+      "hai": [
+        "109375997",
+        "109384729"
+      ],
+      "rss": [
+        "109452137",
+        "109453290"
+      ],
+      "pale": [
+        "102879059",
+        "102886681"
+      ],
+      "lav": [
+        "100673247",
+        "100673479"
+      ],
+      "tmu": [
+        "101342731",
+        "101358618"
+      ],
+      "mdo": [
+        "100012960",
+        "100022809"
+      ],
+      "shr": [
+        "100917710",
+        "100926311"
+      ],
+      "oaa": [
+        "100079950",
+        "100087772"
+      ],
+      "gga": [
+        "422840",
+        "423822",
+        "428621"
+      ],
+      "mgp": [
+        "100541206",
+        "100541289",
+        "100546598"
+      ],
+      "cjo": [
+        "107311893",
+        "107314022",
+        "107315944"
+      ],
+      "apla": [
+        "101791819",
+        "101793237",
+        "101804190"
+      ],
+      "acyg": [
+        "106032639",
+        "106035306",
+        "106038121"
+      ],
+      "tgu": [
+        "100217958",
+        "100218001",
+        "100221445",
+        "100221819"
+      ],
+      "gfr": [
+        "102031527",
+        "102038656",
+        "102043838"
+      ],
+      "fab": [
+        "101809457",
+        "101814866",
+        "101816899"
+      ],
+      "phi": [
+        "102102605",
+        "102104930",
+        "102109527"
+      ],
+      "pmaj": [
+        "107202537",
+        "107203500",
+        "107206970"
+      ],
+      "ccw": [
+        "104690727",
+        "104691254",
+        "104696091"
+      ],
+      "fpg": [
+        "101919371",
+        "101923794",
+        "101923963"
+      ],
+      "fch": [
+        "102053103",
+        "102054204",
+        "102057031"
+      ],
+      "clv": [
+        "102091303",
+        "102094670",
+        "102096271"
+      ],
+      "egz": [
+        "104129170",
+        "104131984",
+        "104134473"
+      ],
+      "aam": [
+        "106489636",
+        "106494700",
+        "106498671"
+      ],
+      "asn": [
+        "102376753",
+        "102378310",
+        "102385617"
+      ],
+      "amj": [
+        "102560943",
+        "102573417",
+        "102574400"
+      ],
+      "pss": [
+        "102444953",
+        "102452315",
+        "102452655",
+        "102460581"
+      ],
+      "cmy": [
+        "102930016",
+        "102930942",
+        "102936568",
+        "102947282"
+      ],
+      "cpic": [
+        "101935011",
+        "101940499",
+        "101942391",
+        "101947422"
+      ],
+      "acs": [
+        "100560134",
+        "100562373",
+        "100563170",
+        "100566144"
+      ],
+      "pvt": [
+        "110072143",
+        "110079727",
+        "110088773"
+      ],
+      "pbi": [
+        "103049756",
+        "103051973",
+        "103053046",
+        "103058998"
+      ],
+      "gja": [
+        "107107831",
+        "107118809",
+        "107123623",
+        "107124746"
+      ],
+      "xla": [
+        "108696134",
+        "108697406",
+        "108716820",
+        "398971",
+        "399064"
+      ],
+      "xtr": [
+        "100125092",
+        "100145790",
+        "496940"
+      ],
+      "npr": [
+        "108785216",
+        "108788983",
+        "108789380"
+      ],
+      "dre": [
+        "557111",
+        "565201"
+      ],
+      "srx": [
+        "107717313",
+        "107720583",
+        "107722717",
+        "107735826",
+        "107741295",
+        "107743333",
+        "107743334",
+        "107750130",
+        "107750407"
+      ],
+      "sanh": [
+        "107654638",
+        "107656466",
+        "107656739",
+        "107663220",
+        "107676119",
+        "107686529",
+        "107689363"
+      ],
+      "sgh": [
+        "107548261",
+        "107557106",
+        "107562391",
+        "107565063",
+        "107569842",
+        "107578102"
+      ],
+      "ccar": [
+        "109058250",
+        "109063441",
+        "109077109",
+        "109102983",
+        "109104038",
+        "109109112",
+        "109110116",
+        "109110122"
+      ],
+      "ipu": [
+        "108255327",
+        "108255574",
+        "108260334",
+        "108262815"
+      ],
+      "amex": [
+        "103023335",
+        "103029341",
+        "103036825",
+        "103039507"
+      ],
+      "tru": [
+        "101061220",
+        "101065122",
+        "101076430",
+        "101079258"
+      ],
+      "tng": [
+        "GSTEN00009145G001",
+        "GSTEN00029083G001",
+        "GSTEN00031689G001"
+      ],
+      "lco": [
+        "104921922",
+        "104923456",
+        "104928689",
+        "104932424"
+      ],
+      "ncc": [
+        "104946477",
+        "104956985",
+        "104960616"
+      ],
+      "mze": [
+        "101469297",
+        "101475274",
+        "101475421",
+        "101477610"
+      ],
+      "ola": [
+        "101165781",
+        "101166804",
+        "101169760",
+        "101174369"
+      ],
+      "xma": [
+        "102216507",
+        "102220745",
+        "102232490",
+        "102232809"
+      ],
+      "pret": [
+        "103458003",
+        "103470693",
+        "103471501",
+        "103477086"
+      ],
+      "csem": [
+        "103380640",
+        "103387477",
+        "103390605",
+        "103397870"
+      ],
+      "lcf": [
+        "108878405",
+        "108886305",
+        "108895369",
+        "108899295"
+      ],
+      "hcq": [
+        "109515940",
+        "109523019"
+      ],
+      "bpec": [
+        "110155521",
+        "110158917",
+        "110161364",
+        "110172130"
+      ],
+      "sasa": [
+        "106570809",
+        "106571321",
+        "106576786",
+        "106584896",
+        "106604484",
+        "106604920",
+        "106607731"
+      ],
+      "els": [
+        "105007233",
+        "105017884",
+        "105025937",
+        "105029317"
+      ],
+      "sfm": [
+        "108924148",
+        "108925805",
+        "108929368"
+      ],
+      "lcm": [
+        "102345335",
+        "102346461",
+        "102352685",
+        "102364972"
+      ],
+      "cmk": [
+        "103175792",
+        "103180481",
+        "103182576",
+        "103187765"
+      ],
+      "cin": [
+        "101242434",
+        "104266882"
+      ],
+      "spu": [
+        "594559"
+      ],
+      "aplc": [
+        "110975359",
+        "110975378",
+        "110978626",
+        "110978944"
+      ],
+      "sko": [
+        "100368278",
+        "100368555",
+        "100372832",
+        "100375546",
+        "100377679",
+        "100378386",
+        "102807980",
+        "102808106"
+      ],
+      "dme": [
+        "Dmel_CG33147"
+      ],
+      "dpo": [
+        "Dpse_GA17321"
+      ],
+      "dan": [
+        "Dana_GF11113"
+      ],
+      "der": [
+        "Dere_GG21921"
+      ],
+      "dpe": [
+        "Dper_GL10768"
+      ],
+      "dse": [
+        "Dsec_GM21913"
+      ],
+      "dsi": [
+        "Dsimw501_GD11407"
+      ],
+      "dwi": [
+        "Dwil_GK20921"
+      ],
+      "dya": [
+        "Dyak_GE11996"
+      ],
+      "dgr": [
+        "Dgri_GH23421"
+      ],
+      "dmo": [
+        "Dmoj_GI19219"
+      ],
+      "dvi": [
+        "Dvir_GJ20291"
+      ],
+      "mde": [
+        "101898689"
+      ],
+      "aga": [
+        "AgaP_AGAP006169"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ017207"
+      ],
+      "ame": [
+        "412956"
+      ],
+      "bim": [
+        "105680199"
+      ],
+      "bter": [
+        "100645554"
+      ],
+      "soc": [
+        "105207583"
+      ],
+      "aec": [
+        "105149682"
+      ],
+      "acep": [
+        "105619000"
+      ],
+      "pbar": [
+        "105432185"
+      ],
+      "hst": [
+        "105192616"
+      ],
+      "cfo": [
+        "105258568"
+      ],
+      "lhu": [
+        "105677087"
+      ],
+      "pgc": [
+        "109857918"
+      ],
+      "nvi": [
+        "100123415"
+      ],
+      "tca": [
+        "660198"
+      ],
+      "dpa": [
+        "109533375"
+      ],
+      "nvl": [
+        "108561348",
+        "108569938"
+      ],
+      "bmor": [
+        "101740692"
+      ],
+      "dpl": [
+        "KGM_213821"
+      ],
+      "pmac": [
+        "106720254"
+      ],
+      "pxy": [
+        "105391808",
+        "105395476"
+      ],
+      "api": [
+        "100167476"
+      ],
+      "dnx": [
+        "107167196",
+        "107170790"
+      ],
+      "phu": [
+        "Phum_PHUM056180"
+      ],
+      "zne": [
+        "110833597",
+        "110833599"
+      ],
+      "fcd": [
+        "110844017"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_53873"
+      ],
+      "isc": [
+        "IscW_ISCW007669"
+      ],
+      "tut": [
+        "107367708"
+      ],
+      "bmy": [
+        "Bm1_42350"
+      ],
+      "loa": [
+        "LOAG_00918"
+      ],
+      "tsp": [
+        "Tsp_02737"
+      ],
+      "hro": [
+        "HELRODRAFT_69374",
+        "HELRODRAFT_82775"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_118213",
+        "LOTGIDRAFT_118397"
+      ],
+      "crg": [
+        "105348490",
+        "105348493"
+      ],
+      "myi": [
+        "110451901",
+        "110451904",
+        "110465483",
+        "110465485",
+        "110466577"
+      ],
+      "obi": [
+        "106868162",
+        "106868165",
+        "106870924",
+        "106877481",
+        "106877503"
+      ],
+      "lak": [
+        "106163084",
+        "106163086"
+      ],
+      "adf": [
+        "107354956"
+      ],
+      "aqu": [
+        "100631854",
+        "100641408"
+      ],
+      "gtt": [
+        "GUITHDRAFT_87548"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.8.2.23"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.8.2.23"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.8.2.23"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.8.2.23"
+      ],
+      "CAS": [
+        "183257-54-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kusche M",
+          "Backstrom G",
+          "Riesenfeld J",
+          "Petitou M",
+          "Choay J",
+          "Lindahl U."
+        ],
+        "title": "Biosynthesis of heparin. O-sulfation of the antithrombin-binding region.",
+        "journal": "J. Biol. Chem. 263 (1988) 15474-84.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:3139669]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Shworak NW",
+          "Fritze LM",
+          "Liu J",
+          "Butler LD",
+          "Rosenberg RD."
+        ],
+        "title": "Cell-free synthesis of anticoagulant heparan sulfate reveals a limiting converting activity that modifies an excess precursor pool.",
+        "journal": "J. Biol. Chem. 271 (1996) 27063-71.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8900197]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Liu J",
+          "Shworak NW",
+          "Fritze LM",
+          "Edelberg JM",
+          "Rosenberg RD."
+        ],
+        "title": "Purification of heparan sulfate D-glucosaminyl 3-O-sulfotransferase.",
+        "journal": "J. Biol. Chem. 271 (1996) 27072-82.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:8900198]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Shworak NW",
+          "Liu J",
+          "Fritze LM",
+          "Schwartz JJ",
+          "Zhang L",
+          "Logeart D",
+          "Rosenberg RD."
+        ],
+        "title": "Molecular cloning and expression of mouse and human cDNAs encoding heparan sulfate D-glucosaminyl 3-O-sulfotransferase.",
+        "journal": "J. Biol. Chem. 272 (1997) 28008-19.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:9346953]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhang L",
+          "Yoshida K",
+          "Liu J",
+          "Rosenberg RD."
+        ],
+        "title": "Anticoagulant heparan sulfate precursor structures in F9 embryonal carcinoma cells.",
+        "journal": "J. Biol. Chem. 274 (1999) 5681-91.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:10026187]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhang L",
+          "Lawrence R",
+          "Schwartz JJ",
+          "Bai X",
+          "Wei G",
+          "Esko JD",
+          "Rosenberg RD."
+        ],
+        "title": "The effect of precursor structures on the action of glucosaminyl 3-O-sulfotransferase-1 and the biosynthesis of anticoagulant heparan sulfate.",
+        "journal": "J. Biol. Chem. 276 (2001) 28806-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:11375390]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,563 @@
+[
+  {
+    "entry_id": "1.14.15.6",
+    "name": "cholesterol monooxygenase (side-chain-cleaving)",
+    "names": [
+      "cholesterol monooxygenase (side-chain-cleaving)",
+      "cholesterol desmolase",
+      "cytochrome P-450scc",
+      "C27-side chain cleavage enzyme",
+      "cholesterol 20-22-desmolase",
+      "cholesterol C20-22 desmolase",
+      "cholesterol side-chain cleavage enzyme",
+      "cholesterol side-chain-cleaving enzyme",
+      "steroid 20-22 desmolase",
+      "steroid 20-22-lyase",
+      "CYP11A1 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "cholesterol,reduced-adrenodoxin:oxygen oxidoreductase (side-chain-cleaving)",
+    "reaction": "cholesterol + 6 reduced adrenodoxin + 3 O2 + 6 H+ = pregnenolone + 4-methylpentanal + 6 oxidized adrenodoxin + 4 H2O (overall reaction) [RN:R02724]; (1a) cholesterol + 2 reduced adrenodoxin + O2 + 2 H+ = (22R)-22-hydroxycholesterol + 2 oxidized adrenodoxin + H2O [RN:R02723]; (1b) (22R)-22-hydroxycholesterol + 2 reduced adrenodoxin + O2 + 2 H+ = (20R,22R)-20,22-dihydroxycholesterol + 2 oxidized adrenodoxin + H2O [RN:R04855]; (1c) (20R,22R)-20,22-dihydroxy-cholesterol + 2 reduced adrenodoxin + O2 + 2 H+ = pregnenolone + 4-methylpentanal + 2 oxidized adrenodoxin + 2 H2O [RN:R03933]",
+    "all_reac": "R02723 R02724 R03933 R04855; (other) R01454 R04676 R04854",
+    "iubmb_reactions": [
+      "R02723 R02724 R03933 R04855"
+    ],
+    "kegg_reactions": [
+      "R01454 R04676 R04854"
+    ],
+    "substrates": [
+      "cholesterol [CPD:C00187]",
+      "reduced adrenodoxin [CPD:C00662]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]",
+      "(22R)-22-hydroxycholesterol [CPD:C05502]",
+      "(20R,22R)-20,22-dihydroxy-cholesterol"
+    ],
+    "products": [
+      "pregnenolone [CPD:C01953]",
+      "4-methylpentanal [CPD:C02373]",
+      "oxidized adrenodoxin [CPD:C00667]",
+      "H2O [CPD:C00001]",
+      "(22R)-22-hydroxycholesterol [CPD:C05502]",
+      "(20R,22R)-20,22-dihydroxycholesterol"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A heme-thiolate protein (cytochrome P-450). The reaction proceeds in three stages, with two hydroxylations at C-22 and C-20 preceding scission of the side-chain between carbons 20 and 22. The initial source of the electrons is NADPH, which transfers the electrons to the adrenodoxin via EC 1.18.1.6, adrenodoxin-NADP+ reductase.",
+    "pathways": {
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00498": "cholesterol monooxygenase (side-chain-cleaving)"
+    },
+    "genes": {
+      "hsa": [
+        "1583"
+      ],
+      "ptr": [
+        "748998"
+      ],
+      "pps": [
+        "100979902"
+      ],
+      "ggo": [
+        "101124697"
+      ],
+      "pon": [
+        "100433169",
+        "100434677"
+      ],
+      "nle": [
+        "100595981"
+      ],
+      "mcc": [
+        "708065"
+      ],
+      "mcf": [
+        "102120640"
+      ],
+      "csab": [
+        "103245339"
+      ],
+      "rro": [
+        "104672245"
+      ],
+      "rbb": [
+        "108531466"
+      ],
+      "cjc": [
+        "100389930"
+      ],
+      "sbq": [
+        "101039906"
+      ],
+      "mmu": [
+        "13070"
+      ],
+      "rno": [
+        "29680"
+      ],
+      "cge": [
+        "100752606"
+      ],
+      "ngi": [
+        "103736867"
+      ],
+      "hgl": [
+        "101704598"
+      ],
+      "ccan": [
+        "109687652"
+      ],
+      "ocu": [
+        "100345737"
+      ],
+      "tup": [
+        "102487565",
+        "102490722"
+      ],
+      "cfa": [
+        "478365"
+      ],
+      "aml": [
+        "100474049"
+      ],
+      "umr": [
+        "103678997"
+      ],
+      "oro": [
+        "101384815"
+      ],
+      "fca": [
+        "101085980"
+      ],
+      "ptg": [
+        "102964439"
+      ],
+      "aju": [
+        "106979451"
+      ],
+      "bta": [
+        "338048"
+      ],
+      "bom": [
+        "102282116"
+      ],
+      "biu": [
+        "109575664"
+      ],
+      "phd": [
+        "102317428"
+      ],
+      "chx": [
+        "102173131"
+      ],
+      "oas": [
+        "100048994"
+      ],
+      "ssc": [
+        "403329"
+      ],
+      "cfr": [
+        "102516700"
+      ],
+      "cdk": [
+        "105087270"
+      ],
+      "bacu": [
+        "103011342"
+      ],
+      "lve": [
+        "103068564"
+      ],
+      "ecb": [
+        "100034229"
+      ],
+      "epz": [
+        "103567309"
+      ],
+      "eai": [
+        "106842692"
+      ],
+      "myb": [
+        "102241006"
+      ],
+      "myd": [
+        "102765728"
+      ],
+      "hai": [
+        "109396248"
+      ],
+      "rss": [
+        "109449550"
+      ],
+      "pale": [
+        "102894190"
+      ],
+      "lav": [
+        "100665050"
+      ],
+      "tmu": [
+        "101357207"
+      ],
+      "mdo": [
+        "100029519"
+      ],
+      "shr": [
+        "100923284"
+      ],
+      "oaa": [
+        "100076626"
+      ],
+      "gga": [
+        "414838"
+      ],
+      "mgp": [
+        "100543260"
+      ],
+      "cjo": [
+        "107318663"
+      ],
+      "apla": [
+        "101796693"
+      ],
+      "acyg": [
+        "106044184"
+      ],
+      "tgu": [
+        "100151695"
+      ],
+      "gfr": [
+        "102043993"
+      ],
+      "fab": [
+        "101810676"
+      ],
+      "phi": [
+        "102109180"
+      ],
+      "pmaj": [
+        "107209117"
+      ],
+      "fpg": [
+        "101916429"
+      ],
+      "fch": [
+        "102049639"
+      ],
+      "clv": [
+        "102096337"
+      ],
+      "egz": [
+        "104130717"
+      ],
+      "aam": [
+        "106487382"
+      ],
+      "asn": [
+        "102381626"
+      ],
+      "amj": [
+        "102569028"
+      ],
+      "pss": [
+        "102455057"
+      ],
+      "cmy": [
+        "102939633"
+      ],
+      "cpic": [
+        "101950099"
+      ],
+      "pvt": [
+        "110084450"
+      ],
+      "pbi": [
+        "103056955"
+      ],
+      "gja": [
+        "107111326"
+      ],
+      "xla": [
+        "108712986"
+      ],
+      "xtr": [
+        "100495360"
+      ],
+      "npr": [
+        "108785561"
+      ],
+      "dre": [
+        "563363",
+        "80374"
+      ],
+      "srx": [
+        "107705097",
+        "107751280"
+      ],
+      "sanh": [
+        "107703186"
+      ],
+      "sgh": [
+        "107589342"
+      ],
+      "ccar": [
+        "109044858"
+      ],
+      "ipu": [
+        "100313513"
+      ],
+      "amex": [
+        "103021835"
+      ],
+      "tru": [
+        "101063139"
+      ],
+      "tng": [
+        "GSTEN00016006G001"
+      ],
+      "lco": [
+        "104924331"
+      ],
+      "ncc": [
+        "104966693"
+      ],
+      "mze": [
+        "101471001"
+      ],
+      "ola": [
+        "100302421"
+      ],
+      "xma": [
+        "102235384"
+      ],
+      "pret": [
+        "103466560"
+      ],
+      "csem": [
+        "103380225"
+      ],
+      "lcf": [
+        "108886266"
+      ],
+      "hcq": [
+        "109519394"
+      ],
+      "bpec": [
+        "110163820"
+      ],
+      "sasa": [
+        "106561846"
+      ],
+      "els": [
+        "105007422"
+      ],
+      "sfm": [
+        "108926637"
+      ],
+      "lcm": [
+        "102360223"
+      ],
+      "cmk": [
+        "103172797",
+        "103188165"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_158678"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.6"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.6"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.6"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.6"
+      ],
+      "CAS": [
+        "37292-81-2",
+        "440354-98-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Burstein S",
+          "Middleditch BS",
+          "Gut M"
+        ],
+        "title": "Mass spectrometric study of the enzymatic conversion of cholesterol to (22R)-22-hydroxycholesterol, (20R,22R)-20,22-dihydroxycholesterol, and pregnenolone, and of (22R)-22-hydroxycholesterol to the lgycol and pregnenolone in bovine adrenocortical preparations. Mode of oxygen incorporation.",
+        "journal": "J. Biol. Chem. 250 (1975) 9028-37.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:1238395]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hanukoglu I",
+          "Spitsberg V",
+          "Bumpus JA",
+          "Dus KM",
+          "Jefcoate CR."
+        ],
+        "title": "Adrenal mitochondrial cytochrome P-450scc. Cholesterol and adrenodoxin interactions at equilibrium and during turnover.",
+        "journal": "J. Biol. Chem. 256 (1981) 4321-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7217084]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hanukoglu I",
+          "Hanukoglu Z"
+        ],
+        "title": "Stoichiometry of mitochondrial cytochromes P-450, adrenodoxin and adrenodoxin reductase in adrenal cortex and corpus luteum. Implications for membrane organization and gene regulation.",
+        "journal": "Eur. J. Biochem. 157 (1986) 27-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3011431]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Strushkevich N",
+          "MacKenzie F",
+          "Cherkesova T",
+          "Grabovec I",
+          "Usanov S",
+          "Park HW"
+        ],
+        "title": "Structural basis for pregnenolone biosynthesis by the mitochondrial monooxygenase system.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 108 (2011) 10139-43.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:21636783]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Mast N",
+          "Annalora AJ",
+          "Lodowski DT",
+          "Palczewski K",
+          "Stout CD",
+          "Pikuleva IA"
+        ],
+        "title": "Structural basis for three-step sequential catalysis by the cholesterol side chain cleavage enzyme CYP11A1.",
+        "journal": "J. Biol. Chem. 286 (2011) 5607-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:21159775]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

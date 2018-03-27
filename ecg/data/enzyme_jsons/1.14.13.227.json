@@ -1,0 +1,465 @@
+[
+  {
+    "entry_id": "1.14.13.227",
+    "name": "propane 2-monooxygenase",
+    "names": [
+      "propane 2-monooxygenase",
+      "prmABCD (gene names)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "propane,NADH:oxygen oxidoreductase (2-hydroxylating)",
+    "reaction": "propane + NADH + H+ + O2 = propan-2-ol + NAD+ + H2O [RN:R10702]",
+    "all_reac": "R10702",
+    "iubmb_reactions": [
+      "R10702"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "propane [CPD:C20783]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "propan-2-ol [CPD:C01845]",
+      "NAD+ [CPD:C00003]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from several bacterial strains, is a multicomponent dinuclear iron monooxygenase that includes a hydroxylase, an NADH-dependent reductase, and a coupling protein. The enzyme has several additional activities, including acetone monooxygenase (acetol-forming) and phenol 4-monooxygenase.",
+    "pathways": {
+      "ec00640": "Propanoate metabolism"
+    },
+    "orthologs": {
+      "K18223": "propane 2-monooxygenase large subunit",
+      "K18224": "propane 2-monooxygenase small subunit"
+    },
+    "genes": {
+      "gai": [
+        "IMCC3135_23930",
+        "IMCC3135_23940"
+      ],
+      "bcai": [
+        "K788_0003073",
+        "K788_0003075"
+      ],
+      "vei": [
+        "Veis_4409",
+        "Veis_4411"
+      ],
+      "mpt": [
+        "Mpe_A0950",
+        "Mpe_A0952"
+      ],
+      "azo": [
+        "azo1219",
+        "azo1221"
+      ],
+      "aoa": [
+        "dqs_1334",
+        "dqs_1336"
+      ],
+      "mamo": [
+        "A6B35_24800",
+        "A6B35_24810"
+      ],
+      "aak": [
+        "AA2016_6220",
+        "AA2016_6223"
+      ],
+      "bja": [
+        "blr3677",
+        "blr3679"
+      ],
+      "bju": [
+        "BJ6T_61670",
+        "BJ6T_61690"
+      ],
+      "bjp": [
+        "RN69_29860",
+        "RN69_29870"
+      ],
+      "bra": [
+        "BRADO4348",
+        "BRADO4350"
+      ],
+      "bbt": [
+        "BBta_3630",
+        "BBta_3632"
+      ],
+      "aol": [
+        "S58_14660",
+        "S58_14680"
+      ],
+      "bic": [
+        "LMTR13_17510",
+        "LMTR13_17520"
+      ],
+      "bid": [
+        "Bind_3395",
+        "Bind_3397"
+      ],
+      "msl": [
+        "Msil_1649",
+        "Msil_1651"
+      ],
+      "rsp": [
+        "RSP_2792",
+        "RSP_2794"
+      ],
+      "rsh": [
+        "Rsph17029_1506",
+        "Rsph17029_1508"
+      ],
+      "rsk": [
+        "RSKD131_1174",
+        "RSKD131_1176"
+      ],
+      "pami": [
+        "JCM7686_pAMI4p208",
+        "JCM7686_pAMI4p211"
+      ],
+      "pgd": [
+        "Gal_01406",
+        "Gal_01408"
+      ],
+      "malg": [
+        "MALG_01260",
+        "MALG_01262"
+      ],
+      "paby": [
+        "Ga0080574_TMP3298",
+        "Ga0080574_TMP3300"
+      ],
+      "aht": [
+        "ANTHELSMS3_04149",
+        "ANTHELSMS3_04151"
+      ],
+      "acr": [
+        "Acry_1379",
+        "Acry_1381"
+      ],
+      "amv": [
+        "ACMV_14260",
+        "ACMV_14280"
+      ],
+      "azl": [
+        "AZL_c02870",
+        "AZL_c02890"
+      ],
+      "ali": [
+        "AZOLI_p10730",
+        "AZOLI_p10732"
+      ],
+      "ati": [
+        "AL072_26915",
+        "AL072_26925"
+      ],
+      "bts": [
+        "Btus_1550",
+        "Btus_1552"
+      ],
+      "say": [
+        "TPY_3182",
+        "TPY_3184"
+      ],
+      "sap": [
+        "Sulac_1731",
+        "Sulac_1734"
+      ],
+      "msm": [
+        "MSMEG_1971"
+      ],
+      "msg": [
+        "MSMEI_1927",
+        "MSMEI_1929"
+      ],
+      "msb": [
+        "LJ00_09835",
+        "LJ00_09845"
+      ],
+      "msn": [
+        "LI99_09835",
+        "LI99_09845"
+      ],
+      "msh": [
+        "LI98_09835",
+        "LI98_09845"
+      ],
+      "msa": [
+        "Mycsm_01477",
+        "Mycsm_01479",
+        "Mycsm_01889"
+      ],
+      "mmae": [
+        "MMARE11_01180"
+      ],
+      "mrh": [
+        "MycrhN_2951",
+        "MycrhN_2953"
+      ],
+      "mcb": [
+        "Mycch_5463",
+        "Mycch_5465",
+        "Mycch_5977"
+      ],
+      "mgo": [
+        "AFA91_29110",
+        "AFA91_29120"
+      ],
+      "mll": [
+        "B1R94_07255",
+        "B1R94_07265"
+      ],
+      "mdx": [
+        "BTO20_38065",
+        "BTO20_38070"
+      ],
+      "asd": [
+        "AS9A_2157",
+        "AS9A_2159"
+      ],
+      "nfr": [
+        "ERS450000_02058",
+        "ERS450000_02060"
+      ],
+      "rha": [
+        "RHA1_ro00441",
+        "RHA1_ro00443"
+      ],
+      "roa": [
+        "Pd630_LPD04550",
+        "Pd630_LPD04552"
+      ],
+      "rav": [
+        "AAT18_26335",
+        "AAT18_26345"
+      ],
+      "rfa": [
+        "A3L23_02106",
+        "A3L23_02108"
+      ],
+      "rhw": [
+        "BFN03_06840",
+        "BFN03_06850"
+      ],
+      "rhs": [
+        "A3Q41_01275",
+        "A3Q41_01277"
+      ],
+      "rrz": [
+        "CS378_15775",
+        "CS378_15785"
+      ],
+      "gbr": [
+        "Gbro_3551",
+        "Gbro_3553"
+      ],
+      "gpo": [
+        "GPOL_c34280",
+        "GPOL_c34300"
+      ],
+      "gor": [
+        "KTR9_3575",
+        "KTR9_3577"
+      ],
+      "gta": [
+        "BCM27_18320",
+        "BCM27_18330"
+      ],
+      "ndk": [
+        "I601_2091",
+        "I601_2093"
+      ],
+      "fra": [
+        "Francci3_2518",
+        "Francci3_2520"
+      ],
+      "amd": [
+        "AMED_4324",
+        "AMED_4326"
+      ],
+      "amn": [
+        "RAM_22015",
+        "RAM_22025"
+      ],
+      "amm": [
+        "AMES_4272",
+        "AMES_4274"
+      ],
+      "amz": [
+        "B737_4272",
+        "B737_4274"
+      ],
+      "amq": [
+        "AMETH_2368",
+        "AMETH_2370",
+        "AMETH_4324",
+        "AMETH_4326"
+      ],
+      "pdx": [
+        "Psed_0629",
+        "Psed_0631"
+      ],
+      "psea": [
+        "WY02_19390",
+        "WY02_19400"
+      ],
+      "psee": [
+        "FRP1_23450",
+        "FRP1_23460"
+      ],
+      "pseh": [
+        "XF36_22070",
+        "XF36_22080"
+      ],
+      "pseq": [
+        "AD006_02645",
+        "AD006_02655"
+      ],
+      "pecq": [
+        "AD017_10460",
+        "AD017_10470"
+      ],
+      "phh": [
+        "AFB00_07920",
+        "AFB00_07930"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.227"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.227"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.227"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.227"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kotani T",
+          "Yamamoto T",
+          "Yurimoto H",
+          "Sakai Y",
+          "Kato N."
+        ],
+        "title": "Propane monooxygenase and NAD+-dependent secondary alcohol dehydrogenase in propane metabolism by Gordonia sp. strain TY-5.",
+        "journal": "J. Bacteriol. 185 (2003) 7120-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14645271]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sharp JO",
+          "Sales CM",
+          "LeBlanc JC",
+          "Liu J",
+          "Wood TK",
+          "Eltis LD",
+          "Mohn WW",
+          "Alvarez-Cohen L"
+        ],
+        "title": "An inducible propane monooxygenase is responsible for N-nitrosodimethylamine degradation by Rhodococcus sp. strain RHA1.",
+        "journal": "Appl. Environ. Microbiol. 73 (2007) 6930-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:17873074]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Furuya T",
+          "Hirose S",
+          "Osanai H",
+          "Semba H",
+          "Kino K"
+        ],
+        "title": "Identification of the monooxygenase gene clusters responsible for the regioselective oxidation of phenol to hydroquinone in mycobacteria.",
+        "journal": "Appl. Environ. Microbiol. 77 (2011) 1214-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:21183637]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

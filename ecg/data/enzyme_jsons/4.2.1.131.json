@@ -1,0 +1,459 @@
+[
+  {
+    "entry_id": "4.2.1.131",
+    "name": "carotenoid 1,2-hydratase",
+    "names": [
+      "carotenoid 1,2-hydratase",
+      "CrtC"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-oxygen lyases;",
+      "Hydro-lyases"
+    ],
+    "sysname": "lycopene hydro-lyase (1-hydroxy-1,2-dihydrolycopene-forming)",
+    "reaction": "(1) 1-hydroxy-1,2-dihydrolycopene = lycopene + H2O [RN:R07519]; (2) 1,1'-dihydroxy-1,1',2,2'-tetrahydrolycopene = 1-hydroxy-1,2-dihydrolycopene + H2O [RN:R09790]",
+    "all_reac": "R07519 R09790; (other) R07516 R07522 R07528 R07532 R07536 R07539 R07543",
+    "iubmb_reactions": [
+      "R07519 R09790"
+    ],
+    "kegg_reactions": [
+      "R07516 R07522 R07528 R07532 R07536 R07539 R07543"
+    ],
+    "substrates": [
+      "1-hydroxy-1,2-dihydrolycopene [CPD:C19795]",
+      "1,1'-dihydroxy-1,1',2,2'-tetrahydrolycopene [CPD:C19894]"
+    ],
+    "products": [
+      "lycopene [CPD:C05432]",
+      "H2O [CPD:C00001]",
+      "1-hydroxy-1,2-dihydrolycopene [CPD:C19795]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "In Rubrivivax gelatinosus [1] and Thiocapsa roseopersicina [2] both products are formed, whereas Rhodobacter capsulatus [1] only gives 1-hydroxy-1,2-dihydrolycopene. Also acts on neurosporene giving 1-hydroxy-1,2-dihydroneurosporene with both organism but 1,1'-dihydroxy-1,1',2,2'-tetrahydroneurosporene only with Rubrivivax gelatinosus.",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K09844": "carotenoid 1,2-hydratase"
+    },
+    "genes": {
+      "alv": [
+        "Alvin_2567"
+      ],
+      "tvi": [
+        "Thivi_2016"
+      ],
+      "tmb": [
+        "Thimo_3010"
+      ],
+      "mpur": [
+        "MARPU_13285"
+      ],
+      "hha": [
+        "Hhal_1615"
+      ],
+      "hhc": [
+        "M911_10375"
+      ],
+      "ebs": [
+        "ECTOBSL9_3051"
+      ],
+      "pdq": [
+        "CL55_00013480"
+      ],
+      "rac": [
+        "RA876_06055"
+      ],
+      "lim": [
+        "L103DPR2_00984"
+      ],
+      "lih": [
+        "L63ED372_00639"
+      ],
+      "hyr": [
+        "BSY239_1369"
+      ],
+      "rge": [
+        "RGE_33580"
+      ],
+      "rbn": [
+        "RBXJA2T_09497"
+      ],
+      "rdp": [
+        "RD2015_1032"
+      ],
+      "metr": [
+        "BSY238_2444"
+      ],
+      "beb": [
+        "AEM42_07450"
+      ],
+      "mxa": [
+        "MXAN_0898"
+      ],
+      "mfu": [
+        "LILAB_04220"
+      ],
+      "msd": [
+        "MYSTI_00908"
+      ],
+      "mym": [
+        "A176_006083"
+      ],
+      "mmas": [
+        "MYMAC_000922"
+      ],
+      "ccx": [
+        "COCOR_00783"
+      ],
+      "sur": [
+        "STAUR_7077"
+      ],
+      "age": [
+        "AA314_01870"
+      ],
+      "mbd": [
+        "MEBOL_004337"
+      ],
+      "cfus": [
+        "CYFUS_001184"
+      ],
+      "scl": [
+        "sce0584"
+      ],
+      "scu": [
+        "SCE1572_04050"
+      ],
+      "ccro": [
+        "CMC5_014480"
+      ],
+      "mrm": [
+        "A7982_08936"
+      ],
+      "agc": [
+        "BSY240_3674"
+      ],
+      "bra": [
+        "BRADO1613"
+      ],
+      "bbt": [
+        "BBta_6442"
+      ],
+      "brs": [
+        "S23_19130"
+      ],
+      "aol": [
+        "S58_59230"
+      ],
+      "bro": [
+        "BRAD285_5787"
+      ],
+      "rpa": [
+        "RPA1517"
+      ],
+      "rpb": [
+        "RPB_4006"
+      ],
+      "rpc": [
+        "RPC_1288"
+      ],
+      "rpd": [
+        "RPD_3761"
+      ],
+      "rpe": [
+        "RPE_1320"
+      ],
+      "rpt": [
+        "Rpal_1705"
+      ],
+      "rpx": [
+        "Rpdx1_4003"
+      ],
+      "bos": [
+        "BSY19_4061"
+      ],
+      "mex": [
+        "Mext_2725"
+      ],
+      "mea": [
+        "Mex_1p2922"
+      ],
+      "mdi": [
+        "METDI3491"
+      ],
+      "mch": [
+        "Mchl_2952"
+      ],
+      "mrd": [
+        "Mrad2831_2823"
+      ],
+      "met": [
+        "M446_3692"
+      ],
+      "mpo": [
+        "Mpop_2847"
+      ],
+      "mor": [
+        "MOC_3188"
+      ],
+      "meta": [
+        "Y590_13115"
+      ],
+      "maqu": [
+        "Maq22A_1p32520"
+      ],
+      "mphy": [
+        "MCBMB27_02264"
+      ],
+      "mza": [
+        "B2G69_21165"
+      ],
+      "msl": [
+        "Msil_2047"
+      ],
+      "rva": [
+        "Rvan_0206"
+      ],
+      "bsb": [
+        "Bresu_3049"
+      ],
+      "brl": [
+        "BZG35_15475"
+      ],
+      "rsp": [
+        "RSP_0267"
+      ],
+      "rsh": [
+        "Rsph17029_1911"
+      ],
+      "rsq": [
+        "Rsph17025_2041"
+      ],
+      "rsk": [
+        "RSKD131_1594"
+      ],
+      "rcp": [
+        "RCAP_rcc00682"
+      ],
+      "jan": [
+        "Jann_0184"
+      ],
+      "rde": [
+        "RD1_0116"
+      ],
+      "rli": [
+        "RLO149_p940110"
+      ],
+      "dsh": [
+        "Dshi_3512"
+      ],
+      "red": [
+        "roselon_01073"
+      ],
+      "ptp": [
+        "RCA23_c29570"
+      ],
+      "rsu": [
+        "NHU_04282"
+      ],
+      "rhm": [
+        "B5V46_17510"
+      ],
+      "rhc": [
+        "RGUI_1966"
+      ],
+      "suam": [
+        "BOO69_19435"
+      ],
+      "tom": [
+        "BWR18_20215"
+      ],
+      "rmm": [
+        "ROSMUCSMR3_00910"
+      ],
+      "lvs": [
+        "LOKVESSMR4R_03674"
+      ],
+      "hbc": [
+        "AEM38_14605"
+      ],
+      "sphi": [
+        "TS85_22885"
+      ],
+      "ssan": [
+        "NX02_18470"
+      ],
+      "cij": [
+        "WG74_05025"
+      ],
+      "blas": [
+        "BSY18_2719"
+      ],
+      "elq": [
+        "Ga0102493_111842"
+      ],
+      "pns": [
+        "A9D12_01270"
+      ],
+      "porl": [
+        "BG023_112666"
+      ],
+      "amv": [
+        "ACMV_18840"
+      ],
+      "rru": [
+        "Rru_A2985"
+      ],
+      "rrf": [
+        "F11_15290"
+      ],
+      "rpm": [
+        "RSPPHO_02322"
+      ],
+      "ipa": [
+        "Isop_1565"
+      ],
+      "ctm": [
+        "Cabther_A0575"
+      ],
+      "cte": [
+        "CT0301"
+      ],
+      "cpc": [
+        "Cpar_1736"
+      ],
+      "clz": [
+        "BIU88_01405"
+      ],
+      "cch": [
+        "Cag_0393"
+      ],
+      "cph": [
+        "Cpha266_0428"
+      ],
+      "cpb": [
+        "Cphamn1_1988"
+      ],
+      "cli": [
+        "Clim_0360"
+      ],
+      "pvi": [
+        "Cvib_1502"
+      ],
+      "plt": [
+        "Plut_1720"
+      ],
+      "pph": [
+        "Ppha_0465"
+      ],
+      "paa": [
+        "Paes_1781"
+      ],
+      "proc": [
+        "Ptc2401_01879"
+      ],
+      "prs": [
+        "B9H02_08945"
+      ],
+      "pros": [
+        "CHL67_02450"
+      ],
+      "cts": [
+        "Ctha_1182"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.2.1.131"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.2.1.131"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.2.1.131"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.2.1.131"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Steiger S",
+          "Mazet A",
+          "Sandmann G"
+        ],
+        "title": "Heterologous expression, purification, and enzymatic characterization of the acyclic carotenoid 1,2-hydratase from Rubrivivax gelatinosus.",
+        "journal": "Arch. Biochem. Biophys. 414 (2003) 51-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12745254]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hiseni A",
+          "Arends IW",
+          "Otten LG"
+        ],
+        "title": "Biochemical characterization of the carotenoid 1,2-hydratases (CrtC) from Rubrivivax gelatinosus and Thiocapsa roseopersicina.",
+        "journal": "Appl. Microbiol. Biotechnol. 91 (2011) 1029-36.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:21590288]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

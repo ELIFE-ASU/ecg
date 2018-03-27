@@ -1,0 +1,653 @@
+[
+  {
+    "entry_id": "1.14.99.54",
+    "name": "lytic cellulose monooxygenase (C1-hydroxylating)",
+    "names": [
+      "lytic cellulose monooxygenase (C1-hydroxylating)",
+      "lytic polysaccharide monooxygenase (ambiguous)",
+      "LPMO (ambiguous)",
+      "LPMO9A"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "Miscellaneous"
+    ],
+    "sysname": "cellulose, hydrogen-donor:oxygen oxidoreductase (D-glucosyl C1-hydroxylating)",
+    "reaction": "[(1->4)-beta-D-glucosyl]n+m + reduced acceptor + O2 = [(1->4)-beta-D-glucosyl]m-1-(1->4)-D-glucono-1,5-lactone + [(1->4)-beta-D-glucosyl]n + acceptor + H2O [RN:R11745]",
+    "all_reac": "R11745",
+    "iubmb_reactions": [
+      "R11745"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "[(1->4)-beta-D-glucosyl]n+m",
+      "reduced acceptor [CPD:C00030]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "[(1->4)-beta-D-glucosyl]m-1-(1->4)-D-glucono-1,5-lactone",
+      "[(1->4)-beta-D-glucosyl]n",
+      "acceptor [CPD:C00028]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This copper-containing enzyme, found in fungi and bacteria, cleaves cellulose in an oxidative manner. The cellulose fragments that are formed contain a D-glucono-1,5-lactone residue at the reducing end, which hydrolyses quickly and spontaneously to the aldonic acid. The electrons are provided in vivo by the cytochrome b domain of EC 1.1.99.18, cellobiose dehydrogenase (acceptor) [1]. Ascorbate can serve as the electron donor in vitro.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K19356": "lytic cellulose monooxygenase (C1-hydroxylating)"
+    },
+    "genes": {
+      "ncr": [
+        "NCU01867",
+        "NCU02240",
+        "NCU02916",
+        "NCU07760",
+        "NCU08760"
+      ],
+      "nte": [
+        "NEUTE1DRAFT133749",
+        "NEUTE1DRAFT77711",
+        "NEUTE1DRAFT82948",
+        "NEUTE1DRAFT92381"
+      ],
+      "smp": [
+        "SMAC_00529",
+        "SMAC_03679",
+        "SMAC_04518",
+        "SMAC_05160",
+        "SMAC_06537",
+        "SMAC_06847"
+      ],
+      "pan": [
+        "PODANSg1734",
+        "PODANSg2226",
+        "PODANSg3538",
+        "PODANSg3552",
+        "PODANSg4671",
+        "PODANSg4737",
+        "PODANSg716",
+        "PODANSg7957",
+        "PODANSg8471"
+      ],
+      "ttt": [
+        "THITE_2106556",
+        "THITE_2119040",
+        "THITE_2142696",
+        "THITE_2170662"
+      ],
+      "mtm": [
+        "MYCTH_111088",
+        "MYCTH_2299721",
+        "MYCTH_2301632",
+        "MYCTH_46583",
+        "MYCTH_79765",
+        "MYCTH_80312"
+      ],
+      "cthr": [
+        "CTHT_0000930",
+        "CTHT_0022130",
+        "CTHT_0025030",
+        "CTHT_0052310",
+        "CTHT_0072140"
+      ],
+      "mgr": [
+        "MGG_07300",
+        "MGG_08020",
+        "MGG_12733",
+        "MGG_13241"
+      ],
+      "tmn": [
+        "UCRPA7_2324",
+        "UCRPA7_5174",
+        "UCRPA7_5653"
+      ],
+      "fgr": [
+        "FGSG_06397",
+        "FGSG_13245"
+      ],
+      "fpu": [
+        "FPSE_00868",
+        "FPSE_04448",
+        "FPSE_12300"
+      ],
+      "fvr": [
+        "FVEG_04743",
+        "FVEG_06459",
+        "FVEG_12089"
+      ],
+      "fox": [
+        "FOXG_03771",
+        "FOXG_07821",
+        "FOXG_08211"
+      ],
+      "nhe": [
+        "NECHADRAFT_33435",
+        "NECHADRAFT_54993"
+      ],
+      "tre": [
+        "TRIREDRAFT_73643"
+      ],
+      "plj": [
+        "VFPFJ_11046"
+      ],
+      "val": [
+        "VDBG_02240",
+        "VDBG_06492",
+        "VDBG_07467",
+        "VDBG_08426",
+        "VDBG_09242",
+        "VDBG_09562"
+      ],
+      "vda": [
+        "VDAG_02211",
+        "VDAG_02299",
+        "VDAG_02711",
+        "VDAG_02959",
+        "VDAG_04795",
+        "VDAG_05030",
+        "VDAG_07400",
+        "VDAG_08091"
+      ],
+      "cfj": [
+        "CFIO01_02234",
+        "CFIO01_03891",
+        "CFIO01_04309",
+        "CFIO01_04911",
+        "CFIO01_05197",
+        "CFIO01_05451",
+        "CFIO01_10036",
+        "CFIO01_10898"
+      ],
+      "ela": [
+        "UCREL1_10876",
+        "UCREL1_1520",
+        "UCREL1_312",
+        "UCREL1_319",
+        "UCREL1_3417",
+        "UCREL1_3819",
+        "UCREL1_5189",
+        "UCREL1_6396",
+        "UCREL1_6408"
+      ],
+      "pfy": [
+        "PFICI_01254",
+        "PFICI_01743",
+        "PFICI_04173",
+        "PFICI_08510",
+        "PFICI_10057",
+        "PFICI_12594",
+        "PFICI_14484"
+      ],
+      "ssl": [
+        "SS1G_09251"
+      ],
+      "bfu": [
+        "BC1G_01007",
+        "BC1G_13139"
+      ],
+      "mbe": [
+        "MBM_00712",
+        "MBM_04929",
+        "MBM_06977",
+        "MBM_09145"
+      ],
+      "psco": [
+        "LY89DRAFT_582205",
+        "LY89DRAFT_634019",
+        "LY89DRAFT_760760",
+        "LY89DRAFT_772659"
+      ],
+      "glz": [
+        "GLAREA_00867",
+        "GLAREA_02347",
+        "GLAREA_04229",
+        "GLAREA_08312",
+        "GLAREA_11571",
+        "GLAREA_12658"
+      ],
+      "ani": [
+        "AN1602.2"
+      ],
+      "afm": [
+        "AFUA_8G06830"
+      ],
+      "aor": [
+        "AOR_1_3066174"
+      ],
+      "ang": [
+        "ANI_1_1540134"
+      ],
+      "afv": [
+        "AFLA_077840"
+      ],
+      "act": [
+        "ACLA_059790",
+        "ACLA_060890"
+      ],
+      "nfi": [
+        "NFIA_044390",
+        "NFIA_099510"
+      ],
+      "pno": [
+        "SNOG_00879",
+        "SNOG_01146",
+        "SNOG_05441",
+        "SNOG_05737",
+        "SNOG_07503",
+        "SNOG_12037",
+        "SNOG_12727",
+        "SNOG_14481"
+      ],
+      "pte": [
+        "PTT_04452",
+        "PTT_09156",
+        "PTT_10713",
+        "PTT_12296",
+        "PTT_13147",
+        "PTT_14450",
+        "PTT_19839"
+      ],
+      "bze": [
+        "COCCADRAFT_10290",
+        "COCCADRAFT_80996",
+        "COCCADRAFT_82910",
+        "COCCADRAFT_88798",
+        "COCCADRAFT_89549",
+        "COCCADRAFT_90790",
+        "COCCADRAFT_91341"
+      ],
+      "bsc": [
+        "COCSADRAFT_173335",
+        "COCSADRAFT_184615",
+        "COCSADRAFT_217864",
+        "COCSADRAFT_32038",
+        "COCSADRAFT_33583",
+        "COCSADRAFT_33682",
+        "COCSADRAFT_41104"
+      ],
+      "bor": [
+        "COCMIDRAFT_100168",
+        "COCMIDRAFT_35579",
+        "COCMIDRAFT_36538",
+        "COCMIDRAFT_85853",
+        "COCMIDRAFT_87449",
+        "COCMIDRAFT_895",
+        "COCMIDRAFT_90535",
+        "COCMIDRAFT_99299"
+      ],
+      "npa": [
+        "UCRNP2_10454",
+        "UCRNP2_3883",
+        "UCRNP2_5067"
+      ],
+      "tml": [
+        "GSTUM_00001211001"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_147827",
+        "TRAVEDRAFT_162601",
+        "TRAVEDRAFT_51004",
+        "TRAVEDRAFT_71674"
+      ],
+      "dsq": [
+        "DICSQDRAFT_102982",
+        "DICSQDRAFT_137375",
+        "DICSQDRAFT_181042"
+      ],
+      "pco": [
+        "PHACADRAFT_251256",
+        "PHACADRAFT_253391",
+        "PHACADRAFT_261448",
+        "PHACADRAFT_263097"
+      ],
+      "shs": [
+        "STEHIDRAFT_105725",
+        "STEHIDRAFT_98247"
+      ],
+      "hir": [
+        "HETIRDRAFT_63659",
+        "HETIRDRAFT_64994"
+      ],
+      "psq": [
+        "PUNSTDRAFT_142953",
+        "PUNSTDRAFT_154782",
+        "PUNSTDRAFT_154784",
+        "PUNSTDRAFT_154785",
+        "PUNSTDRAFT_96583"
+      ],
+      "adl": [
+        "AURDEDRAFT_113220",
+        "AURDEDRAFT_114973",
+        "AURDEDRAFT_132370",
+        "AURDEDRAFT_140513",
+        "AURDEDRAFT_143034",
+        "AURDEDRAFT_165835",
+        "AURDEDRAFT_199593",
+        "AURDEDRAFT_86786"
+      ],
+      "fme": [
+        "FOMMEDRAFT_136574",
+        "FOMMEDRAFT_170904",
+        "FOMMEDRAFT_187182"
+      ],
+      "mpr": [
+        "MPER_08960",
+        "MPER_10540"
+      ],
+      "mrr": [
+        "Moror_11015",
+        "Moror_12493",
+        "Moror_12809",
+        "Moror_16033",
+        "Moror_16034"
+      ],
+      "cci": [
+        "CC1G_02189",
+        "CC1G_03525",
+        "CC1G_03526",
+        "CC1G_03529",
+        "CC1G_04917",
+        "CC1G_07179",
+        "CC1G_07480",
+        "CC1G_09949",
+        "CC1G_10029",
+        "CC1G_13046"
+      ],
+      "scm": [
+        "SCHCODRAFT_102364",
+        "SCHCODRAFT_31674",
+        "SCHCODRAFT_54466",
+        "SCHCODRAFT_60079",
+        "SCHCODRAFT_60836"
+      ],
+      "abp": [
+        "AGABI1DRAFT111761",
+        "AGABI1DRAFT113096"
+      ],
+      "abv": [
+        "AGABI2DRAFT122757",
+        "AGABI2DRAFT192993"
+      ],
+      "cput": [
+        "CONPUDRAFT_139222",
+        "CONPUDRAFT_140516",
+        "CONPUDRAFT_91873"
+      ],
+      "sla": [
+        "SERLADRAFT_335267"
+      ],
+      "wic": [
+        "J056_003349"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.99.54"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.99.54"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.99.54"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.99.54"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Phillips CM",
+          "Beeson WT",
+          "Cate JH",
+          "Marletta MA"
+        ],
+        "title": "Cellobiose dehydrogenase and a copper-dependent polysaccharide monooxygenase potentiate cellulose degradation by Neurospora crassa.",
+        "journal": "ACS. Chem. Biol. 6 (2011) 1399-406.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:22004347]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Beeson WT",
+          "Phillips CM",
+          "Cate JH",
+          "Marletta MA"
+        ],
+        "title": "Oxidative cleavage of cellulose by fungal copper-dependent polysaccharide monooxygenases.",
+        "journal": "J. Am. Chem. Soc. 134 (2012) 890-2.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:22188218]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Li X",
+          "Beeson WT 4th",
+          "Phillips CM",
+          "Marletta MA",
+          "Cate JH"
+        ],
+        "title": "Structural basis for substrate targeting and catalysis by fungal polysaccharide monooxygenases.",
+        "journal": "Structure. 20 (2012) 1051-61.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:22578542]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bey M",
+          "Zhou S",
+          "Poidevin L",
+          "Henrissat B",
+          "Coutinho PM",
+          "Berrin JG",
+          "Sigoillot JC"
+        ],
+        "title": "Cello-oligosaccharide oxidation reveals differences between two lytic polysaccharide monooxygenases (family GH61) from Podospora anserina.",
+        "journal": "Appl. Environ. Microbiol. 79 (2013) 488-96.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:23124232]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Frommhagen M",
+          "Sforza S",
+          "Westphal AH",
+          "Visser J",
+          "Hinz SW",
+          "Koetsier MJ",
+          "van Berkel WJ",
+          "Gruppen H",
+          "Kabel MA"
+        ],
+        "title": "Discovery of the combined oxidative cleavage of plant xylan and cellulose by a new fungal polysaccharide monooxygenase.",
+        "journal": "Biotechnol. Biofuels. 8 (2015) 101.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:26185526]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Patel I",
+          "Kracher D",
+          "Ma S",
+          "Garajova S",
+          "Haon M",
+          "Faulds CB",
+          "Berrin JG",
+          "Ludwig R",
+          "Record E"
+        ],
+        "title": "Salt-responsive lytic polysaccharide monooxygenases from the mangrove fungus Pestalotiopsis sp. NCi6.",
+        "journal": "Biotechnol. Biofuels. 9 (2016) 108.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:27213015]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Courtade G",
+          "Wimmer R",
+          "Rohr AK",
+          "Preims M",
+          "Felice AK",
+          "Dimarogona M",
+          "Vaaje-Kolstad G",
+          "Sorlie M",
+          "Sandgren M",
+          "Ludwig R",
+          "Eijsink VG",
+          "Aachmann FL"
+        ],
+        "title": "Interactions of a fungal lytic polysaccharide monooxygenase with beta-glucan substrates and cellobiose dehydrogenase.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 113 (2016) 5922-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:27152023]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "entry_id": "1.14.13.88",
+    "name": "flavanoid 3',5'-hydroxylase",
+    "names": [
+      "flavanoid 3',5'-hydroxylase",
+      "flavonoid 3',5'-hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "flavanone,NADPH:oxygen oxidoreductase",
+    "reaction": "a flavanone + 2 NADPH + 2 H+ + 2 O2 = a 3',5'-dihydroxyflavanone + 2 NADP+ + 2 H2O (overall reaction) [RN:R10069]; (1a) a flavanone + NADPH + H+ + O2 = a 3'-hydroxyflavanone + NADP+ + H2O [RN:R07369]; (1b) a 3'-hydroxyflavanone + NADPH + H+ + O2 = a 3',5'-dihydroxyflavanone + NADP+ + H2O [RN:R07370]",
+    "all_reac": "R07369 > R02442 R03124; R07370 > R03639 R04902; R10069; (other) R06537 R06538 R10258 R10260",
+    "iubmb_reactions": [
+      "R07369 > R02442 R03124",
+      "R07370 > R03639 R04902",
+      "R10069"
+    ],
+    "kegg_reactions": [
+      "R06537 R06538 R10258 R10260"
+    ],
+    "substrates": [
+      "flavanone [CPD:C00766]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "3'-hydroxyflavanone [CPD:C15204]"
+    ],
+    "products": [
+      "3',5'-dihydroxyflavanone [CPD:C15609]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "3'-hydroxyflavanone [CPD:C15204]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A heme-thiolate protein (P-450). The 3',5'-dihydroxyflavanone is formed via the 3'-hydroxyflavanone. In Petunia hybrida the enzyme acts on naringenin, eriodictyol, dihydroquercetin (taxifolin) and dihydrokaempferol (aromadendrin). The enzyme catalyses the hydroxylation of 5,7,4'-trihydroxyflavanone (naringenin) at either the 3' position to form eriodictyol or at both the 3' and 5' positions to form 5,7,3',4',5'-pentahydroxyflavanone (dihydrotricetin). The enzyme also catalyses the hydroxylation of 3,5,7,3',4'-pentahydroxyflavanone (taxifolin) at the 5' position, forming ampelopsin. NADH is not a good substitute for NADPH.",
+    "pathways": {
+      "ec00941": "Flavonoid biosynthesis",
+      "ec00944": "Flavone and flavonol biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K13083": "flavonoid 3',5'-hydroxylase"
+    },
+    "genes": {
+      "gmx": [
+        "547705"
+      ],
+      "cam": [
+        "101503703"
+      ],
+      "pop": [
+        "POPTR_0001s28140g"
+      ],
+      "vvi": [
+        "100243414",
+        "100246462",
+        "100248071",
+        "100251607",
+        "100261319",
+        "100266025",
+        "100852531"
+      ],
+      "sly": [
+        "100736504"
+      ],
+      "sot": [
+        "102577676"
+      ],
+      "dosa": [
+        "Os03t0367101-00"
+      ],
+      "bdi": [
+        "100832240",
+        "100842616"
+      ],
+      "sbi": [
+        "8080780",
+        "8082602"
+      ],
+      "sita": [
+        "101754995"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.88"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.88"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.88"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.88"
+      ],
+      "CAS": [
+        "94047-23-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Menting J",
+          "Scopes RK",
+          "Stevenson TW."
+        ],
+        "title": "Characterization of Flavonoid 3[prime],5[prime]-Hydroxylase in Microsomal Membrane Fraction of Petunia hybrida Flowers.",
+        "journal": "Plant. Physiol. 106 (1994) 633-642.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12232356]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Shimada Y",
+          "Nakano-Shimada R",
+          "Ohbayashi M",
+          "Okinaka Y",
+          "Kiyokawa S",
+          "Kikuchi Y."
+        ],
+        "title": "Expression of chimeric P450 genes encoding flavonoid-3', 5'-hydroxylase in transgenic tobacco and petunia plants(1).",
+        "journal": "FEBS. Lett. 461 (1999) 241-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10567704]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "de Vetten N",
+          "ter Horst J",
+          "van Schaik HP",
+          "de Boer A",
+          "Mol J",
+          "Koes R."
+        ],
+        "title": "A cytochrome b5 is required for full activity of flavonoid 3', 5'-hydroxylase, a cytochrome P450 involved in the formation of blue flower colors.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 778-83.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9892710]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

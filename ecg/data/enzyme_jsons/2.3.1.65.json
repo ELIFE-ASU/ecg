@@ -1,0 +1,641 @@
+[
+  {
+    "entry_id": "2.3.1.65",
+    "name": "bile acid-CoA:amino acid N-acyltransferase",
+    "names": [
+      "bile acid-CoA:amino acid N-acyltransferase",
+      "glycine---taurine N-acyltransferase",
+      "amino acid N-choloyltransferase",
+      "BAT",
+      "glycine N-choloyltransferase",
+      "BACAT",
+      "cholyl-CoA glycine-taurine N-acyltransferase",
+      "cholyl-CoA:taurine N-acyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Transferring groups other than aminoacyl groups"
+    ],
+    "sysname": "choloyl-CoA:glycine N-choloyltransferase",
+    "reaction": "choloyl-CoA + glycine = CoA + glycocholate [RN:R03718]",
+    "all_reac": "R03718; (other) R03720 R08744 R08745",
+    "iubmb_reactions": [
+      "R03718"
+    ],
+    "kegg_reactions": [
+      "R03720 R08744 R08745"
+    ],
+    "substrates": [
+      "choloyl-CoA [CPD:C01794]",
+      "glycine [CPD:C00037]"
+    ],
+    "products": [
+      "CoA [CPD:C00010]",
+      "glycocholate [CPD:C01921]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Also acts on CoA derivatives of other bile acids. Taurine and 2-fluoro-beta-alanine can act as substrates, but more slowly [4]. The enzyme can also conjugate fatty acids to glycine and can act as a very-long-chain acyl-CoA thioesterase [7]. Bile-acid---amino-acid conjugates serve as detergents in the gastrointestinal tract, solubilizing long chain fatty acids, mono- and diglycerides, fat-soluble vitamins and cholesterol [4]. This is the second enzyme in a two-step process leading to the conjugation of bile acids with amino acids; the first step is the conversion of bile acids into their acyl-CoA thioesters, which is catalysed by EC 6.2.1.7, cholate---CoA ligase.",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec00430": "Taurine and hypotaurine metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00659": "bile acid-CoA:amino acid N-acyltransferase"
+    },
+    "genes": {
+      "hsa": [
+        "570"
+      ],
+      "ptr": [
+        "472997"
+      ],
+      "pps": [
+        "100972861",
+        "100992429"
+      ],
+      "ggo": [
+        "101140183"
+      ],
+      "pon": [
+        "100431907"
+      ],
+      "nle": [
+        "100598200"
+      ],
+      "mcc": [
+        "100429419"
+      ],
+      "mcf": [
+        "102132073",
+        "107127621"
+      ],
+      "csab": [
+        "103219118"
+      ],
+      "rro": [
+        "104670797"
+      ],
+      "rbb": [
+        "108537176"
+      ],
+      "cjc": [
+        "100394190",
+        "100396712"
+      ],
+      "sbq": [
+        "101036806",
+        "104653227"
+      ],
+      "mmu": [
+        "12012"
+      ],
+      "rno": [
+        "29725"
+      ],
+      "cge": [
+        "100756252",
+        "100756541"
+      ],
+      "ngi": [
+        "103749095",
+        "103749096",
+        "103749097"
+      ],
+      "hgl": [
+        "101716142",
+        "101717293"
+      ],
+      "ccan": [
+        "109696243"
+      ],
+      "ocu": [
+        "100348617",
+        "100350133",
+        "100350872"
+      ],
+      "tup": [
+        "102472797",
+        "102473647"
+      ],
+      "cfa": [
+        "481635"
+      ],
+      "aml": [
+        "100476252"
+      ],
+      "umr": [
+        "103678524",
+        "103678630"
+      ],
+      "oro": [
+        "101365672",
+        "101365978"
+      ],
+      "fca": [
+        "101095691",
+        "101096116"
+      ],
+      "ptg": [
+        "102969591",
+        "102969870"
+      ],
+      "aju": [
+        "106972069",
+        "106972070"
+      ],
+      "bta": [
+        "530653",
+        "786798"
+      ],
+      "bom": [
+        "102268176",
+        "102268462"
+      ],
+      "biu": [
+        "109563300"
+      ],
+      "phd": [
+        "102325859",
+        "102326210"
+      ],
+      "chx": [
+        "102174570"
+      ],
+      "oas": [
+        "101106149",
+        "101106409"
+      ],
+      "ssc": [
+        "100515185",
+        "102158534"
+      ],
+      "cfr": [
+        "102523415"
+      ],
+      "cdk": [
+        "105086911"
+      ],
+      "bacu": [
+        "103006095",
+        "103017253"
+      ],
+      "lve": [
+        "103081315",
+        "103082496"
+      ],
+      "ecb": [
+        "100054567",
+        "100063137"
+      ],
+      "epz": [
+        "103552469",
+        "103568036"
+      ],
+      "eai": [
+        "106831794",
+        "106831795"
+      ],
+      "myb": [
+        "102262596",
+        "102263115"
+      ],
+      "myd": [
+        "102764048",
+        "102764710"
+      ],
+      "hai": [
+        "109395040"
+      ],
+      "rss": [
+        "109446124"
+      ],
+      "pale": [
+        "102892341",
+        "102897591"
+      ],
+      "lav": [
+        "100654296",
+        "100670223"
+      ],
+      "tmu": [
+        "101357199"
+      ],
+      "mdo": [
+        "100023136"
+      ],
+      "shr": [
+        "100918014",
+        "100924464",
+        "100925244"
+      ],
+      "gga": [
+        "769879"
+      ],
+      "mgp": [
+        "100539658"
+      ],
+      "cjo": [
+        "107314177"
+      ],
+      "apla": [
+        "101797844"
+      ],
+      "acyg": [
+        "106048282"
+      ],
+      "gfr": [
+        "102037789"
+      ],
+      "fab": [
+        "101815920"
+      ],
+      "phi": [
+        "102101793"
+      ],
+      "pmaj": [
+        "107206148"
+      ],
+      "fpg": [
+        "101924136"
+      ],
+      "fch": [
+        "102059453"
+      ],
+      "clv": [
+        "102094683"
+      ],
+      "egz": [
+        "104134405"
+      ],
+      "aam": [
+        "106494986"
+      ],
+      "asn": [
+        "102368085",
+        "102376159",
+        "102383708"
+      ],
+      "amj": [
+        "102559248",
+        "102564970",
+        "102575228"
+      ],
+      "pss": [
+        "102447700",
+        "102461463",
+        "102461871"
+      ],
+      "cmy": [
+        "102939533",
+        "102947935"
+      ],
+      "cpic": [
+        "101932563",
+        "101938826"
+      ],
+      "acs": [
+        "100566890"
+      ],
+      "pvt": [
+        "110078385"
+      ],
+      "pbi": [
+        "103065567"
+      ],
+      "gja": [
+        "107106123",
+        "107106126"
+      ],
+      "xla": [
+        "100137716",
+        "108707337"
+      ],
+      "xtr": [
+        "100125079",
+        "100496940",
+        "100497260",
+        "100497423",
+        "100497580",
+        "100497738"
+      ],
+      "npr": [
+        "108790690",
+        "108790705",
+        "108790706",
+        "108795509"
+      ],
+      "srx": [
+        "107726829"
+      ],
+      "sanh": [
+        "107689257"
+      ],
+      "ipu": [
+        "108279592",
+        "108280978"
+      ],
+      "tng": [
+        "GSTEN00014025G001"
+      ],
+      "ola": [
+        "101166298"
+      ],
+      "xma": [
+        "102226402"
+      ],
+      "pret": [
+        "103465285"
+      ],
+      "hcq": [
+        "109522368"
+      ],
+      "bpec": [
+        "110161506",
+        "110171280",
+        "110171322"
+      ],
+      "els": [
+        "105020184"
+      ],
+      "lcm": [
+        "102356569",
+        "102363365",
+        "102363627"
+      ],
+      "cin": [
+        "100175018"
+      ],
+      "aplc": [
+        "110989383",
+        "110991145"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_125734"
+      ],
+      "crg": [
+        "105343873"
+      ],
+      "myi": [
+        "110465077"
+      ],
+      "obi": [
+        "106881808"
+      ],
+      "epa": [
+        "110233246",
+        "110233327",
+        "110242348"
+      ],
+      "adf": [
+        "107346883"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.1.65"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.1.65"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.1.65"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.1.65"
+      ],
+      "CAS": [
+        "65979-40-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Czuba B",
+          "Vessey DA."
+        ],
+        "title": "Kinetic characterization of cholyl-CoA glycine-taurine N-acyltransferase from bovine liver.",
+        "journal": "J. Biol. Chem. 255 (1980) 5296-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:7372637]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Jordan",
+          "T.W.",
+          "Lee",
+          "R. and Lim",
+          "W.C."
+        ],
+        "title": "Isoelectric focussing of soluble and particulate benzoyl-CoA and cholyl-CoA:amino acid N-acyltransferases from rat liver.",
+        "journal": "Biochem. Int. 1 (1980) 325-330.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Vessey DA."
+        ],
+        "title": "The co-purification and common identity of cholyl CoA:glycine- and cholyl CoA:taurine-N-acyltransferase activities from bovine liver.",
+        "journal": "J. Biol. Chem. 254 (1979) 2059-63.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:422567]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Johnson MR",
+          "Barnes S",
+          "Kwakye JB",
+          "Diasio RB."
+        ],
+        "title": "Purification and characterization of bile acid-CoA:amino acid N-acyltransferase from human liver.",
+        "journal": "J. Biol. Chem. 266 (1991) 10227-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:2037576]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Falany CN",
+          "Xie X",
+          "Wheeler JB",
+          "Wang J",
+          "Smith M",
+          "He D",
+          "Barnes S."
+        ],
+        "title": "Molecular cloning and expression of rat liver bile acid CoA ligase.",
+        "journal": "J. Lipid. Res. 43 (2002) 2062-71.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:12454267]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "He D",
+          "Barnes S",
+          "Falany CN."
+        ],
+        "title": "Rat liver bile acid CoA:amino acid N-acyltransferase: expression, characterization, and peroxisomal localization.",
+        "journal": "J. Lipid. Res. 44 (2003) 2242-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:12951368]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "O'Byrne J",
+          "Hunt MC",
+          "Rai DK",
+          "Saeki M",
+          "Alexson SE."
+        ],
+        "title": "The human bile acid-CoA:amino acid N-acyltransferase functions in the conjugation of fatty acids to glycine.",
+        "journal": "J. Biol. Chem. 278 (2003) 34237-44.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:12810727]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

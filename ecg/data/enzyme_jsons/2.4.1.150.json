@@ -1,0 +1,623 @@
+[
+  {
+    "entry_id": "2.4.1.150",
+    "name": "N-acetyllactosaminide beta-1,6-N-acetylglucosaminyltransferase",
+    "names": [
+      "N-acetyllactosaminide beta-1,6-N-acetylglucosaminyltransferase",
+      "GCNT2 (gene name)",
+      "GCNT3 (gene name)",
+      "IGnT",
+      "I-branching beta1,6-N-acetylglucosaminyltransferase",
+      "N-acetylglucosaminyltransferase",
+      "uridine diphosphoacetylglucosamine-acetyllactosaminide beta1->6-acetylglucosaminyltransferase",
+      "Galbeta1->4GlcNAc-R beta1->6 N-acetylglucosaminyltransferase",
+      "UDP-N-acetyl-D-glucosamine:beta-D-galactosyl-1,4-N-acetyl-D-glucosaminide beta-1,6-N-acetyl-D-glucosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-alpha-D-glucosamine:beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminide 6-beta-N-acetylglucosaminyltransferase (configuration-inverting)",
+    "reaction": "UDP-N-acetyl-alpha-D-glucosamine + beta-D-Gal-(1->4)-beta-D-GlcNAc-(1->3)-beta-D-Gal-(1->4)-beta-D-GlcNAc-R = UDP + beta-D-Gal-(1->4)-beta-D-GlcNAc-(1->3)-[beta-D-GlcNAc-(1->6)]-beta-D-Gal-(1->4)-beta-D-GlcNAc-R",
+    "all_reac": "(other) R02790 R04654 R06013(G) R06189(G)",
+    "iubmb_reactions": [
+      "(other) R02790 R04654 R06013(G) R06189(G)"
+    ],
+    "kegg_reactions": [
+      "R02790 R04654 R06013(G) R06189(G)"
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-glucosamine [CPD:C00043]",
+      "beta-D-Gal-(1->4)-beta-D-GlcNAc-(1->3)-beta-D-Gal-(1->4)-beta-D-GlcNAc-R"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "beta-D-Gal-(1->4)-beta-D-GlcNAc-(1->3)-[beta-D-GlcNAc-(1->6)]-beta-D-Gal-(1->4)-beta-D-GlcNAc-R"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme acts on poly-N-acetyllactosamine [glycan chains of beta-D-galactosyl-(1->4)-N-acetyl-D-glucosamine units connected by beta(1,3) linkages] attached to proteins or lipids. It transfers a GlcNAc residue by beta(1,6)-linkage to galactosyl residues close to non-reducing terminals, introducing a branching pattern known as I branching.",
+    "pathways": {
+      "ec00601": "Glycosphingolipid biosynthesis - lacto and neolacto series",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00742": "N-acetyllactosaminide beta-1,6-N-acetylglucosaminyltransferase"
+    },
+    "genes": {
+      "hsa": [
+        "2651"
+      ],
+      "ptr": [
+        "462428"
+      ],
+      "pps": [
+        "100979555",
+        "100983940"
+      ],
+      "ggo": [
+        "101132299",
+        "101133045",
+        "109027295"
+      ],
+      "pon": [
+        "100173016"
+      ],
+      "nle": [
+        "100600035",
+        "100601598"
+      ],
+      "mcc": [
+        "697468"
+      ],
+      "mcf": [
+        "102131882",
+        "107129630",
+        "107129632"
+      ],
+      "csab": [
+        "103222180",
+        "103222182",
+        "103222183"
+      ],
+      "rro": [
+        "104659228",
+        "104671974"
+      ],
+      "rbb": [
+        "108521659",
+        "108521996",
+        "108522000",
+        "108522006",
+        "108522008",
+        "108528720"
+      ],
+      "cjc": [
+        "100389624",
+        "100397136",
+        "100404131",
+        "100411905",
+        "100895187"
+      ],
+      "sbq": [
+        "101030514",
+        "101044056",
+        "104651270"
+      ],
+      "mmu": [
+        "14538"
+      ],
+      "rno": [
+        "306860",
+        "689092"
+      ],
+      "cge": [
+        "100760161",
+        "100764057"
+      ],
+      "ngi": [
+        "103732899",
+        "103732948"
+      ],
+      "hgl": [
+        "101701828",
+        "101702179",
+        "101715564",
+        "101724068"
+      ],
+      "ccan": [
+        "109700881",
+        "109700883"
+      ],
+      "ocu": [
+        "100356713",
+        "103349711"
+      ],
+      "tup": [
+        "102485510"
+      ],
+      "cfa": [
+        "488215"
+      ],
+      "aml": [
+        "100468405",
+        "100471918"
+      ],
+      "umr": [
+        "103664926"
+      ],
+      "oro": [
+        "101380605",
+        "101383589"
+      ],
+      "fca": [
+        "101094925",
+        "109491352"
+      ],
+      "ptg": [
+        "102972600"
+      ],
+      "aju": [
+        "106972037"
+      ],
+      "bta": [
+        "100848875",
+        "520336"
+      ],
+      "bom": [
+        "102276507",
+        "102277629",
+        "102277917"
+      ],
+      "biu": [
+        "109577218"
+      ],
+      "phd": [
+        "102318165",
+        "102321690",
+        "102322043"
+      ],
+      "chx": [
+        "100861326"
+      ],
+      "oas": [
+        "101106554"
+      ],
+      "ssc": [
+        "100152566"
+      ],
+      "cfr": [
+        "102504922",
+        "102520753"
+      ],
+      "cdk": [
+        "105101211"
+      ],
+      "bacu": [
+        "103007744",
+        "103010651"
+      ],
+      "lve": [
+        "103088671",
+        "103088938",
+        "103089209"
+      ],
+      "ecb": [
+        "100063291"
+      ],
+      "epz": [
+        "103559596",
+        "103559598"
+      ],
+      "eai": [
+        "106833434"
+      ],
+      "myb": [
+        "102245671",
+        "102245970"
+      ],
+      "myd": [
+        "102770362",
+        "102770938"
+      ],
+      "hai": [
+        "109377537"
+      ],
+      "rss": [
+        "109458559"
+      ],
+      "pale": [
+        "102877728"
+      ],
+      "lav": [
+        "100662133",
+        "100674841",
+        "100675128",
+        "100675689"
+      ],
+      "tmu": [
+        "101352763",
+        "101355412",
+        "101356187",
+        "101356441"
+      ],
+      "mdo": [
+        "100027080"
+      ],
+      "shr": [
+        "100925756",
+        "100926539",
+        "100926803"
+      ],
+      "oaa": [
+        "100084006",
+        "100084044"
+      ],
+      "gga": [
+        "428479"
+      ],
+      "mgp": [
+        "100539032"
+      ],
+      "cjo": [
+        "107309590"
+      ],
+      "apla": [
+        "101795771",
+        "106020659"
+      ],
+      "acyg": [
+        "106034848",
+        "106041798"
+      ],
+      "gfr": [
+        "106631903"
+      ],
+      "fab": [
+        "107603337"
+      ],
+      "pmaj": [
+        "107215848"
+      ],
+      "ccw": [
+        "109145064"
+      ],
+      "fpg": [
+        "101918293"
+      ],
+      "fch": [
+        "102057507"
+      ],
+      "clv": [
+        "102086182"
+      ],
+      "egz": [
+        "104127709",
+        "104133970"
+      ],
+      "aam": [
+        "106482558"
+      ],
+      "asn": [
+        "102373136",
+        "102374392",
+        "106722091"
+      ],
+      "amj": [
+        "102575341"
+      ],
+      "pss": [
+        "102458109"
+      ],
+      "cmy": [
+        "102930060",
+        "102931620"
+      ],
+      "cpic": [
+        "101931709",
+        "101938597"
+      ],
+      "acs": [
+        "100558219",
+        "100558415"
+      ],
+      "pvt": [
+        "110080870",
+        "110080871"
+      ],
+      "pbi": [
+        "103065974"
+      ],
+      "gja": [
+        "107111763"
+      ],
+      "xla": [
+        "108718735",
+        "432177",
+        "432275"
+      ],
+      "xtr": [
+        "100038221",
+        "100491539"
+      ],
+      "npr": [
+        "108788458",
+        "108788461"
+      ],
+      "lcm": [
+        "102366551"
+      ],
+      "cmk": [
+        "103184570"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_138210"
+      ],
+      "spu": [
+        "579029"
+      ],
+      "aplc": [
+        "110988200",
+        "110988201"
+      ],
+      "sko": [
+        "100370094",
+        "100370818",
+        "100378232"
+      ],
+      "loa": [
+        "LOAG_16642"
+      ],
+      "hro": [
+        "HELRODRAFT_139499",
+        "HELRODRAFT_163385"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_103000",
+        "LOTGIDRAFT_140870",
+        "LOTGIDRAFT_140905",
+        "LOTGIDRAFT_173237",
+        "LOTGIDRAFT_64655",
+        "LOTGIDRAFT_64882",
+        "LOTGIDRAFT_73453"
+      ],
+      "crg": [
+        "105347402"
+      ],
+      "ovi": [
+        "T265_04703",
+        "T265_10156"
+      ],
+      "nve": [
+        "NEMVE_v1g110143"
+      ],
+      "adf": [
+        "107329241"
+      ],
+      "aqu": [
+        "105315875"
+      ],
+      "gsl": [
+        "Gasu_53640"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.150"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.150"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.150"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.150"
+      ],
+      "CAS": [
+        "85638-40-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "van den Eijnden DH",
+          "Winterwerp H",
+          "Smeeman P",
+          "Schiphorst WE."
+        ],
+        "title": "Novikoff ascites tumor cells contain N-acetyllactosaminide beta 1 leads to 3 and beta 1 leads to 6 N-acetylglucosaminyltransferase activity.",
+        "journal": "J. Biol. Chem. 258 (1983) 3435-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6219989]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Basu M",
+          "Basu S."
+        ],
+        "title": "Biosynthesis in vitro of Ii core glycosphingolipids from neolactotetraosylceramide by beta 1-3- and beta 1-6-N-acetylglucosaminyltransferases from mouse T-lymphoma.",
+        "journal": "J. Biol. Chem. 259 (1984) 12557-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6238026]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Piller F",
+          "Cartron JP",
+          "Maranduba A",
+          "Veyrieres A",
+          "Leroy Y",
+          "Fournet B"
+        ],
+        "title": "Biosynthesis of blood group I antigens. Identification of a UDP-GlcNAc:GlcNAc beta 1-3Gal(-R) beta 1-6(GlcNAc to Gal) N-acetylglucosaminyltransferase in hog gastric mucosa.",
+        "journal": "J. Biol. Chem. 259 (1984) 13385-90.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6490658]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bierhuizen MF",
+          "Maemura K",
+          "Kudo S",
+          "Fukuda M"
+        ],
+        "title": "Genomic organization of core 2 and I branching beta-1,6-N-acetylglucosaminyltransferases. Implication for evolution of the beta-1,6-N-acetylglucosaminyltransferase gene family.",
+        "journal": "Glycobiology. 5 (1995) 417-25.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7579796]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ujita M",
+          "McAuliffe J",
+          "Suzuki M",
+          "Hindsgaul O",
+          "Clausen H",
+          "Fukuda MN",
+          "Fukuda M"
+        ],
+        "title": "Regulation of I-branched poly-N-acetyllactosamine synthesis. Concerted actions by I-extension enzyme, I-branching enzyme, and beta1,4-galactosyltransferase I.",
+        "journal": "J. Biol. Chem. 274 (1999) 9296-304.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:10092606]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yeh JC",
+          "Ong E",
+          "Fukuda M"
+        ],
+        "title": "Molecular cloning and expression of a novel beta-1, 6-N-acetylglucosaminyltransferase that forms core 2, core 4, and I branches.",
+        "journal": "J. Biol. Chem. 274 (1999) 3215-21.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:9915862]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

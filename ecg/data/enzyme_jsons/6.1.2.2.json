@@ -1,0 +1,122 @@
+[
+  {
+    "entry_id": "6.1.2.2",
+    "name": "nebramycin 5' synthase",
+    "names": [
+      "nebramycin 5' synthase",
+      "tobramycin carbamoyltransferase",
+      "TobZ"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-oxygen bonds;",
+      "Acid-alcohol ligases (ester synthases)"
+    ],
+    "sysname": "tobramycin:carbamoyl phosphate ligase (AMP,phosphate-forming)",
+    "reaction": "(1) tobramycin + carbamoyl phosphate + ATP + H2O = nebramycin 5' + AMP + diphosphate + phosphate (overall reaction) [RN:R10767]; (1a) carbamoyl phosphate + ATP + H2O = diphosphate + O-carbamoyladenylate + phosphate [RN:R10541]; (1b) O-carbamoyladenylate + tobramycin = AMP + nebramycin 5' [RN:R10543]; (2) kanamycin A + carbamoyl phosphate + ATP + H2O = 6''-O-carbamoylkanamycin A + AMP + diphosphate + phosphate (overall reaction) [RN:R10768]; (2a) carbamoyl phosphate + ATP + H2O = diphosphate + O-carbamoyladenylate + phosphate; (2b) O-carbamoyladenylate + kanamycin A = AMP + 6''-O-carbamoylkanamycin A [RN:R10544]",
+    "all_reac": "R10541 R10543 R10544 R10767 R10768; (other) R11279",
+    "iubmb_reactions": [
+      "R10541 R10543 R10544 R10767 R10768"
+    ],
+    "kegg_reactions": [
+      "R11279"
+    ],
+    "substrates": [
+      "tobramycin [CPD:C00397]",
+      "carbamoyl phosphate [CPD:C00169]",
+      "ATP [CPD:C00002]",
+      "H2O [CPD:C00001]",
+      "O-carbamoyladenylate [CPD:C20684]",
+      "kanamycin A [CPD:C01822]"
+    ],
+    "products": [
+      "nebramycin 5' [CPD:C18001]",
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "phosphate [CPD:C00009]",
+      "O-carbamoyladenylate [CPD:C20684]",
+      "6''-O-carbamoylkanamycin A [CPD:C20699]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Fe(III). The enzyme from the bacterium Streptoalloteichus tenebrarius catalyses the activation of carbamoyl phosphate to O-carbamoyladenylate and the subsequent carbamoylation of kanamycin and tobramycin.",
+    "pathways": {
+      "ec00524": "Neomycin, kanamycin and gentamicin biosynthesis",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K20579": "nebramycin 5' synthase"
+    },
+    "genes": {
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.1.2.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.1.2.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.1.2.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.1.2.2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Parthier C",
+          "Gorlich S",
+          "Jaenecke F",
+          "Breithaupt C",
+          "Brauer U",
+          "Fandrich U",
+          "Clausnitzer D",
+          "Wehmeier UF",
+          "Bottcher C",
+          "Scheel D",
+          "Stubbs MT"
+        ],
+        "title": "The O-carbamoyltransferase TobZ catalyzes an ancient enzymatic reaction.",
+        "journal": "Angew. Chem. Int. Ed. Engl. 51 (2012) 4046-52.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:22383337]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

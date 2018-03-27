@@ -1,0 +1,772 @@
+[
+  {
+    "entry_id": "6.2.1.7",
+    "name": "cholate---CoA ligase",
+    "names": [
+      "cholate---CoA ligase",
+      "BAL",
+      "bile acid CoA ligase",
+      "bile acid coenzyme A ligase",
+      "choloyl-CoA synthetase",
+      "choloyl coenzyme A synthetase",
+      "cholic thiokinase",
+      "cholate thiokinase",
+      "cholic acid:CoA ligase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl coenzyme A synthetase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoate-CoA ligase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoate-CoA synthetase",
+      "THCA-CoA ligase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanate---CoA ligase",
+      "3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanate:CoA ligase (AMP-forming)",
+      "cholyl-CoA synthetase",
+      "trihydroxycoprostanoyl-CoA synthetase"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-sulfur bonds;",
+      "Acid-thiol ligases"
+    ],
+    "sysname": "cholate:CoA ligase (AMP-forming)",
+    "reaction": "(1) ATP + cholate + CoA = AMP + diphosphate + choloyl-CoA [RN:R02794]; (2) ATP + (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate + CoA = AMP + diphosphate + (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA [RN:R04580]",
+    "all_reac": "R02794 R04580; (other) R04507 R08733 R08738 R08743",
+    "iubmb_reactions": [
+      "R02794 R04580"
+    ],
+    "kegg_reactions": [
+      "R04507 R08733 R08738 R08743"
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "cholate [CPD:C00695]",
+      "CoA [CPD:C00010]",
+      "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate"
+    ],
+    "products": [
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "choloyl-CoA [CPD:C01794]",
+      "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestanoyl-CoA"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Mg2+ for activity. The mammalian enzyme is membrane-bound and catalyses the first step in the conjugation of bile acids with amino acids, converting bile acids into their acyl-CoA thioesters. Chenodeoxycholate, deoxycholate, lithocholate and trihydroxycoprostanoate can also act as substrates [7]. The bacterial enzyme is soluble and participates in an anaerobic bile acid 7 alpha-dehydroxylation pathway [5].",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec00121": "Secondary bile acid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K08748": "solute carrier family 27 (fatty acid transporter), member 5",
+      "K15868": "bile acid-coenzyme A ligase"
+    },
+    "genes": {
+      "hsa": [
+        "10998"
+      ],
+      "ptr": [
+        "456351"
+      ],
+      "pps": [
+        "100973518"
+      ],
+      "ggo": [
+        "101141402",
+        "109025165"
+      ],
+      "pon": [
+        "100450572",
+        "100450937"
+      ],
+      "nle": [
+        "100598523"
+      ],
+      "mcc": [
+        "713713"
+      ],
+      "mcf": [
+        "102139611"
+      ],
+      "csab": [
+        "103235458"
+      ],
+      "rro": [
+        "104680867"
+      ],
+      "rbb": [
+        "108514368"
+      ],
+      "cjc": [
+        "100394591"
+      ],
+      "sbq": [
+        "101033269"
+      ],
+      "mmu": [
+        "26459"
+      ],
+      "rno": [
+        "79111"
+      ],
+      "cge": [
+        "100765567"
+      ],
+      "ngi": [
+        "103725476"
+      ],
+      "hgl": [
+        "101724180"
+      ],
+      "ccan": [
+        "109683037"
+      ],
+      "ocu": [
+        "100340287"
+      ],
+      "tup": [
+        "102483776"
+      ],
+      "cfa": [
+        "484223",
+        "608675"
+      ],
+      "aml": [
+        "100478693"
+      ],
+      "umr": [
+        "103677216"
+      ],
+      "oro": [
+        "101381954"
+      ],
+      "fca": [
+        "101086686"
+      ],
+      "ptg": [
+        "102948587"
+      ],
+      "aju": [
+        "106987933"
+      ],
+      "bta": [
+        "533016"
+      ],
+      "bom": [
+        "102285844"
+      ],
+      "biu": [
+        "109571897"
+      ],
+      "phd": [
+        "102331039"
+      ],
+      "chx": [
+        "102172839"
+      ],
+      "oas": [
+        "101120689"
+      ],
+      "ssc": [
+        "102158419"
+      ],
+      "cfr": [
+        "102519177"
+      ],
+      "cdk": [
+        "105096797"
+      ],
+      "bacu": [
+        "103020672"
+      ],
+      "lve": [
+        "103086085"
+      ],
+      "ecb": [
+        "100051678"
+      ],
+      "epz": [
+        "103567891"
+      ],
+      "eai": [
+        "106846663"
+      ],
+      "myb": [
+        "102261821"
+      ],
+      "myd": [
+        "102751593"
+      ],
+      "hai": [
+        "109377097"
+      ],
+      "rss": [
+        "109434533"
+      ],
+      "pale": [
+        "102890200"
+      ],
+      "lav": [
+        "100676206"
+      ],
+      "tmu": [
+        "101361902"
+      ],
+      "mdo": [
+        "100029941"
+      ],
+      "shr": [
+        "100916639"
+      ],
+      "oaa": [
+        "100090562"
+      ],
+      "sdf": [
+        "ACG33_01260"
+      ],
+      "pla": [
+        "Plav_1034"
+      ],
+      "bja": [
+        "bll0131"
+      ],
+      "bju": [
+        "BJ6T_01450"
+      ],
+      "bjp": [
+        "RN69_00685"
+      ],
+      "bra": [
+        "BRADO6529"
+      ],
+      "bbt": [
+        "BBta_1112"
+      ],
+      "brs": [
+        "S23_06710"
+      ],
+      "aol": [
+        "S58_10890"
+      ],
+      "brc": [
+        "BCCGELA001_03190"
+      ],
+      "bic": [
+        "LMTR13_34780"
+      ],
+      "bro": [
+        "BRAD285_6438"
+      ],
+      "rbm": [
+        "TEF_16880"
+      ],
+      "cak": [
+        "Caul_4604"
+      ],
+      "pzu": [
+        "PHZ_c2517"
+      ],
+      "bne": [
+        "DA69_06025"
+      ],
+      "rsu": [
+        "NHU_03725"
+      ],
+      "rhm": [
+        "B5V46_17095"
+      ],
+      "yan": [
+        "AYJ57_19780"
+      ],
+      "hne": [
+        "HNE_0099"
+      ],
+      "smaz": [
+        "LH19_12220",
+        "LH19_27280"
+      ],
+      "swi": [
+        "Swit_1599"
+      ],
+      "sjp": [
+        "SJA_C2-04050"
+      ],
+      "sch": [
+        "Sphch_3661"
+      ],
+      "spmi": [
+        "K663_20463"
+      ],
+      "spht": [
+        "K426_28370"
+      ],
+      "cij": [
+        "WG74_11935"
+      ],
+      "rdi": [
+        "CMV14_03665"
+      ],
+      "nao": [
+        "Y958_27085"
+      ],
+      "mavd": [
+        "NF84_07225"
+      ],
+      "mavr": [
+        "LA63_07360"
+      ],
+      "mava": [
+        "LA64_07385"
+      ],
+      "mit": [
+        "OCO_16930",
+        "OCO_48560"
+      ],
+      "mia": [
+        "OCU_17130",
+        "OCU_48510"
+      ],
+      "mie": [
+        "LG41_08065",
+        "LG41_23010"
+      ],
+      "mir": [
+        "OCQ_14600",
+        "OCQ_49570"
+      ],
+      "mid": [
+        "MIP_02338",
+        "MIP_07342"
+      ],
+      "myo": [
+        "OEM_14930",
+        "OEM_48710"
+      ],
+      "mchi": [
+        "AN480_08330",
+        "AN480_23315",
+        "AN480_25245"
+      ],
+      "mmal": [
+        "CKJ54_07175",
+        "CKJ54_23135"
+      ],
+      "msm": [
+        "MSMEG_0318"
+      ],
+      "msg": [
+        "MSMEI_0312"
+      ],
+      "msb": [
+        "LJ00_01600"
+      ],
+      "msn": [
+        "LI99_01600"
+      ],
+      "msh": [
+        "LI98_01600"
+      ],
+      "msa": [
+        "Mycsm_00180"
+      ],
+      "mva": [
+        "Mvan_0252"
+      ],
+      "mgi": [
+        "Mflv_0419"
+      ],
+      "mab": [
+        "MAB_2316"
+      ],
+      "mabb": [
+        "MASS_2242"
+      ],
+      "mmv": [
+        "MYCMA_1247"
+      ],
+      "may": [
+        "LA62_11785"
+      ],
+      "mabo": [
+        "NF82_11580"
+      ],
+      "mabl": [
+        "MMASJCM_2266"
+      ],
+      "maz": [
+        "LA61_11675"
+      ],
+      "mak": [
+        "LH56_12360"
+      ],
+      "mys": [
+        "NF92_12825"
+      ],
+      "myc": [
+        "NF90_12825"
+      ],
+      "mche": [
+        "BB28_11610"
+      ],
+      "miz": [
+        "BAB75_12360"
+      ],
+      "mmc": [
+        "Mmcs_0223"
+      ],
+      "mkm": [
+        "Mkms_0233"
+      ],
+      "mjl": [
+        "Mjls_0213"
+      ],
+      "mmae": [
+        "MMARE11_37900"
+      ],
+      "mrh": [
+        "MycrhN_1496"
+      ],
+      "mmm": [
+        "W7S_07140",
+        "W7S_24315"
+      ],
+      "mcb": [
+        "Mycch_0222"
+      ],
+      "mli": [
+        "MULP_04163"
+      ],
+      "mkn": [
+        "MKAN_05880"
+      ],
+      "mks": [
+        "LG40_05815"
+      ],
+      "mki": [
+        "LH54_05820"
+      ],
+      "mye": [
+        "AB431_01945"
+      ],
+      "mgo": [
+        "AFA91_08425"
+      ],
+      "mft": [
+        "XA26_02940"
+      ],
+      "mphl": [
+        "MPHLCCUG_04868"
+      ],
+      "mvq": [
+        "MYVA_0257"
+      ],
+      "mll": [
+        "B1R94_01565"
+      ],
+      "cgy": [
+        "CGLY_15810"
+      ],
+      "nbr": [
+        "O3I_021420"
+      ],
+      "nno": [
+        "NONO_c50630"
+      ],
+      "sbh": [
+        "SBI_00137"
+      ],
+      "scw": [
+        "TU94_30810"
+      ],
+      "strc": [
+        "AA958_12300"
+      ],
+      "cart": [
+        "PA27867_2220"
+      ],
+      "aer": [
+        "AERYTH_14445"
+      ],
+      "fri": [
+        "FraEuI1c_5444"
+      ],
+      "sen": [
+        "SACE_3387"
+      ],
+      "pdx": [
+        "Psed_0542"
+      ],
+      "psea": [
+        "WY02_09705"
+      ],
+      "psee": [
+        "FRP1_04515"
+      ],
+      "pseh": [
+        "XF36_02965"
+      ],
+      "pseq": [
+        "AD006_12175"
+      ],
+      "pecq": [
+        "AD017_20000"
+      ],
+      "kal": [
+        "KALB_5626"
+      ],
+      "kphy": [
+        "AOZ06_30715"
+      ],
+      "plk": [
+        "CIK06_12190"
+      ],
+      "aym": [
+        "YM304_25790"
+      ],
+      "ele": [
+        "Elen_3099"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.2.1.7"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.2.1.7"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.2.1.7"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.2.1.7"
+      ],
+      "CAS": [
+        "9027-90-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "ELLIOTT WH."
+        ],
+        "title": "The enzymic activation of cholic acid by guinea-pig-liver microsomes.",
+        "journal": "Biochem. J. 62 (1956) 427-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:13303991]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "ELLIOTT WH."
+        ],
+        "title": "The breakdown of adenosine triphosphate accompanying cholic acid activation by guinea-pig liver microsomes.",
+        "journal": "Biochem. J. 65 (1957) 315-21.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13403911]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Prydz K",
+          "Kase BF",
+          "Bjorkhem I",
+          "Pedersen JI."
+        ],
+        "title": "Subcellular localization of 3 alpha, 7 alpha-dihydroxy- and 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestanoyl-coenzyme A ligase(s) in rat liver.",
+        "journal": "J. Lipid. Res. 29 (1988) 997-1004.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3183523]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schepers L",
+          "Casteels M",
+          "Verheyden K",
+          "Parmentier G",
+          "Asselberghs S",
+          "Eyssen HJ",
+          "Mannaerts GP."
+        ],
+        "title": "Subcellular distribution and characteristics of trihydroxycoprostanoyl-CoA synthetase in rat liver.",
+        "journal": "Biochem. J. 257 (1989) 221-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:2521999]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Mallonee DH",
+          "Adams JL",
+          "Hylemon PB"
+        ],
+        "title": "The bile acid-inducible baiB gene from Eubacterium sp. strain VPI 12708 encodes a bile acid-coenzyme A ligase.",
+        "journal": "J. Bacteriol. 174 (1992) 2065-71.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:1551828]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wheeler JB",
+          "Shaw DR",
+          "Barnes S."
+        ],
+        "title": "Purification and characterization of a rat liver bile acid coenzyme A ligase from rat liver microsomes.",
+        "journal": "Arch. Biochem. Biophys. 348 (1997) 15-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:9390170]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Falany CN",
+          "Xie X",
+          "Wheeler JB",
+          "Wang J",
+          "Smith M",
+          "He D",
+          "Barnes S."
+        ],
+        "title": "Molecular cloning and expression of rat liver bile acid CoA ligase.",
+        "journal": "J. Lipid. Res. 43 (2002) 2062-71.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:12454267]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

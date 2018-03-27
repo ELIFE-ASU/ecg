@@ -1,0 +1,545 @@
+[
+  {
+    "entry_id": "1.14.14.16",
+    "name": "steroid 21-monooxygenase",
+    "names": [
+      "steroid 21-monooxygenase",
+      "steroid 21-hydroxylase",
+      "21-hydroxylase",
+      "P450c21",
+      "CYP21A2 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "steroid,NADPH---hemoprotein reductase:oxygen oxidoreductase (21-hydroxylating)",
+    "reaction": "a C21 steroid + [reduced NADPH---hemoprotein reductase] + O2 = a 21-hydroxy-C21-steroid + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R02130]",
+    "all_reac": "R02130 > R02213 R02838 R03326 R03784 R03849 R04675",
+    "iubmb_reactions": [
+      "R02130 > R02213 R02838 R03326 R03784 R03849 R04675"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "C21 steroid",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "21-hydroxy-C21-steroid",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A P-450 heme-thiolate protein responsible for the conversion of progesterone and 17alpha-hydroxyprogesterone to their respective 21-hydroxylated derivatives, 11-deoxycorticosterone and 11-deoxycortisol. Involved in the biosynthesis of the hormones aldosterone and cortisol. The electron donor is EC 1.6.2.4, NADPH---hemoprotein reductase.",
+    "pathways": {
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00513": "steroid 21-monooxygenase"
+    },
+    "genes": {
+      "hsa": [
+        "1589"
+      ],
+      "ptr": [
+        "471972",
+        "745345"
+      ],
+      "ggo": [
+        "101147473",
+        "109023079"
+      ],
+      "pon": [
+        "100461354"
+      ],
+      "nle": [
+        "100579180"
+      ],
+      "mcc": [
+        "717020"
+      ],
+      "mcf": [
+        "102130610"
+      ],
+      "csab": [
+        "103221724"
+      ],
+      "rro": [
+        "104674109"
+      ],
+      "rbb": [
+        "108519899",
+        "108519901"
+      ],
+      "cjc": [
+        "100395918"
+      ],
+      "sbq": [
+        "101047673"
+      ],
+      "mmu": [
+        "13079"
+      ],
+      "rno": [
+        "24298"
+      ],
+      "cge": [
+        "100767691"
+      ],
+      "ngi": [
+        "103724459"
+      ],
+      "hgl": [
+        "101717066"
+      ],
+      "ccan": [
+        "109689568"
+      ],
+      "ocu": [
+        "100342636"
+      ],
+      "tup": [
+        "102491327"
+      ],
+      "cfa": [
+        "415124"
+      ],
+      "aml": [
+        "100478117"
+      ],
+      "umr": [
+        "103682334"
+      ],
+      "oro": [
+        "101381142"
+      ],
+      "fca": [
+        "101094596"
+      ],
+      "ptg": [
+        "102966729"
+      ],
+      "aju": [
+        "106983476"
+      ],
+      "bta": [
+        "107131127",
+        "281741",
+        "282425"
+      ],
+      "bom": [
+        "102267885"
+      ],
+      "biu": [
+        "109576856"
+      ],
+      "chx": [
+        "102174710"
+      ],
+      "oas": [
+        "105612707"
+      ],
+      "ssc": [
+        "403337"
+      ],
+      "cfr": [
+        "102506530"
+      ],
+      "cdk": [
+        "105087514"
+      ],
+      "bacu": [
+        "103003841"
+      ],
+      "lve": [
+        "103069558"
+      ],
+      "ecb": [
+        "100059277"
+      ],
+      "epz": [
+        "103563302"
+      ],
+      "eai": [
+        "106831008"
+      ],
+      "myb": [
+        "102254156"
+      ],
+      "myd": [
+        "102775283"
+      ],
+      "hai": [
+        "109373090"
+      ],
+      "rss": [
+        "109436782"
+      ],
+      "pale": [
+        "102898380"
+      ],
+      "lav": [
+        "100658069"
+      ],
+      "tmu": [
+        "101359524"
+      ],
+      "mdo": [
+        "100025565"
+      ],
+      "shr": [
+        "100932451"
+      ],
+      "oaa": [
+        "100086194"
+      ],
+      "gga": [
+        "429828"
+      ],
+      "mgp": [
+        "100538455"
+      ],
+      "cjo": [
+        "107321560"
+      ],
+      "apla": [
+        "101794100"
+      ],
+      "acyg": [
+        "106049851"
+      ],
+      "tgu": [
+        "100226057"
+      ],
+      "gfr": [
+        "102042267"
+      ],
+      "fab": [
+        "101816789"
+      ],
+      "phi": [
+        "102108296"
+      ],
+      "pmaj": [
+        "107213983"
+      ],
+      "ccw": [
+        "104683162"
+      ],
+      "egz": [
+        "104133716"
+      ],
+      "amj": [
+        "102575314"
+      ],
+      "cpic": [
+        "101950331"
+      ],
+      "acs": [
+        "100552382"
+      ],
+      "pvt": [
+        "110090188"
+      ],
+      "pbi": [
+        "103054275"
+      ],
+      "gja": [
+        "107107307"
+      ],
+      "xla": [
+        "447267"
+      ],
+      "xtr": [
+        "100489813"
+      ],
+      "npr": [
+        "108786530"
+      ],
+      "dre": [
+        "793249"
+      ],
+      "srx": [
+        "107743211"
+      ],
+      "sanh": [
+        "107685595"
+      ],
+      "sgh": [
+        "107596711"
+      ],
+      "ccar": [
+        "109104569"
+      ],
+      "ipu": [
+        "108261472"
+      ],
+      "amex": [
+        "103037969"
+      ],
+      "tru": [
+        "101065814"
+      ],
+      "tng": [
+        "GSTEN00034163G001"
+      ],
+      "lco": [
+        "104922752",
+        "109137350"
+      ],
+      "ncc": [
+        "104966285"
+      ],
+      "mze": [
+        "101472385"
+      ],
+      "ola": [
+        "101157155"
+      ],
+      "xma": [
+        "102218645"
+      ],
+      "pret": [
+        "103478543"
+      ],
+      "csem": [
+        "103388483"
+      ],
+      "lcf": [
+        "108885898"
+      ],
+      "hcq": [
+        "109517589"
+      ],
+      "bpec": [
+        "110171734"
+      ],
+      "sasa": [
+        "106606086"
+      ],
+      "els": [
+        "105018837"
+      ],
+      "sfm": [
+        "108927404"
+      ],
+      "lcm": [
+        "102346130"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.16"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.16"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.16"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.16"
+      ],
+      "CAS": [
+        "9029-68-9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "DORFMAN RI",
+          "HAYANO M."
+        ],
+        "title": "The action of adrenal homogenates on progesterone, 17-hydroxyprogesterone and 21-desoxycortisone.",
+        "journal": "Arch. Biochem. 36 (1952) 237-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14934270]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "PLAGER JE",
+          "SAMUELS LT."
+        ],
+        "title": "Synthesis of C14-17-hydroxy-11-desoxycorticosterone and 17-hydroxycorticosterone by fractionated extracts of adrenal homogenates.",
+        "journal": "Arch. Biochem. Biophys. 42 (1953) 477-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13031650]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "RYAN KJ",
+          "ENGEL LL."
+        ],
+        "title": "Hydroxylation of steroids at carbon 21.",
+        "journal": "J. Biol. Chem. 225 (1957) 103-14.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:13416221]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kominami S",
+          "Ochi H",
+          "Kobayashi Y",
+          "Takemori S"
+        ],
+        "title": "Studies on the steroid hydroxylation system in adrenal cortex microsomes. Purification and characterization of cytochrome P-450 specific for steroid C-21 hydroxylation.",
+        "journal": "J. Biol. Chem. 255 (1980) 3386-94.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:6767716]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Martineau I",
+          "Belanger A",
+          "Tchernof A",
+          "Tremblay Y"
+        ],
+        "title": "Molecular cloning and expression of guinea pig cytochrome P450c21 cDNA (steroid 21-hydroxylase) isolated from the adrenals.",
+        "journal": "J. Steroid. Biochem. Mol. Biol. 86 (2003) 123-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:14568563]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Arase M",
+          "Waterman MR",
+          "Kagawa N"
+        ],
+        "title": "Purification and characterization of bovine steroid 21-hydroxylase (P450c21) efficiently expressed in Escherichia coli.",
+        "journal": "Biochem. Biophys. Res. Commun. 344 (2006) 400-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:16597434]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

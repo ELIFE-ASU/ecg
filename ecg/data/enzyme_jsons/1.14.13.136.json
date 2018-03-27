@@ -1,0 +1,265 @@
+[
+  {
+    "entry_id": "1.14.13.136",
+    "name": "2-hydroxyisoflavanone synthase",
+    "names": [
+      "2-hydroxyisoflavanone synthase",
+      "CYP93C",
+      "IFS",
+      "isoflavonoid synthase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "liquiritigenin,NADPH:oxygen oxidoreductase (hydroxylating, aryl migration)",
+    "reaction": "(1) liquiritigenin + O2 + NADPH + H+ = 2,4',7-trihydroxyisoflavanone + H2O + NADP+ [RN:R07777]; (2) (2S)-naringenin + O2 + NADPH + H+ = 2,4',5,7-tetrahydroxyisoflavanone + H2O + NADP+ [RN:R07778]",
+    "all_reac": "R07777 R07778; (other) R07715",
+    "iubmb_reactions": [
+      "R07777 R07778"
+    ],
+    "kegg_reactions": [
+      "R07715"
+    ],
+    "substrates": [
+      "liquiritigenin [CPD:C09762]",
+      "O2 [CPD:C00007]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "(2S)-naringenin [CPD:C00509]"
+    ],
+    "products": [
+      "2,4',7-trihydroxyisoflavanone",
+      "H2O [CPD:C00001]",
+      "NADP+ [CPD:C00006]",
+      "2,4',5,7-tetrahydroxyisoflavanone"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires cytochrome P-450. The reaction involves the migration of the 2-phenyl group of the flavanone to the 3-position of the isoflavanone. The 2-hydroxyl group is derived from the oxygen molecule. EC 4.2.1.105, 2-hydroxyisoflavanone dehydratase, acts on the products with loss of water and formation of genistein and daidzein, respectively.",
+    "pathways": {
+      "ec00943": "Isoflavonoid biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K13257": "2-hydroxyisoflavanone synthase"
+    },
+    "genes": {
+      "gmx": [
+        "100037450",
+        "606705"
+      ],
+      "pvu": [
+        "PHAVU_003G051700g",
+        "PHAVU_003G074000g"
+      ],
+      "vra": [
+        "106763981",
+        "106780381"
+      ],
+      "var": [
+        "108332082",
+        "108333348"
+      ],
+      "mtr": [
+        "MTR_4g088160"
+      ],
+      "cam": [
+        "101495474",
+        "101495803"
+      ],
+      "adu": [
+        "107480757"
+      ],
+      "aip": [
+        "107631190"
+      ],
+      "lja": [
+        "Lj4g3v0486150.1"
+      ],
+      "lang": [
+        "109349375"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.136"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.136"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.136"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.136"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kochs G",
+          "Grisebach H."
+        ],
+        "title": "Enzymic synthesis of isoflavones.",
+        "journal": "Eur. J. Biochem. 155 (1986) 311-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:3956488]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hashim MF",
+          "Hakamatsuka T",
+          "Ebizuka Y",
+          "Sankawa U"
+        ],
+        "title": "Reaction mechanism of oxidative rearrangement of flavanone in isoflavone biosynthesis.",
+        "journal": "FEBS. Lett. 271 (1990) 219-22.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:2226805]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Steele CL",
+          "Gijzen M",
+          "Qutob D",
+          "Dixon RA."
+        ],
+        "title": "Molecular characterization of the enzyme catalyzing the aryl migration reaction of isoflavonoid biosynthesis in soybean.",
+        "journal": "Arch. Biochem. Biophys. 367 (1999) 146-50.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10375412]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sawada Y",
+          "Kinoshita K",
+          "Akashi T",
+          "Aoki T",
+          "Ayabe S"
+        ],
+        "title": "Key amino acid residues required for aryl migration catalysed by the cytochrome P450 2-hydroxyisoflavanone synthase.",
+        "journal": "Plant. J. 31 (2002) 555-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:12207646]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sawada Y",
+          "Ayabe S"
+        ],
+        "title": "Multiple mutagenesis of P450 isoflavonoid synthase reveals a key active-site residue.",
+        "journal": "Biochem. Biophys. Res. Commun. 330 (2005) 907-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:15809082]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

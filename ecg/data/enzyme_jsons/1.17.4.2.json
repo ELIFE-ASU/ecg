@@ -1,0 +1,412 @@
+[
+  {
+    "entry_id": "1.17.4.2",
+    "name": "ribonucleoside-triphosphate reductase (thioredoxin)",
+    "names": [
+      "ribonucleoside-triphosphate reductase (thioredoxin)",
+      "ribonucleotide reductase (ambiguous)",
+      "2'-deoxyribonucleoside-triphosphate:oxidized-thioredoxin 2'-oxidoreductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on CH or CH2 groups;",
+      "With a disulfide as acceptor"
+    ],
+    "sysname": "2'-deoxyribonucleoside-5'-triphosphate:thioredoxin-disulfide 2'-oxidoreductase",
+    "reaction": "2'-deoxyribonucleoside 5'-triphosphate + thioredoxin disulfide + H2O = ribonucleoside 5'-triphosphate + thioredoxin [RN:R04315]",
+    "all_reac": "R04315 > R02014 R02020 R02022 R02023",
+    "iubmb_reactions": [
+      "R04315 > R02014 R02020 R02022 R02023"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "2'-deoxyribonucleoside 5'-triphosphate [CPD:C00677]",
+      "thioredoxin disulfide [CPD:C00343]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "ribonucleoside 5'-triphosphate [CPD:C03802]",
+      "thioredoxin [CPD:C00342]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from the bacterium Lactobacillus leichmannii, is similar to class II ribonucleoside-diphosphate reductase (cf. EC 1.17.4.1). However, it is specific for the triphosphate versions of its substrates. The enzyme contains an adenosylcobalamin cofactor that is involved in generation of a transient thiyl (sulfanyl) radical on a cysteine residue. This radical attacks the substrate, forming a ribonucleotide 3'-radical, followed by water loss to form a ketyl (alpha-oxoalkyl) radical. The ketyl radical is reduced to 3'-keto-deoxynucleotide concomitant with formation of a disulfide anion radical between two cysteine residues. A proton-coupled electron-transfer from the disulfide radical to the substrate generates a 3'-deoxynucleotide radical, and the final product is formed when the hydrogen atom that was initially removed from the 3'-position of the nucleotide by the thiyl radical is returned to the same position. The disulfide bridge is reduced by the action of thioredoxin. cf. EC 1.1.98.6, ribonucleoside-triphosphate reductase (formate).",
+    "pathways": {
+      "ec00230": "Purine metabolism",
+      "ec00240": "Pyrimidine metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00527": "ribonucleoside-triphosphate reductase (thioredoxin)"
+    },
+    "genes": {
+      "ppq": [
+        "PPSQR21_032590"
+      ],
+      "lac": [
+        "LBA0041"
+      ],
+      "lai": [
+        "LAC30SC_00160"
+      ],
+      "lad": [
+        "LA14_0040"
+      ],
+      "laf": [
+        "SD55_0041"
+      ],
+      "ldb": [
+        "Ldb0096"
+      ],
+      "lbu": [
+        "LBUL_0079"
+      ],
+      "lde": [
+        "LDBND_0069"
+      ],
+      "ldl": [
+        "LBU_0061"
+      ],
+      "lbr": [
+        "LVIS_1898"
+      ],
+      "lbk": [
+        "LVISKB_1882"
+      ],
+      "lca": [
+        "LSEI_2287"
+      ],
+      "lpq": [
+        "AF91_11350"
+      ],
+      "lpi": [
+        "LBPG_02206"
+      ],
+      "lpap": [
+        "LBPC_2218"
+      ],
+      "lcb": [
+        "LCABL_24690"
+      ],
+      "lcz": [
+        "LCAZH_2258"
+      ],
+      "lcs": [
+        "LCBD_2467"
+      ],
+      "lce": [
+        "LC2W_2450"
+      ],
+      "lcw": [
+        "BN194_24230"
+      ],
+      "lcl": [
+        "LOCK919_2525"
+      ],
+      "lcx": [
+        "LCA12A_1807"
+      ],
+      "lga": [
+        "LGAS_1503"
+      ],
+      "lru": [
+        "HMPREF0538_20868"
+      ],
+      "lhe": [
+        "lhv_0042"
+      ],
+      "lhl": [
+        "LBHH_0061"
+      ],
+      "lhr": [
+        "R0052_00325"
+      ],
+      "lhv": [
+        "lhe_0057"
+      ],
+      "lhh": [
+        "LBH_0034"
+      ],
+      "lhd": [
+        "HUO_01190"
+      ],
+      "lrh": [
+        "LGG_02296"
+      ],
+      "lrg": [
+        "LRHM_2207"
+      ],
+      "lrl": [
+        "LC705_02286"
+      ],
+      "lra": [
+        "LRHK_2294"
+      ],
+      "lro": [
+        "LOCK900_2258"
+      ],
+      "lrc": [
+        "LOCK908_2350"
+      ],
+      "lam": [
+        "LA2_00225"
+      ],
+      "lay": [
+        "LAB52_00155"
+      ],
+      "lbh": [
+        "Lbuc_2266"
+      ],
+      "lbn": [
+        "LBUCD034_2364"
+      ],
+      "lke": [
+        "WANG_1429"
+      ],
+      "law": [
+        "LACWKB8_0090"
+      ],
+      "lae": [
+        "LBAT_0056"
+      ],
+      "lgn": [
+        "ABM34_11885"
+      ],
+      "lko": [
+        "ABN16_08675"
+      ],
+      "lhi": [
+        "JP39_08335"
+      ],
+      "lgl": [
+        "AO203_02845"
+      ],
+      "lpar": [
+        "FAM21731_01130"
+      ],
+      "lpd": [
+        "AYR62_02815"
+      ],
+      "lamy": [
+        "B1745_00235"
+      ],
+      "marr": [
+        "BKP56_00615"
+      ],
+      "aey": [
+        "CDG81_09715"
+      ],
+      "flm": [
+        "MY04_3968"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.17.4.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.17.4.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.17.4.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.17.4.2"
+      ],
+      "CAS": [
+        "9068-66-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "BLAKLEY RL."
+        ],
+        "title": "COBAMIDES AND RIBONUCLEOTIDE REDUCTION. I. COBAMIDE STIMULATION OF RIBONUCLEOTIDE REDUCTION IN EXTRACTS OF LACTOBACILLUS LEICHMANNII.",
+        "journal": "J. Biol. Chem. 240 (1965) 2173-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14299643]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Goulian M",
+          "Beck WS."
+        ],
+        "title": "Purification and properties of cobamide-dependent ribonucleotide reductase from Lactobacillus leichmannii.",
+        "journal": "J. Biol. Chem. 241 (1966) 4233-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:5924645]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Stubbe J",
+          "Ackles D",
+          "Segal R",
+          "Blakley RL"
+        ],
+        "title": "On the mechanism of ribonucleoside triphosphate reductase from Lactobacillus leichmannii. Evidence for 3' C--H bond cleavage.",
+        "journal": "J. Biol. Chem. 256 (1981) 4843-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:7014560]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ashley GW",
+          "Harris G",
+          "Stubbe J"
+        ],
+        "title": "The mechanism of Lactobacillus leichmannii ribonucleotide reductase. Evidence for 3' carbon-hydrogen bond cleavage and a unique role for coenzyme B12.",
+        "journal": "J. Biol. Chem. 261 (1986) 3958-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:3512563]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lawrence CC",
+          "Stubbe J"
+        ],
+        "title": "The function of adenosylcobalamin in the mechanism of ribonucleoside triphosphate reductase from Lactobacillus leichmannii.",
+        "journal": "Curr. Opin. Chem. Biol. 2 (1998) 650-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:9818192]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Licht SS",
+          "Booker S",
+          "Stubbe J"
+        ],
+        "title": "Studies on the catalysis of carbon-cobalt bond homolysis by ribonucleoside triphosphate reductase: evidence for concerted carbon-cobalt bond homolysis and thiyl radical formation.",
+        "journal": "Biochemistry. 38 (1999) 1221-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:9930982]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

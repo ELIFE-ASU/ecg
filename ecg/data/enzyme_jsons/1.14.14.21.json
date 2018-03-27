@@ -1,0 +1,209 @@
+[
+  {
+    "entry_id": "1.14.14.21",
+    "name": "dibenzothiophene monooxygenase",
+    "names": [
+      "dibenzothiophene monooxygenase",
+      "dszC (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "dibenzothiophene,FMNH2:oxygen oxidoreductase",
+    "reaction": "dibenzothiophene + 2 FMNH2 + 2 O2 = dibenzothiophene-5,5-dioxide + 2 FMN + 2 H2O (overall reaction) [RN:R11163]; (1a) dibenzothiophene + FMNH2 + O2 = dibenzothiophene-5-oxide + FMN + H2O [RN:R11161]; (1b) dibenzothiophene-5-oxide + FMNH2 + O2 = dibenzothiophene-5,5-dioxide + FMN + H2O [RN:R11162]",
+    "all_reac": "R11161 R11162 R11163",
+    "iubmb_reactions": [
+      "R11161 R11162 R11163"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "dibenzothiophene [CPD:C20125]",
+      "FMNH2 [CPD:C01847]",
+      "O2 [CPD:C00007]",
+      "dibenzothiophene-5-oxide [CPD:C21149]"
+    ],
+    "products": [
+      "dibenzothiophene-5,5-dioxide [CPD:C21150]",
+      "FMN [CPD:C00061]",
+      "H2O [CPD:C00001]",
+      "dibenzothiophene-5-oxide [CPD:C21149]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This bacterial enzyme catalyses the first two steps in the desulfurization pathway of dibenzothiophenes, the oxidation of dibenzothiophene into dibenzothiophene sulfone via dibenzothiophene-5-oxide. The enzyme forms a two-component system with a dedicated NADH-dependent FMN reductase (EC 1.5.1.42) encoded by the dszD gene, which also interacts with EC 1.14.14.22, dibenzothiophene sulfone monooxygenase.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K22219": "dibenzothiophene monooxygenase"
+    },
+    "genes": {
+      "mav": [
+        "MAV_3806"
+      ],
+      "mavd": [
+        "NF84_17350"
+      ],
+      "mavr": [
+        "LA63_17525"
+      ],
+      "mava": [
+        "LA64_17515"
+      ],
+      "myo": [
+        "OEM_10440",
+        "OEM_p100040"
+      ],
+      "mabl": [
+        "MMASJCM_2559"
+      ],
+      "mgo": [
+        "AFA91_16295"
+      ],
+      "gor": [
+        "KTR9_5375"
+      ],
+      "gta": [
+        "BCM27_00620"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.21"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.21"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.21"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.21"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Gray KA",
+          "Pogrebinsky OS",
+          "Mrachko GT",
+          "Xi L",
+          "Monticello DJ",
+          "Squires CH"
+        ],
+        "title": "Molecular mechanisms of biocatalytic desulfurization of fossil fuels.",
+        "journal": "Nat. Biotechnol. 14 (1996) 1705-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:9634856]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Liu S",
+          "Zhang C",
+          "Su T",
+          "Wei T",
+          "Zhu D",
+          "Wang K",
+          "Huang Y",
+          "Dong Y",
+          "Yin K",
+          "Xu S",
+          "Xu P",
+          "Gu L"
+        ],
+        "title": "Crystal structure of DszC from Rhodococcus sp. XP at 1.79 A.",
+        "journal": "Proteins. 82 (2014) 1708-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:24470304]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Guan LJ",
+          "Lee WC",
+          "Wang S",
+          "Ohshiro T",
+          "Izumi Y",
+          "Ohtsuka J",
+          "Tanokura M"
+        ],
+        "title": "Crystal structures of apo-DszC and FMN-bound DszC from Rhodococcus erythropolis D-1.",
+        "journal": "FEBS. J. 282 (2015) 3126-35.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:25627402]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

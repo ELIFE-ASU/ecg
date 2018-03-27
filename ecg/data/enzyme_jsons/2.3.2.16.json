@@ -1,0 +1,419 @@
+[
+  {
+    "entry_id": "2.3.2.16",
+    "name": "lipid II:glycine glycyltransferase",
+    "names": [
+      "lipid II:glycine glycyltransferase",
+      "N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:N6-glycine transferase",
+      "femX (gene name)",
+      "alanyl-D-alanine-diphospho-ditrans,octacis-undecaprenyl-N-acetylglucosamine:glycine N6-glycyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Aminoacyltransferases"
+    ],
+    "sysname": "MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc:glycine N6-glycyltransferase",
+    "reaction": "MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc + glycyl-tRNAGly = MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc + tRNAGly [RN:R08776]",
+    "all_reac": "R08776",
+    "iubmb_reactions": [
+      "R08776"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc",
+      "glycyl-tRNA(Gly) [CPD:C02412]"
+    ],
+    "products": [
+      "MurNAc-L-Ala-D-isoglutaminyl-L-Lys-(N6-Gly)-D-Ala-D-Ala-diphospho-ditrans,octacis-undecaprenyl-GlcNAc",
+      "tRNA(Gly) [CPD:C01642]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from Staphylococcus aureus catalyses the transfer of glycine from a charged tRNA to MurNAc-L-Ala-D-isoglutaminyl-L-Lys-D-Ala-D-Ala-diphosphoundecaprenyl-GlcNAc (lipid II), attaching it to the N6 of the L-Lys at position 3 of the pentapeptide. This is the first step in the synthesis of the pentaglycine interpeptide bridge that is used in S. aureus for the crosslinking of different glycan strands to each other. Four additional Gly residues are subsequently attached by EC 2.3.2.17 (N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-glycyl)-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase) and EC 2.3.2.18 (N-acetylmuramoyl-L-alanyl-D-glutamyl-L-lysyl-(N6-triglycine)-D-alanyl-D-alanine-diphosphoundecaprenyl-N-acetylglucosamine:glycine glycyltransferase).",
+    "pathways": {
+      "ec00550": "Peptidoglycan biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K11693": "peptidoglycan pentaglycine glycine transferase (the first glycine)"
+    },
+    "genes": {
+      "sau": [
+        "SA2057"
+      ],
+      "sav": [
+        "SAV2262"
+      ],
+      "saw": [
+        "SAHV_2246"
+      ],
+      "sah": [
+        "SaurJH1_2329"
+      ],
+      "saj": [
+        "SaurJH9_2288"
+      ],
+      "sam": [
+        "MW2180"
+      ],
+      "sas": [
+        "SAS2152"
+      ],
+      "sar": [
+        "SAR2346"
+      ],
+      "sac": [
+        "SACOL2253"
+      ],
+      "sax": [
+        "USA300HOU_2244"
+      ],
+      "saa": [
+        "SAUSA300_2214"
+      ],
+      "sao": [
+        "SAOUHSC_02527"
+      ],
+      "sae": [
+        "NWMN_2163"
+      ],
+      "sad": [
+        "SAAV_2326"
+      ],
+      "suu": [
+        "M013TW_2220"
+      ],
+      "suv": [
+        "SAVC_10175"
+      ],
+      "sue": [
+        "SAOV_2300c"
+      ],
+      "suj": [
+        "SAA6159_02168"
+      ],
+      "suk": [
+        "SAA6008_02299"
+      ],
+      "suc": [
+        "ECTR2_2124"
+      ],
+      "sut": [
+        "SAT0131_02437"
+      ],
+      "suq": [
+        "HMPREF0772_10937"
+      ],
+      "suz": [
+        "MS7_2282"
+      ],
+      "sud": [
+        "ST398NM01_2314"
+      ],
+      "sux": [
+        "SAEMRSA15_21600"
+      ],
+      "suw": [
+        "SATW20_23950"
+      ],
+      "sug": [
+        "SAPIG2314"
+      ],
+      "suf": [
+        "SARLGA251_20470"
+      ],
+      "saua": [
+        "SAAG_00090"
+      ],
+      "saue": [
+        "RSAU_002097"
+      ],
+      "saun": [
+        "SAKOR_02225"
+      ],
+      "saus": [
+        "SA40_2008"
+      ],
+      "sauu": [
+        "SA957_2092"
+      ],
+      "saug": [
+        "SA268_2163"
+      ],
+      "sauz": [
+        "SAZ172_2361"
+      ],
+      "saut": [
+        "SAI1T1_2016700"
+      ],
+      "sauj": [
+        "SAI2T2_1016710"
+      ],
+      "sauk": [
+        "SAI3T3_1016700"
+      ],
+      "sauq": [
+        "SAI4T8_1016710"
+      ],
+      "sauv": [
+        "SAI7S6_1016700"
+      ],
+      "sauw": [
+        "SAI5S5_1016640"
+      ],
+      "saux": [
+        "SAI6T6_1016650"
+      ],
+      "sauy": [
+        "SAI8T7_1016680"
+      ],
+      "sab": [
+        "SAB2134c"
+      ],
+      "suy": [
+        "SA2981_2200"
+      ],
+      "saub": [
+        "C248_2299"
+      ],
+      "saum": [
+        "BN843_23000"
+      ],
+      "sauc": [
+        "CA347_2342"
+      ],
+      "saur": [
+        "SABB_01408"
+      ],
+      "saui": [
+        "AZ30_11940"
+      ],
+      "saud": [
+        "CH52_07650"
+      ],
+      "sauf": [
+        "X998_2246"
+      ],
+      "sams": [
+        "NI36_11150"
+      ],
+      "suh": [
+        "SAMSHR1132_20870"
+      ],
+      "sep": [
+        "SE1835"
+      ],
+      "ser": [
+        "SERP1844"
+      ],
+      "sepp": [
+        "SEB_01846"
+      ],
+      "seps": [
+        "DP17_786"
+      ],
+      "sha": [
+        "SH0790"
+      ],
+      "shh": [
+        "ShL2_00689"
+      ],
+      "ssp": [
+        "SSP0651"
+      ],
+      "sca": [
+        "SCA_1750"
+      ],
+      "slg": [
+        "SLGD_00762"
+      ],
+      "sln": [
+        "SLUG_07600"
+      ],
+      "ssd": [
+        "SPSINT_1923"
+      ],
+      "sdt": [
+        "SPSE_0559"
+      ],
+      "swa": [
+        "A284_03255"
+      ],
+      "spas": [
+        "STP1_0738"
+      ],
+      "sxy": [
+        "BE24_08730"
+      ],
+      "sxl": [
+        "SXYLSMQ121_0683"
+      ],
+      "sxo": [
+        "SXYL_00693"
+      ],
+      "shu": [
+        "SHYC_03095"
+      ],
+      "scap": [
+        "AYP1020_1437"
+      ],
+      "ssch": [
+        "LH95_02915"
+      ],
+      "sscz": [
+        "RN70_03190"
+      ],
+      "sagq": [
+        "EP23_06995"
+      ],
+      "seqo": [
+        "SE1039_19250"
+      ],
+      "ssif": [
+        "AL483_01080"
+      ],
+      "scv": [
+        "A4G25_11375"
+      ],
+      "spet": [
+        "CEP67_05210"
+      ],
+      "slz": [
+        "B5P37_03375"
+      ],
+      "scoh": [
+        "BZ166_07685"
+      ],
+      "mcl": [
+        "MCCL_0176"
+      ],
+      "mcak": [
+        "MCCS_02970"
+      ],
+      "macr": [
+        "BHM04_09350"
+      ],
+      "shv": [
+        "AAT16_01225"
+      ],
+      "sbac": [
+        "BVH56_00520"
+      ],
+      "esi": [
+        "Exig_1829"
+      ],
+      "eat": [
+        "EAT1b_2964"
+      ],
+      "ean": [
+        "Eab7_1680"
+      ],
+      "exm": [
+        "U719_10375"
+      ],
+      "exu": [
+        "ESP131_12475"
+      ],
+      "got": [
+        "AXE85_03825"
+      ],
+      "plv": [
+        "ERIC2_c17540"
+      ],
+      "aur": [
+        "HMPREF9243_0081"
+      ],
+      "aun": [
+        "AWM73_08530"
+      ],
+      "acg": [
+        "AWM71_03060"
+      ],
+      "asm": [
+        "MOUSESFB_0039"
+      ],
+      "aso": [
+        "SFBmNL_00054"
+      ],
+      "asb": [
+        "RATSFB_0040"
+      ],
+      "clo": [
+        "HMPREF0868_0028"
+      ],
+      "fma": [
+        "FMG_0801"
+      ],
+      "tur": [
+        "AT726_00450"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.2.16"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.2.16"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.2.16"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.2.16"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Schneider T",
+          "Senn MM",
+          "Berger-Bachi B",
+          "Tossi A",
+          "Sahl HG",
+          "Wiedemann I"
+        ],
+        "title": "In vitro assembly of a complete, pentaglycine interpeptide bridge containing cell wall precursor (lipid II-Gly5) of Staphylococcus aureus.",
+        "journal": "Mol. Microbiol. 53 (2004) 675-85.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:15228543]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

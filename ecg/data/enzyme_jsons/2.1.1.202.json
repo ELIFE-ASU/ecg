@@ -1,0 +1,817 @@
+[
+  {
+    "entry_id": "2.1.1.202",
+    "name": "multisite-specific tRNA:(cytosine-C5)-methyltransferase",
+    "names": [
+      "multisite-specific tRNA:(cytosine-C5)-methyltransferase",
+      "multisite-specific tRNA:m5C-methyltransferase",
+      "TRM4 (gene name, gene corresponding to ORF YBL024w)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring one-carbon groups;",
+      "Methyltransferases"
+    ],
+    "sysname": "S-adenosyl-L-methionine:tRNA (cytosine-C5)-methyltransferase",
+    "reaction": "(1) S-adenosyl-L-methionine + cytosine34 in tRNA precursor = S-adenosyl-L-homocysteine + 5-methylcytosine34 in tRNA precursor [RN:R00595]; (2) S-adenosyl-L-methionine + cytosine40 in tRNA precursor = S-adenosyl-L-homocysteine + 5-methylcytosine40 in tRNA precursor; (3) S-adenosyl-L-methionine + cytosine48 in tRNA = S-adenosyl-L-homocysteine + 5-methylcytosine48 in tRNA; (4) S-adenosyl-L-methionine + cytosine49 in tRNA = S-adenosyl-L-homocysteine + 5-methylcytosine49 in tRNA",
+    "all_reac": "R00595",
+    "iubmb_reactions": [
+      "R00595"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "S-adenosyl-L-methionine [CPD:C00019]",
+      "cytosine34 in tRNA precursor",
+      "cytosine40 in tRNA precursor",
+      "cytosine48 in tRNA",
+      "cytosine49 in tRNA"
+    ],
+    "products": [
+      "S-adenosyl-L-homocysteine [CPD:C00021]",
+      "5-methylcytosine34 in tRNA precursor",
+      "5-methylcytosine40 in tRNA precursor",
+      "5-methylcytosine48 in tRNA",
+      "5-methylcytosine49 in tRNA"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from Saccharomyces cerevisiae is responsible for complete 5-methylcytosine methylations of yeast tRNA. The incidence of modification depends on the cytosine position in tRNA. At positions 34 and 40, 5-methylcytosine is found only in two yeast tRNAs (tRNALeu(CUA) and tRNAPhe(GAA), respectively), whereas most other elongator yeast tRNAs bear either 5-methylcytosine48 or 5-methylcytosine49, but never both in the same tRNA molecule [1]. The formation of 5-methylcytosine34 and 5-methylcytosine40 is a strictly intron-dependent process, whereas the formation of 5-methylcytosine48 and 5-methylcytosine49 is an intron-independent process [2,3].",
+    "pathways": {
+    },
+    "orthologs": {
+      "K15334": "multisite-specific tRNA:(cytosine-C5)-methyltransferase"
+    },
+    "genes": {
+      "rss": [
+        "109440423"
+      ],
+      "ath": [
+        "AT2G22400",
+        "AT4G40000"
+      ],
+      "aly": [
+        "ARALYDRAFT_320078",
+        "ARALYDRAFT_656157"
+      ],
+      "crb": [
+        "CARUB_v10004196mg",
+        "CARUB_v10024783mg"
+      ],
+      "csat": [
+        "104702776",
+        "104713682",
+        "104720928",
+        "104751878"
+      ],
+      "eus": [
+        "EUTSA_v10000050mg",
+        "EUTSA_v100000640m",
+        "EUTSA_v100000641m",
+        "EUTSA_v10024482mg"
+      ],
+      "brp": [
+        "103837897",
+        "103854554",
+        "103864345"
+      ],
+      "bna": [
+        "106363702",
+        "106406275",
+        "106415936",
+        "106439372",
+        "106446409",
+        "111215813"
+      ],
+      "boe": [
+        "106292165",
+        "106312686",
+        "106342432"
+      ],
+      "thj": [
+        "104807678"
+      ],
+      "cpap": [
+        "110814304"
+      ],
+      "cit": [
+        "102621904"
+      ],
+      "cic": [
+        "CICLE_v10024895mg"
+      ],
+      "tcc": [
+        "18611524"
+      ],
+      "gra": [
+        "105787805"
+      ],
+      "ghi": [
+        "107950435",
+        "107951730"
+      ],
+      "egr": [
+        "104415765",
+        "104418316"
+      ],
+      "gmx": [
+        "100808598",
+        "100808859"
+      ],
+      "pvu": [
+        "PHAVU_001G253400g",
+        "PHAVU_002G261300g"
+      ],
+      "vra": [
+        "106756522",
+        "106768123"
+      ],
+      "var": [
+        "108329541",
+        "108342131"
+      ],
+      "ccaj": [
+        "109798068",
+        "109813507"
+      ],
+      "mtr": [
+        "MTR_3g086950",
+        "MTR_8g089980"
+      ],
+      "cam": [
+        "101488656",
+        "101488989"
+      ],
+      "adu": [
+        "107481819"
+      ],
+      "aip": [
+        "107631683"
+      ],
+      "lja": [
+        "Lj0g3v0259609.1",
+        "Lj6g3v0550640.1",
+        "Lj6g3v0550640.2",
+        "Lj6g3v0550640.3"
+      ],
+      "lang": [
+        "109343679",
+        "109361180",
+        "109362630"
+      ],
+      "fve": [
+        "101312383"
+      ],
+      "pper": [
+        "18772788"
+      ],
+      "pmum": [
+        "103333881"
+      ],
+      "mdm": [
+        "103444818"
+      ],
+      "pxb": [
+        "103936336"
+      ],
+      "zju": [
+        "107425311"
+      ],
+      "csv": [
+        "101206452"
+      ],
+      "cmo": [
+        "103484954"
+      ],
+      "mcha": [
+        "111005554"
+      ],
+      "rcu": [
+        "8273526"
+      ],
+      "jcu": [
+        "105641640"
+      ],
+      "hbr": [
+        "110633522",
+        "110666662"
+      ],
+      "pop": [
+        "POPTR_0005s07400g",
+        "POPTR_0007s05110g"
+      ],
+      "vvi": [
+        "100247473"
+      ],
+      "sly": [
+        "101256287",
+        "101259902"
+      ],
+      "spen": [
+        "107004815",
+        "107020788"
+      ],
+      "sot": [
+        "102590670",
+        "102595102",
+        "102597730"
+      ],
+      "cann": [
+        "107850803",
+        "107870980"
+      ],
+      "nta": [
+        "107766522",
+        "107802160",
+        "107808849",
+        "107822797"
+      ],
+      "nsy": [
+        "104229518",
+        "104244701"
+      ],
+      "nto": [
+        "104095937",
+        "104112456"
+      ],
+      "ini": [
+        "109167634",
+        "109172654"
+      ],
+      "sind": [
+        "105178292"
+      ],
+      "han": [
+        "110868434"
+      ],
+      "bvg": [
+        "104896018"
+      ],
+      "soe": [
+        "110791853"
+      ],
+      "nnu": [
+        "104604502"
+      ],
+      "osa": [
+        "4347343"
+      ],
+      "dosa": [
+        "Os08t0484400-01",
+        "Os09t0471900-01"
+      ],
+      "obr": [
+        "102699527",
+        "102704358"
+      ],
+      "bdi": [
+        "100833836",
+        "100841242"
+      ],
+      "sbi": [
+        "8063738",
+        "8067041"
+      ],
+      "zma": [
+        "100272508",
+        "103641349"
+      ],
+      "sita": [
+        "101758722",
+        "101760456"
+      ],
+      "pda": [
+        "103707955"
+      ],
+      "egu": [
+        "105058442"
+      ],
+      "mus": [
+        "103992235"
+      ],
+      "dct": [
+        "110094233"
+      ],
+      "atr": [
+        "18423173"
+      ],
+      "smo": [
+        "SELMODRAFT_120643",
+        "SELMODRAFT_418525"
+      ],
+      "vcn": [
+        "VOLCADRAFT_54934",
+        "VOLCADRAFT_56298"
+      ],
+      "mng": [
+        "MNEG_15166"
+      ],
+      "olu": [
+        "OSTLU_27152",
+        "OSTLU_36629"
+      ],
+      "ota": [
+        "OT_ostta13g01810"
+      ],
+      "bpg": [
+        "Bathy17g01520"
+      ],
+      "mis": [
+        "MICPUN_59410"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_45780"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_54732"
+      ],
+      "apro": [
+        "F751_0192"
+      ],
+      "sce": [
+        "YBL024W"
+      ],
+      "ago": [
+        "AGOS_AFR179C"
+      ],
+      "erc": [
+        "Ecym_2353"
+      ],
+      "kla": [
+        "KLLA0F12562g"
+      ],
+      "lth": [
+        "KLTH0H08096g"
+      ],
+      "vpo": [
+        "Kpol_1002p109"
+      ],
+      "zro": [
+        "ZYRO0G08998g"
+      ],
+      "cgr": [
+        "CAGL0K01991g"
+      ],
+      "ncs": [
+        "NCAS_0B05640"
+      ],
+      "ndi": [
+        "NDAI_0B01830",
+        "NDAI_0B02980"
+      ],
+      "tpf": [
+        "TPHA_0C02870",
+        "TPHA_0H00150"
+      ],
+      "tbl": [
+        "TBLA_0A08740"
+      ],
+      "tdl": [
+        "TDEL_0B04390"
+      ],
+      "kaf": [
+        "KAFR_0B02220"
+      ],
+      "ppa": [
+        "PAS_chr4_0445"
+      ],
+      "dha": [
+        "DEHA2F21384g"
+      ],
+      "pic": [
+        "PICST_37206"
+      ],
+      "pgu": [
+        "PGUG_00345"
+      ],
+      "spaa": [
+        "SPAPADRAFT_49297"
+      ],
+      "lel": [
+        "LELG_03182"
+      ],
+      "cal": [
+        "CAALFM_CR04300WA"
+      ],
+      "ctp": [
+        "CTRG_00396"
+      ],
+      "cot": [
+        "CORT_0D05300"
+      ],
+      "cdu": [
+        "CD36_29640"
+      ],
+      "cten": [
+        "CANTEDRAFT_100033"
+      ],
+      "yli": [
+        "YALI0E06765g"
+      ],
+      "clu": [
+        "CLUG_05640"
+      ],
+      "clus": [
+        "A9F13_05g03201"
+      ],
+      "caur": [
+        "QG37_06780"
+      ],
+      "ncr": [
+        "NCU05301"
+      ],
+      "nte": [
+        "NEUTE1DRAFT80343"
+      ],
+      "smp": [
+        "SMAC_01688"
+      ],
+      "pan": [
+        "PODANSg6223"
+      ],
+      "ttt": [
+        "THITE_2115779"
+      ],
+      "mtm": [
+        "MYCTH_2299308"
+      ],
+      "cthr": [
+        "CTHT_0030040"
+      ],
+      "mgr": [
+        "MGG_13217"
+      ],
+      "tmn": [
+        "UCRPA7_7915"
+      ],
+      "fgr": [
+        "FGSG_09744"
+      ],
+      "fpu": [
+        "FPSE_02277"
+      ],
+      "fvr": [
+        "FVEG_06362"
+      ],
+      "fox": [
+        "FOXG_08313",
+        "FOXG_08314"
+      ],
+      "nhe": [
+        "NECHADRAFT_76439"
+      ],
+      "tre": [
+        "TRIREDRAFT_55981"
+      ],
+      "maw": [
+        "MAC_01383"
+      ],
+      "maj": [
+        "MAA_06410"
+      ],
+      "plj": [
+        "VFPFJ_01100"
+      ],
+      "vda": [
+        "VDAG_00687"
+      ],
+      "cfj": [
+        "CFIO01_11685"
+      ],
+      "ela": [
+        "UCREL1_8820"
+      ],
+      "pfy": [
+        "PFICI_04470"
+      ],
+      "ssl": [
+        "SS1G_03008"
+      ],
+      "mbe": [
+        "MBM_04174"
+      ],
+      "psco": [
+        "LY89DRAFT_718717"
+      ],
+      "glz": [
+        "GLAREA_04093"
+      ],
+      "ani": [
+        "AN0757.2"
+      ],
+      "afm": [
+        "AFUA_1G14180"
+      ],
+      "aor": [
+        "AOR_1_768194"
+      ],
+      "ang": [
+        "ANI_1_1640014"
+      ],
+      "afv": [
+        "AFLA_017090"
+      ],
+      "act": [
+        "ACLA_021230"
+      ],
+      "nfi": [
+        "NFIA_011240"
+      ],
+      "pcs": [
+        "Pc16g12760"
+      ],
+      "pdp": [
+        "PDIP_66890"
+      ],
+      "cim": [
+        "CIMG_03343"
+      ],
+      "cpw": [
+        "CPC735_008600"
+      ],
+      "pbl": [
+        "PAAG_02188"
+      ],
+      "pbn": [
+        "PADG_11157"
+      ],
+      "ure": [
+        "UREG_07171"
+      ],
+      "abe": [
+        "ARB_00062"
+      ],
+      "tve": [
+        "TRV_01308"
+      ],
+      "aje": [
+        "HCAG_06738"
+      ],
+      "pno": [
+        "SNOG_06412"
+      ],
+      "pte": [
+        "PTT_10834"
+      ],
+      "bze": [
+        "COCCADRAFT_35273"
+      ],
+      "bsc": [
+        "COCSADRAFT_133594"
+      ],
+      "bor": [
+        "COCMIDRAFT_5709"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_52269"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_154036"
+      ],
+      "bcom": [
+        "BAUCODRAFT_20558"
+      ],
+      "npa": [
+        "UCRNP2_1607"
+      ],
+      "tml": [
+        "GSTUM_00006649001"
+      ],
+      "spo": [
+        "SPAC17D4.04",
+        "SPAC23C4.17"
+      ],
+      "cne": [
+        "CND00130"
+      ],
+      "cnb": [
+        "CNBD6080"
+      ],
+      "cgi": [
+        "CGB_J2420C"
+      ],
+      "tms": [
+        "TREMEDRAFT_44583"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_74804"
+      ],
+      "dsq": [
+        "DICSQDRAFT_105532"
+      ],
+      "pco": [
+        "PHACADRAFT_172372"
+      ],
+      "shs": [
+        "STEHIDRAFT_121240"
+      ],
+      "hir": [
+        "HETIRDRAFT_436831"
+      ],
+      "psq": [
+        "PUNSTDRAFT_143767"
+      ],
+      "fme": [
+        "FOMMEDRAFT_152652"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_116964"
+      ],
+      "lbc": [
+        "LACBIDRAFT_319126"
+      ],
+      "mrr": [
+        "Moror_4753"
+      ],
+      "cci": [
+        "CC1G_10971"
+      ],
+      "scm": [
+        "SCHCODRAFT_78630"
+      ],
+      "cput": [
+        "CONPUDRAFT_168161"
+      ],
+      "sla": [
+        "SERLADRAFT_345585"
+      ],
+      "wse": [
+        "WALSEDRAFT_34219"
+      ],
+      "wic": [
+        "J056_003196"
+      ],
+      "uma": [
+        "UMAG_05126"
+      ],
+      "pfp": [
+        "PFL1_03144"
+      ],
+      "mgl": [
+        "MGL_1048"
+      ],
+      "mlr": [
+        "MELLADRAFT_85533"
+      ],
+      "sre": [
+        "PTSG_03137"
+      ],
+      "eiv": [
+        "EIN_373320"
+      ],
+      "ptm": [
+        "GSPATT00013766001",
+        "GSPATT00018463001"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.1.1.202"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.1.1.202"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.1.1.202"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.1.1.202"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Motorin Y",
+          "Grosjean H"
+        ],
+        "title": "Multisite-specific tRNA:m5C-methyltransferase (Trm4) in yeast Saccharomyces cerevisiae: identification of the gene and substrate specificity of the enzyme.",
+        "journal": "RNA. 5 (1999) 1105-18.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10445884]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Jiang HQ",
+          "Motorin Y",
+          "Jin YX",
+          "Grosjean H"
+        ],
+        "title": "Pleiotropic effects of intron removal on base modification pattern of yeast tRNAPhe: an in vitro study.",
+        "journal": "Nucleic. Acids. Res. 25 (1997) 2694-701.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:9207014]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Strobel MC",
+          "Abelson J"
+        ],
+        "title": "Effect of intron mutations on processing and function of Saccharomyces cerevisiae SUP53 tRNA in vitro and in vivo.",
+        "journal": "Mol. Cell. Biol. 6 (1986) 2663-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3537724]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Walbott H",
+          "Husson C",
+          "Auxilien S",
+          "Golinelli-Pimpaneau B"
+        ],
+        "title": "Cysteine of sequence motif VI is essential for nucleophilic catalysis by yeast tRNA m5C methyltransferase.",
+        "journal": "RNA. 13 (2007) 967-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:17475914]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,735 @@
+[
+  {
+    "entry_id": "2.4.1.69",
+    "name": "type 1 galactoside alpha-(1,2)-fucosyltransferase",
+    "names": [
+      "type 1 galactoside alpha-(1,2)-fucosyltransferase",
+      "galactoside 2-alpha-L-fucosyltransferase (ambiguous)",
+      "blood group H alpha-2-fucosyltransferase (ambiguous)",
+      "guanosine diphosphofucose-galactoside 2-L-fucosyltransferase",
+      "alpha-(1->2)-L-fucosyltransferase (ambiguous)",
+      "alpha-2-fucosyltransferase (ambiguous)",
+      "alpha-2-L-fucosyltransferase (ambiguous)",
+      "blood-group substance H-dependent fucosyltransferase (ambiguous)",
+      "guanosine diphosphofucose-glycoprotein 2-alpha-fucosyltransferase (ambiguous)",
+      "guanosine diphosphofucose-beta-D-galactosyl-alpha-2-L-fucosyltransferase (ambiguous)",
+      "guanosine diphosphofucose-galactosylacetylglucosaminylgalactosylglucosylceramide alpha-L-fucosyltransferase (ambiguous)",
+      "guanosine diphosphofucose-glycoprotein 2-alpha-L-fucosyltransferase (ambiguous)",
+      "secretor-type beta-galactoside alpha1->2fucosyltransferase",
+      "beta-galactoside alpha1->2fucosyltransferase (ambiguous)",
+      "GDP-beta-L-fucose:beta-D-galactosyl-R 2-alpha-L-fucosyltransferase (ambiguous)",
+      "FUT2 (gene name)",
+      "GDP-beta-L-fucose:beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-(1->3)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide 2-alpha-L-fucosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "GDP-beta-L-fucose:beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-R alpha-(1,2)-L-fucosyltransferase (configuration-inverting)",
+    "reaction": "GDP-beta-L-fucose + beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-R = GDP + alpha-L-fucosyl-(1->2)-beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-R [RN:R04081]",
+    "all_reac": "R04081 > R05968(G) R06024(G) R06031(G) R06035(G) R06041(G) R06085(G) R06086(G) R06089(G) R06090(G) R06156(G); (other) R06170(G)",
+    "iubmb_reactions": [
+      "R04081 > R05968(G) R06024(G) R06031(G) R06035(G) R06041(G) R06085(G) R06086(G) R06089(G) R06090(G) R06156(G)"
+    ],
+    "kegg_reactions": [
+      "R06170(G)"
+    ],
+    "substrates": [
+      "GDP-beta-L-fucose [CPD:C00325]",
+      "beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-R"
+    ],
+    "products": [
+      "GDP [CPD:C00035]",
+      "alpha-L-fucosyl-(1->2)-beta-D-galactosyl-(1->3)-N-acetyl-beta-D-glucosaminyl-R"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme acts on a glycoconjugates where R (see reaction) is a glycoprotein or glycosphingolipid. The recognized moiety of the substrate is known as a type 1 histo-blood group antigen precursor disaccharide, and the action of the enzyme produces an H type 1 antigen. In humans the main enzyme performing this reaction is encoded by the FUT2 gene (also known as the Secretor gene), which is also able to act on type 2 substrates (see EC 2.4.1.344). The enzyme from the bacterium Helicobacter pylori cannot act on type 2 substrates.",
+    "pathways": {
+      "ec00601": "Glycosphingolipid biosynthesis - lacto and neolacto series",
+      "ec00603": "Glycosphingolipid biosynthesis - globo and isoglobo series",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00718": "galactoside 2-L-fucosyltransferase 1/2",
+      "K12245": "bifunctional glycosyltransferase PgtA"
+    },
+    "genes": {
+      "hsa": [
+        "2523",
+        "2524"
+      ],
+      "ptr": [
+        "104001169",
+        "468944",
+        "468947"
+      ],
+      "pps": [
+        "100990363",
+        "100991035",
+        "103785330"
+      ],
+      "ggo": [
+        "101131113",
+        "101148312"
+      ],
+      "pon": [
+        "100171991",
+        "100445051",
+        "100457236"
+      ],
+      "nle": [
+        "100589182",
+        "100589750",
+        "100592672"
+      ],
+      "mcc": [
+        "718252",
+        "722582"
+      ],
+      "mcf": [
+        "102121228",
+        "102121606",
+        "102125198"
+      ],
+      "csab": [
+        "103234986",
+        "103234988",
+        "103234996"
+      ],
+      "rro": [
+        "104666550",
+        "104666555",
+        "104666558"
+      ],
+      "rbb": [
+        "108523627",
+        "108523645",
+        "108523649"
+      ],
+      "cjc": [
+        "100389529",
+        "100896666"
+      ],
+      "sbq": [
+        "101047116",
+        "101047433",
+        "101048065"
+      ],
+      "mmu": [
+        "14343",
+        "14344",
+        "56546"
+      ],
+      "rno": [
+        "308586",
+        "58924",
+        "81919"
+      ],
+      "cge": [
+        "100751185",
+        "100757047",
+        "103159086",
+        "103163675"
+      ],
+      "ngi": [
+        "103743624",
+        "103743625",
+        "103743628"
+      ],
+      "hgl": [
+        "101709834",
+        "101710190"
+      ],
+      "ccan": [
+        "109682667",
+        "109682669",
+        "109682676"
+      ],
+      "ocu": [
+        "100009290",
+        "100009291",
+        "100349124"
+      ],
+      "tup": [
+        "102471780",
+        "102474609",
+        "106736169"
+      ],
+      "cfa": [
+        "102151792",
+        "484396",
+        "484398"
+      ],
+      "aml": [
+        "100472596",
+        "100478397",
+        "100478902"
+      ],
+      "umr": [
+        "103657100",
+        "103657240",
+        "103657242"
+      ],
+      "oro": [
+        "101374079",
+        "101374953",
+        "101375248"
+      ],
+      "fca": [
+        "101080847",
+        "101085847"
+      ],
+      "ptg": [
+        "102962287",
+        "102969895"
+      ],
+      "aju": [
+        "106988654",
+        "106988710"
+      ],
+      "bta": [
+        "281174",
+        "281175",
+        "281483"
+      ],
+      "bom": [
+        "102282547",
+        "102283305",
+        "102283588"
+      ],
+      "biu": [
+        "109572956",
+        "109573030",
+        "109573041"
+      ],
+      "phd": [
+        "102318927",
+        "102319282",
+        "102319984"
+      ],
+      "chx": [
+        "102178850",
+        "102185028",
+        "102185596"
+      ],
+      "oas": [
+        "101107465",
+        "101108248",
+        "105608435"
+      ],
+      "ssc": [
+        "100524201",
+        "397138",
+        "397139"
+      ],
+      "cfr": [
+        "102521344",
+        "102522076",
+        "102522586"
+      ],
+      "cdk": [
+        "105090616",
+        "105102900",
+        "105102904",
+        "105102922",
+        "105106662"
+      ],
+      "bacu": [
+        "103015344"
+      ],
+      "lve": [
+        "103080875",
+        "103081703"
+      ],
+      "ecb": [
+        "100054216",
+        "100054259",
+        "100054308",
+        "100054499"
+      ],
+      "epz": [
+        "103544534",
+        "103553324",
+        "103553326"
+      ],
+      "eai": [
+        "106838254",
+        "106838255",
+        "106838257"
+      ],
+      "myb": [
+        "102257351",
+        "102259445"
+      ],
+      "myd": [
+        "102760565",
+        "102767518",
+        "102768655"
+      ],
+      "hai": [
+        "109391063",
+        "109391098"
+      ],
+      "rss": [
+        "109452483",
+        "109452530"
+      ],
+      "pale": [
+        "102885708",
+        "102886704"
+      ],
+      "lav": [
+        "100662459",
+        "100674697",
+        "100675832"
+      ],
+      "tmu": [
+        "101356480",
+        "101358508",
+        "101359037"
+      ],
+      "mdo": [
+        "100009874",
+        "100009916",
+        "100010332",
+        "100015624",
+        "100018242"
+      ],
+      "shr": [
+        "100930940",
+        "100931578"
+      ],
+      "oaa": [
+        "100085980",
+        "100681084"
+      ],
+      "asn": [
+        "102379237",
+        "102387217",
+        "102387476"
+      ],
+      "amj": [
+        "102565316",
+        "102575664",
+        "102577364"
+      ],
+      "pss": [
+        "102452892",
+        "102460361",
+        "102460609",
+        "106732458"
+      ],
+      "cmy": [
+        "102930615",
+        "102930836",
+        "102941010"
+      ],
+      "cpic": [
+        "101931375",
+        "101931943",
+        "101933588",
+        "101933861",
+        "101936896",
+        "101949841",
+        "101950478",
+        "101950859",
+        "101950977",
+        "101953113",
+        "101953396",
+        "101953691"
+      ],
+      "acs": [
+        "100561462"
+      ],
+      "pvt": [
+        "110078544"
+      ],
+      "pbi": [
+        "103053688"
+      ],
+      "gja": [
+        "107122202"
+      ],
+      "xla": [
+        "108696739",
+        "108696766",
+        "108697042",
+        "108697990",
+        "398668"
+      ],
+      "xtr": [
+        "100487812",
+        "100487974",
+        "100493351",
+        "100497569",
+        "447958"
+      ],
+      "npr": [
+        "108792625",
+        "108792632",
+        "108795149",
+        "108796048",
+        "108796049",
+        "108801078",
+        "108801079",
+        "108801081",
+        "108801082"
+      ],
+      "lcm": [
+        "102356194",
+        "102357968"
+      ],
+      "cmk": [
+        "103171697",
+        "103173436",
+        "103177067",
+        "103183767",
+        "103183768",
+        "103183769",
+        "103183770"
+      ],
+      "ame": [
+        "726095"
+      ],
+      "bim": [
+        "100743109"
+      ],
+      "bter": [
+        "100642421"
+      ],
+      "soc": [
+        "105199316"
+      ],
+      "aec": [
+        "105148166"
+      ],
+      "acep": [
+        "105624787"
+      ],
+      "pbar": [
+        "105431936"
+      ],
+      "hst": [
+        "105188950"
+      ],
+      "cfo": [
+        "105255117"
+      ],
+      "lhu": [
+        "105672546"
+      ],
+      "pgc": [
+        "109852313"
+      ],
+      "nvi": [
+        "100116336"
+      ],
+      "tca": [
+        "655912"
+      ],
+      "dpa": [
+        "109540163",
+        "109540165",
+        "109542888",
+        "109542896"
+      ],
+      "nvl": [
+        "108559505"
+      ],
+      "phu": [
+        "Phum_PHUM354220"
+      ],
+      "zne": [
+        "110826935",
+        "110834024"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_307215"
+      ],
+      "loa": [
+        "LOAG_16607"
+      ],
+      "hro": [
+        "HELRODRAFT_113553",
+        "HELRODRAFT_173990",
+        "HELRODRAFT_174656"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_107563",
+        "LOTGIDRAFT_107907",
+        "LOTGIDRAFT_129925",
+        "LOTGIDRAFT_150955",
+        "LOTGIDRAFT_161584",
+        "LOTGIDRAFT_164689",
+        "LOTGIDRAFT_167590",
+        "LOTGIDRAFT_169777",
+        "LOTGIDRAFT_175102",
+        "LOTGIDRAFT_229229",
+        "LOTGIDRAFT_88684"
+      ],
+      "crg": [
+        "105324936",
+        "105324937",
+        "105325455",
+        "105325959",
+        "105326082",
+        "105326310",
+        "105327892",
+        "105327909",
+        "105330520",
+        "105332175",
+        "105332210",
+        "105332678",
+        "105336015",
+        "109617642",
+        "109618315",
+        "109618713"
+      ],
+      "myi": [
+        "110441722",
+        "110443797",
+        "110446355",
+        "110446386",
+        "110447282",
+        "110450057",
+        "110452484",
+        "110452526",
+        "110452548",
+        "110452860",
+        "110453471",
+        "110455288",
+        "110460015",
+        "110464228",
+        "110466462",
+        "110466463",
+        "110466972"
+      ],
+      "obi": [
+        "106868790",
+        "106869239",
+        "106871940",
+        "106875849",
+        "106877689"
+      ],
+      "lak": [
+        "106150412",
+        "106153096",
+        "106154432",
+        "106158149",
+        "106158150",
+        "106158151",
+        "106158152",
+        "106158416",
+        "106158428",
+        "106158482",
+        "106159547",
+        "106164616",
+        "106167399",
+        "106174770",
+        "106175031",
+        "106179121",
+        "106179122",
+        "106179123",
+        "106179124",
+        "106179300",
+        "106179472",
+        "106181449"
+      ],
+      "ddi": [
+        "DDB_G0283761"
+      ],
+      "dpp": [
+        "DICPUDRAFT_159362"
+      ],
+      "dfa": [
+        "DFA_01805"
+      ],
+      "gtt": [
+        "GUITHDRAFT_109466"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.69"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.69"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.69"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.69"
+      ],
+      "CAS": [
+        "56093-23-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Beyer TA",
+          "Hill RL."
+        ],
+        "title": "Enzymatic properties of the beta-galactoside alpha 1 leads to 2 fucosyltransferase from porcine submaxillary gland.",
+        "journal": "J. Biol. Chem. 255 (1980) 5373-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:7372640]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Beyer TA",
+          "Sadler JE",
+          "Hill RL."
+        ],
+        "title": "Purification to homogeneity of H blood group beta-galactoside alpha 1 leads to 2 fucosyltransferase from porcine submaxillary gland.",
+        "journal": "J. Biol. Chem. 255 (1980) 5364-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6246105]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kumazaki T",
+          "Yoshida A"
+        ],
+        "title": "Biochemical evidence that secretor gene, Se, is a structural gene encoding a specific fucosyltransferase.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 81 (1984) 4193-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6588382]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Koda Y",
+          "Soejima M",
+          "Wang B",
+          "Kimura H"
+        ],
+        "title": "Structure and expression of the gene encoding secretor-type galactoside 2-alpha-L-fucosyltransferase (FUT2).",
+        "journal": "Eur. J. Biochem. 246 (1997) 750-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:9219535]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wang G",
+          "Boulton PG",
+          "Chan NW",
+          "Palcic MM",
+          "Taylor DE"
+        ],
+        "title": "Novel Helicobacter pylori alpha1,2-fucosyltransferase, a key enzyme in the synthesis of Lewis antigens.",
+        "journal": "Microbiology. 145 ( Pt 11) (1999) 3245-53.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:10589734]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

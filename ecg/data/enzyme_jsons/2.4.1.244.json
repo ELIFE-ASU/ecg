@@ -1,0 +1,646 @@
+[
+  {
+    "entry_id": "2.4.1.244",
+    "name": "N-acetyl-beta-glucosaminyl-glycoprotein 4-beta-N-acetylgalactosaminyltransferase",
+    "names": [
+      "N-acetyl-beta-glucosaminyl-glycoprotein 4-beta-N-acetylgalactosaminyltransferase",
+      "beta1,4-N-acetylgalactosaminyltransferase III",
+      "beta4GalNAc-T3",
+      "beta1,4-N-acetylgalactosaminyltransferase IV",
+      "beta4GalNAc-T4",
+      "UDP-N-acetyl-D-galactosamine:N-acetyl-D-glucosaminyl-group beta-1,4-N-acetylgalactosaminyltransferase",
+      "UDP-N-acetyl-D-galactosamine:N-acetyl-beta-D-glucosaminyl-group 4-beta-N-acetylgalactosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-alpha-D-galactosamine:N-acetyl-beta-D-glucosaminyl-group 4-beta-N-acetylgalactosaminyltransferase",
+    "reaction": "UDP-N-acetyl-alpha-D-galactosamine + N-acetyl-beta-D-glucosaminyl group = UDP + N-acetyl-beta-D-galactosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl group",
+    "all_reac": "(other) R07610(G) R07611(G)",
+    "iubmb_reactions": [
+      "(other) R07610(G) R07611(G)"
+    ],
+    "kegg_reactions": [
+      "R07610(G) R07611(G)"
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-galactosamine [CPD:C00203]",
+      "N-acetyl-beta-D-glucosaminyl group"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "N-acetyl-beta-D-galactosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl group"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from human can transfer N-acetyl-D-galactosamine (GalNAc) to N-glycan and O-glycan substrates that have N-acetyl-D-glucosamine (GlcNAc) but not D-glucuronic acid (GlcUA) at their non-reducing end. The N-acetyl-beta-D-glucosaminyl group is normally on a core oligosaccharide although benzyl glycosides have been used in enzyme-characterization experiments. Some glycohormones, e.g. lutropin and thyrotropin contain the N-glycan structure containing the N-acetyl-beta-D-galactosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl group.",
+    "pathways": {
+      "ec00513": "Various types of N-glycan biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K09656": "beta-1,4-N-acetylgalactosaminyltransferase 3",
+      "K09657": "beta-1,4-N-acetylgalactosaminyltransferase 4"
+    },
+    "genes": {
+      "hsa": [
+        "283358",
+        "338707"
+      ],
+      "ptr": [
+        "450920",
+        "451738"
+      ],
+      "pps": [
+        "100976376",
+        "100989611"
+      ],
+      "ggo": [
+        "101131877",
+        "101147545"
+      ],
+      "pon": [
+        "100435319",
+        "100457244"
+      ],
+      "nle": [
+        "100602613",
+        "105738882"
+      ],
+      "mcc": [
+        "706259",
+        "720768"
+      ],
+      "mcf": [
+        "102115389",
+        "102145263"
+      ],
+      "csab": [
+        "103218358",
+        "103239139"
+      ],
+      "rro": [
+        "104656676",
+        "104662541"
+      ],
+      "rbb": [
+        "108519516",
+        "108543532"
+      ],
+      "cjc": [
+        "100407822",
+        "100413834"
+      ],
+      "sbq": [
+        "101037149",
+        "101054201"
+      ],
+      "mmu": [
+        "330406",
+        "330671"
+      ],
+      "rno": [
+        "309105",
+        "500306"
+      ],
+      "cge": [
+        "100756528",
+        "100758404"
+      ],
+      "ngi": [
+        "103739368",
+        "103751068"
+      ],
+      "hgl": [
+        "101702463",
+        "101720559"
+      ],
+      "ccan": [
+        "109694620",
+        "109698146"
+      ],
+      "ocu": [
+        "100351156"
+      ],
+      "tup": [
+        "102476308",
+        "102477252"
+      ],
+      "cfa": [
+        "483398",
+        "486751"
+      ],
+      "aml": [
+        "100474848",
+        "100481474"
+      ],
+      "umr": [
+        "103671083",
+        "103675765"
+      ],
+      "oro": [
+        "101362933",
+        "101376959"
+      ],
+      "fca": [
+        "101086091",
+        "101097324"
+      ],
+      "ptg": [
+        "102950331",
+        "102953154"
+      ],
+      "aju": [
+        "106965465",
+        "106987942"
+      ],
+      "bta": [
+        "100137759",
+        "527026"
+      ],
+      "bom": [
+        "102275891",
+        "102283950"
+      ],
+      "biu": [
+        "109558611"
+      ],
+      "phd": [
+        "102317417",
+        "102338750"
+      ],
+      "chx": [
+        "102172522",
+        "102188023",
+        "108634210"
+      ],
+      "oas": [
+        "101105615",
+        "101115274"
+      ],
+      "ssc": [
+        "100623649",
+        "110260758"
+      ],
+      "cfr": [
+        "102522276",
+        "102523640"
+      ],
+      "cdk": [
+        "105102955",
+        "105106170"
+      ],
+      "bacu": [
+        "103000329",
+        "103019272"
+      ],
+      "lve": [
+        "103071788",
+        "103084199"
+      ],
+      "ecb": [
+        "100054676",
+        "100056854"
+      ],
+      "epz": [
+        "103561349",
+        "103565631"
+      ],
+      "eai": [
+        "106825357",
+        "106831525"
+      ],
+      "myb": [
+        "102246590",
+        "102254875"
+      ],
+      "myd": [
+        "102756317",
+        "102761106"
+      ],
+      "hai": [
+        "109375626",
+        "109388940"
+      ],
+      "rss": [
+        "109434425",
+        "109436291"
+      ],
+      "pale": [
+        "102884317",
+        "102884875"
+      ],
+      "lav": [
+        "100656658",
+        "100665318"
+      ],
+      "tmu": [
+        "101350259",
+        "101357570"
+      ],
+      "mdo": [
+        "100020793"
+      ],
+      "shr": [
+        "100918044",
+        "100921988"
+      ],
+      "oaa": [
+        "100080104"
+      ],
+      "gga": [
+        "418150",
+        "770601"
+      ],
+      "mgp": [
+        "100539296",
+        "100543657"
+      ],
+      "cjo": [
+        "107314272",
+        "107315358"
+      ],
+      "apla": [
+        "101794410",
+        "101795425"
+      ],
+      "acyg": [
+        "106031042",
+        "106047061"
+      ],
+      "tgu": [
+        "100218099",
+        "100221161"
+      ],
+      "gfr": [
+        "102034690",
+        "102036024"
+      ],
+      "fab": [
+        "101806677",
+        "101814333"
+      ],
+      "phi": [
+        "102109686",
+        "102112024"
+      ],
+      "pmaj": [
+        "107204887",
+        "107206466"
+      ],
+      "ccw": [
+        "104684539",
+        "104692236"
+      ],
+      "fpg": [
+        "101919553",
+        "101920197"
+      ],
+      "fch": [
+        "102051612",
+        "102055264"
+      ],
+      "clv": [
+        "102088828",
+        "102090270"
+      ],
+      "egz": [
+        "104127888",
+        "104129759"
+      ],
+      "aam": [
+        "106488281",
+        "106489126",
+        "106490584"
+      ],
+      "asn": [
+        "102383192",
+        "102384335"
+      ],
+      "amj": [
+        "102563895",
+        "102569972"
+      ],
+      "pss": [
+        "102450592",
+        "102454912"
+      ],
+      "cmy": [
+        "102944252",
+        "102948034"
+      ],
+      "cpic": [
+        "101946283",
+        "101950465"
+      ],
+      "acs": [
+        "100552264",
+        "100568220"
+      ],
+      "pvt": [
+        "110074160",
+        "110076677"
+      ],
+      "pbi": [
+        "103050876",
+        "103061436"
+      ],
+      "gja": [
+        "107108372",
+        "107114683"
+      ],
+      "xla": [
+        "108704576",
+        "108712580",
+        "108713824",
+        "108715202"
+      ],
+      "xtr": [
+        "100036642",
+        "100488678"
+      ],
+      "npr": [
+        "108791998",
+        "108804595"
+      ],
+      "dre": [
+        "553524",
+        "559305",
+        "565184"
+      ],
+      "srx": [
+        "107705801",
+        "107707534",
+        "107707535",
+        "107709930",
+        "107730265",
+        "107735491",
+        "107748486"
+      ],
+      "sanh": [
+        "107662894",
+        "107675269",
+        "107686572",
+        "107688567",
+        "107689248",
+        "107689733",
+        "107696636"
+      ],
+      "sgh": [
+        "107558306",
+        "107562842",
+        "107564911",
+        "107584744",
+        "107596444",
+        "107600469",
+        "107600632"
+      ],
+      "ccar": [
+        "109045851",
+        "109050212",
+        "109054019",
+        "109071952",
+        "109080513",
+        "109083500",
+        "109091777",
+        "109097386"
+      ],
+      "ipu": [
+        "108259196",
+        "108264151",
+        "108275076",
+        "108279954",
+        "108280137"
+      ],
+      "amex": [
+        "103022890",
+        "103025722",
+        "103034836",
+        "103037724",
+        "103040627",
+        "111192955"
+      ],
+      "tru": [
+        "101067924",
+        "101067926"
+      ],
+      "tng": [
+        "GSTEN00019775G001",
+        "GSTEN00035572G001"
+      ],
+      "lco": [
+        "104918138",
+        "104920486"
+      ],
+      "ncc": [
+        "104957600",
+        "104967977"
+      ],
+      "mze": [
+        "101471802",
+        "101485737"
+      ],
+      "ola": [
+        "101163791",
+        "101164306",
+        "110014265"
+      ],
+      "xma": [
+        "102221073",
+        "102223638"
+      ],
+      "pret": [
+        "103466150",
+        "103466673"
+      ],
+      "csem": [
+        "103380088",
+        "103380379"
+      ],
+      "lcf": [
+        "108875136",
+        "108875398"
+      ],
+      "hcq": [
+        "109528077",
+        "109530471"
+      ],
+      "bpec": [
+        "110165926",
+        "110169192"
+      ],
+      "sasa": [
+        "106560716",
+        "106561254"
+      ],
+      "els": [
+        "105006820",
+        "105022210"
+      ],
+      "sfm": [
+        "108934528",
+        "108936581",
+        "108942180"
+      ],
+      "lcm": [
+        "102348774",
+        "102349555"
+      ],
+      "cmk": [
+        "103181837",
+        "103186017"
+      ],
+      "nve": [
+        "NEMVE_v1g89035"
+      ],
+      "epa": [
+        "110232249",
+        "110233435",
+        "110238654",
+        "110241131",
+        "110241297",
+        "110243199",
+        "110246585",
+        "110254027"
+      ],
+      "adf": [
+        "107326871",
+        "107330568",
+        "107334204",
+        "107341393",
+        "107342092",
+        "107342360",
+        "107346410",
+        "107347192",
+        "107347194",
+        "107347195",
+        "107347196",
+        "107347199",
+        "107352310",
+        "107355451"
+      ],
+      "hmg": [
+        "100206963"
+      ],
+      "tad": [
+        "TRIADDRAFT_24189"
+      ],
+      "aqu": [
+        "100638711"
+      ],
+      "sre": [
+        "PTSG_03250",
+        "PTSG_05319"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.244"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.244"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.244"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.244"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Sato T",
+          "Gotoh M",
+          "Kiyohara K",
+          "Kameyama A",
+          "Kubota T",
+          "Kikuchi N",
+          "Ishizuka Y",
+          "Iwasaki H",
+          "Togayachi A",
+          "Kudo T",
+          "Ohkura T",
+          "Nakanishi H",
+          "Narimatsu H."
+        ],
+        "title": "Molecular cloning and characterization of a novel human beta 1,4-N-acetylgalactosaminyltransferase, beta 4GalNAc-T3, responsible for the synthesis of N,N'-diacetyllactosediamine, galNAc beta 1-4GlcNAc.",
+        "journal": "J. Biol. Chem. 278 (2003) 47534-44.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12966086]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gotoh M",
+          "Sato T",
+          "Kiyohara K",
+          "Kameyama A",
+          "Kikuchi N",
+          "Kwon YD",
+          "Ishizuka Y",
+          "Iwai T",
+          "Nakanishi H",
+          "Narimatsu H."
+        ],
+        "title": "Molecular cloning and characterization of beta1,4-N-acetylgalactosaminyltransferases IV synthesizing N,N'-diacetyllactosediamine.",
+        "journal": "FEBS. Lett. 562 (2004) 134-40.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:15044014]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

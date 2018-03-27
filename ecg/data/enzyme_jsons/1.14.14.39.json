@@ -1,0 +1,152 @@
+[
+  {
+    "entry_id": "1.14.14.39",
+    "name": "isoleucine N-monooxygenase",
+    "names": [
+      "isoleucine N-monooxygenase",
+      "CYP79D3 (gene name)",
+      "CYP79D4 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-isoleucine,[reduced NADPH---hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)",
+    "reaction": "L-isoleucine + 2 [reduced NADPH---hemoprotein reductase] + 2 O2 = (1E,2S)-2-methylbutanal oxime + 2 [oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O (overall reaction) [RN:R09403]; (1a) L-isoleucine + [reduced NADPH---hemoprotein reductase] + O2 = N-hydroxy-L-isoleucine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R10027]; (1b) N-hydroxy-L-isoleucine + [reduced NADPH---hemoprotein reductase] + O2 = N,N-dihydroxy-L-isoleucine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R10028]; (1c) N,N-dihydroxy-L-isoleucine = (1E,2S)-2-methylbutanal oxime + CO2 + H2O (spontaneous) [RN:R10029]",
+    "all_reac": "R09403 R10027 R10028 R10029; (other) R10031 R10032 R10033",
+    "iubmb_reactions": [
+      "R09403 R10027 R10028 R10029"
+    ],
+    "kegg_reactions": [
+      "R10031 R10032 R10033"
+    ],
+    "substrates": [
+      "L-isoleucine [CPD:C00407]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]",
+      "N-hydroxy-L-isoleucine [CPD:C20310]",
+      "N,N-dihydroxy-L-isoleucine [CPD:C20311]"
+    ],
+    "products": [
+      "(1E,2S)-2-methylbutanal oxime",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "CO2 [CPD:C00011]",
+      "H2O [CPD:C00001]",
+      "N-hydroxy-L-isoleucine [CPD:C20310]",
+      "N,N-dihydroxy-L-isoleucine [CPD:C20311]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytochrome P-450 (heme-thiolate) enzyme, found in plants, catalyses two successive N-hydroxylations of L-isoleucine, the committed step in the biosynthesis of the cyanogenic glucoside lotaustralin. The product of the two hydroxylations, N,N-dihydroxy-L-isoleucine, is labile and undergoes dehydration followed by decarboxylation, producing the oxime. It is still not known whether the decarboxylation is spontaneous or catalysed by the enzyme. The enzyme can also accept L-valine, but with a lower activity. cf. EC 1.14.14.38, valine N-monooxygenase.",
+    "pathways": {
+      "ec00460": "Cyanoamino acid metabolism",
+      "ec00966": "Glucosinolate biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K14984": "isoleucine N-monooxygenase"
+    },
+    "genes": {
+      "lja": [
+        "Lj3g3v0755150.1"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.39"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.39"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.39"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.39"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Andersen MD",
+          "Busk PK",
+          "Svendsen I",
+          "Moller BL"
+        ],
+        "title": "Cytochromes P-450 from cassava (Manihot esculenta Crantz) catalyzing the first steps in the biosynthesis of the cyanogenic glucosides linamarin and lotaustralin. Cloning, functional expression in Pichia pastoris, and substrate specificity of the isolated recombinant enzymes.",
+        "journal": "J. Biol. Chem. 275 (2000) 1966-75.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10636899]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Forslund K",
+          "Morant M",
+          "Jorgensen B",
+          "Olsen CE",
+          "Asamizu E",
+          "Sato S",
+          "Tabata S",
+          "Bak S"
+        ],
+        "title": "Biosynthesis of the nitrile glucosides rhodiocyanoside A and D and the cyanogenic glucosides lotaustralin and linamarin in Lotus japonicus.",
+        "journal": "Plant. Physiol. 135 (2004) 71-84.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:15122013]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

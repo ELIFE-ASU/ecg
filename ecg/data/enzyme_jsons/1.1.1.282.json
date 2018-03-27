@@ -1,0 +1,562 @@
+[
+  {
+    "entry_id": "1.1.1.282",
+    "name": "quinate/shikimate dehydrogenase",
+    "names": [
+      "quinate/shikimate dehydrogenase",
+      "YdiB"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-OH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "L-quinate:NAD(P)+ 3-oxidoreductase",
+    "reaction": "(1) L-quinate + NAD(P)+ = 3-dehydroquinate + NAD(P)H + H+ [RN:R01872 R06846]; (2) shikimate + NAD(P)+ = 3-dehydroshikimate + NAD(P)H + H+ [RN:R02413 R06847]",
+    "all_reac": "R01872 R02413 R06846 R06847",
+    "iubmb_reactions": [
+      "R01872 R02413 R06846 R06847"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-quinate [CPD:C00296]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]",
+      "shikimate [CPD:C00493]"
+    ],
+    "products": [
+      "3-dehydroquinate [CPD:C00944]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "3-dehydroshikimate [CPD:C02637]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This is the second shikimate dehydrogenase enzyme found in Escherichia coli and differs from EC 1.1.1.25, shikimate dehydrogenase, in that it can use both quinate and shikimate as substrate and either NAD+ or NADP+ as acceptor.",
+    "pathways": {
+      "ec00400": "Phenylalanine, tyrosine and tryptophan biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K05887": "quinate/shikimate dehydrogenase"
+    },
+    "genes": {
+      "eco": [
+        "b1692"
+      ],
+      "ecj": [
+        "JW1682"
+      ],
+      "ecd": [
+        "ECDH10B_1828"
+      ],
+      "ebw": [
+        "BWG_1506"
+      ],
+      "ecok": [
+        "ECMDS42_1365"
+      ],
+      "ece": [
+        "Z2720"
+      ],
+      "ecs": [
+        "ECs2399"
+      ],
+      "ecf": [
+        "ECH74115_2408"
+      ],
+      "etw": [
+        "ECSP_2259"
+      ],
+      "elx": [
+        "CDCO157_2233"
+      ],
+      "eoj": [
+        "ECO26_2420"
+      ],
+      "eoi": [
+        "ECO111_2161"
+      ],
+      "eoh": [
+        "ECO103_1835"
+      ],
+      "ecg": [
+        "E2348C_1777"
+      ],
+      "eok": [
+        "G2583_2089"
+      ],
+      "elr": [
+        "ECO55CA74_10255"
+      ],
+      "ecc": [
+        "c2087"
+      ],
+      "ecp": [
+        "ECP_1639"
+      ],
+      "eci": [
+        "UTI89_C1884"
+      ],
+      "ecv": [
+        "APECO1_768"
+      ],
+      "ecx": [
+        "EcHS_A1773"
+      ],
+      "ecw": [
+        "EcE24377A_1908"
+      ],
+      "ecm": [
+        "EcSMS35_1504"
+      ],
+      "ecy": [
+        "ECSE_1815"
+      ],
+      "ecr": [
+        "ECIAI1_1745"
+      ],
+      "ecq": [
+        "ECED1_1891"
+      ],
+      "eck": [
+        "EC55989_1859"
+      ],
+      "ect": [
+        "ECIAI39_1366"
+      ],
+      "eoc": [
+        "CE10_1966"
+      ],
+      "eum": [
+        "ECUMN_1981"
+      ],
+      "ecz": [
+        "ECS88_1742"
+      ],
+      "elo": [
+        "EC042_1859"
+      ],
+      "eln": [
+        "NRG857_08475"
+      ],
+      "elh": [
+        "ETEC_1725"
+      ],
+      "ese": [
+        "ECSF_1552"
+      ],
+      "eso": [
+        "O3O_13860"
+      ],
+      "esm": [
+        "O3M_11740"
+      ],
+      "esl": [
+        "O3K_11775"
+      ],
+      "ecl": [
+        "EcolC_1939"
+      ],
+      "ebr": [
+        "ECB_01661"
+      ],
+      "ebd": [
+        "ECBD_1954"
+      ],
+      "eko": [
+        "EKO11_2083"
+      ],
+      "ekf": [
+        "KO11_14285"
+      ],
+      "eab": [
+        "ECABU_c19460"
+      ],
+      "edh": [
+        "EcDH1_1950"
+      ],
+      "edj": [
+        "ECDH1ME8569_1636"
+      ],
+      "eih": [
+        "ECOK1_1812"
+      ],
+      "ena": [
+        "ECNA114_1739"
+      ],
+      "elu": [
+        "UM146_08690"
+      ],
+      "eun": [
+        "UMNK88_2155"
+      ],
+      "elw": [
+        "ECW_m1861"
+      ],
+      "ell": [
+        "WFL_09110"
+      ],
+      "elc": [
+        "i14_1909"
+      ],
+      "eld": [
+        "i02_1909"
+      ],
+      "elp": [
+        "P12B_c1391"
+      ],
+      "ebl": [
+        "ECD_01661"
+      ],
+      "ebe": [
+        "B21_01650"
+      ],
+      "elf": [
+        "LF82_2870"
+      ],
+      "ecoa": [
+        "APECO78_12280"
+      ],
+      "ecol": [
+        "LY180_08815"
+      ],
+      "ecoi": [
+        "ECOPMV1_01791"
+      ],
+      "ecoj": [
+        "P423_09035"
+      ],
+      "ecoo": [
+        "ECRM13514_2187"
+      ],
+      "ecoh": [
+        "ECRM13516_2092"
+      ],
+      "ecos": [
+        "EC958_1912"
+      ],
+      "eal": [
+        "EAKF1_ch4359c"
+      ],
+      "stm": [
+        "STM1359"
+      ],
+      "seo": [
+        "STM14_1650"
+      ],
+      "sev": [
+        "STMMW_13661"
+      ],
+      "sey": [
+        "SL1344_1293"
+      ],
+      "sem": [
+        "STMDT12_C13760"
+      ],
+      "sej": [
+        "STMUK_1326"
+      ],
+      "seb": [
+        "STM474_1364"
+      ],
+      "sef": [
+        "UMN798_1416"
+      ],
+      "setu": [
+        "STU288_03120"
+      ],
+      "setc": [
+        "CFSAN001921_10345"
+      ],
+      "senr": [
+        "STMDT2_12921"
+      ],
+      "send": [
+        "DT104_13371"
+      ],
+      "seni": [
+        "CY43_06920"
+      ],
+      "seen": [
+        "SE451236_12665"
+      ],
+      "spq": [
+        "SPAB_01974"
+      ],
+      "sei": [
+        "SPC_2371"
+      ],
+      "sec": [
+        "SCH_1378"
+      ],
+      "seh": [
+        "SeHA_C1490"
+      ],
+      "shb": [
+        "SU5_01977"
+      ],
+      "senh": [
+        "CFSAN002069_02210"
+      ],
+      "seeh": [
+        "SEEH1578_16025"
+      ],
+      "see": [
+        "SNSL254_A1471"
+      ],
+      "senn": [
+        "SN31241_24320"
+      ],
+      "sew": [
+        "SeSA_A1455"
+      ],
+      "sea": [
+        "SeAg_B1813"
+      ],
+      "sens": [
+        "Q786_08455"
+      ],
+      "sed": [
+        "SeD_A1984"
+      ],
+      "seg": [
+        "SG1757"
+      ],
+      "sel": [
+        "SPUL_1177"
+      ],
+      "sega": [
+        "SPUCDC_1177"
+      ],
+      "set": [
+        "SEN1685"
+      ],
+      "sena": [
+        "AU38_08725"
+      ],
+      "seno": [
+        "AU37_08730"
+      ],
+      "senv": [
+        "AU39_08735"
+      ],
+      "senq": [
+        "AU40_09735"
+      ],
+      "senl": [
+        "IY59_08920"
+      ],
+      "senj": [
+        "CFSAN001992_04800"
+      ],
+      "seec": [
+        "CFSAN002050_13185"
+      ],
+      "seeb": [
+        "SEEB0189_012740"
+      ],
+      "seep": [
+        "I137_05420"
+      ],
+      "senb": [
+        "BN855_13970"
+      ],
+      "sene": [
+        "IA1_06705"
+      ],
+      "senc": [
+        "SEET0819_13440"
+      ],
+      "sfl": [
+        "SF1722"
+      ],
+      "sfx": [
+        "S1854"
+      ],
+      "sfv": [
+        "SFV_1718"
+      ],
+      "sfe": [
+        "SFxv_1929"
+      ],
+      "sfn": [
+        "SFy_2467"
+      ],
+      "sfs": [
+        "SFyv_2522"
+      ],
+      "sft": [
+        "NCTC1_01868"
+      ],
+      "ssn": [
+        "SSON_1462"
+      ],
+      "sbc": [
+        "SbBS512_E1895"
+      ],
+      "sdy": [
+        "SDY_1475"
+      ],
+      "sdz": [
+        "Asd1617_01960"
+      ],
+      "shq": [
+        "A0259_12505"
+      ],
+      "enf": [
+        "AKI40_1900"
+      ],
+      "cfd": [
+        "CFNIH1_16775"
+      ],
+      "cbra": [
+        "A6J81_02970"
+      ],
+      "cwe": [
+        "CO701_11460"
+      ],
+      "cama": [
+        "F384_06180"
+      ],
+      "caf": [
+        "AL524_16140"
+      ],
+      "cif": [
+        "AL515_11000"
+      ],
+      "cfar": [
+        "CI104_12065"
+      ],
+      "krd": [
+        "A3780_14345"
+      ],
+      "yak": [
+        "ACZ76_17775"
+      ],
+      "sfw": [
+        "WN53_13740"
+      ],
+      "sfg": [
+        "AV650_09345"
+      ],
+      "dda": [
+        "Dd703_1385"
+      ],
+      "ddc": [
+        "Dd586_0792"
+      ],
+      "dzc": [
+        "W909_03900"
+      ],
+      "bgj": [
+        "AWC36_00935"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.1.1.282"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.1.1.282"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.1.1.282"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.1.1.282"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Michel G",
+          "Roszak AW",
+          "Sauve V",
+          "Maclean J",
+          "Matte A",
+          "Coggins JR",
+          "Cygler M",
+          "Lapthorn AJ."
+        ],
+        "title": "Structures of shikimate dehydrogenase AroE and its Paralog YdiB. A common structural framework for different activities.",
+        "journal": "J. Biol. Chem. 278 (2003) 19463-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12637497]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Benach J",
+          "Lee I",
+          "Edstrom W",
+          "Kuzin AP",
+          "Chiang Y",
+          "Acton TB",
+          "Montelione GT",
+          "Hunt JF."
+        ],
+        "title": "The 2.3-A crystal structure of the shikimate 5-dehydrogenase orthologue YdiB from Escherichia coli suggests a novel catalytic environment for an NAD-dependent dehydrogenase.",
+        "journal": "J. Biol. Chem. 278 (2003) 19176-82.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12624088]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

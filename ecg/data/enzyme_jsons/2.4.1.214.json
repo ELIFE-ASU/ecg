@@ -1,0 +1,824 @@
+[
+  {
+    "entry_id": "2.4.1.214",
+    "name": "glycoprotein 3-alpha-L-fucosyltransferase",
+    "names": [
+      "glycoprotein 3-alpha-L-fucosyltransferase",
+      "GDP-L-Fuc:N-acetyl-beta-D-glucosaminide alpha1,3-fucosyltransferase",
+      "GDP-L-Fuc:Asn-linked GlcNAc alpha1,3-fucosyltransferase",
+      "GDP-fucose:beta-N-acetylglucosamine (Fuc to (Fucalpha1->6GlcNAc)-Asn-peptide) alpha1->3-fucosyltransferase",
+      "GDP-L-fucose:glycoprotein (L-fucose to asparagine-linked N-acetylglucosamine of 4-N-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine) 3-alpha-L-fucosyl-transferase",
+      "GDP-L-fucose:glycoprotein (L-fucose to asparagine-linked N-acetylglucosamine of N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine) 3-alpha-L-fucosyl-transferase",
+      "GDP-beta-L-fucose:glycoprotein (L-fucose to asparagine-linked N-acetylglucosamine of N4-{N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->2)-alpha-D-mannosyl-(1->6)]-beta-D-mannosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-(1->4)-N-acetyl-beta-D-glucosaminyl}asparagine) 3-alpha-L-fucosyl-transferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "GDP-beta-L-fucose:N4-{beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->3)-[beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->6)]-beta-D-Man-(1->4)-beta-D-GlcNAc-(1->4)-beta-D-GlcNAc}-L-asparaginyl-[protein] 3-alpha-L-fucosyltransferase (configuration-retaining)",
+    "reaction": "GDP-beta-L-fucose + N4-{beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->3)-[beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->6)]-beta-D-Man-(1->4)-beta-D-GlcNAc-(1->4)-beta-D-GlcNAc}-L-asparaginyl-[protein] = GDP + N4-{beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->3)-[beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->6)]-beta-D-Man-(1->4)-beta-D-GlcNAc-(1->4)-[alpha-L-Fuc-(1->3)]-beta-D-GlcNAc}-L-asparaginyl-[protein] [RN:R06015]",
+    "all_reac": "R06015(G) > R09318(G); (other) R11318(G)",
+    "iubmb_reactions": [
+      "R06015(G) > R09318(G)"
+    ],
+    "kegg_reactions": [
+      "R11318(G)"
+    ],
+    "substrates": [
+      "GDP-beta-L-fucose [CPD:C00325]",
+      "N4-{beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->3)-[beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->6)]-beta-D-Man-(1->4)-beta-D-GlcNAc-(1->4)-beta-D-GlcNAc}-L-asparaginyl-[protein]"
+    ],
+    "products": [
+      "GDP [CPD:C00035]",
+      "N4-{beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->3)-[beta-D-GlcNAc-(1->2)-alpha-D-Man-(1->6)]-beta-D-Man-(1->4)-beta-D-GlcNAc-(1->4)-[alpha-L-Fuc-(1->3)]-beta-D-GlcNAc}-L-asparaginyl-[protein]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Mn2+. The enzyme transfers to N-linked oligosaccharide structures (N-glycans), generally with a specificity for N-glycans with one unsubstituted non-reducing terminal GlcNAc residue. This enzyme catalyses a reaction similar to that of EC 2.4.1.68, glycoprotein 6-alpha-L-fucosyltransferase, but transferring the L-fucosyl group from GDP-beta-L-fucose to form an alpha1,3-linkage rather than an alpha1,6-linkage. The {iupac/misc/glycp#3.5::N-glycan} products of this enzyme are present in plants, insects and some other invertebrates (e.g., Schistosoma, Haemonchus, Lymnaea).",
+    "pathways": {
+      "ec00513": "Various types of N-glycan biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00753": "glycoprotein 3-alpha-L-fucosyltransferase"
+    },
+    "genes": {
+      "bfo": [
+        "BRAFLDRAFT_118057",
+        "BRAFLDRAFT_126419",
+        "BRAFLDRAFT_148435",
+        "BRAFLDRAFT_157961",
+        "BRAFLDRAFT_158143",
+        "BRAFLDRAFT_168192",
+        "BRAFLDRAFT_196427",
+        "BRAFLDRAFT_217829",
+        "BRAFLDRAFT_228496",
+        "BRAFLDRAFT_249686",
+        "BRAFLDRAFT_273851",
+        "BRAFLDRAFT_82752",
+        "BRAFLDRAFT_82754",
+        "BRAFLDRAFT_87449",
+        "BRAFLDRAFT_91840"
+      ],
+      "spu": [
+        "105445519"
+      ],
+      "aplc": [
+        "110976930",
+        "110977799",
+        "110978133",
+        "110978134",
+        "110980446",
+        "110981755",
+        "110982633",
+        "110989209",
+        "110989340",
+        "110990168",
+        "110990202",
+        "110990203"
+      ],
+      "dme": [
+        "Dmel_CG6869"
+      ],
+      "dpo": [
+        "Dpse_GA19918",
+        "Dpse_GA25723",
+        "Dpse_GA25724"
+      ],
+      "dan": [
+        "Dana_GF23688"
+      ],
+      "der": [
+        "Dere_GG15882"
+      ],
+      "dpe": [
+        "Dper_GL18621",
+        "Dper_GL24771"
+      ],
+      "dse": [
+        "Dsec_GM25513"
+      ],
+      "dsi": [
+        "Dsimw501_GD14528"
+      ],
+      "dwi": [
+        "Dwil_GK20401"
+      ],
+      "dya": [
+        "Dyak_GE22226"
+      ],
+      "dgr": [
+        "Dgri_GH14528"
+      ],
+      "dmo": [
+        "Dmoj_GI13099"
+      ],
+      "dvi": [
+        "Dvir_GJ13846"
+      ],
+      "mde": [
+        "101901412"
+      ],
+      "aga": [
+        "AgaP_AGAP003191"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ013202"
+      ],
+      "ame": [
+        "100578168"
+      ],
+      "bim": [
+        "100748078"
+      ],
+      "bter": [
+        "100642198"
+      ],
+      "soc": [
+        "105194008",
+        "105194752"
+      ],
+      "aec": [
+        "105151786"
+      ],
+      "acep": [
+        "105627764"
+      ],
+      "pbar": [
+        "105425145",
+        "105425175"
+      ],
+      "hst": [
+        "105182309"
+      ],
+      "cfo": [
+        "105253014",
+        "105255439"
+      ],
+      "lhu": [
+        "105673879",
+        "105678540"
+      ],
+      "pgc": [
+        "109853983"
+      ],
+      "nvi": [
+        "100116394"
+      ],
+      "tca": [
+        "655857",
+        "656368"
+      ],
+      "dpa": [
+        "109534786",
+        "109537899",
+        "109537932",
+        "109544423"
+      ],
+      "nvl": [
+        "108558702",
+        "108565454"
+      ],
+      "bmor": [
+        "101742412"
+      ],
+      "dpl": [
+        "KGM_204991"
+      ],
+      "pmac": [
+        "106715499"
+      ],
+      "pxy": [
+        "105390580",
+        "105397575"
+      ],
+      "api": [
+        "100161726",
+        "100162456",
+        "100163995",
+        "100165601",
+        "100167629",
+        "100168794",
+        "100574117"
+      ],
+      "dnx": [
+        "107162725",
+        "107172392",
+        "107173073",
+        "107173609"
+      ],
+      "phu": [
+        "Phum_PHUM491860"
+      ],
+      "zne": [
+        "110830253",
+        "110832335"
+      ],
+      "fcd": [
+        "110843011",
+        "110843249",
+        "110844424",
+        "110849065",
+        "110850423",
+        "110852611",
+        "110852612",
+        "110852710",
+        "110863617"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_58299",
+        "DAPPUDRAFT_64347",
+        "DAPPUDRAFT_64409"
+      ],
+      "isc": [
+        "IscW_ISCW003580",
+        "IscW_ISCW004192",
+        "IscW_ISCW005012",
+        "IscW_ISCW024303",
+        "IscW_ISCW024461"
+      ],
+      "tut": [
+        "107360881",
+        "107367044"
+      ],
+      "cel": [
+        "CELE_K12H6.3"
+      ],
+      "nai": [
+        "NECAME_11181"
+      ],
+      "tsp": [
+        "Tsp_00082",
+        "Tsp_02347a",
+        "Tsp_02348"
+      ],
+      "hro": [
+        "HELRODRAFT_123182",
+        "HELRODRAFT_166201",
+        "HELRODRAFT_84937",
+        "HELRODRAFT_86301"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_129140",
+        "LOTGIDRAFT_143067",
+        "LOTGIDRAFT_152652"
+      ],
+      "crg": [
+        "105319931",
+        "105320772",
+        "105326742",
+        "105332886",
+        "105335091",
+        "105338563",
+        "105340008",
+        "105341741",
+        "109619336",
+        "109619337"
+      ],
+      "myi": [
+        "110443530",
+        "110450259",
+        "110456621",
+        "110456628",
+        "110456630",
+        "110456631",
+        "110459974",
+        "110461122",
+        "110464928"
+      ],
+      "obi": [
+        "106876232",
+        "106876522",
+        "106877376",
+        "106882619"
+      ],
+      "lak": [
+        "106150569",
+        "106150570",
+        "106153314",
+        "106156269",
+        "106158116",
+        "106158251",
+        "106159224",
+        "106159860",
+        "106159862",
+        "106159863",
+        "106160406",
+        "106160407",
+        "106163940",
+        "106163945",
+        "106166124",
+        "106166131",
+        "106166707",
+        "106170859",
+        "106171537",
+        "106172080",
+        "106172205",
+        "106172987",
+        "106173676",
+        "106174364",
+        "106176482",
+        "106178712",
+        "106179391",
+        "106180389",
+        "106180391"
+      ],
+      "smm": [
+        "Smp_054300",
+        "Smp_129750",
+        "Smp_154410",
+        "Smp_211180"
+      ],
+      "shx": [
+        "MS3_05060",
+        "MS3_09772",
+        "MS3_11064"
+      ],
+      "epa": [
+        "110233862",
+        "110233868",
+        "110238636",
+        "110240352",
+        "110248499",
+        "110249922",
+        "110249928",
+        "110250859",
+        "110251869"
+      ],
+      "adf": [
+        "107327803",
+        "107346977",
+        "107350130",
+        "107351044"
+      ],
+      "hmg": [
+        "100199046"
+      ],
+      "tad": [
+        "TRIADDRAFT_20532"
+      ],
+      "ath": [
+        "AT1G49710",
+        "AT3G19280"
+      ],
+      "aly": [
+        "ARALYDRAFT_479443",
+        "ARALYDRAFT_891881",
+        "ARALYDRAFT_891885"
+      ],
+      "crb": [
+        "CARUB_v10008875mg",
+        "CARUB_v10015682mg"
+      ],
+      "csat": [
+        "104742504",
+        "104746313",
+        "104758303",
+        "104765792",
+        "104777890"
+      ],
+      "eus": [
+        "EUTSA_v10011402mg",
+        "EUTSA_v10022257mg"
+      ],
+      "brp": [
+        "103832922",
+        "103869473",
+        "103871397"
+      ],
+      "bna": [
+        "106346129",
+        "106406562",
+        "106416618",
+        "106418732",
+        "106428330",
+        "106439064",
+        "111204765",
+        "111216211"
+      ],
+      "boe": [
+        "106301123",
+        "106307787",
+        "106343405"
+      ],
+      "thj": [
+        "104798796",
+        "104803455"
+      ],
+      "cpap": [
+        "110813783"
+      ],
+      "cit": [
+        "102617014"
+      ],
+      "cic": [
+        "CICLE_v10028212mg"
+      ],
+      "tcc": [
+        "18607941"
+      ],
+      "gra": [
+        "105762819",
+        "105773248",
+        "105782696"
+      ],
+      "ghi": [
+        "107894268",
+        "107928817",
+        "107934110",
+        "107937965",
+        "107953397"
+      ],
+      "egr": [
+        "104418734"
+      ],
+      "gmx": [
+        "100776065",
+        "100792811"
+      ],
+      "pvu": [
+        "PHAVU_003G292000g"
+      ],
+      "vra": [
+        "106768760"
+      ],
+      "var": [
+        "108343376"
+      ],
+      "ccaj": [
+        "109793169"
+      ],
+      "mtr": [
+        "MTR_4g086010"
+      ],
+      "cam": [
+        "101502044"
+      ],
+      "adu": [
+        "107469717"
+      ],
+      "aip": [
+        "107623116"
+      ],
+      "lja": [
+        "Lj4g3v0598850.1"
+      ],
+      "lang": [
+        "109331404",
+        "109333305",
+        "109349444"
+      ],
+      "fve": [
+        "101293079"
+      ],
+      "pper": [
+        "18766662"
+      ],
+      "pmum": [
+        "103335356"
+      ],
+      "mdm": [
+        "103421796",
+        "103436488"
+      ],
+      "pxb": [
+        "103937988"
+      ],
+      "zju": [
+        "107427081"
+      ],
+      "csv": [
+        "101202837",
+        "101205170"
+      ],
+      "cmo": [
+        "103495239",
+        "103496162"
+      ],
+      "mcha": [
+        "111007907",
+        "111017732"
+      ],
+      "rcu": [
+        "8275299"
+      ],
+      "jcu": [
+        "105629829"
+      ],
+      "hbr": [
+        "110634690",
+        "110638983"
+      ],
+      "pop": [
+        "POPTR_0009s10430g"
+      ],
+      "vvi": [
+        "100255469"
+      ],
+      "sly": [
+        "101251424",
+        "101264378"
+      ],
+      "spen": [
+        "107002790",
+        "107004595"
+      ],
+      "sot": [
+        "102592560",
+        "102599085"
+      ],
+      "cann": [
+        "107840277",
+        "107855995"
+      ],
+      "nta": [
+        "107766938",
+        "107767349",
+        "107797347",
+        "107830046"
+      ],
+      "nsy": [
+        "104213968",
+        "104237589"
+      ],
+      "nto": [
+        "104106034",
+        "104113469"
+      ],
+      "ini": [
+        "109154539",
+        "109161366",
+        "109165387"
+      ],
+      "sind": [
+        "105169541",
+        "105172719"
+      ],
+      "han": [
+        "110917016",
+        "110938245"
+      ],
+      "bvg": [
+        "104904482"
+      ],
+      "soe": [
+        "110778319"
+      ],
+      "nnu": [
+        "104601780",
+        "104606410"
+      ],
+      "osa": [
+        "4345809"
+      ],
+      "dosa": [
+        "Os08t0472600-01"
+      ],
+      "obr": [
+        "102709390"
+      ],
+      "bdi": [
+        "100834636"
+      ],
+      "sbi": [
+        "8056895"
+      ],
+      "zma": [
+        "100273557",
+        "778434"
+      ],
+      "sita": [
+        "101766834"
+      ],
+      "pda": [
+        "103718299",
+        "103719837",
+        "103720279"
+      ],
+      "egu": [
+        "105041363",
+        "105060901"
+      ],
+      "mus": [
+        "103968374",
+        "103968680",
+        "103977535"
+      ],
+      "dct": [
+        "110092524",
+        "110100572"
+      ],
+      "atr": [
+        "18421358"
+      ],
+      "smo": [
+        "SELMODRAFT_452935"
+      ],
+      "ppp": [
+        "PHYPADRAFT_206064"
+      ],
+      "csl": [
+        "COCSUDRAFT_37671"
+      ],
+      "smin": [
+        "v1.2.020659.t1"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.214"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.214"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.214"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.214"
+      ],
+      "CAS": [
+        "68247-53-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Wilson IB",
+          "Rendic D",
+          "Freilinger A",
+          "Dumic J",
+          "Altmann F",
+          "Mucha J",
+          "Muller S",
+          "Hauser MT."
+        ],
+        "title": "Cloning and expression of cDNAs encoding alpha1,3-fucosyltransferase homologues from Arabidopsis thaliana.",
+        "journal": "Biochim. Biophys. Acta. 1527 (2001) 88-96.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11420147]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fabini G",
+          "Freilinger A",
+          "Altmann F",
+          "Wilson IB."
+        ],
+        "title": "Identification of core alpha 1,3-fucosylated glycans and cloning of the requisite fucosyltransferase cDNA from Drosophila melanogaster. Potential basis of the neural anti-horseadish peroxidase epitope.",
+        "journal": "J. Biol. Chem. 276 (2001) 28058-67.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11382750]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Leiter H",
+          "Mucha J",
+          "Staudacher E",
+          "Grimm R",
+          "Glossl J",
+          "Altmann F."
+        ],
+        "title": "Purification, cDNA cloning, and expression of GDP-L-Fuc:Asn-linked GlcNAc alpha1,3-fucosyltransferase from mung beans.",
+        "journal": "J. Biol. Chem. 274 (1999) 21830-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10419500]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "van Tetering A",
+          "Schiphorst WE",
+          "van den Eijnden DH",
+          "van Die I."
+        ],
+        "title": "Characterization of a core alpha1--&gt;3-fucosyltransferase from the snail Lymnaea stagnalis that is involved in the synthesis of complex-type N-glycans.",
+        "journal": "FEBS. Lett. 461 (1999) 311-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:10567717]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Staudacher E",
+          "Altmann F",
+          "Glossl J",
+          "Marz L",
+          "Schachter H",
+          "Kamerling JP",
+          "Hard K",
+          "Vliegenthart JF."
+        ],
+        "title": "GDP-fucose: beta-N-acetylglucosamine (Fuc to (Fuc alpha 1----6GlcNAc)-Asn-peptide)alpha 1----3-fucosyltransferase activity in honeybee (Apis mellifica) venom glands. The difucosylation of asparagine-bound N-acetylglucosamine.",
+        "journal": "Eur. J. Biochem. 199 (1991) 745-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:1868856]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

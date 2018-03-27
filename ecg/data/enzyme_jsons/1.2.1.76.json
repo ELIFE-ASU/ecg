@@ -1,0 +1,360 @@
+[
+  {
+    "entry_id": "1.2.1.76",
+    "name": "succinate-semialdehyde dehydrogenase (acylating)",
+    "names": [
+      "succinate-semialdehyde dehydrogenase (acylating)",
+      "succinyl-coA reductase",
+      "coenzyme-A-dependent succinate-semialdehyde dehydrogenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the aldehyde or oxo group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "succinate semialdehyde:NADP+ oxidoreductase (CoA-acylating)",
+    "reaction": "succinate semialdehyde + CoA + NADP+ = succinyl-CoA + NADPH + H+ [RN:R09280]",
+    "all_reac": "R09280",
+    "iubmb_reactions": [
+      "R09280"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "succinate semialdehyde [CPD:C00232]",
+      "CoA [CPD:C00010]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "products": [
+      "succinyl-CoA [CPD:C00091]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Catalyses the NADPH-dependent reduction of succinyl-CoA to succinate semialdehyde. The enzyme has been described in Clostridium kluyveri, where it participates in succinate fermentation [1], and in Metallosphaera sedula, where it participates in the 3-hydroxypropanonate/4-hydroxybutanoate cycle, an autotrophic CO2 fixation pathway found in some thermoacidophilic archaea [2,3].",
+    "pathways": {
+      "ec00650": "Butanoate metabolism",
+      "ec00720": "Carbon fixation pathways in prokaryotes",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K15017": "malonyl-CoA/succinyl-CoA reductase (NADPH)",
+      "K15038": "succinyl-CoA reductase",
+      "K18119": "succinate-semialdehyde dehydrogenase"
+    },
+    "genes": {
+      "bgj": [
+        "AWC36_10870"
+      ],
+      "ckl": [
+        "CKL_3015"
+      ],
+      "ckr": [
+        "CKR_2663"
+      ],
+      "csq": [
+        "CSCA_3620"
+      ],
+      "ceu": [
+        "A7L45_11960"
+      ],
+      "lacy": [
+        "A4V08_31365"
+      ],
+      "cdf": [
+        "CD630_23420"
+      ],
+      "pdc": [
+        "CDIF630_02581"
+      ],
+      "cdc": [
+        "CD196_2185"
+      ],
+      "cdl": [
+        "CDR20291_2231"
+      ],
+      "pdf": [
+        "CD630DERM_23420"
+      ],
+      "has": [
+        "Halsa_0175"
+      ],
+      "mbf": [
+        "BHV42_01465"
+      ],
+      "pgi": [
+        "PG_0687"
+      ],
+      "pgn": [
+        "PGN_0723"
+      ],
+      "pgt": [
+        "PGTDC60_1813"
+      ],
+      "pah": [
+        "Poras_0443"
+      ],
+      "tfo": [
+        "BFO_1488"
+      ],
+      "osp": [
+        "Odosp_2058"
+      ],
+      "sso": [
+        "SSO1629",
+        "SSO1842",
+        "SSO2178"
+      ],
+      "sol": [
+        "Ssol_2908"
+      ],
+      "ssoa": [
+        "SULA_2921"
+      ],
+      "ssol": [
+        "SULB_2921"
+      ],
+      "ssof": [
+        "SULC_2918"
+      ],
+      "sto": [
+        "STK_00640",
+        "STK_21710"
+      ],
+      "sai": [
+        "Saci_1738",
+        "Saci_2147",
+        "Saci_2370"
+      ],
+      "sacn": [
+        "SacN8_08450",
+        "SacN8_10450",
+        "SacN8_11535"
+      ],
+      "sacr": [
+        "SacRon12I_08465",
+        "SacRon12I_10705",
+        "SacRon12I_11780"
+      ],
+      "sacs": [
+        "SUSAZ_08265"
+      ],
+      "sis": [
+        "LS215_0550",
+        "LS215_2961"
+      ],
+      "sia": [
+        "M1425_1049",
+        "M1425_2796"
+      ],
+      "sim": [
+        "M1627_1112",
+        "M1627_2848"
+      ],
+      "sid": [
+        "M164_1027",
+        "M164_2777"
+      ],
+      "siy": [
+        "YG5714_1027",
+        "YG5714_2976"
+      ],
+      "sin": [
+        "YN1551_1850",
+        "YN1551_2101",
+        "YN1551_3167"
+      ],
+      "sii": [
+        "LD85_0963",
+        "LD85_1154",
+        "LD85_3126"
+      ],
+      "sih": [
+        "SiH_0568",
+        "SiH_2755"
+      ],
+      "sir": [
+        "SiRe_0909",
+        "SiRe_2691"
+      ],
+      "sic": [
+        "SiL_0776",
+        "SiL_2637"
+      ],
+      "sula": [
+        "BFU36_00640",
+        "BFU36_10310"
+      ],
+      "mse": [
+        "Msed_0709",
+        "Msed_1119",
+        "Msed_1774"
+      ],
+      "mcn": [
+        "Mcup_1427"
+      ],
+      "aho": [
+        "Ahos_0324",
+        "Ahos_2348"
+      ],
+      "aman": [
+        "B6F84_04975",
+        "B6F84_05470"
+      ],
+      "pis": [
+        "Pisl_0249"
+      ],
+      "pcl": [
+        "Pcal_1387"
+      ],
+      "pyr": [
+        "P186_0719"
+      ],
+      "pog": [
+        "Pogu_1297"
+      ],
+      "tne": [
+        "Tneu_0421"
+      ],
+      "pyw": [
+        "PYWP30_00439"
+      ],
+      "cma": [
+        "Cmaq_0073"
+      ],
+      "tuz": [
+        "TUZN_0139",
+        "TUZN_0951"
+      ],
+      "ttn": [
+        "TTX_1101"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.2.1.76"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.2.1.76"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.2.1.76"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.2.1.76"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Sohling B",
+          "Gottschalk G"
+        ],
+        "title": "Purification and characterization of a coenzyme-A-dependent succinate-semialdehyde dehydrogenase from Clostridium kluyveri.",
+        "journal": "Eur. J. Biochem. 212 (1993) 121-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8444151]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Alber B",
+          "Olinger M",
+          "Rieder A",
+          "Kockelkorn D",
+          "Jobst B",
+          "Hugler M",
+          "Fuchs G"
+        ],
+        "title": "Malonyl-coenzyme A reductase in the modified 3-hydroxypropionate cycle for autotrophic carbon fixation in archaeal Metallosphaera and Sulfolobus spp.",
+        "journal": "J. Bacteriol. 188 (2006) 8551-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:17041055]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Berg IA",
+          "Kockelkorn D",
+          "Buckel W",
+          "Fuchs G"
+        ],
+        "title": "A 3-hydroxypropionate/4-hydroxybutyrate autotrophic carbon dioxide assimilation pathway in Archaea.",
+        "journal": "Science. 318 (2007) 1782-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:18079405]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

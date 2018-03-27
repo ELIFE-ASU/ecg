@@ -1,0 +1,387 @@
+[
+  {
+    "entry_id": "6.1.1.27",
+    "name": "O-phospho-L-serine---tRNA ligase",
+    "names": [
+      "O-phospho-L-serine---tRNA ligase",
+      "O-phosphoseryl-tRNA ligase",
+      "non-canonical O-phosphoseryl-tRNA synthetase",
+      "SepRS"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-oxygen bonds;",
+      "Ligases forming aminoacyl-tRNA and related compounds"
+    ],
+    "sysname": "O-phospho-L-serine:tRNACys ligase (AMP-forming)",
+    "reaction": "ATP + O-phospho-L-serine + tRNACys = AMP + diphosphate + O-phospho-L-seryl-tRNACys [RN:R08576]",
+    "all_reac": "R08576",
+    "iubmb_reactions": [
+      "R08576"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "O-phospho-L-serine [CPD:C01005]",
+      "tRNA(Cys) [CPD:C01639]"
+    ],
+    "products": [
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "O-phospho-L-seryl-tRNACys"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "In organisms like Archaeoglobus fulgidus lacking EC 6.1.1.16 (cysteine---tRNA ligase) for the direct Cys-tRNACys formation, Cys-tRNACys is produced by an indirect pathway, in which EC 6.1.1.27 (O-phosphoseryl-tRNA ligase) ligates O-phosphoserine to tRNACys, and EC 2.5.1.73 (O-phospho-L-seryl-tRNA: Cys-tRNA synthase) converts the produced O-phospho-L-seryl-tRNACys to Cys-tRNACys. The SepRS/SepCysS pathway is the sole route for cysteine biosynthesis in the organism [1]. Methanosarcina mazei can use both pathways, the direct route using EC 6.1.1.16 (cysteine---tRNA ligase) and the indirect pathway with EC 6.1.1.27 and EC 2.5.1.73 (O-phospho-L-seryl-tRNA: Cys-tRNA synthase) [2].",
+    "pathways": {
+      "ec00970": "Aminoacyl-tRNA biosynthesis"
+    },
+    "orthologs": {
+      "K07587": "O-phosphoseryl-tRNA synthetase"
+    },
+    "genes": {
+      "mja": [
+        "MJ_1660"
+      ],
+      "mfe": [
+        "Mefer_0735"
+      ],
+      "mvu": [
+        "Metvu_1155"
+      ],
+      "mfs": [
+        "MFS40622_0592"
+      ],
+      "mif": [
+        "Metin_0235"
+      ],
+      "mjh": [
+        "JH146_1468"
+      ],
+      "mig": [
+        "Metig_1346"
+      ],
+      "mmp": [
+        "MMP0688"
+      ],
+      "mmq": [
+        "MmarC5_0888"
+      ],
+      "mmx": [
+        "MmarC6_0196"
+      ],
+      "mmz": [
+        "MmarC7_1715"
+      ],
+      "mmd": [
+        "GYY_02815"
+      ],
+      "mmak": [
+        "MMKA1_07400"
+      ],
+      "mmao": [
+        "MMOS7_07340"
+      ],
+      "mae": [
+        "Maeo_1060"
+      ],
+      "mvn": [
+        "Mevan_1570"
+      ],
+      "mvo": [
+        "Mvol_0433"
+      ],
+      "mok": [
+        "Metok_0981"
+      ],
+      "mac": [
+        "MA_0090"
+      ],
+      "mba": [
+        "Mbar_A1204"
+      ],
+      "mby": [
+        "MSBRM_3441"
+      ],
+      "mbw": [
+        "MSBRW_3520"
+      ],
+      "mbar": [
+        "MSBR2_3396"
+      ],
+      "mbak": [
+        "MSBR3_3408"
+      ],
+      "mma": [
+        "MM_1383"
+      ],
+      "mmaz": [
+        "MmTuc01_1435"
+      ],
+      "mmj": [
+        "MSMAS_3279"
+      ],
+      "mmac": [
+        "MSMAC_3298"
+      ],
+      "mvc": [
+        "MSVAZ_3488"
+      ],
+      "mek": [
+        "MSKOL_3456"
+      ],
+      "mls": [
+        "MSLAZ_3154"
+      ],
+      "metm": [
+        "MSMTP_3173"
+      ],
+      "mef": [
+        "MSWH1_3131"
+      ],
+      "meq": [
+        "MSWHS_3343"
+      ],
+      "msj": [
+        "MSSAC_0069"
+      ],
+      "msz": [
+        "MSSIH_0062"
+      ],
+      "msw": [
+        "MSSIT_0062"
+      ],
+      "mthe": [
+        "MSTHC_1401"
+      ],
+      "mthr": [
+        "MSTHT_1883"
+      ],
+      "mhor": [
+        "MSHOH_4028"
+      ],
+      "mbu": [
+        "Mbur_0923"
+      ],
+      "mmet": [
+        "MCMEM_1431"
+      ],
+      "mmh": [
+        "Mmah_0685"
+      ],
+      "mhaz": [
+        "BHR79_10180"
+      ],
+      "mev": [
+        "Metev_1721"
+      ],
+      "mzh": [
+        "Mzhil_0247"
+      ],
+      "mpy": [
+        "Mpsy_1453"
+      ],
+      "mhz": [
+        "Metho_0248"
+      ],
+      "mtp": [
+        "Mthe_0363"
+      ],
+      "mcj": [
+        "MCON_3135"
+      ],
+      "mhi": [
+        "Mhar_0928"
+      ],
+      "mhu": [
+        "Mhun_2839"
+      ],
+      "mla": [
+        "Mlab_0537"
+      ],
+      "mem": [
+        "Memar_2215"
+      ],
+      "mbg": [
+        "BN140_1447"
+      ],
+      "mema": [
+        "MMAB1_1853"
+      ],
+      "mpi": [
+        "Mpet_0614"
+      ],
+      "mbn": [
+        "Mboo_0273"
+      ],
+      "mfo": [
+        "Metfor_2843"
+      ],
+      "mpl": [
+        "Mpal_0290"
+      ],
+      "mpd": [
+        "MCP_1457"
+      ],
+      "mez": [
+        "Mtc_1161"
+      ],
+      "rci": [
+        "RRC273"
+      ],
+      "mth": [
+        "MTH_1501"
+      ],
+      "mmg": [
+        "MTBMA_c00860"
+      ],
+      "metc": [
+        "MTCT_1365"
+      ],
+      "mwo": [
+        "MWSIV6_0042"
+      ],
+      "mel": [
+        "Metbo_0044"
+      ],
+      "mew": [
+        "MSWAN_0057"
+      ],
+      "meth": [
+        "MBMB1_0036"
+      ],
+      "mfc": [
+        "BRM9_0091"
+      ],
+      "mfi": [
+        "DSM1535_1409"
+      ],
+      "mcub": [
+        "MCBB_0052"
+      ],
+      "mfv": [
+        "Mfer_0342"
+      ],
+      "mka": [
+        "MK0439"
+      ],
+      "afu": [
+        "AF_0110"
+      ],
+      "afg": [
+        "AFULGI_00001070"
+      ],
+      "apo": [
+        "Arcpr_1311"
+      ],
+      "ave": [
+        "Arcve_1107"
+      ],
+      "ast": [
+        "Asulf_01133"
+      ],
+      "fpl": [
+        "Ferp_0952"
+      ],
+      "gac": [
+        "GACE_0149"
+      ],
+      "gah": [
+        "GAH_00998"
+      ],
+      "barb": [
+        "AOA66_0046"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.1.1.27"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.1.1.27"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.1.1.27"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.1.1.27"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Fukunaga R",
+          "Yokoyama S"
+        ],
+        "title": "Structural insights into the first step of RNA-dependent cysteine biosynthesis in archaea.",
+        "journal": "Nat. Struct. Mol. Biol. 14 (2007) 272-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:17351629]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hauenstein SI",
+          "Perona JJ"
+        ],
+        "title": "Redundant synthesis of cysteinyl-tRNACys in Methanosarcina mazei.",
+        "journal": "J. Biol. Chem. 283 (2008) 22007-17.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:18559341]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

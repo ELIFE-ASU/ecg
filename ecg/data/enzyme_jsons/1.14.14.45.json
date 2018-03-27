@@ -1,0 +1,208 @@
+[
+  {
+    "entry_id": "1.14.14.45",
+    "name": "aromatic aldoxime N-monooxygenase",
+    "names": [
+      "aromatic aldoxime N-monooxygenase",
+      "CYP83B1 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "(E)-indol-3-ylacetaldoxime,[reduced NADPH---hemoprotein reductase],glutathione:oxygen oxidoreductase (oxime-hydroxylating)",
+    "reaction": "(1) (E)-indol-3-ylacetaldehyde oxime + [reduced NADPH---hemoprotein reductase] + glutathione + O2 = S-[(E)-N-hydroxy(indol-3-yl)acetimidoyl]-L-glutathione + [oxidized NADPH---hemoprotein reductase] + 2 H2O (overall reaction) [RN:R11734]; (1a) (E)-indol-3-ylacetaldehyde oxime + [reduced NADPH---hemoprotein reductase] + O2 = 1-(1H-indol-3-yl)-2-aci-nitroethane + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R11735]; (1b) 1-(1H-indol-3-yl)-2-aci-nitroethane + glutathione = S-[(E)-N-hydroxy(indol-3-yl)acetimidoyl]-L-glutathione + H2O (spontaneous) [RN:R11736]; (2) (E)-phenylacetaldehyde oxime + [reduced NADPH---hemoprotein reductase] + glutathione + O2 = S-[(Z)-N-hydroxy(phenyl)acetimidoyl]-L-glutathione + [oxidized NADPH---hemoprotein reductase] + 2 H2O (overall reaction) [RN:R11737]; (2a) (E)-phenylacetaldehyde oxime + [reduced NADPH---hemoprotein reductase] + O2 = 1-aci-nitro-2-phenylethane + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R11738]; (2b) 1-aci-nitro-2-phenylethane + glutathione = S-[(Z)-N-hydroxy(phenyl)acetimidoyl]-L-glutathione + H2O (spontaneous) [RN:R11739]",
+    "all_reac": "R11734 R11735 R11736 R11737 R11738 R11739; (other) R08168 R08607 R10670 R10672",
+    "iubmb_reactions": [
+      "R11734 R11735 R11736 R11737 R11738 R11739"
+    ],
+    "kegg_reactions": [
+      "R08168 R08607 R10670 R10672"
+    ],
+    "substrates": [
+      "(E)-indol-3-ylacetaldehyde oxime",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "glutathione [CPD:C00051]",
+      "O2 [CPD:C00007]",
+      "1-(1H-indol-3-yl)-2-aci-nitroethane [CPD:C17204]",
+      "(E)-phenylacetaldehyde oxime [CPD:C19714]",
+      "1-aci-nitro-2-phenylethane [CPD:C21623]"
+    ],
+    "products": [
+      "S-[(E)-N-hydroxy(indol-3-yl)acetimidoyl]-L-glutathione [CPD:C21620]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]",
+      "1-(1H-indol-3-yl)-2-aci-nitroethane [CPD:C17204]",
+      "S-[(Z)-N-hydroxy(phenyl)acetimidoyl]-L-glutathione [CPD:C21622]",
+      "1-aci-nitro-2-phenylethane [CPD:C21623]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytochrome P-450 (heme thiolate) enzyme is involved in the biosynthesis of glucosinolates in plants. The enzyme catalyses the N-hydroxylation of aromatic aldoximes derived from L-tryptophan, L-phenylalanine, and L-tyrosine, forming an aci-nitro intermediate that reacts non-enzymically with glutathione to produce an N-alkyl-thiohydroximate adduct, the committed precursor of glucosinolates. In the absence of glutathione, the enzyme is suicidal, probably due to interaction of the reactive aci-nitro compound with catalytic residues in the active site.",
+    "pathways": {
+      "ec00380": "Tryptophan metabolism",
+      "ec00966": "Glucosinolate biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K11818": "aromatic aldoxime N-monooxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT4G31500"
+      ],
+      "aly": [
+        "ARALYDRAFT_913321"
+      ],
+      "crb": [
+        "CARUB_v10007516mg"
+      ],
+      "csat": [
+        "104721689",
+        "104730102"
+      ],
+      "eus": [
+        "EUTSA_v10004064mg"
+      ],
+      "brp": [
+        "103833295"
+      ],
+      "bna": [
+        "106361266",
+        "106372082"
+      ],
+      "boe": [
+        "106312180"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.45"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.45"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.45"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.45"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Bak S",
+          "Tax FE",
+          "Feldmann KA",
+          "Galbraith DW",
+          "Feyereisen R"
+        ],
+        "title": "CYP83B1, a cytochrome P450 at the metabolic branch point in auxin and indole glucosinolate biosynthesis in Arabidopsis.",
+        "journal": "Plant. Cell. 13 (2001) 101-11.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11158532]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Naur P",
+          "Petersen BL",
+          "Mikkelsen MD",
+          "Bak S",
+          "Rasmussen H",
+          "Olsen CE",
+          "Halkier BA."
+        ],
+        "title": "CYP83A1 and CYP83B1, two nonredundant cytochrome P450 enzymes metabolizing oximes in the biosynthesis of glucosinolates in Arabidopsis.",
+        "journal": "Plant. Physiol. 133 (2003) 63-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12970475]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Geu-Flores F",
+          "Moldrup ME",
+          "Bottcher C",
+          "Olsen CE",
+          "Scheel D",
+          "Halkier BA"
+        ],
+        "title": "Cytosolic gamma-glutamyl peptidases process glutathione conjugates in the biosynthesis of glucosinolates and camalexin in Arabidopsis.",
+        "journal": "Plant. Cell. 23 (2011) 2456-69.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:21712415]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

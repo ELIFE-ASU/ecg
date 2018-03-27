@@ -1,0 +1,358 @@
+[
+  {
+    "entry_id": "4.2.1.140",
+    "name": "gluconate/galactonate dehydratase",
+    "names": [
+      "gluconate/galactonate dehydratase",
+      "gluconate dehydratase (ambiguous)",
+      "Sso3198 (gene name)",
+      "Pto0485 (gene name)"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-oxygen lyases;",
+      "Hydro-lyases"
+    ],
+    "sysname": "D-gluconate/D-galactonate hydro-lyase",
+    "reaction": "(1) D-gluconate = 2-dehydro-3-deoxy-D-gluconate + H2O [RN:R01538]; (2) D-galactonate = 2-dehydro-3-deoxy-D-galactonate + H2O [RN:R03033]",
+    "all_reac": "R01538 R03033",
+    "iubmb_reactions": [
+      "R01538 R03033"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "D-gluconate [CPD:C00257]",
+      "D-galactonate [CPD:C00880]"
+    ],
+    "products": [
+      "2-dehydro-3-deoxy-D-gluconate [CPD:C00204]",
+      "H2O [CPD:C00001]",
+      "2-dehydro-3-deoxy-D-galactonate [CPD:C01216]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is involved in glucose and galactose catabolism via the nonphosphorylative variant of the Entner-Doudoroff pathway in Picrophilus torridus [3] and via the branched variant of the Entner-Doudoroff pathway in Sulfolobus solfataricus [1,2]. In vitro it utilizes D-gluconate with 6-10 fold higher catalytic efficiency than D-galactonate [1,3]. It requires Mg2+ for activity [1,2]. cf. EC 4.2.1.6, galactonate dehydratase, and EC 4.2.1.39, gluconate dehydratase.",
+    "pathways": {
+      "ec00030": "Pentose phosphate pathway",
+      "ec00052": "Galactose metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K05308": "gluconate/galactonate dehydratase"
+    },
+    "genes": {
+      "hal": [
+        "VNG_0442G"
+      ],
+      "hsl": [
+        "OE_1664R"
+      ],
+      "hhb": [
+        "Hhub_1548"
+      ],
+      "hje": [
+        "HacjB3_13980"
+      ],
+      "hma": [
+        "rrnAC0575"
+      ],
+      "hhi": [
+        "HAH_1276"
+      ],
+      "hhn": [
+        "HISP_06530"
+      ],
+      "hab": [
+        "SG26_14175"
+      ],
+      "nmo": [
+        "Nmlp_1390"
+      ],
+      "hmu": [
+        "Hmuk_2254"
+      ],
+      "hwa": [
+        "HQ_2412A"
+      ],
+      "hwc": [
+        "Hqrw_2676"
+      ],
+      "hvo": [
+        "HVO_1488"
+      ],
+      "hme": [
+        "HFX_1553"
+      ],
+      "hgi": [
+        "ABY42_07250"
+      ],
+      "hbo": [
+        "Hbor_17420"
+      ],
+      "hla": [
+        "Hlac_1300"
+      ],
+      "htu": [
+        "Htur_2654"
+      ],
+      "nmg": [
+        "Nmag_1145"
+      ],
+      "hxa": [
+        "Halxa_4119",
+        "Halxa_4131"
+      ],
+      "nat": [
+        "NJ7G_1251"
+      ],
+      "npe": [
+        "Natpe_2057"
+      ],
+      "nge": [
+        "Natgr_0070"
+      ],
+      "hru": [
+        "Halru_1854"
+      ],
+      "nou": [
+        "Natoc_2547"
+      ],
+      "sali": [
+        "L593_03520"
+      ],
+      "hlr": [
+        "HALLA_06625"
+      ],
+      "tvo": [
+        "TVG0179275"
+      ],
+      "pto": [
+        "PTO0485"
+      ],
+      "fac": [
+        "FACI_IFERC01G0930"
+      ],
+      "sso": [
+        "SSO3198"
+      ],
+      "sol": [
+        "Ssol_0935"
+      ],
+      "ssoa": [
+        "SULA_0968"
+      ],
+      "ssol": [
+        "SULB_0970"
+      ],
+      "ssof": [
+        "SULC_0969"
+      ],
+      "sto": [
+        "STK_23660"
+      ],
+      "sai": [
+        "Saci_0885"
+      ],
+      "sacn": [
+        "SacN8_04295"
+      ],
+      "sacr": [
+        "SacRon12I_04285"
+      ],
+      "sacs": [
+        "SUSAZ_04035"
+      ],
+      "sis": [
+        "LS215_2325"
+      ],
+      "sia": [
+        "M1425_2162"
+      ],
+      "sim": [
+        "M1627_2242"
+      ],
+      "sid": [
+        "M164_2165"
+      ],
+      "siy": [
+        "YG5714_2288"
+      ],
+      "sin": [
+        "YN1551_0627"
+      ],
+      "sii": [
+        "LD85_2428"
+      ],
+      "sih": [
+        "SiH_2107"
+      ],
+      "sir": [
+        "SiRe_2039"
+      ],
+      "sic": [
+        "SiL_2014"
+      ],
+      "sula": [
+        "BFU36_06085"
+      ],
+      "mse": [
+        "Msed_1303"
+      ],
+      "mcn": [
+        "Mcup_0900"
+      ],
+      "aho": [
+        "Ahos_0261"
+      ],
+      "pyr": [
+        "P186_1932"
+      ],
+      "cma": [
+        "Cmaq_0154"
+      ],
+      "tuz": [
+        "TUZN_0958"
+      ],
+      "ttn": [
+        "TTX_1156"
+      ],
+      "vdi": [
+        "Vdis_1648"
+      ],
+      "vmo": [
+        "VMUT_2313"
+      ],
+      "hah": [
+        "Halar_3730"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.2.1.140"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.2.1.140"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.2.1.140"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.2.1.140"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Lamble HJ",
+          "Milburn CC",
+          "Taylor GL",
+          "Hough DW",
+          "Danson MJ"
+        ],
+        "title": "Gluconate dehydratase from the promiscuous Entner-Doudoroff pathway in Sulfolobus solfataricus.",
+        "journal": "FEBS. Lett. 576 (2004) 133-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:15474024]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ahmed H",
+          "Ettema TJ",
+          "Tjaden B",
+          "Geerling AC",
+          "van der Oost J",
+          "Siebers B"
+        ],
+        "title": "The semi-phosphorylative Entner-Doudoroff pathway in hyperthermophilic archaea: a re-evaluation.",
+        "journal": "Biochem. J. 390 (2005) 529-40.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:15869466]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Reher M",
+          "Fuhrer T",
+          "Bott M",
+          "Schonheit P"
+        ],
+        "title": "The nonphosphorylative Entner-Doudoroff pathway in the thermoacidophilic euryarchaeon Picrophilus torridus involves a novel 2-keto-3-deoxygluconate- specific aldolase.",
+        "journal": "J. Bacteriol. 192 (2010) 964-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:20023024]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,444 @@
+[
+  {
+    "entry_id": "1.4.1.18",
+    "name": "lysine 6-dehydrogenase",
+    "names": [
+      "lysine 6-dehydrogenase",
+      "L-lysine epsilon-dehydrogenase",
+      "L-lysine 6-dehydrogenase",
+      "LysDH"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH2 group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "L-lysine:NAD+ 6-oxidoreductase (deaminating)",
+    "reaction": "L-lysine + NAD+ = (S)-2,3,4,5-tetrahydropyridine-2-carboxylate + NADH + H+ + NH3 (overall reaction) [RN:R10054]; (1a) L-lysine + NAD+ + H2O = (S)-2-amino-6-oxohexanoate + NADH + H+ + NH3 [RN:R00446]; (1b) (S)-2-amino-6-oxohexanoate = (S)-2,3,4,5-tetrahydropyridine-2-carboxylate + H2O (spontaneous) [RN:R02317]",
+    "all_reac": "R00446 R02317 R10054",
+    "iubmb_reactions": [
+      "R00446 R02317 R10054"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-lysine [CPD:C00047]",
+      "NAD+ [CPD:C00003]",
+      "H2O [CPD:C00001]",
+      "(S)-2-amino-6-oxohexanoate [CPD:C04076]"
+    ],
+    "products": [
+      "(S)-2,3,4,5-tetrahydropyridine-2-carboxylate [CPD:C00450]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "NH3 [CPD:C00014]",
+      "(S)-2-amino-6-oxohexanoate [CPD:C04076]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is highly specific for L-lysine as substrate, although S-(2-aminoethyl)-L-cysteine can act as a substrate, but more slowly. While the enzyme from Agrobacterium tumefaciens can use only NAD+, that from the thermophilic bacterium Geobacillus stearothermophilus can also use NADP+, but more slowly [1,4].",
+    "pathways": {
+      "ec00960": "Tropane, piperidine and pyridine alkaloid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K19064": "lysine 6-dehydrogenase"
+    },
+    "genes": {
+      "fgu": [
+        "SD28_04625"
+      ],
+      "pkt": [
+        "AT984_07930"
+      ],
+      "mln": [
+        "A9174_16015"
+      ],
+      "mci": [
+        "Mesci_2742"
+      ],
+      "mop": [
+        "Mesop_3122"
+      ],
+      "mamo": [
+        "A6B35_14070",
+        "A6B35_32530"
+      ],
+      "mesw": [
+        "A9K65_014995"
+      ],
+      "six": [
+        "BSY16_4898"
+      ],
+      "rlg": [
+        "Rleg_1836"
+      ],
+      "baco": [
+        "OXB_1319"
+      ],
+      "bsm": [
+        "BSM4216_3155"
+      ],
+      "bon": [
+        "A361_14525"
+      ],
+      "oih": [
+        "OB0862"
+      ],
+      "gka": [
+        "GK0375"
+      ],
+      "gte": [
+        "GTCCBUS3UF5_4780"
+      ],
+      "gtk": [
+        "GT3570_01870"
+      ],
+      "gtn": [
+        "GTNG_0350"
+      ],
+      "gwc": [
+        "GWCH70_0384"
+      ],
+      "gyc": [
+        "GYMC61_1254"
+      ],
+      "gya": [
+        "GYMC52_0376"
+      ],
+      "gct": [
+        "GC56T3_0428"
+      ],
+      "gmc": [
+        "GY4MC1_3402"
+      ],
+      "ggh": [
+        "GHH_c03960"
+      ],
+      "gjf": [
+        "M493_02215"
+      ],
+      "gea": [
+        "GARCT_00423"
+      ],
+      "gel": [
+        "IB49_12375"
+      ],
+      "gse": [
+        "GT50_11655"
+      ],
+      "gsr": [
+        "GS3922_13755"
+      ],
+      "gej": [
+        "A0V43_17680"
+      ],
+      "gth": [
+        "Geoth_3493"
+      ],
+      "ptl": [
+        "AOT13_05410"
+      ],
+      "afl": [
+        "Aflv_1247"
+      ],
+      "agn": [
+        "AFK25_08275"
+      ],
+      "lsp": [
+        "Bsph_0857"
+      ],
+      "lgy": [
+        "T479_02020"
+      ],
+      "lfu": [
+        "HR49_21770"
+      ],
+      "hhd": [
+        "HBHAL_1906"
+      ],
+      "hmn": [
+        "HM131_13195"
+      ],
+      "vir": [
+        "X953_03825"
+      ],
+      "vhl": [
+        "BME96_03055"
+      ],
+      "vig": [
+        "BKP57_05405",
+        "BKP57_15160"
+      ],
+      "vil": [
+        "CFK37_02300"
+      ],
+      "vne": [
+        "CFK40_04680",
+        "CFK40_18805"
+      ],
+      "lao": [
+        "AOX59_10485"
+      ],
+      "siv": [
+        "SSIL_3578"
+      ],
+      "ssil": [
+        "SOLI23_00485"
+      ],
+      "sob": [
+        "CSE16_01715"
+      ],
+      "pln": [
+        "Plano_2504"
+      ],
+      "pku": [
+        "AUO94_03095",
+        "AUO94_15855"
+      ],
+      "prt": [
+        "AUC31_13560"
+      ],
+      "pll": [
+        "I858_006635",
+        "I858_010255"
+      ],
+      "pana": [
+        "BBH88_01785",
+        "BBH88_06375"
+      ],
+      "pdg": [
+        "BCM40_02670"
+      ],
+      "phc": [
+        "BBI08_09770",
+        "BBI08_13720"
+      ],
+      "ppla": [
+        "BBI15_08745"
+      ],
+      "pfae": [
+        "AJGP001_01250",
+        "AJGP001_14455"
+      ],
+      "kur": [
+        "ASO14_2660"
+      ],
+      "spsy": [
+        "AZE41_10380",
+        "AZE41_20080"
+      ],
+      "spor": [
+        "SporoP33_11020"
+      ],
+      "spop": [
+        "SporoP37_11425"
+      ],
+      "sure": [
+        "SporoP32a_11690"
+      ],
+      "rst": [
+        "ATY39_16195"
+      ],
+      "fgi": [
+        "OP10G_1322"
+      ],
+      "tli": [
+        "Tlie_0157"
+      ],
+      "cpor": [
+        "BED41_04400",
+        "BED41_10805",
+        "BED41_14370",
+        "BED41_14695"
+      ],
+      "gph": [
+        "GEMMAAP_03155"
+      ],
+      "gba": [
+        "J421_2400"
+      ],
+      "rmg": [
+        "Rhom172_2625"
+      ],
+      "rbar": [
+        "AWN76_009615"
+      ],
+      "mhi": [
+        "Mhar_0275"
+      ],
+      "csu": [
+        "CSUB_C1054"
+      ],
+      "kcr": [
+        "Kcr_0256"
+      ],
+      "barc": [
+        "AOA65_1898"
+      ],
+      "barb": [
+        "AOA66_0413"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.4.1.18"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.4.1.18"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.4.1.18"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.4.1.18"
+      ],
+      "CAS": [
+        "89400-30-6"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Misono H",
+          "Nagasaki S."
+        ],
+        "title": "Occurrence of L-lysine epsilon-dehydrogenase in Agrobacterium tumefaciens.",
+        "journal": "J. Bacteriol. 150 (1982) 398-401.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6801024]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Misono",
+          "H.",
+          "Uehigashi",
+          "H.",
+          "Morimoto",
+          "E. and Nagasaki",
+          "S."
+        ],
+        "title": "Purification and properties of L-lysine epsilon-dehydrogenase from Agrobacterium tumefaciens.",
+        "journal": "Agric. Biol. Chem. 49 (1985) 2253-2255.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Misono H",
+          "Hashimoto H",
+          "Uehigashi H",
+          "Nagata S",
+          "Nagasaki S."
+        ],
+        "title": "Properties of L-lysine epsilon-dehydrogenase from Agrobacterium tumefaciens.",
+        "journal": "J. Biochem. (Tokyo). 105 (1989) 1002-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:2768207]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Heydari M",
+          "Ohshima T",
+          "Nunoura-Kominato N",
+          "Sakuraba H."
+        ],
+        "title": "Highly stable L-lysine 6-dehydrogenase from the thermophile Geobacillus stearothermophilus isolated from a Japanese hot spring: characterization, gene cloning and sequencing, and expression.",
+        "journal": "Appl. Environ. Microbiol. 70 (2004) 937-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:14766574]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

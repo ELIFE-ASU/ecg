@@ -1,0 +1,595 @@
+[
+  {
+    "entry_id": "2.4.99.6",
+    "name": "N-acetyllactosaminide alpha-2,3-sialyltransferase",
+    "names": [
+      "N-acetyllactosaminide alpha-2,3-sialyltransferase",
+      "cytidine monophosphoacetylneuraminate-beta-galactosyl(1->4)acetylglucosaminide alpha2->3-sialyltransferase",
+      "alpha2->3 sialyltransferase (ambiguous)",
+      "SiaT (ambiguous)",
+      "CMP-N-acetylneuraminate:beta-D-galactosyl-1,4-N-acetyl-D-glucosaminyl-glycoprotein alpha-2,3-N-acetylneuraminyltransferase",
+      "neolactotetraosylceramide alpha-2,3-sialyltransferase",
+      "CMP-N-acetylneuraminate:beta-D-galactosyl-(1->4)-N-acetyl-D-glucosaminyl-glycoprotein alpha-(2->3)-N-acetylneuraminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Transferring other glycosyl groups"
+    ],
+    "sysname": "CMP-N-acetyl-beta-neuraminate:beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-R (2->3)-N-acetyl-alpha-neuraminyltransferase (configuration-inverting)",
+    "reaction": "CMP-N-acetyl-beta-neuraminate + beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-R = CMP + N-acetyl-alpha-neuraminyl-(2->3)-beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-R [RN:R04596 R09297]",
+    "all_reac": "R04596 R09297(G); (other) R04656 R06026(G) R06037(G) R06153(G)",
+    "iubmb_reactions": [
+      "R04596 R09297(G)"
+    ],
+    "kegg_reactions": [
+      "R04656 R06026(G) R06037(G) R06153(G)"
+    ],
+    "substrates": [
+      "CMP-N-acetyl-beta-neuraminate [CPD:C00128]",
+      "beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-R [CPD:C00694]"
+    ],
+    "products": [
+      "CMP [CPD:C00055]",
+      "N-acetyl-alpha-neuraminyl-(2->3)-beta-D-galactosyl-(1->4)-N-acetyl-beta-D-glucosaminyl-R"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme recognizes the sequence beta-D-galactosyl-(1->4)-N-acetyl-D-glucosaminyl (known as type 2 histo-blood group precursor disaccharide) in non-reducing termini of glycan moieties in glycoproteins and glycolipids. The enzyme from chicken brain was shown to act on neolactotetraosylceramide, producing ganglioside LM1 [2].",
+    "pathways": {
+      "ec00513": "Various types of N-glycan biosynthesis",
+      "ec00514": "Other types of O-glycan biosynthesis",
+      "ec00515": "Mannose type O-glycan biosynthesis",
+      "ec00533": "Glycosaminoglycan biosynthesis - keratan sulfate",
+      "ec00601": "Glycosphingolipid biosynthesis - lacto and neolacto series",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00781": "neolactotetraosylceramide alpha-2,3-sialyltransferase (sialyltransferase 6)",
+      "K03792": "neolactotetraosylceramide alpha-2,3-sialyltransferase (sialyltransferase 10)"
+    },
+    "genes": {
+      "hsa": [
+        "10402",
+        "6487"
+      ],
+      "ptr": [
+        "456832",
+        "460547"
+      ],
+      "pps": [
+        "100977718",
+        "100982060"
+      ],
+      "ggo": [
+        "101126091",
+        "101133620"
+      ],
+      "pon": [
+        "100171770",
+        "100441174",
+        "100459644"
+      ],
+      "nle": [
+        "100583585",
+        "100596717"
+      ],
+      "mcc": [
+        "699096",
+        "703599"
+      ],
+      "mcf": [
+        "102115716",
+        "102124772"
+      ],
+      "csab": [
+        "103224957",
+        "103228470"
+      ],
+      "rro": [
+        "104654524",
+        "104669039"
+      ],
+      "rbb": [
+        "108516678",
+        "108535692"
+      ],
+      "cjc": [
+        "100389235",
+        "100411797"
+      ],
+      "sbq": [
+        "101030408",
+        "101041573"
+      ],
+      "mmu": [
+        "20441",
+        "54613"
+      ],
+      "rno": [
+        "304023",
+        "64445"
+      ],
+      "cge": [
+        "100689187",
+        "100771326"
+      ],
+      "ngi": [
+        "103732633",
+        "103743864"
+      ],
+      "hgl": [
+        "101706310",
+        "101716398"
+      ],
+      "ccan": [
+        "109681562",
+        "109681564",
+        "109696030"
+      ],
+      "ocu": [
+        "100339165",
+        "100353106"
+      ],
+      "tup": [
+        "102481523",
+        "102486753"
+      ],
+      "cfa": [
+        "478535",
+        "610736"
+      ],
+      "aml": [
+        "100472631",
+        "100481119"
+      ],
+      "umr": [
+        "103670807",
+        "103673244"
+      ],
+      "oro": [
+        "101366681",
+        "101383996"
+      ],
+      "fca": [
+        "101081911",
+        "101091552"
+      ],
+      "ptg": [
+        "102952023",
+        "102966623"
+      ],
+      "aju": [
+        "106970220",
+        "106982524"
+      ],
+      "bta": [
+        "444859",
+        "444860"
+      ],
+      "bom": [
+        "102265994",
+        "102284552"
+      ],
+      "biu": [
+        "109556395",
+        "109564929"
+      ],
+      "phd": [
+        "102337048",
+        "102343639"
+      ],
+      "chx": [
+        "102168794",
+        "102175162"
+      ],
+      "oas": [
+        "101106812",
+        "101112269"
+      ],
+      "ssc": [
+        "100739492",
+        "396619"
+      ],
+      "cfr": [
+        "102516778",
+        "102517093"
+      ],
+      "cdk": [
+        "105087739",
+        "105090902"
+      ],
+      "bacu": [
+        "103001584",
+        "103003034"
+      ],
+      "lve": [
+        "103078993",
+        "103083644"
+      ],
+      "ecb": [
+        "100053104",
+        "100062218"
+      ],
+      "epz": [
+        "103561946",
+        "103567339"
+      ],
+      "eai": [
+        "106824252",
+        "106847915"
+      ],
+      "myb": [
+        "102245915",
+        "102260204"
+      ],
+      "myd": [
+        "102754272",
+        "102773348"
+      ],
+      "hai": [
+        "109377051",
+        "109383404"
+      ],
+      "rss": [
+        "109457885",
+        "109460793"
+      ],
+      "pale": [
+        "102883140",
+        "102889744"
+      ],
+      "lav": [
+        "100668469",
+        "100672752"
+      ],
+      "tmu": [
+        "101341714",
+        "101360821"
+      ],
+      "mdo": [
+        "100017812",
+        "100025401"
+      ],
+      "shr": [
+        "100917951",
+        "100923762"
+      ],
+      "oaa": [
+        "100078221",
+        "100082119"
+      ],
+      "gga": [
+        "395138",
+        "424572"
+      ],
+      "mgp": [
+        "100541741",
+        "100543009"
+      ],
+      "cjo": [
+        "107317545",
+        "107320596"
+      ],
+      "apla": [
+        "101802079",
+        "101804175"
+      ],
+      "acyg": [
+        "106033989",
+        "106038338"
+      ],
+      "tgu": [
+        "100221242",
+        "100222736"
+      ],
+      "gfr": [
+        "102034732",
+        "102043783"
+      ],
+      "fab": [
+        "101807588",
+        "101815960"
+      ],
+      "phi": [
+        "102099818",
+        "102104267"
+      ],
+      "pmaj": [
+        "107208043",
+        "107210567"
+      ],
+      "ccw": [
+        "104687090",
+        "104695266"
+      ],
+      "fpg": [
+        "101915399",
+        "101917466"
+      ],
+      "fch": [
+        "102055195",
+        "102060181"
+      ],
+      "clv": [
+        "102083691",
+        "102089431"
+      ],
+      "egz": [
+        "104125511",
+        "104126021"
+      ],
+      "aam": [
+        "106484925",
+        "106490642"
+      ],
+      "asn": [
+        "102377903",
+        "102387225"
+      ],
+      "amj": [
+        "102570018",
+        "102570899"
+      ],
+      "pss": [
+        "102458402",
+        "102462369"
+      ],
+      "cmy": [
+        "102937505",
+        "102947450"
+      ],
+      "cpic": [
+        "101932642",
+        "101943704"
+      ],
+      "acs": [
+        "100556902",
+        "100557291"
+      ],
+      "pvt": [
+        "110073793",
+        "110074621"
+      ],
+      "pbi": [
+        "103048808",
+        "103051166"
+      ],
+      "gja": [
+        "107110020",
+        "107120284"
+      ],
+      "xla": [
+        "100462908",
+        "108709199",
+        "108715547",
+        "398745",
+        "398746"
+      ],
+      "xtr": [
+        "402789",
+        "402790"
+      ],
+      "npr": [
+        "108789048",
+        "108796808",
+        "108797255"
+      ],
+      "dre": [
+        "407659"
+      ],
+      "srx": [
+        "107709084",
+        "107743372",
+        "107746606",
+        "107747401"
+      ],
+      "sanh": [
+        "107672677",
+        "107684930",
+        "107686779",
+        "107700542"
+      ],
+      "sgh": [
+        "107551715",
+        "107554887",
+        "107564385",
+        "107582317"
+      ],
+      "ccar": [
+        "109051869",
+        "109095058",
+        "109095060",
+        "109103314",
+        "109112676",
+        "109112950"
+      ],
+      "ipu": [
+        "108271839",
+        "108280530"
+      ],
+      "amex": [
+        "103026988",
+        "103044556"
+      ],
+      "tru": [
+        "445973"
+      ],
+      "tng": [
+        "GSTEN00013406G001"
+      ],
+      "lco": [
+        "104920950",
+        "104940288"
+      ],
+      "ncc": [
+        "104948573",
+        "104964780"
+      ],
+      "mze": [
+        "101484929"
+      ],
+      "ola": [
+        "100049527"
+      ],
+      "xma": [
+        "102237009"
+      ],
+      "pret": [
+        "103479140"
+      ],
+      "csem": [
+        "103395857",
+        "103399833"
+      ],
+      "lcf": [
+        "108873886",
+        "108873888",
+        "108883688",
+        "108896964",
+        "108896965",
+        "108896969"
+      ],
+      "hcq": [
+        "109518900"
+      ],
+      "bpec": [
+        "110174824"
+      ],
+      "sasa": [
+        "106560340",
+        "106568968",
+        "106568969",
+        "106584184",
+        "106598945"
+      ],
+      "els": [
+        "105011888",
+        "105011892",
+        "105024121"
+      ],
+      "sfm": [
+        "108923813"
+      ],
+      "lcm": [
+        "102351151",
+        "102356485"
+      ],
+      "cmk": [
+        "103174609",
+        "103180110"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_126485",
+        "BRAFLDRAFT_82755"
+      ],
+      "spu": [
+        "100893566",
+        "754196"
+      ],
+      "aplc": [
+        "110982962"
+      ],
+      "sko": [
+        "100371462",
+        "100376817",
+        "102802302",
+        "102802832",
+        "102805234"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.99.6"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.99.6"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.99.6"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.99.6"
+      ],
+      "CAS": [
+        "77537-85-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Van den Eijnden DH",
+          "Schiphorst WE."
+        ],
+        "title": "Detection of beta-galactosyl(1 leads to 4)N-acetylglucosaminide alpha(2 leads to 3)-sialyltransferase activity in fetal calf liver and other tissues.",
+        "journal": "J. Biol. Chem. 256 (1981) 3159-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:7204397]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Basu M",
+          "Basu S",
+          "Stoffyn A",
+          "Stoffyn P."
+        ],
+        "title": "Biosynthesis in vitro of sialyl(alpha 2-3)neolactotetraosylceramide by a sialyltransferase from embryonic chicken brain.",
+        "journal": "J. Biol. Chem. 257 (1982) 12765-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7130178]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

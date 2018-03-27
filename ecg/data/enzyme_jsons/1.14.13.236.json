@@ -1,0 +1,600 @@
+[
+  {
+    "entry_id": "1.14.13.236",
+    "name": "toluene 4-monooxygenase",
+    "names": [
+      "toluene 4-monooxygenase",
+      "TMO"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "toluene,NADH:oxygen oxidoreductase (4-hydroxylating)",
+    "reaction": "toluene + NADH + H+ + O2 = 4-methylphenol + NAD+ + H2O [RN:R05666]",
+    "all_reac": "R05666",
+    "iubmb_reactions": [
+      "R05666"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "toluene [CPD:C01455]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "4-methylphenol [CPD:C01468]",
+      "NAD+ [CPD:C00003]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This bacterial enzyme belongs to a family of soluble diiron hydroxylases that includes toluene-, benzene-, xylene- and methane monooxygenases, phenol hydroxylases, and alkene epoxidases. The enzyme comprises a four-component complex that includes a hydroxylase, NADH-ferredoxin oxidoreductase, a Rieske-type [2Fe-2S] ferredoxin, and an effector protein.",
+    "pathways": {
+      "ec00623": "Toluene degradation",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K15760": "toluene monooxygenase system protein A",
+      "K15761": "toluene monooxygenase system protein B",
+      "K15763": "toluene monooxygenase system protein D",
+      "K15764": "toluene monooxygenase system protein E"
+    },
+    "genes": {
+      "psd": [
+        "DSC_04385",
+        "DSC_04390",
+        "DSC_04400",
+        "DSC_04405"
+      ],
+      "msr": [
+        "AU15_20735",
+        "AU15_20740",
+        "AU15_20750",
+        "AU15_20755"
+      ],
+      "cza": [
+        "CYCME_2094",
+        "CYCME_2095",
+        "CYCME_2097",
+        "CYCME_2098"
+      ],
+      "tbn": [
+        "TBH_C0915",
+        "TBH_C0916",
+        "TBH_C0918",
+        "TBH_C0919"
+      ],
+      "vff": [
+        "VITFI_CDS2830",
+        "VITFI_CDS2831",
+        "VITFI_CDS2833",
+        "VITFI_CDS2834"
+      ],
+      "rpi": [
+        "Rpic_4632",
+        "Rpic_4633",
+        "Rpic_4635",
+        "Rpic_4636"
+      ],
+      "rpf": [
+        "Rpic12D_3556",
+        "Rpic12D_3557",
+        "Rpic12D_3559",
+        "Rpic12D_3560"
+      ],
+      "reu": [
+        "Reut_B5675",
+        "Reut_B5676",
+        "Reut_B5678",
+        "Reut_B5679"
+      ],
+      "cnc": [
+        "CNE_BB1p12320",
+        "CNE_BB1p12330",
+        "CNE_BB1p12350",
+        "CNE_BB1p12360"
+      ],
+      "rme": [
+        "Rmet_1312",
+        "Rmet_1313",
+        "Rmet_1315",
+        "Rmet_1316"
+      ],
+      "cti": [
+        "pRALTA_0461",
+        "pRALTA_0462",
+        "pRALTA_0465",
+        "pRALTA_0466"
+      ],
+      "bvi": [
+        "Bcep1808_7608"
+      ],
+      "bcon": [
+        "NL30_24535",
+        "NL30_24540",
+        "NL30_24550",
+        "NL30_24555"
+      ],
+      "bstl": [
+        "BBJ41_10535",
+        "BBJ41_10540",
+        "BBJ41_10550",
+        "BBJ41_10555"
+      ],
+      "bge": [
+        "BC1002_6838",
+        "BC1002_6839",
+        "BC1002_6841",
+        "BC1002_6845"
+      ],
+      "bpx": [
+        "BUPH_05041",
+        "BUPH_05042",
+        "BUPH_08274",
+        "BUPH_08478"
+      ],
+      "ppk": [
+        "U875_01855",
+        "U875_01860",
+        "U875_01870",
+        "U875_01875"
+      ],
+      "prb": [
+        "X636_07595",
+        "X636_07600",
+        "X636_07610",
+        "X636_07615"
+      ],
+      "bho": [
+        "D560_1528",
+        "D560_1529",
+        "D560_1530",
+        "D560_1531"
+      ],
+      "bhm": [
+        "D558_1519",
+        "D558_1520",
+        "D558_1521",
+        "D558_1522"
+      ],
+      "mpt": [
+        "Mpe_A0814",
+        "Mpe_A0815",
+        "Mpe_A0817",
+        "Mpe_A0818",
+        "Mpe_A2540",
+        "Mpe_A2542",
+        "Mpe_A2543"
+      ],
+      "rbu": [
+        "PG1C_06390",
+        "PG1C_06395",
+        "PG1C_06405",
+        "PG1C_06410",
+        "PG1C_06860",
+        "PG1C_06865",
+        "PG1C_06875",
+        "PG1C_06880"
+      ],
+      "dar": [
+        "Daro_3816",
+        "Daro_3817",
+        "Daro_3819",
+        "Daro_3820"
+      ],
+      "thk": [
+        "CCZ27_06370",
+        "CCZ27_06375",
+        "CCZ27_06385",
+        "CCZ27_06390"
+      ],
+      "llu": [
+        "AKJ09_01040",
+        "AKJ09_01043",
+        "AKJ09_01044"
+      ],
+      "bbt": [
+        "BBta_1594",
+        "BBta_1595",
+        "BBta_1597",
+        "BBta_1598"
+      ],
+      "aol": [
+        "S58_10630",
+        "S58_10640",
+        "S58_10660",
+        "S58_10670"
+      ],
+      "bro": [
+        "BRAD285_2998",
+        "BRAD285_2999",
+        "BRAD285_3001",
+        "BRAD285_3002"
+      ],
+      "xau": [
+        "Xaut_4857",
+        "Xaut_4858",
+        "Xaut_4860",
+        "Xaut_4861"
+      ],
+      "hmc": [
+        "HYPMC_2241",
+        "HYPMC_2242",
+        "HYPMC_2244",
+        "HYPMC_2245"
+      ],
+      "bts": [
+        "Btus_2065",
+        "Btus_2066",
+        "Btus_2068",
+        "Btus_2069"
+      ],
+      "say": [
+        "TPY_0635",
+        "TPY_0636",
+        "TPY_0638",
+        "TPY_0639"
+      ],
+      "sap": [
+        "Sulac_3000",
+        "Sulac_3001",
+        "Sulac_3003",
+        "Sulac_3004"
+      ],
+      "mphl": [
+        "MPHLCCUG_04537",
+        "MPHLCCUG_04538",
+        "MPHLCCUG_04540",
+        "MPHLCCUG_04541"
+      ],
+      "mll": [
+        "B1R94_25125",
+        "B1R94_25130",
+        "B1R94_25140",
+        "B1R94_25145"
+      ],
+      "nfr": [
+        "ERS450000_00312",
+        "ERS450000_00313",
+        "ERS450000_00314",
+        "ERS450000_00315"
+      ],
+      "roa": [
+        "Pd630_LPD03568",
+        "Pd630_LPD03569",
+        "Pd630_LPD03571",
+        "Pd630_LPD03572"
+      ],
+      "gpo": [
+        "GPOL_c08420",
+        "GPOL_c08430",
+        "GPOL_c08440",
+        "GPOL_c08450"
+      ],
+      "fra": [
+        "Francci3_0211",
+        "Francci3_0212",
+        "Francci3_0214",
+        "Francci3_0215"
+      ],
+      "fsy": [
+        "FsymDg_1864"
+      ],
+      "amq": [
+        "AMETH_6107",
+        "AMETH_6108",
+        "AMETH_6109",
+        "AMETH_6110"
+      ],
+      "pdx": [
+        "Psed_0812",
+        "Psed_0813",
+        "Psed_0814",
+        "Psed_0815",
+        "Psed_1155",
+        "Psed_1156",
+        "Psed_1158",
+        "Psed_1159",
+        "Psed_1436",
+        "Psed_1437",
+        "Psed_1438",
+        "Psed_1439",
+        "Psed_6058",
+        "Psed_6059",
+        "Psed_6061",
+        "Psed_6062"
+      ],
+      "tro": [
+        "trd_A0919",
+        "trd_A0920",
+        "trd_A0922",
+        "trd_A0923"
+      ],
+      "naj": [
+        "B1756_14060",
+        "B1756_14070",
+        "B1756_14075",
+        "B1756_14085"
+      ],
+      "sso": [
+        "SSO1227",
+        "SSO1228",
+        "SSO1231",
+        "SSO1233"
+      ],
+      "sol": [
+        "Ssol_2196",
+        "Ssol_2199",
+        "Ssol_2200"
+      ],
+      "ssoa": [
+        "SULA_2229",
+        "SULA_2232",
+        "SULA_2233"
+      ],
+      "ssol": [
+        "SULB_2230",
+        "SULB_2233",
+        "SULB_2234"
+      ],
+      "ssof": [
+        "SULC_2227",
+        "SULC_2230",
+        "SULC_2231"
+      ],
+      "sis": [
+        "LS215_0420",
+        "LS215_0421",
+        "LS215_0424",
+        "LS215_0425"
+      ],
+      "sid": [
+        "M164_0419",
+        "M164_0420",
+        "M164_0423",
+        "M164_0424"
+      ],
+      "sin": [
+        "YN1551_2652",
+        "YN1551_2653",
+        "YN1551_2656",
+        "YN1551_2657"
+      ],
+      "sii": [
+        "LD85_0410",
+        "LD85_0411",
+        "LD85_0414",
+        "LD85_0415"
+      ],
+      "sih": [
+        "SiH_0426",
+        "SiH_0427",
+        "SiH_0430",
+        "SiH_0431"
+      ],
+      "sir": [
+        "SiRe_0384",
+        "SiRe_0385",
+        "SiRe_0388",
+        "SiRe_0389"
+      ],
+      "sic": [
+        "SiL_0415"
+      ],
+      "sula": [
+        "BFU36_13245",
+        "BFU36_13250",
+        "BFU36_13265",
+        "BFU36_13270"
+      ],
+      "aman": [
+        "B6F84_00770",
+        "B6F84_00790",
+        "B6F84_00795",
+        "B6F84_00810"
+      ],
+      "pas": [
+        "Pars_0542",
+        "Pars_0543",
+        "Pars_0546",
+        "Pars_0548"
+      ],
+      "pog": [
+        "Pogu_1801"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.236"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.236"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.236"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.236"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Whited GM",
+          "Gibson DT"
+        ],
+        "title": "Toluene-4-monooxygenase, a three-component enzyme system that catalyzes the oxidation of toluene to p-cresol in Pseudomonas mendocina KR1.",
+        "journal": "J. Bacteriol. 173 (1991) 3010-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2019563]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hemmi H",
+          "Studts JM",
+          "Chae YK",
+          "Song J",
+          "Markley JL",
+          "Fox BG"
+        ],
+        "title": "Solution structure of the toluene 4-monooxygenase effector protein (T4moD).",
+        "journal": "Biochemistry. 40 (2001) 3512-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11297417]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schwartz JK",
+          "Wei PP",
+          "Mitchell KH",
+          "Fox BG",
+          "Solomon EI"
+        ],
+        "title": "Geometric and electronic structure studies of the binuclear nonheme ferrous active site of toluene-4-monooxygenase: parallels with methane monooxygenase and insight into the role of the effector proteins in O2 activation.",
+        "journal": "J. Am. Chem. Soc. 130 (2008) 7098-109.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:18479085]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bailey LJ",
+          "Acheson JF",
+          "McCoy JG",
+          "Elsen NL",
+          "Phillips GN Jr",
+          "Fox BG"
+        ],
+        "title": "Crystallographic analysis of active site contributions to regiospecificity in the diiron enzyme toluene 4-monooxygenase.",
+        "journal": "Biochemistry. 51 (2012) 1101-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:22264099]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hosseini A",
+          "Brouk M",
+          "Lucas MF",
+          "Glaser F",
+          "Fishman A",
+          "Guallar V"
+        ],
+        "title": "Atomic picture of ligand migration in toluene 4-monooxygenase.",
+        "journal": "J. Phys. Chem. B. 119 (2015) 671-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:24798294]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

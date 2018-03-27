@@ -1,0 +1,885 @@
+[
+  {
+    "entry_id": "2.1.1.98",
+    "name": "diphthine synthase",
+    "names": [
+      "diphthine synthase",
+      "S-adenosyl-L-methionine:elongation factor 2 methyltransferase (ambiguous)",
+      "diphthine methyltransferase (ambiguous)",
+      "S-adenosyl-L-methionine:2-(3-carboxy-3-aminopropyl)-L-histidine-[translation elongation factor 2] methyltransferase",
+      "Dph5 (ambiguous)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring one-carbon groups;",
+      "Methyltransferases"
+    ],
+    "sysname": "S-adenosyl-L-methionine:2-[(3S)-3-carboxy-3-aminopropyl]-L-histidine-[translation elongation factor 2] methyltransferase (diphthine-[translation elongation factor 2]-forming)",
+    "reaction": "3 S-adenosyl-L-methionine + 2-[(3S)-3-carboxy-3-aminopropyl]-L-histidine-[translation elongation factor 2] = 3 S-adenosyl-L-homocysteine + diphthine-[translation elongation factor 2] (overall reaction) [RN:R10306]; (1a) S-adenosyl-L-methionine + 2-[(3S)-3-carboxy-3-aminopropyl]-L-histidine-[translation elongation factor 2] = S-adenosyl-L-homocysteine + 2-[(3S)-3-carboxy-3-(methylamino)propyl]-L-histidine-[translation elongation factor 2] [RN:R04481]; (1b) S-adenosyl-L-methionine + 2-[(3S)-3-carboxy-3-(methylamino)propyl]-L-histidine-[translation elongation factor 2] = S-adenosyl-L-homocysteine + 2-[(3S)-3-carboxy-3-(dimethylamino)propyl]-L-histidine-[translation elongation factor 2] [RN:R08468]; (1c) S-adenosyl-L-methionine + 2-[(3S)-3-carboxy-3-(dimethylamino)propyl]-L-histidine-[translation elongation factor 2] = S-adenosyl-L-homocysteine + diphthine-[translation elongation factor 2] [RN:R08469]",
+    "all_reac": "R04481 R08468 R08469 R10306",
+    "iubmb_reactions": [
+      "R04481 R08468 R08469 R10306"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "S-adenosyl-L-methionine [CPD:C00019]",
+      "2-[(3S)-3-carboxy-3-aminopropyl]-L-histidine-[translation elongation factor 2] [CPD:C04441]",
+      "2-[(3S)-3-carboxy-3-(methylamino)propyl]-L-histidine-[translation elongation factor 2] [CPD:C04692]",
+      "2-[(3S)-3-carboxy-3-(dimethylamino)propyl]-L-histidine-[translation elongation factor 2] [CPD:C16720]"
+    ],
+    "products": [
+      "S-adenosyl-L-homocysteine [CPD:C00021]",
+      "diphthine-[translation elongation factor 2] [CPD:C01573]",
+      "2-[(3S)-3-carboxy-3-(methylamino)propyl]-L-histidine-[translation elongation factor 2] [CPD:C04692]",
+      "2-[(3S)-3-carboxy-3-(dimethylamino)propyl]-L-histidine-[translation elongation factor 2] [CPD:C16720]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This archaeal enzyme produces the trimethylated product diphthine, which is converted into diphthamide by EC 6.3.1.14, diphthine---ammonia ligase. Different from the eukaryotic enzyme, which produces diphthine methyl ester (cf. EC 2.1.1.314). In the archaeon Pyrococcus horikoshii the enzyme acts on His600 of elongation factor 2.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K20215": "diphthine synthase"
+    },
+    "genes": {
+      "mja": [
+        "MJ_1274"
+      ],
+      "mfe": [
+        "Mefer_0044"
+      ],
+      "mvu": [
+        "Metvu_1279"
+      ],
+      "mfs": [
+        "MFS40622_0657"
+      ],
+      "mif": [
+        "Metin_0832"
+      ],
+      "mjh": [
+        "JH146_0451"
+      ],
+      "mig": [
+        "Metig_1174"
+      ],
+      "mmp": [
+        "MMP0588"
+      ],
+      "mmq": [
+        "MmarC5_1019"
+      ],
+      "mmx": [
+        "MmarC6_0305"
+      ],
+      "mmz": [
+        "MmarC7_1609"
+      ],
+      "mmd": [
+        "GYY_03540"
+      ],
+      "mmak": [
+        "MMKA1_06360"
+      ],
+      "mmao": [
+        "MMOS7_06310"
+      ],
+      "mae": [
+        "Maeo_0435"
+      ],
+      "mvn": [
+        "Mevan_1459"
+      ],
+      "mvo": [
+        "Mvol_0810"
+      ],
+      "mok": [
+        "Metok_0033"
+      ],
+      "mac": [
+        "MA_1370"
+      ],
+      "mba": [
+        "Mbar_A2900"
+      ],
+      "mby": [
+        "MSBRM_1431"
+      ],
+      "mbw": [
+        "MSBRW_1838"
+      ],
+      "mbar": [
+        "MSBR2_0974"
+      ],
+      "mbak": [
+        "MSBR3_0271"
+      ],
+      "mma": [
+        "MM_2355"
+      ],
+      "mmaz": [
+        "MmTuc01_2405"
+      ],
+      "mmj": [
+        "MSMAS_2344"
+      ],
+      "mmac": [
+        "MSMAC_2101"
+      ],
+      "mvc": [
+        "MSVAZ_1780"
+      ],
+      "mek": [
+        "MSKOL_1756"
+      ],
+      "mls": [
+        "MSLAZ_0954"
+      ],
+      "metm": [
+        "MSMTP_2166"
+      ],
+      "mef": [
+        "MSWH1_2299"
+      ],
+      "meq": [
+        "MSWHS_2776"
+      ],
+      "msj": [
+        "MSSAC_1376"
+      ],
+      "msz": [
+        "MSSIH_1580"
+      ],
+      "msw": [
+        "MSSIT_1666"
+      ],
+      "mthe": [
+        "MSTHC_2422"
+      ],
+      "mthr": [
+        "MSTHT_0849"
+      ],
+      "mhor": [
+        "MSHOH_2966"
+      ],
+      "mbu": [
+        "Mbur_0971"
+      ],
+      "mmet": [
+        "MCMEM_1474"
+      ],
+      "mmh": [
+        "Mmah_0645"
+      ],
+      "mhaz": [
+        "BHR79_00140"
+      ],
+      "mev": [
+        "Metev_1417"
+      ],
+      "mzh": [
+        "Mzhil_0765"
+      ],
+      "mpy": [
+        "Mpsy_3166"
+      ],
+      "mhz": [
+        "Metho_1698"
+      ],
+      "mtp": [
+        "Mthe_1120"
+      ],
+      "mcj": [
+        "MCON_1449"
+      ],
+      "mhi": [
+        "Mhar_0531"
+      ],
+      "mhu": [
+        "Mhun_0788"
+      ],
+      "mla": [
+        "Mlab_0386"
+      ],
+      "mem": [
+        "Memar_1783"
+      ],
+      "mbg": [
+        "BN140_0607"
+      ],
+      "mema": [
+        "MMAB1_0789"
+      ],
+      "mpi": [
+        "Mpet_0734"
+      ],
+      "mbn": [
+        "Mboo_2068"
+      ],
+      "mfo": [
+        "Metfor_0785"
+      ],
+      "mpl": [
+        "Mpal_0116"
+      ],
+      "mpd": [
+        "MCP_0924"
+      ],
+      "mez": [
+        "Mtc_2082"
+      ],
+      "rci": [
+        "RRC519"
+      ],
+      "mth": [
+        "MTH_1874"
+      ],
+      "mmg": [
+        "MTBMA_c04450"
+      ],
+      "metc": [
+        "MTCT_1712"
+      ],
+      "mwo": [
+        "MWSIV6_0405"
+      ],
+      "mst": [
+        "Msp_1017"
+      ],
+      "msi": [
+        "Msm_0801"
+      ],
+      "mru": [
+        "mru_1764"
+      ],
+      "meb": [
+        "Abm4_1315"
+      ],
+      "mmil": [
+        "sm9_1721"
+      ],
+      "meye": [
+        "TL18_07670"
+      ],
+      "mol": [
+        "YLM1_1219"
+      ],
+      "mel": [
+        "Metbo_0693"
+      ],
+      "mew": [
+        "MSWAN_1562"
+      ],
+      "meth": [
+        "MBMB1_1281"
+      ],
+      "mfc": [
+        "BRM9_0500"
+      ],
+      "mfi": [
+        "DSM1535_0480"
+      ],
+      "mcub": [
+        "MCBB_1499"
+      ],
+      "mfv": [
+        "Mfer_0700"
+      ],
+      "mka": [
+        "MK0747"
+      ],
+      "afu": [
+        "AF_0381"
+      ],
+      "afg": [
+        "AFULGI_00003810"
+      ],
+      "apo": [
+        "Arcpr_0161"
+      ],
+      "ave": [
+        "Arcve_1504"
+      ],
+      "ast": [
+        "Asulf_00669"
+      ],
+      "fpl": [
+        "Ferp_1481"
+      ],
+      "gac": [
+        "GACE_1631"
+      ],
+      "gah": [
+        "GAH_00943"
+      ],
+      "hal": [
+        "VNG_1118G"
+      ],
+      "hsl": [
+        "OE_2613R"
+      ],
+      "hdl": [
+        "HALDL1_10650"
+      ],
+      "hhb": [
+        "Hhub_2319"
+      ],
+      "hje": [
+        "HacjB3_08510"
+      ],
+      "halh": [
+        "HTSR_1064"
+      ],
+      "hhsr": [
+        "HSR6_1101"
+      ],
+      "hsu": [
+        "HLASF_1105"
+      ],
+      "hsf": [
+        "HLASA_1094"
+      ],
+      "hma": [
+        "rrnAC1406"
+      ],
+      "hhi": [
+        "HAH_1989"
+      ],
+      "hhn": [
+        "HISP_10135"
+      ],
+      "hab": [
+        "SG26_02425"
+      ],
+      "nph": [
+        "NP_1884A"
+      ],
+      "nmo": [
+        "Nmlp_1959"
+      ],
+      "hut": [
+        "Huta_0243"
+      ],
+      "hti": [
+        "HTIA_0426"
+      ],
+      "hmu": [
+        "Hmuk_1953"
+      ],
+      "hali": [
+        "BV210_14315"
+      ],
+      "hwa": [
+        "HQ_1603A"
+      ],
+      "hwc": [
+        "Hqrw_1714"
+      ],
+      "hvo": [
+        "HVO_0916"
+      ],
+      "hme": [
+        "HFX_0887"
+      ],
+      "hgi": [
+        "ABY42_04405"
+      ],
+      "hbo": [
+        "Hbor_23080"
+      ],
+      "hla": [
+        "Hlac_0892"
+      ],
+      "htu": [
+        "Htur_2752"
+      ],
+      "hda": [
+        "BB347_09440"
+      ],
+      "nmg": [
+        "Nmag_0897"
+      ],
+      "hxa": [
+        "Halxa_2402"
+      ],
+      "nat": [
+        "NJ7G_1756"
+      ],
+      "npe": [
+        "Natpe_0971"
+      ],
+      "nge": [
+        "Natgr_0089"
+      ],
+      "hru": [
+        "Halru_1978"
+      ],
+      "nou": [
+        "Natoc_2717"
+      ],
+      "sali": [
+        "L593_14760"
+      ],
+      "hlr": [
+        "HALLA_08355"
+      ],
+      "hlc": [
+        "CHINAEXTREME08855"
+      ],
+      "naj": [
+        "B1756_01955"
+      ],
+      "tac": [
+        "Ta0883"
+      ],
+      "tvo": [
+        "TVG1034064"
+      ],
+      "pto": [
+        "PTO1233"
+      ],
+      "fac": [
+        "FACI_IFERC01G1335"
+      ],
+      "fai": [
+        "FAD_0348"
+      ],
+      "cdiv": [
+        "CPM_1291"
+      ],
+      "tar": [
+        "TALC_01129"
+      ],
+      "max": [
+        "MMALV_11700"
+      ],
+      "mer": [
+        "MMINT_14280"
+      ],
+      "mear": [
+        "Mpt1_c02170"
+      ],
+      "marc": [
+        "AR505_1284"
+      ],
+      "pho": [
+        "PH0725"
+      ],
+      "pab": [
+        "PAB1501"
+      ],
+      "pfu": [
+        "PF0595"
+      ],
+      "pfi": [
+        "PFC_02105"
+      ],
+      "pyn": [
+        "PNA2_1369"
+      ],
+      "pya": [
+        "PYCH_07540"
+      ],
+      "pys": [
+        "Py04_0739"
+      ],
+      "pyc": [
+        "TQ32_04245"
+      ],
+      "tko": [
+        "TK0106"
+      ],
+      "ton": [
+        "TON_1372"
+      ],
+      "tga": [
+        "TGAM_0314"
+      ],
+      "tsi": [
+        "TSIB_0124"
+      ],
+      "tba": [
+        "TERMP_01321"
+      ],
+      "the": [
+        "GQS_08695"
+      ],
+      "tha": [
+        "TAM4_1375"
+      ],
+      "thm": [
+        "CL1_1363"
+      ],
+      "tlt": [
+        "OCC_06971"
+      ],
+      "ths": [
+        "TES1_1349"
+      ],
+      "tnu": [
+        "BD01_2145"
+      ],
+      "teu": [
+        "TEU_05045"
+      ],
+      "tgy": [
+        "X802_05025"
+      ],
+      "thv": [
+        "ADU37_CDS00450"
+      ],
+      "tch": [
+        "CHITON_1118"
+      ],
+      "tpep": [
+        "A0127_03225"
+      ],
+      "tpie": [
+        "A7C91_02410"
+      ],
+      "tgg": [
+        "A3K92_07750"
+      ],
+      "tce": [
+        "A3L02_04310"
+      ],
+      "tbs": [
+        "A3L01_07595"
+      ],
+      "thh": [
+        "CDI07_07985"
+      ],
+      "tsl": [
+        "A3L11_00445"
+      ],
+      "ttd": [
+        "A3L14_09950"
+      ],
+      "tprf": [
+        "A3L09_00145"
+      ],
+      "ppac": [
+        "PAP_06625"
+      ],
+      "abi": [
+        "Aboo_0591"
+      ],
+      "acf": [
+        "AciM339_0455"
+      ],
+      "ape": [
+        "APE_0931"
+      ],
+      "acj": [
+        "ACAM_0608"
+      ],
+      "smr": [
+        "Smar_0509"
+      ],
+      "shc": [
+        "Shell_0288"
+      ],
+      "iho": [
+        "Igni_0657"
+      ],
+      "iis": [
+        "EYM_06210"
+      ],
+      "dka": [
+        "DKAM_1445"
+      ],
+      "dfd": [
+        "Desfe_0069"
+      ],
+      "dmu": [
+        "Desmu_0139"
+      ],
+      "tag": [
+        "Tagg_1079"
+      ],
+      "iag": [
+        "Igag_0048"
+      ],
+      "thg": [
+        "TCELL_0750"
+      ],
+      "hbu": [
+        "Hbut_0128"
+      ],
+      "pfm": [
+        "Pyrfu_1089"
+      ],
+      "pdl": [
+        "Pyrde_0677"
+      ],
+      "sso": [
+        "SSO0953"
+      ],
+      "sol": [
+        "Ssol_1929"
+      ],
+      "ssoa": [
+        "SULA_1961"
+      ],
+      "ssol": [
+        "SULB_1962"
+      ],
+      "ssof": [
+        "SULC_1960"
+      ],
+      "sto": [
+        "STK_12780"
+      ],
+      "sai": [
+        "Saci_1334"
+      ],
+      "sacn": [
+        "SacN8_06505"
+      ],
+      "sacr": [
+        "SacRon12I_06495"
+      ],
+      "sacs": [
+        "SUSAZ_06375"
+      ],
+      "sis": [
+        "LS215_1360"
+      ],
+      "sia": [
+        "M1425_1273"
+      ],
+      "sim": [
+        "M1627_1323"
+      ],
+      "sid": [
+        "M164_1257"
+      ],
+      "siy": [
+        "YG5714_1258"
+      ],
+      "sin": [
+        "YN1551_1590"
+      ],
+      "sii": [
+        "LD85_1385"
+      ],
+      "sih": [
+        "SiH_1218"
+      ],
+      "sir": [
+        "SiRe_1136"
+      ],
+      "sic": [
+        "SiL_1133"
+      ],
+      "sula": [
+        "BFU36_01670"
+      ],
+      "mse": [
+        "Msed_1735"
+      ],
+      "mcn": [
+        "Mcup_0493"
+      ],
+      "aho": [
+        "Ahos_1400"
+      ],
+      "aman": [
+        "B6F84_11460"
+      ],
+      "pai": [
+        "PAE1139"
+      ],
+      "pis": [
+        "Pisl_1283"
+      ],
+      "pcl": [
+        "Pcal_0705"
+      ],
+      "pas": [
+        "Pars_0230"
+      ],
+      "pyr": [
+        "P186_2537"
+      ],
+      "pog": [
+        "Pogu_2233"
+      ],
+      "tne": [
+        "Tneu_0216"
+      ],
+      "pyw": [
+        "PYWP30_00283"
+      ],
+      "cma": [
+        "Cmaq_1990"
+      ],
+      "tuz": [
+        "TUZN_1249"
+      ],
+      "ttn": [
+        "TTX_0095"
+      ],
+      "vdi": [
+        "Vdis_2028"
+      ],
+      "vmo": [
+        "VMUT_0435"
+      ],
+      "tpe": [
+        "Tpen_0689"
+      ],
+      "thb": [
+        "N186_04685"
+      ],
+      "tcb": [
+        "TCARB_1964"
+      ],
+      "asc": [
+        "ASAC_0414"
+      ],
+      "clg": [
+        "Calag_1209"
+      ],
+      "ffo": [
+        "FFONT_1021"
+      ],
+      "nmr": [
+        "Nmar_1297"
+      ],
+      "nir": [
+        "NSED_07195"
+      ],
+      "nid": [
+        "NPIRD3C_0827"
+      ],
+      "nin": [
+        "NADRNF5_0659"
+      ],
+      "nct": [
+        "NMSP_0391"
+      ],
+      "csy": [
+        "CENSYa_0126"
+      ],
+      "nga": [
+        "Ngar_c14540"
+      ],
+      "nvn": [
+        "NVIE_002640"
+      ],
+      "nev": [
+        "NTE_01580"
+      ],
+      "taa": [
+        "NMY3_02230"
+      ],
+      "csu": [
+        "CSUB_C1500"
+      ],
+      "nbv": [
+        "T478_1052"
+      ],
+      "tah": [
+        "SU86_009035"
+      ],
+      "ndv": [
+        "NDEV_1632"
+      ],
+      "neq": [
+        "NEQ422"
+      ],
+      "naa": [
+        "Nps_01115"
+      ],
+      "nac": [
+        "AQV86_05655"
+      ],
+      "marh": [
+        "Mia14_0002"
+      ],
+      "barc": [
+        "AOA65_2396"
+      ],
+      "barb": [
+        "AOA66_1245"
+      ],
+      "hah": [
+        "Halar_0827"
+      ],
+      "agw": [
+        "QT03_C0001G0336"
+      ],
+      "arg": [
+        "QT11_C0001G0598"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.1.1.98"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.1.1.98"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.1.1.98"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.1.1.98"
+      ],
+      "CAS": [
+        "114514-25-9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Zhu X",
+          "Kim J",
+          "Su X",
+          "Lin H"
+        ],
+        "title": "Reconstitution of diphthine synthase activity in vitro.",
+        "journal": "Biochemistry. 49 (2010) 9649-57.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:20873788]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

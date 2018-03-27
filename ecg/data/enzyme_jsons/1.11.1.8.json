@@ -1,0 +1,759 @@
+[
+  {
+    "entry_id": "1.11.1.8",
+    "name": "iodide peroxidase",
+    "names": [
+      "iodide peroxidase",
+      "thyroid peroxidase",
+      "iodotyrosine deiodase",
+      "iodinase",
+      "iodoperoxidase (heme type)",
+      "iodide peroxidase-tyrosine iodinase",
+      "iodotyrosine deiodinase",
+      "monoiodotyrosine deiodinase",
+      "thyroperoxidase",
+      "tyrosine iodinase",
+      "TPO"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on a peroxide as acceptor;",
+      "Peroxidases"
+    ],
+    "sysname": "iodide:hydrogen-peroxide oxidoreductase",
+    "reaction": "(1) 2 iodide + H2O2 + 2 H+ = diiodine + 2 H2O [RN:R02810]; (2) [thyroglobulin]-L-tyrosine + iodide + H2O2 = [thyroglobulin]-3-iodo-L-tyrosine + 2 H2O; (3) [thyroglobulin]-3-iodo-L-tyrosine + iodide + H2O2 = [thyroglobulin]-3,5-diiodo-L-tyrosine + 2 H2O; (4) 2 [thyroglobulin]-3,5-diiodo-L-tyrosine + H2O2 = [thyroglobulin]-L-thyroxine + [thyroglobulin]-aminoacrylate + 2 H2O [RN:R08523]; (5) [thyroglobulin]-3-iodo-L-tyrosine + [thyroglobulin]-3,5-diiodo-L-tyrosine + H2O2 = [thyroglobulin]-3,5,3'-triiodo-L-thyronine + [thyroglobulin]-aminoacrylate + 2 H2O [RN:R08522]",
+    "all_reac": "R02810 R08522 R08523; (other) R03208 R03539 R03953 R03973 R08520 R08521",
+    "iubmb_reactions": [
+      "R02810 R08522 R08523"
+    ],
+    "kegg_reactions": [
+      "R03208 R03539 R03953 R03973 R08520 R08521"
+    ],
+    "substrates": [
+      "iodide [CPD:C00708]",
+      "H2O2 [CPD:C00027]",
+      "H+ [CPD:C00080]",
+      "[thyroglobulin]-L-tyrosine [CPD:C16733]",
+      "[thyroglobulin]-3-iodo-L-tyrosine [CPD:C16732]",
+      "[thyroglobulin]-3,5-diiodo-L-tyrosine [CPD:C16731]"
+    ],
+    "products": [
+      "diiodine [CPD:C01382]",
+      "H2O [CPD:C00001]",
+      "[thyroglobulin]-3-iodo-L-tyrosine [CPD:C16732]",
+      "[thyroglobulin]-3,5-diiodo-L-tyrosine [CPD:C16731]",
+      "[thyroglobulin]-L-thyroxine [CPD:C16729]",
+      "[thyroglobulin]-aminoacrylate [CPD:C16734]",
+      "[thyroglobulin]-3,5,3'-triiodo-L-thyronine [CPD:C16730]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Thyroid peroxidase catalyses the biosynthesis of the thyroid hormones L-thyroxine and triiodo-L-thyronine. It catalyses both the iodination of tyrosine residues in thyroglobulin (forming mono- and di-iodinated forms) and their coupling to form either L-thyroxine or triiodo-L-thyronine.",
+    "pathways": {
+      "ec00350": "Tyrosine metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00431": "thyroid peroxidase"
+    },
+    "genes": {
+      "hsa": [
+        "7173"
+      ],
+      "pps": [
+        "100996140"
+      ],
+      "ggo": [
+        "101154382"
+      ],
+      "pon": [
+        "100456793"
+      ],
+      "nle": [
+        "100600125"
+      ],
+      "mcc": [
+        "721610"
+      ],
+      "mcf": [
+        "102125126"
+      ],
+      "csab": [
+        "103220948"
+      ],
+      "rro": [
+        "104680243"
+      ],
+      "rbb": [
+        "108520786"
+      ],
+      "cjc": [
+        "100386952"
+      ],
+      "sbq": [
+        "101037216"
+      ],
+      "mmu": [
+        "22018"
+      ],
+      "rno": [
+        "54314"
+      ],
+      "cge": [
+        "100774668"
+      ],
+      "ngi": [
+        "103747657"
+      ],
+      "hgl": [
+        "101704548"
+      ],
+      "ccan": [
+        "109698840"
+      ],
+      "ocu": [
+        "100358662"
+      ],
+      "tup": [
+        "102498362"
+      ],
+      "cfa": [
+        "403521"
+      ],
+      "aml": [
+        "100482359"
+      ],
+      "umr": [
+        "103659385"
+      ],
+      "oro": [
+        "101386003"
+      ],
+      "fca": [
+        "101098706"
+      ],
+      "ptg": [
+        "102968585"
+      ],
+      "aju": [
+        "106970832"
+      ],
+      "bta": [
+        "525013"
+      ],
+      "bom": [
+        "102270919"
+      ],
+      "phd": [
+        "102328542"
+      ],
+      "chx": [
+        "102182976"
+      ],
+      "oas": [
+        "101116464",
+        "105606468"
+      ],
+      "ssc": [
+        "445522"
+      ],
+      "cfr": [
+        "102509347"
+      ],
+      "cdk": [
+        "105105788"
+      ],
+      "bacu": [
+        "103019738"
+      ],
+      "lve": [
+        "103068590"
+      ],
+      "ecb": [
+        "100072955"
+      ],
+      "epz": [
+        "103558875"
+      ],
+      "eai": [
+        "106831426"
+      ],
+      "myb": [
+        "102261673"
+      ],
+      "myd": [
+        "102752073"
+      ],
+      "hai": [
+        "109384713"
+      ],
+      "rss": [
+        "109458409"
+      ],
+      "pale": [
+        "102894645"
+      ],
+      "lav": [
+        "100654315"
+      ],
+      "tmu": [
+        "101356790"
+      ],
+      "mdo": [
+        "100032350"
+      ],
+      "shr": [
+        "100914346",
+        "100922174"
+      ],
+      "oaa": [
+        "100080616"
+      ],
+      "gga": [
+        "776120"
+      ],
+      "mgp": [
+        "100547103"
+      ],
+      "cjo": [
+        "107312163"
+      ],
+      "apla": [
+        "101799650"
+      ],
+      "acyg": [
+        "106030804"
+      ],
+      "tgu": [
+        "100218312"
+      ],
+      "gfr": [
+        "102035753"
+      ],
+      "fab": [
+        "101810932"
+      ],
+      "phi": [
+        "102101957"
+      ],
+      "pmaj": [
+        "107202328"
+      ],
+      "ccw": [
+        "104685517"
+      ],
+      "fpg": [
+        "101922364"
+      ],
+      "fch": [
+        "102045733"
+      ],
+      "clv": [
+        "102095211"
+      ],
+      "egz": [
+        "104122160"
+      ],
+      "aam": [
+        "106492987"
+      ],
+      "asn": [
+        "102375780"
+      ],
+      "amj": [
+        "106736998"
+      ],
+      "pss": [
+        "102447524"
+      ],
+      "cmy": [
+        "102940210"
+      ],
+      "cpic": [
+        "101932866"
+      ],
+      "acs": [
+        "100562991"
+      ],
+      "pvt": [
+        "110073409"
+      ],
+      "pbi": [
+        "103055216"
+      ],
+      "gja": [
+        "107108843",
+        "107120374"
+      ],
+      "xla": [
+        "100049788"
+      ],
+      "xtr": [
+        "100036738"
+      ],
+      "npr": [
+        "108789262"
+      ],
+      "dre": [
+        "100331172",
+        "569363"
+      ],
+      "srx": [
+        "107707791"
+      ],
+      "sanh": [
+        "107678715",
+        "107701038"
+      ],
+      "sgh": [
+        "107594129"
+      ],
+      "ccar": [
+        "109084952",
+        "109099142"
+      ],
+      "ipu": [
+        "108269580",
+        "108274988"
+      ],
+      "amex": [
+        "103026466",
+        "103032699"
+      ],
+      "tru": [
+        "101062981",
+        "101079869"
+      ],
+      "tng": [
+        "GSTEN00006623G001",
+        "GSTEN00010284G001",
+        "GSTEN00012455G001"
+      ],
+      "lco": [
+        "104928854",
+        "104934649",
+        "109136995",
+        "109142992"
+      ],
+      "ncc": [
+        "104944637",
+        "104964014"
+      ],
+      "mze": [
+        "101470734",
+        "101472649"
+      ],
+      "ola": [
+        "101167362",
+        "105356959"
+      ],
+      "xma": [
+        "102230399",
+        "102232241"
+      ],
+      "pret": [
+        "103460527",
+        "103466494"
+      ],
+      "csem": [
+        "103379991",
+        "103380299"
+      ],
+      "lcf": [
+        "108886978",
+        "108897943"
+      ],
+      "hcq": [
+        "109507502",
+        "109522865",
+        "109530238"
+      ],
+      "bpec": [
+        "110155374",
+        "110169467"
+      ],
+      "sasa": [
+        "106584777",
+        "106611389"
+      ],
+      "els": [
+        "105028745",
+        "105029701"
+      ],
+      "sfm": [
+        "108942507"
+      ],
+      "lcm": [
+        "102362813"
+      ],
+      "cmk": [
+        "103175078",
+        "103185975"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_67515",
+        "BRAFLDRAFT_67523"
+      ],
+      "cin": [
+        "100183311",
+        "100183818",
+        "445593"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.11.1.8"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.11.1.8"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.11.1.8"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.11.1.8"
+      ],
+      "CAS": [
+        "9031-28-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "CUNNINGHAM BA",
+          "KIRKWOOD S."
+        ],
+        "title": "Enzyme systems concerned with the synthesis of monoiodotyrosine. III. Ion requirements of the soluble system.",
+        "journal": "J. Biol. Chem. 236 (1961) 485-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:13718859]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "HOSOYA T",
+          "KONDO Y",
+          "UI N."
+        ],
+        "title": "Peroxidase activity in thyroid gland and partial purification of the enzyme.",
+        "journal": "J. Biochem. 52 (1962) 180-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13964156]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Coval ML",
+          "Taurog A."
+        ],
+        "title": "Purification and iodinating activity of hog thyroid peroxidase.",
+        "journal": "J. Biol. Chem. 242 (1967) 5510-23.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12325367]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gavaret JM",
+          "Cahnmann HJ",
+          "Nunez J"
+        ],
+        "title": "Thyroid hormone synthesis in thyroglobulin. The mechanism of the coupling reaction.",
+        "journal": "J. Biol. Chem. 256 (1981) 9167-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7021557]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ohtaki S",
+          "Nakagawa H",
+          "Nakamura M",
+          "Yamazaki I"
+        ],
+        "title": "One- and two-electron oxidations of tyrosine, monoiodotyrosine, and diiodotyrosine catalyzed by hog thyroid peroxidase.",
+        "journal": "J. Biol. Chem. 257 (1982) 13398-403.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:7142155]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Magnusson RP",
+          "Taurog A",
+          "Dorris ML"
+        ],
+        "title": "Mechanism of iodide-dependent catalatic activity of thyroid peroxidase and lactoperoxidase.",
+        "journal": "J. Biol. Chem. 259 (1984) 197-205.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:6706930]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Virion A",
+          "Courtin F",
+          "Deme D",
+          "Michot JL",
+          "Kaniewski J",
+          "Pommier J"
+        ],
+        "title": "Spectral characteristics and catalytic properties of thyroid peroxidase-H2O2 compounds in the iodination and coupling reactions.",
+        "journal": "Arch. Biochem. Biophys. 242 (1985) 41-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:2996435]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rawitch AB",
+          "Pollock G",
+          "Yang SX",
+          "Taurog A"
+        ],
+        "title": "Thyroid peroxidase glycosylation: the location and nature of the N-linked oligosaccharide units in porcine thyroid peroxidase.",
+        "journal": "Arch. Biochem. Biophys. 297 (1992) 321-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:1497352]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sun W",
+          "Dunford HB"
+        ],
+        "title": "Kinetics and mechanism of the peroxidase-catalyzed iodination of tyrosine.",
+        "journal": "Biochemistry. 32 (1993) 1324-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:8448141]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Taurog A",
+          "Dorris ML",
+          "Doerge DR"
+        ],
+        "title": "Mechanism of simultaneous iodination and coupling catalyzed by thyroid peroxidase.",
+        "journal": "Arch. Biochem. Biophys. 330 (1996) 24-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "10 [PMID:8651700]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ruf J",
+          "Carayon P"
+        ],
+        "title": "Structural and functional aspects of thyroid peroxidase.",
+        "journal": "Arch. Biochem. Biophys. 445 (2006) 269-77.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "11 [PMID:16098474]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

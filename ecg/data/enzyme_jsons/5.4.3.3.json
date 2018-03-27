@@ -1,0 +1,706 @@
+[
+  {
+    "entry_id": "5.4.3.3",
+    "name": "lysine 5,6-aminomutase",
+    "names": [
+      "lysine 5,6-aminomutase",
+      "beta-lysine 5,6-aminomutase",
+      "beta-lysine mutase",
+      "L-beta-lysine 5,6-aminomutase",
+      "D-lysine 5,6-aminomutase",
+      "D-alpha-lysine mutase",
+      "adenosylcobalamin-dependent D-lysine 5,6-aminomutase"
+    ],
+    "classes": [
+      "Isomerases;",
+      "Intramolecular transferases;",
+      "Transferring amino groups"
+    ],
+    "sysname": "(3S)-3,6-diaminohexanoate 5,6-aminomutase",
+    "reaction": "(1) (3S)-3,6-diaminohexanoate = (3S,5S)-3,5-diaminohexanoate [RN:R03275]; (2) D-lysine = (2R,5S)-2,5-diaminohexanoate [RN:R02852]",
+    "all_reac": "R02852 R03275",
+    "iubmb_reactions": [
+      "R02852 R03275"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(3S)-3,6-diaminohexanoate [CPD:C01142]",
+      "D-lysine [CPD:C00739]"
+    ],
+    "products": [
+      "(3S,5S)-3,5-diaminohexanoate [CPD:C01186]",
+      "(2R,5S)-2,5-diaminohexanoate [CPD:C05161]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme is a member of the 'AdoMet radical' (radical SAM) family. It requires pyridoxal 5'-phosphate and adenosylcobalamin for activity. A 5'-deoxyadenosyl radical is generated during the reaction cycle by reductive cleavage of adenosylcobalamin, which is regenerated at the end of the reaction.",
+    "pathways": {
+      "ec00310": "Lysine degradation"
+    },
+    "orthologs": {
+      "K01844": "beta-lysine 5,6-aminomutase alpha subunit",
+      "K18011": "beta-lysine 5,6-aminomutase beta subunit"
+    },
+    "genes": {
+      "rfr": [
+        "Rfer_3887",
+        "Rfer_3888"
+      ],
+      "aza": [
+        "AZKH_1576",
+        "AZKH_1577"
+      ],
+      "azi": [
+        "AzCIB_1068",
+        "AzCIB_1069"
+      ],
+      "ade": [
+        "Adeh_1483",
+        "Adeh_1485"
+      ],
+      "acp": [
+        "A2cp1_2470",
+        "A2cp1_2472"
+      ],
+      "afw": [
+        "Anae109_2347",
+        "Anae109_2349"
+      ],
+      "ank": [
+        "AnaeK_2382",
+        "AnaeK_2384"
+      ],
+      "mxa": [
+        "MXAN_4386",
+        "MXAN_4388"
+      ],
+      "mfu": [
+        "LILAB_30020",
+        "LILAB_30030"
+      ],
+      "msd": [
+        "MYSTI_04875",
+        "MYSTI_04877"
+      ],
+      "mym": [
+        "A176_002515",
+        "A176_002517"
+      ],
+      "mmas": [
+        "MYMAC_004300",
+        "MYMAC_004302"
+      ],
+      "ccx": [
+        "COCOR_03525",
+        "COCOR_03527"
+      ],
+      "sur": [
+        "STAUR_4746",
+        "STAUR_4748"
+      ],
+      "age": [
+        "AA314_04546",
+        "AA314_04548"
+      ],
+      "mbd": [
+        "MEBOL_007833",
+        "MEBOL_007835"
+      ],
+      "vin": [
+        "AKJ08_2038",
+        "AKJ08_2039"
+      ],
+      "scl": [
+        "sce2889",
+        "sce2891"
+      ],
+      "scu": [
+        "SCE1572_17625",
+        "SCE1572_17630"
+      ],
+      "ccro": [
+        "CMC5_058650",
+        "CMC5_058660"
+      ],
+      "llu": [
+        "AKJ09_09143",
+        "AKJ09_09144"
+      ],
+      "mrm": [
+        "A7982_03845",
+        "A7982_03847"
+      ],
+      "tum": [
+        "CBW65_05610",
+        "CBW65_05615"
+      ],
+      "tab": [
+        "CIG75_01555",
+        "CIG75_01560"
+      ],
+      "cls": [
+        "CXIVA_06620",
+        "CXIVA_06630"
+      ],
+      "cpat": [
+        "CLPA_c31440",
+        "CLPA_c31450"
+      ],
+      "cpae": [
+        "CPAST_c31440",
+        "CPAST_c31450"
+      ],
+      "ceu": [
+        "A7L45_04310",
+        "A7L45_04315"
+      ],
+      "carg": [
+        "RSJ17_19885",
+        "RSJ17_19890"
+      ],
+      "amt": [
+        "Amet_4548",
+        "Amet_4549"
+      ],
+      "aoe": [
+        "Clos_0421",
+        "Clos_0422"
+      ],
+      "gfe": [
+        "Gferi_11510",
+        "Gferi_11515"
+      ],
+      "cst": [
+        "CLOST_1378",
+        "CLOST_1379"
+      ],
+      "sth": [
+        "STH37",
+        "STH38"
+      ],
+      "dai": [
+        "Desaci_1866",
+        "Desaci_1867"
+      ],
+      "ibu": [
+        "IB211_00981",
+        "IB211_00982"
+      ],
+      "fpla": [
+        "A4U99_02910",
+        "A4U99_02915"
+      ],
+      "euu": [
+        "ADJ67_02650",
+        "ADJ67_02655"
+      ],
+      "tte": [
+        "TTE0726",
+        "TTE0727"
+      ],
+      "twi": [
+        "Thewi_0855",
+        "Thewi_0856"
+      ],
+      "nth": [
+        "Nther_1905",
+        "Nther_1906"
+      ],
+      "hpk": [
+        "Hprae_1560",
+        "Hprae_1561"
+      ],
+      "puf": [
+        "UFO1_1640",
+        "UFO1_1641"
+      ],
+      "pft": [
+        "JBW_02724",
+        "JBW_02725"
+      ],
+      "mbj": [
+        "KQ51_00865",
+        "KQ51_00866"
+      ],
+      "scx": [
+        "AS200_02795"
+      ],
+      "ica": [
+        "Intca_1791",
+        "Intca_1792"
+      ],
+      "ars": [
+        "ADJ73_12505",
+        "ADJ73_12510"
+      ],
+      "nca": [
+        "Noca_2663",
+        "Noca_2664"
+      ],
+      "kfl": [
+        "Kfla_3601",
+        "Kfla_3602"
+      ],
+      "tcu": [
+        "Tcur_2347"
+      ],
+      "mmar": [
+        "MODMU_2631",
+        "MODMU_2632"
+      ],
+      "sesp": [
+        "BN6_43170",
+        "BN6_43180"
+      ],
+      "kal": [
+        "KALB_4418",
+        "KALB_4419"
+      ],
+      "kphy": [
+        "AOZ06_27985",
+        "AOZ06_27990"
+      ],
+      "led": [
+        "BBK82_41115",
+        "BBK82_41120"
+      ],
+      "all": [
+        "CRK56464",
+        "CRK56465"
+      ],
+      "stp": [
+        "Strop_2265",
+        "Strop_2266"
+      ],
+      "saq": [
+        "Sare_2384",
+        "Sare_2385"
+      ],
+      "mau": [
+        "Micau_3122",
+        "Micau_3123"
+      ],
+      "mil": [
+        "ML5_5272",
+        "ML5_5273"
+      ],
+      "vma": [
+        "VAB18032_20380",
+        "VAB18032_20385"
+      ],
+      "ams": [
+        "AMIS_47590",
+        "AMIS_47600"
+      ],
+      "ase": [
+        "ACPL_2802",
+        "ACPL_2803"
+      ],
+      "actn": [
+        "L083_3927",
+        "L083_3928"
+      ],
+      "afs": [
+        "AFR_21805",
+        "AFR_21810"
+      ],
+      "plk": [
+        "CIK06_14140",
+        "CIK06_14145"
+      ],
+      "sna": [
+        "Snas_3949",
+        "Snas_3950"
+      ],
+      "fnu": [
+        "FN1862",
+        "FN1863"
+      ],
+      "fnc": [
+        "HMPREF0946_01610",
+        "HMPREF0946_01611"
+      ],
+      "fnt": [
+        "HMPREF0405_01367",
+        "HMPREF0405_01368"
+      ],
+      "fus": [
+        "HMPREF0409_01390",
+        "HMPREF0409_01391"
+      ],
+      "fne": [
+        "FSDG_01978",
+        "FSDG_01979"
+      ],
+      "fhw": [
+        "RN87_00375",
+        "RN87_00380"
+      ],
+      "bacc": [
+        "BRDCF_p1067",
+        "BRDCF_p1068"
+      ],
+      "pgi": [
+        "PG_1073",
+        "PG_1074"
+      ],
+      "pgn": [
+        "PGN_1169",
+        "PGN_1170"
+      ],
+      "pgt": [
+        "PGTDC60_1134",
+        "PGTDC60_1135"
+      ],
+      "pah": [
+        "Poras_0579",
+        "Poras_0580"
+      ],
+      "pet": [
+        "PEIBARAKI_0142",
+        "PEIBARAKI_0143"
+      ],
+      "osp": [
+        "Odosp_3176",
+        "Odosp_3177"
+      ],
+      "caci": [
+        "CLOAM1503",
+        "CLOAM1504"
+      ],
+      "tle": [
+        "Tlet_1712",
+        "Tlet_1713"
+      ],
+      "phy": [
+        "AJ81_06585",
+        "AJ81_06590"
+      ],
+      "tme": [
+        "Tmel_0196",
+        "Tmel_0197"
+      ],
+      "taf": [
+        "THA_428",
+        "THA_429"
+      ],
+      "thp": [
+        "BG95_02115",
+        "BG95_02120"
+      ],
+      "ther": [
+        "Y592_02120",
+        "Y592_02125"
+      ],
+      "fno": [
+        "Fnod_0202",
+        "Fnod_0203"
+      ],
+      "fpe": [
+        "Ferpe_0545",
+        "Ferpe_0546"
+      ],
+      "fia": [
+        "NA23_03040",
+        "NA23_03045"
+      ],
+      "pmo": [
+        "Pmob_1084",
+        "Pmob_1085"
+      ],
+      "mpz": [
+        "Marpi_0482",
+        "Marpi_0483"
+      ],
+      "marn": [
+        "LN42_02785",
+        "LN42_02790"
+      ],
+      "kol": [
+        "Kole_0958",
+        "Kole_0959"
+      ],
+      "kpf": [
+        "IX53_04790",
+        "IX53_04795"
+      ],
+      "mpg": [
+        "Theba_2106",
+        "Theba_2107"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "5.4.3.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "5.4.3.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "5.4.3.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "5.4.3.3"
+      ],
+      "CAS": [
+        "9075-69-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Stadtman TC",
+          "Tsai L."
+        ],
+        "title": "A cobamide coenzyme dependent migration of the epsilon-amino group of D-lysine.",
+        "journal": "Biochem. Biophys. Res. Commun. 28 (1967) 920-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4229021]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Stadtman TC",
+          "Renz P."
+        ],
+        "title": "Anaerobic degradation of lysine. V. Some properties of the cobamide coenzyme-dependent beta-lysine mutase of Clostridium sticklandii.",
+        "journal": "Arch. Biochem. Biophys. 125 (1968) 226-39.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:5649516]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Morley CG",
+          "Stadtman TC."
+        ],
+        "title": "Studies on the fermentation of D-alpha-lysine. Purification and properties of an adenosine triphosphate regulated B 12-coenzyme-dependent D-alpha-lysine mutase complex from Clostridium sticklandii.",
+        "journal": "Biochemistry. 9 (1970) 4890-900.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:5480154]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Retey",
+          "J.",
+          "Kunz",
+          "F.",
+          "Arigoni",
+          "D. and Stadtman",
+          "T.C."
+        ],
+        "title": "Zur Kenntnis der beta-Lysin-Mutase-Reaktion: mechanismus und sterischer Verlauf.",
+        "journal": "Helv. Chim. Acta 61 (1978) 2989-2998.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chang CH",
+          "Frey PA"
+        ],
+        "title": "Cloning, sequencing, heterologous expression, purification, and characterization of adenosylcobalamin-dependent D-lysine 5, 6-aminomutase from Clostridium sticklandii.",
+        "journal": "J. Biol. Chem. 275 (2000) 106-14.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:10617592]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tang KH",
+          "Harms A",
+          "Frey PA"
+        ],
+        "title": "Identification of a novel pyridoxal 5'-phosphate binding site in adenosylcobalamin-dependent lysine 5,6-aminomutase from Porphyromonas gingivalis.",
+        "journal": "Biochemistry. 41 (2002) 8767-76.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:12093296]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tang KH",
+          "Mansoorabadi SO",
+          "Reed GH",
+          "Frey PA"
+        ],
+        "title": "Radical triplets and suicide inhibition in reactions of 4-thia-D- and 4-thia-L-lysine with lysine 5,6-aminomutase.",
+        "journal": "Biochemistry. 48 (2009) 8151-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:19634897]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Berkovitch F",
+          "Behshad E",
+          "Tang KH",
+          "Enns EA",
+          "Frey PA",
+          "Drennan CL"
+        ],
+        "title": "A locking mechanism preventing radical damage in the absence of substrate, as revealed by the x-ray structure of lysine 5,6-aminomutase.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 101 (2004) 15870-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:15514022]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

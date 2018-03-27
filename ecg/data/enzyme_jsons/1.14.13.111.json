@@ -1,0 +1,216 @@
+[
+  {
+    "entry_id": "1.14.13.111",
+    "name": "methanesulfonate monooxygenase (NADH)",
+    "names": [
+      "methanesulfonate monooxygenase (NADH)",
+      "mesylate monooxygenase",
+      "mesylate,reduced-FMN:oxygen oxidoreductase",
+      "MsmABC",
+      "methanesulfonic acid monooxygenase",
+      "MSA monooxygenase",
+      "MSAMO"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "methanesulfonate,NADH:oxygen oxidoreductase",
+    "reaction": "methanesulfonate + NADH + H+ + O2 = formaldehyde + NAD+ + sulfite + H2O [RN:R09513]",
+    "all_reac": "R09513",
+    "iubmb_reactions": [
+      "R09513"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "methanesulfonate [CPD:C11145]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "formaldehyde [CPD:C00067]",
+      "NAD+ [CPD:C00003]",
+      "sulfite [CPD:C00094]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A flavoprotein. Methanesulfonate is the simplest of the sulfonates and is a substrate for the growth of certain methylotrophic microorganisms. Compared with EC 1.14.14.5, alkanesulfonate monooxygenase, this enzyme has a restricted substrate range that includes only the short-chain aliphatic sulfonates (methanesulfonate to butanesulfonate) and excludes all larger molecules, such as arylsulfonates [1]. The enzyme from the bacterium Methylosulfonomonas methylovora is a multicomponent system comprising a hydroxylase, a reductase (MsmD) and a ferredoxin (MsmC). The hydroxylase has both large (MsmA) and small (MsmB) subunits, with each large subunit containing a Rieske-type [2Fe-2S] cluster. cf. EC 1.14.14.34, methanesulfonate monooxygenase (FMNH2).",
+    "pathways": {
+      "ec00920": "Sulfur metabolism"
+    },
+    "orthologs": {
+      "K16968": "methanesulfonate monooxygenase subunit alpha",
+      "K16969": "methanesulfonate monooxygenase subunit beta"
+    },
+    "genes": {
+      "bct": [
+        "GEM_5811",
+        "GEM_5812"
+      ],
+      "bue": [
+        "BRPE67_FCDS01800"
+      ],
+      "ppk": [
+        "U875_05270",
+        "U875_05275"
+      ],
+      "ppno": [
+        "DA70_22340",
+        "DA70_22345"
+      ],
+      "prb": [
+        "X636_04320",
+        "X636_04325"
+      ],
+      "bpa": [
+        "BPP0512",
+        "BPP0513"
+      ],
+      "bbr": [
+        "BB0517",
+        "BB0518"
+      ],
+      "bbm": [
+        "BN115_0496",
+        "BN115_0497"
+      ],
+      "bbh": [
+        "BN112_2903",
+        "BN112_2904"
+      ],
+      "bbx": [
+        "BBS798_0510",
+        "BBS798_0511"
+      ],
+      "put": [
+        "PT7_2465",
+        "PT7_2466"
+      ],
+      "mpt": [
+        "Mpe_A0919",
+        "Mpe_A0920"
+      ],
+      "mno": [
+        "Mnod_2708",
+        "Mnod_8364",
+        "Mnod_8365"
+      ],
+      "fil": [
+        "BN1229_v1_3548",
+        "BN1229_v1_3549"
+      ],
+      "fiy": [
+        "BN1229_v1_2374",
+        "BN1229_v1_2375"
+      ],
+      "apb": [
+        "SAR116_2102",
+        "SAR116_2103",
+        "SAR116_2109"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.111"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.111"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.111"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.14.13.111"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.111"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "de Marco P",
+          "Moradas-Ferreira P",
+          "Higgins TP",
+          "McDonald I",
+          "Kenna EM",
+          "Murrell JC"
+        ],
+        "title": "Molecular analysis of a novel methanesulfonic acid monooxygenase from the methylotroph Methylosulfonomonas methylovora.",
+        "journal": "J. Bacteriol. 181 (1999) 2244-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10094704]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Higgins TP",
+          "Davey M",
+          "Trickett J",
+          "Kelly DP",
+          "Murrell JC"
+        ],
+        "title": "Metabolism of methanesulfonic acid involves a multicomponent monooxygenase enzyme.",
+        "journal": "Microbiology. 142 ( Pt 2) (1996) 251-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8932698]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

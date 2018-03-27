@@ -1,0 +1,495 @@
+[
+  {
+    "entry_id": "4.4.1.28",
+    "name": "L-cysteine desulfidase",
+    "names": [
+      "L-cysteine desulfidase",
+      "L-cysteine desulfhydrase"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-sulfur lyases;",
+      "Carbon-sulfur lyases (only sub-subclass identified to date)"
+    ],
+    "sysname": "L-cysteine sulfide-lyase (deaminating; pyruvate-forming)",
+    "reaction": "L-cysteine + H2O = sulfide + NH3 + pyruvate (overall reaction) [RN:R00782]; (1a) L-cysteine = 2-aminoprop-2-enoate + sulfide; (1b) 2-aminoprop-2-enoate = 2-iminopropanoate (spontaneous); (1c) 2-iminopropanoate + H2O = pyruvate + NH3 (spontaneous)",
+    "all_reac": "R00782",
+    "iubmb_reactions": [
+      "R00782"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-cysteine [CPD:C00097]",
+      "H2O [CPD:C00001]",
+      "2-aminoprop-2-enoate [CPD:C02218]",
+      "2-iminopropanoate [CPD:C20904]"
+    ],
+    "products": [
+      "sulfide [CPD:C00283]",
+      "NH3 [CPD:C00014]",
+      "pyruvate [CPD:C00022]",
+      "2-aminoprop-2-enoate [CPD:C02218]",
+      "2-iminopropanoate [CPD:C20904]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from the archaeon Methanocaldococcus jannaschii contains a [4Fe-4S] cluster and is specific for L-cysteine (cf. EC 4.4.1.1, cystathionine gamma-lyase). It cleaves a carbon-sulfur bond releasing sulfide and the unstable enamine product 2-aminoprop-2-enoate that tautomerizes to an imine form, which undergoes a hydrolytic deamination to form pyruvate and ammonia. The same reaction can also be catalysed by some pyridoxal-phosphate proteins (cf. EC 4.4.1.1, cystathionine gamma-lyase).",
+    "pathways": {
+      "ec00270": "Cysteine and methionine metabolism"
+    },
+    "orthologs": {
+      "K20021": "L-cysteine desulfidase",
+      "K22207": "L-cysteine desulfhydrase"
+    },
+    "genes": {
+      "rss": [
+        "109441026",
+        "109441218"
+      ],
+      "aqu": [
+        "100634704",
+        "100642116",
+        "105315073",
+        "105315573"
+      ],
+      "ath": [
+        "AT3G62130",
+        "AT5G26600"
+      ],
+      "aly": [
+        "ARALYDRAFT_486720",
+        "ARALYDRAFT_489502"
+      ],
+      "crb": [
+        "CARUB_v10000875mg",
+        "CARUB_v10017227mg"
+      ],
+      "csat": [
+        "104699663",
+        "104706986",
+        "104736694",
+        "104749103",
+        "104788528"
+      ],
+      "eus": [
+        "EUTSA_v10004144mg",
+        "EUTSA_v10005965mg"
+      ],
+      "brp": [
+        "103830344",
+        "103874481"
+      ],
+      "bna": [
+        "106348582",
+        "106348715",
+        "106353308",
+        "111211374"
+      ],
+      "boe": [
+        "106300027",
+        "106306993"
+      ],
+      "thj": [
+        "104802117",
+        "104802771",
+        "104818753"
+      ],
+      "cpap": [
+        "110815337"
+      ],
+      "cit": [
+        "102612175",
+        "102626410",
+        "102628307",
+        "107177301"
+      ],
+      "cic": [
+        "CICLE_v10011696mg",
+        "CICLE_v10013565mg",
+        "CICLE_v10013630mg",
+        "CICLE_v10020107mg"
+      ],
+      "tcc": [
+        "18600637",
+        "18613807"
+      ],
+      "gra": [
+        "105761151",
+        "105790386",
+        "105802893"
+      ],
+      "ghi": [
+        "107912242",
+        "107916839",
+        "107923624",
+        "107927291",
+        "107955413"
+      ],
+      "egr": [
+        "104424621",
+        "104426923",
+        "104431440"
+      ],
+      "gmx": [
+        "100778443",
+        "100786129",
+        "100787528",
+        "100793745",
+        "100796732"
+      ],
+      "pvu": [
+        "PHAVU_001G222200g",
+        "PHAVU_007G204900g",
+        "PHAVU_007G209500g"
+      ],
+      "vra": [
+        "106754861",
+        "106757980",
+        "106769802",
+        "106770730",
+        "106776815"
+      ],
+      "var": [
+        "108324939",
+        "108325888",
+        "108326803"
+      ],
+      "ccaj": [
+        "109794318",
+        "109797560",
+        "109807724"
+      ],
+      "mtr": [
+        "MTR_1g086070",
+        "MTR_1g484920",
+        "MTR_7g111540"
+      ],
+      "cam": [
+        "101489071",
+        "101497392",
+        "101500508"
+      ],
+      "adu": [
+        "107465010",
+        "107465126",
+        "107492236"
+      ],
+      "aip": [
+        "107618418",
+        "107619001",
+        "107645985"
+      ],
+      "lja": [
+        "Lj0g3v0131109.1",
+        "Lj0g3v0330309.1",
+        "Lj1g3v4807370.1"
+      ],
+      "lang": [
+        "109328859",
+        "109331952",
+        "109336357"
+      ],
+      "fve": [
+        "101297568",
+        "101297861",
+        "101300436"
+      ],
+      "pper": [
+        "18771931",
+        "18772177",
+        "18774311",
+        "18774576",
+        "18775399"
+      ],
+      "pmum": [
+        "103344505",
+        "103344506",
+        "103344507"
+      ],
+      "mdm": [
+        "103419434",
+        "103433832",
+        "103450812",
+        "103450813"
+      ],
+      "pxb": [
+        "103928254",
+        "103928271",
+        "103955312",
+        "103955314",
+        "103955848"
+      ],
+      "zju": [
+        "107411679",
+        "107411685",
+        "107411704",
+        "107426174"
+      ],
+      "csv": [
+        "101221312"
+      ],
+      "cmo": [
+        "103493954"
+      ],
+      "mcha": [
+        "111023288"
+      ],
+      "rcu": [
+        "8265875",
+        "8274960"
+      ],
+      "jcu": [
+        "105642703",
+        "105647374"
+      ],
+      "hbr": [
+        "110633045",
+        "110653717",
+        "110661721"
+      ],
+      "pop": [
+        "POPTR_0002s18830g",
+        "POPTR_0005s00480g",
+        "POPTR_0013s00400g",
+        "POPTR_0014s10830g"
+      ],
+      "vvi": [
+        "100243446",
+        "100244282"
+      ],
+      "sly": [
+        "101258894",
+        "101267603"
+      ],
+      "spen": [
+        "107008434",
+        "107018829"
+      ],
+      "sot": [
+        "102586162",
+        "102604167"
+      ],
+      "cann": [
+        "107840630",
+        "107870915"
+      ],
+      "nta": [
+        "107760273",
+        "107762255",
+        "107809393",
+        "107827141",
+        "107831265"
+      ],
+      "nsy": [
+        "104215557",
+        "104216480"
+      ],
+      "nto": [
+        "104096912",
+        "104111542",
+        "104120808"
+      ],
+      "ini": [
+        "109164575",
+        "109164610",
+        "109182896"
+      ],
+      "sind": [
+        "105162984",
+        "105169003"
+      ],
+      "han": [
+        "110877155",
+        "110884362"
+      ],
+      "bvg": [
+        "104890630"
+      ],
+      "soe": [
+        "110797240"
+      ],
+      "nnu": [
+        "104586046",
+        "104607171"
+      ],
+      "osa": [
+        "4325155"
+      ],
+      "dosa": [
+        "Os01t0290100-01",
+        "Os01t0290600-00"
+      ],
+      "obr": [
+        "102718401",
+        "102718687"
+      ],
+      "bdi": [
+        "100844459"
+      ],
+      "sbi": [
+        "110433861",
+        "8078148"
+      ],
+      "zma": [
+        "100193096",
+        "100284775"
+      ],
+      "sita": [
+        "101784048",
+        "101784864"
+      ],
+      "pda": [
+        "103695778",
+        "103722110"
+      ],
+      "egu": [
+        "105035146",
+        "105035494"
+      ],
+      "mus": [
+        "103971727",
+        "103975040",
+        "103999773"
+      ],
+      "dct": [
+        "110101195"
+      ],
+      "atr": [
+        "18430133"
+      ],
+      "smo": [
+        "SELMODRAFT_232064",
+        "SELMODRAFT_232793",
+        "SELMODRAFT_413706"
+      ],
+      "ppp": [
+        "PHYPADRAFT_175806",
+        "PHYPADRAFT_30749"
+      ],
+      "cre": [
+        "CHLREDRAFT_152707"
+      ],
+      "mis": [
+        "MICPUN_113236"
+      ],
+      "sre": [
+        "PTSG_02780"
+      ],
+      "smin": [
+        "v1.2.005268.t1",
+        "v1.2.005268.t2"
+      ],
+      "aaf": [
+        "AURANDRAFT_64603"
+      ],
+      "spar": [
+        "SPRG_01114"
+      ],
+      "mja": [
+        "MJ_1025"
+      ],
+      "mfe": [
+        "Mefer_1194"
+      ],
+      "mvu": [
+        "Metvu_0638"
+      ],
+      "mfs": [
+        "MFS40622_1642"
+      ],
+      "mif": [
+        "Metin_1014"
+      ],
+      "mjh": [
+        "JH146_0918"
+      ],
+      "mig": [
+        "Metig_0767"
+      ],
+      "mmp": [
+        "MMP1468"
+      ],
+      "mmq": [
+        "MmarC5_0110"
+      ],
+      "mmx": [
+        "MmarC6_1205"
+      ],
+      "mmz": [
+        "MmarC7_0713"
+      ],
+      "mmd": [
+        "GYY_08175"
+      ],
+      "mmak": [
+        "MMKA1_16920"
+      ],
+      "mmao": [
+        "MMOS7_15750"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.4.1.28"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.4.1.28"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.4.1.28"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.4.1.28"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Tchong SI",
+          "Xu H",
+          "White RH"
+        ],
+        "title": "L-cysteine desulfidase: an [4Fe-4S] enzyme isolated from Methanocaldococcus jannaschii that catalyzes the breakdown of L-cysteine into pyruvate, ammonia, and sulfide.",
+        "journal": "Biochemistry. 44 (2005) 1659-70.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:15683250]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

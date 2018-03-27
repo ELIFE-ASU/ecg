@@ -1,0 +1,889 @@
+[
+  {
+    "entry_id": "1.1.1.145",
+    "name": "3beta-hydroxy-Delta5-steroid dehydrogenase",
+    "names": [
+      "3beta-hydroxy-Delta5-steroid dehydrogenase",
+      "progesterone reductase",
+      "Delta5-3beta-hydroxysteroid dehydrogenase",
+      "3beta-hydroxy-5-ene steroid dehydrogenase",
+      "3beta-hydroxy steroid dehydrogenase/isomerase",
+      "3beta-hydroxy-Delta5-C27-steroid dehydrogenase/isomerase",
+      "3beta-hydroxy-Delta5-C27-steroid oxidoreductase",
+      "3beta-hydroxy-5-ene-steroid oxidoreductase",
+      "steroid-Delta5-3beta-ol dehydrogenase",
+      "3beta-HSDH",
+      "5-ene-3-beta-hydroxysteroid dehydrogenase",
+      "3beta-hydroxy-5-ene-steroid dehydrogenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-OH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "3beta-hydroxy-Delta5-steroid:NAD+ 3-oxidoreductase",
+    "reaction": "a 3beta-hydroxy-Delta5-steroid + NAD+ = a 3-oxo-Delta5-steroid + NADH + H+ [RN:R03176]",
+    "all_reac": "R03176; (other) R01837 R02216 R02499 R02840 R03327 R04163 R04678 R04849 R09920",
+    "iubmb_reactions": [
+      "R03176"
+    ],
+    "kegg_reactions": [
+      "R01837 R02216 R02499 R02840 R03327 R04163 R04678 R04849 R09920"
+    ],
+    "substrates": [
+      "3beta-hydroxy-Delta5-steroid [CPD:C03836]",
+      "NAD+ [CPD:C00003]"
+    ],
+    "products": [
+      "3-oxo-Delta5-steroid [CPD:C01034]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This activity is found in several bifunctional enzymes that catalyse the oxidative conversion of Delta5-3-hydroxy steroids to a Delta4-3-oxo configuration. This conversion is carried out in two separate, sequential reactions; in the first reaction, which requires NAD+, the enzyme catalyses the dehydrogenation of the 3beta-hydroxy steroid to a 3-oxo intermediate. In the second reaction the reduced coenzyme, which remains attached to the enzyme, activates the isomerization of the Delta5 form to a Delta4 form (cf. EC 5.3.3.1, steroid Delta-isomerase). Substrates include dehydroepiandrosterone (which is converted into androst-5-ene-3,17-dione), pregnenolone (converted to progesterone) and cholest-5-en-3-one, an intermediate of cholesterol degradation.",
+    "pathways": {
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec00984": "Steroid degradation",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K00070": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase",
+      "K16045": "3beta-hydroxy-Delta5-steroid dehydrogenase / steroid Delta-isomerase"
+    },
+    "genes": {
+      "hsa": [
+        "3283",
+        "3284"
+      ],
+      "ptr": [
+        "457165",
+        "469446"
+      ],
+      "pps": [
+        "100982464",
+        "100983009",
+        "100990187"
+      ],
+      "ggo": [
+        "101141801",
+        "101146563"
+      ],
+      "pon": [
+        "100451655",
+        "100452394"
+      ],
+      "nle": [
+        "100596087",
+        "100605995",
+        "100606563",
+        "100607955"
+      ],
+      "mcc": [
+        "712686",
+        "713091"
+      ],
+      "mcf": [
+        "102129497",
+        "102133592",
+        "102134747",
+        "102135110"
+      ],
+      "csab": [
+        "103224100",
+        "103224104",
+        "103224107",
+        "103224109"
+      ],
+      "rro": [
+        "104654599",
+        "104654605"
+      ],
+      "rbb": [
+        "108528160",
+        "108528161",
+        "108528164"
+      ],
+      "cjc": [
+        "100387484",
+        "100389654",
+        "100400416",
+        "100405879"
+      ],
+      "sbq": [
+        "101042680",
+        "101051416"
+      ],
+      "mmu": [
+        "100043456",
+        "15492",
+        "15493",
+        "15495",
+        "15496",
+        "15497"
+      ],
+      "rno": [
+        "108348086",
+        "24470",
+        "29632",
+        "360348",
+        "682974"
+      ],
+      "cge": [
+        "100770922",
+        "100772588",
+        "103163008"
+      ],
+      "ngi": [
+        "103728305",
+        "103732007",
+        "103738837"
+      ],
+      "hgl": [
+        "101707488",
+        "101707858"
+      ],
+      "ccan": [
+        "109702728",
+        "109702729"
+      ],
+      "ocu": [
+        "100346986",
+        "100347914"
+      ],
+      "tup": [
+        "102470981",
+        "102471410"
+      ],
+      "cfa": [
+        "483146"
+      ],
+      "aml": [
+        "100464280"
+      ],
+      "umr": [
+        "103677123"
+      ],
+      "oro": [
+        "101378904"
+      ],
+      "fca": [
+        "100616070"
+      ],
+      "ptg": [
+        "102957262"
+      ],
+      "aju": [
+        "106978496"
+      ],
+      "bta": [
+        "281824"
+      ],
+      "bom": [
+        "102274088"
+      ],
+      "biu": [
+        "109555859"
+      ],
+      "phd": [
+        "102328070"
+      ],
+      "chx": [
+        "100860869"
+      ],
+      "oas": [
+        "100190978"
+      ],
+      "ssc": [
+        "445539"
+      ],
+      "cfr": [
+        "102512447"
+      ],
+      "cdk": [
+        "105089475"
+      ],
+      "bacu": [
+        "103015346"
+      ],
+      "lve": [
+        "103083046"
+      ],
+      "ecb": [
+        "100034078"
+      ],
+      "epz": [
+        "103548379"
+      ],
+      "eai": [
+        "106832920"
+      ],
+      "myb": [
+        "106723550"
+      ],
+      "hai": [
+        "109389868"
+      ],
+      "rss": [
+        "109446820"
+      ],
+      "pale": [
+        "102891879"
+      ],
+      "lav": [
+        "100659049"
+      ],
+      "tmu": [
+        "101358325"
+      ],
+      "mdo": [
+        "100012668"
+      ],
+      "shr": [
+        "100913530"
+      ],
+      "oaa": [
+        "100080135"
+      ],
+      "gga": [
+        "396015"
+      ],
+      "mgp": [
+        "104915630"
+      ],
+      "cjo": [
+        "107319373"
+      ],
+      "apla": [
+        "101793560",
+        "101803865"
+      ],
+      "acyg": [
+        "106045741"
+      ],
+      "tgu": [
+        "751770"
+      ],
+      "gfr": [
+        "102039409"
+      ],
+      "fab": [
+        "101817697"
+      ],
+      "phi": [
+        "102101526"
+      ],
+      "pmaj": [
+        "107211459"
+      ],
+      "ccw": [
+        "104687106"
+      ],
+      "fpg": [
+        "101921564"
+      ],
+      "fch": [
+        "102052697"
+      ],
+      "clv": [
+        "102087460"
+      ],
+      "egz": [
+        "104126518"
+      ],
+      "aam": [
+        "106497227"
+      ],
+      "asn": [
+        "102367786"
+      ],
+      "amj": [
+        "109280168"
+      ],
+      "pss": [
+        "102453952"
+      ],
+      "cmy": [
+        "102934871"
+      ],
+      "cpic": [
+        "101946936"
+      ],
+      "acs": [
+        "100561899"
+      ],
+      "pvt": [
+        "110076926"
+      ],
+      "pbi": [
+        "103067418"
+      ],
+      "gja": [
+        "107114856"
+      ],
+      "xla": [
+        "734818"
+      ],
+      "xtr": [
+        "100490622"
+      ],
+      "npr": [
+        "108802532"
+      ],
+      "dre": [
+        "373131",
+        "553532"
+      ],
+      "srx": [
+        "107712267"
+      ],
+      "sanh": [
+        "107658243"
+      ],
+      "sgh": [
+        "107569293"
+      ],
+      "ccar": [
+        "109052439"
+      ],
+      "ipu": [
+        "100304475"
+      ],
+      "amex": [
+        "103027852"
+      ],
+      "tru": [
+        "101069884"
+      ],
+      "tng": [
+        "GSTEN00029150G001"
+      ],
+      "lco": [
+        "104921488"
+      ],
+      "mze": [
+        "101485719"
+      ],
+      "ola": [
+        "100144358"
+      ],
+      "xma": [
+        "102228303"
+      ],
+      "pret": [
+        "103477979"
+      ],
+      "csem": [
+        "103391994"
+      ],
+      "lcf": [
+        "108902437"
+      ],
+      "hcq": [
+        "109522071"
+      ],
+      "bpec": [
+        "110156192"
+      ],
+      "sasa": [
+        "106586600"
+      ],
+      "els": [
+        "105016430"
+      ],
+      "sfm": [
+        "108937872"
+      ],
+      "lcm": [
+        "102345588"
+      ],
+      "cmk": [
+        "103180179"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_221648",
+        "BRAFLDRAFT_245803"
+      ],
+      "sko": [
+        "100370123",
+        "102805982"
+      ],
+      "dme": [
+        "Dmel_CG7724"
+      ],
+      "dpo": [
+        "Dpse_GA20545"
+      ],
+      "dan": [
+        "Dana_GF10105",
+        "Dana_GF19644"
+      ],
+      "der": [
+        "Dere_GG13606"
+      ],
+      "dse": [
+        "Dsec_GM25688"
+      ],
+      "dsi": [
+        "Dsimw501_GD14693"
+      ],
+      "dwi": [
+        "Dwil_GK12665"
+      ],
+      "dya": [
+        "Dyak_GE19901"
+      ],
+      "dgr": [
+        "Dgri_GH16404"
+      ],
+      "dmo": [
+        "Dmoj_GI12485"
+      ],
+      "dvi": [
+        "Dvir_GJ12388"
+      ],
+      "mde": [
+        "101899660"
+      ],
+      "aga": [
+        "AgaP_AGAP006654"
+      ],
+      "aag": [
+        "5566270"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ003056"
+      ],
+      "nvi": [
+        "100120136"
+      ],
+      "zne": [
+        "110831195"
+      ],
+      "fcd": [
+        "110862702"
+      ],
+      "isc": [
+        "IscW_ISCW007167",
+        "IscW_ISCW018715"
+      ],
+      "tut": [
+        "107363285"
+      ],
+      "hro": [
+        "HELRODRAFT_89375"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_114779"
+      ],
+      "crg": [
+        "105321517",
+        "105332656",
+        "105336240"
+      ],
+      "myi": [
+        "110455586",
+        "110457155"
+      ],
+      "obi": [
+        "106875030"
+      ],
+      "lak": [
+        "106151343",
+        "106181761"
+      ],
+      "mtu": [
+        "Rv1106c"
+      ],
+      "mtv": [
+        "RVBD_1106c"
+      ],
+      "mtc": [
+        "MT1137"
+      ],
+      "mra": [
+        "MRA_1117"
+      ],
+      "mtf": [
+        "TBFG_11128"
+      ],
+      "mtb": [
+        "TBMG_02877"
+      ],
+      "mtk": [
+        "TBSG_02893"
+      ],
+      "mtz": [
+        "TBXG_002857"
+      ],
+      "mtg": [
+        "MRGA327_06925"
+      ],
+      "mti": [
+        "MRGA423_06915"
+      ],
+      "mte": [
+        "CCDC5079_1022"
+      ],
+      "mtur": [
+        "CFBS_1174"
+      ],
+      "mtl": [
+        "CCDC5180_1014"
+      ],
+      "mto": [
+        "MTCTRI2_1136"
+      ],
+      "mtd": [
+        "UDA_1106c"
+      ],
+      "mtn": [
+        "ERDMAN_1239"
+      ],
+      "mtj": [
+        "J112_05975"
+      ],
+      "mtub": [
+        "MT7199_1133"
+      ],
+      "mtuc": [
+        "J113_07785"
+      ],
+      "mtue": [
+        "J114_05980"
+      ],
+      "mtx": [
+        "M943_05820"
+      ],
+      "mtuh": [
+        "I917_07855"
+      ],
+      "mtul": [
+        "TBHG_01091"
+      ],
+      "mtut": [
+        "HKBT1_1172"
+      ],
+      "mtuu": [
+        "HKBT2_1178"
+      ],
+      "mtq": [
+        "HKBS1_1174"
+      ],
+      "mbo": [
+        "Mb1136c"
+      ],
+      "mbb": [
+        "BCG_1166c"
+      ],
+      "mbt": [
+        "JTY_1139"
+      ],
+      "mbm": [
+        "BCGMEX_1138c"
+      ],
+      "mbk": [
+        "K60_011910"
+      ],
+      "mbx": [
+        "BCGT_0934"
+      ],
+      "mbz": [
+        "LH58_06095"
+      ],
+      "maf": [
+        "MAF_11210"
+      ],
+      "mce": [
+        "MCAN_11161"
+      ],
+      "mcq": [
+        "BN44_11231"
+      ],
+      "mcv": [
+        "BN43_30163"
+      ],
+      "mcx": [
+        "BN42_20954"
+      ],
+      "mcz": [
+        "BN45_30150"
+      ],
+      "mmic": [
+        "RN08_1242"
+      ],
+      "mle": [
+        "ML1942"
+      ],
+      "mlb": [
+        "MLBr01942"
+      ],
+      "mpa": [
+        "MAP_2688"
+      ],
+      "mao": [
+        "MAP4_1128"
+      ],
+      "mavi": [
+        "RC58_05605"
+      ],
+      "mavu": [
+        "RE97_05600"
+      ],
+      "mav": [
+        "MAV_1225"
+      ],
+      "mavd": [
+        "NF84_05415"
+      ],
+      "mavr": [
+        "LA63_05535"
+      ],
+      "mava": [
+        "LA64_05550"
+      ],
+      "mit": [
+        "OCO_11340"
+      ],
+      "mia": [
+        "OCU_11320"
+      ],
+      "mie": [
+        "LG41_05485"
+      ],
+      "mir": [
+        "OCQ_11350"
+      ],
+      "mid": [
+        "MIP_01824"
+      ],
+      "myo": [
+        "OEM_11450"
+      ],
+      "mchi": [
+        "AN480_06750"
+      ],
+      "mmal": [
+        "CKJ54_05520"
+      ],
+      "msm": [
+        "MSMEG_5228"
+      ],
+      "msg": [
+        "MSMEI_5091"
+      ],
+      "msb": [
+        "LJ00_25860"
+      ],
+      "msn": [
+        "LI99_25865"
+      ],
+      "msh": [
+        "LI98_25870"
+      ],
+      "msa": [
+        "Mycsm_05045"
+      ],
+      "mul": [
+        "MUL_0172"
+      ],
+      "mva": [
+        "Mvan_4635"
+      ],
+      "mgi": [
+        "Mflv_2075"
+      ],
+      "msp": [
+        "Mspyr1_14990"
+      ],
+      "mmc": [
+        "Mmcs_4109"
+      ],
+      "mkm": [
+        "Mkms_4185"
+      ],
+      "mjl": [
+        "Mjls_4340"
+      ],
+      "mjd": [
+        "JDM601_1056"
+      ],
+      "mmi": [
+        "MMAR_4359"
+      ],
+      "mmae": [
+        "MMARE11_41790"
+      ],
+      "mrh": [
+        "MycrhN_3550"
+      ],
+      "mmm": [
+        "W7S_05545"
+      ],
+      "mcb": [
+        "Mycch_4050"
+      ],
+      "mli": [
+        "MULP_04570"
+      ],
+      "mkn": [
+        "MKAN_07985"
+      ],
+      "mne": [
+        "D174_21420"
+      ],
+      "myv": [
+        "G155_22700"
+      ],
+      "mye": [
+        "AB431_06460"
+      ],
+      "mgo": [
+        "AFA91_14490"
+      ],
+      "mft": [
+        "XA26_46570"
+      ],
+      "mhad": [
+        "B586_07090"
+      ],
+      "mphl": [
+        "MPHLCCUG_04229"
+      ],
+      "mvq": [
+        "MYVA_4444"
+      ],
+      "myn": [
+        "MyAD_21005"
+      ],
+      "mll": [
+        "B1R94_06430"
+      ],
+      "mdx": [
+        "BTO20_08365"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.1.1.145"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.1.1.145"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.1.1.145"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.1.1.145"
+      ],
+      "CAS": [
+        "9044-85-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Cheatum SG",
+          "Watten JC."
+        ],
+        "title": "Purification and properties of 3-beta-hydroxysteroid dehydrogenase and delta-5-3-ketosteroid isomerase from bovine corpora lutea.",
+        "journal": "Biochim. Biophys. Acta. 122 (1966) 1-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4226148]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "KORITZ SB."
+        ],
+        "title": "THE CONVERSION OF PREGNENOLONE TO PROGESTERONE BY SMALL PARTICLES FROM RAT ADRENAL.",
+        "journal": "Biochemistry. 3 (1964) 1098-102.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:14220672]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Neville",
+          "A.M.",
+          "Orr",
+          "J.C. and Engel",
+          "L.L."
+        ],
+        "title": "Delta5-3beta-Hydroxy steroid dehydrogenase activities of bovine adrenal cortex.",
+        "journal": "Biochem. J. 107 (1968) 20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

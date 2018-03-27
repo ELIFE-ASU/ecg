@@ -1,0 +1,890 @@
+[
+  {
+    "entry_id": "1.13.11.51",
+    "name": "9-cis-epoxycarotenoid dioxygenase",
+    "names": [
+      "9-cis-epoxycarotenoid dioxygenase",
+      "nine-cis-epoxycarotenoid dioxygenase",
+      "NCED",
+      "AtNCED3",
+      "PvNCED1",
+      "VP14"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on single donors with incorporation of molecular oxygen (oxygenases);",
+      "With incorporation of two atoms of oxygen"
+    ],
+    "sysname": "9-cis-epoxycarotenoid 11,12-dioxygenase",
+    "reaction": "(1) a 9-cis-epoxycarotenoid + O2 = 2-cis,4-trans-xanthoxin + a 12'-apo-carotenal [RN:R09682]; (2) 9-cis-violaxanthin + O2 = 2-cis,4-trans-xanthoxin + (3S,5R,6S)-5,6-epoxy-3-hydroxy-5,6-dihydro-12'-apo-beta-caroten-12'-al [RN:R06953]; (3) 9'-cis-neoxanthin + O2 = 2-cis,4-trans-xanthoxin + (3S,5R,6R)-5,6-dihydroxy-6,7-didehydro-5,6-dihydro-12'-apo-beta-caroten-12'-al [RN:R06952]",
+    "all_reac": "R06952 R06953 R09682",
+    "iubmb_reactions": [
+      "R06952 R06953 R09682"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "9-cis-epoxycarotenoid [CPD:C19811]",
+      "O2 [CPD:C00007]",
+      "9-cis-violaxanthin [CPD:C13433]",
+      "9'-cis-neoxanthin [CPD:C13431]"
+    ],
+    "products": [
+      "2-cis,4-trans-xanthoxin [CPD:C13453]",
+      "12'-apo-carotenal [CPD:C19812]",
+      "(3S,5R,6S)-5,6-epoxy-3-hydroxy-5,6-dihydro-12'-apo-beta-caroten-12'-al [CPD:C14045]",
+      "(3S,5R,6R)-5,6-dihydroxy-6,7-didehydro-5,6-dihydro-12'-apo-beta-caroten-12'-al"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires iron(II). Acts on 9-cis-violaxanthin and 9'-cis-neoxanthin but not on the all-trans isomers [2,3]. In vitro, it will cleave 9-cis-zeaxanthin. Catalyses the first step of abscisic-acid biosynthesis from carotenoids in chloroplasts, in response to water stress. The other enzymes involved in the abscisic-acid biosynthesis pathway are EC 1.1.1.288 (xanthoxin dehydrogenase), EC 1.2.3.14 (abscisic-aldehyde oxidase) and EC 1.14.13.93 [(+)-abscisic acid 8'-hydroxylase].",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K09840": "9-cis-epoxycarotenoid dioxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT1G30100",
+        "AT1G78390",
+        "AT3G14440",
+        "AT3G24220",
+        "AT4G18350",
+        "AT4G19170"
+      ],
+      "aly": [
+        "ARALYDRAFT_356894",
+        "ARALYDRAFT_473228",
+        "ARALYDRAFT_478868",
+        "ARALYDRAFT_493030",
+        "ARALYDRAFT_892786",
+        "ARALYDRAFT_895735",
+        "ARALYDRAFT_898946",
+        "ARALYDRAFT_914743",
+        "ARALYDRAFT_920825"
+      ],
+      "crb": [
+        "CARUB_v10006410mg",
+        "CARUB_v10006815mg",
+        "CARUB_v10008647mg",
+        "CARUB_v10013279mg",
+        "CARUB_v10016319mg",
+        "CARUB_v10019990mg"
+      ],
+      "csat": [
+        "104702627",
+        "104709734",
+        "104713522",
+        "104718398",
+        "104718488",
+        "104723131",
+        "104723233",
+        "104731647",
+        "104741600",
+        "104743626",
+        "104745720",
+        "104746918",
+        "104751736",
+        "104757352",
+        "104765261",
+        "104766316",
+        "104777036",
+        "104779242",
+        "104792977"
+      ],
+      "eus": [
+        "EUTSA_v10002459mg",
+        "EUTSA_v10007160mg",
+        "EUTSA_v10019707mg",
+        "EUTSA_v10020337mg",
+        "EUTSA_v10024711mg",
+        "EUTSA_v10027182mg"
+      ],
+      "brp": [
+        "103828685",
+        "103832319",
+        "103834110",
+        "103840429",
+        "103842019",
+        "103853125",
+        "103856252",
+        "103857159",
+        "103860984",
+        "103870025"
+      ],
+      "bna": [
+        "106348955",
+        "106354557",
+        "106354700",
+        "106360920",
+        "106360921",
+        "106363948",
+        "106367364",
+        "106370541",
+        "106373153",
+        "106374342",
+        "106377068",
+        "106387066",
+        "106393078",
+        "106394225",
+        "106397892",
+        "106409692",
+        "106422159",
+        "106422225",
+        "106423568",
+        "106432692",
+        "106432936",
+        "106439368",
+        "106441091",
+        "106449275",
+        "106454476",
+        "106454477",
+        "111200968",
+        "111208279",
+        "111212385"
+      ],
+      "boe": [
+        "106293405",
+        "106296147",
+        "106296637",
+        "106299768",
+        "106304727",
+        "106305032",
+        "106307955",
+        "106326515",
+        "106329010",
+        "106332377"
+      ],
+      "thj": [
+        "104806131",
+        "104806971",
+        "104808725",
+        "104810410",
+        "104812288",
+        "104814303",
+        "104820653",
+        "104822605"
+      ],
+      "cpap": [
+        "110811425",
+        "110812553",
+        "110826324"
+      ],
+      "cit": [
+        "102578064",
+        "102578070",
+        "102612016",
+        "102612995",
+        "102621234"
+      ],
+      "cic": [
+        "CICLE_v10006710mg",
+        "CICLE_v10011335mg",
+        "CICLE_v10013726mg",
+        "CICLE_v10014639mg",
+        "CICLE_v10019364mg",
+        "CICLE_v10028113mg",
+        "CICLE_v10030384mg",
+        "CICLE_v10031003mg"
+      ],
+      "tcc": [
+        "18590174",
+        "18590176",
+        "18594534",
+        "18595603",
+        "18596487",
+        "18602784",
+        "18606899",
+        "18606900",
+        "18606908"
+      ],
+      "gra": [
+        "105764938",
+        "105771210",
+        "105774706",
+        "105775929",
+        "105778279",
+        "105784100",
+        "105792802",
+        "105799279",
+        "105800347"
+      ],
+      "ghi": [
+        "107890583",
+        "107901883",
+        "107905887",
+        "107909170",
+        "107912930",
+        "107913606",
+        "107914792",
+        "107918579",
+        "107928268",
+        "107932636",
+        "107936154",
+        "107936185",
+        "107942317",
+        "107942497",
+        "107946820",
+        "107947364"
+      ],
+      "egr": [
+        "104417139",
+        "104442316",
+        "104442535",
+        "104444180",
+        "104448637",
+        "104450035"
+      ],
+      "gmx": [
+        "100777875",
+        "100780284",
+        "100797882",
+        "100814399",
+        "102668920",
+        "102669445"
+      ],
+      "pvu": [
+        "PHAVU_002G120600g",
+        "PHAVU_005G051600g",
+        "PHAVU_007G198800g"
+      ],
+      "vra": [
+        "106759781",
+        "106770528",
+        "106777861"
+      ],
+      "var": [
+        "108325341",
+        "108333042",
+        "108336017"
+      ],
+      "ccaj": [
+        "109789738",
+        "109792298",
+        "109806734"
+      ],
+      "mtr": [
+        "MTR_2g070460",
+        "MTR_5g025230",
+        "MTR_5g025250",
+        "MTR_5g025270"
+      ],
+      "cam": [
+        "101492033",
+        "101496280",
+        "101505040",
+        "101511615"
+      ],
+      "adu": [
+        "107459843",
+        "107482022",
+        "107487371"
+      ],
+      "aip": [
+        "107613693",
+        "107632055",
+        "107642493"
+      ],
+      "lja": [
+        "Lj0g3v0300579.1",
+        "Lj2g3v1561960.1",
+        "Lj4g3v2467280.1"
+      ],
+      "lang": [
+        "109333123",
+        "109334878",
+        "109348052",
+        "109359536",
+        "109361488"
+      ],
+      "fve": [
+        "101292752",
+        "101293791",
+        "101311757",
+        "101315210"
+      ],
+      "pper": [
+        "18780686",
+        "18780753",
+        "18792568",
+        "18792639"
+      ],
+      "pmum": [
+        "103321735",
+        "103323745",
+        "103325135",
+        "103325828"
+      ],
+      "mdm": [
+        "103403002",
+        "103416260",
+        "103416749",
+        "103420192",
+        "103421799",
+        "103425278",
+        "103426046",
+        "103430825",
+        "103431063",
+        "103435001",
+        "103435153",
+        "103441488",
+        "103445724"
+      ],
+      "pxb": [
+        "103938475",
+        "103945979",
+        "103951286",
+        "103953513",
+        "103954827",
+        "103954831",
+        "103955326",
+        "103955327",
+        "103957334",
+        "103965230"
+      ],
+      "zju": [
+        "107406906",
+        "107409395",
+        "107422564",
+        "107422565",
+        "107427259"
+      ],
+      "csv": [
+        "101204647",
+        "101214535",
+        "101219505",
+        "101220226",
+        "101221572"
+      ],
+      "cmo": [
+        "103484361",
+        "103489449",
+        "103493037",
+        "103499487",
+        "103503120"
+      ],
+      "mcha": [
+        "111010932",
+        "111012881"
+      ],
+      "rcu": [
+        "8264093",
+        "8265632",
+        "8280147",
+        "8287688"
+      ],
+      "jcu": [
+        "105634001",
+        "105634402",
+        "105643751",
+        "105650387"
+      ],
+      "hbr": [
+        "110633552",
+        "110638127",
+        "110638541",
+        "110641806",
+        "110650899",
+        "110654913",
+        "110672115"
+      ],
+      "pop": [
+        "POPTR_0001s40420g",
+        "POPTR_0003s17490g",
+        "POPTR_0004s20200g",
+        "POPTR_0009s15390g",
+        "POPTR_0009s15400g",
+        "POPTR_0009s15410g",
+        "POPTR_0009s15430g",
+        "POPTR_0009s15440g",
+        "POPTR_0011s02230g",
+        "POPTR_0011s08240g",
+        "POPTR_0011s11370g",
+        "POPTR_0019s12320g"
+      ],
+      "vvi": [
+        "100232942",
+        "100232943",
+        "100244362",
+        "100251100",
+        "100252859",
+        "100254497",
+        "104881993"
+      ],
+      "sly": [
+        "100316877",
+        "101246826",
+        "101250535",
+        "101250828",
+        "544163"
+      ],
+      "spen": [
+        "107019771",
+        "107024003",
+        "107027314",
+        "107027395",
+        "107027835",
+        "107029051"
+      ],
+      "sot": [
+        "102577733",
+        "102577783",
+        "102579540",
+        "102581808",
+        "102585426",
+        "102589614"
+      ],
+      "cann": [
+        "107846808",
+        "107848895",
+        "107852027",
+        "107870081",
+        "107872667"
+      ],
+      "nta": [
+        "107767418",
+        "107782076",
+        "107791323",
+        "107799511",
+        "107801738",
+        "107814412",
+        "107815312",
+        "107822968",
+        "107823578",
+        "107827644"
+      ],
+      "nsy": [
+        "104228039",
+        "104232006",
+        "104235977",
+        "104244254",
+        "104249614",
+        "104249679"
+      ],
+      "nto": [
+        "104098488",
+        "104102138",
+        "104104691",
+        "104108198",
+        "104114696"
+      ],
+      "ini": [
+        "109150339",
+        "109153066",
+        "109153797",
+        "109156188",
+        "109165558",
+        "109176492",
+        "109188196"
+      ],
+      "sind": [
+        "105155330",
+        "105155486",
+        "105155487",
+        "105155499",
+        "105156900",
+        "105161870",
+        "105165104",
+        "105165510",
+        "105172767",
+        "105175729",
+        "105176883"
+      ],
+      "han": [
+        "110873138",
+        "110878258",
+        "110885603",
+        "110889755",
+        "110898252",
+        "110911735",
+        "110912650",
+        "110915557",
+        "110927366",
+        "110937034"
+      ],
+      "bvg": [
+        "104883854",
+        "104893046",
+        "104902774",
+        "104907355"
+      ],
+      "soe": [
+        "110791327",
+        "110791467",
+        "110798853",
+        "110805680"
+      ],
+      "nnu": [
+        "104587905",
+        "104590616",
+        "104590705",
+        "104590933",
+        "104593669",
+        "104602221",
+        "104610284",
+        "104610285"
+      ],
+      "osa": [
+        "4330451",
+        "4333566",
+        "4342424",
+        "4352125",
+        "9270250"
+      ],
+      "dosa": [
+        "Os02t0704000-01",
+        "Os03t0645900-00",
+        "Os07t0154100-01",
+        "Os12t0435200-01",
+        "Os12t0617400-01"
+      ],
+      "obr": [
+        "102709247",
+        "102709942",
+        "102710691",
+        "102717690",
+        "102719350",
+        "102719521"
+      ],
+      "bdi": [
+        "100822305",
+        "100835478",
+        "100836107",
+        "100845393"
+      ],
+      "sbi": [
+        "110434687",
+        "8062208",
+        "8081132"
+      ],
+      "zma": [
+        "100281136",
+        "100281391",
+        "100383768",
+        "100501444",
+        "100501454",
+        "103626043",
+        "103627610",
+        "103632443",
+        "103634160",
+        "103634451",
+        "103642321",
+        "103648268",
+        "103652265",
+        "732819"
+      ],
+      "sita": [
+        "101766978",
+        "101770668",
+        "101778945",
+        "101783411"
+      ],
+      "pda": [
+        "103705744",
+        "103712994",
+        "103717739",
+        "103721240"
+      ],
+      "egu": [
+        "105036563",
+        "105037046",
+        "105046802",
+        "105059614"
+      ],
+      "mus": [
+        "103975672",
+        "103982044",
+        "103982259",
+        "103982953",
+        "103983524",
+        "103985103",
+        "103989554",
+        "103990944",
+        "103994222"
+      ],
+      "dct": [
+        "110097303",
+        "110103406",
+        "110114619"
+      ],
+      "atr": [
+        "18422574",
+        "18422659",
+        "18427334",
+        "18444165"
+      ],
+      "smo": [
+        "SELMODRAFT_11287",
+        "SELMODRAFT_11289",
+        "SELMODRAFT_11292",
+        "SELMODRAFT_11293",
+        "SELMODRAFT_11304",
+        "SELMODRAFT_113788",
+        "SELMODRAFT_116420",
+        "SELMODRAFT_16613",
+        "SELMODRAFT_31991",
+        "SELMODRAFT_410479",
+        "SELMODRAFT_411585",
+        "SELMODRAFT_75383",
+        "SELMODRAFT_79628",
+        "SELMODRAFT_80651",
+        "SELMODRAFT_91815",
+        "SELMODRAFT_94523",
+        "SELMODRAFT_94524"
+      ],
+      "ppp": [
+        "PHYPADRAFT_173118",
+        "PHYPADRAFT_57876"
+      ],
+      "val": [
+        "VDBG_02459"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_195386"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.13.11.51"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.13.11.51"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.13.11.51"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.13.11.51"
+      ],
+      "CAS": [
+        "199877-10-6"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Schwartz SH",
+          "Tan BC",
+          "Gage DA",
+          "Zeevaart JA",
+          "McCarty DR."
+        ],
+        "title": "Specific oxidative cleavage of carotenoids by VP14 of maize.",
+        "journal": "Science. 276 (1997) 1872-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:9188535]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tan BC",
+          "Schwartz SH",
+          "Zeevaart JA",
+          "McCarty DR."
+        ],
+        "title": "Genetic control of abscisic acid biosynthesis in maize.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 94 (1997) 12235-40.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:9342392]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Qin X",
+          "Zeevaart JA."
+        ],
+        "title": "The 9-cis-epoxycarotenoid cleavage reaction is the key regulatory step of abscisic acid biosynthesis in water-stressed bean.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 15354-61.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10611388]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Thompson AJ",
+          "Jackson AC",
+          "Symonds RC",
+          "Mulholland BJ",
+          "Dadswell AR",
+          "Blake PS",
+          "Burbidge A",
+          "Taylor IB."
+        ],
+        "title": "Ectopic expression of a tomato 9-cis-epoxycarotenoid dioxygenase gene causes over-production of abscisic acid.",
+        "journal": "Plant. J. 23 (2000) 363-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:10929129]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Iuchi S",
+          "Kobayashi M",
+          "Taji T",
+          "Naramoto M",
+          "Seki M",
+          "Kato T",
+          "Tabata S",
+          "Kakubari Y",
+          "Yamaguchi-Shinozaki K",
+          "Shinozaki K."
+        ],
+        "title": "Regulation of drought tolerance by gene manipulation of 9-cis-epoxycarotenoid dioxygenase, a key enzyme in abscisic acid biosynthesis in Arabidopsis.",
+        "journal": "Plant. J. 27 (2001) 325-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:11532178]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Iuchi",
+          "S.",
+          "Kobayashi",
+          "M.",
+          "Taji",
+          "T.",
+          "Naramoto",
+          "M.",
+          "Seki",
+          "M.",
+          "Kato",
+          "T.",
+          "Tabata",
+          "S.",
+          "Kakubari",
+          "Y.",
+          "Yamaguchi-Shinozaki",
+          "K. and Shinozaki",
+          "K."
+        ],
+        "title": "Regulation of drought tolerance by gene manipulation of 9-cis-epoxycarotenoid dioxygenase, a key enzyme in abscisic acid biosynthesis in Arabidopsis.",
+        "journal": "Plant J. 30 (2002) 611.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "entry_id": "2.1.1.175",
+    "name": "tricin synthase",
+    "names": [
+      "tricin synthase",
+      "ROMT-17",
+      "ROMT-15",
+      "HvOMT1",
+      "ZmOMT1"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring one-carbon groups;",
+      "Methyltransferases"
+    ],
+    "sysname": "S-adenosyl-L-methionine:tricetin 3',5'-O-dimethyltransferase",
+    "reaction": "2 S-adenosyl-L-methionine + tricetin = 2 S-adenosyl-L-homocysteine + 3',5'-O-dimethyltricetin (overall reaction) [RN:R09611]; (1a) S-adenosyl-L-methionine + tricetin = S-adenosyl-L-homocysteine + 3'-O-methyltricetin [RN:R09612]; (1b) S-adenosyl-L-methionine + 3'-O-methyltricetin = S-adenosyl-L-homocysteine + 3',5'-O-dimethyltricetin [RN:R09613]",
+    "all_reac": "R09611 R09612 R09613",
+    "iubmb_reactions": [
+      "R09611 R09612 R09613"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "S-adenosyl-L-methionine [CPD:C00019]",
+      "tricetin [CPD:C10192]",
+      "3'-O-methyltricetin [CPD:C19739]"
+    ],
+    "products": [
+      "S-adenosyl-L-homocysteine [CPD:C00021]",
+      "3',5'-O-dimethyltricetin [CPD:C10193]",
+      "3'-O-methyltricetin [CPD:C19739]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzymes from Oryza sativa (ROMT-15 and ROMT-17) catalyses the stepwise methylation of tricetin to its 3'-mono- and 3',5'-dimethyl ethers. In contrast with the wheat enzyme (EC 2.1.1.169, tricetin 3',4',5'-O-trimethyltransferase), tricetin dimethyl ether is not converted to its 3',4',5'-trimethylated ether derivative [1]. The enzymes from Hordeum vulgare (HvOMT1) and from Zea mays (ZmOMT1) form the 3',5'-dimethyl derivative as the major product [2].",
+    "pathways": {
+    },
+    "orthologs": {
+      "K18883": "tricin synthase"
+    },
+    "genes": {
+      "osa": [
+        "4345934",
+        "4345935"
+      ],
+      "dosa": [
+        "Os08t0498100-01",
+        "Os08t0498400-01"
+      ],
+      "obr": [
+        "102700170",
+        "102710810"
+      ],
+      "bdi": [
+        "100834823",
+        "100835440"
+      ],
+      "sbi": [
+        "8055220"
+      ],
+      "zma": [
+        "100286091",
+        "100286151"
+      ],
+      "sita": [
+        "101753161",
+        "101753989"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.1.1.175"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.1.1.175"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.1.1.175"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.1.1.175"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Lee YJ",
+          "Kim BG",
+          "Chong Y",
+          "Lim Y",
+          "Ahn JH"
+        ],
+        "title": "Cation dependent O-methyltransferases from rice.",
+        "journal": "Planta. 227 (2008) 641-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:17943312]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhou",
+          "J.-M.",
+          "Fukushi",
+          "Y.",
+          "Wollenweber",
+          "E.",
+          "Ibrahim",
+          "R.K."
+        ],
+        "title": "Characterization of two O-methyltransferase-like genes in barley and maize.",
+        "journal": "Pharm. Biol. 46 (2008) 26-34.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

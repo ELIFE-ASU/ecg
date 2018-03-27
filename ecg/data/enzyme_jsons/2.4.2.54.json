@@ -1,0 +1,838 @@
+[
+  {
+    "entry_id": "2.4.2.54",
+    "name": "beta-ribofuranosylphenol 5'-phosphate synthase",
+    "names": [
+      "beta-ribofuranosylphenol 5'-phosphate synthase",
+      "beta-RFAP synthase (incorrect)",
+      "beta-RFA-P synthase (incorrect)",
+      "AF2089 (gene name)",
+      "MJ1427 (gene name)",
+      "beta-ribofuranosylhydroxybenzene 5'-phosphate synthase",
+      "4-(beta-D-ribofuranosyl)aminobenzene 5'-phosphate synthase (incorrect)",
+      "beta-ribofuranosylaminobenzene 5'-phosphate synthase (incorrect)",
+      "5-phospho-alpha-D-ribose 1-diphosphate:4-aminobenzoate 5-phospho-beta-D-ribofuranosyltransferase (decarboxylating) (incorrect)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Pentosyltransferases"
+    ],
+    "sysname": "5-phospho-alpha-D-ribose-1-diphosphate:4-hydroxybenzoate 5-phospho-beta-D-ribofuranosyltransferase (decarboxylating)",
+    "reaction": "5-phospho-alpha-D-ribose 1-diphosphate + 4-hydroxybenzoate = 4-(beta-D-ribofuranosyl)phenol 5'-phosphate + CO2 + diphosphate [RN:R11102]",
+    "all_reac": "R11102; (other) R10337",
+    "iubmb_reactions": [
+      "R11102"
+    ],
+    "kegg_reactions": [
+      "R10337"
+    ],
+    "substrates": [
+      "5-phospho-alpha-D-ribose 1-diphosphate [CPD:C00119]",
+      "4-hydroxybenzoate [CPD:C00156]"
+    ],
+    "products": [
+      "4-(beta-D-ribofuranosyl)phenol 5'-phosphate [CPD:C21107]",
+      "CO2 [CPD:C00011]",
+      "diphosphate [CPD:C00013]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is involved in biosynthesis of tetrahydromethanopterin in archaea. It was initially thought to use 4-aminobenzoate as a substrate, but was later shown to utilize 4-hydroxybenzoate [4]. The activity is dependent on Mg2+ or Mn2+ [1].",
+    "pathways": {
+      "ec00790": "Folate biosynthesis"
+    },
+    "orthologs": {
+      "K06984": "beta-ribofuranosylaminobenzene 5'-phosphate synthase"
+    },
+    "genes": {
+      "pseo": [
+        "OM33_01310"
+      ],
+      "mmt": [
+        "Metme_1363"
+      ],
+      "mdh": [
+        "AYM39_07270"
+      ],
+      "afa": [
+        "UZ73_08470"
+      ],
+      "sulr": [
+        "B649_07545"
+      ],
+      "saq": [
+        "Sare_0579"
+      ],
+      "mja": [
+        "MJ_1427"
+      ],
+      "mfe": [
+        "Mefer_1394"
+      ],
+      "mvu": [
+        "Metvu_0740"
+      ],
+      "mfs": [
+        "MFS40622_0626"
+      ],
+      "mif": [
+        "Metin_0374"
+      ],
+      "mjh": [
+        "JH146_0550"
+      ],
+      "mig": [
+        "Metig_1450"
+      ],
+      "mmp": [
+        "MMP0279"
+      ],
+      "mmq": [
+        "MmarC5_1394"
+      ],
+      "mmx": [
+        "MmarC6_0674"
+      ],
+      "mmz": [
+        "MmarC7_1282"
+      ],
+      "mmd": [
+        "GYY_01430"
+      ],
+      "mmak": [
+        "MMKA1_02860"
+      ],
+      "mmao": [
+        "MMOS7_03130"
+      ],
+      "mae": [
+        "Maeo_0244"
+      ],
+      "mvn": [
+        "Mevan_1290"
+      ],
+      "mvo": [
+        "Mvol_1337"
+      ],
+      "mok": [
+        "Metok_1124"
+      ],
+      "mac": [
+        "MA_0339",
+        "MA_4006"
+      ],
+      "mba": [
+        "Mbar_A0806",
+        "Mbar_A1222"
+      ],
+      "mby": [
+        "MSBRM_0510",
+        "MSBRM_3298"
+      ],
+      "mbw": [
+        "MSBRW_0196",
+        "MSBRW_3502"
+      ],
+      "mbar": [
+        "MSBR2_1867",
+        "MSBR2_3253"
+      ],
+      "mbak": [
+        "MSBR3_2057",
+        "MSBR3_3248"
+      ],
+      "mma": [
+        "MM_0905",
+        "MM_1592"
+      ],
+      "mmaz": [
+        "MmTuc01_0925",
+        "MmTuc01_1660"
+      ],
+      "mmj": [
+        "MSMAS_0400",
+        "MSMAS_3077"
+      ],
+      "mmac": [
+        "MSMAC_0419",
+        "MSMAC_3096"
+      ],
+      "mvc": [
+        "MSVAZ_3098",
+        "MSVAZ_3286"
+      ],
+      "mek": [
+        "MSKOL_3060",
+        "MSKOL_3248"
+      ],
+      "mls": [
+        "MSLAZ_0207",
+        "MSLAZ_0542"
+      ],
+      "metm": [
+        "MSMTP_0427",
+        "MSMTP_2976",
+        "MSMTP_2977"
+      ],
+      "mef": [
+        "MSWH1_0247",
+        "MSWH1_0384"
+      ],
+      "meq": [
+        "MSWHS_0257",
+        "MSWHS_0393"
+      ],
+      "msj": [
+        "MSSAC_0326",
+        "MSSAC_3740"
+      ],
+      "msz": [
+        "MSSIH_0284",
+        "MSSIH_3276"
+      ],
+      "msw": [
+        "MSSIT_0290",
+        "MSSIT_3347"
+      ],
+      "mthe": [
+        "MSTHC_1111",
+        "MSTHC_1774"
+      ],
+      "mthr": [
+        "MSTHT_1515",
+        "MSTHT_2168"
+      ],
+      "mhor": [
+        "MSHOH_0494",
+        "MSHOH_3797"
+      ],
+      "mbu": [
+        "Mbur_1563"
+      ],
+      "mmet": [
+        "MCMEM_2074"
+      ],
+      "mmh": [
+        "Mmah_0135"
+      ],
+      "mhaz": [
+        "BHR79_02750"
+      ],
+      "mev": [
+        "Metev_2206"
+      ],
+      "mzh": [
+        "Mzhil_1969"
+      ],
+      "mpy": [
+        "Mpsy_1935"
+      ],
+      "mhz": [
+        "Metho_0055"
+      ],
+      "mtp": [
+        "Mthe_0935"
+      ],
+      "mcj": [
+        "MCON_2372"
+      ],
+      "mhi": [
+        "Mhar_2046"
+      ],
+      "mhu": [
+        "Mhun_1148"
+      ],
+      "mem": [
+        "Memar_0701"
+      ],
+      "mbg": [
+        "BN140_1813"
+      ],
+      "mema": [
+        "MMAB1_2341"
+      ],
+      "mpi": [
+        "Mpet_2520"
+      ],
+      "mfo": [
+        "Metfor_0371"
+      ],
+      "mpl": [
+        "Mpal_1624"
+      ],
+      "mpd": [
+        "MCP_1555",
+        "MCP_1942"
+      ],
+      "mez": [
+        "Mtc_1505"
+      ],
+      "rci": [
+        "LRC185",
+        "LRC387"
+      ],
+      "mth": [
+        "MTH_830"
+      ],
+      "mmg": [
+        "MTBMA_c12280"
+      ],
+      "metc": [
+        "MTCT_0744"
+      ],
+      "mwo": [
+        "MWSIV6_1207"
+      ],
+      "mru": [
+        "mru_1690"
+      ],
+      "meb": [
+        "Abm4_0511",
+        "Abm4_0513"
+      ],
+      "mmil": [
+        "sm9_1728",
+        "sm9_1774"
+      ],
+      "meye": [
+        "TL18_04245"
+      ],
+      "mol": [
+        "YLM1_1158"
+      ],
+      "mel": [
+        "Metbo_1945"
+      ],
+      "mew": [
+        "MSWAN_0675"
+      ],
+      "meth": [
+        "MBMB1_0695"
+      ],
+      "mfc": [
+        "BRM9_1500"
+      ],
+      "mfi": [
+        "DSM1535_2194"
+      ],
+      "mcub": [
+        "MCBB_0706"
+      ],
+      "mfv": [
+        "Mfer_0206"
+      ],
+      "mka": [
+        "MK0558"
+      ],
+      "afu": [
+        "AF_2089"
+      ],
+      "afg": [
+        "AFULGI_00023580"
+      ],
+      "apo": [
+        "Arcpr_1537"
+      ],
+      "ave": [
+        "Arcve_1291"
+      ],
+      "ast": [
+        "Asulf_00664"
+      ],
+      "fpl": [
+        "Ferp_2137"
+      ],
+      "gac": [
+        "GACE_1235"
+      ],
+      "gah": [
+        "GAH_01805"
+      ],
+      "hdl": [
+        "HALDL1_13540"
+      ],
+      "hhb": [
+        "Hhub_3126"
+      ],
+      "hje": [
+        "HacjB3_05855"
+      ],
+      "hsu": [
+        "HLASF_1754"
+      ],
+      "hsf": [
+        "HLASA_1740"
+      ],
+      "hma": [
+        "rrnAC0303"
+      ],
+      "hhi": [
+        "HAH_1044"
+      ],
+      "hhn": [
+        "HISP_05365"
+      ],
+      "hab": [
+        "SG26_13035"
+      ],
+      "nph": [
+        "NP_4930A"
+      ],
+      "nmo": [
+        "Nmlp_3439"
+      ],
+      "hut": [
+        "Huta_2356"
+      ],
+      "hti": [
+        "HTIA_1898"
+      ],
+      "hmu": [
+        "Hmuk_1348"
+      ],
+      "hali": [
+        "BV210_13160"
+      ],
+      "hwa": [
+        "HQ_3191A"
+      ],
+      "hwc": [
+        "Hqrw_3752"
+      ],
+      "hvo": [
+        "HVO_2628"
+      ],
+      "hme": [
+        "HFX_2645"
+      ],
+      "hgi": [
+        "ABY42_13195"
+      ],
+      "hbo": [
+        "Hbor_09470"
+      ],
+      "htu": [
+        "Htur_2109"
+      ],
+      "hda": [
+        "BB347_05420"
+      ],
+      "nmg": [
+        "Nmag_0626"
+      ],
+      "hxa": [
+        "Halxa_2722"
+      ],
+      "nat": [
+        "NJ7G_1238"
+      ],
+      "npe": [
+        "Natpe_2068"
+      ],
+      "nge": [
+        "Natgr_0402"
+      ],
+      "hru": [
+        "Halru_2014"
+      ],
+      "nou": [
+        "Natoc_3775"
+      ],
+      "sali": [
+        "L593_05040"
+      ],
+      "hlr": [
+        "HALLA_14180"
+      ],
+      "hlc": [
+        "CHINAEXTREME12750"
+      ],
+      "naj": [
+        "B1756_14620"
+      ],
+      "pho": [
+        "PH0227",
+        "PH1228"
+      ],
+      "pab": [
+        "PAB0141",
+        "PAB1694"
+      ],
+      "pfu": [
+        "PF0903"
+      ],
+      "pfi": [
+        "PFC_03735"
+      ],
+      "pyn": [
+        "PNA2_0739",
+        "PNA2_1695"
+      ],
+      "pya": [
+        "PYCH_05770"
+      ],
+      "pys": [
+        "Py04_0291",
+        "Py04_0969"
+      ],
+      "pyc": [
+        "TQ32_00530",
+        "TQ32_05075"
+      ],
+      "ton": [
+        "TON_0388"
+      ],
+      "tga": [
+        "TGAM_1652"
+      ],
+      "tsi": [
+        "TSIB_0667"
+      ],
+      "tba": [
+        "TERMP_00443"
+      ],
+      "the": [
+        "GQS_03285"
+      ],
+      "tha": [
+        "TAM4_1771",
+        "TAM4_77"
+      ],
+      "thm": [
+        "CL1_0331"
+      ],
+      "tlt": [
+        "OCC_00267"
+      ],
+      "ths": [
+        "TES1_0523"
+      ],
+      "tnu": [
+        "BD01_0324",
+        "BD01_1268"
+      ],
+      "teu": [
+        "TEU_07325"
+      ],
+      "tgy": [
+        "X802_01185"
+      ],
+      "thv": [
+        "ADU37_CDS13370"
+      ],
+      "tch": [
+        "CHITON_0355",
+        "CHITON_0721"
+      ],
+      "tpep": [
+        "A0127_00455",
+        "A0127_04160"
+      ],
+      "tgg": [
+        "A3K92_04075"
+      ],
+      "tce": [
+        "A3L02_09400"
+      ],
+      "tbs": [
+        "A3L01_02635"
+      ],
+      "thh": [
+        "CDI07_02590"
+      ],
+      "tsl": [
+        "A3L11_06580"
+      ],
+      "ttd": [
+        "A3L14_04180"
+      ],
+      "tprf": [
+        "A3L09_02260",
+        "A3L09_05405"
+      ],
+      "ppac": [
+        "PAP_03835"
+      ],
+      "ape": [
+        "APE_1512",
+        "APE_2425"
+      ],
+      "acj": [
+        "ACAM_0950",
+        "ACAM_1521"
+      ],
+      "shc": [
+        "Shell_1377"
+      ],
+      "iho": [
+        "Igni_1441"
+      ],
+      "iis": [
+        "EYM_04885"
+      ],
+      "dfd": [
+        "Desfe_0276"
+      ],
+      "dmu": [
+        "Desmu_0983"
+      ],
+      "tag": [
+        "Tagg_0600"
+      ],
+      "iag": [
+        "Igag_0281",
+        "Igag_0656"
+      ],
+      "hbu": [
+        "Hbut_0952"
+      ],
+      "pfm": [
+        "Pyrfu_0027",
+        "Pyrfu_1305"
+      ],
+      "pdl": [
+        "Pyrde_0679",
+        "Pyrde_1683"
+      ],
+      "sso": [
+        "SSO0370"
+      ],
+      "sol": [
+        "Ssol_1345"
+      ],
+      "ssoa": [
+        "SULA_1388"
+      ],
+      "ssol": [
+        "SULB_1389"
+      ],
+      "ssof": [
+        "SULC_1387"
+      ],
+      "sto": [
+        "STK_13890"
+      ],
+      "sai": [
+        "Saci_1486"
+      ],
+      "sacn": [
+        "SacN8_07210"
+      ],
+      "sacr": [
+        "SacRon12I_07210"
+      ],
+      "sacs": [
+        "SUSAZ_07060"
+      ],
+      "sis": [
+        "LS215_1873"
+      ],
+      "sia": [
+        "M1425_1733"
+      ],
+      "sim": [
+        "M1627_1851"
+      ],
+      "sid": [
+        "M164_1780"
+      ],
+      "siy": [
+        "YG5714_1849"
+      ],
+      "sin": [
+        "YN1551_1076"
+      ],
+      "sii": [
+        "LD85_1990"
+      ],
+      "sih": [
+        "SiH_1709"
+      ],
+      "sir": [
+        "SiRe_1629"
+      ],
+      "sic": [
+        "SiL_1622"
+      ],
+      "sula": [
+        "BFU36_03980"
+      ],
+      "mse": [
+        "Msed_1616"
+      ],
+      "mcn": [
+        "Mcup_0611"
+      ],
+      "aho": [
+        "Ahos_1268"
+      ],
+      "aman": [
+        "B6F84_10775"
+      ],
+      "asc": [
+        "ASAC_0184",
+        "ASAC_0528"
+      ],
+      "clg": [
+        "Calag_0385",
+        "Calag_1478"
+      ],
+      "ffo": [
+        "FFONT_0809"
+      ],
+      "csu": [
+        "CSUB_C1261"
+      ],
+      "loki": [
+        "Lokiarch_00720"
+      ],
+      "hah": [
+        "Halar_1989"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.2.54"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.2.54"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.2.54"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.2.54"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Rasche ME",
+          "White RH"
+        ],
+        "title": "Mechanism for the enzymatic formation of 4-(beta-D-ribofuranosyl)aminobenzene 5'-phosphate during the biosynthesis of methanopterin.",
+        "journal": "Biochemistry. 37 (1998) 11343-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:9698382]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Scott JW",
+          "Rasche ME"
+        ],
+        "title": "Purification, overproduction, and partial characterization of beta-RFAP synthase, a key enzyme in the methanopterin biosynthesis pathway.",
+        "journal": "J. Bacteriol. 184 (2002) 4442-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12142414]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dumitru RV",
+          "Ragsdale SW"
+        ],
+        "title": "Mechanism of 4-(beta-D-ribofuranosyl)aminobenzene 5'-phosphate synthase, a key enzyme in the methanopterin biosynthetic pathway.",
+        "journal": "J. Biol. Chem. 279 (2004) 39389-95.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:15262968]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "White RH"
+        ],
+        "title": "The conversion of a phenol to an aniline occurs in the biochemical formation of the 1-(4-aminophenyl)-1-deoxy-D-ribitol moiety in methanopterin.",
+        "journal": "Biochemistry. 50 (2011) 6041-52.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:21634403]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

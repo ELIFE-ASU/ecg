@@ -1,0 +1,622 @@
+[
+  {
+    "entry_id": "2.4.1.241",
+    "name": "digalactosyldiacylglycerol synthase",
+    "names": [
+      "digalactosyldiacylglycerol synthase",
+      "DGD1",
+      "DGD2",
+      "DGDG synthase (ambiguous)",
+      "UDP-galactose-dependent DGDG synthase",
+      "UDP-galactose-dependent digalactosyldiacylglycerol synthase",
+      "UDP-galactose:MGDG galactosyltransferase",
+      "UDP-galactose:3-(beta-D-galactosyl)-1,2-diacyl-sn-glycerol 6-alpha-galactosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-alpha-D-galactose:1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol 6-alpha-galactosyltransferase",
+    "reaction": "UDP-alpha-D-galactose + 1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol = UDP + 1,2-diacyl-3-O-[alpha-D-galactosyl-(1->6)-beta-D-galactosyl]-sn-glycerol [RN:R04469]",
+    "all_reac": "R04469",
+    "iubmb_reactions": [
+      "R04469"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "UDP-alpha-D-galactose [CPD:C00052]",
+      "1,2-diacyl-3-O-(beta-D-galactosyl)-sn-glycerol"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "1,2-diacyl-3-O-[alpha-D-galactosyl-(1->6)-beta-D-galactosyl]-sn-glycerol [CPD:C06037]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Mg2+. Diacylglycerol cannot serve as an acceptor molecule for galactosylation as in the reaction catalysed by EC 2.4.1.46, monogalactosyldiacylglyerol synthase. When phosphate is limiting, phospholipids in plant membranes are reduced but these are replaced, at least in part, by the glycolipids digalactosyldiacylglycerol (DGDG) and sulfoquinovosyldiacylglycerol [3]. While both DGD1 and DGD2 are increased under phosphate-limiting conditions, DGD2 does not contribute significantly under optimal growth conditions. DGD2 is responsible for the synthesis of DGDG molecular species that are rich in C16 fatty acids at sn-1 of diacylglycerol whereas DGD1 leads to molecular species rich in C18 fatty acids [3]. The enzyme has been localized to the outer side of chloroplast envelope membranes.",
+    "pathways": {
+      "ec00561": "Glycerolipid metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K09480": "digalactosyldiacylglycerol synthase"
+    },
+    "genes": {
+      "ath": [
+        "AT3G11670",
+        "AT4G00550"
+      ],
+      "aly": [
+        "ARALYDRAFT_490510",
+        "ARALYDRAFT_686538",
+        "ARALYDRAFT_897369"
+      ],
+      "crb": [
+        "CARUB_v10000865mg",
+        "CARUB_v10012998mg"
+      ],
+      "csat": [
+        "104705318",
+        "104712038",
+        "104737722",
+        "104745391",
+        "104764923",
+        "109124446"
+      ],
+      "eus": [
+        "EUTSA_v10020090mg",
+        "EUTSA_v10028633mg"
+      ],
+      "brp": [
+        "103836912",
+        "103870321"
+      ],
+      "bna": [
+        "106365523",
+        "106372022",
+        "106434959",
+        "106452493",
+        "111215733"
+      ],
+      "boe": [
+        "106295179",
+        "106318357"
+      ],
+      "thj": [
+        "104801456",
+        "104816623"
+      ],
+      "cpap": [
+        "110810554",
+        "110819516"
+      ],
+      "cit": [
+        "102607996",
+        "102608572",
+        "102625925"
+      ],
+      "cic": [
+        "CICLE_v10011110mg",
+        "CICLE_v10019524mg",
+        "CICLE_v10023521mg"
+      ],
+      "tcc": [
+        "18598403",
+        "18614197"
+      ],
+      "gra": [
+        "105761696",
+        "105786283",
+        "105802667"
+      ],
+      "ghi": [
+        "107911961",
+        "107925636",
+        "107928180",
+        "107934587",
+        "107934604",
+        "107942790",
+        "107957255"
+      ],
+      "egr": [
+        "104415073",
+        "104443476"
+      ],
+      "gmx": [
+        "100777005",
+        "100796354",
+        "547762",
+        "548059"
+      ],
+      "pvu": [
+        "PHAVU_001G195600g",
+        "PHAVU_008G069100g"
+      ],
+      "vra": [
+        "106757670",
+        "106759514"
+      ],
+      "var": [
+        "108329119",
+        "108329638"
+      ],
+      "ccaj": [
+        "109802252",
+        "109813963"
+      ],
+      "mtr": [
+        "MTR_1g047640",
+        "MTR_1g057700",
+        "MTR_6g091670",
+        "MTR_7g076400",
+        "MTR_7g106250"
+      ],
+      "cam": [
+        "101493389",
+        "101502949",
+        "101504489"
+      ],
+      "adu": [
+        "107471463",
+        "107476146",
+        "107485618"
+      ],
+      "aip": [
+        "107622579",
+        "107626341",
+        "107634959"
+      ],
+      "lja": [
+        "Lj0g3v0297149.1",
+        "Lj0g3v0297149.2",
+        "Lj1g3v2627380.1",
+        "Lj1g3v2627390.1",
+        "Lj1g3v2627390.2",
+        "Lj1g3v2627390.3",
+        "Lj1g3v4741430.1",
+        "Lj1g3v4741440.1",
+        "Lj1g3v4741440.2"
+      ],
+      "lang": [
+        "109325765",
+        "109334419",
+        "109336702",
+        "109348293",
+        "109360761"
+      ],
+      "fve": [
+        "101296403",
+        "101312478"
+      ],
+      "pper": [
+        "18771456",
+        "18786635"
+      ],
+      "pmum": [
+        "103331870",
+        "103339533"
+      ],
+      "mdm": [
+        "103414953",
+        "103429278",
+        "103446060"
+      ],
+      "pxb": [
+        "103932702",
+        "103938462",
+        "103940583",
+        "103941225",
+        "103963050",
+        "103963051",
+        "103965563"
+      ],
+      "zju": [
+        "107423541",
+        "107433638"
+      ],
+      "csv": [
+        "101204668",
+        "101218383"
+      ],
+      "cmo": [
+        "103483294",
+        "103500937"
+      ],
+      "mcha": [
+        "111005590",
+        "111016394"
+      ],
+      "rcu": [
+        "8258532",
+        "8263556"
+      ],
+      "jcu": [
+        "105635812",
+        "105643028"
+      ],
+      "hbr": [
+        "110634714",
+        "110642613",
+        "110669503"
+      ],
+      "pop": [
+        "POPTR_0006s21970g",
+        "POPTR_0014s07530g",
+        "POPTR_0016s07090g"
+      ],
+      "vvi": [
+        "100247315",
+        "100251641",
+        "100259167"
+      ],
+      "sly": [
+        "101247974",
+        "101250748",
+        "101258305",
+        "101266854"
+      ],
+      "spen": [
+        "107002635",
+        "107007113",
+        "107012280",
+        "107032043"
+      ],
+      "sot": [
+        "102578378",
+        "102578535",
+        "102580118",
+        "102585986"
+      ],
+      "cann": [
+        "107839149",
+        "107843714",
+        "107845447",
+        "107846342"
+      ],
+      "nta": [
+        "107762360",
+        "107763434",
+        "107768312",
+        "107778488",
+        "107786634",
+        "107796438",
+        "107800723",
+        "107801677"
+      ],
+      "nsy": [
+        "104214465",
+        "104218748",
+        "104223106",
+        "104249200"
+      ],
+      "nto": [
+        "104110396",
+        "104116420",
+        "104118521",
+        "104120512"
+      ],
+      "ini": [
+        "109155967",
+        "109182066",
+        "109184240"
+      ],
+      "sind": [
+        "105172127",
+        "105173989"
+      ],
+      "han": [
+        "110864760",
+        "110891050",
+        "110898197"
+      ],
+      "bvg": [
+        "104888511",
+        "104892100"
+      ],
+      "soe": [
+        "110789077",
+        "110794769"
+      ],
+      "nnu": [
+        "104590241"
+      ],
+      "osa": [
+        "4329584",
+        "4332054",
+        "4332372",
+        "4335812",
+        "4349835"
+      ],
+      "dosa": [
+        "Os02t0539100-01",
+        "Os03t0214400-01",
+        "Os03t0268300-01",
+        "Os11t0158400-01"
+      ],
+      "obr": [
+        "102706456",
+        "102709991",
+        "102711343",
+        "102713684",
+        "102722841"
+      ],
+      "bdi": [
+        "100824823",
+        "100831810",
+        "100837116",
+        "100839031",
+        "100845054"
+      ],
+      "sbi": [
+        "110431775",
+        "8064233",
+        "8070659",
+        "8077578",
+        "8084949"
+      ],
+      "zma": [
+        "100277520",
+        "100286172",
+        "100382823",
+        "100383181",
+        "103646485"
+      ],
+      "sita": [
+        "101759231",
+        "101764872",
+        "101770913",
+        "101772957",
+        "101776547"
+      ],
+      "pda": [
+        "103703146",
+        "103706234",
+        "103714289",
+        "103716768"
+      ],
+      "egu": [
+        "105038316",
+        "105045466",
+        "105052064",
+        "105056883"
+      ],
+      "mus": [
+        "103971254",
+        "103973582",
+        "103996864",
+        "103999640",
+        "104000310"
+      ],
+      "dct": [
+        "110094970",
+        "110102539"
+      ],
+      "atr": [
+        "18427149",
+        "18444395"
+      ],
+      "smo": [
+        "SELMODRAFT_130585"
+      ],
+      "ppp": [
+        "PHYPADRAFT_137342",
+        "PHYPADRAFT_162919",
+        "PHYPADRAFT_216055",
+        "PHYPADRAFT_218058"
+      ],
+      "cre": [
+        "CHLREDRAFT_196553"
+      ],
+      "vcn": [
+        "VOLCADRAFT_116955"
+      ],
+      "mng": [
+        "MNEG_9619"
+      ],
+      "olu": [
+        "OSTLU_17319"
+      ],
+      "ota": [
+        "OT_ostta07g03110",
+        "OT_ostta11g01370"
+      ],
+      "bpg": [
+        "Bathy04g03150",
+        "Bathy13g01940"
+      ],
+      "mis": [
+        "MICPUN_83849",
+        "MICPUN_86997"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_20694",
+        "MICPUCDRAFT_46248"
+      ],
+      "csl": [
+        "COCSUDRAFT_2635",
+        "COCSUDRAFT_27439",
+        "COCSUDRAFT_49349"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_31413"
+      ],
+      "apro": [
+        "F751_0628"
+      ],
+      "ccp": [
+        "CHC_T00008344001"
+      ],
+      "smin": [
+        "v1.2.038003.t1"
+      ],
+      "fcy": [
+        "FRACYDRAFT_138536",
+        "FRACYDRAFT_194825"
+      ],
+      "aaf": [
+        "AURANDRAFT_2181",
+        "AURANDRAFT_23035"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_443881",
+        "EMIHUDRAFT_452862",
+        "EMIHUDRAFT_453786"
+      ],
+      "gtt": [
+        "GUITHDRAFT_115024"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.241"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.241"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.241"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.241"
+      ],
+      "CAS": [
+        "69913-00-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kelly AA",
+          "Dormann P."
+        ],
+        "title": "DGD2, an arabidopsis gene encoding a UDP-galactose-dependent digalactosyldiacylglycerol synthase is expressed during growth under phosphate-limiting conditions.",
+        "journal": "J. Biol. Chem. 277 (2002) 1166-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11696551]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hartel H",
+          "Dormann P",
+          "Benning C."
+        ],
+        "title": "DGD1-independent biosynthesis of extraplastidic galactolipids after phosphate deprivation in Arabidopsis.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 97 (2000) 10649-54.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10973486]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kelly AA",
+          "Froehlich JE",
+          "Dormann P."
+        ],
+        "title": "Disruption of the two digalactosyldiacylglycerol synthase genes DGD1 and DGD2 in Arabidopsis reveals the existence of an additional enzyme of galactolipid synthesis.",
+        "journal": "Plant. Cell. 15 (2003) 2694-706.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14600212]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Benning C",
+          "Ohta H."
+        ],
+        "title": "Three enzyme systems for galactoglycerolipid biosynthesis are coordinately regulated in plants.",
+        "journal": "J. Biol. Chem. 280 (2005) 2397-400.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15590685]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

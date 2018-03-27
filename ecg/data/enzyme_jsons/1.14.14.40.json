@@ -1,0 +1,498 @@
+[
+  {
+    "entry_id": "1.14.14.40",
+    "name": "phenylalanine N-monooxygenase",
+    "names": [
+      "phenylalanine N-monooxygenase",
+      "phenylalanine N-hydroxylase",
+      "CYP79A2 (gene name)",
+      "CYP79D16 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-phenylalanine,[reduced NADPH---hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)",
+    "reaction": "L-phenylalanine + 2 [reduced NADPH---hemoprotein reductase] + 2 O2 = (E)-phenylacetaldoxime + 2 [oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O (overall reaction) [RN:R09578]; (1a) L-phenylalanine + [reduced NADPH---hemoprotein reductase] + O2 = N-hydroxy-L-phenylalanine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R09579]; (1b) N-hydroxy-L-phenylalanine + [reduced NADPH---hemoprotein reductase] + O2 = N,N-dihydroxy-L-phenylalanine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R09580]; (1c) N,N-dihydroxy-L-phenylalanine = (E)-phenylacetaldoxime + CO2 + H2O [RN:R09581]",
+    "all_reac": "R09578 R09579 R09580 R09581; (other) R08652",
+    "iubmb_reactions": [
+      "R09578 R09579 R09580 R09581"
+    ],
+    "kegg_reactions": [
+      "R08652"
+    ],
+    "substrates": [
+      "L-phenylalanine [CPD:C00079]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]",
+      "N-hydroxy-L-phenylalanine [CPD:C19712]",
+      "N,N-dihydroxy-L-phenylalanine [CPD:C19715]"
+    ],
+    "products": [
+      "(E)-phenylacetaldoxime [CPD:C19714]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "CO2 [CPD:C00011]",
+      "H2O [CPD:C00001]",
+      "N-hydroxy-L-phenylalanine [CPD:C19712]",
+      "N,N-dihydroxy-L-phenylalanine [CPD:C19715]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytochrome P-450 (heme-thiolate) enzyme, found in plants, catalyses two successive N-hydroxylations of L-phenylalanine, a committed step in the biosynthesis of benzylglucosinolate and the cyanogenic glucosides (R)-prunasin and (R)-amygdalin. The product of the two hydroxylations, N,N-dihydroxy-L-phenylalanine, is labile and undergoes dehydration followed by decarboxylation, producing an oxime. It is still not known whether the decarboxylation is spontaneous or catalysed by the enzyme.",
+    "pathways": {
+      "ec00460": "Cyanoamino acid metabolism",
+      "ec00966": "Glucosinolate biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K12153": "phenylalanine N-monooxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT5G05260"
+      ],
+      "aly": [
+        "ARALYDRAFT_325159",
+        "ARALYDRAFT_655516"
+      ],
+      "crb": [
+        "CARUB_v10003209mg"
+      ],
+      "csat": [
+        "104737845",
+        "104768722",
+        "109128315"
+      ],
+      "eus": [
+        "EUTSA_v10015246mg"
+      ],
+      "brp": [
+        "103846879",
+        "103850577"
+      ],
+      "bna": [
+        "106419211",
+        "106422714",
+        "106444566"
+      ],
+      "boe": [
+        "106316016",
+        "106321615",
+        "106321702",
+        "106325663"
+      ],
+      "thj": [
+        "104808358",
+        "104816511"
+      ],
+      "cit": [
+        "102609684",
+        "102610000",
+        "102612895",
+        "102613196",
+        "102614859",
+        "102618319",
+        "102624911",
+        "102625186",
+        "102626076"
+      ],
+      "cic": [
+        "CICLE_v10004690mg",
+        "CICLE_v10013842mg",
+        "CICLE_v10025237mg",
+        "CICLE_v10025240mg",
+        "CICLE_v10031099mg",
+        "CICLE_v10031307mg",
+        "CICLE_v10031309mg",
+        "CICLE_v10031311mg",
+        "CICLE_v10033385mg"
+      ],
+      "tcc": [
+        "108663677",
+        "18507087",
+        "18587454",
+        "18587457",
+        "18587459",
+        "18587467",
+        "18591093"
+      ],
+      "gra": [
+        "105764693",
+        "105770855",
+        "105778382",
+        "105803050"
+      ],
+      "ghi": [
+        "107889976",
+        "107892099",
+        "107902522",
+        "107906304",
+        "107915648",
+        "107954985",
+        "107956795",
+        "107956797",
+        "107958525"
+      ],
+      "gmx": [
+        "100779934",
+        "100785254",
+        "100786887",
+        "100787378",
+        "100809902"
+      ],
+      "pvu": [
+        "PHAVU_006G002300g",
+        "PHAVU_006G0788000",
+        "PHAVU_006G078900g",
+        "PHAVU_006G079100g",
+        "PHAVU_006G0792000"
+      ],
+      "vra": [
+        "106774698",
+        "106774787",
+        "106774788",
+        "106774789",
+        "106774790",
+        "106774791",
+        "106775278",
+        "106778952",
+        "106779949",
+        "106779950",
+        "106779957"
+      ],
+      "var": [
+        "108319396",
+        "108341520",
+        "108341521",
+        "108341522",
+        "108342438"
+      ],
+      "ccaj": [
+        "109792068",
+        "109813922",
+        "109815538",
+        "109816892",
+        "109816894",
+        "109816895"
+      ],
+      "mtr": [
+        "MTR_3g465300",
+        "MTR_3g467220",
+        "MTR_3g467290",
+        "MTR_8g073950",
+        "MTR_8g076372",
+        "MTR_8g076390"
+      ],
+      "cam": [
+        "101513975",
+        "101514837",
+        "101515486"
+      ],
+      "adu": [
+        "107463188",
+        "107473984",
+        "107474843",
+        "107474849",
+        "107475187",
+        "107478497",
+        "107486438"
+      ],
+      "aip": [
+        "107612299",
+        "107634313",
+        "107637425",
+        "107638189",
+        "107640405",
+        "107644259",
+        "107644267"
+      ],
+      "lja": [
+        "Lj0g3v0058079.1",
+        "Lj0g3v0066989.1",
+        "Lj0g3v0066989.2",
+        "Lj0g3v0086169.1",
+        "Lj0g3v0323829.1",
+        "Lj0g3v0323839.1",
+        "Lj3g3v0744710.1",
+        "Lj3g3v0744720.1",
+        "Lj6g3v0326370.1"
+      ],
+      "lang": [
+        "109329009",
+        "109329069"
+      ],
+      "fve": [
+        "101302920"
+      ],
+      "pper": [
+        "18769536",
+        "18770648",
+        "18775172"
+      ],
+      "pmum": [
+        "103330459",
+        "103339830"
+      ],
+      "mdm": [
+        "103412907",
+        "103429934",
+        "103447598",
+        "108171946"
+      ],
+      "pxb": [
+        "103945226",
+        "103945228",
+        "103958933"
+      ],
+      "zju": [
+        "107410640",
+        "107410645",
+        "107410648",
+        "107410651",
+        "107410670"
+      ],
+      "csv": [
+        "101215668",
+        "101215911",
+        "101216155",
+        "101216819",
+        "101217397"
+      ],
+      "cmo": [
+        "103491937",
+        "103492071"
+      ],
+      "mcha": [
+        "111017448",
+        "111017493",
+        "111017495",
+        "111017498",
+        "111021624",
+        "111021627",
+        "111021650"
+      ],
+      "rcu": [
+        "107261602",
+        "8275042",
+        "8282194",
+        "8282195",
+        "8282449"
+      ],
+      "jcu": [
+        "105638772",
+        "105638807",
+        "105640577",
+        "105640586"
+      ],
+      "pop": [
+        "POPTR_0004s05430g",
+        "POPTR_0013s15310g",
+        "POPTR_0013s15320g",
+        "POPTR_1061s00200g"
+      ],
+      "vvi": [
+        "100241541",
+        "100246526",
+        "100249616",
+        "100253513",
+        "100255415",
+        "100260154",
+        "100263812",
+        "100265709",
+        "109122751"
+      ],
+      "sly": [
+        "101244179",
+        "101253063",
+        "101257394",
+        "101257953"
+      ],
+      "spen": [
+        "107006880",
+        "107016389",
+        "107016571",
+        "107017521",
+        "107028238"
+      ],
+      "sot": [
+        "102593505",
+        "102597216",
+        "102599701",
+        "102605273",
+        "102605603"
+      ],
+      "cann": [
+        "107869966",
+        "107872655"
+      ],
+      "nta": [
+        "107761252",
+        "107762589",
+        "107762600",
+        "107783255",
+        "107792289",
+        "107809681",
+        "107826433",
+        "107827803"
+      ],
+      "nsy": [
+        "104210855",
+        "104217037",
+        "104229922",
+        "104231570",
+        "104233683"
+      ],
+      "nto": [
+        "104095125",
+        "104095765",
+        "104097091",
+        "104114343"
+      ],
+      "ini": [
+        "109158645",
+        "109158646",
+        "109158773",
+        "109158774",
+        "109158776",
+        "109158778",
+        "109158852",
+        "109158863",
+        "109181069",
+        "109181142",
+        "109181143",
+        "109181364",
+        "109182061"
+      ],
+      "sind": [
+        "105156979",
+        "105157077",
+        "105157078",
+        "105157080",
+        "105160146",
+        "105166505",
+        "105177046",
+        "105177047"
+      ],
+      "han": [
+        "110876223",
+        "110895822",
+        "110907257",
+        "110910158",
+        "110927886",
+        "110941544",
+        "110941829",
+        "110943764"
+      ],
+      "nnu": [
+        "104594490"
+      ],
+      "sbi": [
+        "8063041",
+        "8065657",
+        "8071936",
+        "8071940"
+      ],
+      "zma": [
+        "103626061",
+        "103626086",
+        "103644042"
+      ],
+      "pda": [
+        "103720455"
+      ],
+      "egu": [
+        "105032989"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.40"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.40"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.40"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.40"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Wittstock U",
+          "Halkier BA."
+        ],
+        "title": "Cytochrome P450 CYP79A2 from Arabidopsis thaliana L. Catalyzes the conversion of L-phenylalanine to phenylacetaldoxime in the biosynthesis of benzylglucosinolate.",
+        "journal": "J. Biol. Chem. 275 (2000) 14659-66.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10799553]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yamaguchi T",
+          "Yamamoto K",
+          "Asano Y"
+        ],
+        "title": "Identification and characterization of CYP79D16 and CYP71AN24 catalyzing the first and second steps in L-phenylalanine-derived cyanogenic glycoside biosynthesis in the Japanese apricot, Prunus mume Sieb. et Zucc.",
+        "journal": "Plant. Mol. Biol. 86 (2014) 215-23.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:25015725]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,211 @@
+[
+  {
+    "entry_id": "1.14.14.43",
+    "name": "(methylsulfanyl)alkanaldoxime N-monooxygenase",
+    "names": [
+      "(methylsulfanyl)alkanaldoxime N-monooxygenase",
+      "CYP83A1 (gene name)",
+      "(methylthio)alkanaldoxime N-monooxygenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "(E)-omega-(methylsulfanyl)alkananal oxime,[reduced NADPH---hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)",
+    "reaction": "an (E)-omega-(methylsulfanyl)alkanal oxime + [reduced NADPH---hemoprotein reductase] + glutathione + O2 = an S-[(1E)-1-(hydroxyimino)-omega-(methylsulfanyl)alkyl]-L-glutathione + [oxidized NADPH---hemoprotein reductase] + 2 H2O (overall reaction) [RN:R11650]; (1a) an (E)-omega-(methylsulfanyl)alkanal oxime + [reduced NADPH---hemoprotein reductase] + O2 = a 1-(methylsulfanyl)-4-aci-nitroalkane + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R11651]; (1b) a 1-(methylsulfanyl)-4-aci-nitroalkane + glutathione = an S-[(1E)-1-(hydroxyimino)-omega-(methylsulfanyl)alkyl]-L-glutathione + H2O [RN:R11652]",
+    "all_reac": "R11650 R11651 R11652; (other) R08666",
+    "iubmb_reactions": [
+      "R11650 R11651 R11652"
+    ],
+    "kegg_reactions": [
+      "R08666"
+    ],
+    "substrates": [
+      "(E)-omega-(methylsulfanyl)alkanal oxime [CPD:C21535]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "glutathione [CPD:C00051]",
+      "O2 [CPD:C00007]",
+      "1-(methylsulfanyl)-4-aci-nitroalkane [CPD:C21538]"
+    ],
+    "products": [
+      "S-[(1E)-1-(hydroxyimino)-omega-(methylsulfanyl)alkyl]-L-glutathione [CPD:C21539]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]",
+      "1-(methylsulfanyl)-4-aci-nitroalkane [CPD:C21538]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytochrome P-450 (heme thiolate) enzyme is involved in the biosynthesis of glucosinolates in plants. The enzyme catalyses an N-hydroxylation of the E isomer of n-(methylsulfanyl)alkanal oximes, forming an aci-nitro intermediate that reacts non-enzymically with glutathione to produce an N-alkyl-thiohydroximate adduct, the committed precursor of glucosinolates. In the absence of a thiol compound, the enzyme is suicidal, probably due to interaction of the reactive aci-nitro intermediate with active site residues.",
+    "pathways": {
+      "ec00966": "Glucosinolate biosynthesis"
+    },
+    "orthologs": {
+      "K12156": "(methylthio)alkanaldoxime N-monooxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT4G13770"
+      ],
+      "aly": [
+        "ARALYDRAFT_493537"
+      ],
+      "crb": [
+        "CARUB_v10004635mg"
+      ],
+      "csat": [
+        "104719080"
+      ],
+      "eus": [
+        "EUTSA_v10024982mg"
+      ],
+      "brp": [
+        "103863599",
+        "103865912"
+      ],
+      "bna": [
+        "106430121",
+        "106447562"
+      ],
+      "boe": [
+        "106339606",
+        "106342466"
+      ],
+      "thj": [
+        "104806927",
+        "104813171"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.43"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.43"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.43"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.43"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Bak S",
+          "Tax FE",
+          "Feldmann KA",
+          "Galbraith DW",
+          "Feyereisen R"
+        ],
+        "title": "CYP83B1, a cytochrome P450 at the metabolic branch point in auxin and indole glucosinolate biosynthesis in Arabidopsis.",
+        "journal": "Plant. Cell. 13 (2001) 101-11.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11158532]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Naur P",
+          "Petersen BL",
+          "Mikkelsen MD",
+          "Bak S",
+          "Rasmussen H",
+          "Olsen CE",
+          "Halkier BA."
+        ],
+        "title": "CYP83A1 and CYP83B1, two nonredundant cytochrome P450 enzymes metabolizing oximes in the biosynthesis of glucosinolates in Arabidopsis.",
+        "journal": "Plant. Physiol. 133 (2003) 63-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12970475]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Clausen M",
+          "Kannangara RM",
+          "Olsen CE",
+          "Blomstedt CK",
+          "Gleadow RM",
+          "Jorgensen K",
+          "Bak S",
+          "Motawie MS",
+          "Moller BL"
+        ],
+        "title": "The bifurcation of the cyanogenic glucoside and glucosinolate biosynthetic pathways.",
+        "journal": "Plant. J. 84 (2015) 558-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:26361733]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

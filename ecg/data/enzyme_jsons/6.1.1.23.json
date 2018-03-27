@@ -1,0 +1,665 @@
+[
+  {
+    "entry_id": "6.1.1.23",
+    "name": "aspartate---tRNAAsn ligase",
+    "names": [
+      "aspartate---tRNAAsn ligase",
+      "nondiscriminating aspartyl-tRNA synthetase"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-oxygen bonds;",
+      "Ligases forming aminoacyl-tRNA and related compounds"
+    ],
+    "sysname": "L-aspartate:tRNAAsx ligase (AMP-forming)",
+    "reaction": "ATP + L-aspartate + tRNAAsx = AMP + diphosphate + L-aspartyl-tRNAAsx [RN:R03647 R05577]",
+    "all_reac": "R03647 R05577",
+    "iubmb_reactions": [
+      "R03647 R05577"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "L-aspartate [CPD:C00049]",
+      "tRNAAsx"
+    ],
+    "products": [
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "L-aspartyl-tRNAAsx"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "When this enzyme acts on tRNAAsp, it catalyses the same reaction as EC 6.1.1.12, aspartate---tRNA ligase. It has, however, diminished discrimination, so that it can also form aspartyl-tRNAAsn. This relaxation of specificity has been found to result from the absence of a loop in the tRNA that specifically recognizes the third position of the anticodon [1]. This accounts for the ability of this enzyme in, for example, Thermus thermophilus, to recognize both tRNAAsp (GUC anticodon) and tRNAAsn (GUU anticodon). The aspartyl-tRNAAsn is not used in protein synthesis until it is converted by EC 6.3.5.6, asparaginyl-tRNA synthase (glutamine-hydrolysing), into asparaginyl-tRNAAsn.",
+    "pathways": {
+      "ec00970": "Aminoacyl-tRNA biosynthesis"
+    },
+    "orthologs": {
+      "K09759": "nondiscriminating aspartyl-tRNA synthetase"
+    },
+    "genes": {
+      "ban": [
+        "BA_2186"
+      ],
+      "bar": [
+        "GBAA_2186"
+      ],
+      "bat": [
+        "BAS2031"
+      ],
+      "bah": [
+        "BAMEG_2410"
+      ],
+      "bai": [
+        "BAA_2247"
+      ],
+      "bax": [
+        "H9401_2072"
+      ],
+      "bant": [
+        "A16_22180"
+      ],
+      "banr": [
+        "A16R_22450"
+      ],
+      "bans": [
+        "BAPAT_2088"
+      ],
+      "banh": [
+        "HYU01_10910"
+      ],
+      "banv": [
+        "DJ46_983"
+      ],
+      "bce": [
+        "BC2169"
+      ],
+      "bcz": [
+        "BCE33L1981"
+      ],
+      "bcr": [
+        "BCAH187_A2327"
+      ],
+      "bcb": [
+        "BCB4264_A2191"
+      ],
+      "bcu": [
+        "BCAH820_2205"
+      ],
+      "bcg": [
+        "BCG9842_B3128"
+      ],
+      "bcq": [
+        "BCQ_2153"
+      ],
+      "bcx": [
+        "BCA_2271"
+      ],
+      "bal": [
+        "BACI_c21390"
+      ],
+      "bnc": [
+        "BCN_2142"
+      ],
+      "bcf": [
+        "bcf_10950"
+      ],
+      "bcer": [
+        "BCK_23745"
+      ],
+      "btk": [
+        "BT9727_1999"
+      ],
+      "btl": [
+        "BALH_1944"
+      ],
+      "btb": [
+        "BMB171_C1950"
+      ],
+      "btt": [
+        "HD73_2454"
+      ],
+      "bthi": [
+        "BTK_12170"
+      ],
+      "btc": [
+        "CT43_CH2117"
+      ],
+      "btf": [
+        "YBT020_11265"
+      ],
+      "btm": [
+        "MC28_1393"
+      ],
+      "btg": [
+        "BTB_c22300"
+      ],
+      "bti": [
+        "BTG_09045"
+      ],
+      "btn": [
+        "BTF1_08350"
+      ],
+      "btht": [
+        "H175_ch2148"
+      ],
+      "bthu": [
+        "YBT1518_11975"
+      ],
+      "btw": [
+        "BF38_3393"
+      ],
+      "bthy": [
+        "AQ980_18775"
+      ],
+      "bwe": [
+        "BcerKBAB4_2021"
+      ],
+      "bww": [
+        "bwei_2838"
+      ],
+      "bmyc": [
+        "DJ92_4774"
+      ],
+      "bmyo": [
+        "BG05_3817"
+      ],
+      "bty": [
+        "Btoyo_4802"
+      ],
+      "bby": [
+        "CY96_09975"
+      ],
+      "cac": [
+        "CA_C2979",
+        "CA_C3564"
+      ],
+      "cae": [
+        "SMB_G3015",
+        "SMB_G3605"
+      ],
+      "cay": [
+        "CEA_G2986",
+        "CEA_G3571"
+      ],
+      "cpf": [
+        "CPF_0770"
+      ],
+      "cbo": [
+        "CBO1019"
+      ],
+      "cba": [
+        "CLB_1059"
+      ],
+      "cbh": [
+        "CLC_1072"
+      ],
+      "cby": [
+        "CLM_1174"
+      ],
+      "cbl": [
+        "CLK_0462"
+      ],
+      "cbk": [
+        "CLL_A2506"
+      ],
+      "cbb": [
+        "CLD_3547"
+      ],
+      "cbi": [
+        "CLJ_B1064"
+      ],
+      "cbf": [
+        "CLI_1101"
+      ],
+      "cbm": [
+        "CBF_1071"
+      ],
+      "cbj": [
+        "H04402_01093"
+      ],
+      "cbe": [
+        "Cbei_2126"
+      ],
+      "cbz": [
+        "Cbs_2126"
+      ],
+      "cbei": [
+        "LF65_03514"
+      ],
+      "ccb": [
+        "Clocel_2015"
+      ],
+      "csr": [
+        "Cspa_c31980",
+        "Cspa_c35300"
+      ],
+      "cpas": [
+        "Clopa_0265",
+        "Clopa_0516"
+      ],
+      "cpat": [
+        "CLPA_c01800"
+      ],
+      "cpae": [
+        "CPAST_c01800"
+      ],
+      "clt": [
+        "CM240_0264"
+      ],
+      "csq": [
+        "CSCA_0306"
+      ],
+      "cld": [
+        "CLSPO_c10210"
+      ],
+      "cace": [
+        "CACET_c24180"
+      ],
+      "cck": [
+        "Ccar_13025"
+      ],
+      "cbut": [
+        "ATN24_11655"
+      ],
+      "cfm": [
+        "BJL90_18220"
+      ],
+      "carg": [
+        "RSJ17_04905"
+      ],
+      "amt": [
+        "Amet_3390"
+      ],
+      "gfe": [
+        "Gferi_27170"
+      ],
+      "eha": [
+        "Ethha_1098"
+      ],
+      "rum": [
+        "CK1_18240"
+      ],
+      "cle": [
+        "Clole_4239"
+      ],
+      "rho": [
+        "RHOM_10080"
+      ],
+      "rix": [
+        "RO1_38980"
+      ],
+      "rim": [
+        "ROI_28550"
+      ],
+      "rob": [
+        "CK5_31400"
+      ],
+      "byl": [
+        "A4V09_20165"
+      ],
+      "rto": [
+        "RTO_10230"
+      ],
+      "cpy": [
+        "Cphy_0636",
+        "Cphy_1139"
+      ],
+      "lacy": [
+        "A4V08_09210"
+      ],
+      "csh": [
+        "Closa_3356",
+        "Closa_3667"
+      ],
+      "ere": [
+        "EUBREC_1167"
+      ],
+      "ert": [
+        "EUR_22320"
+      ],
+      "era": [
+        "ERE_19140"
+      ],
+      "cst": [
+        "CLOST_2424"
+      ],
+      "ibu": [
+        "IB211_01416"
+      ],
+      "fpla": [
+        "A4U99_13900"
+      ],
+      "bprs": [
+        "CK3_27450"
+      ],
+      "nbr": [
+        "O3I_017205"
+      ],
+      "rop": [
+        "ROP_35810"
+      ],
+      "sct": [
+        "SCAT_p1397"
+      ],
+      "scy": [
+        "SCATT_p03270"
+      ],
+      "mip": [
+        "AXH82_09815"
+      ],
+      "bcv": [
+        "Bcav_4171"
+      ],
+      "cceu": [
+        "CBR64_09435"
+      ],
+      "ica": [
+        "Intca_0647"
+      ],
+      "nca": [
+        "Noca_1189"
+      ],
+      "kfl": [
+        "Kfla_5221"
+      ],
+      "sro": [
+        "Sros_1870"
+      ],
+      "noa": [
+        "BKM31_27405"
+      ],
+      "fre": [
+        "Franean1_1527"
+      ],
+      "amd": [
+        "AMED_1332"
+      ],
+      "amn": [
+        "RAM_06755"
+      ],
+      "amm": [
+        "AMES_1324"
+      ],
+      "amz": [
+        "B737_1325"
+      ],
+      "aoi": [
+        "AORI_6069"
+      ],
+      "alu": [
+        "BB31_39815"
+      ],
+      "kphy": [
+        "AOZ06_36050"
+      ],
+      "mau": [
+        "Micau_4614"
+      ],
+      "mil": [
+        "ML5_3687"
+      ],
+      "vma": [
+        "VAB18032_27436"
+      ],
+      "ams": [
+        "AMIS_13830"
+      ],
+      "ase": [
+        "ACPL_1611"
+      ],
+      "actn": [
+        "L083_1857"
+      ],
+      "afs": [
+        "AFR_09230"
+      ],
+      "plk": [
+        "CIK06_20975"
+      ],
+      "cai": [
+        "Caci_5912"
+      ],
+      "sna": [
+        "Snas_4889"
+      ],
+      "dra": [
+        "DR_1055"
+      ],
+      "dge": [
+        "Dgeo_0796"
+      ],
+      "ddr": [
+        "Deide_10020"
+      ],
+      "dmr": [
+        "Deima_1686"
+      ],
+      "dpt": [
+        "Deipr_0975"
+      ],
+      "dgo": [
+        "DGo_CA1645"
+      ],
+      "dpd": [
+        "Deipe_3557"
+      ],
+      "dsw": [
+        "QR90_10745"
+      ],
+      "dch": [
+        "SY84_02865"
+      ],
+      "dab": [
+        "AUC44_09840"
+      ],
+      "dpu": [
+        "SU48_04360"
+      ],
+      "tra": [
+        "Trad_2070"
+      ],
+      "tth": [
+        "TT_C1087"
+      ],
+      "ttj": [
+        "TTHA1452"
+      ],
+      "tts": [
+        "Ththe16_1463"
+      ],
+      "ttl": [
+        "TtJL18_0595"
+      ],
+      "tsc": [
+        "TSC_c18940"
+      ],
+      "thc": [
+        "TCCBUS3UF1_16670"
+      ],
+      "tos": [
+        "Theos_1657"
+      ],
+      "taq": [
+        "TO73_1534"
+      ],
+      "tpar": [
+        "AV541_03535"
+      ],
+      "tbc": [
+        "A0O31_01800"
+      ],
+      "mrb": [
+        "Mrub_2287"
+      ],
+      "mre": [
+        "K649_11095"
+      ],
+      "msv": [
+        "Mesil_1884"
+      ],
+      "opr": [
+        "Ocepr_1230"
+      ],
+      "mhd": [
+        "Marky_1319"
+      ],
+      "puv": [
+        "PUV_24770"
+      ],
+      "taz": [
+        "TREAZ_1118"
+      ],
+      "tpi": [
+        "TREPR_3639"
+      ],
+      "scd": [
+        "Spica_0990"
+      ],
+      "ssm": [
+        "Spirs_1039"
+      ],
+      "sta": [
+        "STHERM_c22180"
+      ],
+      "stq": [
+        "Spith_2263"
+      ],
+      "sfc": [
+        "Spiaf_2850"
+      ],
+      "slr": [
+        "L21SP2_3338",
+        "L21SP2_3488"
+      ],
+      "sbe": [
+        "RAAC3_TM7C01G0256"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.1.1.23"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.1.1.23"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.1.1.23"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.1.1.23"
+      ],
+      "CAS": [
+        "9027-32-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Ibba M",
+          "Soll D."
+        ],
+        "title": "Aminoacyl-tRNA synthesis.",
+        "journal": "Annu. Rev. Biochem. 69 (2000) 617-50.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10966471]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schmitt E",
+          "Moulinier L",
+          "Fujiwara S",
+          "Imanaka T",
+          "Thierry JC",
+          "Moras D."
+        ],
+        "title": "Crystal structure of aspartyl-tRNA synthetase from Pyrococcus kodakaraensis KOD: archaeon specificity and catalytic mechanism of adenylate formation.",
+        "journal": "EMBO. J. 17 (1998) 5227-37.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:9724658]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Becker HD",
+          "Kern D."
+        ],
+        "title": "Thermus thermophilus: a link in evolution of the tRNA-dependent amino acid amidation pathways.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 95 (1998) 12832-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9789000]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

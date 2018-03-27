@@ -1,0 +1,337 @@
+[
+  {
+    "entry_id": "1.14.13.50",
+    "name": "pentachlorophenol monooxygenase",
+    "names": [
+      "pentachlorophenol monooxygenase",
+      "pcpB (gene name)",
+      "pentachlorophenol dechlorinase",
+      "pentachlorophenol dehalogenase",
+      "pentachlorophenol 4-monooxygenase",
+      "PCP hydroxylase",
+      "pentachlorophenol hydroxylase",
+      "PCB 4-monooxygenase",
+      "PCB4MO"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "pentachlorophenol,NADPH:oxygen oxidoreductase (hydroxylating, dechlorinating)",
+    "reaction": "(1) pentachlorophenol + NADPH + H+ + O2 = 2,3,5,6-tetrachloro-1,4-benzoquinone + NADP+ + chloride + H2O [RN:R03982]; (2) 2,3,5,6-tetrachlorophenol + NADPH + H+ + O2 = 2,3,5,6-tetrachlorohydroquinone + NADP+ + H2O [RN:R07191]",
+    "all_reac": "R03982 R07191; (other) R07779",
+    "iubmb_reactions": [
+      "R03982 R07191"
+    ],
+    "kegg_reactions": [
+      "R07779"
+    ],
+    "substrates": [
+      "pentachlorophenol [CPD:C02575]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "2,3,5,6-tetrachlorophenol [CPD:C15505]"
+    ],
+    "products": [
+      "2,3,5,6-tetrachloro-1,4-benzoquinone [CPD:C18933]",
+      "NADP+ [CPD:C00006]",
+      "chloride [CPD:C00698]",
+      "H2O [CPD:C00001]",
+      "2,3,5,6-tetrachlorohydroquinone [CPD:C03434]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A flavoprotein (FAD). The enzyme displaces a diverse range of substituents from the 4-position of polyhalogenated phenols but requires that a halogen substituent be present at the 2-position [2]. If C-4 carries a halogen substituent, reaction 1 is catalysed; if C-4 is unsubstituted, reaction 2 is catalysed.",
+    "pathways": {
+      "ec00361": "Chlorocyclohexane and chlorobenzene degradation",
+      "ec00364": "Fluorobenzoate degradation",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K03391": "pentachlorophenol monooxygenase"
+    },
+    "genes": {
+      "sch": [
+        "Sphch_3461"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.50"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.50"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.50"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.14.13.50"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.50"
+      ],
+      "CAS": [
+        "136111-57-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Schenk T",
+          "Muller R",
+          "Morsberger F",
+          "Otto MK",
+          "Lingens F."
+        ],
+        "title": "Enzymatic dehalogenation of pentachlorophenol by extracts from Arthrobacter sp. strain ATCC 33790.",
+        "journal": "J. Bacteriol. 171 (1989) 5487-91.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2793827]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Xun L",
+          "Topp E",
+          "Orser CS."
+        ],
+        "title": "Diverse substrate range of a Flavobacterium pentachlorophenol hydroxylase and reaction stoichiometries.",
+        "journal": "J. Bacteriol. 174 (1992) 2898-902.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:1569020]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Xun L",
+          "Topp E",
+          "Orser CS."
+        ],
+        "title": "Confirmation of oxidative dehalogenation of pentachlorophenol by a Flavobacterium pentachlorophenol hydroxylase.",
+        "journal": "J. Bacteriol. 174 (1992) 5745-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:1512208]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lange CC",
+          "Schneider BJ",
+          "Orser CS."
+        ],
+        "title": "Verification of the role of PCP 4-monooxygenase in chlorine elimination from pentachlorophenol by Flavobacterium sp. strain ATCC 39723.",
+        "journal": "Biochem. Biophys. Res. Commun. 219 (1996) 146-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:8619798]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nakamura T",
+          "Motoyama T",
+          "Hirono S",
+          "Yamaguchi I."
+        ],
+        "title": "Identification, characterization, and site-directed mutagenesis of recombinant pentachlorophenol 4-monooxygenase.",
+        "journal": "Biochim. Biophys. Acta. 1700 (2004) 151-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:15262224]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chen L",
+          "Yang J"
+        ],
+        "title": "Biochemical characterization of the tetrachlorobenzoquinone reductase involved in the biodegradation of pentachlorophenol.",
+        "journal": "Int. J. Mol. Sci. 9 (2008) 198-212.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:19325743]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hlouchova K",
+          "Rudolph J",
+          "Pietari JM",
+          "Behlen LS",
+          "Copley SD"
+        ],
+        "title": "Pentachlorophenol hydroxylase, a poorly functioning enzyme required for degradation of pentachlorophenol by Sphingobium chlorophenolicum.",
+        "journal": "Biochemistry. 51 (2012) 3848-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:22482720]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rudolph J",
+          "Erbse AH",
+          "Behlen LS",
+          "Copley SD"
+        ],
+        "title": "A radical intermediate in the conversion of pentachlorophenol to tetrachlorohydroquinone by Sphingobium chlorophenolicum.",
+        "journal": "Biochemistry. 53 (2014) 6539-49.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:25238136]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,757 @@
+[
+  {
+    "entry_id": "1.21.4.2",
+    "name": "glycine reductase",
+    "names": [
+      "glycine reductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Catalysing the reaction X-H + Y-H = X-Y;",
+      "With a disulfide as acceptor"
+    ],
+    "sysname": "acetyl-phosphate ammonia:thioredoxin disulfide oxidoreductase (glycine-forming)",
+    "reaction": "acetyl phosphate + NH3 + thioredoxin disulfide + H2O = glycine + phosphate + thioredoxin [RN:R07226]",
+    "all_reac": "R07226",
+    "iubmb_reactions": [
+      "R07226"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "acetyl phosphate [CPD:C00227]",
+      "NH3 [CPD:C00014]",
+      "thioredoxin disulfide [CPD:C00343]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "glycine [CPD:C00037]",
+      "phosphate [CPD:C00009]",
+      "thioredoxin [CPD:C00342]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The reaction is observed only in the direction of glycine reduction. The enzyme from Eubacterium acidaminophilum consists of subunits A, B and C. Subunit B contains selenocysteine and a pyruvoyl group, and is responsible for glycine binding and ammonia release. Subunit A, which also contains selenocysteine, is reduced by thioredoxin, and is needed to convert the carboxymethyl group into a ketene equivalent, in turn used by subunit C to produce acetyl phosphate. Only subunit B distinguishes this enzyme from EC 1.21.4.3 (sarcosine reductase) and EC 1.21.4.4 (betaine reductase).",
+    "pathways": {
+    },
+    "orthologs": {
+      "K10670": "glycine/sarcosine/betaine reductase complex component A",
+      "K10671": "glycine reductase complex component B subunit alpha and beta",
+      "K10672": "glycine reductase complex component B subunit gamma",
+      "K21576": "glycine/sarcosine/betaine reductase complex component C subunit alpha",
+      "K21577": "glycine/sarcosine/betaine reductase complex component C subunit beta"
+    },
+    "genes": {
+      "efe": [
+        "EFER_3013",
+        "EFER_3014",
+        "EFER_3015",
+        "EFER_3016",
+        "EFER_3017",
+        "EFER_3018",
+        "EFER_3019"
+      ],
+      "ppr": [
+        "PBPRB1543",
+        "PBPRB1544",
+        "PBPRB1546",
+        "PBPRB1547",
+        "PBPRB1548",
+        "PBPRB1549"
+      ],
+      "pgb": [
+        "H744_1c1269",
+        "H744_1c1270",
+        "H744_1c1271",
+        "H744_1c1273",
+        "H744_1c1274",
+        "H744_1c1275",
+        "H744_1c1276"
+      ],
+      "dds": [
+        "Ddes_0112",
+        "Ddes_0113",
+        "Ddes_0115",
+        "Ddes_0116",
+        "Ddes_0118"
+      ],
+      "dfi": [
+        "AXF13_12700",
+        "AXF13_12705",
+        "AXF13_12715",
+        "AXF13_12720",
+        "AXF13_12730",
+        "AXF13_12735",
+        "AXF13_12740"
+      ],
+      "dpg": [
+        "DESPIGER_2436",
+        "DESPIGER_2437",
+        "DESPIGER_2438",
+        "DESPIGER_2442",
+        "DESPIGER_2443",
+        "DESPIGER_2445"
+      ],
+      "sat": [
+        "SYN_00803",
+        "SYN_00806",
+        "SYN_03718"
+      ],
+      "dti": [
+        "Desti_4380",
+        "Desti_4381",
+        "Desti_4382",
+        "Desti_4385",
+        "Desti_4386"
+      ],
+      "cbo": [
+        "CBO1256",
+        "CBO1264"
+      ],
+      "cba": [
+        "CLB_1284",
+        "CLB_1285",
+        "CLB_1290",
+        "CLB_1291",
+        "CLB_1292"
+      ],
+      "cbh": [
+        "CLC_1296",
+        "CLC_1297",
+        "CLC_1301",
+        "CLC_1302"
+      ],
+      "cby": [
+        "CLM_1415",
+        "CLM_1416",
+        "CLM_1420",
+        "CLM_1421",
+        "CLM_1422",
+        "CLM_1423"
+      ],
+      "cbl": [
+        "CLK_0696",
+        "CLK_0697",
+        "CLK_0701",
+        "CLK_0702",
+        "CLK_0703",
+        "CLK_0704"
+      ],
+      "cbb": [
+        "CLD_3303",
+        "CLD_3304",
+        "CLD_3305",
+        "CLD_3306",
+        "CLD_3309",
+        "CLD_3311"
+      ],
+      "cbi": [
+        "CLJ_B1300",
+        "CLJ_B1301",
+        "CLJ_B1306",
+        "CLJ_B1307"
+      ],
+      "cbf": [
+        "CLI_1342",
+        "CLI_1343",
+        "CLI_1346",
+        "CLI_1347",
+        "CLI_1348"
+      ],
+      "cbm": [
+        "CBF_1315",
+        "CBF_1319",
+        "CBF_1320",
+        "CBF_1321",
+        "CBF_1322"
+      ],
+      "cbj": [
+        "H04402_01329",
+        "H04402_01330",
+        "H04402_01331",
+        "H04402_01334",
+        "H04402_01335",
+        "H04402_01336",
+        "H04402_01337"
+      ],
+      "clj": [
+        "CLJU_c27290",
+        "CLJU_c27300",
+        "CLJU_c27310",
+        "CLJU_c27770",
+        "CLJU_c27780",
+        "CLJU_c27790"
+      ],
+      "csq": [
+        "CSCA_2010",
+        "CSCA_2011",
+        "CSCA_2012",
+        "CSCA_2013",
+        "CSCA_2027",
+        "CSCA_2028",
+        "CSCA_2029",
+        "CSCA_2030",
+        "CSCA_3832",
+        "CSCA_3833",
+        "CSCA_3834",
+        "CSCA_3835",
+        "CSCA_3836",
+        "CSCA_3837",
+        "CSCA_3838"
+      ],
+      "cld": [
+        "CLSPO_c12650",
+        "CLSPO_c12660",
+        "CLSPO_c12690",
+        "CLSPO_c12700",
+        "CLSPO_c12710"
+      ],
+      "cace": [
+        "CACET_c07270",
+        "CACET_c07280",
+        "CACET_c07290",
+        "CACET_c12280",
+        "CACET_c12290",
+        "CACET_c12300",
+        "CACET_c12310",
+        "CACET_c12320"
+      ],
+      "cck": [
+        "Ccar_04490",
+        "Ccar_04495",
+        "Ccar_04500",
+        "Ccar_04505",
+        "Ccar_04565",
+        "Ccar_04570",
+        "Ccar_04575",
+        "Ccar_04580",
+        "Ccar_22155",
+        "Ccar_22160",
+        "Ccar_22165",
+        "Ccar_22170",
+        "Ccar_22175",
+        "Ccar_22180",
+        "Ccar_22185"
+      ],
+      "cfm": [
+        "BJL90_09785",
+        "BJL90_09790",
+        "BJL90_09795",
+        "BJL90_09800",
+        "BJL90_19740",
+        "BJL90_19745",
+        "BJL90_19750",
+        "BJL90_19755",
+        "BJL90_19760",
+        "BJL90_19765",
+        "BJL90_19770"
+      ],
+      "carg": [
+        "RSJ17_15270",
+        "RSJ17_15275",
+        "RSJ17_15280",
+        "RSJ17_15285",
+        "RSJ17_15295"
+      ],
+      "amt": [
+        "Amet_3589",
+        "Amet_3590",
+        "Amet_3591",
+        "Amet_3592",
+        "Amet_3593"
+      ],
+      "aoe": [
+        "Clos_0956",
+        "Clos_0957",
+        "Clos_0958",
+        "Clos_0959",
+        "Clos_0960"
+      ],
+      "gfe": [
+        "Gferi_06245",
+        "Gferi_06250",
+        "Gferi_06255",
+        "Gferi_19040",
+        "Gferi_24385",
+        "Gferi_24390",
+        "Gferi_24395",
+        "Gferi_24400",
+        "Gferi_24405",
+        "Gferi_24410",
+        "Gferi_24415"
+      ],
+      "lacy": [
+        "A4V08_08170",
+        "A4V08_14480",
+        "A4V08_14485",
+        "A4V08_14490",
+        "A4V08_14505",
+        "A4V08_16410",
+        "A4V08_16415",
+        "A4V08_16420",
+        "A4V08_16445",
+        "A4V08_16450"
+      ],
+      "cso": [
+        "CLS_08860",
+        "CLS_08870",
+        "CLS_08880",
+        "CLS_08910",
+        "CLS_08920",
+        "CLS_08930",
+        "CLS_08940"
+      ],
+      "cdf": [
+        "CD630_23480",
+        "CD630_23490",
+        "CD630_23510",
+        "CD630_23520",
+        "CD630_23540"
+      ],
+      "pdc": [
+        "CDIF630_02587",
+        "CDIF630_02588",
+        "CDIF630_02589",
+        "CDIF630_02592",
+        "CDIF630_02594"
+      ],
+      "cdc": [
+        "CD196_2191",
+        "CD196_2192",
+        "CD196_2193",
+        "CD196_2195"
+      ],
+      "cdl": [
+        "CDR20291_2237",
+        "CDR20291_2238",
+        "CDR20291_2239",
+        "CDR20291_2240",
+        "CDR20291_2241"
+      ],
+      "pdf": [
+        "CD630DERM_23480",
+        "CD630DERM_23490",
+        "CD630DERM_23510",
+        "CD630DERM_23520",
+        "CD630DERM_23540"
+      ],
+      "eac": [
+        "EAL2_808p07350",
+        "EAL2_c02950",
+        "EAL2_c02960",
+        "EAL2_c08730",
+        "EAL2_c08740",
+        "EAL2_c08750",
+        "EAL2_c16950",
+        "EAL2_c16960",
+        "EAL2_c16970",
+        "EAL2_c17000",
+        "EAL2_c17010",
+        "EAL2_c17020"
+      ],
+      "cst": [
+        "CLOST_1110",
+        "CLOST_1112",
+        "CLOST_1113",
+        "CLOST_1115",
+        "CLOST_1116"
+      ],
+      "sth": [
+        "STH2865",
+        "STH2867",
+        "STH2869",
+        "STH2870"
+      ],
+      "dor": [
+        "Desor_1546",
+        "Desor_1547",
+        "Desor_1548",
+        "Desor_1550",
+        "Desor_2136",
+        "Desor_2137",
+        "Desor_2138",
+        "Desor_2760",
+        "Desor_2761",
+        "Desor_2762",
+        "Desor_2763",
+        "Desor_2765",
+        "Desor_2766",
+        "Desor_2767"
+      ],
+      "bprm": [
+        "CL3_17600",
+        "CL3_17610",
+        "CL3_17620",
+        "CL3_17650",
+        "CL3_17660",
+        "CL3_17670"
+      ],
+      "tte": [
+        "TTE1874",
+        "TTE1875",
+        "TTE1879"
+      ],
+      "chy": [
+        "CHY_2391",
+        "CHY_2392",
+        "CHY_2393",
+        "CHY_2394",
+        "CHY_2395"
+      ],
+      "toc": [
+        "Toce_1615",
+        "Toce_1616",
+        "Toce_1617",
+        "Toce_1618",
+        "Toce_1619",
+        "Toce_1620",
+        "Toce_1621"
+      ],
+      "cpo": [
+        "COPRO5265_01705",
+        "COPRO5265_01710",
+        "COPRO5265_0221",
+        "COPRO5265_0222",
+        "COPRO5265_0223",
+        "COPRO5265_0227",
+        "COPRO5265_0228"
+      ],
+      "nth": [
+        "Nther_0472",
+        "Nther_0473",
+        "Nther_0474",
+        "Nther_0475",
+        "Nther_0476",
+        "Nther_1043"
+      ],
+      "hpk": [
+        "Hprae_0133",
+        "Hprae_0134",
+        "Hprae_0142",
+        "Hprae_0143",
+        "Hprae_0450",
+        "Hprae_0451",
+        "Hprae_0452",
+        "Hprae_0453",
+        "Hprae_0454",
+        "Hprae_0456",
+        "Hprae_0457"
+      ],
+      "aar": [
+        "Acear_0988",
+        "Acear_0989",
+        "Acear_1058",
+        "Acear_1059",
+        "Acear_1060",
+        "Acear_1063",
+        "Acear_1064",
+        "Acear_2268",
+        "Acear_2269",
+        "Acear_2275",
+        "Acear_2280"
+      ],
+      "hhl": [
+        "Halha_2193",
+        "Halha_2194"
+      ],
+      "fma": [
+        "FMG_0424",
+        "FMG_0425",
+        "FMG_0426",
+        "FMG_0427",
+        "FMG_0428",
+        "FMG_0429",
+        "FMG_0430",
+        "FMG_0435",
+        "FMG_0436",
+        "FMG_1606",
+        "FMG_1607",
+        "FMG_1608"
+      ],
+      "pmic": [
+        "NW74_03525",
+        "NW74_03530",
+        "NW74_03535",
+        "NW74_03540",
+        "NW74_03545",
+        "NW74_03550",
+        "NW74_03555",
+        "NW74_05200",
+        "NW74_05205",
+        "NW74_05210"
+      ],
+      "shi": [
+        "Shel_21500",
+        "Shel_21510",
+        "Shel_25180",
+        "Shel_25190",
+        "Shel_25200",
+        "Shel_25230",
+        "Shel_25240"
+      ],
+      "tde": [
+        "TDE0078",
+        "TDE0239",
+        "TDE0240",
+        "TDE0745",
+        "TDE2119",
+        "TDE2120"
+      ],
+      "tped": [
+        "TPE_0159",
+        "TPE_0348",
+        "TPE_0349",
+        "TPE_1229",
+        "TPE_1230",
+        "TPE_2132",
+        "TPE_2133",
+        "TPE_2134"
+      ],
+      "tpk": [
+        "JO40_01150",
+        "JO40_01155",
+        "JO40_01160",
+        "JO40_04350",
+        "JO40_04355",
+        "JO40_06225",
+        "JO40_06230",
+        "JO40_06615",
+        "JO40_06620"
+      ],
+      "trm": [
+        "JO41_00635",
+        "JO41_00640",
+        "JO41_03205",
+        "JO41_03210",
+        "JO41_06515",
+        "JO41_06520",
+        "JO41_06525"
+      ],
+      "brm": [
+        "Bmur_2722",
+        "Bmur_2723",
+        "Bmur_2724",
+        "Bmur_2725",
+        "Bmur_2726",
+        "Bmur_2727",
+        "Bmur_2728"
+      ],
+      "bpo": [
+        "BP951000_1854",
+        "BP951000_1855",
+        "BP951000_1856",
+        "BP951000_1857",
+        "BP951000_1858"
+      ],
+      "bpj": [
+        "B2904_orf667",
+        "B2904_orf668",
+        "B2904_orf669",
+        "B2904_orf670",
+        "B2904_orf671",
+        "B2904_orf672",
+        "B2904_orf673"
+      ],
+      "bpip": [
+        "BPP43_05895",
+        "BPP43_05900"
+      ],
+      "bpw": [
+        "WESB_0748",
+        "WESB_0749",
+        "WESB_0750",
+        "WESB_0751",
+        "WESB_0752",
+        "WESB_0753",
+        "WESB_0754"
+      ],
+      "leo": [
+        "AMK43_03510",
+        "AMK43_09725",
+        "AMK43_09730",
+        "AMK43_09735",
+        "AMK43_09740",
+        "AMK43_09745",
+        "AMK43_09750"
+      ],
+      "tai": [
+        "Taci_1134",
+        "Taci_1135",
+        "Taci_1136",
+        "Taci_1137",
+        "Taci_1138"
+      ],
+      "aco": [
+        "Amico_1391",
+        "Amico_1392",
+        "Amico_1393",
+        "Amico_1394",
+        "Amico_1395",
+        "Amico_1396",
+        "Amico_1397"
+      ],
+      "tli": [
+        "Tlie_1191",
+        "Tlie_1192",
+        "Tlie_1193",
+        "Tlie_1285",
+        "Tlie_1286",
+        "Tlie_1288",
+        "Tlie_1289",
+        "Tlie_1290",
+        "Tlie_1460",
+        "Tlie_1461"
+      ],
+      "amo": [
+        "Anamo_0397",
+        "Anamo_0398",
+        "Anamo_0399",
+        "Anamo_0400",
+        "Anamo_0401",
+        "Anamo_0402",
+        "Anamo_1047",
+        "Anamo_1048",
+        "Anamo_1239",
+        "Anamo_1240",
+        "Anamo_1616",
+        "Anamo_1617"
+      ],
+      "sbr": [
+        "SY1_16370",
+        "SY1_16390",
+        "SY1_16400",
+        "SY1_16420",
+        "SY1_16570"
+      ],
+      "cpor": [
+        "BED41_00185",
+        "BED41_00190",
+        "BED41_00195",
+        "BED41_11180",
+        "BED41_11185",
+        "BED41_11190",
+        "BED41_11205",
+        "BED41_11210",
+        "BED41_11585",
+        "BED41_11590",
+        "BED41_11595",
+        "BED41_12425",
+        "BED41_12430",
+        "BED41_12485",
+        "BED41_12500",
+        "BED41_12505",
+        "BED41_12510",
+        "BED41_14830",
+        "BED41_14835",
+        "BED41_15520",
+        "BED41_15525",
+        "BED41_15530",
+        "BED41_15540"
+      ],
+      "barc": [
+        "AOA65_0941",
+        "AOA65_0942",
+        "AOA65_0943",
+        "AOA65_0944"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.21.4.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.21.4.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.21.4.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.21.4.2"
+      ],
+      "CAS": [
+        "39307-24-9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Wagner M",
+          "Sonntag D",
+          "Grimm R",
+          "Pich A",
+          "Eckerskorn C",
+          "Sohling B",
+          "Andreesen JR."
+        ],
+        "title": "Substrate-specific selenoprotein B of glycine reductase from Eubacterium acidaminophilum. Biochemical and molecular analysis.",
+        "journal": "Eur. J. Biochem. 260 (1999) 38-49.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10091582]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bednarski B",
+          "Andreesen JR",
+          "Pich A."
+        ],
+        "title": "In vitro processing of the proproteins GrdE of protein B of glycine reductase and PrdA of D-proline reductase from Clostridium sticklandii: formation of a pyruvoyl group from a cysteine residue.",
+        "journal": "Eur. J. Biochem. 268 (2001) 3538-44.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11422384]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

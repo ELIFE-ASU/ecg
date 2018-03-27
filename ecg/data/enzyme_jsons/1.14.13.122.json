@@ -1,0 +1,493 @@
+[
+  {
+    "entry_id": "1.14.13.122",
+    "name": "chlorophyllide-a oxygenase",
+    "names": [
+      "chlorophyllide-a oxygenase",
+      "chlorophyllide a oxygenase",
+      "chlorophyll-b synthase",
+      "CAO"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "chlorophyllide-a:oxygen 71-oxidoreductase",
+    "reaction": "chlorophyllide a + 2 O2 + 2 NADPH + 2 H+ = chlorophyllide b + 3 H2O + NADP+ (overall reaction) [RN:R10080]; (1a) chlorophyllide a + O2 + NADPH + H+ = 71-hydroxychlorophyllide a + H2O + NADP+ [RN:R08203]; (1b) 71-hydroxychlorophyllide a + O2 + NADPH + H+ = chlorophyllide b + 2 H2O + NADP+ [RN:R08204]",
+    "all_reac": "R08203 R08204 R10080",
+    "iubmb_reactions": [
+      "R08203 R08204 R10080"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "chlorophyllide a [CPD:C02139]",
+      "O2 [CPD:C00007]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "71-hydroxychlorophyllide a"
+    ],
+    "products": [
+      "chlorophyllide b [CPD:C16541]",
+      "H2O [CPD:C00001]",
+      "NADP+ [CPD:C00006]",
+      "71-hydroxychlorophyllide a"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Chlorophyll b is required for the assembly of stable light-harvesting complexes (LHCs) in the chloroplast of green algae, cyanobacteria and plants [2,3]. Contains a mononuclear iron centre [3]. The enzyme catalyses two successive hydroxylations at the 7-methyl group of chlorophyllide a. The second step yields the aldehyde hydrate, which loses H2O spontaneously to form chlorophyllide b [2]. Chlorophyll a and protochlorophyllide a are not substrates [2].",
+    "pathways": {
+      "ec00860": "Porphyrin and chlorophyll metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K13600": "chlorophyllide a oxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT1G44446"
+      ],
+      "aly": [
+        "ARALYDRAFT_473812"
+      ],
+      "crb": [
+        "CARUB_v10008806mg"
+      ],
+      "csat": [
+        "104742170",
+        "104757952",
+        "104777569"
+      ],
+      "eus": [
+        "EUTSA_v10011377mg"
+      ],
+      "brp": [
+        "103847721"
+      ],
+      "bna": [
+        "106350863",
+        "106385836",
+        "106415183",
+        "111210513"
+      ],
+      "boe": [
+        "106300459",
+        "106312441"
+      ],
+      "thj": [
+        "104817365"
+      ],
+      "cpap": [
+        "110813502"
+      ],
+      "cit": [
+        "102606628"
+      ],
+      "cic": [
+        "CICLE_v10000821mg"
+      ],
+      "tcc": [
+        "18592342"
+      ],
+      "gra": [
+        "105769806",
+        "105797165"
+      ],
+      "ghi": [
+        "107905015",
+        "107924574"
+      ],
+      "egr": [
+        "104450507"
+      ],
+      "gmx": [
+        "100780485",
+        "100805998",
+        "100806298",
+        "100820586"
+      ],
+      "pvu": [
+        "PHAVU_008G161000g"
+      ],
+      "vra": [
+        "106780555"
+      ],
+      "var": [
+        "108338340"
+      ],
+      "ccaj": [
+        "109808662",
+        "109816058"
+      ],
+      "mtr": [
+        "MTR_1g030480"
+      ],
+      "cam": [
+        "101515232"
+      ],
+      "adu": [
+        "107459116"
+      ],
+      "aip": [
+        "107609200"
+      ],
+      "lja": [
+        "Lj0g3v0362219.1"
+      ],
+      "lang": [
+        "109328631",
+        "109355771",
+        "109360317"
+      ],
+      "fve": [
+        "101307553"
+      ],
+      "pper": [
+        "18790794"
+      ],
+      "pmum": [
+        "103319820"
+      ],
+      "mdm": [
+        "103401846",
+        "103431681",
+        "103441572"
+      ],
+      "pxb": [
+        "103940306"
+      ],
+      "zju": [
+        "107421070",
+        "107421073",
+        "107421081"
+      ],
+      "csv": [
+        "101205768"
+      ],
+      "cmo": [
+        "103504061"
+      ],
+      "mcha": [
+        "111011875"
+      ],
+      "rcu": [
+        "8274070"
+      ],
+      "jcu": [
+        "105638943"
+      ],
+      "hbr": [
+        "110640425",
+        "110643817"
+      ],
+      "pop": [
+        "POPTR_0002s08380g",
+        "POPTR_0005s20060g"
+      ],
+      "vvi": [
+        "100247245"
+      ],
+      "sly": [
+        "101244441",
+        "101261422"
+      ],
+      "spen": [
+        "107004538",
+        "107023313"
+      ],
+      "sot": [
+        "102592765",
+        "102594460"
+      ],
+      "cann": [
+        "107868082",
+        "107872994",
+        "107872996"
+      ],
+      "nta": [
+        "107770885",
+        "107788114",
+        "107818187",
+        "107824996"
+      ],
+      "nsy": [
+        "104224528",
+        "104250169"
+      ],
+      "nto": [
+        "104116717",
+        "104117902"
+      ],
+      "ini": [
+        "109177427"
+      ],
+      "sind": [
+        "105155361",
+        "105159469"
+      ],
+      "han": [
+        "110889494"
+      ],
+      "bvg": [
+        "104893235"
+      ],
+      "soe": [
+        "110796344"
+      ],
+      "nnu": [
+        "104587061",
+        "104587818"
+      ],
+      "osa": [
+        "4349430",
+        "4349433"
+      ],
+      "dosa": [
+        "Os10t0567100-01",
+        "Os10t0567400-01"
+      ],
+      "obr": [
+        "102716534"
+      ],
+      "bdi": [
+        "100823044"
+      ],
+      "sbi": [
+        "8077402"
+      ],
+      "zma": [
+        "100274228",
+        "100284976"
+      ],
+      "sita": [
+        "101772993"
+      ],
+      "pda": [
+        "103702743"
+      ],
+      "egu": [
+        "105037930",
+        "105051924"
+      ],
+      "mus": [
+        "103988166",
+        "103989081"
+      ],
+      "dct": [
+        "110096625"
+      ],
+      "atr": [
+        "18436732"
+      ],
+      "smo": [
+        "SELMODRAFT_118803",
+        "SELMODRAFT_131716"
+      ],
+      "ppp": [
+        "PHYPADRAFT_145243",
+        "PHYPADRAFT_149091"
+      ],
+      "cre": [
+        "CHLREDRAFT_195951"
+      ],
+      "vcn": [
+        "VOLCADRAFT_64158"
+      ],
+      "mng": [
+        "MNEG_2459",
+        "MNEG_8007"
+      ],
+      "olu": [
+        "OSTLU_5015"
+      ],
+      "ota": [
+        "OT_ostta12g01390"
+      ],
+      "bpg": [
+        "Bathy02g03200",
+        "Bathy07g03400"
+      ],
+      "mis": [
+        "MICPUN_104843",
+        "MICPUN_56065"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_60555"
+      ],
+      "csl": [
+        "COCSUDRAFT_18877"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_54799"
+      ],
+      "apro": [
+        "F751_5245"
+      ],
+      "acan": [
+        "ACA1_033380"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.122"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.122"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.122"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.122"
+      ],
+      "CAS": [
+        "216503-73-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Espineda CE",
+          "Linford AS",
+          "Devine D",
+          "Brusslan JA."
+        ],
+        "title": "The AtCAO gene, encoding chlorophyll a oxygenase, is required for chlorophyll b synthesis in Arabidopsis thaliana.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 10507-11.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10468639]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oster U",
+          "Tanaka R",
+          "Tanaka A",
+          "Rudiger W."
+        ],
+        "title": "Cloning and functional expression of the gene encoding the key enzyme for chlorophyll b biosynthesis (CAO) from Arabidopsis thaliana.",
+        "journal": "Plant. J. 21 (2000) 305-10.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10758481]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Eggink LL",
+          "LoBrutto R",
+          "Brune DC",
+          "Brusslan J",
+          "Yamasato A",
+          "Tanaka A",
+          "Hoober JK."
+        ],
+        "title": "Synthesis of chlorophyll b: localization of chlorophyllide a oxygenase and discovery of a stable radical in the catalytic subunit.",
+        "journal": "BMC. Plant. Biol. 4 (2004) 5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:15086960]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Porra RJ",
+          "Schafer W",
+          "Cmiel E",
+          "Katheder I",
+          "Scheer H."
+        ],
+        "title": "The derivation of the formyl-group oxygen of chlorophyll b in higher plants from molecular oxygen. Achievement of high enrichment of the 7-formyl-group oxygen from 18O2 in greening maize leaves.",
+        "journal": "Eur. J. Biochem. 219 (1994) 671-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:8307032]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

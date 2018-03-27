@@ -1,0 +1,626 @@
+[
+  {
+    "entry_id": "1.5.1.39",
+    "name": "FMN reductase [NAD(P)H]",
+    "names": [
+      "FMN reductase [NAD(P)H]",
+      "FRG"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "FMNH2:NAD(P)+ oxidoreductase",
+    "reaction": "FMNH2 + NAD(P)+ = FMN + NAD(P)H + H+ [RN:R05705 R05706]",
+    "all_reac": "R05705 R05706",
+    "iubmb_reactions": [
+      "R05705 R05706"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "FMNH2 [CPD:C01847]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "products": [
+      "FMN [CPD:C00061]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contains FMN. The enzyme can utilize NADH and NADPH with similar reaction rates. Different from EC 1.5.1.42, FMN reductase (NADH) and EC 1.5.1.38, FMN reductase (NADPH). The luminescent bacterium Vibrio harveyi possesses all three enzymes [1]. Also reduces riboflavin and FAD, but more slowly.",
+    "pathways": {
+      "ec00740": "Riboflavin metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K19286": "FMN reductase [NAD(P)H]"
+    },
+    "genes": {
+      "gqu": [
+        "AWC35_15390"
+      ],
+      "ebt": [
+        "EBL_c27760"
+      ],
+      "ced": [
+        "LH89_10405"
+      ],
+      "lax": [
+        "APT61_15525"
+      ],
+      "smaf": [
+        "D781_3978"
+      ],
+      "srz": [
+        "AXX16_1164"
+      ],
+      "eca": [
+        "ECA0351"
+      ],
+      "patr": [
+        "EV46_01875"
+      ],
+      "pato": [
+        "GZ59_03810"
+      ],
+      "pct": [
+        "PC1_0338"
+      ],
+      "pcc": [
+        "PCC21_003520"
+      ],
+      "pcv": [
+        "BCS7_01755"
+      ],
+      "pwa": [
+        "Pecwa_0381"
+      ],
+      "ppar": [
+        "A8F97_16530"
+      ],
+      "pec": [
+        "W5S_0391"
+      ],
+      "pws": [
+        "A7983_09905"
+      ],
+      "dda": [
+        "Dd703_3602"
+      ],
+      "ddc": [
+        "Dd586_0336"
+      ],
+      "dzc": [
+        "W909_01750"
+      ],
+      "eta": [
+        "ETA_14360"
+      ],
+      "epy": [
+        "EpC_15110"
+      ],
+      "epr": [
+        "EPYR_01625"
+      ],
+      "erj": [
+        "EJP617_31920"
+      ],
+      "ege": [
+        "EM595_1786"
+      ],
+      "pam": [
+        "PANA_4101"
+      ],
+      "plf": [
+        "PANA5342_p10256"
+      ],
+      "paj": [
+        "PAJ_p0190"
+      ],
+      "paq": [
+        "PAGR_p187"
+      ],
+      "pva": [
+        "Pvag_pPag30453"
+      ],
+      "pant": [
+        "PSNIH1_13335"
+      ],
+      "panp": [
+        "PSNIH2_08275"
+      ],
+      "pagg": [
+        "AL522_01420"
+      ],
+      "pagc": [
+        "BEE12_21095"
+      ],
+      "pstw": [
+        "DSJ_26140"
+      ],
+      "palh": [
+        "B1H58_17560"
+      ],
+      "pay": [
+        "PAU_03550"
+      ],
+      "cvi": [
+        "CV_3500"
+      ],
+      "cvc": [
+        "BKX93_08250"
+      ],
+      "pse": [
+        "NH8B_0873"
+      ],
+      "bhz": [
+        "ACR54_01072"
+      ],
+      "bpdz": [
+        "BBN53_16450"
+      ],
+      "ant": [
+        "Arnit_1586"
+      ],
+      "arc": [
+        "ABLL_0970"
+      ],
+      "sdl": [
+        "Sdel_1072"
+      ],
+      "sba": [
+        "Sulba_1190"
+      ],
+      "smul": [
+        "SMUL_3050"
+      ],
+      "shal": [
+        "SHALO_2816"
+      ],
+      "suls": [
+        "Sdiek1_2822"
+      ],
+      "sulj": [
+        "SJPD1_2729"
+      ],
+      "rhz": [
+        "RHPLAN_09810"
+      ],
+      "tom": [
+        "BWR18_17200"
+      ],
+      "bsu": [
+        "BSU03860"
+      ],
+      "bsr": [
+        "I33_0443"
+      ],
+      "bsl": [
+        "A7A1_3092"
+      ],
+      "bsh": [
+        "BSU6051_03860"
+      ],
+      "bsy": [
+        "I653_01960"
+      ],
+      "bsut": [
+        "BSUB_00437"
+      ],
+      "bsul": [
+        "BSUA_00437"
+      ],
+      "bsus": [
+        "Q433_02300"
+      ],
+      "bss": [
+        "BSUW23_01995"
+      ],
+      "bst": [
+        "GYO_0602"
+      ],
+      "bso": [
+        "BSNT_06728"
+      ],
+      "bsn": [
+        "BSn5_13535"
+      ],
+      "bsq": [
+        "B657_03860"
+      ],
+      "bsx": [
+        "C663_0379"
+      ],
+      "bsp": [
+        "U712_02005"
+      ],
+      "bli": [
+        "BL01854"
+      ],
+      "bld": [
+        "BLi00470"
+      ],
+      "blh": [
+        "BaLi_c04910"
+      ],
+      "bay": [
+        "RBAM_004110"
+      ],
+      "baq": [
+        "BACAU_0347"
+      ],
+      "bya": [
+        "BANAU_0347"
+      ],
+      "bamp": [
+        "B938_01820"
+      ],
+      "baml": [
+        "BAM5036_0370"
+      ],
+      "bama": [
+        "RBAU_0384"
+      ],
+      "bamn": [
+        "BASU_0369"
+      ],
+      "bamb": [
+        "BAPNAU_0352"
+      ],
+      "bamt": [
+        "AJ82_02265"
+      ],
+      "bamy": [
+        "V529_03720"
+      ],
+      "bmp": [
+        "NG74_00388"
+      ],
+      "bao": [
+        "BAMF_0354"
+      ],
+      "baz": [
+        "BAMTA208_01795"
+      ],
+      "bql": [
+        "LL3_00369"
+      ],
+      "bxh": [
+        "BAXH7_00372"
+      ],
+      "bqy": [
+        "MUS_0374"
+      ],
+      "bami": [
+        "KSO_017635"
+      ],
+      "bamc": [
+        "U471_03760"
+      ],
+      "bamf": [
+        "U722_02085"
+      ],
+      "bae": [
+        "BATR1942_20640"
+      ],
+      "batr": [
+        "TD68_19625"
+      ],
+      "bha": [
+        "BH2953"
+      ],
+      "bpf": [
+        "BpOF4_02425"
+      ],
+      "bmq": [
+        "BMQ_3033"
+      ],
+      "bmd": [
+        "BMD_3058"
+      ],
+      "bmh": [
+        "BMWSH_2145"
+      ],
+      "bmeg": [
+        "BG04_5560"
+      ],
+      "bco": [
+        "Bcell_0803"
+      ],
+      "bjs": [
+        "MY9_0402"
+      ],
+      "ble": [
+        "BleG1_0728"
+      ],
+      "bacp": [
+        "SB24_07760"
+      ],
+      "bacb": [
+        "OY17_04705"
+      ],
+      "bacy": [
+        "QF06_00900"
+      ],
+      "bacl": [
+        "BS34A_04440"
+      ],
+      "balm": [
+        "BsLM_0407"
+      ],
+      "beo": [
+        "BEH_12430"
+      ],
+      "bgy": [
+        "BGLY_0483"
+      ],
+      "bgi": [
+        "BGM20_17005"
+      ],
+      "bwh": [
+        "A9C19_08475"
+      ],
+      "tap": [
+        "GZ22_00705"
+      ],
+      "slz": [
+        "B5P37_08160"
+      ],
+      "plv": [
+        "ERIC2_c22420"
+      ],
+      "psab": [
+        "PSAB_09310"
+      ],
+      "pdu": [
+        "PDUR_10515"
+      ],
+      "pbd": [
+        "PBOR_29830"
+      ],
+      "pgm": [
+        "PGRAT_26850"
+      ],
+      "pod": [
+        "PODO_25615"
+      ],
+      "paen": [
+        "P40081_31390"
+      ],
+      "paef": [
+        "R50345_25550"
+      ],
+      "paeq": [
+        "R50912_28210"
+      ],
+      "pste": [
+        "PSTEL_10490"
+      ],
+      "paea": [
+        "R70723_27045"
+      ],
+      "paee": [
+        "R70331_26140"
+      ],
+      "paeh": [
+        "H70357_28885"
+      ],
+      "paej": [
+        "H70737_25355"
+      ],
+      "pri": [
+        "PRIO_5617"
+      ],
+      "pswu": [
+        "SY83_09875"
+      ],
+      "pdh": [
+        "B9T62_26040"
+      ],
+      "anx": [
+        "ACH33_05035"
+      ],
+      "ess": [
+        "ATZ33_02170",
+        "ATZ33_05405"
+      ],
+      "lmm": [
+        "MI1_07670"
+      ],
+      "lmk": [
+        "LMES_1537"
+      ],
+      "lki": [
+        "LKI_07275"
+      ],
+      "lec": [
+        "LGMK_04870"
+      ],
+      "lcn": [
+        "C270_01495"
+      ],
+      "lgs": [
+        "LEGAS_0410"
+      ],
+      "lge": [
+        "C269_01980"
+      ],
+      "llf": [
+        "BCR17_05385"
+      ],
+      "lgc": [
+        "A9176_03925"
+      ],
+      "cac": [
+        "CA_C0718"
+      ],
+      "cae": [
+        "SMB_G0733"
+      ],
+      "cay": [
+        "CEA_G0729"
+      ],
+      "cbe": [
+        "Cbei_2778"
+      ],
+      "cbz": [
+        "Cbs_2778"
+      ],
+      "cbei": [
+        "LF65_02693"
+      ],
+      "csr": [
+        "Cspa_c24470"
+      ],
+      "csb": [
+        "CLSA_c18180"
+      ],
+      "csq": [
+        "CSCA_2118",
+        "CSCA_2119"
+      ],
+      "cck": [
+        "Ccar_03960",
+        "Ccar_12565"
+      ],
+      "ceu": [
+        "A7L45_20090"
+      ],
+      "cst": [
+        "CLOST_2291"
+      ],
+      "awo": [
+        "Awo_c31780"
+      ],
+      "puf": [
+        "UFO1_1217"
+      ],
+      "mbv": [
+        "MBOVPG45_0332"
+      ],
+      "mbh": [
+        "MMB_0518"
+      ],
+      "mbi": [
+        "Mbov_0557"
+      ],
+      "mbq": [
+        "K668_02595"
+      ],
+      "obt": [
+        "OPIT5_26535"
+      ],
+      "scc": [
+        "Spico_1094"
+      ],
+      "lba": [
+        "Lebu_0572"
+      ],
+      "lot": [
+        "AXF11_01915"
+      ],
+      "leq": [
+        "BCB68_06900"
+      ],
+      "str": [
+        "Sterm_0690"
+      ],
+      "smf": [
+        "Smon_1230"
+      ],
+      "sns": [
+        "VC03_01295"
+      ],
+      "boa": [
+        "Bovatus_01450"
+      ],
+      "pary": [
+        "A4V02_04830"
+      ],
+      "bvs": [
+        "BARVI_11570"
+      ],
+      "pmz": [
+        "HMPREF0659_A7404"
+      ],
+      "pdn": [
+        "HMPREF9137_2494"
+      ],
+      "pdt": [
+        "Prede_2711"
+      ],
+      "acj": [
+        "ACAM_0063"
+      ],
+      "pdl": [
+        "Pyrde_1861"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.5.1.39"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.5.1.39"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.5.1.39"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.5.1.39"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Watanabe H",
+          "Hastings JW"
+        ],
+        "title": "Specificities and properties of three reduced pyridine nucleotide-flavin mononucleotide reductases coupling to bacterial luciferase.",
+        "journal": "Mol. Cell. Biochem. 44 (1982) 181-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6981058]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

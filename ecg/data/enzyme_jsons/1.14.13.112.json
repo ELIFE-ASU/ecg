@@ -1,0 +1,407 @@
+[
+  {
+    "entry_id": "1.14.13.112",
+    "name": "3-epi-6-deoxocathasterone 23-monooxygenase",
+    "names": [
+      "3-epi-6-deoxocathasterone 23-monooxygenase",
+      "cytochrome P450 90C1",
+      "CYP90D1",
+      "CYP90C1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "3-epi-6-deoxocathasterone,NADPH:oxygen oxidoreductase (C-23-hydroxylating)",
+    "reaction": "(1) 3-epi-6-deoxocathasterone + NADPH + H+ + O2 = 6-deoxotyphasterol + NADP+ + H2O [RN:R07792]; (2) (22S,24R)-22-hydroxy-5alpha-ergostan-3-one + NADPH + H+ + O2 = 3-dehydro-6-deoxoteasterone + NADP+ + H2O [RN:R07791]",
+    "all_reac": "R07791 R07792; (other) R07786 R07787",
+    "iubmb_reactions": [
+      "R07791 R07792"
+    ],
+    "kegg_reactions": [
+      "R07786 R07787"
+    ],
+    "substrates": [
+      "3-epi-6-deoxocathasterone [CPD:C16251]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(22S,24R)-22-hydroxy-5alpha-ergostan-3-one [CPD:C15797]"
+    ],
+    "products": [
+      "6-deoxotyphasterol [CPD:C15801]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "3-dehydro-6-deoxoteasterone [CPD:C15800]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme is involved in brassinosteroid biosynthesis. C-23 hydroxylation shortcuts bypass campestanol, 6-deoxocathasterone, and 6-deoxoteasterone and lead directly from (22S,24R)-22-hydroxy-5alpha-ergostan-3-one and 3-epi-6-deoxocathasterone to 3-dehydro-6-deoxoteasterone and 6-deoxotyphasterol [1].",
+    "pathways": {
+      "ec00905": "Brassinosteroid biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K12637": "3-epi-6-deoxocathasterone 23-monooxygenase",
+      "K12638": "3-epi-6-deoxocathasterone 23-monooxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT3G13730",
+        "AT4G36380"
+      ],
+      "aly": [
+        "ARALYDRAFT_318152",
+        "ARALYDRAFT_490999",
+        "ARALYDRAFT_686531"
+      ],
+      "crb": [
+        "CARUB_v10004567mg",
+        "CARUB_v10013542mg"
+      ],
+      "csat": [
+        "104716496",
+        "104721136",
+        "104729547",
+        "104733119",
+        "104745632",
+        "104765165"
+      ],
+      "eus": [
+        "EUTSA_v10000357mg",
+        "EUTSA_v10020591mg",
+        "EUTSA_v10024901mg"
+      ],
+      "brp": [
+        "103842602",
+        "103862467",
+        "103868633",
+        "103870101"
+      ],
+      "bna": [
+        "106350972",
+        "106351089",
+        "106369862",
+        "106409581",
+        "106426522",
+        "106440615",
+        "106451959",
+        "106452300"
+      ],
+      "boe": [
+        "106302041",
+        "106307279",
+        "106327160",
+        "106344076"
+      ],
+      "thj": [
+        "104807476",
+        "104810577"
+      ],
+      "cpap": [
+        "110818395",
+        "110822476"
+      ],
+      "cit": [
+        "102610008",
+        "102623590"
+      ],
+      "cic": [
+        "CICLE_v10025448mg",
+        "CICLE_v10025479mg"
+      ],
+      "tcc": [
+        "18596114",
+        "18610843"
+      ],
+      "gra": [
+        "105769910",
+        "105787502",
+        "105803759"
+      ],
+      "ghi": [
+        "107896774",
+        "107906110",
+        "107909428",
+        "107913036",
+        "107936555",
+        "107943285"
+      ],
+      "egr": [
+        "104422732",
+        "104449963"
+      ],
+      "gmx": [
+        "100782687",
+        "100797868",
+        "100799030",
+        "100812489"
+      ],
+      "pvu": [
+        "PHAVU_002G167400g",
+        "PHAVU_003G258400g",
+        "PHAVU_010G139600g"
+      ],
+      "vra": [
+        "106768728",
+        "106773857",
+        "106777471"
+      ],
+      "var": [
+        "108323332",
+        "108335338",
+        "108336674"
+      ],
+      "ccaj": [
+        "109801110",
+        "109809062",
+        "109814118"
+      ],
+      "mtr": [
+        "MTR_5g021220",
+        "MTR_8g016180",
+        "MTR_8g076510"
+      ],
+      "cam": [
+        "101488381",
+        "101505609",
+        "101509993",
+        "101510968"
+      ],
+      "adu": [
+        "107461434",
+        "107464245",
+        "107488015"
+      ],
+      "aip": [
+        "107612705",
+        "107618558",
+        "107642922"
+      ],
+      "lja": [
+        "Lj0g3v0064459.1",
+        "Lj2g3v1728770.1",
+        "Lj2g3v1728770.2",
+        "Lj3g3v2693130.1",
+        "Lj3g3v2693130.2"
+      ],
+      "lang": [
+        "109348710",
+        "109358278"
+      ],
+      "fve": [
+        "101297721",
+        "101302700"
+      ],
+      "pper": [
+        "18771246",
+        "18784338"
+      ],
+      "pmum": [
+        "103327717",
+        "103340160"
+      ],
+      "mdm": [
+        "103400874",
+        "103426800",
+        "103431557",
+        "103453669"
+      ],
+      "pxb": [
+        "103934102",
+        "103957186"
+      ],
+      "zju": [
+        "107403831",
+        "107424559"
+      ],
+      "csv": [
+        "101203911",
+        "101212581",
+        "101217830"
+      ],
+      "cmo": [
+        "103485087",
+        "103490016",
+        "103500734"
+      ],
+      "mcha": [
+        "111005423",
+        "111016959"
+      ],
+      "rcu": [
+        "8266971",
+        "8279118"
+      ],
+      "jcu": [
+        "105631477",
+        "105639077"
+      ],
+      "hbr": [
+        "110639585",
+        "110648648",
+        "110668522"
+      ],
+      "pop": [
+        "POPTR_0001s20720g",
+        "POPTR_0003s03030g",
+        "POPTR_0007s13520g"
+      ],
+      "vvi": [
+        "100259060",
+        "100259945"
+      ],
+      "sly": [
+        "101245605",
+        "101256170"
+      ],
+      "spen": [
+        "107009038",
+        "107014078"
+      ],
+      "sot": [
+        "102582597",
+        "102598106"
+      ],
+      "cann": [
+        "107860019",
+        "107861744"
+      ],
+      "nta": [
+        "107771928",
+        "107795325",
+        "107795780",
+        "107816861"
+      ],
+      "nsy": [
+        "104213362",
+        "104213597"
+      ],
+      "nto": [
+        "104118978",
+        "104121493"
+      ],
+      "ini": [
+        "109177767",
+        "109190236"
+      ],
+      "sind": [
+        "105157742",
+        "105165748"
+      ],
+      "han": [
+        "110886538",
+        "110894209",
+        "110915370"
+      ],
+      "bvg": [
+        "104895094",
+        "104900369"
+      ],
+      "soe": [
+        "110785866",
+        "110798894"
+      ],
+      "nnu": [
+        "104586612",
+        "104595594",
+        "104610557"
+      ],
+      "pda": [
+        "103712873",
+        "103723970"
+      ],
+      "egu": [
+        "105042258",
+        "105059996"
+      ],
+      "mus": [
+        "103995745"
+      ],
+      "dct": [
+        "110094797"
+      ],
+      "atr": [
+        "18429333",
+        "18448141"
+      ],
+      "smo": [
+        "SELMODRAFT_151754",
+        "SELMODRAFT_157387",
+        "SELMODRAFT_182839",
+        "SELMODRAFT_186571"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.112"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.112"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.112"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.112"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Ohnishi T",
+          "Szatmari AM",
+          "Watanabe B",
+          "Fujita S",
+          "Bancos S",
+          "Koncz C",
+          "Lafos M",
+          "Shibata K",
+          "Yokota T",
+          "Sakata K",
+          "Szekeres M",
+          "Mizutani M."
+        ],
+        "title": "C-23 hydroxylation by Arabidopsis CYP90C1 and CYP90D1 reveals a novel shortcut in brassinosteroid biosynthesis.",
+        "journal": "Plant. Cell. 18 (2006) 3275-88.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:17138693]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

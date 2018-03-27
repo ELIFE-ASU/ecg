@@ -1,0 +1,485 @@
+[
+  {
+    "entry_id": "1.14.13.78",
+    "name": "ent-kaurene oxidase",
+    "names": [
+      "ent-kaurene oxidase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "ent-kaur-16-ene,NADPH:oxygen oxidoreductase (hydroxylating)",
+    "reaction": "ent-kaur-16-ene + 3 NADPH + 3 H+ + 3 O2 = ent-kaur-16-en-19-oate + 3 NADP+ + 4 H2O (overall reaction) [RN:R10066]; (1a) ent-kaur-16-ene + NADPH + H+ + O2 = ent-kaur-16-en-19-ol + NADP+ + H2O [RN:R06291]; (1b) ent-kaur-16-en-19-ol + NADPH + H+ + O2 = ent-kaur-16-en-19-al + NADP+ + 2 H2O [RN:R06292]; (1c) ent-kaur-16-en-19-al + NADPH + O2 = ent-kaur-16-en-19-oate + NADP+ + H2O [RN:R06293]",
+    "all_reac": "R06291 R06292 R06293 R10066",
+    "iubmb_reactions": [
+      "R06291 R06292 R06293 R10066"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ent-kaur-16-ene [CPD:C06090]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "ent-kaur-16-en-19-ol [CPD:C11872]",
+      "ent-kaur-16-en-19-al [CPD:C11873]"
+    ],
+    "products": [
+      "ent-kaur-16-en-19-oate [CPD:C11874]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "ent-kaur-16-en-19-ol [CPD:C11872]",
+      "ent-kaur-16-en-19-al [CPD:C11873]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires cytochrome P-450. Catalyses three sucessive oxidations of the 4-methyl group of ent-kaurene giving kaurenoic acid.",
+    "pathways": {
+      "ec00904": "Diterpenoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K04122": "ent-kaurene oxidase",
+      "K21292": "ent-kaurene oxidase"
+    },
+    "genes": {
+      "ath": [
+        "AT5G25900"
+      ],
+      "aly": [
+        "ARALYDRAFT_910656"
+      ],
+      "crb": [
+        "CARUB_v10000758mg"
+      ],
+      "csat": [
+        "104706907",
+        "104736615",
+        "104771068"
+      ],
+      "eus": [
+        "EUTSA_v10004043mg"
+      ],
+      "brp": [
+        "103874435"
+      ],
+      "bna": [
+        "106348557",
+        "106348758"
+      ],
+      "boe": [
+        "106301555"
+      ],
+      "thj": [
+        "104803409",
+        "104806957"
+      ],
+      "cpap": [
+        "110825592",
+        "110825600",
+        "110825618"
+      ],
+      "cit": [
+        "102626273",
+        "102627235"
+      ],
+      "cic": [
+        "CICLE_v10000884mg",
+        "CICLE_v10000902mg",
+        "CICLE_v10001179mg"
+      ],
+      "tcc": [
+        "18591283"
+      ],
+      "gra": [
+        "105774074"
+      ],
+      "ghi": [
+        "107887023",
+        "107887795",
+        "107935613"
+      ],
+      "egr": [
+        "104449362",
+        "104449363",
+        "104451877"
+      ],
+      "gmx": [
+        "100802970",
+        "100814223"
+      ],
+      "pvu": [
+        "PHAVU_005G183600g"
+      ],
+      "vra": [
+        "106762922"
+      ],
+      "var": [
+        "108336168",
+        "108337733"
+      ],
+      "ccaj": [
+        "109812642",
+        "109817002"
+      ],
+      "mtr": [
+        "MTR_2g105360"
+      ],
+      "cam": [
+        "101492348",
+        "101492682"
+      ],
+      "adu": [
+        "107459820",
+        "107483258"
+      ],
+      "aip": [
+        "107618674",
+        "107638960"
+      ],
+      "lja": [
+        "Lj0g3v0151459.1",
+        "Lj0g3v0180559.1",
+        "Lj0g3v0218449.1",
+        "Lj3g3v0002210.2"
+      ],
+      "lang": [
+        "109337304",
+        "109337306",
+        "109350784"
+      ],
+      "fve": [
+        "101315406"
+      ],
+      "pper": [
+        "18791732"
+      ],
+      "pmum": [
+        "103320777",
+        "103320921"
+      ],
+      "mdm": [
+        "103420934",
+        "103440464",
+        "103441571",
+        "103441598"
+      ],
+      "pxb": [
+        "103954018",
+        "103955469",
+        "108865311"
+      ],
+      "zju": [
+        "107420337"
+      ],
+      "csv": [
+        "101209283"
+      ],
+      "cmo": [
+        "103493505"
+      ],
+      "mcha": [
+        "111010641"
+      ],
+      "rcu": [
+        "8260887"
+      ],
+      "jcu": [
+        "105633700"
+      ],
+      "hbr": [
+        "110636133",
+        "110636190"
+      ],
+      "pop": [
+        "POPTR_0002s13110g"
+      ],
+      "vvi": [
+        "100255742"
+      ],
+      "sly": [
+        "101267112"
+      ],
+      "spen": [
+        "107016073"
+      ],
+      "sot": [
+        "102588924",
+        "102589573"
+      ],
+      "cann": [
+        "107848806",
+        "107867102"
+      ],
+      "nta": [
+        "107766539",
+        "107772573",
+        "107792085"
+      ],
+      "nsy": [
+        "104230322"
+      ],
+      "nto": [
+        "104089658"
+      ],
+      "ini": [
+        "109149104"
+      ],
+      "sind": [
+        "105159190",
+        "105159193",
+        "105166213"
+      ],
+      "han": [
+        "110879488",
+        "110879531",
+        "110879533",
+        "110899627",
+        "110899628"
+      ],
+      "bvg": [
+        "104883634"
+      ],
+      "soe": [
+        "110783160"
+      ],
+      "nnu": [
+        "104595848"
+      ],
+      "osa": [
+        "4341340",
+        "4341347"
+      ],
+      "dosa": [
+        "Os06t0568600-01",
+        "Os06t0569900-01",
+        "Os06t0570100-01",
+        "Os06t0570566-00",
+        "Os06t0570600-00"
+      ],
+      "obr": [
+        "102700808",
+        "102719498",
+        "102719778"
+      ],
+      "bdi": [
+        "100826923",
+        "100828145",
+        "100834998"
+      ],
+      "sbi": [
+        "8065021"
+      ],
+      "zma": [
+        "100274015",
+        "103638615"
+      ],
+      "sita": [
+        "101769883",
+        "101770285",
+        "101770692"
+      ],
+      "pda": [
+        "103702042",
+        "103709580"
+      ],
+      "egu": [
+        "105040426",
+        "105047970"
+      ],
+      "mus": [
+        "103986614"
+      ],
+      "dct": [
+        "110093775",
+        "110099182"
+      ],
+      "atr": [
+        "18421320",
+        "18425567",
+        "18425989",
+        "18443400"
+      ],
+      "smo": [
+        "SELMODRAFT_119177",
+        "SELMODRAFT_421373",
+        "SELMODRAFT_424982",
+        "SELMODRAFT_74427"
+      ],
+      "ppp": [
+        "PHYPADRAFT_151293"
+      ],
+      "ani": [
+        "AN1598.2"
+      ],
+      "ang": [
+        "ANI_1_2452094"
+      ],
+      "nfi": [
+        "NFIA_009830"
+      ],
+      "cim": [
+        "CIMG_03089"
+      ],
+      "cpw": [
+        "CPC735_010550"
+      ],
+      "ure": [
+        "UREG_02869"
+      ],
+      "abe": [
+        "ARB_00548"
+      ],
+      "tve": [
+        "TRV_00376"
+      ],
+      "pte": [
+        "PTT_08290"
+      ],
+      "bze": [
+        "COCCADRAFT_112173"
+      ],
+      "bsc": [
+        "COCSADRAFT_185928"
+      ],
+      "bor": [
+        "COCMIDRAFT_109515"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_34461"
+      ],
+      "npa": [
+        "UCRNP2_330"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.78"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.78"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.78"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.78"
+      ],
+      "CAS": [
+        "149565-67-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Ashman PJ",
+          "Mackenzie A",
+          "Bramley PM."
+        ],
+        "title": "Characterization of ent-kaurene oxidase activity from Gibberella fujikuroi.",
+        "journal": "Biochim. Biophys. Acta. 1036 (1990) 151-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2223832]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Archer C",
+          "Ashman PJ",
+          "Hedden P",
+          "Bowyer JR",
+          "Bramley PM."
+        ],
+        "title": "Purification of ent-kaurene oxidase from Gibberella fujikuroi and Cucurbita maxima.",
+        "journal": "Biochem. Soc. Trans. 20 (1992) 218S.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:1397591]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Helliwell CA",
+          "Poole A",
+          "Peacock WJ",
+          "Dennis ES."
+        ],
+        "title": "Arabidopsis ent-kaurene oxidase catalyzes three steps of gibberellin biosynthesis.",
+        "journal": "Plant. Physiol. 119 (1999) 507-10.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9952446]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

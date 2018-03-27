@@ -1,0 +1,716 @@
+[
+  {
+    "entry_id": "2.4.1.174",
+    "name": "glucuronylgalactosylproteoglycan 4-beta-N-acetylgalactosaminyltransferase",
+    "names": [
+      "glucuronylgalactosylproteoglycan 4-beta-N-acetylgalactosaminyltransferase",
+      "N-acetylgalactosaminyltransferase I",
+      "glucuronylgalactosylproteoglycan beta-1,4-N-acetylgalactosaminyltransferase",
+      "uridine diphosphoacetylgalactosamine-chondroitin acetylgalactosaminyltransferase I",
+      "UDP-N-acetyl-D-galactosamine:D-glucuronyl-1,3-beta-D-galactosyl-proteoglycan beta-1,4-N-acetylgalactosaminyltransferase",
+      "UDP-N-acetyl-D-galactosamine:D-glucuronyl-(1->3)-beta-D-galactosyl-proteoglycan 4-beta-N-acetylgalactosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-D-galactosamine:[protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine 4-beta-N-acetylgalactosaminyltransferase (configuration-inverting)",
+    "reaction": "UDP-N-acetyl-alpha-D-galactosamine + [protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine = UDP + [protein]-3-O-(beta-D-GalNAc-(1->4)-beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine [RN:R05929]",
+    "all_reac": "R05929(G)",
+    "iubmb_reactions": [
+      "R05929(G)"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-galactosamine [CPD:C00203]",
+      "[protein]-3-O-(beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine [CPD:C04903]"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "[protein]-3-O-(beta-D-GalNAc-(1->4)-beta-D-GlcA-(1->3)-beta-D-Gal-(1->3)-beta-D-Gal-(1->4)-beta-D-Xyl)-L-serine"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Mn2+. Involved in the biosynthesis of chondroitin sulfate. Key enzyme activity for the initiation of chondroitin and dermatan sulfates, transferring GalNAc to the GlcA-Gal-Gal-Xyl-Ser core.",
+    "pathways": {
+      "ec00532": "Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00746": "chondroitin sulfate N-acetylgalactosaminyltransferase 1/2"
+    },
+    "genes": {
+      "hsa": [
+        "55454",
+        "55790"
+      ],
+      "ptr": [
+        "450416",
+        "464030"
+      ],
+      "pps": [
+        "100974901",
+        "100987599",
+        "100994377"
+      ],
+      "ggo": [
+        "101151962",
+        "101154228"
+      ],
+      "pon": [
+        "100172853",
+        "100442293"
+      ],
+      "nle": [
+        "100583001",
+        "100602432"
+      ],
+      "mcc": [
+        "703703",
+        "704901"
+      ],
+      "mcf": [
+        "102125913",
+        "102136560"
+      ],
+      "csab": [
+        "103215414",
+        "103215756"
+      ],
+      "rro": [
+        "104653929",
+        "104662459"
+      ],
+      "rbb": [
+        "108513317",
+        "108526479"
+      ],
+      "cjc": [
+        "100399122",
+        "100407007"
+      ],
+      "sbq": [
+        "101027448",
+        "101048885"
+      ],
+      "mmu": [
+        "234356",
+        "78752"
+      ],
+      "rno": [
+        "297554",
+        "306375"
+      ],
+      "cge": [
+        "100754969",
+        "100770830"
+      ],
+      "ngi": [
+        "103733802",
+        "103747604"
+      ],
+      "hgl": [
+        "101700905",
+        "101719048"
+      ],
+      "ccan": [
+        "109688882",
+        "109698852"
+      ],
+      "ocu": [
+        "100339411",
+        "100339435"
+      ],
+      "tup": [
+        "102468989",
+        "102490797"
+      ],
+      "cfa": [
+        "482831",
+        "486786"
+      ],
+      "aml": [
+        "100468746",
+        "100484755"
+      ],
+      "umr": [
+        "103667936",
+        "103677036"
+      ],
+      "oro": [
+        "101369554",
+        "101377082"
+      ],
+      "fca": [
+        "101096311",
+        "101100841"
+      ],
+      "ptg": [
+        "102956824",
+        "102966347"
+      ],
+      "aju": [
+        "106972130",
+        "106978257"
+      ],
+      "bta": [
+        "509328",
+        "528057"
+      ],
+      "bom": [
+        "102266543",
+        "102285203"
+      ],
+      "biu": [
+        "109553356",
+        "109553754"
+      ],
+      "phd": [
+        "102330279",
+        "102333649"
+      ],
+      "chx": [
+        "102179349",
+        "102185714"
+      ],
+      "oas": [
+        "101118243",
+        "101120469",
+        "105605252"
+      ],
+      "ssc": [
+        "100157878",
+        "100517735",
+        "102166124"
+      ],
+      "cfr": [
+        "102513810",
+        "102514190",
+        "102514921"
+      ],
+      "cdk": [
+        "105086444",
+        "105092509"
+      ],
+      "bacu": [
+        "103007226",
+        "103010484"
+      ],
+      "lve": [
+        "103069443",
+        "103084873"
+      ],
+      "ecb": [
+        "100050200",
+        "100052192"
+      ],
+      "epz": [
+        "103541884",
+        "103542759",
+        "103550620"
+      ],
+      "eai": [
+        "106824857",
+        "106830921",
+        "106831340"
+      ],
+      "myb": [
+        "102244364",
+        "102262652"
+      ],
+      "myd": [
+        "102764495",
+        "102768920"
+      ],
+      "hai": [
+        "109386291",
+        "109395550"
+      ],
+      "rss": [
+        "109438924",
+        "109452852"
+      ],
+      "pale": [
+        "102878385",
+        "102889741"
+      ],
+      "lav": [
+        "100654033",
+        "100661660"
+      ],
+      "tmu": [
+        "101345134",
+        "101352592"
+      ],
+      "mdo": [
+        "100012272",
+        "100030310"
+      ],
+      "shr": [
+        "100925396",
+        "100925905"
+      ],
+      "oaa": [
+        "100076249",
+        "100078026"
+      ],
+      "gga": [
+        "422488",
+        "423632"
+      ],
+      "mgp": [
+        "100538576",
+        "100550089"
+      ],
+      "cjo": [
+        "107313214",
+        "107315593"
+      ],
+      "apla": [
+        "101796158",
+        "101799131"
+      ],
+      "acyg": [
+        "106032482",
+        "106035122"
+      ],
+      "tgu": [
+        "100223510",
+        "100231851"
+      ],
+      "gfr": [
+        "102033481",
+        "102043050"
+      ],
+      "fab": [
+        "101812240",
+        "101820745"
+      ],
+      "phi": [
+        "102113363",
+        "102113419"
+      ],
+      "pmaj": [
+        "107203353",
+        "107207041"
+      ],
+      "ccw": [
+        "104690220",
+        "104697139"
+      ],
+      "fpg": [
+        "101910473",
+        "101919107"
+      ],
+      "fch": [
+        "102049509",
+        "102059429"
+      ],
+      "clv": [
+        "102088612",
+        "102097544"
+      ],
+      "egz": [
+        "104129088",
+        "104135540"
+      ],
+      "aam": [
+        "106484360",
+        "106498950"
+      ],
+      "asn": [
+        "102388579",
+        "102388616"
+      ],
+      "amj": [
+        "102562660",
+        "106736723"
+      ],
+      "pss": [
+        "102447091",
+        "102458703"
+      ],
+      "cmy": [
+        "102940405",
+        "102945055"
+      ],
+      "cpic": [
+        "101937753",
+        "101950451"
+      ],
+      "acs": [
+        "100558813",
+        "100560783"
+      ],
+      "pvt": [
+        "110083670",
+        "110086324"
+      ],
+      "pbi": [
+        "103048163",
+        "103058428"
+      ],
+      "gja": [
+        "107107034",
+        "107115005"
+      ],
+      "xla": [
+        "108696289",
+        "108706822",
+        "108712229"
+      ],
+      "xtr": [
+        "100124741",
+        "100497098"
+      ],
+      "npr": [
+        "108786604",
+        "108804915"
+      ],
+      "dre": [
+        "560826",
+        "793671"
+      ],
+      "srx": [
+        "107712620",
+        "107713273",
+        "107726950",
+        "107734789",
+        "107743585",
+        "107744099"
+      ],
+      "sanh": [
+        "107655442",
+        "107661530",
+        "107666416",
+        "107685172",
+        "107686490"
+      ],
+      "sgh": [
+        "107559332",
+        "107562546",
+        "107569665",
+        "107571111",
+        "107576973",
+        "107601885"
+      ],
+      "ccar": [
+        "109069885",
+        "109074377",
+        "109078348",
+        "109078956",
+        "109082132",
+        "109092168",
+        "109094999",
+        "109097796"
+      ],
+      "ipu": [
+        "108263569",
+        "108265223",
+        "108277248"
+      ],
+      "amex": [
+        "103021869",
+        "103029300",
+        "103045746"
+      ],
+      "tru": [
+        "101071007",
+        "101079052",
+        "101079135"
+      ],
+      "tng": [
+        "GSTEN00000951G001",
+        "GSTEN00014453G001",
+        "GSTEN00024539G001",
+        "GSTEN00030936G001"
+      ],
+      "lco": [
+        "104920113",
+        "104920841",
+        "104921883"
+      ],
+      "ncc": [
+        "104951713",
+        "104952731"
+      ],
+      "mze": [
+        "101469922",
+        "101474654",
+        "101476345"
+      ],
+      "ola": [
+        "101155793",
+        "101159591",
+        "101162617"
+      ],
+      "xma": [
+        "102221723",
+        "102233977",
+        "102237743"
+      ],
+      "pret": [
+        "103470100",
+        "103473476",
+        "103477114"
+      ],
+      "csem": [
+        "103387459",
+        "103390413",
+        "103397716"
+      ],
+      "lcf": [
+        "108874113",
+        "108882236",
+        "108886250"
+      ],
+      "hcq": [
+        "109523133",
+        "109525674",
+        "109527907"
+      ],
+      "bpec": [
+        "110157439",
+        "110162232",
+        "110167048"
+      ],
+      "sasa": [
+        "100380505",
+        "106561858",
+        "106568408",
+        "106580571",
+        "106604550"
+      ],
+      "els": [
+        "105014092",
+        "105026679",
+        "105028646"
+      ],
+      "sfm": [
+        "108924956",
+        "108932703"
+      ],
+      "lcm": [
+        "102358556",
+        "102366614"
+      ],
+      "cmk": [
+        "103181211",
+        "103186731"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_123885"
+      ],
+      "cin": [
+        "100177589"
+      ],
+      "spu": [
+        "579124"
+      ],
+      "aplc": [
+        "110991016"
+      ],
+      "sko": [
+        "100368195"
+      ],
+      "dme": [
+        "Dmel_CG12913"
+      ],
+      "dpo": [
+        "Dpse_GA11904"
+      ],
+      "dan": [
+        "Dana_GF12786"
+      ],
+      "der": [
+        "Dere_GG24153"
+      ],
+      "dpe": [
+        "Dper_GL11584"
+      ],
+      "dse": [
+        "Dsec_GM20871",
+        "Dsec_GM21196"
+      ],
+      "dsi": [
+        "Dsimw501_GD10724"
+      ],
+      "dwi": [
+        "Dwil_GK17784"
+      ],
+      "dya": [
+        "Dyak_GE19348"
+      ],
+      "dgr": [
+        "Dgri_GH21775"
+      ],
+      "dmo": [
+        "Dmoj_GI19322"
+      ],
+      "dvi": [
+        "Dvir_GJ22200"
+      ],
+      "aga": [
+        "AgaP_AGAP007720"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ019283"
+      ],
+      "nvi": [
+        "100121958"
+      ],
+      "tca": [
+        "659298"
+      ],
+      "dpa": [
+        "109542837"
+      ],
+      "nvl": [
+        "108559669"
+      ],
+      "phu": [
+        "Phum_PHUM567440"
+      ],
+      "zne": [
+        "110838755"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_45221"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_174094"
+      ],
+      "crg": [
+        "105325571"
+      ],
+      "myi": [
+        "110456749"
+      ],
+      "obi": [
+        "106879903"
+      ],
+      "lak": [
+        "106167613"
+      ],
+      "nve": [
+        "NEMVE_v1g177601"
+      ],
+      "epa": [
+        "110234086",
+        "110241416",
+        "110249577"
+      ],
+      "adf": [
+        "107339026",
+        "107343332"
+      ],
+      "hmg": [
+        "100201765"
+      ],
+      "aqu": [
+        "105313529"
+      ],
+      "ccp": [
+        "CHC_T00008612001",
+        "CHC_T00008980001"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.174"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.174"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.174"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.174"
+      ],
+      "CAS": [
+        "96189-39-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Rohrmann K",
+          "Niemann R",
+          "Buddecke E."
+        ],
+        "title": "Two N-acetylgalactosaminyltransferase are involved in the biosynthesis of chondroitin sulfate.",
+        "journal": "Eur. J. Biochem. 148 (1985) 463-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:3922754]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Uyama T",
+          "Kitagawa H",
+          "Tamura Ji J",
+          "Sugahara K."
+        ],
+        "title": "Molecular cloning and expression of human chondroitin N-acetylgalactosaminyltransferase: the key enzyme for chain initiation and elongation of chondroitin/dermatan sulfate on the protein linkage region tetrasaccharide shared by heparin/heparan sulfate.",
+        "journal": "J. Biol. Chem. 277 (2002) 8841-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11788602]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

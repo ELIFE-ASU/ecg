@@ -1,0 +1,484 @@
+[
+  {
+    "entry_id": "1.2.1.95",
+    "name": "L-2-aminoadipate reductase",
+    "names": [
+      "L-2-aminoadipate reductase",
+      "LYS2",
+      "alpha-aminoadipate reductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the aldehyde or oxo group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "(S)-2-amino-6-oxohexanoate:NADP+ oxidoreductase (ATP-forming)",
+    "reaction": "(S)-2-amino-6-oxohexanoate + NADP+ + AMP + diphosphate = L-2-aminoadipate + NADPH + H+ + ATP (overall reaction) [RN:R11679]; (1a) L-2-aminoadipyl-[LYS2 peptidyl-carrier-protein] + AMP + diphosphate = L-2-aminoadipate + holo-[LYS2 peptidyl-carrier-protein] + ATP; (1b) (S)-2-amino-6-oxohexanoate + holo-[LYS2 peptidyl-carrier-protein] + NADP+ = L-2-aminoadipyl-[LYS2 peptidyl-carrier-protein] + NADPH + H+",
+    "all_reac": "R11679; (other) R03098 R04390 R04863",
+    "iubmb_reactions": [
+      "R11679"
+    ],
+    "kegg_reactions": [
+      "R03098 R04390 R04863"
+    ],
+    "substrates": [
+      "(S)-2-amino-6-oxohexanoate [CPD:C04076]",
+      "NADP+ [CPD:C00006]",
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "L-2-aminoadipyl-[LYS2 peptidyl-carrier-protein]",
+      "holo-[LYS2 peptidyl-carrier-protein]"
+    ],
+    "products": [
+      "L-2-aminoadipate [CPD:C00956]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "ATP [CPD:C00002]",
+      "holo-[LYS2 peptidyl-carrier-protein]",
+      "L-2-aminoadipyl-[LYS2 peptidyl-carrier-protein]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme, characterized from the yeast Saccharomyces cerevisiae, catalyses the reduction of L-2-aminoadipate to (S)-2-amino-6-oxohexanoate during L-lysine biosynthesis. An adenylation domain activates the substrate at the expense of ATP hydrolysis, and forms L-2-aminoadipate adenylate, which is attached to a peptidyl-carrier protein (PCP) domain. Binding of NADPH results in reductive cleavage of the acyl-S-enzyme intermediate, releasing (S)-2-amino-6-oxohexanoate. Different from EC 1.2.1.31, L-aminoadipate-semialdehyde dehydrogenase, which catalyses a similar transformation in the opposite direction without ATP hydrolysis.",
+    "pathways": {
+      "ec00300": "Lysine biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00143": "L-2-aminoadipate reductase"
+    },
+    "genes": {
+      "sce": [
+        "YBR115C"
+      ],
+      "ago": [
+        "AGOS_ADL346W"
+      ],
+      "erc": [
+        "Ecym_3457"
+      ],
+      "kla": [
+        "KLLA0B09218g"
+      ],
+      "lth": [
+        "KLTH0F10384g"
+      ],
+      "vpo": [
+        "Kpol_1006p6"
+      ],
+      "zro": [
+        "ZYRO0C16566g"
+      ],
+      "cgr": [
+        "CAGL0K07788g"
+      ],
+      "ncs": [
+        "NCAS_0I01040"
+      ],
+      "ndi": [
+        "NDAI_0A07970"
+      ],
+      "tpf": [
+        "TPHA_0A03520"
+      ],
+      "tbl": [
+        "TBLA_0H01500"
+      ],
+      "tdl": [
+        "TDEL_0C05110"
+      ],
+      "kaf": [
+        "KAFR_0D02630"
+      ],
+      "ppa": [
+        "PAS_chr1-4_0153"
+      ],
+      "dha": [
+        "DEHA2D07964g"
+      ],
+      "pic": [
+        "PICST_68020"
+      ],
+      "pgu": [
+        "PGUG_04759"
+      ],
+      "spaa": [
+        "SPAPADRAFT_145301"
+      ],
+      "lel": [
+        "LELG_01517"
+      ],
+      "cal": [
+        "CAALFM_C102820WA"
+      ],
+      "ctp": [
+        "CTRG_04681",
+        "CTRG_04682"
+      ],
+      "cot": [
+        "CORT_0B09490"
+      ],
+      "cdu": [
+        "CD36_02620"
+      ],
+      "cten": [
+        "CANTEDRAFT_131638"
+      ],
+      "yli": [
+        "YALI0E06457g"
+      ],
+      "clu": [
+        "CLUG_04446"
+      ],
+      "clus": [
+        "A9F13_04g00583"
+      ],
+      "caur": [
+        "QG37_02011"
+      ],
+      "ncr": [
+        "NCU03010"
+      ],
+      "nte": [
+        "NEUTE1DRAFT126732"
+      ],
+      "smp": [
+        "SMAC_01210"
+      ],
+      "pan": [
+        "PODANSg09765"
+      ],
+      "ttt": [
+        "THITE_2122221"
+      ],
+      "mtm": [
+        "MYCTH_2295392"
+      ],
+      "cthr": [
+        "CTHT_0055440"
+      ],
+      "mgr": [
+        "MGG_02611"
+      ],
+      "tmn": [
+        "UCRPA7_7828"
+      ],
+      "fgr": [
+        "FGSG_06041"
+      ],
+      "fpu": [
+        "FPSE_02931"
+      ],
+      "fvr": [
+        "FVEG_08245"
+      ],
+      "fox": [
+        "FOXG_01867",
+        "FOXG_11115"
+      ],
+      "nhe": [
+        "NECHADRAFT_76435",
+        "NECHADRAFT_81329"
+      ],
+      "tre": [
+        "TRIREDRAFT_4117"
+      ],
+      "maw": [
+        "MAC_09675"
+      ],
+      "maj": [
+        "MAA_01060",
+        "MAA_03758"
+      ],
+      "cmt": [
+        "CCM_03390"
+      ],
+      "plj": [
+        "VFPFJ_09219"
+      ],
+      "val": [
+        "VDBG_05463"
+      ],
+      "vda": [
+        "VDAG_07112"
+      ],
+      "cfj": [
+        "CFIO01_05721"
+      ],
+      "ela": [
+        "UCREL1_11578",
+        "UCREL1_4161"
+      ],
+      "pfy": [
+        "PFICI_11756"
+      ],
+      "ssl": [
+        "SS1G_08185"
+      ],
+      "bfu": [
+        "BC1G_13197"
+      ],
+      "mbe": [
+        "MBM_08979"
+      ],
+      "psco": [
+        "LY89DRAFT_784917"
+      ],
+      "glz": [
+        "GLAREA_03383"
+      ],
+      "ani": [
+        "AN5610.2"
+      ],
+      "afm": [
+        "AFUA_4G11240"
+      ],
+      "aor": [
+        "AOR_1_1954154"
+      ],
+      "ang": [
+        "ANI_1_1902184"
+      ],
+      "afv": [
+        "AFLA_027230"
+      ],
+      "act": [
+        "ACLA_050330"
+      ],
+      "nfi": [
+        "NFIA_105160"
+      ],
+      "pcs": [
+        "Pc22g06310"
+      ],
+      "pdp": [
+        "PDIP_33720"
+      ],
+      "cim": [
+        "CIMG_01491"
+      ],
+      "cpw": [
+        "CPC735_049520"
+      ],
+      "pbl": [
+        "PAAG_08023"
+      ],
+      "pbn": [
+        "PADG_08092"
+      ],
+      "ure": [
+        "UREG_05106"
+      ],
+      "abe": [
+        "ARB_02279"
+      ],
+      "tve": [
+        "TRV_04974"
+      ],
+      "aje": [
+        "HCAG_09107"
+      ],
+      "pno": [
+        "SNOG_07784"
+      ],
+      "pte": [
+        "PTT_09387"
+      ],
+      "bze": [
+        "COCCADRAFT_321"
+      ],
+      "bsc": [
+        "COCSADRAFT_105593"
+      ],
+      "bor": [
+        "COCMIDRAFT_912"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_99148"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_46827"
+      ],
+      "bcom": [
+        "BAUCODRAFT_263156"
+      ],
+      "npa": [
+        "UCRNP2_5911"
+      ],
+      "tml": [
+        "GSTUM_00010502001"
+      ],
+      "spo": [
+        "SPAP7G5.04c"
+      ],
+      "cne": [
+        "CNG00170"
+      ],
+      "cnb": [
+        "CNBG4570"
+      ],
+      "cgi": [
+        "CGB_G6500C"
+      ],
+      "tms": [
+        "TREMEDRAFT_44814"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_171224"
+      ],
+      "dsq": [
+        "DICSQDRAFT_101950"
+      ],
+      "pco": [
+        "PHACADRAFT_118411"
+      ],
+      "shs": [
+        "STEHIDRAFT_85460"
+      ],
+      "hir": [
+        "HETIRDRAFT_66316"
+      ],
+      "psq": [
+        "PUNSTDRAFT_102428"
+      ],
+      "adl": [
+        "AURDEDRAFT_110234"
+      ],
+      "fme": [
+        "FOMMEDRAFT_118412"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_78681"
+      ],
+      "lbc": [
+        "LACBIDRAFT_184376"
+      ],
+      "mpr": [
+        "MPER_08765"
+      ],
+      "mrr": [
+        "Moror_9060"
+      ],
+      "cci": [
+        "CC1G_15694"
+      ],
+      "scm": [
+        "SCHCODRAFT_59997"
+      ],
+      "abp": [
+        "AGABI1DRAFT79561"
+      ],
+      "abv": [
+        "AGABI2DRAFT208996"
+      ],
+      "cput": [
+        "CONPUDRAFT_168209"
+      ],
+      "sla": [
+        "SERLADRAFT_359475",
+        "SERLADRAFT_472189"
+      ],
+      "wse": [
+        "WALSEDRAFT_22743"
+      ],
+      "wic": [
+        "J056_002659"
+      ],
+      "uma": [
+        "UMAG_01697"
+      ],
+      "pfp": [
+        "PFL1_03572"
+      ],
+      "mgl": [
+        "MGL_0235"
+      ],
+      "pgr": [
+        "PGTG_07683"
+      ],
+      "mlr": [
+        "MELLADRAFT_54227"
+      ],
+      "mbr": [
+        "MONBRDRAFT_14686"
+      ],
+      "sre": [
+        "PTSG_11594"
+      ],
+      "dpp": [
+        "DICPUDRAFT_28991"
+      ],
+      "acan": [
+        "ACA1_063720"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_54898",
+        "NAEGRDRAFT_77825"
+      ],
+      "ngv": [
+        "CDO52_17840"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.2.1.95"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.2.1.95"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.2.1.95"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.2.1.95"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Ehmann DE",
+          "Gehring AM",
+          "Walsh CT"
+        ],
+        "title": "Lysine biosynthesis in Saccharomyces cerevisiae: mechanism of alpha-aminoadipate reductase (Lys2) involves posttranslational phosphopantetheinylation by Lys5.",
+        "journal": "Biochemistry. 38 (1999) 6171-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10320345]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

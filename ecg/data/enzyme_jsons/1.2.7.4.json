@@ -1,0 +1,1338 @@
+[
+  {
+    "entry_id": "1.2.7.4",
+    "name": "anaerobic carbon-monoxide dehydrogenase",
+    "names": [
+      "anaerobic carbon-monoxide dehydrogenase",
+      "Ni-CODH",
+      "carbon-monoxide dehydrogenase (ferredoxin)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the aldehyde or oxo group of donors;",
+      "With an iron-sulfur protein as acceptor"
+    ],
+    "sysname": "carbon-monoxide,water:ferredoxin oxidoreductase",
+    "reaction": "CO + H2O + 2 oxidized ferredoxin = CO2 + 2 reduced ferredoxin + 2 H+ [RN:R07157]",
+    "all_reac": "R07157; (other) R08034 R09317",
+    "iubmb_reactions": [
+      "R07157"
+    ],
+    "kegg_reactions": [
+      "R08034 R09317"
+    ],
+    "substrates": [
+      "CO [CPD:C00237]",
+      "H2O [CPD:C00001]",
+      "oxidized ferredoxin [CPD:C00139]"
+    ],
+    "products": [
+      "CO2 [CPD:C00011]",
+      "reduced ferredoxin [CPD:C00138]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This prokaryotic enzyme catalyses the reversible reduction of CO2 to CO. The electrons are transferred to redox proteins such as ferredoxin. In purple sulfur bacteria and methanogenic archaea it catalyses the oxidation of CO to CO2, which is incorporated by the Calvin-Benson-Basham cycle or released, respectively. In acetogenic and sulfate-reducing microbes it catalyses the reduction of CO2 to CO, which is incorporated into acetyl CoA by EC 2.3.1.169, CO-methylating acetyl CoA synthase, with which the enzyme forms a tight complex in those organisms. The enzyme contains five metal clusters per homodimeric enzyme: two nickel-iron-sulfur clusters called the C-Clusters, one [4Fe-4S] D-cluster; and two [4Fe-4S] B-clusters. In methanogenic archaea additional [4Fe-4S] clusters exist, presumably as part of the electron transfer chain. In purple sulfur bacteria the enzyme forms complexes with the Ni-Fe-S protein EC 1.12.7.2, ferredoxin hydrogenase, which catalyse the overall reaction: CO + H2O = CO2 + H2. cf. EC 1.2.5.3, aerobic carbon monoxide dehydrogenase.",
+    "pathways": {
+      "ec00633": "Nitrotoluene degradation",
+      "ec00680": "Methane metabolism",
+      "ec00720": "Carbon fixation pathways in prokaryotes",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K00192": "acetyl-CoA decarbonylase/synthase complex subunit alpha",
+      "K00198": "anaerobic carbon-monoxide dehydrogenase catalytic subunit"
+    },
+    "genes": {
+      "cama": [
+        "F384_12620"
+      ],
+      "avn": [
+        "Avin_04490"
+      ],
+      "avl": [
+        "AvCA_04490"
+      ],
+      "avd": [
+        "AvCA6_04490"
+      ],
+      "acx": [
+        "Achr_4450"
+      ],
+      "tmb": [
+        "Thimo_0223"
+      ],
+      "ccv": [
+        "CCV52592_1131"
+      ],
+      "cco": [
+        "CCC13826_0236"
+      ],
+      "cgra": [
+        "CGRAC_1999"
+      ],
+      "gsu": [
+        "GSU2098"
+      ],
+      "gme": [
+        "Gmet_1902"
+      ],
+      "gur": [
+        "Gura_0618"
+      ],
+      "gbm": [
+        "Gbem_0072",
+        "Gbem_1736"
+      ],
+      "geo": [
+        "Geob_0362",
+        "Geob_1046"
+      ],
+      "gpi": [
+        "GPICK_01000",
+        "GPICK_11385"
+      ],
+      "gsb": [
+        "GSUB_09760"
+      ],
+      "pca": [
+        "Pcar_0057",
+        "Pcar_0888"
+      ],
+      "pef": [
+        "A7E78_09750"
+      ],
+      "des": [
+        "DSOUD_1182"
+      ],
+      "deu": [
+        "DBW_0138"
+      ],
+      "dvu": [
+        "DVU2098"
+      ],
+      "dvl": [
+        "Dvul_1133"
+      ],
+      "dvm": [
+        "DvMF_2233"
+      ],
+      "dvg": [
+        "Deval_1949"
+      ],
+      "dde": [
+        "Dde_3028"
+      ],
+      "dds": [
+        "Ddes_0382"
+      ],
+      "ddn": [
+        "DND132_2520"
+      ],
+      "dma": [
+        "DMR_25780"
+      ],
+      "dsa": [
+        "Desal_2508"
+      ],
+      "daf": [
+        "Desaf_2842"
+      ],
+      "das": [
+        "Daes_0529"
+      ],
+      "dpi": [
+        "BN4_11760",
+        "BN4_20190"
+      ],
+      "dej": [
+        "AWY79_01565",
+        "AWY79_06530",
+        "AWY79_06540"
+      ],
+      "dba": [
+        "Dbac_0934"
+      ],
+      "drt": [
+        "Dret_1234"
+      ],
+      "dak": [
+        "DaAHT2_0337",
+        "DaAHT2_0827"
+      ],
+      "dsf": [
+        "UWK_01293",
+        "UWK_03164"
+      ],
+      "dol": [
+        "Dole_1461",
+        "Dole_3185"
+      ],
+      "dml": [
+        "Dmul_09300",
+        "Dmul_19100",
+        "Dmul_30840"
+      ],
+      "dal": [
+        "Dalk_0680",
+        "Dalk_2379"
+      ],
+      "dat": [
+        "HRM2_16670",
+        "HRM2_41010",
+        "HRM2_43440"
+      ],
+      "dto": [
+        "TOL2_C00990",
+        "TOL2_C11820",
+        "TOL2_C38110"
+      ],
+      "dao": [
+        "Desac_0166",
+        "Desac_1966",
+        "Desac_2050"
+      ],
+      "dti": [
+        "Desti_0232"
+      ],
+      "sfu": [
+        "Sfum_2566",
+        "Sfum_2875"
+      ],
+      "dbr": [
+        "Deba_0241"
+      ],
+      "rpc": [
+        "RPC_4498"
+      ],
+      "rru": [
+        "Rru_A1427"
+      ],
+      "rrf": [
+        "F11_07370"
+      ],
+      "bbev": [
+        "BBEV_2326"
+      ],
+      "gmc": [
+        "GY4MC1_1807"
+      ],
+      "gth": [
+        "Geoth_1875"
+      ],
+      "ptl": [
+        "AOT13_13405"
+      ],
+      "pdu": [
+        "PDUR_14040"
+      ],
+      "cac": [
+        "CA_C0116",
+        "CA_C2498"
+      ],
+      "cae": [
+        "SMB_G0117",
+        "SMB_G2533"
+      ],
+      "cay": [
+        "CEA_G0117",
+        "CEA_G2512"
+      ],
+      "ctc": [
+        "CTC_01156"
+      ],
+      "ctet": [
+        "BN906_01229"
+      ],
+      "cno": [
+        "NT01CX_0669"
+      ],
+      "cbo": [
+        "CBO1331",
+        "CBO2218"
+      ],
+      "cba": [
+        "CLB_1359",
+        "CLB_2157"
+      ],
+      "cbh": [
+        "CLC_1369"
+      ],
+      "cby": [
+        "CLM_1506",
+        "CLM_2421"
+      ],
+      "cbl": [
+        "CLK_0775",
+        "CLK_1658"
+      ],
+      "cbb": [
+        "CLD_2358",
+        "CLD_3226"
+      ],
+      "cbi": [
+        "CLJ_B1446",
+        "CLJ_B2428"
+      ],
+      "cbn": [
+        "CbC4_2402"
+      ],
+      "cbf": [
+        "CLI_1426",
+        "CLI_2267"
+      ],
+      "cbm": [
+        "CBF_1402",
+        "CBF_2255"
+      ],
+      "cbj": [
+        "H04402_01401",
+        "H04402_02230"
+      ],
+      "cbe": [
+        "Cbei_3020",
+        "Cbei_5054"
+      ],
+      "cbz": [
+        "Cbs_3020",
+        "Cbs_5054"
+      ],
+      "cbei": [
+        "LF65_03401",
+        "LF65_05731"
+      ],
+      "ckl": [
+        "CKL_2148"
+      ],
+      "ckr": [
+        "CKR_1887"
+      ],
+      "clj": [
+        "CLJU_c09110",
+        "CLJU_c17910",
+        "CLJU_c37670"
+      ],
+      "ccb": [
+        "Clocel_0365",
+        "Clocel_1516",
+        "Clocel_2587",
+        "Clocel_4231"
+      ],
+      "clb": [
+        "Clo1100_1430",
+        "Clo1100_3687"
+      ],
+      "csr": [
+        "Cspa_c16740",
+        "Cspa_c21120",
+        "Cspa_c57670"
+      ],
+      "cpas": [
+        "Clopa_0057",
+        "Clopa_1484",
+        "Clopa_2128",
+        "Clopa_3232"
+      ],
+      "cpat": [
+        "CLPA_c05080",
+        "CLPA_c34390"
+      ],
+      "cpae": [
+        "CPAST_c05080",
+        "CPAST_c34390"
+      ],
+      "csb": [
+        "CLSA_c11710",
+        "CLSA_c14830"
+      ],
+      "cah": [
+        "CAETHG_1620",
+        "CAETHG_1621",
+        "CAETHG_3005",
+        "CAETHG_3899"
+      ],
+      "clt": [
+        "CM240_0400"
+      ],
+      "csq": [
+        "CSCA_1153",
+        "CSCA_1513",
+        "CSCA_1514",
+        "CSCA_3645",
+        "CSCA_4539"
+      ],
+      "cld": [
+        "CLSPO_c13520",
+        "CLSPO_c22620"
+      ],
+      "cace": [
+        "CACET_c09110",
+        "CACET_c10200",
+        "CACET_c16200",
+        "CACET_c26140"
+      ],
+      "cck": [
+        "Ccar_07140",
+        "Ccar_08590",
+        "Ccar_18845",
+        "Ccar_23090"
+      ],
+      "ctyk": [
+        "CTK_C21760"
+      ],
+      "ceu": [
+        "A7L45_14975"
+      ],
+      "cfm": [
+        "BJL90_04040",
+        "BJL90_08730",
+        "BJL90_10555",
+        "BJL90_11075",
+        "BJL90_13810",
+        "BJL90_18885"
+      ],
+      "carg": [
+        "RSJ17_07130",
+        "RSJ17_07755"
+      ],
+      "amt": [
+        "Amet_1177",
+        "Amet_2016",
+        "Amet_3764"
+      ],
+      "gfe": [
+        "Gferi_05255",
+        "Gferi_06375",
+        "Gferi_11835",
+        "Gferi_24855"
+      ],
+      "cth": [
+        "Cthe_2801"
+      ],
+      "ctx": [
+        "Clo1313_0390"
+      ],
+      "cce": [
+        "Ccel_0438",
+        "Ccel_2918"
+      ],
+      "ccl": [
+        "Clocl_0520",
+        "Clocl_0806"
+      ],
+      "css": [
+        "Cst_c19650"
+      ],
+      "csd": [
+        "Clst_1883"
+      ],
+      "ral": [
+        "Rumal_3736"
+      ],
+      "rum": [
+        "CK1_12690",
+        "CK1_12700"
+      ],
+      "rob": [
+        "CK5_28700"
+      ],
+      "byl": [
+        "A4V09_05450",
+        "A4V09_05810"
+      ],
+      "bhan": [
+        "CGC63_06525",
+        "CGC63_07980"
+      ],
+      "lacy": [
+        "A4V08_01520"
+      ],
+      "csh": [
+        "Closa_0921"
+      ],
+      "hsd": [
+        "SD1D_0237"
+      ],
+      "cdf": [
+        "CD630_01740",
+        "CD630_07160"
+      ],
+      "pdc": [
+        "CDIF630_00296",
+        "CDIF630_00832"
+      ],
+      "cdc": [
+        "CD196_0188",
+        "CD196_0661"
+      ],
+      "cdl": [
+        "CDR20291_0175",
+        "CDR20291_0643"
+      ],
+      "pdf": [
+        "CD630DERM_01740",
+        "CD630DERM_07160"
+      ],
+      "cst": [
+        "CLOST_1160"
+      ],
+      "dsy": [
+        "DSY1653",
+        "DSY2630",
+        "DSY4173",
+        "DSY4442"
+      ],
+      "dhd": [
+        "Dhaf_0882",
+        "Dhaf_1166",
+        "Dhaf_2798",
+        "Dhaf_3792"
+      ],
+      "ddh": [
+        "Desde_1134",
+        "Desde_2256",
+        "Desde_3264"
+      ],
+      "ddl": [
+        "Desdi_0655",
+        "Desdi_0934",
+        "Desdi_1922"
+      ],
+      "dmt": [
+        "DESME_03525",
+        "DESME_07325"
+      ],
+      "drm": [
+        "Dred_0652"
+      ],
+      "dae": [
+        "Dtox_1270",
+        "Dtox_2327",
+        "Dtox_2933",
+        "Dtox_3780"
+      ],
+      "dca": [
+        "Desca_0349",
+        "Desca_1148",
+        "Desca_1990"
+      ],
+      "dku": [
+        "Desku_1492",
+        "Desku_2150",
+        "Desku_2787"
+      ],
+      "dru": [
+        "Desru_0859",
+        "Desru_3320"
+      ],
+      "dgi": [
+        "Desgi_0522",
+        "Desgi_1185",
+        "Desgi_2052",
+        "Desgi_2753",
+        "Desgi_3080"
+      ],
+      "dfg": [
+        "B0537_03940"
+      ],
+      "dau": [
+        "Daud_0105",
+        "Daud_0870"
+      ],
+      "tjr": [
+        "TherJR_1157",
+        "TherJR_1937",
+        "TherJR_2144",
+        "TherJR_2959"
+      ],
+      "sgy": [
+        "Sgly_2814"
+      ],
+      "dor": [
+        "Desor_0421",
+        "Desor_3274",
+        "Desor_4181",
+        "Desor_4446"
+      ],
+      "dai": [
+        "Desaci_0260",
+        "Desaci_0709",
+        "Desaci_2975"
+      ],
+      "dmi": [
+        "Desmer_0456",
+        "Desmer_1790",
+        "Desmer_2536",
+        "Desmer_3209",
+        "Desmer_3478"
+      ],
+      "ded": [
+        "DHBDCA_p230"
+      ],
+      "dec": [
+        "DCF50_p290"
+      ],
+      "drs": [
+        "DEHRE_00735"
+      ],
+      "elm": [
+        "ELI_3603"
+      ],
+      "awo": [
+        "Awo_c10740",
+        "Awo_c19050"
+      ],
+      "tte": [
+        "TTE1708"
+      ],
+      "tki": [
+        "TKV_c08080",
+        "TKV_c20100"
+      ],
+      "chy": [
+        "CHY_0034",
+        "CHY_0085",
+        "CHY_0736",
+        "CHY_1824"
+      ],
+      "tep": [
+        "TepRe1_0548"
+      ],
+      "tae": [
+        "TepiRe1_0598"
+      ],
+      "mta": [
+        "Moth_1203",
+        "Moth_1972"
+      ],
+      "adg": [
+        "Adeg_0335"
+      ],
+      "tpz": [
+        "Tph_c05730",
+        "Tph_c13580",
+        "Tph_c15180"
+      ],
+      "csc": [
+        "Csac_0400"
+      ],
+      "chd": [
+        "Calhy_0239"
+      ],
+      "cki": [
+        "Calkr_0175"
+      ],
+      "clc": [
+        "Calla_2155"
+      ],
+      "toc": [
+        "Toce_0335",
+        "Toce_0761",
+        "Toce_0800"
+      ],
+      "tnr": [
+        "Thena_0036"
+      ],
+      "nth": [
+        "Nther_0860"
+      ],
+      "aar": [
+        "Acear_0983",
+        "Acear_1305"
+      ],
+      "hhl": [
+        "Halha_1234"
+      ],
+      "cad": [
+        "Curi_c06440"
+      ],
+      "vpr": [
+        "Vpar_0209"
+      ],
+      "vat": [
+        "B7L28_00930"
+      ],
+      "ssg": [
+        "Selsp_2016"
+      ],
+      "sri": [
+        "SELR_14500"
+      ],
+      "puf": [
+        "UFO1_0648",
+        "UFO1_2774"
+      ],
+      "pft": [
+        "JBW_00105",
+        "JBW_04289"
+      ],
+      "taz": [
+        "TREAZ_1535",
+        "TREAZ_1650"
+      ],
+      "tpi": [
+        "TREPR_3069"
+      ],
+      "cpor": [
+        "BED41_06285"
+      ],
+      "toh": [
+        "BCB71_06635"
+      ],
+      "cpc": [
+        "Cpar_1193"
+      ],
+      "cph": [
+        "Cpha266_0149"
+      ],
+      "pros": [
+        "CHL67_00350"
+      ],
+      "pmx": [
+        "PERMA_0106"
+      ],
+      "tam": [
+        "Theam_1337"
+      ],
+      "dte": [
+        "Dester_0417",
+        "Dester_0833"
+      ],
+      "din": [
+        "Selin_2012"
+      ],
+      "tid": [
+        "Thein_1422",
+        "Thein_2190"
+      ],
+      "top": [
+        "TOPB45_0398"
+      ],
+      "cthi": [
+        "THC_1754"
+      ],
+      "mja": [
+        "MJ_0152",
+        "MJ_0153",
+        "MJ_0728"
+      ],
+      "mfe": [
+        "Mefer_0203"
+      ],
+      "mvu": [
+        "Metvu_0628",
+        "Metvu_0967",
+        "Metvu_1187"
+      ],
+      "mfs": [
+        "MFS40622_0120",
+        "MFS40622_0121",
+        "MFS40622_1444"
+      ],
+      "mif": [
+        "Metin_1030",
+        "Metin_1228"
+      ],
+      "mjh": [
+        "JH146_0004",
+        "JH146_1155"
+      ],
+      "mig": [
+        "Metig_0288",
+        "Metig_0357",
+        "Metig_1381",
+        "Metig_1382"
+      ],
+      "mmp": [
+        "MMP0985"
+      ],
+      "mmq": [
+        "MmarC5_0805"
+      ],
+      "mmx": [
+        "MmarC6_1673"
+      ],
+      "mmz": [
+        "MmarC7_0227"
+      ],
+      "mmd": [
+        "GYY_05750"
+      ],
+      "mmak": [
+        "MMKA1_10980",
+        "MMKA1_11410"
+      ],
+      "mmao": [
+        "MMOS7_10770"
+      ],
+      "mae": [
+        "Maeo_0475",
+        "Maeo_1171",
+        "Maeo_1174"
+      ],
+      "mvn": [
+        "Mevan_0311"
+      ],
+      "mvo": [
+        "Mvol_0200"
+      ],
+      "mok": [
+        "Metok_0743",
+        "Metok_0747"
+      ],
+      "mac": [
+        "MA_1016",
+        "MA_1309",
+        "MA_3282",
+        "MA_3860",
+        "MA_4399"
+      ],
+      "mba": [
+        "Mbar_A0204",
+        "Mbar_A0434",
+        "Mbar_A3525",
+        "Mbar_A3717"
+      ],
+      "mby": [
+        "MSBRM_0628",
+        "MSBRM_1052",
+        "MSBRM_2317",
+        "MSBRM_2755"
+      ],
+      "mbw": [
+        "MSBRW_0567",
+        "MSBRW_0792",
+        "MSBRW_1019",
+        "MSBRW_1209"
+      ],
+      "mbar": [
+        "MSBR2_0095",
+        "MSBR2_1359",
+        "MSBR2_1750",
+        "MSBR2_2713"
+      ],
+      "mbak": [
+        "MSBR3_0095",
+        "MSBR3_2715",
+        "MSBR3_2955"
+      ],
+      "mma": [
+        "MM_0121",
+        "MM_0684",
+        "MM_2089",
+        "MM_2301"
+      ],
+      "mmaz": [
+        "MmTuc01_0129",
+        "MmTuc01_0700",
+        "MmTuc01_2347"
+      ],
+      "mmj": [
+        "MSMAS_0630",
+        "MSMAS_1212",
+        "MSMAS_2399",
+        "MSMAS_2596"
+      ],
+      "mmac": [
+        "MSMAC_0632",
+        "MSMAC_1824",
+        "MSMAC_2048",
+        "MSMAC_2550"
+      ],
+      "mvc": [
+        "MSVAZ_0995",
+        "MSVAZ_2289",
+        "MSVAZ_2495",
+        "MSVAZ_3017"
+      ],
+      "mek": [
+        "MSKOL_0967",
+        "MSKOL_2294",
+        "MSKOL_2507",
+        "MSKOL_3020"
+      ],
+      "mls": [
+        "MSLAZ_0649",
+        "MSLAZ_0996",
+        "MSLAZ_1465"
+      ],
+      "metm": [
+        "MSMTP_0687",
+        "MSMTP_0695",
+        "MSMTP_0809",
+        "MSMTP_1179",
+        "MSMTP_1309"
+      ],
+      "mef": [
+        "MSWH1_0796",
+        "MSWH1_2253"
+      ],
+      "meq": [
+        "MSWHS_0848",
+        "MSWHS_2820",
+        "MSWHS_3011"
+      ],
+      "msj": [
+        "MSSAC_0985",
+        "MSSAC_3454",
+        "MSSAC_3597",
+        "MSSAC_4086"
+      ],
+      "msz": [
+        "MSSIH_0886",
+        "MSSIH_2982",
+        "MSSIH_3137",
+        "MSSIH_3621"
+      ],
+      "msw": [
+        "MSSIT_0920",
+        "MSSIT_3039",
+        "MSSIT_3040",
+        "MSSIT_3208",
+        "MSSIT_3674"
+      ],
+      "mthe": [
+        "MSTHC_0600",
+        "MSTHC_0940"
+      ],
+      "mthr": [
+        "MSTHT_0128",
+        "MSTHT_2340"
+      ],
+      "mhor": [
+        "MSHOH_0739",
+        "MSHOH_2496",
+        "MSHOH_3023",
+        "MSHOH_3042",
+        "MSHOH_3260"
+      ],
+      "mbu": [
+        "Mbur_0858"
+      ],
+      "mmet": [
+        "MCMEM_0990"
+      ],
+      "mmh": [
+        "Mmah_1166"
+      ],
+      "mhaz": [
+        "BHR79_07705"
+      ],
+      "mev": [
+        "Metev_0426"
+      ],
+      "mzh": [
+        "Mzhil_1137"
+      ],
+      "mpy": [
+        "Mpsy_0694",
+        "Mpsy_2895"
+      ],
+      "mhz": [
+        "Metho_0975",
+        "Metho_1412"
+      ],
+      "mtp": [
+        "Mthe_0292",
+        "Mthe_1216",
+        "Mthe_1341"
+      ],
+      "mcj": [
+        "MCON_1332",
+        "MCON_2865"
+      ],
+      "mhi": [
+        "Mhar_0789",
+        "Mhar_1630",
+        "Mhar_2328"
+      ],
+      "mhu": [
+        "Mhun_0690",
+        "Mhun_1272"
+      ],
+      "mbg": [
+        "BN140_2260"
+      ],
+      "mema": [
+        "MMAB1_2986"
+      ],
+      "mpi": [
+        "Mpet_0907"
+      ],
+      "mbn": [
+        "Mboo_0884",
+        "Mboo_1373"
+      ],
+      "mfo": [
+        "Metfor_1721"
+      ],
+      "mpl": [
+        "Mpal_0842"
+      ],
+      "rci": [
+        "LRC456"
+      ],
+      "mth": [
+        "MTH_1708"
+      ],
+      "mmg": [
+        "MTBMA_c02870",
+        "MTBMA_c14200",
+        "MTBMA_c14210"
+      ],
+      "metc": [
+        "MTCT_1561"
+      ],
+      "mwo": [
+        "MWSIV6_0249",
+        "MWSIV6_0986",
+        "MWSIV6_0987"
+      ],
+      "mel": [
+        "Metbo_0462"
+      ],
+      "mew": [
+        "MSWAN_1934"
+      ],
+      "meth": [
+        "MBMB1_1565"
+      ],
+      "mfc": [
+        "BRM9_0801"
+      ],
+      "mfi": [
+        "DSM1535_0763"
+      ],
+      "mcub": [
+        "MCBB_1821"
+      ],
+      "mfv": [
+        "Mfer_0527"
+      ],
+      "mka": [
+        "MK0536",
+        "MK0717",
+        "MK0719"
+      ],
+      "afu": [
+        "AF_1100",
+        "AF_1849",
+        "AF_2397"
+      ],
+      "afg": [
+        "AFULGI_00011970",
+        "AFULGI_00021030",
+        "AFULGI_00026580"
+      ],
+      "ave": [
+        "Arcve_1121"
+      ],
+      "ast": [
+        "Asulf_01231",
+        "Asulf_02029"
+      ],
+      "fpl": [
+        "Ferp_0731",
+        "Ferp_2369",
+        "Ferp_2562"
+      ],
+      "gac": [
+        "GACE_0127",
+        "GACE_0359"
+      ],
+      "gah": [
+        "GAH_01139",
+        "GAH_01577"
+      ],
+      "mear": [
+        "Mpt1_c02980"
+      ],
+      "ton": [
+        "TON_1018"
+      ],
+      "tga": [
+        "TGAM_0824"
+      ],
+      "tba": [
+        "TERMP_01153"
+      ],
+      "tha": [
+        "TAM4_1067",
+        "TAM4_582"
+      ],
+      "ths": [
+        "TES1_1211"
+      ],
+      "tgy": [
+        "X802_05885"
+      ],
+      "tbs": [
+        "A3L01_08235"
+      ],
+      "thh": [
+        "CDI07_07345"
+      ],
+      "tsl": [
+        "A3L11_01585"
+      ],
+      "tprf": [
+        "A3L09_01360"
+      ],
+      "tcb": [
+        "TCARB_0870"
+      ],
+      "kcr": [
+        "Kcr_0762"
+      ],
+      "barc": [
+        "AOA65_0464",
+        "AOA65_1716"
+      ],
+      "barb": [
+        "AOA66_1428"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.2.7.4"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.2.7.4"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.2.7.4"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.2.7.4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Ragsdale SW",
+          "Clark JE",
+          "Ljungdahl LG",
+          "Lundie LL",
+          "Drake HL."
+        ],
+        "title": "Properties of purified carbon monoxide dehydrogenase from Clostridium thermoaceticum, a nickel, iron-sulfur protein.",
+        "journal": "J. Biol. Chem. 258 (1983) 2364-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6687389]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Diekert G",
+          "Ritter M."
+        ],
+        "title": "Purification of the nickel protein carbon monoxide dehydrogenase of Clostridium thermoaceticum.",
+        "journal": "FEBS. Lett. 151 (1983) 41-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6687458]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bonam D",
+          "Ludden PW."
+        ],
+        "title": "Purification and characterization of carbon monoxide dehydrogenase, a nickel, zinc, iron-sulfur protein, from Rhodospirillum rubrum.",
+        "journal": "J. Biol. Chem. 262 (1987) 2980-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3029096]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Drennan CL",
+          "Heo J",
+          "Sintchak MD",
+          "Schreiter E",
+          "Ludden PW."
+        ],
+        "title": "Life on carbon monoxide: X-ray structure of Rhodospirillum rubrum Ni-Fe-S carbon monoxide dehydrogenase.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 98 (2001) 11973-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:11593006]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dobbek H",
+          "Svetlitchnyi V",
+          "Gremer L",
+          "Huber R",
+          "Meyer O."
+        ],
+        "title": "Crystal structure of a carbon monoxide dehydrogenase reveals a [Ni-4Fe-5S] cluster.",
+        "journal": "Science. 293 (2001) 1281-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:11509720]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Doukov TI",
+          "Iverson TM",
+          "Seravalli J",
+          "Ragsdale SW",
+          "Drennan CL."
+        ],
+        "title": "A Ni-Fe-Cu center in a bifunctional carbon monoxide dehydrogenase/acetyl-CoA synthase.",
+        "journal": "Science. 298 (2002) 567-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:12386327]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Can M",
+          "Armstrong FA",
+          "Ragsdale SW"
+        ],
+        "title": "Structure, function, and mechanism of the nickel metalloenzymes, CO dehydrogenase, and acetyl-CoA synthase.",
+        "journal": "Chem. Rev. 114 (2014) 4149-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:24521136]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

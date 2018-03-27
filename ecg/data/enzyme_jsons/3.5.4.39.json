@@ -1,0 +1,683 @@
+[
+  {
+    "entry_id": "3.5.4.39",
+    "name": "GTP cyclohydrolase IV",
+    "names": [
+      "GTP cyclohydrolase IV",
+      "MptA",
+      "GTP cyclohydrolase MptA"
+    ],
+    "classes": [
+      "Hydrolases;",
+      "Acting on carbon-nitrogen bonds, other than peptide bonds;",
+      "In cyclic amidines"
+    ],
+    "sysname": "GTP 7,8-8,9-dihydrolase (cyclizing, formate-releasing, diphosphate-releasing)",
+    "reaction": "GTP + H2O = 7,8-dihydroneopterin 2',3'-cyclic phosphate + formate + diphosphate [RN:R10348]",
+    "all_reac": "R10348",
+    "iubmb_reactions": [
+      "R10348"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "GTP [CPD:C00044]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "7,8-dihydroneopterin 2',3'-cyclic phosphate [CPD:C20567]",
+      "formate [CPD:C00058]",
+      "diphosphate [CPD:C00013]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Fe2+. A zinc protein. The enzyme is involved in methanopterin biosynthesis in methanogenic archaea. cf. GTP cyclohydrolase I (EC 3.5.4.16), GTP cyclohydrolase II (EC 3.5.4.25) and GTP cyclohydrolase IIa (EC 3.5.4.29).",
+    "pathways": {
+      "ec00790": "Folate biosynthesis"
+    },
+    "orthologs": {
+      "K17488": "GTP cyclohydrolase IV"
+    },
+    "genes": {
+      "tfl": [
+        "RPIT_09110"
+      ],
+      "amo": [
+        "Anamo_1142"
+      ],
+      "mja": [
+        "MJ_0775"
+      ],
+      "mfe": [
+        "Mefer_1030"
+      ],
+      "mvu": [
+        "Metvu_0037"
+      ],
+      "mfs": [
+        "MFS40622_1401"
+      ],
+      "mif": [
+        "Metin_0324"
+      ],
+      "mjh": [
+        "JH146_1120"
+      ],
+      "mig": [
+        "Metig_1140"
+      ],
+      "mmp": [
+        "MMP0034"
+      ],
+      "mmq": [
+        "MmarC5_1646"
+      ],
+      "mmx": [
+        "MmarC6_0915"
+      ],
+      "mmz": [
+        "MmarC7_1031"
+      ],
+      "mmd": [
+        "GYY_00175"
+      ],
+      "mmak": [
+        "MMKA1_00360"
+      ],
+      "mmao": [
+        "MMOS7_00600"
+      ],
+      "mae": [
+        "Maeo_1148"
+      ],
+      "mvn": [
+        "Mevan_1031"
+      ],
+      "mvo": [
+        "Mvol_1397"
+      ],
+      "mok": [
+        "Metok_0710"
+      ],
+      "mac": [
+        "MA_4517"
+      ],
+      "mba": [
+        "Mbar_A1183"
+      ],
+      "mby": [
+        "MSBRM_3385"
+      ],
+      "mbw": [
+        "MSBRW_3540"
+      ],
+      "mbar": [
+        "MSBR2_3338"
+      ],
+      "mbak": [
+        "MSBR3_3388"
+      ],
+      "mma": [
+        "MM_1222"
+      ],
+      "mmaz": [
+        "MmTuc01_1262"
+      ],
+      "mmj": [
+        "MSMAS_0090"
+      ],
+      "mmac": [
+        "MSMAC_0096"
+      ],
+      "mvc": [
+        "MSVAZ_0095"
+      ],
+      "mek": [
+        "MSKOL_0092"
+      ],
+      "mls": [
+        "MSLAZ_0132"
+      ],
+      "metm": [
+        "MSMTP_0123"
+      ],
+      "mef": [
+        "MSWH1_0121"
+      ],
+      "meq": [
+        "MSWHS_0120"
+      ],
+      "msj": [
+        "MSSAC_4282"
+      ],
+      "msz": [
+        "MSSIH_3787"
+      ],
+      "msw": [
+        "MSSIT_3864"
+      ],
+      "mthe": [
+        "MSTHC_1631"
+      ],
+      "mthr": [
+        "MSTHT_1658"
+      ],
+      "mhor": [
+        "MSHOH_0106"
+      ],
+      "mbu": [
+        "Mbur_0054"
+      ],
+      "mmet": [
+        "MCMEM_0637"
+      ],
+      "mmh": [
+        "Mmah_1229"
+      ],
+      "mhaz": [
+        "BHR79_07400"
+      ],
+      "mev": [
+        "Metev_1546"
+      ],
+      "mzh": [
+        "Mzhil_0318"
+      ],
+      "mpy": [
+        "Mpsy_1383"
+      ],
+      "mhz": [
+        "Metho_0291"
+      ],
+      "mtp": [
+        "Mthe_0355"
+      ],
+      "mcj": [
+        "MCON_3313"
+      ],
+      "mhi": [
+        "Mhar_1861"
+      ],
+      "mhu": [
+        "Mhun_2334"
+      ],
+      "mla": [
+        "Mlab_0018"
+      ],
+      "mem": [
+        "Memar_2173"
+      ],
+      "mbg": [
+        "BN140_1377"
+      ],
+      "mema": [
+        "MMAB1_1760"
+      ],
+      "mpi": [
+        "Mpet_0589"
+      ],
+      "mbn": [
+        "Mboo_0480"
+      ],
+      "mfo": [
+        "Metfor_2712"
+      ],
+      "mpl": [
+        "Mpal_0083"
+      ],
+      "mpd": [
+        "MCP_1133",
+        "MCP_2574"
+      ],
+      "mez": [
+        "Mtc_0027",
+        "Mtc_1062"
+      ],
+      "rci": [
+        "LRC194",
+        "RCIX633"
+      ],
+      "mth": [
+        "MTH_1196"
+      ],
+      "mmg": [
+        "MTBMA_c15740"
+      ],
+      "metc": [
+        "MTCT_1089"
+      ],
+      "mwo": [
+        "MWSIV6_1589"
+      ],
+      "mst": [
+        "Msp_0294"
+      ],
+      "msi": [
+        "Msm_1033"
+      ],
+      "mru": [
+        "mru_1962"
+      ],
+      "meb": [
+        "Abm4_1545"
+      ],
+      "mmil": [
+        "sm9_2045"
+      ],
+      "meye": [
+        "TL18_09410"
+      ],
+      "mol": [
+        "YLM1_1409"
+      ],
+      "mel": [
+        "Metbo_0329"
+      ],
+      "mew": [
+        "MSWAN_2088"
+      ],
+      "meth": [
+        "MBMB1_1719"
+      ],
+      "mfc": [
+        "BRM9_0972"
+      ],
+      "mfi": [
+        "DSM1535_0942"
+      ],
+      "mcub": [
+        "MCBB_2018"
+      ],
+      "mfv": [
+        "Mfer_0397"
+      ],
+      "mka": [
+        "MK0485"
+      ],
+      "afu": [
+        "AF_1179"
+      ],
+      "afg": [
+        "AFULGI_00012790"
+      ],
+      "apo": [
+        "Arcpr_1427"
+      ],
+      "ave": [
+        "Arcve_1798"
+      ],
+      "ast": [
+        "Asulf_00557"
+      ],
+      "fpl": [
+        "Ferp_0754"
+      ],
+      "gac": [
+        "GACE_2009"
+      ],
+      "gah": [
+        "GAH_01203"
+      ],
+      "hal": [
+        "VNG_1901C"
+      ],
+      "hsl": [
+        "OE_3673F"
+      ],
+      "hdl": [
+        "HALDL1_14505"
+      ],
+      "hhb": [
+        "Hhub_3237"
+      ],
+      "hje": [
+        "HacjB3_03755"
+      ],
+      "halh": [
+        "HTSR_1822"
+      ],
+      "hhsr": [
+        "HSR6_1891"
+      ],
+      "hsu": [
+        "HLASF_1932"
+      ],
+      "hsf": [
+        "HLASA_1918"
+      ],
+      "hma": [
+        "rrnAC3309"
+      ],
+      "hhi": [
+        "HAH_0546"
+      ],
+      "hhn": [
+        "HISP_02825"
+      ],
+      "hab": [
+        "SG26_10615"
+      ],
+      "nph": [
+        "NP_2514A"
+      ],
+      "nmo": [
+        "Nmlp_1862"
+      ],
+      "hut": [
+        "Huta_2260"
+      ],
+      "hti": [
+        "HTIA_1987"
+      ],
+      "hmu": [
+        "Hmuk_1583"
+      ],
+      "hali": [
+        "BV210_12220"
+      ],
+      "hwa": [
+        "HQ_3317A"
+      ],
+      "hwc": [
+        "Hqrw_3846"
+      ],
+      "hvo": [
+        "HVO_2348"
+      ],
+      "hme": [
+        "HFX_2357"
+      ],
+      "hgi": [
+        "ABY42_11705"
+      ],
+      "hbo": [
+        "Hbor_07600"
+      ],
+      "hla": [
+        "Hlac_2276"
+      ],
+      "htu": [
+        "Htur_0488"
+      ],
+      "hda": [
+        "BB347_11685"
+      ],
+      "nmg": [
+        "Nmag_2853"
+      ],
+      "hxa": [
+        "Halxa_1887"
+      ],
+      "nat": [
+        "NJ7G_0097"
+      ],
+      "npe": [
+        "Natpe_3511"
+      ],
+      "nge": [
+        "Natgr_1192"
+      ],
+      "hru": [
+        "Halru_1192"
+      ],
+      "nou": [
+        "Natoc_0334"
+      ],
+      "sali": [
+        "L593_14035"
+      ],
+      "hlr": [
+        "HALLA_05580"
+      ],
+      "hlc": [
+        "CHINAEXTREME02245"
+      ],
+      "naj": [
+        "B1756_12675"
+      ],
+      "tac": [
+        "Ta1138"
+      ],
+      "tvo": [
+        "TVG1279013"
+      ],
+      "pto": [
+        "PTO1009"
+      ],
+      "cdiv": [
+        "CPM_1080"
+      ],
+      "tar": [
+        "TALC_01341"
+      ],
+      "max": [
+        "MMALV_14310"
+      ],
+      "mer": [
+        "MMINT_04030"
+      ],
+      "mear": [
+        "Mpt1_c09750"
+      ],
+      "marc": [
+        "AR505_0210"
+      ],
+      "pho": [
+        "PH1783"
+      ],
+      "pab": [
+        "PAB0223"
+      ],
+      "pfu": [
+        "PF1832"
+      ],
+      "pfi": [
+        "PFC_09430"
+      ],
+      "pyn": [
+        "PNA2_0389"
+      ],
+      "pya": [
+        "PYCH_01300"
+      ],
+      "pys": [
+        "Py04_1714"
+      ],
+      "pyc": [
+        "TQ32_07820"
+      ],
+      "tko": [
+        "TK0793"
+      ],
+      "ton": [
+        "TON_0757"
+      ],
+      "tga": [
+        "TGAM_1430"
+      ],
+      "tsi": [
+        "TSIB_1100"
+      ],
+      "tba": [
+        "TERMP_00493"
+      ],
+      "the": [
+        "GQS_01100"
+      ],
+      "tha": [
+        "TAM4_1572"
+      ],
+      "thm": [
+        "CL1_1922"
+      ],
+      "tlt": [
+        "OCC_00185"
+      ],
+      "ths": [
+        "TES1_0675"
+      ],
+      "tnu": [
+        "BD01_0945"
+      ],
+      "teu": [
+        "TEU_10520"
+      ],
+      "tgy": [
+        "X802_00005"
+      ],
+      "thv": [
+        "ADU37_CDS12730"
+      ],
+      "tch": [
+        "CHITON_2071"
+      ],
+      "tpep": [
+        "A0127_01125"
+      ],
+      "tpie": [
+        "A7C91_09980"
+      ],
+      "tgg": [
+        "A3K92_04210"
+      ],
+      "tce": [
+        "A3L02_08360"
+      ],
+      "tbs": [
+        "A3L01_04590"
+      ],
+      "thh": [
+        "CDI07_04460"
+      ],
+      "tsl": [
+        "A3L11_08715"
+      ],
+      "ttd": [
+        "A3L14_06535"
+      ],
+      "tprf": [
+        "A3L09_06655"
+      ],
+      "ppac": [
+        "PAP_06000"
+      ],
+      "abi": [
+        "Aboo_0781"
+      ],
+      "acf": [
+        "AciM339_0290"
+      ],
+      "ape": [
+        "APE_2308"
+      ],
+      "acj": [
+        "ACAM_1445"
+      ],
+      "shc": [
+        "Shell_1375"
+      ],
+      "dka": [
+        "DKAM_0427"
+      ],
+      "dfd": [
+        "Desfe_0332"
+      ],
+      "dmu": [
+        "Desmu_0826"
+      ],
+      "tag": [
+        "Tagg_0592"
+      ],
+      "iag": [
+        "Igag_0283"
+      ],
+      "thg": [
+        "TCELL_0826"
+      ],
+      "asc": [
+        "ASAC_0336"
+      ],
+      "clg": [
+        "Calag_0295"
+      ],
+      "ffo": [
+        "FFONT_0386"
+      ],
+      "csu": [
+        "CSUB_C0906"
+      ],
+      "kcr": [
+        "Kcr_0832"
+      ],
+      "loki": [
+        "Lokiarch_29360"
+      ],
+      "hah": [
+        "Halar_1782"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "3.5.4.39"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "3.5.4.39"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "3.5.4.39"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "3.5.4.39"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Grochowski LL",
+          "Xu H",
+          "Leung K",
+          "White RH"
+        ],
+        "title": "Characterization of an Fe(2+)-dependent archaeal-specific GTP cyclohydrolase, MptA, from Methanocaldococcus jannaschii.",
+        "journal": "Biochemistry. 46 (2007) 6658-67.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:17497938]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

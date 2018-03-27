@@ -1,0 +1,184 @@
+[
+  {
+    "entry_id": "1.14.14.42",
+    "name": "homomethionine N-monooxygenase",
+    "names": [
+      "homomethionine N-monooxygenase",
+      "CYP79F1 (gene name)",
+      "CYP79F2 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-polyhomomethionine,[NADPH---hemoprotein reductase]:oxygen oxidoreductase",
+    "reaction": "an L-polyhomomethionine + 2 [reduced NADPH---hemoprotein reductase] + 2 O2 = an (E)-omega-(methylsulfanyl)alkanal oxime + 2 [oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O (overall reaction) [RN:R11646]; (1a) an L-polyhomomethionine + [reduced NADPH---hemoprotein reductase] + O2 = an L-N-hydroxypolyhomomethionine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R11647]; (1b) an L-N-hydroxypolyhomomethionine + [reduced NADPH---hemoprotein reductase] + O2 = an L-N,N-dihydroxypolyhomomethionine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R11648]; (1c) an L-N,N-dihydroxypolyhomomethionine = an (E)-omega-(methylsulfanyl)alkanal oxime + CO2 + H2O [RN:R11649]",
+    "all_reac": "R11646 > R08665 R08670 R08672 R08673 R08674 R08675; R11647 R11648 R11649",
+    "iubmb_reactions": [
+      "R11646 > R08665 R08670 R08672 R08673 R08674 R08675",
+      "R11647 R11648 R11649"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-polyhomomethionine [CPD:C21534]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]",
+      "L-N-hydroxypolyhomomethionine [CPD:C21536]",
+      "L-N,N-dihydroxypolyhomomethionine [CPD:C21537]"
+    ],
+    "products": [
+      "(E)-omega-(methylsulfanyl)alkanal oxime [CPD:C21535]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "CO2 [CPD:C00011]",
+      "H2O [CPD:C00001]",
+      "L-N-hydroxypolyhomomethionine [CPD:C21536]",
+      "L-N,N-dihydroxypolyhomomethionine [CPD:C21537]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This plant cytochrome P-450 (heme thiolate) enzyme is involved in methionine-derived aliphatic glucosinolates biosynthesis. It catalyses two successive N-hydroxylations, which are followed by dehydration and decarboxylation. CYP79F1 from Arabidopsis thaliana can metabolize mono-, di-, tri-, tetra-, penta-, and hexahomomethionine to their corresponding aldoximes, while CYP79F2 from the same plant can only metabolize penta- and hexahomomethionine.",
+    "pathways": {
+      "ec00966": "Glucosinolate biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K12154": "homomethionine N-monooxygenase",
+      "K12155": "homomethionine N-monooxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT1G16400",
+        "AT1G16410"
+      ],
+      "aly": [
+        "ARALYDRAFT_312617",
+        "ARALYDRAFT_889032"
+      ],
+      "crb": [
+        "CARUB_v10010983mg",
+        "CARUB_v10011470mg"
+      ],
+      "csat": [
+        "104755961"
+      ],
+      "eus": [
+        "EUTSA_v10007301mg"
+      ],
+      "brp": [
+        "103872429"
+      ],
+      "bna": [
+        "106367453"
+      ],
+      "boe": [
+        "106343089"
+      ],
+      "thj": [
+        "104812394"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.42"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.42"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.42"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.42"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Hansen CH",
+          "Wittstock U",
+          "Olsen CE",
+          "Hick AJ",
+          "Pickett JA",
+          "Halkier BA."
+        ],
+        "title": "Cytochrome p450 CYP79F1 from arabidopsis catalyzes the conversion of dihomomethionine and trihomomethionine to the corresponding aldoximes in the biosynthesis of aliphatic glucosinolates.",
+        "journal": "J. Biol. Chem. 276 (2001) 11078-85.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11133994]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chen S",
+          "Glawischnig E",
+          "Jorgensen K",
+          "Naur P",
+          "Jorgensen B",
+          "Olsen CE",
+          "Hansen CH",
+          "Rasmussen H",
+          "Pickett JA",
+          "Halkier BA"
+        ],
+        "title": "CYP79F1 and CYP79F2 have distinct functions in the biosynthesis of aliphatic glucosinolates in Arabidopsis.",
+        "journal": "Plant. J. 33 (2003) 923-37.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12609033]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

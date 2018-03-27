@@ -1,0 +1,773 @@
+[
+  {
+    "entry_id": "1.14.15.15",
+    "name": "cholestanetriol 26-monooxygenase",
+    "names": [
+      "cholestanetriol 26-monooxygenase",
+      "5beta-cholestane-3alpha,7alpha,12alpha-triol 26-hydroxylase",
+      "5beta-cholestane-3alpha,7alpha,12alpha-triol hydroxylase",
+      "cholestanetriol 26-hydroxylase",
+      "sterol 27-hydroxylase",
+      "sterol 26-hydroxylase",
+      "cholesterol 27-hydroxylase",
+      "CYP27A",
+      "CYP27A1",
+      "cytochrome P450 27A1'"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "5beta-cholestane-3alpha,7alpha,12alpha-triol,adrenodoxin:oxygen oxidoreductase (26-hydroxylating)",
+    "reaction": "5beta-cholestane-3alpha,7alpha,12alpha-triol + 6 reduced adrenodoxin + 6 H+ + 3 O2 = (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate + 6 oxidized adrenodoxin + 4 H2O (overall reaction) [RN:R11142]; (1a) 5beta-cholestane-3alpha,7alpha,12alpha-triol + 2 reduced adrenodoxin + 2 H+ + O2 = (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol + 2 oxidized adrenodoxin + H2O [RN:R04807]; (1b) (25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol + 2 reduced adrenodoxin + 2 H+ + O2 = (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al + 2 oxidized adrenodoxin + 2 H2O [RN:R03507]; (1c) (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al + 2 reduced adrenodoxin + 2 H+ + O2 = (25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate + 2 oxidized adrenodoxin + H2O [RN:R08761]",
+    "all_reac": "R03507 R04807 R08761 R11142; (other) R04806 R08505 R08758 R08759 R08760",
+    "iubmb_reactions": [
+      "R03507 R04807 R08761 R11142"
+    ],
+    "kegg_reactions": [
+      "R04806 R08505 R08758 R08759 R08760"
+    ],
+    "substrates": [
+      "5beta-cholestane-3alpha,7alpha,12alpha-triol [CPD:C05454]",
+      "reduced adrenodoxin [CPD:C00662]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol",
+      "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al"
+    ],
+    "products": [
+      "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-oate",
+      "oxidized adrenodoxin [CPD:C00667]",
+      "H2O [CPD:C00001]",
+      "(25R)-5beta-cholestane-3alpha,7alpha,12alpha,26-tetraol",
+      "(25R)-3alpha,7alpha,12alpha-trihydroxy-5beta-cholestan-26-al"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This mitochondrial cytochrome P-450 enzyme requires adrenodoxin. It catalyses the first three sterol side chain oxidations in bile acid biosynthesis via the neutral (classic) pathway. Can also act on cholesterol, cholest-5-ene-3beta,7alpha-diol, 7alpha-hydroxycholest-4-en-3-one, and 5beta-cholestane-3alpha,7alpha-diol. The enzyme can also hydroxylate cholesterol at positions 24 and 25. The initial source of the electrons is NADPH, which transfers the electrons to the adrenodoxin via EC 1.18.1.6, adrenodoxin-NADP+ reductase.",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00488": "cholestanetriol 26-monooxygenase"
+    },
+    "genes": {
+      "hsa": [
+        "1593"
+      ],
+      "ptr": [
+        "459951"
+      ],
+      "pps": [
+        "100989602"
+      ],
+      "ggo": [
+        "101131774"
+      ],
+      "pon": [
+        "100439910",
+        "100451841"
+      ],
+      "nle": [
+        "100606147"
+      ],
+      "mcc": [
+        "700192"
+      ],
+      "mcf": [
+        "102129822"
+      ],
+      "csab": [
+        "103217882"
+      ],
+      "rro": [
+        "104660034"
+      ],
+      "rbb": [
+        "108518476"
+      ],
+      "cjc": [
+        "100393783"
+      ],
+      "sbq": [
+        "101029011"
+      ],
+      "mmu": [
+        "104086"
+      ],
+      "rno": [
+        "301517"
+      ],
+      "cge": [
+        "100751584"
+      ],
+      "ngi": [
+        "103727727"
+      ],
+      "hgl": [
+        "101700018"
+      ],
+      "ccan": [
+        "109679372"
+      ],
+      "ocu": [
+        "100348736"
+      ],
+      "tup": [
+        "102471009"
+      ],
+      "cfa": [
+        "610489"
+      ],
+      "aml": [
+        "100480153"
+      ],
+      "umr": [
+        "103662754"
+      ],
+      "oro": [
+        "101374314"
+      ],
+      "fca": [
+        "101091962"
+      ],
+      "ptg": [
+        "102958835"
+      ],
+      "aju": [
+        "106970103"
+      ],
+      "bta": [
+        "511960"
+      ],
+      "bom": [
+        "102275770"
+      ],
+      "biu": [
+        "109570716"
+      ],
+      "phd": [
+        "102319907"
+      ],
+      "chx": [
+        "102177672"
+      ],
+      "oas": [
+        "101111528"
+      ],
+      "ssc": [
+        "100126282"
+      ],
+      "cfr": [
+        "102517717"
+      ],
+      "cdk": [
+        "105096090"
+      ],
+      "bacu": [
+        "102999025"
+      ],
+      "lve": [
+        "103080163"
+      ],
+      "ecb": [
+        "100055936"
+      ],
+      "epz": [
+        "103567914"
+      ],
+      "eai": [
+        "106838458"
+      ],
+      "myb": [
+        "102255768"
+      ],
+      "myd": [
+        "102761397"
+      ],
+      "hai": [
+        "109380589"
+      ],
+      "rss": [
+        "109452673"
+      ],
+      "pale": [
+        "102883032"
+      ],
+      "lav": [
+        "100662261"
+      ],
+      "tmu": [
+        "101347420"
+      ],
+      "mdo": [
+        "100011045"
+      ],
+      "shr": [
+        "100918281"
+      ],
+      "oaa": [
+        "100093207"
+      ],
+      "gga": [
+        "431683"
+      ],
+      "mgp": [
+        "100539204"
+      ],
+      "cjo": [
+        "107317020"
+      ],
+      "apla": [
+        "101802865"
+      ],
+      "acyg": [
+        "106039314"
+      ],
+      "tgu": [
+        "100232323"
+      ],
+      "gfr": [
+        "102036968"
+      ],
+      "fab": [
+        "101815213"
+      ],
+      "phi": [
+        "102102670"
+      ],
+      "pmaj": [
+        "107207520"
+      ],
+      "ccw": [
+        "104693966"
+      ],
+      "fpg": [
+        "101912381"
+      ],
+      "fch": [
+        "102046779"
+      ],
+      "clv": [
+        "102085729"
+      ],
+      "egz": [
+        "104132432"
+      ],
+      "aam": [
+        "106499073",
+        "106499074"
+      ],
+      "asn": [
+        "102377709"
+      ],
+      "amj": [
+        "102562954",
+        "106737418",
+        "106737929"
+      ],
+      "cmy": [
+        "102937044"
+      ],
+      "cpic": [
+        "101943409"
+      ],
+      "acs": [
+        "100565025"
+      ],
+      "pvt": [
+        "110078231"
+      ],
+      "pbi": [
+        "103054208"
+      ],
+      "gja": [
+        "107116962",
+        "107122111"
+      ],
+      "xla": [
+        "100381137",
+        "108702937",
+        "446987",
+        "733412"
+      ],
+      "xtr": [
+        "100145331",
+        "100145773",
+        "100496109",
+        "594905"
+      ],
+      "npr": [
+        "108783869",
+        "108783870",
+        "108783871",
+        "108783872",
+        "108783878",
+        "108783885"
+      ],
+      "dre": [
+        "322341",
+        "565876",
+        "795106"
+      ],
+      "srx": [
+        "107705485",
+        "107706665",
+        "107714212",
+        "107723676",
+        "107725254",
+        "107741910"
+      ],
+      "sanh": [
+        "107658292",
+        "107659991",
+        "107660625",
+        "107660626",
+        "107660658",
+        "107677609",
+        "107683415"
+      ],
+      "sgh": [
+        "107555015",
+        "107555356",
+        "107555903",
+        "107555927",
+        "107578255",
+        "107581419",
+        "107584802",
+        "107596087"
+      ],
+      "ccar": [
+        "109064887",
+        "109072531",
+        "109088722",
+        "109088733",
+        "109088804",
+        "109096773",
+        "109113433"
+      ],
+      "ipu": [
+        "108261037",
+        "108261565",
+        "108261972",
+        "108266301",
+        "108266489",
+        "108266490",
+        "108266491",
+        "108272717"
+      ],
+      "amex": [
+        "103023980",
+        "103024291",
+        "103027002",
+        "103036363"
+      ],
+      "tru": [
+        "101062671",
+        "101063777",
+        "101069976"
+      ],
+      "tng": [
+        "GSTEN00029207G001"
+      ],
+      "lco": [
+        "104934615",
+        "104939434",
+        "109141591"
+      ],
+      "ncc": [
+        "104944399",
+        "104954736",
+        "104955625"
+      ],
+      "mze": [
+        "101465003",
+        "101473743",
+        "101478374"
+      ],
+      "ola": [
+        "101156051",
+        "101160538",
+        "101175691"
+      ],
+      "xma": [
+        "102225514",
+        "102230910",
+        "102234678",
+        "102234938"
+      ],
+      "pret": [
+        "103456753",
+        "103461862",
+        "103461863",
+        "103478550"
+      ],
+      "csem": [
+        "103380768",
+        "103389542"
+      ],
+      "lcf": [
+        "108873048",
+        "108897118",
+        "108897170"
+      ],
+      "hcq": [
+        "109517561",
+        "109519132",
+        "109528391"
+      ],
+      "bpec": [
+        "110165678",
+        "110166041",
+        "110171370"
+      ],
+      "sasa": [
+        "106574240",
+        "106575170",
+        "106581857",
+        "106586130",
+        "106586420",
+        "106586421"
+      ],
+      "els": [
+        "105016129",
+        "105016181",
+        "105019951"
+      ],
+      "sfm": [
+        "108920694",
+        "108928920",
+        "108936404"
+      ],
+      "lcm": [
+        "102347924",
+        "102352926",
+        "102355859",
+        "102357152"
+      ],
+      "cmk": [
+        "103189020"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_69828"
+      ],
+      "epa": [
+        "110242117",
+        "110246197",
+        "110253216"
+      ],
+      "adf": [
+        "107358539"
+      ],
+      "aqu": [
+        "100635882",
+        "100640201",
+        "100640453"
+      ],
+      "spar": [
+        "SPRG_05921"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_79810"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.15"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.15"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.15"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.15"
+      ],
+      "CAS": [
+        "52227-77-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Masui T",
+          "Herman R",
+          "Staple E."
+        ],
+        "title": "The oxidation of 5-beta-cholestane-3-alpha, 7-alpha, 12-alpha, 26-tetraol to 5-beta-cholestane-3-alpha, 7-alpha, 12-alpha-triol-26-oic acid via 5-beta-cholestane-3-alpha, 7-alpha, 12-alpha-triol-26-al by rat liver.",
+        "journal": "Biochim. Biophys. Acta. 117 (1966) 266-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:5914340]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Okuda K",
+          "Hoshita N."
+        ],
+        "title": "Oxidation of 5-beta-cholestane-3 alpha, 7 alpha, 12 alpha-triol by rat-liver mitochondria.",
+        "journal": "Biochim. Biophys. Acta. 164 (1968) 381-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:4388637]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wikvall K."
+        ],
+        "title": "Hydroxylations in biosynthesis of bile acids. Isolation of a cytochrome P-450 from rabbit liver mitochondria catalyzing 26-hydroxylation of C27-steroids.",
+        "journal": "J. Biol. Chem. 259 (1984) 3800-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6423637]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Andersson S",
+          "Davis DL",
+          "Dahlback H",
+          "Jornvall H",
+          "Russell DW."
+        ],
+        "title": "Cloning, structure, and expression of the mitochondrial cytochrome P-450 sterol 26-hydroxylase, a bile acid biosynthetic enzyme.",
+        "journal": "J. Biol. Chem. 264 (1989) 8222-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:2722778]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dahlback H",
+          "Holmberg I"
+        ],
+        "title": "Oxidation of 5 beta-cholestane-3 alpha,7 alpha, 12 alpha-triol into 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestanoic acid by cytochrome P-450(26) from rabbit liver mitochondria.",
+        "journal": "Biochem. Biophys. Res. Commun. 167 (1990) 391-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:2322231]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Holmberg-Betsholtz I",
+          "Lund E",
+          "Bjorkhem I",
+          "Wikvall K."
+        ],
+        "title": "Sterol 27-hydroxylase in bile acid biosynthesis. Mechanism of oxidation of 5 beta-cholestane-3 alpha,7 alpha,12 alpha,27-tetrol into 3 alpha,7 alpha,12 alpha-trihydroxy-5 beta-cholestanoic acid.",
+        "journal": "J. Biol. Chem. 268 (1993) 11079-85.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:8496170]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pikuleva IA",
+          "Babiker A",
+          "Waterman MR",
+          "Bjorkhem I"
+        ],
+        "title": "Activities of recombinant human cytochrome P450c27 (CYP27) which produce intermediates of alternative bile acid biosynthetic pathways.",
+        "journal": "J. Biol. Chem. 273 (1998) 18153-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:9660774]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Furster C",
+          "Bergman T",
+          "Wikvall K."
+        ],
+        "title": "Biochemical characterization of a truncated form of CYP27A purified from rabbit liver mitochondria.",
+        "journal": "Biochem. Biophys. Res. Commun. 263 (1999) 663-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:10512735]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pikuleva IA",
+          "Puchkaev A",
+          "Bjorkhem I."
+        ],
+        "title": "Putative helix F contributes to regioselectivity of hydroxylation in mitochondrial cytochrome P450 27A1.",
+        "journal": "Biochemistry. 40 (2001) 7621-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:11412116]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

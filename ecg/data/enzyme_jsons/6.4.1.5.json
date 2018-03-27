@@ -1,0 +1,975 @@
+[
+  {
+    "entry_id": "6.4.1.5",
+    "name": "geranoyl-CoA carboxylase",
+    "names": [
+      "geranoyl-CoA carboxylase",
+      "geranoyl coenzyme A carboxylase",
+      "geranyl-CoA carboxylase"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-carbon bonds;",
+      "Ligases that form carbon-carbon bonds (only sub-subclass identified to date)"
+    ],
+    "sysname": "geranoyl-CoA:carbon-dioxide ligase (ADP-forming)",
+    "reaction": "ATP + geranoyl-CoA + HCO3- = ADP + phosphate + 3-(4-methylpent-3-en-1-yl)pent-2-enedioyl-CoA [RN:R03494]",
+    "all_reac": "R03494",
+    "iubmb_reactions": [
+      "R03494"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "geranoyl-CoA [CPD:C01920]",
+      "HCO3- [CPD:C00288]"
+    ],
+    "products": [
+      "ADP [CPD:C00008]",
+      "phosphate [CPD:C00009]",
+      "3-(4-methylpent-3-en-1-yl)pent-2-enedioyl-CoA [CPD:C01291]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A biotinyl-protein. Also carboxylates dimethylpropenoyl-CoA and farnesoyl-CoA.",
+    "pathways": {
+      "ec00281": "Geraniol degradation"
+    },
+    "orthologs": {
+      "K13777": "geranyl-CoA carboxylase alpha subunit",
+      "K13778": "geranyl-CoA carboxylase beta subunit"
+    },
+    "genes": {
+      "dji": [
+        "CH75_09960",
+        "CH75_09970"
+      ],
+      "pae": [
+        "PA2888",
+        "PA2891"
+      ],
+      "paev": [
+        "N297_2991",
+        "N297_2994"
+      ],
+      "paei": [
+        "N296_2991",
+        "N296_2994"
+      ],
+      "pau": [
+        "PA14_26670",
+        "PA14_26720"
+      ],
+      "pap": [
+        "PSPA7_2263",
+        "PSPA7_2266"
+      ],
+      "pag": [
+        "PLES_21731",
+        "PLES_21761"
+      ],
+      "paf": [
+        "PAM18_2072",
+        "PAM18_2075"
+      ],
+      "pnc": [
+        "NCGM2_3999",
+        "NCGM2_4002"
+      ],
+      "paeb": [
+        "NCGM1900_3420",
+        "NCGM1900_3423"
+      ],
+      "pdk": [
+        "PADK2_09915",
+        "PADK2_09930"
+      ],
+      "psg": [
+        "G655_10350",
+        "G655_10365"
+      ],
+      "prp": [
+        "M062_15470",
+        "M062_15485"
+      ],
+      "paep": [
+        "PA1S_10955",
+        "PA1S_10970"
+      ],
+      "paer": [
+        "PA1R_gp0720",
+        "PA1R_gp0723"
+      ],
+      "paem": [
+        "U769_10495",
+        "U769_10510"
+      ],
+      "pael": [
+        "T223_10965",
+        "T223_10980"
+      ],
+      "paes": [
+        "SCV20265_2215",
+        "SCV20265_2218"
+      ],
+      "paeu": [
+        "BN889_03226",
+        "BN889_03229"
+      ],
+      "paeg": [
+        "AI22_22900",
+        "AI22_22915"
+      ],
+      "paec": [
+        "M802_2988",
+        "M802_2991"
+      ],
+      "paeo": [
+        "M801_2856",
+        "M801_2859"
+      ],
+      "pmy": [
+        "Pmen_2691",
+        "Pmen_2694"
+      ],
+      "pmk": [
+        "MDS_2024",
+        "MDS_2027"
+      ],
+      "pre": [
+        "PCA10_37620",
+        "PCA10_37650"
+      ],
+      "ppse": [
+        "BN5_2435",
+        "BN5_2438"
+      ],
+      "palc": [
+        "A0T30_09820",
+        "A0T30_09835"
+      ],
+      "pcq": [
+        "PcP3B5_19970",
+        "PcP3B5_20000"
+      ],
+      "pfl": [
+        "PFL_4196",
+        "PFL_4199"
+      ],
+      "pprc": [
+        "PFLCHA0_c42590",
+        "PFLCHA0_c42620"
+      ],
+      "ppro": [
+        "PPC_4293",
+        "PPC_4296"
+      ],
+      "pfo": [
+        "Pfl01_3947",
+        "Pfl01_3950"
+      ],
+      "pfs": [
+        "PFLU_4394",
+        "PFLU_4397"
+      ],
+      "pfe": [
+        "PSF113_1742",
+        "PSF113_1744"
+      ],
+      "pfc": [
+        "PflA506_3698",
+        "PflA506_3701"
+      ],
+      "pfn": [
+        "HZ99_27640",
+        "HZ99_27655"
+      ],
+      "pfw": [
+        "PF1751_v1c38890",
+        "PF1751_v1c38920"
+      ],
+      "pfb": [
+        "VO64_5139",
+        "VO64_5142"
+      ],
+      "pff": [
+        "PFLUOLIPICF716740",
+        "PFLUOLIPICF716755"
+      ],
+      "pfx": [
+        "A7318_18695",
+        "A7318_18710"
+      ],
+      "pman": [
+        "OU5_1497",
+        "OU5_1500"
+      ],
+      "ptv": [
+        "AA957_22835",
+        "AA957_22850"
+      ],
+      "pvr": [
+        "PverR02_22360",
+        "PverR02_22380"
+      ],
+      "pazo": [
+        "AYR47_28670"
+      ],
+      "pba": [
+        "PSEBR_a1659",
+        "PSEBR_a1661"
+      ],
+      "ppuu": [
+        "PputUW4_01473",
+        "PputUW4_01476"
+      ],
+      "pdr": [
+        "H681_15875",
+        "H681_15890"
+      ],
+      "psk": [
+        "U771_22880",
+        "U771_22895"
+      ],
+      "pkc": [
+        "PKB_3703",
+        "PKB_3706"
+      ],
+      "pch": [
+        "EY04_21270",
+        "EY04_21285"
+      ],
+      "pcz": [
+        "PCL1606_19660",
+        "PCL1606_19690"
+      ],
+      "pcp": [
+        "JM49_09920",
+        "JM49_09935"
+      ],
+      "psem": [
+        "TO66_22060",
+        "TO66_22075"
+      ],
+      "psos": [
+        "POS17_4284",
+        "POS17_4287"
+      ],
+      "pkr": [
+        "AYO71_21550",
+        "AYO71_21565"
+      ],
+      "pfk": [
+        "PFAS1_02920",
+        "PFAS1_02940"
+      ],
+      "panr": [
+        "A7J50_4072",
+        "A7J50_4075"
+      ],
+      "acb": [
+        "A1S_3005",
+        "A1S_3008"
+      ],
+      "abm": [
+        "ABSDF2868",
+        "ABSDF2871"
+      ],
+      "aby": [
+        "ABAYE0480",
+        "ABAYE0483"
+      ],
+      "abc": [
+        "ACICU_03204",
+        "ACICU_03209"
+      ],
+      "abn": [
+        "AB57_3456",
+        "AB57_3459"
+      ],
+      "abb": [
+        "ABBFA_000508",
+        "ABBFA_000511"
+      ],
+      "abx": [
+        "ABK1_3256",
+        "ABK1_3259"
+      ],
+      "abz": [
+        "ABZJ_03388",
+        "ABZJ_03391"
+      ],
+      "abr": [
+        "ABTJ_00491",
+        "ABTJ_00494"
+      ],
+      "abd": [
+        "ABTW07_3420",
+        "ABTW07_3423"
+      ],
+      "abh": [
+        "M3Q_3437",
+        "M3Q_3440"
+      ],
+      "abad": [
+        "ABD1_28940",
+        "ABD1_28970"
+      ],
+      "abj": [
+        "BJAB07104_03293",
+        "BJAB07104_03296"
+      ],
+      "abab": [
+        "BJAB0715_03356",
+        "BJAB0715_03359"
+      ],
+      "abaj": [
+        "BJAB0868_03249",
+        "BJAB0868_03252"
+      ],
+      "abaz": [
+        "P795_2365",
+        "P795_2380"
+      ],
+      "abk": [
+        "LX00_16125",
+        "LX00_16140"
+      ],
+      "abau": [
+        "IX87_11720",
+        "IX87_11735"
+      ],
+      "abaa": [
+        "IX88_17965",
+        "IX88_17980"
+      ],
+      "abw": [
+        "BL01_15695",
+        "BL01_15710"
+      ],
+      "abal": [
+        "ABLAC_05010"
+      ],
+      "acc": [
+        "BDGL_002469",
+        "BDGL_002472"
+      ],
+      "ano": [
+        "RR32_02575",
+        "RR32_02590"
+      ],
+      "acd": [
+        "AOLE_02435",
+        "AOLE_02450"
+      ],
+      "acw": [
+        "A0J50_02380",
+        "A0J50_02395"
+      ],
+      "acv": [
+        "AMD27_02935",
+        "AMD27_02950"
+      ],
+      "ahl": [
+        "AHTJS_02670",
+        "AHTJS_02685"
+      ],
+      "ajn": [
+        "BVL33_14905",
+        "BVL33_14920"
+      ],
+      "pat": [
+        "Patl_0317",
+        "Patl_0319"
+      ],
+      "maq": [
+        "Maqu_2804",
+        "Maqu_2807"
+      ],
+      "mhc": [
+        "MARHY2691",
+        "MARHY2695"
+      ],
+      "mad": [
+        "HP15_2538",
+        "HP15_2542"
+      ],
+      "msr": [
+        "AU15_00440"
+      ],
+      "msx": [
+        "AU14_06530"
+      ],
+      "mari": [
+        "ACP86_03025",
+        "ACP86_03040"
+      ],
+      "mlq": [
+        "ASQ50_05305",
+        "ASQ50_05320"
+      ],
+      "msq": [
+        "BKP64_01770",
+        "BKP64_01785"
+      ],
+      "amb": [
+        "AMBAS45_14990",
+        "AMBAS45_15000"
+      ],
+      "gag": [
+        "Glaag_3941",
+        "Glaag_3943"
+      ],
+      "saga": [
+        "M5M_01905"
+      ],
+      "osg": [
+        "BST96_16500",
+        "BST96_16510"
+      ],
+      "micc": [
+        "AUP74_02722",
+        "AUP74_02725"
+      ],
+      "hja": [
+        "BST95_14325",
+        "BST95_14330"
+      ],
+      "cyq": [
+        "Q91_1219",
+        "Q91_1221"
+      ],
+      "cza": [
+        "CYCME_1207",
+        "CYCME_1209"
+      ],
+      "cyy": [
+        "CPC19_06500",
+        "CPC19_06510"
+      ],
+      "hch": [
+        "HCH_05748",
+        "HCH_05752"
+      ],
+      "abo": [
+        "ABO_0986",
+        "ABO_0989"
+      ],
+      "adi": [
+        "B5T_00490",
+        "B5T_00491",
+        "B5T_01797",
+        "B5T_01800"
+      ],
+      "apac": [
+        "S7S_10290",
+        "S7S_10305"
+      ],
+      "aln": [
+        "AS19_10490",
+        "AS19_10520"
+      ],
+      "axe": [
+        "P40_02265",
+        "P40_02270",
+        "P40_08540",
+        "P40_08555"
+      ],
+      "oai": [
+        "OLEAN_C05730",
+        "OLEAN_C05760"
+      ],
+      "ome": [
+        "OLMES_1766",
+        "OLMES_1769"
+      ],
+      "gpb": [
+        "HDN1F_10690",
+        "HDN1F_10720"
+      ],
+      "rpi": [
+        "Rpic_0106",
+        "Rpic_0108"
+      ],
+      "rpf": [
+        "Rpic12D_0113",
+        "Rpic12D_0115"
+      ],
+      "rpj": [
+        "N234_26485",
+        "N234_26500"
+      ],
+      "rin": [
+        "ACS15_0172",
+        "ACS15_0174"
+      ],
+      "reu": [
+        "Reut_B4460",
+        "Reut_B4463"
+      ],
+      "reh": [
+        "H16_A2144"
+      ],
+      "cnc": [
+        "CNE_1c27010",
+        "CNE_1c27040"
+      ],
+      "rme": [
+        "Rmet_1721",
+        "Rmet_1724"
+      ],
+      "cbw": [
+        "RR42_s1802",
+        "RR42_s1804",
+        "RR42_s2502",
+        "RR42_s2505"
+      ],
+      "ccup": [
+        "BKK81_08300",
+        "BKK81_08310",
+        "BKK81_26995",
+        "BKK81_27010"
+      ],
+      "cup": [
+        "BKK80_07610",
+        "BKK80_07620",
+        "BKK80_29310",
+        "BKK80_29325"
+      ],
+      "cuu": [
+        "BKK79_04520",
+        "BKK79_04530",
+        "BKK79_35260",
+        "BKK79_35275"
+      ],
+      "cuh": [
+        "BJN34_26605",
+        "BJN34_26615"
+      ],
+      "bps": [
+        "BPSS2031",
+        "BPSS2034"
+      ],
+      "bpm": [
+        "BURPS1710b_A1149",
+        "BURPS1710b_A1152"
+      ],
+      "bpl": [
+        "BURPS1106A_A2774",
+        "BURPS1106A_A2777"
+      ],
+      "bpd": [
+        "BURPS668_A2929",
+        "BURPS668_A2932"
+      ],
+      "bpse": [
+        "BDL_5454",
+        "BDL_5457"
+      ],
+      "bpsm": [
+        "BBQ_4087",
+        "BBQ_4090"
+      ],
+      "bpsu": [
+        "BBN_5506",
+        "BBN_5509"
+      ],
+      "bpsd": [
+        "BBX_4621",
+        "BBX_4624"
+      ],
+      "bpz": [
+        "BP1026B_II2185",
+        "BP1026B_II2187"
+      ],
+      "bpq": [
+        "BPC006_II2739",
+        "BPC006_II2742"
+      ],
+      "bpk": [
+        "BBK_4782",
+        "BBK_4785"
+      ],
+      "bpsh": [
+        "DR55_5687",
+        "DR55_5690"
+      ],
+      "bpsa": [
+        "BBU_3964",
+        "BBU_3967"
+      ],
+      "bpso": [
+        "X996_5492",
+        "X996_5495"
+      ],
+      "but": [
+        "X994_5049",
+        "X994_5052"
+      ],
+      "bte": [
+        "BTH_II0286",
+        "BTH_II0289"
+      ],
+      "btq": [
+        "BTQ_3581",
+        "BTQ_3584"
+      ],
+      "btj": [
+        "BTJ_4617",
+        "BTJ_4620"
+      ],
+      "btz": [
+        "BTL_5404",
+        "BTL_5407"
+      ],
+      "btd": [
+        "BTI_4952",
+        "BTI_4955"
+      ],
+      "btv": [
+        "BTHA_4795",
+        "BTHA_4798"
+      ],
+      "bthe": [
+        "BTN_5075",
+        "BTN_5078"
+      ],
+      "bthm": [
+        "BTRA_5343",
+        "BTRA_5346"
+      ],
+      "btha": [
+        "DR62_5204",
+        "DR62_5207"
+      ],
+      "bthl": [
+        "BG87_5411",
+        "BG87_5414"
+      ],
+      "bok": [
+        "DM82_6350",
+        "DM82_6353"
+      ],
+      "boc": [
+        "BG90_4321",
+        "BG90_4324"
+      ],
+      "bul": [
+        "BW21_4480",
+        "BW21_4483"
+      ],
+      "bud": [
+        "AQ610_30705",
+        "AQ610_30720"
+      ],
+      "axy": [
+        "AXYL_05145",
+        "AXYL_05912",
+        "AXYL_06694",
+        "AXYL_06697"
+      ],
+      "aka": [
+        "TKWG_13815",
+        "TKWG_13830"
+      ],
+      "rfr": [
+        "Rfer_2815",
+        "Rfer_2818"
+      ],
+      "rsb": [
+        "RS694_04395",
+        "RS694_04410"
+      ],
+      "rhy": [
+        "RD110_23135",
+        "RD110_23140"
+      ],
+      "aaa": [
+        "Acav_0072",
+        "Acav_0073"
+      ],
+      "ack": [
+        "C380_03315",
+        "C380_03335"
+      ],
+      "acra": [
+        "BSY15_2082",
+        "BSY15_2086"
+      ],
+      "vei": [
+        "Veis_2413",
+        "Veis_2415"
+      ],
+      "vap": [
+        "Vapar_0326",
+        "Vapar_0327"
+      ],
+      "vpe": [
+        "Varpa_0335",
+        "Varpa_0336"
+      ],
+      "vpd": [
+        "VAPA_1c03920",
+        "VAPA_1c03930"
+      ],
+      "vbo": [
+        "CKY39_01850",
+        "CKY39_01855"
+      ],
+      "ctt": [
+        "CtCNB1_1718"
+      ],
+      "ctes": [
+        "O987_10840",
+        "O987_10855"
+      ],
+      "adn": [
+        "Alide_0012",
+        "Alide_0189",
+        "Alide_0192"
+      ],
+      "adk": [
+        "Alide2_0017",
+        "Alide2_0178",
+        "Alide2_0181"
+      ],
+      "lih": [
+        "L63ED372_00596",
+        "L63ED372_00600"
+      ],
+      "hyr": [
+        "BSY239_2831",
+        "BSY239_2832",
+        "BSY239_339",
+        "BSY239_342"
+      ],
+      "hyb": [
+        "Q5W_03380",
+        "Q5W_03390",
+        "Q5W_16940",
+        "Q5W_16955"
+      ],
+      "hyl": [
+        "LPB072_21180"
+      ],
+      "rge": [
+        "RGE_32870",
+        "RGE_32900"
+      ],
+      "rbn": [
+        "RBXJA2T_12964",
+        "RBXJA2T_12979"
+      ],
+      "pkt": [
+        "AT984_14390",
+        "AT984_14405"
+      ],
+      "shd": [
+        "SUTH_02873",
+        "SUTH_02876"
+      ],
+      "mxa": [
+        "MXAN_0081",
+        "MXAN_0082"
+      ],
+      "mfu": [
+        "LILAB_08345",
+        "LILAB_08350"
+      ],
+      "msd": [
+        "MYSTI_00076",
+        "MYSTI_00077"
+      ],
+      "mym": [
+        "A176_006936",
+        "A176_006937"
+      ],
+      "mmas": [
+        "MYMAC_000087",
+        "MYMAC_000088"
+      ],
+      "ccx": [
+        "COCOR_03097",
+        "COCOR_03098"
+      ],
+      "age": [
+        "AA314_07788",
+        "AA314_07789"
+      ],
+      "bja": [
+        "blr0986",
+        "blr0987"
+      ],
+      "bju": [
+        "BJ6T_10100",
+        "BJ6T_10110"
+      ],
+      "bjp": [
+        "RN69_04930",
+        "RN69_04935"
+      ],
+      "bra": [
+        "BRADO6875",
+        "BRADO6876"
+      ],
+      "bbt": [
+        "BBta_0675",
+        "BBta_0676"
+      ],
+      "brs": [
+        "S23_68190",
+        "S23_68200"
+      ],
+      "aol": [
+        "S58_05990",
+        "S58_06000",
+        "S58_06010"
+      ],
+      "brc": [
+        "BCCGELA001_34720",
+        "BCCGELA001_34725"
+      ],
+      "brad": [
+        "BF49_7199",
+        "BF49_7200"
+      ],
+      "bic": [
+        "LMTR13_36825",
+        "LMTR13_36830"
+      ],
+      "bro": [
+        "BRAD285_7008",
+        "BRAD285_7009"
+      ],
+      "rpa": [
+        "RPA2143",
+        "RPA2144"
+      ],
+      "rpb": [
+        "RPB_3259",
+        "RPB_3260"
+      ],
+      "rpc": [
+        "RPC_3200",
+        "RPC_3201"
+      ],
+      "rpd": [
+        "RPD_2204",
+        "RPD_2205"
+      ],
+      "rpe": [
+        "RPE_2254",
+        "RPE_2255"
+      ],
+      "rpt": [
+        "Rpal_2435",
+        "Rpal_2436"
+      ],
+      "rpx": [
+        "Rpdx1_3381",
+        "Rpdx1_3382"
+      ],
+      "rva": [
+        "Rvan_0552",
+        "Rvan_3447"
+      ],
+      "rbm": [
+        "TEF_07385",
+        "TEF_16790"
+      ],
+      "sil": [
+        "SPO0578",
+        "SPO0579"
+      ],
+      "psf": [
+        "PSE_4597",
+        "PSE_4599"
+      ],
+      "sphg": [
+        "AZE99_15805",
+        "AZE99_15815"
+      ],
+      "sfla": [
+        "SPHFLASMR4Y_02317",
+        "SPHFLASMR4Y_02319"
+      ],
+      "rce": [
+        "RC1_3531",
+        "RC1_3533"
+      ],
+      "tmo": [
+        "TMO_a0453",
+        "TMO_a0454"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.4.1.5"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.4.1.5"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.4.1.5"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "6.4.1.5"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.4.1.5"
+      ],
+      "CAS": [
+        "37324-35-9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "SEUBERT W",
+          "FASS E",
+          "REMBERGER U."
+        ],
+        "title": "[STUDIES ON THE BACTERIAL DEGRADATION OF ISOPRENOID COMPOUNDS. III. PURIFICATION AND PROPERTIES OF GERANYL CARBOXYLASE.]",
+        "journal": "Biochem. Z. 338 (1963) 265-75.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14087299]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

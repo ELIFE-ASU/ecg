@@ -1,0 +1,775 @@
+[
+  {
+    "entry_id": "1.14.13.208",
+    "name": "benzoyl-CoA 2,3-epoxidase",
+    "names": [
+      "benzoyl-CoA 2,3-epoxidase",
+      "benzoyl-CoA dioxygenase/reductase (incorrect)",
+      "BoxBA",
+      "BoxA/BoxB system",
+      "benzoyl-CoA 2,3-dioxygenase (incorrect)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "benzoyl-CoA,NADPH:oxygen oxidoreductase (2,3-epoxydizing)",
+    "reaction": "benzoyl-CoA + NADPH + H+ + O2 = 2,3-epoxy-2,3-dihydrobenzoyl-CoA + NADP+ + H2O [RN:R09555]",
+    "all_reac": "R09555",
+    "iubmb_reactions": [
+      "R09555"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "benzoyl-CoA [CPD:C00512]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "2,3-epoxy-2,3-dihydrobenzoyl-CoA [CPD:C19684]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is involved in aerobic benzoate metabolism in Azoarcus evansii. BoxB functions as the oxygenase part of benzoyl-CoA oxygenase in conjunction with BoxA, the reductase component, which upon binding of benzoyl-CoA, transfers two electrons to the ring in the course of monooxygenation. BoxA is a homodimeric 46 kDa iron-sulfur-flavoprotein (FAD), BoxB is a monomeric iron-protein [1].",
+    "pathways": {
+      "ec00362": "Benzoate degradation"
+    },
+    "orthologs": {
+      "K15511": "benzoyl-CoA 2,3-epoxidase subunit A",
+      "K15512": "benzoyl-CoA 2,3-epoxidase subunit B"
+    },
+    "genes": {
+      "xal": [
+        "XALC_1517"
+      ],
+      "adi": [
+        "B5T_02165",
+        "B5T_02166"
+      ],
+      "axe": [
+        "P40_10385",
+        "P40_10390"
+      ],
+      "vff": [
+        "VITFI_CDS1569",
+        "VITFI_CDS1589",
+        "VITFI_CDS1590"
+      ],
+      "rpj": [
+        "N234_07040",
+        "N234_07045",
+        "N234_31275",
+        "N234_31280"
+      ],
+      "reu": [
+        "Reut_A1323",
+        "Reut_A1324"
+      ],
+      "reh": [
+        "H16_A1408",
+        "H16_B1912",
+        "H16_B1913"
+      ],
+      "cnc": [
+        "CNE_1c14360",
+        "CNE_1c14370",
+        "CNE_2c18730",
+        "CNE_2c18740",
+        "CNE_BB1p04280"
+      ],
+      "rme": [
+        "Rmet_1220",
+        "Rmet_1221"
+      ],
+      "cti": [
+        "RALTA_A1321",
+        "RALTA_A1322",
+        "RALTA_B1611",
+        "RALTA_B1612"
+      ],
+      "cbw": [
+        "RR42_m1517",
+        "RR42_m1518",
+        "RR42_s3010",
+        "RR42_s3011"
+      ],
+      "cgd": [
+        "CR3_3379",
+        "CR3_3380"
+      ],
+      "ccup": [
+        "BKK81_26785",
+        "BKK81_26790"
+      ],
+      "cup": [
+        "BKK80_29525",
+        "BKK80_29530"
+      ],
+      "cuu": [
+        "BKK79_35480",
+        "BKK79_35485"
+      ],
+      "cuh": [
+        "BJN34_07180",
+        "BJN34_07185",
+        "BJN34_32090",
+        "BJN34_32095"
+      ],
+      "bug": [
+        "BC1001_2389",
+        "BC1001_2390"
+      ],
+      "bge": [
+        "BC1002_1975",
+        "BC1002_1976"
+      ],
+      "bgf": [
+        "BC1003_1068",
+        "BC1003_1069"
+      ],
+      "buq": [
+        "AC233_12235",
+        "AC233_12240"
+      ],
+      "buz": [
+        "AYM40_13840",
+        "AYM40_13845"
+      ],
+      "bxe": [
+        "Bxe_A1423",
+        "Bxe_C0890",
+        "Bxe_C0891"
+      ],
+      "bxb": [
+        "DR64_3587",
+        "DR64_3588",
+        "DR64_7559",
+        "DR64_7560"
+      ],
+      "bph": [
+        "Bphy_1538",
+        "Bphy_1539"
+      ],
+      "brh": [
+        "RBRH_00498",
+        "RBRH_00499"
+      ],
+      "bpx": [
+        "BUPH_02965",
+        "BUPH_02966"
+      ],
+      "bpy": [
+        "Bphyt_2694",
+        "Bphyt_2695"
+      ],
+      "bfn": [
+        "OI25_2716",
+        "OI25_2717"
+      ],
+      "bcai": [
+        "K788_0006465",
+        "K788_0006466"
+      ],
+      "pspw": [
+        "BJG93_02490",
+        "BJG93_02495"
+      ],
+      "ppk": [
+        "U875_06785",
+        "U875_06790"
+      ],
+      "ppno": [
+        "DA70_23860",
+        "DA70_23865"
+      ],
+      "ppnm": [
+        "LV28_06845",
+        "LV28_06850"
+      ],
+      "prb": [
+        "X636_02785",
+        "X636_02790"
+      ],
+      "ppul": [
+        "RO07_00930",
+        "RO07_00935"
+      ],
+      "pspu": [
+        "NA29_10730",
+        "NA29_10735"
+      ],
+      "papi": [
+        "SG18_01105",
+        "SG18_01110"
+      ],
+      "pve": [
+        "UC34_17185",
+        "UC34_17190"
+      ],
+      "pox": [
+        "MB84_21960",
+        "MB84_21965"
+      ],
+      "ptx": [
+        "ABW99_07615",
+        "ABW99_07620"
+      ],
+      "pfg": [
+        "AB870_04225",
+        "AB870_04230"
+      ],
+      "pnr": [
+        "AT302_14910",
+        "AT302_14915"
+      ],
+      "bpt": [
+        "Bpet3568",
+        "Bpet3569"
+      ],
+      "bho": [
+        "D560_2021",
+        "D560_2022"
+      ],
+      "bhm": [
+        "D558_2006",
+        "D558_2007"
+      ],
+      "bhz": [
+        "ACR54_04083",
+        "ACR54_04084"
+      ],
+      "bbro": [
+        "BAU06_05180",
+        "BAU06_05185"
+      ],
+      "bfz": [
+        "BAU07_21240",
+        "BAU07_21245"
+      ],
+      "bpdz": [
+        "BBN53_02670",
+        "BBN53_02675"
+      ],
+      "axy": [
+        "AXYL_05030",
+        "AXYL_05031"
+      ],
+      "axo": [
+        "NH44784_035141",
+        "NH44784_035151"
+      ],
+      "axn": [
+        "AX27061_4849",
+        "AX27061_4850"
+      ],
+      "axs": [
+        "LH59_22220",
+        "LH59_22225"
+      ],
+      "axx": [
+        "ERS451415_04886",
+        "ERS451415_04887"
+      ],
+      "adt": [
+        "APT56_22175",
+        "APT56_22180"
+      ],
+      "ais": [
+        "BUW96_13975",
+        "BUW96_13980"
+      ],
+      "aka": [
+        "TKWG_07590",
+        "TKWG_07595"
+      ],
+      "amim": [
+        "MIM_c27160",
+        "MIM_c27170"
+      ],
+      "cdn": [
+        "BN940_14751",
+        "BN940_14756"
+      ],
+      "rfr": [
+        "Rfer_0221",
+        "Rfer_0222"
+      ],
+      "pol": [
+        "Bpro_1629",
+        "Bpro_1630"
+      ],
+      "pna": [
+        "Pnap_2942",
+        "Pnap_2943"
+      ],
+      "ack": [
+        "C380_20165",
+        "C380_20170"
+      ],
+      "vei": [
+        "Veis_0733",
+        "Veis_0734"
+      ],
+      "dac": [
+        "Daci_0072",
+        "Daci_0073"
+      ],
+      "del": [
+        "DelCs14_0073",
+        "DelCs14_0074"
+      ],
+      "dts": [
+        "BI380_22090",
+        "BI380_22095"
+      ],
+      "dhk": [
+        "BO996_02630",
+        "BO996_02635"
+      ],
+      "vap": [
+        "Vapar_0094",
+        "Vapar_0095"
+      ],
+      "vpe": [
+        "Varpa_0110",
+        "Varpa_0111"
+      ],
+      "vpd": [
+        "VAPA_1c00960",
+        "VAPA_1c00970"
+      ],
+      "vbo": [
+        "CKY39_00545",
+        "CKY39_00550"
+      ],
+      "ctt": [
+        "CtCNB1_0065",
+        "CtCNB1_0066"
+      ],
+      "ctes": [
+        "O987_00305",
+        "O987_00310"
+      ],
+      "rta": [
+        "Rta_22300"
+      ],
+      "lim": [
+        "L103DPR2_00830",
+        "L103DPR2_00831"
+      ],
+      "lih": [
+        "L63ED372_02245",
+        "L63ED372_02246"
+      ],
+      "hyr": [
+        "BSY239_635",
+        "BSY239_636"
+      ],
+      "hyb": [
+        "Q5W_16370",
+        "Q5W_16380",
+        "Q5W_16385"
+      ],
+      "hyl": [
+        "LPB072_05890",
+        "LPB072_05895"
+      ],
+      "cbaa": [
+        "SRAA_0585",
+        "SRAA_0586"
+      ],
+      "lch": [
+        "Lcho_3660",
+        "Lcho_3661"
+      ],
+      "thi": [
+        "THI_0466",
+        "THI_0467"
+      ],
+      "shd": [
+        "SUTH_01641",
+        "SUTH_01642"
+      ],
+      "eba": [
+        "ebA2765",
+        "ebA2766"
+      ],
+      "azo": [
+        "azo3057",
+        "azo3058"
+      ],
+      "aza": [
+        "AZKH_4519",
+        "AZKH_4520"
+      ],
+      "azi": [
+        "AzCIB_4637",
+        "AzCIB_4638"
+      ],
+      "aoa": [
+        "dqs_3191",
+        "dqs_3192"
+      ],
+      "tmz": [
+        "Tmz1t_3908"
+      ],
+      "tcl": [
+        "Tchl_1102",
+        "Tchl_1103"
+      ],
+      "sur": [
+        "STAUR_7626"
+      ],
+      "vin": [
+        "AKJ08_1016"
+      ],
+      "scl": [
+        "sce1060"
+      ],
+      "scu": [
+        "SCE1572_07645"
+      ],
+      "ccro": [
+        "CMC5_025770",
+        "CMC5_025780"
+      ],
+      "samy": [
+        "DB32_002623"
+      ],
+      "llu": [
+        "AKJ09_05632"
+      ],
+      "mrm": [
+        "A7982_06572"
+      ],
+      "hoh": [
+        "Hoch_5225"
+      ],
+      "meso": [
+        "BSQ44_18020",
+        "BSQ44_18030"
+      ],
+      "bja": [
+        "blr1081"
+      ],
+      "bju": [
+        "BJ6T_11110"
+      ],
+      "bjp": [
+        "RN69_05425"
+      ],
+      "bra": [
+        "BRADO6788"
+      ],
+      "bbt": [
+        "BBta_0750",
+        "BBta_6638",
+        "BBta_6639"
+      ],
+      "brs": [
+        "S23_67350"
+      ],
+      "aol": [
+        "S58_06720"
+      ],
+      "brc": [
+        "BCCGELA001_34210"
+      ],
+      "bic": [
+        "LMTR13_36350"
+      ],
+      "bro": [
+        "BRAD285_6936"
+      ],
+      "rpa": [
+        "RPA0677"
+      ],
+      "rpb": [
+        "RPB_4653"
+      ],
+      "rpd": [
+        "RPD_0881"
+      ],
+      "rpe": [
+        "RPE_0584"
+      ],
+      "rpt": [
+        "Rpal_0744"
+      ],
+      "rpx": [
+        "Rpdx1_4109"
+      ],
+      "rhz": [
+        "RHPLAN_60810"
+      ],
+      "psin": [
+        "CAK95_09715",
+        "CAK95_09720"
+      ],
+      "rbm": [
+        "TEF_07960"
+      ],
+      "sil": [
+        "SPO3701",
+        "SPO3703"
+      ],
+      "jan": [
+        "Jann_0672"
+      ],
+      "ptp": [
+        "RCA23_c19060",
+        "RCA23_c19070"
+      ],
+      "suam": [
+        "BOO69_15565",
+        "BOO69_15570"
+      ],
+      "spse": [
+        "SULPSESMR1_02743",
+        "SULPSESMR1_02745"
+      ],
+      "tom": [
+        "BWR18_14110"
+      ],
+      "aht": [
+        "ANTHELSMS3_04341",
+        "ANTHELSMS3_04343"
+      ],
+      "mag": [
+        "amb0175",
+        "amb0176"
+      ],
+      "magx": [
+        "XM1_1070",
+        "XM1_1071"
+      ],
+      "magn": [
+        "WV31_13525",
+        "WV31_13530"
+      ],
+      "goq": [
+        "ACH46_13370"
+      ],
+      "noa": [
+        "BKM31_25130"
+      ],
+      "bsd": [
+        "BLASA_2556"
+      ],
+      "amd": [
+        "AMED_8610"
+      ],
+      "amn": [
+        "RAM_44190"
+      ],
+      "amm": [
+        "AMES_8479"
+      ],
+      "amz": [
+        "B737_8480"
+      ],
+      "aoi": [
+        "AORI_7396"
+      ],
+      "aja": [
+        "AJAP_02020"
+      ],
+      "amq": [
+        "AMETH_6479"
+      ],
+      "alu": [
+        "BB31_08815"
+      ],
+      "pdx": [
+        "Psed_1489"
+      ],
+      "psea": [
+        "WY02_22245"
+      ],
+      "psee": [
+        "FRP1_20445"
+      ],
+      "pseh": [
+        "XF36_05450"
+      ],
+      "pseq": [
+        "AD006_27860"
+      ],
+      "pecq": [
+        "AD017_07455"
+      ],
+      "phh": [
+        "AFB00_18000"
+      ],
+      "kphy": [
+        "AOZ06_19790"
+      ],
+      "pmad": [
+        "BAY61_05970"
+      ],
+      "cai": [
+        "Caci_2007"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.208"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.208"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.208"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.208"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Zaar A",
+          "Gescher J",
+          "Eisenreich W",
+          "Bacher A",
+          "Fuchs G"
+        ],
+        "title": "New enzymes involved in aerobic benzoate metabolism in Azoarcus evansii.",
+        "journal": "Mol. Microbiol. 54 (2004) 223-38.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:15458418]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gescher J",
+          "Zaar A",
+          "Mohamed M",
+          "Schagger H",
+          "Fuchs G"
+        ],
+        "title": "Genes coding for a new pathway of aerobic benzoate metabolism in Azoarcus evansii.",
+        "journal": "J. Bacteriol. 184 (2002) 6301-15.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12399500]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Mohamed ME",
+          "Zaar A",
+          "Ebenau-Jehle C",
+          "Fuchs G"
+        ],
+        "title": "Reinvestigation of a new type of aerobic benzoate metabolism in the proteobacterium Azoarcus evansii.",
+        "journal": "J. Bacteriol. 183 (2001) 1899-908.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:11222587]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rather LJ",
+          "Knapp B",
+          "Haehnel W",
+          "Fuchs G"
+        ],
+        "title": "Coenzyme A-dependent aerobic metabolism of benzoate via epoxide formation.",
+        "journal": "J. Biol. Chem. 285 (2010) 20615-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:20452977]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

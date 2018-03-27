@@ -1,0 +1,646 @@
+[
+  {
+    "entry_id": "1.14.15.16",
+    "name": "vitamin D3 24-hydroxylase",
+    "names": [
+      "vitamin D3 24-hydroxylase",
+      "CYP24A1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "calcitriol,adrenodoxin:oxygen oxidoreductase (24-hydroxylating)",
+    "reaction": "(1) calcitriol + 2 reduced adrenodoxin + 2 H+ + O2 = calcitetrol + 2 oxidized adrenodoxin + H2O [RN:R09515]; (2) calcidiol + 2 reduced adrenodoxin + 2 H+ + O2 = secalciferol + 2 oxidized adrenodoxin + H2O [RN:R09516]",
+    "all_reac": "R09515 R09516",
+    "iubmb_reactions": [
+      "R09515 R09516"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "calcitriol [CPD:C01673]",
+      "reduced adrenodoxin [CPD:C00662]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "calcidiol [CPD:C01561]"
+    ],
+    "products": [
+      "calcitetrol [CPD:C18231]",
+      "oxidized adrenodoxin [CPD:C00667]",
+      "H2O [CPD:C00001]",
+      "secalciferol [CPD:C07712]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This mitochondrial cytochrome P-450 enzyme requires adrenodoxin. The enzyme can perform up to 6 rounds of hydroxylation of the substrate calcitriol leading to calcitroic acid. The human enzyme also shows 23-hydroxylating activity leading to 1,25 dihydroxyvitamin D3-26,23-lactone as end product while the mouse and rat enzymes do not. The initial source of the electrons is NADPH, which transfers the electrons to the adrenodoxin via EC 1.18.1.6, adrenodoxin-NADP+ reductase.",
+    "pathways": {
+      "ec00100": "Steroid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K07436": "vitamin D3 24-hydroxylase"
+    },
+    "genes": {
+      "hsa": [
+        "1591"
+      ],
+      "ptr": [
+        "746729"
+      ],
+      "pps": [
+        "100971976"
+      ],
+      "ggo": [
+        "101142284"
+      ],
+      "pon": [
+        "100457433"
+      ],
+      "nle": [
+        "100603459"
+      ],
+      "mcc": [
+        "698937"
+      ],
+      "mcf": [
+        "102117231"
+      ],
+      "csab": [
+        "103243965"
+      ],
+      "rro": [
+        "104662355"
+      ],
+      "rbb": [
+        "108521781"
+      ],
+      "cjc": [
+        "100393283"
+      ],
+      "sbq": [
+        "101054511"
+      ],
+      "mmu": [
+        "13081"
+      ],
+      "rno": [
+        "25279"
+      ],
+      "cge": [
+        "100751280"
+      ],
+      "ngi": [
+        "103735781"
+      ],
+      "hgl": [
+        "101716773"
+      ],
+      "ccan": [
+        "109694681"
+      ],
+      "ocu": [
+        "100347441"
+      ],
+      "tup": [
+        "102471055"
+      ],
+      "cfa": [
+        "485935"
+      ],
+      "aml": [
+        "100479790"
+      ],
+      "umr": [
+        "103669826"
+      ],
+      "oro": [
+        "101384402"
+      ],
+      "fca": [
+        "101096141"
+      ],
+      "ptg": [
+        "102967619"
+      ],
+      "aju": [
+        "106970319"
+      ],
+      "bta": [
+        "540080"
+      ],
+      "bom": [
+        "102272075"
+      ],
+      "biu": [
+        "109567562"
+      ],
+      "phd": [
+        "102325922"
+      ],
+      "chx": [
+        "102178921"
+      ],
+      "oas": [
+        "100170323"
+      ],
+      "ssc": [
+        "397145"
+      ],
+      "cfr": [
+        "102516204"
+      ],
+      "cdk": [
+        "105098859"
+      ],
+      "bacu": [
+        "103015403"
+      ],
+      "lve": [
+        "103082411"
+      ],
+      "ecb": [
+        "100053452"
+      ],
+      "epz": [
+        "103554239"
+      ],
+      "eai": [
+        "106825434"
+      ],
+      "myb": [
+        "102249295",
+        "102260231"
+      ],
+      "myd": [
+        "102772049"
+      ],
+      "hai": [
+        "109381840",
+        "109381842"
+      ],
+      "rss": [
+        "109444603"
+      ],
+      "pale": [
+        "102878689"
+      ],
+      "lav": [
+        "100663262"
+      ],
+      "tmu": [
+        "101353460"
+      ],
+      "mdo": [
+        "100028177"
+      ],
+      "shr": [
+        "100916072"
+      ],
+      "oaa": [
+        "100078505"
+      ],
+      "gga": [
+        "395827"
+      ],
+      "mgp": [
+        "100541378"
+      ],
+      "cjo": [
+        "107323241"
+      ],
+      "apla": [
+        "101797037"
+      ],
+      "acyg": [
+        "106041795"
+      ],
+      "tgu": [
+        "100226727"
+      ],
+      "gfr": [
+        "102044237"
+      ],
+      "fab": [
+        "101813067"
+      ],
+      "phi": [
+        "102111029"
+      ],
+      "pmaj": [
+        "107213207"
+      ],
+      "ccw": [
+        "104687601"
+      ],
+      "fpg": [
+        "101919538"
+      ],
+      "fch": [
+        "102046853"
+      ],
+      "clv": [
+        "102098516"
+      ],
+      "egz": [
+        "104132191"
+      ],
+      "aam": [
+        "106491745"
+      ],
+      "asn": [
+        "102382614"
+      ],
+      "amj": [
+        "102574966"
+      ],
+      "pss": [
+        "102458142"
+      ],
+      "cmy": [
+        "102932138",
+        "102946045"
+      ],
+      "cpic": [
+        "101938071"
+      ],
+      "acs": [
+        "100555767",
+        "100564552"
+      ],
+      "pvt": [
+        "110071817"
+      ],
+      "pbi": [
+        "103065707"
+      ],
+      "gja": [
+        "107119104"
+      ],
+      "xla": [
+        "108700906",
+        "108718538"
+      ],
+      "xtr": [
+        "100496967",
+        "100497429"
+      ],
+      "npr": [
+        "108784249",
+        "108790437"
+      ],
+      "dre": [
+        "100004700"
+      ],
+      "srx": [
+        "107735776",
+        "107744352"
+      ],
+      "sanh": [
+        "107666154",
+        "107696435"
+      ],
+      "sgh": [
+        "107560513",
+        "107580462",
+        "107587600"
+      ],
+      "ccar": [
+        "109057669"
+      ],
+      "ipu": [
+        "108271496"
+      ],
+      "amex": [
+        "103030576"
+      ],
+      "tru": [
+        "101077963"
+      ],
+      "tng": [
+        "GSTEN00033861G001"
+      ],
+      "lco": [
+        "104935382"
+      ],
+      "ncc": [
+        "104966082"
+      ],
+      "mze": [
+        "101475325"
+      ],
+      "ola": [
+        "101165632"
+      ],
+      "xma": [
+        "102225814"
+      ],
+      "pret": [
+        "103464673"
+      ],
+      "csem": [
+        "103386736"
+      ],
+      "lcf": [
+        "108873562"
+      ],
+      "hcq": [
+        "109507475"
+      ],
+      "bpec": [
+        "110171174"
+      ],
+      "sasa": [
+        "106565076",
+        "106583685"
+      ],
+      "els": [
+        "105016677"
+      ],
+      "sfm": [
+        "108936451"
+      ],
+      "lcm": [
+        "102364004"
+      ],
+      "cmk": [
+        "103191047"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_70414"
+      ],
+      "sko": [
+        "100372479",
+        "102801371",
+        "102804255"
+      ],
+      "crg": [
+        "105336400"
+      ],
+      "tad": [
+        "TRIADDRAFT_56952"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.16"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.16"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.16"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.16"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Masuda S",
+          "Strugnell SA",
+          "Knutson JC",
+          "St-Arnaud R",
+          "Jones G"
+        ],
+        "title": "Evidence for the activation of 1alpha-hydroxyvitamin D2 by 25-hydroxyvitamin D-24-hydroxylase: delineation of pathways involving 1alpha,24-dihydroxyvitamin D2 and 1alpha,25-dihydroxyvitamin D2.",
+        "journal": "Biochim. Biophys. Acta. 1761 (2006) 221-34.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:16516540]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hamamoto H",
+          "Kusudo T",
+          "Urushino N",
+          "Masuno H",
+          "Yamamoto K",
+          "Yamada S",
+          "Kamakura M",
+          "Ohta M",
+          "Inouye K",
+          "Sakaki T"
+        ],
+        "title": "Structure-function analysis of vitamin D 24-hydroxylase (CYP24A1) by site-directed mutagenesis: amino acid residues responsible for species-based difference of CYP24A1 between humans and rats.",
+        "journal": "Mol. Pharmacol. 70 (2006) 120-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:16617161]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sakaki T",
+          "Kagawa N",
+          "Yamamoto K",
+          "Inouye K"
+        ],
+        "title": "Metabolism of vitamin D3 by cytochromes P450.",
+        "journal": "Front. Biosci. 10 (2005) 119-34.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:15574355]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Prosser DE",
+          "Kaufmann M",
+          "O'Leary B",
+          "Byford V",
+          "Jones G"
+        ],
+        "title": "Single A326G mutation converts human CYP24A1 from 25-OH-D3-24-hydroxylase into -23-hydroxylase, generating 1alpha,25-(OH)2D3-26,23-lactone.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 104 (2007) 12673-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:17646648]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kusudo T",
+          "Sakaki T",
+          "Abe D",
+          "Fujishima T",
+          "Kittaka A",
+          "Takayama H",
+          "Hatakeyama S",
+          "Ohta M",
+          "Inouye K"
+        ],
+        "title": "Metabolism of A-ring diastereomers of 1alpha,25-dihydroxyvitamin D3 by CYP24A1.",
+        "journal": "Biochem. Biophys. Res. Commun. 321 (2004) 774-82.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:15358094]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sawada N",
+          "Kusudo T",
+          "Sakaki T",
+          "Hatakeyama S",
+          "Hanada M",
+          "Abe D",
+          "Kamao M",
+          "Okano T",
+          "Ohta M",
+          "Inouye K"
+        ],
+        "title": "Novel metabolism of 1 alpha,25-dihydroxyvitamin D3 with C24-C25 bond cleavage catalyzed by human CYP24A1.",
+        "journal": "Biochemistry. 43 (2004) 4530-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:15078099]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Prosser DE",
+          "Jones G"
+        ],
+        "title": "Enzymes involved in the activation and inactivation of vitamin D.",
+        "journal": "Trends. Biochem. Sci. 29 (2004) 664-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:15544953]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

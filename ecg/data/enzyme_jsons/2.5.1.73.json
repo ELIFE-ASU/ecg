@@ -1,0 +1,451 @@
+[
+  {
+    "entry_id": "2.5.1.73",
+    "name": "O-phospho-L-seryl-tRNA:Cys-tRNA synthase",
+    "names": [
+      "O-phospho-L-seryl-tRNA:Cys-tRNA synthase",
+      "SepCysS",
+      "Sep-tRNA:Cys-tRNA synthase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring alkyl or aryl groups, other than methyl groups;",
+      "Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)"
+    ],
+    "sysname": "O-phospho-L-seryl-tRNACys:hydrogen sulfide 2-aminopropanoate transferase",
+    "reaction": "O-phospho-L-seryl-tRNACys + sulfide = L-cysteinyl-tRNACys + phosphate [RN:R08577]",
+    "all_reac": "R08577",
+    "iubmb_reactions": [
+      "R08577"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "O-phospho-L-seryl-tRNACys",
+      "sulfide [CPD:C00283]"
+    ],
+    "products": [
+      "L-cysteinyl-tRNA(Cys) [CPD:C03125]",
+      "phosphate [CPD:C00009]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "In organisms like Archaeoglobus fulgidus lacking EC 6.1.1.16 (cysteine---tRNA ligase) for the direct Cys-tRNACys formation, Cys-tRNACys is produced by an indirect pathway, in which EC 6.1.1.27 (O-phosphoseryl-tRNA ligase) ligates O-phosphoserine to tRNACys, and EC 2.5.1.73 converts the produced O-phospho-L-seryl-tRNACys to Cys-tRNACys. The SepRS/SepCysS pathway is the sole route for cysteine biosynthesis in the organism [1]. Methanosarcina mazei can use both pathways, the direct route using EC 6.1.1.16 (cysteine---tRNA ligase) and the indirect pathway with EC 6.1.1.27 (O-phosphoseryl-tRNA ligase) and EC 2.5.1.73 [2].",
+    "pathways": {
+      "ec00970": "Aminoacyl-tRNA biosynthesis"
+    },
+    "orthologs": {
+      "K06868": "Sep-tRNA:Cys-tRNA synthetase"
+    },
+    "genes": {
+      "mja": [
+        "MJ_1678"
+      ],
+      "mfe": [
+        "Mefer_0975"
+      ],
+      "mvu": [
+        "Metvu_1276"
+      ],
+      "mfs": [
+        "MFS40622_0574"
+      ],
+      "mif": [
+        "Metin_0086"
+      ],
+      "mjh": [
+        "JH146_1495"
+      ],
+      "mig": [
+        "Metig_1345"
+      ],
+      "mmp": [
+        "MMP1240"
+      ],
+      "mmq": [
+        "MmarC5_0351"
+      ],
+      "mmx": [
+        "MmarC6_1433"
+      ],
+      "mmz": [
+        "MmarC7_0486"
+      ],
+      "mmd": [
+        "GYY_07035"
+      ],
+      "mmak": [
+        "MMKA1_14150",
+        "MMKA1_14320",
+        "MMKA1_14490",
+        "MMKA1_14660"
+      ],
+      "mmao": [
+        "MMOS7_13480"
+      ],
+      "mae": [
+        "Maeo_0681"
+      ],
+      "mvn": [
+        "Mevan_0554"
+      ],
+      "mvo": [
+        "Mvol_0651"
+      ],
+      "mok": [
+        "Metok_0264"
+      ],
+      "mac": [
+        "MA_0722"
+      ],
+      "mba": [
+        "Mbar_A1638"
+      ],
+      "mby": [
+        "MSBRM_2913"
+      ],
+      "mbw": [
+        "MSBRW_3093"
+      ],
+      "mbar": [
+        "MSBR2_2871"
+      ],
+      "mbak": [
+        "MSBR3_0854",
+        "MSBR3_1924"
+      ],
+      "mma": [
+        "MM_1881"
+      ],
+      "mmaz": [
+        "MmTuc01_1956"
+      ],
+      "mmj": [
+        "MSMAS_2806"
+      ],
+      "mmac": [
+        "MSMAC_1632"
+      ],
+      "mvc": [
+        "MSVAZ_1419",
+        "MSVAZ_2569"
+      ],
+      "mek": [
+        "MSKOL_1368",
+        "MSKOL_2576"
+      ],
+      "mls": [
+        "MSLAZ_0389"
+      ],
+      "metm": [
+        "MSMTP_2705"
+      ],
+      "mef": [
+        "MSWH1_2638"
+      ],
+      "meq": [
+        "MSWHS_2397"
+      ],
+      "msj": [
+        "MSSAC_0667"
+      ],
+      "msz": [
+        "MSSIH_0610"
+      ],
+      "msw": [
+        "MSSIT_0641"
+      ],
+      "mthe": [
+        "MSTHC_1892",
+        "MSTHC_2472"
+      ],
+      "mthr": [
+        "MSTHT_0797",
+        "MSTHT_1396"
+      ],
+      "mhor": [
+        "MSHOH_3505"
+      ],
+      "mbu": [
+        "Mbur_0796",
+        "Mbur_1440"
+      ],
+      "mmet": [
+        "MCMEM_0673",
+        "MCMEM_0928",
+        "MCMEM_1924",
+        "MCMEM_1925"
+      ],
+      "mmh": [
+        "Mmah_0384",
+        "Mmah_0699",
+        "Mmah_1745"
+      ],
+      "mhaz": [
+        "BHR79_01585",
+        "BHR79_04975"
+      ],
+      "mev": [
+        "Metev_1356"
+      ],
+      "mzh": [
+        "Mzhil_1846"
+      ],
+      "mpy": [
+        "Mpsy_1019",
+        "Mpsy_2114"
+      ],
+      "mhz": [
+        "Metho_0600",
+        "Metho_2240"
+      ],
+      "mtp": [
+        "Mthe_0102"
+      ],
+      "mcj": [
+        "MCON_0570"
+      ],
+      "mhi": [
+        "Mhar_0427"
+      ],
+      "mhu": [
+        "Mhun_0071",
+        "Mhun_2180"
+      ],
+      "mla": [
+        "Mlab_0348",
+        "Mlab_1214"
+      ],
+      "mem": [
+        "Memar_1614"
+      ],
+      "mbg": [
+        "BN140_0832"
+      ],
+      "mema": [
+        "MMAB1_1094"
+      ],
+      "mpi": [
+        "Mpet_1028"
+      ],
+      "mbn": [
+        "Mboo_1050",
+        "Mboo_2045"
+      ],
+      "mfo": [
+        "Metfor_1987",
+        "Metfor_2473"
+      ],
+      "mpl": [
+        "Mpal_1163",
+        "Mpal_1209"
+      ],
+      "mpd": [
+        "MCP_0857"
+      ],
+      "mez": [
+        "Mtc_1599",
+        "Mtc_2256"
+      ],
+      "rci": [
+        "RCIX1553",
+        "RCIX2270"
+      ],
+      "mth": [
+        "MTH_1067"
+      ],
+      "mmg": [
+        "MTBMA_c14550"
+      ],
+      "metc": [
+        "MTCT_0968"
+      ],
+      "mwo": [
+        "MWSIV6_1453"
+      ],
+      "mel": [
+        "Metbo_2382"
+      ],
+      "mew": [
+        "MSWAN_0264"
+      ],
+      "meth": [
+        "MBMB1_0325"
+      ],
+      "mfc": [
+        "BRM9_1944"
+      ],
+      "mfi": [
+        "DSM1535_0132"
+      ],
+      "mcub": [
+        "MCBB_0296"
+      ],
+      "mfv": [
+        "Mfer_0642"
+      ],
+      "mka": [
+        "MK0229"
+      ],
+      "afu": [
+        "AF_0028",
+        "AF_0181"
+      ],
+      "afg": [
+        "AFULGI_00000260"
+      ],
+      "apo": [
+        "Arcpr_0056"
+      ],
+      "ave": [
+        "Arcve_1020"
+      ],
+      "ast": [
+        "Asulf_02152"
+      ],
+      "fpl": [
+        "Ferp_2023"
+      ],
+      "gac": [
+        "GACE_1091"
+      ],
+      "gah": [
+        "GAH_00355",
+        "GAH_02061"
+      ],
+      "barc": [
+        "AOA65_1061"
+      ],
+      "barb": [
+        "AOA66_0045"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.5.1.73"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.5.1.73"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.5.1.73"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.5.1.73"
+      ],
+      "CAS": [
+        "1239229-21-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Fukunaga R",
+          "Yokoyama S"
+        ],
+        "title": "Structural insights into the second step of RNA-dependent cysteine biosynthesis in archaea: crystal structure of Sep-tRNA:Cys-tRNA synthase from Archaeoglobus fulgidus.",
+        "journal": "J. Mol. Biol. 370 (2007) 128-41.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:17512006]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hauenstein SI",
+          "Perona JJ"
+        ],
+        "title": "Redundant synthesis of cysteinyl-tRNACys in Methanosarcina mazei.",
+        "journal": "J. Biol. Chem. 283 (2008) 22007-17.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:18559341]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yuan J",
+          "Palioura S",
+          "Salazar JC",
+          "Su D",
+          "O'Donoghue P",
+          "Hohn MJ",
+          "Cardoso AM",
+          "Whitman WB",
+          "Soll D"
+        ],
+        "title": "RNA-dependent conversion of phosphoserine forms selenocysteine in eukaryotes and archaea.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 103 (2006) 18923-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:17142313]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

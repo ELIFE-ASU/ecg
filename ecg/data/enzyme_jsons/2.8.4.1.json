@@ -1,0 +1,755 @@
+[
+  {
+    "entry_id": "2.8.4.1",
+    "name": "coenzyme-B sulfoethylthiotransferase",
+    "names": [
+      "coenzyme-B sulfoethylthiotransferase",
+      "methyl-CoM reductase",
+      "methyl coenzyme M reductase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring sulfur-containing groups;",
+      "Transferring alkylthio groups"
+    ],
+    "sysname": "methyl-CoM:CoB S-(2-sulfoethyl)thiotransferase",
+    "reaction": "methyl-CoM + CoB = CoM-S-S-CoB + methane [RN:R04541]",
+    "all_reac": "R04541",
+    "iubmb_reactions": [
+      "R04541"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "methyl-CoM [CPD:C03920]",
+      "CoB"
+    ],
+    "products": [
+      "CoM-S-S-CoB [CPD:C04832]",
+      "methane [CPD:C01438]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme catalyses the final step in methanogenesis, the biological production of methane. This important anaerobic process is carried out only by methanogenic archaea. The enzyme can also function in reverse, for anaerobic oxidation of methane. The enzyme requires the hydroporphinoid nickel complex coenzyme F430. Highly specific for coenzyme B with a heptanoyl chain; ethyl CoM and difluoromethyl CoM are poor substrates. The sulfide sulfur can be replaced by selenium but not by oxygen.",
+    "pathways": {
+      "ec00680": "Methane metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K00399": "methyl-coenzyme M reductase alpha subunit",
+      "K00401": "methyl-coenzyme M reductase beta subunit",
+      "K00402": "methyl-coenzyme M reductase gamma subunit"
+    },
+    "genes": {
+      "mja": [
+        "MJ_0081",
+        "MJ_0082",
+        "MJ_0083",
+        "MJ_0842",
+        "MJ_0845",
+        "MJ_0846"
+      ],
+      "mfe": [
+        "Mefer_0934",
+        "Mefer_0937",
+        "Mefer_0938"
+      ],
+      "mvu": [
+        "Metvu_0145",
+        "Metvu_0148",
+        "Metvu_0149",
+        "Metvu_1192",
+        "Metvu_1193",
+        "Metvu_1194"
+      ],
+      "mfs": [
+        "MFS40622_0424",
+        "MFS40622_0425",
+        "MFS40622_0426",
+        "MFS40622_1315",
+        "MFS40622_1316",
+        "MFS40622_1319"
+      ],
+      "mif": [
+        "Metin_0281",
+        "Metin_0282",
+        "Metin_0285"
+      ],
+      "mjh": [
+        "JH146_0503",
+        "JH146_0504",
+        "JH146_0505",
+        "JH146_1056",
+        "JH146_1057",
+        "JH146_1060"
+      ],
+      "mig": [
+        "Metig_0442",
+        "Metig_0444",
+        "Metig_0445",
+        "Metig_1233",
+        "Metig_1236",
+        "Metig_1237"
+      ],
+      "mmp": [
+        "MMP1555",
+        "MMP1558",
+        "MMP1559"
+      ],
+      "mmq": [
+        "MmarC5_0017",
+        "MmarC5_0018",
+        "MmarC5_0021"
+      ],
+      "mmx": [
+        "MmarC6_1111",
+        "MmarC6_1112",
+        "MmarC6_1115"
+      ],
+      "mmz": [
+        "MmarC7_0802",
+        "MmarC7_0805",
+        "MmarC7_0806"
+      ],
+      "mmd": [
+        "GYY_08625",
+        "GYY_08640",
+        "GYY_08645"
+      ],
+      "mmak": [
+        "MMKA1_17850",
+        "MMKA1_17880",
+        "MMKA1_17890"
+      ],
+      "mmao": [
+        "MMOS7_16670",
+        "MMOS7_16700",
+        "MMOS7_16710"
+      ],
+      "mae": [
+        "Maeo_1264",
+        "Maeo_1267",
+        "Maeo_1268"
+      ],
+      "mvn": [
+        "Mevan_0868",
+        "Mevan_0871",
+        "Mevan_0872"
+      ],
+      "mvo": [
+        "Mvol_1124",
+        "Mvol_1127",
+        "Mvol_1128"
+      ],
+      "mok": [
+        "Metok_0956",
+        "Metok_0957",
+        "Metok_0960"
+      ],
+      "mac": [
+        "MA_4546",
+        "MA_4547",
+        "MA_4550"
+      ],
+      "mba": [
+        "Mbar_A0893",
+        "Mbar_A0894",
+        "Mbar_A0897"
+      ],
+      "mby": [
+        "MSBRM_0097",
+        "MSBRM_0100",
+        "MSBRM_0101"
+      ],
+      "mbw": [
+        "MSBRW_0101",
+        "MSBRW_0104",
+        "MSBRW_0105"
+      ],
+      "mbar": [
+        "MSBR2_2279",
+        "MSBR2_2280",
+        "MSBR2_2283"
+      ],
+      "mbak": [
+        "MSBR3_2340",
+        "MSBR3_2341",
+        "MSBR3_2344"
+      ],
+      "mma": [
+        "MM_1240",
+        "MM_1241",
+        "MM_1244"
+      ],
+      "mmaz": [
+        "MmTuc01_1281",
+        "MmTuc01_1282",
+        "MmTuc01_1285"
+      ],
+      "mmj": [
+        "MSMAS_0069",
+        "MSMAS_0072",
+        "MSMAS_0073"
+      ],
+      "mmac": [
+        "MSMAC_0068",
+        "MSMAC_0071",
+        "MSMAC_0072"
+      ],
+      "mvc": [
+        "MSVAZ_3413",
+        "MSVAZ_3414",
+        "MSVAZ_3417"
+      ],
+      "mek": [
+        "MSKOL_3374",
+        "MSKOL_3375",
+        "MSKOL_3378"
+      ],
+      "mls": [
+        "MSLAZ_0156",
+        "MSLAZ_0157",
+        "MSLAZ_0160"
+      ],
+      "metm": [
+        "MSMTP_0096",
+        "MSMTP_0099",
+        "MSMTP_0100"
+      ],
+      "mef": [
+        "MSWH1_0085",
+        "MSWH1_0088",
+        "MSWH1_0089"
+      ],
+      "meq": [
+        "MSWHS_0088",
+        "MSWHS_0091",
+        "MSWHS_0092"
+      ],
+      "msj": [
+        "MSSAC_4251",
+        "MSSAC_4254",
+        "MSSAC_4255"
+      ],
+      "msz": [
+        "MSSIH_3755",
+        "MSSIH_3758",
+        "MSSIH_3759"
+      ],
+      "msw": [
+        "MSSIT_3834",
+        "MSSIT_3837",
+        "MSSIT_3838"
+      ],
+      "mthe": [
+        "MSTHC_1645",
+        "MSTHC_1646",
+        "MSTHC_1649"
+      ],
+      "mthr": [
+        "MSTHT_1640",
+        "MSTHT_1643",
+        "MSTHT_1644"
+      ],
+      "mhor": [
+        "MSHOH_0080",
+        "MSHOH_0083",
+        "MSHOH_0084"
+      ],
+      "mbu": [
+        "Mbur_2417",
+        "Mbur_2418",
+        "Mbur_2421"
+      ],
+      "mmet": [
+        "MCMEM_0559",
+        "MCMEM_0560",
+        "MCMEM_0563"
+      ],
+      "mmh": [
+        "Mmah_0612",
+        "Mmah_0613",
+        "Mmah_0616"
+      ],
+      "mhaz": [
+        "BHR79_00290",
+        "BHR79_00305",
+        "BHR79_00310"
+      ],
+      "mev": [
+        "Metev_0902",
+        "Metev_0903",
+        "Metev_0906"
+      ],
+      "mzh": [
+        "Mzhil_0853",
+        "Mzhil_0856",
+        "Mzhil_0857"
+      ],
+      "mpy": [
+        "Mpsy_0828",
+        "Mpsy_0829",
+        "Mpsy_0832"
+      ],
+      "mhz": [
+        "Metho_1666",
+        "Metho_1669",
+        "Metho_1670"
+      ],
+      "mtp": [
+        "Mthe_0569",
+        "Mthe_0570",
+        "Mthe_0572"
+      ],
+      "mcj": [
+        "MCON_0759",
+        "MCON_0760",
+        "MCON_0762"
+      ],
+      "mhi": [
+        "Mhar_0495",
+        "Mhar_0497",
+        "Mhar_0498"
+      ],
+      "mhu": [
+        "Mhun_2144",
+        "Mhun_2147",
+        "Mhun_2148"
+      ],
+      "mla": [
+        "Mlab_1066",
+        "Mlab_1067",
+        "Mlab_1068",
+        "Mlab_1561",
+        "Mlab_1562",
+        "Mlab_1565"
+      ],
+      "mem": [
+        "Memar_0375",
+        "Memar_0377",
+        "Memar_0378",
+        "Memar_0613",
+        "Memar_0614",
+        "Memar_0617"
+      ],
+      "mbg": [
+        "BN140_1521",
+        "BN140_1522",
+        "BN140_1524",
+        "BN140_1734",
+        "BN140_1737",
+        "BN140_1738"
+      ],
+      "mema": [
+        "MMAB1_1952",
+        "MMAB1_1953",
+        "MMAB1_1955",
+        "MMAB1_1956",
+        "MMAB1_2231",
+        "MMAB1_2234",
+        "MMAB1_2235"
+      ],
+      "mpi": [
+        "Mpet_1991",
+        "Mpet_1992",
+        "Mpet_1993",
+        "Mpet_2415",
+        "Mpet_2416",
+        "Mpet_2419"
+      ],
+      "mbn": [
+        "Mboo_0582",
+        "Mboo_0583",
+        "Mboo_0586"
+      ],
+      "mfo": [
+        "Metfor_0871",
+        "Metfor_0873",
+        "Metfor_0874",
+        "Metfor_2605",
+        "Metfor_2608",
+        "Metfor_2609"
+      ],
+      "mpl": [
+        "Mpal_2305",
+        "Mpal_2308",
+        "Mpal_2309"
+      ],
+      "mpd": [
+        "MCP_0512",
+        "MCP_0515",
+        "MCP_0516"
+      ],
+      "mez": [
+        "Mtc_0904",
+        "Mtc_0907",
+        "Mtc_0908"
+      ],
+      "rci": [
+        "RCIX2059",
+        "RCIX2062",
+        "RCIX2063"
+      ],
+      "mth": [
+        "MTH_1129",
+        "MTH_1130",
+        "MTH_1132",
+        "MTH_1164",
+        "MTH_1165",
+        "MTH_1168"
+      ],
+      "mmg": [
+        "MTBMA_c15120",
+        "MTBMA_c15130",
+        "MTBMA_c15150",
+        "MTBMA_c15480",
+        "MTBMA_c15490",
+        "MTBMA_c15520"
+      ],
+      "metc": [
+        "MTCT_1022",
+        "MTCT_1023",
+        "MTCT_1025",
+        "MTCT_1058",
+        "MTCT_1059",
+        "MTCT_1062"
+      ],
+      "mwo": [
+        "MWSIV6_1521",
+        "MWSIV6_1522",
+        "MWSIV6_1524",
+        "MWSIV6_1556",
+        "MWSIV6_1557",
+        "MWSIV6_1560"
+      ],
+      "mst": [
+        "Msp_0318",
+        "Msp_0320",
+        "Msp_0321"
+      ],
+      "msi": [
+        "Msm_0902",
+        "Msm_0903",
+        "Msm_0905",
+        "Msm_1015",
+        "Msm_1016",
+        "Msm_1019"
+      ],
+      "mru": [
+        "mru_1924",
+        "mru_1925",
+        "mru_1928"
+      ],
+      "meb": [
+        "Abm4_1526",
+        "Abm4_1527",
+        "Abm4_1530"
+      ],
+      "mmil": [
+        "sm9_1353",
+        "sm9_1354",
+        "sm9_1356",
+        "sm9_2027",
+        "sm9_2028",
+        "sm9_2031"
+      ],
+      "meye": [
+        "TL18_09320",
+        "TL18_09325",
+        "TL18_09340"
+      ],
+      "mol": [
+        "YLM1_1108",
+        "YLM1_1110",
+        "YLM1_1111",
+        "YLM1_1379",
+        "YLM1_1380",
+        "YLM1_1383"
+      ],
+      "mel": [
+        "Metbo_0349",
+        "Metbo_0352",
+        "Metbo_0353",
+        "Metbo_2278",
+        "Metbo_2280",
+        "Metbo_2281"
+      ],
+      "mew": [
+        "MSWAN_2056",
+        "MSWAN_2057",
+        "MSWAN_2060"
+      ],
+      "meth": [
+        "MBMB1_1682",
+        "MBMB1_1683",
+        "MBMB1_1686",
+        "MBMB1_1822",
+        "MBMB1_1824",
+        "MBMB1_1825"
+      ],
+      "mfc": [
+        "BRM9_0935",
+        "BRM9_0936",
+        "BRM9_0939",
+        "BRM9_2153",
+        "BRM9_2155",
+        "BRM9_2156"
+      ],
+      "mfi": [
+        "DSM1535_0905",
+        "DSM1535_0906",
+        "DSM1535_0909",
+        "DSM1535_1092",
+        "DSM1535_1094",
+        "DSM1535_1095"
+      ],
+      "mcub": [
+        "MCBB_1985",
+        "MCBB_1986",
+        "MCBB_1989"
+      ],
+      "mfv": [
+        "Mfer_0731",
+        "Mfer_0733",
+        "Mfer_0734",
+        "Mfer_0784",
+        "Mfer_0785",
+        "Mfer_0788"
+      ],
+      "mka": [
+        "MK0651",
+        "MK0654",
+        "MK0655"
+      ],
+      "tar": [
+        "TALC_00469",
+        "TALC_00471",
+        "TALC_00472"
+      ],
+      "max": [
+        "MMALV_03970",
+        "MMALV_03990",
+        "MMALV_04000"
+      ],
+      "mer": [
+        "MMINT_15640",
+        "MMINT_15650",
+        "MMINT_15670"
+      ],
+      "mear": [
+        "Mpt1_c01980",
+        "Mpt1_c02000",
+        "Mpt1_c02010"
+      ],
+      "marc": [
+        "AR505_1396",
+        "AR505_1397",
+        "AR505_1399"
+      ],
+      "barc": [
+        "AOA65_0406",
+        "AOA65_0407",
+        "AOA65_0408"
+      ],
+      "barb": [
+        "AOA66_1761",
+        "AOA66_1769",
+        "AOA66_1770"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.8.4.1"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.8.4.1"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.8.4.1"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "2.8.4.1"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.8.4.1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Bobik TA",
+          "Olson KD",
+          "Noll KM",
+          "Wolfe RS."
+        ],
+        "title": "Evidence that the heterodisulfide of coenzyme M and 7-mercaptoheptanoylthreonine phosphate is a product of the methylreductase reaction in Methanobacterium.",
+        "journal": "Biochem. Biophys. Res. Commun. 149 (1987) 455-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:3122735]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ellermann",
+          "J.",
+          "Hedderich",
+          "R.",
+          "Boecher",
+          "R. and Thauer",
+          "R.K."
+        ],
+        "title": "The final step in methane formation: investigations with highly purified methyl coenzyme M reductase component C from Methanobacterium thermoautotrophicum (strain Marburg).",
+        "journal": "Eur. J. Biochem. 184 (1988) 63-68.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ermler U",
+          "Grabarse W",
+          "Shima S",
+          "Goubeaud M",
+          "Thauer RK."
+        ],
+        "title": "Crystal structure of methyl-coenzyme M reductase: the key enzyme of biological methane formation.",
+        "journal": "Science. 278 (1997) 1457-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9367957]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Signor L",
+          "Knuppe C",
+          "Hug R",
+          "Schweizer B",
+          "Pfaltz A",
+          "Jaun B."
+        ],
+        "title": "Methane formation by reaction of a methyl thioether with a photo-excited nickel thiolate--a process mimicking methanogenesis in archaea.",
+        "journal": "Chemistry. 6 (2000) 3508-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:11072815]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Scheller S",
+          "Goenrich M",
+          "Boecher R",
+          "Thauer RK",
+          "Jaun B"
+        ],
+        "title": "The key nickel enzyme of methanogenesis catalyses the anaerobic oxidation of methane.",
+        "journal": "Nature. 465 (2010) 606-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:20520712]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,510 @@
+[
+  {
+    "entry_id": "3.2.2.8",
+    "name": "ribosylpyrimidine nucleosidase",
+    "names": [
+      "ribosylpyrimidine nucleosidase",
+      "N-ribosylpyrimidine nucleosidase",
+      "pyrimidine nucleosidase",
+      "N-ribosylpyrimidine ribohydrolase",
+      "pyrimidine nucleoside hydrolase",
+      "RihB",
+      "YeiK",
+      "nucleoside ribohydrolase"
+    ],
+    "classes": [
+      "Hydrolases;",
+      "Glycosylases;",
+      "Hydrolysing N-glycosyl compounds"
+    ],
+    "sysname": "pyrimidine-nucleoside ribohydrolase",
+    "reaction": "a pyrimidine nucleoside + H2O = D-ribose + a pyrimidine base [RN:R02172]",
+    "all_reac": "R02172 > R02137; (other) R01245 R01677 R01770",
+    "iubmb_reactions": [
+      "R02172 > R02137"
+    ],
+    "kegg_reactions": [
+      "R01245 R01677 R01770"
+    ],
+    "substrates": [
+      "pyrimidine nucleoside [CPD:C03169]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "D-ribose [CPD:C00121]",
+      "pyrimidine base [CPD:C00396]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Also hydrolyses purine D-ribonucleosides, but much more slowly. 2'-, 3'- and 5'-deoxynucleosides are not substrates [3].",
+    "pathways": {
+      "ec00230": "Purine metabolism",
+      "ec00240": "Pyrimidine metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K10213": "ribosylpyrimidine nucleosidase"
+    },
+    "genes": {
+      "eco": [
+        "b2162"
+      ],
+      "ecj": [
+        "JW2149"
+      ],
+      "ecd": [
+        "ECDH10B_2319"
+      ],
+      "ebw": [
+        "BWG_1944"
+      ],
+      "ecok": [
+        "ECMDS42_1731"
+      ],
+      "ece": [
+        "Z3419"
+      ],
+      "ecs": [
+        "ECs3054"
+      ],
+      "ecf": [
+        "ECH74115_3298"
+      ],
+      "etw": [
+        "ECSP_3040"
+      ],
+      "elx": [
+        "CDCO157_2817"
+      ],
+      "eoj": [
+        "ECO26_3074"
+      ],
+      "eoi": [
+        "ECO111_2880"
+      ],
+      "eoh": [
+        "ECO103_2637"
+      ],
+      "ecg": [
+        "E2348C_2308"
+      ],
+      "eok": [
+        "G2583_2705"
+      ],
+      "elr": [
+        "ECO55CA74_13375"
+      ],
+      "ecc": [
+        "c2696"
+      ],
+      "ecp": [
+        "ECP_2202"
+      ],
+      "eci": [
+        "UTI89_C2436"
+      ],
+      "ecv": [
+        "APECO1_43912"
+      ],
+      "ecx": [
+        "EcHS_A2298"
+      ],
+      "ecw": [
+        "EcE24377A_2459"
+      ],
+      "ecm": [
+        "EcSMS35_2309"
+      ],
+      "ecy": [
+        "ECSE_2430"
+      ],
+      "ecr": [
+        "ECIAI1_2242"
+      ],
+      "ecq": [
+        "ECED1_2610"
+      ],
+      "eck": [
+        "EC55989_2415"
+      ],
+      "ect": [
+        "ECIAI39_2302"
+      ],
+      "eoc": [
+        "CE10_2534"
+      ],
+      "eum": [
+        "ECUMN_2498"
+      ],
+      "ecz": [
+        "ECS88_2310"
+      ],
+      "elo": [
+        "EC042_2395"
+      ],
+      "eln": [
+        "NRG857_10975"
+      ],
+      "elh": [
+        "ETEC_2297"
+      ],
+      "ese": [
+        "ECSF_2043"
+      ],
+      "eso": [
+        "O3O_17000"
+      ],
+      "esm": [
+        "O3M_08585"
+      ],
+      "esl": [
+        "O3K_08635"
+      ],
+      "ecl": [
+        "EcolC_1486"
+      ],
+      "ebr": [
+        "ECB_02091"
+      ],
+      "ebd": [
+        "ECBD_1496"
+      ],
+      "eko": [
+        "EKO11_1592"
+      ],
+      "ekf": [
+        "KO11_11820"
+      ],
+      "eab": [
+        "ECABU_c24930"
+      ],
+      "edh": [
+        "EcDH1_1496"
+      ],
+      "edj": [
+        "ECDH1ME8569_2098"
+      ],
+      "eih": [
+        "ECOK1_2394"
+      ],
+      "ena": [
+        "ECNA114_2253"
+      ],
+      "elu": [
+        "UM146_05985"
+      ],
+      "eun": [
+        "UMNK88_2707"
+      ],
+      "elw": [
+        "ECW_m2363"
+      ],
+      "ell": [
+        "WFL_11560"
+      ],
+      "elc": [
+        "i14_2497"
+      ],
+      "eld": [
+        "i02_2497"
+      ],
+      "elp": [
+        "P12B_c2256"
+      ],
+      "ebl": [
+        "ECD_02091"
+      ],
+      "ebe": [
+        "B21_02050"
+      ],
+      "elf": [
+        "LF82_1884"
+      ],
+      "ecoa": [
+        "APECO78_14530"
+      ],
+      "ecol": [
+        "LY180_11300"
+      ],
+      "ecoi": [
+        "ECOPMV1_02322"
+      ],
+      "ecoj": [
+        "P423_12155"
+      ],
+      "ecoo": [
+        "ECRM13514_2924"
+      ],
+      "ecoh": [
+        "ECRM13516_2864"
+      ],
+      "ecos": [
+        "EC958_2498"
+      ],
+      "efe": [
+        "EFER_2248"
+      ],
+      "ses": [
+        "SARI_00683"
+      ],
+      "sfl": [
+        "SF2247"
+      ],
+      "sfx": [
+        "S2376"
+      ],
+      "sfv": [
+        "SFV_2237"
+      ],
+      "sfe": [
+        "SFxv_2480"
+      ],
+      "sfn": [
+        "SFy_3191"
+      ],
+      "sfs": [
+        "SFyv_3266"
+      ],
+      "sft": [
+        "NCTC1_02470"
+      ],
+      "ssn": [
+        "SSON_2218"
+      ],
+      "sbo": [
+        "SBO_2165"
+      ],
+      "sbc": [
+        "SbBS512_E0804"
+      ],
+      "sdy": [
+        "SDY_2104"
+      ],
+      "sdz": [
+        "Asd1617_02833"
+      ],
+      "shq": [
+        "A0259_14630"
+      ],
+      "hav": [
+        "AT03_11825"
+      ],
+      "opo": [
+        "DSM2777_15880"
+      ],
+      "lbr": [
+        "LVIS_2188"
+      ],
+      "lbk": [
+        "LVISKB_2248"
+      ],
+      "ceu": [
+        "A7L45_04060"
+      ],
+      "rum": [
+        "CK1_26280"
+      ],
+      "lacy": [
+        "A4V08_10600"
+      ],
+      "csh": [
+        "Closa_3276"
+      ],
+      "ova": [
+        "OBV_11660"
+      ],
+      "mbj": [
+        "KQ51_00964"
+      ],
+      "amq": [
+        "AMETH_4651"
+      ],
+      "bde": [
+        "BDP_1920"
+      ],
+      "bdn": [
+        "BBDE_1812"
+      ],
+      "sbu": [
+        "SpiBuddy_0932"
+      ],
+      "scc": [
+        "Spico_1106"
+      ],
+      "sgp": [
+        "SpiGrapes_1061"
+      ],
+      "brm": [
+        "Bmur_2117"
+      ],
+      "bpj": [
+        "B2904_orf2394"
+      ],
+      "bpw": [
+        "WESB_0409"
+      ],
+      "lba": [
+        "Lebu_1571"
+      ],
+      "leo": [
+        "AMK43_06395",
+        "AMK43_06435"
+      ],
+      "str": [
+        "Sterm_3626",
+        "Sterm_3734"
+      ],
+      "tai": [
+        "Taci_0564"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "3.2.2.8"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "3.2.2.8"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "3.2.2.8"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "3.2.2.8"
+      ],
+      "CAS": [
+        "37288-60-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Terada M",
+          "Tatibana M",
+          "Hayaishi O."
+        ],
+        "title": "Purification and properties of nucleoside hydrolase from Pseudomonas fluorescens.",
+        "journal": "J. Biol. Chem. 242 (1967) 5578-85.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12325375]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Petersen C",
+          "Moller LB."
+        ],
+        "title": "The RihA, RihB, and RihC ribonucleoside hydrolases of Escherichia coli. Substrate specificity, gene expression, and regulation.",
+        "journal": "J. Biol. Chem. 276 (2001) 884-94.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11027694]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Giabbai B",
+          "Degano M."
+        ],
+        "title": "Cloning, purification, crystallization and X-ray analysis of the Escherichia coli pyrimidine nucleoside hydrolase YeiK.",
+        "journal": "Acta. Crystallogr. D. Biol. Crystallogr. 60 (2004) 524-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14993681]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Giabbai B",
+          "Degano M."
+        ],
+        "title": "Crystal structure to 1.7 a of the Escherichia coli pyrimidine nucleoside hydrolase YeiK, a novel candidate for cancer gene therapy.",
+        "journal": "Structure. 12 (2004) 739-49.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15130467]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

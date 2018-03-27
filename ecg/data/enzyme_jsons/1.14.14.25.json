@@ -1,0 +1,654 @@
+[
+  {
+    "entry_id": "1.14.14.25",
+    "name": "cholesterol 24-hydroxylase",
+    "names": [
+      "cholesterol 24-hydroxylase",
+      "cholesterol 24-monooxygenase",
+      "CYP46",
+      "CYP46A1",
+      "cholesterol 24S-hydroxylase",
+      "cytochrome P450 46A1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "cholesterol,NADPH---hemoprotein reductase:oxygen oxidoreductase (24-hydroxylating)",
+    "reaction": "cholesterol + [reduced NADPH---hemoprotein reductase] + O2 = (24S)-cholest-5-ene-3beta,24-diol + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R07207]",
+    "all_reac": "R07207",
+    "iubmb_reactions": [
+      "R07207"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "cholesterol [CPD:C00187]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "(24S)-cholest-5-ene-3beta,24-diol [CPD:C13550]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A P-450 heme-thiolate protein. The enzyme can also produce 25-hydroxycholesterol. In addition, it can further hydroxylate the product to 24,25-dihydroxycholesterol and 24,27-dihydroxycholesterol [2]. This reaction is the first step in the enzymic degradation of cholesterol in the brain as hydroxycholesterol can pass the blood---brain barrier whereas cholesterol cannot [3]. The direct electron donor to the enzyme is EC 1.6.2.4, NADPH---hemoprotein reductase [3].",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis"
+    },
+    "orthologs": {
+      "K07440": "cholesterol 24-hydroxylase"
+    },
+    "genes": {
+      "hsa": [
+        "10858"
+      ],
+      "ptr": [
+        "453154"
+      ],
+      "pps": [
+        "100978372"
+      ],
+      "ggo": [
+        "101142101"
+      ],
+      "pon": [
+        "100440873"
+      ],
+      "nle": [
+        "100604931"
+      ],
+      "mcc": [
+        "705843"
+      ],
+      "mcf": [
+        "102140307"
+      ],
+      "csab": [
+        "103229682"
+      ],
+      "rro": [
+        "104654463"
+      ],
+      "rbb": [
+        "108519071"
+      ],
+      "cjc": [
+        "100403833"
+      ],
+      "sbq": [
+        "101048333"
+      ],
+      "mmu": [
+        "13116"
+      ],
+      "rno": [
+        "362782"
+      ],
+      "cge": [
+        "100769865"
+      ],
+      "ngi": [
+        "103727655"
+      ],
+      "hgl": [
+        "101708822"
+      ],
+      "ccan": [
+        "109694347"
+      ],
+      "ocu": [
+        "100354574"
+      ],
+      "tup": [
+        "102499401"
+      ],
+      "cfa": [
+        "480432"
+      ],
+      "aml": [
+        "100470338"
+      ],
+      "umr": [
+        "103673592"
+      ],
+      "oro": [
+        "101365372"
+      ],
+      "fca": [
+        "101093112"
+      ],
+      "ptg": [
+        "102970492"
+      ],
+      "aju": [
+        "106972183"
+      ],
+      "bta": [
+        "506438"
+      ],
+      "bom": [
+        "102270768"
+      ],
+      "biu": [
+        "109575242"
+      ],
+      "phd": [
+        "102335780"
+      ],
+      "chx": [
+        "102178217"
+      ],
+      "oas": [
+        "101117622"
+      ],
+      "ssc": [
+        "100512793"
+      ],
+      "cfr": [
+        "102522998"
+      ],
+      "cdk": [
+        "105095410"
+      ],
+      "bacu": [
+        "103014370"
+      ],
+      "lve": [
+        "103068707"
+      ],
+      "ecb": [
+        "100051131"
+      ],
+      "epz": [
+        "103550566"
+      ],
+      "eai": [
+        "106839686"
+      ],
+      "myb": [
+        "102251844"
+      ],
+      "myd": [
+        "102761609"
+      ],
+      "hai": [
+        "109381070"
+      ],
+      "rss": [
+        "109458159"
+      ],
+      "pale": [
+        "102898643"
+      ],
+      "lav": [
+        "100677635"
+      ],
+      "tmu": [
+        "101353740"
+      ],
+      "shr": [
+        "100926883",
+        "105749180"
+      ],
+      "oaa": [
+        "100082015"
+      ],
+      "gga": [
+        "423450"
+      ],
+      "mgp": [
+        "100546708"
+      ],
+      "cjo": [
+        "107315364"
+      ],
+      "apla": [
+        "101792317"
+      ],
+      "acyg": [
+        "106036083"
+      ],
+      "tgu": [
+        "100221970"
+      ],
+      "gfr": [
+        "102044337"
+      ],
+      "fab": [
+        "101816121"
+      ],
+      "phi": [
+        "102099615"
+      ],
+      "pmaj": [
+        "107206481"
+      ],
+      "ccw": [
+        "104686436"
+      ],
+      "fpg": [
+        "101918324"
+      ],
+      "fch": [
+        "102060075"
+      ],
+      "clv": [
+        "102086481"
+      ],
+      "egz": [
+        "104124527"
+      ],
+      "aam": [
+        "106482958"
+      ],
+      "asn": [
+        "102376314"
+      ],
+      "amj": [
+        "102574122"
+      ],
+      "pss": [
+        "102449598"
+      ],
+      "cmy": [
+        "102937516"
+      ],
+      "cpic": [
+        "101950833"
+      ],
+      "acs": [
+        "100552409",
+        "100552607"
+      ],
+      "pvt": [
+        "110089659",
+        "110089661"
+      ],
+      "pbi": [
+        "103060230"
+      ],
+      "gja": [
+        "107121530",
+        "107121531"
+      ],
+      "xla": [
+        "100126648",
+        "108704878",
+        "379470"
+      ],
+      "xtr": [
+        "100145328",
+        "100498621",
+        "613109",
+        "613111",
+        "780005"
+      ],
+      "npr": [
+        "108790745",
+        "108795063",
+        "108795064",
+        "108795072"
+      ],
+      "dre": [
+        "393433",
+        "393451",
+        "553543",
+        "641477",
+        "692332"
+      ],
+      "srx": [
+        "107728353",
+        "107747947"
+      ],
+      "sanh": [
+        "107678664",
+        "107678670",
+        "107679679"
+      ],
+      "sgh": [
+        "107555298",
+        "107572123"
+      ],
+      "ccar": [
+        "109113289",
+        "109113290"
+      ],
+      "amex": [
+        "103039880"
+      ],
+      "tru": [
+        "101061882",
+        "101062111",
+        "101077010"
+      ],
+      "lco": [
+        "104926956"
+      ],
+      "ncc": [
+        "104967646"
+      ],
+      "mze": [
+        "101466901",
+        "101467200",
+        "101471428",
+        "101484290",
+        "101484552",
+        "106676578",
+        "106676579"
+      ],
+      "ola": [
+        "101165021",
+        "101165274"
+      ],
+      "xma": [
+        "102224087",
+        "106699939"
+      ],
+      "pret": [
+        "103457823",
+        "103457824"
+      ],
+      "csem": [
+        "103380705",
+        "103399269"
+      ],
+      "lcf": [
+        "108898059"
+      ],
+      "hcq": [
+        "109523501"
+      ],
+      "bpec": [
+        "110161286",
+        "110173902",
+        "110173912"
+      ],
+      "sasa": [
+        "106571109",
+        "106571110",
+        "106571111",
+        "106608238"
+      ],
+      "els": [
+        "105020476",
+        "105020477",
+        "105020478",
+        "106024908",
+        "109614563"
+      ],
+      "lcm": [
+        "102350084"
+      ],
+      "cmk": [
+        "103191174"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_125530"
+      ],
+      "spu": [
+        "574627",
+        "575475",
+        "577488",
+        "587435"
+      ],
+      "aplc": [
+        "110975135",
+        "110977587",
+        "110978166",
+        "110978168",
+        "110978719",
+        "110979252",
+        "110979280",
+        "110979450",
+        "110979470",
+        "110979505"
+      ],
+      "sko": [
+        "102809914"
+      ],
+      "myi": [
+        "110442018",
+        "110442026",
+        "110442672",
+        "110444545",
+        "110444602",
+        "110446937",
+        "110449190",
+        "110449191",
+        "110457551",
+        "110457552",
+        "110457554",
+        "110462790"
+      ],
+      "lak": [
+        "106167164",
+        "106167183"
+      ],
+      "nve": [
+        "NEMVE_v1g101023",
+        "NEMVE_v1g180149",
+        "NEMVE_v1g236002"
+      ],
+      "epa": [
+        "110231332",
+        "110231351",
+        "110234464",
+        "110235345",
+        "110237191",
+        "110244555",
+        "110250230",
+        "110250947"
+      ],
+      "adf": [
+        "107337274",
+        "107339681",
+        "107340945",
+        "107346605",
+        "107346606"
+      ],
+      "fme": [
+        "FOMMEDRAFT_142532",
+        "FOMMEDRAFT_92916"
+      ],
+      "tet": [
+        "TTHERM_000437538"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.25"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.25"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.25"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.25"
+      ],
+      "CAS": [
+        "50812-30-1",
+        "213327-78-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Lund EG",
+          "Guileyardo JM",
+          "Russell DW."
+        ],
+        "title": "cDNA cloning of cholesterol 24-hydroxylase, a mediator of cholesterol homeostasis in the brain.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 96 (1999) 7238-43.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10377398]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bogdanovic N",
+          "Bretillon L",
+          "Lund EG",
+          "Diczfalusy U",
+          "Lannfelt L",
+          "Winblad B",
+          "Russell DW",
+          "Bjorkhem I."
+        ],
+        "title": "On the turnover of brain cholesterol in patients with Alzheimer's disease. Abnormal induction of the cholesterol-catabolic enzyme CYP46 in glial cells.",
+        "journal": "Neurosci. Lett. 314 (2001) 45-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11698143]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Mast N",
+          "Norcross R",
+          "Andersson U",
+          "Shou M",
+          "Nakayama K",
+          "Bjorkhem I",
+          "Pikuleva IA."
+        ],
+        "title": "Broad substrate specificity of human cytochrome P450 46A1 which initiates cholesterol degradation in the brain.",
+        "journal": "Biochemistry. 42 (2003) 14284-92.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14640697]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lund EG",
+          "Xie C",
+          "Kotti T",
+          "Turley SD",
+          "Dietschy JM",
+          "Russell DW."
+        ],
+        "title": "Knockout of the cholesterol 24-hydroxylase gene in mice reveals a brain-specific mechanism of cholesterol turnover.",
+        "journal": "J. Biol. Chem. 278 (2003) 22980-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:12686551]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Russell DW."
+        ],
+        "title": "The enzymes, regulation, and genetics of bile acid synthesis.",
+        "journal": "Annu. Rev. Biochem. 72 (2003) 137-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:12543708]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

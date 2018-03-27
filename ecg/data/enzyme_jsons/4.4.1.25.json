@@ -1,0 +1,402 @@
+[
+  {
+    "entry_id": "4.4.1.25",
+    "name": "L-cysteate sulfo-lyase",
+    "names": [
+      "L-cysteate sulfo-lyase",
+      "L-cysteate sulfo-lyase (deaminating)",
+      "CuyA",
+      "L-cysteate bisulfite-lyase (deaminating",
+      "pyruvate-forming)"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-sulfur lyases;",
+      "Carbon-sulfur lyases (only sub-subclass identified to date)"
+    ],
+    "sysname": "L-cysteate hydrogensulfite-lyase (deaminating; pyruvate-forming)",
+    "reaction": "L-cysteate + H2O = hydrogensulfite + pyruvate + NH3 (overall reaction) [RN:R07634]; (1a) L-cysteate = hydrogensulfite + 2-aminoprop-2-enoate; (1b) 2-aminoprop-2-enoate = 2-iminopropanoate (spontaneous); (1c) 2-iminopropanoate + H2O = pyruvate + NH3 (spontaneous)",
+    "all_reac": "R07634",
+    "iubmb_reactions": [
+      "R07634"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-cysteate [CPD:C00506]",
+      "H2O [CPD:C00001]",
+      "2-aminoprop-2-enoate [CPD:C02218]",
+      "2-iminopropanoate [CPD:C20904]"
+    ],
+    "products": [
+      "hydrogensulfite",
+      "pyruvate [CPD:C00022]",
+      "NH3 [CPD:C00014]",
+      "2-aminoprop-2-enoate [CPD:C02218]",
+      "2-iminopropanoate [CPD:C20904]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A pyridoxal-phosphate protein. The enzyme cleaves a carbon-sulfur bond, releasing hydrogensulfite and an unstable enamine product that tautomerizes to an imine form, which undergoes a hydrolytic deamination to form pyruvate and ammonia. The latter reaction, which can occur spontaneously, can also be catalysed by EC 3.5.99.10, 2-iminobutanoate/2-iminopropanoate deaminase. D-Cysteine can also act as a substrate, but more slowly. It is converted into hydrogen sulfide, pyruvate, and ammonia. This inducible enzyme from the marine bacterium Silicibacter pomeroyi DSS-3 forms part of the cysteate-degradation pathway.",
+    "pathways": {
+      "ec00270": "Cysteine and methionine metabolism"
+    },
+    "orthologs": {
+      "K17950": "L-cysteate sulfo-lyase"
+    },
+    "genes": {
+      "enf": [
+        "AKI40_4522"
+      ],
+      "kox": [
+        "KOX_18740"
+      ],
+      "koe": [
+        "A225_2619"
+      ],
+      "koy": [
+        "J415_18880"
+      ],
+      "kok": [
+        "KONIH1_12530"
+      ],
+      "kom": [
+        "HR38_17105"
+      ],
+      "cko": [
+        "CKO_02077"
+      ],
+      "cama": [
+        "F384_24035"
+      ],
+      "cfar": [
+        "CI104_20845"
+      ],
+      "gqu": [
+        "AWC35_03525"
+      ],
+      "ror": [
+        "RORB6_16680"
+      ],
+      "ced": [
+        "LH89_04525"
+      ],
+      "kor": [
+        "AWR26_22860"
+      ],
+      "krd": [
+        "A3780_00880"
+      ],
+      "kin": [
+        "AB182_22850"
+      ],
+      "ebf": [
+        "D782_2775"
+      ],
+      "sfo": [
+        "Z042_18480"
+      ],
+      "eca": [
+        "ECA1531"
+      ],
+      "patr": [
+        "EV46_07745"
+      ],
+      "pato": [
+        "GZ59_15690"
+      ],
+      "pct": [
+        "PC1_1404"
+      ],
+      "pcv": [
+        "BCS7_07070"
+      ],
+      "pwa": [
+        "Pecwa_1802"
+      ],
+      "ppar": [
+        "A8F97_09765"
+      ],
+      "pec": [
+        "W5S_1716"
+      ],
+      "pws": [
+        "A7983_22495"
+      ],
+      "dda": [
+        "Dd703_1301"
+      ],
+      "ddd": [
+        "Dda3937_02691"
+      ],
+      "dso": [
+        "A4U42_16645"
+      ],
+      "ddq": [
+        "DDI_1238"
+      ],
+      "bgj": [
+        "AWC36_10530"
+      ],
+      "vtu": [
+        "IX91_16745"
+      ],
+      "acd": [
+        "AOLE_12720"
+      ],
+      "ala": [
+        "BFG52_04285"
+      ],
+      "spsw": [
+        "Sps_03974"
+      ],
+      "gps": [
+        "C427_3081"
+      ],
+      "lfa": [
+        "LFA_0645"
+      ],
+      "spiu": [
+        "SPICUR_05155"
+      ],
+      "woc": [
+        "BA177_13350",
+        "BA177_17580"
+      ],
+      "mars": [
+        "A8C75_20710"
+      ],
+      "tsn": [
+        "W908_04440"
+      ],
+      "ptx": [
+        "ABW99_09980"
+      ],
+      "pnr": [
+        "AT302_11325"
+      ],
+      "bpa": [
+        "BPP4074"
+      ],
+      "bpar": [
+        "BN117_4146"
+      ],
+      "bbr": [
+        "BB4545"
+      ],
+      "bbm": [
+        "BN115_4222"
+      ],
+      "bbh": [
+        "BN112_3877"
+      ],
+      "bbx": [
+        "BBS798_4322"
+      ],
+      "bbro": [
+        "BAU06_13605"
+      ],
+      "boh": [
+        "AKI39_12935"
+      ],
+      "put": [
+        "PT7_2783"
+      ],
+      "rta": [
+        "Rta_27290"
+      ],
+      "cbx": [
+        "Cenrod_1469"
+      ],
+      "hyb": [
+        "Q5W_20320"
+      ],
+      "mln": [
+        "A9174_10725"
+      ],
+      "bos": [
+        "BSY19_2081"
+      ],
+      "mmed": [
+        "Mame_04307"
+      ],
+      "aua": [
+        "M673_00800"
+      ],
+      "ccr": [
+        "CC_2032"
+      ],
+      "ccs": [
+        "CCNA_02112"
+      ],
+      "cak": [
+        "Caul_3180"
+      ],
+      "cse": [
+        "Cseg_1395"
+      ],
+      "chq": [
+        "AQ619_11480"
+      ],
+      "pzu": [
+        "PHZ_c2912"
+      ],
+      "bsb": [
+        "Bresu_3207"
+      ],
+      "brg": [
+        "A4249_15745"
+      ],
+      "brl": [
+        "BZG35_15890"
+      ],
+      "bvc": [
+        "CEP68_11000"
+      ],
+      "sil": [
+        "SPO2657",
+        "SPOA0158"
+      ],
+      "rde": [
+        "RD1_0819",
+        "RD1_1838"
+      ],
+      "rli": [
+        "RLO149_c007450"
+      ],
+      "pami": [
+        "JCM7686_pAMI4p082"
+      ],
+      "pye": [
+        "A6J80_16380"
+      ],
+      "dsh": [
+        "Dshi_1439"
+      ],
+      "pga": [
+        "PGA1_c25520",
+        "PGA1_c33720"
+      ],
+      "pgd": [
+        "Gal_02808"
+      ],
+      "lmd": [
+        "METH_22250"
+      ],
+      "ptp": [
+        "RCA23_c24520"
+      ],
+      "rhc": [
+        "RGUI_2479"
+      ],
+      "yan": [
+        "AYJ57_18010"
+      ],
+      "tpro": [
+        "Ga0080559_TMP3711"
+      ],
+      "thw": [
+        "BMG03_09545"
+      ],
+      "rmm": [
+        "ROSMUCSMR3_01902",
+        "ROSMUCSMR3_02142"
+      ],
+      "aht": [
+        "ANTHELSMS3_04525"
+      ],
+      "zmi": [
+        "ZCP4_1823"
+      ],
+      "zmc": [
+        "A265_01765"
+      ],
+      "zmr": [
+        "A254_01785"
+      ],
+      "zmp": [
+        "Zymop_1074"
+      ],
+      "apb": [
+        "SAR116_2240"
+      ],
+      "psab": [
+        "PSAB_12415"
+      ],
+      "pbj": [
+        "VN24_13960"
+      ],
+      "kal": [
+        "KALB_4130"
+      ],
+      "kphy": [
+        "AOZ06_19000"
+      ],
+      "barc": [
+        "AOA65_2400"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.4.1.25"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.4.1.25"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.4.1.25"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.4.1.25"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Denger K",
+          "Smits TH",
+          "Cook AM."
+        ],
+        "title": "L-cysteate sulpho-lyase, a widespread pyridoxal 5'-phosphate-coupled desulphonative enzyme purified from Silicibacter pomeroyi DSS-3(T).",
+        "journal": "Biochem. J. 394 (2006) 657-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:16302849]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

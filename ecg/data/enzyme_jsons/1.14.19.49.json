@@ -1,0 +1,541 @@
+[
+  {
+    "entry_id": "1.14.19.49",
+    "name": "tetracycline 7-halogenase",
+    "names": [
+      "tetracycline 7-halogenase",
+      "ctcP (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With oxidation of a pair of donors resulting in the reduction of O2 to two molecules of water"
+    ],
+    "sysname": "tetracycline:FADH2 oxidoreductase (7-halogenating)",
+    "reaction": "tetracycline + FADH2 + chloride + O2 + H+ = 7-chlorotetracycline + FAD + 2 H2O [RN:R11478]",
+    "all_reac": "R11478",
+    "iubmb_reactions": [
+      "R11478"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "tetracycline [CPD:C06570]",
+      "FADH2 [CPD:C01352]",
+      "chloride [CPD:C00698]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]"
+    ],
+    "products": [
+      "7-chlorotetracycline [CPD:C06571]",
+      "FAD [CPD:C00016]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from the bacterium Streptomyces aureofaciens, is a member of the flavin-dependent halogenase family. The enzyme forms a lysine chloramine intermediate on an internal lysine residue before transferring the chlorine to the substrate. It is stereo-selective for the 4S (natural) isomer of tetracycline. FADH2 is provided by a dedicated EC 1.5.1.36, flavin reductase (NADH).",
+    "pathways": {
+      "ec00253": "Tetracycline biosynthesis",
+      "ec01057": "Biosynthesis of type II polyketide products",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K14257": "tetracycline 7-halogenase / FADH2 O2-dependent halogenase"
+    },
+    "genes": {
+      "eno": [
+        "ECENHK_14345"
+      ],
+      "ecln": [
+        "ECNIH4_08285"
+      ],
+      "srr": [
+        "SerAS9_4266"
+      ],
+      "srl": [
+        "SOD_c39980"
+      ],
+      "sry": [
+        "M621_21735"
+      ],
+      "sply": [
+        "Q5A_021590"
+      ],
+      "srs": [
+        "SerAS12_4267"
+      ],
+      "sra": [
+        "SerAS13_4267"
+      ],
+      "smaf": [
+        "D781_2599"
+      ],
+      "srz": [
+        "AXX16_2518"
+      ],
+      "pag": [
+        "PLES_25781",
+        "PLES_25811"
+      ],
+      "paf": [
+        "PAM18_2383",
+        "PAM18_2386"
+      ],
+      "pael": [
+        "T223_13175",
+        "T223_13190"
+      ],
+      "pfl": [
+        "PFL_2784",
+        "PFL_2787",
+        "PFL_3606"
+      ],
+      "pprc": [
+        "PFLCHA0_c28420",
+        "PFLCHA0_c28450",
+        "PFLCHA0_c36470"
+      ],
+      "ppro": [
+        "PPC_2829",
+        "PPC_2832",
+        "PPC_3745"
+      ],
+      "pch": [
+        "EY04_18025"
+      ],
+      "pcz": [
+        "PCL1606_28090"
+      ],
+      "pcp": [
+        "JM49_15080"
+      ],
+      "psem": [
+        "TO66_16625"
+      ],
+      "cja": [
+        "CJA_2999"
+      ],
+      "mmt": [
+        "Metme_1103"
+      ],
+      "hch": [
+        "HCH_02500"
+      ],
+      "bma": [
+        "BMAA1201"
+      ],
+      "bmv": [
+        "BMASAVP1_0165"
+      ],
+      "bml": [
+        "BMA10229_0442"
+      ],
+      "bmn": [
+        "BMA10247_A1135"
+      ],
+      "bmal": [
+        "DM55_4314"
+      ],
+      "bmae": [
+        "DM78_3855"
+      ],
+      "bmaq": [
+        "DM76_3266"
+      ],
+      "bmai": [
+        "DM57_4424"
+      ],
+      "bmaf": [
+        "DM51_4862"
+      ],
+      "bmaz": [
+        "BM44_4276"
+      ],
+      "bmab": [
+        "BM45_3400"
+      ],
+      "bps": [
+        "BPSS1010"
+      ],
+      "bpm": [
+        "BURPS1710b_A0003",
+        "BURPS1710b_A1117"
+      ],
+      "bpl": [
+        "BURPS1106A_A1397",
+        "BURPS1106A_A2735"
+      ],
+      "bpd": [
+        "BURPS668_A1482",
+        "BURPS668_A2887"
+      ],
+      "bpse": [
+        "BDL_4306",
+        "BDL_5424"
+      ],
+      "bpsm": [
+        "BBQ_4119",
+        "BBQ_5121"
+      ],
+      "bpsu": [
+        "BBN_4474",
+        "BBN_5477"
+      ],
+      "bpsd": [
+        "BBX_4591",
+        "BBX_6149"
+      ],
+      "bpz": [
+        "BP1026B_II1107"
+      ],
+      "bpq": [
+        "BPC006_II1407",
+        "BPC006_II2698"
+      ],
+      "bpk": [
+        "BBK_4753",
+        "BBK_6130"
+      ],
+      "bpsh": [
+        "DR55_4322",
+        "DR55_5720"
+      ],
+      "bpsa": [
+        "BBU_3997",
+        "BBU_5014"
+      ],
+      "bpso": [
+        "X996_4250",
+        "X996_5524"
+      ],
+      "but": [
+        "X994_5082",
+        "X994_6109"
+      ],
+      "btz": [
+        "BTL_5468"
+      ],
+      "btha": [
+        "DR62_5268"
+      ],
+      "bok": [
+        "DM82_2185",
+        "DM82_6304"
+      ],
+      "boc": [
+        "BG90_2527"
+      ],
+      "bur": [
+        "Bcep18194_C6708"
+      ],
+      "bcm": [
+        "Bcenmc03_6985"
+      ],
+      "bam": [
+        "Bamb_4728"
+      ],
+      "bac": [
+        "BamMC406_5266"
+      ],
+      "bcep": [
+        "APZ15_34530"
+      ],
+      "bpyr": [
+        "ABD05_31830"
+      ],
+      "bcon": [
+        "NL30_32790"
+      ],
+      "bub": [
+        "BW23_5780"
+      ],
+      "bsem": [
+        "WJ12_18240"
+      ],
+      "bmec": [
+        "WJ16_17190"
+      ],
+      "bgd": [
+        "bgla_2g02310"
+      ],
+      "mbd": [
+        "MEBOL_008076"
+      ],
+      "samy": [
+        "DB32_006387"
+      ],
+      "pih": [
+        "UB51_18965"
+      ],
+      "mab": [
+        "MAB_2284"
+      ],
+      "mabb": [
+        "MASS_2208"
+      ],
+      "mmv": [
+        "MYCMA_09365"
+      ],
+      "may": [
+        "LA62_11625"
+      ],
+      "mabo": [
+        "NF82_11420"
+      ],
+      "mabl": [
+        "MMASJCM_2233"
+      ],
+      "maz": [
+        "LA61_11515"
+      ],
+      "mak": [
+        "LH56_12515"
+      ],
+      "mys": [
+        "NF92_12980"
+      ],
+      "myc": [
+        "NF90_12980"
+      ],
+      "miz": [
+        "BAB75_12200"
+      ],
+      "nfr": [
+        "ERS450000_00759"
+      ],
+      "ncy": [
+        "NOCYR_5153"
+      ],
+      "nbr": [
+        "O3I_018870"
+      ],
+      "nno": [
+        "NONO_c51090"
+      ],
+      "rrz": [
+        "CS378_19305"
+      ],
+      "sco": [
+        "SCO1275"
+      ],
+      "ssx": [
+        "SACTE_6340"
+      ],
+      "sct": [
+        "SCAT_5600"
+      ],
+      "scy": [
+        "SCATT_55980"
+      ],
+      "sve": [
+        "SVEN_0488"
+      ],
+      "sdv": [
+        "BN159_0503",
+        "BN159_0504",
+        "BN159_2478",
+        "BN159_2479",
+        "BN159_2480",
+        "BN159_2482",
+        "BN159_2483",
+        "BN159_2484"
+      ],
+      "sfi": [
+        "SFUL_3996"
+      ],
+      "src": [
+        "M271_09845"
+      ],
+      "slv": [
+        "SLIV_31415"
+      ],
+      "sgu": [
+        "SGLAU_28900",
+        "SGLAU_28930"
+      ],
+      "samb": [
+        "SAM23877_1355"
+      ],
+      "scz": [
+        "ABE83_16275"
+      ],
+      "spav": [
+        "Spa2297_04645"
+      ],
+      "sgs": [
+        "AVL59_19215"
+      ],
+      "strd": [
+        "NI25_18925",
+        "NI25_32825"
+      ],
+      "kau": [
+        "B6264_18525"
+      ],
+      "fra": [
+        "Francci3_0437"
+      ],
+      "fre": [
+        "Franean1_6189"
+      ],
+      "fal": [
+        "FRAAL0926"
+      ],
+      "sen": [
+        "SACE_4927"
+      ],
+      "ase": [
+        "ACPL_6150"
+      ],
+      "cai": [
+        "Caci_3552"
+      ],
+      "amr": [
+        "AM1_6083"
+      ],
+      "riv": [
+        "Riv7116_4485"
+      ],
+      "cthe": [
+        "Chro_3657"
+      ],
+      "cap": [
+        "CLDAP_18670"
+      ],
+      "ccz": [
+        "CCALI_00884"
+      ],
+      "rba": [
+        "RB1653"
+      ],
+      "pir": [
+        "VN12_12750"
+      ],
+      "pls": [
+        "VT03_06115"
+      ],
+      "fmr": [
+        "Fuma_06477"
+      ],
+      "ges": [
+        "VT84_18145"
+      ],
+      "abac": [
+        "LuPra_02345"
+      ],
+      "gba": [
+        "J421_4025"
+      ],
+      "rmr": [
+        "Rmar_2072"
+      ],
+      "rmg": [
+        "Rhom172_0794"
+      ],
+      "rbar": [
+        "AWN76_015905"
+      ],
+      "hgi": [
+        "ABY42_10695"
+      ],
+      "hlr": [
+        "HALLA_01030"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.19.49"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.19.49"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.19.49"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.19.49"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Dairi T",
+          "Nakano T",
+          "Aisaka K",
+          "Katsumata R",
+          "Hasegawa M."
+        ],
+        "title": "Cloning and nucleotide sequence of the gene responsible for chlorination of tetracycline.",
+        "journal": "Biosci. Biotechnol. Biochem. 59 (1995) 1099-106.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:7612997]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhu T",
+          "Cheng X",
+          "Liu Y",
+          "Deng Z",
+          "You D"
+        ],
+        "title": "Deciphering and engineering of the final step halogenase for improved chlortetracycline biosynthesis in industrial Streptomyces aureofaciens.",
+        "journal": "Metab. Eng. 19 (2013) 69-78.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:23800859]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

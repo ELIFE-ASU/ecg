@@ -1,0 +1,205 @@
+[
+  {
+    "entry_id": "1.14.13.234",
+    "name": "5a,11a-dehydrotetracycline 5-monooxygenase",
+    "names": [
+      "5a,11a-dehydrotetracycline 5-monooxygenase",
+      "oxyS (gene name)",
+      "12-dehydrotetracycline 5-monooxygenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "5a,11a-dehydrotetracycline,NADPH:oxygen oxidoreductase (5-hydroxylating)",
+    "reaction": "5a,11a-dehydrotetracycline + NADPH + H+ + O2 = 5a,11a-dehydrooxytetracycline + NADP+ + H2O [RN:R09198]",
+    "all_reac": "R09198",
+    "iubmb_reactions": [
+      "R09198"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "5a,11a-dehydrotetracycline [CPD:C03206]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "5a,11a-dehydrooxytetracycline [CPD:C18296]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from the bacterium Streptomyces rimosus, is bifunctional, catalysing two successive monooxygenation reactions. It starts by catalysing the stereospecific hydroxylation of anhydrotetracycline at C-6 (EC 1.14.13.38). If the released product is captured by EC 1.3.98.4, 5a,11a-dehydrotetracycline dehydrogenase (OxyR), it is reduced to tetracycline. However, if the released product is recaptured by OxyS, it performs an additional hydroxylation at C-5, producing 5a,11a-dehydrooxytetracycline, which, following the action of OxyR, becomes oxytetracycline.",
+    "pathways": {
+      "ec00253": "Tetracycline biosynthesis",
+      "ec01057": "Biosynthesis of type II polyketide products",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K14256": "anhydrotetracycline 6-monooxygenase / 5a,11a-dehydrotetracycline 5-monooxygenase"
+    },
+    "genes": {
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.234"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.234"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.234"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.234"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Binnie C",
+          "Warren M",
+          "Butler MJ"
+        ],
+        "title": "Cloning and heterologous expression in Streptomyces lividans of Streptomyces rimosus genes involved in oxytetracycline biosynthesis.",
+        "journal": "J. Bacteriol. 171 (1989) 887-95.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2914874]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Miller PA",
+          "Saturnelli A",
+          "Martin JH",
+          "Itscher LA",
+          "Bohonos N"
+        ],
+        "title": "A new family of tetracycline precursors. N-demethylanhydrotetracyclines.",
+        "journal": "Biochem. Biophys. Res. Commun. 16 (1964) 285-91.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:4959040]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Vancurova I",
+          "Volc J",
+          "Flieger M",
+          "Neuzil J",
+          "Novotna J",
+          "Vlach J",
+          "Behal V"
+        ],
+        "title": "Isolation of pure anhydrotetracycline oxygenase from Streptomyces aureofaciens.",
+        "journal": "Biochem. J. 253 (1988) 263-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3138982]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wang P",
+          "Bashiri G",
+          "Gao X",
+          "Sawaya MR",
+          "Tang Y"
+        ],
+        "title": "Uncovering the enzymes that catalyze the final steps in oxytetracycline biosynthesis.",
+        "journal": "J. Am. Chem. Soc. 135 (2013) 7138-41.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:23621493]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

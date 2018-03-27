@@ -1,0 +1,183 @@
+[
+  {
+    "entry_id": "1.14.15.9",
+    "name": "spheroidene monooxygenase",
+    "names": [
+      "spheroidene monooxygenase",
+      "CrtA",
+      "acyclic carotenoid 2-ketolase",
+      "spirilloxanthin monooxygenase",
+      "2-oxo-spirilloxanthin monooxygenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced iron-sulfur protein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "spheroidene,reduced-ferredoxin:oxygen oxidoreductase (spheroiden-2-one-forming)",
+    "reaction": "(1) spheroidene + 2 reduced ferredoxin [iron-sulfur] cluster + 2 O2 = spheroiden-2-one + 2 oxidized ferredoxin [iron-sulfur] cluster + 3 H2O (overall reaction) [RN:R07537]; (1a) spheroidene + reduced ferredoxin [iron-sulfur] cluster + O2 + 2H+ = 2-hydroxyspheroidene + oxidized ferredoxin [iron-sulfur] cluster + H2O; (1b) 2-hydroxyspheroidene + reduced ferredoxin [iron-sulfur] cluster + O2 + 2H+ = 2,2-dihydroxyspheroidene + oxidized ferredoxin [iron-sulfur] cluster + H2O; (1c) 2,2-dihydroxyspheroidene = spheroiden-2-one + H2O (spontaneous); (2) spirilloxanthin + 2 reduced ferredoxin [iron-sulfur] cluster + 2 O2 = 2-oxospirilloxanthin + 2 oxidized ferredoxin [iron-sulfur] cluster + 3 H2O (overall reaction) [RN:R07525]; (2a) spirilloxanthin + reduced ferredoxin [iron-sulfur] cluster + O2 + 2H+ = 2-hydroxyspirilloxanthin + oxidized ferredoxin [iron-sulfur] cluster + H2O; (2b) 2-hydroxyspirilloxanthin + reduced ferredoxin [iron-sulfur] cluster + O2 + 2H+ = 2,2-dihydroxyspirilloxanthin + oxidized ferredoxin [iron-sulfur] cluster + H2O; (2c) 2,2-dihydroxyspirilloxanthin = 2-oxospirilloxanthin + H2O (spontaneous); (3) 2-oxospirilloxanthin + 2 reduced ferredoxin [iron-sulfur] cluster + 2 O2 = 2,2'-dioxospirilloxanthin + 2 oxidized ferredoxin [iron-sulfur] cluster + 3 H2O (overall reaction) [RN:R07526]; (3a) 2-oxospirilloxanthin + reduced ferredoxin [iron-sulfur] cluster + O2 + 2H+ = 2'-hydroxy-2-oxospirilloxanthin + oxidized ferredoxin [iron-sulfur] cluster + H2O; (3b) 2'-hydroxy-2-oxospirilloxanthin + reduced ferredoxin [iron-sulfur] cluster + O2 + 2H+ = 2',2'-dihydroxy-2-oxospirilloxanthin + oxidized ferredoxin [iron-sulfur] cluster + H2O; (3c) 2',2'-dihydroxy-2-oxospirilloxanthin = 2,2'-dioxospirilloxanthin + H2O (spontaneous)",
+    "all_reac": "R07525 R07526 R07537; (other) R07538",
+    "iubmb_reactions": [
+      "R07525 R07526 R07537"
+    ],
+    "kegg_reactions": [
+      "R07538"
+    ],
+    "substrates": [
+      "spheroidene [CPD:C15900]",
+      "reduced ferredoxin [iron-sulfur] cluster [CPD:C00138]",
+      "O2 [CPD:C00007]",
+      "2H+",
+      "2-hydroxyspheroidene",
+      "2,2-dihydroxyspheroidene",
+      "spirilloxanthin [CPD:C15881]",
+      "2-hydroxyspirilloxanthin",
+      "2,2-dihydroxyspirilloxanthin",
+      "2-oxospirilloxanthin [CPD:C15884]",
+      "2'-hydroxy-2-oxospirilloxanthin",
+      "2',2'-dihydroxy-2-oxospirilloxanthin"
+    ],
+    "products": [
+      "spheroiden-2-one [CPD:C15903]",
+      "oxidized ferredoxin [iron-sulfur] cluster [CPD:C00139]",
+      "H2O [CPD:C00001]",
+      "2-hydroxyspheroidene",
+      "2,2-dihydroxyspheroidene",
+      "2-oxospirilloxanthin [CPD:C15884]",
+      "2-hydroxyspirilloxanthin",
+      "2,2-dihydroxyspirilloxanthin",
+      "2,2'-dioxospirilloxanthin [CPD:C15885]",
+      "2'-hydroxy-2-oxospirilloxanthin",
+      "2',2'-dihydroxy-2-oxospirilloxanthin"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is involved in spheroidenone biosynthesis and in 2,2'-dioxospirilloxanthin biosynthesis. The enzyme from Rhodobacter sphaeroides contains heme at its active site [1].",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K09847": "spheroidene monooxygenase"
+    },
+    "genes": {
+      "rsp": [
+        "RSP_0272"
+      ],
+      "rsh": [
+        "Rsph17029_1915"
+      ],
+      "rsq": [
+        "Rsph17025_1023"
+      ],
+      "rsk": [
+        "RSKD131_1598"
+      ],
+      "rcp": [
+        "RCAP_rcc00678"
+      ],
+      "jan": [
+        "Jann_0144"
+      ],
+      "rde": [
+        "RD1_0121"
+      ],
+      "rli": [
+        "RLO149_p940060"
+      ],
+      "dsh": [
+        "Dshi_3501"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.15.9"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.15.9"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.15.9"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.15.9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Lee PC",
+          "Holtzapple E",
+          "Schmidt-Dannert C"
+        ],
+        "title": "Novel activity of Rhodobacter sphaeroides spheroidene monooxygenase CrtA expressed in Escherichia coli.",
+        "journal": "Appl. Environ. Microbiol. 76 (2010) 7328-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:20851979]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gerjets T",
+          "Steiger S",
+          "Sandmann G"
+        ],
+        "title": "Catalytic properties of the expressed acyclic carotenoid 2-ketolases from Rhodobacter capsulatus and Rubrivivax gelatinosus.",
+        "journal": "Biochim. Biophys. Acta. 1791 (2009) 125-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:19136077]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

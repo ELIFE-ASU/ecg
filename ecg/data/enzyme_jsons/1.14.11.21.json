@@ -1,0 +1,261 @@
+[
+  {
+    "entry_id": "1.14.11.21",
+    "name": "clavaminate synthase",
+    "names": [
+      "clavaminate synthase",
+      "clavaminate synthase 2",
+      "clavaminic acid synthase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With 2-oxoglutarate as one donor, and incorporation of one atom of oxygen into each donor"
+    ],
+    "sysname": "deoxyamidinoproclavaminate,2-oxoglutarate:oxygen oxidoreductase (3-hydroxylating)",
+    "reaction": "(1) deoxyamidinoproclavaminate + 2-oxoglutarate + O2 = amidinoproclavaminate + succinate + CO2 [RN:R05466]; (2) proclavaminate + 2-oxoglutarate + O2 = dihydroclavaminate + succinate + CO2 + H2O [RN:R05468]; (3) dihydroclavaminate + 2-oxoglutarate + O2 = clavaminate + succinate + CO2 + H2O [RN:R05469]",
+    "all_reac": "R05466 R05468 R05469",
+    "iubmb_reactions": [
+      "R05466 R05468 R05469"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "deoxyamidinoproclavaminate [CPD:C06656]",
+      "2-oxoglutarate [CPD:C00026]",
+      "O2 [CPD:C00007]",
+      "proclavaminate [CPD:C06658]",
+      "dihydroclavaminate [CPD:C06659]"
+    ],
+    "products": [
+      "amidinoproclavaminate [CPD:C06657]",
+      "succinate [CPD:C00042]",
+      "CO2 [CPD:C00011]",
+      "dihydroclavaminate [CPD:C06659]",
+      "H2O [CPD:C00001]",
+      "clavaminate [CPD:C06660]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contains nonheme iron. Catalyses three separate oxidative reactions in the pathway for the biosythesis of the beta-lactamase inhibitor clavulanate in Streptomyces clavuligerus. The first step (hydroxylation) is separated from the latter two (oxidative cyclization and desaturation) by the action of EC 3.5.3.22, proclavaminate amidinohydrolase. The three reactions are all catalysed at the same nonheme iron site.",
+    "pathways": {
+      "ec00331": "Clavulanic acid biosynthesis",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K12675": "clavaminate synthase"
+    },
+    "genes": {
+      "sfa": [
+        "Sfla_0558"
+      ],
+      "strp": [
+        "F750_6321"
+      ],
+      "sclf": [
+        "BB341_13950"
+      ],
+      "kab": [
+        "B7C62_18900"
+      ],
+      "kau": [
+        "B6264_26740"
+      ],
+      "svi": [
+        "Svir_33410"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.11.21"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.11.21"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.11.21"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.11.21"
+      ],
+      "CAS": [
+        "122799-56-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Salowe SP",
+          "Krol WJ",
+          "Iwata-Reuyl D",
+          "Townsend CA."
+        ],
+        "title": "Elucidation of the order of oxidations and identification of an intermediate in the multistep clavaminate synthase reaction.",
+        "journal": "Biochemistry. 30 (1991) 2281-92.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:1998687]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhou",
+          "J.",
+          "Gunsior",
+          "M.",
+          "Bachmann",
+          "B.O.",
+          "Townsend",
+          "C.A. and Solomon",
+          "E.I."
+        ],
+        "title": "Substrate binding to the alpha-ketoglutarate-dependent non-heme iron enzyme clavaminate synthase 2: Coupling mechanism of oxidative decarboxylation and hydroxylation.",
+        "journal": "J. Am. Chem. Soc. 120 (1998) 13539-13540.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhang Z",
+          "Ren J",
+          "Stammers DK",
+          "Baldwin JE",
+          "Harlos K",
+          "Schofield CJ."
+        ],
+        "title": "Structural origins of the selectivity of the trifunctional oxygenase clavaminic acid synthase.",
+        "journal": "Nat. Struct. Biol. 7 (2000) 127-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10655615]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhou J",
+          "Kelly WL",
+          "Bachmann BO",
+          "Gunsior M",
+          "Townsend CA",
+          "Solomon EI."
+        ],
+        "title": "Spectroscopic studies of substrate interactions with clavaminate synthase 2, a multifunctional alpha-KG-dependent non-heme iron enzyme: correlation with mechanisms and reactivities.",
+        "journal": "J. Am. Chem. Soc. 123 (2001) 7388-98.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:11472170]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Townsend CA."
+        ],
+        "title": "New reactions in clavulanic acid biosynthesis.",
+        "journal": "Curr. Opin. Chem. Biol. 6 (2002) 583-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:12413541]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,649 @@
+[
+  {
+    "entry_id": "1.5.3.17",
+    "name": "non-specific polyamine oxidase",
+    "names": [
+      "non-specific polyamine oxidase",
+      "polyamine oxidase (ambiguous)",
+      "Fms1",
+      "AtPAO3"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH group of donors;",
+      "With oxygen as acceptor"
+    ],
+    "sysname": "polyamine:oxygen oxidoreductase (3-aminopropanal or 3-acetamidopropanal-forming)",
+    "reaction": "(1) spermine + O2 + H2O = spermidine + 3-aminopropanal + H2O2 [RN:R09076]; (2) spermidine + O2 + H2O = putrescine + 3-aminopropanal + H2O2 [RN:R09077]; (3) N1-acetylspermine + O2 + H2O = spermidine + 3-acetamidopropanal + H2O2 [RN:R03899]; (4) N1-acetylspermidine + O2 + H2O = putrescine + 3-acetamidopropanal + H2O2 [RN:R09074]",
+    "all_reac": "R03899 R09074 R09076 R09077",
+    "iubmb_reactions": [
+      "R03899 R09074 R09076 R09077"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "spermine [CPD:C00750]",
+      "O2 [CPD:C00007]",
+      "H2O [CPD:C00001]",
+      "spermidine [CPD:C00315]",
+      "N1-acetylspermine [CPD:C02567]",
+      "N1-acetylspermidine [CPD:C00612]"
+    ],
+    "products": [
+      "spermidine [CPD:C00315]",
+      "3-aminopropanal [CPD:C05665]",
+      "H2O2 [CPD:C00027]",
+      "putrescine [CPD:C00134]",
+      "3-acetamidopropanal [CPD:C18170]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A flavoprotein (FAD). The non-specific polyamine oxidases may differ from each other considerably. The enzyme from Saccharomyces cerevisiae shows a rather broad specificity and also oxidizes N8-acetylspermidine [3]. The enzyme from Ascaris suum shows high activity with spermine and spermidine, but also oxidizes norspermine [2]. The enzyme from Arabidopsis thaliana shows high activity with spermidine, but also oxidizes other polyamines [1]. The specific polyamine oxidases are classified as EC 1.5.3.13 (N1-acetylpolyamine oxidase), EC 1.5.3.14 (polyamine oxidase (propane-1,3-diamine-forming)), EC 1.5.3.15 (N8-acetylspermidine oxidase (propane-1,3-diamine-forming)) and EC 1.5.3.16 (spermine oxidase).",
+    "pathways": {
+      "ec00330": "Arginine and proline metabolism",
+      "ec00410": "beta-Alanine metabolism"
+    },
+    "orthologs": {
+      "K13367": "polyamine oxidase",
+      "K17839": "polyamine oxidase"
+    },
+    "genes": {
+      "ath": [
+        "AT1G65840",
+        "AT2G43020",
+        "AT3G59050"
+      ],
+      "aly": [
+        "ARALYDRAFT_483403",
+        "ARALYDRAFT_486367",
+        "ARALYDRAFT_894198"
+      ],
+      "crb": [
+        "CARUB_v10019588mg",
+        "CARUB_v10020181mg",
+        "CARUB_v10023090mg"
+      ],
+      "csat": [
+        "104699419",
+        "104701179",
+        "104750367",
+        "104781816",
+        "104782814",
+        "104785057",
+        "104787599",
+        "104788143",
+        "104792182",
+        "109129483"
+      ],
+      "eus": [
+        "EUTSA_v10005954mg",
+        "EUTSA_v10016573mg",
+        "EUTSA_v10018447mg"
+      ],
+      "brp": [
+        "103830193",
+        "103852299",
+        "103858041",
+        "103866035",
+        "103866687"
+      ],
+      "bna": [
+        "106351646",
+        "106351654",
+        "106353169",
+        "106381329",
+        "106385479",
+        "106391704",
+        "106421166",
+        "106428226",
+        "106434498",
+        "106441217",
+        "111211981"
+      ],
+      "boe": [
+        "106296723",
+        "106318716",
+        "106332596",
+        "106333466",
+        "106336574",
+        "106336734"
+      ],
+      "thj": [
+        "104803407",
+        "104805661",
+        "104821208",
+        "104822137"
+      ],
+      "cpap": [
+        "110815019",
+        "110815049",
+        "110815461"
+      ],
+      "cit": [
+        "102624788",
+        "102625282",
+        "102627867"
+      ],
+      "cic": [
+        "CICLE_v10011567mg",
+        "CICLE_v10031239mg"
+      ],
+      "tcc": [
+        "18612191"
+      ],
+      "gra": [
+        "105763643",
+        "105790392"
+      ],
+      "ghi": [
+        "107916881",
+        "107925953",
+        "107944271",
+        "107945473"
+      ],
+      "egr": [
+        "104422211",
+        "104442425"
+      ],
+      "gmx": [
+        "100782576",
+        "100785056",
+        "100790521",
+        "100791090",
+        "100798561",
+        "100799631",
+        "100806878",
+        "100811255",
+        "106799305"
+      ],
+      "pvu": [
+        "PHAVU_006G028600g",
+        "PHAVU_006G085900g",
+        "PHAVU_008G196900g",
+        "PHAVU_008G241700g"
+      ],
+      "vra": [
+        "106753045",
+        "106765160",
+        "106765271",
+        "106776036"
+      ],
+      "var": [
+        "108337267",
+        "108338488",
+        "108343091",
+        "108343161"
+      ],
+      "ccaj": [
+        "109790272",
+        "109795185",
+        "109795282"
+      ],
+      "mtr": [
+        "MTR_3g064370",
+        "MTR_3g449620",
+        "MTR_5g087920",
+        "MTR_5g090300"
+      ],
+      "cam": [
+        "101488772",
+        "101489745",
+        "101514322"
+      ],
+      "adu": [
+        "107458090",
+        "107480998",
+        "107496522"
+      ],
+      "aip": [
+        "107610087",
+        "107631405"
+      ],
+      "lja": [
+        "Lj2g3v3070860.1",
+        "Lj2g3v3070870.1",
+        "Lj2g3v3070870.2",
+        "Lj6g3v0366930.1",
+        "Lj6g3v0933770.1"
+      ],
+      "lang": [
+        "109330188",
+        "109339566",
+        "109356838"
+      ],
+      "fve": [
+        "101293234",
+        "101293991"
+      ],
+      "pper": [
+        "18782544",
+        "18782903"
+      ],
+      "pmum": [
+        "103327360",
+        "103328951"
+      ],
+      "mdm": [
+        "103405136",
+        "103405900",
+        "103426256",
+        "103443150",
+        "103444375"
+      ],
+      "pxb": [
+        "103933878",
+        "103947391",
+        "103956795",
+        "103956798",
+        "103959927",
+        "103965587"
+      ],
+      "zju": [
+        "107416625"
+      ],
+      "csv": [
+        "101205765",
+        "101213852"
+      ],
+      "cmo": [
+        "103493008",
+        "103502485"
+      ],
+      "mcha": [
+        "111005782",
+        "111008343"
+      ],
+      "rcu": [
+        "8273410",
+        "8277860"
+      ],
+      "jcu": [
+        "105634456",
+        "105634459",
+        "105636130"
+      ],
+      "hbr": [
+        "110638926",
+        "110638949",
+        "110654238",
+        "110666897"
+      ],
+      "pop": [
+        "POPTR_0002s05620g",
+        "POPTR_0004s07430g",
+        "POPTR_0005s22880g",
+        "POPTR_0017s01520g"
+      ],
+      "vvi": [
+        "100245491",
+        "100250153"
+      ],
+      "sly": [
+        "101252005",
+        "101258232",
+        "101260014",
+        "101264170"
+      ],
+      "spen": [
+        "107007559",
+        "107011311",
+        "107012957",
+        "107026194"
+      ],
+      "sot": [
+        "102591553",
+        "102594410",
+        "102598184",
+        "102605222"
+      ],
+      "cann": [
+        "107841896",
+        "107859655",
+        "107878076"
+      ],
+      "nta": [
+        "107761719",
+        "107762338",
+        "107764894",
+        "107775720",
+        "107775961",
+        "107799822",
+        "107800087",
+        "107812697",
+        "107831274"
+      ],
+      "nsy": [
+        "104210410",
+        "104213745",
+        "104226820",
+        "104230337"
+      ],
+      "nto": [
+        "104086117",
+        "104093043",
+        "104097366",
+        "104107681"
+      ],
+      "ini": [
+        "109167577",
+        "109172637",
+        "109187541"
+      ],
+      "sind": [
+        "105167429",
+        "105175973",
+        "105178573"
+      ],
+      "han": [
+        "110882585",
+        "110912497",
+        "110921258"
+      ],
+      "bvg": [
+        "104891257",
+        "104902678"
+      ],
+      "soe": [
+        "110785198",
+        "110798217"
+      ],
+      "nnu": [
+        "104588475",
+        "104607001",
+        "104610796"
+      ],
+      "osa": [
+        "4337046",
+        "4337360"
+      ],
+      "dosa": [
+        "Os04t0623300-01",
+        "Os04t0671200-01",
+        "Os04t0671300-01"
+      ],
+      "obr": [
+        "102710582",
+        "102711526",
+        "102711798"
+      ],
+      "bdi": [
+        "100824039",
+        "100840588",
+        "100841193"
+      ],
+      "sbi": [
+        "8074727",
+        "8082588",
+        "8082590"
+      ],
+      "zma": [
+        "100191603",
+        "100384522",
+        "101027113",
+        "103631209",
+        "103631435",
+        "103631626",
+        "103642073"
+      ],
+      "sita": [
+        "101753072",
+        "101753473",
+        "101768863"
+      ],
+      "pda": [
+        "103699682",
+        "103703721",
+        "103705589",
+        "103717571",
+        "103723706"
+      ],
+      "egu": [
+        "105033992",
+        "105035498",
+        "105035697",
+        "105058904",
+        "105059362"
+      ],
+      "mus": [
+        "103971799",
+        "103973550",
+        "103983690",
+        "103998527"
+      ],
+      "dct": [
+        "110099374",
+        "110101011",
+        "110103987"
+      ],
+      "atr": [
+        "18427217",
+        "18437742"
+      ],
+      "smo": [
+        "SELMODRAFT_22558",
+        "SELMODRAFT_22584",
+        "SELMODRAFT_270153",
+        "SELMODRAFT_271685",
+        "SELMODRAFT_439374",
+        "SELMODRAFT_440258"
+      ],
+      "ppp": [
+        "PHYPADRAFT_205047",
+        "PHYPADRAFT_221086"
+      ],
+      "sce": [
+        "YMR020W"
+      ],
+      "ago": [
+        "AGOS_ABR057W"
+      ],
+      "erc": [
+        "Ecym_4580"
+      ],
+      "kla": [
+        "KLLA0E07789g"
+      ],
+      "lth": [
+        "KLTH0D07942g"
+      ],
+      "zro": [
+        "ZYRO0E06314g"
+      ],
+      "cgr": [
+        "CAGL0M07612g"
+      ],
+      "ncs": [
+        "NCAS_0A12730"
+      ],
+      "ndi": [
+        "NDAI_0B01530"
+      ],
+      "tdl": [
+        "TDEL_0B06550"
+      ],
+      "kaf": [
+        "KAFR_0A02140"
+      ],
+      "dha": [
+        "DEHA2A02552g"
+      ],
+      "pic": [
+        "PICST_28515",
+        "PICST_57813"
+      ],
+      "pgu": [
+        "PGUG_01595"
+      ],
+      "spaa": [
+        "SPAPADRAFT_59154",
+        "SPAPADRAFT_72688"
+      ],
+      "lel": [
+        "LELG_04349"
+      ],
+      "cal": [
+        "CAALFM_C402040WA",
+        "CAALFM_CR09270CA"
+      ],
+      "ctp": [
+        "CTRG_00245",
+        "CTRG_05911"
+      ],
+      "cot": [
+        "CORT_0G01470",
+        "CORT_0G01480"
+      ],
+      "cdu": [
+        "CD36_34620",
+        "CD36_41930"
+      ],
+      "cten": [
+        "CANTEDRAFT_112827"
+      ],
+      "clu": [
+        "CLUG_02138",
+        "CLUG_02198"
+      ],
+      "clus": [
+        "A9F13_02g01056",
+        "A9F13_02g01573"
+      ],
+      "caur": [
+        "QG37_03853"
+      ],
+      "pdp": [
+        "PDIP_27570"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_110027"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_86444"
+      ],
+      "aaf": [
+        "AURANDRAFT_65354"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.5.3.17"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.5.3.17"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.5.3.17"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.5.3.17"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Moschou PN",
+          "Sanmartin M",
+          "Andriopoulou AH",
+          "Rojo E",
+          "Sanchez-Serrano JJ",
+          "Roubelakis-Angelakis KA"
+        ],
+        "title": "Bridging the gap between plant and mammalian polyamine catabolism: a novel peroxisomal polyamine oxidase responsible for a full back-conversion pathway in Arabidopsis.",
+        "journal": "Plant. Physiol. 147 (2008) 1845-57.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:18583528]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Muller S",
+          "Walter RD"
+        ],
+        "title": "Purification and characterization of polyamine oxidase from Ascaris suum.",
+        "journal": "Biochem. J. 283 ( Pt 1) (1992) 75-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:1567380]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Landry J",
+          "Sternglanz R"
+        ],
+        "title": "Yeast Fms1 is a FAD-utilizing polyamine oxidase.",
+        "journal": "Biochem. Biophys. Res. Commun. 303 (2003) 771-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12670477]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

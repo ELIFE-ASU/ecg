@@ -1,0 +1,587 @@
+[
+  {
+    "entry_id": "1.14.14.29",
+    "name": "25/26-hydroxycholesterol 7alpha-hydroxylase",
+    "names": [
+      "25/26-hydroxycholesterol 7alpha-hydroxylase",
+      "25-hydroxycholesterol 7alpha-monooxygenase",
+      "CYP7B1",
+      "CYP7B1 oxysterol 7alpha-hydroxylase",
+      "27-hydroxycholesterol 7-monooxygenase",
+      "27-hydroxycholesterol 7alpha-hydroxylase",
+      "cholest-5-ene-3beta,25-diol,NADPH:oxygen oxidoreductase (7alpha-hydroxylating)",
+      "25-hydroxycholesterol 7alpha-hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "cholest-5-ene-3beta,25/26-diol,[NADPH---hemoprotein reductase]:oxygen oxidoreductase (7alpha-hydroxylating)",
+    "reaction": "(1) cholest-5-ene-3beta,25-diol + [reduced NADPH---hemoprotein reductase] + O2 = cholest-5-ene-3beta,7alpha,25-triol + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R07209]; (2) (25R)-cholest-5-ene-3beta,26-diol + [reduced NADPH---hemoprotein reductase] + O2 = (25R)-cholest-5-ene-3beta,7alpha,26-triol + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R07372]",
+    "all_reac": "R07209 R07372; (other) R08727 R08943",
+    "iubmb_reactions": [
+      "R07209 R07372"
+    ],
+    "kegg_reactions": [
+      "R08727 R08943"
+    ],
+    "substrates": [
+      "cholest-5-ene-3beta,25-diol [CPD:C15519]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]",
+      "(25R)-cholest-5-ene-3beta,26-diol"
+    ],
+    "products": [
+      "cholest-5-ene-3beta,7alpha,25-triol [CPD:C15520]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]",
+      "(25R)-cholest-5-ene-3beta,7alpha,26-triol"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A P-450 (heme-thiolate) protein. Unlike EC 1.14.14.26, 24-hydroxycholesterol 7alpha-monooxygenase, which is specific for its oxysterol substrate, this enzyme can also metabolize the oxysterols 24,25-epoxycholesterol, 22-hydroxycholesterol and 24-hydroxycholesterol, but to a lesser extent [2]. The direct electron donor to the enzyme is EC 1.6.2.4, NADPH---hemoprotein reductase.",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec00140": "Steroid hormone biosynthesis"
+    },
+    "orthologs": {
+      "K07430": "25/26-hydroxycholesterol 7alpha-hydroxylase"
+    },
+    "genes": {
+      "hsa": [
+        "9420"
+      ],
+      "ptr": [
+        "743817"
+      ],
+      "pps": [
+        "100995737"
+      ],
+      "ggo": [
+        "101124249"
+      ],
+      "pon": [
+        "100439228"
+      ],
+      "nle": [
+        "100586163"
+      ],
+      "mcc": [
+        "710188"
+      ],
+      "mcf": [
+        "102132453"
+      ],
+      "csab": [
+        "103236887"
+      ],
+      "rro": [
+        "104672629"
+      ],
+      "rbb": [
+        "108528811"
+      ],
+      "cjc": [
+        "100385287"
+      ],
+      "sbq": [
+        "101049402"
+      ],
+      "mmu": [
+        "13123"
+      ],
+      "rno": [
+        "25429"
+      ],
+      "cge": [
+        "100754734"
+      ],
+      "ngi": [
+        "103737731"
+      ],
+      "hgl": [
+        "101721563"
+      ],
+      "ccan": [
+        "109687466"
+      ],
+      "ocu": [
+        "100343291"
+      ],
+      "tup": [
+        "102468171"
+      ],
+      "cfa": [
+        "486973"
+      ],
+      "aml": [
+        "100477302"
+      ],
+      "umr": [
+        "103677513"
+      ],
+      "oro": [
+        "101371391"
+      ],
+      "fca": [
+        "101086873"
+      ],
+      "ptg": [
+        "102970913"
+      ],
+      "aju": [
+        "106985755"
+      ],
+      "bta": [
+        "529552"
+      ],
+      "bom": [
+        "102276071"
+      ],
+      "biu": [
+        "109568550"
+      ],
+      "phd": [
+        "102328103"
+      ],
+      "chx": [
+        "102191152"
+      ],
+      "oas": [
+        "101119648"
+      ],
+      "ssc": [
+        "100738003"
+      ],
+      "cfr": [
+        "102508530"
+      ],
+      "cdk": [
+        "105094653"
+      ],
+      "bacu": [
+        "103014598"
+      ],
+      "lve": [
+        "103087141"
+      ],
+      "ecb": [
+        "100064741"
+      ],
+      "epz": [
+        "103548391"
+      ],
+      "eai": [
+        "106834315"
+      ],
+      "myb": [
+        "102240967"
+      ],
+      "myd": [
+        "102767325"
+      ],
+      "hai": [
+        "109394857"
+      ],
+      "rss": [
+        "109434027"
+      ],
+      "pale": [
+        "102888293"
+      ],
+      "lav": [
+        "100673174"
+      ],
+      "tmu": [
+        "101359614"
+      ],
+      "mdo": [
+        "100029487"
+      ],
+      "shr": [
+        "100920521"
+      ],
+      "oaa": [
+        "100081634"
+      ],
+      "gga": [
+        "420164"
+      ],
+      "mgp": [
+        "100541042"
+      ],
+      "cjo": [
+        "107310250"
+      ],
+      "apla": [
+        "101791081"
+      ],
+      "acyg": [
+        "106039057"
+      ],
+      "tgu": [
+        "100224987"
+      ],
+      "gfr": [
+        "102042075"
+      ],
+      "fab": [
+        "101813216"
+      ],
+      "phi": [
+        "102104989"
+      ],
+      "pmaj": [
+        "107200525"
+      ],
+      "ccw": [
+        "104692847"
+      ],
+      "fpg": [
+        "101918669"
+      ],
+      "fch": [
+        "102060263"
+      ],
+      "clv": [
+        "102096682"
+      ],
+      "egz": [
+        "104122045"
+      ],
+      "aam": [
+        "106494420"
+      ],
+      "asn": [
+        "102386823"
+      ],
+      "amj": [
+        "102562782"
+      ],
+      "pss": [
+        "102462148"
+      ],
+      "cmy": [
+        "102941409"
+      ],
+      "cpic": [
+        "101932491"
+      ],
+      "acs": [
+        "100564185"
+      ],
+      "pvt": [
+        "110089029"
+      ],
+      "pbi": [
+        "103059038"
+      ],
+      "gja": [
+        "107110865"
+      ],
+      "xla": [
+        "108719274"
+      ],
+      "xtr": [
+        "100145642"
+      ],
+      "npr": [
+        "108798116"
+      ],
+      "dre": [
+        "570455"
+      ],
+      "srx": [
+        "107721742",
+        "107749124"
+      ],
+      "sanh": [
+        "107659553",
+        "107690180"
+      ],
+      "sgh": [
+        "107566988",
+        "107602637"
+      ],
+      "ccar": [
+        "109070086",
+        "109073141"
+      ],
+      "ipu": [
+        "108270649"
+      ],
+      "amex": [
+        "103031147"
+      ],
+      "tru": [
+        "101065551"
+      ],
+      "tng": [
+        "GSTEN00005656G001",
+        "GSTEN00010553G001"
+      ],
+      "lco": [
+        "104937751"
+      ],
+      "mze": [
+        "101467563"
+      ],
+      "ola": [
+        "101173499"
+      ],
+      "xma": [
+        "102223762"
+      ],
+      "pret": [
+        "103460470"
+      ],
+      "csem": [
+        "103398716"
+      ],
+      "lcf": [
+        "108884884"
+      ],
+      "hcq": [
+        "109518823"
+      ],
+      "bpec": [
+        "110164336"
+      ],
+      "sasa": [
+        "106569045",
+        "106599438"
+      ],
+      "els": [
+        "105009441"
+      ],
+      "sfm": [
+        "108937483"
+      ],
+      "lcm": [
+        "102345159"
+      ],
+      "cmk": [
+        "103180767"
+      ],
+      "cin": [
+        "100184784"
+      ],
+      "myi": [
+        "110452653"
+      ],
+      "lak": [
+        "106166062"
+      ],
+      "bze": [
+        "COCCADRAFT_32306"
+      ],
+      "bsc": [
+        "COCSADRAFT_343799"
+      ],
+      "bor": [
+        "COCMIDRAFT_95995"
+      ],
+      "psq": [
+        "PUNSTDRAFT_143304"
+      ],
+      "sla": [
+        "SERLADRAFT_459654"
+      ],
+      "fcy": [
+        "FRACYDRAFT_247905"
+      ],
+      "spar": [
+        "SPRG_08902",
+        "SPRG_22273"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.29"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.29"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.29"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.29"
+      ],
+      "CAS": [
+        "149316-80-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Kumiko",
+          "O.M.",
+          "Budai",
+          "K. and Javitt",
+          "N.B."
+        ],
+        "title": "Cholesterol and 27-hydroxycholesterol 7alpha-hydroxylation: evidence for two different enzymes.",
+        "journal": "J. Lipid Res. 34 (1993) 581-588.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Toll A",
+          "Wikvall K",
+          "Sudjana-Sugiaman E",
+          "Kondo KH",
+          "Bjorkhem I."
+        ],
+        "title": "7 alpha hydroxylation of 25-hydroxycholesterol in liver microsomes. Evidence that the enzyme involved is different from cholesterol 7 alpha-hydroxylase.",
+        "journal": "Eur. J. Biochem. 224 (1994) 309-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7925343]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Li-Hawkins J",
+          "Lund EG",
+          "Bronson AD",
+          "Russell DW."
+        ],
+        "title": "Expression cloning of an oxysterol 7alpha-hydroxylase selective for 24-hydroxycholesterol.",
+        "journal": "J. Biol. Chem. 275 (2000) 16543-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:10748047]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ren S",
+          "Marques D",
+          "Redford K",
+          "Hylemon PB",
+          "Gil G",
+          "Vlahcevic ZR",
+          "Pandak WM."
+        ],
+        "title": "Regulation of oxysterol 7alpha-hydroxylase (CYP7B1) in the rat.",
+        "journal": "Metabolism. 52 (2003) 636-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:12759897]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Russell DW."
+        ],
+        "title": "The enzymes, regulation, and genetics of bile acid synthesis.",
+        "journal": "Annu. Rev. Biochem. 72 (2003) 137-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:12543708]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

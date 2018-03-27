@@ -1,0 +1,882 @@
+[
+  {
+    "entry_id": "2.7.11.15",
+    "name": "beta-adrenergic-receptor kinase",
+    "names": [
+      "beta-adrenergic-receptor kinase",
+      "ATP:beta-adrenergic-receptor phosphotransferase",
+      "[beta-adrenergic-receptor] kinase",
+      "beta-adrenergic receptor-specific kinase",
+      "beta-AR kinase",
+      "beta-ARK",
+      "beta-ARK 1",
+      "beta-ARK 2",
+      "beta-receptor kinase",
+      "GRK2",
+      "GRK3",
+      "beta-adrenergic-receptor kinase (phosphorylating)",
+      "beta2ARK",
+      "betaARK1",
+      "beta-adrenoceptor kinase",
+      "beta-adrenoceptor kinase 1",
+      "beta-adrenoceptor kinase 2",
+      "ADRBK1",
+      "BARK1",
+      "adrenergic receptor kinase",
+      "STK15"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring phosphorus-containing groups;",
+      "Protein-serine/threonine kinases"
+    ],
+    "sysname": "ATP:[beta-adrenergic receptor] phosphotransferase",
+    "reaction": "ATP + [beta-adrenergic receptor] = ADP + phospho-[beta-adrenergic receptor] [RN:R03274]",
+    "all_reac": "R03274",
+    "iubmb_reactions": [
+      "R03274"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "[beta-adrenergic receptor] [CPD:C01141]"
+    ],
+    "products": [
+      "ADP [CPD:C00008]",
+      "phospho-beta-adrenergic receptor [CPD:C04141]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires G-protein for activation and therefore belongs to the family of G-protein-dependent receptor kinases (GRKs). Acts on the agonist-occupied form of the receptor; also phosphorylates rhodopsin, but more slowly. Does not act on casein or histones. The enzyme is inhibited by Zn2+ and digitonin but is unaffected by cyclic-AMP (cf. EC 2.7.11.14, rhodopsin kinase and EC 2.7.11.16, G-protein-coupled receptor kinase).",
+    "pathways": {
+    },
+    "orthologs": {
+      "K00910": "beta-adrenergic-receptor kinase"
+    },
+    "genes": {
+      "hsa": [
+        "156",
+        "157"
+      ],
+      "ptr": [
+        "100614029",
+        "451363"
+      ],
+      "pps": [
+        "100984800",
+        "100991802"
+      ],
+      "ggo": [
+        "101140574",
+        "101148325"
+      ],
+      "pon": [
+        "100454669",
+        "100461893"
+      ],
+      "nle": [
+        "100582671",
+        "100604826",
+        "105737617"
+      ],
+      "mcc": [
+        "714510",
+        "721754"
+      ],
+      "mcf": [
+        "102141861",
+        "102141926"
+      ],
+      "csab": [
+        "103219132",
+        "103223079"
+      ],
+      "rro": [
+        "104664749",
+        "104671949"
+      ],
+      "rbb": [
+        "108515962",
+        "108518610"
+      ],
+      "cjc": [
+        "100396838"
+      ],
+      "sbq": [
+        "101027803",
+        "101049133"
+      ],
+      "mmu": [
+        "110355",
+        "320129"
+      ],
+      "rno": [
+        "25238",
+        "25372"
+      ],
+      "cge": [
+        "100761290",
+        "100762552"
+      ],
+      "ngi": [
+        "103725575",
+        "103746714"
+      ],
+      "hgl": [
+        "101708742",
+        "101708906"
+      ],
+      "ccan": [
+        "109684472",
+        "109690706",
+        "109701375"
+      ],
+      "ocu": [
+        "100349708",
+        "103345045"
+      ],
+      "tup": [
+        "102482004",
+        "102499442"
+      ],
+      "cfa": [
+        "483701",
+        "486327"
+      ],
+      "aml": [
+        "100469854",
+        "100475417"
+      ],
+      "umr": [
+        "103659256",
+        "103679607"
+      ],
+      "oro": [
+        "101384757",
+        "101385645"
+      ],
+      "fca": [
+        "101090393",
+        "101101082"
+      ],
+      "ptg": [
+        "102957039",
+        "102970752"
+      ],
+      "aju": [
+        "106971185",
+        "106982294"
+      ],
+      "bta": [
+        "282136",
+        "282682"
+      ],
+      "bom": [
+        "102286310",
+        "102288247"
+      ],
+      "biu": [
+        "109554452",
+        "109571286"
+      ],
+      "phd": [
+        "102322462",
+        "102323551"
+      ],
+      "chx": [
+        "102180735",
+        "102185296"
+      ],
+      "oas": [
+        "101108265",
+        "101117366"
+      ],
+      "ssc": [
+        "100156449",
+        "100513842"
+      ],
+      "cfr": [
+        "102505202",
+        "102523137"
+      ],
+      "cdk": [
+        "105099520",
+        "105104436"
+      ],
+      "bacu": [
+        "103005732",
+        "103015958",
+        "103019615"
+      ],
+      "lve": [
+        "103073421",
+        "103076247"
+      ],
+      "ecb": [
+        "100059001",
+        "100065495"
+      ],
+      "epz": [
+        "103550032",
+        "103559830"
+      ],
+      "eai": [
+        "106833505",
+        "106841709"
+      ],
+      "myb": [
+        "102243341",
+        "102248143"
+      ],
+      "myd": [
+        "102761774",
+        "102764962"
+      ],
+      "hai": [
+        "109384296",
+        "109394134"
+      ],
+      "rss": [
+        "109450370",
+        "109460327"
+      ],
+      "pale": [
+        "102881239",
+        "102893733"
+      ],
+      "lav": [
+        "100666578",
+        "100671884"
+      ],
+      "tmu": [
+        "101346329",
+        "101357163"
+      ],
+      "mdo": [
+        "100009844"
+      ],
+      "shr": [
+        "100913578"
+      ],
+      "oaa": [
+        "100078284",
+        "100090102"
+      ],
+      "gga": [
+        "416904",
+        "426000"
+      ],
+      "mgp": [
+        "100541374",
+        "100545380"
+      ],
+      "cjo": [
+        "107314190",
+        "107321443"
+      ],
+      "apla": [
+        "101801089",
+        "101802877"
+      ],
+      "acyg": [
+        "106029321",
+        "106031075"
+      ],
+      "tgu": [
+        "100217970",
+        "100227701"
+      ],
+      "gfr": [
+        "102032477",
+        "102036360"
+      ],
+      "fab": [
+        "101810197",
+        "101811193"
+      ],
+      "phi": [
+        "102108753",
+        "102114443"
+      ],
+      "pmaj": [
+        "107205270",
+        "107211779"
+      ],
+      "ccw": [
+        "104688799"
+      ],
+      "fpg": [
+        "101911656",
+        "101916842"
+      ],
+      "fch": [
+        "102048951",
+        "102058946"
+      ],
+      "clv": [
+        "102092240",
+        "102096658"
+      ],
+      "egz": [
+        "104128318",
+        "104129654"
+      ],
+      "aam": [
+        "106492546",
+        "106493396",
+        "106493397"
+      ],
+      "asn": [
+        "102367979",
+        "102378654"
+      ],
+      "amj": [
+        "102563874",
+        "106737118"
+      ],
+      "pss": [
+        "102443539",
+        "102454375"
+      ],
+      "cmy": [
+        "102946005",
+        "102947181"
+      ],
+      "cpic": [
+        "101944586",
+        "101953922"
+      ],
+      "acs": [
+        "100555775",
+        "103282961"
+      ],
+      "pvt": [
+        "110083438",
+        "110085629"
+      ],
+      "pbi": [
+        "103064129",
+        "103066055"
+      ],
+      "gja": [
+        "107116822",
+        "107123215"
+      ],
+      "xla": [
+        "108707086",
+        "108715724"
+      ],
+      "xtr": [
+        "100379889"
+      ],
+      "npr": [
+        "108790542"
+      ],
+      "dre": [
+        "569403"
+      ],
+      "srx": [
+        "107741659",
+        "107758628"
+      ],
+      "sanh": [
+        "107658541",
+        "107689528"
+      ],
+      "sgh": [
+        "107567741",
+        "107588964"
+      ],
+      "ccar": [
+        "109067814",
+        "109076515",
+        "109093673",
+        "109097714"
+      ],
+      "ipu": [
+        "108276813"
+      ],
+      "amex": [
+        "103046030"
+      ],
+      "tru": [
+        "101073064"
+      ],
+      "tng": [
+        "GSTEN00025383G001"
+      ],
+      "lco": [
+        "104934568",
+        "109143010"
+      ],
+      "mze": [
+        "101476711"
+      ],
+      "xma": [
+        "102224709"
+      ],
+      "pret": [
+        "103473184"
+      ],
+      "csem": [
+        "103389928"
+      ],
+      "lcf": [
+        "108895613"
+      ],
+      "hcq": [
+        "109527953"
+      ],
+      "bpec": [
+        "110166677"
+      ],
+      "sasa": [
+        "106563006",
+        "106563091",
+        "106568375",
+        "106594678"
+      ],
+      "els": [
+        "105015221"
+      ],
+      "sfm": [
+        "108930044"
+      ],
+      "lcm": [
+        "102362780",
+        "102365333"
+      ],
+      "cmk": [
+        "103184070"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_218343"
+      ],
+      "cin": [
+        "100184862"
+      ],
+      "spu": [
+        "100888242"
+      ],
+      "aplc": [
+        "110987558"
+      ],
+      "sko": [
+        "100366720",
+        "102801584"
+      ],
+      "dme": [
+        "Dmel_CG40129"
+      ],
+      "dan": [
+        "Dana_GF14814"
+      ],
+      "der": [
+        "Dere_GG16712",
+        "Dere_GG27261"
+      ],
+      "dse": [
+        "Dsec_GM19330"
+      ],
+      "dsi": [
+        "Dsimw501_GD17695",
+        "Dsimw501_GD28815"
+      ],
+      "dwi": [
+        "Dwil_GK21377"
+      ],
+      "dya": [
+        "Dyak_GE25059"
+      ],
+      "dgr": [
+        "Dgri_GH21712"
+      ],
+      "dmo": [
+        "Dmoj_GI18854"
+      ],
+      "dvi": [
+        "Dvir_GJ19694"
+      ],
+      "mde": [
+        "101896222",
+        "101900028"
+      ],
+      "aga": [
+        "AgaP_AGAP012026"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ004653",
+        "CpipJ_CPIJ004656",
+        "CpipJ_CPIJ004658"
+      ],
+      "ame": [
+        "413197"
+      ],
+      "bim": [
+        "100748232"
+      ],
+      "bter": [
+        "100651375"
+      ],
+      "soc": [
+        "105194556",
+        "105202751"
+      ],
+      "aec": [
+        "105153411"
+      ],
+      "acep": [
+        "105619512"
+      ],
+      "pbar": [
+        "105422796"
+      ],
+      "hst": [
+        "105181552"
+      ],
+      "cfo": [
+        "105258109"
+      ],
+      "lhu": [
+        "105678424"
+      ],
+      "pgc": [
+        "109856349"
+      ],
+      "nvi": [
+        "100121113"
+      ],
+      "tca": [
+        "654946"
+      ],
+      "dpa": [
+        "109537817"
+      ],
+      "nvl": [
+        "108568789"
+      ],
+      "bmor": [
+        "101741546"
+      ],
+      "dpl": [
+        "KGM_204545",
+        "KGM_212300A"
+      ],
+      "pmac": [
+        "106717955"
+      ],
+      "pxy": [
+        "105389442",
+        "105392068"
+      ],
+      "api": [
+        "100166085"
+      ],
+      "dnx": [
+        "107162156",
+        "107172606"
+      ],
+      "phu": [
+        "Phum_PHUM014910"
+      ],
+      "zne": [
+        "110841237"
+      ],
+      "fcd": [
+        "110856660"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_194156"
+      ],
+      "isc": [
+        "IscW_ISCW009785"
+      ],
+      "tut": [
+        "107361145"
+      ],
+      "cel": [
+        "CELE_W02B3.2"
+      ],
+      "cbr": [
+        "CBG15249"
+      ],
+      "nai": [
+        "NECAME_16586"
+      ],
+      "loa": [
+        "LOAG_06661"
+      ],
+      "tsp": [
+        "Tsp_00495"
+      ],
+      "hro": [
+        "HELRODRAFT_75424"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_144613"
+      ],
+      "crg": [
+        "105319304"
+      ],
+      "myi": [
+        "110461337"
+      ],
+      "obi": [
+        "106871981"
+      ],
+      "lak": [
+        "106181894"
+      ],
+      "smm": [
+        "Smp_210820"
+      ],
+      "shx": [
+        "MS3_04047"
+      ],
+      "ovi": [
+        "T265_09192"
+      ],
+      "nve": [
+        "NEMVE_v1g246204"
+      ],
+      "epa": [
+        "110243336",
+        "110249794"
+      ],
+      "adf": [
+        "107338012"
+      ],
+      "hmg": [
+        "100214170"
+      ],
+      "tad": [
+        "TRIADDRAFT_59012"
+      ],
+      "aqu": [
+        "100638292"
+      ],
+      "mbr": [
+        "MONBRDRAFT_38629"
+      ],
+      "sre": [
+        "PTSG_08590"
+      ],
+      "pti": [
+        "PHATRDRAFT_27639"
+      ],
+      "fcy": [
+        "FRACYDRAFT_169425"
+      ],
+      "tps": [
+        "THAPSDRAFT_15351"
+      ],
+      "aaf": [
+        "AURANDRAFT_10764"
+      ],
+      "pif": [
+        "PITG_16476"
+      ],
+      "psoj": [
+        "PHYSODRAFT_297885"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_234416",
+        "EMIHUDRAFT_428179",
+        "EMIHUDRAFT_444936",
+        "EMIHUDRAFT_466622"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.7.11.15"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.7.11.15"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.7.11.15"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.7.11.15"
+      ],
+      "CAS": [
+        "102925-39-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Benovic JL",
+          "Mayor F Jr",
+          "Staniszewski C",
+          "Lefkowitz RJ",
+          "Caron MG"
+        ],
+        "title": "Purification and characterization of the beta-adrenergic receptor kinase.",
+        "journal": "J. Biol. Chem. 262 (1987) 9026-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:3036840]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kim CM",
+          "Dion SB",
+          "Onorato JJ",
+          "Benovic JL."
+        ],
+        "title": "Expression and characterization of two beta-adrenergic receptor kinase isoforms using the baculovirus expression system.",
+        "journal": "Receptor. 3 (1993) 39-55.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8394172]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Laugwitz KL",
+          "Kronsbein K",
+          "Schmitt M",
+          "Hoffmann K",
+          "Seyfarth M",
+          "Schomig A",
+          "Ungerer M."
+        ],
+        "title": "Characterization and inhibition of beta-adrenergic receptor kinase in intact myocytes.",
+        "journal": "Cardiovasc. Res. 35 (1997) 324-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9349395]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ferguson SS",
+          "Menard L",
+          "Barak LS",
+          "Koch WJ",
+          "Colapietro AM",
+          "Caron MG."
+        ],
+        "title": "Role of phosphorylation in agonist-promoted beta 2-adrenergic receptor sequestration. Rescue of a sequestration-defective mutant receptor by beta ARK1.",
+        "journal": "J. Biol. Chem. 270 (1995) 24782-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7559596]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Willets JM",
+          "Challiss RA",
+          "Nahorski SR."
+        ],
+        "title": "Non-visual GRKs: are we seeing the whole picture?",
+        "journal": "Trends. Pharmacol. Sci. 24 (2003) 626-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:14654303]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

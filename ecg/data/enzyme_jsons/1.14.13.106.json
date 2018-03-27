@@ -1,0 +1,188 @@
+[
+  {
+    "entry_id": "1.14.13.106",
+    "name": "epi-isozizaene 5-monooxygenase",
+    "names": [
+      "epi-isozizaene 5-monooxygenase",
+      "CYP170A1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "(+)-epi-isozizaene,NADPH:oxygen oxidoreductase (5-hydroxylating)",
+    "reaction": "(+)-epi-isozizaene + 2 NADPH + 2 H+ + 2 O2 = albaflavenone + 2 NADP+ + 3 H2O (overall reaction) [RN:R10072]; (1a) (+)-epi-isozizaene + NADPH + H+ + O2 = (5S)-albaflavenol + NADP+ + H2O [RN:R08851]; (1b) (5S)-albaflavenol + NADPH + H+ + O2 = albaflavenone + NADP+ + 2 H2O [RN:R08852]; (2a) (+)-epi-isozizaene + NADPH + H+ + O2 = (5R)-albaflavenol + NADP+ + H2O [RN:R08853]; (2b) (5R)-albaflavenol + NADPH + H+ + O2 = albaflavenone + NADP+ + 2 H2O [RN:R08854]",
+    "all_reac": "R08851 R08852 R08853 R08854 R10072",
+    "iubmb_reactions": [
+      "R08851 R08852 R08853 R08854 R10072"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(+)-epi-isozizaene [CPD:C16269]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(5S)-albaflavenol [CPD:C17953]",
+      "(5R)-albaflavenol [CPD:C17955]"
+    ],
+    "products": [
+      "albaflavenone [CPD:C17954]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "(5S)-albaflavenol [CPD:C17953]",
+      "(5R)-albaflavenol [CPD:C17955]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytochrome-P-450 enzyme, from the soil-dwelling bacterium Streptomyces coelicolor A3(2), catalyses two sequential allylic oxidation reactions. The substrate epi-isozizaene, which is formed by the action of EC 4.2.3.37, epi-isozizaene synthase, is first oxidized to yield the epimeric intermediates (5R)-albaflavenol and (5S)-albaflavenol, which can be further oxidized to yield the sesquiterpenoid antibiotic albaflavenone.",
+    "pathways": {
+      "ec00909": "Sesquiterpenoid and triterpenoid biosynthesis",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K12645": "epi-isozizaene 5-monooxygenase / beta-farnesene synthase"
+    },
+    "genes": {
+      "sco": [
+        "SCO5223"
+      ],
+      "sma": [
+        "SAVERM_3031"
+      ],
+      "shy": [
+        "SHJG_6336"
+      ],
+      "sho": [
+        "SHJGH_6097"
+      ],
+      "sdv": [
+        "BN159_3154"
+      ],
+      "salb": [
+        "XNR_1579"
+      ],
+      "sals": [
+        "SLNWT_2071"
+      ],
+      "sci": [
+        "B446_24615"
+      ],
+      "slv": [
+        "SLIV_12250"
+      ],
+      "sgu": [
+        "SGLAU_22465"
+      ],
+      "scw": [
+        "TU94_21770"
+      ],
+      "samb": [
+        "SAM23877_5011"
+      ],
+      "scx": [
+        "AS200_17630"
+      ],
+      "srw": [
+        "TUE45_05743"
+      ],
+      "strf": [
+        "ASR50_23825"
+      ],
+      "sle": [
+        "sle_25170"
+      ],
+      "spav": [
+        "Spa2297_22090"
+      ],
+      "strt": [
+        "A8713_21095"
+      ],
+      "sgs": [
+        "AVL59_06870"
+      ],
+      "stsi": [
+        "A4E84_26815"
+      ],
+      "sls": [
+        "SLINC_5615"
+      ],
+      "splu": [
+        "LK06_022340"
+      ],
+      "strd": [
+        "NI25_13050"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.106"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.106"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.106"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.106"
+      ],
+      "CAS": [
+        "1207718-51-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Zhao B",
+          "Lin X",
+          "Lei L",
+          "Lamb DC",
+          "Kelly SL",
+          "Waterman MR",
+          "Cane DE"
+        ],
+        "title": "Biosynthesis of the sesquiterpene antibiotic albaflavenone in Streptomyces coelicolor A3(2).",
+        "journal": "J. Biol. Chem. 283 (2008) 8183-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:18234666]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

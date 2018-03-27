@@ -1,0 +1,568 @@
+[
+  {
+    "entry_id": "4.2.1.155",
+    "name": "(methylthio)acryloyl-CoA hydratase",
+    "names": [
+      "(methylthio)acryloyl-CoA hydratase",
+      "DmdD"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-oxygen lyases;",
+      "Hydro-lyases"
+    ],
+    "sysname": "3-(methylsulfanyl)prop-2-enoyl-CoA hydro-lyase (acetaldehyde-forming)",
+    "reaction": "3-(methylthio)acryloyl-CoA + 2 H2O = acetaldehyde + methanethiol + CoA + CO2 (overall reaction) [RN:R10936]; (1a) 3-(methylsulfanyl)acryloyl-CoA + H2O = 3-hydroxy-3-(methylsulfanyl)propanoyl-CoA [RN:R10945]; (1b) 3-hydroxy-3-(methylsulfanyl)propanoyl-CoA = 3-oxopropanoyl-CoA + methanethiol [RN:R10946]; (1c) 3-oxopropanoyl-CoA + H2O = 3-oxopropanoate + CoA [RN:R10947]; (1d) 3-oxopropanoate = acetaldehyde + CO2 [RN:R06973]",
+    "all_reac": "R06973 R10936 R10945 R10946 R10947",
+    "iubmb_reactions": [
+      "R06973 R10936 R10945 R10946 R10947"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "3-(methylthio)acryloyl-CoA [CPD:C20955]",
+      "H2O [CPD:C00001]",
+      "3-(methylsulfanyl)acryloyl-CoA [CPD:C20955]",
+      "3-hydroxy-3-(methylsulfanyl)propanoyl-CoA [CPD:C20968]",
+      "3-oxopropanoyl-CoA [CPD:C05989]",
+      "3-oxopropanoate [CPD:C00222]"
+    ],
+    "products": [
+      "acetaldehyde [CPD:C00084]",
+      "methanethiol [CPD:C00409]",
+      "CoA [CPD:C00010]",
+      "CO2 [CPD:C00011]",
+      "3-hydroxy-3-(methylsulfanyl)propanoyl-CoA [CPD:C20968]",
+      "3-oxopropanoyl-CoA [CPD:C05989]",
+      "3-oxopropanoate [CPD:C00222]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is involved in the degradation of 3-(dimethylsulfonio)propanoate, an osmolyte produced by marine phytoplankton. Isolated from the bacterium Ruegeria pomeroyi.",
+    "pathways": {
+      "ec00920": "Sulfur metabolism"
+    },
+    "orthologs": {
+      "K20036": "(methylthio)acryloyl-CoA hydratase"
+    },
+    "genes": {
+      "pfs": [
+        "PFLU_2454"
+      ],
+      "pfw": [
+        "PF1751_v1c21520"
+      ],
+      "pff": [
+        "PFLUOLIPICF725950"
+      ],
+      "pfx": [
+        "A7318_10225"
+      ],
+      "ptv": [
+        "AA957_02575"
+      ],
+      "pazo": [
+        "AYR47_18985"
+      ],
+      "aprs": [
+        "BI364_09690"
+      ],
+      "hel": [
+        "HELO_3943"
+      ],
+      "hak": [
+        "KO116_00192"
+      ],
+      "hhh": [
+        "CLM76_03085"
+      ],
+      "mmw": [
+        "Mmwyl1_3020"
+      ],
+      "mme": [
+        "Marme_2603"
+      ],
+      "mpc": [
+        "Mar181_1042"
+      ],
+      "vff": [
+        "VITFI_CDS3132"
+      ],
+      "reu": [
+        "Reut_B4798"
+      ],
+      "rme": [
+        "Rmet_2366"
+      ],
+      "cbw": [
+        "RR42_s1574"
+      ],
+      "ccup": [
+        "BKK81_29835"
+      ],
+      "cup": [
+        "BKK80_26520"
+      ],
+      "cuu": [
+        "BKK79_32405"
+      ],
+      "bgf": [
+        "BC1003_5123"
+      ],
+      "bgd": [
+        "bgla_2g28180"
+      ],
+      "bxe": [
+        "Bxe_C0923"
+      ],
+      "bxb": [
+        "DR64_7526"
+      ],
+      "ppk": [
+        "U875_11015"
+      ],
+      "ppno": [
+        "DA70_03425"
+      ],
+      "ppnm": [
+        "LV28_02900"
+      ],
+      "prb": [
+        "X636_23685"
+      ],
+      "ppul": [
+        "RO07_21765"
+      ],
+      "pspu": [
+        "NA29_15325"
+      ],
+      "papi": [
+        "SG18_20730"
+      ],
+      "pve": [
+        "UC34_13105"
+      ],
+      "pox": [
+        "MB84_17630"
+      ],
+      "pfg": [
+        "AB870_00175"
+      ],
+      "pnr": [
+        "AT302_19050"
+      ],
+      "put": [
+        "PT7_0125"
+      ],
+      "afa": [
+        "UZ73_01330",
+        "UZ73_07535"
+      ],
+      "rfr": [
+        "Rfer_0274"
+      ],
+      "rsb": [
+        "RS694_00925"
+      ],
+      "rhy": [
+        "RD110_11725"
+      ],
+      "pol": [
+        "Bpro_3111"
+      ],
+      "pna": [
+        "Pnap_0605"
+      ],
+      "ack": [
+        "C380_01285"
+      ],
+      "acra": [
+        "BSY15_1662"
+      ],
+      "vap": [
+        "Vapar_4402"
+      ],
+      "vpe": [
+        "Varpa_5065"
+      ],
+      "vpd": [
+        "VAPA_1c45750"
+      ],
+      "vaa": [
+        "AX767_13925"
+      ],
+      "vbo": [
+        "CKY39_14475",
+        "CKY39_27680"
+      ],
+      "ctt": [
+        "CtCNB1_2298",
+        "CtCNB1_4139"
+      ],
+      "ctes": [
+        "O987_24730"
+      ],
+      "rta": [
+        "Rta_25000"
+      ],
+      "lim": [
+        "L103DPR2_01477"
+      ],
+      "lih": [
+        "L63ED372_00989"
+      ],
+      "hyr": [
+        "BSY239_2238"
+      ],
+      "hyb": [
+        "Q5W_08965"
+      ],
+      "hyl": [
+        "LPB072_16170"
+      ],
+      "cbaa": [
+        "SRAA_0578"
+      ],
+      "cbab": [
+        "SMCB_0808"
+      ],
+      "hse": [
+        "Hsero_4006"
+      ],
+      "hsz": [
+        "ACP92_20000"
+      ],
+      "hrb": [
+        "Hrubri_3960"
+      ],
+      "hee": [
+        "hmeg3_01130"
+      ],
+      "lch": [
+        "Lcho_0994"
+      ],
+      "pbh": [
+        "AAW51_0441"
+      ],
+      "shd": [
+        "SUTH_01232"
+      ],
+      "eba": [
+        "ebA5318",
+        "ebA5619"
+      ],
+      "azo": [
+        "azo2498"
+      ],
+      "aza": [
+        "AZKH_2163"
+      ],
+      "azi": [
+        "AzCIB_2731"
+      ],
+      "aoa": [
+        "dqs_2651"
+      ],
+      "tmz": [
+        "Tmz1t_2492"
+      ],
+      "tcl": [
+        "Tchl_1082"
+      ],
+      "thk": [
+        "CCZ27_15680",
+        "CCZ27_17835"
+      ],
+      "beba": [
+        "BWI17_21020"
+      ],
+      "mlo": [
+        "mlr6976"
+      ],
+      "meso": [
+        "BSQ44_21420"
+      ],
+      "hoe": [
+        "IMCC20628_02027"
+      ],
+      "esj": [
+        "SJ05684_b59780"
+      ],
+      "atu": [
+        "Atu1417"
+      ],
+      "rht": [
+        "NT26_3192"
+      ],
+      "ngl": [
+        "RG1141_CH41200"
+      ],
+      "ngg": [
+        "RG540_CH41720"
+      ],
+      "bja": [
+        "blr7844"
+      ],
+      "bju": [
+        "BJ6T_84670"
+      ],
+      "bjp": [
+        "RN69_40915"
+      ],
+      "bra": [
+        "BRADO0962"
+      ],
+      "bbt": [
+        "BBta_5093",
+        "BBta_7093"
+      ],
+      "brs": [
+        "S23_09440"
+      ],
+      "aol": [
+        "S58_66670"
+      ],
+      "brc": [
+        "BCCGELA001_33005"
+      ],
+      "brad": [
+        "BF49_4145"
+      ],
+      "bic": [
+        "LMTR13_35510"
+      ],
+      "bro": [
+        "BRAD285_0457"
+      ],
+      "rpa": [
+        "RPA1786"
+      ],
+      "rpb": [
+        "RPB_3578"
+      ],
+      "rpd": [
+        "RPD_1886"
+      ],
+      "rpe": [
+        "RPE_3803"
+      ],
+      "rpt": [
+        "Rpal_1988"
+      ],
+      "rpx": [
+        "Rpdx1_3746"
+      ],
+      "mno": [
+        "Mnod_6456"
+      ],
+      "maqu": [
+        "Maq22A_c00770"
+      ],
+      "phl": [
+        "KKY_2321"
+      ],
+      "deq": [
+        "XM25_21120"
+      ],
+      "bvr": [
+        "BVIR_1682"
+      ],
+      "rhz": [
+        "RHPLAN_62540",
+        "RHPLAN_69940"
+      ],
+      "maad": [
+        "AZF01_17850",
+        "AZF01_20095"
+      ],
+      "psin": [
+        "CAK95_06170",
+        "CAK95_14960"
+      ],
+      "sil": [
+        "SPO3805"
+      ],
+      "jan": [
+        "Jann_0665"
+      ],
+      "pde": [
+        "Pden_2560"
+      ],
+      "pcon": [
+        "B0A89_04960"
+      ],
+      "pga": [
+        "PGA1_262p01540",
+        "PGA1_262p01850"
+      ],
+      "pgl": [
+        "PGA2_239p1720"
+      ],
+      "pgd": [
+        "Gal_03918"
+      ],
+      "php": [
+        "PhaeoP97_03685"
+      ],
+      "ppic": [
+        "PhaeoP14_03588"
+      ],
+      "lmd": [
+        "METH_04510"
+      ],
+      "ptp": [
+        "RCA23_c26210"
+      ],
+      "cid": [
+        "P73_1463"
+      ],
+      "ceh": [
+        "CEW89_18655"
+      ],
+      "pphr": [
+        "APZ00_03860",
+        "APZ00_05265"
+      ],
+      "lap": [
+        "ACP90_06325"
+      ],
+      "lagg": [
+        "B0E33_17875"
+      ],
+      "labr": [
+        "CHH27_14215"
+      ],
+      "yan": [
+        "AYJ57_10060"
+      ],
+      "suam": [
+        "BOO69_11775"
+      ],
+      "spse": [
+        "SULPSESMR1_00293",
+        "SULPSESMR1_03318"
+      ],
+      "don": [
+        "BSK21_06015"
+      ],
+      "aht": [
+        "ANTHELSMS3_04102"
+      ],
+      "ssy": [
+        "SLG_07670",
+        "SLG_35020"
+      ],
+      "ery": [
+        "CP97_08825"
+      ],
+      "tmo": [
+        "TMO_c0641"
+      ],
+      "pgv": [
+        "SL003B_2869"
+      ],
+      "ars": [
+        "ADJ73_05985"
+      ],
+      "blin": [
+        "BLSMQ_1405"
+      ],
+      "fri": [
+        "FraEuI1c_2567"
+      ],
+      "amd": [
+        "AMED_3269"
+      ],
+      "amn": [
+        "RAM_16630"
+      ],
+      "amm": [
+        "AMES_3233"
+      ],
+      "amz": [
+        "B737_3233"
+      ],
+      "pseh": [
+        "XF36_04825"
+      ],
+      "hhy": [
+        "Halhy_0462"
+      ],
+      "sli": [
+        "Slin_1561"
+      ],
+      "rsi": [
+        "Runsl_0511"
+      ],
+      "eol": [
+        "Emtol_1593"
+      ],
+      "marb": [
+        "CJ263_16340"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.2.1.155"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.2.1.155"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.2.1.155"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.2.1.155"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Tan D",
+          "Crabb WM",
+          "Whitman WB",
+          "Tong L"
+        ],
+        "title": "Crystal structure of DmdD, a crotonase superfamily enzyme that catalyzes the hydration and hydrolysis of methylthioacryloyl-CoA.",
+        "journal": "PLoS. One. 8 (2013) e63870.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:23704947]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

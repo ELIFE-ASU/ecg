@@ -1,0 +1,1459 @@
+[
+  {
+    "entry_id": "2.3.1.258",
+    "name": "N-terminal methionine Nalpha-acetyltransferase NatE",
+    "names": [
+      "N-terminal methionine Nalpha-acetyltransferase NatE",
+      "NAA50 (gene name)",
+      "NAT5",
+      "SAN"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Transferring groups other than aminoacyl groups"
+    ],
+    "sysname": "acetyl-CoA:N-terminal-Met-Ala/Ser/Val/Thr/Lys/Leu/Phe/Tyr-[protein] Met-Nalpha-acetyltransferase",
+    "reaction": "(1) acetyl-CoA + an N-terminal-L-methionyl-L-alanyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-alanyl-[protein] + CoA; (2) acetyl-CoA + an N-terminal-L-methionyl-L-seryl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-seryl-[protein] + CoA; (3) acetyl-CoA + an N-terminal-L-methionyl-L-valyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-valyl-[protein] + CoA; (4) acetyl-CoA + an N-terminal-L-methionyl-L-threonyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-threonyl-[protein] + CoA; (5) acetyl-CoA + an N-terminal-L-methionyl-L-lysyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-lysyl-[protein] + CoA; (6) acetyl-CoA + an N-terminal-L-methionyl-L-leucyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-leucyl-[protein] + CoA; (7) acetyl-CoA + an N-terminal-L-methionyl-L-phenylalanyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-phenylalany-[protein] + CoA; (8) acetyl-CoA + an N-terminal-L-methionyl-L-tyrosyl-[protein] = an N-terminal-Nalpha-acetyl-L-methionyl-L-tyrosyl-[protein] + CoA",
+    "all_reac": "",
+    "iubmb_reactions": [
+
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "acetyl-CoA [CPD:C00024]",
+      "N-terminal-L-methionyl-L-alanyl-[protein]",
+      "N-terminal-L-methionyl-L-seryl-[protein]",
+      "N-terminal-L-methionyl-L-valyl-[protein]",
+      "N-terminal-L-methionyl-L-threonyl-[protein]",
+      "N-terminal-L-methionyl-L-lysyl-[protein]",
+      "N-terminal-L-methionyl-L-leucyl-[protein]",
+      "N-terminal-L-methionyl-L-phenylalanyl-[protein]",
+      "N-terminal-L-methionyl-L-tyrosyl-[protein]"
+    ],
+    "products": [
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-alanyl-[protein]",
+      "CoA [CPD:C00010]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-seryl-[protein]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-valyl-[protein]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-threonyl-[protein]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-lysyl-[protein]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-leucyl-[protein]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-phenylalany-[protein]",
+      "N-terminal-Nalpha-acetyl-L-methionyl-L-tyrosyl-[protein]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "N-terminal-acetylases (NATs) catalyse the covalent attachment of an acetyl moiety from acetyl-CoA to the free alpha-amino group at the N-terminus of a protein. This irreversible modification neutralizes the positive charge at the N-terminus, makes the N-terminal residue larger and more hydrophobic, and prevents its removal by hydrolysis. It may also play a role in membrane targeting and gene silencing. NatE is found in all eukaryotic organisms and plays an important role in chromosome resolution and segregation. It specifically targets N-terminal L-methionine residues attached to Lys, Val, Ala, Tyr, Phe, Leu, Ser, and Thr. There is some substrate overlap with EC 2.3.1.256, N-terminal methionine Nalpha-acetyltransferase NatC. In addition, the acetylation of Met followed by small residues such as Ser, Thr, Ala, or Val suggests a kinetic competition between NatE and EC 3.4.11.18, methionyl aminopeptidase. The enzyme also has the activity of EC 2.3.1.48, histone acetyltransferase, and autoacetylates several of its own lysine residues.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K20793": "N-alpha-acetyltransferase 50"
+    },
+    "genes": {
+      "hsa": [
+        "80218"
+      ],
+      "ptr": [
+        "470884"
+      ],
+      "pps": [
+        "100981135"
+      ],
+      "ggo": [
+        "101125174"
+      ],
+      "pon": [
+        "100171579"
+      ],
+      "nle": [
+        "100590608"
+      ],
+      "mcc": [
+        "709764"
+      ],
+      "mcf": [
+        "102129158"
+      ],
+      "csab": [
+        "103228297"
+      ],
+      "rro": [
+        "104660615"
+      ],
+      "rbb": [
+        "108519503"
+      ],
+      "cjc": [
+        "100410759"
+      ],
+      "sbq": [
+        "101042088"
+      ],
+      "mmu": [
+        "72117"
+      ],
+      "rno": [
+        "102553099",
+        "288108"
+      ],
+      "cge": [
+        "100773295"
+      ],
+      "ngi": [
+        "103741923"
+      ],
+      "hgl": [
+        "101717688"
+      ],
+      "ccan": [
+        "109698028"
+      ],
+      "ocu": [
+        "100347916"
+      ],
+      "tup": [
+        "102480359"
+      ],
+      "cfa": [
+        "100855569"
+      ],
+      "aml": [
+        "100472027"
+      ],
+      "umr": [
+        "103678813"
+      ],
+      "oro": [
+        "101365472"
+      ],
+      "fca": [
+        "101091471"
+      ],
+      "ptg": [
+        "102952994"
+      ],
+      "aju": [
+        "106977758"
+      ],
+      "bta": [
+        "517211"
+      ],
+      "bom": [
+        "102276311",
+        "102279372"
+      ],
+      "biu": [
+        "109574855"
+      ],
+      "phd": [
+        "102338666"
+      ],
+      "chx": [
+        "102185606"
+      ],
+      "oas": [
+        "101115755"
+      ],
+      "ssc": [
+        "100513438"
+      ],
+      "cfr": [
+        "102524041"
+      ],
+      "cdk": [
+        "105093201"
+      ],
+      "bacu": [
+        "103015576",
+        "103017541"
+      ],
+      "lve": [
+        "103083185"
+      ],
+      "ecb": [
+        "100071372"
+      ],
+      "epz": [
+        "103552856"
+      ],
+      "eai": [
+        "106829495"
+      ],
+      "myb": [
+        "102251733"
+      ],
+      "myd": [
+        "102758496"
+      ],
+      "hai": [
+        "109387973"
+      ],
+      "rss": [
+        "109448981"
+      ],
+      "pale": [
+        "102898138"
+      ],
+      "lav": [
+        "100664835"
+      ],
+      "tmu": [
+        "101355597"
+      ],
+      "mdo": [
+        "100013194"
+      ],
+      "shr": [
+        "100934075"
+      ],
+      "oaa": [
+        "100086792"
+      ],
+      "gga": [
+        "418319"
+      ],
+      "mgp": [
+        "100543284"
+      ],
+      "cjo": [
+        "107319460"
+      ],
+      "apla": [
+        "101794683"
+      ],
+      "acyg": [
+        "106045725"
+      ],
+      "tgu": [
+        "100226501"
+      ],
+      "gfr": [
+        "102038220"
+      ],
+      "fab": [
+        "101820110"
+      ],
+      "phi": [
+        "102103193"
+      ],
+      "pmaj": [
+        "107211809"
+      ],
+      "ccw": [
+        "104687097"
+      ],
+      "fpg": [
+        "101920158"
+      ],
+      "fch": [
+        "102056869"
+      ],
+      "clv": [
+        "102097160"
+      ],
+      "egz": [
+        "104126577"
+      ],
+      "aam": [
+        "106497185"
+      ],
+      "asn": [
+        "102374943"
+      ],
+      "amj": [
+        "102558991"
+      ],
+      "pss": [
+        "102452426"
+      ],
+      "cmy": [
+        "102934208"
+      ],
+      "cpic": [
+        "101944196"
+      ],
+      "acs": [
+        "100554642"
+      ],
+      "pvt": [
+        "110076936"
+      ],
+      "pbi": [
+        "103058239"
+      ],
+      "gja": [
+        "107111860"
+      ],
+      "xla": [
+        "108707810",
+        "444177"
+      ],
+      "xtr": [
+        "496547"
+      ],
+      "npr": [
+        "108800121"
+      ],
+      "dre": [
+        "445229"
+      ],
+      "srx": [
+        "107716399",
+        "107732992"
+      ],
+      "sanh": [
+        "107654230",
+        "107701670"
+      ],
+      "sgh": [
+        "107585000",
+        "107591234"
+      ],
+      "ccar": [
+        "109049786",
+        "109050223",
+        "109058574"
+      ],
+      "ipu": [
+        "108256434"
+      ],
+      "amex": [
+        "103040640"
+      ],
+      "tru": [
+        "101062251"
+      ],
+      "tng": [
+        "GSTEN00023885G001"
+      ],
+      "lco": [
+        "104924969"
+      ],
+      "ncc": [
+        "104955922"
+      ],
+      "mze": [
+        "101464000"
+      ],
+      "ola": [
+        "101162486"
+      ],
+      "xma": [
+        "102221294"
+      ],
+      "pret": [
+        "103456643"
+      ],
+      "csem": [
+        "103377239"
+      ],
+      "lcf": [
+        "108881741"
+      ],
+      "hcq": [
+        "109514044"
+      ],
+      "bpec": [
+        "110160975"
+      ],
+      "sasa": [
+        "106579447",
+        "106590472"
+      ],
+      "els": [
+        "105021969"
+      ],
+      "sfm": [
+        "108939472"
+      ],
+      "lcm": [
+        "102350538"
+      ],
+      "cmk": [
+        "103177566"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_117937"
+      ],
+      "cin": [
+        "100184886"
+      ],
+      "spu": [
+        "587364",
+        "753422"
+      ],
+      "aplc": [
+        "110990398"
+      ],
+      "dme": [
+        "Dmel_CG12352"
+      ],
+      "dpo": [
+        "Dpse_GA11576"
+      ],
+      "dan": [
+        "Dana_GF12549"
+      ],
+      "der": [
+        "Dere_GG20197"
+      ],
+      "dpe": [
+        "Dper_GL11686"
+      ],
+      "dse": [
+        "Dsec_GM21284"
+      ],
+      "dsi": [
+        "Dsimw501_GD15393"
+      ],
+      "dwi": [
+        "Dwil_GK23097"
+      ],
+      "dya": [
+        "Dyak_GE12356"
+      ],
+      "dgr": [
+        "Dgri_GH21381"
+      ],
+      "dmo": [
+        "Dmoj_GI18558"
+      ],
+      "dvi": [
+        "Dvir_GJ20352"
+      ],
+      "mde": [
+        "101892024"
+      ],
+      "aga": [
+        "AgaP_AGAP002568"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ015982"
+      ],
+      "ame": [
+        "724486"
+      ],
+      "bim": [
+        "100748927"
+      ],
+      "bter": [
+        "100646834"
+      ],
+      "soc": [
+        "105198579"
+      ],
+      "aec": [
+        "105143574"
+      ],
+      "acep": [
+        "105623003"
+      ],
+      "pbar": [
+        "105428405"
+      ],
+      "hst": [
+        "105188917"
+      ],
+      "cfo": [
+        "105248954"
+      ],
+      "lhu": [
+        "105676435"
+      ],
+      "pgc": [
+        "109856832"
+      ],
+      "nvi": [
+        "100120548"
+      ],
+      "tca": [
+        "107397753"
+      ],
+      "dpa": [
+        "109543101"
+      ],
+      "nvl": [
+        "108569774"
+      ],
+      "bmor": [
+        "732937"
+      ],
+      "dpl": [
+        "KGM_206700"
+      ],
+      "pmac": [
+        "106708748"
+      ],
+      "pxy": [
+        "105392948"
+      ],
+      "api": [
+        "100163396"
+      ],
+      "dnx": [
+        "107169013",
+        "107172610"
+      ],
+      "phu": [
+        "Phum_PHUM288170"
+      ],
+      "zne": [
+        "110826825"
+      ],
+      "fcd": [
+        "110842120"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_325932"
+      ],
+      "isc": [
+        "IscW_ISCW002560"
+      ],
+      "tut": [
+        "107362987",
+        "107363317"
+      ],
+      "cel": [
+        "CELE_F40F4.7"
+      ],
+      "cbr": [
+        "CBG14164"
+      ],
+      "nai": [
+        "NECAME_04035",
+        "NECAME_10330"
+      ],
+      "bmy": [
+        "Bm1_06410"
+      ],
+      "loa": [
+        "LOAG_11415"
+      ],
+      "tsp": [
+        "Tsp_01637"
+      ],
+      "hro": [
+        "HELRODRAFT_108045"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_212711"
+      ],
+      "crg": [
+        "105335433"
+      ],
+      "myi": [
+        "110462991"
+      ],
+      "obi": [
+        "106871775"
+      ],
+      "lak": [
+        "106175963",
+        "106177339"
+      ],
+      "smm": [
+        "Smp_006780"
+      ],
+      "shx": [
+        "MS3_01596"
+      ],
+      "ovi": [
+        "T265_00693"
+      ],
+      "nve": [
+        "NEMVE_v1g135323"
+      ],
+      "epa": [
+        "110246078"
+      ],
+      "adf": [
+        "107356298"
+      ],
+      "hmg": [
+        "100200459"
+      ],
+      "tad": [
+        "TRIADDRAFT_23961"
+      ],
+      "aqu": [
+        "100634178"
+      ],
+      "ath": [
+        "AT5G11340"
+      ],
+      "aly": [
+        "ARALYDRAFT_909096"
+      ],
+      "crb": [
+        "CARUB_v10002138mg"
+      ],
+      "csat": [
+        "104705399",
+        "104735149",
+        "104769360"
+      ],
+      "eus": [
+        "EUTSA_v10014874mg"
+      ],
+      "brp": [
+        "103846729",
+        "103850769"
+      ],
+      "bna": [
+        "106372415",
+        "106385048",
+        "106391318",
+        "106416179"
+      ],
+      "boe": [
+        "106315818",
+        "106325249"
+      ],
+      "thj": [
+        "104799227",
+        "104815033"
+      ],
+      "cpap": [
+        "110811317"
+      ],
+      "cit": [
+        "102630165"
+      ],
+      "cic": [
+        "CICLE_v10009736mg"
+      ],
+      "tcc": [
+        "18588966"
+      ],
+      "gra": [
+        "105791069"
+      ],
+      "ghi": [
+        "107918018",
+        "107948626",
+        "107948627",
+        "107950706",
+        "107951977"
+      ],
+      "egr": [
+        "104437074"
+      ],
+      "gmx": [
+        "100499961",
+        "100527165"
+      ],
+      "pvu": [
+        "PHAVU_008G289800g"
+      ],
+      "vra": [
+        "106764080"
+      ],
+      "var": [
+        "108337957"
+      ],
+      "ccaj": [
+        "109814320"
+      ],
+      "mtr": [
+        "MTR_5g098790"
+      ],
+      "cam": [
+        "101508621"
+      ],
+      "adu": [
+        "107496078"
+      ],
+      "aip": [
+        "107609729"
+      ],
+      "lja": [
+        "Lj1g3v0948650.1"
+      ],
+      "lang": [
+        "109327518",
+        "109342176"
+      ],
+      "fve": [
+        "101296345"
+      ],
+      "pper": [
+        "18789044"
+      ],
+      "pmum": [
+        "103320050"
+      ],
+      "mdm": [
+        "103414971",
+        "103415647",
+        "103427988",
+        "103454309",
+        "103456166"
+      ],
+      "pxb": [
+        "103927576"
+      ],
+      "zju": [
+        "107409208"
+      ],
+      "csv": [
+        "101220663"
+      ],
+      "cmo": [
+        "103488274"
+      ],
+      "mcha": [
+        "111005202"
+      ],
+      "rcu": [
+        "8284851"
+      ],
+      "jcu": [
+        "105637684"
+      ],
+      "hbr": [
+        "110637314",
+        "110653358",
+        "110654078"
+      ],
+      "pop": [
+        "POPTR_0006s26500g",
+        "POPTR_0018s01280g"
+      ],
+      "vvi": [
+        "100244109"
+      ],
+      "sly": [
+        "101245569",
+        "101245855"
+      ],
+      "spen": [
+        "107023839",
+        "107028434"
+      ],
+      "sot": [
+        "102601173"
+      ],
+      "cann": [
+        "107839058",
+        "107872811"
+      ],
+      "nta": [
+        "107773898",
+        "107791703",
+        "107821620",
+        "107829079"
+      ],
+      "nsy": [
+        "104210308",
+        "104218942"
+      ],
+      "nto": [
+        "104089163",
+        "104107084"
+      ],
+      "ini": [
+        "109184397"
+      ],
+      "sind": [
+        "105168152"
+      ],
+      "han": [
+        "110898507",
+        "110923776",
+        "110923796",
+        "110923805"
+      ],
+      "bvg": [
+        "104887712"
+      ],
+      "soe": [
+        "110795837"
+      ],
+      "nnu": [
+        "104592337",
+        "104595306"
+      ],
+      "osa": [
+        "4327733"
+      ],
+      "dosa": [
+        "Os01t0610400-01"
+      ],
+      "obr": [
+        "102706887"
+      ],
+      "bdi": [
+        "100846813"
+      ],
+      "sbi": [
+        "8084808"
+      ],
+      "zma": [
+        "100282487"
+      ],
+      "sita": [
+        "101753129"
+      ],
+      "pda": [
+        "103707078",
+        "103721099"
+      ],
+      "egu": [
+        "105042048",
+        "105047763"
+      ],
+      "mus": [
+        "103990127",
+        "103996807"
+      ],
+      "dct": [
+        "110093744"
+      ],
+      "atr": [
+        "18437799"
+      ],
+      "smo": [
+        "SELMODRAFT_121528",
+        "SELMODRAFT_6402",
+        "SELMODRAFT_6403",
+        "SELMODRAFT_94349"
+      ],
+      "ppp": [
+        "PHYPADRAFT_181792"
+      ],
+      "cre": [
+        "CHLREDRAFT_76671"
+      ],
+      "vcn": [
+        "VOLCADRAFT_60499"
+      ],
+      "mng": [
+        "MNEG_2596"
+      ],
+      "olu": [
+        "OSTLU_17952"
+      ],
+      "ota": [
+        "OT_ostta13g03050"
+      ],
+      "bpg": [
+        "Bathy04g01440"
+      ],
+      "mis": [
+        "MICPUN_59460"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_11550"
+      ],
+      "csl": [
+        "COCSUDRAFT_46790"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_13632"
+      ],
+      "apro": [
+        "F751_6581"
+      ],
+      "gsl": [
+        "Gasu_10010"
+      ],
+      "sce": [
+        "YOR253W"
+      ],
+      "ago": [
+        "AGOS_AAL102C"
+      ],
+      "erc": [
+        "Ecym_2375"
+      ],
+      "kla": [
+        "KLLA0C09845g"
+      ],
+      "lth": [
+        "KLTH0D11748g"
+      ],
+      "vpo": [
+        "Kpol_1072p5"
+      ],
+      "zro": [
+        "ZYRO0D10912g"
+      ],
+      "cgr": [
+        "CAGL0K09020g"
+      ],
+      "ncs": [
+        "NCAS_0B01180",
+        "NCAS_0C01230"
+      ],
+      "ndi": [
+        "NDAI_0E01060",
+        "NDAI_0K01240"
+      ],
+      "tpf": [
+        "TPHA_0G01490"
+      ],
+      "tbl": [
+        "TBLA_0B03740"
+      ],
+      "tdl": [
+        "TDEL_0A06420"
+      ],
+      "kaf": [
+        "KAFR_0A03960"
+      ],
+      "dha": [
+        "DEHA2F14916g"
+      ],
+      "pic": [
+        "PICST_33834"
+      ],
+      "pgu": [
+        "PGUG_03819"
+      ],
+      "spaa": [
+        "SPAPADRAFT_70401"
+      ],
+      "lel": [
+        "LELG_03355"
+      ],
+      "cal": [
+        "CAALFM_CR04070WA"
+      ],
+      "ctp": [
+        "CTRG_00371"
+      ],
+      "cot": [
+        "CORT_0D02320"
+      ],
+      "cdu": [
+        "CD36_29360"
+      ],
+      "cten": [
+        "CANTEDRAFT_104624"
+      ],
+      "yli": [
+        "YALI0A10571g"
+      ],
+      "clu": [
+        "CLUG_03706"
+      ],
+      "clus": [
+        "A9F13_01g04444"
+      ],
+      "ncr": [
+        "NCU00576"
+      ],
+      "nte": [
+        "NEUTE1DRAFT92946"
+      ],
+      "smp": [
+        "SMAC_01264"
+      ],
+      "pan": [
+        "PODANSg3979"
+      ],
+      "ttt": [
+        "THITE_2112794"
+      ],
+      "mtm": [
+        "MYCTH_2297367"
+      ],
+      "cthr": [
+        "CTHT_0014970"
+      ],
+      "mgr": [
+        "MGG_02993"
+      ],
+      "tmn": [
+        "UCRPA7_8590"
+      ],
+      "fgr": [
+        "FGSG_08775"
+      ],
+      "fpu": [
+        "FPSE_10037"
+      ],
+      "fvr": [
+        "FVEG_01890"
+      ],
+      "fox": [
+        "FOXG_03032"
+      ],
+      "nhe": [
+        "NECHADRAFT_36175"
+      ],
+      "tre": [
+        "TRIREDRAFT_80234"
+      ],
+      "maw": [
+        "MAC_04823"
+      ],
+      "maj": [
+        "MAA_00808"
+      ],
+      "cmt": [
+        "CCM_03321"
+      ],
+      "plj": [
+        "VFPFJ_00214"
+      ],
+      "val": [
+        "VDBG_01638"
+      ],
+      "vda": [
+        "VDAG_01914"
+      ],
+      "cfj": [
+        "CFIO01_13123"
+      ],
+      "ela": [
+        "UCREL1_9026"
+      ],
+      "pfy": [
+        "PFICI_09878"
+      ],
+      "ssl": [
+        "SS1G_14172"
+      ],
+      "bfu": [
+        "BC1G_07672"
+      ],
+      "mbe": [
+        "MBM_05189"
+      ],
+      "psco": [
+        "LY89DRAFT_680136"
+      ],
+      "glz": [
+        "GLAREA_02368"
+      ],
+      "ani": [
+        "AN8684.2"
+      ],
+      "afm": [
+        "AFUA_6G02180"
+      ],
+      "aor": [
+        "AOR_1_1250094"
+      ],
+      "ang": [
+        "ANI_1_1042104"
+      ],
+      "afv": [
+        "AFLA_090970"
+      ],
+      "act": [
+        "ACLA_098280"
+      ],
+      "nfi": [
+        "NFIA_048400"
+      ],
+      "pcs": [
+        "Pc22g23470"
+      ],
+      "pdp": [
+        "PDIP_62140"
+      ],
+      "cim": [
+        "CIMG_05818"
+      ],
+      "cpw": [
+        "CPC735_024560"
+      ],
+      "pbl": [
+        "PAAG_06163"
+      ],
+      "pbn": [
+        "PADG_07958"
+      ],
+      "ure": [
+        "UREG_04507"
+      ],
+      "abe": [
+        "ARB_02010"
+      ],
+      "tve": [
+        "TRV_05841"
+      ],
+      "aje": [
+        "HCAG_03202"
+      ],
+      "pno": [
+        "SNOG_07573"
+      ],
+      "pte": [
+        "PTT_16098"
+      ],
+      "bze": [
+        "COCCADRAFT_24430"
+      ],
+      "bsc": [
+        "COCSADRAFT_78573"
+      ],
+      "bor": [
+        "COCMIDRAFT_104208"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_30776"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_25583"
+      ],
+      "bcom": [
+        "BAUCODRAFT_35668"
+      ],
+      "npa": [
+        "UCRNP2_10113"
+      ],
+      "tml": [
+        "GSTUM_00012181001"
+      ],
+      "spo": [
+        "SPBC13E7.02"
+      ],
+      "cne": [
+        "CNI01640"
+      ],
+      "cnb": [
+        "CNBH1560"
+      ],
+      "cgi": [
+        "CGB_H2390W"
+      ],
+      "tms": [
+        "TREMEDRAFT_41579"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_115122"
+      ],
+      "dsq": [
+        "DICSQDRAFT_51338"
+      ],
+      "pco": [
+        "PHACADRAFT_123590"
+      ],
+      "shs": [
+        "STEHIDRAFT_69869"
+      ],
+      "hir": [
+        "HETIRDRAFT_452321"
+      ],
+      "psq": [
+        "PUNSTDRAFT_131994"
+      ],
+      "adl": [
+        "AURDEDRAFT_82228"
+      ],
+      "fme": [
+        "FOMMEDRAFT_123310"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_74384"
+      ],
+      "lbc": [
+        "LACBIDRAFT_290968"
+      ],
+      "mrr": [
+        "Moror_6822"
+      ],
+      "cci": [
+        "CC1G_01984"
+      ],
+      "scm": [
+        "SCHCODRAFT_57923"
+      ],
+      "abp": [
+        "AGABI1DRAFT112462"
+      ],
+      "abv": [
+        "AGABI2DRAFT192431"
+      ],
+      "cput": [
+        "CONPUDRAFT_136280"
+      ],
+      "sla": [
+        "SERLADRAFT_465459"
+      ],
+      "wse": [
+        "WALSEDRAFT_56190"
+      ],
+      "wic": [
+        "J056_004035"
+      ],
+      "uma": [
+        "UMAG_01031"
+      ],
+      "pfp": [
+        "PFL1_00905"
+      ],
+      "mgl": [
+        "MGL_4030"
+      ],
+      "pgr": [
+        "PGTG_01677"
+      ],
+      "mlr": [
+        "MELLADRAFT_40782"
+      ],
+      "nce": [
+        "NCER_100923",
+        "NCER_101596"
+      ],
+      "mbr": [
+        "MONBRDRAFT_13971"
+      ],
+      "sre": [
+        "PTSG_02781"
+      ],
+      "ddi": [
+        "DDB_G0295721"
+      ],
+      "dpp": [
+        "DICPUDRAFT_76997"
+      ],
+      "dfa": [
+        "DFA_03507"
+      ],
+      "eiv": [
+        "EIN_468250"
+      ],
+      "acan": [
+        "ACA1_369020"
+      ],
+      "tgo": [
+        "TGME49_260010"
+      ],
+      "tet": [
+        "TTHERM_00686140"
+      ],
+      "ptm": [
+        "GSPATT00001433001",
+        "GSPATT00003266001",
+        "GSPATT00004941001"
+      ],
+      "smin": [
+        "v1.2.008129.t1",
+        "v1.2.015199.t1"
+      ],
+      "pti": [
+        "PHATRDRAFT_11710"
+      ],
+      "fcy": [
+        "FRACYDRAFT_232112"
+      ],
+      "tps": [
+        "THAPSDRAFT_36884"
+      ],
+      "aaf": [
+        "AURANDRAFT_34348"
+      ],
+      "pif": [
+        "PITG_08302",
+        "PITG_12865",
+        "PITG_12868"
+      ],
+      "psoj": [
+        "PHYSODRAFT_489357",
+        "PHYSODRAFT_510427",
+        "PHYSODRAFT_513686"
+      ],
+      "spar": [
+        "SPRG_05741"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_455437"
+      ],
+      "gtt": [
+        "GUITHDRAFT_97434"
+      ],
+      "tbr": [
+        "Tb10.70.4350"
+      ],
+      "tcr": [
+        "504867.40"
+      ],
+      "lma": [
+        "LMJF_03_0130"
+      ],
+      "lif": [
+        "LINJ_03_0120"
+      ],
+      "ldo": [
+        "LDBPK_030120"
+      ],
+      "lmi": [
+        "LMXM_03_0130"
+      ],
+      "lbz": [
+        "LBRM_03_0140"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_67730",
+        "NAEGRDRAFT_69954"
+      ],
+      "tva": [
+        "TVAG_363670"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.1.258"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.1.258"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.1.258"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.1.258"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Hou F",
+          "Chu CW",
+          "Kong X",
+          "Yokomori K",
+          "Zou H"
+        ],
+        "title": "The acetyltransferase activity of San stabilizes the mitotic cohesin at the centromeres in a shugoshin-independent manner.",
+        "journal": "J. Cell. Biol. 177 (2007) 587-97.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:17502424]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pimenta-Marques A",
+          "Tostoes R",
+          "Marty T",
+          "Barbosa V",
+          "Lehmann R",
+          "Martinho RG"
+        ],
+        "title": "Differential requirements of a mitotic acetyltransferase in somatic and germ line cells.",
+        "journal": "Dev. Biol. 323 (2008) 197-206.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:18801358]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Evjenth R",
+          "Hole K",
+          "Karlsen OA",
+          "Ziegler M",
+          "Arnesen T",
+          "Lillehaug JR"
+        ],
+        "title": "Human Naa50p (Nat5/San) displays both protein N alpha- and N epsilon-acetyltransferase activity.",
+        "journal": "J. Biol. Chem. 284 (2009) 31122-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:19744929]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Van Damme P",
+          "Hole K",
+          "Gevaert K",
+          "Arnesen T"
+        ],
+        "title": "N-terminal acetylome analysis reveals the specificity of Naa50 (Nat5) and suggests a kinetic competition between N-terminal acetyltransferases and methionine aminopeptidases.",
+        "journal": "Proteomics. 15 (2015) 2436-46.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:25886145]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

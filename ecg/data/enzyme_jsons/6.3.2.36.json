@@ -1,0 +1,838 @@
+[
+  {
+    "entry_id": "6.3.2.36",
+    "name": "4-phosphopantoate---beta-alanine ligase",
+    "names": [
+      "4-phosphopantoate---beta-alanine ligase",
+      "phosphopantothenate synthetase",
+      "TK1686 protein"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-nitrogen bonds;",
+      "Acid-D-amino-acid ligases (peptide synthases)"
+    ],
+    "sysname": "(R)-4-phosphopantoate:beta-alanine ligase (AMP-forming)",
+    "reaction": "ATP + (R)-4-phosphopantoate + beta-alanine = AMP + diphosphate + (R)-4'-phosphopantothenate [RN:R09379]",
+    "all_reac": "R09379",
+    "iubmb_reactions": [
+      "R09379"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "(R)-4-phosphopantoate [CPD:C18911]",
+      "beta-alanine [CPD:C00099]"
+    ],
+    "products": [
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "(R)-4'-phosphopantothenate [CPD:C03492]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The conversion of (R)-pantoate to (R)-4'-phosphopantothenate is part of the pathway leading to biosynthesis of 4'-phosphopantetheine, an essential cofactor of coenzyme A and acyl-carrier protein. In bacteria and eukaryotes this conversion is performed by condensation with beta-alanine, followed by phosphorylation (EC 6.3.2.1 [pantoate---beta-alanine ligase] and EC 2.7.1.33 [pantothenate kinase], respectively). In archaea the order of these two steps is reversed, and phosphorylation precedes condensation with beta-alanine. The two archaeal enzymes that catalyse this conversion are EC 2.7.1.169, pantoate kinase, and this enzyme.",
+    "pathways": {
+      "ec00410": "beta-Alanine metabolism",
+      "ec00770": "Pantothenate and CoA biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K09722": "4-phosphopantoate---beta-alanine ligase"
+    },
+    "genes": {
+      "ssm": [
+        "Spirs_1722"
+      ],
+      "sta": [
+        "STHERM_c02160"
+      ],
+      "stq": [
+        "Spith_0200"
+      ],
+      "mja": [
+        "MJ_0209"
+      ],
+      "mfe": [
+        "Mefer_0471"
+      ],
+      "mvu": [
+        "Metvu_1598"
+      ],
+      "mfs": [
+        "MFS40622_0017"
+      ],
+      "mif": [
+        "Metin_0068"
+      ],
+      "mjh": [
+        "JH146_1594"
+      ],
+      "mig": [
+        "Metig_1648"
+      ],
+      "mmp": [
+        "MMP1306"
+      ],
+      "mmq": [
+        "MmarC5_0287"
+      ],
+      "mmx": [
+        "MmarC6_1368"
+      ],
+      "mmz": [
+        "MmarC7_0551"
+      ],
+      "mmd": [
+        "GYY_07355"
+      ],
+      "mmak": [
+        "MMKA1_15290"
+      ],
+      "mmao": [
+        "MMOS7_14100"
+      ],
+      "mae": [
+        "Maeo_0765"
+      ],
+      "mvn": [
+        "Mevan_0616"
+      ],
+      "mvo": [
+        "Mvol_0285"
+      ],
+      "mok": [
+        "Metok_1341"
+      ],
+      "mac": [
+        "MA_1278"
+      ],
+      "mba": [
+        "Mbar_A3254"
+      ],
+      "mby": [
+        "MSBRM_1907"
+      ],
+      "mbw": [
+        "MSBRW_1477"
+      ],
+      "mbar": [
+        "MSBR2_0501"
+      ],
+      "mbak": [
+        "MSBR3_0048"
+      ],
+      "mma": [
+        "MM_2281"
+      ],
+      "mmaz": [
+        "MmTuc01_2337"
+      ],
+      "mmj": [
+        "MSMAS_2413"
+      ],
+      "mmac": [
+        "MSMAC_2034"
+      ],
+      "mvc": [
+        "MSVAZ_1598"
+      ],
+      "mek": [
+        "MSKOL_1527"
+      ],
+      "mls": [
+        "MSLAZ_0768"
+      ],
+      "metm": [
+        "MSMTP_0821"
+      ],
+      "mef": [
+        "MSWH1_2239"
+      ],
+      "meq": [
+        "MSWHS_2834"
+      ],
+      "msj": [
+        "MSSAC_1058"
+      ],
+      "msz": [
+        "MSSIH_0918"
+      ],
+      "msw": [
+        "MSSIT_0951"
+      ],
+      "mthe": [
+        "MSTHC_2318"
+      ],
+      "mthr": [
+        "MSTHT_0989"
+      ],
+      "mhor": [
+        "MSHOH_1049"
+      ],
+      "mbu": [
+        "Mbur_1184"
+      ],
+      "mmet": [
+        "MCMEM_1652"
+      ],
+      "mmh": [
+        "Mmah_0519"
+      ],
+      "mhaz": [
+        "BHR79_00825"
+      ],
+      "mev": [
+        "Metev_0804"
+      ],
+      "mzh": [
+        "Mzhil_0498"
+      ],
+      "mpy": [
+        "Mpsy_1001"
+      ],
+      "mhz": [
+        "Metho_1912"
+      ],
+      "mtp": [
+        "Mthe_1434"
+      ],
+      "mcj": [
+        "MCON_3477"
+      ],
+      "mhi": [
+        "Mhar_0610"
+      ],
+      "mhu": [
+        "Mhun_0832"
+      ],
+      "mla": [
+        "Mlab_0920"
+      ],
+      "mem": [
+        "Memar_1234"
+      ],
+      "mbg": [
+        "BN140_0997"
+      ],
+      "mema": [
+        "MMAB1_1321",
+        "MMAB1_1323"
+      ],
+      "mpi": [
+        "Mpet_0987"
+      ],
+      "mbn": [
+        "Mboo_1665"
+      ],
+      "mfo": [
+        "Metfor_1343"
+      ],
+      "mpl": [
+        "Mpal_1882"
+      ],
+      "mpd": [
+        "MCP_2267"
+      ],
+      "mez": [
+        "Mtc_0974"
+      ],
+      "rci": [
+        "RCIX860"
+      ],
+      "mth": [
+        "MTH_435"
+      ],
+      "mmg": [
+        "MTBMA_c08300"
+      ],
+      "metc": [
+        "MTCT_0375"
+      ],
+      "mwo": [
+        "MWSIV6_0819"
+      ],
+      "mst": [
+        "Msp_0560"
+      ],
+      "msi": [
+        "Msm_0140"
+      ],
+      "mru": [
+        "mru_1225"
+      ],
+      "meb": [
+        "Abm4_0816"
+      ],
+      "mmil": [
+        "sm9_0909"
+      ],
+      "meye": [
+        "TL18_05735"
+      ],
+      "mol": [
+        "YLM1_0788"
+      ],
+      "mel": [
+        "Metbo_1164"
+      ],
+      "mew": [
+        "MSWAN_1043"
+      ],
+      "meth": [
+        "MBMB1_1178"
+      ],
+      "mfc": [
+        "BRM9_1383"
+      ],
+      "mfi": [
+        "DSM1535_2082"
+      ],
+      "mcub": [
+        "MCBB_1081"
+      ],
+      "mfv": [
+        "Mfer_0656"
+      ],
+      "mka": [
+        "MK0712"
+      ],
+      "afu": [
+        "AF_0927"
+      ],
+      "afg": [
+        "AFULGI_00010160"
+      ],
+      "apo": [
+        "Arcpr_0288"
+      ],
+      "ave": [
+        "Arcve_1265"
+      ],
+      "ast": [
+        "Asulf_01592"
+      ],
+      "fpl": [
+        "Ferp_1528"
+      ],
+      "gac": [
+        "GACE_1473"
+      ],
+      "gah": [
+        "GAH_01054"
+      ],
+      "hal": [
+        "VNG_0250C"
+      ],
+      "hsl": [
+        "OE_1394R"
+      ],
+      "hdl": [
+        "HALDL1_05400"
+      ],
+      "hhb": [
+        "Hhub_1405"
+      ],
+      "hje": [
+        "HacjB3_12990"
+      ],
+      "halh": [
+        "HTSR_1478"
+      ],
+      "hhsr": [
+        "HSR6_1550"
+      ],
+      "hsu": [
+        "HLASF_0579"
+      ],
+      "hsf": [
+        "HLASA_0575"
+      ],
+      "hma": [
+        "rrnAC1793"
+      ],
+      "hhi": [
+        "HAH_2321"
+      ],
+      "hhn": [
+        "HISP_11820"
+      ],
+      "hab": [
+        "SG26_04150"
+      ],
+      "nph": [
+        "NP_0848A"
+      ],
+      "nmo": [
+        "Nmlp_1060"
+      ],
+      "hut": [
+        "Huta_2721"
+      ],
+      "hti": [
+        "HTIA_2468"
+      ],
+      "hmu": [
+        "Hmuk_3221"
+      ],
+      "hali": [
+        "BV210_05575"
+      ],
+      "hwa": [
+        "HQ_1272A"
+      ],
+      "hwc": [
+        "Hqrw_1301"
+      ],
+      "hvo": [
+        "HVO_0674"
+      ],
+      "hme": [
+        "HFX_0637"
+      ],
+      "hgi": [
+        "ABY42_03210"
+      ],
+      "hbo": [
+        "Hbor_25430"
+      ],
+      "hla": [
+        "Hlac_1180"
+      ],
+      "htu": [
+        "Htur_2675"
+      ],
+      "hda": [
+        "BB347_08700"
+      ],
+      "nmg": [
+        "Nmag_1075"
+      ],
+      "hxa": [
+        "Halxa_2489"
+      ],
+      "nat": [
+        "NJ7G_1983"
+      ],
+      "npe": [
+        "Natpe_0953"
+      ],
+      "nge": [
+        "Natgr_2091"
+      ],
+      "hru": [
+        "Halru_1152"
+      ],
+      "nou": [
+        "Natoc_2690"
+      ],
+      "sali": [
+        "L593_09565"
+      ],
+      "hlr": [
+        "HALLA_12895"
+      ],
+      "hlc": [
+        "CHINAEXTREME09815"
+      ],
+      "naj": [
+        "B1756_12365"
+      ],
+      "tar": [
+        "TALC_00077"
+      ],
+      "max": [
+        "MMALV_00560"
+      ],
+      "mer": [
+        "MMINT_02640"
+      ],
+      "mear": [
+        "Mpt1_c11920"
+      ],
+      "marc": [
+        "AR505_1789"
+      ],
+      "pho": [
+        "PH1470"
+      ],
+      "pab": [
+        "PAB1906"
+      ],
+      "pfu": [
+        "PF1387"
+      ],
+      "pfi": [
+        "PFC_06160"
+      ],
+      "pyn": [
+        "PNA2_0056"
+      ],
+      "pya": [
+        "PYCH_03000"
+      ],
+      "pys": [
+        "Py04_1364"
+      ],
+      "pyc": [
+        "TQ32_09580"
+      ],
+      "tko": [
+        "TK1686"
+      ],
+      "ton": [
+        "TON_1374"
+      ],
+      "tga": [
+        "TGAM_0403"
+      ],
+      "tsi": [
+        "TSIB_0551"
+      ],
+      "tba": [
+        "TERMP_01371"
+      ],
+      "the": [
+        "GQS_08705"
+      ],
+      "tha": [
+        "TAM4_1085"
+      ],
+      "thm": [
+        "CL1_1361"
+      ],
+      "tlt": [
+        "OCC_04345"
+      ],
+      "ths": [
+        "TES1_1388"
+      ],
+      "tnu": [
+        "BD01_1978"
+      ],
+      "teu": [
+        "TEU_04510"
+      ],
+      "tgy": [
+        "X802_05910"
+      ],
+      "thv": [
+        "ADU37_CDS05090"
+      ],
+      "tch": [
+        "CHITON_1690"
+      ],
+      "tpep": [
+        "A0127_06830"
+      ],
+      "tgg": [
+        "A3K92_06990"
+      ],
+      "tce": [
+        "A3L02_04320"
+      ],
+      "tbs": [
+        "A3L01_07585"
+      ],
+      "thh": [
+        "CDI07_07995"
+      ],
+      "tsl": [
+        "A3L11_00455"
+      ],
+      "ttd": [
+        "A3L14_09940"
+      ],
+      "tprf": [
+        "A3L09_00310"
+      ],
+      "ppac": [
+        "PAP_09620"
+      ],
+      "abi": [
+        "Aboo_1374"
+      ],
+      "acf": [
+        "AciM339_1188"
+      ],
+      "ape": [
+        "APE_1937.1"
+      ],
+      "acj": [
+        "ACAM_1211"
+      ],
+      "smr": [
+        "Smar_1379"
+      ],
+      "shc": [
+        "Shell_1069"
+      ],
+      "iho": [
+        "Igni_0452"
+      ],
+      "iis": [
+        "EYM_02255"
+      ],
+      "dka": [
+        "DKAM_0336"
+      ],
+      "dfd": [
+        "Desfe_0418"
+      ],
+      "dmu": [
+        "Desmu_0743"
+      ],
+      "tag": [
+        "Tagg_0656"
+      ],
+      "thg": [
+        "TCELL_1109"
+      ],
+      "hbu": [
+        "Hbut_0343"
+      ],
+      "pfm": [
+        "Pyrfu_1592"
+      ],
+      "pdl": [
+        "Pyrde_0351"
+      ],
+      "sso": [
+        "SSO2399"
+      ],
+      "sol": [
+        "Ssol_0205"
+      ],
+      "ssoa": [
+        "SULA_0197"
+      ],
+      "ssol": [
+        "SULB_0198"
+      ],
+      "ssof": [
+        "SULC_0197"
+      ],
+      "sto": [
+        "STK_05320"
+      ],
+      "sai": [
+        "Saci_0949"
+      ],
+      "sacn": [
+        "SacN8_04605"
+      ],
+      "sacr": [
+        "SacRon12I_04595"
+      ],
+      "sacs": [
+        "SUSAZ_04355"
+      ],
+      "sis": [
+        "LS215_0221"
+      ],
+      "sia": [
+        "M1425_0190"
+      ],
+      "sim": [
+        "M1627_0190"
+      ],
+      "sid": [
+        "M164_0209"
+      ],
+      "siy": [
+        "YG5714_0194"
+      ],
+      "sin": [
+        "YN1551_2796"
+      ],
+      "sii": [
+        "LD85_0194"
+      ],
+      "sih": [
+        "SiH_0196"
+      ],
+      "sir": [
+        "SiRe_0190"
+      ],
+      "sic": [
+        "SiL_0183"
+      ],
+      "mse": [
+        "Msed_0614"
+      ],
+      "mcn": [
+        "Mcup_1489"
+      ],
+      "aho": [
+        "Ahos_2193"
+      ],
+      "aman": [
+        "B6F84_03145"
+      ],
+      "pai": [
+        "PAE3406"
+      ],
+      "pis": [
+        "Pisl_1361"
+      ],
+      "pcl": [
+        "Pcal_0384"
+      ],
+      "pas": [
+        "Pars_2001"
+      ],
+      "pyr": [
+        "P186_1236"
+      ],
+      "pog": [
+        "Pogu_0121"
+      ],
+      "tne": [
+        "Tneu_0315"
+      ],
+      "pyw": [
+        "PYWP30_00486"
+      ],
+      "cma": [
+        "Cmaq_1781"
+      ],
+      "tuz": [
+        "TUZN_1336"
+      ],
+      "ttn": [
+        "TTX_1081"
+      ],
+      "vdi": [
+        "Vdis_0593"
+      ],
+      "vmo": [
+        "VMUT_1928"
+      ],
+      "asc": [
+        "ASAC_0272"
+      ],
+      "clg": [
+        "Calag_0335"
+      ],
+      "ffo": [
+        "FFONT_0842"
+      ],
+      "nmr": [
+        "Nmar_1719"
+      ],
+      "nir": [
+        "NSED_09155"
+      ],
+      "nid": [
+        "NPIRD3C_0168"
+      ],
+      "nin": [
+        "NADRNF5_0153"
+      ],
+      "nkr": [
+        "NKOR_09130"
+      ],
+      "nct": [
+        "NMSP_1635"
+      ],
+      "csy": [
+        "CENSYa_1501"
+      ],
+      "nga": [
+        "Ngar_c11050"
+      ],
+      "nvn": [
+        "NVIE_011900"
+      ],
+      "nev": [
+        "NTE_02600"
+      ],
+      "taa": [
+        "NMY3_01865"
+      ],
+      "nbv": [
+        "T478_1432"
+      ],
+      "tah": [
+        "SU86_005785"
+      ],
+      "ndv": [
+        "NDEV_2028"
+      ],
+      "barb": [
+        "AOA66_0497"
+      ],
+      "loki": [
+        "Lokiarch_05990",
+        "Lokiarch_34300"
+      ],
+      "agw": [
+        "QT03_C0001G0028"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.3.2.36"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.3.2.36"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.3.2.36"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.3.2.36"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Yokooji Y",
+          "Tomita H",
+          "Atomi H",
+          "Imanaka T"
+        ],
+        "title": "Pantoate kinase and phosphopantothenate synthetase, two novel enzymes necessary for CoA biosynthesis in the Archaea.",
+        "journal": "J. Biol. Chem. 284 (2009) 28137-45.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:19666462]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

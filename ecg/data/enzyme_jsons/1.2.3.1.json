@@ -1,0 +1,772 @@
+[
+  {
+    "entry_id": "1.2.3.1",
+    "name": "aldehyde oxidase",
+    "names": [
+      "aldehyde oxidase",
+      "quinoline oxidase",
+      "retinal oxidase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the aldehyde or oxo group of donors;",
+      "With oxygen as acceptor"
+    ],
+    "sysname": "aldehyde:oxygen oxidoreductase",
+    "reaction": "an aldehyde + H2O + O2 = a carboxylate + H2O2 [RN:R00635]",
+    "all_reac": "R00635 > R01709 R02125 R02657 R03871 R04904 R08349 R08384; (other) R04085 R08408",
+    "iubmb_reactions": [
+      "R00635 > R01709 R02125 R02657 R03871 R04904 R08349 R08384"
+    ],
+    "kegg_reactions": [
+      "R04085 R08408"
+    ],
+    "substrates": [
+      "aldehyde [CPD:C00071]",
+      "H2O [CPD:C00001]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "carboxylate [CPD:C00060]",
+      "H2O2 [CPD:C00027]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contains molybdenum, [2Fe-2S] centres and FAD. The enzyme from liver exhibits a broad substrate specificity, and is involved in the metabolism of xenobiotics, including the oxidation of N-heterocycles and aldehydes and the reduction of N-oxides, nitrosamines, hydroxamic acids, azo dyes, nitropolycyclic aromatic hydrocarbons, and sulfoxides [4,6]. The enzyme is also responsible for the oxidation of retinal, an activity that was initially attributed to a distinct enzyme (EC 1.2.3.11, retinal oxidase) [5,7].",
+    "pathways": {
+      "ec00280": "Valine, leucine and isoleucine degradation",
+      "ec00350": "Tyrosine metabolism",
+      "ec00380": "Tryptophan metabolism",
+      "ec00750": "Vitamin B6 metabolism",
+      "ec00760": "Nicotinate and nicotinamide metabolism",
+      "ec00830": "Retinol metabolism",
+      "ec00982": "Drug metabolism - cytochrome P450",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K00157": "aldehyde oxidase"
+    },
+    "genes": {
+      "hsa": [
+        "316"
+      ],
+      "ptr": [
+        "459863"
+      ],
+      "pps": [
+        "100968717"
+      ],
+      "pon": [
+        "100451794",
+        "100939468"
+      ],
+      "nle": [
+        "100583419",
+        "100583754"
+      ],
+      "mcc": [
+        "701024",
+        "701502",
+        "701613"
+      ],
+      "mcf": [
+        "102131116",
+        "102134468",
+        "102134825"
+      ],
+      "csab": [
+        "103217611",
+        "103217617",
+        "103217619"
+      ],
+      "rro": [
+        "104670351",
+        "104670357",
+        "104670457"
+      ],
+      "rbb": [
+        "108531964",
+        "108532268",
+        "108532294"
+      ],
+      "cjc": [
+        "100393665",
+        "100394388"
+      ],
+      "sbq": [
+        "101032494",
+        "101033246",
+        "101042764"
+      ],
+      "mmu": [
+        "11761",
+        "213043",
+        "71724",
+        "71872"
+      ],
+      "rno": [
+        "316421",
+        "316424",
+        "493909",
+        "54349"
+      ],
+      "cge": [
+        "100759157",
+        "100760212",
+        "100760504",
+        "100765484",
+        "100765774",
+        "107976994"
+      ],
+      "ngi": [
+        "103734373",
+        "103734384",
+        "103734392",
+        "103734495"
+      ],
+      "hgl": [
+        "101710340",
+        "101722324",
+        "101722898"
+      ],
+      "ccan": [
+        "109680764",
+        "109688486",
+        "109692416"
+      ],
+      "ocu": [
+        "100008601",
+        "100345417",
+        "100345675",
+        "100354428"
+      ],
+      "tup": [
+        "102482260",
+        "102484619",
+        "102490052"
+      ],
+      "cfa": [
+        "488467",
+        "608849"
+      ],
+      "aml": [
+        "100470835",
+        "100471086",
+        "100474367"
+      ],
+      "umr": [
+        "103659730",
+        "103659731",
+        "103659946"
+      ],
+      "oro": [
+        "101369776",
+        "101370075",
+        "101382582"
+      ],
+      "fca": [
+        "101085487"
+      ],
+      "ptg": [
+        "102949513",
+        "102967431"
+      ],
+      "aju": [
+        "106979979"
+      ],
+      "bta": [
+        "338074",
+        "518393",
+        "531699"
+      ],
+      "bom": [
+        "102272565",
+        "102281032",
+        "102283927"
+      ],
+      "biu": [
+        "109569300",
+        "109569310",
+        "109569328"
+      ],
+      "phd": [
+        "102317339",
+        "102321791",
+        "102322148",
+        "102323655"
+      ],
+      "chx": [
+        "102171556",
+        "102187632",
+        "102188176"
+      ],
+      "oas": [
+        "101102548",
+        "101104557",
+        "101104808"
+      ],
+      "ssc": [
+        "100523701",
+        "100525616"
+      ],
+      "cfr": [
+        "102510869",
+        "102511253",
+        "102511500"
+      ],
+      "cdk": [
+        "105099168",
+        "105099169",
+        "105099170"
+      ],
+      "bacu": [
+        "102998479",
+        "103003536",
+        "103003923",
+        "103015514",
+        "103016414"
+      ],
+      "lve": [
+        "103073473",
+        "103073747"
+      ],
+      "ecb": [
+        "100067782",
+        "100070976",
+        "100146423",
+        "100146833",
+        "100147243"
+      ],
+      "epz": [
+        "103541147",
+        "103543309",
+        "103543311",
+        "103544567",
+        "103544581"
+      ],
+      "eai": [
+        "106823492",
+        "106823501",
+        "106825581"
+      ],
+      "myb": [
+        "102249846",
+        "102257951",
+        "106727109",
+        "106727110"
+      ],
+      "myd": [
+        "102755298",
+        "102757353",
+        "102771691",
+        "102771969"
+      ],
+      "hai": [
+        "109379197",
+        "109379198",
+        "109379243"
+      ],
+      "rss": [
+        "109444972",
+        "109455125"
+      ],
+      "pale": [
+        "102879869",
+        "102895358"
+      ],
+      "lav": [
+        "100662726",
+        "100665003",
+        "100665288",
+        "100665571"
+      ],
+      "tmu": [
+        "101340907",
+        "101341581"
+      ],
+      "mdo": [
+        "100016433",
+        "100029977",
+        "100030014",
+        "107648868"
+      ],
+      "shr": [
+        "100921509",
+        "100923855",
+        "100924119",
+        "100929481"
+      ],
+      "gga": [
+        "424071",
+        "424072"
+      ],
+      "mgp": [
+        "100548803",
+        "100549268"
+      ],
+      "cjo": [
+        "107316537"
+      ],
+      "apla": [
+        "101795737"
+      ],
+      "acyg": [
+        "106039970"
+      ],
+      "tgu": [
+        "100217503"
+      ],
+      "gfr": [
+        "102031924"
+      ],
+      "fab": [
+        "101818190"
+      ],
+      "phi": [
+        "102105114"
+      ],
+      "pmaj": [
+        "107207425"
+      ],
+      "ccw": [
+        "104693769"
+      ],
+      "fpg": [
+        "101915658"
+      ],
+      "fch": [
+        "102057814"
+      ],
+      "clv": [
+        "102097486"
+      ],
+      "egz": [
+        "104130522"
+      ],
+      "aam": [
+        "106492369",
+        "106492373"
+      ],
+      "asn": [
+        "102368849",
+        "102369110",
+        "102376558",
+        "102377274",
+        "102377506",
+        "102383614"
+      ],
+      "amj": [
+        "102557817",
+        "102558050",
+        "102558282",
+        "102558513"
+      ],
+      "pss": [
+        "102452808",
+        "102453236"
+      ],
+      "cmy": [
+        "102932261",
+        "102932848"
+      ],
+      "cpic": [
+        "101949373"
+      ],
+      "acs": [
+        "100565091",
+        "100565481",
+        "100565681",
+        "100565879"
+      ],
+      "pvt": [
+        "110071119",
+        "110079891",
+        "110089018",
+        "110089019"
+      ],
+      "pbi": [
+        "103048615"
+      ],
+      "gja": [
+        "107108261",
+        "107113599",
+        "107113600",
+        "107117016"
+      ],
+      "xla": [
+        "108701447",
+        "108701448",
+        "108701449",
+        "444490"
+      ],
+      "xtr": [
+        "100379890",
+        "100495429"
+      ],
+      "npr": [
+        "108797592",
+        "108798400",
+        "108799582",
+        "108799583",
+        "108799584",
+        "108799585"
+      ],
+      "dre": [
+        "570457",
+        "64265"
+      ],
+      "srx": [
+        "107739315",
+        "107739343"
+      ],
+      "sanh": [
+        "107653532",
+        "107668192",
+        "107683348",
+        "107687882"
+      ],
+      "sgh": [
+        "107600982",
+        "107600984"
+      ],
+      "ccar": [
+        "109060027",
+        "109090992"
+      ],
+      "ipu": [
+        "108259545"
+      ],
+      "amex": [
+        "103034951",
+        "103035279",
+        "111191930"
+      ],
+      "tru": [
+        "101069055"
+      ],
+      "tng": [
+        "GSTEN00031889G001"
+      ],
+      "lco": [
+        "104937222"
+      ],
+      "ncc": [
+        "104942318",
+        "104947334"
+      ],
+      "mze": [
+        "101479847"
+      ],
+      "ola": [
+        "101168436"
+      ],
+      "xma": [
+        "102223145"
+      ],
+      "pret": [
+        "103457351"
+      ],
+      "lcf": [
+        "108873170"
+      ],
+      "hcq": [
+        "109520227"
+      ],
+      "bpec": [
+        "110175588",
+        "110175628"
+      ],
+      "sasa": [
+        "106574294",
+        "106575224"
+      ],
+      "els": [
+        "105022540"
+      ],
+      "sfm": [
+        "108930665",
+        "108930901"
+      ],
+      "lcm": [
+        "102354789",
+        "102358967",
+        "102365559"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.2.3.1"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.2.3.1"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.2.3.1"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.2.3.1"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.2.3.1"
+      ],
+      "CAS": [
+        "9029-07-6"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Gordon AH",
+          "Green DE",
+          "Subrahmanyan V"
+        ],
+        "title": "Liver aldehyde oxidase.",
+        "journal": "Biochem. J. 34 (1940) 764-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:16747217]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "KNOX WE"
+        ],
+        "title": "The quinine-oxidizing enzyme and liver aldehyde oxidase.",
+        "journal": "J. Biol. Chem. 163 (1946) 699-711.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:20985642]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "MAHLER HR",
+          "MACKLER B",
+          "GREEN DE."
+        ],
+        "title": "Studies on metalloflavoproteins. III. Aldehyde oxidase: a molybdoflavoprotein.",
+        "journal": "J. Biol. Chem. 210 (1954) 465-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:13201608]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Krenitsky TA",
+          "Neil SM",
+          "Elion GB",
+          "Hitchings GH"
+        ],
+        "title": "A comparison of the specificities of xanthine oxidase and aldehyde oxidase.",
+        "journal": "Arch. Biochem. Biophys. 150 (1972) 585-99.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:5044040]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tomita S",
+          "Tsujita M",
+          "Ichikawa Y"
+        ],
+        "title": "Retinal oxidase is identical to aldehyde oxidase.",
+        "journal": "FEBS. Lett. 336 (1993) 272-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:8262244]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yoshihara S",
+          "Tatsumi K"
+        ],
+        "title": "Purification and characterization of hepatic aldehyde oxidase in male and female mice.",
+        "journal": "Arch. Biochem. Biophys. 338 (1997) 29-34.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:9015384]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Huang DY",
+          "Furukawa A",
+          "Ichikawa Y."
+        ],
+        "title": "Molecular cloning of retinal oxidase/aldehyde oxidase cDNAs from rabbit and mouse livers and functional expression of recombinant mouse retinal oxidase cDNA in Escherichia coli.",
+        "journal": "Arch. Biochem. Biophys. 364 (1999) 264-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:10190983]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Uchida H",
+          "Kondo D",
+          "Yamashita A",
+          "Nagaosa Y",
+          "Sakurai T",
+          "Fujii Y",
+          "Fujishiro K",
+          "Aisaka K",
+          "Uwajima T."
+        ],
+        "title": "Purification and characterization of an aldehyde oxidase from Pseudomonas sp. KY 4690.",
+        "journal": "FEMS. Microbiol. Lett. 229 (2003) 31-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:14659539]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,545 @@
+[
+  {
+    "entry_id": "1.3.2.3",
+    "name": "L-galactonolactone dehydrogenase",
+    "names": [
+      "L-galactonolactone dehydrogenase",
+      "galactonolactone dehydrogenase",
+      "L-galactono-gamma-lactone dehydrogenase",
+      "L-galactono-gamma-lactone:ferricytochrome-c oxidoreductase",
+      "GLDHase",
+      "GLDase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With a cytochrome as acceptor"
+    ],
+    "sysname": "L-galactono-1,4-lactone:ferricytochrome-c oxidoreductase",
+    "reaction": "L-galactono-1,4-lactone + 4 ferricytochrome c = L-dehydroascorbate + 4 ferrocytochrome c + 4 H+ (overall reaction) [RN:R00640]; (1a) L-galactono-1,4-lactone + 2 ferricytochrome c = L-ascorbate + 2 ferrocytochrome c + 2 H+ [RN:R07679]; (1b) L-ascorbate + 2 ferricytochrome c = L-dehydroascorbate + 2 ferrocytochrome c + 2 H+ (spontaneous)",
+    "all_reac": "R00640 R07679",
+    "iubmb_reactions": [
+      "R00640 R07679"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-galactono-1,4-lactone [CPD:C01115]",
+      "ferricytochrome c [CPD:C00125]",
+      "L-ascorbate [CPD:C00072]"
+    ],
+    "products": [
+      "L-dehydroascorbate [CPD:C05422]",
+      "ferrocytochrome c [CPD:C00126]",
+      "H+ [CPD:C00080]",
+      "L-ascorbate [CPD:C00072]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme catalyses the final step in the biosynthesis of L-ascorbic acid in higher plants and in nearly all higher animals with the exception of primates and some birds [5]. The enzyme is very specific for its substrate L-galactono-1,4-lactone as D-galactono-gamma-lactone, D-gulono-gamma-lactone, L-gulono-gamma-lactone, D-erythronic-gamma-lactone, D-xylonic-gamma-lactone, L-mannono-gamma-lactone, D-galactonate, D-glucuronate and D-gluconate are not substrates [5]. FAD, NAD+, NADP+ and O2 (cf. EC 1.3.3.12, L-galactonolactone oxidase) cannot act as electron acceptor [5].",
+    "pathways": {
+      "ec00053": "Ascorbate and aldarate metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K00225": "L-galactono-1,4-lactone dehydrogenase"
+    },
+    "genes": {
+      "ath": [
+        "AT3G47930"
+      ],
+      "aly": [
+        "ARALYDRAFT_485156"
+      ],
+      "crb": [
+        "CARUB_v10016859mg"
+      ],
+      "csat": [
+        "104711271",
+        "104780602",
+        "104791004"
+      ],
+      "eus": [
+        "EUTSA_v10010214mg"
+      ],
+      "brp": [
+        "103873188"
+      ],
+      "bna": [
+        "106389550",
+        "106410745",
+        "106449166",
+        "111211168"
+      ],
+      "boe": [
+        "106335860"
+      ],
+      "thj": [
+        "104816408"
+      ],
+      "cpap": [
+        "110822775"
+      ],
+      "cit": [
+        "102611546"
+      ],
+      "cic": [
+        "CICLE_v100046031m"
+      ],
+      "tcc": [
+        "18598808"
+      ],
+      "gra": [
+        "105761589"
+      ],
+      "ghi": [
+        "107925893",
+        "107942591"
+      ],
+      "egr": [
+        "104444330"
+      ],
+      "gmx": [
+        "100526948",
+        "100793515"
+      ],
+      "pvu": [
+        "PHAVU_007G247900g"
+      ],
+      "vra": [
+        "106772555"
+      ],
+      "var": [
+        "108326445"
+      ],
+      "ccaj": [
+        "109805599"
+      ],
+      "mtr": [
+        "MTR_0506s0040",
+        "MTR_1g050360"
+      ],
+      "cam": [
+        "101498593"
+      ],
+      "adu": [
+        "107474610"
+      ],
+      "aip": [
+        "107625443"
+      ],
+      "lja": [
+        "Lj0g3v0304529.1",
+        "Lj5g3v0931500.1"
+      ],
+      "lang": [
+        "109336341"
+      ],
+      "fve": [
+        "101296499"
+      ],
+      "pper": [
+        "18769548"
+      ],
+      "pmum": [
+        "103339235"
+      ],
+      "mdm": [
+        "103415055",
+        "103423291",
+        "103454610"
+      ],
+      "pxb": [
+        "103933975",
+        "103940638"
+      ],
+      "zju": [
+        "107431670",
+        "107433785"
+      ],
+      "csv": [
+        "101215955"
+      ],
+      "cmo": [
+        "103497260"
+      ],
+      "mcha": [
+        "111021307"
+      ],
+      "rcu": [
+        "8286649"
+      ],
+      "jcu": [
+        "105645077"
+      ],
+      "hbr": [
+        "110672781"
+      ],
+      "pop": [
+        "POPTR_0006s04170g",
+        "POPTR_0016s03990g"
+      ],
+      "vvi": [
+        "100233005"
+      ],
+      "sly": [
+        "544206"
+      ],
+      "spen": [
+        "107002402"
+      ],
+      "sot": [
+        "102577860"
+      ],
+      "cann": [
+        "107843896"
+      ],
+      "nta": [
+        "107787357",
+        "107793071",
+        "107806941"
+      ],
+      "nsy": [
+        "104221614"
+      ],
+      "nto": [
+        "104110446"
+      ],
+      "ini": [
+        "109182270"
+      ],
+      "sind": [
+        "105159882"
+      ],
+      "han": [
+        "110897681"
+      ],
+      "bvg": [
+        "104889449"
+      ],
+      "soe": [
+        "110778008",
+        "110780776"
+      ],
+      "nnu": [
+        "104608844"
+      ],
+      "osa": [
+        "4349749",
+        "4351464"
+      ],
+      "dosa": [
+        "Os11t0143500-01",
+        "Os12t0139600-01"
+      ],
+      "obr": [
+        "102701949",
+        "102720290",
+        "107305548"
+      ],
+      "bdi": [
+        "100840661"
+      ],
+      "sbi": [
+        "110435654"
+      ],
+      "zma": [
+        "100381436",
+        "103636542"
+      ],
+      "sita": [
+        "101756029",
+        "101769296"
+      ],
+      "pda": [
+        "103720720"
+      ],
+      "egu": [
+        "105045546"
+      ],
+      "mus": [
+        "103988691"
+      ],
+      "dct": [
+        "110100133",
+        "110107339",
+        "110114488"
+      ],
+      "atr": [
+        "18433193"
+      ],
+      "smo": [
+        "SELMODRAFT_105274",
+        "SELMODRAFT_98882"
+      ],
+      "ppp": [
+        "PHYPADRAFT_120832"
+      ],
+      "cre": [
+        "CHLREDRAFT_168454"
+      ],
+      "vcn": [
+        "VOLCADRAFT_88191"
+      ],
+      "mng": [
+        "MNEG_10953"
+      ],
+      "olu": [
+        "OSTLU_1854"
+      ],
+      "ota": [
+        "OT_ostta04g02660"
+      ],
+      "bpg": [
+        "Bathy06g04900"
+      ],
+      "mis": [
+        "MICPUN_58063"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_57072"
+      ],
+      "csl": [
+        "COCSUDRAFT_38144"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_28225"
+      ],
+      "apro": [
+        "F751_5711"
+      ],
+      "cme": [
+        "CYME_CMD093C"
+      ],
+      "ccp": [
+        "CHC_T00000692001"
+      ],
+      "mbr": [
+        "MONBRDRAFT_38173"
+      ],
+      "sre": [
+        "PTSG_03222"
+      ],
+      "smin": [
+        "v1.2.008428.t1"
+      ],
+      "pti": [
+        "PHATRDRAFT_23292"
+      ],
+      "fcy": [
+        "FRACYDRAFT_224930",
+        "FRACYDRAFT_227121"
+      ],
+      "tps": [
+        "THAPSDRAFT_268544"
+      ],
+      "aaf": [
+        "AURANDRAFT_70295"
+      ],
+      "ngd": [
+        "NGA_2082000"
+      ],
+      "pif": [
+        "PITG_05465"
+      ],
+      "psoj": [
+        "PHYSODRAFT_485337"
+      ],
+      "spar": [
+        "SPRG_04571"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_70809"
+      ],
+      "gtt": [
+        "GUITHDRAFT_122678"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.2.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.2.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.2.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.2.3"
+      ],
+      "CAS": [
+        "9029-02-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Mapson",
+          "L.W. and Breslow",
+          "E."
+        ],
+        "title": "Properties of partially purified L-galactono-gamma-lactone dehydrogenase.",
+        "journal": "Biochem. J. 65 (1957) 29.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "MAPSON LW",
+          "ISHERWOOD FA",
+          "CHEN YT."
+        ],
+        "title": "Biological synthesis of L-ascorbic acid: the conversion of L-galactono-gamma-lactone into L-ascorbic acid by plant mitochondria.",
+        "journal": "Biochem. J. 56 (1954) 21-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13126087]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "ISHERWOOD FA",
+          "CHEN YT",
+          "MAPSON LW."
+        ],
+        "title": "Synthesis of L-ascorbic acid in plants and animals.",
+        "journal": "Biochem. J. 56 (1954) 1-15.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:13126085]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oba K",
+          "Ishikawa S",
+          "Nishikawa M",
+          "Mizuno H",
+          "Yamamoto T."
+        ],
+        "title": "Purification and properties of L-galactono-gamma-lactone dehydrogenase, a key enzyme for ascorbic acid biosynthesis, from sweet potato roots.",
+        "journal": "J. Biochem. (Tokyo). 117 (1995) 120-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7775377]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ostergaard J",
+          "Persiau G",
+          "Davey MW",
+          "Bauw G",
+          "Van Montagu M."
+        ],
+        "title": "Isolation of a cDNA coding for L-galactono-gamma-lactone dehydrogenase, an enzyme involved in the biosynthesis of ascorbic acid in plants. Purification, characterization, cDNA cloning, and expression in yeast.",
+        "journal": "J. Biol. Chem. 272 (1997) 30009-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:9374475]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

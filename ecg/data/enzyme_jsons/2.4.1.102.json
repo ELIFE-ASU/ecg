@@ -1,0 +1,547 @@
+[
+  {
+    "entry_id": "2.4.1.102",
+    "name": "beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acetylglucosaminyltransferase",
+    "names": [
+      "beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acetylglucosaminyltransferase",
+      "O-glycosyl-oligosaccharide-glycoprotein N-acetylglucosaminyltransferase I",
+      "beta6-N-acetylglucosaminyltransferase",
+      "uridine diphosphoacetylglucosamine-mucin beta-(1->6)-acetylglucosaminyltransferase",
+      "core 2 acetylglucosaminyltransferase",
+      "core 6-beta-GlcNAc-transferase A",
+      "UDP-N-acetyl-D-glucosamine:O-glycosyl-glycoprotein (N-acetyl-D-glucosamine to N-acetyl-D-galactosamine of beta-D-galactosyl-1,3-N-acetyl-D-galactosaminyl-R) beta-1,6-N-acetyl-D-glucosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-D-glucosamine:O-glycosyl-glycoprotein (N-acetyl-D-glucosamine to N-acetyl-D-galactosamine of beta-D-galactosyl-(1->3)-N-acetyl-D-galactosaminyl-R) 6-beta-N-acetyl-D-glucosaminyltransferase",
+    "reaction": "UDP-N-acetyl-alpha-D-glucosamine + beta-D-galactosyl-(1->3)-N-acetyl-alpha-D-galactosaminyl-R = UDP + beta-D-galactosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->6)]-N-acetyl-alpha-D-galactosaminyl-R [RN:R04575 R05912]",
+    "all_reac": "R04575 R05912(G); (other) R05910(G)",
+    "iubmb_reactions": [
+      "R04575 R05912(G)"
+    ],
+    "kegg_reactions": [
+      "R05910(G)"
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-glucosamine [CPD:C00043]",
+      "beta-D-galactosyl-(1->3)-N-acetyl-alpha-D-galactosaminyl-R [CPD:C04750]"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "beta-D-galactosyl-(1->3)-[N-acetyl-beta-D-glucosaminyl-(1->6)]-N-acetyl-alpha-D-galactosaminyl-R [CPD:C04902]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is involved in O-glycosylation of several proteins, such as mucins.",
+    "pathways": {
+      "ec00512": "Mucin type O-glycan biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00727": "beta-1,3-galactosyl-O-glycosyl-glycoprotein beta-1,6-N-acetylglucosaminyltransferase"
+    },
+    "genes": {
+      "hsa": [
+        "2650"
+      ],
+      "ptr": [
+        "472959"
+      ],
+      "pps": [
+        "100990909"
+      ],
+      "ggo": [
+        "101144738"
+      ],
+      "pon": [
+        "100453351"
+      ],
+      "nle": [
+        "100590764"
+      ],
+      "mcc": [
+        "704639"
+      ],
+      "mcf": [
+        "102121951"
+      ],
+      "csab": [
+        "103219612"
+      ],
+      "rro": [
+        "104682177"
+      ],
+      "rbb": [
+        "108542654"
+      ],
+      "cjc": [
+        "100397450"
+      ],
+      "sbq": [
+        "101041046"
+      ],
+      "mmu": [
+        "14537"
+      ],
+      "rno": [
+        "64043"
+      ],
+      "cge": [
+        "100767124"
+      ],
+      "ngi": [
+        "103728182",
+        "103728229",
+        "103730640"
+      ],
+      "hgl": [
+        "101713056"
+      ],
+      "ccan": [
+        "109693363"
+      ],
+      "ocu": [
+        "100347030"
+      ],
+      "tup": [
+        "102474618"
+      ],
+      "cfa": [
+        "484158"
+      ],
+      "aml": [
+        "100481771"
+      ],
+      "umr": [
+        "103663275"
+      ],
+      "oro": [
+        "101386761"
+      ],
+      "fca": [
+        "101093969"
+      ],
+      "ptg": [
+        "102952027"
+      ],
+      "aju": [
+        "106975313"
+      ],
+      "bta": [
+        "281778"
+      ],
+      "bom": [
+        "102285997"
+      ],
+      "biu": [
+        "109562970"
+      ],
+      "phd": [
+        "102317499"
+      ],
+      "chx": [
+        "102187590"
+      ],
+      "oas": [
+        "101121316"
+      ],
+      "ssc": [
+        "106508649"
+      ],
+      "cfr": [
+        "102509033"
+      ],
+      "cdk": [
+        "105087407"
+      ],
+      "bacu": [
+        "103015488"
+      ],
+      "lve": [
+        "103084201"
+      ],
+      "ecb": [
+        "100061416"
+      ],
+      "epz": [
+        "103548068"
+      ],
+      "eai": [
+        "106825720"
+      ],
+      "myb": [
+        "102248045"
+      ],
+      "myd": [
+        "102759783"
+      ],
+      "hai": [
+        "109385744"
+      ],
+      "rss": [
+        "109449945"
+      ],
+      "pale": [
+        "102898105"
+      ],
+      "lav": [
+        "100658096"
+      ],
+      "tmu": [
+        "101353425"
+      ],
+      "mdo": [
+        "100011966"
+      ],
+      "shr": [
+        "100921847"
+      ],
+      "oaa": [
+        "100075656"
+      ],
+      "gga": [
+        "427260"
+      ],
+      "mgp": [
+        "100544057"
+      ],
+      "cjo": [
+        "107306219"
+      ],
+      "apla": [
+        "101796875"
+      ],
+      "acyg": [
+        "106044482"
+      ],
+      "tgu": [
+        "100221628"
+      ],
+      "gfr": [
+        "102041616"
+      ],
+      "fab": [
+        "101808578"
+      ],
+      "phi": [
+        "102103854"
+      ],
+      "pmaj": [
+        "107198206"
+      ],
+      "ccw": [
+        "104691986"
+      ],
+      "fpg": [
+        "101912116"
+      ],
+      "fch": [
+        "102047162"
+      ],
+      "clv": [
+        "102085044"
+      ],
+      "egz": [
+        "104123222"
+      ],
+      "aam": [
+        "106489914"
+      ],
+      "asn": [
+        "102385228"
+      ],
+      "amj": [
+        "102563225"
+      ],
+      "pss": [
+        "102449351"
+      ],
+      "cmy": [
+        "102941735"
+      ],
+      "cpic": [
+        "101952241"
+      ],
+      "acs": [
+        "100565751"
+      ],
+      "pvt": [
+        "110076011"
+      ],
+      "pbi": [
+        "103048092"
+      ],
+      "gja": [
+        "107108744"
+      ],
+      "xla": [
+        "380501",
+        "495090"
+      ],
+      "xtr": [
+        "100490337"
+      ],
+      "npr": [
+        "108788489"
+      ],
+      "ipu": [
+        "108265617"
+      ],
+      "amex": [
+        "103024919",
+        "111189883"
+      ],
+      "tru": [
+        "101066002"
+      ],
+      "tng": [
+        "GSTEN00029414G001"
+      ],
+      "lco": [
+        "104920349",
+        "104920350",
+        "104920351"
+      ],
+      "mze": [
+        "101468545",
+        "101481222",
+        "101481511",
+        "101485293"
+      ],
+      "ola": [
+        "101157299"
+      ],
+      "xma": [
+        "102217069",
+        "106700355"
+      ],
+      "pret": [
+        "103470242"
+      ],
+      "lcf": [
+        "108878093"
+      ],
+      "hcq": [
+        "109520688"
+      ],
+      "sasa": [
+        "106585626"
+      ],
+      "sfm": [
+        "108938500"
+      ],
+      "lcm": [
+        "102357208"
+      ],
+      "cmk": [
+        "103186097",
+        "103188128"
+      ],
+      "aplc": [
+        "110984114"
+      ],
+      "sko": [
+        "100372443",
+        "100372744",
+        "100373957",
+        "100375210",
+        "100379011",
+        "102810130"
+      ],
+      "cel": [
+        "CELE_C54C8.11",
+        "CELE_T15D6.2"
+      ],
+      "cbr": [
+        "CBG04363"
+      ],
+      "nai": [
+        "NECAME_01847",
+        "NECAME_01861",
+        "NECAME_12647"
+      ],
+      "hro": [
+        "HELRODRAFT_106314",
+        "HELRODRAFT_141556",
+        "HELRODRAFT_72329"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_104647",
+        "LOTGIDRAFT_108047",
+        "LOTGIDRAFT_163866",
+        "LOTGIDRAFT_54803",
+        "LOTGIDRAFT_73452"
+      ],
+      "crg": [
+        "105334548",
+        "105336560",
+        "105336571",
+        "105336746",
+        "105343968",
+        "109620412"
+      ],
+      "myi": [
+        "110445188",
+        "110449075",
+        "110455573",
+        "110456784",
+        "110458069",
+        "110465295"
+      ],
+      "obi": [
+        "106873990",
+        "106881820",
+        "106881829",
+        "106883007"
+      ],
+      "lak": [
+        "106150782",
+        "106155088",
+        "106155707",
+        "106155709",
+        "106170773",
+        "106174181",
+        "106181126"
+      ],
+      "smm": [
+        "Smp_009810",
+        "Smp_154680"
+      ],
+      "shx": [
+        "MS3_05197",
+        "MS3_06656",
+        "MS3_06659"
+      ],
+      "ovi": [
+        "T265_10155",
+        "T265_12662"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.102"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.102"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.102"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.102"
+      ],
+      "CAS": [
+        "95978-15-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Brockhausen I",
+          "Rachaman ES",
+          "Matta KL",
+          "Schachter H."
+        ],
+        "title": "The separation by liquid chromatography (under elevated pressure) of phenyl, benzyl, and O-nitrophenyl glycosides of oligosaccharides. Analysis of substrates and products for four N-acetyl-D-glucosaminyl-transferases involved in mucin synthesis.",
+        "journal": "Carbohydr. Res. 120 (1983) 3-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:6226356]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Williams D",
+          "Longmore G",
+          "Matta KL",
+          "Schachter H."
+        ],
+        "title": "Mucin synthesis. II. Substrate specificity and product identification studies on canine submaxillary gland UDP-GlcNAc:Gal beta 1-3GalNAc(GlcNAc leads to GalNAc) beta 6-N-acetylglucosaminyltransferase.",
+        "journal": "J. Biol. Chem. 255 (1980) 11253-61.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6449508]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Williams D",
+          "Schachter H."
+        ],
+        "title": "Mucin synthesis. I. Detection in canine submaxillary glands of an N-acetylglucosaminyltransferase which acts on mucin substrates.",
+        "journal": "J. Biol. Chem. 255 (1980) 11247-52.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6449507]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

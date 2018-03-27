@@ -1,0 +1,374 @@
+[
+  {
+    "entry_id": "1.14.14.36",
+    "name": "tyrosine N-monooxygenase",
+    "names": [
+      "tyrosine N-monooxygenase",
+      "tyrosine N-hydroxylase",
+      "CYP79A1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "L-tyrosine,[reduced NADPH---hemoprotein reductase]:oxygen oxidoreductase (N-hydroxylating)",
+    "reaction": "L-tyrosine + 2 O2 + 2 [reduced NADPH---hemoprotein reductase] = (E)-[4-hydroxyphenylacetaldehyde oxime] + 2 [oxidized NADPH---hemoprotein reductase] + CO2 + 3 H2O (overall reaction) [RN:R10671]; (1a) L-tyrosine + O2 + [reduced NADPH---hemoprotein reductase] = N-hydroxy-L-tyrosine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R00730]; (1b) N-hydroxy-L-tyrosine + O2 + [reduced NADPH---hemoprotein reductase] = N,N-dihydroxy-L-tyrosine + [oxidized NADPH---hemoprotein reductase] + H2O [RN:R04460]; (1c) N,N-dihydroxy-L-tyrosine = (E)-[4-hydroxyphenylacetaldehyde oxime] + CO2 + H2O [RN:R07190]",
+    "all_reac": "R00730 R04460 R07190 R10671",
+    "iubmb_reactions": [
+      "R00730 R04460 R07190 R10671"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-tyrosine [CPD:C00082]",
+      "O2 [CPD:C00007]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "N-hydroxy-L-tyrosine [CPD:C03004]",
+      "N,N-dihydroxy-L-tyrosine [CPD:C15503]"
+    ],
+    "products": [
+      "(E)-[4-hydroxyphenylacetaldehyde oxime] [CPD:C04350]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "CO2 [CPD:C00011]",
+      "H2O [CPD:C00001]",
+      "N-hydroxy-L-tyrosine [CPD:C03004]",
+      "N,N-dihydroxy-L-tyrosine [CPD:C15503]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A cytochrome P-450 (heme-thiolate) protein. The enzyme from Sorghum is involved in the biosynthesis of the cyanogenic glucoside dhurrin. In Sinapis alba (white mustard) the enzyme is involved in the biosynthesis of the glucosinolate sinalbin.",
+    "pathways": {
+      "ec00460": "Cyanoamino acid metabolism",
+      "ec00966": "Glucosinolate biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K13027": "tyrosine N-monooxygenase",
+      "K20785": "tyrosine N-monooxygenase"
+    },
+    "genes": {
+      "bdi": [
+        "100844710"
+      ],
+      "sbi": [
+        "8061413",
+        "8061994"
+      ],
+      "zma": [
+        "103638611"
+      ],
+      "sita": [
+        "101771875",
+        "101781613"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.36"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.36"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.36"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.36"
+      ],
+      "CAS": [
+        "159447-19-5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Halkier BA",
+          "Moller BL."
+        ],
+        "title": "The biosynthesis of cyanogenic glucosides in higher plants. Identification of three hydroxylation steps in the biosynthesis of dhurrin in Sorghum bicolor (L.) Moench and the involvement of 1-ACI-nitro-2-(p-hydroxyphenyl)ethane as an intermediate.",
+        "journal": "J. Biol. Chem. 265 (1990) 21114-21.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2250015]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sibbesen O",
+          "Koch B",
+          "Halkier BA",
+          "Moller BL."
+        ],
+        "title": "Cytochrome P-450TYR is a multifunctional heme-thiolate enzyme catalyzing the conversion of L-tyrosine to p-hydroxyphenylacetaldehyde oxime in the biosynthesis of the cyanogenic glucoside dhurrin in Sorghum bicolor (L.) Moench.",
+        "journal": "J. Biol. Chem. 270 (1995) 3506-11.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7876084]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bennett RN",
+          "Kiddle G",
+          "Wallsgrove RM."
+        ],
+        "title": "Involvement of Cytochrome P450 in Glucosinolate Biosynthesis in White Mustard (A Biochemical Anomaly).",
+        "journal": "Plant. Physiol. 114 (1997) 1283-1291.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12223771]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kahn RA",
+          "Fahrendorf T",
+          "Halkier BA",
+          "Moller BL."
+        ],
+        "title": "Substrate specificity of the cytochrome P450 enzymes CYP79A1 and CYP71E1 involved in the biosynthesis of the cyanogenic glucoside dhurrin in Sorghum bicolor (L.) Moench.",
+        "journal": "Arch. Biochem. Biophys. 363 (1999) 9-18.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:10049494]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Bak S",
+          "Olsen CE",
+          "Halkier BA",
+          "Moller BL."
+        ],
+        "title": "Transgenic tobacco and Arabidopsis plants expressing the two multifunctional sorghum cytochrome P450 enzymes, CYP79A1 and CYP71E1, are cyanogenic and accumulate metabolites derived from intermediates in Dhurrin biosynthesis.",
+        "journal": "Plant. Physiol. 123 (2000) 1437-48.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:10938360]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nielsen JS",
+          "Moller BL."
+        ],
+        "title": "Cloning and expression of cytochrome P450 enzymes catalyzing the conversion of tyrosine to p-hydroxyphenylacetaldoxime in the biosynthesis of cyanogenic glucosides in Triglochin maritima.",
+        "journal": "Plant. Physiol. 122 (2000) 1311-21.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:10759528]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Busk PK",
+          "Moller BL."
+        ],
+        "title": "Dhurrin synthesis in sorghum is regulated at the transcriptional level and induced by nitrogen fertilization in older plants.",
+        "journal": "Plant. Physiol. 129 (2002) 1222-31.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:12114576]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kristensen C",
+          "Morant M",
+          "Olsen CE",
+          "Ekstrom CT",
+          "Galbraith DW",
+          "Moller BL",
+          "Bak S."
+        ],
+        "title": "Metabolic engineering of dhurrin in transgenic Arabidopsis plants with marginal inadvertent effects on the metabolome and transcriptome.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 102 (2005) 1779-84.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:15665094]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Clausen M",
+          "Kannangara RM",
+          "Olsen CE",
+          "Blomstedt CK",
+          "Gleadow RM",
+          "Jorgensen K",
+          "Bak S",
+          "Motawie MS",
+          "Moller BL"
+        ],
+        "title": "The bifurcation of the cyanogenic glucoside and glucosinolate biosynthetic pathways.",
+        "journal": "Plant. J. 84 (2015) 558-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:26361733]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

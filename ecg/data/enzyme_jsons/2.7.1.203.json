@@ -1,0 +1,575 @@
+[
+  {
+    "entry_id": "2.7.1.203",
+    "name": "protein-Npi-phosphohistidine---D-glucosaminate phosphotransferase",
+    "names": [
+      "protein-Npi-phosphohistidine---D-glucosaminate phosphotransferase",
+      "dgaABCD (gene names)",
+      "2-amino-2-deoxy-D-gluconate PTS permease"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring phosphorus-containing groups;",
+      "Phosphotransferases with an alcohol group as acceptor"
+    ],
+    "sysname": "protein-Npi-phospho-L-histidine:2-amino-2-deoxy-D-gluconate Npi-phosphotransferase",
+    "reaction": "[protein]-Npi-phospho-L-histidine + 2-amino-2-deoxy-D-gluconate[side 1] = [protein]-L-histidine + 2-amino-2-deoxy-D-gluconate 6-phosphate[side 2] [RN:R10407]",
+    "all_reac": "R10407",
+    "iubmb_reactions": [
+      "R10407"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "[protein]-Npi-phospho-L-histidine [CPD:C04261]",
+      "2-amino-2-deoxy-D-gluconate[side 1] [CPD:C03752]"
+    ],
+    "products": [
+      "[protein]-L-histidine [CPD:C00615]",
+      "2-amino-2-deoxy-D-gluconate 6-phosphate[side 2] [CPD:C20589]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme is a component (known as enzyme II) of a phosphoenolpyruvate (PEP)-dependent, sugar transporting phosphotransferase system (PTS). The system, which is found only in prokaryotes, simultaneously transports its substrate from the periplasm or extracellular space into the cytoplasm and phosphorylates it. The phosphate donor, which is shared among the different systems, is a phospho-carrier protein of low molecular mass that has been phosphorylated by EC 2.7.3.9 (phosphoenolpyruvate---protein phosphotransferase). Enzyme II, on the other hand, is specific for a particular substrate, although in some cases alternative substrates can be transported with lower efficiency. The reaction involves a successive transfer of the phosphate group to several amino acids within the enzyme before the final transfer to the substrate.",
+    "pathways": {
+      "ec00030": "Pentose phosphate pathway",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K17464": "PTS system, D-glucosaminate-specific IIA component",
+      "K17465": "PTS system, D-glucosaminate-specific IIB component"
+    },
+    "genes": {
+      "eoj": [
+        "ECO26_4032",
+        "ECO26_4033"
+      ],
+      "eoi": [
+        "ECO111_3681",
+        "ECO111_3682"
+      ],
+      "eci": [
+        "UTI89_C3970",
+        "UTI89_C3971"
+      ],
+      "ecv": [
+        "APECO1_2997",
+        "APECO1_2998"
+      ],
+      "ecw": [
+        "EcE24377A_3276",
+        "EcE24377A_3277"
+      ],
+      "ecr": [
+        "ECIAI1_3066",
+        "ECIAI1_3067"
+      ],
+      "ecz": [
+        "ECS88_3858",
+        "ECS88_3859"
+      ],
+      "eih": [
+        "ECOK1_3884"
+      ],
+      "elu": [
+        "UM146_17400",
+        "UM146_17405"
+      ],
+      "ecoi": [
+        "ECOPMV1_03775",
+        "ECOPMV1_03776"
+      ],
+      "eal": [
+        "EAKF1_ch2499c",
+        "EAKF1_ch2500c"
+      ],
+      "sty": [
+        "STY4013",
+        "STY4014"
+      ],
+      "stt": [
+        "t3746",
+        "t3747"
+      ],
+      "sex": [
+        "STBHUCCB_39480",
+        "STBHUCCB_39490"
+      ],
+      "sent": [
+        "TY21A_19000",
+        "TY21A_19005"
+      ],
+      "stm": [
+        "STM3771",
+        "STM3772"
+      ],
+      "seo": [
+        "STM14_4547",
+        "STM14_4548"
+      ],
+      "sev": [
+        "STMMW_37601",
+        "STMMW_37611"
+      ],
+      "sey": [
+        "SL1344_3736",
+        "SL1344_3737"
+      ],
+      "sem": [
+        "STMDT12_C38280",
+        "STMDT12_C38290"
+      ],
+      "sej": [
+        "STMUK_3757",
+        "STMUK_3758"
+      ],
+      "seb": [
+        "STM474_3945",
+        "STM474_3946"
+      ],
+      "sef": [
+        "UMN798_4099",
+        "UMN798_4100"
+      ],
+      "setu": [
+        "STU288_19055",
+        "STU288_19060"
+      ],
+      "setc": [
+        "CFSAN001921_21585",
+        "CFSAN001921_21590"
+      ],
+      "senr": [
+        "STMDT2_36541",
+        "STMDT2_36551"
+      ],
+      "send": [
+        "DT104_37551",
+        "DT104_37561"
+      ],
+      "seni": [
+        "CY43_19560",
+        "CY43_19565"
+      ],
+      "seen": [
+        "SE451236_02055",
+        "SE451236_02060"
+      ],
+      "spt": [
+        "SPA3621",
+        "SPA3622"
+      ],
+      "sek": [
+        "SSPA3383",
+        "SSPA3384"
+      ],
+      "spq": [
+        "SPAB_04687",
+        "SPAB_04688"
+      ],
+      "sei": [
+        "SPC_3850",
+        "SPC_3851"
+      ],
+      "sec": [
+        "SCH_3691",
+        "SCH_3692"
+      ],
+      "seh": [
+        "SeHA_C4101",
+        "SeHA_C4102"
+      ],
+      "shb": [
+        "SU5_04247",
+        "SU5_04248"
+      ],
+      "senh": [
+        "CFSAN002069_13175",
+        "CFSAN002069_13180"
+      ],
+      "seeh": [
+        "SEEH1578_05005",
+        "SEEH1578_05010"
+      ],
+      "see": [
+        "SNSL254_A4050",
+        "SNSL254_A4051"
+      ],
+      "senn": [
+        "SN31241_1070",
+        "SN31241_1080"
+      ],
+      "sew": [
+        "SeSA_A3978",
+        "SeSA_A3979"
+      ],
+      "sea": [
+        "SeAg_B3996",
+        "SeAg_B3997"
+      ],
+      "sens": [
+        "Q786_18480",
+        "Q786_18485"
+      ],
+      "sed": [
+        "SeD_A4164",
+        "SeD_A4165"
+      ],
+      "seg": [
+        "SG3656",
+        "SG3657"
+      ],
+      "sel": [
+        "SPUL_3790",
+        "SPUL_3791"
+      ],
+      "sega": [
+        "SPUCDC_3776",
+        "SPUCDC_3777"
+      ],
+      "set": [
+        "SEN3593",
+        "SEN3594"
+      ],
+      "sena": [
+        "AU38_18345",
+        "AU38_18350"
+      ],
+      "seno": [
+        "AU37_18535",
+        "AU37_18540"
+      ],
+      "senv": [
+        "AU39_18540",
+        "AU39_18545"
+      ],
+      "senq": [
+        "AU40_20670",
+        "AU40_20675"
+      ],
+      "senl": [
+        "IY59_18980",
+        "IY59_18985"
+      ],
+      "senj": [
+        "CFSAN001992_14785",
+        "CFSAN001992_14790"
+      ],
+      "seec": [
+        "CFSAN002050_01760",
+        "CFSAN002050_01765"
+      ],
+      "seeb": [
+        "SEEB0189_001020",
+        "SEEB0189_001025"
+      ],
+      "seep": [
+        "I137_18190",
+        "I137_18195"
+      ],
+      "senb": [
+        "BN855_38630",
+        "BN855_38640"
+      ],
+      "sene": [
+        "IA1_18315",
+        "IA1_18320"
+      ],
+      "senc": [
+        "SEET0819_02675",
+        "SEET0819_02680"
+      ],
+      "sbg": [
+        "SBG_3343",
+        "SBG_3344"
+      ],
+      "sbz": [
+        "A464_3842",
+        "A464_3843"
+      ],
+      "sbv": [
+        "N643_16640",
+        "N643_16645"
+      ],
+      "kpy": [
+        "KPNIH31_18240",
+        "KPNIH31_18245"
+      ],
+      "kox": [
+        "KOX_02420",
+        "KOX_02425"
+      ],
+      "koe": [
+        "A225_4922",
+        "A225_4923"
+      ],
+      "koy": [
+        "J415_07360",
+        "J415_07365"
+      ],
+      "kok": [
+        "KONIH1_24755",
+        "KONIH1_24760"
+      ],
+      "koc": [
+        "AB185_11700",
+        "AB185_11705"
+      ],
+      "kom": [
+        "HR38_00785",
+        "HR38_00790"
+      ],
+      "eae": [
+        "EAE_10140",
+        "EAE_10145"
+      ],
+      "ear": [
+        "CCG31961",
+        "CCG31962"
+      ],
+      "cko": [
+        "CKO_05131",
+        "CKO_05132"
+      ],
+      "cfd": [
+        "CFNIH1_06355",
+        "CFNIH1_06360"
+      ],
+      "cbra": [
+        "A6J81_17515",
+        "A6J81_17520"
+      ],
+      "cwe": [
+        "CO701_22375",
+        "CO701_22380"
+      ],
+      "cama": [
+        "F384_19960",
+        "F384_19965"
+      ],
+      "caf": [
+        "AL524_02745",
+        "AL524_02750"
+      ],
+      "cif": [
+        "AL515_01055",
+        "AL515_01060"
+      ],
+      "cfar": [
+        "CI104_00295",
+        "CI104_00300"
+      ],
+      "cem": [
+        "LH23_01840",
+        "LH23_01845"
+      ],
+      "cen": [
+        "LH86_01835",
+        "LH86_01840"
+      ],
+      "esc": [
+        "Entcl_3811",
+        "Entcl_3812"
+      ],
+      "kle": [
+        "AO703_02845",
+        "AO703_02850"
+      ],
+      "sfw": [
+        "WN53_22590",
+        "WN53_22595"
+      ],
+      "sfg": [
+        "AV650_18420",
+        "AV650_18425"
+      ],
+      "sgl": [
+        "SG2426",
+        "SG2427"
+      ],
+      "sod": [
+        "Sant_0067",
+        "Sant_0068"
+      ],
+      "hav": [
+        "AT03_07685",
+        "AT03_07690"
+      ],
+      "opo": [
+        "DSM2777_12975",
+        "DSM2777_12980"
+      ],
+      "jeu": [
+        "BJP62_06010",
+        "BJP62_06015"
+      ],
+      "vir": [
+        "X953_16400",
+        "X953_16405"
+      ],
+      "lcb": [
+        "LCABL_04120",
+        "LCABL_04130"
+      ],
+      "lcs": [
+        "LCBD_0415",
+        "LCBD_0416"
+      ],
+      "lce": [
+        "LC2W_0410",
+        "LC2W_0411"
+      ],
+      "lcw": [
+        "BN194_04200",
+        "BN194_04210"
+      ],
+      "efa": [
+        "EF2979",
+        "EF2980"
+      ],
+      "efl": [
+        "EF62_0065",
+        "EF62_0066"
+      ],
+      "efi": [
+        "OG1RF_12261",
+        "OG1RF_12262"
+      ],
+      "efd": [
+        "EFD32_2559",
+        "EFD32_2560"
+      ],
+      "efs": [
+        "EFS1_2414",
+        "EFS1_2415"
+      ],
+      "efn": [
+        "DENG_02865",
+        "DENG_02866"
+      ],
+      "efq": [
+        "DR75_1709",
+        "DR75_1710"
+      ],
+      "ene": [
+        "ENT_27240",
+        "ENT_27250"
+      ],
+      "ega": [
+        "AL523_14025"
+      ],
+      "aun": [
+        "AWM73_08030"
+      ],
+      "marr": [
+        "BKP56_11380",
+        "BKP56_11400"
+      ],
+      "cdf": [
+        "CD630_02860",
+        "CD630_02870"
+      ],
+      "pdc": [
+        "CDIF630_00410",
+        "CDIF630_00411"
+      ],
+      "cdc": [
+        "CD196_0302",
+        "CD196_0303"
+      ],
+      "cdl": [
+        "CDR20291_0289",
+        "CDR20291_0290"
+      ],
+      "pdf": [
+        "CD630DERM_02860",
+        "CD630DERM_02870"
+      ],
+      "tae": [
+        "TepiRe1_1830"
+      ],
+      "pft": [
+        "JBW_03181",
+        "JBW_03182"
+      ],
+      "erb": [
+        "A4V01_00185",
+        "A4V01_02605",
+        "A4V01_02640",
+        "A4V01_03885",
+        "A4V01_04820",
+        "A4V01_09745",
+        "A4V01_21605"
+      ],
+      "str": [
+        "Sterm_3205",
+        "Sterm_3206",
+        "Sterm_3863",
+        "Sterm_3864"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.7.1.203"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.7.1.203"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.7.1.203"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.7.1.203"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Miller KA",
+          "Phillips RS",
+          "Mrazek J",
+          "Hoover TR."
+        ],
+        "title": "Salmonella utilizes D-glucosaminate via a mannose family phosphotransferase system permease and associated enzymes.",
+        "journal": "J. Bacteriol. (2013) .",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:23836865]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

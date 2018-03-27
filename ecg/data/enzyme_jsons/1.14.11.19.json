@@ -1,0 +1,476 @@
+[
+  {
+    "entry_id": "1.14.11.19",
+    "name": "anthocyanidin synthase",
+    "names": [
+      "anthocyanidin synthase",
+      "leucocyanidin oxygenase",
+      "leucocyanidin,2-oxoglutarate:oxygen oxidoreductase",
+      "ANS (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With 2-oxoglutarate as one donor, and incorporation of one atom of oxygen into each donor"
+    ],
+    "sysname": "(2R,3S,4S)-leucoanthocyanidin,2-oxoglutarate:oxygen oxidoreductase",
+    "reaction": "a (2R,3S,4S)-leucoanthocyanidin + 2-oxoglutarate + O2 = an anthocyanidin + succinate + CO2 + 2 H2O (overall reaction) [RN:R05723 R07366]; (1a) a (2R,3S,4S)-leucoanthocyanidin + 2-oxoglutarate + O2 = a (4S)- 2,3-dehydroflavan-3,4-diol + succinate + CO2 + H2O; (1b) a (4S)- 2,3-dehydroflavan-3,4-diol = an anthocyanidin + H2O",
+    "all_reac": "R05723 R07366; (other) R04276 R05036 R05037 R06540",
+    "iubmb_reactions": [
+      "R05723 R07366"
+    ],
+    "kegg_reactions": [
+      "R04276 R05036 R05037 R06540"
+    ],
+    "substrates": [
+      "(2R,3S,4S)-leucoanthocyanidin [CPD:C21418]",
+      "2-oxoglutarate [CPD:C00026]",
+      "O2 [CPD:C00007]",
+      "(4S)- 2,3-dehydroflavan-3,4-diol"
+    ],
+    "products": [
+      "anthocyanidin [CPD:C02003]",
+      "succinate [CPD:C00042]",
+      "CO2 [CPD:C00011]",
+      "H2O [CPD:C00001]",
+      "(4S)- 2,3-dehydroflavan-3,4-diol"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme requires Fe(II) and ascorbate. It is involved in the pathway by which many flowering plants make anthocyanin flower pigments (glycosylated anthocyandins). The enzyme hydroxylates the C-3 carbon, followed by a trans diaxial elimination, forming a C-2,C-3 enol. The product loses a second water molecule to form anthocyanidins. When assayed in vitro, non-enzymic epimerization of the product can lead to formation of dihydroflavanols. Thus when the substrate is leucocyanidin, a mixture of (+)-taxifolin and (+)-epitaxifolin are formed. The enzyme can also oxidize the formed (+)-taxifolin to quercetin (cf. EC 1.14.11.23, flavonol synthase) [2,3].",
+    "pathways": {
+      "ec00941": "Flavonoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K05277": "leucoanthocyanidin dioxygenase"
+    },
+    "genes": {
+      "ath": [
+        "AT4G22870",
+        "AT4G22880"
+      ],
+      "aly": [
+        "ARALYDRAFT_492580"
+      ],
+      "crb": [
+        "CARUB_v10004921mg"
+      ],
+      "csat": [
+        "104718018",
+        "104722745",
+        "104731205",
+        "109127199",
+        "109131729"
+      ],
+      "eus": [
+        "EUTSA_v10025559mg"
+      ],
+      "brp": [
+        "103860424",
+        "103861341"
+      ],
+      "bna": [
+        "106375745",
+        "106440474",
+        "106440807",
+        "111214282"
+      ],
+      "boe": [
+        "106301636",
+        "106339986"
+      ],
+      "thj": [
+        "104813007"
+      ],
+      "cpap": [
+        "110817557"
+      ],
+      "cit": [
+        "102577958"
+      ],
+      "cic": [
+        "CICLE_v10020815mg"
+      ],
+      "tcc": [
+        "18606417"
+      ],
+      "gra": [
+        "105792153"
+      ],
+      "ghi": [
+        "107926986",
+        "107930062",
+        "107936429"
+      ],
+      "egr": [
+        "104441822"
+      ],
+      "gmx": [
+        "100801148",
+        "547615"
+      ],
+      "pvu": [
+        "PHAVU_002G152700g"
+      ],
+      "vra": [
+        "106777796"
+      ],
+      "var": [
+        "108335234"
+      ],
+      "ccaj": [
+        "109799788"
+      ],
+      "mtr": [
+        "MTR_5g011250"
+      ],
+      "cam": [
+        "101511289"
+      ],
+      "adu": [
+        "107488173"
+      ],
+      "aip": [
+        "107642984"
+      ],
+      "lja": [
+        "Lj2g3v2002950.1",
+        "Lj4g3v1287330.1"
+      ],
+      "lang": [
+        "109332918"
+      ],
+      "fve": [
+        "101308284"
+      ],
+      "pper": [
+        "18777055"
+      ],
+      "pmum": [
+        "103337372"
+      ],
+      "mdm": [
+        "103420259",
+        "103437325",
+        "103437326",
+        "103437327"
+      ],
+      "pxb": [
+        "103952863"
+      ],
+      "zju": [
+        "107429214",
+        "107430155",
+        "107430385",
+        "107430392",
+        "107433556"
+      ],
+      "rcu": [
+        "8272490"
+      ],
+      "jcu": [
+        "105645898"
+      ],
+      "hbr": [
+        "110640000",
+        "110651918",
+        "110652792"
+      ],
+      "pop": [
+        "POPTR_0001s08410g",
+        "POPTR_0003s11900g"
+      ],
+      "vvi": [
+        "100233142"
+      ],
+      "sly": [
+        "101251607"
+      ],
+      "spen": [
+        "107027946"
+      ],
+      "sot": [
+        "102577696",
+        "102598323"
+      ],
+      "cann": [
+        "107866341"
+      ],
+      "nta": [
+        "107778118",
+        "107819370"
+      ],
+      "nsy": [
+        "104225943"
+      ],
+      "nto": [
+        "104098957"
+      ],
+      "ini": [
+        "109168138"
+      ],
+      "sind": [
+        "105156784"
+      ],
+      "han": [
+        "110935543",
+        "110935544"
+      ],
+      "bvg": [
+        "104892380"
+      ],
+      "soe": [
+        "110784326"
+      ],
+      "nnu": [
+        "104596228",
+        "104596229"
+      ],
+      "osa": [
+        "4325716",
+        "4341576"
+      ],
+      "dosa": [
+        "Os01t0372500-00",
+        "Os06t0626700-00"
+      ],
+      "obr": [
+        "102706901",
+        "107305569",
+        "107305581"
+      ],
+      "sbi": [
+        "8074150"
+      ],
+      "zma": [
+        "100127010",
+        "103655046",
+        "103655843"
+      ],
+      "sita": [
+        "101754899"
+      ],
+      "pda": [
+        "103696959",
+        "103702795"
+      ],
+      "egu": [
+        "105035842",
+        "105054281"
+      ],
+      "mus": [
+        "103983889"
+      ],
+      "dct": [
+        "110103723"
+      ],
+      "atr": [
+        "18424242"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.11.19"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.11.19"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.11.19"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.11.19"
+      ],
+      "CAS": [
+        "180984-01-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Saito K",
+          "Kobayashi M",
+          "Gong Z",
+          "Tanaka Y",
+          "Yamazaki M."
+        ],
+        "title": "Direct evidence for anthocyanidin synthase as a 2-oxoglutarate-dependent oxygenase: molecular cloning and functional expression of cDNA from a red forma of Perilla frutescens.",
+        "journal": "Plant. J. 17 (1999) 181-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10074715]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Turnbull",
+          "J.J.",
+          "Sobey",
+          "W.J.",
+          "Aplin",
+          "R.T.",
+          "Hassan",
+          "A.",
+          "Firmin",
+          "J.L.",
+          "Schofield",
+          "C.J. and Prescott",
+          "A.G."
+        ],
+        "title": "Are anthocyanidins the immediate products of anthocyanidin synthase?.",
+        "journal": "Chem. Commun. (2000) 2473-2474.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wilmouth RC",
+          "Turnbull JJ",
+          "Welford RW",
+          "Clifton IJ",
+          "Prescott AG",
+          "Schofield CJ"
+        ],
+        "title": "Structure and mechanism of anthocyanidin synthase from Arabidopsis thaliana.",
+        "journal": "Structure. 10 (2002) 93-103.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:11796114]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Turnbull JJ",
+          "Nagle MJ",
+          "Seibel JF",
+          "Welford RW",
+          "Grant GH",
+          "Schofield CJ"
+        ],
+        "title": "The C-4 stereochemistry of leucocyanidin substrates for anthocyanidin synthase affects product selectivity.",
+        "journal": "Bioorg. Med. Chem. Lett. 13 (2003) 3853-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:14552794]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Wellmann F",
+          "Griesser M",
+          "Schwab W",
+          "Martens S",
+          "Eisenreich W",
+          "Matern U",
+          "Lukacin R"
+        ],
+        "title": "Anthocyanidin synthase from Gerbera hybrida catalyzes the conversion of (+)-catechin to cyanidin and a novel procyanidin.",
+        "journal": "FEBS. Lett. 580 (2006) 1642-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:16494872]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

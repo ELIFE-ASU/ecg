@@ -1,0 +1,850 @@
+[
+  {
+    "entry_id": "4.4.1.13",
+    "name": "cysteine-S-conjugate beta-lyase",
+    "names": [
+      "cysteine-S-conjugate beta-lyase",
+      "cysteine conjugate beta-lyase",
+      "glutamine transaminase K/cysteine conjugate beta-lyase",
+      "L-cysteine-S-conjugate thiol-lyase (deaminating)"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-sulfur lyases;",
+      "Carbon-sulfur lyases (only sub-subclass identified to date)"
+    ],
+    "sysname": "L-cysteine-S-conjugate thiol-lyase (deaminating; pyruvate-forming)",
+    "reaction": "an L-cysteine-S-conjugate + H2O = a thiol + NH3 + pyruvate (overall reaction) [RN:R03528]; (1a) an L-cysteine-S-conjugate = a thiol + 2-aminoprop-2-enoate; (1b) 2-aminoprop-2-enoate = 2-iminopropanoate (spontaneous); (1c) 2-iminopropanoate + H2O = pyruvate + NH3 (spontaneous)",
+    "all_reac": "R03528; (other) R09366",
+    "iubmb_reactions": [
+      "R03528"
+    ],
+    "kegg_reactions": [
+      "R09366"
+    ],
+    "substrates": [
+      "L-cysteine-S-conjugate [CPD:C02882]",
+      "H2O [CPD:C00001]",
+      "2-aminoprop-2-enoate [CPD:C02218]",
+      "2-iminopropanoate [CPD:C20904]"
+    ],
+    "products": [
+      "thiol [CPD:C01336]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A pyridoxal-phosphate protein. The enzyme can act on a broad range of L-cysteine-S-conjugates, including aromatic conjugates such as 4-bromobenzene and 2,4-dinitrobenzene. The enzyme cleaves a carbon-sulfur bond, releasing a thiol and an unstable enamine product that tautomerizes to an imine form, which undergoes a hydrolytic deamination to form pyruvate and ammonia. The latter reaction, which can occur spontaneously, can also be catalysed by EC 3.5.99.10, 2-iminobutanoate/2-iminopropanoate deaminase.",
+    "pathways": {
+      "ec00450": "Selenocompound metabolism"
+    },
+    "orthologs": {
+      "K00816": "kynurenine---oxoglutarate transaminase / cysteine-S-conjugate beta-lyase / glutamine---phenylpyruvate transaminase"
+    },
+    "genes": {
+      "hsa": [
+        "56267",
+        "883"
+      ],
+      "ptr": [
+        "456999",
+        "473069"
+      ],
+      "pps": [
+        "100980672",
+        "100993985"
+      ],
+      "ggo": [
+        "101128027",
+        "101137144"
+      ],
+      "pon": [
+        "100436953",
+        "100452866"
+      ],
+      "nle": [
+        "100579800",
+        "100598335"
+      ],
+      "mcc": [
+        "694023",
+        "717142"
+      ],
+      "mcf": [
+        "101925086",
+        "102142392"
+      ],
+      "csab": [
+        "103224481",
+        "103239781"
+      ],
+      "rro": [
+        "104660517",
+        "104664603"
+      ],
+      "rbb": [
+        "108512836",
+        "108514569"
+      ],
+      "cjc": [
+        "100390682",
+        "100392205"
+      ],
+      "sbq": [
+        "101034905",
+        "101049363"
+      ],
+      "mmu": [
+        "229905",
+        "70266"
+      ],
+      "rno": [
+        "311844",
+        "541589"
+      ],
+      "cge": [
+        "100769821",
+        "100771070"
+      ],
+      "ngi": [
+        "103730106",
+        "103742867"
+      ],
+      "hgl": [
+        "101701445",
+        "101714047"
+      ],
+      "ccan": [
+        "109682136",
+        "109697703"
+      ],
+      "ocu": [
+        "100351221",
+        "100358799"
+      ],
+      "tup": [
+        "102484200",
+        "102492301"
+      ],
+      "cfa": [
+        "479959",
+        "491310"
+      ],
+      "aml": [
+        "100466080",
+        "100484335"
+      ],
+      "umr": [
+        "103662922",
+        "103670433"
+      ],
+      "oro": [
+        "101379355",
+        "101381784"
+      ],
+      "fca": [
+        "101082171",
+        "101082605"
+      ],
+      "ptg": [
+        "102956075",
+        "102960707"
+      ],
+      "aju": [
+        "106966305",
+        "106968046"
+      ],
+      "bta": [
+        "104968656",
+        "508712",
+        "528582"
+      ],
+      "bom": [
+        "102268017",
+        "102274277",
+        "102274974"
+      ],
+      "biu": [
+        "109556093",
+        "109563538",
+        "109566527"
+      ],
+      "phd": [
+        "102319020",
+        "102328319"
+      ],
+      "chx": [
+        "102180605",
+        "102182368"
+      ],
+      "oas": [
+        "101117485",
+        "101119265"
+      ],
+      "ssc": [
+        "100157176",
+        "100515071"
+      ],
+      "cfr": [
+        "102514713",
+        "102522240"
+      ],
+      "cdk": [
+        "105084526",
+        "105092558"
+      ],
+      "bacu": [
+        "103001193",
+        "103010164"
+      ],
+      "lve": [
+        "103073927",
+        "103090268"
+      ],
+      "ecb": [
+        "100052141",
+        "100070151"
+      ],
+      "epz": [
+        "103550870",
+        "103557170"
+      ],
+      "eai": [
+        "106831581",
+        "106845422"
+      ],
+      "myb": [
+        "102246710",
+        "102246937"
+      ],
+      "myd": [
+        "102770113",
+        "102774189"
+      ],
+      "hai": [
+        "109376722",
+        "109382267"
+      ],
+      "rss": [
+        "109445910",
+        "109458284"
+      ],
+      "pale": [
+        "102885606",
+        "102890346"
+      ],
+      "lav": [
+        "100674418",
+        "100676040"
+      ],
+      "tmu": [
+        "101356623",
+        "101358316"
+      ],
+      "mdo": [
+        "100013642",
+        "100027687"
+      ],
+      "shr": [
+        "100925132",
+        "100928200"
+      ],
+      "oaa": [
+        "100074153",
+        "100074828"
+      ],
+      "gga": [
+        "417202",
+        "424517"
+      ],
+      "mgp": [
+        "100545698",
+        "100546759"
+      ],
+      "cjo": [
+        "107317420",
+        "107321728"
+      ],
+      "apla": [
+        "101796959",
+        "101804188"
+      ],
+      "acyg": [
+        "106034104",
+        "106047313"
+      ],
+      "tgu": [
+        "100223564",
+        "100226378"
+      ],
+      "gfr": [
+        "102043066",
+        "102045568"
+      ],
+      "fab": [
+        "101809203",
+        "101816765"
+      ],
+      "phi": [
+        "102108384",
+        "102109435"
+      ],
+      "pmaj": [
+        "107207980",
+        "107212063"
+      ],
+      "ccw": [
+        "104688281",
+        "104695321"
+      ],
+      "fpg": [
+        "101923826",
+        "101924602"
+      ],
+      "fch": [
+        "102052592",
+        "102055107"
+      ],
+      "clv": [
+        "102092812",
+        "102097970"
+      ],
+      "egz": [
+        "104122512",
+        "104122910"
+      ],
+      "aam": [
+        "106490298",
+        "106499802"
+      ],
+      "asn": [
+        "102377511",
+        "102381063"
+      ],
+      "amj": [
+        "102564187",
+        "102574637"
+      ],
+      "pss": [
+        "102446036",
+        "102459761"
+      ],
+      "cmy": [
+        "102931085",
+        "102947846"
+      ],
+      "cpic": [
+        "101948590",
+        "101949140"
+      ],
+      "acs": [
+        "100555601"
+      ],
+      "pvt": [
+        "110079452",
+        "110079688"
+      ],
+      "pbi": [
+        "103054557",
+        "103058068"
+      ],
+      "gja": [
+        "107115481",
+        "107126241"
+      ],
+      "xla": [
+        "108715667",
+        "380432",
+        "734936"
+      ],
+      "xtr": [
+        "496736"
+      ],
+      "npr": [
+        "108791027",
+        "108794311"
+      ],
+      "dre": [
+        "393315",
+        "791592"
+      ],
+      "srx": [
+        "107726298",
+        "107731000",
+        "107736118",
+        "107749985",
+        "107749986"
+      ],
+      "sanh": [
+        "107691018",
+        "107698888"
+      ],
+      "sgh": [
+        "107587404",
+        "107593160",
+        "107596979"
+      ],
+      "ccar": [
+        "109090139",
+        "109091225"
+      ],
+      "ipu": [
+        "108260319",
+        "108260321",
+        "108260322",
+        "108271869"
+      ],
+      "amex": [
+        "103027162",
+        "103046817"
+      ],
+      "tru": [
+        "101064758",
+        "101066451"
+      ],
+      "tng": [
+        "GSTEN00014385G001",
+        "GSTEN00025714G001"
+      ],
+      "lco": [
+        "104931917",
+        "104939087"
+      ],
+      "ncc": [
+        "104946129",
+        "104955761"
+      ],
+      "mze": [
+        "101466800",
+        "101486988"
+      ],
+      "ola": [
+        "101164171",
+        "101173380"
+      ],
+      "xma": [
+        "102227156",
+        "102235261",
+        "102237088"
+      ],
+      "pret": [
+        "103463971",
+        "103473416"
+      ],
+      "csem": [
+        "103376809",
+        "103390101"
+      ],
+      "lcf": [
+        "108874059",
+        "108874060",
+        "108878962"
+      ],
+      "hcq": [
+        "109517170",
+        "109529744"
+      ],
+      "bpec": [
+        "110154758",
+        "110154910",
+        "110157436"
+      ],
+      "sasa": [
+        "100195431",
+        "106569847"
+      ],
+      "els": [
+        "105015286",
+        "105030533"
+      ],
+      "sfm": [
+        "108921915"
+      ],
+      "lcm": [
+        "102348380",
+        "102366870"
+      ],
+      "cmk": [
+        "103171755",
+        "103174679"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_118927"
+      ],
+      "cin": [
+        "100186481"
+      ],
+      "spu": [
+        "593717"
+      ],
+      "aplc": [
+        "110981090"
+      ],
+      "sko": [
+        "102808740"
+      ],
+      "dme": [
+        "Dmel_CG6950"
+      ],
+      "dpo": [
+        "Dpse_GA19977"
+      ],
+      "dan": [
+        "Dana_GF23062"
+      ],
+      "der": [
+        "Dere_GG17186"
+      ],
+      "dpe": [
+        "Dper_GL12368"
+      ],
+      "dse": [
+        "Dsec_GM26066"
+      ],
+      "dsi": [
+        "Dsimw501_GD20629"
+      ],
+      "dwi": [
+        "Dwil_GK12747"
+      ],
+      "dya": [
+        "Dyak_GE10079"
+      ],
+      "dgr": [
+        "Dgri_GH19404"
+      ],
+      "dmo": [
+        "Dmoj_GI22608"
+      ],
+      "dvi": [
+        "Dvir_GJ23853"
+      ],
+      "mde": [
+        "101891461"
+      ],
+      "aga": [
+        "AgaP_AGAP011158"
+      ],
+      "aag": [
+        "5564787"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ008201"
+      ],
+      "ame": [
+        "724811"
+      ],
+      "bim": [
+        "100744283"
+      ],
+      "bter": [
+        "100644987"
+      ],
+      "soc": [
+        "105199950"
+      ],
+      "aec": [
+        "105149700"
+      ],
+      "acep": [
+        "105618986"
+      ],
+      "pbar": [
+        "105433236"
+      ],
+      "hst": [
+        "105180580"
+      ],
+      "cfo": [
+        "105252539"
+      ],
+      "lhu": [
+        "105673051"
+      ],
+      "pgc": [
+        "109856505"
+      ],
+      "nvi": [
+        "100119206"
+      ],
+      "tca": [
+        "655252",
+        "656125"
+      ],
+      "dpa": [
+        "109532996"
+      ],
+      "nvl": [
+        "108565563"
+      ],
+      "bmor": [
+        "101742893"
+      ],
+      "dpl": [
+        "KGM_208814"
+      ],
+      "pmac": [
+        "106711437"
+      ],
+      "pxy": [
+        "105380713"
+      ],
+      "api": [
+        "100160464",
+        "100164839"
+      ],
+      "dnx": [
+        "107161360",
+        "107161381",
+        "107172258"
+      ],
+      "phu": [
+        "Phum_PHUM210690"
+      ],
+      "zne": [
+        "110837661"
+      ],
+      "fcd": [
+        "110851920",
+        "110852399",
+        "110852512"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_211037",
+        "DAPPUDRAFT_317235"
+      ],
+      "isc": [
+        "IscW_ISCW012663",
+        "IscW_ISCW012664"
+      ],
+      "tut": [
+        "107360001",
+        "107371477"
+      ],
+      "cel": [
+        "CELE_F28H6.3",
+        "CELE_R03A10.4"
+      ],
+      "cbr": [
+        "CBG07704",
+        "CBG10259"
+      ],
+      "nai": [
+        "NECAME_03852"
+      ],
+      "bmy": [
+        "Bm1_10490"
+      ],
+      "loa": [
+        "LOAG_06544"
+      ],
+      "tsp": [
+        "Tsp_07645",
+        "Tsp_12549"
+      ],
+      "hro": [
+        "HELRODRAFT_108146",
+        "HELRODRAFT_188198",
+        "HELRODRAFT_188199"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_146236",
+        "LOTGIDRAFT_213992",
+        "LOTGIDRAFT_214715"
+      ],
+      "crg": [
+        "105325285",
+        "105325286",
+        "105327675"
+      ],
+      "myi": [
+        "110459674",
+        "110461123"
+      ],
+      "obi": [
+        "106876997"
+      ],
+      "lak": [
+        "106177683",
+        "106178728",
+        "106178736"
+      ],
+      "smm": [
+        "Smp_123750"
+      ],
+      "shx": [
+        "MS3_06559"
+      ],
+      "ovi": [
+        "T265_13324"
+      ],
+      "nve": [
+        "NEMVE_v1g173158"
+      ],
+      "epa": [
+        "110244036"
+      ],
+      "hmg": [
+        "100208716",
+        "101238570",
+        "105845275"
+      ],
+      "tad": [
+        "TRIADDRAFT_20976"
+      ],
+      "aqu": [
+        "100641141"
+      ],
+      "cme": [
+        "CYME_CME121C"
+      ],
+      "gsl": [
+        "Gasu_10540"
+      ],
+      "mbr": [
+        "MONBRDRAFT_33534"
+      ],
+      "sre": [
+        "PTSG_07452"
+      ],
+      "ddi": [
+        "DDB_G0287269"
+      ],
+      "dpp": [
+        "DICPUDRAFT_78310"
+      ],
+      "dfa": [
+        "DFA_11928"
+      ],
+      "acan": [
+        "ACA1_112320",
+        "ACA1_112450"
+      ],
+      "tet": [
+        "TTHERM_00140940",
+        "TTHERM_00661530",
+        "TTHERM_00661540"
+      ],
+      "smin": [
+        "v1.2.018754.t1"
+      ],
+      "pti": [
+        "PHATRDRAFT_10073",
+        "PHATR_10257"
+      ],
+      "fcy": [
+        "FRACYDRAFT_157973",
+        "FRACYDRAFT_195837"
+      ],
+      "tps": [
+        "THAPSDRAFT_460"
+      ],
+      "aaf": [
+        "AURANDRAFT_11479",
+        "AURANDRAFT_27554"
+      ],
+      "ngd": [
+        "NGA_0728200"
+      ],
+      "pif": [
+        "PITG_03678",
+        "PITG_10590"
+      ],
+      "psoj": [
+        "PHYSODRAFT_492501",
+        "PHYSODRAFT_552309"
+      ],
+      "spar": [
+        "SPRG_06585",
+        "SPRG_14332"
+      ],
+      "gtt": [
+        "GUITHDRAFT_159025"
+      ],
+      "tbr": [
+        "Tb10.389.1810"
+      ],
+      "lma": [
+        "LMJF_33_1330"
+      ],
+      "lif": [
+        "LINJ_33_1410"
+      ],
+      "ldo": [
+        "LDBPK_331410"
+      ],
+      "lmi": [
+        "LMXM_32_1330"
+      ],
+      "lbz": [
+        "LBRM_33_1600"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_32036"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.4.1.13"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.4.1.13"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.4.1.13"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.4.1.13"
+      ],
+      "CAS": [
+        "68652-57-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Tateishi M",
+          "Suzuki S",
+          "Shimizu H."
+        ],
+        "title": "Cysteine conjugate beta-lyase in rat liver. A novel enzyme catalyzing formation of thiol-containing metabolites of drugs.",
+        "journal": "J. Biol. Chem. 253 (1978) 8854-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:721818]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

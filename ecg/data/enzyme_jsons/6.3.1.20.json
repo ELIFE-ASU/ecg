@@ -1,0 +1,8012 @@
+[
+  {
+    "entry_id": "6.3.1.20",
+    "name": "lipoate---protein ligase",
+    "names": [
+      "lipoate---protein ligase",
+      "lplA (gene name)",
+      "lplJ (gene name)",
+      "lipoate protein ligase",
+      "lipoate-protein ligase A",
+      "LPL",
+      "LPL-B"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-nitrogen bonds;",
+      "Acid-D-ammonia (or amine) ligases (amide synthases)"
+    ],
+    "sysname": "[lipoyl-carrier protein]-L-lysine:lipoate ligase (AMP-forming)",
+    "reaction": "ATP + (R)-lipoate + a [lipoyl-carrier protein]-L-lysine = a [lipoyl-carrier protein]-N6-(lipoyl)lysine + AMP + diphosphate (overall reaction) [RN:R11143]; (1a) ATP + (R)-lipoate = lipoyl-AMP + diphosphate [RN:R07770]; (1b) lipoyl-AMP + a [lipoyl-carrier protein]-L-lysine = a [lipoyl-carrier protein]-N6-(lipoyl)lysine + AMP [RN:R07771]",
+    "all_reac": "R07770 R07771 R11143",
+    "iubmb_reactions": [
+      "R07770 R07771 R11143"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "(R)-lipoate [CPD:C16241]",
+      "[lipoyl-carrier protein]-L-lysine [CPD:C16240]",
+      "lipoyl-AMP [CPD:C16238]"
+    ],
+    "products": [
+      "[lipoyl-carrier protein]-N6-(lipoyl)lysine [CPD:C16237]",
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]",
+      "lipoyl-AMP [CPD:C16238]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Mg2+. This enzyme participates in lipoate salvage, and is responsible for lipoylation in the presence of exogenous lipoic acid [7]. The enzyme attaches lipoic acid to the lipoyl domains of certain key enzymes involved in oxidative metabolism, including pyruvate dehydrogenase (E2 domain), 2-oxoglutarate dehydrogenase (E2 domain), the branched-chain 2-oxoacid dehydrogenases and the glycine cleavage system (H protein) [6]. Lipoylation is essential for the function of these enzymes. The enzyme can also use octanoate instead of lipoate.",
+    "pathways": {
+      "ec00785": "Lipoic acid metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K03800": "lipoate---protein ligase"
+    },
+    "genes": {
+      "cme": [
+        "CYME_CMQ023C"
+      ],
+      "sce": [
+        "YJL046W"
+      ],
+      "ago": [
+        "AGOS_AFR609C"
+      ],
+      "erc": [
+        "Ecym_2328"
+      ],
+      "kla": [
+        "KLLA0F02233g"
+      ],
+      "lth": [
+        "KLTH0H11264g"
+      ],
+      "vpo": [
+        "Kpol_1035p10"
+      ],
+      "zro": [
+        "ZYRO0B08932g"
+      ],
+      "cgr": [
+        "CAGL0J04840g"
+      ],
+      "ncs": [
+        "NCAS_0A09050"
+      ],
+      "ndi": [
+        "NDAI_0G05900"
+      ],
+      "tpf": [
+        "TPHA_0O01320"
+      ],
+      "tbl": [
+        "TBLA_0F03450"
+      ],
+      "tdl": [
+        "TDEL_0D02150"
+      ],
+      "kaf": [
+        "KAFR_0A00910"
+      ],
+      "ppa": [
+        "PAS_chr4_0691"
+      ],
+      "dha": [
+        "DEHA2A06182g"
+      ],
+      "pic": [
+        "PICST_58727"
+      ],
+      "pgu": [
+        "PGUG_03514"
+      ],
+      "spaa": [
+        "SPAPADRAFT_63317"
+      ],
+      "lel": [
+        "LELG_02174"
+      ],
+      "cal": [
+        "CAALFM_C602900CA"
+      ],
+      "ctp": [
+        "CTRG_05389"
+      ],
+      "cot": [
+        "CORT_0F02200"
+      ],
+      "cdu": [
+        "CD36_63180"
+      ],
+      "cten": [
+        "CANTEDRAFT_119983"
+      ],
+      "yli": [
+        "YALI0C03762g"
+      ],
+      "clu": [
+        "CLUG_05309"
+      ],
+      "clus": [
+        "A9F13_14g00825"
+      ],
+      "caur": [
+        "QG37_07439"
+      ],
+      "ncr": [
+        "NCU05421"
+      ],
+      "nte": [
+        "NEUTE1DRAFT65646"
+      ],
+      "smp": [
+        "SMAC_04157"
+      ],
+      "pan": [
+        "PODANSg6825"
+      ],
+      "ttt": [
+        "THITE_2124648"
+      ],
+      "cthr": [
+        "CTHT_0015490"
+      ],
+      "mgr": [
+        "MGG_03282"
+      ],
+      "tmn": [
+        "UCRPA7_8187"
+      ],
+      "fgr": [
+        "FGSG_01642"
+      ],
+      "fpu": [
+        "FPSE_07455"
+      ],
+      "fvr": [
+        "FVEG_09740"
+      ],
+      "fox": [
+        "FOXG_11060"
+      ],
+      "nhe": [
+        "NECHADRAFT_30038"
+      ],
+      "tre": [
+        "TRIREDRAFT_82172"
+      ],
+      "maw": [
+        "MAC_05789"
+      ],
+      "maj": [
+        "MAA_08600"
+      ],
+      "cmt": [
+        "CCM_02165"
+      ],
+      "plj": [
+        "VFPFJ_07370"
+      ],
+      "val": [
+        "VDBG_05760"
+      ],
+      "vda": [
+        "VDAG_07696"
+      ],
+      "cfj": [
+        "CFIO01_11900"
+      ],
+      "ela": [
+        "UCREL1_2614"
+      ],
+      "pfy": [
+        "PFICI_09317"
+      ],
+      "ssl": [
+        "SS1G_03886"
+      ],
+      "bfu": [
+        "BC1G_04461"
+      ],
+      "mbe": [
+        "MBM_05002"
+      ],
+      "psco": [
+        "LY89DRAFT_661976"
+      ],
+      "glz": [
+        "GLAREA_10521"
+      ],
+      "ani": [
+        "AN5732.2"
+      ],
+      "afm": [
+        "AFUA_1G06950"
+      ],
+      "aor": [
+        "AOR_1_142154"
+      ],
+      "afv": [
+        "AFLA_037240"
+      ],
+      "act": [
+        "ACLA_027600"
+      ],
+      "nfi": [
+        "NFIA_017740"
+      ],
+      "pcs": [
+        "Pc14g02000"
+      ],
+      "pdp": [
+        "PDIP_68830"
+      ],
+      "cim": [
+        "CIMG_04029"
+      ],
+      "cpw": [
+        "CPC735_003540"
+      ],
+      "pbl": [
+        "PAAG_07660"
+      ],
+      "pbn": [
+        "PADG_04488"
+      ],
+      "ure": [
+        "UREG_01935"
+      ],
+      "abe": [
+        "ARB_00175"
+      ],
+      "tve": [
+        "TRV_01243"
+      ],
+      "pno": [
+        "SNOG_04877"
+      ],
+      "pte": [
+        "PTT_15181"
+      ],
+      "bze": [
+        "COCCADRAFT_89654"
+      ],
+      "bsc": [
+        "COCSADRAFT_201285"
+      ],
+      "bor": [
+        "COCMIDRAFT_91485"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_50623"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_210740"
+      ],
+      "bcom": [
+        "BAUCODRAFT_59017"
+      ],
+      "tml": [
+        "GSTUM_00007326001"
+      ],
+      "spo": [
+        "SPBC17A3.09c"
+      ],
+      "cne": [
+        "CNB01600"
+      ],
+      "cnb": [
+        "CNBB4140"
+      ],
+      "cgi": [
+        "CGB_B6090C"
+      ],
+      "tms": [
+        "TREMEDRAFT_30736"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_116359"
+      ],
+      "dsq": [
+        "DICSQDRAFT_154698"
+      ],
+      "pco": [
+        "PHACADRAFT_137307"
+      ],
+      "shs": [
+        "STEHIDRAFT_167865"
+      ],
+      "hir": [
+        "HETIRDRAFT_314337"
+      ],
+      "psq": [
+        "PUNSTDRAFT_65233"
+      ],
+      "adl": [
+        "AURDEDRAFT_60940"
+      ],
+      "fme": [
+        "FOMMEDRAFT_111561"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_70151"
+      ],
+      "lbc": [
+        "LACBIDRAFT_312734"
+      ],
+      "mrr": [
+        "Moror_14912"
+      ],
+      "cci": [
+        "CC1G_08866"
+      ],
+      "scm": [
+        "SCHCODRAFT_47339"
+      ],
+      "abp": [
+        "AGABI1DRAFT72757"
+      ],
+      "abv": [
+        "AGABI2DRAFT211723"
+      ],
+      "cput": [
+        "CONPUDRAFT_64138"
+      ],
+      "sla": [
+        "SERLADRAFT_462347"
+      ],
+      "wse": [
+        "WALSEDRAFT_60887"
+      ],
+      "wic": [
+        "J056_000896"
+      ],
+      "uma": [
+        "UMAG_03661"
+      ],
+      "pfp": [
+        "PFL1_01232"
+      ],
+      "mgl": [
+        "MGL_1467"
+      ],
+      "pgr": [
+        "PGTG_08209"
+      ],
+      "mlr": [
+        "MELLADRAFT_94693"
+      ],
+      "ddi": [
+        "DDB_G0287107"
+      ],
+      "dpp": [
+        "DICPUDRAFT_151371"
+      ],
+      "dfa": [
+        "DFA_11258"
+      ],
+      "acan": [
+        "ACA1_116630"
+      ],
+      "pfa": [
+        "PF13_0083",
+        "PFI1160w"
+      ],
+      "pfd": [
+        "PFDG_01811",
+        "PFDG_03787"
+      ],
+      "pfh": [
+        "PFHG_01365",
+        "PFHG_04559"
+      ],
+      "pyo": [
+        "PY00475",
+        "PY02395"
+      ],
+      "pcb": [
+        "PCHAS_082480",
+        "PCHAS_141490"
+      ],
+      "pbe": [
+        "PB000283.02.0",
+        "PB001158.00.0"
+      ],
+      "pkn": [
+        "PKH_072080",
+        "PKH_141370"
+      ],
+      "pvx": [
+        "PVX_099590",
+        "PVX_122550"
+      ],
+      "pcy": [
+        "PCYB_073120",
+        "PCYB_142400"
+      ],
+      "tan": [
+        "TA03985",
+        "TA09645"
+      ],
+      "tpv": [
+        "TP01_1192"
+      ],
+      "tot": [
+        "TOT_010001363",
+        "TOT_030000773"
+      ],
+      "beq": [
+        "BEWA_044280",
+        "BEWA_046520"
+      ],
+      "bbo": [
+        "BBOV_I002370",
+        "BBOV_I003930"
+      ],
+      "tet": [
+        "TTHERM_00535630",
+        "TTHERM_01075670"
+      ],
+      "ptm": [
+        "GSPATT00005868001"
+      ],
+      "smin": [
+        "v1.2.016157.t1"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_227823"
+      ],
+      "gtt": [
+        "GUITHDRAFT_101692"
+      ],
+      "tbr": [
+        "Tb927.8.630"
+      ],
+      "tcr": [
+        "509611.100",
+        "510857.50"
+      ],
+      "lma": [
+        "LMJF_07_1060"
+      ],
+      "lif": [
+        "LINJ_07_1230"
+      ],
+      "ldo": [
+        "LDBPK_071230"
+      ],
+      "lmi": [
+        "LMXM_07_1060"
+      ],
+      "lbz": [
+        "LBRM_07_1130"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_72499"
+      ],
+      "tva": [
+        "TVAG_094820"
+      ],
+      "eco": [
+        "b4386"
+      ],
+      "ecj": [
+        "JW4349"
+      ],
+      "ecd": [
+        "ECDH10B_4544"
+      ],
+      "ebw": [
+        "BWG_4078"
+      ],
+      "ecok": [
+        "ECMDS42_3743"
+      ],
+      "ece": [
+        "Z5988"
+      ],
+      "ecs": [
+        "ECs5345"
+      ],
+      "ecf": [
+        "ECH74115_5901"
+      ],
+      "etw": [
+        "ECSP_5469"
+      ],
+      "elx": [
+        "CDCO157_5029"
+      ],
+      "eoj": [
+        "ECO26_5592"
+      ],
+      "eoi": [
+        "ECO111_5247"
+      ],
+      "eoh": [
+        "ECO103_5247"
+      ],
+      "ecg": [
+        "E2348C_4684"
+      ],
+      "elr": [
+        "ECO55CA74_25010"
+      ],
+      "ecc": [
+        "c5471"
+      ],
+      "ecp": [
+        "ECP_4770"
+      ],
+      "eci": [
+        "UTI89_C5157"
+      ],
+      "ecv": [
+        "APECO1_1995"
+      ],
+      "ecx": [
+        "EcHS_A4621"
+      ],
+      "ecw": [
+        "EcE24377A_4985"
+      ],
+      "ecm": [
+        "EcSMS35_4935"
+      ],
+      "ecy": [
+        "ECSE_4661"
+      ],
+      "ecr": [
+        "ECIAI1_4609"
+      ],
+      "ecq": [
+        "ECED1_5257"
+      ],
+      "eck": [
+        "EC55989_5048"
+      ],
+      "ect": [
+        "ECIAI39_4918"
+      ],
+      "eoc": [
+        "CE10_5191"
+      ],
+      "eum": [
+        "ECUMN_5010"
+      ],
+      "ecz": [
+        "ECS88_5067"
+      ],
+      "elo": [
+        "EC042_4883"
+      ],
+      "eln": [
+        "NRG857_22180"
+      ],
+      "elh": [
+        "ETEC_4741"
+      ],
+      "ese": [
+        "ECSF_4319"
+      ],
+      "eso": [
+        "O3O_03765"
+      ],
+      "esm": [
+        "O3M_21515"
+      ],
+      "esl": [
+        "O3K_21615"
+      ],
+      "ecl": [
+        "EcolC_3670"
+      ],
+      "ebr": [
+        "ECB_04262"
+      ],
+      "ebd": [
+        "ECBD_3634"
+      ],
+      "eko": [
+        "EKO11_3928"
+      ],
+      "ekf": [
+        "KO11_23570"
+      ],
+      "eab": [
+        "ECABU_c50210"
+      ],
+      "edh": [
+        "EcDH1_3612"
+      ],
+      "edj": [
+        "ECDH1ME8569_4242"
+      ],
+      "eih": [
+        "ECOK1_4953"
+      ],
+      "ena": [
+        "ECNA114_4628"
+      ],
+      "elu": [
+        "UM146_22690"
+      ],
+      "eun": [
+        "UMNK88_5305"
+      ],
+      "elw": [
+        "ECW_m4748"
+      ],
+      "ell": [
+        "WFL_23125"
+      ],
+      "elc": [
+        "i14_4983"
+      ],
+      "eld": [
+        "i02_4983"
+      ],
+      "elp": [
+        "P12B_c4461"
+      ],
+      "ebl": [
+        "ECD_04262"
+      ],
+      "ebe": [
+        "B21_04227"
+      ],
+      "elf": [
+        "LF82_1219"
+      ],
+      "ecoa": [
+        "APECO78_03380"
+      ],
+      "ecol": [
+        "LY180_23020"
+      ],
+      "ecoi": [
+        "ECOPMV1_04846"
+      ],
+      "ecoj": [
+        "P423_24910"
+      ],
+      "ecoo": [
+        "ECRM13514_5681"
+      ],
+      "ecoh": [
+        "ECRM13516_5421"
+      ],
+      "ecos": [
+        "EC958_0116"
+      ],
+      "efe": [
+        "EFER_4483"
+      ],
+      "eal": [
+        "EAKF1_ch1439"
+      ],
+      "sty": [
+        "STY4923"
+      ],
+      "stt": [
+        "t4615"
+      ],
+      "sex": [
+        "STBHUCCB_48700"
+      ],
+      "sent": [
+        "TY21A_23495"
+      ],
+      "stm": [
+        "STM4576"
+      ],
+      "seo": [
+        "STM14_5497"
+      ],
+      "sev": [
+        "STMMW_45191"
+      ],
+      "sey": [
+        "SL1344_4503"
+      ],
+      "sem": [
+        "STMDT12_C47010"
+      ],
+      "sej": [
+        "STMUK_4563"
+      ],
+      "seb": [
+        "STM474_4781"
+      ],
+      "sef": [
+        "UMN798_4950"
+      ],
+      "setu": [
+        "STU288_22940"
+      ],
+      "setc": [
+        "CFSAN001921_17545"
+      ],
+      "senr": [
+        "STMDT2_44201"
+      ],
+      "send": [
+        "DT104_45631"
+      ],
+      "seni": [
+        "CY43_23810"
+      ],
+      "seen": [
+        "SE451236_05900"
+      ],
+      "spt": [
+        "SPA4386"
+      ],
+      "sek": [
+        "SSPA4071"
+      ],
+      "spq": [
+        "SPAB_05754"
+      ],
+      "sei": [
+        "SPC_4708"
+      ],
+      "sec": [
+        "SCH_4420"
+      ],
+      "seh": [
+        "SeHA_C4985"
+      ],
+      "shb": [
+        "SU5_0614"
+      ],
+      "senh": [
+        "CFSAN002069_09320"
+      ],
+      "seeh": [
+        "SEEH1578_08920"
+      ],
+      "see": [
+        "SNSL254_A4933"
+      ],
+      "senn": [
+        "SN31241_9520"
+      ],
+      "sew": [
+        "SeSA_A4826"
+      ],
+      "sea": [
+        "SeAg_B4899"
+      ],
+      "sens": [
+        "Q786_22660"
+      ],
+      "sed": [
+        "SeD_A4987"
+      ],
+      "seg": [
+        "SG4398"
+      ],
+      "sel": [
+        "SPUL_4563"
+      ],
+      "sega": [
+        "SPUCDC_4549"
+      ],
+      "set": [
+        "SEN4332"
+      ],
+      "sena": [
+        "AU38_22365"
+      ],
+      "seno": [
+        "AU37_22380"
+      ],
+      "senv": [
+        "AU39_22400"
+      ],
+      "senq": [
+        "AU40_25015"
+      ],
+      "senl": [
+        "IY59_22965"
+      ],
+      "senj": [
+        "CFSAN001992_11155"
+      ],
+      "seec": [
+        "CFSAN002050_06365"
+      ],
+      "seeb": [
+        "SEEB0189_019500"
+      ],
+      "seep": [
+        "I137_21795"
+      ],
+      "senb": [
+        "BN855_46480"
+      ],
+      "sene": [
+        "IA1_22355"
+      ],
+      "senc": [
+        "SEET0819_06790"
+      ],
+      "ses": [
+        "SARI_03007"
+      ],
+      "sbg": [
+        "SBG_3983"
+      ],
+      "sbz": [
+        "A464_4618"
+      ],
+      "sbv": [
+        "N643_20480"
+      ],
+      "sfn": [
+        "SFy_6344",
+        "SFy_6346"
+      ],
+      "sfs": [
+        "SFyv_6412",
+        "SFyv_6414"
+      ],
+      "sft": [
+        "NCTC1_04797",
+        "NCTC1_04798"
+      ],
+      "ssn": [
+        "SSON_4536"
+      ],
+      "sbo": [
+        "SBO_4449"
+      ],
+      "sbc": [
+        "SbBS512_E4933"
+      ],
+      "sdy": [
+        "SDY_4647"
+      ],
+      "sdz": [
+        "Asd1617_06126"
+      ],
+      "shq": [
+        "A0259_03725"
+      ],
+      "ent": [
+        "Ent638_0545"
+      ],
+      "enc": [
+        "ECL_00797"
+      ],
+      "eno": [
+        "ECENHK_03380"
+      ],
+      "eclo": [
+        "ENC_45080"
+      ],
+      "eec": [
+        "EcWSU1_00606"
+      ],
+      "enl": [
+        "A3UG_03255"
+      ],
+      "eclg": [
+        "EC036_06300"
+      ],
+      "ecle": [
+        "ECNIH2_04130"
+      ],
+      "ecln": [
+        "ECNIH4_19600"
+      ],
+      "ecli": [
+        "ECNIH5_03250"
+      ],
+      "eclx": [
+        "LI66_03265"
+      ],
+      "ecly": [
+        "LI62_03715"
+      ],
+      "eclz": [
+        "LI64_03270"
+      ],
+      "ecla": [
+        "ECNIH3_03250"
+      ],
+      "eclc": [
+        "ECR091_03230"
+      ],
+      "eas": [
+        "Entas_0591"
+      ],
+      "eau": [
+        "DI57_15350"
+      ],
+      "ehm": [
+        "AB284_21760"
+      ],
+      "ekb": [
+        "BFV64_02940"
+      ],
+      "elg": [
+        "BH714_17905"
+      ],
+      "exf": [
+        "BFV63_03225"
+      ],
+      "ecls": [
+        "LI67_004220"
+      ],
+      "enr": [
+        "H650_18855"
+      ],
+      "enx": [
+        "NI40_003090"
+      ],
+      "enf": [
+        "AKI40_4284"
+      ],
+      "esa": [
+        "ESA_03366"
+      ],
+      "csk": [
+        "ES15_3342"
+      ],
+      "csz": [
+        "CSSP291_15580"
+      ],
+      "csi": [
+        "P262_04939"
+      ],
+      "csj": [
+        "CSK29544_00302"
+      ],
+      "ccon": [
+        "AFK62_03135"
+      ],
+      "cdm": [
+        "AFK67_03125"
+      ],
+      "cmj": [
+        "AFK66_016690"
+      ],
+      "cui": [
+        "AFK65_03085"
+      ],
+      "cmw": [
+        "AFK63_15500"
+      ],
+      "ctu": [
+        "CTU_06000"
+      ],
+      "kpn": [
+        "KPN_04841"
+      ],
+      "kpu": [
+        "KP1_0802"
+      ],
+      "kpm": [
+        "KPHS_06940"
+      ],
+      "kpp": [
+        "A79E_4306"
+      ],
+      "kpk": [
+        "A593_14275"
+      ],
+      "kph": [
+        "KPNIH24_03555"
+      ],
+      "kpz": [
+        "KPNIH27_03435"
+      ],
+      "kpv": [
+        "KPNIH29_03770"
+      ],
+      "kpw": [
+        "KPNIH30_03730"
+      ],
+      "kpy": [
+        "KPNIH31_04320"
+      ],
+      "kpg": [
+        "KPNIH32_03735"
+      ],
+      "kpc": [
+        "KPNIH10_03540"
+      ],
+      "kpq": [
+        "KPR0928_03550"
+      ],
+      "kpt": [
+        "VK055_2590"
+      ],
+      "kpe": [
+        "KPK_4773"
+      ],
+      "kpo": [
+        "KPN2242_02345"
+      ],
+      "kpr": [
+        "KPR_0919"
+      ],
+      "kpj": [
+        "N559_4449"
+      ],
+      "kpi": [
+        "D364_24700"
+      ],
+      "kpa": [
+        "KPNJ1_04764"
+      ],
+      "kps": [
+        "KPNJ2_04713"
+      ],
+      "kpx": [
+        "PMK1_02304"
+      ],
+      "kpb": [
+        "FH42_20735"
+      ],
+      "kpne": [
+        "KU54_023015"
+      ],
+      "kpnu": [
+        "LI86_22855"
+      ],
+      "kva": [
+        "Kvar_4410"
+      ],
+      "kvd": [
+        "KR75_11730"
+      ],
+      "kvq": [
+        "SP68_18360"
+      ],
+      "kox": [
+        "KOX_10325"
+      ],
+      "koe": [
+        "A225_0771"
+      ],
+      "koy": [
+        "J415_27410"
+      ],
+      "kmi": [
+        "VW41_03010"
+      ],
+      "kok": [
+        "KONIH1_04065"
+      ],
+      "koc": [
+        "AB185_32135"
+      ],
+      "kom": [
+        "HR38_09060"
+      ],
+      "kqu": [
+        "AVR78_08120"
+      ],
+      "eae": [
+        "EAE_10600"
+      ],
+      "ear": [
+        "CCG31871"
+      ],
+      "kqv": [
+        "B8P98_23905"
+      ],
+      "cko": [
+        "CKO_03402"
+      ],
+      "cro": [
+        "ROD_49091"
+      ],
+      "cfd": [
+        "CFNIH1_09645"
+      ],
+      "cbra": [
+        "A6J81_13540"
+      ],
+      "cwe": [
+        "CO701_18495"
+      ],
+      "cama": [
+        "F384_16080"
+      ],
+      "caf": [
+        "AL524_06925"
+      ],
+      "cif": [
+        "AL515_04735"
+      ],
+      "cfar": [
+        "CI104_21160"
+      ],
+      "bfl": [
+        "Bfl357"
+      ],
+      "bpn": [
+        "BPEN_368"
+      ],
+      "bva": [
+        "BVAF_360"
+      ],
+      "bchr": [
+        "BCHRO640_379"
+      ],
+      "ben": [
+        "BOBLI757_362"
+      ],
+      "bed": [
+        "BTURN675_341"
+      ],
+      "ebt": [
+        "EBL_c33630"
+      ],
+      "ror": [
+        "RORB6_15275"
+      ],
+      "ron": [
+        "TE10_05705"
+      ],
+      "cnt": [
+        "JT31_09240"
+      ],
+      "cem": [
+        "LH23_08530"
+      ],
+      "cen": [
+        "LH86_08585"
+      ],
+      "ced": [
+        "LH89_21295"
+      ],
+      "pge": [
+        "LG71_25060"
+      ],
+      "esc": [
+        "Entcl_3747"
+      ],
+      "kle": [
+        "AO703_03185"
+      ],
+      "ksa": [
+        "C813_11735"
+      ],
+      "kor": [
+        "AWR26_21460"
+      ],
+      "krd": [
+        "A3780_02280"
+      ],
+      "kco": [
+        "BWI95_02295"
+      ],
+      "kin": [
+        "AB182_21815"
+      ],
+      "lax": [
+        "APT61_19135"
+      ],
+      "laz": [
+        "A8A57_03160"
+      ],
+      "lef": [
+        "LJPFL01_0623"
+      ],
+      "ebf": [
+        "D782_3879"
+      ],
+      "ype": [
+        "YPO2414"
+      ],
+      "ypk": [
+        "y1926"
+      ],
+      "ypa": [
+        "YPA_1758"
+      ],
+      "ypn": [
+        "YPN_1868"
+      ],
+      "ypm": [
+        "YP_2200"
+      ],
+      "ypp": [
+        "YPDSF_0736"
+      ],
+      "ypg": [
+        "YpAngola_A2604"
+      ],
+      "ypz": [
+        "YPZ3_1473"
+      ],
+      "ypt": [
+        "A1122_14070"
+      ],
+      "ypd": [
+        "YPD4_1438"
+      ],
+      "ypx": [
+        "YPD8_1507"
+      ],
+      "yph": [
+        "YPC_2048"
+      ],
+      "ypw": [
+        "CH59_4248"
+      ],
+      "ypj": [
+        "CH55_490"
+      ],
+      "ypv": [
+        "BZ15_1111"
+      ],
+      "ypl": [
+        "CH46_2691"
+      ],
+      "yps": [
+        "YPTB2322"
+      ],
+      "ypo": [
+        "BZ17_132"
+      ],
+      "ypi": [
+        "YpsIP31758_1733"
+      ],
+      "ypy": [
+        "YPK_1839"
+      ],
+      "ypb": [
+        "YPTS_2397"
+      ],
+      "ypq": [
+        "DJ40_4263"
+      ],
+      "ypu": [
+        "BZ21_1610"
+      ],
+      "ypr": [
+        "BZ20_3921"
+      ],
+      "ypc": [
+        "BZ23_1896"
+      ],
+      "yen": [
+        "YE2184"
+      ],
+      "yep": [
+        "YE105_C2009"
+      ],
+      "yey": [
+        "Y11_08061"
+      ],
+      "yel": [
+        "LC20_02953"
+      ],
+      "yew": [
+        "CH47_1619"
+      ],
+      "yet": [
+        "CH48_3637"
+      ],
+      "yef": [
+        "FORC2_2207"
+      ],
+      "yee": [
+        "YE5303_20261"
+      ],
+      "ysi": [
+        "BF17_20710"
+      ],
+      "yal": [
+        "AT01_268"
+      ],
+      "yfr": [
+        "AW19_1390"
+      ],
+      "yin": [
+        "CH53_4127"
+      ],
+      "ykr": [
+        "CH54_272"
+      ],
+      "yro": [
+        "CH64_730"
+      ],
+      "yru": [
+        "BD65_473"
+      ],
+      "yrb": [
+        "UGYR_02420"
+      ],
+      "spe": [
+        "Spro_2162"
+      ],
+      "srr": [
+        "SerAS9_2104"
+      ],
+      "srl": [
+        "SOD_c19760"
+      ],
+      "sry": [
+        "M621_10885"
+      ],
+      "sply": [
+        "Q5A_011020"
+      ],
+      "srs": [
+        "SerAS12_2104"
+      ],
+      "sra": [
+        "SerAS13_2105"
+      ],
+      "smaf": [
+        "D781_1993"
+      ],
+      "smw": [
+        "SMWW4_v1c21910"
+      ],
+      "smar": [
+        "SM39_1623"
+      ],
+      "smac": [
+        "SMDB11_1436"
+      ],
+      "slq": [
+        "M495_10715"
+      ],
+      "serf": [
+        "L085_17810"
+      ],
+      "sers": [
+        "SERRSCBI_10275"
+      ],
+      "sfw": [
+        "WN53_19990"
+      ],
+      "sfg": [
+        "AV650_15810"
+      ],
+      "srz": [
+        "AXX16_3136"
+      ],
+      "sfo": [
+        "Z042_24165"
+      ],
+      "rah": [
+        "Rahaq_2815"
+      ],
+      "raq": [
+        "Rahaq2_2845"
+      ],
+      "raa": [
+        "Q7S_14015"
+      ],
+      "pct": [
+        "PC1_2465"
+      ],
+      "pcc": [
+        "PCC21_025760"
+      ],
+      "pcv": [
+        "BCS7_12375"
+      ],
+      "sod": [
+        "Sant_2068"
+      ],
+      "pes": [
+        "SOPEG_2401"
+      ],
+      "dda": [
+        "Dd703_1629"
+      ],
+      "ddd": [
+        "Dda3937_03650"
+      ],
+      "ddc": [
+        "Dd586_1621"
+      ],
+      "dzc": [
+        "W909_11915"
+      ],
+      "dso": [
+        "A4U42_00810"
+      ],
+      "bgj": [
+        "AWC36_05665"
+      ],
+      "pam": [
+        "PANA_4105"
+      ],
+      "plf": [
+        "PANA5342_p10262"
+      ],
+      "paj": [
+        "PAJ_p0185"
+      ],
+      "paq": [
+        "PAGR_p192"
+      ],
+      "pva": [
+        "Pvag_pPag30250"
+      ],
+      "pao": [
+        "Pat9b_1868"
+      ],
+      "kln": [
+        "LH22_13050"
+      ],
+      "pagg": [
+        "AL522_02200"
+      ],
+      "pagc": [
+        "BEE12_20155"
+      ],
+      "pmr": [
+        "PMI1051"
+      ],
+      "pmib": [
+        "BB2000_1088"
+      ],
+      "pvl": [
+        "AOB99_07305"
+      ],
+      "xbo": [
+        "XBJ1_2522"
+      ],
+      "xbv": [
+        "XBW1_3003"
+      ],
+      "xho": [
+        "A9255_06845"
+      ],
+      "psi": [
+        "S70_19395",
+        "S70_19400"
+      ],
+      "psx": [
+        "DR96_2791"
+      ],
+      "prg": [
+        "RB151_019310"
+      ],
+      "pala": [
+        "CO695_15970"
+      ],
+      "mmk": [
+        "MU9_2429"
+      ],
+      "eic": [
+        "NT01EI_1902"
+      ],
+      "etr": [
+        "ETAE_1804"
+      ],
+      "etd": [
+        "ETAF_1631"
+      ],
+      "ete": [
+        "ETEE_3848"
+      ],
+      "etc": [
+        "ETAC_08285"
+      ],
+      "edw": [
+        "QY76_11210"
+      ],
+      "hav": [
+        "AT03_10660"
+      ],
+      "opo": [
+        "DSM2777_16815"
+      ],
+      "pfq": [
+        "QQ39_08510"
+      ],
+      "pshi": [
+        "SAMEA2665130_1872"
+      ],
+      "msu": [
+        "MS1058"
+      ],
+      "asu": [
+        "Asuc_0554"
+      ],
+      "bto": [
+        "WQG_2530"
+      ],
+      "btre": [
+        "F542_19430"
+      ],
+      "btrh": [
+        "F543_21320"
+      ],
+      "btra": [
+        "F544_2020"
+      ],
+      "rhd": [
+        "R2APBS1_2764"
+      ],
+      "vch": [
+        "VC1388"
+      ],
+      "vce": [
+        "Vch1786_I0888"
+      ],
+      "vcj": [
+        "VCD_002957"
+      ],
+      "vco": [
+        "VC0395_A1000"
+      ],
+      "vcr": [
+        "VC395_1507"
+      ],
+      "vcm": [
+        "VCM66_1343"
+      ],
+      "vci": [
+        "O3Y_06435"
+      ],
+      "vcl": [
+        "VCLMA_A1221"
+      ],
+      "vcq": [
+        "EN18_10175"
+      ],
+      "vcs": [
+        "MS6_1160"
+      ],
+      "vcx": [
+        "VAA049_1416"
+      ],
+      "vcz": [
+        "VAB027_2063"
+      ],
+      "vfu": [
+        "vfu_B00897"
+      ],
+      "vfl": [
+        "AL536_00315"
+      ],
+      "ppr": [
+        "PBPRB1373",
+        "PBPRB1808"
+      ],
+      "pds": [
+        "CAY62_19640"
+      ],
+      "palk": [
+        "PSAKL28_25650"
+      ],
+      "pcr": [
+        "Pcryo_0197"
+      ],
+      "prw": [
+        "PsycPRwf_0070"
+      ],
+      "pso": [
+        "PSYCG_01215"
+      ],
+      "pur": [
+        "AOC03_07415"
+      ],
+      "pali": [
+        "A3K91_0231"
+      ],
+      "pspg": [
+        "AK823_01165"
+      ],
+      "psyg": [
+        "AK825_01135"
+      ],
+      "psyc": [
+        "DABAL43B_0236"
+      ],
+      "psya": [
+        "AOT82_1585"
+      ],
+      "ilo": [
+        "IL0300"
+      ],
+      "ili": [
+        "K734_01505"
+      ],
+      "psy": [
+        "PCNPT3_03680"
+      ],
+      "mvs": [
+        "MVIS_0612"
+      ],
+      "ftu": [
+        "FTT_0690c"
+      ],
+      "ftq": [
+        "RO31_0785"
+      ],
+      "ftf": [
+        "FTF0690c"
+      ],
+      "ftw": [
+        "FTW_1036"
+      ],
+      "ftr": [
+        "NE061598_03935"
+      ],
+      "ftt": [
+        "FTV_0649"
+      ],
+      "fty": [
+        "CH70_952"
+      ],
+      "ftg": [
+        "FTU_0733"
+      ],
+      "ftl": [
+        "FTL_0967"
+      ],
+      "fth": [
+        "FTH_0944"
+      ],
+      "fta": [
+        "FTA_1018"
+      ],
+      "fti": [
+        "FTS_0947"
+      ],
+      "fto": [
+        "X557_05040"
+      ],
+      "ftc": [
+        "DA46_1839"
+      ],
+      "ftv": [
+        "CH67_1304"
+      ],
+      "ftz": [
+        "CH68_1036"
+      ],
+      "ftm": [
+        "FTM_1168"
+      ],
+      "ftn": [
+        "FTN_0993"
+      ],
+      "ftx": [
+        "AW25_1017"
+      ],
+      "ftd": [
+        "AS84_1531"
+      ],
+      "fcf": [
+        "FNFX1_1030"
+      ],
+      "fcn": [
+        "FN3523_0678"
+      ],
+      "fph": [
+        "Fphi_1594"
+      ],
+      "fpt": [
+        "BZ13_396"
+      ],
+      "fpi": [
+        "BF30_1867"
+      ],
+      "fpm": [
+        "LA56_569"
+      ],
+      "fpx": [
+        "KU46_1708"
+      ],
+      "fpz": [
+        "LA55_821"
+      ],
+      "fpj": [
+        "LA02_1646"
+      ],
+      "frt": [
+        "F7308_1529"
+      ],
+      "fna": [
+        "OOM_1381"
+      ],
+      "fnl": [
+        "M973_04630"
+      ],
+      "frf": [
+        "LO80_00145"
+      ],
+      "fper": [
+        "ACH24_03465"
+      ],
+      "fhi": [
+        "FSC454_06585"
+      ],
+      "fha": [
+        "CDV26_05735"
+      ],
+      "frx": [
+        "F7310_04405"
+      ],
+      "fgu": [
+        "SD28_04370"
+      ],
+      "psal": [
+        "PSLF89_2099"
+      ],
+      "hhc": [
+        "M911_11190",
+        "M911_12655",
+        "M911_13110"
+      ],
+      "tgr": [
+        "Tgr7_2206"
+      ],
+      "tkm": [
+        "TK90_0642"
+      ],
+      "tni": [
+        "TVNIR_1885"
+      ],
+      "tti": [
+        "THITH_07100"
+      ],
+      "tvr": [
+        "TVD_07545",
+        "TVD_10600"
+      ],
+      "ebs": [
+        "ECTOBSL9_0277",
+        "ECTOBSL9_0597",
+        "ECTOBSL9_2126"
+      ],
+      "aprs": [
+        "BI364_05090",
+        "BI364_13765"
+      ],
+      "gai": [
+        "IMCC3135_18605"
+      ],
+      "haa": [
+        "A5892_02440"
+      ],
+      "kus": [
+        "B9G99_05535"
+      ],
+      "kma": [
+        "B9H00_09650"
+      ],
+      "mmw": [
+        "Mmwyl1_4028"
+      ],
+      "aha": [
+        "AHA_2967"
+      ],
+      "ahy": [
+        "AHML_16020"
+      ],
+      "ahd": [
+        "AI20_04585"
+      ],
+      "ahr": [
+        "V428_16555"
+      ],
+      "ahp": [
+        "V429_16590"
+      ],
+      "ahj": [
+        "V469_06705"
+      ],
+      "ahh": [
+        "RY45_15320"
+      ],
+      "ahi": [
+        "VU14_06840"
+      ],
+      "asa": [
+        "ASA_2980"
+      ],
+      "avr": [
+        "B565_2741"
+      ],
+      "avo": [
+        "AMS64_16395"
+      ],
+      "amed": [
+        "B224_1332"
+      ],
+      "aaj": [
+        "BOQ57_15210"
+      ],
+      "aeo": [
+        "O23A_p2251"
+      ],
+      "ocm": [
+        "CBP12_04010"
+      ],
+      "pse": [
+        "NH8B_2458"
+      ],
+      "cgd": [
+        "CR3_3101"
+      ],
+      "ccup": [
+        "BKK81_28025"
+      ],
+      "cup": [
+        "BKK80_28295"
+      ],
+      "cuu": [
+        "BKK79_34245"
+      ],
+      "bpe": [
+        "BP1297"
+      ],
+      "bpc": [
+        "BPTD_1287"
+      ],
+      "bper": [
+        "BN118_1761"
+      ],
+      "bpet": [
+        "B1917_2555"
+      ],
+      "bpeu": [
+        "Q425_27700"
+      ],
+      "bpa": [
+        "BPP2921"
+      ],
+      "bpar": [
+        "BN117_2625"
+      ],
+      "bbr": [
+        "BB2891"
+      ],
+      "bbm": [
+        "BN115_2253"
+      ],
+      "bbh": [
+        "BN112_0693"
+      ],
+      "bbx": [
+        "BBS798_2720"
+      ],
+      "bpt": [
+        "Bpet2491"
+      ],
+      "bav": [
+        "BAV1834"
+      ],
+      "bho": [
+        "D560_3444"
+      ],
+      "bhm": [
+        "D558_3416"
+      ],
+      "bhz": [
+        "ACR54_00419",
+        "ACR54_02585"
+      ],
+      "btrm": [
+        "SAMEA390648703375"
+      ],
+      "bbro": [
+        "BAU06_14805"
+      ],
+      "bfz": [
+        "BAU07_11560"
+      ],
+      "bpdz": [
+        "BBN53_09260"
+      ],
+      "boh": [
+        "AKI39_14175"
+      ],
+      "axy": [
+        "AXYL_02860"
+      ],
+      "axo": [
+        "NH44784_043711"
+      ],
+      "axn": [
+        "AX27061_2537"
+      ],
+      "axs": [
+        "LH59_11875"
+      ],
+      "axx": [
+        "ERS451415_02527"
+      ],
+      "adt": [
+        "APT56_12495"
+      ],
+      "afa": [
+        "UZ73_02300"
+      ],
+      "odi": [
+        "ODI_R2234"
+      ],
+      "rfr": [
+        "Rfer_3968"
+      ],
+      "ajs": [
+        "Ajs_0267"
+      ],
+      "dia": [
+        "Dtpsy_0262"
+      ],
+      "adn": [
+        "Alide_0400",
+        "Alide_2337"
+      ],
+      "adk": [
+        "Alide2_0345",
+        "Alide2_2531"
+      ],
+      "oto": [
+        "ADJ79_00170",
+        "ADJ79_12665"
+      ],
+      "hyb": [
+        "Q5W_01070"
+      ],
+      "dpy": [
+        "BA022_13595"
+      ],
+      "sdr": [
+        "SCD_n00426",
+        "SCD_n00803"
+      ],
+      "sulf": [
+        "CAP31_01890"
+      ],
+      "azo": [
+        "azo3871"
+      ],
+      "aoa": [
+        "dqs_4015"
+      ],
+      "kci": [
+        "CKCE_0282"
+      ],
+      "kct": [
+        "CDEE_0607"
+      ],
+      "kbl": [
+        "CKBE_00464"
+      ],
+      "kbt": [
+        "BCUE_0585"
+      ],
+      "kde": [
+        "CDSE_0596"
+      ],
+      "kga": [
+        "ST1E_0662"
+      ],
+      "kon": [
+        "CONE_0575"
+      ],
+      "sua": [
+        "Saut_0555"
+      ],
+      "abu": [
+        "Abu_1471"
+      ],
+      "abt": [
+        "ABED_1372"
+      ],
+      "abl": [
+        "A7H1H_1487"
+      ],
+      "ant": [
+        "Arnit_2603"
+      ],
+      "arc": [
+        "ABLL_1680"
+      ],
+      "alp": [
+        "LPB137_03930"
+      ],
+      "sun": [
+        "SUN_0966"
+      ],
+      "slh": [
+        "YH65_06805"
+      ],
+      "gsu": [
+        "GSU0379"
+      ],
+      "gsk": [
+        "KN400_0347"
+      ],
+      "gme": [
+        "Gmet_3151"
+      ],
+      "gur": [
+        "Gura_0396"
+      ],
+      "glo": [
+        "Glov_2663"
+      ],
+      "gbm": [
+        "Gbem_0399"
+      ],
+      "geo": [
+        "Geob_1319"
+      ],
+      "gem": [
+        "GM21_0393"
+      ],
+      "geb": [
+        "GM18_0491"
+      ],
+      "gpi": [
+        "GPICK_14380"
+      ],
+      "gao": [
+        "A2G06_01685"
+      ],
+      "gsb": [
+        "GSUB_05115"
+      ],
+      "ppd": [
+        "Ppro_2238"
+      ],
+      "des": [
+        "DSOUD_2137"
+      ],
+      "deu": [
+        "DBW_1468"
+      ],
+      "dds": [
+        "Ddes_0785"
+      ],
+      "ddn": [
+        "DND132_3111"
+      ],
+      "dma": [
+        "DMR_11630"
+      ],
+      "dfi": [
+        "AXF13_10595"
+      ],
+      "dpg": [
+        "DESPIGER_2275"
+      ],
+      "dej": [
+        "AWY79_16150"
+      ],
+      "dba": [
+        "Dbac_0847"
+      ],
+      "doa": [
+        "AXF15_03915"
+      ],
+      "drt": [
+        "Dret_0881"
+      ],
+      "dps": [
+        "DP2092",
+        "DPPB42"
+      ],
+      "dml": [
+        "Dmul_21520"
+      ],
+      "dat": [
+        "HRM2_47570"
+      ],
+      "ccx": [
+        "COCOR_05276"
+      ],
+      "cfus": [
+        "CYFUS_006367"
+      ],
+      "dao": [
+        "Desac_2304"
+      ],
+      "dti": [
+        "Desti_0239",
+        "Desti_0742"
+      ],
+      "dbr": [
+        "Deba_2986",
+        "Deba_3039"
+      ],
+      "bba": [
+        "Bd2507"
+      ],
+      "bbat": [
+        "Bdt_2445"
+      ],
+      "bbw": [
+        "BDW_09255"
+      ],
+      "bbac": [
+        "EP01_08685"
+      ],
+      "bmx": [
+        "BMS_1924"
+      ],
+      "oan": [
+        "Oant_2218"
+      ],
+      "oah": [
+        "DR92_1723"
+      ],
+      "ops": [
+        "A8A54_04340"
+      ],
+      "och": [
+        "CES85_1029"
+      ],
+      "hdn": [
+        "Hden_0686"
+      ],
+      "rhz": [
+        "RHPLAN_07140"
+      ],
+      "maad": [
+        "AZF01_00325"
+      ],
+      "rmb": [
+        "K529_018705"
+      ],
+      "kvu": [
+        "EIO_2250"
+      ],
+      "kvl": [
+        "KVU_1794"
+      ],
+      "kro": [
+        "BVG79_01857"
+      ],
+      "rhc": [
+        "RGUI_1287",
+        "RGUI_1564"
+      ],
+      "aep": [
+        "AMC99_00783"
+      ],
+      "rgi": [
+        "RGI145_20180"
+      ],
+      "ros": [
+        "CTJ15_01590"
+      ],
+      "afe": [
+        "Lferr_2173",
+        "Lferr_2343"
+      ],
+      "afr": [
+        "AFE_2545",
+        "AFE_2721"
+      ],
+      "acu": [
+        "Atc_2342"
+      ],
+      "acz": [
+        "Acaty_c2185"
+      ],
+      "afi": [
+        "Acife_2466",
+        "Acife_3277"
+      ],
+      "bsu": [
+        "BSU10250",
+        "BSU24530"
+      ],
+      "bsr": [
+        "I33_1157",
+        "I33_2533"
+      ],
+      "bsl": [
+        "A7A1_3589",
+        "A7A1_3709"
+      ],
+      "bsh": [
+        "BSU6051_10250",
+        "BSU6051_24530"
+      ],
+      "bsy": [
+        "I653_05170",
+        "I653_11785"
+      ],
+      "bsut": [
+        "BSUB_01122",
+        "BSUB_02628"
+      ],
+      "bsul": [
+        "BSUA_01122",
+        "BSUA_02628"
+      ],
+      "bsus": [
+        "Q433_05800",
+        "Q433_13420"
+      ],
+      "bss": [
+        "BSUW23_05185",
+        "BSUW23_12145"
+      ],
+      "bst": [
+        "GYO_1323",
+        "GYO_2713"
+      ],
+      "bso": [
+        "BSNT_07462",
+        "BSNT_08890"
+      ],
+      "bsn": [
+        "BSn5_02815",
+        "BSn5_17005"
+      ],
+      "bsq": [
+        "B657_10250",
+        "B657_24530"
+      ],
+      "bsx": [
+        "C663_1049",
+        "C663_2336"
+      ],
+      "bsp": [
+        "U712_05225",
+        "U712_11975"
+      ],
+      "bli": [
+        "BL01079",
+        "BL01548"
+      ],
+      "bld": [
+        "BLi01102",
+        "BLi02624"
+      ],
+      "blh": [
+        "BaLi_c12240",
+        "BaLi_c27100"
+      ],
+      "bay": [
+        "RBAM_010450",
+        "RBAM_022850"
+      ],
+      "baq": [
+        "BACAU_1005",
+        "BACAU_2298"
+      ],
+      "bya": [
+        "BANAU_0949",
+        "BANAU_2438"
+      ],
+      "bamp": [
+        "B938_05035",
+        "B938_11820"
+      ],
+      "baml": [
+        "BAM5036_0948",
+        "BAM5036_2207"
+      ],
+      "bama": [
+        "RBAU_1007",
+        "RBAU_2421"
+      ],
+      "bamn": [
+        "BASU_0984",
+        "BASU_2210"
+      ],
+      "bamb": [
+        "BAPNAU_1297",
+        "BAPNAU_2754"
+      ],
+      "bamt": [
+        "AJ82_05875",
+        "AJ82_12945"
+      ],
+      "bamy": [
+        "V529_09870",
+        "V529_25600"
+      ],
+      "bmp": [
+        "NG74_01053",
+        "NG74_02391"
+      ],
+      "bao": [
+        "BAMF_1114",
+        "BAMF_2356"
+      ],
+      "baz": [
+        "BAMTA208_04810",
+        "BAMTA208_12610"
+      ],
+      "bql": [
+        "LL3_01113",
+        "LL3_02648"
+      ],
+      "bxh": [
+        "BAXH7_01008",
+        "BAXH7_02571"
+      ],
+      "bqy": [
+        "MUS_1076",
+        "MUS_2750"
+      ],
+      "bami": [
+        "KSO_007950",
+        "KSO_014635"
+      ],
+      "bamc": [
+        "U471_10380",
+        "U471_23640"
+      ],
+      "bamf": [
+        "U722_05305",
+        "U722_12445"
+      ],
+      "bae": [
+        "BATR1942_02735",
+        "BATR1942_10580"
+      ],
+      "batr": [
+        "TD68_02365",
+        "TD68_09670"
+      ],
+      "bvm": [
+        "B9C48_05235",
+        "B9C48_11625"
+      ],
+      "bha": [
+        "BH0683",
+        "BH2812"
+      ],
+      "ban": [
+        "BA_1089",
+        "BA_4431"
+      ],
+      "bar": [
+        "GBAA_1089",
+        "GBAA_4431"
+      ],
+      "bat": [
+        "BAS1017",
+        "BAS4111"
+      ],
+      "bah": [
+        "BAMEG_3487",
+        "BAMEG_4466"
+      ],
+      "bai": [
+        "BAA_1177",
+        "BAA_4448"
+      ],
+      "bax": [
+        "H9401_1029",
+        "H9401_4225"
+      ],
+      "bant": [
+        "A16_11510",
+        "A16_44270"
+      ],
+      "banr": [
+        "A16R_11650",
+        "A16R_44820"
+      ],
+      "bans": [
+        "BAPAT_1033",
+        "BAPAT_4250"
+      ],
+      "banh": [
+        "HYU01_05715",
+        "HYU01_21625"
+      ],
+      "banv": [
+        "DJ46_3116",
+        "DJ46_5541"
+      ],
+      "bce": [
+        "BC1086",
+        "BC4209"
+      ],
+      "bca": [
+        "BCE_1189",
+        "BCE_4284"
+      ],
+      "bcz": [
+        "BCE33L1004",
+        "BCE33L3962"
+      ],
+      "bcr": [
+        "BCAH187_A1248",
+        "BCAH187_A4339"
+      ],
+      "bcb": [
+        "BCB4264_A1121",
+        "BCB4264_A4319"
+      ],
+      "bcu": [
+        "BCAH820_1167",
+        "BCAH820_4228"
+      ],
+      "bcg": [
+        "BCG9842_B0914",
+        "BCG9842_B4185"
+      ],
+      "bcq": [
+        "BCQ_1154",
+        "BCQ_3995"
+      ],
+      "bcx": [
+        "BCA_1141",
+        "BCA_4318"
+      ],
+      "bal": [
+        "BACI_c11260",
+        "BACI_c41760"
+      ],
+      "bnc": [
+        "BCN_1064",
+        "BCN_4122"
+      ],
+      "bcf": [
+        "bcf_05500",
+        "bcf_20925"
+      ],
+      "bcer": [
+        "BCK_02880",
+        "BCK_14140"
+      ],
+      "bcef": [
+        "BcrFT9_00940",
+        "BcrFT9_03306"
+      ],
+      "bcy": [
+        "Bcer98_0839",
+        "Bcer98_2899"
+      ],
+      "btk": [
+        "BT9727_1001",
+        "BT9727_3952"
+      ],
+      "btl": [
+        "BALH_0968",
+        "BALH_3813"
+      ],
+      "btb": [
+        "BMB171_C0959",
+        "BMB171_C3866"
+      ],
+      "btt": [
+        "HD73_1243",
+        "HD73_4513"
+      ],
+      "bthr": [
+        "YBT1520_06215",
+        "YBT1520_22385"
+      ],
+      "bthi": [
+        "BTK_06265",
+        "BTK_22235"
+      ],
+      "btc": [
+        "CT43_CH1038",
+        "CT43_CH4223"
+      ],
+      "btf": [
+        "YBT020_06145",
+        "YBT020_20765"
+      ],
+      "btm": [
+        "MC28_0324",
+        "MC28_3502"
+      ],
+      "btg": [
+        "BTB_c11540",
+        "BTB_c43510"
+      ],
+      "bti": [
+        "BTG_15520",
+        "BTG_28350"
+      ],
+      "btn": [
+        "BTF1_03180",
+        "BTF1_19445"
+      ],
+      "btht": [
+        "H175_ch1053",
+        "H175_ch4291"
+      ],
+      "bthu": [
+        "YBT1518_06565",
+        "YBT1518_23250"
+      ],
+      "btw": [
+        "BF38_2329",
+        "BF38_5376"
+      ],
+      "bthy": [
+        "AQ980_08775",
+        "AQ980_24700"
+      ],
+      "bwe": [
+        "BcerKBAB4_1006",
+        "BcerKBAB4_4063"
+      ],
+      "bww": [
+        "bwei_0727",
+        "bwei_3907"
+      ],
+      "bmyc": [
+        "DJ92_1313",
+        "DJ92_3728"
+      ],
+      "bmyo": [
+        "BG05_1808",
+        "BG05_4795"
+      ],
+      "bty": [
+        "Btoyo_1454",
+        "Btoyo_3747"
+      ],
+      "bcl": [
+        "ABC1613",
+        "ABC2491"
+      ],
+      "bpu": [
+        "BPUM_0968",
+        "BPUM_2185"
+      ],
+      "bpum": [
+        "BW16_05240",
+        "BW16_11840"
+      ],
+      "bpus": [
+        "UP12_05190",
+        "UP12_11095"
+      ],
+      "bpf": [
+        "BpOF4_01655",
+        "BpOF4_12910"
+      ],
+      "bmq": [
+        "BMQ_0608",
+        "BMQ_4481"
+      ],
+      "bmd": [
+        "BMD_0611",
+        "BMD_4467"
+      ],
+      "bmh": [
+        "BMWSH_0754",
+        "BMWSH_4629"
+      ],
+      "bmeg": [
+        "BG04_1399",
+        "BG04_2900"
+      ],
+      "bco": [
+        "Bcell_1551",
+        "Bcell_1690"
+      ],
+      "bck": [
+        "BCO26_0788",
+        "BCO26_1680"
+      ],
+      "bag": [
+        "Bcoa_0390",
+        "Bcoa_2829"
+      ],
+      "bcoa": [
+        "BF29_3320",
+        "BF29_733"
+      ],
+      "bjs": [
+        "MY9_1126",
+        "MY9_2475"
+      ],
+      "baci": [
+        "B1NLA3E_04025",
+        "B1NLA3E_15620"
+      ],
+      "bif": [
+        "N288_07030",
+        "N288_17965"
+      ],
+      "ble": [
+        "BleG1_1419",
+        "BleG1_2470"
+      ],
+      "bmet": [
+        "BMMGA3_11530"
+      ],
+      "gst": [
+        "HW35_04135",
+        "HW35_15000"
+      ],
+      "bacw": [
+        "QR42_05035",
+        "QR42_11045"
+      ],
+      "bacp": [
+        "SB24_04650",
+        "SB24_17295"
+      ],
+      "bacb": [
+        "OY17_07910",
+        "OY17_14700"
+      ],
+      "bby": [
+        "CY96_04725",
+        "CY96_20225"
+      ],
+      "baco": [
+        "OXB_1667",
+        "OXB_2764"
+      ],
+      "bacy": [
+        "QF06_04050",
+        "QF06_10455"
+      ],
+      "bacl": [
+        "BS34A_11390",
+        "BS34A_26910"
+      ],
+      "balm": [
+        "BsLM_1067",
+        "BsLM_2409"
+      ],
+      "beo": [
+        "BEH_03535",
+        "BEH_19650"
+      ],
+      "bsm": [
+        "BSM4216_2532"
+      ],
+      "bsj": [
+        "UP17_05645",
+        "UP17_16205"
+      ],
+      "bon": [
+        "A361_07075",
+        "A361_20305"
+      ],
+      "bgy": [
+        "BGLY_1139",
+        "BGLY_2903"
+      ],
+      "bfx": [
+        "BC359_05330",
+        "BC359_17220"
+      ],
+      "bgi": [
+        "BGM20_06025",
+        "BGM20_20400"
+      ],
+      "bwh": [
+        "A9C19_06495",
+        "A9C19_15345"
+      ],
+      "bxi": [
+        "BK049_03095",
+        "BK049_16000"
+      ],
+      "bhk": [
+        "B4U37_06535",
+        "B4U37_14605"
+      ],
+      "bbev": [
+        "BBEV_1173"
+      ],
+      "oih": [
+        "OB1174",
+        "OB1283"
+      ],
+      "gka": [
+        "GK2420"
+      ],
+      "gte": [
+        "GTCCBUS3UF5_27330"
+      ],
+      "gtk": [
+        "GT3570_11745"
+      ],
+      "gtn": [
+        "GTNG_2358"
+      ],
+      "gwc": [
+        "GWCH70_1752",
+        "GWCH70_2355"
+      ],
+      "gyc": [
+        "GYMC61_0219"
+      ],
+      "gya": [
+        "GYMC52_2449"
+      ],
+      "gct": [
+        "GC56T3_1068"
+      ],
+      "gmc": [
+        "GY4MC1_1146"
+      ],
+      "ggh": [
+        "GHH_c24970"
+      ],
+      "gjf": [
+        "M493_12560"
+      ],
+      "gea": [
+        "GARCT_02400"
+      ],
+      "gse": [
+        "GT50_14780"
+      ],
+      "gsr": [
+        "GS3922_04050"
+      ],
+      "gej": [
+        "A0V43_10000"
+      ],
+      "gth": [
+        "Geoth_1258"
+      ],
+      "ptl": [
+        "AOT13_16580"
+      ],
+      "afl": [
+        "Aflv_0919"
+      ],
+      "agn": [
+        "AFK25_09960"
+      ],
+      "anm": [
+        "GFC28_2964",
+        "GFC28_3750"
+      ],
+      "aamy": [
+        "GFC30_2613"
+      ],
+      "anl": [
+        "GFC29_1683",
+        "GFC29_2471"
+      ],
+      "axl": [
+        "AXY_07810"
+      ],
+      "lsp": [
+        "Bsph_0421",
+        "Bsph_3557"
+      ],
+      "lgy": [
+        "T479_14400",
+        "T479_19465"
+      ],
+      "lfu": [
+        "HR49_04445",
+        "HR49_08795"
+      ],
+      "hhd": [
+        "HBHAL_2092",
+        "HBHAL_2236"
+      ],
+      "hmn": [
+        "HM131_15005",
+        "HM131_15745"
+      ],
+      "tap": [
+        "GZ22_04955"
+      ],
+      "vir": [
+        "X953_02395",
+        "X953_05265"
+      ],
+      "vhl": [
+        "BME96_01730",
+        "BME96_04440"
+      ],
+      "vig": [
+        "BKP57_03790",
+        "BKP57_08040"
+      ],
+      "vil": [
+        "CFK37_00785",
+        "CFK37_04375"
+      ],
+      "vne": [
+        "CFK40_16840",
+        "CFK40_20590"
+      ],
+      "lao": [
+        "AOX59_08700",
+        "AOX59_12450"
+      ],
+      "fpn": [
+        "ABE65_003760",
+        "ABE65_013910"
+      ],
+      "far": [
+        "ABE41_003810",
+        "ABE41_012675"
+      ],
+      "sje": [
+        "AAV35_009400",
+        "AAV35_009810"
+      ],
+      "apak": [
+        "AP3564_18010"
+      ],
+      "bse": [
+        "Bsel_2402"
+      ],
+      "sau": [
+        "SA0316",
+        "SA0884",
+        "SA1363"
+      ],
+      "sav": [
+        "SAV0327",
+        "SAV1028",
+        "SAV1533"
+      ],
+      "saw": [
+        "SAHV_0324",
+        "SAHV_1021",
+        "SAHV_1520"
+      ],
+      "sah": [
+        "SaurJH1_0386",
+        "SaurJH1_1108",
+        "SaurJH1_1624"
+      ],
+      "saj": [
+        "SaurJH9_0376",
+        "SaurJH9_1086",
+        "SaurJH9_1591"
+      ],
+      "sam": [
+        "MW0304",
+        "MW0908",
+        "MW1485"
+      ],
+      "sas": [
+        "SAS0304",
+        "SAS0960",
+        "SAS1471"
+      ],
+      "sar": [
+        "SAR0324",
+        "SAR0997",
+        "SAR1610"
+      ],
+      "sac": [
+        "SACOL0398",
+        "SACOL1034",
+        "SACOL1591"
+      ],
+      "sax": [
+        "USA300HOU_0348",
+        "USA300HOU_1534"
+      ],
+      "saa": [
+        "SAUSA300_0328",
+        "SAUSA300_0930",
+        "SAUSA300_1494"
+      ],
+      "sao": [
+        "SAOUHSC_00308",
+        "SAOUHSC_00963",
+        "SAOUHSC_01629"
+      ],
+      "sae": [
+        "NWMN_0320",
+        "NWMN_0897",
+        "NWMN_1437"
+      ],
+      "sad": [
+        "SAAV_0295",
+        "SAAV_0992",
+        "SAAV_1525"
+      ],
+      "suu": [
+        "M013TW_0308",
+        "M013TW_0956",
+        "M013TW_1548"
+      ],
+      "suv": [
+        "SAVC_01385",
+        "SAVC_04300",
+        "SAVC_06910"
+      ],
+      "sue": [
+        "SAOV_0353",
+        "SAOV_0973c",
+        "SAOV_1533"
+      ],
+      "suj": [
+        "SAA6159_00303",
+        "SAA6159_00883",
+        "SAA6159_01468"
+      ],
+      "suk": [
+        "SAA6008_00304",
+        "SAA6008_00982",
+        "SAA6008_01502"
+      ],
+      "suc": [
+        "ECTR2_1384",
+        "ECTR2_287",
+        "ECTR2_884"
+      ],
+      "sut": [
+        "SAT0131_00332",
+        "SAT0131_01062",
+        "SAT0131_01626"
+      ],
+      "suq": [
+        "HMPREF0772_10168",
+        "HMPREF0772_11608",
+        "HMPREF0772_12207"
+      ],
+      "suz": [
+        "MS7_0317",
+        "MS7_0985",
+        "MS7_1550"
+      ],
+      "sud": [
+        "ST398NM01_0408",
+        "ST398NM01_1025",
+        "ST398NM01_1598"
+      ],
+      "sux": [
+        "SAEMRSA15_02830",
+        "SAEMRSA15_08570",
+        "SAEMRSA15_14530"
+      ],
+      "suw": [
+        "SATW20_03950",
+        "SATW20_10240",
+        "SATW20_15290"
+      ],
+      "sug": [
+        "SAPIG0408",
+        "SAPIG1025",
+        "SAPIG1598"
+      ],
+      "suf": [
+        "SARLGA251_02890",
+        "SARLGA251_09420",
+        "SARLGA251_14390"
+      ],
+      "saua": [
+        "SAAG_00815",
+        "SAAG_01447",
+        "SAAG_02136"
+      ],
+      "saue": [
+        "RSAU_000273",
+        "RSAU_000914",
+        "RSAU_001399"
+      ],
+      "saun": [
+        "SAKOR_00322",
+        "SAKOR_00946",
+        "SAKOR_01479"
+      ],
+      "saus": [
+        "SA40_0285",
+        "SA40_0897",
+        "SA40_1404"
+      ],
+      "sauu": [
+        "SA957_0300",
+        "SA957_0912",
+        "SA957_1487"
+      ],
+      "saug": [
+        "SA268_0297",
+        "SA268_0914",
+        "SA268_1491"
+      ],
+      "sauz": [
+        "SAZ172_0328",
+        "SAZ172_0968",
+        "SAZ172_1547"
+      ],
+      "saut": [
+        "SAI1T1_2002520",
+        "SAI1T1_2007290",
+        "SAI1T1_2011130"
+      ],
+      "sauj": [
+        "SAI2T2_1002520",
+        "SAI2T2_1007310",
+        "SAI2T2_1011150"
+      ],
+      "sauk": [
+        "SAI3T3_1002520",
+        "SAI3T3_1007300",
+        "SAI3T3_1011130"
+      ],
+      "sauq": [
+        "SAI4T8_1002520",
+        "SAI4T8_1007290",
+        "SAI4T8_1011140"
+      ],
+      "sauv": [
+        "SAI7S6_1002520",
+        "SAI7S6_1007300",
+        "SAI7S6_1011150"
+      ],
+      "sauw": [
+        "SAI5S5_1002510",
+        "SAI5S5_1007260",
+        "SAI5S5_1011100"
+      ],
+      "saux": [
+        "SAI6T6_1002520",
+        "SAI6T6_1007270",
+        "SAI6T6_1011110"
+      ],
+      "sauy": [
+        "SAI8T7_1002520",
+        "SAI8T7_1007300",
+        "SAI8T7_1011140"
+      ],
+      "sab": [
+        "SAB0277",
+        "SAB0893c",
+        "SAB1405c"
+      ],
+      "suy": [
+        "SA2981_0326",
+        "SA2981_0981",
+        "SA2981_1491"
+      ],
+      "saub": [
+        "C248_0381",
+        "C248_1052",
+        "C248_1575"
+      ],
+      "saum": [
+        "BN843_15380",
+        "BN843_3330",
+        "BN843_9340"
+      ],
+      "sauc": [
+        "CA347_1530",
+        "CA347_341",
+        "CA347_946"
+      ],
+      "saur": [
+        "SABB_00455",
+        "SABB_00995",
+        "SABB_01521"
+      ],
+      "saui": [
+        "AZ30_01680",
+        "AZ30_04895",
+        "AZ30_07815"
+      ],
+      "saud": [
+        "CH52_00740",
+        "CH52_04090",
+        "CH52_11405"
+      ],
+      "sauf": [
+        "X998_0384",
+        "X998_1027",
+        "X998_1559"
+      ],
+      "sams": [
+        "NI36_01550",
+        "NI36_04900",
+        "NI36_08270"
+      ],
+      "suh": [
+        "SAMSHR1132_03010",
+        "SAMSHR1132_08740",
+        "SAMSHR1132_13730"
+      ],
+      "sep": [
+        "SE0728",
+        "SE1217"
+      ],
+      "ser": [
+        "SERP0616",
+        "SERP1097"
+      ],
+      "sepp": [
+        "SEB_00706",
+        "SEB_01237"
+      ],
+      "seps": [
+        "DP17_176",
+        "DP17_2012"
+      ],
+      "sha": [
+        "SH0263",
+        "SH1383",
+        "SH1931"
+      ],
+      "shh": [
+        "ShL2_00179",
+        "ShL2_01267",
+        "ShL2_01793"
+      ],
+      "ssp": [
+        "SSP1222",
+        "SSP1757"
+      ],
+      "sca": [
+        "SCA_0644",
+        "SCA_1156"
+      ],
+      "slg": [
+        "SLGD_00254",
+        "SLGD_01382",
+        "SLGD_01841"
+      ],
+      "sln": [
+        "SLUG_02530",
+        "SLUG_13790",
+        "SLUG_18350"
+      ],
+      "ssd": [
+        "SPSINT_0731",
+        "SPSINT_1229"
+      ],
+      "sdt": [
+        "SPSE_1265",
+        "SPSE_1785"
+      ],
+      "swa": [
+        "A284_06050",
+        "A284_08640"
+      ],
+      "spas": [
+        "STP1_0112",
+        "STP1_2096"
+      ],
+      "sxy": [
+        "BE24_02485",
+        "BE24_05000",
+        "BE24_11115"
+      ],
+      "sxl": [
+        "SXYLSMQ121_0195",
+        "SXYLSMQ121_1258",
+        "SXYLSMQ121_1757"
+      ],
+      "sxo": [
+        "SXYL_00194",
+        "SXYL_01321",
+        "SXYL_01905"
+      ],
+      "shu": [
+        "SHYC_06915",
+        "SHYC_09200"
+      ],
+      "scap": [
+        "AYP1020_0284",
+        "AYP1020_0831"
+      ],
+      "ssch": [
+        "LH95_06115",
+        "LH95_08635"
+      ],
+      "sscz": [
+        "RN70_06295",
+        "RN70_09115"
+      ],
+      "sagq": [
+        "EP23_00790",
+        "EP23_03505"
+      ],
+      "seqo": [
+        "SE1039_07820",
+        "SE1039_13650",
+        "SE1039_23880"
+      ],
+      "ssif": [
+        "AL483_04150",
+        "AL483_06725"
+      ],
+      "scv": [
+        "A4G25_01690",
+        "A4G25_04710"
+      ],
+      "spet": [
+        "CEP67_02140",
+        "CEP67_11950"
+      ],
+      "slz": [
+        "B5P37_09195",
+        "B5P37_11710"
+      ],
+      "scoh": [
+        "BZ166_00710",
+        "BZ166_05505",
+        "BZ166_10715"
+      ],
+      "mcl": [
+        "MCCL_1177",
+        "MCCL_1547"
+      ],
+      "mcak": [
+        "MCCS_13700",
+        "MCCS_19600"
+      ],
+      "macr": [
+        "BHM04_01130",
+        "BHM04_03120"
+      ],
+      "shv": [
+        "AAT16_07125",
+        "AAT16_09460"
+      ],
+      "sbac": [
+        "BVH56_01205",
+        "BVH56_03795"
+      ],
+      "lmo": [
+        "lmo0764",
+        "lmo0931"
+      ],
+      "lmf": [
+        "LMOf2365_0788",
+        "LMOf2365_0952"
+      ],
+      "lmh": [
+        "LMHCC_1691",
+        "LMHCC_1864"
+      ],
+      "lmc": [
+        "Lm4b_00780",
+        "Lm4b_00950"
+      ],
+      "lmn": [
+        "LM5578_0844",
+        "LM5578_1012"
+      ],
+      "lmy": [
+        "LM5923_0799",
+        "LM5923_0966"
+      ],
+      "lmt": [
+        "LMRG_00452",
+        "LMRG_02030"
+      ],
+      "lmg": [
+        "LMKG_01113",
+        "LMKG_02361"
+      ],
+      "lms": [
+        "LMLG_1419",
+        "LMLG_1599"
+      ],
+      "lmj": [
+        "LMOG_00798",
+        "LMOG_01970"
+      ],
+      "lmq": [
+        "LMM7_0795",
+        "LMM7_0967"
+      ],
+      "lml": [
+        "lmo4a_0776",
+        "lmo4a_0946"
+      ],
+      "lmp": [
+        "MUO_04100",
+        "MUO_04930"
+      ],
+      "lmw": [
+        "LMOSLCC2755_0765",
+        "LMOSLCC2755_0932"
+      ],
+      "lmx": [
+        "LMOSLCC2372_0774",
+        "LMOSLCC2372_0944"
+      ],
+      "lmz": [
+        "LMOSLCC2482_0808",
+        "LMOSLCC2482_0976"
+      ],
+      "lmon": [
+        "LMOSLCC2376_0731",
+        "LMOSLCC2376_0902"
+      ],
+      "lmoc": [
+        "LMOSLCC5850_0764",
+        "LMOSLCC5850_0933"
+      ],
+      "lmos": [
+        "LMOSLCC7179_0741",
+        "LMOSLCC7179_0911"
+      ],
+      "lmoo": [
+        "LMOSLCC2378_0784",
+        "LMOSLCC2378_0948"
+      ],
+      "lmoy": [
+        "LMOSLCC2479_0772",
+        "LMOSLCC2479_0943"
+      ],
+      "lmot": [
+        "LMOSLCC2540_0764",
+        "LMOSLCC2540_0930"
+      ],
+      "lmoa": [
+        "LMOATCC19117_0788",
+        "LMOATCC19117_0953"
+      ],
+      "lmol": [
+        "LMOL312_0764",
+        "LMOL312_0932"
+      ],
+      "lmog": [
+        "BN389_07970",
+        "BN389_09610"
+      ],
+      "lmoe": [
+        "BN418_0882",
+        "BN418_1132",
+        "BN418_1133"
+      ],
+      "lmob": [
+        "BN419_0889",
+        "BN419_1134",
+        "BN419_1135"
+      ],
+      "lmoj": [
+        "LM220_04131",
+        "LM220_10872"
+      ],
+      "lmoz": [
+        "LM1816_00720",
+        "LM1816_12992"
+      ],
+      "lmod": [
+        "LMON_0768",
+        "LMON_0937"
+      ],
+      "lmow": [
+        "AX10_12360",
+        "AX10_13215"
+      ],
+      "lmox": [
+        "AX24_01140",
+        "AX24_02030"
+      ],
+      "lmoq": [
+        "LM6179_1076",
+        "LM6179_1246"
+      ],
+      "lmr": [
+        "LMR479A_0783",
+        "LMR479A_0953"
+      ],
+      "lmok": [
+        "CQ02_04030",
+        "CQ02_04870"
+      ],
+      "lmv": [
+        "Y193_11095",
+        "Y193_11970"
+      ],
+      "lmom": [
+        "IJ09_05645",
+        "IJ09_06505"
+      ],
+      "lin": [
+        "lin0758",
+        "lin0931"
+      ],
+      "lwe": [
+        "lwe0725",
+        "lwe0911"
+      ],
+      "lsg": [
+        "lse_0660",
+        "lse_0829"
+      ],
+      "liv": [
+        "LIV_0703",
+        "LIV_0873"
+      ],
+      "lii": [
+        "JL52_03800",
+        "JL52_04680"
+      ],
+      "liw": [
+        "AX25_03870",
+        "AX25_04760"
+      ],
+      "lia": [
+        "JL58_03880",
+        "JL58_04885"
+      ],
+      "lio": [
+        "JL53_04420",
+        "JL53_05365"
+      ],
+      "bths": [
+        "CNY62_03285"
+      ],
+      "esi": [
+        "Exig_0718",
+        "Exig_0893"
+      ],
+      "eat": [
+        "EAT1b_1404",
+        "EAT1b_2467"
+      ],
+      "ean": [
+        "Eab7_0691",
+        "Eab7_0862"
+      ],
+      "exm": [
+        "U719_03810",
+        "U719_04675"
+      ],
+      "exu": [
+        "ESP131_06235",
+        "ESP131_07080"
+      ],
+      "got": [
+        "AXE85_06835"
+      ],
+      "bbe": [
+        "BBR47_23010",
+        "BBR47_46650"
+      ],
+      "blr": [
+        "BRLA_c016030",
+        "BRLA_c028260"
+      ],
+      "bfm": [
+        "BP422_06705",
+        "BP422_19030"
+      ],
+      "pjd": [
+        "Pjdr2_2172"
+      ],
+      "gym": [
+        "GYMC10_5191"
+      ],
+      "ppy": [
+        "PPE_01281"
+      ],
+      "ppm": [
+        "PPSC2_06615"
+      ],
+      "ppo": [
+        "PPM_1252"
+      ],
+      "ppol": [
+        "X809_07070"
+      ],
+      "ppq": [
+        "PPSQR21_013520"
+      ],
+      "ppoy": [
+        "RE92_05270"
+      ],
+      "pms": [
+        "KNP414_01684",
+        "KNP414_05317"
+      ],
+      "pmq": [
+        "PM3016_1989",
+        "PM3016_4701"
+      ],
+      "pmw": [
+        "B2K_10085",
+        "B2K_24375"
+      ],
+      "pta": [
+        "HPL003_14810"
+      ],
+      "plv": [
+        "ERIC2_c26150",
+        "ERIC2_c32120"
+      ],
+      "psab": [
+        "PSAB_06380"
+      ],
+      "pdu": [
+        "PDUR_07525"
+      ],
+      "pbd": [
+        "PBOR_07360"
+      ],
+      "pgm": [
+        "PGRAT_07145"
+      ],
+      "pod": [
+        "PODO_05990"
+      ],
+      "paen": [
+        "P40081_07440"
+      ],
+      "paef": [
+        "R50345_06370"
+      ],
+      "paeq": [
+        "R50912_06625"
+      ],
+      "pste": [
+        "PSTEL_07165"
+      ],
+      "paea": [
+        "R70723_06055"
+      ],
+      "paee": [
+        "R70331_06065"
+      ],
+      "paeh": [
+        "H70357_06885"
+      ],
+      "paej": [
+        "H70737_06210"
+      ],
+      "pbj": [
+        "VN24_07425",
+        "VN24_15500"
+      ],
+      "pih": [
+        "UB51_16115"
+      ],
+      "pri": [
+        "PRIO_1518"
+      ],
+      "ppeo": [
+        "ABE82_06740"
+      ],
+      "pnp": [
+        "IJ22_07100"
+      ],
+      "pow": [
+        "IJ21_29130"
+      ],
+      "pbv": [
+        "AR543_08705"
+      ],
+      "pxl": [
+        "BS614_11200"
+      ],
+      "pyg": [
+        "AWM70_02360"
+      ],
+      "pswu": [
+        "SY83_17520"
+      ],
+      "pdh": [
+        "B9T62_01450"
+      ],
+      "pib": [
+        "BBD41_19975"
+      ],
+      "anx": [
+        "ACH33_06215"
+      ],
+      "bts": [
+        "Btus_1765",
+        "Btus_2480",
+        "Btus_2488"
+      ],
+      "tum": [
+        "CBW65_20080"
+      ],
+      "tab": [
+        "CIG75_09420"
+      ],
+      "siv": [
+        "SSIL_0719",
+        "SSIL_1640"
+      ],
+      "ssil": [
+        "SOLI23_10580",
+        "SOLI23_15110"
+      ],
+      "sob": [
+        "CSE16_13625",
+        "CSE16_17920"
+      ],
+      "pln": [
+        "Plano_0869",
+        "Plano_1341"
+      ],
+      "pku": [
+        "AUO94_09380",
+        "AUO94_11805"
+      ],
+      "prt": [
+        "AUC31_04665",
+        "AUC31_13440"
+      ],
+      "pll": [
+        "I858_002645",
+        "I858_015325"
+      ],
+      "pana": [
+        "BBH88_13060",
+        "BBH88_15740"
+      ],
+      "pdg": [
+        "BCM40_08825",
+        "BCM40_11175"
+      ],
+      "phc": [
+        "BBI08_00860",
+        "BBI08_03375"
+      ],
+      "pmar": [
+        "B0X71_04205",
+        "B0X71_05315"
+      ],
+      "ppla": [
+        "BBI15_01090",
+        "BBI15_08860"
+      ],
+      "pfae": [
+        "AJGP001_05400",
+        "AJGP001_07905"
+      ],
+      "jeo": [
+        "JMA_10690",
+        "JMA_13560"
+      ],
+      "kur": [
+        "ASO14_1259",
+        "ASO14_569"
+      ],
+      "spsy": [
+        "AZE41_12560",
+        "AZE41_17395"
+      ],
+      "spor": [
+        "SporoP33_00275",
+        "SporoP33_12790"
+      ],
+      "spop": [
+        "SporoP37_00690",
+        "SporoP37_13055"
+      ],
+      "sure": [
+        "SporoP32a_00325",
+        "SporoP32a_13370"
+      ],
+      "rst": [
+        "ATY39_04840",
+        "ATY39_10470"
+      ],
+      "ntr": [
+        "B0W44_06895",
+        "B0W44_13075"
+      ],
+      "lla": [
+        "L64373"
+      ],
+      "llk": [
+        "LLKF_0039"
+      ],
+      "llt": [
+        "CVCAS_0060"
+      ],
+      "lls": [
+        "lilo_0037"
+      ],
+      "lld": [
+        "P620_00245"
+      ],
+      "llx": [
+        "NCDO2118_0039"
+      ],
+      "llc": [
+        "LACR_0052"
+      ],
+      "llm": [
+        "llmg_0075"
+      ],
+      "llr": [
+        "llh_0215"
+      ],
+      "lln": [
+        "LLNZ_00370"
+      ],
+      "lli": [
+        "uc509_0035"
+      ],
+      "llw": [
+        "kw2_0050"
+      ],
+      "llj": [
+        "LG36_0040"
+      ],
+      "lgr": [
+        "LCGT_0033"
+      ],
+      "lgv": [
+        "LCGL_0033"
+      ],
+      "lpk": [
+        "LACPI_0821"
+      ],
+      "spy": [
+        "SPy_1033",
+        "SPy_1214"
+      ],
+      "spz": [
+        "M5005_Spy0758",
+        "M5005_Spy0928"
+      ],
+      "spym": [
+        "M1GAS476_0820",
+        "M1GAS476_0986"
+      ],
+      "spm": [
+        "spyM18_1015",
+        "spyM18_1166"
+      ],
+      "spg": [
+        "SpyM3_0666",
+        "SpyM3_0854"
+      ],
+      "sps": [
+        "SPs1054",
+        "SPs1187"
+      ],
+      "sph": [
+        "MGAS10270_Spy0875",
+        "MGAS10270_Spy1042"
+      ],
+      "spi": [
+        "MGAS10750_Spy0910",
+        "MGAS10750_Spy1077"
+      ],
+      "spj": [
+        "MGAS2096_Spy0832",
+        "MGAS2096_Spy0987"
+      ],
+      "spk": [
+        "MGAS9429_Spy0872",
+        "MGAS9429_Spy1031"
+      ],
+      "spf": [
+        "SpyM50870",
+        "SpyM51001"
+      ],
+      "spa": [
+        "M6_Spy0783",
+        "M6_Spy0917"
+      ],
+      "spb": [
+        "M28_Spy0737",
+        "M28_Spy0900"
+      ],
+      "stg": [
+        "MGAS15252_0785",
+        "MGAS15252_0925"
+      ],
+      "soz": [
+        "Spy49_0812",
+        "Spy49_0960c"
+      ],
+      "stz": [
+        "SPYALAB49_000783",
+        "SPYALAB49_000919"
+      ],
+      "stx": [
+        "MGAS1882_0781",
+        "MGAS1882_0920"
+      ],
+      "spya": [
+        "A20_0799",
+        "A20_0964c"
+      ],
+      "spyh": [
+        "L897_03950",
+        "L897_04590"
+      ],
+      "spyo": [
+        "STAB901_04365",
+        "STAB901_05230"
+      ],
+      "spn": [
+        "SP_1160"
+      ],
+      "spd": [
+        "SPD_1024"
+      ],
+      "spr": [
+        "spr1047"
+      ],
+      "spw": [
+        "SPCG_1137"
+      ],
+      "spx": [
+        "SPG_1061"
+      ],
+      "sne": [
+        "SPN23F10640"
+      ],
+      "snm": [
+        "SP70585_1212"
+      ],
+      "sjj": [
+        "SPJ_1079"
+      ],
+      "spp": [
+        "SPP_1203"
+      ],
+      "snt": [
+        "SPT_1186"
+      ],
+      "snc": [
+        "HMPREF0837_11335"
+      ],
+      "snb": [
+        "SP670_1112"
+      ],
+      "snp": [
+        "SPAP_1054"
+      ],
+      "sni": [
+        "INV104_10010"
+      ],
+      "snv": [
+        "SPNINV200_10660"
+      ],
+      "snx": [
+        "SPNOXC10440"
+      ],
+      "snd": [
+        "MYY_1188"
+      ],
+      "snu": [
+        "SPNA45_01430"
+      ],
+      "spng": [
+        "HMPREF1038_01036"
+      ],
+      "spne": [
+        "SPN034156_01320"
+      ],
+      "spnu": [
+        "SPN034183_10440"
+      ],
+      "spnm": [
+        "SPN994038_10330"
+      ],
+      "spno": [
+        "SPN994039_10340"
+      ],
+      "spnn": [
+        "T308_05530"
+      ],
+      "sag": [
+        "SAG0882",
+        "SAG1056"
+      ],
+      "san": [
+        "gbs0899",
+        "gbs1090"
+      ],
+      "sak": [
+        "SAK_1005",
+        "SAK_1145"
+      ],
+      "sgc": [
+        "A964_0885",
+        "A964_1031"
+      ],
+      "sags": [
+        "SaSA20_0757",
+        "SaSA20_0880"
+      ],
+      "sagl": [
+        "GBS222_0753",
+        "GBS222_0882"
+      ],
+      "sagm": [
+        "BSA_11290",
+        "BSA_9700"
+      ],
+      "sagi": [
+        "MSA_10300",
+        "MSA_11780"
+      ],
+      "sagr": [
+        "SAIL_10260",
+        "SAIL_11700"
+      ],
+      "sagp": [
+        "V193_04195",
+        "V193_04840"
+      ],
+      "sagc": [
+        "DN94_04195",
+        "DN94_04840"
+      ],
+      "sagt": [
+        "GBSCOH1_0809",
+        "GBSCOH1_0965"
+      ],
+      "sage": [
+        "EN72_05145",
+        "EN72_05905"
+      ],
+      "sagg": [
+        "EN73_04845",
+        "EN73_05470"
+      ],
+      "sagn": [
+        "W903_0973",
+        "W903_1144"
+      ],
+      "smu": [
+        "SMU_131"
+      ],
+      "smc": [
+        "SmuNN2025_0119"
+      ],
+      "smj": [
+        "SMULJ23_0109"
+      ],
+      "smut": [
+        "SMUGS5_00560"
+      ],
+      "smua": [
+        "SMUFR_0108"
+      ],
+      "stc": [
+        "str1009"
+      ],
+      "stl": [
+        "stu1009"
+      ],
+      "ste": [
+        "STER_1014"
+      ],
+      "stn": [
+        "STND_0967"
+      ],
+      "stu": [
+        "STH8232_1211"
+      ],
+      "stw": [
+        "Y1U_C0889"
+      ],
+      "sthe": [
+        "T303_06070"
+      ],
+      "sths": [
+        "AVT04_00135"
+      ],
+      "ssa": [
+        "SSA_1173"
+      ],
+      "ssb": [
+        "SSUBM407_1705"
+      ],
+      "ssu": [
+        "SSU05_1836"
+      ],
+      "ssv": [
+        "SSU98_1835"
+      ],
+      "ssi": [
+        "SSU1632"
+      ],
+      "sss": [
+        "SSUSC84_1657"
+      ],
+      "sst": [
+        "SSUST3_1668"
+      ],
+      "ssf": [
+        "SSUA7_1655"
+      ],
+      "ssk": [
+        "SSUD12_1801"
+      ],
+      "ssq": [
+        "SSUD9_1839"
+      ],
+      "ssw": [
+        "SSGZ1_1652"
+      ],
+      "sui": [
+        "SSUJS14_1793"
+      ],
+      "suo": [
+        "SSU12_1772"
+      ],
+      "srp": [
+        "SSUST1_0307",
+        "SSUST1_1720"
+      ],
+      "sup": [
+        "YYK_07830"
+      ],
+      "ssus": [
+        "NJAUSS_1691"
+      ],
+      "ssut": [
+        "TL13_0336",
+        "TL13_1624"
+      ],
+      "ssui": [
+        "T15_0306",
+        "T15_1891"
+      ],
+      "ssuy": [
+        "YB51_8235"
+      ],
+      "sgo": [
+        "SGO_1129"
+      ],
+      "sez": [
+        "Sez_1217"
+      ],
+      "seq": [
+        "SZO_07430"
+      ],
+      "sezo": [
+        "SeseC_01575"
+      ],
+      "sequ": [
+        "Q426_03030"
+      ],
+      "seu": [
+        "SEQ_1402"
+      ],
+      "sub": [
+        "SUB1098"
+      ],
+      "sds": [
+        "SDEG_1034",
+        "SDEG_1243"
+      ],
+      "sdg": [
+        "SDE12394_05785",
+        "SDE12394_05790",
+        "SDE12394_06505"
+      ],
+      "sda": [
+        "GGS_0993",
+        "GGS_1127"
+      ],
+      "sdc": [
+        "SDSE_1066",
+        "SDSE_1219"
+      ],
+      "sdq": [
+        "SDSE167_1137",
+        "SDSE167_1138",
+        "SDSE167_1362"
+      ],
+      "sga": [
+        "GALLO_0877"
+      ],
+      "sgg": [
+        "SGGBAA2069_c08560"
+      ],
+      "sgt": [
+        "SGGB_0862"
+      ],
+      "sor": [
+        "SOR_0991"
+      ],
+      "stk": [
+        "STP_0764",
+        "STP_0950"
+      ],
+      "stb": [
+        "SGPB_0750"
+      ],
+      "scp": [
+        "HMPREF0833_10510"
+      ],
+      "scf": [
+        "Spaf_1059"
+      ],
+      "ssr": [
+        "SALIVB_1043"
+      ],
+      "stf": [
+        "Ssal_01112"
+      ],
+      "stj": [
+        "SALIVA_1088"
+      ],
+      "strs": [
+        "SSAL8618_05415"
+      ],
+      "ssah": [
+        "HSISS4_00931"
+      ],
+      "smn": [
+        "SMA_0804"
+      ],
+      "sif": [
+        "Sinf_0854"
+      ],
+      "sang": [
+        "SAIN_0947"
+      ],
+      "sanc": [
+        "SANR_1024"
+      ],
+      "sans": [
+        "DK43_05540"
+      ],
+      "scg": [
+        "SCI_0935"
+      ],
+      "scon": [
+        "SCRE_0863"
+      ],
+      "scos": [
+        "SCR2_0863"
+      ],
+      "soi": [
+        "I872_04515"
+      ],
+      "sik": [
+        "K710_0787"
+      ],
+      "siq": [
+        "DQ08_03795"
+      ],
+      "sio": [
+        "DW64_03790"
+      ],
+      "siz": [
+        "SI82_04030"
+      ],
+      "slu": [
+        "KE3_0916"
+      ],
+      "sig": [
+        "N596_02440"
+      ],
+      "sip": [
+        "N597_04150"
+      ],
+      "stv": [
+        "V470_04580"
+      ],
+      "spat": [
+        "A0O21_05735"
+      ],
+      "lpl": [
+        "lp_2643",
+        "lp_2734"
+      ],
+      "lpj": [
+        "JDM1_2119",
+        "JDM1_2191"
+      ],
+      "lpt": [
+        "zj316_2543",
+        "zj316_2623"
+      ],
+      "lps": [
+        "LPST_C2172",
+        "LPST_C2244"
+      ],
+      "lpr": [
+        "LBP_cg2168",
+        "LBP_cg2237"
+      ],
+      "lpz": [
+        "Lp16_2085",
+        "Lp16_2151"
+      ],
+      "lpb": [
+        "SH83_11160",
+        "SH83_11500"
+      ],
+      "lsa": [
+        "LCA_0934"
+      ],
+      "lsl": [
+        "LSL_0157"
+      ],
+      "lsi": [
+        "HN6_00134"
+      ],
+      "lsj": [
+        "LSJ_0187"
+      ],
+      "lbr": [
+        "LVIS_0180",
+        "LVIS_1647",
+        "LVIS_1950"
+      ],
+      "lbk": [
+        "LVISKB_0181",
+        "LVISKB_1588",
+        "LVISKB_1931"
+      ],
+      "lca": [
+        "LSEI_1473"
+      ],
+      "lpq": [
+        "AF91_06510"
+      ],
+      "lpi": [
+        "LBPG_00357"
+      ],
+      "lpap": [
+        "LBPC_1396"
+      ],
+      "lcb": [
+        "LCABL_16960"
+      ],
+      "lcz": [
+        "LCAZH_1463"
+      ],
+      "lcs": [
+        "LCBD_1677"
+      ],
+      "lce": [
+        "LC2W_1645"
+      ],
+      "lcw": [
+        "BN194_16640"
+      ],
+      "lcl": [
+        "LOCK919_1649"
+      ],
+      "lcx": [
+        "LCA12A_1666"
+      ],
+      "lre": [
+        "Lreu_1677"
+      ],
+      "lrf": [
+        "LAR_1565"
+      ],
+      "lru": [
+        "HMPREF0538_20853"
+      ],
+      "lrt": [
+        "LRI_0314"
+      ],
+      "lrr": [
+        "N134_09215"
+      ],
+      "lfe": [
+        "LAF_0831",
+        "LAF_1136",
+        "LAF_1710"
+      ],
+      "lfr": [
+        "LC40_0546",
+        "LC40_0739",
+        "LC40_1086"
+      ],
+      "lff": [
+        "LBFF_0874",
+        "LBFF_1253",
+        "LBFF_1894"
+      ],
+      "lrh": [
+        "LGG_01479"
+      ],
+      "lrg": [
+        "LRHM_1420"
+      ],
+      "lrl": [
+        "LC705_01495"
+      ],
+      "lra": [
+        "LRHK_1482"
+      ],
+      "lro": [
+        "LOCK900_1453"
+      ],
+      "lrc": [
+        "LOCK908_1541"
+      ],
+      "lbh": [
+        "Lbuc_0419",
+        "Lbuc_1860",
+        "Lbuc_2068",
+        "Lbuc_2129"
+      ],
+      "lbn": [
+        "LBUCD034_0333",
+        "LBUCD034_0460",
+        "LBUCD034_0462",
+        "LBUCD034_1947",
+        "LBUCD034_2163",
+        "LBUCD034_2228"
+      ],
+      "lho": [
+        "LOOC260_101870",
+        "LOOC260_106070",
+        "LOOC260_119990"
+      ],
+      "lmu": [
+        "LBLM1_05110"
+      ],
+      "lgn": [
+        "ABM34_02760",
+        "ABM34_02765",
+        "ABM34_07170"
+      ],
+      "lko": [
+        "ABN16_06510",
+        "ABN16_08430",
+        "ABN16_10090"
+      ],
+      "lhi": [
+        "JP39_05770"
+      ],
+      "lpx": [
+        "ASU28_11180",
+        "ASU28_11500"
+      ],
+      "lor": [
+        "AYI71_02970",
+        "AYI71_10070",
+        "AYI71_13240",
+        "AYI71_14710"
+      ],
+      "lpar": [
+        "FAM21731_00542",
+        "FAM21731_00544",
+        "FAM21731_00687",
+        "FAM21731_00959",
+        "FAM21731_01268",
+        "FAM21731_01343",
+        "FAM21731_01568"
+      ],
+      "lpd": [
+        "AYR62_00340",
+        "AYR62_10025",
+        "AYR62_12380"
+      ],
+      "lcu": [
+        "PL11_004815",
+        "PL11_005015"
+      ],
+      "lct": [
+        "BI355_1065"
+      ],
+      "lbt": [
+        "AYR52_10655"
+      ],
+      "lcv": [
+        "FBA2_04965"
+      ],
+      "lah": [
+        "LA20533_03820",
+        "LA20533_08075"
+      ],
+      "ppe": [
+        "PEPE_1774"
+      ],
+      "ppen": [
+        "T256_08740"
+      ],
+      "paci": [
+        "A4V11_06380"
+      ],
+      "efa": [
+        "EF0650",
+        "EF2741"
+      ],
+      "efl": [
+        "EF62_1018",
+        "EF62_2895"
+      ],
+      "efi": [
+        "OG1RF_10381",
+        "OG1RF_12105"
+      ],
+      "efd": [
+        "EFD32_0463",
+        "EFD32_2358"
+      ],
+      "efs": [
+        "EFS1_0496",
+        "EFS1_2206"
+      ],
+      "efn": [
+        "DENG_00677",
+        "DENG_02684"
+      ],
+      "efq": [
+        "DR75_1436",
+        "DR75_2597"
+      ],
+      "efc": [
+        "EFAU004_00732"
+      ],
+      "efau": [
+        "EFAU085_00680"
+      ],
+      "efu": [
+        "HMPREF0351_10758"
+      ],
+      "efm": [
+        "M7W_2140"
+      ],
+      "eft": [
+        "M395_09910"
+      ],
+      "ehr": [
+        "EHR_00945",
+        "EHR_13415"
+      ],
+      "ene": [
+        "ENT_24700"
+      ],
+      "ecas": [
+        "ECBG_00737",
+        "ECBG_02068"
+      ],
+      "emu": [
+        "EMQU_0750"
+      ],
+      "edu": [
+        "LIU_05035",
+        "LIU_06540"
+      ],
+      "ega": [
+        "AL523_11495",
+        "AL523_14805"
+      ],
+      "ess": [
+        "ATZ33_09035",
+        "ATZ33_10985"
+      ],
+      "mps": [
+        "MPTP_1774"
+      ],
+      "mpx": [
+        "MPD5_0292"
+      ],
+      "thl": [
+        "TEH_06580",
+        "TEH_07190"
+      ],
+      "vte": [
+        "BHY08_02485"
+      ],
+      "vpi": [
+        "BW732_08580"
+      ],
+      "ooe": [
+        "OEOE_0327",
+        "OEOE_1555"
+      ],
+      "lme": [
+        "LEUM_0736"
+      ],
+      "lmm": [
+        "MI1_03370"
+      ],
+      "lmk": [
+        "LMES_0661"
+      ],
+      "lci": [
+        "LCK_00423"
+      ],
+      "lki": [
+        "LKI_02955"
+      ],
+      "lec": [
+        "LGMK_00020"
+      ],
+      "lcn": [
+        "C270_05910"
+      ],
+      "lgs": [
+        "LEGAS_1382"
+      ],
+      "lge": [
+        "C269_06900"
+      ],
+      "llf": [
+        "BCR17_02020"
+      ],
+      "lgc": [
+        "A9176_04530"
+      ],
+      "wko": [
+        "WKK_06330"
+      ],
+      "wce": [
+        "WS08_0659"
+      ],
+      "wct": [
+        "WS74_0661"
+      ],
+      "wci": [
+        "WS105_0721"
+      ],
+      "wjo": [
+        "FOL01_1169"
+      ],
+      "wpa": [
+        "CO680_03100"
+      ],
+      "aur": [
+        "HMPREF9243_0579",
+        "HMPREF9243_1716",
+        "HMPREF9243_1775"
+      ],
+      "aun": [
+        "AWM73_01125",
+        "AWM73_01410",
+        "AWM73_06670"
+      ],
+      "aui": [
+        "APT62_01995",
+        "APT62_06930"
+      ],
+      "asan": [
+        "AWM72_06920",
+        "AWM72_07280"
+      ],
+      "acg": [
+        "AWM71_02320",
+        "AWM71_06380"
+      ],
+      "avs": [
+        "AWM76_03260",
+        "AWM76_08445"
+      ],
+      "auh": [
+        "AWM75_01090",
+        "AWM75_06345",
+        "AWM75_07990"
+      ],
+      "crn": [
+        "CAR_c07440"
+      ],
+      "cml": [
+        "BN424_2396"
+      ],
+      "caw": [
+        "Q783_03310"
+      ],
+      "carc": [
+        "NY10_2447"
+      ],
+      "marr": [
+        "BKP56_07535"
+      ],
+      "jep": [
+        "BW721_05275"
+      ],
+      "jda": [
+        "BW727_100354"
+      ],
+      "ctc": [
+        "CTC_02045"
+      ],
+      "ctet": [
+        "BN906_02243"
+      ],
+      "cbo": [
+        "CBO0701",
+        "CBO1635"
+      ],
+      "cba": [
+        "CLB_0740",
+        "CLB_1652"
+      ],
+      "cbh": [
+        "CLC_0755",
+        "CLC_1661"
+      ],
+      "cby": [
+        "CLM_0820",
+        "CLM_1876"
+      ],
+      "cbl": [
+        "CLK_0102",
+        "CLK_1099"
+      ],
+      "cbk": [
+        "CLL_A3388"
+      ],
+      "cbb": [
+        "CLD_0065",
+        "CLD_2920"
+      ],
+      "cbi": [
+        "CLJ_B0773",
+        "CLJ_B1744"
+      ],
+      "cbt": [
+        "CLH_3137"
+      ],
+      "cbf": [
+        "CLI_0770",
+        "CLI_1712"
+      ],
+      "cbm": [
+        "CBF_0737",
+        "CBF_1694"
+      ],
+      "cbj": [
+        "H04402_00776",
+        "H04402_01707"
+      ],
+      "ckl": [
+        "CKL_1770"
+      ],
+      "ckr": [
+        "CKR_1643"
+      ],
+      "clj": [
+        "CLJU_c09210",
+        "CLJU_c33220"
+      ],
+      "cah": [
+        "CAETHG_1221",
+        "CAETHG_3015"
+      ],
+      "clt": [
+        "CM240_2805"
+      ],
+      "cbv": [
+        "U729_2128"
+      ],
+      "csq": [
+        "CSCA_2287",
+        "CSCA_3568"
+      ],
+      "cld": [
+        "CLSPO_c07320",
+        "CLSPO_c13660",
+        "CLSPO_c16940"
+      ],
+      "cck": [
+        "Ccar_03135",
+        "Ccar_23445"
+      ],
+      "carg": [
+        "RSJ17_08755"
+      ],
+      "amt": [
+        "Amet_3205"
+      ],
+      "aoe": [
+        "Clos_0019"
+      ],
+      "gfe": [
+        "Gferi_17655"
+      ],
+      "cpy": [
+        "Cphy_1542"
+      ],
+      "lacy": [
+        "A4V08_18420"
+      ],
+      "csh": [
+        "Closa_1167",
+        "Closa_1530"
+      ],
+      "hsd": [
+        "SD1D_1812"
+      ],
+      "cpro": [
+        "CPRO_09560",
+        "CPRO_13610"
+      ],
+      "cdf": [
+        "CD630_00460",
+        "CD630_07330",
+        "CD630_16540"
+      ],
+      "pdc": [
+        "CDIF630_00108",
+        "CDIF630_00849",
+        "CDIF630_01832"
+      ],
+      "cdc": [
+        "CD196_0047",
+        "CD196_0679",
+        "CD196_1577"
+      ],
+      "cdl": [
+        "CDR20291_0035",
+        "CDR20291_0660",
+        "CDR20291_1552"
+      ],
+      "pdf": [
+        "CD630DERM_00460",
+        "CD630DERM_07330",
+        "CD630DERM_16540"
+      ],
+      "eac": [
+        "EAL2_808p06490",
+        "EAL2_c08490"
+      ],
+      "cst": [
+        "CLOST_2072",
+        "CLOST_2087"
+      ],
+      "sth": [
+        "STH1513",
+        "STH1918",
+        "STH561"
+      ],
+      "swo": [
+        "Swol_1974"
+      ],
+      "slp": [
+        "Slip_2182"
+      ],
+      "dsy": [
+        "DSY1742"
+      ],
+      "dhd": [
+        "Dhaf_2894"
+      ],
+      "ddh": [
+        "Desde_2342"
+      ],
+      "ddl": [
+        "Desdi_1987"
+      ],
+      "dmt": [
+        "DESME_03790"
+      ],
+      "dru": [
+        "Desru_3266"
+      ],
+      "dor": [
+        "Desor_0580",
+        "Desor_1704",
+        "Desor_4338",
+        "Desor_4340"
+      ],
+      "dai": [
+        "Desaci_3728"
+      ],
+      "dmi": [
+        "Desmer_1647"
+      ],
+      "ded": [
+        "DHBDCA_p159",
+        "DHBDCA_p169"
+      ],
+      "dec": [
+        "DCF50_p223",
+        "DCF50_p233"
+      ],
+      "elm": [
+        "ELI_1701"
+      ],
+      "awo": [
+        "Awo_c12550",
+        "Awo_c13690",
+        "Awo_c23390"
+      ],
+      "ova": [
+        "OBV_21270"
+      ],
+      "say": [
+        "TPY_0764",
+        "TPY_3524"
+      ],
+      "sap": [
+        "Sulac_1391",
+        "Sulac_2876"
+      ],
+      "ibu": [
+        "IB211_03005c"
+      ],
+      "fpla": [
+        "A4U99_06090",
+        "A4U99_06860",
+        "A4U99_13565"
+      ],
+      "tte": [
+        "TTE0297"
+      ],
+      "tex": [
+        "Teth514_0233"
+      ],
+      "thx": [
+        "Thet_0274"
+      ],
+      "tpd": [
+        "Teth39_1987"
+      ],
+      "tit": [
+        "Thit_0254"
+      ],
+      "tmt": [
+        "Tmath_0336"
+      ],
+      "tbo": [
+        "Thebr_2035"
+      ],
+      "twi": [
+        "Thewi_0295"
+      ],
+      "tki": [
+        "TKV_c02450"
+      ],
+      "chy": [
+        "CHY_0495"
+      ],
+      "tep": [
+        "TepRe1_0738"
+      ],
+      "tae": [
+        "TepiRe1_0799"
+      ],
+      "mta": [
+        "Moth_0443",
+        "Moth_1939"
+      ],
+      "tpz": [
+        "Tph_c17170",
+        "Tph_c19490",
+        "Tph_c19540"
+      ],
+      "ttm": [
+        "Tthe_1956"
+      ],
+      "tto": [
+        "Thethe_01964"
+      ],
+      "txy": [
+        "Thexy_0913"
+      ],
+      "tsh": [
+        "Tsac_2348"
+      ],
+      "cpo": [
+        "COPRO5265_0382",
+        "COPRO5265_0851"
+      ],
+      "tnr": [
+        "Thena_1148"
+      ],
+      "nth": [
+        "Nther_2184"
+      ],
+      "hor": [
+        "Hore_05080"
+      ],
+      "has": [
+        "Halsa_2288"
+      ],
+      "hpk": [
+        "Hprae_1129"
+      ],
+      "aar": [
+        "Acear_0639"
+      ],
+      "fma": [
+        "FMG_1291"
+      ],
+      "pmic": [
+        "NW74_05160",
+        "NW74_07190"
+      ],
+      "ped": [
+        "ING2D1G_0410"
+      ],
+      "mhg": [
+        "MHY_28870"
+      ],
+      "puf": [
+        "UFO1_2005"
+      ],
+      "pft": [
+        "JBW_03284"
+      ],
+      "erh": [
+        "ERH_0437"
+      ],
+      "ers": [
+        "K210_00135"
+      ],
+      "erl": [
+        "AOC36_03880"
+      ],
+      "lpil": [
+        "LIP_3635"
+      ],
+      "mge": [
+        "MG_270"
+      ],
+      "mgu": [
+        "CM5_01590"
+      ],
+      "mgc": [
+        "CM9_01610"
+      ],
+      "mgq": [
+        "CM3_01715"
+      ],
+      "mgx": [
+        "CM1_01630"
+      ],
+      "mpn": [
+        "MPN389"
+      ],
+      "mpm": [
+        "MPNA3890"
+      ],
+      "mpj": [
+        "MPNE_0451"
+      ],
+      "mpb": [
+        "C985_0392"
+      ],
+      "mpu": [
+        "MYPU_0320",
+        "MYPU_4430"
+      ],
+      "mpe": [
+        "MYPE8650"
+      ],
+      "mga": [
+        "MGA_0158"
+      ],
+      "mgh": [
+        "MGAH_0158"
+      ],
+      "mgf": [
+        "MGF_2607"
+      ],
+      "mgn": [
+        "HFMG06NCA_3581"
+      ],
+      "mgs": [
+        "HFMG95NCA_3596"
+      ],
+      "mgt": [
+        "HFMG01NYA_3658"
+      ],
+      "mgv": [
+        "HFMG94VAA_3669"
+      ],
+      "mgw": [
+        "HFMG01WIA_3518"
+      ],
+      "mgac": [
+        "HFMG06CAA_3718"
+      ],
+      "mgan": [
+        "HFMG08NCA_3546"
+      ],
+      "mgnc": [
+        "HFMG96NCA_3766"
+      ],
+      "mgz": [
+        "GCW_02730"
+      ],
+      "mmy": [
+        "MSC_0264",
+        "MSC_0527"
+      ],
+      "mmym": [
+        "MMS_A0297",
+        "MMS_A0579"
+      ],
+      "mmyi": [
+        "mycmycITA_00291",
+        "mycmycITA_00561"
+      ],
+      "mml": [
+        "MLC_2730",
+        "MLC_5020"
+      ],
+      "mcp": [
+        "MCAP_0224",
+        "MCAP_0449"
+      ],
+      "mcac": [
+        "MCCP01_0280",
+        "MCCP01_0531"
+      ],
+      "mcap": [
+        "MCCPF38_00282",
+        "MCCPF38_00538"
+      ],
+      "mcar": [
+        "MCCPILRI181_00278",
+        "MCCPILRI181_00536"
+      ],
+      "mcai": [
+        "MCCG_0276",
+        "MCCG_0528"
+      ],
+      "mlc": [
+        "MSB_A0272",
+        "MSB_A0459"
+      ],
+      "mlh": [
+        "MLEA_002600",
+        "MLEA_004770"
+      ],
+      "mmo": [
+        "MMOB0580"
+      ],
+      "mhy": [
+        "mhp125",
+        "mhp323"
+      ],
+      "mhj": [
+        "MHJ_0246",
+        "MHJ_0302"
+      ],
+      "mhp": [
+        "MHP7448_0254",
+        "MHP7448_0310"
+      ],
+      "mhn": [
+        "MHP168_275",
+        "MHP168_324"
+      ],
+      "mhyl": [
+        "MHP168L_275",
+        "MHP168L_324"
+      ],
+      "mhyo": [
+        "MHL_3074",
+        "MHL_3176"
+      ],
+      "msy": [
+        "MS53_0060"
+      ],
+      "mso": [
+        "VY93_00320"
+      ],
+      "maa": [
+        "MAG0070",
+        "MAG0600"
+      ],
+      "mal": [
+        "MAGa0080",
+        "MAGa0090",
+        "MAGa0640"
+      ],
+      "mco": [
+        "MCJ_003870",
+        "MCJ_004210"
+      ],
+      "mcd": [
+        "MCRO_0763"
+      ],
+      "mhr": [
+        "MHR_0098",
+        "MHR_0280"
+      ],
+      "mhh": [
+        "MYM_0100",
+        "MYM_0303"
+      ],
+      "mhm": [
+        "SRH_00505",
+        "SRH_01600"
+      ],
+      "mhs": [
+        "MOS_110",
+        "MOS_315"
+      ],
+      "mhv": [
+        "Q453_0110",
+        "Q453_0333"
+      ],
+      "mfr": [
+        "MFE_00460"
+      ],
+      "mfm": [
+        "MfeM64YM_0042"
+      ],
+      "mfp": [
+        "MBIO_0645"
+      ],
+      "mbv": [
+        "MBOVPG45_0009",
+        "MBOVPG45_0010",
+        "MBOVPG45_0068"
+      ],
+      "mbh": [
+        "MMB_0010",
+        "MMB_0011",
+        "MMB_0062"
+      ],
+      "mbi": [
+        "Mbov_0009",
+        "Mbov_0010",
+        "Mbov_0068"
+      ],
+      "mbq": [
+        "K668_00050",
+        "K668_00055",
+        "K668_00315"
+      ],
+      "mpf": [
+        "MPUT_0112",
+        "MPUT_0560"
+      ],
+      "mput": [
+        "MPUT9231_1610",
+        "MPUT9231_6290"
+      ],
+      "mcy": [
+        "MCYN_0409"
+      ],
+      "mbc": [
+        "MYB_01480",
+        "MYB_02435"
+      ],
+      "mcr": [
+        "MCFN_00035",
+        "MCFN_01165"
+      ],
+      "mcm": [
+        "MCAL160_0001",
+        "MCAL160_0716"
+      ],
+      "mfq": [
+        "MYF_01845"
+      ],
+      "myt": [
+        "MYE_02230",
+        "MYE_03605"
+      ],
+      "mds": [
+        "MDIS_03610",
+        "MDIS_03760"
+      ],
+      "mgb": [
+        "VO56_03000"
+      ],
+      "mpul": [
+        "BLA55_01205"
+      ],
+      "hcr": [
+        "X271_00356"
+      ],
+      "poy": [
+        "PAM_309"
+      ],
+      "ayw": [
+        "AYWB_412"
+      ],
+      "mbp": [
+        "MBSPM3_v1c2670"
+      ],
+      "pml": [
+        "ATP_00208"
+      ],
+      "pal": [
+        "PA0537"
+      ],
+      "nzs": [
+        "SLY_0331"
+      ],
+      "psol": [
+        "S284_03640"
+      ],
+      "acl": [
+        "ACL_0552",
+        "ACL_1307"
+      ],
+      "abra": [
+        "BN85300350"
+      ],
+      "apal": [
+        "BN85401610",
+        "BN85406510"
+      ],
+      "aoc": [
+        "Aocu_00950",
+        "Aocu_06900"
+      ],
+      "mfl": [
+        "Mfl038"
+      ],
+      "mfw": [
+        "mflW37_0410"
+      ],
+      "mchc": [
+        "CK556_00270"
+      ],
+      "ment": [
+        "CS528_00190"
+      ],
+      "scr": [
+        "SCHRY_v1c02740"
+      ],
+      "ssyr": [
+        "SSYRP_v1c02910"
+      ],
+      "sdi": [
+        "SDIMI_v3c07930"
+      ],
+      "stai": [
+        "STAIW_v1c10420"
+      ],
+      "sapi": [
+        "SAPIS_v1c09410"
+      ],
+      "smir": [
+        "SMM_0324"
+      ],
+      "smia": [
+        "P344_01935"
+      ],
+      "scq": [
+        "SCULI_v1c09930"
+      ],
+      "ssab": [
+        "SSABA_v1c02420"
+      ],
+      "satr": [
+        "SATRI_v1c03660"
+      ],
+      "seri": [
+        "SERIO_v1c03400"
+      ],
+      "stur": [
+        "STURON_00457"
+      ],
+      "sll": [
+        "SLITO_v1c04350"
+      ],
+      "scj": [
+        "SCANT_v1c09540"
+      ],
+      "shj": [
+        "SHELI_v1c10720"
+      ],
+      "sck": [
+        "SCITRI_00408"
+      ],
+      "cgl": [
+        "NCgl1029"
+      ],
+      "cgb": [
+        "cg1222"
+      ],
+      "cgu": [
+        "WA5_1029"
+      ],
+      "cgt": [
+        "cgR_1157"
+      ],
+      "cgs": [
+        "C624_06150"
+      ],
+      "cgg": [
+        "C629_06150"
+      ],
+      "cgm": [
+        "cgp_1222"
+      ],
+      "cgj": [
+        "AR0_05870"
+      ],
+      "cgq": [
+        "CGLAR1_05735"
+      ],
+      "cgx": [
+        "SB89_05600"
+      ],
+      "cef": [
+        "CE1123"
+      ],
+      "car": [
+        "cauri_0960"
+      ],
+      "ckp": [
+        "ckrop_0508",
+        "ckrop_1730"
+      ],
+      "cva": [
+        "CVAR_0780"
+      ],
+      "chn": [
+        "A605_05390"
+      ],
+      "ccn": [
+        "H924_05040"
+      ],
+      "cter": [
+        "A606_03355"
+      ],
+      "cmd": [
+        "B841_05105"
+      ],
+      "ccg": [
+        "CCASEI_06570"
+      ],
+      "cvt": [
+        "B843_05135"
+      ],
+      "cgy": [
+        "CGLY_12135"
+      ],
+      "cax": [
+        "CATYP_06955"
+      ],
+      "coa": [
+        "DR71_1741"
+      ],
+      "cdo": [
+        "CDOO_05435"
+      ],
+      "chm": [
+        "B842_04790"
+      ],
+      "csx": [
+        "CSING_05295"
+      ],
+      "cmq": [
+        "B840_04330"
+      ],
+      "cku": [
+        "UL82_07605"
+      ],
+      "cted": [
+        "CTEST_04665"
+      ],
+      "clw": [
+        "CLAC_03815"
+      ],
+      "cdx": [
+        "CDES_05185"
+      ],
+      "csp": [
+        "WM42_0414"
+      ],
+      "csta": [
+        "CSTAT_05880"
+      ],
+      "ccjz": [
+        "ccrud_05185"
+      ],
+      "cfk": [
+        "CFRA_04270"
+      ],
+      "cfc": [
+        "CFLV_04725"
+      ],
+      "cstr": [
+        "CBE89_08775"
+      ],
+      "bfv": [
+        "C628_05830"
+      ],
+      "rer": [
+        "RER_26830"
+      ],
+      "rey": [
+        "O5Y_12310"
+      ],
+      "reb": [
+        "XU06_12525"
+      ],
+      "req": [
+        "REQ_24330"
+      ],
+      "goq": [
+        "ACH46_13555"
+      ],
+      "sco": [
+        "SCO6423"
+      ],
+      "sgr": [
+        "SGR_1220"
+      ],
+      "sgb": [
+        "WQO_29215"
+      ],
+      "ssx": [
+        "SACTE_5622"
+      ],
+      "svl": [
+        "Strvi_5344"
+      ],
+      "sfa": [
+        "Sfla_0942"
+      ],
+      "sbh": [
+        "SBI_02881"
+      ],
+      "shy": [
+        "SHJG_7409"
+      ],
+      "sho": [
+        "SHJGH_7169"
+      ],
+      "sve": [
+        "SVEN_6280"
+      ],
+      "salb": [
+        "XNR_0483"
+      ],
+      "strp": [
+        "F750_5907"
+      ],
+      "sfi": [
+        "SFUL_6260"
+      ],
+      "sci": [
+        "B446_29520"
+      ],
+      "src": [
+        "M271_45730"
+      ],
+      "salu": [
+        "DC74_6467"
+      ],
+      "sall": [
+        "SAZ_33360"
+      ],
+      "slv": [
+        "SLIV_06310"
+      ],
+      "svt": [
+        "SVTN_30675"
+      ],
+      "stre": [
+        "GZL_02546"
+      ],
+      "scw": [
+        "TU94_27195"
+      ],
+      "samb": [
+        "SAM23877_6039"
+      ],
+      "scz": [
+        "ABE83_05040"
+      ],
+      "strf": [
+        "ASR50_28850"
+      ],
+      "sle": [
+        "sle_13510"
+      ],
+      "spav": [
+        "Spa2297_26785"
+      ],
+      "strt": [
+        "A8713_26255"
+      ],
+      "sclf": [
+        "BB341_03760"
+      ],
+      "sgs": [
+        "AVL59_13670"
+      ],
+      "snr": [
+        "SNOUR_10835"
+      ],
+      "strd": [
+        "NI25_06210"
+      ],
+      "snw": [
+        "BBN63_05480"
+      ],
+      "sauo": [
+        "BV401_05890"
+      ],
+      "ssia": [
+        "A7J05_06690"
+      ],
+      "svu": [
+        "B1H20_30090"
+      ],
+      "spun": [
+        "BFF78_09195"
+      ],
+      "kab": [
+        "B7C62_31325"
+      ],
+      "lxy": [
+        "O159_25800"
+      ],
+      "cmi": [
+        "CMM_0507"
+      ],
+      "cms": [
+        "CMS0422"
+      ],
+      "cmc": [
+        "CMN_00464"
+      ],
+      "cmh": [
+        "VO01_02315"
+      ],
+      "mts": [
+        "MTES_2063"
+      ],
+      "mim": [
+        "AKG07_10285"
+      ],
+      "mio": [
+        "AOA12_02960"
+      ],
+      "mip": [
+        "AXH82_04170"
+      ],
+      "mcw": [
+        "A8L33_01800"
+      ],
+      "mpal": [
+        "BO218_08265"
+      ],
+      "mih": [
+        "BJP65_11025"
+      ],
+      "micr": [
+        "BMW26_15000"
+      ],
+      "maur": [
+        "BOH66_02285"
+      ],
+      "rtx": [
+        "TI83_02375"
+      ],
+      "rtc": [
+        "APU90_04100"
+      ],
+      "rtn": [
+        "A6122_0511"
+      ],
+      "cum": [
+        "NI26_03065"
+      ],
+      "cub": [
+        "BJK06_05030"
+      ],
+      "mvd": [
+        "AWU67_13835"
+      ],
+      "frp": [
+        "AX769_01660"
+      ],
+      "agy": [
+        "ATC03_01270"
+      ],
+      "cart": [
+        "PA27867_0174"
+      ],
+      "cry": [
+        "B7495_00740"
+      ],
+      "cphy": [
+        "B5808_01750"
+      ],
+      "art": [
+        "Arth_2128"
+      ],
+      "arr": [
+        "ARUE_c22850"
+      ],
+      "arm": [
+        "ART_0699"
+      ],
+      "ari": [
+        "UM93_04095"
+      ],
+      "arl": [
+        "AFL94_08045"
+      ],
+      "are": [
+        "AL755_11600"
+      ],
+      "aaq": [
+        "AOC05_06760"
+      ],
+      "arh": [
+        "AHiyo8_63390"
+      ],
+      "ary": [
+        "ATC04_09860"
+      ],
+      "arw": [
+        "MB46_05255"
+      ],
+      "arz": [
+        "AUT26_10530"
+      ],
+      "aru": [
+        "ASPU41_15720"
+      ],
+      "arq": [
+        "BWQ92_21295"
+      ],
+      "aau": [
+        "AAur_2129"
+      ],
+      "ach": [
+        "Achl_1879"
+      ],
+      "apn": [
+        "Asphe3_18540"
+      ],
+      "psul": [
+        "AU252_21800"
+      ],
+      "aai": [
+        "AARI_16020"
+      ],
+      "gar": [
+        "AOZ07_08270"
+      ],
+      "rsa": [
+        "RSal33209_2090"
+      ],
+      "krh": [
+        "KRH_12500"
+      ],
+      "kpl": [
+        "KPaMU14_08970"
+      ],
+      "kfv": [
+        "AS188_09830"
+      ],
+      "mlu": [
+        "Mlut_11650"
+      ],
+      "satk": [
+        "SA2016_2003"
+      ],
+      "nae": [
+        "BHE16_03000"
+      ],
+      "bcv": [
+        "Bcav_1428"
+      ],
+      "bfa": [
+        "Bfae_09720"
+      ],
+      "brx": [
+        "BH708_18640"
+      ],
+      "brv": [
+        "CFK39_12870"
+      ],
+      "bgg": [
+        "CFK41_12065"
+      ],
+      "brz": [
+        "CFK38_14600"
+      ],
+      "jde": [
+        "Jden_1701"
+      ],
+      "lmoi": [
+        "VV02_14470"
+      ],
+      "xce": [
+        "Xcel_2379"
+      ],
+      "iva": [
+        "Isova_2163"
+      ],
+      "ido": [
+        "I598_0070"
+      ],
+      "cet": [
+        "B8281_09905"
+      ],
+      "cceu": [
+        "CBR64_01215"
+      ],
+      "ske": [
+        "Sked_10810"
+      ],
+      "cfl": [
+        "Cfla_1172"
+      ],
+      "cfi": [
+        "Celf_2693"
+      ],
+      "cga": [
+        "Celgi_2375"
+      ],
+      "cez": [
+        "CBP52_01345"
+      ],
+      "ica": [
+        "Intca_1670"
+      ],
+      "bly": [
+        "A2T55_12170"
+      ],
+      "blin": [
+        "BLSMQ_2638"
+      ],
+      "pfr": [
+        "PFREUD_10520"
+      ],
+      "pfre": [
+        "RM25_1125"
+      ],
+      "ppc": [
+        "HMPREF9154_0611"
+      ],
+      "pbo": [
+        "PACID_01040"
+      ],
+      "aaci": [
+        "ASQ49_04555"
+      ],
+      "tfl": [
+        "RPIT_11470"
+      ],
+      "tfa": [
+        "BW733_10835"
+      ],
+      "tes": [
+        "BW730_12095"
+      ],
+      "tez": [
+        "BKM78_05575"
+      ],
+      "kfl": [
+        "Kfla_5073"
+      ],
+      "kra": [
+        "Krad_4031"
+      ],
+      "sen": [
+        "SACE_3586"
+      ],
+      "amd": [
+        "AMED_2093"
+      ],
+      "amn": [
+        "RAM_10640"
+      ],
+      "amm": [
+        "AMES_2076"
+      ],
+      "amz": [
+        "B737_2077"
+      ],
+      "aoi": [
+        "AORI_5816"
+      ],
+      "aja": [
+        "AJAP_10385"
+      ],
+      "alu": [
+        "BB31_15285"
+      ],
+      "asg": [
+        "FB03_04080"
+      ],
+      "amy": [
+        "ADJ76_04635"
+      ],
+      "blo": [
+        "BL1217"
+      ],
+      "blj": [
+        "BLD_0980"
+      ],
+      "bln": [
+        "Blon_2069"
+      ],
+      "blon": [
+        "BLIJ_2146"
+      ],
+      "blf": [
+        "BLIF_0409"
+      ],
+      "bll": [
+        "BLJ_0447"
+      ],
+      "blb": [
+        "BBMN68_983"
+      ],
+      "blm": [
+        "BLLJ_0392"
+      ],
+      "blk": [
+        "BLNIAS_02212"
+      ],
+      "blz": [
+        "BLGT_02575"
+      ],
+      "blx": [
+        "GS08_02340"
+      ],
+      "bad": [
+        "BAD_1338"
+      ],
+      "badl": [
+        "BADO_1388"
+      ],
+      "bado": [
+        "BBMN23_1457"
+      ],
+      "bla": [
+        "BLA_0564"
+      ],
+      "blc": [
+        "Balac_1359"
+      ],
+      "blt": [
+        "Balat_1359"
+      ],
+      "bbb": [
+        "BIF_00118"
+      ],
+      "bbc": [
+        "BLC1_1316"
+      ],
+      "bnm": [
+        "BALAC2494_01374"
+      ],
+      "blv": [
+        "BalV_1316"
+      ],
+      "blw": [
+        "W7Y_1362"
+      ],
+      "bls": [
+        "W91_1396"
+      ],
+      "bani": [
+        "Bl12_1275"
+      ],
+      "banl": [
+        "BLAC_06805"
+      ],
+      "bni": [
+        "BANAN_06630"
+      ],
+      "banm": [
+        "EN10_06880"
+      ],
+      "bde": [
+        "BDP_1803"
+      ],
+      "bdn": [
+        "BBDE_1706"
+      ],
+      "bbi": [
+        "BBIF_0425"
+      ],
+      "bbp": [
+        "BBPR_0399"
+      ],
+      "bbf": [
+        "BBB_0376"
+      ],
+      "bbv": [
+        "HMPREF9228_1412"
+      ],
+      "bbru": [
+        "Bbr_0485"
+      ],
+      "bbre": [
+        "B12L_0404"
+      ],
+      "bbrv": [
+        "B689b_0464"
+      ],
+      "bbrj": [
+        "B7017_0440"
+      ],
+      "bbrc": [
+        "B7019_0438"
+      ],
+      "bbrn": [
+        "B2258_0438"
+      ],
+      "bbrs": [
+        "BS27_0476"
+      ],
+      "bbrd": [
+        "BBBR_0408"
+      ],
+      "bast": [
+        "BAST_0394"
+      ],
+      "btp": [
+        "D805_0428"
+      ],
+      "bcor": [
+        "BCOR_0333"
+      ],
+      "bka": [
+        "AH68_08340"
+      ],
+      "bks": [
+        "BBKW_1570"
+      ],
+      "bpsp": [
+        "AH67_07365"
+      ],
+      "bii": [
+        "BINDI_0272"
+      ],
+      "bang": [
+        "BBAG_1259"
+      ],
+      "bcat": [
+        "BBCT_1368"
+      ],
+      "bpsc": [
+        "BBPC_1467"
+      ],
+      "bsca": [
+        "BBSC_2080"
+      ],
+      "sij": [
+        "SCIP_1097"
+      ],
+      "pdo": [
+        "PSDT_0353"
+      ],
+      "aey": [
+        "CDG81_10850"
+      ],
+      "rxy": [
+        "Rxyl_0450"
+      ],
+      "afo": [
+        "Afer_1254"
+      ],
+      "aym": [
+        "YM304_17220"
+      ],
+      "shi": [
+        "Shel_13820"
+      ],
+      "syn": [
+        "sll0809"
+      ],
+      "syz": [
+        "MYO_115660"
+      ],
+      "syy": [
+        "SYNGTS_1553"
+      ],
+      "syt": [
+        "SYNGTI_1553"
+      ],
+      "sys": [
+        "SYNPCCN_1552"
+      ],
+      "syq": [
+        "SYNPCCP_1552"
+      ],
+      "syj": [
+        "D082_20110"
+      ],
+      "syw": [
+        "SYNW1731"
+      ],
+      "syc": [
+        "syc0144_d"
+      ],
+      "syf": [
+        "Synpcc7942_1411"
+      ],
+      "syd": [
+        "Syncc9605_0735"
+      ],
+      "sye": [
+        "Syncc9902_1628"
+      ],
+      "syg": [
+        "sync_1982"
+      ],
+      "syr": [
+        "SynRCC307_1578"
+      ],
+      "syx": [
+        "SynWH7803_0662"
+      ],
+      "syp": [
+        "SYNPCC7002_A1555"
+      ],
+      "cya": [
+        "CYA_1633"
+      ],
+      "cyb": [
+        "CYB_1281"
+      ],
+      "syne": [
+        "Syn6312_1260"
+      ],
+      "synp": [
+        "Syn7502_00146"
+      ],
+      "synk": [
+        "KR100_05400"
+      ],
+      "synr": [
+        "KR49_12780"
+      ],
+      "synd": [
+        "KR52_13265"
+      ],
+      "syu": [
+        "M744_09535"
+      ],
+      "syh": [
+        "Syncc8109_1969"
+      ],
+      "tel": [
+        "tlr0228"
+      ],
+      "thn": [
+        "NK55_00910"
+      ],
+      "cgc": [
+        "Cyagr_0031"
+      ],
+      "cyi": [
+        "CBM981_0856"
+      ],
+      "dsl": [
+        "Dacsa_0349"
+      ],
+      "cmp": [
+        "Cha6605_2918"
+      ],
+      "lep": [
+        "Lepto7376_1433"
+      ],
+      "len": [
+        "LEP3755_46140"
+      ],
+      "let": [
+        "O77CONTIG1_02859"
+      ],
+      "lbo": [
+        "LBWT_51050"
+      ],
+      "hhg": [
+        "XM38_037410"
+      ],
+      "pseu": [
+        "Pse7367_2391"
+      ],
+      "pma": [
+        "Pro_0540"
+      ],
+      "pmm": [
+        "PMM0539"
+      ],
+      "pmt": [
+        "PMT_1224"
+      ],
+      "pmn": [
+        "PMN2A_1869"
+      ],
+      "pmi": [
+        "PMT9312_0539"
+      ],
+      "pmb": [
+        "A9601_05951"
+      ],
+      "pmc": [
+        "P9515_06031"
+      ],
+      "pmf": [
+        "P9303_07881"
+      ],
+      "pmg": [
+        "P9301_05651"
+      ],
+      "pmh": [
+        "P9215_06201"
+      ],
+      "pmj": [
+        "P9211_05411"
+      ],
+      "pme": [
+        "NATL1_05941"
+      ],
+      "prc": [
+        "EW14_0585"
+      ],
+      "prm": [
+        "EW15_0635"
+      ],
+      "amr": [
+        "AM1_5570"
+      ],
+      "mar": [
+        "MAE_41170"
+      ],
+      "mpk": [
+        "VL20_3752"
+      ],
+      "can": [
+        "Cyan10605_2148"
+      ],
+      "csn": [
+        "Cyast_1544"
+      ],
+      "hao": [
+        "PCC7418_3624"
+      ],
+      "cwa": [
+        "CwatDRAFT_4539"
+      ],
+      "glp": [
+        "Glo7428_2475"
+      ],
+      "gen": [
+        "GM3709_852"
+      ],
+      "gee": [
+        "GM3708_2690"
+      ],
+      "chon": [
+        "NIES4102_31680"
+      ],
+      "cyt": [
+        "cce_3680"
+      ],
+      "cyp": [
+        "PCC8801_2744"
+      ],
+      "cyc": [
+        "PCC7424_2150"
+      ],
+      "cyn": [
+        "Cyan7425_4737"
+      ],
+      "cyh": [
+        "Cyan8802_3358"
+      ],
+      "cyj": [
+        "Cyan7822_0639"
+      ],
+      "ter": [
+        "Tery_3831"
+      ],
+      "mic": [
+        "Mic7113_1131"
+      ],
+      "arp": [
+        "NIES39_J00530"
+      ],
+      "gei": [
+        "GEI7407_1572"
+      ],
+      "oac": [
+        "Oscil6304_2067"
+      ],
+      "oni": [
+        "Osc7112_3438"
+      ],
+      "mpro": [
+        "BJP34_33890"
+      ],
+      "cep": [
+        "Cri9333_4405"
+      ],
+      "gvi": [
+        "glr3295"
+      ],
+      "glj": [
+        "GKIL_1858"
+      ],
+      "ana": [
+        "alr1961"
+      ],
+      "npu": [
+        "Npun_F6359"
+      ],
+      "nos": [
+        "Nos7107_1867"
+      ],
+      "nop": [
+        "Nos7524_2748"
+      ],
+      "non": [
+        "NOS3756_24670"
+      ],
+      "ava": [
+        "Ava_4350"
+      ],
+      "naz": [
+        "Aazo_3177"
+      ],
+      "anb": [
+        "ANA_C10595"
+      ],
+      "acy": [
+        "Anacy_4495"
+      ],
+      "awa": [
+        "AA650_12295"
+      ],
+      "csg": [
+        "Cylst_0933"
+      ],
+      "calo": [
+        "Cal7507_5567"
+      ],
+      "calt": [
+        "Cal6303_2899"
+      ],
+      "calh": [
+        "IJ00_01485"
+      ],
+      "riv": [
+        "Riv7116_3815"
+      ],
+      "fis": [
+        "FIS3754_48200"
+      ],
+      "ncn": [
+        "BZZ01_15685"
+      ],
+      "cthe": [
+        "Chro_4728"
+      ],
+      "plp": [
+        "Ple7327_4495"
+      ],
+      "scs": [
+        "Sta7437_1550"
+      ],
+      "stan": [
+        "STA3757_45620"
+      ],
+      "ceo": [
+        "ETSB_1672"
+      ],
+      "mbf": [
+        "BHV42_04560"
+      ],
+      "rrs": [
+        "RoseRS_3413"
+      ],
+      "rca": [
+        "Rcas_1514"
+      ],
+      "cau": [
+        "Caur_3882"
+      ],
+      "cag": [
+        "Cagg_0440"
+      ],
+      "chl": [
+        "Chy400_4194"
+      ],
+      "hau": [
+        "Haur_2867"
+      ],
+      "tro": [
+        "trd_0142",
+        "trd_A0508"
+      ],
+      "sti": [
+        "Sthe_1101",
+        "Sthe_3492"
+      ],
+      "atm": [
+        "ANT_10920"
+      ],
+      "abao": [
+        "BEQ56_06005"
+      ],
+      "abat": [
+        "CFX1CAM_1671"
+      ],
+      "cap": [
+        "CLDAP_23450"
+      ],
+      "dpt": [
+        "Deipr_1453"
+      ],
+      "msv": [
+        "Mesil_0965"
+      ],
+      "fgi": [
+        "OP10G_4080"
+      ],
+      "ttr": [
+        "Tter_0676"
+      ],
+      "ctr": [
+        "CT_285",
+        "CT_499"
+      ],
+      "ctd": [
+        "CTDEC_0285",
+        "CTDEC_0499"
+      ],
+      "ctf": [
+        "CTDLC_0285",
+        "CTDLC_0499"
+      ],
+      "ctrd": [
+        "SOTOND1_00295",
+        "SOTOND1_00531"
+      ],
+      "ctro": [
+        "SOTOND5_00294",
+        "SOTOND5_00530"
+      ],
+      "ctrt": [
+        "SOTOND6_00294",
+        "SOTOND6_00529"
+      ],
+      "cta": [
+        "CTA_0307",
+        "CTA_0547"
+      ],
+      "cty": [
+        "CTR_2801",
+        "CTR_5021"
+      ],
+      "cra": [
+        "CTO_0307",
+        "CTO_0547"
+      ],
+      "ctrq": [
+        "A363_00302",
+        "A363_00539"
+      ],
+      "ctrx": [
+        "A5291_00301",
+        "A5291_00538"
+      ],
+      "ctrz": [
+        "A7249_00301",
+        "A7249_00537"
+      ],
+      "ctrp": [
+        "L11322_00291",
+        "L11322_00525"
+      ],
+      "ctlj": [
+        "L1115_00291",
+        "L1115_00525"
+      ],
+      "ctlx": [
+        "L1224_00290",
+        "L1224_00525"
+      ],
+      "ctll": [
+        "L1440_00292",
+        "L1440_00528"
+      ],
+      "ctb": [
+        "CTL0537",
+        "CTL0761"
+      ],
+      "ctrr": [
+        "L225667R_00291",
+        "L225667R_00527"
+      ],
+      "ctlf": [
+        "CTLFINAL_02810",
+        "CTLFINAL_03975"
+      ],
+      "ctli": [
+        "CTLINITIAL_02805",
+        "CTLINITIAL_03970"
+      ],
+      "ctl": [
+        "CTLon_0533",
+        "CTLon_0756"
+      ],
+      "ctru": [
+        "L2BUCH2_00290",
+        "L2BUCH2_00524"
+      ],
+      "ctrl": [
+        "L2BLST_00290",
+        "L2BLST_00524"
+      ],
+      "ctrv": [
+        "L2BCV204_00290",
+        "L2BCV204_00524"
+      ],
+      "ctrm": [
+        "L2BAMS1_00290",
+        "L2BAMS1_00524"
+      ],
+      "ctla": [
+        "L2BAMS2_00290",
+        "L2BAMS2_00524"
+      ],
+      "ctlm": [
+        "L2BAMS3_00290",
+        "L2BAMS3_00524"
+      ],
+      "ctls": [
+        "L2BAMS4_00291",
+        "L2BAMS4_00525"
+      ],
+      "ctlz": [
+        "L2BAMS5_00291",
+        "L2BAMS5_00525"
+      ],
+      "ctlc": [
+        "L2BCAN1_00525"
+      ],
+      "ctln": [
+        "L2BCAN2_00291",
+        "L2BCAN2_00525"
+      ],
+      "ctlb": [
+        "L2B795_00291",
+        "L2B795_00525"
+      ],
+      "ctlq": [
+        "L2B8200_00290",
+        "L2B8200_00524"
+      ],
+      "cto": [
+        "CTL2C_37",
+        "CTL2C_915"
+      ],
+      "ctrn": [
+        "L3404_00290",
+        "L3404_00525"
+      ],
+      "ctj": [
+        "JALI_2801",
+        "JALI_5021"
+      ],
+      "ctz": [
+        "CTB_2801",
+        "CTB_5021"
+      ],
+      "ctg": [
+        "E11023_01470",
+        "E11023_02635"
+      ],
+      "ctk": [
+        "E150_01480",
+        "E150_02650"
+      ],
+      "csw": [
+        "SW2_2871",
+        "SW2_5091"
+      ],
+      "ces": [
+        "ESW3_2871",
+        "ESW3_5091"
+      ],
+      "ctrb": [
+        "BOUR_00297",
+        "BOUR_00534"
+      ],
+      "ctre": [
+        "SOTONE4_00293",
+        "SOTONE4_00529"
+      ],
+      "ctrs": [
+        "SOTONE8_00299",
+        "SOTONE8_00535"
+      ],
+      "ctec": [
+        "EC599_2911",
+        "EC599_5191"
+      ],
+      "cfs": [
+        "FSW4_2871",
+        "FSW4_5091"
+      ],
+      "cfw": [
+        "FSW5_2871",
+        "FSW5_5091"
+      ],
+      "ctfw": [
+        "SWFP_3041",
+        "SWFP_5431"
+      ],
+      "ctrf": [
+        "SOTONF3_00294",
+        "SOTONF3_00529"
+      ],
+      "ctch": [
+        "O173_01540",
+        "O173_02770"
+      ],
+      "ctn": [
+        "G11074_01460",
+        "G11074_02630"
+      ],
+      "ctq": [
+        "G11222_01460",
+        "G11222_02635"
+      ],
+      "ctv": [
+        "CTG9301_01460",
+        "CTG9301_02635"
+      ],
+      "ctw": [
+        "G9768_01460",
+        "G9768_02625"
+      ],
+      "ctrg": [
+        "SOTONG1_00294",
+        "SOTONG1_00530"
+      ],
+      "ctri": [
+        "BN197_2851",
+        "BN197_5071"
+      ],
+      "ctra": [
+        "BN442_2851",
+        "BN442_5071"
+      ],
+      "ctrh": [
+        "SOTONIA1_00296",
+        "SOTONIA1_00532"
+      ],
+      "ctrj": [
+        "SOTONIA3_00296",
+        "SOTONIA3_00532"
+      ],
+      "ctrk": [
+        "SOTONK1_00294",
+        "SOTONK1_00529"
+      ],
+      "ctjt": [
+        "CTJTET1_01475",
+        "CTJTET1_02660"
+      ],
+      "ctcf": [
+        "CTRC69_01485",
+        "CTRC69_02665"
+      ],
+      "ctfs": [
+        "CTRC342_01505",
+        "CTRC342_02680"
+      ],
+      "cthf": [
+        "CTRC852_01505",
+        "CTRC852_02695"
+      ],
+      "ctcj": [
+        "CTRC943_01460",
+        "CTRC943_02630"
+      ],
+      "cthj": [
+        "CTRC953_01460",
+        "CTRC953_02630"
+      ],
+      "ctmj": [
+        "CTRC966_01475",
+        "CTRC966_02640"
+      ],
+      "cttj": [
+        "CTRC971_01460",
+        "CTRC971_02640"
+      ],
+      "ctjs": [
+        "CTRC122_01485",
+        "CTRC122_02665"
+      ],
+      "ctrc": [
+        "CTRC55_01470",
+        "CTRC55_02640"
+      ],
+      "ctrw": [
+        "CTRC3_01485",
+        "CTRC3_02670"
+      ],
+      "ctry": [
+        "CTRC46_01465",
+        "CTRC46_02645"
+      ],
+      "ctct": [
+        "CTW3_01535",
+        "CTW3_02785"
+      ],
+      "cmu": [
+        "TC_0558",
+        "TC_0786"
+      ],
+      "cmur": [
+        "Y015_02940",
+        "Y015_04165"
+      ],
+      "cmn": [
+        "BB17_02990",
+        "BB17_04215"
+      ],
+      "cmm": [
+        "NC80_02805",
+        "NC80_03965"
+      ],
+      "cmg": [
+        "NC81_02820",
+        "NC81_03985"
+      ],
+      "cmx": [
+        "DNC_02825",
+        "DNC_03995"
+      ],
+      "cmz": [
+        "TAC_02940",
+        "TAC_04165"
+      ],
+      "cpn": [
+        "CPn0436",
+        "CPn0618"
+      ],
+      "cpa": [
+        "CP_0129",
+        "CP_0317"
+      ],
+      "cpj": [
+        "lplA_1",
+        "lplA_2"
+      ],
+      "cpt": [
+        "CpB0452",
+        "CpB0644"
+      ],
+      "clp": [
+        "CPK_ORF00019",
+        "CPK_ORF00948"
+      ],
+      "cpm": [
+        "G5S_0430",
+        "G5S_0695"
+      ],
+      "cpec": [
+        "CPE3_0126",
+        "CPE3_0347"
+      ],
+      "cpeo": [
+        "CPE1_0126",
+        "CPE1_0347"
+      ],
+      "cper": [
+        "CPE2_0126",
+        "CPE2_0347"
+      ],
+      "chp": [
+        "CPSIT_0136",
+        "CPSIT_0386"
+      ],
+      "chb": [
+        "G5O_0141",
+        "G5O_0387"
+      ],
+      "chs": [
+        "CPS0A_0140",
+        "CPS0A_0392"
+      ],
+      "chi": [
+        "CPS0B_0138",
+        "CPS0B_0391"
+      ],
+      "cht": [
+        "CPS0D_0136",
+        "CPS0D_0393"
+      ],
+      "chc": [
+        "CPS0C_0138",
+        "CPS0C_0393"
+      ],
+      "chr": [
+        "Cpsi_1341",
+        "Cpsi_3511"
+      ],
+      "cpsc": [
+        "B711_0144",
+        "B711_0412"
+      ],
+      "cpsn": [
+        "B712_0137",
+        "B712_0387"
+      ],
+      "cpsb": [
+        "B595_0141",
+        "B595_0410"
+      ],
+      "cpsg": [
+        "B598_0139",
+        "B598_0389"
+      ],
+      "cpsm": [
+        "B602_0136",
+        "B602_0387"
+      ],
+      "cpsi": [
+        "B599_0138",
+        "B599_0385"
+      ],
+      "cpsv": [
+        "B600_0144",
+        "B600_0414"
+      ],
+      "cpsw": [
+        "B603_0139",
+        "B603_0392"
+      ],
+      "cpst": [
+        "B601_0137",
+        "B601_0388"
+      ],
+      "cpsd": [
+        "BN356_1281",
+        "BN356_3531"
+      ],
+      "cpsa": [
+        "AO9_00635",
+        "AO9_01865"
+      ],
+      "cav": [
+        "M832_01660",
+        "M832_09240"
+      ],
+      "cca": [
+        "CCA_00122",
+        "CCA_00356"
+      ],
+      "cab": [
+        "CAB121",
+        "CAB347"
+      ],
+      "cabo": [
+        "AB7_1341",
+        "AB7_3861"
+      ],
+      "cfe": [
+        "CF0651",
+        "CF0884"
+      ],
+      "cgz": [
+        "M787_002535",
+        "M787_003570"
+      ],
+      "pcu": [
+        "pc0276",
+        "pc1838"
+      ],
+      "pnl": [
+        "PNK_2042",
+        "PNK_2198"
+      ],
+      "puv": [
+        "PUV_05750",
+        "PUV_24320"
+      ],
+      "wch": [
+        "wcw_0789",
+        "wcw_1777"
+      ],
+      "sng": [
+        "SNE_A01510",
+        "SNE_A04550"
+      ],
+      "ote": [
+        "Oter_0851"
+      ],
+      "obg": [
+        "Verru16b_01074"
+      ],
+      "obt": [
+        "OPIT5_03385"
+      ],
+      "caa": [
+        "Caka_2430"
+      ],
+      "amu": [
+        "Amuc_1526"
+      ],
+      "agl": [
+        "PYTT_1982"
+      ],
+      "min": [
+        "Minf_1759"
+      ],
+      "rba": [
+        "RB7072",
+        "RB7583"
+      ],
+      "psl": [
+        "Psta_3614",
+        "Psta_4669"
+      ],
+      "pir": [
+        "VN12_04620",
+        "VN12_12755"
+      ],
+      "plm": [
+        "Plim_2597",
+        "Plim_2611"
+      ],
+      "pbs": [
+        "Plabr_1994"
+      ],
+      "pls": [
+        "VT03_23795"
+      ],
+      "plh": [
+        "VT85_08360",
+        "VT85_09320"
+      ],
+      "fmr": [
+        "Fuma_01453"
+      ],
+      "ttf": [
+        "THTE_0163",
+        "THTE_3088"
+      ],
+      "ges": [
+        "VT84_00620",
+        "VT84_28265"
+      ],
+      "ipa": [
+        "Isop_2529",
+        "Isop_3286"
+      ],
+      "saci": [
+        "Sinac_5318",
+        "Sinac_6534"
+      ],
+      "pbor": [
+        "BSF38_00555",
+        "BSF38_04413"
+      ],
+      "vbl": [
+        "L21SP4_01951"
+      ],
+      "tde": [
+        "TDE1551",
+        "TDE2647"
+      ],
+      "taz": [
+        "TREAZ_0929"
+      ],
+      "tpi": [
+        "TREPR_3836"
+      ],
+      "tped": [
+        "TPE_0767"
+      ],
+      "scd": [
+        "Spica_1727",
+        "Spica_2056"
+      ],
+      "tpk": [
+        "JO40_03390"
+      ],
+      "ssm": [
+        "Spirs_4112"
+      ],
+      "sta": [
+        "STHERM_c22240"
+      ],
+      "stq": [
+        "Spith_2269"
+      ],
+      "sfc": [
+        "Spiaf_2791",
+        "Spiaf_2858"
+      ],
+      "sbu": [
+        "SpiBuddy_0771"
+      ],
+      "scc": [
+        "Spico_1213"
+      ],
+      "sgp": [
+        "SpiGrapes_1240"
+      ],
+      "slr": [
+        "L21SP2_2181"
+      ],
+      "lil": [
+        "LA_1410"
+      ],
+      "lie": [
+        "LIF_A1128"
+      ],
+      "lic": [
+        "LIC_12334"
+      ],
+      "lis": [
+        "LIL_11287"
+      ],
+      "lbj": [
+        "LBJ_2131"
+      ],
+      "lbl": [
+        "LBL_2128"
+      ],
+      "lbi": [
+        "LEPBI_I1007"
+      ],
+      "lbf": [
+        "LBF_0975"
+      ],
+      "lst": [
+        "LSS_03404"
+      ],
+      "laj": [
+        "A0128_05450"
+      ],
+      "tpx": [
+        "Turpa_2863"
+      ],
+      "emi": [
+        "Emin_1346"
+      ],
+      "epo": [
+        "Epro_0484"
+      ],
+      "eti": [
+        "RSTT_389"
+      ],
+      "rsd": [
+        "TGRD_471"
+      ],
+      "ipo": [
+        "Ilyop_1891"
+      ],
+      "lba": [
+        "Lebu_0546"
+      ],
+      "leo": [
+        "AMK43_02740"
+      ],
+      "str": [
+        "Sterm_3768"
+      ],
+      "smf": [
+        "Smon_1213"
+      ],
+      "sns": [
+        "VC03_00885"
+      ],
+      "aco": [
+        "Amico_1574",
+        "Amico_1578"
+      ],
+      "amo": [
+        "Anamo_1111"
+      ],
+      "gau": [
+        "GAU_0762"
+      ],
+      "gba": [
+        "J421_2684"
+      ],
+      "bth": [
+        "BT_0310"
+      ],
+      "btho": [
+        "Btheta7330_03067"
+      ],
+      "bfr": [
+        "BF1619"
+      ],
+      "bfs": [
+        "BF9343_1552"
+      ],
+      "bfg": [
+        "BF638R_1635"
+      ],
+      "bfb": [
+        "VU15_06845"
+      ],
+      "bxy": [
+        "BXY_15200"
+      ],
+      "bdo": [
+        "EL88_03195"
+      ],
+      "bdh": [
+        "GV66_10525"
+      ],
+      "boa": [
+        "Bovatus_00155"
+      ],
+      "bcel": [
+        "BcellWH2_03585"
+      ],
+      "bcac": [
+        "CGC64_10210"
+      ],
+      "bacc": [
+        "BRDCF_p554"
+      ],
+      "pbt": [
+        "ING2E5B_1368",
+        "ING2E5B_1726"
+      ],
+      "pmuc": [
+        "ING2E5A_1165",
+        "ING2E5A_2301"
+      ],
+      "pet": [
+        "PEIBARAKI_1053",
+        "PEIBARAKI_2168"
+      ],
+      "ppn": [
+        "Palpr_0456"
+      ],
+      "pdi": [
+        "BDI_0689"
+      ],
+      "pary": [
+        "A4V02_05895"
+      ],
+      "parc": [
+        "CI960_07395"
+      ],
+      "bvs": [
+        "BARVI_01820"
+      ],
+      "psac": [
+        "PSM36_2160",
+        "PSM36_2444"
+      ],
+      "pru": [
+        "PRU_2049"
+      ],
+      "pdt": [
+        "Prede_1940"
+      ],
+      "peo": [
+        "AS203_07170"
+      ],
+      "dori": [
+        "FH5T_10280"
+      ],
+      "blq": [
+        "L21SP5_02273"
+      ],
+      "asx": [
+        "CDL62_07900"
+      ],
+      "sru": [
+        "SRU_0239"
+      ],
+      "srm": [
+        "SRM_00313"
+      ],
+      "sht": [
+        "KO02_16820"
+      ],
+      "sphn": [
+        "BV902_10025"
+      ],
+      "lby": [
+        "Lbys_0862"
+      ],
+      "fli": [
+        "Fleli_3889"
+      ],
+      "aas": [
+        "Aasi_1171"
+      ],
+      "zpr": [
+        "ZPR_0924"
+      ],
+      "asl": [
+        "Aeqsu_2900"
+      ],
+      "ptq": [
+        "P700755_002946"
+      ],
+      "salt": [
+        "AO058_17225"
+      ],
+      "fba": [
+        "FIC_01956"
+      ],
+      "oho": [
+        "Oweho_0503",
+        "Oweho_1066"
+      ],
+      "cte": [
+        "CT1342"
+      ],
+      "cpc": [
+        "Cpar_0814"
+      ],
+      "clz": [
+        "BIU88_04095"
+      ],
+      "cch": [
+        "Cag_0906"
+      ],
+      "cph": [
+        "Cpha266_1659"
+      ],
+      "cpb": [
+        "Cphamn1_1007"
+      ],
+      "cli": [
+        "Clim_1527"
+      ],
+      "pvi": [
+        "Cvib_0724"
+      ],
+      "plt": [
+        "Plut_1329"
+      ],
+      "pph": [
+        "Ppha_1629"
+      ],
+      "paa": [
+        "Paes_1477"
+      ],
+      "proc": [
+        "Ptc2401_00723"
+      ],
+      "pros": [
+        "CHL67_04035"
+      ],
+      "cts": [
+        "Ctha_0128",
+        "Ctha_0356"
+      ],
+      "ial": [
+        "IALB_0580"
+      ],
+      "mro": [
+        "MROS_1878"
+      ],
+      "caci": [
+        "CLOAM0056"
+      ],
+      "aae": [
+        "aq_1638",
+        "aq_264"
+      ],
+      "hya": [
+        "HY04AAS1_0931",
+        "HY04AAS1_1549"
+      ],
+      "hho": [
+        "HydHO_0686",
+        "HydHO_0926",
+        "HydHO_1531"
+      ],
+      "hys": [
+        "HydSN_0700",
+        "HydSN_0949",
+        "HydSN_1574"
+      ],
+      "hth": [
+        "HTH_1048",
+        "HTH_1271",
+        "HTH_1603"
+      ],
+      "hte": [
+        "Hydth_1042",
+        "Hydth_1263",
+        "Hydth_1591"
+      ],
+      "tal": [
+        "Thal_0229",
+        "Thal_0927"
+      ],
+      "trd": [
+        "THERU_01310",
+        "THERU_05680",
+        "THERU_06330"
+      ],
+      "tma": [
+        "TM0708"
+      ],
+      "tmm": [
+        "Tmari_0708"
+      ],
+      "tmi": [
+        "THEMA_01125"
+      ],
+      "tmw": [
+        "THMA_0723"
+      ],
+      "tmq": [
+        "THMB_0723"
+      ],
+      "tmx": [
+        "THMC_0723"
+      ],
+      "tpt": [
+        "Tpet_0222"
+      ],
+      "trq": [
+        "TRQ2_0220"
+      ],
+      "tna": [
+        "CTN_1877"
+      ],
+      "tnp": [
+        "Tnap_0505"
+      ],
+      "thq": [
+        "T2812B_01120"
+      ],
+      "thz": [
+        "CELL2_01155"
+      ],
+      "thr": [
+        "TRQ7_01130"
+      ],
+      "tle": [
+        "Tlet_0236"
+      ],
+      "tta": [
+        "Theth_1710"
+      ],
+      "phy": [
+        "AJ81_05500"
+      ],
+      "tme": [
+        "Tmel_0280"
+      ],
+      "taf": [
+        "THA_580"
+      ],
+      "thp": [
+        "BG95_02520"
+      ],
+      "ther": [
+        "Y592_02530"
+      ],
+      "fno": [
+        "Fnod_1329"
+      ],
+      "fpe": [
+        "Ferpe_1751"
+      ],
+      "fia": [
+        "NA23_08590"
+      ],
+      "pmo": [
+        "Pmob_0328"
+      ],
+      "mpz": [
+        "Marpi_0787"
+      ],
+      "marn": [
+        "LN42_04375"
+      ],
+      "dtn": [
+        "DTL3_0385"
+      ],
+      "kol": [
+        "Kole_0477"
+      ],
+      "mpg": [
+        "Theba_1953"
+      ],
+      "cex": [
+        "CSE_01690",
+        "CSE_07690"
+      ],
+      "caby": [
+        "Cabys_2251",
+        "Cabys_2609"
+      ],
+      "tye": [
+        "THEYE_A0087"
+      ],
+      "nja": [
+        "NSJP_3229"
+      ],
+      "lfc": [
+        "LFE_0258"
+      ],
+      "lfi": [
+        "LFML04_0215"
+      ],
+      "lfp": [
+        "Y981_01200"
+      ],
+      "leg": [
+        "ABH19_01095"
+      ],
+      "mox": [
+        "DAMO_1193"
+      ],
+      "mpd": [
+        "MCP_1721"
+      ],
+      "mez": [
+        "Mtc_1898"
+      ],
+      "rci": [
+        "RRC121"
+      ],
+      "hal": [
+        "VNG_0181G",
+        "VNG_6256G"
+      ],
+      "hsl": [
+        "OE_1302F",
+        "OE_5139F"
+      ],
+      "hdl": [
+        "HALDL1_05030"
+      ],
+      "hhb": [
+        "Hhub_1363"
+      ],
+      "hje": [
+        "HacjB3_13620"
+      ],
+      "halh": [
+        "HTSR_0010",
+        "HTSR_1680"
+      ],
+      "hhsr": [
+        "HSR6_0010",
+        "HSR6_1748"
+      ],
+      "hsu": [
+        "HLASF_1054"
+      ],
+      "hsf": [
+        "HLASA_1043"
+      ],
+      "hma": [
+        "rrnAC2019"
+      ],
+      "hhi": [
+        "HAH_2523"
+      ],
+      "hhn": [
+        "HISP_12840"
+      ],
+      "hab": [
+        "SG26_05120"
+      ],
+      "nph": [
+        "NP_5116A"
+      ],
+      "nmo": [
+        "Nmlp_3692"
+      ],
+      "hmu": [
+        "Hmuk_0187"
+      ],
+      "hali": [
+        "BV210_05965"
+      ],
+      "hvo": [
+        "HVO_0572"
+      ],
+      "hme": [
+        "HFX_0549"
+      ],
+      "hgi": [
+        "ABY42_02660"
+      ],
+      "hbo": [
+        "Hbor_26350"
+      ],
+      "hla": [
+        "Hlac_0532"
+      ],
+      "htu": [
+        "Htur_2805",
+        "Htur_3802"
+      ],
+      "hda": [
+        "BB347_09640"
+      ],
+      "nmg": [
+        "Nmag_0967"
+      ],
+      "hxa": [
+        "Halxa_2255"
+      ],
+      "nat": [
+        "NJ7G_2148"
+      ],
+      "npe": [
+        "Natpe_0793"
+      ],
+      "nge": [
+        "Natgr_2496"
+      ],
+      "hru": [
+        "Halru_2376"
+      ],
+      "nou": [
+        "Natoc_1868"
+      ],
+      "sali": [
+        "L593_01630"
+      ],
+      "hlr": [
+        "HALLA_15775"
+      ],
+      "hlc": [
+        "CHINAEXTREME09295"
+      ],
+      "naj": [
+        "B1756_13575"
+      ],
+      "tac": [
+        "Ta0514"
+      ],
+      "tvo": [
+        "TVG1044624"
+      ],
+      "mer": [
+        "MMINT_02900"
+      ],
+      "pho": [
+        "PH1487"
+      ],
+      "pab": [
+        "PAB1916"
+      ],
+      "pfu": [
+        "PF1374"
+      ],
+      "pfi": [
+        "PFC_06095"
+      ],
+      "pyn": [
+        "PNA2_0069",
+        "PNA2_1448"
+      ],
+      "pya": [
+        "PYCH_03210"
+      ],
+      "pys": [
+        "Py04_1377"
+      ],
+      "pyc": [
+        "TQ32_09505"
+      ],
+      "tko": [
+        "TK1908"
+      ],
+      "ton": [
+        "TON_1532"
+      ],
+      "tga": [
+        "TGAM_0102"
+      ],
+      "tsi": [
+        "TSIB_1178",
+        "TSIB_1644"
+      ],
+      "tba": [
+        "TERMP_01787"
+      ],
+      "the": [
+        "GQS_06330",
+        "GQS_07745"
+      ],
+      "tha": [
+        "TAM4_1169"
+      ],
+      "thm": [
+        "CL1_1181"
+      ],
+      "tlt": [
+        "OCC_00487",
+        "OCC_03337"
+      ],
+      "ths": [
+        "TES1_0062",
+        "TES1_1775"
+      ],
+      "tnu": [
+        "BD01_1200"
+      ],
+      "teu": [
+        "TEU_01335"
+      ],
+      "tgy": [
+        "X802_04435"
+      ],
+      "thv": [
+        "ADU37_CDS07860"
+      ],
+      "tch": [
+        "CHITON_1703"
+      ],
+      "tpep": [
+        "A0127_05590"
+      ],
+      "tpie": [
+        "A7C91_04445"
+      ],
+      "tgg": [
+        "A3K92_09120"
+      ],
+      "tce": [
+        "A3L02_07645"
+      ],
+      "tbs": [
+        "A3L01_08555"
+      ],
+      "thh": [
+        "CDI07_08555"
+      ],
+      "tsl": [
+        "A3L11_02015"
+      ],
+      "ttd": [
+        "A3L14_11140"
+      ],
+      "tprf": [
+        "A3L09_10530"
+      ],
+      "ppac": [
+        "PAP_09180"
+      ],
+      "abi": [
+        "Aboo_1106"
+      ],
+      "acf": [
+        "AciM339_1433"
+      ],
+      "ape": [
+        "APE_2341",
+        "APE_2342.1"
+      ],
+      "acj": [
+        "ACAM_1472",
+        "ACAM_1473"
+      ],
+      "smr": [
+        "Smar_0191"
+      ],
+      "shc": [
+        "Shell_0634"
+      ],
+      "dka": [
+        "DKAM_0075"
+      ],
+      "dfd": [
+        "Desfe_0176"
+      ],
+      "dmu": [
+        "Desmu_0206"
+      ],
+      "tag": [
+        "Tagg_0783"
+      ],
+      "thg": [
+        "TCELL_1337"
+      ],
+      "hbu": [
+        "Hbut_0801"
+      ],
+      "pfm": [
+        "Pyrfu_0731"
+      ],
+      "pdl": [
+        "Pyrde_1319"
+      ],
+      "sso": [
+        "SSO1112",
+        "SSO3157",
+        "SSO3159"
+      ],
+      "sol": [
+        "Ssol_0897",
+        "Ssol_0900",
+        "Ssol_2086"
+      ],
+      "ssoa": [
+        "SULA_0931",
+        "SULA_0934",
+        "SULA_2117"
+      ],
+      "ssol": [
+        "SULB_0933",
+        "SULB_0936",
+        "SULB_2118"
+      ],
+      "ssof": [
+        "SULC_0932",
+        "SULC_0935",
+        "SULC_2116"
+      ],
+      "sto": [
+        "STK_11930",
+        "STK_18880"
+      ],
+      "sai": [
+        "Saci_0307",
+        "Saci_0310",
+        "Saci_0345"
+      ],
+      "sacn": [
+        "SacN8_01505",
+        "SacN8_01520",
+        "SacN8_01695"
+      ],
+      "sacr": [
+        "SacRon12I_01505",
+        "SacRon12I_01520",
+        "SacRon12I_01695"
+      ],
+      "sacs": [
+        "SUSAZ_01555",
+        "SUSAZ_01570",
+        "SUSAZ_01755"
+      ],
+      "sis": [
+        "LS215_1211",
+        "LS215_2376",
+        "LS215_2379"
+      ],
+      "sia": [
+        "M1425_1114",
+        "M1425_2211",
+        "M1425_2214"
+      ],
+      "sim": [
+        "M1627_1178",
+        "M1627_2290",
+        "M1627_2293"
+      ],
+      "sid": [
+        "M164_1104",
+        "M164_2212",
+        "M164_2215"
+      ],
+      "siy": [
+        "YG5714_1110",
+        "YG5714_2338",
+        "YG5714_2341"
+      ],
+      "sin": [
+        "YN1551_0566",
+        "YN1551_0569"
+      ],
+      "sii": [
+        "LD85_1231",
+        "LD85_2482",
+        "LD85_2485"
+      ],
+      "sih": [
+        "SiH_1075",
+        "SiH_2153",
+        "SiH_2155"
+      ],
+      "sir": [
+        "SiRe_0988",
+        "SiRe_2091",
+        "SiRe_2093"
+      ],
+      "sic": [
+        "SiL_0995",
+        "SiL_2060",
+        "SiL_2063"
+      ],
+      "sula": [
+        "BFU36_00985",
+        "BFU36_06240",
+        "BFU36_06255"
+      ],
+      "mse": [
+        "Msed_1506",
+        "Msed_1560"
+      ],
+      "mcn": [
+        "Mcup_0671",
+        "Mcup_0731"
+      ],
+      "aho": [
+        "Ahos_0168",
+        "Ahos_1682"
+      ],
+      "aman": [
+        "B6F84_00365",
+        "B6F84_12640"
+      ],
+      "asc": [
+        "ASAC_0548"
+      ],
+      "clg": [
+        "Calag_1012"
+      ],
+      "ffo": [
+        "FFONT_1311"
+      ],
+      "nac": [
+        "AQV86_06075",
+        "AQV86_06085"
+      ],
+      "marh": [
+        "Mia14_0215",
+        "Mia14_0511"
+      ],
+      "kcr": [
+        "Kcr_0581"
+      ],
+      "barc": [
+        "AOA65_1168",
+        "AOA65_2202"
+      ],
+      "barb": [
+        "AOA66_0993"
+      ],
+      "loki": [
+        "Lokiarch_23920",
+        "Lokiarch_46950"
+      ],
+      "hah": [
+        "Halar_2905"
+      ],
+      "agw": [
+        "QT03_C0001G0351"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.3.1.20"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.3.1.20"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.3.1.20"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.3.1.20"
+      ],
+      "CAS": [
+        "144114-18-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Morris TW",
+          "Reed KE",
+          "Cronan JE Jr."
+        ],
+        "title": "Identification of the gene encoding lipoate-protein ligase A of Escherichia coli. Molecular cloning and characterization of the lplA gene and gene product.",
+        "journal": "J. Biol. Chem. 269 (1994) 16091-100.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8206909]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Green DE",
+          "Morris TW",
+          "Green J",
+          "Cronan JE Jr",
+          "Guest JR."
+        ],
+        "title": "Purification and properties of the lipoate protein ligase of Escherichia coli.",
+        "journal": "Biochem. J. 309 ( Pt 3) (1995) 853-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:7639702]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zhao X",
+          "Miller JR",
+          "Jiang Y",
+          "Marletta MA",
+          "Cronan JE."
+        ],
+        "title": "Assembly of the covalent linkage between lipoic acid and its cognate enzymes.",
+        "journal": "Chem. Biol. 10 (2003) 1293-302.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14700636]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kim do J",
+          "Kim KH",
+          "Lee HH",
+          "Lee SJ",
+          "Ha JY",
+          "Yoon HJ",
+          "Suh SW."
+        ],
+        "title": "Crystal structure of lipoate-protein ligase A bound with the activated intermediate: insights into interaction with lipoyl domains.",
+        "journal": "J. Biol. Chem. 280 (2005) 38081-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:16141198]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fujiwara K",
+          "Toma S",
+          "Okamura-Ikeda K",
+          "Motokawa Y",
+          "Nakagawa A",
+          "Taniguchi H."
+        ],
+        "title": "Crystal structure of lipoate-protein ligase A from Escherichia coli. Determination of the lipoic acid-binding site.",
+        "journal": "J. Biol. Chem. 280 (2005) 33645-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:16043486]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Jordan SW",
+          "Cronan JE Jr."
+        ],
+        "title": "A new metabolic link. The acyl carrier protein of lipid synthesis donates lipoic acid to the pyruvate dehydrogenase complex in Escherichia coli and mitochondria.",
+        "journal": "J. Biol. Chem. 272 (1997) 17903-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:9218413]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Perham RN."
+        ],
+        "title": "Swinging arms and swinging domains in multifunctional enzymes: catalytic machines for multistep reactions.",
+        "journal": "Annu. Rev. Biochem. 69 (2000) 961-1004.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:10966480]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

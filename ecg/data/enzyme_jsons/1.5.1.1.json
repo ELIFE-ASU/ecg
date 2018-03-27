@@ -1,0 +1,599 @@
+[
+  {
+    "entry_id": "1.5.1.1",
+    "name": "1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase [NAD(P)H]",
+    "names": [
+      "1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase [NAD(P)H]",
+      "Delta1-pyrroline-2-carboxylate reductase",
+      "DELTA1-pyrroline-2-carboxylate reductase",
+      "DELTA1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase (ambiguous)",
+      "AbLhpI",
+      "pyrroline-2-carboxylate reductase",
+      "L-proline:NAD(P)+ 2-oxidoreductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "L-pipecolate/L-proline:NAD(P)+ 2-oxidoreductase",
+    "reaction": "(1) L-pipecolate + NAD(P)+ = 1-piperideine-2-carboxylate + NAD(P)H + H+ [RN:R02201 R02203]; (2) L-proline + NAD(P)+ = 1-pyrroline-2-carboxylate + NAD(P)H + H+ [RN:R01246 R01249]",
+    "all_reac": "R01246 R01249 R02201 R02203",
+    "iubmb_reactions": [
+      "R01246 R01249 R02201 R02203"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "L-pipecolate [CPD:C00408]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]",
+      "L-proline [CPD:C00148]"
+    ],
+    "products": [
+      "1-piperideine-2-carboxylate [CPD:C04092]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "1-pyrroline-2-carboxylate [CPD:C03564]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzymes, characterized from the bacterium Azospirillum brasilense, is involved in trans-3-hydroxy-L-proline metabolism. In contrast to EC 1.5.1.21, 1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase (NADPH), which is specific for NADPH, this enzyme shows similar activity with NADPH and NADH.",
+    "pathways": {
+      "ec00310": "Lysine degradation",
+      "ec00330": "Arginine and proline metabolism",
+      "ec00960": "Tropane, piperidine and pyridine alkaloid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K19743": "1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase [NAD(P)H]"
+    },
+    "genes": {
+      "sod": [
+        "Sant_2254"
+      ],
+      "pazo": [
+        "AYR47_02320"
+      ],
+      "pch": [
+        "EY04_18125"
+      ],
+      "pses": [
+        "PSCI_5175"
+      ],
+      "pse": [
+        "NH8B_0270"
+      ],
+      "bma": [
+        "BMAA1290"
+      ],
+      "bmv": [
+        "BMASAVP1_0266"
+      ],
+      "bml": [
+        "BMA10229_0536"
+      ],
+      "bmn": [
+        "BMA10247_A1031"
+      ],
+      "bmal": [
+        "DM55_4233"
+      ],
+      "bmae": [
+        "DM78_3939"
+      ],
+      "bmaq": [
+        "DM76_4933"
+      ],
+      "bmai": [
+        "DM57_10585"
+      ],
+      "bmaf": [
+        "DM51_4945"
+      ],
+      "bmaz": [
+        "BM44_4196"
+      ],
+      "bmab": [
+        "BM45_3318"
+      ],
+      "bps": [
+        "BPSS0940"
+      ],
+      "bpm": [
+        "BURPS1710b_A2543"
+      ],
+      "bpl": [
+        "BURPS1106A_A1291"
+      ],
+      "bpd": [
+        "BURPS668_A1371"
+      ],
+      "bpse": [
+        "BDL_4230"
+      ],
+      "bpsm": [
+        "BBQ_5196"
+      ],
+      "bpsu": [
+        "BBN_4400"
+      ],
+      "bpsd": [
+        "BBX_6071"
+      ],
+      "bpz": [
+        "BP1026B_II1030"
+      ],
+      "bpq": [
+        "BPC006_II1306"
+      ],
+      "bpk": [
+        "BBK_3495"
+      ],
+      "bpsh": [
+        "DR55_4394"
+      ],
+      "bpsa": [
+        "BBU_5089"
+      ],
+      "bpso": [
+        "X996_4178"
+      ],
+      "but": [
+        "X994_6182"
+      ],
+      "bte": [
+        "BTH_II1457"
+      ],
+      "btq": [
+        "BTQ_4743"
+      ],
+      "btj": [
+        "BTJ_5685"
+      ],
+      "btz": [
+        "BTL_4224"
+      ],
+      "btd": [
+        "BTI_5755"
+      ],
+      "btv": [
+        "BTHA_3733"
+      ],
+      "bthe": [
+        "BTN_3467"
+      ],
+      "bthm": [
+        "BTRA_4218"
+      ],
+      "btha": [
+        "DR62_3540"
+      ],
+      "bthl": [
+        "BG87_4200"
+      ],
+      "bok": [
+        "DM82_5110"
+      ],
+      "boc": [
+        "BG90_5484"
+      ],
+      "bvi": [
+        "Bcep1808_4889"
+      ],
+      "bve": [
+        "AK36_4029"
+      ],
+      "bur": [
+        "Bcep18194_B1663"
+      ],
+      "bcn": [
+        "Bcen_4010"
+      ],
+      "bch": [
+        "Bcen2424_4357"
+      ],
+      "bcm": [
+        "Bcenmc03_5997"
+      ],
+      "bcj": [
+        "BCAM1485"
+      ],
+      "bcen": [
+        "DM39_3532"
+      ],
+      "bcew": [
+        "DM40_4351"
+      ],
+      "bceo": [
+        "I35_5339"
+      ],
+      "bam": [
+        "Bamb_3766"
+      ],
+      "bac": [
+        "BamMC406_4240"
+      ],
+      "bmu": [
+        "Bmul_4263"
+      ],
+      "bmk": [
+        "DM80_3437"
+      ],
+      "bmul": [
+        "NP80_4355"
+      ],
+      "bct": [
+        "GEM_4275"
+      ],
+      "bced": [
+        "DM42_3604"
+      ],
+      "bcep": [
+        "APZ15_32020"
+      ],
+      "bdl": [
+        "AK34_4045"
+      ],
+      "bpyr": [
+        "ABD05_28725"
+      ],
+      "bcon": [
+        "NL30_05175"
+      ],
+      "bub": [
+        "BW23_5154"
+      ],
+      "bdf": [
+        "WI26_20365"
+      ],
+      "blat": [
+        "WK25_24125"
+      ],
+      "btei": [
+        "WS51_05030"
+      ],
+      "bsem": [
+        "WJ12_27260"
+      ],
+      "bpsl": [
+        "WS57_06730"
+      ],
+      "bmec": [
+        "WJ16_25790"
+      ],
+      "bstg": [
+        "WT74_26205"
+      ],
+      "bstl": [
+        "BBJ41_20490"
+      ],
+      "bgl": [
+        "bglu_2g07030"
+      ],
+      "bgp": [
+        "BGL_2c21310"
+      ],
+      "bgu": [
+        "KS03_5219"
+      ],
+      "bug": [
+        "BC1001_5631"
+      ],
+      "bge": [
+        "BC1002_3728"
+      ],
+      "bgf": [
+        "BC1003_5729"
+      ],
+      "bgd": [
+        "bgla_2g12060"
+      ],
+      "bgo": [
+        "BM43_4860"
+      ],
+      "byi": [
+        "BYI23_B003960",
+        "BYI23_C005280"
+      ],
+      "buk": [
+        "MYA_4327"
+      ],
+      "buo": [
+        "BRPE64_BCDS09290"
+      ],
+      "bue": [
+        "BRPE67_BCDS06550",
+        "BRPE67_CCDS06230"
+      ],
+      "bul": [
+        "BW21_5442"
+      ],
+      "buq": [
+        "AC233_30570"
+      ],
+      "bpla": [
+        "bpln_2g21410"
+      ],
+      "bud": [
+        "AQ610_25980"
+      ],
+      "buz": [
+        "AYM40_24630"
+      ],
+      "bxe": [
+        "Bxe_B1765"
+      ],
+      "bxb": [
+        "DR64_7069"
+      ],
+      "bph": [
+        "Bphy_3343"
+      ],
+      "bpx": [
+        "BUPH_06129"
+      ],
+      "bpy": [
+        "Bphyt_4907"
+      ],
+      "bfn": [
+        "OI25_4196"
+      ],
+      "bcai": [
+        "K788_0008493"
+      ],
+      "pspw": [
+        "BJG93_16945",
+        "BJG93_30575"
+      ],
+      "para": [
+        "BTO02_28190"
+      ],
+      "aka": [
+        "TKWG_24615"
+      ],
+      "amim": [
+        "MIM_c39830"
+      ],
+      "cdn": [
+        "BN940_16136"
+      ],
+      "bpsi": [
+        "IX83_00760"
+      ],
+      "afa": [
+        "UZ73_14790"
+      ],
+      "phn": [
+        "PAEH1_12825"
+      ],
+      "odi": [
+        "ODI_R1977"
+      ],
+      "aav": [
+        "Aave_3400"
+      ],
+      "aaa": [
+        "Acav_1835"
+      ],
+      "mpt": [
+        "Mpe_A1509"
+      ],
+      "hse": [
+        "Hsero_0176"
+      ],
+      "hsz": [
+        "ACP92_00875"
+      ],
+      "hht": [
+        "F506_21360"
+      ],
+      "hrb": [
+        "Hrubri_0191"
+      ],
+      "hee": [
+        "hmeg3_22520"
+      ],
+      "cfu": [
+        "CFU_3543"
+      ],
+      "care": [
+        "LT85_4058"
+      ],
+      "cpra": [
+        "CPter91_4367"
+      ],
+      "rdp": [
+        "RD2015_1338"
+      ],
+      "pkt": [
+        "AT984_14370"
+      ],
+      "miu": [
+        "ABE85_00125"
+      ],
+      "net": [
+        "Neut_2213"
+      ],
+      "zmo": [
+        "ZMO1975"
+      ],
+      "zmn": [
+        "Za10_1195"
+      ],
+      "zmb": [
+        "ZZ6_1206"
+      ],
+      "zmi": [
+        "ZCP4_1234"
+      ],
+      "zmc": [
+        "A265_01223"
+      ],
+      "zmr": [
+        "A254_01222"
+      ],
+      "goh": [
+        "B932_1581"
+      ],
+      "gal": [
+        "A0U94_09505"
+      ],
+      "gxl": [
+        "H845_2323"
+      ],
+      "kna": [
+        "B0W47_06280"
+      ],
+      "keu": [
+        "S101446_01615"
+      ],
+      "apt": [
+        "APA01_08140"
+      ],
+      "apw": [
+        "APA42C_08140"
+      ],
+      "apf": [
+        "APA03_08140"
+      ],
+      "apu": [
+        "APA07_08140"
+      ],
+      "apg": [
+        "APA12_08140"
+      ],
+      "apq": [
+        "APA22_08140"
+      ],
+      "apx": [
+        "APA26_08140"
+      ],
+      "apz": [
+        "APA32_08140"
+      ],
+      "apk": [
+        "APA386B_2319"
+      ],
+      "asz": [
+        "ASN_1466"
+      ],
+      "asv": [
+        "WG31_04555"
+      ],
+      "nch": [
+        "A0U93_11420"
+      ],
+      "azl": [
+        "AZL_d02350"
+      ],
+      "ali": [
+        "AZOLI_p40331"
+      ],
+      "ati": [
+        "AL072_25090"
+      ],
+      "opr": [
+        "Ocepr_1284"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.5.1.1"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.5.1.1"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.5.1.1"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.5.1.1"
+      ],
+      "CAS": [
+        "9029-16-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "MEISTER A",
+          "RADHAKRISHNAN AN",
+          "BUCKLEY SD."
+        ],
+        "title": "Enzymatic synthesis of L-pipecolic acid and L-proline.",
+        "journal": "J. Biol. Chem. 229 (1957) 789-800.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:13502341]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Watanabe S",
+          "Tanimoto Y",
+          "Yamauchi S",
+          "Tozawa Y",
+          "Sawayama S",
+          "Watanabe Y"
+        ],
+        "title": "Identification and characterization of trans-3-hydroxy-l-proline dehydratase and Delta(1)-pyrroline-2-carboxylate reductase involved in trans-3-hydroxy-l-proline metabolism of bacteria.",
+        "journal": "FEBS. Open. Bio. 4 (2014) 240-50.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:24649405]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

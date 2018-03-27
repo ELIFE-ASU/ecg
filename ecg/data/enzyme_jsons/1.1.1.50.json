@@ -1,0 +1,233 @@
+[
+  {
+    "entry_id": "1.1.1.50",
+    "name": "3alpha-hydroxysteroid 3-dehydrogenase (Si-specific)",
+    "names": [
+      "3alpha-hydroxysteroid 3-dehydrogenase (Si-specific)",
+      "hydroxyprostaglandin dehydrogenase",
+      "3alpha-hydroxysteroid oxidoreductase",
+      "sterognost 3alpha",
+      "3alpha-hydroxysteroid dehydrogenase (B-specific)",
+      "3alpha-hydroxysteroid 3-dehydrogenase (B-specific)",
+      "3alpha-hydroxysteroid:NAD(P)+ 3-oxidoreductase (B-specific)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-OH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "3alpha-hydroxysteroid:NAD(P)+ 3-oxidoreductase (Si-specific)",
+    "reaction": "a 3alpha-hydroxysteroid + NAD(P)+ = a 3-oxosteroid + NAD(P)H + H+ [RN:R10422 R10423]",
+    "all_reac": "R10422 > R02476 R04309 R04818 R04824 R04829 R04832 R04835 R04837 R04842 R04845; R10423 > R02477 R04310 R04819 R04825 R04830 R04833 R04836 R04838 R04843 R04846 R08963",
+    "iubmb_reactions": [
+      "R10422 > R02476 R04309 R04818 R04824 R04829 R04832 R04835 R04837 R04842 R04845",
+      "R10423 > R02477 R04310 R04819 R04825 R04830 R04833 R04836 R04838 R04843 R04846 R08963"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "3alpha-hydroxysteroid [CPD:C03072]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "products": [
+      "3-oxosteroid [CPD:C01876]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme acts on androsterone and other 3alpha-hydroxysteroids and on 9-, 11- and 15-hydroxyprostaglandin. Si-specific with respect to NAD+ or NADP+. cf. EC 1.1.1.213, 3alpha-hydroxysteroid 3-dehydrogenase (Re-specific).",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00037": "3alpha-hydroxysteroid 3-dehydrogenase / chlordecone reductase"
+    },
+    "genes": {
+      "hsa": [
+        "1109"
+      ],
+      "ptr": [
+        "450274"
+      ],
+      "pps": [
+        "100987989"
+      ],
+      "ggo": [
+        "101148343"
+      ],
+      "nle": [
+        "100605385"
+      ],
+      "mcf": [
+        "102117205"
+      ],
+      "csab": [
+        "103237814"
+      ],
+      "rbb": [
+        "108521035"
+      ],
+      "cjc": [
+        "100405255",
+        "100405615"
+      ],
+      "sbq": [
+        "101041915"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.1.1.50"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.1.1.50"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.1.1.50"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.1.1.50"
+      ],
+      "CAS": [
+        "9028-56-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "JARABAK J",
+          "TALALAY P."
+        ],
+        "title": "Stereospecificity of hydrogen transfer by pyridine nucleotide-linked hydroxysteroid dehydrogenases.",
+        "journal": "J. Biol. Chem. 235 (1960) 2147-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14406805]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "KOCHAKIAN CD",
+          "CARROLL BR",
+          "UHRI B."
+        ],
+        "title": "Comparisons of the oxidation of C19-hydroxysteroids by guinea pig liver homogenates.",
+        "journal": "J. Biol. Chem. 224 (1957) 811-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13405910]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "MARCUS PI",
+          "TALALAY P."
+        ],
+        "title": "Induction and purification of alpha- and beta-hydroxysteroid dehydrogenases.",
+        "journal": "J. Biol. Chem. 218 (1956) 661-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:13295221]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Penning TM",
+          "Sharp RB."
+        ],
+        "title": "Prostaglandin dehydrogenase activity of purified rat liver 3 alpha-hydroxysteroid dehydrogenase.",
+        "journal": "Biochem. Biophys. Res. Commun. 148 (1987) 646-52.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:3479982]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

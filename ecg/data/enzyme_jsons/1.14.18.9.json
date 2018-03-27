@@ -1,0 +1,747 @@
+[
+  {
+    "entry_id": "1.14.18.9",
+    "name": "methylsterol monooxygenase",
+    "names": [
+      "methylsterol monooxygenase",
+      "methylsterol hydroxylase",
+      "4-methylsterol oxidase",
+      "4,4-dimethyl-5alpha-cholest-7-en-3beta-ol,hydrogen-donor:oxygen oxidoreductase (hydroxylating)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With another compound as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "4,4-dimethyl-5alpha-cholest-7-en-3beta-ol,ferrocytochrome-b5:oxygen oxidoreductase (hydroxylating)",
+    "reaction": "4,4-dimethyl-5alpha-cholest-7-en-3beta-ol + 6 ferrocytochrome b5 + 3 O2 + 6 H+ = 3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate + 6 ferricytochrome b5 + 4 H2O (overall reaction) [RN:R10057]; (1a) 4,4-dimethyl-5alpha-cholest-7-en-3beta-ol + 2 ferrocytochrome b5 + O2 + 2 H+ = 4beta-hydroxymethyl-4alpha-methyl-5alpha-cholest-7-en-3beta-ol + 2 ferricytochrome b5 + H2O [RN:R04501]; (1b) 4beta-hydroxymethyl-4alpha-methyl-5alpha-cholest-7-en-3beta-ol + 2 ferrocytochrome b5 + O2 + 2 H+ = 3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carbaldehyde + 2 ferricytochrome b5 + 2 H2O [RN:R05733]; (1c) 3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carbaldehyde + 2 ferrocytochrome b5 + O2 + 2 H+ = 3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate + 2 ferricytochrome b5 + H2O [RN:R05734]",
+    "all_reac": "R04501 R05733 R05734 R10057; (other) R04328 R07509",
+    "iubmb_reactions": [
+      "R04501 R05733 R05734 R10057"
+    ],
+    "kegg_reactions": [
+      "R04328 R07509"
+    ],
+    "substrates": [
+      "4,4-dimethyl-5alpha-cholest-7-en-3beta-ol [CPD:C04530]",
+      "ferrocytochrome b5 [CPD:C00999]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]",
+      "4beta-hydroxymethyl-4alpha-methyl-5alpha-cholest-7-en-3beta-ol [CPD:C04814]",
+      "3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carbaldehyde [CPD:C11509]"
+    ],
+    "products": [
+      "3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate [CPD:C04840]",
+      "ferricytochrome b5 [CPD:C00996]",
+      "H2O [CPD:C00001]",
+      "4beta-hydroxymethyl-4alpha-methyl-5alpha-cholest-7-en-3beta-ol [CPD:C04814]",
+      "3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carbaldehyde [CPD:C11509]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Also acts on 4alpha-methyl-5alpha-cholest-7-en-3beta-ol. The sterol can be based on cycloartenol as well as lanosterol.",
+    "pathways": {
+      "ec00100": "Steroid biosynthesis"
+    },
+    "orthologs": {
+      "K07750": "methylsterol monooxygenase"
+    },
+    "genes": {
+      "hsa": [
+        "6307"
+      ],
+      "ptr": [
+        "738493"
+      ],
+      "pps": [
+        "100986460"
+      ],
+      "ggo": [
+        "101135163"
+      ],
+      "pon": [
+        "100173838"
+      ],
+      "nle": [
+        "100603031"
+      ],
+      "mcc": [
+        "705106"
+      ],
+      "mcf": [
+        "101865422"
+      ],
+      "csab": [
+        "103236486"
+      ],
+      "rro": [
+        "104663423"
+      ],
+      "rbb": [
+        "108521935"
+      ],
+      "cjc": [
+        "100398666"
+      ],
+      "sbq": [
+        "101053419"
+      ],
+      "mmu": [
+        "66234"
+      ],
+      "rno": [
+        "140910"
+      ],
+      "cge": [
+        "100754784"
+      ],
+      "ngi": [
+        "103732786"
+      ],
+      "hgl": [
+        "101719361"
+      ],
+      "ccan": [
+        "109687904"
+      ],
+      "ocu": [
+        "100343167"
+      ],
+      "tup": [
+        "102495765"
+      ],
+      "cfa": [
+        "475491"
+      ],
+      "aml": [
+        "100478610"
+      ],
+      "umr": [
+        "103658127"
+      ],
+      "fca": [
+        "101096978"
+      ],
+      "ptg": [
+        "102957399"
+      ],
+      "aju": [
+        "106967462"
+      ],
+      "bta": [
+        "504481"
+      ],
+      "bom": [
+        "102279364"
+      ],
+      "biu": [
+        "109571212"
+      ],
+      "phd": [
+        "102324474"
+      ],
+      "chx": [
+        "102180413"
+      ],
+      "oas": [
+        "101121628"
+      ],
+      "ssc": [
+        "396590"
+      ],
+      "cfr": [
+        "102519347"
+      ],
+      "cdk": [
+        "105087398"
+      ],
+      "bacu": [
+        "103002999"
+      ],
+      "lve": [
+        "103089686"
+      ],
+      "ecb": [
+        "100061552"
+      ],
+      "epz": [
+        "103567419"
+      ],
+      "eai": [
+        "106837736"
+      ],
+      "myb": [
+        "102263681"
+      ],
+      "myd": [
+        "102755773"
+      ],
+      "hai": [
+        "109386939"
+      ],
+      "rss": [
+        "109454222"
+      ],
+      "pale": [
+        "102896965"
+      ],
+      "lav": [
+        "100673402"
+      ],
+      "mdo": [
+        "100015712"
+      ],
+      "oaa": [
+        "100075041"
+      ],
+      "gga": [
+        "422423"
+      ],
+      "mgp": [
+        "100550538"
+      ],
+      "cjo": [
+        "107313018"
+      ],
+      "apla": [
+        "101804996"
+      ],
+      "acyg": [
+        "106032325"
+      ],
+      "tgu": [
+        "100222623"
+      ],
+      "gfr": [
+        "102040644"
+      ],
+      "fab": [
+        "101811763"
+      ],
+      "phi": [
+        "102111371"
+      ],
+      "pmaj": [
+        "107203507"
+      ],
+      "ccw": [
+        "104690530"
+      ],
+      "fpg": [
+        "101914205"
+      ],
+      "fch": [
+        "102050992"
+      ],
+      "clv": [
+        "102086288"
+      ],
+      "aam": [
+        "106484071"
+      ],
+      "asn": [
+        "102373382"
+      ],
+      "amj": [
+        "102570191"
+      ],
+      "pss": [
+        "102449794"
+      ],
+      "cmy": [
+        "102930070"
+      ],
+      "cpic": [
+        "101942968"
+      ],
+      "acs": [
+        "100552150"
+      ],
+      "pvt": [
+        "110083492"
+      ],
+      "gja": [
+        "107116888"
+      ],
+      "xla": [
+        "108704957",
+        "108706637"
+      ],
+      "xtr": [
+        "780270"
+      ],
+      "npr": [
+        "108788887"
+      ],
+      "dre": [
+        "406662"
+      ],
+      "srx": [
+        "107750426"
+      ],
+      "sanh": [
+        "107655978"
+      ],
+      "sgh": [
+        "107548349"
+      ],
+      "ipu": [
+        "100304913"
+      ],
+      "amex": [
+        "103040405"
+      ],
+      "tru": [
+        "101070460"
+      ],
+      "tng": [
+        "GSTEN00007230G001"
+      ],
+      "lco": [
+        "104933866"
+      ],
+      "mze": [
+        "101479801"
+      ],
+      "ola": [
+        "105354476"
+      ],
+      "xma": [
+        "102232647"
+      ],
+      "csem": [
+        "103384085"
+      ],
+      "lcf": [
+        "108893083"
+      ],
+      "hcq": [
+        "109511157"
+      ],
+      "bpec": [
+        "110167589"
+      ],
+      "sasa": [
+        "106590825"
+      ],
+      "els": [
+        "105008532"
+      ],
+      "sfm": [
+        "108924344"
+      ],
+      "cmk": [
+        "103183717"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_127276"
+      ],
+      "spu": [
+        "582397"
+      ],
+      "aplc": [
+        "110977365"
+      ],
+      "dme": [
+        "Dmel_CG11162"
+      ],
+      "dpo": [
+        "Dpse_GA10807"
+      ],
+      "der": [
+        "Dere_GG17801"
+      ],
+      "dpe": [
+        "Dper_GL22644"
+      ],
+      "dya": [
+        "Dyak_GE17097"
+      ],
+      "dgr": [
+        "Dgri_GH24047"
+      ],
+      "dmo": [
+        "Dmoj_GI14601"
+      ],
+      "aga": [
+        "AgaP_AGAP000092",
+        "AgaP_AGAP003209"
+      ],
+      "aag": [
+        "5567791"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ009637",
+        "CpipJ_CPIJ011628",
+        "CpipJ_CPIJ011630",
+        "CpipJ_CPIJ017305"
+      ],
+      "ame": [
+        "727357"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_218137"
+      ],
+      "lak": [
+        "106176186"
+      ],
+      "tad": [
+        "TRIADDRAFT_53886"
+      ],
+      "sce": [
+        "YGR060W"
+      ],
+      "ago": [
+        "AGOS_AFR572W"
+      ],
+      "kla": [
+        "KLLA0B08085g"
+      ],
+      "vpo": [
+        "Kpol_414p6",
+        "Kpol_472p14"
+      ],
+      "cgr": [
+        "CAGL0K04477g"
+      ],
+      "ppa": [
+        "PAS_chr3_0053"
+      ],
+      "dha": [
+        "DEHA2A12210g",
+        "DEHA2G02640g"
+      ],
+      "pic": [
+        "PICST_74706",
+        "PICST_78360"
+      ],
+      "lel": [
+        "LELG_00075",
+        "LELG_04249"
+      ],
+      "cal": [
+        "CAALFM_C401530CA",
+        "CAALFM_CR02370WA"
+      ],
+      "yli": [
+        "YALI0F11297g"
+      ],
+      "ncr": [
+        "NCU06402"
+      ],
+      "mgr": [
+        "MGG_06133",
+        "MGG_17103"
+      ],
+      "ssl": [
+        "SS1G_13083"
+      ],
+      "bfu": [
+        "BC1G_14068"
+      ],
+      "ani": [
+        "AN6973.2",
+        "AN8907.2",
+        "AN9275.2"
+      ],
+      "afm": [
+        "AFUA_2G01160",
+        "AFUA_4G04820",
+        "AFUA_8G02440"
+      ],
+      "aor": [
+        "AOR_1_1114024",
+        "AOR_1_16064",
+        "AOR_1_230044",
+        "AOR_1_348074",
+        "AOR_1_44",
+        "AOR_1_514174",
+        "AOR_1_708114"
+      ],
+      "ang": [
+        "ANI_1_798034"
+      ],
+      "pcs": [
+        "Pc13g05570",
+        "Pc15g01010",
+        "Pc21g21280"
+      ],
+      "cpw": [
+        "CPC735_037140",
+        "CPC735_061710",
+        "CPC735_071410"
+      ],
+      "ure": [
+        "UREG_01867",
+        "UREG_02575",
+        "UREG_07066"
+      ],
+      "tml": [
+        "GSTUM_00002933001"
+      ],
+      "spo": [
+        "SPAC630.08c"
+      ],
+      "cne": [
+        "CNC02410"
+      ],
+      "mpr": [
+        "MPER_16056"
+      ],
+      "uma": [
+        "UMAG_05880"
+      ],
+      "mgl": [
+        "MGL_0756"
+      ],
+      "mbr": [
+        "MONBRDRAFT_26349",
+        "MONBRDRAFT_27469"
+      ],
+      "ddi": [
+        "DDB_G0269788"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_61537"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.18.9"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.18.9"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.18.9"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.18.9"
+      ],
+      "CAS": [
+        "37256-80-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Miller WL",
+          "Kalafer ME",
+          "Gaylor JL",
+          "Delwiche CV."
+        ],
+        "title": "Investigation of the component reactions of oxidative sterol demethylation. Study of the aerobic and anaerobic processes.",
+        "journal": "Biochemistry. 6 (1967) 2673-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4383278]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gaylor JL",
+          "Mason HS."
+        ],
+        "title": "Investigation of the component reactions of oxidative sterol demethylation. Evidence against participation of cytochrome P-450.",
+        "journal": "J. Biol. Chem. 243 (1968) 4966-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:4234469]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Brady DR",
+          "Crowder RD",
+          "Hayes WJ."
+        ],
+        "title": "Mixed function oxidases in sterol metabolism. Source of reducing equivalents.",
+        "journal": "J. Biol. Chem. 255 (1980) 10624-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:7430141]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fukushima H",
+          "Grinstead GF",
+          "Gaylor JL."
+        ],
+        "title": "Total enzymic synthesis of cholesterol from lanosterol. Cytochrome b5-dependence of 4-methyl sterol oxidase.",
+        "journal": "J. Biol. Chem. 256 (1981) 4822-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7228857]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kawata S",
+          "Trzaskos JM",
+          "Gaylor JL."
+        ],
+        "title": "Affinity chromatography of microsomal enzymes on immobilized detergent-solubilized cytochrome b5.",
+        "journal": "J. Biol. Chem. 261 (1986) 3790-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:3949790]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pascal S",
+          "Taton M",
+          "Rahier A."
+        ],
+        "title": "Plant sterol biosynthesis. Identification and characterization of two distinct microsomal oxidative enzymatic systems involved in sterol C4-demethylation.",
+        "journal": "J. Biol. Chem. 268 (1993) 11639-54.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:8505296]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rahier A",
+          "Smith M",
+          "Taton M."
+        ],
+        "title": "The role of cytochrome b5 in 4alpha-methyl-oxidation and C5(6) desaturation of plant sterol precursors.",
+        "journal": "Biochem. Biophys. Res. Commun. 236 (1997) 434-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:9240456]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

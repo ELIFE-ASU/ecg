@@ -1,0 +1,606 @@
+[
+  {
+    "entry_id": "1.14.12.19",
+    "name": "3-phenylpropanoate dioxygenase",
+    "names": [
+      "3-phenylpropanoate dioxygenase",
+      "HcaA1A2CD",
+      "Hca dioxygenase",
+      "3-phenylpropionate dioxygenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of two atoms of oxygen into the other donor"
+    ],
+    "sysname": "3-phenylpropanoate,NADH:oxygen oxidoreductase (2,3-hydroxylating)",
+    "reaction": "(1) 3-phenylpropanoate + NADH + H+ + O2 = 3-(cis-5,6-dihydroxycyclohexa-1,3-dien-1-yl)propanoate + NAD+ [RN:R06782]; (2) (2E)-3-phenylprop-2-enoate + NADH + H+ + O2 = (2E)-3-(2,3-dihydroxyphenyl)prop-2-enoate + NAD+",
+    "all_reac": "R06782; (other) R06783",
+    "iubmb_reactions": [
+      "R06782"
+    ],
+    "kegg_reactions": [
+      "R06783"
+    ],
+    "substrates": [
+      "3-phenylpropanoate",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(2E)-3-phenylprop-2-enoate [CPD:C00423]"
+    ],
+    "products": [
+      "3-(cis-5,6-dihydroxycyclohexa-1,3-dien-1-yl)propanoate [CPD:C11588]",
+      "NAD+ [CPD:C00003]",
+      "(2E)-3-(2,3-dihydroxyphenyl)prop-2-enoate [CPD:C12623]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme catalyses a step in the pathway of phenylpropanoid compounds degradation. It catalyses the insertion of both atoms of molecular oxygen into positions 2 and 3 of the phenyl ring of 3-phenylpropanoate or (2E)-3-phenylprop-2-enoate.",
+    "pathways": {
+      "ec00360": "Phenylalanine metabolism",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K05708": "3-phenylpropionate/trans-cinnamate dioxygenase subunit alpha",
+      "K05709": "3-phenylpropionate/trans-cinnamate dioxygenase subunit beta"
+    },
+    "genes": {
+      "eco": [
+        "b2538",
+        "b2539"
+      ],
+      "ecj": [
+        "JW2522",
+        "JW2523"
+      ],
+      "ecd": [
+        "ECDH10B_2705",
+        "ECDH10B_2706"
+      ],
+      "ebw": [
+        "BWG_2302",
+        "BWG_2303"
+      ],
+      "ecok": [
+        "ECMDS42_2082",
+        "ECMDS42_2083"
+      ],
+      "ece": [
+        "Z3809",
+        "Z3810"
+      ],
+      "ecs": [
+        "ECs3404",
+        "ECs3405"
+      ],
+      "ecf": [
+        "ECH74115_3771"
+      ],
+      "etw": [
+        "ECSP_3482",
+        "ECSP_3483"
+      ],
+      "elx": [
+        "CDCO157_3171",
+        "CDCO157_3172"
+      ],
+      "eoj": [
+        "ECO26_3585",
+        "ECO26_3586"
+      ],
+      "eoi": [
+        "ECO111_3262",
+        "ECO111_3263"
+      ],
+      "eoh": [
+        "ECO103_3055"
+      ],
+      "eok": [
+        "G2583_3068",
+        "G2583_3069"
+      ],
+      "elr": [
+        "ECO55CA74_15185",
+        "ECO55CA74_15190"
+      ],
+      "ecx": [
+        "EcHS_A2690",
+        "EcHS_A2691"
+      ],
+      "ecw": [
+        "EcE24377A_2824"
+      ],
+      "ecm": [
+        "EcSMS35_2691",
+        "EcSMS35_2692"
+      ],
+      "ecy": [
+        "ECSE_2825",
+        "ECSE_2826"
+      ],
+      "ecr": [
+        "ECIAI1_2590",
+        "ECIAI1_2591"
+      ],
+      "eck": [
+        "EC55989_2824",
+        "EC55989_2825"
+      ],
+      "ect": [
+        "ECIAI39_2739",
+        "ECIAI39_2740"
+      ],
+      "eoc": [
+        "CE10_2970",
+        "CE10_2971"
+      ],
+      "eum": [
+        "ECUMN_2858",
+        "ECUMN_2859"
+      ],
+      "elo": [
+        "EC042_2742",
+        "EC042_2743"
+      ],
+      "elh": [
+        "ETEC_2695",
+        "ETEC_2696"
+      ],
+      "eso": [
+        "O3O_18925",
+        "O3O_18930"
+      ],
+      "esm": [
+        "O3M_06765",
+        "O3M_06770"
+      ],
+      "esl": [
+        "O3K_06720",
+        "O3K_06725"
+      ],
+      "ecl": [
+        "EcolC_1138",
+        "EcolC_1139"
+      ],
+      "ebr": [
+        "ECB_02430",
+        "ECB_02431"
+      ],
+      "ebd": [
+        "ECBD_1145",
+        "ECBD_1146"
+      ],
+      "eko": [
+        "EKO11_1194",
+        "EKO11_1195"
+      ],
+      "ekf": [
+        "KO11_10125",
+        "KO11_10130"
+      ],
+      "edh": [
+        "EcDH1_1129",
+        "EcDH1_1130"
+      ],
+      "edj": [
+        "ECDH1ME8569_2465",
+        "ECDH1ME8569_2466"
+      ],
+      "eun": [
+        "UMNK88_3191",
+        "UMNK88_3192"
+      ],
+      "elw": [
+        "ECW_m2764",
+        "ECW_m2765"
+      ],
+      "ell": [
+        "WFL_13535",
+        "WFL_13540"
+      ],
+      "elp": [
+        "P12B_c2638",
+        "P12B_c2639"
+      ],
+      "ebl": [
+        "ECD_02430",
+        "ECD_02431"
+      ],
+      "ebe": [
+        "B21_02394",
+        "B21_02395"
+      ],
+      "ecoa": [
+        "APECO78_16420",
+        "APECO78_16425"
+      ],
+      "ecol": [
+        "LY180_13020",
+        "LY180_13025"
+      ],
+      "ecoo": [
+        "ECRM13514_3370",
+        "ECRM13514_3371"
+      ],
+      "ecoh": [
+        "ECRM13516_3226",
+        "ECRM13516_3227"
+      ],
+      "sfl": [
+        "SF2585",
+        "SF2586"
+      ],
+      "sfx": [
+        "S2757",
+        "S2758"
+      ],
+      "sfv": [
+        "SFV_2586",
+        "SFV_2587"
+      ],
+      "sfe": [
+        "SFxv_2841",
+        "SFxv_2842"
+      ],
+      "sfn": [
+        "SFy_3672",
+        "SFy_3673"
+      ],
+      "sfs": [
+        "SFyv_3749",
+        "SFyv_3750"
+      ],
+      "sft": [
+        "NCTC1_02841",
+        "NCTC1_02842"
+      ],
+      "ssn": [
+        "SSON_2620",
+        "SSON_2621"
+      ],
+      "sbo": [
+        "SBO_2562",
+        "SBO_2563"
+      ],
+      "shq": [
+        "A0259_16415",
+        "A0259_16420"
+      ],
+      "kpv": [
+        "KPNIH29_19720",
+        "KPNIH29_19725"
+      ],
+      "cfd": [
+        "CFNIH1_24125",
+        "CFNIH1_24130"
+      ],
+      "cwe": [
+        "CO701_05135",
+        "CO701_05140"
+      ],
+      "cif": [
+        "AL515_17210",
+        "AL515_17215"
+      ],
+      "kgo": [
+        "CEW81_06275"
+      ],
+      "ebf": [
+        "D782_1130",
+        "D782_1131"
+      ],
+      "sfw": [
+        "WN53_15140",
+        "WN53_15145"
+      ],
+      "sfg": [
+        "AV650_10680",
+        "AV650_10685"
+      ],
+      "plu": [
+        "plu2204",
+        "plu2205"
+      ],
+      "pay": [
+        "PAU_02356",
+        "PAU_02357"
+      ],
+      "ptt": [
+        "VY86_20035",
+        "VY86_20040"
+      ],
+      "vna": [
+        "PN96_06440",
+        "PN96_06445"
+      ],
+      "vej": [
+        "VEJY3_06605",
+        "VEJY3_06610"
+      ],
+      "vfu": [
+        "vfu_A01965",
+        "vfu_A01966"
+      ],
+      "aei": [
+        "AOY20_01945",
+        "AOY20_01950"
+      ],
+      "asj": [
+        "AsACE_CH00358",
+        "AsACE_CH00359"
+      ],
+      "cyq": [
+        "Q91_0870",
+        "Q91_2056",
+        "Q91_2174"
+      ],
+      "cza": [
+        "CYCME_0248",
+        "CYCME_0369"
+      ],
+      "cyy": [
+        "CPC19_01935",
+        "CPC19_02540"
+      ],
+      "woc": [
+        "BA177_04185"
+      ],
+      "gbi": [
+        "PG2T_03650",
+        "PG2T_03670",
+        "PG2T_10655",
+        "PG2T_11305",
+        "PG2T_14655"
+      ],
+      "aql": [
+        "BXU06_16230",
+        "BXU06_16235"
+      ],
+      "bcen": [
+        "DM39_1983"
+      ],
+      "bdf": [
+        "WI26_30250",
+        "WI26_30255"
+      ],
+      "bpla": [
+        "bpln_1g12620"
+      ],
+      "afa": [
+        "UZ73_04210",
+        "UZ73_04215"
+      ],
+      "del": [
+        "DelCs14_1743"
+      ],
+      "rbu": [
+        "PG1C_02395"
+      ],
+      "mbd": [
+        "MEBOL_002187"
+      ],
+      "cfus": [
+        "CYFUS_004269"
+      ],
+      "nar": [
+        "Saro_3840"
+      ],
+      "npp": [
+        "PP1Y_AT31297"
+      ],
+      "sphp": [
+        "LH20_03925"
+      ],
+      "swi": [
+        "Swit_0890"
+      ],
+      "aay": [
+        "WYH_01869"
+      ],
+      "pnp": [
+        "IJ22_07010"
+      ],
+      "msa": [
+        "Mycsm_01912",
+        "Mycsm_01988"
+      ],
+      "mva": [
+        "Mvan_4415"
+      ],
+      "mab": [
+        "MAB_4370c"
+      ],
+      "may": [
+        "LA62_22205"
+      ],
+      "mabo": [
+        "NF82_21895"
+      ],
+      "maz": [
+        "LA61_22100"
+      ],
+      "mft": [
+        "XA26_16860"
+      ],
+      "cdr": [
+        "CDHC03_1952"
+      ],
+      "caz": [
+        "CARG_03210",
+        "CARG_03270"
+      ],
+      "cii": [
+        "CIMIT_11730"
+      ],
+      "cmv": [
+        "CMUST_15080"
+      ],
+      "nfr": [
+        "ERS450000_00303"
+      ],
+      "nno": [
+        "NONO_c29020"
+      ],
+      "reb": [
+        "XU06_31885"
+      ],
+      "req": [
+        "REQ_35060"
+      ],
+      "rav": [
+        "AAT18_09365"
+      ],
+      "rrz": [
+        "CS378_24180"
+      ],
+      "gor": [
+        "KTR9_1265"
+      ],
+      "dtm": [
+        "BJL86_0371"
+      ],
+      "scb": [
+        "SCAB_2191"
+      ],
+      "stsi": [
+        "A4E84_36430"
+      ],
+      "mio": [
+        "AOA12_18550"
+      ],
+      "nae": [
+        "BHE16_09185"
+      ],
+      "fri": [
+        "FraEuI1c_4097"
+      ],
+      "tro": [
+        "trd_A0341"
+      ],
+      "sai": [
+        "Saci_2059"
+      ],
+      "sacr": [
+        "SacRon12I_10260"
+      ],
+      "sacs": [
+        "SUSAZ_05365",
+        "SUSAZ_09335"
+      ],
+      "sis": [
+        "LS215_0748"
+      ],
+      "sia": [
+        "M1425_0846"
+      ],
+      "sim": [
+        "M1627_0911"
+      ],
+      "sid": [
+        "M164_0864"
+      ],
+      "siy": [
+        "YG5714_0780"
+      ],
+      "sii": [
+        "LD85_0977"
+      ],
+      "sih": [
+        "SiH_0732"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.12.19"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.12.19"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.12.19"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.14.12.19"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.12.19"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Diaz E",
+          "Ferrandez A",
+          "Garcia JL."
+        ],
+        "title": "Characterization of the hca cluster encoding the dioxygenolytic pathway for initial catabolism of 3-phenylpropionic acid in Escherichia coli K-12.",
+        "journal": "J. Bacteriol. 180 (1998) 2915-23.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:9603882]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Burlingame R",
+          "Chapman PJ."
+        ],
+        "title": "Catabolism of phenylpropionic acid and its 3-hydroxy derivative by Escherichia coli.",
+        "journal": "J. Bacteriol. 155 (1983) 113-21.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6345502]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

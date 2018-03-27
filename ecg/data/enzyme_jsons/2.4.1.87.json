@@ -1,0 +1,457 @@
+[
+  {
+    "entry_id": "2.4.1.87",
+    "name": "N-acetyllactosaminide 3-alpha-galactosyltransferase",
+    "names": [
+      "N-acetyllactosaminide 3-alpha-galactosyltransferase",
+      "alpha-galactosyltransferase",
+      "UDP-Gal:beta-D-Gal(1,4)-D-GlcNAc alpha(1,3)-galactosyltransferase",
+      "UDP-Gal:N-acetyllactosaminide alpha(1,3)-galactosyltransferase",
+      "UDP-Gal:N-acetyllactosaminide alpha-1,3-D-galactosyltransferase",
+      "UDP-Gal:Galbeta1->4GlcNAc-R alpha1->3-galactosyltransferase",
+      "UDP-galactose-acetyllactosamine alpha-D-galactosyltransferase",
+      "UDPgalactose:beta-D-galactosyl-beta-1,4-N-acetyl-D-glucosaminyl-glycopeptide alpha-1,3-D-galactosyltransferase",
+      "glucosaminylglycopeptide alpha-1,3-galactosyltransferase",
+      "uridine diphosphogalactose-acetyllactosamine alpha1->3-galactosyltransferase",
+      "uridine diphosphogalactose-acetyllactosamine galactosyltransferase",
+      "uridine diphosphogalactose-galactosylacetylglucosaminylgalactosylglucosylceramide galactosyltransferase",
+      "beta-D-galactosyl-N-acetylglucosaminylglycopeptide alpha-1,3-galactosyltransferase",
+      "UDP-galactose:N-acetyllactosaminide 3-alpha-D-galactosyltransferase",
+      "UDP-galactose:beta-D-galactosyl-1,4-beta-N-acetyl-D-glucosaminyl-R 3-alpha-D-galactosyltransferase",
+      "UDP-galactose:beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R 3-alpha-D-galactosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-alpha-D-galactose:beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R 3-alpha-D-galactosyltransferase",
+    "reaction": "UDP-alpha-D-galactose + beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R = UDP + alpha-D-galactosyl-(1->3)-beta-D-galactosyl-(1->4)-beta-N-acetylglucosaminyl-R (where R can be OH, an oligosaccharide or a glycoconjugate) [RN:R02791]",
+    "all_reac": "R02791 > R04531 R05978(G) R06145(G) R06169(G); (other) R11320(G)",
+    "iubmb_reactions": [
+      "R02791 > R04531 R05978(G) R06145(G) R06169(G)"
+    ],
+    "kegg_reactions": [
+      "R11320(G)"
+    ],
+    "substrates": [
+      "UDP-alpha-D-galactose [CPD:C00052]",
+      "beta-D-galactosyl-(1->4)-beta-N-acetyl-D-glucosaminyl-R"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "alpha-D-galactosyl-(1->3)-beta-D-galactosyl-(1->4)-beta-N-acetylglucosaminyl-R [CPD:C04855]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Acts on beta-galactosyl-1,4-N-acetylglucosaminyl termini on asialo-alpha1-acid glycoprotein and N-acetyllactosamine (beta-D-galactosyl-1,4-N-acetyl-beta-D-glucosamine), but not on 2'-fucosylated-N-acetyllactosamine. The non-reducing terminal N-acetyllactosamine residues of glycoproteins can also act as acceptor. Now includes EC 2.4.1.124 and EC 2.4.1.151.",
+    "pathways": {
+      "ec00601": "Glycosphingolipid biosynthesis - lacto and neolacto series",
+      "ec00603": "Glycosphingolipid biosynthesis - globo and isoglobo series"
+    },
+    "orthologs": {
+      "K00743": "N-acetyllactosaminide 3-alpha-galactosyltransferase",
+      "K20736": "alpha-1,3-galactosyltransferase 2"
+    },
+    "genes": {
+      "hsa": [
+        "127550"
+      ],
+      "ptr": [
+        "104007284"
+      ],
+      "pps": [
+        "100975171"
+      ],
+      "ggo": [
+        "101137879"
+      ],
+      "pon": [
+        "100431438",
+        "100433669"
+      ],
+      "nle": [
+        "100586880"
+      ],
+      "mcc": [
+        "711045"
+      ],
+      "mcf": [
+        "102136396"
+      ],
+      "csab": [
+        "103225947"
+      ],
+      "rro": [
+        "104655865",
+        "104677306"
+      ],
+      "rbb": [
+        "108537074",
+        "108537279"
+      ],
+      "cjc": [
+        "100390928",
+        "100414894"
+      ],
+      "sbq": [
+        "101033629",
+        "101038827"
+      ],
+      "mmu": [
+        "14594",
+        "215493"
+      ],
+      "rno": [
+        "171553",
+        "246766"
+      ],
+      "cge": [
+        "100754535",
+        "100774283"
+      ],
+      "ngi": [
+        "103730905",
+        "103734487"
+      ],
+      "hgl": [
+        "101699219",
+        "101705531"
+      ],
+      "ccan": [
+        "109686855",
+        "109692479"
+      ],
+      "ocu": [
+        "100339429",
+        "100348435"
+      ],
+      "tup": [
+        "102483559",
+        "102502371"
+      ],
+      "cfa": [
+        "487298",
+        "491357"
+      ],
+      "aml": [
+        "100479995",
+        "100482234"
+      ],
+      "umr": [
+        "103670365"
+      ],
+      "oro": [
+        "101365724"
+      ],
+      "fca": [
+        "101084042",
+        "493877"
+      ],
+      "ptg": [
+        "102965067",
+        "107180570"
+      ],
+      "aju": [
+        "106973174",
+        "106986621"
+      ],
+      "bta": [
+        "281780",
+        "617693"
+      ],
+      "bom": [
+        "102276118",
+        "102282898"
+      ],
+      "biu": [
+        "109566417",
+        "109575981"
+      ],
+      "phd": [
+        "102317168",
+        "102327203"
+      ],
+      "chx": [
+        "102168270",
+        "108637492"
+      ],
+      "oas": [
+        "101103704",
+        "443282"
+      ],
+      "ssc": [
+        "100739829",
+        "396733"
+      ],
+      "cfr": [
+        "102516495",
+        "102516521"
+      ],
+      "cdk": [
+        "105104406"
+      ],
+      "bacu": [
+        "103004808",
+        "103006673"
+      ],
+      "lve": [
+        "103079826",
+        "103089836"
+      ],
+      "ecb": [
+        "100067589"
+      ],
+      "epz": [
+        "103555510",
+        "103557792"
+      ],
+      "eai": [
+        "106824198",
+        "106829012"
+      ],
+      "myb": [
+        "102261921",
+        "106728178"
+      ],
+      "myd": [
+        "102751930",
+        "102753567"
+      ],
+      "hai": [
+        "109385732",
+        "109390838"
+      ],
+      "rss": [
+        "109446559",
+        "109447168"
+      ],
+      "pale": [
+        "102885392",
+        "102892029"
+      ],
+      "lav": [
+        "100655343",
+        "100671107"
+      ],
+      "tmu": [
+        "101352341"
+      ],
+      "mdo": [
+        "100016105"
+      ],
+      "shr": [
+        "100933356"
+      ],
+      "oaa": [
+        "100089476"
+      ],
+      "pss": [
+        "102447976"
+      ],
+      "cmy": [
+        "102941601"
+      ],
+      "acs": [
+        "103281997"
+      ],
+      "pvt": [
+        "110078804"
+      ],
+      "pbi": [
+        "103058654"
+      ],
+      "gja": [
+        "107118477"
+      ],
+      "npr": [
+        "108793736"
+      ],
+      "tru": [
+        "101078261"
+      ],
+      "tng": [
+        "GSTEN00027557G001"
+      ],
+      "lco": [
+        "104919360"
+      ],
+      "ncc": [
+        "104948928"
+      ],
+      "mze": [
+        "101467270",
+        "101473934"
+      ],
+      "ola": [
+        "101158589",
+        "101158846",
+        "101159083",
+        "101159492",
+        "110014315"
+      ],
+      "xma": [
+        "102225862"
+      ],
+      "pret": [
+        "103462901",
+        "103464476"
+      ],
+      "csem": [
+        "103378785",
+        "103385676"
+      ],
+      "lcf": [
+        "108899900"
+      ],
+      "bpec": [
+        "110168737"
+      ],
+      "sasa": [
+        "106565705",
+        "106582820"
+      ],
+      "els": [
+        "105017413"
+      ],
+      "sfm": [
+        "108918234",
+        "108924914"
+      ],
+      "lcm": [
+        "102357128"
+      ],
+      "cmk": [
+        "103181344"
+      ],
+      "aae": [
+        "aq_516"
+      ],
+      "afu": [
+        "AF_1728"
+      ],
+      "afg": [
+        "AFULGI_00019790"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.87"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.87"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.87"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.87"
+      ],
+      "CAS": [
+        "128449-51-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Basu M",
+          "Basu S."
+        ],
+        "title": "Enzymatic synthesis of a blood group B-related pentaglycosylceramide by an alpha-galactosyltransferase from rabbit bone marrow.",
+        "journal": "J. Biol. Chem. 248 (1973) 1700-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4632915]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Blanken WM",
+          "Van den Eijnden DH."
+        ],
+        "title": "Biosynthesis of terminal Gal alpha 1----3Gal beta 1----4GlcNAc-R oligosaccharide sequences on glycoconjugates. Purification and acceptor specificity of a UDP-Gal:N-acetyllactosaminide alpha 1----3-galactosyltransferase from calf thymus.",
+        "journal": "J. Biol. Chem. 260 (1985) 12927-34.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:3932335]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Blake DA",
+          "Goldstein IJ."
+        ],
+        "title": "An alpha-D-galactosyltransferase activity in Ehrlich ascites tumor cells. Biosynthesis and characterization of a trisaccharide (alpha-D-galactose-(1 goes to 3)-N-acetyllactosamine).",
+        "journal": "J. Biol. Chem. 256 (1981) 5387-93.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6787040]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

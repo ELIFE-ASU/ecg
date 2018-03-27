@@ -1,0 +1,786 @@
+[
+  {
+    "entry_id": "1.14.14.18",
+    "name": "heme oxygenase (biliverdin-producing)",
+    "names": [
+      "heme oxygenase (biliverdin-producing)",
+      "ORP33 proteins",
+      "haem oxygenase (ambiguous)",
+      "heme oxygenase (decyclizing) (ambiguous)",
+      "heme oxidase (ambiguous)",
+      "haem oxidase (ambiguous)",
+      "heme oxygenase (ambiguous)",
+      "heme,hydrogen-donor:oxygen oxidoreductase (alpha-methene-oxidizing, hydroxylating)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "protoheme,NADPH---hemoprotein reductase:oxygen oxidoreductase (alpha-methene-oxidizing, hydroxylating)",
+    "reaction": "protoheme + 3 [reduced NADPH---hemoprotein reductase] + 3 O2 = biliverdin + Fe2+ + CO + 3 [oxidized NADPH---hemoprotein reductase] + 3 H2O [RN:R00311]",
+    "all_reac": "R00311",
+    "iubmb_reactions": [
+      "R00311"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "protoheme [CPD:C00032]",
+      "[reduced NADPH---hemoprotein reductase] [CPD:C03024]",
+      "O2 [CPD:C00007]"
+    ],
+    "products": [
+      "biliverdin [CPD:C00500]",
+      "Fe2+ [CPD:C14818]",
+      "CO [CPD:C00237]",
+      "[oxidized NADPH---hemoprotein reductase] [CPD:C03161]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This mammalian enzyme participates in the degradation of heme. The terminal oxygen atoms that are incorporated into the carbonyl groups of pyrrole rings A and B of biliverdin are derived from two separate oxygen molecules [4]. The third oxygen molecule provides the oxygen atom that converts the alpha-carbon to CO. The enzyme requires NAD(P)H and EC 1.6.2.4, NADPH---hemoprotein reductase. cf. EC 1.14.15.20, heme oxygenase (biliverdin-producing, ferredoxin).",
+    "pathways": {
+      "ec00860": "Porphyrin and chlorophyll metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K00510": "heme oxygenase 1",
+      "K21418": "heme oxygenase 2"
+    },
+    "genes": {
+      "hsa": [
+        "3162",
+        "3163"
+      ],
+      "ptr": [
+        "453880",
+        "470195"
+      ],
+      "pps": [
+        "100977821",
+        "100995961"
+      ],
+      "ggo": [
+        "101149599",
+        "101152785"
+      ],
+      "pon": [
+        "100173339",
+        "100451286"
+      ],
+      "nle": [
+        "100587046",
+        "100599593"
+      ],
+      "mcc": [
+        "705461",
+        "719266"
+      ],
+      "mcf": [
+        "101926565",
+        "102143766"
+      ],
+      "csab": [
+        "103223230",
+        "103227650"
+      ],
+      "rro": [
+        "104654687",
+        "104682468"
+      ],
+      "rbb": [
+        "108538293",
+        "108540867"
+      ],
+      "cjc": [
+        "100395145",
+        "100405992",
+        "100414343"
+      ],
+      "sbq": [
+        "101039608",
+        "101053852"
+      ],
+      "mmu": [
+        "15368",
+        "15369"
+      ],
+      "rno": [
+        "24451",
+        "79239"
+      ],
+      "cge": [
+        "100756872",
+        "100773727"
+      ],
+      "ngi": [
+        "103742105",
+        "103744546"
+      ],
+      "hgl": [
+        "101708868",
+        "101718879"
+      ],
+      "ccan": [
+        "109692950",
+        "109694248"
+      ],
+      "ocu": [
+        "100008919",
+        "100009523"
+      ],
+      "tup": [
+        "102472031",
+        "102485781"
+      ],
+      "cfa": [
+        "442987",
+        "479864"
+      ],
+      "aml": [
+        "100472787",
+        "100479189"
+      ],
+      "umr": [
+        "103668554",
+        "103676557"
+      ],
+      "oro": [
+        "101364369"
+      ],
+      "fca": [
+        "101092621",
+        "101093823"
+      ],
+      "ptg": [
+        "102948800",
+        "102960470"
+      ],
+      "aju": [
+        "106978811",
+        "106981079"
+      ],
+      "bta": [
+        "510243",
+        "513221"
+      ],
+      "bom": [
+        "102274047",
+        "102281265"
+      ],
+      "biu": [
+        "109559493",
+        "109578491"
+      ],
+      "phd": [
+        "102322748",
+        "102333615"
+      ],
+      "chx": [
+        "100860951",
+        "102189453"
+      ],
+      "oas": [
+        "101102279",
+        "101120910"
+      ],
+      "ssc": [
+        "396622",
+        "445512"
+      ],
+      "cfr": [
+        "102503731",
+        "102505023"
+      ],
+      "cdk": [
+        "105097386",
+        "105099820"
+      ],
+      "bacu": [
+        "103012514",
+        "103018426"
+      ],
+      "lve": [
+        "103077914",
+        "103090745"
+      ],
+      "ecb": [
+        "100066114",
+        "100069058"
+      ],
+      "epz": [
+        "103543240",
+        "103553961"
+      ],
+      "eai": [
+        "106825719",
+        "106826005"
+      ],
+      "myb": [
+        "102248030",
+        "102253515"
+      ],
+      "myd": [
+        "102764042",
+        "102767690"
+      ],
+      "hai": [
+        "109377639",
+        "109392113"
+      ],
+      "rss": [
+        "109445766",
+        "109460746"
+      ],
+      "pale": [
+        "102880347",
+        "102882902"
+      ],
+      "lav": [
+        "100662132",
+        "100673521"
+      ],
+      "tmu": [
+        "101351050"
+      ],
+      "mdo": [
+        "100019502",
+        "100024355",
+        "100030714"
+      ],
+      "shr": [
+        "100925365",
+        "100928954"
+      ],
+      "oaa": [
+        "100078850",
+        "107547784"
+      ],
+      "gga": [
+        "396287",
+        "416663"
+      ],
+      "mgp": [
+        "100541778",
+        "100551243"
+      ],
+      "cjo": [
+        "107314345",
+        "107320929"
+      ],
+      "apla": [
+        "101801310",
+        "101805057"
+      ],
+      "acyg": [
+        "106033412",
+        "106035937"
+      ],
+      "tgu": [
+        "100190323",
+        "100226348"
+      ],
+      "gfr": [
+        "102032618",
+        "102043181"
+      ],
+      "fab": [
+        "101817237",
+        "101817317"
+      ],
+      "phi": [
+        "102101610",
+        "102104458"
+      ],
+      "pmaj": [
+        "107205203",
+        "107211143"
+      ],
+      "ccw": [
+        "104684958",
+        "104696269"
+      ],
+      "fpg": [
+        "101915244",
+        "101921302"
+      ],
+      "fch": [
+        "102047339",
+        "102055466"
+      ],
+      "clv": [
+        "102084894",
+        "106145636"
+      ],
+      "egz": [
+        "104134285"
+      ],
+      "aam": [
+        "106482411",
+        "106488415"
+      ],
+      "asn": [
+        "102368811",
+        "102373399"
+      ],
+      "amj": [
+        "102573866",
+        "102575746"
+      ],
+      "pss": [
+        "102446230",
+        "102462727"
+      ],
+      "cmy": [
+        "102940527",
+        "102942411"
+      ],
+      "cpic": [
+        "101931937",
+        "101950994"
+      ],
+      "acs": [
+        "100555210"
+      ],
+      "pvt": [
+        "110075944",
+        "110089101"
+      ],
+      "pbi": [
+        "103054508",
+        "103065892"
+      ],
+      "gja": [
+        "107109317",
+        "107109423"
+      ],
+      "xla": [
+        "398965",
+        "444101",
+        "734976"
+      ],
+      "xtr": [
+        "100488303",
+        "780096"
+      ],
+      "npr": [
+        "108793696",
+        "108796525"
+      ],
+      "dre": [
+        "100002875",
+        "100329531",
+        "402970",
+        "791518"
+      ],
+      "srx": [
+        "107705926",
+        "107718627",
+        "107719331",
+        "107728431"
+      ],
+      "sanh": [
+        "107670922",
+        "107676725",
+        "107695708",
+        "107703893"
+      ],
+      "sgh": [
+        "107559231",
+        "107563361",
+        "107568388",
+        "107601585"
+      ],
+      "ccar": [
+        "109057953"
+      ],
+      "ipu": [
+        "100528875",
+        "108272923",
+        "108272926",
+        "108276515",
+        "108278324"
+      ],
+      "amex": [
+        "103022889",
+        "103032679",
+        "103044464"
+      ],
+      "tru": [
+        "101070079",
+        "101074254"
+      ],
+      "tng": [
+        "GSTEN00011626G001",
+        "GSTEN00018521G001"
+      ],
+      "lco": [
+        "104922039",
+        "104925696",
+        "104926667",
+        "104935172"
+      ],
+      "ncc": [
+        "104950512",
+        "104965605"
+      ],
+      "mze": [
+        "101464072",
+        "101468730",
+        "101470476",
+        "101479559"
+      ],
+      "ola": [
+        "101163641",
+        "101167630",
+        "101174976",
+        "101175163"
+      ],
+      "xma": [
+        "102220354",
+        "102223107",
+        "102228740",
+        "102233187"
+      ],
+      "pret": [
+        "103468389",
+        "103468411"
+      ],
+      "csem": [
+        "103393059",
+        "103393699"
+      ],
+      "lcf": [
+        "108875822",
+        "108886150",
+        "108898657"
+      ],
+      "hcq": [
+        "109511094",
+        "109521440",
+        "109529984"
+      ],
+      "bpec": [
+        "110167460",
+        "110172090",
+        "110172617"
+      ],
+      "sasa": [
+        "106564458",
+        "106590030",
+        "106590330",
+        "106601306",
+        "106606500",
+        "106607056"
+      ],
+      "els": [
+        "105006006",
+        "105012149",
+        "105013172"
+      ],
+      "sfm": [
+        "108928847",
+        "108939753"
+      ],
+      "lcm": [
+        "102354266",
+        "102360501"
+      ],
+      "cmk": [
+        "103178752",
+        "103189669"
+      ],
+      "cin": [
+        "100185311"
+      ],
+      "dme": [
+        "Dmel_CG14716"
+      ],
+      "dpo": [
+        "Dpse_GA13198"
+      ],
+      "dan": [
+        "Dana_GF18390"
+      ],
+      "der": [
+        "Dere_GG18355"
+      ],
+      "dpe": [
+        "Dper_GL12384"
+      ],
+      "dse": [
+        "Dsec_GM23969"
+      ],
+      "dsi": [
+        "Dsimw501_GD18775"
+      ],
+      "dwi": [
+        "Dwil_GK11097"
+      ],
+      "dya": [
+        "Dyak_GE24194"
+      ],
+      "dgr": [
+        "Dgri_GH18266"
+      ],
+      "dmo": [
+        "Dmoj_GI24074"
+      ],
+      "dvi": [
+        "Dvir_GJ10893"
+      ],
+      "mde": [
+        "101894027"
+      ],
+      "aga": [
+        "AgaP_AGAP003975"
+      ],
+      "aag": [
+        "5570153"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ007246"
+      ],
+      "ame": [
+        "494506"
+      ],
+      "bim": [
+        "100743864"
+      ],
+      "bter": [
+        "100651999"
+      ],
+      "soc": [
+        "105203060"
+      ],
+      "aec": [
+        "105154734"
+      ],
+      "acep": [
+        "105626739"
+      ],
+      "cfo": [
+        "105251022"
+      ],
+      "nvi": [
+        "100115195"
+      ],
+      "bmor": [
+        "732895"
+      ],
+      "dpl": [
+        "KGM_210306"
+      ],
+      "pxy": [
+        "105384832",
+        "105394329"
+      ],
+      "api": [
+        "100162545"
+      ],
+      "phu": [
+        "Phum_PHUM417690"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_222567"
+      ],
+      "obi": [
+        "106879648"
+      ],
+      "nve": [
+        "NEMVE_v1g25425"
+      ],
+      "adf": [
+        "107331736"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.18"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.18"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.18"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.18"
+      ],
+      "CAS": [
+        "9059-22-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Maines MD",
+          "Ibrahim NG",
+          "Kappas A."
+        ],
+        "title": "Solubilization and partial purification of heme oxygenase from rat liver.",
+        "journal": "J. Biol. Chem. 252 (1977) 5900-3.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:18477]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sunderman FW Jr",
+          "Downs JR",
+          "Reid MC",
+          "Bibeau LM."
+        ],
+        "title": "Gas-chromatographic assay for heme oxygenase activity.",
+        "journal": "Clin. Chem. 28 (1982) 2026-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:6897023]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yoshida T",
+          "Takahashi S",
+          "Kikuchi G."
+        ],
+        "title": "Partial purification and reconstitution of the heme oxygenase system from pig spleen microsomes.",
+        "journal": "J. Biochem. (Tokyo). 75 (1974) 1187-91.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:4370250]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Noguchi M",
+          "Yoshida T",
+          "Kikuchi G."
+        ],
+        "title": "Specific requirement of NADPH-cytochrome c reductase for the microsomal heme oxygenase reaction yielding biliverdin IX alpha.",
+        "journal": "FEBS. Lett. 98 (1979) 281-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:105935]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lad L",
+          "Schuller DJ",
+          "Shimizu H",
+          "Friedman J",
+          "Li H",
+          "Ortiz de Montellano PR",
+          "Poulos TL."
+        ],
+        "title": "Comparison of the heme-free and -bound crystal structures of human heme oxygenase-1.",
+        "journal": "J. Biol. Chem. 278 (2003) 7834-43.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:12500973]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

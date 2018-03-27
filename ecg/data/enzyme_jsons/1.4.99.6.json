@@ -1,0 +1,1034 @@
+[
+  {
+    "entry_id": "1.4.99.6",
+    "name": "D-arginine dehydrogenase",
+    "names": [
+      "D-arginine dehydrogenase",
+      "D-amino-acid:(acceptor) oxidoreductase (deaminating)",
+      "D-amino-acid dehydrogenase",
+      "D-amino-acid:acceptor oxidoreductase (deaminating)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH2 group of donors;",
+      "With unknown physiological acceptors"
+    ],
+    "sysname": "D-arginine:acceptor oxidoreductase (deaminating)",
+    "reaction": "D-arginine + acceptor + H2O = 5-guanidino-2-oxopentanoate + NH3 + reduced acceptor (overall reaction) [RN:R11018]; (1a) D-arginine + acceptor = iminoarginine + reduced acceptor [RN:R11016]; (1b) iminoarginine + H2O = 5-guanidino-2-oxopentanoate + NH3 (spontaneous) [RN:R11017]",
+    "all_reac": "R11016 R11017 R11018; (other) R01342 R07166",
+    "iubmb_reactions": [
+      "R11016 R11017 R11018"
+    ],
+    "kegg_reactions": [
+      "R01342 R07166"
+    ],
+    "substrates": [
+      "D-arginine [CPD:C00792]",
+      "acceptor [CPD:C00028]",
+      "H2O [CPD:C00001]",
+      "iminoarginine [CPD:C21026]"
+    ],
+    "products": [
+      "5-guanidino-2-oxopentanoate [CPD:C03771]",
+      "NH3 [CPD:C00014]",
+      "reduced acceptor [CPD:C00030]",
+      "iminoarginine [CPD:C21026]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Contains a non-covalent FAD cofactor. The enzyme, which has been isolated from the bacterium Pseudomonas aeruginosa PAO1, forms with EC 1.4.1.25, L-arginine dehydrogenase, a two-enzyme complex involved in the racemization of D- and L-arginine. The enzyme has a broad substrate range and can act on most D-amino acids with the exception of D-glutamate and D-aspartate. However, activity is maximal with D-arginine and D-lysine. Not active on glycine.",
+    "pathways": {
+      "ec00472": "D-Arginine and D-ornithine metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K19746": "D-arginine dehydrogenase"
+    },
+    "genes": {
+      "snj": [
+        "A7E77_05470"
+      ],
+      "dji": [
+        "CH75_22885"
+      ],
+      "dja": [
+        "HY57_05670"
+      ],
+      "lrz": [
+        "BJI69_19345"
+      ],
+      "pae": [
+        "PA3863"
+      ],
+      "paev": [
+        "N297_3989"
+      ],
+      "paei": [
+        "N296_3989"
+      ],
+      "pau": [
+        "PA14_14010"
+      ],
+      "pap": [
+        "PSPA7_1242",
+        "PSPA7_2008"
+      ],
+      "pag": [
+        "PLES_11111"
+      ],
+      "paf": [
+        "PAM18_1075"
+      ],
+      "pnc": [
+        "NCGM2_5053"
+      ],
+      "paeb": [
+        "NCGM1900_1110"
+      ],
+      "pdk": [
+        "PADK2_05000"
+      ],
+      "psg": [
+        "G655_05380"
+      ],
+      "prp": [
+        "M062_20425"
+      ],
+      "paep": [
+        "PA1S_05505"
+      ],
+      "paer": [
+        "PA1R_gp1757"
+      ],
+      "paem": [
+        "U769_05540"
+      ],
+      "pael": [
+        "T223_05455"
+      ],
+      "paes": [
+        "SCV20265_1134"
+      ],
+      "paeu": [
+        "BN889_04294"
+      ],
+      "paeg": [
+        "AI22_28110"
+      ],
+      "paec": [
+        "M802_3987"
+      ],
+      "paeo": [
+        "M801_3855"
+      ],
+      "pmy": [
+        "Pmen_3567"
+      ],
+      "pmk": [
+        "MDS_3832"
+      ],
+      "pre": [
+        "PCA10_11010"
+      ],
+      "ppse": [
+        "BN5_1000"
+      ],
+      "palc": [
+        "A0T30_06950"
+      ],
+      "pcq": [
+        "PcP3B5_17690",
+        "PcP3B5_50450"
+      ],
+      "ppu": [
+        "PP_2246"
+      ],
+      "ppf": [
+        "Pput_3492"
+      ],
+      "ppg": [
+        "PputGB1_1877"
+      ],
+      "ppt": [
+        "PPS_1856"
+      ],
+      "ppb": [
+        "PPUBIRD1_3408"
+      ],
+      "ppi": [
+        "YSA_01272"
+      ],
+      "ppx": [
+        "T1E_5405"
+      ],
+      "ppuh": [
+        "B479_09190"
+      ],
+      "ppun": [
+        "PP4_35420"
+      ],
+      "ppud": [
+        "DW66_2104"
+      ],
+      "pmon": [
+        "X969_07145"
+      ],
+      "pmot": [
+        "X970_07120"
+      ],
+      "ppj": [
+        "RK21_03179"
+      ],
+      "pfl": [
+        "PFL_0805"
+      ],
+      "pprc": [
+        "PFLCHA0_c08160",
+        "PFLCHA0_c10630"
+      ],
+      "ppro": [
+        "PPC_0825",
+        "PPC_1081"
+      ],
+      "pfo": [
+        "Pfl01_0969"
+      ],
+      "pfe": [
+        "PSF113_4743"
+      ],
+      "pfc": [
+        "PflA506_2227"
+      ],
+      "pfn": [
+        "HZ99_11880"
+      ],
+      "pfw": [
+        "PF1751_v1c20440"
+      ],
+      "pfb": [
+        "VO64_5501"
+      ],
+      "pff": [
+        "PFLUOLIPICF726495"
+      ],
+      "pfx": [
+        "A7318_09930"
+      ],
+      "pman": [
+        "OU5_2436"
+      ],
+      "ptv": [
+        "AA957_03150"
+      ],
+      "pcg": [
+        "AXG94_09925"
+      ],
+      "pvr": [
+        "PverR02_12345"
+      ],
+      "pazo": [
+        "AYR47_18375"
+      ],
+      "pba": [
+        "PSEBR_a4581"
+      ],
+      "ppuu": [
+        "PputUW4_04462"
+      ],
+      "pdr": [
+        "H681_16740",
+        "H681_19280"
+      ],
+      "psk": [
+        "U771_12275"
+      ],
+      "pkc": [
+        "PKB_0988"
+      ],
+      "pch": [
+        "EY04_04565"
+      ],
+      "pcz": [
+        "PCL1606_50600"
+      ],
+      "pcp": [
+        "JM49_25080"
+      ],
+      "palk": [
+        "PSAKL28_08830",
+        "PSAKL28_17300"
+      ],
+      "psem": [
+        "TO66_05255"
+      ],
+      "psos": [
+        "POS17_0787",
+        "POS17_1041"
+      ],
+      "pkr": [
+        "AYO71_07585"
+      ],
+      "pfk": [
+        "PFAS1_16740"
+      ],
+      "panr": [
+        "A7J50_2220"
+      ],
+      "reh": [
+        "H16_B1130"
+      ],
+      "cnc": [
+        "CNE_2c10920"
+      ],
+      "rme": [
+        "Rmet_5086"
+      ],
+      "cbw": [
+        "RR42_m2259"
+      ],
+      "ccup": [
+        "BKK81_28350"
+      ],
+      "cup": [
+        "BKK80_28025"
+      ],
+      "cuu": [
+        "BKK79_33940"
+      ],
+      "bpt": [
+        "Bpet0809"
+      ],
+      "btrm": [
+        "SAMEA390648700389",
+        "SAMEA390648702048"
+      ],
+      "axy": [
+        "AXYL_01314"
+      ],
+      "axo": [
+        "NH44784_047341"
+      ],
+      "axn": [
+        "AX27061_2904"
+      ],
+      "axs": [
+        "LH59_13650"
+      ],
+      "axx": [
+        "ERS451415_02882"
+      ],
+      "adt": [
+        "APT56_14020"
+      ],
+      "ais": [
+        "BUW96_19695"
+      ],
+      "amim": [
+        "MIM_c13060"
+      ],
+      "cdn": [
+        "BN940_09291"
+      ],
+      "afa": [
+        "UZ73_18305"
+      ],
+      "rfr": [
+        "Rfer_4053"
+      ],
+      "rac": [
+        "RA876_14190"
+      ],
+      "rhy": [
+        "RD110_23300"
+      ],
+      "pol": [
+        "Bpro_1468"
+      ],
+      "aav": [
+        "Aave_2431"
+      ],
+      "ajs": [
+        "Ajs_2247"
+      ],
+      "dia": [
+        "Dtpsy_1627"
+      ],
+      "aaa": [
+        "Acav_2785"
+      ],
+      "ack": [
+        "C380_11235"
+      ],
+      "dac": [
+        "Daci_0166",
+        "Daci_0820"
+      ],
+      "del": [
+        "DelCs14_0168",
+        "DelCs14_5711"
+      ],
+      "dts": [
+        "BI380_20590",
+        "BI380_22575"
+      ],
+      "dhk": [
+        "BO996_02165",
+        "BO996_04170"
+      ],
+      "vap": [
+        "Vapar_1558"
+      ],
+      "vpe": [
+        "Varpa_1705"
+      ],
+      "vpd": [
+        "VAPA_1c16530"
+      ],
+      "vbo": [
+        "CKY39_09685"
+      ],
+      "ctt": [
+        "CtCNB1_4765"
+      ],
+      "ctes": [
+        "O987_28325"
+      ],
+      "cke": [
+        "B5M06_05675"
+      ],
+      "cser": [
+        "CCO03_17635"
+      ],
+      "lim": [
+        "L103DPR2_01068"
+      ],
+      "hyl": [
+        "LPB072_12625"
+      ],
+      "dpy": [
+        "BA022_05965"
+      ],
+      "hse": [
+        "Hsero_4377"
+      ],
+      "hsz": [
+        "ACP92_21860"
+      ],
+      "hht": [
+        "F506_04640"
+      ],
+      "hrb": [
+        "Hrubri_1178"
+      ],
+      "hee": [
+        "hmeg3_03710"
+      ],
+      "rge": [
+        "RGE_37740"
+      ],
+      "rbn": [
+        "RBXJA2T_15168"
+      ],
+      "miu": [
+        "ABE85_14445"
+      ],
+      "app": [
+        "CAP2UW1_0897"
+      ],
+      "mlo": [
+        "mll6667"
+      ],
+      "mln": [
+        "A9174_17330",
+        "A9174_30230"
+      ],
+      "mop": [
+        "Mesop_3325"
+      ],
+      "mam": [
+        "Mesau_03212"
+      ],
+      "mamo": [
+        "A6B35_10455"
+      ],
+      "meso": [
+        "BSQ44_03485",
+        "BSQ44_08185"
+      ],
+      "aak": [
+        "AA2016_2165"
+      ],
+      "six": [
+        "BSY16_1570"
+      ],
+      "ead": [
+        "OV14_a0498"
+      ],
+      "eah": [
+        "FA04_22630"
+      ],
+      "shz": [
+        "shn_06905"
+      ],
+      "bvv": [
+        "BHK69_09040"
+      ],
+      "rbm": [
+        "TEF_10460"
+      ],
+      "cbot": [
+        "ATE48_12685"
+      ],
+      "rli": [
+        "RLO149_c020760"
+      ],
+      "pye": [
+        "A6J80_12620",
+        "A6J80_12625"
+      ],
+      "psf": [
+        "PSE_p0308"
+      ],
+      "oar": [
+        "OA238_160p1280"
+      ],
+      "rhc": [
+        "RGUI_0875",
+        "RGUI_0876"
+      ],
+      "hat": [
+        "RC74_12900"
+      ],
+      "lap": [
+        "ACP90_00375",
+        "ACP90_22400"
+      ],
+      "lagg": [
+        "B0E33_05825",
+        "B0E33_11885"
+      ],
+      "suam": [
+        "BOO69_20650"
+      ],
+      "tpro": [
+        "Ga0080559_TMP2990"
+      ],
+      "rmm": [
+        "ROSMUCSMR3_01932"
+      ],
+      "aht": [
+        "ANTHELSMS3_00302"
+      ],
+      "zmm": [
+        "Zmob_1668"
+      ],
+      "zmb": [
+        "ZZ6_1641"
+      ],
+      "zmi": [
+        "ZCP4_1691"
+      ],
+      "zmc": [
+        "A265_01689"
+      ],
+      "zmr": [
+        "A254_01689"
+      ],
+      "zmp": [
+        "Zymop_1628"
+      ],
+      "npp": [
+        "PP1Y_AT19221"
+      ],
+      "npn": [
+        "JI59_16885"
+      ],
+      "nre": [
+        "BES08_08245"
+      ],
+      "sphk": [
+        "SKP52_09465"
+      ],
+      "sphp": [
+        "LH20_10065"
+      ],
+      "smag": [
+        "AN936_07275",
+        "AN936_08975"
+      ],
+      "smaz": [
+        "LH19_07415",
+        "LH19_09035"
+      ],
+      "ster": [
+        "AOA14_13970"
+      ],
+      "sgi": [
+        "SGRAN_1908",
+        "SGRAN_2687",
+        "SGRAN_3674"
+      ],
+      "sphl": [
+        "LPB140_09560"
+      ],
+      "sphq": [
+        "BWQ93_07970"
+      ],
+      "sphm": [
+        "G432_07455"
+      ],
+      "stax": [
+        "MC45_05645"
+      ],
+      "sphi": [
+        "TS85_02500"
+      ],
+      "ssan": [
+        "NX02_04735"
+      ],
+      "smy": [
+        "BJP26_01030"
+      ],
+      "span": [
+        "AWL63_14290"
+      ],
+      "skr": [
+        "BRX40_20240",
+        "BRX40_21710"
+      ],
+      "splm": [
+        "BXU08_08995",
+        "BXU08_16650"
+      ],
+      "splk": [
+        "AV944_15060"
+      ],
+      "spkc": [
+        "KC8_11005"
+      ],
+      "sch": [
+        "Sphch_1363"
+      ],
+      "ssy": [
+        "SLG_03600"
+      ],
+      "syb": [
+        "TZ53_14805"
+      ],
+      "sbd": [
+        "ATN00_09310"
+      ],
+      "sphb": [
+        "EP837_02152"
+      ],
+      "sphr": [
+        "BSY17_2402"
+      ],
+      "sinb": [
+        "SIDU_02795"
+      ],
+      "spht": [
+        "K426_14930"
+      ],
+      "shyd": [
+        "CJD35_11070"
+      ],
+      "cij": [
+        "WG74_07375"
+      ],
+      "sphg": [
+        "AZE99_10830"
+      ],
+      "sfla": [
+        "SPHFLASMR4Y_00057"
+      ],
+      "blas": [
+        "BSY18_2122"
+      ],
+      "elq": [
+        "Ga0102493_11244"
+      ],
+      "ery": [
+        "CP97_12340"
+      ],
+      "egn": [
+        "BMF35_a0235",
+        "BMF35_a0579"
+      ],
+      "efv": [
+        "CHH26_06105",
+        "CHH26_12475"
+      ],
+      "aay": [
+        "WYH_01402"
+      ],
+      "amx": [
+        "AM2010_388"
+      ],
+      "aep": [
+        "AMC99_01921"
+      ],
+      "anh": [
+        "A6F65_02312"
+      ],
+      "ado": [
+        "A6F68_02824"
+      ],
+      "cna": [
+        "AB433_13770"
+      ],
+      "cman": [
+        "A9D14_02645"
+      ],
+      "pns": [
+        "A9D12_08635",
+        "A9D12_10900"
+      ],
+      "porl": [
+        "BG023_111238",
+        "BG023_111694"
+      ],
+      "ros": [
+        "CTJ15_01470"
+      ],
+      "rce": [
+        "RC1_3715"
+      ],
+      "azl": [
+        "AZL_c00540"
+      ],
+      "ali": [
+        "AZOLI_p30350"
+      ],
+      "abq": [
+        "ABAZ39_22175"
+      ],
+      "abf": [
+        "AMK58_19400"
+      ],
+      "ati": [
+        "AL072_15465"
+      ],
+      "tmo": [
+        "TMO_1029"
+      ],
+      "txi": [
+        "TH3_10910"
+      ],
+      "magq": [
+        "MGMAQ_2448"
+      ],
+      "nao": [
+        "Y958_15890",
+        "Y958_26370"
+      ],
+      "mabb": [
+        "MASS_4780"
+      ],
+      "mmv": [
+        "MYCMA_03130"
+      ],
+      "may": [
+        "LA62_24055"
+      ],
+      "mabo": [
+        "NF82_23725"
+      ],
+      "mabl": [
+        "MMASJCM_4798"
+      ],
+      "maz": [
+        "LA61_23945"
+      ],
+      "mak": [
+        "LH56_00670"
+      ],
+      "mys": [
+        "NF92_00725"
+      ],
+      "myc": [
+        "NF90_00725"
+      ],
+      "mche": [
+        "BB28_24110"
+      ],
+      "miz": [
+        "BAB75_26720"
+      ],
+      "rhb": [
+        "NY08_1989"
+      ],
+      "rfa": [
+        "A3L23_00322"
+      ],
+      "rhs": [
+        "A3Q41_03085"
+      ],
+      "goq": [
+        "ACH46_00920"
+      ],
+      "srt": [
+        "Srot_0241"
+      ],
+      "strc": [
+        "AA958_24710"
+      ],
+      "spav": [
+        "Spa2297_28260"
+      ],
+      "arr": [
+        "ARUE_c13780"
+      ],
+      "are": [
+        "AL755_06705"
+      ],
+      "arh": [
+        "AHiyo8_15420"
+      ],
+      "kfv": [
+        "AS188_08120"
+      ],
+      "satk": [
+        "SA2016_1571"
+      ],
+      "pdx": [
+        "Psed_2739"
+      ],
+      "psee": [
+        "FRP1_07110"
+      ],
+      "pseh": [
+        "XF36_07930"
+      ],
+      "pseq": [
+        "AD006_14725"
+      ],
+      "pecq": [
+        "AD017_22550"
+      ],
+      "all": [
+        "CRK55609"
+      ],
+      "min": [
+        "Minf_1810"
+      ],
+      "tpx": [
+        "Turpa_3640"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.4.99.6"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.4.99.6"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.4.99.6"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.4.99.6"
+      ],
+      "CAS": [
+        "37205-44-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Tsukada K."
+        ],
+        "title": "D-amino acid dehydrogenases of Pseudomonas fluorescens.",
+        "journal": "J. Biol. Chem. 241 (1966) 4522-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:5925166]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Li C",
+          "Lu CD"
+        ],
+        "title": "Arginine racemization by coupled catabolic and anabolic dehydrogenases.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 106 (2009) 906-11.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:19139398]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fu G",
+          "Yuan H",
+          "Li C",
+          "Lu CD",
+          "Gadda G",
+          "Weber IT"
+        ],
+        "title": "Conformational changes and substrate recognition in Pseudomonas aeruginosa D-arginine dehydrogenase.",
+        "journal": "Biochemistry. 49 (2010) 8535-45.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:20809650]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yuan H",
+          "Fu G",
+          "Brooks PT",
+          "Weber I",
+          "Gadda G"
+        ],
+        "title": "Steady-state kinetic mechanism and reductive half-reaction of D-arginine dehydrogenase from Pseudomonas aeruginosa.",
+        "journal": "Biochemistry. 49 (2010) 9542-50.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:20932054]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fu G",
+          "Yuan H",
+          "Wang S",
+          "Gadda G",
+          "Weber IT"
+        ],
+        "title": "Atomic-resolution structure of an N5 flavin adduct in D-arginine dehydrogenase.",
+        "journal": "Biochemistry. 50 (2011) 6292-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:21707047]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yuan H",
+          "Xin Y",
+          "Hamelberg D",
+          "Gadda G"
+        ],
+        "title": "Insights on the mechanism of amine oxidation catalyzed by D-arginine dehydrogenase through pH and kinetic isotope effects.",
+        "journal": "J. Am. Chem. Soc. 133 (2011) 18957-65.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:21999550]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,471 @@
+[
+  {
+    "entry_id": "1.14.13.221",
+    "name": "cholest-4-en-3-one 26-monooxygenase [(25R)-3-oxocholest-4-en-26-oate forming]",
+    "names": [
+      "cholest-4-en-3-one 26-monooxygenase [(25R)-3-oxocholest-4-en-26-oate forming]",
+      "CYP142"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "cholest-4-en-3-one,NADPH:oxygen oxidoreductase [(25R)-3-oxocholest-4-en-26-oate forming]",
+    "reaction": "cholest-4-en-3-one + 3 NADPH + 3 H+ + 3 O2 = (25R)-3-oxocholest-4-en-26-oate + 3 NADP+ + 4 H2O (overall reaction) [RN:R11361]; (1a) cholest-4-en-3-one + NADPH + H+ + O2 = (25R)-26-hydroxycholest-4-en-3-one + NADP+ + H2O [RN:R11358]; (1b) (25R)-26-hydroxycholest-4-en-3-one + NADPH + H+ + O2 = (25R)-26-oxocholest-4-en-3-one + NADP+ + 2 H2O [RN:R11359]; (1c) (25R)-26-oxocholest-4-en-3-one + NADPH + H+ + O2 = (25R)-3-oxocholest-4-en-26-oate + NADP+ + H2O [RN:R11360]",
+    "all_reac": "R11358 R11359 R11360 R11361",
+    "iubmb_reactions": [
+      "R11358 R11359 R11360 R11361"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "cholest-4-en-3-one [CPD:C00599]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(25R)-26-hydroxycholest-4-en-3-one [CPD:C21303]",
+      "(25R)-26-oxocholest-4-en-3-one [CPD:C21305]"
+    ],
+    "products": [
+      "(25R)-3-oxocholest-4-en-26-oate [CPD:C20839]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "(25R)-26-hydroxycholest-4-en-3-one [CPD:C21303]",
+      "(25R)-26-oxocholest-4-en-3-one [CPD:C21305]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme, found in several bacterial pathogens, is involved in degradation of the host cholesterol. It catalyses the hydroxylation of the C-26 carbon, followed by oxidation of the alcohol to the carboxylic acid via the aldehyde intermediate, initiating the degradation of the alkyl side-chain of cholesterol. The products are exclusively in the (25R) conformation. The enzyme also accepts cholesterol as a substrate. cf. EC 1.14.13.141, cholest-4-en-3-one 26-monooxygenase. The enzyme can receive electrons from ferredoxin reductase in vitro, its natural electron donor is not known yet.",
+    "pathways": {
+      "ec00984": "Steroid degradation",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K16046": "cholest-4-en-3-one 26-monooxygenase"
+    },
+    "genes": {
+      "mtu": [
+        "Rv3518c"
+      ],
+      "mtv": [
+        "RVBD_3518c"
+      ],
+      "mtc": [
+        "MT3619"
+      ],
+      "mra": [
+        "MRA_3557"
+      ],
+      "mtf": [
+        "TBFG_13551"
+      ],
+      "mtb": [
+        "TBMG_03557"
+      ],
+      "mtk": [
+        "TBSG_03584"
+      ],
+      "mtz": [
+        "TBXG_003533"
+      ],
+      "mtg": [
+        "MRGA327_21740"
+      ],
+      "mti": [
+        "MRGA423_22200"
+      ],
+      "mte": [
+        "CCDC5079_3259"
+      ],
+      "mtur": [
+        "CFBS_3734"
+      ],
+      "mtl": [
+        "CCDC5180_3211"
+      ],
+      "mto": [
+        "MTCTRI2_3582"
+      ],
+      "mtd": [
+        "UDA_3518c"
+      ],
+      "mtn": [
+        "ERDMAN_3857"
+      ],
+      "mtj": [
+        "J112_18940"
+      ],
+      "mtub": [
+        "MT7199_3578"
+      ],
+      "mtuc": [
+        "J113_24605"
+      ],
+      "mtue": [
+        "J114_18810"
+      ],
+      "mtx": [
+        "M943_18090"
+      ],
+      "mtuh": [
+        "I917_24680"
+      ],
+      "mtul": [
+        "TBHG_03458"
+      ],
+      "mtut": [
+        "HKBT1_3719"
+      ],
+      "mtuu": [
+        "HKBT2_3728"
+      ],
+      "mtq": [
+        "HKBS1_3731"
+      ],
+      "mbo": [
+        "Mb3547c",
+        "Mb3548c"
+      ],
+      "mbb": [
+        "BCG_3581c",
+        "BCG_3582c"
+      ],
+      "mbt": [
+        "JTY_3582",
+        "JTY_3583"
+      ],
+      "mbm": [
+        "BCGMEX_3579c",
+        "BCGMEX_3580c"
+      ],
+      "mbk": [
+        "K60_036520",
+        "K60_036530"
+      ],
+      "mbx": [
+        "BCGT_3381"
+      ],
+      "mbz": [
+        "LH58_19050",
+        "LH58_19055"
+      ],
+      "mce": [
+        "MCAN_35291"
+      ],
+      "mcq": [
+        "BN44_110006"
+      ],
+      "mcv": [
+        "BN43_90011"
+      ],
+      "mcx": [
+        "BN42_90009"
+      ],
+      "mcz": [
+        "BN45_100009"
+      ],
+      "mmic": [
+        "RN08_3892",
+        "RN08_3893"
+      ],
+      "mpa": [
+        "MAP_0547"
+      ],
+      "mao": [
+        "MAP4_3320"
+      ],
+      "mavi": [
+        "RC58_16465"
+      ],
+      "mavu": [
+        "RE97_16500"
+      ],
+      "mav": [
+        "MAV_0641"
+      ],
+      "mavd": [
+        "NF84_02905"
+      ],
+      "mavr": [
+        "LA63_02970"
+      ],
+      "mava": [
+        "LA64_02980"
+      ],
+      "mit": [
+        "OCO_01300",
+        "OCO_05500"
+      ],
+      "mia": [
+        "OCU_01340",
+        "OCU_05550"
+      ],
+      "mie": [
+        "LG41_00670",
+        "LG41_02770"
+      ],
+      "mir": [
+        "OCQ_01290",
+        "OCQ_05660"
+      ],
+      "mid": [
+        "MIP_00395",
+        "MIP_01006"
+      ],
+      "myo": [
+        "OEM_01390",
+        "OEM_05580"
+      ],
+      "mchi": [
+        "AN480_00700",
+        "AN480_02755"
+      ],
+      "mmal": [
+        "CKJ54_00570",
+        "CKJ54_02680"
+      ],
+      "msm": [
+        "MSMEG_5918"
+      ],
+      "msg": [
+        "MSMEI_5758"
+      ],
+      "msb": [
+        "LJ00_29265"
+      ],
+      "msn": [
+        "LI99_29270"
+      ],
+      "msh": [
+        "LI98_29275"
+      ],
+      "msa": [
+        "Mycsm_05751"
+      ],
+      "mul": [
+        "MUL_4077"
+      ],
+      "mva": [
+        "Mvan_5217"
+      ],
+      "mgi": [
+        "Mflv_1541"
+      ],
+      "msp": [
+        "Mspyr1_09250"
+      ],
+      "mmc": [
+        "Mmcs_4631"
+      ],
+      "mkm": [
+        "Mkms_4719"
+      ],
+      "mjl": [
+        "Mjls_5013"
+      ],
+      "mjd": [
+        "JDM601_3652"
+      ],
+      "mmi": [
+        "MMAR_5003"
+      ],
+      "mmae": [
+        "MMARE11_48130"
+      ],
+      "mrh": [
+        "MycrhN_2317"
+      ],
+      "mmm": [
+        "W7S_00635",
+        "W7S_02700"
+      ],
+      "mcb": [
+        "Mycch_4578"
+      ],
+      "mli": [
+        "MULP_05251"
+      ],
+      "mkn": [
+        "MKAN_11750"
+      ],
+      "mks": [
+        "LG40_11595"
+      ],
+      "mki": [
+        "LH54_11740"
+      ],
+      "mne": [
+        "D174_24160"
+      ],
+      "myv": [
+        "G155_04820"
+      ],
+      "mye": [
+        "AB431_06755",
+        "AB431_26265"
+      ],
+      "mgo": [
+        "AFA91_11165"
+      ],
+      "mft": [
+        "XA26_09260"
+      ],
+      "mhad": [
+        "B586_04705"
+      ],
+      "mphl": [
+        "MPHLCCUG_00591"
+      ],
+      "mvq": [
+        "MYVA_5103"
+      ],
+      "myn": [
+        "MyAD_23700"
+      ],
+      "mll": [
+        "B1R94_06765",
+        "B1R94_24805"
+      ],
+      "mdx": [
+        "BTO20_31100"
+      ],
+      "rha": [
+        "RHA1_ro04588"
+      ],
+      "rer": [
+        "RER_07670"
+      ],
+      "rey": [
+        "O5Y_03730"
+      ],
+      "reb": [
+        "XU06_03970"
+      ],
+      "rop": [
+        "ROP_45330"
+      ],
+      "roa": [
+        "Pd630_LPD01065"
+      ],
+      "req": [
+        "REQ_06880"
+      ],
+      "rhw": [
+        "BFN03_15100"
+      ],
+      "tcu": [
+        "Tcur_2583"
+      ],
+      "noa": [
+        "BKM31_57860"
+      ],
+      "fri": [
+        "FraEuI1c_2049"
+      ],
+      "abai": [
+        "IMCC26256_11539"
+      ],
+      "aym": [
+        "YM304_15670"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.221"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.221"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.221"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.221"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Driscoll MD",
+          "McLean KJ",
+          "Levy C",
+          "Mast N",
+          "Pikuleva IA",
+          "Lafite P",
+          "Rigby SE",
+          "Leys D",
+          "Munro AW"
+        ],
+        "title": "Structural and biochemical characterization of Mycobacterium tuberculosis CYP142: evidence for multiple cholesterol 27-hydroxylase activities in a human pathogen.",
+        "journal": "J. Biol. Chem. 285 (2010) 38270-82.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:20889498]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Johnston JB",
+          "Ouellet H",
+          "Ortiz de Montellano PR"
+        ],
+        "title": "Functional redundancy of steroid C26-monooxygenase activity in Mycobacterium tuberculosis revealed by biochemical and genetic analyses.",
+        "journal": "J. Biol. Chem. 285 (2010) 36352-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:20843794]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

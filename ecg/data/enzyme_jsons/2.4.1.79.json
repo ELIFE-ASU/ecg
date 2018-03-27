@@ -1,0 +1,455 @@
+[
+  {
+    "entry_id": "2.4.1.79",
+    "name": "globotriaosylceramide 3-beta-N-acetylgalactosaminyltransferase",
+    "names": [
+      "globotriaosylceramide 3-beta-N-acetylgalactosaminyltransferase",
+      "uridine diphosphoacetylgalactosamine-galactosylgalactosylglucosylceramide acetylgalactosaminyltransferase",
+      "globoside synthetase",
+      "UDP-N-acetylgalactosamine:globotriaosylceramide beta-3-N-acetylgalactosaminyltransferase",
+      "galactosylgalactosylglucosylceramide beta-D-acetylgalactosaminyltransferase",
+      "UDP-N-acetylgalactosamine:globotriaosylceramide beta1,3-N-acetylgalactosaminyltransferase",
+      "globoside synthase",
+      "gUDP-N-acetyl-D-galactosamine:D-galactosyl-1,4-D-galactosyl-1,4-D-glucosylceramide beta-N-acetyl-D-galactosaminyltransferase",
+      "beta3GalNAc-T1",
+      "UDP-N-acetyl-D-galactosamine:alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosylceramide 3III-beta-N-acetyl-D-galactosaminyltransferase",
+      "UDP-N-acetyl-D-galactosamine:alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide 3III-beta-N-acetyl-D-galactosaminyltransferase",
+      "UDP-N-acetyl-D-galactosamine:alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide III3-beta-N-acetyl-D-galactosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-alpha-D-galactosamine:alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide III3-beta-N-acetyl-D-galactosaminyltransferase",
+    "reaction": "UDP-N-acetyl-alpha-D-galactosamine + alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide = UDP + N-acetyl-beta-D-galactosaminyl-(1->3)-alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide [RN:R05631 R05962]",
+    "all_reac": "R05631 R05962(G); (other) R11321(G) R11378(G) R11379(G)",
+    "iubmb_reactions": [
+      "R05631 R05962(G)"
+    ],
+    "kegg_reactions": [
+      "R11321(G) R11378(G) R11379(G)"
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-galactosamine [CPD:C00203]",
+      "alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide [CPD:C04737]"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "N-acetyl-beta-D-galactosaminyl-(1->3)-alpha-D-galactosyl-(1->4)-beta-D-galactosyl-(1->4)-beta-D-glucosyl-(1<->1)-ceramide"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Globoside is a neutral glycosphingolipid in human erythrocytes and has blood-group-P-antigen activity [4]. The enzyme requires a divalent cation for activity, with Mn2+ required for maximal activity [3]. UDP-GalNAc is the only sugar donor that is used efficiently by the enzyme: UDP-Gal and UDP-GlcNAc result in very low enzyme activity [3]. Lactosylceramide, globoside and gangliosides GM3 and GD3 are not substrates [4]. For explanation of the superscripted '3' in the systematic name, see {iupac/misc/glylp#5.3::GL-5.3.4}.",
+    "pathways": {
+      "ec00601": "Glycosphingolipid biosynthesis - lacto and neolacto series",
+      "ec00603": "Glycosphingolipid biosynthesis - globo and isoglobo series",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00719": "galactosylgalactosylglucosylceramide beta-D-acetylgalactosaminyltransferase"
+    },
+    "genes": {
+      "hsa": [
+        "8706"
+      ],
+      "ptr": [
+        "460824"
+      ],
+      "pps": [
+        "103783664"
+      ],
+      "ggo": [
+        "101128316"
+      ],
+      "pon": [
+        "100174453"
+      ],
+      "nle": [
+        "100582204"
+      ],
+      "mcc": [
+        "703939"
+      ],
+      "mcf": [
+        "102122721"
+      ],
+      "csab": [
+        "103241387"
+      ],
+      "rro": [
+        "104665025"
+      ],
+      "rbb": [
+        "108513415"
+      ],
+      "cjc": [
+        "100412790"
+      ],
+      "sbq": [
+        "104650882"
+      ],
+      "mmu": [
+        "26879"
+      ],
+      "rno": [
+        "310508"
+      ],
+      "cge": [
+        "100756438"
+      ],
+      "ngi": [
+        "103738016"
+      ],
+      "hgl": [
+        "101706281"
+      ],
+      "ccan": [
+        "109687568"
+      ],
+      "ocu": [
+        "100352272"
+      ],
+      "tup": [
+        "102470507"
+      ],
+      "cfa": [
+        "100683634"
+      ],
+      "aml": [
+        "100472542"
+      ],
+      "umr": [
+        "103677240"
+      ],
+      "oro": [
+        "101362550"
+      ],
+      "fca": [
+        "101092536"
+      ],
+      "ptg": [
+        "102967614"
+      ],
+      "aju": [
+        "106969458"
+      ],
+      "bta": [
+        "767844"
+      ],
+      "bom": [
+        "102268013"
+      ],
+      "biu": [
+        "109558643"
+      ],
+      "phd": [
+        "102332860"
+      ],
+      "chx": [
+        "102172392"
+      ],
+      "oas": [
+        "101104544"
+      ],
+      "ssc": [
+        "397634"
+      ],
+      "cfr": [
+        "102520987"
+      ],
+      "cdk": [
+        "105085986"
+      ],
+      "bacu": [
+        "103007706"
+      ],
+      "lve": [
+        "103081769",
+        "103082553"
+      ],
+      "ecb": [
+        "100062101"
+      ],
+      "epz": [
+        "103556050"
+      ],
+      "eai": [
+        "106841036"
+      ],
+      "myb": [
+        "102245995"
+      ],
+      "myd": [
+        "102751273"
+      ],
+      "hai": [
+        "109373391"
+      ],
+      "rss": [
+        "109447512"
+      ],
+      "pale": [
+        "102885235"
+      ],
+      "lav": [
+        "100672964"
+      ],
+      "tmu": [
+        "101351705"
+      ],
+      "mdo": [
+        "100015392"
+      ],
+      "shr": [
+        "100914641"
+      ],
+      "oaa": [
+        "100077633"
+      ],
+      "gga": [
+        "425011"
+      ],
+      "mgp": [
+        "100542332"
+      ],
+      "cjo": [
+        "107318361"
+      ],
+      "apla": [
+        "101792107",
+        "101804909"
+      ],
+      "acyg": [
+        "106043526"
+      ],
+      "tgu": [
+        "100228838"
+      ],
+      "gfr": [
+        "102040599"
+      ],
+      "fab": [
+        "101809193"
+      ],
+      "phi": [
+        "102106993"
+      ],
+      "pmaj": [
+        "107208685"
+      ],
+      "ccw": [
+        "104688069"
+      ],
+      "fpg": [
+        "101912356"
+      ],
+      "fch": [
+        "102056837"
+      ],
+      "clv": [
+        "102087526"
+      ],
+      "egz": [
+        "104122266"
+      ],
+      "aam": [
+        "106495105"
+      ],
+      "asn": [
+        "102381398"
+      ],
+      "amj": [
+        "102574149"
+      ],
+      "pss": [
+        "102454980"
+      ],
+      "cmy": [
+        "102942089"
+      ],
+      "cpic": [
+        "101934527"
+      ],
+      "acs": [
+        "100564179"
+      ],
+      "pvt": [
+        "110078057"
+      ],
+      "gja": [
+        "107107027"
+      ],
+      "lcm": [
+        "102358886",
+        "102363803"
+      ],
+      "sko": [
+        "102800712",
+        "102807352"
+      ],
+      "myi": [
+        "110441288",
+        "110452220",
+        "110453853",
+        "110460297",
+        "110463413"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.79"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.79"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.79"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.79"
+      ],
+      "CAS": [
+        "62213-46-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Chien JL",
+          "Williams T",
+          "Basu S."
+        ],
+        "title": "Biosynthesis of a globoside-type glycosphingolipid by a -N-acetylgalactosaminyltransferase from embryonic chicken brain.",
+        "journal": "J. Biol. Chem. 248 (1973) 1778-85.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4632917]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ishibashi T",
+          "Kijimoto S",
+          "Makita A."
+        ],
+        "title": "Biosynthesis of globoside and Forssman hapten from trihexosylceramide and properties of beta-N-acetyl-galactosaminyltransferase of guinea pig kidney.",
+        "journal": "Biochim. Biophys. Acta. 337 (1974) 92-106.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:4433547]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Taniguchi N",
+          "Makita A."
+        ],
+        "title": "Purification and characterization of UDP-N-acetylgalactosamine: globotriaosylceramide beta-3-N-acetylgalactosaminyltransferase, a synthase of human blood group P antigen, from canine spleen.",
+        "journal": "J. Biol. Chem. 259 (1984) 5637-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:6425294]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Okajima T",
+          "Nakamura Y",
+          "Uchikawa M",
+          "Haslam DB",
+          "Numata SI",
+          "Furukawa K",
+          "Urano T",
+          "Furukawa K."
+        ],
+        "title": "Expression cloning of human globoside synthase cDNAs. Identification of beta 3Gal-T3 as UDP-N-acetylgalactosamine:globotriaosylceramide beta 1,3-N-acetylgalactosaminyltransferase.",
+        "journal": "J. Biol. Chem. 275 (2000) 40498-503.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:10993897]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

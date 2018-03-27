@@ -1,0 +1,427 @@
+[
+  {
+    "entry_id": "1.3.8.2",
+    "name": "4,4'-diapophytoene desaturase (4,4'-diapolycopene-forming)",
+    "names": [
+      "4,4'-diapophytoene desaturase (4,4'-diapolycopene-forming)",
+      "dehydrosqualene desaturase (ambiguous)",
+      "CrtN (ambiguous)",
+      "4,4'-diapophytoene:FAD oxidoreductase (ambiguous)",
+      "15-cis-4,4'-diapophytoene:FAD oxidoreductase",
+      "4,4'-diapophytoene desaturase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With a flavin as acceptor"
+    ],
+    "sysname": "15-cis-4,4'-diapophytoene:FAD oxidoreductase (4,4'-diapolycopene-forming)",
+    "reaction": "15-cis-4,4'-diapophytoene + 4 FAD = all-trans-4,4'-diapolycopene + 4 FADH2 (overall reaction) [RN:R09690]; (1a) 15-cis-4,4'-diapophytoene + FAD = all-trans-4,4'-diapophytofluene + FADH2 [RN:R09719]; (1b) all-trans-4,4'-diapophytofluene + FAD = all-trans-4,4'-diapo-zeta-carotene + FADH2 [RN:R09744]; (1c) all-trans-4,4'-diapo-zeta-carotene + FAD = all-trans-4,4'-diaponeurosporene + FADH2 [RN:R09745]; (1d) all-trans-4,4'-diaponeurosporene + FAD = all-trans-4,4'-diapolycopene + FADH2 [RN:R09746]",
+    "all_reac": "R09690 R09719 R09744 R09745 R09746; (other) R07653",
+    "iubmb_reactions": [
+      "R09690 R09719 R09744 R09745 R09746"
+    ],
+    "kegg_reactions": [
+      "R07653"
+    ],
+    "substrates": [
+      "15-cis-4,4'-diapophytoene [CPD:C16144]",
+      "FAD [CPD:C00016]",
+      "all-trans-4,4'-diapophytofluene",
+      "all-trans-4,4'-diapo-zeta-carotene",
+      "all-trans-4,4'-diaponeurosporene"
+    ],
+    "products": [
+      "all-trans-4,4'-diapolycopene",
+      "FADH2 [CPD:C01352]",
+      "all-trans-4,4'-diapophytofluene",
+      "all-trans-4,4'-diapo-zeta-carotene",
+      "all-trans-4,4'-diaponeurosporene"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme catalyses four successive dehydrogenations, resulting in production of 4,4'-diapolycopene. While the enzyme from Staphylococcus aureus was only shown to produce 4,4'-diaponeurosporene in vivo [4], it is able to catalyse the last reaction in vitro [5].",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis"
+    },
+    "orthologs": {
+      "K10209": "4,4'-diapophytoene desaturase"
+    },
+    "genes": {
+      "sau": [
+        "SA2348"
+      ],
+      "sav": [
+        "SAV2561"
+      ],
+      "saw": [
+        "SAHV_2545"
+      ],
+      "sah": [
+        "SaurJH1_2637"
+      ],
+      "saj": [
+        "SaurJH9_2583"
+      ],
+      "sam": [
+        "MW2482"
+      ],
+      "sas": [
+        "SAS2447"
+      ],
+      "sar": [
+        "SAR2642"
+      ],
+      "sac": [
+        "SACOL2576"
+      ],
+      "sax": [
+        "USA300HOU_2556"
+      ],
+      "saa": [
+        "SAUSA300_2498"
+      ],
+      "sao": [
+        "SAOUHSC_02877"
+      ],
+      "sae": [
+        "NWMN_2461"
+      ],
+      "sad": [
+        "SAAV_2627"
+      ],
+      "suu": [
+        "M013TW_2535"
+      ],
+      "suv": [
+        "SAVC_11685"
+      ],
+      "sue": [
+        "SAOV_2606c"
+      ],
+      "suj": [
+        "SAA6159_02457"
+      ],
+      "suk": [
+        "SAA6008_02600"
+      ],
+      "suc": [
+        "ECTR2_2414"
+      ],
+      "sut": [
+        "SAT0131_02772"
+      ],
+      "suq": [
+        "HMPREF0772_10628"
+      ],
+      "suz": [
+        "MS7_2568"
+      ],
+      "sud": [
+        "ST398NM01_2612"
+      ],
+      "sux": [
+        "SAEMRSA15_24640"
+      ],
+      "suw": [
+        "SATW20_26830"
+      ],
+      "sug": [
+        "SAPIG2612"
+      ],
+      "suf": [
+        "SARLGA251_23360"
+      ],
+      "saua": [
+        "SAAG_00382"
+      ],
+      "saue": [
+        "RSAU_002402"
+      ],
+      "saun": [
+        "SAKOR_02552"
+      ],
+      "saus": [
+        "SA40_2315"
+      ],
+      "sauu": [
+        "SA957_2399"
+      ],
+      "saug": [
+        "SA268_2477"
+      ],
+      "sauz": [
+        "SAZ172_2661"
+      ],
+      "saut": [
+        "SAI1T1_2019060"
+      ],
+      "sauj": [
+        "SAI2T2_1019070"
+      ],
+      "sauk": [
+        "SAI3T3_1019060"
+      ],
+      "sauq": [
+        "SAI4T8_1019070"
+      ],
+      "sauv": [
+        "SAI7S6_1019060"
+      ],
+      "sauw": [
+        "SAI5S5_1019000"
+      ],
+      "saux": [
+        "SAI6T6_1019010"
+      ],
+      "sauy": [
+        "SAI8T7_1019040"
+      ],
+      "sab": [
+        "SAB2434c"
+      ],
+      "suy": [
+        "SA2981_2498"
+      ],
+      "saub": [
+        "C248_2619"
+      ],
+      "saum": [
+        "BN843_25980"
+      ],
+      "sauc": [
+        "CA347_2637"
+      ],
+      "saur": [
+        "SABB_01123"
+      ],
+      "saui": [
+        "AZ30_13420"
+      ],
+      "saud": [
+        "CH52_06195"
+      ],
+      "sauf": [
+        "X998_2544"
+      ],
+      "sams": [
+        "NI36_12815"
+      ],
+      "sha": [
+        "SH0491"
+      ],
+      "shh": [
+        "ShL2_00392"
+      ],
+      "slg": [
+        "SLGD_00188"
+      ],
+      "sln": [
+        "SLUG_01860"
+      ],
+      "swa": [
+        "A284_01660"
+      ],
+      "spas": [
+        "STP1_1063"
+      ],
+      "sxy": [
+        "BE24_11825",
+        "BE24_13815"
+      ],
+      "sxl": [
+        "SXYLSMQ121_0054"
+      ],
+      "sxo": [
+        "SXYL_00054"
+      ],
+      "scap": [
+        "AYP1020_1732"
+      ],
+      "seqo": [
+        "SE1039_25780"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.8.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.8.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.8.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.8.2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Wieland B",
+          "Feil C",
+          "Gloria-Maercker E",
+          "Thumm G",
+          "Lechner M",
+          "Bravo JM",
+          "Poralla K",
+          "Gotz F"
+        ],
+        "title": "Genetic and biochemical analyses of the biosynthesis of the yellow carotenoid 4,4'-diaponeurosporene of Staphylococcus aureus.",
+        "journal": "J. Bacteriol. 176 (1994) 7719-26.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8002598]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Raisig A",
+          "Sandmann G"
+        ],
+        "title": "4,4'-diapophytoene desaturase: catalytic properties of an enzyme from the C(30) carotenoid pathway of Staphylococcus aureus.",
+        "journal": "J. Bacteriol. 181 (1999) 6184-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10498735]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Raisig A",
+          "Sandmann G"
+        ],
+        "title": "Functional properties of diapophytoene and related desaturases of C(30) and C(40) carotenoid biosynthetic pathways.",
+        "journal": "Biochim. Biophys. Acta. 1533 (2001) 164-70.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:11566453]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tao L",
+          "Schenzle A",
+          "Odom JM",
+          "Cheng Q"
+        ],
+        "title": "Novel carotenoid oxidase involved in biosynthesis of 4,4'-diapolycopene dialdehyde.",
+        "journal": "Appl. Environ. Microbiol. 71 (2005) 3294-301.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15933032]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yoshida K",
+          "Ueda S",
+          "Maeda I"
+        ],
+        "title": "Carotenoid production in Bacillus subtilis achieved by metabolic engineering.",
+        "journal": "Biotechnol. Lett. 31 (2009) 1789-93.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:19618272]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,357 @@
+[
+  {
+    "entry_id": "1.14.14.46",
+    "name": "pimeloyl-[acyl-carrier protein] synthase",
+    "names": [
+      "pimeloyl-[acyl-carrier protein] synthase",
+      "bioI (gene name)",
+      "P450BioI",
+      "CYP107H1"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With reduced flavin or flavoprotein as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "acyl-[acyl-carrier protein],reduced-flavodoxin:oxygen oxidoreductase (pimeloyl-[acyl-carrier protein] forming)",
+    "reaction": "a long-chain acyl-[acyl-carrier protein] + 2 reduced flavodoxin + 3 O2 = pimeloyl-[acyl-carrier protein] + an n-alkanal + 2 oxidized flavodoxin + 3 H2O (overall reaction) [RN:R10123]; (1a) a long-chain acyl-[acyl-carrier protein] + reduced flavodoxin + O2 = a (7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein] + oxidized flavodoxin + H2O; (1b) a (7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein] + reduced flavodoxin + O2 = a (7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein] + oxidized flavodoxin + H2O; (1c) a (7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein] + reduced flavodoxin + O2 = a 7-oxoheptanoyl-[acyl-carrier protein] + an n-alkanal + oxidized flavodoxin + 2 H2O; (1d) a 7-oxoheptanoyl-[acyl-carrier protein] + oxidized flavodoxin + H2O = a pimeloyl-[acyl-carrier protein] + reduced flavodoxin + H+",
+    "all_reac": "R10123",
+    "iubmb_reactions": [
+      "R10123"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "long-chain acyl-[acyl-carrier protein] [CPD:C20683]",
+      "reduced flavodoxin [CPD:C02745]",
+      "O2 [CPD:C00007]",
+      "(7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein]",
+      "(7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein]",
+      "7-oxoheptanoyl-[acyl-carrier protein]",
+      "oxidized flavodoxin [CPD:C02869]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "pimeloyl-[acyl-carrier protein] [CPD:C19845]",
+      "n-alkanal [CPD:C15596]",
+      "oxidized flavodoxin [CPD:C02869]",
+      "H2O [CPD:C00001]",
+      "(7S)-7-hydroxy-long-chain-acyl-[acyl-carrier protein]",
+      "(7R,8R)-7,8-dihydroxy-long-chain-acyl-[acyl-carrier protein]",
+      "7-oxoheptanoyl-[acyl-carrier protein]",
+      "reduced flavodoxin [CPD:C02745]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A cytochrome P-450 (heme-thiolate) protein. The enzyme catalyses an oxidative C-C bond cleavage of long-chain acyl-[acyl-carrier protein]s of various lengths to generate pimeloyl-[acyl-carrier protein], an intermediate in the biosynthesis of biotin. The preferred substrate of the enzyme from the bacterium Bacillus subtilis is palmitoyl-[acyl-carrier protein] which then gives heptanal as the alkanal. The mechanism is similar to EC 1.14.15.6, cholesterol monooxygenase (side-chain-cleaving), followed by a hydroxylation step, which may occur spontaneously [2].",
+    "pathways": {
+      "ec00780": "Biotin metabolism"
+    },
+    "orthologs": {
+      "K16593": "pimeloyl-[acyl-carrier protein] synthase"
+    },
+    "genes": {
+      "gsn": [
+        "YC6258_03069"
+      ],
+      "bsu": [
+        "BSU30190"
+      ],
+      "bsr": [
+        "I33_3073"
+      ],
+      "bsl": [
+        "A7A1_1657"
+      ],
+      "bsh": [
+        "BSU6051_30190"
+      ],
+      "bsy": [
+        "I653_14450"
+      ],
+      "bsut": [
+        "BSUB_03208"
+      ],
+      "bsul": [
+        "BSUA_03208"
+      ],
+      "bsus": [
+        "Q433_16375"
+      ],
+      "bss": [
+        "BSUW23_14625"
+      ],
+      "bst": [
+        "GYO_3267"
+      ],
+      "bso": [
+        "BSNT_09439"
+      ],
+      "bsn": [
+        "BSn5_05935"
+      ],
+      "bsq": [
+        "B657_30190"
+      ],
+      "bsx": [
+        "C663_2864"
+      ],
+      "bsp": [
+        "U712_14985"
+      ],
+      "bli": [
+        "BL00957"
+      ],
+      "bld": [
+        "BLi00771"
+      ],
+      "blh": [
+        "BaLi_c08690"
+      ],
+      "bay": [
+        "RBAM_018240"
+      ],
+      "baq": [
+        "BACAU_1782"
+      ],
+      "bya": [
+        "BANAU_1949"
+      ],
+      "bamp": [
+        "B938_09435"
+      ],
+      "baml": [
+        "BAM5036_1761"
+      ],
+      "bama": [
+        "RBAU_1799"
+      ],
+      "bamn": [
+        "BASU_1779"
+      ],
+      "bamb": [
+        "BAPNAU_1920"
+      ],
+      "bamt": [
+        "AJ82_10365"
+      ],
+      "bamy": [
+        "V529_17940"
+      ],
+      "bmp": [
+        "NG74_01900"
+      ],
+      "bao": [
+        "BAMF_1919"
+      ],
+      "baz": [
+        "BAMTA208_07910"
+      ],
+      "bql": [
+        "LL3_02009"
+      ],
+      "bxh": [
+        "BAXH7_01611"
+      ],
+      "bqy": [
+        "MUS_2177"
+      ],
+      "bami": [
+        "KSO_010245"
+      ],
+      "bamc": [
+        "U471_18790"
+      ],
+      "bamf": [
+        "U722_09650"
+      ],
+      "bae": [
+        "BATR1942_12885"
+      ],
+      "batr": [
+        "TD68_11905"
+      ],
+      "bvm": [
+        "B9C48_09310"
+      ],
+      "bpf": [
+        "BpOF4_16075"
+      ],
+      "bacp": [
+        "SB24_00535"
+      ],
+      "bacb": [
+        "OY17_12255"
+      ],
+      "bacy": [
+        "QF06_13285"
+      ],
+      "bacl": [
+        "BS34A_32830"
+      ],
+      "balm": [
+        "BsLM_3003"
+      ],
+      "beo": [
+        "BEH_11250"
+      ],
+      "bgy": [
+        "BGLY_0785"
+      ],
+      "bgi": [
+        "BGM20_09045"
+      ],
+      "bkw": [
+        "BkAM31D_02760"
+      ],
+      "pcm": [
+        "AY601_4428"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.14.46"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.14.46"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.14.46"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.14.46"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Stok JE",
+          "De Voss J."
+        ],
+        "title": "Expression, purification, and characterization of BioI: a carbon-carbon bond cleaving cytochrome P450 involved in biotin biosynthesis in Bacillus subtilis.",
+        "journal": "Arch. Biochem. Biophys. 384 (2000) 351-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11368323]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Cryle MJ",
+          "De Voss JJ"
+        ],
+        "title": "Carbon-carbon bond cleavage by cytochrome p450(BioI)(CYP107H1).",
+        "journal": "Chem. Commun. (Camb). (2004) 86-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:14737344]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Cryle MJ",
+          "Schlichting I."
+        ],
+        "title": "Structural insights from a P450 Carrier Protein complex reveal how specificity is achieved in the P450(BioI) ACP complex.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 105 (2008) 15696-701.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:18838690]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Cryle MJ"
+        ],
+        "title": "Selectivity in a barren landscape: the P450(BioI)-ACP complex.",
+        "journal": "Biochem. Soc. Trans. 38 (2010) 934-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:20658980]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

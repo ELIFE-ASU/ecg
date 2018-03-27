@@ -1,0 +1,638 @@
+[
+  {
+    "entry_id": "6.3.4.16",
+    "name": "carbamoyl-phosphate synthase (ammonia)",
+    "names": [
+      "carbamoyl-phosphate synthase (ammonia)",
+      "carbon-dioxide---ammonia ligase",
+      "carbamoylphosphate synthase",
+      "carbamylphosphate synthetase",
+      "carbamoylphosphate synthase (ammonia)",
+      "carbamoylphosphate synthetase",
+      "carbamylphosphate synthetase I",
+      "CPSI (gene name)",
+      "carbon-dioxide:ammonia ligase (ADP-forming, carbamate-phosphorylating)"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-nitrogen bonds;",
+      "Other carbon-nitrogen ligases"
+    ],
+    "sysname": "hydrogencarbonate:ammonia ligase (ADP-forming, carbamate-phosphorylating)",
+    "reaction": "2 ATP + NH3 + hydrogencarbonate = 2 ADP + phosphate + carbamoyl phosphate (overall reaction) [RN:R00149]; (1a) ATP + hydrogencarbonate = ADP + carboxyphosphate; (1b) NH3 + carboxyphosphate = carbamate + phosphate; (1c) ATP + carbamate = ADP + carbamoyl phosphate",
+    "all_reac": "R00149",
+    "iubmb_reactions": [
+      "R00149"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ATP [CPD:C00002]",
+      "NH3 [CPD:C00014]",
+      "hydrogencarbonate",
+      "carboxyphosphate [CPD:C20969]",
+      "carbamate [CPD:C01563]"
+    ],
+    "products": [
+      "ADP [CPD:C00008]",
+      "phosphate [CPD:C00009]",
+      "carbamoyl phosphate [CPD:C00169]",
+      "carboxyphosphate [CPD:C20969]",
+      "carbamate [CPD:C01563]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme catalyses the first committed step in the urea cycle. The reaction proceeds via three separate chemical reactions: phosphorylation of hydrogencarbonate to carboxyphosphate; a nucleophilic attack of ammonia on carboxyphosphate yielding carbamate; and the phosphorylation of carbamate forming carbamoyl phosphate. Two moles of ATP are utilized for the synthesis of one molecule of carbamyl phosphate, making the reaction essentially irreversible. The enzyme requires the allosteric activator N-acetyl-L-glutamate. cf. EC 6.3.5.5, carbamoyl-phosphate synthase (glutamine-hydrolysing).",
+    "pathways": {
+      "ec00220": "Arginine biosynthesis",
+      "ec00250": "Alanine, aspartate and glutamate metabolism",
+      "ec00910": "Nitrogen metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K01948": "carbamoyl-phosphate synthase (ammonia)"
+    },
+    "genes": {
+      "hsa": [
+        "1373"
+      ],
+      "ptr": [
+        "738670"
+      ],
+      "pps": [
+        "100984596"
+      ],
+      "ggo": [
+        "101130709"
+      ],
+      "pon": [
+        "100442727"
+      ],
+      "nle": [
+        "100596216"
+      ],
+      "mcc": [
+        "711806"
+      ],
+      "mcf": [
+        "102139369"
+      ],
+      "csab": [
+        "103217763"
+      ],
+      "rro": [
+        "104655495"
+      ],
+      "rbb": [
+        "108540334"
+      ],
+      "cjc": [
+        "100402602"
+      ],
+      "sbq": [
+        "101050943"
+      ],
+      "mmu": [
+        "227231"
+      ],
+      "rno": [
+        "497840"
+      ],
+      "cge": [
+        "100760467"
+      ],
+      "ngi": [
+        "103744467"
+      ],
+      "hgl": [
+        "101696508"
+      ],
+      "ccan": [
+        "109699651"
+      ],
+      "ocu": [
+        "100303765"
+      ],
+      "tup": [
+        "102491899"
+      ],
+      "cfa": [
+        "488506"
+      ],
+      "aml": [
+        "100466842"
+      ],
+      "umr": [
+        "103659822"
+      ],
+      "oro": [
+        "101371212"
+      ],
+      "fca": [
+        "101099824"
+      ],
+      "ptg": [
+        "102968283"
+      ],
+      "aju": [
+        "106984775"
+      ],
+      "bta": [
+        "510506"
+      ],
+      "bom": [
+        "102267831"
+      ],
+      "biu": [
+        "109570387"
+      ],
+      "phd": [
+        "102342950"
+      ],
+      "chx": [
+        "102179612"
+      ],
+      "oas": [
+        "101107584"
+      ],
+      "ssc": [
+        "100157716"
+      ],
+      "cfr": [
+        "102516394",
+        "102522395"
+      ],
+      "cdk": [
+        "105101586"
+      ],
+      "bacu": [
+        "103003987"
+      ],
+      "lve": [
+        "103079188"
+      ],
+      "ecb": [
+        "100050116"
+      ],
+      "epz": [
+        "103554808"
+      ],
+      "eai": [
+        "106843053"
+      ],
+      "myb": [
+        "102262103"
+      ],
+      "myd": [
+        "102756563"
+      ],
+      "hai": [
+        "109390430"
+      ],
+      "rss": [
+        "109445055"
+      ],
+      "pale": [
+        "102895317"
+      ],
+      "lav": [
+        "100669826"
+      ],
+      "tmu": [
+        "101359193"
+      ],
+      "mdo": [
+        "100015090"
+      ],
+      "shr": [
+        "100929825"
+      ],
+      "oaa": [
+        "100077228"
+      ],
+      "gga": [
+        "428994"
+      ],
+      "mgp": [
+        "100539661"
+      ],
+      "cjo": [
+        "107316483"
+      ],
+      "apla": [
+        "101797791"
+      ],
+      "acyg": [
+        "106034508"
+      ],
+      "tgu": [
+        "100221389"
+      ],
+      "gfr": [
+        "102044867"
+      ],
+      "fab": [
+        "101816308"
+      ],
+      "phi": [
+        "102105821"
+      ],
+      "pmaj": [
+        "107207199"
+      ],
+      "ccw": [
+        "104694540"
+      ],
+      "fpg": [
+        "101910440"
+      ],
+      "fch": [
+        "102046837"
+      ],
+      "clv": [
+        "102091543"
+      ],
+      "egz": [
+        "104124302"
+      ],
+      "aam": [
+        "106492382"
+      ],
+      "asn": [
+        "102386005"
+      ],
+      "amj": [
+        "106736782"
+      ],
+      "pss": [
+        "102462440"
+      ],
+      "cmy": [
+        "102943091"
+      ],
+      "cpic": [
+        "101942404"
+      ],
+      "acs": [
+        "100562333"
+      ],
+      "pvt": [
+        "110072386"
+      ],
+      "pbi": [
+        "103061484"
+      ],
+      "gja": [
+        "107110877",
+        "107125788"
+      ],
+      "xla": [
+        "733340"
+      ],
+      "xtr": [
+        "100158506"
+      ],
+      "npr": [
+        "108794421",
+        "108802193"
+      ],
+      "dre": [
+        "555623"
+      ],
+      "srx": [
+        "107741925"
+      ],
+      "sanh": [
+        "107660611"
+      ],
+      "sgh": [
+        "107555907",
+        "107555908",
+        "107555940"
+      ],
+      "ipu": [
+        "108266807"
+      ],
+      "amex": [
+        "103026142"
+      ],
+      "tru": [
+        "101074466"
+      ],
+      "tng": [
+        "GSTEN00004415G001"
+      ],
+      "lco": [
+        "104929821"
+      ],
+      "ncc": [
+        "104943734",
+        "104953308"
+      ],
+      "mze": [
+        "101479159"
+      ],
+      "ola": [
+        "101164854"
+      ],
+      "xma": [
+        "102232024"
+      ],
+      "pret": [
+        "103461545"
+      ],
+      "csem": [
+        "103392237"
+      ],
+      "lcf": [
+        "108885731",
+        "108892757"
+      ],
+      "hcq": [
+        "109531202"
+      ],
+      "bpec": [
+        "110156044"
+      ],
+      "sasa": [
+        "106586447"
+      ],
+      "els": [
+        "105008497"
+      ],
+      "sfm": [
+        "108922270",
+        "108922278"
+      ],
+      "lcm": [
+        "102363877"
+      ],
+      "cmk": [
+        "103182939"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_67029"
+      ],
+      "spu": [
+        "584369"
+      ],
+      "aplc": [
+        "110989285"
+      ],
+      "sko": [
+        "100367850"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_137874"
+      ],
+      "obi": [
+        "106879763"
+      ],
+      "lak": [
+        "106172324",
+        "106173741"
+      ],
+      "epa": [
+        "110246605"
+      ],
+      "adf": [
+        "107350432",
+        "107350434"
+      ],
+      "pti": [
+        "PHATRDRAFT_24195"
+      ],
+      "fcy": [
+        "FRACYDRAFT_169332"
+      ],
+      "tps": [
+        "THAPSDRAFT_40323"
+      ],
+      "aaf": [
+        "AURANDRAFT_20552"
+      ],
+      "pif": [
+        "PITG_03098"
+      ],
+      "psoj": [
+        "PHYSODRAFT_348996"
+      ],
+      "spar": [
+        "SPRG_05438"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.3.4.16"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.3.4.16"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.3.4.16"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.3.4.16"
+      ],
+      "CAS": [
+        "9026-23-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "FAHIEN LA",
+          "COHEN PP."
+        ],
+        "title": "A KINETIC STUDY OF CARBAMYL PHOSPHATE SYNTHETASE.",
+        "journal": "J. Biol. Chem. 239 (1964) 1925-34.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14213379]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "JONES ME",
+          "SPECTOR L."
+        ],
+        "title": "The pathway of carbonate in the biosynthesis of carbamyl phosphate.",
+        "journal": "J. Biol. Chem. 235 (1960) 2897-901.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13790558]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "METZENBERG RL",
+          "MARSHALL M",
+          "COHEN PP."
+        ],
+        "title": "Purification of carbamyl phosphate synthetase from frog liver.",
+        "journal": "J. Biol. Chem. 233 (1958) 102-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:13563449]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Marshall M",
+          "Metzenberg RL",
+          "Cohen PP"
+        ],
+        "title": "Physical and Kinetic Properties of Carbamyl Phosphate Synthetase from Frog Liver.",
+        "journal": "J. Biol. Chem. 236 (1961) 2229-37.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:26151989]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pierson DL",
+          "Brien JM"
+        ],
+        "title": "Human carbamylphosphate synthetase I. Stabilization, purification, and partial characterization of the enzyme from human liver.",
+        "journal": "J. Biol. Chem. 255 (1980) 7891-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:6249820]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pekkala S",
+          "Martinez AI",
+          "Barcelona B",
+          "Gallego J",
+          "Bendala E",
+          "Yefimenko I",
+          "Rubio V",
+          "Cervera J"
+        ],
+        "title": "Structural insight on the control of urea synthesis: identification of the binding site for N-acetyl-L-glutamate, the essential allosteric activator of mitochondrial carbamoyl phosphate synthetase.",
+        "journal": "Biochem. J. 424 (2009) 211-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:19754428]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

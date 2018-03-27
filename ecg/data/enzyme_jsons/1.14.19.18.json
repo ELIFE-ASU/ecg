@@ -1,0 +1,536 @@
+[
+  {
+    "entry_id": "1.14.19.18",
+    "name": "sphingolipid 8-(E)-desaturase",
+    "names": [
+      "sphingolipid 8-(E)-desaturase",
+      "8-sphingolipid desaturase (ambiguous)",
+      "8 fatty acid desaturase (ambiguous)",
+      "DELTA8-sphingolipid desaturase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With oxidation of a pair of donors resulting in the reduction of O2 to two molecules of water"
+    ],
+    "sysname": "(4E)-sphing-4-enine ceramide,ferrocytochrome b5:oxygen oxidoreductase (8,9-trans dehydrogenating)",
+    "reaction": "a (4E)-sphing-4-enine ceramide + 2 ferrocytochrome b5 + O2 + 2 H+ = a (4E,8E)-sphing-4,8-dienine ceramide + 2 ferricytochrome b5 + 2 H2O [RN:R11005]",
+    "all_reac": "R11005",
+    "iubmb_reactions": [
+      "R11005"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(4E)-sphing-4-enine ceramide [CPD:C00195]",
+      "ferrocytochrome b5 [CPD:C00999]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]"
+    ],
+    "products": [
+      "(4E,8E)-sphing-4,8-dienine ceramide",
+      "ferricytochrome b5 [CPD:C00996]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from the yeasts Kluyveromyces lactis and Candida albicans [1] and from the diatom Thalassiosira pseudonana [2], introduces a trans double bond at the 8-position of sphingoid bases in sphingolipids. The enzyme determines the position of the double bond by its distance from the alcohol end of the sphingoid base, and contains a cytochrome b5 domain that acts as the direct electron donor to the active site of the desaturase [3]. The homologous enzymes from higher plants, EC 1.14.19.29, sphingolipid 8-(E/Z)-desaturase, act on phytosphinganine (4-hydroxysphinganine) and produces a mixture of trans and cis isomers.",
+    "pathways": {
+    },
+    "orthologs": {
+      "K13076": "sphingolipid 8-(E)-desaturase"
+    },
+    "genes": {
+      "ago": [
+        "AGOS_AFL079W"
+      ],
+      "erc": [
+        "Ecym_2214"
+      ],
+      "kla": [
+        "KLLA0E19471g"
+      ],
+      "lth": [
+        "KLTH0H04488g"
+      ],
+      "ppa": [
+        "PAS_chr1-1_0013"
+      ],
+      "dha": [
+        "DEHA2G01628g"
+      ],
+      "pic": [
+        "PICST_83317"
+      ],
+      "pgu": [
+        "PGUG_00694"
+      ],
+      "spaa": [
+        "SPAPADRAFT_140050"
+      ],
+      "lel": [
+        "LELG_02122"
+      ],
+      "cal": [
+        "CAALFM_C302680CA"
+      ],
+      "ctp": [
+        "CTRG_02547"
+      ],
+      "cot": [
+        "CORT_0B03390"
+      ],
+      "cdu": [
+        "CD36_82690"
+      ],
+      "cten": [
+        "CANTEDRAFT_113380"
+      ],
+      "yli": [
+        "YALI0E21131g"
+      ],
+      "clu": [
+        "CLUG_02402"
+      ],
+      "clus": [
+        "A9F13_24g00242"
+      ],
+      "caur": [
+        "QG37_01202"
+      ],
+      "ncr": [
+        "NCU02408"
+      ],
+      "nte": [
+        "NEUTE1DRAFT131273"
+      ],
+      "smp": [
+        "SMAC_08298"
+      ],
+      "pan": [
+        "PODANSg1345",
+        "PODANSg9263"
+      ],
+      "ttt": [
+        "THITE_2116695"
+      ],
+      "mtm": [
+        "MYCTH_2309213"
+      ],
+      "cthr": [
+        "CTHT_0048580"
+      ],
+      "mgr": [
+        "MGG_03569"
+      ],
+      "tmn": [
+        "UCRPA7_1947",
+        "UCRPA7_5365"
+      ],
+      "fgr": [
+        "FGSG_01717",
+        "FGSG_09845"
+      ],
+      "fpu": [
+        "FPSE_11030",
+        "FPSE_11439"
+      ],
+      "fvr": [
+        "FVEG_05080",
+        "FVEG_09818"
+      ],
+      "fox": [
+        "FOXG_08156",
+        "FOXG_10983"
+      ],
+      "nhe": [
+        "NECHADRAFT_103962",
+        "NECHADRAFT_30435"
+      ],
+      "tre": [
+        "TRIREDRAFT_61367",
+        "TRIREDRAFT_65055"
+      ],
+      "maw": [
+        "MAC_00112",
+        "MAC_02669",
+        "MAC_09268"
+      ],
+      "maj": [
+        "MAA_02135",
+        "MAA_04489",
+        "MAA_06641"
+      ],
+      "cmt": [
+        "CCM_01221",
+        "CCM_03722",
+        "CCM_08676"
+      ],
+      "plj": [
+        "VFPFJ_02040",
+        "VFPFJ_02290"
+      ],
+      "val": [
+        "VDBG_07330",
+        "VDBG_09691"
+      ],
+      "vda": [
+        "VDAG_06033",
+        "VDAG_09431"
+      ],
+      "cfj": [
+        "CFIO01_04035",
+        "CFIO01_04707"
+      ],
+      "ela": [
+        "UCREL1_3375",
+        "UCREL1_9584"
+      ],
+      "pfy": [
+        "PFICI_03505",
+        "PFICI_06520"
+      ],
+      "ssl": [
+        "SS1G_02169",
+        "SS1G_11010"
+      ],
+      "bfu": [
+        "BC1G_06061",
+        "BC1G_11379"
+      ],
+      "mbe": [
+        "MBM_05993",
+        "MBM_06864"
+      ],
+      "psco": [
+        "LY89DRAFT_640365",
+        "LY89DRAFT_700577"
+      ],
+      "glz": [
+        "GLAREA_12423"
+      ],
+      "ani": [
+        "AN4592.2"
+      ],
+      "afm": [
+        "AFUA_2G02130",
+        "AFUA_8G00590"
+      ],
+      "aor": [
+        "AOR_1_1450114",
+        "AOR_1_826054",
+        "AOR_1_858034"
+      ],
+      "ang": [
+        "ANI_1_1864144",
+        "ANI_1_844064"
+      ],
+      "afv": [
+        "AFLA_010900",
+        "AFLA_043130",
+        "AFLA_062850"
+      ],
+      "act": [
+        "ACLA_092690"
+      ],
+      "nfi": [
+        "NFIA_034500",
+        "NFIA_094040"
+      ],
+      "pcs": [
+        "Pc20g04400",
+        "Pc21g06390"
+      ],
+      "pdp": [
+        "PDIP_08130",
+        "PDIP_60340"
+      ],
+      "cim": [
+        "CIMG_05513",
+        "CIMG_05563"
+      ],
+      "cpw": [
+        "CPC735_066500",
+        "CPC735_066930"
+      ],
+      "pbl": [
+        "PAAG_03324"
+      ],
+      "pbn": [
+        "PADG_06500"
+      ],
+      "ure": [
+        "UREG_06208"
+      ],
+      "abe": [
+        "ARB_02524",
+        "ARB_04995"
+      ],
+      "tve": [
+        "TRV_03106",
+        "TRV_05169"
+      ],
+      "aje": [
+        "HCAG_08823"
+      ],
+      "pno": [
+        "SNOG_01379",
+        "SNOG_03145"
+      ],
+      "pte": [
+        "PTT_11184",
+        "PTT_16459"
+      ],
+      "bze": [
+        "COCCADRAFT_6350",
+        "COCCADRAFT_96002"
+      ],
+      "bsc": [
+        "COCSADRAFT_175963",
+        "COCSADRAFT_35049"
+      ],
+      "bor": [
+        "COCMIDRAFT_101558",
+        "COCMIDRAFT_79519"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_70915",
+        "MYCGRDRAFT_73189"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_88087"
+      ],
+      "bcom": [
+        "BAUCODRAFT_34682"
+      ],
+      "npa": [
+        "UCRNP2_1793",
+        "UCRNP2_7036"
+      ],
+      "tml": [
+        "GSTUM_00007510001"
+      ],
+      "cne": [
+        "CNB03590"
+      ],
+      "cnb": [
+        "CNBB2110"
+      ],
+      "cgi": [
+        "CGB_A2520C"
+      ],
+      "tms": [
+        "TREMEDRAFT_37224"
+      ],
+      "ppl": [
+        "POSPLDRAFT_87860"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_158995"
+      ],
+      "dsq": [
+        "DICSQDRAFT_45749"
+      ],
+      "pco": [
+        "PHACADRAFT_190252",
+        "PHACADRAFT_247499"
+      ],
+      "shs": [
+        "STEHIDRAFT_88813"
+      ],
+      "hir": [
+        "HETIRDRAFT_431762"
+      ],
+      "psq": [
+        "PUNSTDRAFT_58571"
+      ],
+      "adl": [
+        "AURDEDRAFT_111647"
+      ],
+      "fme": [
+        "FOMMEDRAFT_140156"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_29719"
+      ],
+      "lbc": [
+        "LACBIDRAFT_227863"
+      ],
+      "mpr": [
+        "MPER_08138"
+      ],
+      "mrr": [
+        "Moror_17185"
+      ],
+      "cci": [
+        "CC1G_10534"
+      ],
+      "scm": [
+        "SCHCODRAFT_72957"
+      ],
+      "abp": [
+        "AGABI1DRAFT110191"
+      ],
+      "abv": [
+        "AGABI2DRAFT189913"
+      ],
+      "cput": [
+        "CONPUDRAFT_115482"
+      ],
+      "sla": [
+        "SERLADRAFT_415965",
+        "SERLADRAFT_469265"
+      ],
+      "wse": [
+        "WALSEDRAFT_40378"
+      ],
+      "wic": [
+        "J056_003600"
+      ],
+      "uma": [
+        "UMAG_02498"
+      ],
+      "pfp": [
+        "PFL1_01832"
+      ],
+      "mgl": [
+        "MGL_3864"
+      ],
+      "pgr": [
+        "PGTG_07693"
+      ],
+      "mlr": [
+        "MELLADRAFT_118135"
+      ],
+      "tps": [
+        "THAPSDRAFT_22976"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.19.18"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.19.18"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.19.18"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.19.18"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Takakuwa N",
+          "Kinoshita M",
+          "Oda Y",
+          "Ohnishi M."
+        ],
+        "title": "Isolation and characterization of the genes encoding delta(8)-sphingolipid desaturase from Saccharomyces kluyveri and Kluyveromyces lactis.",
+        "journal": "Curr. Microbiol. 45 (2002) 459-61.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12402089]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tonon T",
+          "Sayanova O",
+          "Michaelson LV",
+          "Qing R",
+          "Harvey D",
+          "Larson TR",
+          "Li Y",
+          "Napier JA",
+          "Graham IA"
+        ],
+        "title": "Fatty acid desaturases from the microalga Thalassiosira pseudonana.",
+        "journal": "FEBS. J. 272 (2005) 3401-12.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:15978045]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oura T",
+          "Kajiwara S"
+        ],
+        "title": "Disruption of the sphingolipid Delta8-desaturase gene causes a delay in morphological changes in Candida albicans.",
+        "journal": "Microbiology. 154 (2008) 3795-803.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:19047747]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,726 @@
+[
+  {
+    "entry_id": "2.4.1.245",
+    "name": "alpha,alpha-trehalose synthase",
+    "names": [
+      "alpha,alpha-trehalose synthase",
+      "trehalose synthase",
+      "trehalose synthetase",
+      "UDP-glucose:glucose 1-glucosyltransferase",
+      "TreT",
+      "PhGT",
+      "ADP-glucose:D-glucose 1-alpha-D-glucosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "NDP-alpha-D-glucose:D-glucose 1-alpha-D-glucosyltransferase",
+    "reaction": "NDP-alpha-D-glucose + D-glucose = alpha,alpha-trehalose + NDP [RN:R10525]",
+    "all_reac": "R10525 > R08946 R11306",
+    "iubmb_reactions": [
+      "R10525 > R08946 R11306"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "NDP-alpha-D-glucose [CPD:C15541]",
+      "D-glucose [CPD:C00031]"
+    ],
+    "products": [
+      "alpha,alpha-trehalose [CPD:C01083]",
+      "NDP [CPD:C00454]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Requires Mg2+ for maximal activity [1]. The enzyme-catalysed reaction is reversible [1]. In the reverse direction to that shown above, the enzyme is specific for alpha,alpha-trehalose as substrate, as it cannot use alpha- or beta-paranitrophenyl glucosides, maltose, sucrose, lactose or cellobiose [1]. While the enzymes from the thermophilic bacterium Rubrobacter xylanophilus and the hyperthermophilic archaeon Pyrococcus horikoshii can use ADP-, UDP- and GDP-alpha-D-glucose to the same extent [2,3], that from the hyperthermophilic archaeon Thermococcus litoralis has a marked preference for ADP-alpha-D-glucose [1] and that from the hyperthermophilic archaeon Thermoproteus tenax has a marked preference for UDP-alpha-D-glucose [4].",
+    "pathways": {
+      "ec00500": "Starch and sucrose metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K13057": "trehalose synthase"
+    },
+    "genes": {
+      "msq": [
+        "BKP64_04260"
+      ],
+      "nhl": [
+        "Nhal_1697",
+        "Nhal_3100"
+      ],
+      "tee": [
+        "Tel_12660"
+      ],
+      "gbi": [
+        "PG2T_08535"
+      ],
+      "geo": [
+        "Geob_2843"
+      ],
+      "geb": [
+        "GM18_3944"
+      ],
+      "pca": [
+        "Pcar_3111"
+      ],
+      "pace": [
+        "A6070_00930"
+      ],
+      "pef": [
+        "A7E78_09185"
+      ],
+      "drt": [
+        "Dret_0427"
+      ],
+      "dak": [
+        "DaAHT2_0474"
+      ],
+      "dpr": [
+        "Despr_1889"
+      ],
+      "afw": [
+        "Anae109_3637"
+      ],
+      "mxa": [
+        "MXAN_0781"
+      ],
+      "mfu": [
+        "LILAB_00130",
+        "LILAB_04900"
+      ],
+      "msd": [
+        "MYSTI_00757"
+      ],
+      "mym": [
+        "A176_006221"
+      ],
+      "mmas": [
+        "MYMAC_000794",
+        "MYMAC_001828"
+      ],
+      "ccx": [
+        "COCOR_06731",
+        "COCOR_07114"
+      ],
+      "age": [
+        "AA314_01726"
+      ],
+      "vin": [
+        "AKJ08_0183",
+        "AKJ08_2261"
+      ],
+      "samy": [
+        "DB32_003048"
+      ],
+      "llu": [
+        "AKJ09_03277",
+        "AKJ09_03923"
+      ],
+      "hoh": [
+        "Hoch_4094"
+      ],
+      "sat": [
+        "SYN_02626"
+      ],
+      "dao": [
+        "Desac_0491",
+        "Desac_2074"
+      ],
+      "dti": [
+        "Desti_0427",
+        "Desti_1352"
+      ],
+      "sfu": [
+        "Sfum_2348"
+      ],
+      "dav": [
+        "DESACE_02520"
+      ],
+      "same": [
+        "SAMCFNEI73_pB0408"
+      ],
+      "ngl": [
+        "RG1141_PA10020"
+      ],
+      "bic": [
+        "LMTR13_32505"
+      ],
+      "bvv": [
+        "BHK69_15155"
+      ],
+      "mcg": [
+        "GL4_1007"
+      ],
+      "npp": [
+        "PP1Y_AT23076",
+        "PP1Y_AT23089"
+      ],
+      "afe": [
+        "Lferr_1740"
+      ],
+      "afr": [
+        "AFE_2083"
+      ],
+      "dku": [
+        "Desku_2761"
+      ],
+      "dgi": [
+        "Desgi_1716"
+      ],
+      "tjr": [
+        "TherJR_2672"
+      ],
+      "tpz": [
+        "Tph_c26450"
+      ],
+      "cpo": [
+        "COPRO5265_1552"
+      ],
+      "lpil": [
+        "LIP_3316"
+      ],
+      "sals": [
+        "SLNWT_0587"
+      ],
+      "scx": [
+        "AS200_14825"
+      ],
+      "led": [
+        "BBK82_03990"
+      ],
+      "acti": [
+        "UA75_21495"
+      ],
+      "acad": [
+        "UA74_21015"
+      ],
+      "ams": [
+        "AMIS_32200"
+      ],
+      "actn": [
+        "L083_2862"
+      ],
+      "acq": [
+        "AM609_01085"
+      ],
+      "aos": [
+        "AXE84_03145"
+      ],
+      "ard": [
+        "AXF14_06245"
+      ],
+      "actp": [
+        "B6G06_08385"
+      ],
+      "rxy": [
+        "Rxyl_2973"
+      ],
+      "cwo": [
+        "Cwoe_5908"
+      ],
+      "hhg": [
+        "XM38_036220"
+      ],
+      "tro": [
+        "trd_0944"
+      ],
+      "sti": [
+        "Sthe_2106"
+      ],
+      "ttr": [
+        "Tter_1718"
+      ],
+      "puv": [
+        "PUV_09960"
+      ],
+      "ttf": [
+        "THTE_2039"
+      ],
+      "emi": [
+        "Emin_1550"
+      ],
+      "tai": [
+        "Taci_0297"
+      ],
+      "aco": [
+        "Amico_0248"
+      ],
+      "amo": [
+        "Anamo_1584"
+      ],
+      "rbi": [
+        "RB2501_12587"
+      ],
+      "mrs": [
+        "Murru_0499"
+      ],
+      "hth": [
+        "HTH_0760"
+      ],
+      "hte": [
+        "Hydth_0761"
+      ],
+      "ttk": [
+        "TST_0833"
+      ],
+      "tma": [
+        "TM0392"
+      ],
+      "tmm": [
+        "Tmari_0389"
+      ],
+      "tmi": [
+        "THEMA_02770"
+      ],
+      "tmw": [
+        "THMA_0397"
+      ],
+      "tmq": [
+        "THMB_0397"
+      ],
+      "tmx": [
+        "THMC_0397"
+      ],
+      "tpt": [
+        "Tpet_0528"
+      ],
+      "trq": [
+        "TRQ2_0542"
+      ],
+      "tna": [
+        "CTN_0277"
+      ],
+      "tnp": [
+        "Tnap_0184"
+      ],
+      "thq": [
+        "T2812B_02775"
+      ],
+      "thz": [
+        "CELL2_02785"
+      ],
+      "thr": [
+        "TRQ7_02890"
+      ],
+      "tle": [
+        "Tlet_1841"
+      ],
+      "tta": [
+        "Theth_1807"
+      ],
+      "phy": [
+        "AJ81_09270"
+      ],
+      "tme": [
+        "Tmel_1821"
+      ],
+      "taf": [
+        "THA_843"
+      ],
+      "thp": [
+        "BG95_00665"
+      ],
+      "ther": [
+        "Y592_00670"
+      ],
+      "fno": [
+        "Fnod_0451"
+      ],
+      "fpe": [
+        "Ferpe_0502"
+      ],
+      "fia": [
+        "NA23_02830"
+      ],
+      "kol": [
+        "Kole_0299"
+      ],
+      "kpf": [
+        "IX53_10025"
+      ],
+      "mpg": [
+        "Theba_0438"
+      ],
+      "cex": [
+        "CSE_06690"
+      ],
+      "nde": [
+        "NIDE3904"
+      ],
+      "nmv": [
+        "NITMOv2_3873"
+      ],
+      "nja": [
+        "NSJP_2226"
+      ],
+      "tid": [
+        "Thein_0594"
+      ],
+      "top": [
+        "TOPB45_0482"
+      ],
+      "tcm": [
+        "HL41_04365"
+      ],
+      "mtp": [
+        "Mthe_0797"
+      ],
+      "mem": [
+        "Memar_1192",
+        "Memar_1763",
+        "Memar_2023"
+      ],
+      "mbg": [
+        "BN140_0244",
+        "BN140_0628",
+        "BN140_1261"
+      ],
+      "mema": [
+        "MMAB1_0304",
+        "MMAB1_0814",
+        "MMAB1_1593"
+      ],
+      "nmg": [
+        "Nmag_3832"
+      ],
+      "hxa": [
+        "Halxa_0121"
+      ],
+      "nge": [
+        "Natgr_2896"
+      ],
+      "hru": [
+        "Halru_0712",
+        "Halru_2965"
+      ],
+      "nou": [
+        "Natoc_3903"
+      ],
+      "hlc": [
+        "CHINAEXTREME19245"
+      ],
+      "naj": [
+        "B1756_05760"
+      ],
+      "pho": [
+        "PH1035"
+      ],
+      "pfu": [
+        "PF1742"
+      ],
+      "pfi": [
+        "PFC_09885"
+      ],
+      "pys": [
+        "Py04_1331"
+      ],
+      "pyc": [
+        "TQ32_10875"
+      ],
+      "tsi": [
+        "TSIB_0361"
+      ],
+      "tba": [
+        "TERMP_01971"
+      ],
+      "tlt": [
+        "OCC_03547"
+      ],
+      "ths": [
+        "TES1_1927"
+      ],
+      "teu": [
+        "TEU_03525"
+      ],
+      "tgy": [
+        "X802_07250"
+      ],
+      "tgg": [
+        "A3K92_06315"
+      ],
+      "tbs": [
+        "A3L01_06740"
+      ],
+      "thh": [
+        "CDI07_06705"
+      ],
+      "ttd": [
+        "A3L14_04435"
+      ],
+      "tprf": [
+        "A3L09_09045"
+      ],
+      "ppac": [
+        "PAP_05120"
+      ],
+      "smr": [
+        "Smar_0085"
+      ],
+      "shc": [
+        "Shell_0727"
+      ],
+      "sso": [
+        "SSO2609"
+      ],
+      "sol": [
+        "Ssol_0419"
+      ],
+      "ssoa": [
+        "SULA_0413"
+      ],
+      "ssol": [
+        "SULB_0415"
+      ],
+      "ssof": [
+        "SULC_0413"
+      ],
+      "sto": [
+        "STK_04040"
+      ],
+      "sai": [
+        "Saci_1827"
+      ],
+      "sacn": [
+        "SacN8_08915"
+      ],
+      "sacr": [
+        "SacRon12I_08925"
+      ],
+      "sacs": [
+        "SUSAZ_08770"
+      ],
+      "sis": [
+        "LS215_2870"
+      ],
+      "sia": [
+        "M1425_2703"
+      ],
+      "sim": [
+        "M1627_2757"
+      ],
+      "sid": [
+        "M164_2688"
+      ],
+      "siy": [
+        "YG5714_2882"
+      ],
+      "sin": [
+        "YN1551_3067"
+      ],
+      "sii": [
+        "LD85_3027"
+      ],
+      "sih": [
+        "SiH_2660"
+      ],
+      "sir": [
+        "SiRe_2596"
+      ],
+      "sic": [
+        "SiL_2546"
+      ],
+      "sula": [
+        "BFU36_09315"
+      ],
+      "mse": [
+        "Msed_0129"
+      ],
+      "mcn": [
+        "Mcup_1929"
+      ],
+      "aho": [
+        "Ahos_0030"
+      ],
+      "aman": [
+        "B6F84_02180"
+      ],
+      "pai": [
+        "PAE1278"
+      ],
+      "pcl": [
+        "Pcal_1359"
+      ],
+      "pas": [
+        "Pars_0594"
+      ],
+      "pyr": [
+        "P186_2621"
+      ],
+      "pog": [
+        "Pogu_1761"
+      ],
+      "pyw": [
+        "PYWP30_00458"
+      ],
+      "tuz": [
+        "TUZN_0976"
+      ],
+      "ttn": [
+        "TTX_0217"
+      ],
+      "tpe": [
+        "Tpen_1592"
+      ],
+      "thf": [
+        "MA03_01635"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.245"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.245"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.245"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.245"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Qu Q",
+          "Lee SJ",
+          "Boos W."
+        ],
+        "title": "TreT, a novel trehalose glycosyltransferring synthase of the hyperthermophilic archaeon Thermococcus litoralis.",
+        "journal": "J. Biol. Chem. 279 (2004) 47890-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:15364950]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ryu SI",
+          "Park CS",
+          "Cha J",
+          "Woo EJ",
+          "Lee SB."
+        ],
+        "title": "A novel trehalose-synthesizing glycosyltransferase from Pyrococcus horikoshii: molecular cloning and characterization.",
+        "journal": "Biochem. Biophys. Res. Commun. 329 (2005) 429-36.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:15737605]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nobre A",
+          "Alarico S",
+          "Fernandes C",
+          "Empadinhas N",
+          "da Costa MS"
+        ],
+        "title": "A unique combination of genetic systems for the synthesis of trehalose in Rubrobacter xylanophilus: properties of a rare actinobacterial TreT.",
+        "journal": "J. Bacteriol. 190 (2008) 7939-46.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:18835983]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kouril T",
+          "Zaparty M",
+          "Marrero J",
+          "Brinkmann H",
+          "Siebers B"
+        ],
+        "title": "A novel trehalose synthesizing pathway in the hyperthermophilic Crenarchaeon Thermoproteus tenax: the unidirectional TreT pathway.",
+        "journal": "Arch. Microbiol. 190 (2008) 355-69.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:18483808]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

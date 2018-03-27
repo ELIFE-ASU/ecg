@@ -1,0 +1,161 @@
+[
+  {
+    "entry_id": "1.14.13.151",
+    "name": "linalool 8-monooxygenase",
+    "names": [
+      "linalool 8-monooxygenase",
+      "P-450lin",
+      "CYP111"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "linalool,NADH:oxygen oxidoreductase (8-hydroxylating)",
+    "reaction": "linalool + 2 NADH + 2 H+ + 2 O2 = (6E)-8-oxolinalool + 2 NAD+ + 3 H2O (overall reaction) [RN:R09925]; (1a) linalool + NADH + H+ + O2 = (6E)-8-hydroxylinalool + NAD+ + H2O [RN:R04366]; (1b) (6E)-8-hydroxylinalool + NADH + H+ + O2 = (6E)-8-oxolinalool + NAD+ + 2 H2O [RN:R09924]",
+    "all_reac": "R04366 > R09922 R09923; R09924 R09925",
+    "iubmb_reactions": [
+      "R04366 > R09922 R09923",
+      "R09924 R09925"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "linalool [CPD:C03985]",
+      "NADH [CPD:C00004]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(6E)-8-hydroxylinalool [CPD:C04433]"
+    ],
+    "products": [
+      "(6E)-8-oxolinalool [CPD:C20221]",
+      "NAD+ [CPD:C00003]",
+      "H2O [CPD:C00001]",
+      "(6E)-8-hydroxylinalool [CPD:C04433]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A heme-thiolate protein (P-450). The secondary electron donor is a specific [2Fe-2S] ferredoxin from the same bacterial strain.",
+    "pathways": {
+      "ec00902": "Monoterpenoid biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K05525": "linalool 8-monooxygenase"
+    },
+    "genes": {
+      "aci": [
+        "ACIAD1575"
+      ],
+      "sur": [
+        "STAUR_6105"
+      ],
+      "pla": [
+        "Plav_0029"
+      ],
+      "nar": [
+        "Saro_0759"
+      ],
+      "nre": [
+        "BES08_22970"
+      ],
+      "smy": [
+        "BJP26_16325"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.151"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.151"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.151"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.151"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Ullah AJ",
+          "Murray RI",
+          "Bhattacharyya PK",
+          "Wagner GC",
+          "Gunsalus IC"
+        ],
+        "title": "Protein components of a cytochrome P-450 linalool 8-methyl hydroxylase.",
+        "journal": "J. Biol. Chem. 265 (1990) 1345-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2295633]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ropp JD",
+          "Gunsalus IC",
+          "Sligar SG"
+        ],
+        "title": "Cloning and expression of a member of a new cytochrome P-450 family: cytochrome P-450lin (CYP111) from Pseudomonas incognita.",
+        "journal": "J. Bacteriol. 175 (1993) 6028-37.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8376348]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

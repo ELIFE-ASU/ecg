@@ -1,0 +1,607 @@
+[
+  {
+    "entry_id": "1.14.13.107",
+    "name": "limonene 1,2-monooxygenase",
+    "names": [
+      "limonene 1,2-monooxygenase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "limonene,NAD(P)H:oxygen oxidoreductase",
+    "reaction": "(1) (S)-limonene + NAD(P)H + H+ + O2 = 1,2-epoxymenth-8-ene + NAD(P)+ + H2O [RN:R09385 R09389]; (2) (R)-limonene + NAD(P)H + H+ + O2 = 1,2-epoxymenth-8-ene + NAD(P)+ + H2O [RN:R06398 R09393]",
+    "all_reac": "R06398 R09385 R09389 R09393",
+    "iubmb_reactions": [
+      "R06398 R09385 R09389 R09393"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(S)-limonene",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "(R)-limonene"
+    ],
+    "products": [
+      "1,2-epoxymenth-8-ene",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A flavoprotein (FAD). Limonene is the most widespread terpene and is formed by more than 300 plants. Rhodococcus erythropolis DCL14, a Gram-positive bacterium, is able to grow on both (S)-limonene and (R)-limonene as the sole source of carbon and energy. NADPH can act instead of NADH, although more slowly. It has not been established if the product formed is optically pure or a mixture of two enantiomers.",
+    "pathways": {
+      "ec00903": "Limonene and pinene degradation"
+    },
+    "orthologs": {
+      "K14733": "limonene 1,2-monooxygenase"
+    },
+    "genes": {
+      "mes": [
+        "Meso_3721"
+      ],
+      "pla": [
+        "Plav_1646"
+      ],
+      "bja": [
+        "bll0895"
+      ],
+      "bju": [
+        "BJ6T_09070"
+      ],
+      "bjp": [
+        "RN69_04430"
+      ],
+      "bra": [
+        "BRADO0508"
+      ],
+      "bbt": [
+        "BBta_7675"
+      ],
+      "brs": [
+        "S23_69110"
+      ],
+      "aol": [
+        "S58_71450"
+      ],
+      "brc": [
+        "BCCGELA001_35180"
+      ],
+      "brad": [
+        "BF49_7289"
+      ],
+      "bic": [
+        "LMTR13_01245"
+      ],
+      "bro": [
+        "BRAD285_7739"
+      ],
+      "rbm": [
+        "TEF_06950"
+      ],
+      "pzu": [
+        "PHZ_c1133"
+      ],
+      "rde": [
+        "RD1_3871"
+      ],
+      "rli": [
+        "RLO149_c005640"
+      ],
+      "sphm": [
+        "G432_04655"
+      ],
+      "sphj": [
+        "BSL82_10485",
+        "BSL82_10530"
+      ],
+      "spkc": [
+        "KC8_00760",
+        "KC8_08220"
+      ],
+      "ssy": [
+        "SLG_34780"
+      ],
+      "sphb": [
+        "EP837_02941"
+      ],
+      "mtu": [
+        "Rv3618"
+      ],
+      "mtv": [
+        "RVBD_3618"
+      ],
+      "mtc": [
+        "MT3720"
+      ],
+      "mra": [
+        "MRA_3654"
+      ],
+      "mtf": [
+        "TBFG_13649"
+      ],
+      "mtb": [
+        "TBMG_03655"
+      ],
+      "mtk": [
+        "TBSG_03680"
+      ],
+      "mtz": [
+        "TBXG_003627"
+      ],
+      "mtg": [
+        "MRGA327_22290"
+      ],
+      "mti": [
+        "MRGA423_22835"
+      ],
+      "mte": [
+        "CCDC5079_3355",
+        "CCDC5079_3356"
+      ],
+      "mtur": [
+        "CFBS_3834"
+      ],
+      "mtl": [
+        "CCDC5180_3308"
+      ],
+      "mto": [
+        "MTCTRI2_3683"
+      ],
+      "mtd": [
+        "UDA_3618"
+      ],
+      "mtn": [
+        "ERDMAN_3962"
+      ],
+      "mtj": [
+        "J112_19455"
+      ],
+      "mtub": [
+        "MT7199_3681"
+      ],
+      "mtuc": [
+        "J113_25305"
+      ],
+      "mtue": [
+        "J114_19330"
+      ],
+      "mtx": [
+        "M943_18580"
+      ],
+      "mtul": [
+        "TBHG_03556"
+      ],
+      "mtut": [
+        "HKBT1_3819"
+      ],
+      "mtuu": [
+        "HKBT2_3827"
+      ],
+      "mtq": [
+        "HKBS1_3831"
+      ],
+      "mce": [
+        "MCAN_36301"
+      ],
+      "mcq": [
+        "BN44_120007"
+      ],
+      "mcv": [
+        "BN43_90117"
+      ],
+      "mcx": [
+        "BN42_90118"
+      ],
+      "mcz": [
+        "BN45_100130"
+      ],
+      "mpa": [
+        "MAP_0445c",
+        "MAP_1645"
+      ],
+      "mao": [
+        "MAP4_2193",
+        "MAP4_3422"
+      ],
+      "mavi": [
+        "RC58_10915",
+        "RC58_16975"
+      ],
+      "mavu": [
+        "RE97_10925",
+        "RE97_17010"
+      ],
+      "mav": [
+        "MAV_0538",
+        "MAV_2779"
+      ],
+      "mavd": [
+        "NF84_02400",
+        "NF84_12375"
+      ],
+      "mavr": [
+        "LA63_02465",
+        "LA63_12520"
+      ],
+      "mava": [
+        "LA64_02475",
+        "LA64_12510"
+      ],
+      "mit": [
+        "OCO_04520",
+        "OCO_26110"
+      ],
+      "mia": [
+        "OCU_04550",
+        "OCU_25970"
+      ],
+      "mie": [
+        "LG41_02280",
+        "LG41_12315"
+      ],
+      "mir": [
+        "OCQ_04680",
+        "OCQ_24690"
+      ],
+      "mid": [
+        "MIP_00873",
+        "MIP_03599",
+        "MIP_03607",
+        "MIP_03648"
+      ],
+      "myo": [
+        "OEM_04580",
+        "OEM_24600"
+      ],
+      "mchi": [
+        "AN480_02260",
+        "AN480_13590",
+        "AN480_13625",
+        "AN480_13760"
+      ],
+      "mmal": [
+        "CKJ54_02180",
+        "CKJ54_11660",
+        "CKJ54_11695",
+        "CKJ54_11805"
+      ],
+      "msm": [
+        "MSMEG_6107"
+      ],
+      "msg": [
+        "MSMEI_5948"
+      ],
+      "msb": [
+        "LJ00_30200"
+      ],
+      "msn": [
+        "LI99_30205"
+      ],
+      "msh": [
+        "LI98_30210"
+      ],
+      "msa": [
+        "Mycsm_02075",
+        "Mycsm_05927"
+      ],
+      "mul": [
+        "MUL_2949"
+      ],
+      "mva": [
+        "Mvan_1925"
+      ],
+      "mgi": [
+        "Mflv_4429"
+      ],
+      "msp": [
+        "Mspyr1_38290"
+      ],
+      "mab": [
+        "MAB_0527c"
+      ],
+      "mabb": [
+        "MASS_0495"
+      ],
+      "mmv": [
+        "MYCMA_0262"
+      ],
+      "may": [
+        "LA62_02670"
+      ],
+      "mabo": [
+        "NF82_02665"
+      ],
+      "mabl": [
+        "MMASJCM_0514"
+      ],
+      "maz": [
+        "LA61_02585"
+      ],
+      "mak": [
+        "LH56_19980"
+      ],
+      "mys": [
+        "NF92_20485"
+      ],
+      "myc": [
+        "NF90_20490"
+      ],
+      "mche": [
+        "BB28_02480"
+      ],
+      "miz": [
+        "BAB75_03225"
+      ],
+      "mmc": [
+        "Mmcs_4772"
+      ],
+      "mkm": [
+        "Mkms_4858"
+      ],
+      "mjl": [
+        "Mjls_5158"
+      ],
+      "mjd": [
+        "JDM601_3901"
+      ],
+      "mmi": [
+        "MMAR_2824"
+      ],
+      "mmae": [
+        "MMARE11_27450",
+        "MMARE11_49370"
+      ],
+      "mrh": [
+        "MycrhN_6318"
+      ],
+      "mmm": [
+        "W7S_02200",
+        "W7S_12680"
+      ],
+      "mcb": [
+        "Mycch_1625"
+      ],
+      "mli": [
+        "MULP_02587",
+        "MULP_05376"
+      ],
+      "mkn": [
+        "MKAN_00970",
+        "MKAN_12460"
+      ],
+      "mks": [
+        "LG40_00980",
+        "LG40_12305"
+      ],
+      "mki": [
+        "LH54_00990",
+        "LH54_12455"
+      ],
+      "mne": [
+        "D174_25035"
+      ],
+      "myv": [
+        "G155_01850",
+        "G155_26930"
+      ],
+      "mye": [
+        "AB431_26805"
+      ],
+      "mgo": [
+        "AFA91_09645",
+        "AFA91_10240"
+      ],
+      "mft": [
+        "XA26_26540",
+        "XA26_54530"
+      ],
+      "mhad": [
+        "B586_04220"
+      ],
+      "mphl": [
+        "MPHLCCUG_00069"
+      ],
+      "mvq": [
+        "MYVA_1767"
+      ],
+      "myn": [
+        "MyAD_24570"
+      ],
+      "ncy": [
+        "NOCYR_3944"
+      ],
+      "nsr": [
+        "NS506_03939"
+      ],
+      "rha": [
+        "RHA1_ro09085",
+        "RHA1_ro11046"
+      ],
+      "rer": [
+        "RER_46450"
+      ],
+      "rey": [
+        "O5Y_21925"
+      ],
+      "reb": [
+        "XU06_22040"
+      ],
+      "rop": [
+        "ROP_46710"
+      ],
+      "req": [
+        "REQ_44050"
+      ],
+      "rav": [
+        "AAT18_05565"
+      ],
+      "gpo": [
+        "GPOL_c09000"
+      ],
+      "gta": [
+        "BCM27_13075",
+        "BCM27_17640",
+        "BCM27_22070"
+      ],
+      "sco": [
+        "SCP1.240c"
+      ],
+      "sct": [
+        "SCAT_0119"
+      ],
+      "scy": [
+        "SCATT_01270"
+      ],
+      "sbh": [
+        "SBI_00943"
+      ],
+      "shy": [
+        "SHJG_4007"
+      ],
+      "sho": [
+        "SHJGH_3772"
+      ],
+      "sals": [
+        "SLNWT_0923"
+      ],
+      "src": [
+        "M271_44285"
+      ],
+      "salu": [
+        "DC74_7652"
+      ],
+      "nal": [
+        "B005_2518"
+      ],
+      "gob": [
+        "Gobs_2267"
+      ],
+      "bsd": [
+        "BLASA_2848",
+        "BLASA_3512"
+      ],
+      "mmar": [
+        "MODMU_2453"
+      ],
+      "alu": [
+        "BB31_10665"
+      ],
+      "pdx": [
+        "Psed_5126"
+      ],
+      "psea": [
+        "WY02_18195"
+      ],
+      "psee": [
+        "FRP1_17430",
+        "FRP1_24600"
+      ],
+      "pseh": [
+        "XF36_23280"
+      ],
+      "pseq": [
+        "AD006_03785",
+        "AD006_24885",
+        "AD006_28245",
+        "AD006_28495",
+        "AD006_32110"
+      ],
+      "pecq": [
+        "AD017_04475",
+        "AD017_11605",
+        "AD017_28640",
+        "AD017_28885"
+      ],
+      "sesp": [
+        "BN6_21310"
+      ],
+      "ahm": [
+        "TL08_15815"
+      ],
+      "pmad": [
+        "BAY61_15565"
+      ],
+      "aey": [
+        "CDG81_10655",
+        "CDG81_21480"
+      ],
+      "abai": [
+        "IMCC26256_11725"
+      ],
+      "aym": [
+        "YM304_25770"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.107"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.107"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.107"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.14.13.107"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.107"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "van der Werf MJ",
+          "Swarts HJ",
+          "de Bont JA."
+        ],
+        "title": "Rhodococcus erythropolis DCL14 contains a novel degradation pathway for limonene.",
+        "journal": "Appl. Environ. Microbiol. 65 (1999) 2092-102.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10224006]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

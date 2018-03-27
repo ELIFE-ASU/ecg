@@ -1,0 +1,652 @@
+[
+  {
+    "entry_id": "1.21.98.3",
+    "name": "anaerobic magnesium-protoporphyrin IX monomethyl ester cyclase",
+    "names": [
+      "anaerobic magnesium-protoporphyrin IX monomethyl ester cyclase",
+      "bchE (gene name)",
+      "MPE cyclase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Catalysing the reaction X-H + Y-H = X-Y;",
+      "With other, known, physiological acceptors"
+    ],
+    "sysname": "magnesium-protoporphyrin-IX 13-monomethyl ester,S-adenosyl-L-methionine:H2O oxidoreductase (hydroxylating)",
+    "reaction": "magnesium-protoporphyrin IX 13-monomethyl ester + 3 S-adenosyl-L-methionine + H2O = 3,8-divinyl protochlorophyllide a + 3 5'-deoxyadenosine + 3 L-methionine (overall reaction) [RN:R11494]; (1a) magnesium-protoporphyrin IX 13-monomethyl ester + S-adenosyl-L-methionine + H2O = 131-hydroxy-magnesium-protoporphyrin IX 13-monomethyl ester + 5'-deoxyadenosine + L-methionine [RN:R06268]; (1b) 131-hydroxy-magnesium-protoporphyrin IX 13-monomethyl ester + S-adenosyl-L-methionine = 131-oxo-magnesium-protoporphyrin IX 13-monomethyl ester + 5'-deoxyadenosine + L-methionine [RN:R06269]; (1c) 131-oxo-magnesium-protoporphyrin IX 13-monomethyl ester + S-adenosyl-L-methionine = 3,8-divinyl protochlorophyllide a + 5'-deoxyadenosine + L-methionine [RN:R06270]",
+    "all_reac": "R06268 R06269 R06270 R11494",
+    "iubmb_reactions": [
+      "R06268 R06269 R06270 R11494"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "magnesium-protoporphyrin IX 13-monomethyl ester [CPD:C04536]",
+      "S-adenosyl-L-methionine [CPD:C00019]",
+      "H2O [CPD:C00001]",
+      "131-hydroxy-magnesium-protoporphyrin IX 13-monomethyl ester",
+      "131-oxo-magnesium-protoporphyrin IX 13-monomethyl ester"
+    ],
+    "products": [
+      "3,8-divinyl protochlorophyllide a [CPD:C11831]",
+      "5'-deoxyadenosine [CPD:C05198]",
+      "L-methionine [CPD:C00073]",
+      "131-hydroxy-magnesium-protoporphyrin IX 13-monomethyl ester",
+      "131-oxo-magnesium-protoporphyrin IX 13-monomethyl ester"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This radical AdoMet enzyme participates in the biosynthesis of chlorophyllide a in anaerobic bacteria, catalysing the formation of an isocyclic ring. Contains a [4Fe-4S] cluster and a cobalamin cofactor. The same transformation is achieved in aerobic organisms by the oxygen-dependent EC 1.14.13.81, magnesium-protoporphyrin IX monomethyl ester (oxidative) cyclase. Some facultative phototrophic bacteria, such as Rubrivivax gelatinosus, possess both enzymes.",
+    "pathways": {
+      "ec00860": "Porphyrin and chlorophyll metabolism"
+    },
+    "orthologs": {
+      "K04034": "anaerobic magnesium-protoporphyrin IX monomethyl ester cyclase"
+    },
+    "genes": {
+      "xcc": [
+        "XCC1683"
+      ],
+      "xcb": [
+        "XC_2549"
+      ],
+      "xca": [
+        "xcc-b100_2577"
+      ],
+      "xcp": [
+        "XCR_1918"
+      ],
+      "xcv": [
+        "XCV1735"
+      ],
+      "xac": [
+        "XAC1702"
+      ],
+      "xci": [
+        "XCAW_02370"
+      ],
+      "xct": [
+        "J151_01856"
+      ],
+      "xcu": [
+        "J159_01844"
+      ],
+      "xcn": [
+        "J169_01853"
+      ],
+      "xcw": [
+        "J162_01844"
+      ],
+      "xcr": [
+        "J163_01844"
+      ],
+      "xcm": [
+        "J164_01844"
+      ],
+      "xcf": [
+        "J172_01847"
+      ],
+      "xcj": [
+        "J158_01844"
+      ],
+      "xfu": [
+        "XFF4834R_chr28090"
+      ],
+      "xax": [
+        "XACM_1722"
+      ],
+      "xao": [
+        "XAC29_08570"
+      ],
+      "xoo": [
+        "XOO2983"
+      ],
+      "xom": [
+        "XOO2833"
+      ],
+      "xop": [
+        "PXO_00191"
+      ],
+      "xoy": [
+        "AZ54_09080"
+      ],
+      "xor": [
+        "XOC_2814"
+      ],
+      "xoz": [
+        "BE73_13630"
+      ],
+      "xsa": [
+        "SB85_02265"
+      ],
+      "xtn": [
+        "FD63_09265"
+      ],
+      "rhd": [
+        "R2APBS1_0675"
+      ],
+      "alv": [
+        "Alvin_2224"
+      ],
+      "tvi": [
+        "Thivi_1709",
+        "Thivi_2401"
+      ],
+      "tmb": [
+        "Thimo_0493"
+      ],
+      "mpur": [
+        "MARPU_05960"
+      ],
+      "hha": [
+        "Hhal_1625"
+      ],
+      "hhc": [
+        "M911_01050"
+      ],
+      "ebs": [
+        "ECTOBSL9_0895"
+      ],
+      "rge": [
+        "RGE_45840"
+      ],
+      "rbn": [
+        "RBXJA2T_04628"
+      ],
+      "metr": [
+        "BSY238_974"
+      ],
+      "aza": [
+        "AZKH_0381"
+      ],
+      "gsu": [
+        "GSU2888"
+      ],
+      "gsk": [
+        "KN400_2831"
+      ],
+      "gme": [
+        "Gmet_0597"
+      ],
+      "gur": [
+        "Gura_0516",
+        "Gura_1298"
+      ],
+      "gbm": [
+        "Gbem_1165",
+        "Gbem_3467"
+      ],
+      "geo": [
+        "Geob_0066",
+        "Geob_3339"
+      ],
+      "gem": [
+        "GM21_3533",
+        "GM21_3552",
+        "GM21_3553"
+      ],
+      "geb": [
+        "GM18_0607",
+        "GM18_0608",
+        "GM18_0623"
+      ],
+      "gpi": [
+        "GPICK_15885"
+      ],
+      "gao": [
+        "A2G06_13605"
+      ],
+      "pca": [
+        "Pcar_0494"
+      ],
+      "ppd": [
+        "Ppro_0614"
+      ],
+      "dal": [
+        "Dalk_5114"
+      ],
+      "mlo": [
+        "mll4828"
+      ],
+      "mci": [
+        "Mesci_0620"
+      ],
+      "mop": [
+        "Mesop_0630"
+      ],
+      "mam": [
+        "Mesau_00445"
+      ],
+      "agc": [
+        "BSY240_672"
+      ],
+      "ret": [
+        "RHE_CH00422"
+      ],
+      "rec": [
+        "RHECIAT_CH0000465"
+      ],
+      "rle": [
+        "RL0441"
+      ],
+      "bja": [
+        "blr0853"
+      ],
+      "bra": [
+        "BRADO1652"
+      ],
+      "bbt": [
+        "BBta_6404"
+      ],
+      "aol": [
+        "S58_58860"
+      ],
+      "rpa": [
+        "RPA1668"
+      ],
+      "rpb": [
+        "RPB_2687",
+        "RPB_3863"
+      ],
+      "rpc": [
+        "RPC_3812",
+        "RPC_4478"
+      ],
+      "rpd": [
+        "RPD_0062",
+        "RPD_1487"
+      ],
+      "rpe": [
+        "RPE_3935"
+      ],
+      "rpt": [
+        "Rpal_1864"
+      ],
+      "rpx": [
+        "Rpdx1_3849"
+      ],
+      "mex": [
+        "Mext_4064"
+      ],
+      "mea": [
+        "Mex_1p4454"
+      ],
+      "mdi": [
+        "METDI5058"
+      ],
+      "met": [
+        "M446_3585"
+      ],
+      "rva": [
+        "Rvan_2498"
+      ],
+      "bvr": [
+        "BVIR_1991"
+      ],
+      "rsp": [
+        "RSP_0281"
+      ],
+      "rsh": [
+        "Rsph17029_1924"
+      ],
+      "rsq": [
+        "Rsph17025_1014"
+      ],
+      "rsk": [
+        "RSKD131_1607"
+      ],
+      "rcp": [
+        "RCAP_rcc00669"
+      ],
+      "rde": [
+        "RD1_1697"
+      ],
+      "rli": [
+        "RLO149_c030170"
+      ],
+      "dsh": [
+        "Dshi_2637"
+      ],
+      "red": [
+        "roselon_00270"
+      ],
+      "rsu": [
+        "NHU_03054"
+      ],
+      "cij": [
+        "WG74_14565"
+      ],
+      "porl": [
+        "BG023_11773"
+      ],
+      "acr": [
+        "Acry_2281"
+      ],
+      "amv": [
+        "ACMV_25330"
+      ],
+      "rru": [
+        "Rru_A3548"
+      ],
+      "rrf": [
+        "F11_18165"
+      ],
+      "rce": [
+        "RC1_0283"
+      ],
+      "rpm": [
+        "RSPPHO_00441"
+      ],
+      "bha": [
+        "BH2952"
+      ],
+      "gka": [
+        "GK0942"
+      ],
+      "gtn": [
+        "GTNG_0831"
+      ],
+      "cpe": [
+        "CPE1645"
+      ],
+      "cpf": [
+        "CPF_1897"
+      ],
+      "cpr": [
+        "CPR_1616"
+      ],
+      "ctc": [
+        "CTC_00992"
+      ],
+      "cno": [
+        "NT01CX_1640"
+      ],
+      "dsy": [
+        "DSY4847"
+      ],
+      "tjr": [
+        "TherJR_1127",
+        "TherJR_2857"
+      ],
+      "hmo": [
+        "HM1_0688"
+      ],
+      "syn": [
+        "slr0905"
+      ],
+      "syz": [
+        "MYO_125190"
+      ],
+      "syy": [
+        "SYNGTS_2494"
+      ],
+      "syt": [
+        "SYNGTI_2493"
+      ],
+      "sys": [
+        "SYNPCCN_2492"
+      ],
+      "syq": [
+        "SYNPCCP_2492"
+      ],
+      "hao": [
+        "PCC7418_3775"
+      ],
+      "cyn": [
+        "Cyan7425_4778"
+      ],
+      "cyj": [
+        "Cyan7822_3999"
+      ],
+      "mic": [
+        "Mic7113_6715"
+      ],
+      "gvi": [
+        "glr1291"
+      ],
+      "ana": [
+        "alr0030"
+      ],
+      "nop": [
+        "Nos7524_0391"
+      ],
+      "non": [
+        "NOS3756_14390"
+      ],
+      "calo": [
+        "Cal7507_1518"
+      ],
+      "calh": [
+        "IJ00_10585"
+      ],
+      "fis": [
+        "FIS3754_46380"
+      ],
+      "rrs": [
+        "RoseRS_0942"
+      ],
+      "rca": [
+        "Rcas_1584"
+      ],
+      "cau": [
+        "Caur_3676"
+      ],
+      "cag": [
+        "Cagg_0316"
+      ],
+      "chl": [
+        "Chy400_3963"
+      ],
+      "ctm": [
+        "Cabther_B0143"
+      ],
+      "gph": [
+        "GEMMAAP_19090"
+      ],
+      "cte": [
+        "CT1959"
+      ],
+      "cpc": [
+        "Cpar_0258"
+      ],
+      "clz": [
+        "BIU88_10605"
+      ],
+      "cch": [
+        "Cag_0229"
+      ],
+      "cph": [
+        "Cpha266_2315"
+      ],
+      "cpb": [
+        "Cphamn1_2209"
+      ],
+      "cli": [
+        "Clim_2158"
+      ],
+      "pvi": [
+        "Cvib_0316"
+      ],
+      "plt": [
+        "Plut_0251"
+      ],
+      "pph": [
+        "Ppha_2585"
+      ],
+      "paa": [
+        "Paes_1976"
+      ],
+      "proc": [
+        "Ptc2401_02048"
+      ],
+      "cts": [
+        "Ctha_0811"
+      ],
+      "tma": [
+        "TM1537"
+      ],
+      "mth": [
+        "MTH_1784"
+      ],
+      "tvo": [
+        "TVG0569632"
+      ],
+      "sto": [
+        "STK_00560"
+      ],
+      "sai": [
+        "Saci_1785"
+      ],
+      "mse": [
+        "Msed_1243"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.21.98.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.21.98.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.21.98.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.21.98.3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Yang ZM",
+          "Bauer CE"
+        ],
+        "title": "Rhodobacter capsulatus genes involved in early steps of the bacteriochlorophyll biosynthetic pathway.",
+        "journal": "J. Bacteriol. 172 (1990) 5001-10.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2203738]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Gough SP",
+          "Petersen BO",
+          "Duus JO"
+        ],
+        "title": "Anaerobic chlorophyll isocyclic ring formation in Rhodobacter capsulatus requires a cobalamin cofactor.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 97 (2000) 6908-13.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10841582]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Ouchane S",
+          "Steunou AS",
+          "Picaud M",
+          "Astier C"
+        ],
+        "title": "Aerobic and anaerobic Mg-protoporphyrin monomethyl ester cyclases in purple bacteria: a strategy adopted to bypass the repressive oxygen control system.",
+        "journal": "J. Biol. Chem. 279 (2004) 6385-94.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14617630]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Booker SJ"
+        ],
+        "title": "Anaerobic functionalization of unactivated C-H bonds.",
+        "journal": "Curr. Opin. Chem. Biol. 13 (2009) 58-73.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:19297239]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

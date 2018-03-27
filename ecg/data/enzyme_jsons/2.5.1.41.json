@@ -1,0 +1,1035 @@
+[
+  {
+    "entry_id": "2.5.1.41",
+    "name": "phosphoglycerol geranylgeranyltransferase",
+    "names": [
+      "phosphoglycerol geranylgeranyltransferase",
+      "glycerol phosphate geranylgeranyltransferase",
+      "geranylgeranyl-transferase (ambiguous)",
+      "prenyltransferase (ambiguous)",
+      "(S)-3-O-geranylgeranylglyceryl phosphate synthase",
+      "(S)-geranylgeranylglyceryl phosphate synthase",
+      "GGGP synthase",
+      "(S)-GGGP synthase",
+      "GGGPS",
+      "geranylgeranyl diphosphate:sn-glyceryl phosphate geranylgeranyltransferase",
+      "geranylgeranyl diphosphate:sn-glycerol-1-phosphate geranylgeranyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring alkyl or aryl groups, other than methyl groups;",
+      "Transferring alkyl or aryl groups, other than methyl groups (only sub-subclass identified to date)"
+    ],
+    "sysname": "geranylgeranyl-diphosphate:sn-glycerol-1-phosphate geranylgeranyltransferase",
+    "reaction": "geranylgeranyl diphosphate + sn-glycerol 1-phosphate = diphosphate + 3-(O-geranylgeranyl)-sn-glycerol 1-phosphate [RN:R04158]",
+    "all_reac": "R04158",
+    "iubmb_reactions": [
+      "R04158"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "geranylgeranyl diphosphate [CPD:C00353]",
+      "sn-glycerol 1-phosphate [CPD:C00623]"
+    ],
+    "products": [
+      "diphosphate [CPD:C00013]",
+      "3-(O-geranylgeranyl)-sn-glycerol 1-phosphate [CPD:C04590]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This cytosolic enzyme catalyses the first pathway-specific step in the biosynthesis of the core membrane diether lipids in archaebacteria [2]. Requires Mg2+ for maximal activity [2]. It catalyses the alkylation of the primary hydroxy group in sn-glycerol 1-phosphate by geranylgeranyl diphosphate (GGPP) in a prenyltransfer reaction where a hydroxy group is the nucleophile in the acceptor substrate [2]. The other enzymes involved in the biosynthesis of polar lipids in Archaea are EC 1.1.1.261 (sn-glycerol-1-phosphate dehydrogenase), EC 2.5.1.42 (geranylgeranylglycerol-phosphate geranylgeranyltransferase) and EC 2.7.7.67 (CDP-archaeol synthase), which lead to the formation of CDP-unsaturated archaeol. The final step in the pathway involves the addition of L-serine, with concomitant removal of CMP, leading to the production of unsaturated archaetidylserine [5].",
+    "pathways": {
+      "ec00564": "Glycerophospholipid metabolism"
+    },
+    "orthologs": {
+      "K17104": "phosphoglycerol geranylgeranyltransferase"
+    },
+    "genes": {
+      "strt": [
+        "A8713_30305"
+      ],
+      "sls": [
+        "SLINC_6335"
+      ],
+      "mja": [
+        "MJ_1250"
+      ],
+      "mfe": [
+        "Mefer_0372"
+      ],
+      "mvu": [
+        "Metvu_0909"
+      ],
+      "mfs": [
+        "MFS40622_0685"
+      ],
+      "mif": [
+        "Metin_0740"
+      ],
+      "mjh": [
+        "JH146_0475"
+      ],
+      "mig": [
+        "Metig_1082"
+      ],
+      "mmp": [
+        "MMP0007"
+      ],
+      "mmq": [
+        "MmarC5_1677"
+      ],
+      "mmx": [
+        "MmarC6_0942"
+      ],
+      "mmz": [
+        "MmarC7_1004"
+      ],
+      "mmd": [
+        "GYY_00040"
+      ],
+      "mmak": [
+        "MMKA1_00070"
+      ],
+      "mmao": [
+        "MMOS7_00070"
+      ],
+      "mae": [
+        "Maeo_1165"
+      ],
+      "mvn": [
+        "Mevan_1213"
+      ],
+      "mvo": [
+        "Mvol_1417"
+      ],
+      "mok": [
+        "Metok_0736"
+      ],
+      "mac": [
+        "MA_3969"
+      ],
+      "mba": [
+        "Mbar_A0675"
+      ],
+      "mby": [
+        "MSBRM_3248"
+      ],
+      "mbw": [
+        "MSBRW_0328"
+      ],
+      "mbar": [
+        "MSBR2_3210"
+      ],
+      "mbak": [
+        "MSBR3_3195"
+      ],
+      "mma": [
+        "MM_0943"
+      ],
+      "mmaz": [
+        "MmTuc01_0970"
+      ],
+      "mmj": [
+        "MSMAS_0361"
+      ],
+      "mmac": [
+        "MSMAC_0379"
+      ],
+      "mvc": [
+        "MSVAZ_3248"
+      ],
+      "mek": [
+        "MSKOL_3213"
+      ],
+      "mls": [
+        "MSLAZ_0576"
+      ],
+      "metm": [
+        "MSMTP_0421"
+      ],
+      "mef": [
+        "MSWH1_2769"
+      ],
+      "meq": [
+        "MSWHS_2267"
+      ],
+      "msj": [
+        "MSSAC_3705"
+      ],
+      "msz": [
+        "MSSIH_3241"
+      ],
+      "msw": [
+        "MSSIT_3312"
+      ],
+      "mthe": [
+        "MSTHC_1743"
+      ],
+      "mthr": [
+        "MSTHT_1546"
+      ],
+      "mhor": [
+        "MSHOH_0454"
+      ],
+      "mbu": [
+        "Mbur_1652"
+      ],
+      "mmet": [
+        "MCMEM_2137"
+      ],
+      "mmh": [
+        "Mmah_1962"
+      ],
+      "mhaz": [
+        "BHR79_03825"
+      ],
+      "mev": [
+        "Metev_1519"
+      ],
+      "mzh": [
+        "Mzhil_0369"
+      ],
+      "mpy": [
+        "Mpsy_1329"
+      ],
+      "mhz": [
+        "Metho_0329"
+      ],
+      "mtp": [
+        "Mthe_1238"
+      ],
+      "mcj": [
+        "MCON_1916"
+      ],
+      "mhi": [
+        "Mhar_0199"
+      ],
+      "mhu": [
+        "Mhun_1010"
+      ],
+      "mla": [
+        "Mlab_1138"
+      ],
+      "mem": [
+        "Memar_0769"
+      ],
+      "mbg": [
+        "BN140_2339"
+      ],
+      "mema": [
+        "MMAB1_3107"
+      ],
+      "mpi": [
+        "Mpet_1935"
+      ],
+      "mbn": [
+        "Mboo_0860"
+      ],
+      "mfo": [
+        "Metfor_2140"
+      ],
+      "mpl": [
+        "Mpal_1300"
+      ],
+      "mpd": [
+        "MCP_0258",
+        "MCP_2780"
+      ],
+      "mez": [
+        "Mtc_2486"
+      ],
+      "rci": [
+        "RCIX581",
+        "RCIX582"
+      ],
+      "mth": [
+        "MTH_552"
+      ],
+      "mmg": [
+        "MTBMA_c09410"
+      ],
+      "metc": [
+        "MTCT_0480"
+      ],
+      "mwo": [
+        "MWSIV6_0917"
+      ],
+      "mst": [
+        "Msp_1291"
+      ],
+      "msi": [
+        "Msm_0124"
+      ],
+      "mru": [
+        "mru_1102"
+      ],
+      "meb": [
+        "Abm4_0883"
+      ],
+      "mmil": [
+        "sm9_0933"
+      ],
+      "meye": [
+        "TL18_05650"
+      ],
+      "mol": [
+        "YLM1_0765"
+      ],
+      "mel": [
+        "Metbo_2269"
+      ],
+      "mew": [
+        "MSWAN_0376"
+      ],
+      "meth": [
+        "MBMB1_0428"
+      ],
+      "mfc": [
+        "BRM9_1833"
+      ],
+      "mfi": [
+        "DSM1535_0016"
+      ],
+      "mcub": [
+        "MCBB_0391"
+      ],
+      "mfv": [
+        "Mfer_0282"
+      ],
+      "mka": [
+        "MK0642"
+      ],
+      "afu": [
+        "AF_0403"
+      ],
+      "afg": [
+        "AFULGI_00004070"
+      ],
+      "apo": [
+        "Arcpr_0988"
+      ],
+      "ave": [
+        "Arcve_0345"
+      ],
+      "ast": [
+        "Asulf_00438"
+      ],
+      "fpl": [
+        "Ferp_2022"
+      ],
+      "gac": [
+        "GACE_1575"
+      ],
+      "gah": [
+        "GAH_00156"
+      ],
+      "hal": [
+        "VNG_0252C",
+        "VNG_1918C"
+      ],
+      "hsl": [
+        "OE_1398R",
+        "OE_3699R"
+      ],
+      "hdl": [
+        "HALDL1_05460",
+        "HALDL1_09625"
+      ],
+      "hhb": [
+        "Hhub_1410"
+      ],
+      "hje": [
+        "HacjB3_02500",
+        "HacjB3_13025",
+        "HacjB3_18758"
+      ],
+      "halh": [
+        "HTSR_1475"
+      ],
+      "hhsr": [
+        "HSR6_1547"
+      ],
+      "hsu": [
+        "HLASF_0583"
+      ],
+      "hsf": [
+        "HLASA_0579"
+      ],
+      "hma": [
+        "rrnAC1650"
+      ],
+      "hhi": [
+        "HAH_2191"
+      ],
+      "hhn": [
+        "HISP_11165"
+      ],
+      "hab": [
+        "SG26_03535",
+        "SG26_19305"
+      ],
+      "nph": [
+        "NP_1224A"
+      ],
+      "nmo": [
+        "Nmlp_2072"
+      ],
+      "hut": [
+        "Huta_2960"
+      ],
+      "hti": [
+        "HTIA_2549"
+      ],
+      "hmu": [
+        "Hmuk_0293",
+        "Hmuk_3016"
+      ],
+      "hali": [
+        "BV210_05505"
+      ],
+      "hwa": [
+        "HQ_1269A"
+      ],
+      "hwc": [
+        "Hqrw_1298"
+      ],
+      "hvo": [
+        "HVO_0680",
+        "HVO_1086"
+      ],
+      "hme": [
+        "HFX_0542",
+        "HFX_0642"
+      ],
+      "hgi": [
+        "ABY42_03240"
+      ],
+      "hbo": [
+        "Hbor_22430",
+        "Hbor_25380"
+      ],
+      "hla": [
+        "Hlac_0199"
+      ],
+      "htu": [
+        "Htur_1301",
+        "Htur_2683"
+      ],
+      "hda": [
+        "BB347_02560",
+        "BB347_08760"
+      ],
+      "nmg": [
+        "Nmag_1070",
+        "Nmag_2771"
+      ],
+      "hxa": [
+        "Halxa_2474",
+        "Halxa_4034"
+      ],
+      "nat": [
+        "NJ7G_1988"
+      ],
+      "npe": [
+        "Natpe_0946"
+      ],
+      "nge": [
+        "Natgr_0591",
+        "Natgr_1269",
+        "Natgr_2083"
+      ],
+      "hru": [
+        "Halru_0157"
+      ],
+      "nou": [
+        "Natoc_0656",
+        "Natoc_2675"
+      ],
+      "sali": [
+        "L593_04125"
+      ],
+      "hlr": [
+        "HALLA_07705",
+        "HALLA_12930"
+      ],
+      "hlc": [
+        "CHINAEXTREME00365",
+        "CHINAEXTREME09750"
+      ],
+      "naj": [
+        "B1756_06220",
+        "B1756_12310"
+      ],
+      "tac": [
+        "Ta0995"
+      ],
+      "tvo": [
+        "TVG0750626"
+      ],
+      "pto": [
+        "PTO0183"
+      ],
+      "fac": [
+        "FACI_IFERC01G0508"
+      ],
+      "fai": [
+        "FAD_1427"
+      ],
+      "cdiv": [
+        "CPM_1185"
+      ],
+      "tar": [
+        "TALC_00272"
+      ],
+      "max": [
+        "MMALV_02560"
+      ],
+      "mer": [
+        "MMINT_05980"
+      ],
+      "mear": [
+        "Mpt1_c10950"
+      ],
+      "marc": [
+        "AR505_1588"
+      ],
+      "pho": [
+        "PH1124"
+      ],
+      "pab": [
+        "PAB0735"
+      ],
+      "pfu": [
+        "PF1039"
+      ],
+      "pfi": [
+        "PFC_04430"
+      ],
+      "pyn": [
+        "PNA2_1786"
+      ],
+      "pya": [
+        "PYCH_06020"
+      ],
+      "pys": [
+        "Py04_0956"
+      ],
+      "pyc": [
+        "TQ32_06100"
+      ],
+      "tko": [
+        "TK1026"
+      ],
+      "ton": [
+        "TON_1065"
+      ],
+      "tga": [
+        "TGAM_1175"
+      ],
+      "tsi": [
+        "TSIB_0683"
+      ],
+      "tba": [
+        "TERMP_01020"
+      ],
+      "the": [
+        "GQS_10240"
+      ],
+      "tha": [
+        "TAM4_2030"
+      ],
+      "thm": [
+        "CL1_1622"
+      ],
+      "tlt": [
+        "OCC_02732"
+      ],
+      "ths": [
+        "TES1_1095"
+      ],
+      "tnu": [
+        "BD01_0972"
+      ],
+      "teu": [
+        "TEU_10660"
+      ],
+      "tgy": [
+        "X802_09560"
+      ],
+      "thv": [
+        "ADU37_CDS06810"
+      ],
+      "tch": [
+        "CHITON_1469"
+      ],
+      "tpep": [
+        "A0127_00030"
+      ],
+      "tpie": [
+        "A7C91_00815"
+      ],
+      "tgg": [
+        "A3K92_02365"
+      ],
+      "tce": [
+        "A3L02_05075"
+      ],
+      "tbs": [
+        "A3L01_06055"
+      ],
+      "thh": [
+        "CDI07_06010"
+      ],
+      "tsl": [
+        "A3L11_10070"
+      ],
+      "ttd": [
+        "A3L14_08455"
+      ],
+      "tprf": [
+        "A3L09_04095"
+      ],
+      "ppac": [
+        "PAP_08105"
+      ],
+      "abi": [
+        "Aboo_0770"
+      ],
+      "acf": [
+        "AciM339_0296"
+      ],
+      "ape": [
+        "APE_0621.1"
+      ],
+      "acj": [
+        "ACAM_0473"
+      ],
+      "smr": [
+        "Smar_0993"
+      ],
+      "shc": [
+        "Shell_1468"
+      ],
+      "iho": [
+        "Igni_0425"
+      ],
+      "iis": [
+        "EYM_04315"
+      ],
+      "dka": [
+        "DKAM_1191"
+      ],
+      "dfd": [
+        "Desfe_1302"
+      ],
+      "dmu": [
+        "Desmu_1195"
+      ],
+      "tag": [
+        "Tagg_0823"
+      ],
+      "iag": [
+        "Igag_0058"
+      ],
+      "thg": [
+        "TCELL_0313"
+      ],
+      "hbu": [
+        "Hbut_0005"
+      ],
+      "pfm": [
+        "Pyrfu_0154"
+      ],
+      "pdl": [
+        "Pyrde_0546"
+      ],
+      "sso": [
+        "SSO0259"
+      ],
+      "sol": [
+        "Ssol_1237"
+      ],
+      "ssoa": [
+        "SULA_1279"
+      ],
+      "ssol": [
+        "SULB_1280"
+      ],
+      "ssof": [
+        "SULC_1278"
+      ],
+      "sto": [
+        "STK_03100"
+      ],
+      "sai": [
+        "Saci_0728"
+      ],
+      "sacn": [
+        "SacN8_03530"
+      ],
+      "sacr": [
+        "SacRon12I_03515"
+      ],
+      "sacs": [
+        "SUSAZ_03285"
+      ],
+      "sis": [
+        "LS215_1988"
+      ],
+      "sia": [
+        "M1425_1879"
+      ],
+      "sim": [
+        "M1627_1956"
+      ],
+      "sid": [
+        "M164_1886"
+      ],
+      "siy": [
+        "YG5714_1955"
+      ],
+      "sin": [
+        "YN1551_0965"
+      ],
+      "sii": [
+        "LD85_2100"
+      ],
+      "sih": [
+        "SiH_1816"
+      ],
+      "sir": [
+        "SiRe_1736"
+      ],
+      "sic": [
+        "SiL_1728"
+      ],
+      "sula": [
+        "BFU36_04740"
+      ],
+      "mse": [
+        "Msed_2291"
+      ],
+      "mcn": [
+        "Mcup_2034"
+      ],
+      "aho": [
+        "Ahos_0786"
+      ],
+      "aman": [
+        "B6F84_07390"
+      ],
+      "pai": [
+        "PAE3045"
+      ],
+      "pis": [
+        "Pisl_0443"
+      ],
+      "pcl": [
+        "Pcal_0985"
+      ],
+      "pas": [
+        "Pars_1793"
+      ],
+      "pyr": [
+        "P186_1474"
+      ],
+      "pog": [
+        "Pogu_0338"
+      ],
+      "tne": [
+        "Tneu_1677"
+      ],
+      "pyw": [
+        "PYWP30_01805"
+      ],
+      "cma": [
+        "Cmaq_0928"
+      ],
+      "tuz": [
+        "TUZN_1798"
+      ],
+      "ttn": [
+        "TTX_1714"
+      ],
+      "vdi": [
+        "Vdis_0768"
+      ],
+      "vmo": [
+        "VMUT_1616"
+      ],
+      "tpe": [
+        "Tpen_0633"
+      ],
+      "thb": [
+        "N186_04510"
+      ],
+      "tcb": [
+        "TCARB_1929"
+      ],
+      "thf": [
+        "MA03_05950"
+      ],
+      "asc": [
+        "ASAC_1045"
+      ],
+      "clg": [
+        "Calag_0530"
+      ],
+      "ffo": [
+        "FFONT_0864"
+      ],
+      "nmr": [
+        "Nmar_1795"
+      ],
+      "nir": [
+        "NSED_09615"
+      ],
+      "nid": [
+        "NPIRD3C_0251"
+      ],
+      "nin": [
+        "NADRNF5_0072"
+      ],
+      "nkr": [
+        "NKOR_09545"
+      ],
+      "nct": [
+        "NMSP_1711"
+      ],
+      "csy": [
+        "CENSYa_1828"
+      ],
+      "nga": [
+        "Ngar_c35980"
+      ],
+      "nvn": [
+        "NVIE_020530"
+      ],
+      "nev": [
+        "NTE_00080"
+      ],
+      "taa": [
+        "NMY3_00623"
+      ],
+      "csu": [
+        "CSUB_C1094"
+      ],
+      "nbv": [
+        "T478_1498"
+      ],
+      "tah": [
+        "SU86_006215"
+      ],
+      "ndv": [
+        "NDEV_0006"
+      ],
+      "marh": [
+        "Mia14_0378"
+      ],
+      "kcr": [
+        "Kcr_1391"
+      ],
+      "barc": [
+        "AOA65_2367"
+      ],
+      "barb": [
+        "AOA66_1442"
+      ],
+      "loki": [
+        "Lokiarch_51250"
+      ],
+      "hah": [
+        "Halar_2377",
+        "Halar_3226"
+      ],
+      "agw": [
+        "QT03_C0001G1125"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.5.1.41"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.5.1.41"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.5.1.41"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.5.1.41"
+      ],
+      "CAS": [
+        "124650-69-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Zhang",
+          "D.-L.",
+          "Daniels",
+          "L. and Poulter",
+          "C.D."
+        ],
+        "title": "Biosynthesis of archaebacterial membranes. Formation of isoprene ethers by a prenyl transfer reaction.",
+        "journal": "J. Am. Chem. Soc. 112 (1990) 1264-1265.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Chen A",
+          "Zhang D",
+          "Poulter CD"
+        ],
+        "title": "(S)-geranylgeranylglyceryl phosphate synthase. Purification and characterization of the first pathway-specific enzyme in archaebacterial membrane lipid biosynthesis.",
+        "journal": "J. Biol. Chem. 268 (1993) 21701-5.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8408023]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nemoto N",
+          "Oshima T",
+          "Yamagishi A"
+        ],
+        "title": "Purification and characterization of geranylgeranylglyceryl phosphate synthase from a thermoacidophilic archaeon, Thermoplasma acidophilum.",
+        "journal": "J. Biochem. 133 (2003) 651-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12801917]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Payandeh J",
+          "Fujihashi M",
+          "Gillon W",
+          "Pai EF"
+        ],
+        "title": "The crystal structure of (S)-3-O-geranylgeranylglyceryl phosphate synthase reveals an ancient fold for an ancient enzyme.",
+        "journal": "J. Biol. Chem. 281 (2006) 6070-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:16377641]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Morii H",
+          "Nishihara M",
+          "Koga Y"
+        ],
+        "title": "CTP:2,3-di-O-geranylgeranyl-sn-glycero-1-phosphate cytidyltransferase in the methanogenic archaeon Methanothermobacter thermoautotrophicus.",
+        "journal": "J. Biol. Chem. 275 (2000) 36568-74.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:10960477]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

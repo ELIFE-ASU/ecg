@@ -1,0 +1,257 @@
+[
+  {
+    "entry_id": "6.3.1.9",
+    "name": "trypanothione synthase",
+    "names": [
+      "trypanothione synthase",
+      "glutathionylspermidine:glutathione ligase (ADP-forming)"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-nitrogen bonds;",
+      "Acid-D-ammonia (or amine) ligases (amide synthases)"
+    ],
+    "sysname": "spermidine/glutathionylspermidine:glutathione ligase (ADP-forming)",
+    "reaction": "(1) glutathione + spermidine + ATP = glutathionylspermidine + ADP + phosphate [RN:R01917]; (2) glutathione + glutathionylspermidine + ATP = N1,N8-bis(glutathionyl)spermidine + ADP + phosphate [RN:R03822]",
+    "all_reac": "R01917 R03822; (other) R08352 R08353 R08354 R08355",
+    "iubmb_reactions": [
+      "R01917 R03822"
+    ],
+    "kegg_reactions": [
+      "R08352 R08353 R08354 R08355"
+    ],
+    "substrates": [
+      "glutathione [CPD:C00051]",
+      "spermidine [CPD:C00315]",
+      "ATP [CPD:C00002]",
+      "glutathionylspermidine [CPD:C05730]"
+    ],
+    "products": [
+      "glutathionylspermidine [CPD:C05730]",
+      "ADP [CPD:C00008]",
+      "phosphate [CPD:C00009]",
+      "N1,N8-bis(glutathionyl)spermidine [CPD:C02090]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from several trypanosomatids (e.g. Trypanosoma cruzi) catalyses two subsequent reactions, leading to production of trypanothione from glutathione and spermidine. Some trypanosomatids (e.g. Crithidia species and some Leishmania species) also contain an enzyme that only carries out the first reaction (cf. EC 6.3.1.8, glutathionylspermidine synthase). The enzyme is bifunctional, and also catalyses the hydrolysis of glutathionylspermidine and trypanothione (cf. EC 3.5.1.78, glutathionylspermidine amidase).",
+    "pathways": {
+      "ec00480": "Glutathione metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K01833": "trypanothione synthetase/amidase"
+    },
+    "genes": {
+      "tbr": [
+        "Tb927.2.4370"
+      ],
+      "tcr": [
+        "509099.50",
+        "509319.90"
+      ],
+      "lma": [
+        "LMJF_27_1870"
+      ],
+      "lif": [
+        "LINJ_27_1770"
+      ],
+      "ldo": [
+        "LDBPK_271770"
+      ],
+      "lmi": [
+        "LMXM_27_1870"
+      ],
+      "lbz": [
+        "LBRM_27_2010"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.3.1.9"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.3.1.9"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.3.1.9"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.3.1.9"
+      ],
+      "CAS": [
+        "130246-69-4"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Smith K",
+          "Nadeau K",
+          "Bradley M",
+          "Walsh C",
+          "Fairlamb AH."
+        ],
+        "title": "Purification of glutathionylspermidine and trypanothione synthetases from Crithidia fasciculata.",
+        "journal": "Protein. Sci. 1 (1992) 874-83.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:1304372]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oza SL",
+          "Tetaud E",
+          "Ariyanayagam MR",
+          "Warnon SS",
+          "Fairlamb AH."
+        ],
+        "title": "A single enzyme catalyses formation of Trypanothione from glutathione and spermidine in Trypanosoma cruzi.",
+        "journal": "J. Biol. Chem. 277 (2002) 35853-61.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12121990]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Comini M",
+          "Menge U",
+          "Wissing J",
+          "Flohe L."
+        ],
+        "title": "Trypanothione synthesis in crithidia revisited.",
+        "journal": "J. Biol. Chem. 280 (2005) 6850-60.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:15537651]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oza SL",
+          "Shaw MP",
+          "Wyllie S",
+          "Fairlamb AH."
+        ],
+        "title": "Trypanothione biosynthesis in Leishmania major.",
+        "journal": "Mol. Biochem. Parasitol. 139 (2005) 107-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15610825]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fyfe PK",
+          "Oza SL",
+          "Fairlamb AH",
+          "Hunter WN"
+        ],
+        "title": "Leishmania trypanothione synthetase-amidase structure reveals a basis for regulation of conflicting synthetic and hydrolytic activities.",
+        "journal": "J. Biol. Chem. 283 (2008) 17672-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:18420578]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

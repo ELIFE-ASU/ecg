@@ -1,0 +1,660 @@
+[
+  {
+    "entry_id": "2.4.1.92",
+    "name": "(N-acetylneuraminyl)-galactosylglucosylceramide N-acetylgalactosaminyltransferase",
+    "names": [
+      "(N-acetylneuraminyl)-galactosylglucosylceramide N-acetylgalactosaminyltransferase",
+      "uridine diphosphoacetylgalactosamine-ganglioside GM3 acetylgalactosaminyltransferase",
+      "ganglioside GM2 synthase",
+      "ganglioside GM3 acetylgalactosaminyltransferase",
+      "GM2 synthase",
+      "UDP acetylgalactosamine-(N-acetylneuraminyl)-D-galactosyl-D-glucosylceramide acetylgalactosaminyltransferase",
+      "UDP-N-acetyl-D-galactosamine:1-O-[O-(N-acetyl-alpha-neuraminyl)-(2->3)-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl]-ceramide 1,4-beta-N-acetyl-D-galactosaminyltransferase acetylgalactosaminyltransferase",
+      "UDP-N-acetylgalactosamine GM3 N-acetylgalactosaminyltransferase",
+      "uridine diphosphoacetylgalactosamine-acetylneuraminylgalactosylglucosylceramide acetylgalactosaminyltransferase",
+      "uridine diphosphoacetylgalactosamine-hematoside acetylgalactosaminyltransferase",
+      "GM2/GD2-synthase",
+      "beta-1,4N-acetylgalactosaminyltransferase",
+      "asialo-GM2 synthase",
+      "GalNAc-T",
+      "UDP-N-acetyl-D-galactosamine:(N-acetylneuraminyl)-D-galactosyl-D-glucosylceramide N-acetyl-D-galactosaminyltransferase",
+      "UDP-N-acetyl-D-galactosamine:1-O-[O-(N-acetyl-alpha-neuraminyl)-(2->3)-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl]-ceramide 4-beta-N-acetyl-D-galactosaminyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-N-acetyl-alpha-D-galactosamine:O-(N-acetyl-alpha-neuraminyl)-(2->3)-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl-(1<->1)-ceramide 4-beta-N-acetyl-D-galactosaminyltransferase",
+    "reaction": "UDP-N-acetyl-alpha-D-galactosamine + O-(N-acetyl-alpha-neuraminyl)-(2->3)-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl-(1<->1)-ceramide = UDP + O-2-(acetylamino)-2-deoxy-beta-D-galactopyranosyl-(1->4)-O-[N-acetyl-alpha-neuraminyl-(2->3)]-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl-(1<->1)-ceramide [RN:R04584 R05939]",
+    "all_reac": "R04584 R05939(G); (other) R03490 R05109 R05938(G) R05946(G) R05952(G)",
+    "iubmb_reactions": [
+      "R04584 R05939(G)"
+    ],
+    "kegg_reactions": [
+      "R03490 R05109 R05938(G) R05946(G) R05952(G)"
+    ],
+    "substrates": [
+      "UDP-N-acetyl-alpha-D-galactosamine [CPD:C00203]",
+      "O-(N-acetyl-alpha-neuraminyl)-(2->3)-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl-(1<->1)-ceramide"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "O-2-(acetylamino)-2-deoxy-beta-D-galactopyranosyl-(1->4)-O-[N-acetyl-alpha-neuraminyl-(2->3)]-O-beta-D-galactopyranosyl-(1->4)-beta-D-glucopyranosyl-(1<->1)-ceramide"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme catalyses the formation of the gangliosides (i.e. sialic-acid-containing glycosphingolipids) GM2, GD2 and SM2 from GM3, GD3 and SM3, respectively. Asialo-GM3 [3] and lactosylceramide [2] are also substrates, but glycoproteins and oligosaccharides are not substrates.",
+    "pathways": {
+      "ec00604": "Glycosphingolipid biosynthesis - ganglio series",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00725": "(N-Acetylneuraminyl)-galactosylglucosylceramide N-acetylgalactosaminyltransferase"
+    },
+    "genes": {
+      "hsa": [
+        "2583"
+      ],
+      "ptr": [
+        "452021"
+      ],
+      "pps": [
+        "100977739"
+      ],
+      "ggo": [
+        "101142085"
+      ],
+      "pon": [
+        "100441953"
+      ],
+      "nle": [
+        "100596890"
+      ],
+      "mcc": [
+        "715317"
+      ],
+      "mcf": [
+        "101926458"
+      ],
+      "csab": [
+        "103238575"
+      ],
+      "rro": [
+        "104682353"
+      ],
+      "rbb": [
+        "108519702"
+      ],
+      "cjc": [
+        "100387150"
+      ],
+      "sbq": [
+        "101035356"
+      ],
+      "mmu": [
+        "14421"
+      ],
+      "rno": [
+        "64828"
+      ],
+      "cge": [
+        "100764682"
+      ],
+      "ngi": [
+        "103742903"
+      ],
+      "hgl": [
+        "101705101"
+      ],
+      "ccan": [
+        "109686096"
+      ],
+      "ocu": [
+        "100340284"
+      ],
+      "tup": [
+        "102495908"
+      ],
+      "cfa": [
+        "481129"
+      ],
+      "aml": [
+        "100466312"
+      ],
+      "umr": [
+        "103656939"
+      ],
+      "oro": [
+        "101384792"
+      ],
+      "fca": [
+        "101082581"
+      ],
+      "ptg": [
+        "102953164"
+      ],
+      "aju": [
+        "106975837"
+      ],
+      "bta": [
+        "520159"
+      ],
+      "bom": [
+        "102280706"
+      ],
+      "biu": [
+        "109559314"
+      ],
+      "phd": [
+        "102317041"
+      ],
+      "chx": [
+        "102173266"
+      ],
+      "oas": [
+        "101119388"
+      ],
+      "ssc": [
+        "100516440"
+      ],
+      "cfr": [
+        "102520114"
+      ],
+      "cdk": [
+        "105100336"
+      ],
+      "bacu": [
+        "103016988"
+      ],
+      "lve": [
+        "103088237"
+      ],
+      "ecb": [
+        "100053616"
+      ],
+      "epz": [
+        "103559776"
+      ],
+      "eai": [
+        "106833013"
+      ],
+      "myb": [
+        "102244087"
+      ],
+      "myd": [
+        "102760120"
+      ],
+      "hai": [
+        "109390763"
+      ],
+      "rss": [
+        "109452931"
+      ],
+      "pale": [
+        "102880239"
+      ],
+      "lav": [
+        "100656175"
+      ],
+      "tmu": [
+        "101357477"
+      ],
+      "mdo": [
+        "100031466"
+      ],
+      "shr": [
+        "100913439"
+      ],
+      "cjo": [
+        "107325778"
+      ],
+      "phi": [
+        "102104849"
+      ],
+      "aam": [
+        "106492779"
+      ],
+      "asn": [
+        "102384074"
+      ],
+      "amj": [
+        "102576374"
+      ],
+      "cmy": [
+        "102936553"
+      ],
+      "cpic": [
+        "101945852"
+      ],
+      "acs": [
+        "100553349"
+      ],
+      "pvt": [
+        "110070599"
+      ],
+      "pbi": [
+        "103056451",
+        "103067514"
+      ],
+      "gja": [
+        "107120713"
+      ],
+      "xla": [
+        "108709867",
+        "379299"
+      ],
+      "xtr": [
+        "100145208"
+      ],
+      "npr": [
+        "108802621"
+      ],
+      "dre": [
+        "793635"
+      ],
+      "srx": [
+        "107708855",
+        "107711068",
+        "107716216",
+        "107717192",
+        "107733607"
+      ],
+      "sanh": [
+        "107667298",
+        "107667748",
+        "107673615",
+        "107681939",
+        "107695798"
+      ],
+      "sgh": [
+        "107570598",
+        "107582708",
+        "107582953",
+        "107585207",
+        "107586541"
+      ],
+      "ccar": [
+        "109047493",
+        "109056959",
+        "109061331",
+        "109062280",
+        "109062741",
+        "109064114",
+        "109076424"
+      ],
+      "ipu": [
+        "108272210",
+        "108276385",
+        "108276386",
+        "108276500"
+      ],
+      "amex": [
+        "103039726",
+        "103043708"
+      ],
+      "tru": [
+        "101063785",
+        "101064428"
+      ],
+      "tng": [
+        "GSTEN00027252G001",
+        "GSTEN00027254G001",
+        "GSTEN00028095G001"
+      ],
+      "lco": [
+        "104931956",
+        "104932572"
+      ],
+      "ncc": [
+        "104942127",
+        "104956934"
+      ],
+      "mze": [
+        "101478170",
+        "101483501"
+      ],
+      "ola": [
+        "101155420",
+        "101171003"
+      ],
+      "xma": [
+        "102222577",
+        "102228614",
+        "102235034"
+      ],
+      "pret": [
+        "103465386",
+        "103467344"
+      ],
+      "csem": [
+        "103385079",
+        "103385954"
+      ],
+      "lcf": [
+        "108876488",
+        "108881464"
+      ],
+      "hcq": [
+        "109522137",
+        "109531384"
+      ],
+      "bpec": [
+        "110164780",
+        "110168375"
+      ],
+      "sasa": [
+        "100306792",
+        "106565528",
+        "106572659"
+      ],
+      "els": [
+        "105005742",
+        "105013542",
+        "105017218"
+      ],
+      "sfm": [
+        "108918587",
+        "108939037"
+      ],
+      "lcm": [
+        "102353417",
+        "102354362"
+      ],
+      "cmk": [
+        "103189519",
+        "103189521"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_120314",
+        "BRAFLDRAFT_175393",
+        "BRAFLDRAFT_199218",
+        "BRAFLDRAFT_204380",
+        "BRAFLDRAFT_217476",
+        "BRAFLDRAFT_217853",
+        "BRAFLDRAFT_220849",
+        "BRAFLDRAFT_225669",
+        "BRAFLDRAFT_230693",
+        "BRAFLDRAFT_235593",
+        "BRAFLDRAFT_252616",
+        "BRAFLDRAFT_79475",
+        "BRAFLDRAFT_79478",
+        "BRAFLDRAFT_87505"
+      ],
+      "sko": [
+        "100366504",
+        "100366571",
+        "100366802",
+        "100367188",
+        "100367258",
+        "100367410",
+        "100367566",
+        "100368131",
+        "100369117",
+        "100369599",
+        "100369750",
+        "100369900",
+        "100372465",
+        "100373952",
+        "100374186",
+        "100377910",
+        "100378728",
+        "100378876",
+        "102801593",
+        "102804151",
+        "102804391"
+      ],
+      "lak": [
+        "106162682"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.92"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.92"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.92"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.92"
+      ],
+      "CAS": [
+        "67338-98-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Dicesare JL",
+          "Dain JA."
+        ],
+        "title": "The enzymic synthesis of ganglioside. IV. UDP-N-acetylgalactosamine: (N-acetylneuraminyl)-galactosylglucosyl ceramide N-acetylgalactosaminyltransferase in rat brain.",
+        "journal": "Biochim. Biophys. Acta. 231 (1971) 385-93.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:5554906]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pohlentz G",
+          "Klein D",
+          "Schwarzmann G",
+          "Schmitz D",
+          "Sandhoff K."
+        ],
+        "title": "Both GA2, GM2, and GD2 synthases and GM1b, GD1a, and GT1b synthases are single enzymes in Golgi vesicles from rat liver.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 85 (1988) 7044-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:3140234]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hidari JK",
+          "Ichikawa S",
+          "Furukawa K",
+          "Yamasaki M",
+          "Hirabayashi Y."
+        ],
+        "title": "beta 1-4N-acetylgalactosaminyltransferase can synthesize both asialoglycosphingolipid GM2 and glycosphingolipid GM2 in vitro and in vivo: isolation and characterization of a beta 1-4N-acetylgalactosaminyltransferase cDNA clone from rat ascites hepatoma cell line AH7974F.",
+        "journal": "Biochem. J. 303 ( Pt 3) (1994) 957-65.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:7980468]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hashimoto Y",
+          "Sekine M",
+          "Iwasaki K",
+          "Suzuki A."
+        ],
+        "title": "Purification and characterization of UDP-N-acetylgalactosamine GM3/GD3 N-acetylgalactosaminyltransferase from mouse liver.",
+        "journal": "J. Biol. Chem. 268 (1993) 25857-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:8245020]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nagai K",
+          "Ishizuka I."
+        ],
+        "title": "Biosynthesis of monosulfogangliotriaosylceramide and GM2 by N-acetylgalactosaminyltransferase from rat brain.",
+        "journal": "J. Biochem. (Tokyo). 101 (1987) 1115-27.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:3115968]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Furukawa K",
+          "Takamiya K",
+          "Furukawa K."
+        ],
+        "title": "Beta1,4-N-acetylgalactosaminyltransferase--GM2/GD2 synthase: a key enzyme to control the synthesis of brain-enriched complex gangliosides.",
+        "journal": "Biochim. Biophys. Acta. 1573 (2002) 356-62.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:12417418]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yamashita T",
+          "Wu YP",
+          "Sandhoff R",
+          "Werth N",
+          "Mizukami H",
+          "Ellis JM",
+          "Dupree JL",
+          "Geyer R",
+          "Sandhoff K",
+          "Proia RL."
+        ],
+        "title": "Interruption of ganglioside synthesis produces central nervous system degeneration and altered axon-glial interactions.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 102 (2005) 2725-30.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:15710896]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

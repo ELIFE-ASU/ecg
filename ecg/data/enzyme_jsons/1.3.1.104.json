@@ -1,0 +1,811 @@
+[
+  {
+    "entry_id": "1.3.1.104",
+    "name": "enoyl-[acyl-carrier-protein] reductase (NADPH)",
+    "names": [
+      "enoyl-[acyl-carrier-protein] reductase (NADPH)",
+      "acyl-ACP dehydrogenase (ambiguous)",
+      "enoyl-[acyl carrier protein] (reduced nicotinamide adenine dinucleotide phosphate) reductase",
+      "NADPH 2-enoyl Co A reductase",
+      "enoyl-ACP reductase (ambiguous)",
+      "fabL (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "acyl-[acyl-carrier protein]:NADP+ oxidoreductase",
+    "reaction": "an acyl-[acyl-carrier protein] + NADP+ = a trans-2,3-dehydroacyl-[acyl-carrier protein] + NADPH + H+ [RN:R01404]",
+    "all_reac": "R01404 > R04430 R04725 R04956 R04959 R04962 R04967 R04970",
+    "iubmb_reactions": [
+      "R01404 > R04430 R04725 R04956 R04959 R04962 R04967 R04970"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "acyl-[acyl-carrier protein] [CPD:C00173]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "products": [
+      "trans-2,3-dehydroacyl-[acyl-carrier protein] [CPD:C00693]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme completes each cycle of fatty acid elongation by catalysing the stereospecific reduction of the double bond at position 2 of a growing fatty acid chain, while linked to the acyl-carrier protein, in an NADPH-dependent manner. This entry stands for enzymes whose stereo-specificity with respect to NADP+ is not known. [cf. EC 1.3.1.39 enoyl-[acyl-carrier-protein] reductase (NADPH, Re-specific), EC 1.3.1.10, enoyl-[acyl-carrier-protein] reductase (NADPH, Si-specific) and EC 1.3.1.9, enoyl-[acyl-carrier-protein] reductase (NADH)].",
+    "pathways": {
+      "ec00061": "Fatty acid biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K10780": "enoyl-[acyl-carrier protein] reductase III"
+    },
+    "genes": {
+      "smaf": [
+        "D781_2232"
+      ],
+      "sfw": [
+        "WN53_21285"
+      ],
+      "sfg": [
+        "AV650_17030"
+      ],
+      "srz": [
+        "AXX16_2910"
+      ],
+      "palc": [
+        "A0T30_17150"
+      ],
+      "lph": [
+        "LPV_0452"
+      ],
+      "lpo": [
+        "LPO_0408"
+      ],
+      "lpu": [
+        "LPE509_02876"
+      ],
+      "lpm": [
+        "LP6_0350"
+      ],
+      "lpa": [
+        "lpa_00572"
+      ],
+      "lpe": [
+        "lp12_0359"
+      ],
+      "llo": [
+        "LLO_0519"
+      ],
+      "lfa": [
+        "LFA_2780"
+      ],
+      "lha": [
+        "LHA_0370"
+      ],
+      "lok": [
+        "Loa_00420"
+      ],
+      "lcd": [
+        "clem_13305"
+      ],
+      "tmc": [
+        "LMI_0465"
+      ],
+      "gbi": [
+        "PG2T_08100"
+      ],
+      "dpr": [
+        "Despr_0937"
+      ],
+      "sur": [
+        "STAUR_7038"
+      ],
+      "age": [
+        "AA314_01964"
+      ],
+      "mbd": [
+        "MEBOL_004393"
+      ],
+      "cfus": [
+        "CYFUS_001265"
+      ],
+      "rdi": [
+        "CMV14_20020"
+      ],
+      "bsu": [
+        "BSU08650"
+      ],
+      "bsr": [
+        "I33_0968"
+      ],
+      "bsl": [
+        "A7A1_0300"
+      ],
+      "bsh": [
+        "BSU6051_08650"
+      ],
+      "bsy": [
+        "I653_04335"
+      ],
+      "bsut": [
+        "BSUB_00939"
+      ],
+      "bsul": [
+        "BSUA_00939"
+      ],
+      "bsus": [
+        "Q433_04825"
+      ],
+      "bss": [
+        "BSUW23_04355"
+      ],
+      "bst": [
+        "GYO_1133"
+      ],
+      "bso": [
+        "BSNT_07250"
+      ],
+      "bsn": [
+        "BSn5_16190"
+      ],
+      "bsq": [
+        "B657_08650"
+      ],
+      "bsx": [
+        "C663_0887"
+      ],
+      "bsp": [
+        "U712_04400"
+      ],
+      "bli": [
+        "BL03039"
+      ],
+      "bld": [
+        "BLi00887"
+      ],
+      "blh": [
+        "BaLi_c09910"
+      ],
+      "bay": [
+        "RBAM_008740"
+      ],
+      "baq": [
+        "BACAU_0849"
+      ],
+      "bya": [
+        "BANAU_0792"
+      ],
+      "bamp": [
+        "B938_04215"
+      ],
+      "baml": [
+        "BAM5036_0783"
+      ],
+      "bama": [
+        "RBAU_0847"
+      ],
+      "bamn": [
+        "BASU_0823"
+      ],
+      "bamb": [
+        "BAPNAU_0805"
+      ],
+      "bamt": [
+        "AJ82_04870"
+      ],
+      "bamy": [
+        "V529_08190"
+      ],
+      "bmp": [
+        "NG74_00869"
+      ],
+      "bao": [
+        "BAMF_0873"
+      ],
+      "baz": [
+        "BAMTA208_03980"
+      ],
+      "bql": [
+        "LL3_00935"
+      ],
+      "bxh": [
+        "BAXH7_00830"
+      ],
+      "bqy": [
+        "MUS_0887"
+      ],
+      "bami": [
+        "KSO_015445"
+      ],
+      "bamc": [
+        "U471_08640"
+      ],
+      "bamf": [
+        "U722_04360"
+      ],
+      "bae": [
+        "BATR1942_01895"
+      ],
+      "batr": [
+        "TD68_01455"
+      ],
+      "bvm": [
+        "B9C48_04330"
+      ],
+      "bha": [
+        "BH0938"
+      ],
+      "bcl": [
+        "ABC1313"
+      ],
+      "bpu": [
+        "BPUM_0812"
+      ],
+      "bpum": [
+        "BW16_04360"
+      ],
+      "bpus": [
+        "UP12_04370"
+      ],
+      "bpf": [
+        "BpOF4_10865"
+      ],
+      "bmq": [
+        "BMQ_0404"
+      ],
+      "bmd": [
+        "BMD_0405"
+      ],
+      "bmh": [
+        "BMWSH_4822"
+      ],
+      "bmeg": [
+        "BG04_2695"
+      ],
+      "bco": [
+        "Bcell_0978"
+      ],
+      "bck": [
+        "BCO26_2328"
+      ],
+      "bag": [
+        "Bcoa_2111"
+      ],
+      "bcoa": [
+        "BF29_1474"
+      ],
+      "bjs": [
+        "MY9_0954"
+      ],
+      "baci": [
+        "B1NLA3E_03370"
+      ],
+      "bif": [
+        "N288_05665"
+      ],
+      "ble": [
+        "BleG1_1207"
+      ],
+      "bmet": [
+        "BMMGA3_03445"
+      ],
+      "gst": [
+        "HW35_14250"
+      ],
+      "bacw": [
+        "QR42_04160"
+      ],
+      "bacp": [
+        "SB24_05545"
+      ],
+      "bacb": [
+        "OY17_07015"
+      ],
+      "bacy": [
+        "QF06_03160"
+      ],
+      "bacl": [
+        "BS34A_09630"
+      ],
+      "balm": [
+        "BsLM_0900"
+      ],
+      "beo": [
+        "BEH_02810"
+      ],
+      "bsm": [
+        "BSM4216_0820"
+      ],
+      "bsj": [
+        "UP17_03800"
+      ],
+      "bon": [
+        "A361_06105"
+      ],
+      "bgy": [
+        "BGLY_0909"
+      ],
+      "bfx": [
+        "BC359_18390"
+      ],
+      "bgi": [
+        "BGM20_19495"
+      ],
+      "bwh": [
+        "A9C19_16770"
+      ],
+      "bxi": [
+        "BK049_03945"
+      ],
+      "bhk": [
+        "B4U37_05220"
+      ],
+      "gka": [
+        "GK0465"
+      ],
+      "gte": [
+        "GTCCBUS3UF5_5810"
+      ],
+      "gtk": [
+        "GT3570_02290"
+      ],
+      "gtn": [
+        "GTNG_0470"
+      ],
+      "gwc": [
+        "GWCH70_0470"
+      ],
+      "gyc": [
+        "GYMC61_1347"
+      ],
+      "gya": [
+        "GYMC52_0468"
+      ],
+      "gct": [
+        "GC56T3_3006"
+      ],
+      "gmc": [
+        "GY4MC1_3310"
+      ],
+      "ggh": [
+        "GHH_c04870"
+      ],
+      "gjf": [
+        "M493_02735"
+      ],
+      "gea": [
+        "GARCT_00511"
+      ],
+      "gel": [
+        "IB49_12935"
+      ],
+      "gse": [
+        "GT50_12145"
+      ],
+      "gsr": [
+        "GS3922_13360"
+      ],
+      "gej": [
+        "A0V43_18130"
+      ],
+      "gth": [
+        "Geoth_3364"
+      ],
+      "ptl": [
+        "AOT13_05915"
+      ],
+      "anm": [
+        "GFC28_2058"
+      ],
+      "aamy": [
+        "GFC30_882"
+      ],
+      "anl": [
+        "GFC29_3376"
+      ],
+      "apak": [
+        "AP3564_02345"
+      ],
+      "lmo": [
+        "lmo1688"
+      ],
+      "lmf": [
+        "LMOf2365_1712"
+      ],
+      "lmh": [
+        "LMHCC_0876"
+      ],
+      "lmc": [
+        "Lm4b_01702"
+      ],
+      "lmn": [
+        "LM5578_1835"
+      ],
+      "lmy": [
+        "LM5923_1787"
+      ],
+      "lmt": [
+        "LMRG_02762"
+      ],
+      "lmg": [
+        "LMKG_02669"
+      ],
+      "lms": [
+        "LMLG_1553"
+      ],
+      "lmj": [
+        "LMOG_02840"
+      ],
+      "lmq": [
+        "LMM7_1777"
+      ],
+      "lml": [
+        "lmo4a_1745"
+      ],
+      "lmp": [
+        "MUO_08685"
+      ],
+      "lmw": [
+        "LMOSLCC2755_1700"
+      ],
+      "lmx": [
+        "LMOSLCC2372_1754"
+      ],
+      "lmz": [
+        "LMOSLCC2482_1752"
+      ],
+      "lmon": [
+        "LMOSLCC2376_1647"
+      ],
+      "lmoc": [
+        "LMOSLCC5850_1751"
+      ],
+      "lmos": [
+        "LMOSLCC7179_1662"
+      ],
+      "lmoo": [
+        "LMOSLCC2378_1709"
+      ],
+      "lmoy": [
+        "LMOSLCC2479_1752"
+      ],
+      "lmot": [
+        "LMOSLCC2540_1771"
+      ],
+      "lmoa": [
+        "LMOATCC19117_1703"
+      ],
+      "lmol": [
+        "LMOL312_1695"
+      ],
+      "lmog": [
+        "BN389_17160"
+      ],
+      "lmoe": [
+        "BN418_2021"
+      ],
+      "lmob": [
+        "BN419_2025"
+      ],
+      "lmoj": [
+        "LM220_01906"
+      ],
+      "lmoz": [
+        "LM1816_07017"
+      ],
+      "lmod": [
+        "LMON_1755"
+      ],
+      "lmow": [
+        "AX10_02655"
+      ],
+      "lmox": [
+        "AX24_06135"
+      ],
+      "lmoq": [
+        "LM6179_2444"
+      ],
+      "lmr": [
+        "LMR479A_1790"
+      ],
+      "lmok": [
+        "CQ02_08775"
+      ],
+      "lmv": [
+        "Y193_07125"
+      ],
+      "lmom": [
+        "IJ09_01415"
+      ],
+      "lin": [
+        "lin1796"
+      ],
+      "lwe": [
+        "lwe1706"
+      ],
+      "lsg": [
+        "lse_1656"
+      ],
+      "liv": [
+        "LIV_1663"
+      ],
+      "lii": [
+        "JL52_08810"
+      ],
+      "liw": [
+        "AX25_08970"
+      ],
+      "lia": [
+        "JL58_08955"
+      ],
+      "lio": [
+        "JL53_09420"
+      ],
+      "bths": [
+        "CNY62_10305"
+      ],
+      "bbe": [
+        "BBR47_10320"
+      ],
+      "blr": [
+        "BRLA_c007290"
+      ],
+      "bfm": [
+        "BP422_00280"
+      ],
+      "pbj": [
+        "VN24_23250"
+      ],
+      "aac": [
+        "Aaci_2412"
+      ],
+      "aad": [
+        "TC41_2687",
+        "TC41_2700"
+      ],
+      "bts": [
+        "Btus_2604"
+      ],
+      "tum": [
+        "CBW65_01130"
+      ],
+      "tab": [
+        "CIG75_05115"
+      ],
+      "pln": [
+        "Plano_0800"
+      ],
+      "pku": [
+        "AUO94_12280"
+      ],
+      "prt": [
+        "AUC31_05130"
+      ],
+      "pll": [
+        "I858_003125"
+      ],
+      "pana": [
+        "BBH88_16255"
+      ],
+      "pdg": [
+        "BCM40_11645"
+      ],
+      "phc": [
+        "BBI08_00375"
+      ],
+      "pmar": [
+        "B0X71_04815"
+      ],
+      "ppla": [
+        "BBI15_00615"
+      ],
+      "pfae": [
+        "AJGP001_04920"
+      ],
+      "jeo": [
+        "JMA_12600"
+      ],
+      "spsy": [
+        "AZE41_03675"
+      ],
+      "say": [
+        "TPY_3240"
+      ],
+      "sap": [
+        "Sulac_1673"
+      ],
+      "lpil": [
+        "LIP_1119"
+      ],
+      "nbr": [
+        "O3I_026240"
+      ],
+      "nsl": [
+        "BOX37_17080"
+      ],
+      "roa": [
+        "Pd630_LPD04497"
+      ],
+      "sfa": [
+        "Sfla_5328"
+      ],
+      "strp": [
+        "F750_1295"
+      ],
+      "sle": [
+        "sle_01250"
+      ],
+      "sgs": [
+        "AVL59_46205"
+      ],
+      "cub": [
+        "BJK06_01395"
+      ],
+      "cphy": [
+        "B5808_12155"
+      ],
+      "ndk": [
+        "I601_1166"
+      ],
+      "pdx": [
+        "Psed_2586"
+      ],
+      "kal": [
+        "KALB_7822"
+      ],
+      "afo": [
+        "Afer_1057"
+      ],
+      "non": [
+        "NOS3756_03710"
+      ],
+      "atm": [
+        "ANT_17280"
+      ],
+      "cap": [
+        "CLDAP_22810"
+      ],
+      "ttr": [
+        "Tter_0966"
+      ],
+      "rba": [
+        "RB10454"
+      ],
+      "plm": [
+        "Plim_1674"
+      ],
+      "cph": [
+        "Cpha266_1101"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.1.104"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.1.104"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.1.104"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.1.104"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Heath RJ",
+          "Su N",
+          "Murphy CK",
+          "Rock CO"
+        ],
+        "title": "The enoyl-[acyl-carrier-protein] reductases FabI and FabL from Bacillus subtilis.",
+        "journal": "J. Biol. Chem. 275 (2000) 40128-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11007778]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kim KH",
+          "Park JK",
+          "Ha BH",
+          "Moon JH",
+          "Kim EE"
+        ],
+        "title": "Crystallization and preliminary X-ray crystallographic analysis of enoyl-ACP reductase III (FabL) from Bacillus subtilis.",
+        "journal": "Acta. Crystallogr. Sect. F. Struct. Biol. Cryst. Commun. 63 (2007) 246-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:17329825]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kim KH",
+          "Ha BH",
+          "Kim SJ",
+          "Hong SK",
+          "Hwang KY",
+          "Kim EE"
+        ],
+        "title": "Crystal structures of Enoyl-ACP reductases I (FabI) and III (FabL) from B. subtilis.",
+        "journal": "J. Mol. Biol. 406 (2011) 403-15.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:21185310]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

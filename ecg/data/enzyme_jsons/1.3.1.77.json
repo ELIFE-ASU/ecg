@@ -1,0 +1,400 @@
+[
+  {
+    "entry_id": "1.3.1.77",
+    "name": "anthocyanidin reductase [(2R,3R)-flavan-3-ol-forming]",
+    "names": [
+      "anthocyanidin reductase [(2R,3R)-flavan-3-ol-forming]",
+      "ANR (gene name) (ambiguous)",
+      "flavan-3-ol:NAD(P)+ oxidoreductase",
+      "anthocyanidin reductase (ambiguous)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "(2R,3R)-flavan-3-ol:NAD(P)+ 3,4-oxidoreductase",
+    "reaction": "a (2R,3R)-flavan-3-ol + 2 NAD(P)+ = an anthocyanidin with a 3-hydroxy group + 2 NAD(P)H + H+ [RN:R07351 R07352]",
+    "all_reac": "R07352 > R06541 R06542 R06543; R07351",
+    "iubmb_reactions": [
+      "R07352 > R06541 R06542 R06543",
+      "R07351"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(2R,3R)-flavan-3-ol [CPD:C15598]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]"
+    ],
+    "products": [
+      "anthocyanidin with a 3-hydroxy group [CPD:C21381]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme participates in the flavonoid biosynthesis pathway found in plants. It catalyses the double reduction of anthocyanidins, producing (2R,3R)-flavan-3-ol monomers required for the formation of proanthocyanidins. While the enzyme from the legume Medicago truncatula (MtANR) can use both NADPH and NADH as reductant, that from the crucifer Arabidopsis thaliana (AtANR) uses only NADPH. Also, while the substrate preference of MtANR is cyanidin>pelargonidin>delphinidin, the reverse preference is found with AtANR. cf. EC 1.3.1.112, anthocyanidin reductase [(2S)-flavan-3-ol-forming].",
+    "pathways": {
+      "ec00941": "Flavonoid biosynthesis",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K08695": "anthocyanidin reductase"
+    },
+    "genes": {
+      "ath": [
+        "AT1G61720"
+      ],
+      "aly": [
+        "ARALYDRAFT_893331"
+      ],
+      "crb": [
+        "CARUB_v10022026mg"
+      ],
+      "csat": [
+        "104703765",
+        "104714500",
+        "104752826"
+      ],
+      "eus": [
+        "EUTSA_v10023567mg"
+      ],
+      "brp": [
+        "103831042",
+        "103838541"
+      ],
+      "bna": [
+        "106352233",
+        "106374812",
+        "106374840",
+        "106395425"
+      ],
+      "boe": [
+        "106302532",
+        "106323258",
+        "106341298"
+      ],
+      "thj": [
+        "104809521"
+      ],
+      "cpap": [
+        "110812199"
+      ],
+      "cit": [
+        "102618954"
+      ],
+      "cic": [
+        "CICLE_v10017667mg"
+      ],
+      "tcc": [
+        "18597033"
+      ],
+      "gra": [
+        "105768219"
+      ],
+      "ghi": [
+        "107905961",
+        "107938221"
+      ],
+      "egr": [
+        "104441057",
+        "104441153"
+      ],
+      "gmx": [
+        "100805127",
+        "100817081"
+      ],
+      "pvu": [
+        "PHAVU_002G218600g",
+        "PHAVU_002G218700g"
+      ],
+      "vra": [
+        "106766353",
+        "106767189",
+        "106767332",
+        "106773404"
+      ],
+      "var": [
+        "108323842",
+        "108337959"
+      ],
+      "ccaj": [
+        "109794672",
+        "109817877"
+      ],
+      "mtr": [
+        "MTR_4g092080"
+      ],
+      "cam": [
+        "101494604"
+      ],
+      "adu": [
+        "107480609"
+      ],
+      "aip": [
+        "107626250"
+      ],
+      "lja": [
+        "Lj4g3v0423090.1"
+      ],
+      "lang": [
+        "109330732"
+      ],
+      "fve": [
+        "101297977"
+      ],
+      "pper": [
+        "18778549"
+      ],
+      "pmum": [
+        "103324591"
+      ],
+      "mdm": [
+        "103434638"
+      ],
+      "pxb": [
+        "103957769",
+        "103957850"
+      ],
+      "zju": [
+        "107421422"
+      ],
+      "rcu": [
+        "8267420"
+      ],
+      "jcu": [
+        "105649408"
+      ],
+      "hbr": [
+        "110658083"
+      ],
+      "pop": [
+        "POPTR_0004s03030g",
+        "POPTR_0011s03430g"
+      ],
+      "sly": [
+        "101263493"
+      ],
+      "spen": [
+        "107012467"
+      ],
+      "sot": [
+        "102584577"
+      ],
+      "nta": [
+        "107770662",
+        "107829462"
+      ],
+      "nsy": [
+        "104233566"
+      ],
+      "nto": [
+        "104120432"
+      ],
+      "bvg": [
+        "104883056"
+      ],
+      "nnu": [
+        "104585744",
+        "104593362",
+        "104604944"
+      ],
+      "osa": [
+        "4337100",
+        "4337101",
+        "4337102"
+      ],
+      "dosa": [
+        "Os04t0630100-01",
+        "Os04t0630300-01",
+        "Os04t0630400-01",
+        "Os04t0630600-00",
+        "Os04t0630800-01",
+        "Os04t0630900-01",
+        "Os04t0631000-00"
+      ],
+      "obr": [
+        "102701541",
+        "102705034",
+        "102716681",
+        "102716961",
+        "102717241",
+        "102717518"
+      ],
+      "bdi": [
+        "100834459",
+        "100834762",
+        "100835070"
+      ],
+      "sbi": [
+        "110436259",
+        "8066840",
+        "8066841",
+        "8066842",
+        "8066844",
+        "8066846"
+      ],
+      "zma": [
+        "100191338",
+        "100280098",
+        "100282500",
+        "103652362"
+      ],
+      "sita": [
+        "101757505",
+        "101757899",
+        "101758322",
+        "101758729",
+        "101759132",
+        "101760635",
+        "101761298",
+        "101784129"
+      ],
+      "pda": [
+        "103698208"
+      ],
+      "egu": [
+        "105035639"
+      ],
+      "mus": [
+        "103994101"
+      ],
+      "atr": [
+        "18427888"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.1.77"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.1.77"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.1.77"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.1.77"
+      ],
+      "CAS": [
+        "93389-48-1"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Xie DY",
+          "Sharma SB",
+          "Paiva NL",
+          "Ferreira D",
+          "Dixon RA."
+        ],
+        "title": "Role of anthocyanidin reductase, encoded by BANYULS in plant flavonoid biosynthesis.",
+        "journal": "Science. 299 (2003) 396-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12532018]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Xie DY",
+          "Sharma SB",
+          "Dixon RA."
+        ],
+        "title": "Anthocyanidin reductases from Medicago truncatula and Arabidopsis thaliana.",
+        "journal": "Arch. Biochem. Biophys. 422 (2004) 91-102.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:14725861]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Pang Y",
+          "Abeysinghe IS",
+          "He J",
+          "He X",
+          "Huhman D",
+          "Mewan KM",
+          "Sumner LW",
+          "Yun J",
+          "Dixon RA"
+        ],
+        "title": "Functional characterization of proanthocyanidin pathway enzymes from tea and their application for metabolic engineering.",
+        "journal": "Plant. Physiol. 161 (2013) 1103-16.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:23288883]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

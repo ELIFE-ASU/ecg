@@ -1,0 +1,673 @@
+[
+  {
+    "entry_id": "1.3.1.3",
+    "name": "Delta4-3-oxosteroid 5beta-reductase",
+    "names": [
+      "Delta4-3-oxosteroid 5beta-reductase",
+      "3-oxo-Delta4-steroid 5beta-reductase",
+      "5beta-reductase",
+      "androstenedione 5beta-reductase",
+      "cholestenone 5beta-reductase",
+      "cortisone 5beta-reductase",
+      "cortisone beta-reductase",
+      "cortisone Delta4-5beta-reductase",
+      "steroid 5beta-reductase",
+      "testosterone 5beta-reductase",
+      "Delta4-3-ketosteroid 5beta-reductase",
+      "Delta4-5beta-reductase",
+      "Delta4-hydrogenase",
+      "4,5beta-dihydrocortisone:NADP+ Delta4-oxidoreductase",
+      "3-oxo-5beta-steroid:NADP+ Delta4-oxidoreductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "5beta-cholestan-3-one:NADP+ 4,5-oxidoreductase",
+    "reaction": "(1) 5beta-cholestan-3-one + NADP+ = cholest-4-en-3-one + NADPH + H+ [RN:R02609]; (2) 17,21-dihydroxy-5beta-pregnane-3,11,20-trione + NADP+ = cortisone + NADPH + H+ [RN:R02893]",
+    "all_reac": "R02609 R02893; (other) R01835 R02219 R02498 R02841 R03713 R03850 R04817 R04823",
+    "iubmb_reactions": [
+      "R02609 R02893"
+    ],
+    "kegg_reactions": [
+      "R01835 R02219 R02498 R02841 R03713 R03850 R04817 R04823"
+    ],
+    "substrates": [
+      "5beta-cholestan-3-one [CPD:C03091]",
+      "NADP+ [CPD:C00006]",
+      "17,21-dihydroxy-5beta-pregnane-3,11,20-trione"
+    ],
+    "products": [
+      "cholest-4-en-3-one [CPD:C00599]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "cortisone [CPD:C00762]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme from human efficiently catalyses the reduction of progesterone, androstenedione, 17alpha-hydroxyprogesterone and testosterone to 5beta-reduced metabolites; it can also act on aldosterone, corticosterone and cortisol, but to a lesser extent [8]. The bile acid intermediates 7alpha,12alpha-dihydroxy-4-cholesten-3-one and 7alpha-hydroxy-4-cholesten-3-one can also act as substrates [9].",
+    "pathways": {
+      "ec00120": "Primary bile acid biosynthesis",
+      "ec00140": "Steroid hormone biosynthesis",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00251": "3-oxo-5-beta-steroid 4-dehydrogenase"
+    },
+    "genes": {
+      "hsa": [
+        "6718"
+      ],
+      "ptr": [
+        "472607"
+      ],
+      "pps": [
+        "100985077"
+      ],
+      "ggo": [
+        "101127761"
+      ],
+      "pon": [
+        "100456267"
+      ],
+      "nle": [
+        "100596284"
+      ],
+      "mcc": [
+        "709863"
+      ],
+      "mcf": [
+        "102146771"
+      ],
+      "csab": [
+        "103226977"
+      ],
+      "rro": [
+        "104656621"
+      ],
+      "rbb": [
+        "108530143"
+      ],
+      "cjc": [
+        "100409275"
+      ],
+      "sbq": [
+        "101047690"
+      ],
+      "mmu": [
+        "208665"
+      ],
+      "rno": [
+        "192242"
+      ],
+      "cge": [
+        "100770348"
+      ],
+      "ngi": [
+        "103726081"
+      ],
+      "hgl": [
+        "101716388"
+      ],
+      "ccan": [
+        "109700596"
+      ],
+      "ocu": [
+        "100008612",
+        "100343388"
+      ],
+      "tup": [
+        "102473225"
+      ],
+      "cfa": [
+        "482711",
+        "491379"
+      ],
+      "aml": [
+        "100483237"
+      ],
+      "umr": [
+        "103669050"
+      ],
+      "oro": [
+        "101385978"
+      ],
+      "fca": [
+        "101100551"
+      ],
+      "ptg": [
+        "102949203"
+      ],
+      "aju": [
+        "106970424"
+      ],
+      "bta": [
+        "513855"
+      ],
+      "bom": [
+        "102264964"
+      ],
+      "biu": [
+        "109557677"
+      ],
+      "phd": [
+        "102322934"
+      ],
+      "chx": [
+        "102170484"
+      ],
+      "oas": [
+        "101103641"
+      ],
+      "ssc": [
+        "100520813"
+      ],
+      "cfr": [
+        "102510401"
+      ],
+      "cdk": [
+        "105091623"
+      ],
+      "bacu": [
+        "102998601"
+      ],
+      "lve": [
+        "103071980"
+      ],
+      "ecb": [
+        "100066919"
+      ],
+      "epz": [
+        "103541705"
+      ],
+      "eai": [
+        "106829989"
+      ],
+      "myb": [
+        "102243036",
+        "102246475"
+      ],
+      "myd": [
+        "102756994",
+        "102775075",
+        "102775514"
+      ],
+      "hai": [
+        "109388534"
+      ],
+      "rss": [
+        "109457600"
+      ],
+      "pale": [
+        "102882463"
+      ],
+      "lav": [
+        "100665738"
+      ],
+      "tmu": [
+        "101348700"
+      ],
+      "mdo": [
+        "100022753"
+      ],
+      "shr": [
+        "100926677"
+      ],
+      "oaa": [
+        "100076664"
+      ],
+      "gga": [
+        "418107"
+      ],
+      "mgp": [
+        "100547967"
+      ],
+      "cjo": [
+        "107316041"
+      ],
+      "apla": [
+        "101802488"
+      ],
+      "acyg": [
+        "106031015"
+      ],
+      "tgu": [
+        "100228769"
+      ],
+      "gfr": [
+        "102038244"
+      ],
+      "fab": [
+        "101820121"
+      ],
+      "phi": [
+        "102107003"
+      ],
+      "pmaj": [
+        "107204921"
+      ],
+      "ccw": [
+        "104696483"
+      ],
+      "fpg": [
+        "101910289"
+      ],
+      "fch": [
+        "102047333"
+      ],
+      "clv": [
+        "102085311"
+      ],
+      "egz": [
+        "104135569"
+      ],
+      "aam": [
+        "106488268"
+      ],
+      "asn": [
+        "102377874"
+      ],
+      "amj": [
+        "102564670"
+      ],
+      "pss": [
+        "102453451"
+      ],
+      "cmy": [
+        "102942570"
+      ],
+      "cpic": [
+        "101950885"
+      ],
+      "acs": [
+        "100555605"
+      ],
+      "pvt": [
+        "110082711"
+      ],
+      "pbi": [
+        "103055499",
+        "103060010"
+      ],
+      "gja": [
+        "107115496"
+      ],
+      "xla": [
+        "399023",
+        "734699"
+      ],
+      "xtr": [
+        "594997"
+      ],
+      "npr": [
+        "108799286"
+      ],
+      "ipu": [
+        "100528314"
+      ],
+      "amex": [
+        "103027718",
+        "103036813"
+      ],
+      "tru": [
+        "101070818"
+      ],
+      "lco": [
+        "104921014",
+        "104933494"
+      ],
+      "ncc": [
+        "104955509",
+        "104966316"
+      ],
+      "mze": [
+        "101470353",
+        "101485185",
+        "106675749"
+      ],
+      "ola": [
+        "101170970",
+        "101175316"
+      ],
+      "xma": [
+        "102229839",
+        "102235761"
+      ],
+      "pret": [
+        "103459507",
+        "103465917"
+      ],
+      "csem": [
+        "103380316",
+        "103382893"
+      ],
+      "lcf": [
+        "108883064",
+        "108890588"
+      ],
+      "hcq": [
+        "109523861",
+        "109529813"
+      ],
+      "bpec": [
+        "110164799",
+        "110168059"
+      ],
+      "sasa": [
+        "100286547"
+      ],
+      "els": [
+        "105018484",
+        "105020260"
+      ],
+      "sfm": [
+        "108923648",
+        "108935900"
+      ],
+      "lcm": [
+        "102361835"
+      ],
+      "cmk": [
+        "103171668",
+        "103172804"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.1.3"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.1.3"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.1.3"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.1.3"
+      ],
+      "CAS": [
+        "9029-08-7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "DORFMAN RI",
+          "FORCHIELLI E."
+        ],
+        "title": "Separation of delta 4-5 alpha-hydrogenases from rat liver homogenates.",
+        "journal": "J. Biol. Chem. 223 (1956) 443-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:13376613]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "BROWN-GRANT K",
+          "FORCHIELLI E",
+          "DORFMAN RI."
+        ],
+        "title": "The delta4-hydrogenases of guinea pig adrenal gland.",
+        "journal": "J. Biol. Chem. 235 (1960) 1317-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:13805063]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Levy",
+          "H.R. and Talalay",
+          "P."
+        ],
+        "title": "Enzymatic introduction of double bonds into steroid ring A.",
+        "journal": "J. Am. Chem. Soc. 79 (1957) 2658-2659.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "TOMKINS GM."
+        ],
+        "title": "The enzymatic reduction of delta 4-3-ketosteroids.",
+        "journal": "J. Biol. Chem. 225 (1957) 13-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:13416214]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Sugimoto Y",
+          "Yoshida M",
+          "Tamaoki B."
+        ],
+        "title": "Purification of 5 beta-reductase from hepatic cytosol fraction of chicken.",
+        "journal": "J. Steroid. Biochem. Mol. Biol. 37 (1990) 717-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:2278855]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Furuebisu M",
+          "Deguchi S",
+          "Okuda K."
+        ],
+        "title": "Identification of cortisone 5 beta-reductase as delta 4-3-ketosteroid 5 beta-reductase.",
+        "journal": "Biochim. Biophys. Acta. 912 (1987) 110-4.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6  [PMID:3828348]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Okuda A",
+          "Okuda K."
+        ],
+        "title": "Purification and characterization of delta 4-3-ketosteroid 5 beta-reductase.",
+        "journal": "J. Biol. Chem. 259 (1984) 7519-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:6736016]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Charbonneau A",
+          "The VL."
+        ],
+        "title": "Genomic organization of a human 5beta-reductase and its pseudogene and substrate selectivity of the expressed enzyme.",
+        "journal": "Biochim. Biophys. Acta. 1517 (2001) 228-35.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:11342103]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kondo KH",
+          "Kai MH",
+          "Setoguchi Y",
+          "Eggertsen G",
+          "Sjoblom P",
+          "Setoguchi T",
+          "Okuda KI",
+          "Bjorkhem I."
+        ],
+        "title": "Cloning and expression of cDNA of human delta 4-3-oxosteroid 5 beta-reductase and substrate specificity of the expressed enzyme.",
+        "journal": "Eur. J. Biochem. 219 (1994) 357-63.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:7508385]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

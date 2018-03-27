@@ -1,0 +1,346 @@
+[
+  {
+    "entry_id": "1.5.1.43",
+    "name": "carboxynorspermidine synthase",
+    "names": [
+      "carboxynorspermidine synthase",
+      "carboxynorspermidine dehydrogenase",
+      "carboxyspermidine dehydrogenase",
+      "CASDH",
+      "CANSDH",
+      "VC1624 (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-NH group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "carboxynorspermidine:NADP+ oxidoreductase",
+    "reaction": "(1) carboxynorspermidine + H2O + NADP+ = L-aspartate 4-semialdehyde + propane-1,3-diamine + NADPH + H+ [RN:R09080]; (2) carboxyspermidine + H2O + NADP+ = L-aspartate 4-semialdehyde + putrescine + NADPH + H+ [RN:R09079]",
+    "all_reac": "R09079 R09080",
+    "iubmb_reactions": [
+      "R09079 R09080"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "carboxynorspermidine [CPD:C18174]",
+      "H2O [CPD:C00001]",
+      "NADP+ [CPD:C00006]",
+      "carboxyspermidine [CPD:C18172]"
+    ],
+    "products": [
+      "L-aspartate 4-semialdehyde [CPD:C00441]",
+      "propane-1,3-diamine [CPD:C00986]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "putrescine [CPD:C00134]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The reaction takes place in the opposite direction. Part of a bacterial polyamine biosynthesis pathway. L-aspartate 4-semialdehyde and propane-1,3-diamine/putrescine form a Schiff base that is reduced to form carboxynorspermidine/carboxyspermidine, respectively [1]. The enzyme from the bacterium Vibrio cholerae is essential for biofilm formation [2]. The enzyme from Campylobacter jejuni only produces carboxyspermidine in vivo even though it also can produce carboxynorspermidine in vitro [3].",
+    "pathways": {
+      "ec00330": "Arginine and proline metabolism",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K13746": "carboxynorspermidine synthase"
+    },
+    "genes": {
+      "vch": [
+        "VC1624"
+      ],
+      "vcf": [
+        "IR04_13345"
+      ],
+      "vce": [
+        "Vch1786_I1124"
+      ],
+      "vcj": [
+        "VCD_002750"
+      ],
+      "vco": [
+        "VC0395_A1231"
+      ],
+      "vcr": [
+        "VC395_1742"
+      ],
+      "vcm": [
+        "VCM66_1564"
+      ],
+      "vci": [
+        "O3Y_07890"
+      ],
+      "vcl": [
+        "VCLMA_A1414"
+      ],
+      "vcq": [
+        "EN18_11315"
+      ],
+      "vcs": [
+        "MS6_1406"
+      ],
+      "vcx": [
+        "VAA049_1179"
+      ],
+      "vcz": [
+        "VAB027_2272"
+      ],
+      "vvu": [
+        "VV1_3049"
+      ],
+      "vvy": [
+        "VV1237"
+      ],
+      "vvm": [
+        "VVMO6_01981"
+      ],
+      "vvl": [
+        "VV93_v1c11570"
+      ],
+      "vpa": [
+        "VP1941"
+      ],
+      "vpb": [
+        "VPBB_1783"
+      ],
+      "vpk": [
+        "M636_12125"
+      ],
+      "vpf": [
+        "M634_11915"
+      ],
+      "vph": [
+        "VPUCM_1277"
+      ],
+      "vha": [
+        "VIBHAR_02740"
+      ],
+      "vca": [
+        "M892_17165"
+      ],
+      "vag": [
+        "N646_1023"
+      ],
+      "vex": [
+        "VEA_003102"
+      ],
+      "vhr": [
+        "AL538_03275"
+      ],
+      "vna": [
+        "PN96_04020"
+      ],
+      "vow": [
+        "A9237_14585"
+      ],
+      "vro": [
+        "BSZ04_17205"
+      ],
+      "vsp": [
+        "VS_1946"
+      ],
+      "vej": [
+        "VEJY3_10185"
+      ],
+      "vfu": [
+        "vfu_A01725"
+      ],
+      "vni": [
+        "VIBNI_A2071"
+      ],
+      "van": [
+        "VAA_01989"
+      ],
+      "lag": [
+        "N175_09070"
+      ],
+      "vau": [
+        "VANGNB10_cI1167"
+      ],
+      "vcy": [
+        "IX92_08260"
+      ],
+      "vct": [
+        "JV59_30255"
+      ],
+      "vtu": [
+        "IX91_08420"
+      ],
+      "vfl": [
+        "AL536_12655"
+      ],
+      "vmi": [
+        "AL543_17380"
+      ],
+      "vbr": [
+        "A6E01_05850"
+      ],
+      "vsc": [
+        "VSVS12_01829"
+      ],
+      "vga": [
+        "BSQ33_00500"
+      ],
+      "vsh": [
+        "BSZ05_00395"
+      ],
+      "vsa": [
+        "VSAL_I2137"
+      ],
+      "awd": [
+        "AWOD_I_1745"
+      ],
+      "ppr": [
+        "PBPRA2229"
+      ],
+      "pgb": [
+        "H744_2c1553"
+      ],
+      "gho": [
+        "AL542_15065"
+      ],
+      "pmai": [
+        "CF386_00310"
+      ],
+      "pin": [
+        "Ping_2289"
+      ],
+      "psy": [
+        "PCNPT3_08250"
+      ],
+      "mvs": [
+        "MVIS_2445"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.5.1.43"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.5.1.43"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.5.1.43"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.5.1.43"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Nakao H",
+          "Shinoda S",
+          "Yamamoto S"
+        ],
+        "title": "Purification and some properties of carboxynorspermidine synthase participating in a novel biosynthetic pathway for norspermidine in Vibrio alginolyticus.",
+        "journal": "J. Gen. Microbiol. 137 (1991) 1737-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:1955861]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lee J",
+          "Sperandio V",
+          "Frantz DE",
+          "Longgood J",
+          "Camilli A",
+          "Phillips MA",
+          "Michael AJ."
+        ],
+        "title": "An alternative polyamine biosynthetic pathway is widespread in bacteria and essential for biofilm formation in Vibrio cholerae.",
+        "journal": "J. Biol. Chem. 284 (2009) 9899-907.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:19196710]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hanfrey CC",
+          "Pearson BM",
+          "Hazeldine S",
+          "Lee J",
+          "Gaskin DJ",
+          "Woster PM",
+          "Phillips MA",
+          "Michael AJ"
+        ],
+        "title": "Alternative spermidine biosynthetic route is critical for growth of Campylobacter jejuni and is the dominant polyamine pathway in human gut microbiota.",
+        "journal": "J. Biol. Chem. 286 (2011) 43301-12.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:22025614]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,862 @@
+[
+  {
+    "entry_id": "3.3.2.10",
+    "name": "soluble epoxide hydrolase",
+    "names": [
+      "soluble epoxide hydrolase",
+      "epoxide hydrase (ambiguous)",
+      "epoxide hydratase (ambiguous)",
+      "arene-oxide hydratase (ambiguous)",
+      "aryl epoxide hydrase (ambiguous)",
+      "trans-stilbene oxide hydrolase",
+      "sEH",
+      "cytosolic epoxide hydrolase"
+    ],
+    "classes": [
+      "Hydrolases;",
+      "Acting on ether bonds;",
+      "Ether hydrolases"
+    ],
+    "sysname": "epoxide hydrolase",
+    "reaction": "an epoxide + H2O = a glycol [RN:R02822]",
+    "all_reac": "R02822 > R05842 R07108 R07109 R07110 R07111",
+    "iubmb_reactions": [
+      "R02822 > R05842 R07108 R07109 R07110 R07111"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "epoxide [CPD:C00722]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "glycol [CPD:C15588]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Catalyses the hydrolysis of trans-substituted epoxides, such as trans-stilbene oxide, as well as various aliphatic epoxides derived from fatty-acid metabolism [7]. It is involved in the metabolism of arachidonic epoxides (epoxyicosatrienoic acids; EETs) and linoleic acid epoxides. The EETs, which are endogenous chemical mediators, act at the vascular, renal and cardiac levels to regulate blood pressure [4,5]. The enzyme from mammals is a bifunctional enzyme: the C-terminal domain exhibits epoxide-hydrolase activity and the N-terminal domain has the activity of EC 3.1.3.76, lipid-phosphate phosphatase [1,2]. Like EC 3.3.2.9, microsomal epoxide hydrolase, it is probable that the reaction involves the formation of an hydroxyalkyl---enzyme intermediate [4,6]. The enzyme can also use leukotriene A4, the substrate of EC 3.3.2.6, leukotriene-A4 hydrolase, but it forms 5,6-dihydroxy-7,9,11,14-icosatetraenoic acid rather than leukotriene B4 as the product [9,10]. In vertebrates, five epoxide-hydrolase enzymes have been identified to date: EC 3.3.2.6 (leukotriene-A4 hydrolase), EC 3.3.2.7 (hepoxilin-epoxide hydrolase), EC 3.3.2.9 (microsomal epoxide hydrolase), EC 3.3.2.10 (soluble epoxide hydrolase) and EC 3.3.2.11 (cholesterol 5,6-oxide hydrolase) [7].",
+    "pathways": {
+      "ec00590": "Arachidonic acid metabolism",
+      "ec00625": "Chloroalkane and chloroalkene degradation",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K08726": "soluble epoxide hydrolase / lipid-phosphate phosphatase"
+    },
+    "genes": {
+      "hsa": [
+        "2053"
+      ],
+      "ptr": [
+        "464074"
+      ],
+      "pps": [
+        "100990932"
+      ],
+      "ggo": [
+        "101136750"
+      ],
+      "pon": [
+        "100172736"
+      ],
+      "nle": [
+        "100585861"
+      ],
+      "mcc": [
+        "712926"
+      ],
+      "mcf": [
+        "102134633"
+      ],
+      "csab": [
+        "103215526"
+      ],
+      "rro": [
+        "104673945"
+      ],
+      "rbb": [
+        "108537568"
+      ],
+      "cjc": [
+        "100402999"
+      ],
+      "sbq": [
+        "101033420"
+      ],
+      "mmu": [
+        "13850"
+      ],
+      "rno": [
+        "65030"
+      ],
+      "cge": [
+        "100757328"
+      ],
+      "ngi": [
+        "103730002"
+      ],
+      "hgl": [
+        "101715352"
+      ],
+      "ccan": [
+        "109683973",
+        "109683974"
+      ],
+      "ocu": [
+        "100350230"
+      ],
+      "tup": [
+        "102480725"
+      ],
+      "cfa": [
+        "477373"
+      ],
+      "aml": [
+        "100483572"
+      ],
+      "umr": [
+        "103675990"
+      ],
+      "oro": [
+        "101373863"
+      ],
+      "fca": [
+        "101092355"
+      ],
+      "ptg": [
+        "102957184"
+      ],
+      "aju": [
+        "106973110"
+      ],
+      "bta": [
+        "511716"
+      ],
+      "bom": [
+        "102267808"
+      ],
+      "biu": [
+        "109563159"
+      ],
+      "phd": [
+        "102326909"
+      ],
+      "chx": [
+        "102185835"
+      ],
+      "oas": [
+        "101106654"
+      ],
+      "ssc": [
+        "414425"
+      ],
+      "cfr": [
+        "102517269"
+      ],
+      "cdk": [
+        "105102229"
+      ],
+      "bacu": [
+        "103015729"
+      ],
+      "lve": [
+        "103082628"
+      ],
+      "ecb": [
+        "100060414"
+      ],
+      "epz": [
+        "103550424"
+      ],
+      "eai": [
+        "106832514"
+      ],
+      "myb": [
+        "102255588"
+      ],
+      "myd": [
+        "102755564"
+      ],
+      "hai": [
+        "109379561"
+      ],
+      "rss": [
+        "109448144"
+      ],
+      "pale": [
+        "102886924"
+      ],
+      "lav": [
+        "100658579"
+      ],
+      "tmu": [
+        "101343713"
+      ],
+      "mdo": [
+        "100030580"
+      ],
+      "shr": [
+        "100931196",
+        "100931457",
+        "100931720"
+      ],
+      "oaa": [
+        "100093187"
+      ],
+      "gga": [
+        "421999"
+      ],
+      "mgp": [
+        "100550075"
+      ],
+      "cjo": [
+        "107312419"
+      ],
+      "apla": [
+        "101802271"
+      ],
+      "acyg": [
+        "106049519"
+      ],
+      "fab": [
+        "101820851"
+      ],
+      "phi": [
+        "102113903"
+      ],
+      "fpg": [
+        "101922601"
+      ],
+      "fch": [
+        "102047869"
+      ],
+      "clv": [
+        "102084991"
+      ],
+      "egz": [
+        "104132029"
+      ],
+      "aam": [
+        "106486373"
+      ],
+      "asn": [
+        "102382847"
+      ],
+      "amj": [
+        "102558789"
+      ],
+      "pss": [
+        "102463793"
+      ],
+      "cmy": [
+        "102944771"
+      ],
+      "cpic": [
+        "101937180",
+        "101948445",
+        "101948727"
+      ],
+      "acs": [
+        "100564154"
+      ],
+      "pvt": [
+        "110089501"
+      ],
+      "pbi": [
+        "103057778",
+        "103065207"
+      ],
+      "gja": [
+        "107118053"
+      ],
+      "xla": [
+        "447032"
+      ],
+      "xtr": [
+        "448759"
+      ],
+      "npr": [
+        "108798538"
+      ],
+      "dre": [
+        "494099"
+      ],
+      "srx": [
+        "107717245",
+        "107733988"
+      ],
+      "sanh": [
+        "107653762",
+        "107692411"
+      ],
+      "sgh": [
+        "107552031",
+        "107594076"
+      ],
+      "ccar": [
+        "109071412",
+        "109071415",
+        "109107424"
+      ],
+      "ipu": [
+        "108270338"
+      ],
+      "amex": [
+        "103037948"
+      ],
+      "tru": [
+        "101078765"
+      ],
+      "tng": [
+        "GSTEN00019421G001"
+      ],
+      "lco": [
+        "104928568"
+      ],
+      "ncc": [
+        "104958265"
+      ],
+      "mze": [
+        "101483599"
+      ],
+      "ola": [
+        "101157276"
+      ],
+      "xma": [
+        "102235090"
+      ],
+      "pret": [
+        "103456621"
+      ],
+      "lcf": [
+        "108873166",
+        "108879368"
+      ],
+      "sasa": [
+        "106604359",
+        "106611412"
+      ],
+      "els": [
+        "105028738"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_88467",
+        "BRAFLDRAFT_88468"
+      ],
+      "spu": [
+        "590376",
+        "590472",
+        "752510"
+      ],
+      "aplc": [
+        "110985936",
+        "110985937"
+      ],
+      "sko": [
+        "100367532",
+        "100370311"
+      ],
+      "nve": [
+        "NEMVE_v1g237970"
+      ],
+      "epa": [
+        "110251610"
+      ],
+      "tad": [
+        "TRIADDRAFT_30313",
+        "TRIADDRAFT_59995",
+        "TRIADDRAFT_60010",
+        "TRIADDRAFT_60079",
+        "TRIADDRAFT_64238"
+      ],
+      "aqu": [
+        "105313986"
+      ],
+      "cic": [
+        "CICLE_v10001881mg"
+      ],
+      "pxb": [
+        "103939771"
+      ],
+      "jcu": [
+        "105650137"
+      ],
+      "nta": [
+        "107766629"
+      ],
+      "nto": [
+        "108948202"
+      ],
+      "yli": [
+        "YALI0A01441g",
+        "YALI0C23224g",
+        "YALI0E19899g"
+      ],
+      "ncr": [
+        "NCU02924"
+      ],
+      "mgr": [
+        "MGG_05826"
+      ],
+      "psco": [
+        "LY89DRAFT_507394"
+      ],
+      "pno": [
+        "SNOG_14994"
+      ],
+      "pte": [
+        "PTT_13711"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_186960"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_163026"
+      ],
+      "dsq": [
+        "DICSQDRAFT_104823"
+      ],
+      "pco": [
+        "PHACADRAFT_191247"
+      ],
+      "shs": [
+        "STEHIDRAFT_106361",
+        "STEHIDRAFT_80676"
+      ],
+      "hir": [
+        "HETIRDRAFT_155125",
+        "HETIRDRAFT_63479"
+      ],
+      "psq": [
+        "PUNSTDRAFT_112781",
+        "PUNSTDRAFT_116520",
+        "PUNSTDRAFT_118199",
+        "PUNSTDRAFT_139547"
+      ],
+      "adl": [
+        "AURDEDRAFT_152313",
+        "AURDEDRAFT_80706"
+      ],
+      "fme": [
+        "FOMMEDRAFT_135095"
+      ],
+      "lbc": [
+        "LACBIDRAFT_303899",
+        "LACBIDRAFT_311540"
+      ],
+      "mrr": [
+        "Moror_13860",
+        "Moror_6712"
+      ],
+      "cci": [
+        "CC1G_14690"
+      ],
+      "scm": [
+        "SCHCODRAFT_12753",
+        "SCHCODRAFT_62514"
+      ],
+      "abp": [
+        "AGABI1DRAFT38499",
+        "AGABI1DRAFT70817"
+      ],
+      "abv": [
+        "AGABI2DRAFT78715"
+      ],
+      "cput": [
+        "CONPUDRAFT_122227",
+        "CONPUDRAFT_93019"
+      ],
+      "sla": [
+        "SERLADRAFT_354546",
+        "SERLADRAFT_435482"
+      ],
+      "wse": [
+        "WALSEDRAFT_65881"
+      ],
+      "wic": [
+        "J056_000814"
+      ],
+      "uma": [
+        "UMAG_04063"
+      ],
+      "pfp": [
+        "PFL1_00989"
+      ],
+      "pgr": [
+        "PGTG_00491",
+        "PGTG_05962",
+        "PGTG_05973"
+      ],
+      "mlr": [
+        "MELLADRAFT_115158",
+        "MELLADRAFT_123933"
+      ],
+      "acan": [
+        "ACA1_322160"
+      ],
+      "pif": [
+        "PITG_11920",
+        "PITG_11921",
+        "PITG_11922",
+        "PITG_15955",
+        "PITG_15956"
+      ],
+      "psoj": [
+        "PHYSODRAFT_314147",
+        "PHYSODRAFT_318677",
+        "PHYSODRAFT_525117",
+        "PHYSODRAFT_558062",
+        "PHYSODRAFT_564652"
+      ],
+      "spar": [
+        "SPRG_06039",
+        "SPRG_06040",
+        "SPRG_06041"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "3.3.2.10"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "3.3.2.10"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "3.3.2.10"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "3.3.2.10"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "3.3.2.10"
+      ],
+      "CAS": [
+        "9048-63-9"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Newman JW",
+          "Morisseau C",
+          "Harris TR",
+          "Hammock BD."
+        ],
+        "title": "The soluble epoxide hydrolase encoded by EPXH2 is a bifunctional enzyme with novel lipid phosphate phosphatase activity.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 100 (2003) 1558-63.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:12574510]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Cronin A",
+          "Mowbray S",
+          "Durk H",
+          "Homburg S",
+          "Fleming I",
+          "Fisslthaler B",
+          "Oesch F",
+          "Arand M."
+        ],
+        "title": "The N-terminal domain of mammalian soluble epoxide hydrolase is a phosphatase.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 100 (2003) 1552-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:12574508]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Oesch F."
+        ],
+        "title": "Mammalian epoxide hydrases: inducible enzymes catalysing the inactivation of carcinogenic and cytotoxic metabolites derived from aromatic and olefinic compounds.",
+        "journal": "Xenobiotica. 3 (1973) 305-40.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:4584115]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Morisseau C",
+          "Hammock BD."
+        ],
+        "title": "Epoxide hydrolases: mechanisms, inhibitor designs, and biological roles.",
+        "journal": "Annu. Rev. Pharmacol. Toxicol. 45 (2005) 311-33.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15822179]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Yu Z",
+          "Xu F",
+          "Huse LM",
+          "Morisseau C",
+          "Draper AJ",
+          "Newman JW",
+          "Parker C",
+          "Graham L",
+          "Engler MM",
+          "Hammock BD",
+          "Zeldin DC",
+          "Kroetz DL."
+        ],
+        "title": "Soluble epoxide hydrolase regulates hydrolysis of vasoactive epoxyeicosatrienoic acids.",
+        "journal": "Circ. Res. 87 (2000) 992-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:11090543]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lacourciere",
+          "G.M. and Armstrong",
+          "R.N."
+        ],
+        "title": "The catalytic mechanism of microsomal epoxide hydrolase involves an ester intermediate.",
+        "journal": "J. Am. Chem. Soc. 115 (1993) 10466-10456.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "6"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fretland AJ",
+          "Omiecinski CJ."
+        ],
+        "title": "Epoxide hydrolases: biochemistry and molecular biology.",
+        "journal": "Chem. Biol. Interact. 129 (2000) 41-59.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "7  [PMID:11154734]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Zeldin DC",
+          "Wei S",
+          "Falck JR",
+          "Hammock BD",
+          "Snapper JR",
+          "Capdevila JH."
+        ],
+        "title": "Metabolism of epoxyeicosatrienoic acids by cytosolic epoxide hydrolase: substrate structural determinants of asymmetric catalysis.",
+        "journal": "Arch. Biochem. Biophys. 316 (1995) 443-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "8  [PMID:7840649]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Haeggstrom J",
+          "Meijer J",
+          "Radmark O."
+        ],
+        "title": "Leukotriene A4. Enzymatic conversion into 5,6-dihydroxy-7,9,11,14-eicosatetraenoic acid by mouse liver cytosolic epoxide hydrolase.",
+        "journal": "J. Biol. Chem. 261 (1986) 6332-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "9  [PMID:3009453]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Newman JW",
+          "Morisseau C",
+          "Hammock BD."
+        ],
+        "title": "Epoxide hydrolases: their roles and interactions with lipid metabolism.",
+        "journal": "Prog. Lipid. Res. 44 (2005) 1-51.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "10 [PMID:15748653]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

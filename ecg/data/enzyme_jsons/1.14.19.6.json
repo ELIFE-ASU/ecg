@@ -1,0 +1,723 @@
+[
+  {
+    "entry_id": "1.14.19.6",
+    "name": "acyl-CoA (9+3)-desaturase",
+    "names": [
+      "acyl-CoA (9+3)-desaturase",
+      "oleoyl-CoA 12-desaturase",
+      "Delta12 fatty acid desaturase",
+      "Delta12(omega6)-desaturase",
+      "oleoyl-CoA Delta12 desaturase",
+      "Delta12 desaturase",
+      "Delta12-desaturase",
+      "Delta12-fatty-acid desaturase",
+      "acyl-CoA,hydrogen donor:oxygen Delta12-oxidoreductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With oxidation of a pair of donors resulting in the reduction of O2 to two molecules of water"
+    ],
+    "sysname": "acyl-CoA,ferrocytochrome b5:oxygen oxidoreductase (12,13 cis-dehydrogenating)",
+    "reaction": "(1) oleoyl-CoA + 2 ferrocytochrome b5 + O2 + 2 H+ = linoleoyl-CoA + 2 ferricytochrome b5 + 2 H2O [RN:R11043]; (2) palmitoleoyl-CoA + 2 ferrocytochrome b5 + O2 + 2 H+ = (9Z,12Z)-hexadeca-9,12-dienoyl-CoA + 2 ferricytochrome b5 + 2 H2O [RN:R11044]",
+    "all_reac": "R11043 R11044",
+    "iubmb_reactions": [
+      "R11043 R11044"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "oleoyl-CoA [CPD:C00510]",
+      "ferrocytochrome b5 [CPD:C00999]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]",
+      "palmitoleoyl-CoA [CPD:C21072]"
+    ],
+    "products": [
+      "linoleoyl-CoA [CPD:C02050]",
+      "ferricytochrome b5 [CPD:C00996]",
+      "H2O [CPD:C00001]",
+      "(9Z,12Z)-hexadeca-9,12-dienoyl-CoA [CPD:C21000]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This microsomal enzyme introduces a cis double bond at position 12 of fatty-acyl-CoAs that contain a cis double bond at position 9. When acting on 19:1Delta10 fatty acyl-CoA the enzyme from the pathogenic protozoan Trypanosoma brucei introduces the new double bond at position 13, indicating that the new double bond is introduced three carbons from the existing cis double bond, towards the methyl-end of the fatty acid. Requires cytochrome b5 as the electron donor [4].",
+    "pathways": {
+      "ec01040": "Biosynthesis of unsaturated fatty acids"
+    },
+    "orthologs": {
+      "K10256": "omega-6 fatty acid desaturase / acyl-lipid omega-6 desaturase (Delta-12 desaturase)"
+    },
+    "genes": {
+      "rss": [
+        "109441170"
+      ],
+      "epa": [
+        "110243700"
+      ],
+      "adf": [
+        "107344154"
+      ],
+      "ath": [
+        "AT3G12120"
+      ],
+      "aly": [
+        "ARALYDRAFT_478568"
+      ],
+      "crb": [
+        "CARUB_v10013933mg"
+      ],
+      "csat": [
+        "104745425",
+        "104764975",
+        "104776214"
+      ],
+      "eus": [
+        "EUTSA_v10020910mg"
+      ],
+      "brp": [
+        "103870276"
+      ],
+      "bna": [
+        "106417584",
+        "106418116",
+        "106452409",
+        "106452523",
+        "106453262",
+        "111197729",
+        "111197774"
+      ],
+      "boe": [
+        "106295108"
+      ],
+      "thj": [
+        "104799296",
+        "104826770"
+      ],
+      "cpap": [
+        "110811677"
+      ],
+      "cit": [
+        "102627239"
+      ],
+      "cic": [
+        "CICLE_v10011949mg"
+      ],
+      "tcc": [
+        "18589688",
+        "18599101"
+      ],
+      "gra": [
+        "105761671",
+        "105783314",
+        "105785452",
+        "105785453"
+      ],
+      "ghi": [
+        "107901973",
+        "107921152",
+        "107921339",
+        "107924178",
+        "107934594",
+        "107941903"
+      ],
+      "egr": [
+        "104433804",
+        "104445836"
+      ],
+      "gmx": [
+        "100780912",
+        "100805040",
+        "100805777",
+        "100809290",
+        "102662570",
+        "547814",
+        "547815",
+        "732617"
+      ],
+      "pvu": [
+        "PHAVU_001G142100g",
+        "PHAVU_007G0234001",
+        "PHAVU_007G259500g"
+      ],
+      "vra": [
+        "106757695",
+        "106770720",
+        "106771256"
+      ],
+      "var": [
+        "108323476",
+        "108325188",
+        "108325364"
+      ],
+      "ccaj": [
+        "109794836",
+        "109795239",
+        "109796052",
+        "109796649"
+      ],
+      "mtr": [
+        "MTR_1g054035",
+        "MTR_1g111880",
+        "MTR_7g093200"
+      ],
+      "cam": [
+        "101489419",
+        "101507051",
+        "101513688"
+      ],
+      "adu": [
+        "107464693",
+        "107467337",
+        "107492893"
+      ],
+      "aip": [
+        "107616829",
+        "107619143",
+        "107645414"
+      ],
+      "lja": [
+        "Lj1g3v4317650.1",
+        "Lj5g3v2237610.1",
+        "Lj5g3v2237610.2"
+      ],
+      "lang": [
+        "109328907",
+        "109331342",
+        "109345961",
+        "109346314",
+        "109347587"
+      ],
+      "fve": [
+        "101290788",
+        "101309231"
+      ],
+      "pper": [
+        "18769718",
+        "18774949"
+      ],
+      "pmum": [
+        "103339420",
+        "103341921"
+      ],
+      "mdm": [
+        "103407667",
+        "103413591",
+        "103414966",
+        "103421758",
+        "103427045",
+        "103443127",
+        "103449713",
+        "103454260",
+        "108175247"
+      ],
+      "pxb": [
+        "103958977",
+        "103963937",
+        "103964864"
+      ],
+      "zju": [
+        "107432351"
+      ],
+      "csv": [
+        "101222623"
+      ],
+      "cmo": [
+        "103486770"
+      ],
+      "mcha": [
+        "111024845"
+      ],
+      "rcu": [
+        "8267086"
+      ],
+      "jcu": [
+        "105646514"
+      ],
+      "hbr": [
+        "110635031",
+        "110638358",
+        "110650724"
+      ],
+      "pop": [
+        "POPTR_0001s04990g",
+        "POPTR_0001s05000g",
+        "POPTR_0001s05020g",
+        "POPTR_0006s20640g"
+      ],
+      "vvi": [
+        "100252129"
+      ],
+      "sly": [
+        "101250481"
+      ],
+      "spen": [
+        "107015240"
+      ],
+      "sot": [
+        "102580407"
+      ],
+      "cann": [
+        "107843168",
+        "107849596",
+        "107849612",
+        "107850481",
+        "107851215",
+        "107851251",
+        "107851256",
+        "107851294",
+        "107851421",
+        "107851434",
+        "107851473",
+        "107851685",
+        "107851744",
+        "107851810",
+        "107851811",
+        "107851871",
+        "107873633"
+      ],
+      "nta": [
+        "107773163",
+        "107797104",
+        "107814090",
+        "107823061",
+        "107829678",
+        "107831844"
+      ],
+      "nsy": [
+        "104226786",
+        "104230317",
+        "104246180"
+      ],
+      "nto": [
+        "104089719",
+        "104090741",
+        "104098987",
+        "104106672",
+        "104121261"
+      ],
+      "ini": [
+        "109150720",
+        "109152414",
+        "109182042"
+      ],
+      "sind": [
+        "105159686"
+      ],
+      "han": [
+        "110865031",
+        "110865032",
+        "110865239",
+        "110865277",
+        "110865281",
+        "110865284",
+        "110865285",
+        "110867681",
+        "110868684",
+        "110879372",
+        "110894444",
+        "110894736",
+        "110897314",
+        "110897316",
+        "110897318",
+        "110897319",
+        "110897568",
+        "110904312",
+        "110938218",
+        "110938220",
+        "110938221",
+        "110939886",
+        "110939887",
+        "110939961",
+        "110939971"
+      ],
+      "bvg": [
+        "104889198",
+        "104889897"
+      ],
+      "soe": [
+        "110785100",
+        "110800912"
+      ],
+      "nnu": [
+        "104603541"
+      ],
+      "osa": [
+        "4330523"
+      ],
+      "dosa": [
+        "Os02t0716500-01",
+        "Os07t0416700-00"
+      ],
+      "obr": [
+        "102719739"
+      ],
+      "sbi": [
+        "110435045",
+        "8066368"
+      ],
+      "zma": [
+        "100282744"
+      ],
+      "pda": [
+        "103713931"
+      ],
+      "egu": [
+        "105050201"
+      ],
+      "mus": [
+        "103980416"
+      ],
+      "dct": [
+        "110101255",
+        "110108827"
+      ],
+      "smo": [
+        "SELMODRAFT_163663"
+      ],
+      "cre": [
+        "CHLREDRAFT_135825"
+      ],
+      "vcn": [
+        "VOLCADRAFT_66373"
+      ],
+      "mng": [
+        "MNEG_7806"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_48812"
+      ],
+      "ccp": [
+        "CHC_T00008296001"
+      ],
+      "yli": [
+        "YALI0B10153g"
+      ],
+      "clus": [
+        "A9F13_02g00583",
+        "A9F13_13g00209"
+      ],
+      "caur": [
+        "QG37_04115",
+        "QG37_07638"
+      ],
+      "ncr": [
+        "NCU02209"
+      ],
+      "nte": [
+        "NEUTE1DRAFT86398"
+      ],
+      "smp": [
+        "SMAC_03650"
+      ],
+      "ttt": [
+        "THITE_76756"
+      ],
+      "mtm": [
+        "MYCTH_88639"
+      ],
+      "cthr": [
+        "CTHT_0000240"
+      ],
+      "mgr": [
+        "MGG_01985"
+      ],
+      "tmn": [
+        "UCRPA7_5047"
+      ],
+      "fvr": [
+        "FVEG_05830"
+      ],
+      "fox": [
+        "FOXG_08835"
+      ],
+      "maw": [
+        "MAC_06628"
+      ],
+      "plj": [
+        "VFPFJ_10241"
+      ],
+      "vda": [
+        "VDAG_02971"
+      ],
+      "cfj": [
+        "CFIO01_09629"
+      ],
+      "pfy": [
+        "PFICI_02105"
+      ],
+      "psco": [
+        "LY89DRAFT_613354",
+        "LY89DRAFT_693845",
+        "LY89DRAFT_706947"
+      ],
+      "glz": [
+        "GLAREA_04493",
+        "GLAREA_09934"
+      ],
+      "ani": [
+        "AN1037.2"
+      ],
+      "ang": [
+        "ANI_1_742074"
+      ],
+      "act": [
+        "ACLA_022950"
+      ],
+      "nfi": [
+        "NFIA_013020"
+      ],
+      "pdp": [
+        "PDIP_27200"
+      ],
+      "cim": [
+        "CIMG_06871"
+      ],
+      "cpw": [
+        "CPC735_032710"
+      ],
+      "pbl": [
+        "PAAG_08655"
+      ],
+      "pbn": [
+        "PADG_07259"
+      ],
+      "abe": [
+        "ARB_01637"
+      ],
+      "tve": [
+        "TRV_05152"
+      ],
+      "aje": [
+        "HCAG_01866"
+      ],
+      "pno": [
+        "SNOG_01471"
+      ],
+      "pte": [
+        "PTT_13901"
+      ],
+      "bze": [
+        "COCCADRAFT_95357"
+      ],
+      "bsc": [
+        "COCSADRAFT_255949"
+      ],
+      "bor": [
+        "COCMIDRAFT_99684"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_72590"
+      ],
+      "npa": [
+        "UCRNP2_969"
+      ],
+      "cne": [
+        "CND02750"
+      ],
+      "cnb": [
+        "CNBD3600"
+      ],
+      "cgi": [
+        "CGB_D5300C"
+      ],
+      "tms": [
+        "TREMEDRAFT_45585"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_147014",
+        "TRAVEDRAFT_154849",
+        "TRAVEDRAFT_154853",
+        "TRAVEDRAFT_171450",
+        "TRAVEDRAFT_23765",
+        "TRAVEDRAFT_28463",
+        "TRAVEDRAFT_38834",
+        "TRAVEDRAFT_40170",
+        "TRAVEDRAFT_52518",
+        "TRAVEDRAFT_52811"
+      ],
+      "pfp": [
+        "PFL1_00921"
+      ],
+      "mgl": [
+        "MGL_1345"
+      ],
+      "sre": [
+        "PTSG_08157"
+      ],
+      "ngd": [
+        "NGA_0081700"
+      ],
+      "tbr": [
+        "Tb927.2.3080"
+      ],
+      "tcr": [
+        "429257.20"
+      ],
+      "lma": [
+        "LMJF_33_3270"
+      ],
+      "lif": [
+        "LINJ_33_3420"
+      ],
+      "ldo": [
+        "LDBPK_333420"
+      ],
+      "lmi": [
+        "LMXM_32_3270"
+      ],
+      "lbz": [
+        "LBRM_33_3550"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.19.6"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.19.6"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.19.6"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.19.6"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Borgeson CE",
+          "de Renobales M",
+          "Blomquist GJ."
+        ],
+        "title": "Characterization of the delta 12 desaturase in the American cockroach, Periplaneta americana: the nature of the substrate.",
+        "journal": "Biochim. Biophys. Acta. 1047 (1990) 135-40.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:2248971]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lomascolo A",
+          "Dubreucq E",
+          "Galzy P."
+        ],
+        "title": "Study of the delta 12-desaturase system of Lipomyces starkeyi.",
+        "journal": "Lipids. 31 (1996) 253-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:8900454]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tocher DR",
+          "Leaver MJ",
+          "Hodgson PA."
+        ],
+        "title": "Recent advances in the biochemistry and molecular biology of fatty acyl desaturases.",
+        "journal": "Prog. Lipid. Res. 37 (1998) 73-117.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9829122]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Petrini GA",
+          "Altabe SG",
+          "Uttaro AD"
+        ],
+        "title": "Trypanosoma brucei oleate desaturase may use a cytochrome b5-like domain in another desaturase as an electron donor.",
+        "journal": "Eur. J. Biochem. 271 (2004) 1079-86.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15009186]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

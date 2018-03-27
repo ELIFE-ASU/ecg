@@ -1,0 +1,1079 @@
+[
+  {
+    "entry_id": "1.2.1.31",
+    "name": "L-aminoadipate-semialdehyde dehydrogenase",
+    "names": [
+      "L-aminoadipate-semialdehyde dehydrogenase",
+      "aminoadipate semialdehyde dehydrogenase",
+      "2-aminoadipate semialdehyde dehydrogenase",
+      "alpha-aminoadipate-semialdehyde dehydrogenase",
+      "alpha-aminoadipate reductase",
+      "2-aminoadipic semialdehyde dehydrogenase",
+      "L-alpha-aminoadipate delta-semialdehyde oxidoreductase",
+      "L-alpha-aminoadipate delta-semialdehyde:NAD+ oxidoreductase",
+      "L-alpha-aminoadipate delta-semialdehyde:nicotinamide adenine dinucleotide oxidoreductase",
+      "L-2-aminoadipate 6-semialdehyde:NAD(P)+ 6-oxidoreductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the aldehyde or oxo group of donors;",
+      "With NAD+ or NADP+ as acceptor"
+    ],
+    "sysname": "(S)-2-amino-6-oxohexanoate:NAD(P)+ 6-oxidoreductase",
+    "reaction": "(S)-2-amino-6-oxohexanoate + NAD(P)+ + H2O = L-2-aminoadipate + NAD(P)H + H+ (overall reaction) [RN:R03102 R03103]; (1a) (S)-2-amino-6-oxohexanoate = (S)-2,3,4,5-tetrahydropyridine-2-carboxylate + H2O (spontaneous) [RN:R02317]; (1b) (S)-2,3,4,5-tetrahydropyridine-2-carboxylate + NAD(P)+ + 2 H2O = L-2-aminoadipate + NAD(P)H + H+ [RN:R11231 R11232]",
+    "all_reac": "R02317 R03102 R03103 R11231 R11232",
+    "iubmb_reactions": [
+      "R02317 R03102 R03103 R11231 R11232"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(S)-2-amino-6-oxohexanoate [CPD:C04076]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "(S)-2,3,4,5-tetrahydropyridine-2-carboxylate [CPD:C00450]"
+    ],
+    "products": [
+      "L-2-aminoadipate [CPD:C00956]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "(S)-2,3,4,5-tetrahydropyridine-2-carboxylate [CPD:C00450]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "(S)-2-amino-6-oxohexanoate undergoes a spontaneous dehydration forming the cyclic (S)-2,3,4,5-tetrahydropyridine-2-carboxylate, which serves as a substrate for the hydrogenation reaction.",
+    "pathways": {
+      "ec00310": "Lysine degradation",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K14085": "aldehyde dehydrogenase family 7 member A1"
+    },
+    "genes": {
+      "hsa": [
+        "501"
+      ],
+      "ptr": [
+        "462033"
+      ],
+      "pps": [
+        "100970731"
+      ],
+      "ggo": [
+        "101148545",
+        "101149382",
+        "109025015"
+      ],
+      "pon": [
+        "100461726"
+      ],
+      "nle": [
+        "100583462"
+      ],
+      "mcc": [
+        "702749"
+      ],
+      "mcf": [
+        "102120771"
+      ],
+      "csab": [
+        "103245164"
+      ],
+      "rro": [
+        "104677423"
+      ],
+      "rbb": [
+        "108537700"
+      ],
+      "cjc": [
+        "100401828",
+        "100410565",
+        "103790723"
+      ],
+      "sbq": [
+        "101045920"
+      ],
+      "mmu": [
+        "110695"
+      ],
+      "rno": [
+        "291450"
+      ],
+      "cge": [
+        "100756509"
+      ],
+      "ngi": [
+        "103740420"
+      ],
+      "hgl": [
+        "101711696"
+      ],
+      "ccan": [
+        "109699996"
+      ],
+      "ocu": [
+        "100344302"
+      ],
+      "tup": [
+        "102495542"
+      ],
+      "cfa": [
+        "481486"
+      ],
+      "aml": [
+        "100475712"
+      ],
+      "umr": [
+        "103670577"
+      ],
+      "oro": [
+        "101372739"
+      ],
+      "fca": [
+        "101086623"
+      ],
+      "ptg": [
+        "102951788"
+      ],
+      "aju": [
+        "106970741"
+      ],
+      "bta": [
+        "507477"
+      ],
+      "bom": [
+        "102285292"
+      ],
+      "biu": [
+        "109561847"
+      ],
+      "phd": [
+        "102334119"
+      ],
+      "chx": [
+        "102187125"
+      ],
+      "oas": [
+        "101108127"
+      ],
+      "ssc": [
+        "106504110"
+      ],
+      "cfr": [
+        "102512958"
+      ],
+      "cdk": [
+        "105089785"
+      ],
+      "bacu": [
+        "103018812",
+        "103019170"
+      ],
+      "lve": [
+        "103087111"
+      ],
+      "ecb": [
+        "100063766"
+      ],
+      "epz": [
+        "103557440"
+      ],
+      "eai": [
+        "106842819"
+      ],
+      "myb": [
+        "102247575"
+      ],
+      "myd": [
+        "102754535"
+      ],
+      "hai": [
+        "109379078"
+      ],
+      "rss": [
+        "109440683",
+        "109447739"
+      ],
+      "pale": [
+        "102880590"
+      ],
+      "lav": [
+        "100656260"
+      ],
+      "tmu": [
+        "101361542"
+      ],
+      "mdo": [
+        "100009965"
+      ],
+      "shr": [
+        "100930576"
+      ],
+      "oaa": [
+        "100074256"
+      ],
+      "gga": [
+        "426812"
+      ],
+      "mgp": [
+        "104915364"
+      ],
+      "cjo": [
+        "107306701"
+      ],
+      "apla": [
+        "101793275"
+      ],
+      "acyg": [
+        "106046528"
+      ],
+      "tgu": [
+        "100223716"
+      ],
+      "gfr": [
+        "102042249"
+      ],
+      "fab": [
+        "101806923"
+      ],
+      "phi": [
+        "102106824"
+      ],
+      "pmaj": [
+        "107198296"
+      ],
+      "ccw": [
+        "104690506"
+      ],
+      "fpg": [
+        "101917601"
+      ],
+      "fch": [
+        "102052577"
+      ],
+      "clv": [
+        "102091436"
+      ],
+      "egz": [
+        "104124248"
+      ],
+      "aam": [
+        "106498570"
+      ],
+      "asn": [
+        "102368427"
+      ],
+      "amj": [
+        "102563610"
+      ],
+      "pss": [
+        "102458471"
+      ],
+      "cmy": [
+        "102940167"
+      ],
+      "cpic": [
+        "101937973"
+      ],
+      "acs": [
+        "100560663"
+      ],
+      "pvt": [
+        "110077534"
+      ],
+      "pbi": [
+        "103049565"
+      ],
+      "gja": [
+        "107112391"
+      ],
+      "xla": [
+        "108707197",
+        "447522"
+      ],
+      "xtr": [
+        "549131"
+      ],
+      "npr": [
+        "108799792"
+      ],
+      "dre": [
+        "334197"
+      ],
+      "srx": [
+        "107715563"
+      ],
+      "sanh": [
+        "107657454"
+      ],
+      "sgh": [
+        "107573911"
+      ],
+      "ccar": [
+        "109097311"
+      ],
+      "ipu": [
+        "108277325"
+      ],
+      "amex": [
+        "103034062"
+      ],
+      "tru": [
+        "101066288"
+      ],
+      "lco": [
+        "104931924"
+      ],
+      "ncc": [
+        "104947674"
+      ],
+      "mze": [
+        "101482988"
+      ],
+      "ola": [
+        "101157525"
+      ],
+      "xma": [
+        "102233064"
+      ],
+      "pret": [
+        "103464136"
+      ],
+      "csem": [
+        "103393055"
+      ],
+      "lcf": [
+        "108881294"
+      ],
+      "hcq": [
+        "109522068"
+      ],
+      "bpec": [
+        "110160079"
+      ],
+      "sasa": [
+        "100194754"
+      ],
+      "els": [
+        "105021749"
+      ],
+      "sfm": [
+        "108929860"
+      ],
+      "lcm": [
+        "102353526",
+        "102356888"
+      ],
+      "cmk": [
+        "103182361"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_114917"
+      ],
+      "cin": [
+        "100184485"
+      ],
+      "spu": [
+        "588376"
+      ],
+      "aplc": [
+        "110981183"
+      ],
+      "sko": [
+        "100370075"
+      ],
+      "dme": [
+        "Dmel_CG9629"
+      ],
+      "dpo": [
+        "Dpse_GA21924"
+      ],
+      "dan": [
+        "Dana_GF10773"
+      ],
+      "der": [
+        "Dere_GG13416"
+      ],
+      "dpe": [
+        "Dper_GL20912"
+      ],
+      "dse": [
+        "Dsec_GM14883"
+      ],
+      "dsi": [
+        "Dsimw501_GD12292"
+      ],
+      "dwi": [
+        "Dwil_GK19673"
+      ],
+      "dya": [
+        "Dyak_GE22513",
+        "Dyak_GE22917"
+      ],
+      "dgr": [
+        "Dgri_GH14418"
+      ],
+      "dmo": [
+        "Dmoj_GI13547"
+      ],
+      "dvi": [
+        "Dvir_GJ11906"
+      ],
+      "mde": [
+        "101888197"
+      ],
+      "aga": [
+        "AgaP_AGAP000881"
+      ],
+      "aag": [
+        "5575285"
+      ],
+      "cqu": [
+        "CpipJ_CPIJ009438"
+      ],
+      "ame": [
+        "411140"
+      ],
+      "bim": [
+        "100747121"
+      ],
+      "bter": [
+        "100648169"
+      ],
+      "soc": [
+        "105195464",
+        "105203371"
+      ],
+      "aec": [
+        "105151044"
+      ],
+      "acep": [
+        "105619807"
+      ],
+      "pbar": [
+        "105422187"
+      ],
+      "hst": [
+        "105181543"
+      ],
+      "cfo": [
+        "105258160"
+      ],
+      "lhu": [
+        "105668398"
+      ],
+      "pgc": [
+        "109862314"
+      ],
+      "nvi": [
+        "100499205",
+        "103315266"
+      ],
+      "tca": [
+        "658395"
+      ],
+      "dpa": [
+        "109541213"
+      ],
+      "nvl": [
+        "108564650"
+      ],
+      "bmor": [
+        "101735616"
+      ],
+      "dpl": [
+        "KGM_212105"
+      ],
+      "pmac": [
+        "106720155",
+        "106720340"
+      ],
+      "pxy": [
+        "105385639",
+        "105390252"
+      ],
+      "api": [
+        "100159019"
+      ],
+      "dnx": [
+        "107173527"
+      ],
+      "phu": [
+        "Phum_PHUM233600"
+      ],
+      "zne": [
+        "110841255"
+      ],
+      "fcd": [
+        "110857963"
+      ],
+      "dpx": [
+        "DAPPUDRAFT_242599",
+        "DAPPUDRAFT_302712"
+      ],
+      "isc": [
+        "IscW_ISCW020189"
+      ],
+      "tut": [
+        "107369629"
+      ],
+      "cel": [
+        "CELE_F01F1.6"
+      ],
+      "cbr": [
+        "CBG09070"
+      ],
+      "nai": [
+        "NECAME_04408"
+      ],
+      "hro": [
+        "HELRODRAFT_157787"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_112613"
+      ],
+      "crg": [
+        "105327683"
+      ],
+      "myi": [
+        "110455019"
+      ],
+      "obi": [
+        "106871909"
+      ],
+      "lak": [
+        "106170433",
+        "106172052"
+      ],
+      "nve": [
+        "NEMVE_v1g175287"
+      ],
+      "epa": [
+        "110236278"
+      ],
+      "adf": [
+        "107348247",
+        "107348248"
+      ],
+      "hmg": [
+        "100198995"
+      ],
+      "tad": [
+        "TRIADDRAFT_35608"
+      ],
+      "aqu": [
+        "100634152",
+        "100639963",
+        "100640016"
+      ],
+      "ath": [
+        "AT1G54100"
+      ],
+      "aly": [
+        "ARALYDRAFT_474541"
+      ],
+      "crb": [
+        "CARUB_v10008892mg"
+      ],
+      "csat": [
+        "104742930",
+        "104758760",
+        "104778346"
+      ],
+      "eus": [
+        "EUTSA_v10011405mg"
+      ],
+      "brp": [
+        "103832634"
+      ],
+      "bna": [
+        "106377328",
+        "106443300",
+        "111198788"
+      ],
+      "boe": [
+        "106297379",
+        "106336455"
+      ],
+      "thj": [
+        "104815620"
+      ],
+      "cpap": [
+        "110818468"
+      ],
+      "cit": [
+        "102620491"
+      ],
+      "cic": [
+        "CICLE_v10025411mg"
+      ],
+      "tcc": [
+        "108663443",
+        "18596241"
+      ],
+      "gra": [
+        "105773235"
+      ],
+      "ghi": [
+        "107900603"
+      ],
+      "egr": [
+        "104450978"
+      ],
+      "gmx": [
+        "100811186",
+        "547717"
+      ],
+      "pvu": [
+        "PHAVU_009G226700g"
+      ],
+      "vra": [
+        "106762243"
+      ],
+      "var": [
+        "108331606"
+      ],
+      "ccaj": [
+        "109817465"
+      ],
+      "mtr": [
+        "MTR_2g042330"
+      ],
+      "cam": [
+        "101513733"
+      ],
+      "adu": [
+        "107479115"
+      ],
+      "aip": [
+        "107630450"
+      ],
+      "lja": [
+        "Lj6g3v1177340.1"
+      ],
+      "lang": [
+        "109326919"
+      ],
+      "fve": [
+        "101298824"
+      ],
+      "pper": [
+        "18770979"
+      ],
+      "pmum": [
+        "103340601"
+      ],
+      "mdm": [
+        "103400922",
+        "103406953",
+        "103406954"
+      ],
+      "pxb": [
+        "103929705",
+        "103950259",
+        "103965546"
+      ],
+      "zju": [
+        "107423905"
+      ],
+      "csv": [
+        "101205436"
+      ],
+      "cmo": [
+        "103500684"
+      ],
+      "mcha": [
+        "111021324"
+      ],
+      "rcu": [
+        "8259358",
+        "8287351"
+      ],
+      "jcu": [
+        "105631377"
+      ],
+      "hbr": [
+        "110634279",
+        "110664616"
+      ],
+      "pop": [
+        "POPTR_0001s16730g",
+        "POPTR_0003s06570g"
+      ],
+      "vvi": [
+        "100252622",
+        "100261802"
+      ],
+      "sly": [
+        "101252968"
+      ],
+      "spen": [
+        "107014931"
+      ],
+      "sot": [
+        "102598345"
+      ],
+      "cann": [
+        "107861672"
+      ],
+      "nta": [
+        "107796971",
+        "107816273"
+      ],
+      "nsy": [
+        "104236891"
+      ],
+      "nto": [
+        "104107938"
+      ],
+      "ini": [
+        "109156784",
+        "109161649",
+        "109173011",
+        "109173542",
+        "109176332",
+        "109184799",
+        "109187725",
+        "109192542"
+      ],
+      "sind": [
+        "105157813"
+      ],
+      "han": [
+        "110886479"
+      ],
+      "bvg": [
+        "104883004",
+        "104899742",
+        "109134491"
+      ],
+      "soe": [
+        "110804032"
+      ],
+      "nnu": [
+        "104600531"
+      ],
+      "osa": [
+        "4347172"
+      ],
+      "dosa": [
+        "Os09t0440300-01"
+      ],
+      "obr": [
+        "102721194"
+      ],
+      "bdi": [
+        "100831288"
+      ],
+      "sbi": [
+        "8080995"
+      ],
+      "zma": [
+        "100282748",
+        "103634912",
+        "103641646",
+        "103646581",
+        "103653517"
+      ],
+      "sita": [
+        "101759802"
+      ],
+      "pda": [
+        "103709342"
+      ],
+      "egu": [
+        "105042090"
+      ],
+      "mus": [
+        "103995197"
+      ],
+      "dct": [
+        "110096635"
+      ],
+      "atr": [
+        "18439499"
+      ],
+      "smo": [
+        "SELMODRAFT_164276",
+        "SELMODRAFT_230941"
+      ],
+      "ppp": [
+        "PHYPADRAFT_110382"
+      ],
+      "gsl": [
+        "Gasu_48300"
+      ],
+      "cne": [
+        "CNA07130"
+      ],
+      "cnb": [
+        "CNBA6940"
+      ],
+      "cgi": [
+        "CGB_A8240C"
+      ],
+      "tms": [
+        "TREMEDRAFT_61600"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_31575"
+      ],
+      "dsq": [
+        "DICSQDRAFT_71439",
+        "DICSQDRAFT_71492"
+      ],
+      "pco": [
+        "PHACADRAFT_119267"
+      ],
+      "shs": [
+        "STEHIDRAFT_120958"
+      ],
+      "hir": [
+        "HETIRDRAFT_436232"
+      ],
+      "psq": [
+        "PUNSTDRAFT_80903"
+      ],
+      "adl": [
+        "AURDEDRAFT_82786"
+      ],
+      "fme": [
+        "FOMMEDRAFT_109130"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_140831"
+      ],
+      "lbc": [
+        "LACBIDRAFT_248281"
+      ],
+      "mpr": [
+        "MPER_07485"
+      ],
+      "mrr": [
+        "Moror_10706"
+      ],
+      "cci": [
+        "CC1G_06909"
+      ],
+      "scm": [
+        "SCHCODRAFT_68486"
+      ],
+      "abp": [
+        "AGABI1DRAFT114711"
+      ],
+      "abv": [
+        "AGABI2DRAFT194900"
+      ],
+      "cput": [
+        "CONPUDRAFT_106150"
+      ],
+      "sla": [
+        "SERLADRAFT_464165"
+      ],
+      "uma": [
+        "UMAG_03665"
+      ],
+      "pfp": [
+        "PFL1_05085"
+      ],
+      "mlr": [
+        "MELLADRAFT_51169"
+      ],
+      "mbr": [
+        "MONBRDRAFT_37970"
+      ],
+      "sre": [
+        "PTSG_07579"
+      ],
+      "ddi": [
+        "DDB_G0276821"
+      ],
+      "dpp": [
+        "DICPUDRAFT_151785"
+      ],
+      "dfa": [
+        "DFA_02437"
+      ],
+      "acan": [
+        "ACA1_164050"
+      ],
+      "tet": [
+        "TTHERM_00678220"
+      ],
+      "ptm": [
+        "GSPATT00002104001",
+        "GSPATT00006572001"
+      ],
+      "pif": [
+        "PITG_05462"
+      ],
+      "psoj": [
+        "PHYSODRAFT_353879"
+      ],
+      "spar": [
+        "SPRG_06143"
+      ],
+      "ngr": [
+        "NAEGRDRAFT_35633"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.2.1.31"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.2.1.31"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.2.1.31"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.2.1.31"
+      ],
+      "CAS": [
+        "9067-87-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Calvert AF",
+          "Rodwell VW."
+        ],
+        "title": "Metabolism of pipecolic acid in a Pseudomonas species. 3. L-alpha-aminoadipate delta-semialdehyde:nicotinamide adenine dinucleotide oxidoreductase.",
+        "journal": "J. Biol. Chem. 241 (1966) 409-14.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:4285660]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Rodwell",
+          "V.W."
+        ],
+        "title": "Delta1-piperideine-6-carboxylic acid and alpha-aminoadipic acid delta-semialdehyde.",
+        "journal": "Method Enzymol 17B (1971) 188-199.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "de La Fuente JL",
+          "Rumbero A",
+          "Martin JF",
+          "Liras P"
+        ],
+        "title": "Delta-1-piperideine-6-carboxylate dehydrogenase, a new enzyme that forms alpha-aminoadipate in Streptomyces clavuligerus and other cephamycin C-producing actinomycetes.",
+        "journal": "Biochem. J. 327 ( Pt 1) (1997) 59-64.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:9355735]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fujii T",
+          "Narita T",
+          "Agematu H",
+          "Agata N",
+          "Isshiki K"
+        ],
+        "title": "Cloning and characterization of pcd encoding delta'-piperideine-6-carboxylate dehydrogenase from flavobacterium lutescens IFO3084.",
+        "journal": "J. Biochem. 128 (2000) 975-82.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:11098140]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

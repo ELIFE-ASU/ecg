@@ -1,0 +1,591 @@
+[
+  {
+    "entry_id": "2.4.1.34",
+    "name": "1,3-beta-glucan synthase",
+    "names": [
+      "1,3-beta-glucan synthase",
+      "1,3-beta-D-glucan---UDP glucosyltransferase",
+      "UDP-glucose---1,3-beta-D-glucan glucosyltransferase",
+      "callose synthetase",
+      "1,3-beta-D-glucan-UDP glucosyltransferase",
+      "UDP-glucose-1,3-beta-D-glucan glucosyltransferase",
+      "paramylon synthetase",
+      "UDP-glucose-beta-glucan glucosyltransferase",
+      "GS-II",
+      "(1,3)-beta-glucan (callose) synthase",
+      "beta-1,3-glucan synthase",
+      "beta-1,3-glucan synthetase",
+      "1,3-beta-D-glucan synthetase",
+      "1,3-beta-D-glucan synthase",
+      "1,3-beta-glucan-uridine diphosphoglucosyltransferase",
+      "callose synthase",
+      "UDP-glucose-1,3-beta-glucan glucosyltransferase",
+      "UDP-glucose:(1,3)beta-glucan synthase",
+      "uridine diphosphoglucose-1,3-beta-glucan glucosyltransferase",
+      "UDP-glucose:1,3-beta-D-glucan 3-beta-D-glucosyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Hexosyltransferases"
+    ],
+    "sysname": "UDP-glucose:(1->3)-beta-D-glucan 3-beta-D-glucosyltransferase",
+    "reaction": "UDP-glucose + [(1->3)-beta-D-glucosyl]n = UDP + [(1->3)-beta-D-glucosyl]n+1 [RN:R03118 R06020]",
+    "all_reac": "R03118 R06020(G)",
+    "iubmb_reactions": [
+      "R03118 R06020(G)"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "UDP-glucose [CPD:C00029]",
+      "[(1->3)-beta-D-glucosyl]n"
+    ],
+    "products": [
+      "UDP [CPD:C00015]",
+      "[(1->3)-beta-D-glucosyl]n+1"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "",
+    "pathways": {
+      "ec00500": "Starch and sucrose metabolism"
+    },
+    "orthologs": {
+      "K00706": "1,3-beta-glucan synthase"
+    },
+    "genes": {
+      "cre": [
+        "CHLREDRAFT_143511",
+        "CHLREDRAFT_144973",
+        "CHLREDRAFT_147446"
+      ],
+      "vcn": [
+        "VOLCADRAFT_103157",
+        "VOLCADRAFT_89607",
+        "VOLCADRAFT_90838"
+      ],
+      "sce": [
+        "YGR032W",
+        "YLR342W",
+        "YMR306W"
+      ],
+      "ago": [
+        "AGOS_AAR053W",
+        "AGOS_ACL181C",
+        "AGOS_AGL353W"
+      ],
+      "erc": [
+        "Ecym_2089",
+        "Ecym_6156"
+      ],
+      "kla": [
+        "KLLA0B05841g",
+        "KLLA0C08888g",
+        "KLLA0C14069g"
+      ],
+      "lth": [
+        "KLTH0B09856g",
+        "KLTH0G17754g"
+      ],
+      "vpo": [
+        "Kpol_1028p64",
+        "Kpol_385p13",
+        "Kpol_499p12"
+      ],
+      "zro": [
+        "ZYRO0A12518g",
+        "ZYRO0D06974g"
+      ],
+      "cgr": [
+        "CAGL0G01034g",
+        "CAGL0K04037g",
+        "CAGL0M13827g"
+      ],
+      "ncs": [
+        "NCAS_0A02040",
+        "NCAS_0D02370",
+        "NCAS_0J00760"
+      ],
+      "ndi": [
+        "NDAI_0D03980",
+        "NDAI_0I02550",
+        "NDAI_0J01580"
+      ],
+      "tpf": [
+        "TPHA_0A05590",
+        "TPHA_0F01030",
+        "TPHA_0K01270"
+      ],
+      "tbl": [
+        "TBLA_0A08870",
+        "TBLA_0C07060",
+        "TBLA_0G01310"
+      ],
+      "tdl": [
+        "TDEL_0D02780",
+        "TDEL_0G00370"
+      ],
+      "kaf": [
+        "KAFR_0A06380",
+        "KAFR_0F03830",
+        "KAFR_0I02620"
+      ],
+      "ppa": [
+        "PAS_chr1-3_0225",
+        "PAS_chr2-1_0263",
+        "PAS_chr2-1_0661"
+      ],
+      "dha": [
+        "DEHA2C01870g"
+      ],
+      "pic": [
+        "PICST_38184",
+        "PICST_43247",
+        "PICST_67249",
+        "PICST_86938"
+      ],
+      "pgu": [
+        "PGUG_00803",
+        "PGUG_01168",
+        "PGUG_02097"
+      ],
+      "spaa": [
+        "SPAPADRAFT_144914",
+        "SPAPADRAFT_145419",
+        "SPAPADRAFT_54663"
+      ],
+      "lel": [
+        "LELG_01464",
+        "LELG_01623"
+      ],
+      "cal": [
+        "CAALFM_C102420CA",
+        "CAALFM_C105600WA",
+        "CAALFM_CR00850CA"
+      ],
+      "ctp": [
+        "CTRG_00996",
+        "CTRG_04660",
+        "CTRG_04661",
+        "CTRG_04806"
+      ],
+      "cot": [
+        "CORT_0A04060",
+        "CORT_0B07640",
+        "CORT_0B10770"
+      ],
+      "cdu": [
+        "CD36_02270",
+        "CD36_05280",
+        "CD36_25900"
+      ],
+      "cten": [
+        "CANTEDRAFT_111397",
+        "CANTEDRAFT_125830",
+        "CANTEDRAFT_126740"
+      ],
+      "yli": [
+        "YALI0C01411g",
+        "YALI0E21021g"
+      ],
+      "clu": [
+        "CLUG_00401",
+        "CLUG_00402",
+        "CLUG_00403",
+        "CLUG_01698",
+        "CLUG_01702",
+        "CLUG_03657",
+        "CLUG_03658"
+      ],
+      "clus": [
+        "A9F13_08g02079",
+        "A9F13_13g01430"
+      ],
+      "caur": [
+        "QG37_02962",
+        "QG37_03054"
+      ],
+      "ncr": [
+        "NCU06871"
+      ],
+      "nte": [
+        "NEUTE1DRAFT123618"
+      ],
+      "smp": [
+        "SMAC_05918"
+      ],
+      "pan": [
+        "PODANSg1678"
+      ],
+      "ttt": [
+        "THITE_132141"
+      ],
+      "mtm": [
+        "MYCTH_140260"
+      ],
+      "cthr": [
+        "CTHT_0017590"
+      ],
+      "mgr": [
+        "MGG_00865"
+      ],
+      "tmn": [
+        "UCRPA7_2086",
+        "UCRPA7_2533"
+      ],
+      "fgr": [
+        "FGSG_07946"
+      ],
+      "fpu": [
+        "FPSE_10797"
+      ],
+      "fvr": [
+        "FVEG_12144"
+      ],
+      "fox": [
+        "FOXG_03721"
+      ],
+      "nhe": [
+        "NECHADRAFT_59665",
+        "NECHADRAFT_88969"
+      ],
+      "tre": [
+        "TRIREDRAFT_78176"
+      ],
+      "maw": [
+        "MAC_01688"
+      ],
+      "maj": [
+        "MAA_04456"
+      ],
+      "cmt": [
+        "CCM_01185"
+      ],
+      "plj": [
+        "VFPFJ_02329",
+        "VFPFJ_06514"
+      ],
+      "val": [
+        "VDBG_07423",
+        "VDBG_07424",
+        "VDBG_07425",
+        "VDBG_07426"
+      ],
+      "vda": [
+        "VDAG_02340",
+        "VDAG_02341"
+      ],
+      "cfj": [
+        "CFIO01_04038"
+      ],
+      "ela": [
+        "UCREL1_7703"
+      ],
+      "pfy": [
+        "PFICI_05905"
+      ],
+      "ssl": [
+        "SS1G_12021"
+      ],
+      "bfu": [
+        "BC1G_14034"
+      ],
+      "mbe": [
+        "MBM_07422"
+      ],
+      "psco": [
+        "LY89DRAFT_588789"
+      ],
+      "glz": [
+        "GLAREA_01902"
+      ],
+      "ani": [
+        "AN3729.2"
+      ],
+      "afm": [
+        "AFUA_6G12400"
+      ],
+      "aor": [
+        "AOR_1_292184"
+      ],
+      "ang": [
+        "ANI_1_188054"
+      ],
+      "afv": [
+        "AFLA_052800"
+      ],
+      "act": [
+        "ACLA_085650"
+      ],
+      "nfi": [
+        "NFIA_058360"
+      ],
+      "pcs": [
+        "Pc22g04100"
+      ],
+      "pdp": [
+        "PDIP_43580"
+      ],
+      "cim": [
+        "CIMG_01753"
+      ],
+      "cpw": [
+        "CPC735_047360"
+      ],
+      "pbl": [
+        "PAAG_05071"
+      ],
+      "pbn": [
+        "PADG_11846"
+      ],
+      "ure": [
+        "UREG_05460",
+        "UREG_05461"
+      ],
+      "abe": [
+        "ARB_07489"
+      ],
+      "tve": [
+        "TRV_03676"
+      ],
+      "aje": [
+        "HCAG_05289"
+      ],
+      "pno": [
+        "SNOG_12024"
+      ],
+      "pte": [
+        "PTT_12290"
+      ],
+      "bze": [
+        "COCCADRAFT_80671"
+      ],
+      "bsc": [
+        "COCSADRAFT_275710"
+      ],
+      "bor": [
+        "COCMIDRAFT_87462"
+      ],
+      "ztr": [
+        "MYCGRDRAFT_101655"
+      ],
+      "pfj": [
+        "MYCFIDRAFT_216979"
+      ],
+      "bcom": [
+        "BAUCODRAFT_145288"
+      ],
+      "npa": [
+        "UCRNP2_7982",
+        "UCRNP2_8222"
+      ],
+      "tml": [
+        "GSTUM_00007491001",
+        "GSTUM_00007493001"
+      ],
+      "spo": [
+        "SPAC19B12.03",
+        "SPAC24C9.07c",
+        "SPBC19G7.05c",
+        "SPCC1840.02c"
+      ],
+      "cne": [
+        "CNN02320"
+      ],
+      "cnb": [
+        "CNBN2360"
+      ],
+      "cgi": [
+        "CGB_N3410W"
+      ],
+      "tms": [
+        "TREMEDRAFT_40635"
+      ],
+      "tvs": [
+        "TRAVEDRAFT_118985",
+        "TRAVEDRAFT_31446"
+      ],
+      "dsq": [
+        "DICSQDRAFT_49951",
+        "DICSQDRAFT_88574"
+      ],
+      "pco": [
+        "PHACADRAFT_172928",
+        "PHACADRAFT_256062"
+      ],
+      "shs": [
+        "STEHIDRAFT_74453",
+        "STEHIDRAFT_78309"
+      ],
+      "hir": [
+        "HETIRDRAFT_154319",
+        "HETIRDRAFT_37236"
+      ],
+      "psq": [
+        "PUNSTDRAFT_118018",
+        "PUNSTDRAFT_71276"
+      ],
+      "adl": [
+        "AURDEDRAFT_102560",
+        "AURDEDRAFT_113411"
+      ],
+      "fme": [
+        "FOMMEDRAFT_79513",
+        "FOMMEDRAFT_86578"
+      ],
+      "gtr": [
+        "GLOTRDRAFT_134148",
+        "GLOTRDRAFT_140772",
+        "GLOTRDRAFT_35804"
+      ],
+      "lbc": [
+        "LACBIDRAFT_187667",
+        "LACBIDRAFT_317105"
+      ],
+      "mpr": [
+        "MPER_08286",
+        "MPER_08553"
+      ],
+      "mrr": [
+        "Moror_13096",
+        "Moror_4678",
+        "Moror_6544"
+      ],
+      "cci": [
+        "CC1G_04252",
+        "CC1G_06961"
+      ],
+      "scm": [
+        "SCHCODRAFT_77200",
+        "SCHCODRAFT_81175"
+      ],
+      "abp": [
+        "AGABI1DRAFT60751",
+        "AGABI1DRAFT68544"
+      ],
+      "abv": [
+        "AGABI2DRAFT199445",
+        "AGABI2DRAFT226824"
+      ],
+      "cput": [
+        "CONPUDRAFT_58540",
+        "CONPUDRAFT_87688",
+        "CONPUDRAFT_90587"
+      ],
+      "sla": [
+        "SERLADRAFT_360841",
+        "SERLADRAFT_454151"
+      ],
+      "wse": [
+        "WALSEDRAFT_32074",
+        "WALSEDRAFT_60061"
+      ],
+      "wic": [
+        "J056_003171",
+        "J056_003228"
+      ],
+      "uma": [
+        "UMAG_01639"
+      ],
+      "pfp": [
+        "PFL1_03692"
+      ],
+      "mgl": [
+        "MGL_0311"
+      ],
+      "pgr": [
+        "PGTG_00125"
+      ],
+      "mlr": [
+        "MELLADRAFT_36688",
+        "MELLADRAFT_42780",
+        "MELLADRAFT_87779",
+        "MELLADRAFT_89088",
+        "MELLADRAFT_90934",
+        "MELLADRAFT_90935",
+        "MELLADRAFT_93017",
+        "MELLADRAFT_93451"
+      ],
+      "smin": [
+        "v1.2.015997.t1",
+        "v1.2.017891.t1",
+        "v1.2.018998.t1",
+        "v1.2.019006.t1",
+        "v1.2.019820.t1",
+        "v1.2.027025.t1",
+        "v1.2.027900.t1",
+        "v1.2.028071.t1",
+        "v1.2.036746.t1",
+        "v1.2.036746.t2"
+      ],
+      "aaf": [
+        "AURANDRAFT_2915"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.1.34"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.1.34"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.1.34"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.1.34"
+      ],
+      "CAS": [
+        "9037-30-3"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "MARECHAL LR",
+          "GOLDEMBERG SH."
+        ],
+        "title": "URIDINE DIPHOSPHATE GLUCOSE-BETA-1,3-GLUCAN BETA-3-GLUCOSYLTRANSFERASE FROM EUGLENA GRACILIS.",
+        "journal": "J. Biol. Chem. 239 (1964) 3163-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:14245356]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

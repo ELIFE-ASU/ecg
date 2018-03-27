@@ -1,0 +1,165 @@
+[
+  {
+    "entry_id": "6.5.1.5",
+    "name": "RNA 3'-terminal-phosphate cyclase (GTP)",
+    "names": [
+      "RNA 3'-terminal-phosphate cyclase (GTP)",
+      "Pf-Rtc",
+      "RNA-3'-phosphate cyclase (GTP)"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming phosphoric-ester bonds;",
+      "Ligases that form phosphoric-ester bonds (only sub-subclass identified to date)"
+    ],
+    "sysname": "RNA-3'-phosphate:RNA ligase (cyclizing, GMP-forming)",
+    "reaction": "GTP + [RNA]-3'-(3'-phospho-ribonucleoside) = GMP + diphosphate + [RNA]-3'-(2',3'-cyclophospho)-ribonucleoside (overall reaction) [RN:R10537]; (1a) GTP + [RNA 3'-phosphate cyclase]-L-histidine = 5'-guanosyl [RNA 3'-phosphate cyclase]-Ntau-phosphono-L-histidine + diphosphate; (1b) 5'-guanosyl [RNA 3'-phosphate cyclase]-Ntau-phosphono-L-histidine + [RNA]-3'-(3'-phospho-ribonucleoside) = [RNA 3'-phosphate cyclase]-L-histidine + [RNA]-3'-ribonucleoside-3'-(5'-diphosphoguanosine); (1c) [RNA]-3'-ribonucleoside-3'-(5'-diphosphoguanosine) = [RNA]-3'-(2',3'-cyclophospho)-ribonucleoside + GMP",
+    "all_reac": "R10537",
+    "iubmb_reactions": [
+      "R10537"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "GTP [CPD:C00044]",
+      "[RNA]-3'-(3'-phospho-ribonucleoside)",
+      "[RNA 3'-phosphate cyclase]-L-histidine",
+      "5'-guanosyl [RNA 3'-phosphate cyclase]-Ntau-phosphono-L-histidine",
+      "[RNA]-3'-ribonucleoside-3'-(5'-diphosphoguanosine)"
+    ],
+    "products": [
+      "GMP [CPD:C00144]",
+      "diphosphate [CPD:C00013]",
+      "[RNA]-3'-(2',3'-cyclophospho)-ribonucleoside",
+      "5'-guanosyl [RNA 3'-phosphate cyclase]-Ntau-phosphono-L-histidine",
+      "[RNA 3'-phosphate cyclase]-L-histidine",
+      "[RNA]-3'-ribonucleoside-3'-(5'-diphosphoguanosine)"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, which is specific for GTP, was characterized from the archaeon Pyrococcus furiosus. The enzyme converts the 3'-terminal phosphate of various RNA substrates into the 2',3'-cyclic phosphodiester in a GTP-dependent reaction. Catalysis occurs by a three-step mechanism, starting with the activation of the enzyme by GTP, forming a phosphoramide bond between guanylate and a histidine residue. The guanylate group is then transferred to the 3'-phosphate terminus of the substrate, forming the capped structure [RNA]-3'-(5'-diphosphoguanosine). Finally, the enzyme catalyses an attack of the vicinal O-2' on the 3'-phosphorus, which results in formation of cyclic phosphate and release of the guanylate. cf. EC 6.5.1.4, RNA-3'-phosphate cyclase (ATP).",
+    "pathways": {
+    },
+    "orthologs": {
+      "K18105": "RNA 3'-terminal phosphate cyclase (GTP)"
+    },
+    "genes": {
+      "mka": [
+        "MK0001"
+      ],
+      "pho": [
+        "PH1529"
+      ],
+      "pab": [
+        "PAB1943"
+      ],
+      "pfu": [
+        "PF1549"
+      ],
+      "pfi": [
+        "PFC_06975"
+      ],
+      "pyn": [
+        "PNA2_0113"
+      ],
+      "pya": [
+        "PYCH_05910"
+      ],
+      "pys": [
+        "Py04_1420"
+      ],
+      "tko": [
+        "TK1615"
+      ],
+      "ton": [
+        "TON_0048"
+      ],
+      "tga": [
+        "TGAM_2020"
+      ],
+      "tsi": [
+        "TSIB_1528"
+      ],
+      "tba": [
+        "TERMP_00074"
+      ],
+      "the": [
+        "GQS_05015"
+      ],
+      "tha": [
+        "TAM4_6"
+      ],
+      "thm": [
+        "CL1_0647"
+      ],
+      "tlt": [
+        "OCC_03117"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.5.1.5"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.5.1.5"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.5.1.5"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.5.1.5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Sato A",
+          "Soga T",
+          "Igarashi K",
+          "Takesue K",
+          "Tomita M",
+          "Kanai A"
+        ],
+        "title": "GTP-dependent RNA 3'-terminal phosphate cyclase from the hyperthermophilic archaeon Pyrococcus furiosus.",
+        "journal": "Genes. Cells. 16 (2011) 1190-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:22074260]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

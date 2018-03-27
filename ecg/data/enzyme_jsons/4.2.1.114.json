@@ -1,0 +1,585 @@
+[
+  {
+    "entry_id": "4.2.1.114",
+    "name": "methanogen homoaconitase",
+    "names": [
+      "methanogen homoaconitase",
+      "methanogen HACN"
+    ],
+    "classes": [
+      "Lyases;",
+      "Carbon-oxygen lyases;",
+      "Hydro-lyases"
+    ],
+    "sysname": "(R)-2-hydroxybutane-1,2,4-tricarboxylate hydro-lyase [(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate-forming]",
+    "reaction": "(R)-2-hydroxybutane-1,2,4-tricarboxylate = (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate (overall reaction) [RN:R09720]; (1a) (R)-2-hydroxybutane-1,2,4-tricarboxylate = (Z)-but-1-ene-1,2,4-tricarboxylate + H2O [RN:R03444]; (1b) (Z)-but-1-ene-1,2,4-tricarboxylate + H2O = (1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate [RN:R04371]",
+    "all_reac": "R03444 R04371 R09720; (other) R10391 R10392 R10393 R10394 R10395 R10396",
+    "iubmb_reactions": [
+      "R03444 R04371 R09720"
+    ],
+    "kegg_reactions": [
+      "R10391 R10392 R10393 R10394 R10395 R10396"
+    ],
+    "substrates": [
+      "(R)-2-hydroxybutane-1,2,4-tricarboxylate [CPD:C01251]",
+      "(Z)-but-1-ene-1,2,4-tricarboxylate [CPD:C04002]",
+      "H2O [CPD:C00001]"
+    ],
+    "products": [
+      "(1R,2S)-1-hydroxybutane-1,2,4-tricarboxylate [CPD:C05662]",
+      "(Z)-but-1-ene-1,2,4-tricarboxylate [CPD:C04002]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme catalyses several reactions in the pathway of coenzyme-B biosynthesis in methanogenic archaea. Requires a [4Fe-4S] cluster for activity. In contrast to EC 4.2.1.36, homoaconitate hydratase, this enzyme can catalyse both the dehydration of (R)-homocitrate to form cis-homoaconitate and the subsequent hydration reaction that forms homoisocitrate. In addition to cis-homoaconitate, the enzyme can also catalyse the hydration of the physiological substrates dihomocitrate and trihomocitrate as well as the non-physiological substrate tetrahomocitrate. cis-Aconitate and threo-DL-isocitrate cannot act as substrates, and (S)-homocitrate and trans-homoaconitate act as inhibitors of the enzyme.",
+    "pathways": {
+      "ec00300": "Lysine biosynthesis",
+      "ec00680": "Methane metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01120": "Microbial metabolism in diverse environments",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K16792": "methanogen homoaconitase large subunit",
+      "K16793": "methanogen homoaconitase small subunit"
+    },
+    "genes": {
+      "boh": [
+        "AKI39_19115"
+      ],
+      "rrs": [
+        "RoseRS_1053",
+        "RoseRS_1056"
+      ],
+      "rca": [
+        "Rcas_3472",
+        "Rcas_3474"
+      ],
+      "cau": [
+        "Caur_0329",
+        "Caur_0330"
+      ],
+      "cag": [
+        "Cagg_3601",
+        "Cagg_3602"
+      ],
+      "chl": [
+        "Chy400_0354",
+        "Chy400_0355"
+      ],
+      "hau": [
+        "Haur_3302",
+        "Haur_3303"
+      ],
+      "dra": [
+        "DR_1610",
+        "DR_1614"
+      ],
+      "dge": [
+        "Dgeo_1154",
+        "Dgeo_1156"
+      ],
+      "ddr": [
+        "Deide_13460",
+        "Deide_13470"
+      ],
+      "dmr": [
+        "Deima_1353",
+        "Deima_1355"
+      ],
+      "dgo": [
+        "DGo_CA1306",
+        "DGo_CA1308"
+      ],
+      "dpd": [
+        "Deipe_2762",
+        "Deipe_2764"
+      ],
+      "dsw": [
+        "QR90_07810",
+        "QR90_09055"
+      ],
+      "dch": [
+        "SY84_02050",
+        "SY84_02060"
+      ],
+      "dab": [
+        "AUC44_07725"
+      ],
+      "dpu": [
+        "SU48_08705",
+        "SU48_08715"
+      ],
+      "tra": [
+        "Trad_1389",
+        "Trad_1390"
+      ],
+      "tth": [
+        "TT_C1546",
+        "TT_C1547"
+      ],
+      "ttj": [
+        "TTHA1910",
+        "TTHA1911"
+      ],
+      "tts": [
+        "Ththe16_1910",
+        "Ththe16_1911"
+      ],
+      "ttl": [
+        "TtJL18_1992",
+        "TtJL18_1993"
+      ],
+      "tsc": [
+        "TSC_c01880",
+        "TSC_c01890"
+      ],
+      "thc": [
+        "TCCBUS3UF1_21060",
+        "TCCBUS3UF1_21070"
+      ],
+      "tos": [
+        "Theos_1936",
+        "Theos_1937"
+      ],
+      "taq": [
+        "TO73_0094",
+        "TO73_0095"
+      ],
+      "tpar": [
+        "AV541_01240",
+        "AV541_01245"
+      ],
+      "tbc": [
+        "A0O31_00873",
+        "A0O31_00874"
+      ],
+      "mrb": [
+        "Mrub_2727",
+        "Mrub_2728"
+      ],
+      "mre": [
+        "K649_08895",
+        "K649_08900"
+      ],
+      "msv": [
+        "Mesil_0441",
+        "Mesil_0442"
+      ],
+      "opr": [
+        "Ocepr_1780",
+        "Ocepr_1781"
+      ],
+      "mhd": [
+        "Marky_0671",
+        "Marky_0672"
+      ],
+      "mja": [
+        "MJ_1003",
+        "MJ_1271"
+      ],
+      "mfe": [
+        "Mefer_0048",
+        "Mefer_1231"
+      ],
+      "mvu": [
+        "Metvu_0677",
+        "Metvu_0864",
+        "Metvu_1303"
+      ],
+      "mfs": [
+        "MFS40622_0030",
+        "MFS40622_0660",
+        "MFS40622_1618"
+      ],
+      "mif": [
+        "Metin_0516",
+        "Metin_1437"
+      ],
+      "mjh": [
+        "JH146_0454",
+        "JH146_0954"
+      ],
+      "mig": [
+        "Metig_0050",
+        "Metig_0807",
+        "Metig_1570"
+      ],
+      "mmp": [
+        "MMP0381",
+        "MMP1480"
+      ],
+      "mmq": [
+        "MmarC5_0098",
+        "MmarC5_1257"
+      ],
+      "mmx": [
+        "MmarC6_0529",
+        "MmarC6_1194"
+      ],
+      "mmz": [
+        "MmarC7_0724",
+        "MmarC7_1379"
+      ],
+      "mmd": [
+        "GYY_08235"
+      ],
+      "mmak": [
+        "MMKA1_04000",
+        "MMKA1_17030"
+      ],
+      "mmao": [
+        "MMOS7_03940",
+        "MMOS7_15860"
+      ],
+      "mae": [
+        "Maeo_0311",
+        "Maeo_0652"
+      ],
+      "mvn": [
+        "Mevan_0789",
+        "Mevan_1368"
+      ],
+      "mvo": [
+        "Mvol_1623",
+        "Mvol_1671"
+      ],
+      "mok": [
+        "Metok_0062",
+        "Metok_0567"
+      ],
+      "mac": [
+        "MA_1223",
+        "MA_3085",
+        "MA_3751"
+      ],
+      "mba": [
+        "Mbar_A0244",
+        "Mbar_A1961",
+        "Mbar_A2270"
+      ],
+      "mby": [
+        "MSBRM_0704",
+        "MSBRM_1355",
+        "MSBRM_2710"
+      ],
+      "mbw": [
+        "MSBRW_0751",
+        "MSBRW_2476",
+        "MSBRW_2776"
+      ],
+      "mbar": [
+        "MSBR2_1054",
+        "MSBR2_1672",
+        "MSBR2_2666"
+      ],
+      "mbak": [
+        "MSBR3_1018",
+        "MSBR3_1673",
+        "MSBR3_2760"
+      ],
+      "mma": [
+        "MM_0409",
+        "MM_0645"
+      ],
+      "mmaz": [
+        "MmTuc01_0417",
+        "MmTuc01_0660"
+      ],
+      "mmj": [
+        "MSMAS_0664",
+        "MSMAS_0894"
+      ],
+      "mmac": [
+        "MSMAC_0666",
+        "MSMAC_0883"
+      ],
+      "mvc": [
+        "MSVAZ_0690",
+        "MSVAZ_1170",
+        "MSVAZ_2221"
+      ],
+      "mek": [
+        "MSKOL_0668",
+        "MSKOL_1122",
+        "MSKOL_2220"
+      ],
+      "mls": [
+        "MSLAZ_2100",
+        "MSLAZ_2434"
+      ],
+      "metm": [
+        "MSMTP_0731",
+        "MSMTP_2281"
+      ],
+      "mef": [
+        "MSWH1_0826",
+        "MSWH1_0957"
+      ],
+      "meq": [
+        "MSWHS_0885",
+        "MSWHS_1027"
+      ],
+      "msj": [
+        "MSSAC_2956",
+        "MSSAC_3368",
+        "MSSAC_3559"
+      ],
+      "msz": [
+        "MSSIH_2594",
+        "MSSIH_2894",
+        "MSSIH_3101"
+      ],
+      "msw": [
+        "MSSIT_2634",
+        "MSSIT_2938",
+        "MSSIT_3158"
+      ],
+      "mthe": [
+        "MSTHC_0762",
+        "MSTHC_0906"
+      ],
+      "mthr": [
+        "MSTHT_2374",
+        "MSTHT_2523"
+      ],
+      "mhor": [
+        "MSHOH_0786",
+        "MSHOH_1131"
+      ],
+      "mbu": [
+        "Mbur_1578",
+        "Mbur_2263"
+      ],
+      "mmet": [
+        "MCMEM_0412",
+        "MCMEM_2089"
+      ],
+      "mmh": [
+        "Mmah_0127",
+        "Mmah_0418"
+      ],
+      "mhaz": [
+        "BHR79_01390",
+        "BHR79_02815"
+      ],
+      "mev": [
+        "Metev_1312",
+        "Metev_1371"
+      ],
+      "mzh": [
+        "Mzhil_0725",
+        "Mzhil_1660"
+      ],
+      "mpy": [
+        "Mpsy_2354",
+        "Mpsy_2821"
+      ],
+      "mhz": [
+        "Metho_0481",
+        "Metho_0694"
+      ],
+      "mtp": [
+        "Mthe_0788",
+        "Mthe_0853"
+      ],
+      "mcj": [
+        "MCON_0444",
+        "MCON_1922"
+      ],
+      "mhi": [
+        "Mhar_1525",
+        "Mhar_2395"
+      ],
+      "mhu": [
+        "Mhun_1799",
+        "Mhun_1800"
+      ],
+      "mla": [
+        "Mlab_0233",
+        "Mlab_0234"
+      ],
+      "mem": [
+        "Memar_0634",
+        "Memar_0635"
+      ],
+      "mbg": [
+        "BN140_1716",
+        "BN140_1717"
+      ],
+      "mema": [
+        "MMAB1_2209"
+      ],
+      "mpi": [
+        "Mpet_2489",
+        "Mpet_2490"
+      ],
+      "mbn": [
+        "Mboo_0599",
+        "Mboo_0600"
+      ],
+      "mfo": [
+        "Metfor_2591",
+        "Metfor_2592"
+      ],
+      "mpl": [
+        "Mpal_2143",
+        "Mpal_2144"
+      ],
+      "mpd": [
+        "MCP_1961",
+        "MCP_1962"
+      ],
+      "mez": [
+        "Mtc_1558",
+        "Mtc_1559"
+      ],
+      "rci": [
+        "RCIX2645",
+        "RCIX2646"
+      ],
+      "mth": [
+        "MTH_1631",
+        "MTH_829"
+      ],
+      "mmg": [
+        "MTBMA_c02160",
+        "MTBMA_c12270"
+      ],
+      "metc": [
+        "MTCT_0743",
+        "MTCT_1490"
+      ],
+      "mwo": [
+        "MWSIV6_0177",
+        "MWSIV6_1206"
+      ],
+      "mst": [
+        "Msp_0374",
+        "Msp_1100"
+      ],
+      "msi": [
+        "Msm_0723",
+        "Msm_0847"
+      ],
+      "mru": [
+        "mru_0384",
+        "mru_1689"
+      ],
+      "meb": [
+        "Abm4_0180",
+        "Abm4_0514"
+      ],
+      "mmil": [
+        "sm9_1773",
+        "sm9_2161"
+      ],
+      "meye": [
+        "TL18_01065",
+        "TL18_07930"
+      ],
+      "mol": [
+        "YLM1_0055",
+        "YLM1_1157"
+      ],
+      "mel": [
+        "Metbo_1944",
+        "Metbo_2070"
+      ],
+      "mew": [
+        "MSWAN_0570",
+        "MSWAN_0676"
+      ],
+      "meth": [
+        "MBMB1_0289",
+        "MBMB1_0696"
+      ],
+      "mfc": [
+        "BRM9_1499",
+        "BRM9_1986"
+      ],
+      "mfi": [
+        "DSM1535_0178",
+        "DSM1535_2193"
+      ],
+      "mcub": [
+        "MCBB_0567",
+        "MCBB_0707"
+      ],
+      "mfv": [
+        "Mfer_0205",
+        "Mfer_0965"
+      ],
+      "mka": [
+        "MK1206",
+        "MK1208"
+      ],
+      "cdiv": [
+        "CPM_1676"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "4.2.1.114"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "4.2.1.114"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "4.2.1.114"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "4.2.1.114"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Drevland RM",
+          "Jia Y",
+          "Palmer DR",
+          "Graham DE"
+        ],
+        "title": "Methanogen homoaconitase catalyzes both hydrolyase reactions in coenzyme B biosynthesis.",
+        "journal": "J. Biol. Chem. 283 (2008) 28888-96.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:18765671]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,524 @@
+[
+  {
+    "entry_id": "1.1.99.31",
+    "name": "(S)-mandelate dehydrogenase",
+    "names": [
+      "(S)-mandelate dehydrogenase",
+      "MDH"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-OH group of donors;",
+      "With unknown physiological acceptors"
+    ],
+    "sysname": "(S)-mandelate:acceptor 2-oxidoreductase",
+    "reaction": "(S)-mandelate + acceptor = phenylglyoxylate + reduced acceptor [RN:R03793]",
+    "all_reac": "R03793 > R07664; (other) R04160",
+    "iubmb_reactions": [
+      "R03793 > R07664"
+    ],
+    "kegg_reactions": [
+      "R04160"
+    ],
+    "substrates": [
+      "(S)-mandelate [CPD:C01984]",
+      "acceptor [CPD:C00028]"
+    ],
+    "products": [
+      "phenylglyoxylate [CPD:C02137]",
+      "reduced acceptor [CPD:C00030]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme is a member of the FMN-dependent alpha-hydroxy-acid oxidase/dehydrogenase family [1]. While all enzymes of this family oxidize the (S)-enantiomer of an alpha-hydroxy acid to an alpha-oxo acid, the ultimate oxidant (oxygen, intramolecular heme or some other acceptor) depends on the particular enzyme. This enzyme transfers the electron pair from FMNH2 to a component of the electron transport chain, most probably ubiquinone [1,2]. It is part of a metabolic pathway in Pseudomonads that allows these organisms to utilize mandelic acid, derivatized from the common soil metabolite amygdalin, as the sole source of carbon and energy [2]. The enzyme has a large active-site pocket and preferentially binds substrates with longer sidechains, e.g. 2-hydroxyoctanoate rather than 2-hydroxybutyrate [1]. It also prefers substrates that, like (S)-mandelate, have beta unsaturation, e.g. (indol-3-yl)glycolate compared with (indol-3-yl)lactate [1]. Esters of mandelate, such as methyl (S)-mandelate, are also substrates [3].",
+    "pathways": {
+      "ec00627": "Aminobenzoate degradation",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K15054": "(S)-mandelate dehydrogenase"
+    },
+    "genes": {
+      "kpk": [
+        "A593_26110"
+      ],
+      "kpz": [
+        "KPNIH27_29500"
+      ],
+      "kin": [
+        "AB182_10085"
+      ],
+      "srr": [
+        "SerAS9_2024"
+      ],
+      "srl": [
+        "SOD_c18970"
+      ],
+      "sry": [
+        "M621_10465"
+      ],
+      "sply": [
+        "Q5A_010505"
+      ],
+      "srs": [
+        "SerAS12_2024"
+      ],
+      "sra": [
+        "SerAS13_2025"
+      ],
+      "rah": [
+        "Rahaq_2166"
+      ],
+      "raq": [
+        "Rahaq2_2270"
+      ],
+      "raa": [
+        "Q7S_10965"
+      ],
+      "pao": [
+        "Pat9b_5751"
+      ],
+      "tci": [
+        "A7K98_03450",
+        "A7K98_09625"
+      ],
+      "plu": [
+        "plu1106"
+      ],
+      "pmk": [
+        "MDS_0258"
+      ],
+      "pre": [
+        "PCA10_p2200"
+      ],
+      "ppun": [
+        "PP4_48090"
+      ],
+      "pvr": [
+        "PverR02_09860"
+      ],
+      "mbs": [
+        "MRBBS_1292"
+      ],
+      "gai": [
+        "IMCC3135_15650"
+      ],
+      "csa": [
+        "Csal_1075"
+      ],
+      "hel": [
+        "HELO_1144"
+      ],
+      "hak": [
+        "KO116_01583",
+        "KO116_03908"
+      ],
+      "ham": [
+        "HALO3110"
+      ],
+      "hhu": [
+        "AR456_15730"
+      ],
+      "mmw": [
+        "Mmwyl1_1831"
+      ],
+      "rpj": [
+        "N234_37865"
+      ],
+      "reu": [
+        "Reut_B3845",
+        "Reut_C6258"
+      ],
+      "reh": [
+        "H16_B1832"
+      ],
+      "cnc": [
+        "CNE_2c17870",
+        "CNE_BB1p09340"
+      ],
+      "bok": [
+        "DM82_843"
+      ],
+      "boc": [
+        "BG90_87"
+      ],
+      "bcep": [
+        "APZ15_29795"
+      ],
+      "bsem": [
+        "WJ12_27655",
+        "WJ12_29785"
+      ],
+      "bgl": [
+        "bglu_1g22680"
+      ],
+      "bgp": [
+        "BGL_1c14480"
+      ],
+      "bgu": [
+        "KS03_3099"
+      ],
+      "bug": [
+        "BC1001_0562"
+      ],
+      "bge": [
+        "BC1002_6152"
+      ],
+      "bgf": [
+        "BC1003_4245",
+        "BC1003_5931",
+        "BC1003_6041"
+      ],
+      "bgd": [
+        "bgla_1g16560"
+      ],
+      "bgo": [
+        "BM43_2882"
+      ],
+      "byi": [
+        "BYI23_D002250"
+      ],
+      "bue": [
+        "BRPE67_DCDS04000"
+      ],
+      "buq": [
+        "AC233_22965"
+      ],
+      "bpla": [
+        "bpln_1g14030"
+      ],
+      "bxe": [
+        "Bxe_B0136"
+      ],
+      "bxb": [
+        "DR64_5486"
+      ],
+      "bph": [
+        "Bphy_5156",
+        "Bphy_6162"
+      ],
+      "bpx": [
+        "BUPH_01010",
+        "BUPH_02660",
+        "BUPH_04446"
+      ],
+      "bfn": [
+        "OI25_63"
+      ],
+      "pspw": [
+        "BJG93_28250"
+      ],
+      "ppk": [
+        "U875_17400"
+      ],
+      "ppno": [
+        "DA70_09870"
+      ],
+      "ppnm": [
+        "LV28_21225"
+      ],
+      "prb": [
+        "X636_17015"
+      ],
+      "ppul": [
+        "RO07_15460"
+      ],
+      "pspu": [
+        "NA29_21610"
+      ],
+      "papi": [
+        "SG18_24535"
+      ],
+      "pve": [
+        "UC34_06685"
+      ],
+      "pox": [
+        "MB84_11135"
+      ],
+      "pfg": [
+        "AB870_17715"
+      ],
+      "pnr": [
+        "AT302_00440"
+      ],
+      "bbr": [
+        "BB1109"
+      ],
+      "bbm": [
+        "BN115_1055"
+      ],
+      "bbh": [
+        "BN112_2341"
+      ],
+      "bbx": [
+        "BBS798_1077"
+      ],
+      "bho": [
+        "D560_0958"
+      ],
+      "bhm": [
+        "D558_0941"
+      ],
+      "bfz": [
+        "BAU07_00075"
+      ],
+      "axo": [
+        "NH44784_027291"
+      ],
+      "axn": [
+        "AX27061_5576"
+      ],
+      "axs": [
+        "LH59_25725"
+      ],
+      "axx": [
+        "ERS451415_05599"
+      ],
+      "adt": [
+        "APT56_25710"
+      ],
+      "ais": [
+        "BUW96_08255"
+      ],
+      "rhy": [
+        "RD110_17475",
+        "RD110_22745"
+      ],
+      "pna": [
+        "Pnap_1020"
+      ],
+      "ack": [
+        "C380_23560"
+      ],
+      "vap": [
+        "Vapar_3912"
+      ],
+      "vpd": [
+        "VAPA_2c12340"
+      ],
+      "hse": [
+        "Hsero_0244"
+      ],
+      "hsz": [
+        "ACP92_01205"
+      ],
+      "hrb": [
+        "Hrubri_0228",
+        "Hrubri_1083"
+      ],
+      "azo": [
+        "azo2470"
+      ],
+      "aza": [
+        "AZKH_1692",
+        "AZKH_1885"
+      ],
+      "azi": [
+        "AzCIB_1257"
+      ],
+      "aoa": [
+        "dqs_2614"
+      ],
+      "tmz": [
+        "Tmz1t_0668"
+      ],
+      "tcl": [
+        "Tchl_0094",
+        "Tchl_1486"
+      ],
+      "thk": [
+        "CCZ27_17095"
+      ],
+      "mci": [
+        "Mesci_5397"
+      ],
+      "meso": [
+        "BSQ44_18490"
+      ],
+      "ara": [
+        "Arad_12221"
+      ],
+      "rtr": [
+        "RTCIAT899_PC05950"
+      ],
+      "ngl": [
+        "RG1141_CH38130"
+      ],
+      "ngg": [
+        "RG540_CH38780"
+      ],
+      "bja": [
+        "bll6401"
+      ],
+      "sno": [
+        "Snov_4068"
+      ],
+      "chel": [
+        "AL346_22080"
+      ],
+      "msc": [
+        "BN69_3477"
+      ],
+      "pde": [
+        "Pden_5045"
+      ],
+      "cid": [
+        "P73_2967"
+      ],
+      "ceh": [
+        "CEW89_13885"
+      ],
+      "paby": [
+        "Ga0080574_TMP2102"
+      ],
+      "nre": [
+        "BES08_01940"
+      ],
+      "swi": [
+        "Swit_4230"
+      ],
+      "ery": [
+        "CP97_05395"
+      ],
+      "aay": [
+        "WYH_00438"
+      ],
+      "cman": [
+        "A9D14_18035"
+      ],
+      "magx": [
+        "XM1_4569"
+      ],
+      "mll": [
+        "B1R94_28780"
+      ],
+      "req": [
+        "REQ_43160"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.1.99.31"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.1.99.31"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.1.99.31"
+      ],
+      "UM-BBD (Biocatalysis/Biodegradation Database)": [
+        "1.1.99.31"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.1.99.31"
+      ],
+      "CAS": [
+        "9067-95-2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Lehoux IE",
+          "Mitra B."
+        ],
+        "title": "(S)-Mandelate dehydrogenase from Pseudomonas putida: mechanistic studies with alternate substrates and pH and kinetic isotope effects.",
+        "journal": "Biochemistry. 38 (1999) 5836-48.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10231535]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dewanti AR",
+          "Xu Y",
+          "Mitra B."
+        ],
+        "title": "Role of glycine 81 in (S)-mandelate dehydrogenase from Pseudomonas putida in substrate specificity and oxidase activity.",
+        "journal": "Biochemistry. 43 (2004) 10692-700.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:15311930]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dewanti AR",
+          "Xu Y",
+          "Mitra B."
+        ],
+        "title": "Esters of mandelic acid as substrates for (S)-mandelate dehydrogenase from Pseudomonas putida: implications for the reaction mechanism.",
+        "journal": "Biochemistry. 43 (2004) 1883-90.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:14967029]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

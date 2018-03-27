@@ -1,0 +1,173 @@
+[
+  {
+    "entry_id": "1.14.13.54",
+    "name": "ketosteroid monooxygenase",
+    "names": [
+      "ketosteroid monooxygenase",
+      "steroid-ketone monooxygenase",
+      "progesterone, NADPH2:oxygen oxidoreductase (20-hydroxylating, ester-producing)",
+      "17alpha-hydroxyprogesterone, NADPH2:oxygen oxidoreductase (20-hydroxylating, side-chain cleaving)",
+      "androstenedione, NADPH2:oxygen oxidoreductase (17-hydroxylating, lactonizing)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "ketosteroid,NADPH:oxygen oxidoreductase (20-hydroxylating, ester-producing/20-hydroxylating, side-chain cleaving/17-hydroxylating, lactonizing)",
+    "reaction": "a ketosteroid + NADPH + H+ + O2 = a steroid ester/lactone + NADP+ + H2O (general reaction) [RN:R07192 R07193]; (1) progesterone + NADPH + H+ + O2 = testosterone acetate + NADP+ + H2O [RN:R02210]; (2) androstenedione + NADPH + H+ + O2 = testololactone + NADP+ + H2O [RN:R08205]; (3) 17alpha-hydroxyprogesterone + NADPH + H+ + O2 = androstenedione + acetate + NADP+ + H2O [RN:R08206]",
+    "all_reac": "R02210 R07192 R07193 R08205 R08206",
+    "iubmb_reactions": [
+      "R02210 R07192 R07193 R08205 R08206"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "ketosteroid [CPD:C06479]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "O2 [CPD:C00007]",
+      "progesterone [CPD:C00410]",
+      "androstenedione [CPD:C00280]",
+      "17alpha-hydroxyprogesterone [CPD:C01176]"
+    ],
+    "products": [
+      "steroid ester [CPD:C15506]",
+      "steroid lactone [CPD:C15507]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "testosterone acetate [CPD:C03027]",
+      "testololactone [CPD:C04676]",
+      "androstenedione [CPD:C00280]",
+      "acetate [CPD:C00033]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A single FAD-containing enzyme catalyses three types of monooxygenase (Baeyer-Villiger oxidation) reaction. The oxidative esterification of a number of derivatives of progesterone to produce the corresponding 17alpha-hydroxysteroid 17-acetate ester, such as testosterone acetate, is shown in Reaction (1). The oxidative lactonization of a number of derivatives of androstenedione to produce the 13,17-secoandrosteno-17,13alpha-lactone, such as testololactone, is shown in Reaction (2). The oxidative cleavage of the 17beta-side-chain of 17alpha-hydroxyprogesterone to produce androstenedione and acetate is shown in Reaction (3). Reaction (1) is also catalysed by EC 1.14.99.4 (progesterone monooxygenase), and Reactions (2) and (3) correspond to that catalysed by EC 1.14.99.12 (androst-4-ene-3,17-dione monooxygenase). The possibility that a single enzyme is responsible for the reactions ascribed to EC 1.14.99.4 and EC 1.14.99.12 in other tissues cannot be excluded.",
+    "pathways": {
+    },
+    "orthologs": {
+    },
+    "genes": {
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.54"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.54"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.54"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.54"
+      ],
+      "CAS": [
+        "9044-53-5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Katagiri",
+          "M. and Itagaki",
+          "E."
+        ],
+        "title": "A steroid ketone monooxygenase from Cylindrocarpon radicicola.",
+        "journal": "In: Muller, F. (Ed.), Chemistry and Biochemistry of Flavoenzymes, CRC Press, Florida, 1991, p. 102-108.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Itagaki E."
+        ],
+        "title": "Studies on steroid monooxygenase from Cylindrocarpon radicicola ATCC 11011. Purification and characterization.",
+        "journal": "J. Biochem. (Tokyo). 99 (1986) 815-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:3486863]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Itagaki E."
+        ],
+        "title": "Studies on steroid monooxygenase from Cylindrocarpon radicicola ATCC 11011. Oxygenative lactonization of androstenedione to testololactone.",
+        "journal": "J. Biochem. (Tokyo). 99 (1986) 825-32.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:3486864]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,865 @@
+[
+  {
+    "entry_id": "1.3.5.5",
+    "name": "15-cis-phytoene desaturase",
+    "names": [
+      "15-cis-phytoene desaturase",
+      "phytoene desaturase (ambiguous)",
+      "PDS",
+      "plant-type phytoene desaturase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-CH group of donors;",
+      "With a quinone or related compound as acceptor"
+    ],
+    "sysname": "15-cis-phytoene:plastoquinone oxidoreductase",
+    "reaction": "15-cis-phytoene + 2 plastoquinone = 9,15,9'-tricis-zeta-carotene + 2 plastoquinol (overall reaction) [RN:R09652]; (1a) 15-cis-phytoene + plastoquinone = 15,9'-dicis-phytofluene + plastoquinol [RN:R09653]; (1b) 15,9'-dicis-phytofluene + plastoquinone = 9,15,9'-tricis-zeta-carotene + plastoquinol [RN:R09654]",
+    "all_reac": "R09652 R09653 R09654; (other) R04786 R04787",
+    "iubmb_reactions": [
+      "R09652 R09653 R09654"
+    ],
+    "kegg_reactions": [
+      "R04786 R04787"
+    ],
+    "substrates": [
+      "15-cis-phytoene [CPD:C05421]",
+      "plastoquinone [CPD:C02061]",
+      "15,9'-dicis-phytofluene [CPD:C19765]"
+    ],
+    "products": [
+      "9,15,9'-tricis-zeta-carotene [CPD:C19764]",
+      "plastoquinol [CPD:C16693]",
+      "15,9'-dicis-phytofluene [CPD:C19765]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme is involved in carotenoid biosynthesis in plants and cyanobacteria. The enzyme from Synechococcus can also use NAD+ and NADP+ as electron acceptor under anaerobic conditions. The enzyme from Gentiana lutea shows no activity with NAD+ or NADP+ [1].",
+    "pathways": {
+      "ec00906": "Carotenoid biosynthesis",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K02293": "15-cis-phytoene desaturase"
+    },
+    "genes": {
+      "ath": [
+        "AT4G14210"
+      ],
+      "aly": [
+        "ARALYDRAFT_493490"
+      ],
+      "crb": [
+        "CARUB_v10004476mg"
+      ],
+      "csat": [
+        "104719032",
+        "104723803",
+        "104732250"
+      ],
+      "eus": [
+        "EUTSA_v10024795mg"
+      ],
+      "brp": [
+        "103835193",
+        "103863556"
+      ],
+      "bna": [
+        "106361559",
+        "106390766",
+        "106439724",
+        "106445763"
+      ],
+      "boe": [
+        "106336235",
+        "106342038"
+      ],
+      "thj": [
+        "104822231"
+      ],
+      "cpap": [
+        "110807915"
+      ],
+      "cit": [
+        "102577966"
+      ],
+      "cic": [
+        "CICLE_v10005632mg",
+        "CICLE_v10007114mg"
+      ],
+      "tcc": [
+        "18602597"
+      ],
+      "gra": [
+        "105777064"
+      ],
+      "ghi": [
+        "107902032",
+        "107914777"
+      ],
+      "egr": [
+        "104414241"
+      ],
+      "gmx": [
+        "100127420",
+        "547970"
+      ],
+      "pvu": [
+        "PHAVU_001G264200g"
+      ],
+      "vra": [
+        "106778315"
+      ],
+      "var": [
+        "108318944"
+      ],
+      "ccaj": [
+        "109797685"
+      ],
+      "mtr": [
+        "MTR_3g084830"
+      ],
+      "cam": [
+        "101499699"
+      ],
+      "adu": [
+        "107482407"
+      ],
+      "aip": [
+        "107638266"
+      ],
+      "lja": [
+        "Lj0g3v0087419.1",
+        "Lj0g3v0087419.2",
+        "Lj0g3v0087419.3",
+        "Lj0g3v0087419.4",
+        "Lj0g3v0087419.5"
+      ],
+      "lang": [
+        "109327051",
+        "109344116"
+      ],
+      "fve": [
+        "101297926"
+      ],
+      "pper": [
+        "18788299"
+      ],
+      "pmum": [
+        "103322563"
+      ],
+      "mdm": [
+        "103400619",
+        "103400694"
+      ],
+      "pxb": [
+        "103960366"
+      ],
+      "zju": [
+        "107422207"
+      ],
+      "csv": [
+        "101209155"
+      ],
+      "cmo": [
+        "103494596"
+      ],
+      "mcha": [
+        "111025543"
+      ],
+      "rcu": [
+        "8280960"
+      ],
+      "jcu": [
+        "105639092"
+      ],
+      "hbr": [
+        "110672897"
+      ],
+      "pop": [
+        "POPTR_0002s23630g",
+        "POPTR_0014s14610g"
+      ],
+      "vvi": [
+        "100240685"
+      ],
+      "sly": [
+        "544073"
+      ],
+      "spen": [
+        "107014359"
+      ],
+      "sot": [
+        "102577582"
+      ],
+      "cann": [
+        "107861625"
+      ],
+      "nta": [
+        "107788963",
+        "107816330",
+        "107816873"
+      ],
+      "nsy": [
+        "104248773"
+      ],
+      "nto": [
+        "104107035"
+      ],
+      "ini": [
+        "109192580"
+      ],
+      "sind": [
+        "105157894",
+        "105174760"
+      ],
+      "han": [
+        "110913080"
+      ],
+      "bvg": [
+        "104899658"
+      ],
+      "soe": [
+        "110787181"
+      ],
+      "nnu": [
+        "104589429"
+      ],
+      "osa": [
+        "4331854"
+      ],
+      "dosa": [
+        "Os03t0184000-00"
+      ],
+      "obr": [
+        "102713335"
+      ],
+      "bdi": [
+        "100830664"
+      ],
+      "sbi": [
+        "110436156"
+      ],
+      "zma": [
+        "103633372",
+        "103650644",
+        "542329"
+      ],
+      "sita": [
+        "101771481"
+      ],
+      "pda": [
+        "103705191"
+      ],
+      "egu": [
+        "105056650"
+      ],
+      "mus": [
+        "103973843"
+      ],
+      "dct": [
+        "110108194"
+      ],
+      "atr": [
+        "18427456"
+      ],
+      "smo": [
+        "SELMODRAFT_232430",
+        "SELMODRAFT_269459"
+      ],
+      "ppp": [
+        "PHYPADRAFT_152506"
+      ],
+      "cre": [
+        "CHLREDRAFT_78128"
+      ],
+      "vcn": [
+        "VOLCADRAFT_88495"
+      ],
+      "mng": [
+        "MNEG_11587",
+        "MNEG_8557"
+      ],
+      "olu": [
+        "OSTLU_38345",
+        "OSTLU_47627"
+      ],
+      "ota": [
+        "OT_ostta10g02860",
+        "OT_ostta16g00590"
+      ],
+      "bpg": [
+        "Bathy11g01800",
+        "Bathy11g03090"
+      ],
+      "mis": [
+        "MICPUN_104873",
+        "MICPUN_96647"
+      ],
+      "mpp": [
+        "MICPUCDRAFT_12341",
+        "MICPUCDRAFT_49039"
+      ],
+      "csl": [
+        "COCSUDRAFT_47651"
+      ],
+      "cvr": [
+        "CHLNCDRAFT_34420"
+      ],
+      "apro": [
+        "F751_0480"
+      ],
+      "cme": [
+        "CYME_CMK151C"
+      ],
+      "smin": [
+        "v1.2.025723.t1"
+      ],
+      "pti": [
+        "PHATRDRAFT_45735",
+        "PHATRDRAFT_55102"
+      ],
+      "fcy": [
+        "FRACYDRAFT_260963",
+        "FRACYDRAFT_274501"
+      ],
+      "tps": [
+        "THAPSDRAFT_1383",
+        "THAPSDRAFT_23291"
+      ],
+      "aaf": [
+        "AURANDRAFT_10705",
+        "AURANDRAFT_70771"
+      ],
+      "ehx": [
+        "EMIHUDRAFT_430592",
+        "EMIHUDRAFT_74977"
+      ],
+      "gtt": [
+        "GUITHDRAFT_85858"
+      ],
+      "gpb": [
+        "HDN1F_29410"
+      ],
+      "vpe": [
+        "Varpa_2790"
+      ],
+      "pms": [
+        "KNP414_07417"
+      ],
+      "pmq": [
+        "PM3016_6970"
+      ],
+      "pbv": [
+        "AR543_01825"
+      ],
+      "syn": [
+        "slr1254"
+      ],
+      "syz": [
+        "MYO_112820"
+      ],
+      "syy": [
+        "SYNGTS_1271"
+      ],
+      "syt": [
+        "SYNGTI_1271"
+      ],
+      "sys": [
+        "SYNPCCN_1270"
+      ],
+      "syq": [
+        "SYNPCCP_1270"
+      ],
+      "syj": [
+        "D082_22590"
+      ],
+      "syw": [
+        "SYNW2257"
+      ],
+      "syc": [
+        "syc2113_c"
+      ],
+      "syf": [
+        "Synpcc7942_1983"
+      ],
+      "syd": [
+        "Syncc9605_2395"
+      ],
+      "sye": [
+        "Syncc9902_0298"
+      ],
+      "syg": [
+        "sync_2608"
+      ],
+      "syr": [
+        "SynRCC307_0238"
+      ],
+      "syx": [
+        "SynWH7803_2273"
+      ],
+      "syp": [
+        "SYNPCC7002_A1935"
+      ],
+      "cya": [
+        "CYA_0316"
+      ],
+      "cyb": [
+        "CYB_1694"
+      ],
+      "syne": [
+        "Syn6312_1665"
+      ],
+      "synp": [
+        "Syn7502_02248"
+      ],
+      "synk": [
+        "KR100_14820"
+      ],
+      "synr": [
+        "KR49_07565"
+      ],
+      "synd": [
+        "KR52_04115"
+      ],
+      "syu": [
+        "M744_06505"
+      ],
+      "syh": [
+        "Syncc8109_2504"
+      ],
+      "synw": [
+        "SynWH8103_02594"
+      ],
+      "tel": [
+        "tll1561"
+      ],
+      "thn": [
+        "NK55_04445"
+      ],
+      "cgc": [
+        "Cyagr_2890"
+      ],
+      "cyi": [
+        "CBM981_3153"
+      ],
+      "dsl": [
+        "Dacsa_1459"
+      ],
+      "cmp": [
+        "Cha6605_4759"
+      ],
+      "lep": [
+        "Lepto7376_2525"
+      ],
+      "len": [
+        "LEP3755_22460"
+      ],
+      "let": [
+        "O77CONTIG1_00579"
+      ],
+      "lbo": [
+        "LBWT_53250"
+      ],
+      "hhg": [
+        "XM38_038830"
+      ],
+      "pseu": [
+        "Pse7367_2695"
+      ],
+      "pma": [
+        "Pro_0167"
+      ],
+      "pmm": [
+        "PMM0144"
+      ],
+      "pmt": [
+        "PMT_2004"
+      ],
+      "pmn": [
+        "PMN2A_1510"
+      ],
+      "pmi": [
+        "PMT9312_0146"
+      ],
+      "pmb": [
+        "A9601_01611"
+      ],
+      "pmc": [
+        "P9515_01721"
+      ],
+      "pmf": [
+        "P9303_26651"
+      ],
+      "pmg": [
+        "P9301_01631"
+      ],
+      "pmh": [
+        "P9215_01611"
+      ],
+      "pmj": [
+        "P9211_01591"
+      ],
+      "pme": [
+        "NATL1_02161"
+      ],
+      "prc": [
+        "EW14_0186"
+      ],
+      "prm": [
+        "EW15_0231"
+      ],
+      "amr": [
+        "AM1_4826"
+      ],
+      "mar": [
+        "MAE_12930"
+      ],
+      "can": [
+        "Cyan10605_0874"
+      ],
+      "csn": [
+        "Cyast_1865"
+      ],
+      "hao": [
+        "PCC7418_3680"
+      ],
+      "cyu": [
+        "UCYN_01070"
+      ],
+      "cwa": [
+        "CwatDRAFT_0947"
+      ],
+      "glp": [
+        "Glo7428_1902"
+      ],
+      "gen": [
+        "GM3709_531"
+      ],
+      "gee": [
+        "GM3708_3217"
+      ],
+      "chon": [
+        "NIES4102_28500"
+      ],
+      "cyt": [
+        "cce_3754"
+      ],
+      "cyp": [
+        "PCC8801_0308"
+      ],
+      "cyc": [
+        "PCC7424_1157"
+      ],
+      "cyn": [
+        "Cyan7425_4188"
+      ],
+      "cyh": [
+        "Cyan8802_0308"
+      ],
+      "cyj": [
+        "Cyan7822_1223"
+      ],
+      "ter": [
+        "Tery_4011"
+      ],
+      "mic": [
+        "Mic7113_2705"
+      ],
+      "arp": [
+        "NIES39_C00940"
+      ],
+      "gei": [
+        "GEI7407_1139"
+      ],
+      "oac": [
+        "Oscil6304_1226"
+      ],
+      "oni": [
+        "Osc7112_5867"
+      ],
+      "mpro": [
+        "BJP34_19440"
+      ],
+      "cep": [
+        "Cri9333_2890"
+      ],
+      "ana": [
+        "alr1832"
+      ],
+      "npu": [
+        "Npun_R2772"
+      ],
+      "nos": [
+        "Nos7107_4144"
+      ],
+      "nop": [
+        "Nos7524_4713"
+      ],
+      "non": [
+        "NOS3756_19130"
+      ],
+      "ava": [
+        "Ava_4795"
+      ],
+      "naz": [
+        "Aazo_2875"
+      ],
+      "anb": [
+        "ANA_C20304"
+      ],
+      "acy": [
+        "Anacy_3875"
+      ],
+      "awa": [
+        "AA650_04095"
+      ],
+      "csg": [
+        "Cylst_3130"
+      ],
+      "calo": [
+        "Cal7507_3633"
+      ],
+      "calt": [
+        "Cal6303_5614"
+      ],
+      "calh": [
+        "IJ00_15390"
+      ],
+      "riv": [
+        "Riv7116_4191"
+      ],
+      "fis": [
+        "FIS3754_40470"
+      ],
+      "ncn": [
+        "BZZ01_24125"
+      ],
+      "cthe": [
+        "Chro_0494"
+      ],
+      "plp": [
+        "Ple7327_0167"
+      ],
+      "scs": [
+        "Sta7437_3291"
+      ],
+      "stan": [
+        "STA3757_36360"
+      ],
+      "ceo": [
+        "ETSB_0715"
+      ],
+      "cau": [
+        "Caur_2352"
+      ],
+      "cag": [
+        "Cagg_3041"
+      ],
+      "chl": [
+        "Chy400_2535"
+      ],
+      "ote": [
+        "Oter_4135"
+      ],
+      "ctm": [
+        "Cabther_A0039",
+        "Cabther_A0268",
+        "Cabther_A2116"
+      ],
+      "cte": [
+        "CT0807"
+      ],
+      "cpc": [
+        "Cpar_0836"
+      ],
+      "clz": [
+        "BIU88_07080"
+      ],
+      "cch": [
+        "Cag_1188"
+      ],
+      "cph": [
+        "Cpha266_1173"
+      ],
+      "cpb": [
+        "Cphamn1_1181"
+      ],
+      "cli": [
+        "Clim_0877"
+      ],
+      "pvi": [
+        "Cvib_1032"
+      ],
+      "plt": [
+        "Plut_1283"
+      ],
+      "pph": [
+        "Ppha_1176"
+      ],
+      "paa": [
+        "Paes_0884"
+      ],
+      "proc": [
+        "Ptc2401_00978"
+      ],
+      "pros": [
+        "CHL67_06780"
+      ],
+      "cts": [
+        "Ctha_1159"
+      ],
+      "nac": [
+        "AQV86_05905"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.3.5.5"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.3.5.5"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.3.5.5"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.3.5.5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Breitenbach J",
+          "Zhu C",
+          "Sandmann G"
+        ],
+        "title": "Bleaching herbicide norflurazon inhibits phytoene desaturase by competition with the cofactors.",
+        "journal": "J. Agric. Food. Chem. 49 (2001) 5270-2.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11714315]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schneider C",
+          "Boger P",
+          "Sandmann G"
+        ],
+        "title": "Phytoene desaturase: heterologous expression in an active state, purification, and biochemical properties.",
+        "journal": "Protein. Expr. Purif. 10 (1997) 175-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:9226712]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Fraser PD",
+          "Linden H",
+          "Sandmann G"
+        ],
+        "title": "Purification and reactivation of recombinant Synechococcus phytoene desaturase from an overexpressing strain of Escherichia coli.",
+        "journal": "Biochem. J. 291 ( Pt 3) (1993) 687-92.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:8489496]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Breitenbach J",
+          "Sandmann G"
+        ],
+        "title": "zeta-Carotene cis isomers as products and substrates in the plant poly-cis carotenoid biosynthetic pathway to lycopene.",
+        "journal": "Planta. 220 (2005) 785-93.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:15503129]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,232 @@
+[
+  {
+    "entry_id": "6.2.1.36",
+    "name": "3-hydroxypropionyl-CoA synthase",
+    "names": [
+      "3-hydroxypropionyl-CoA synthase",
+      "3-hydroxypropionyl-CoA synthetase (AMP-forming)",
+      "3-hydroxypropionate---CoA ligase"
+    ],
+    "classes": [
+      "Ligases;",
+      "Forming carbon-sulfur bonds;",
+      "Acid-thiol ligases"
+    ],
+    "sysname": "hydroxypropanoate:CoA ligase (AMP-forming)",
+    "reaction": "3-hydroxypropanoate + ATP + CoA = 3-hydroxypropanoyl-CoA + AMP + diphosphate [RN:R09286]",
+    "all_reac": "R09286",
+    "iubmb_reactions": [
+      "R09286"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "3-hydroxypropanoate [CPD:C01013]",
+      "ATP [CPD:C00002]",
+      "CoA [CPD:C00010]"
+    ],
+    "products": [
+      "3-hydroxypropanoyl-CoA [CPD:C05668]",
+      "AMP [CPD:C00020]",
+      "diphosphate [CPD:C00013]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Catalyses a step in the 3-hydroxypropanoate/4-hydroxybutanoate cycle, an autotrophic CO2 fixation pathway found in some thermoacidophilic archaea [1,2].The enzymes from Metallosphaera sedula and Sulfolobus tokodaii can also use propionate, acrylate, acetate, and butanoate as substrates [2], and are thus different from EC 6.2.1.17 (propionate---CoA ligase), which does not accept acetate or butanoate.",
+    "pathways": {
+      "ec00720": "Carbon fixation pathways in prokaryotes",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K14469": "acrylyl-CoA reductase (NADPH) / 3-hydroxypropionyl-CoA dehydratase / 3-hydroxypropionyl-CoA synthetase",
+      "K15018": "3-hydroxypropionyl-coenzyme A synthetase"
+    },
+    "genes": {
+      "rrs": [
+        "RoseRS_3202"
+      ],
+      "rca": [
+        "Rcas_2930"
+      ],
+      "cau": [
+        "Caur_0613"
+      ],
+      "cag": [
+        "Cagg_3394"
+      ],
+      "chl": [
+        "Chy400_0662"
+      ],
+      "ctm": [
+        "Cabther_B0610"
+      ],
+      "cts": [
+        "Ctha_1050"
+      ],
+      "sso": [
+        "SSO3203"
+      ],
+      "sol": [
+        "Ssol_0940"
+      ],
+      "ssoa": [
+        "SULA_0973"
+      ],
+      "ssol": [
+        "SULB_0975"
+      ],
+      "ssof": [
+        "SULC_0974"
+      ],
+      "sto": [
+        "STK_07830"
+      ],
+      "sai": [
+        "Saci_1184"
+      ],
+      "sacn": [
+        "SacN8_05775"
+      ],
+      "sacr": [
+        "SacRon12I_05770"
+      ],
+      "sacs": [
+        "SUSAZ_05635"
+      ],
+      "sis": [
+        "LS215_2320"
+      ],
+      "sia": [
+        "M1425_2157"
+      ],
+      "sim": [
+        "M1627_2237"
+      ],
+      "sid": [
+        "M164_2161"
+      ],
+      "siy": [
+        "YG5714_2284"
+      ],
+      "sin": [
+        "YN1551_0632"
+      ],
+      "sii": [
+        "LD85_2424"
+      ],
+      "sih": [
+        "SiH_2103"
+      ],
+      "sir": [
+        "SiRe_2035"
+      ],
+      "sic": [
+        "SiL_2010"
+      ],
+      "sula": [
+        "BFU36_06065"
+      ],
+      "mse": [
+        "Msed_1456"
+      ],
+      "mcn": [
+        "Mcup_0744"
+      ],
+      "aho": [
+        "Ahos_2066"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "6.2.1.36"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "6.2.1.36"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "6.2.1.36"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "6.2.1.36"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Berg IA",
+          "Kockelkorn D",
+          "Buckel W",
+          "Fuchs G"
+        ],
+        "title": "A 3-hydroxypropionate/4-hydroxybutyrate autotrophic carbon dioxide assimilation pathway in Archaea.",
+        "journal": "Science. 318 (2007) 1782-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:18079405]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Alber BE",
+          "Kung JW",
+          "Fuchs G"
+        ],
+        "title": "3-Hydroxypropionyl-coenzyme A synthetase from Metallosphaera sedula, an enzyme involved in autotrophic CO2 fixation.",
+        "journal": "J. Bacteriol. 190 (2008) 1383-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:18165310]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

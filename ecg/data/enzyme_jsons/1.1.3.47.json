@@ -1,0 +1,361 @@
+[
+  {
+    "entry_id": "1.1.3.47",
+    "name": "5-(hydroxymethyl)furfural oxidase",
+    "names": [
+      "5-(hydroxymethyl)furfural oxidase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the CH-OH group of donors;",
+      "With oxygen as acceptor"
+    ],
+    "sysname": "5-(hydroxymethyl)furfural:oxygen oxidoreductase",
+    "reaction": "5-(hydroxymethyl)furfural + 3 O2 + 2 H2O = furan-2,5-dicarboxylate + 3 H2O2 (overall reaction) [RN:R10858]; (1a) 5-(hydroxymethyl)furfural + O2 = furan-2,5-dicarbaldehyde + H2O2 [RN:R10853]; (1b) furan-2,5-dicarbaldehyde + H2O = 5-(dihydroxymethyl)furan-2-carbaldehyde (spontaneous) [RN:R10854]; (1c) 5-(dihydroxymethyl)furan-2-carbaldehyde + O2 = 5-formylfuran-2-carboxylate + H2O2 [RN:R10855]; (1d) 5-formylfuran-2-carboxylate + H2O = 5-(dihydroxymethyl)furan-2-carboxylate (spontaneous) [RN:R10856]; (1e) 5-(dihydroxymethyl)furan-2-carboxylate + O2 = furan-2,5-dicarboxylate + H2O2 [RN:R10857]",
+    "all_reac": "R10853 R10854 R10855 R10856 R10857 R10858",
+    "iubmb_reactions": [
+      "R10853 R10854 R10855 R10856 R10857 R10858"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "5-hydroxymethylfurfural [CPD:C11101]",
+      "O2 [CPD:C00007]",
+      "H2O [CPD:C00001]",
+      "furan-2,5-dicarbaldehyde [CPD:C20899]",
+      "5-(dihydroxymethyl)furan-2-carbaldehyde [CPD:C20900]",
+      "5-formylfuran-2-carboxylate [CPD:C20449]",
+      "5-(dihydroxymethyl)furan-2-carboxylate [CPD:C20901]"
+    ],
+    "products": [
+      "furan-2,5-dicarboxylate [CPD:C20450]",
+      "H2O2 [CPD:C00027]",
+      "furan-2,5-dicarbaldehyde [CPD:C20899]",
+      "5-(dihydroxymethyl)furan-2-carbaldehyde [CPD:C20900]",
+      "5-formylfuran-2-carboxylate [CPD:C20449]",
+      "5-(dihydroxymethyl)furan-2-carboxylate [CPD:C20901]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from the bacterium Methylovorus sp. strain MP688, is involved in the degradation and detoxification of 5-(hydroxymethyl)furfural. The enzyme acts only on alcohol groups and requires the spontaneous hydration of aldehyde groups for their oxidation [3]. The enzyme has a broad substrate range that overlaps with EC 1.1.3.7, aryl-alcohol oxidase.",
+    "pathways": {
+      "ec00365": "Furfural degradation",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K16873": "5-(hydroxymethyl)furfural/furfural oxidase"
+    },
+    "genes": {
+      "psk": [
+        "U771_11545"
+      ],
+      "prh": [
+        "LT40_15490"
+      ],
+      "hak": [
+        "KO116_01524"
+      ],
+      "cnc": [
+        "CNE_BB2p00120"
+      ],
+      "cuh": [
+        "BJN34_06490",
+        "BJN34_36300"
+      ],
+      "bcj": [
+        "BCAL1185"
+      ],
+      "bcen": [
+        "DM39_4075"
+      ],
+      "bug": [
+        "BC1001_3784",
+        "BC1001_5246"
+      ],
+      "bge": [
+        "BC1002_5742"
+      ],
+      "bgf": [
+        "BC1003_0595",
+        "BC1003_4169"
+      ],
+      "bgd": [
+        "bgla_2g10080"
+      ],
+      "bgo": [
+        "BM43_4645"
+      ],
+      "byi": [
+        "BYI23_C009090"
+      ],
+      "bue": [
+        "BRPE67_CCDS02070"
+      ],
+      "buq": [
+        "AC233_23790"
+      ],
+      "bxe": [
+        "Bxe_B1504"
+      ],
+      "bxb": [
+        "DR64_6811"
+      ],
+      "bph": [
+        "Bphy_6576",
+        "Bphy_6668"
+      ],
+      "bpx": [
+        "BUPH_00358",
+        "BUPH_05836"
+      ],
+      "bpy": [
+        "Bphyt_2180",
+        "Bphyt_6155"
+      ],
+      "bfn": [
+        "OI25_3193",
+        "OI25_5052"
+      ],
+      "bcai": [
+        "K788_0001302",
+        "K788_0006280"
+      ],
+      "bfz": [
+        "BAU07_17215"
+      ],
+      "ais": [
+        "BUW96_05150"
+      ],
+      "amim": [
+        "MIM_c00530"
+      ],
+      "odi": [
+        "ODI_R0536"
+      ],
+      "mei": [
+        "Msip34_0111"
+      ],
+      "mep": [
+        "MPQ_0130"
+      ],
+      "mln": [
+        "A9174_31955",
+        "A9174_32170"
+      ],
+      "meso": [
+        "BSQ44_09535"
+      ],
+      "sino": [
+        "SS05631_a47220",
+        "SS05631_a47520"
+      ],
+      "ara": [
+        "Arad_7048"
+      ],
+      "atf": [
+        "Ach5_47410"
+      ],
+      "rlt": [
+        "Rleg2_4996"
+      ],
+      "och": [
+        "CES85_3113"
+      ],
+      "bja": [
+        "blr0367"
+      ],
+      "bju": [
+        "BJ6T_25830",
+        "BJ6T_61910"
+      ],
+      "bjp": [
+        "RN69_12590",
+        "RN69_29990"
+      ],
+      "brs": [
+        "S23_14520"
+      ],
+      "brc": [
+        "BCCGELA001_16395"
+      ],
+      "brad": [
+        "BF49_1118"
+      ],
+      "bvv": [
+        "BHK69_16315"
+      ],
+      "mrd": [
+        "Mrad2831_4733"
+      ],
+      "met": [
+        "M446_1311"
+      ],
+      "mno": [
+        "Mnod_4787"
+      ],
+      "mor": [
+        "MOC_3629"
+      ],
+      "maqu": [
+        "Maq22A_2p41610",
+        "Maq22A_c13940"
+      ],
+      "mphy": [
+        "MCBMB27_05482"
+      ],
+      "deq": [
+        "XM25_21010"
+      ],
+      "rhz": [
+        "RHPLAN_54060"
+      ],
+      "aua": [
+        "M673_12200"
+      ],
+      "pye": [
+        "A6J80_21445"
+      ],
+      "hat": [
+        "RC74_03320"
+      ],
+      "nre": [
+        "BES08_14155"
+      ],
+      "swi": [
+        "Swit_4242"
+      ],
+      "skr": [
+        "BRX40_00090"
+      ],
+      "sch": [
+        "Sphch_3353"
+      ],
+      "rdi": [
+        "CMV14_05195"
+      ],
+      "src": [
+        "M271_40235"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.1.3.47"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.1.3.47"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.1.3.47"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.1.3.47"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Koopman F",
+          "Wierckx N",
+          "de Winde JH",
+          "Ruijssenaars HJ."
+        ],
+        "title": "Identification and characterization of the furfural and 5-(hydroxymethyl)furfural degradation pathways of Cupriavidus basilensis HMF14.",
+        "journal": "Proc. Natl. Acad. Sci. U. S. A. 107 (2010) 4919-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:20194784]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dijkman WP",
+          "Fraaije MW"
+        ],
+        "title": "Discovery and characterization of a 5-hydroxymethylfurfural oxidase from Methylovorus sp. strain MP688.",
+        "journal": "Appl. Environ. Microbiol. 80 (2014) 1082-90.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:24271187]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dijkman WP",
+          "Groothuis DE",
+          "Fraaije MW"
+        ],
+        "title": "Enzyme-catalyzed oxidation of 5-hydroxymethylfurfural to furan-2,5-dicarboxylic acid.",
+        "journal": "Angew. Chem. Int. Ed. Engl. 53 (2014) 6515-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:24802551]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

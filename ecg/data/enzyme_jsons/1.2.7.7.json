@@ -1,0 +1,652 @@
+[
+  {
+    "entry_id": "1.2.7.7",
+    "name": "3-methyl-2-oxobutanoate dehydrogenase (ferredoxin)",
+    "names": [
+      "3-methyl-2-oxobutanoate dehydrogenase (ferredoxin)",
+      "2-ketoisovalerate ferredoxin reductase",
+      "3-methyl-2-oxobutanoate synthase (ferredoxin)",
+      "VOR",
+      "branched-chain ketoacid ferredoxin reductase",
+      "branched-chain oxo acid ferredoxin reductase",
+      "keto-valine-ferredoxin oxidoreductase",
+      "ketoisovalerate ferredoxin reductase",
+      "2-oxoisovalerate ferredoxin reductase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on the aldehyde or oxo group of donors;",
+      "With an iron-sulfur protein as acceptor"
+    ],
+    "sysname": "3-methyl-2-oxobutanoate:ferredoxin oxidoreductase (decarboxylating; CoA-2-methylpropanoylating)",
+    "reaction": "3-methyl-2-oxobutanoate + CoA + 2 oxidized ferredoxin = S-(2-methylpropanoyl)-CoA + CO2 + 2 reduced ferredoxin + H+ [RN:R07160]",
+    "all_reac": "R07160; (other) R08566 R08567",
+    "iubmb_reactions": [
+      "R07160"
+    ],
+    "kegg_reactions": [
+      "R08566 R08567"
+    ],
+    "substrates": [
+      "3-methyl-2-oxobutanoate [CPD:C00141]",
+      "CoA [CPD:C00010]",
+      "oxidized ferredoxin [CPD:C00139]"
+    ],
+    "products": [
+      "S-(2-methylpropanoyl)-CoA",
+      "CO2 [CPD:C00011]",
+      "reduced ferredoxin [CPD:C00138]",
+      "H+ [CPD:C00080]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme is CoA-dependent and contains thiamine diphosphate and iron-sulfur clusters. Preferentially utilizes 2-oxo-acid derivatives of branched chain amino acids, e.g. 3-methyl-2-oxopentanoate, 4-methyl-2-oxo-pentanoate, 2-oxobutyrate and 3-methylthiopropanamine. This enzyme is a member of the 2-oxoacid oxidoreductases, a family of enzymes that oxidatively decarboxylate different 2-oxoacids to form their CoA derivatives, and are differentiated based on their substrate specificity. For examples of other members of this family, see EC 1.2.7.1, pyruvate synthase, and EC 1.2.7.3, 2-oxoglutarate synthase.",
+    "pathways": {
+      "ec00280": "Valine, leucine and isoleucine degradation",
+      "ec01100": "Metabolic pathways"
+    },
+    "orthologs": {
+      "K00186": "2-oxoisovalerate ferredoxin oxidoreductase, alpha subunit",
+      "K00187": "2-oxoisovalerate ferredoxin oxidoreductase, beta subunit",
+      "K00188": "2-oxoisovalerate ferredoxin oxidoreductase, delta subunit",
+      "K00189": "2-oxoisovalerate ferredoxin oxidoreductase, gamma subunit"
+    },
+    "genes": {
+      "pef": [
+        "A7E78_02850"
+      ],
+      "dej": [
+        "AWY79_02095"
+      ],
+      "dml": [
+        "Dmul_18540"
+      ],
+      "afw": [
+        "Anae109_4113",
+        "Anae109_4114"
+      ],
+      "dav": [
+        "DESACE_01535"
+      ],
+      "pbu": [
+        "L21SP3_01136",
+        "L21SP3_01138"
+      ],
+      "pbas": [
+        "SMSP2_01215",
+        "SMSP2_01217"
+      ],
+      "slr": [
+        "L21SP2_0406",
+        "L21SP2_0407"
+      ],
+      "aba": [
+        "Acid345_0952",
+        "Acid345_0953"
+      ],
+      "sus": [
+        "Acid_1870",
+        "Acid_1871"
+      ],
+      "caby": [
+        "Cabys_3127"
+      ],
+      "mmp": [
+        "MMP1271",
+        "MMP1272",
+        "MMP1273"
+      ],
+      "mmq": [
+        "MmarC5_0318",
+        "MmarC5_0319",
+        "MmarC5_0320"
+      ],
+      "mmx": [
+        "MmarC6_1400",
+        "MmarC6_1401",
+        "MmarC6_1402"
+      ],
+      "mmz": [
+        "MmarC7_0517",
+        "MmarC7_0518",
+        "MmarC7_0519"
+      ],
+      "mmd": [
+        "GYY_07190",
+        "GYY_07195",
+        "GYY_07200"
+      ],
+      "mmak": [
+        "MMKA1_14960",
+        "MMKA1_14970",
+        "MMKA1_14980"
+      ],
+      "mmao": [
+        "MMOS7_13780",
+        "MMOS7_13790",
+        "MMOS7_13800"
+      ],
+      "mvn": [
+        "Mevan_0583",
+        "Mevan_0584",
+        "Mevan_0585"
+      ],
+      "mvo": [
+        "Mvol_0718",
+        "Mvol_0719",
+        "Mvol_0720"
+      ],
+      "mac": [
+        "MA_2909",
+        "MA_2910",
+        "MA_2911"
+      ],
+      "mba": [
+        "Mbar_A2173",
+        "Mbar_A2174",
+        "Mbar_A2175"
+      ],
+      "mby": [
+        "MSBRM_2262",
+        "MSBRM_2264"
+      ],
+      "mbw": [
+        "MSBRW_2566",
+        "MSBRW_2568"
+      ],
+      "mbar": [
+        "MSBR2_0147",
+        "MSBR2_0149"
+      ],
+      "mbak": [
+        "MSBR3_1064",
+        "MSBR3_1066"
+      ],
+      "mma": [
+        "MM_3181",
+        "MM_3182",
+        "MM_3183"
+      ],
+      "mmaz": [
+        "MmTuc01_3277",
+        "MmTuc01_3278",
+        "MmTuc01_3279"
+      ],
+      "mmj": [
+        "MSMAS_1506",
+        "MSMAS_1508"
+      ],
+      "mmac": [
+        "MSMAC_2849",
+        "MSMAC_2851"
+      ],
+      "mvc": [
+        "MSVAZ_1286",
+        "MSVAZ_1288"
+      ],
+      "mek": [
+        "MSKOL_1230",
+        "MSKOL_1232"
+      ],
+      "mls": [
+        "MSLAZ_2008",
+        "MSLAZ_2010"
+      ],
+      "metm": [
+        "MSMTP_1761",
+        "MSMTP_1763"
+      ],
+      "mef": [
+        "MSWH1_1307",
+        "MSWH1_1309"
+      ],
+      "meq": [
+        "MSWHS_1391",
+        "MSWHS_1393"
+      ],
+      "msj": [
+        "MSSAC_2721",
+        "MSSAC_2723"
+      ],
+      "msz": [
+        "MSSIH_1391",
+        "MSSIH_1393"
+      ],
+      "msw": [
+        "MSSIT_1429",
+        "MSSIT_1431"
+      ],
+      "mthe": [
+        "MSTHC_2445",
+        "MSTHC_2447"
+      ],
+      "mthr": [
+        "MSTHT_0824",
+        "MSTHT_0826"
+      ],
+      "mhor": [
+        "MSHOH_1579",
+        "MSHOH_1581"
+      ],
+      "mbu": [
+        "Mbur_0605",
+        "Mbur_0606",
+        "Mbur_0607"
+      ],
+      "mmet": [
+        "MCMEM_1077",
+        "MCMEM_1079"
+      ],
+      "mmh": [
+        "Mmah_1010",
+        "Mmah_1011",
+        "Mmah_1012"
+      ],
+      "mhaz": [
+        "BHR79_08510",
+        "BHR79_08520"
+      ],
+      "mzh": [
+        "Mzhil_0902",
+        "Mzhil_0903",
+        "Mzhil_0904"
+      ],
+      "mpy": [
+        "Mpsy_0059",
+        "Mpsy_0060",
+        "Mpsy_0061"
+      ],
+      "mhz": [
+        "Metho_2048",
+        "Metho_2049",
+        "Metho_2050"
+      ],
+      "mtp": [
+        "Mthe_0156",
+        "Mthe_0157"
+      ],
+      "mcj": [
+        "MCON_0778",
+        "MCON_0779"
+      ],
+      "mhi": [
+        "Mhar_0583",
+        "Mhar_0584"
+      ],
+      "mth": [
+        "MTH_703",
+        "MTH_704",
+        "MTH_705"
+      ],
+      "mmg": [
+        "MTBMA_c10900",
+        "MTBMA_c10910",
+        "MTBMA_c10930"
+      ],
+      "metc": [
+        "MTCT_0631",
+        "MTCT_0633"
+      ],
+      "mwo": [
+        "MWSIV6_1079",
+        "MWSIV6_1081"
+      ],
+      "msi": [
+        "Msm_0331",
+        "Msm_0332",
+        "Msm_0333"
+      ],
+      "mru": [
+        "mru_1431",
+        "mru_1432",
+        "mru_1433"
+      ],
+      "mmil": [
+        "sm9_0692",
+        "sm9_0694"
+      ],
+      "meye": [
+        "TL18_03385"
+      ],
+      "mol": [
+        "YLM1_0932",
+        "YLM1_0934"
+      ],
+      "mel": [
+        "Metbo_2452",
+        "Metbo_2453",
+        "Metbo_2454"
+      ],
+      "mew": [
+        "MSWAN_0187",
+        "MSWAN_0188",
+        "MSWAN_0189"
+      ],
+      "meth": [
+        "MBMB1_0178",
+        "MBMB1_0179",
+        "MBMB1_0180"
+      ],
+      "mfc": [
+        "BRM9_2123",
+        "BRM9_2125"
+      ],
+      "mfi": [
+        "DSM1535_1555",
+        "DSM1535_1557"
+      ],
+      "mcub": [
+        "MCBB_0193",
+        "MCBB_0195"
+      ],
+      "mfv": [
+        "Mfer_0416",
+        "Mfer_0417",
+        "Mfer_0506"
+      ],
+      "tac": [
+        "Ta0627",
+        "Ta0629"
+      ],
+      "tvo": [
+        "TVG0871982",
+        "TVG0872869"
+      ],
+      "mer": [
+        "MMINT_12450",
+        "MMINT_12470"
+      ],
+      "mear": [
+        "Mpt1_c05540"
+      ],
+      "pho": [
+        "PH0678",
+        "PH0679",
+        "PH0680",
+        "PH0681"
+      ],
+      "pab": [
+        "PAB1470",
+        "PAB1471",
+        "PAB1472",
+        "PAB1473"
+      ],
+      "pfu": [
+        "PF0968",
+        "PF0969",
+        "PF0970",
+        "PF0971"
+      ],
+      "pfi": [
+        "PFC_04070",
+        "PFC_04075",
+        "PFC_04080"
+      ],
+      "pyn": [
+        "PNA2_1293",
+        "PNA2_1294",
+        "PNA2_1295"
+      ],
+      "pya": [
+        "PYCH_06630",
+        "PYCH_06640",
+        "PYCH_06650"
+      ],
+      "pys": [
+        "Py04_1079",
+        "Py04_1080",
+        "Py04_1081"
+      ],
+      "pyc": [
+        "TQ32_04850",
+        "TQ32_04860"
+      ],
+      "tko": [
+        "TK1978",
+        "TK1979",
+        "TK1980",
+        "TK1981"
+      ],
+      "ton": [
+        "TON_1476",
+        "TON_1477",
+        "TON_1478",
+        "TON_1479"
+      ],
+      "tga": [
+        "TGAM_0264",
+        "TGAM_0265",
+        "TGAM_0266"
+      ],
+      "tsi": [
+        "TSIB_1381",
+        "TSIB_1382",
+        "TSIB_1383"
+      ],
+      "tba": [
+        "TERMP_01557",
+        "TERMP_01558",
+        "TERMP_01559"
+      ],
+      "the": [
+        "GQS_08125",
+        "GQS_08130",
+        "GQS_08135"
+      ],
+      "tha": [
+        "TAM4_1398",
+        "TAM4_1406",
+        "TAM4_1460"
+      ],
+      "thm": [
+        "CL1_1246",
+        "CL1_1247",
+        "CL1_1248"
+      ],
+      "tlt": [
+        "OCC_07486",
+        "OCC_07491",
+        "OCC_07496"
+      ],
+      "ths": [
+        "TES1_1552",
+        "TES1_1553",
+        "TES1_1554"
+      ],
+      "tnu": [
+        "BD01_1942",
+        "BD01_1943",
+        "BD01_1944"
+      ],
+      "teu": [
+        "TEU_01670",
+        "TEU_01680"
+      ],
+      "tgy": [
+        "X802_03760",
+        "X802_03770"
+      ],
+      "thv": [
+        "ADU37_CDS14440",
+        "ADU37_CDS14460"
+      ],
+      "tch": [
+        "CHITON_0666",
+        "CHITON_0668"
+      ],
+      "tpep": [
+        "A0127_05000",
+        "A0127_05010"
+      ],
+      "tpie": [
+        "A7C91_04895",
+        "A7C91_04905"
+      ],
+      "tgg": [
+        "A3K92_07960",
+        "A3K92_07970"
+      ],
+      "tce": [
+        "A3L02_06800",
+        "A3L02_06810"
+      ],
+      "tbs": [
+        "A3L01_08185",
+        "A3L01_08195"
+      ],
+      "thh": [
+        "CDI07_07385",
+        "CDI07_07395"
+      ],
+      "tsl": [
+        "A3L11_01535",
+        "A3L11_01545"
+      ],
+      "ttd": [
+        "A3L14_10580",
+        "A3L14_10590"
+      ],
+      "tprf": [
+        "A3L09_01310",
+        "A3L09_01320"
+      ],
+      "ppac": [
+        "PAP_04305",
+        "PAP_04315"
+      ],
+      "abi": [
+        "Aboo_0299",
+        "Aboo_0300",
+        "Aboo_0301"
+      ],
+      "acf": [
+        "AciM339_0763",
+        "AciM339_0764",
+        "AciM339_0765"
+      ],
+      "kcr": [
+        "Kcr_1292"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.2.7.7"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.2.7.7"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.2.7.7"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.2.7.7"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Heider J",
+          "Mai X",
+          "Adams MW."
+        ],
+        "title": "Characterization of 2-ketoisovalerate ferredoxin oxidoreductase, a new and reversible coenzyme A-dependent enzyme involved in peptide fermentation by hyperthermophilic archaea.",
+        "journal": "J. Bacteriol. 178 (1996) 780-7.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:8550513]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tersteegen A",
+          "Linder D",
+          "Thauer RK",
+          "Hedderich R."
+        ],
+        "title": "Structures and functions of four anabolic 2-oxoacid oxidoreductases in Methanobacterium thermoautotrophicum.",
+        "journal": "Eur. J. Biochem. 244 (1997) 862-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:9108258]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schut GJ",
+          "Menon AL",
+          "Adams MW."
+        ],
+        "title": "2-keto acid oxidoreductases from Pyrococcus furiosus and Thermococcus litoralis.",
+        "journal": "Methods. Enzymol. 331 (2001) 144-58.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:11265457]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "entry_id": "1.17.98.2",
+    "name": "bacteriochlorophyllide c C-71-hydroxylase",
+    "names": [
+      "bacteriochlorophyllide c C-71-hydroxylase",
+      "bciD (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on CH or CH2 groups;",
+      "With other, known, physiological acceptors"
+    ],
+    "sysname": "bacteriochlorophyllide-c:S-adenosyl-L-methionine oxidoreductase (C-71-hydroxylating)",
+    "reaction": "2 S-adenosyl-L-methionine + a bacteriochlorophyllide c + H2O = a bacteriochlorophyllide e + 2 5'-deoxyadenosine + 2 L-methionine (overall reaction) [RN:R11710]; (1a) S-adenosyl-L-methionine + a bacteriochlorophyllide c + H2O = a 7-(hydroxymethyl)bacteriochlorophyllide c + 5'-deoxyadenosine + L-methionine [RN:R11484]; (1b) S-adenosyl-L-methionine + a 7-(hydroxymethyl)bacteriochlorophyllide c + H2O = a 7-(dihydroxymethyl)bacteriochlorophyllide c + 5'-deoxyadenosine + L-methionine [RN:R10437]; (1c) a 7-(dihydroxymethyl)bacteriochlorophyllide c = a bacteriochlorophyllide e + H2O (spontaneous) [RN:R11709]",
+    "all_reac": "R10437 R11484 R11709 R11710",
+    "iubmb_reactions": [
+      "R10437 R11484 R11709 R11710"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "S-adenosyl-L-methionine [CPD:C00019]",
+      "bacteriochlorophyllide c [CPD:C18161]",
+      "H2O [CPD:C00001]",
+      "7-(hydroxymethyl)bacteriochlorophyllide c [CPD:C21407]",
+      "7-(dihydroxymethyl)bacteriochlorophyllide c [CPD:C20650]"
+    ],
+    "products": [
+      "bacteriochlorophyllide e [CPD:C21582]",
+      "5'-deoxyadenosine [CPD:C05198]",
+      "L-methionine [CPD:C00073]",
+      "7-(hydroxymethyl)bacteriochlorophyllide c [CPD:C21407]",
+      "7-(dihydroxymethyl)bacteriochlorophyllide c [CPD:C20650]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, found in green sulfur bacteria (Chlorobiaceae), is a radical S-adenosyl-L-methionine (AdoMet) enzyme and contains a [4Fe-4S] cluster. It catalyses two consecutive hydroxylation reactions of the C-7 methyl group of bacteriochlorophyllide c to form a geminal diol intermediate that spontaneously dehydrates to produce the formyl group of bacteriochlorophyllide e.",
+    "pathways": {
+      "ec00860": "Porphyrin and chlorophyll metabolism",
+      "ec01110": "Biosynthesis of secondary metabolites"
+    },
+    "orthologs": {
+      "K21312": "bacteriochlorophyllide c C-7(1)-hydroxylase"
+    },
+    "genes": {
+      "clz": [
+        "BIU88_11010"
+      ],
+      "cph": [
+        "Cpha266_0196"
+      ],
+      "cpb": [
+        "Cphamn1_0270"
+      ],
+      "pph": [
+        "Ppha_2747"
+      ],
+      "proc": [
+        "Ptc2401_00216"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.17.98.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.17.98.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.17.98.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.17.98.2"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Harada J",
+          "Mizoguchi T",
+          "Satoh S",
+          "Tsukatani Y",
+          "Yokono M",
+          "Noguchi M",
+          "Tanaka A",
+          "Tamiaki H"
+        ],
+        "title": "Specific gene bciD for C7-methyl oxidation in bacteriochlorophyll e biosynthesis of brown-colored green sulfur bacteria.",
+        "journal": "PLoS. One. 8 (2013) e60026.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:23560066]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Thweatt JL",
+          "Ferlez BH",
+          "Golbeck JH",
+          "Bryant DA"
+        ],
+        "title": "BciD Is a Radical S-Adenosyl-l-methionine (SAM) Enzyme That Completes Bacteriochlorophyllide e Biosynthesis by Oxidizing a Methyl Group into a Formyl Group at C-7.",
+        "journal": "J. Biol. Chem. 292 (2017) 1361-1373.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:27994052]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

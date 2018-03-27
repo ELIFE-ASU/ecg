@@ -1,0 +1,240 @@
+[
+  {
+    "entry_id": "2.3.1.262",
+    "name": "anthraniloyl-CoA anthraniloyltransferase",
+    "names": [
+      "anthraniloyl-CoA anthraniloyltransferase",
+      "pqsD (gene name)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Acyltransferases;",
+      "Transferring groups other than aminoacyl groups"
+    ],
+    "sysname": "anthraniloyl-CoA:malonyl-CoA anthraniloyltransferase",
+    "reaction": "anthraniloyl-CoA + malonyl-CoA = 2-aminobenzoylacetyl-CoA + CoA + CO2 (overall reaction) [RN:R11588]; (1a) anthraniloyl-CoA + L-cysteinyl-[PqsD protein] = S-anthraniloyl-L-cysteinyl-[PqsD protein] + CoA [RN:R11586]; (1b) S-anthraniloyl-L-cysteinyl-[PqsD protein] + malonyl-CoA = 2-aminobenzoylacetyl-CoA + CO2 + L-cysteinyl-[PqsD protein] [RN:R11587]",
+    "all_reac": "R11586 R11587 R11588",
+    "iubmb_reactions": [
+      "R11586 R11587 R11588"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "anthraniloyl-CoA [CPD:C02247]",
+      "malonyl-CoA [CPD:C00083]",
+      "L-cysteinyl-[PqsD protein]",
+      "S-anthraniloyl-L-cysteinyl-[PqsD protein]"
+    ],
+    "products": [
+      "2-aminobenzoylacetyl-CoA [CPD:C21452]",
+      "CoA [CPD:C00010]",
+      "CO2 [CPD:C00011]",
+      "S-anthraniloyl-L-cysteinyl-[PqsD protein]",
+      "L-cysteinyl-[PqsD protein]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme, characterized from the bacterium Pseudomonas aeruginosa, participates in the synthesis of the secondary metabolites 2-heptyl-3-hydroxy-4(1H)-quinolone and 4-hydroxy-2(1H)-quinolone. The enzyme transfers an anthraniloyl group from anthraniloyl-CoA to an internal L-cysteine residue, followed by its transfer to malonyl-CoA to produce a short-lived product that can cyclize spontaneously to form 4-hydroxy-2(1H)-quinolone. However, when EC 3.1.2.32, 2-aminobenzoylacetyl-CoA thioesterase, is present, it removes the CoA moiety from the product, forming the stable 2-aminobenzoylacetate.",
+    "pathways": {
+      "ec00405": "Phenazine biosynthesis",
+      "ec01130": "Biosynthesis of antibiotics"
+    },
+    "orthologs": {
+      "K18003": "anthraniloyl-CoA anthraniloyltransferase"
+    },
+    "genes": {
+      "pae": [
+        "PA0999"
+      ],
+      "paev": [
+        "N297_1032"
+      ],
+      "paei": [
+        "N296_1032"
+      ],
+      "pau": [
+        "PA14_51390"
+      ],
+      "pap": [
+        "PSPA7_4399"
+      ],
+      "pag": [
+        "PLES_43261"
+      ],
+      "paf": [
+        "PAM18_4049"
+      ],
+      "pnc": [
+        "NCGM2_1853"
+      ],
+      "paeb": [
+        "NCGM1900_1669"
+      ],
+      "pdk": [
+        "PADK2_20745"
+      ],
+      "psg": [
+        "G655_20305"
+      ],
+      "prp": [
+        "M062_05445"
+      ],
+      "paep": [
+        "PA1S_20975"
+      ],
+      "paer": [
+        "PA1R_gp4596"
+      ],
+      "paem": [
+        "U769_20820"
+      ],
+      "pael": [
+        "T223_22100"
+      ],
+      "paes": [
+        "SCV20265_4443"
+      ],
+      "paeu": [
+        "BN889_01051"
+      ],
+      "paeg": [
+        "AI22_12965"
+      ],
+      "paec": [
+        "M802_1029"
+      ],
+      "paeo": [
+        "M801_1032"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.3.1.262"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.3.1.262"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.3.1.262"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.3.1.262"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Bera AK",
+          "Atanasova V",
+          "Robinson H",
+          "Eisenstein E",
+          "Coleman JP",
+          "Pesci EC",
+          "Parsons JF"
+        ],
+        "title": "Structure of PqsD, a Pseudomonas quinolone signal biosynthetic enzyme, in complex with anthranilate.",
+        "journal": "Biochemistry. 48 (2009) 8644-55.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:19694421]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Dulcey CE",
+          "Dekimpe V",
+          "Fauvelle DA",
+          "Milot S",
+          "Groleau MC",
+          "Doucet N",
+          "Rahme LG",
+          "Lepine F",
+          "Deziel E"
+        ],
+        "title": "The end of an old hypothesis: the pseudomonas signaling molecules 4-hydroxy-2-alkylquinolines derive from fatty acids, not 3-ketofatty acids.",
+        "journal": "Chem. Biol. 20 (2013) 1481-91.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:24239007]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Drees SL",
+          "Fetzner S"
+        ],
+        "title": "PqsE of Pseudomonas aeruginosa Acts as Pathway-Specific Thioesterase in the Biosynthesis of Alkylquinolone Signaling Molecules.",
+        "journal": "Chem. Biol. 22 (2015) 611-8.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:25960261]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

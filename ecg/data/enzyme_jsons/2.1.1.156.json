@@ -1,0 +1,329 @@
+[
+  {
+    "entry_id": "2.1.1.156",
+    "name": "glycine/sarcosine N-methyltransferase",
+    "names": [
+      "glycine/sarcosine N-methyltransferase",
+      "ApGSMT",
+      "glycine-sarcosine methyltransferase",
+      "GSMT",
+      "GMT",
+      "glycine sarcosine N-methyltransferase",
+      "S-adenosyl-L-methionine:sarcosine N-methyltransferase"
+    ],
+    "classes": [
+      "Transferases;",
+      "Transferring one-carbon groups;",
+      "Methyltransferases"
+    ],
+    "sysname": "S-adenosyl-L-methionine:glycine(or sarcosine) N-methyltransferase [sarcosine(or N,N-dimethylglycine)-forming]",
+    "reaction": "2 S-adenosyl-L-methionine + glycine = 2 S-adenosyl-L-homocysteine + N,N-dimethylglycine (overall reaction) [RN:R10060]; (1a) S-adenosyl-L-methionine + glycine = S-adenosyl-L-homocysteine + sarcosine [RN:R00367]; (1b) S-adenosyl-L-methionine + sarcosine = S-adenosyl-L-homocysteine + N,N-dimethylglycine [RN:R07243]",
+    "all_reac": "R00367 R07243 R10060",
+    "iubmb_reactions": [
+      "R00367 R07243 R10060"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "S-adenosyl-L-methionine [CPD:C00019]",
+      "glycine [CPD:C00037]",
+      "sarcosine [CPD:C00213]"
+    ],
+    "products": [
+      "S-adenosyl-L-homocysteine [CPD:C00021]",
+      "N,N-dimethylglycine [CPD:C01026]",
+      "sarcosine [CPD:C00213]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "Cells of the oxygen-evolving halotolerant cyanobacterium Aphanocthece halophytica synthesize betaine from glycine by a three-step methylation process. This is the first enzyme and it leads to the formation of either sarcosine or N,N-dimethylglycine, which is further methylated to yield betaine (N,N,N-trimethylglycine) by the action of EC 2.1.1.157, sarcosine/dimethylglycine N-methyltransferase. Differs from EC 2.1.1.20, glycine N-methyltransferase, as it can further methylate the product of the first reaction. Acetate, dimethylglycine and S-adenosyl-L-homocysteine can inhibit the reaction [3].",
+    "pathways": {
+      "ec00260": "Glycine, serine and threonine metabolism"
+    },
+    "orthologs": {
+      "K18896": "glycine/sarcosine N-methyltransferase"
+    },
+    "genes": {
+      "pfs": [
+        "PFLU_2095"
+      ],
+      "pfw": [
+        "PF1751_v1c19160"
+      ],
+      "pff": [
+        "PFLUOLIPICF727140"
+      ],
+      "pfx": [
+        "A7318_08950"
+      ],
+      "ptv": [
+        "AA957_04385"
+      ],
+      "pazo": [
+        "AYR47_17170"
+      ],
+      "tig": [
+        "THII_1900",
+        "THII_1901"
+      ],
+      "tmb": [
+        "Thimo_1798",
+        "Thimo_2027"
+      ],
+      "mpur": [
+        "MARPU_03465"
+      ],
+      "tee": [
+        "Tel_06780"
+      ],
+      "hha": [
+        "Hhal_1068",
+        "Hhal_1678"
+      ],
+      "hhc": [
+        "M911_05560",
+        "M911_09985"
+      ],
+      "tgr": [
+        "Tgr7_1181"
+      ],
+      "tkm": [
+        "TK90_0179"
+      ],
+      "tni": [
+        "TVNIR_0234"
+      ],
+      "tti": [
+        "THITH_16330"
+      ],
+      "tvr": [
+        "TVD_00875"
+      ],
+      "ebs": [
+        "ECTOBSL9_2257",
+        "ECTOBSL9_2476"
+      ],
+      "hoh": [
+        "Hoch_6748"
+      ],
+      "pla": [
+        "Plav_2856"
+      ],
+      "fil": [
+        "BN1229_v1_3116"
+      ],
+      "fiy": [
+        "BN1229_v1_2804"
+      ],
+      "elq": [
+        "Ga0102493_112272"
+      ],
+      "aay": [
+        "WYH_00219"
+      ],
+      "magq": [
+        "MGMAQ_3234"
+      ],
+      "nth": [
+        "Nther_0677"
+      ],
+      "mmi": [
+        "MMAR_0861"
+      ],
+      "mli": [
+        "MULP_00886"
+      ],
+      "svl": [
+        "Strvi_1838"
+      ],
+      "src": [
+        "M271_16300"
+      ],
+      "sen": [
+        "SACE_3901",
+        "SACE_5862"
+      ],
+      "svi": [
+        "Svir_27050"
+      ],
+      "sna": [
+        "Snas_2966"
+      ],
+      "syw": [
+        "SYNW1914"
+      ],
+      "syx": [
+        "SynWH7803_0361"
+      ],
+      "synr": [
+        "KR49_11730"
+      ],
+      "synw": [
+        "SynWH8103_02187"
+      ],
+      "dsl": [
+        "Dacsa_3637"
+      ],
+      "pmt": [
+        "PMT_0552"
+      ],
+      "pmf": [
+        "P9303_17011"
+      ],
+      "hao": [
+        "PCC7418_3510"
+      ],
+      "pbu": [
+        "L21SP3_00981"
+      ],
+      "vbl": [
+        "L21SP4_02069"
+      ],
+      "cts": [
+        "Ctha_2188"
+      ],
+      "mmh": [
+        "Mmah_0524"
+      ],
+      "mhaz": [
+        "BHR79_00800"
+      ],
+      "mev": [
+        "Metev_0932"
+      ],
+      "agw": [
+        "QT03_C0001G0105"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.1.1.156"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.1.1.156"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.1.1.156"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.1.1.156"
+      ],
+      "CAS": [
+        "294210-82-5"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Nyyssola A",
+          "Kerovuo J",
+          "Kaukinen P",
+          "von Weymarn N",
+          "Reinikainen T."
+        ],
+        "title": "Extreme halophiles synthesize betaine from glycine by methylation.",
+        "journal": "J. Biol. Chem. 275 (2000) 22196-201.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10896953]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Nyyssola A",
+          "Reinikainen T",
+          "Leisola M."
+        ],
+        "title": "Characterization of glycine sarcosine N-methyltransferase and sarcosine dimethylglycine N-methyltransferase.",
+        "journal": "Appl. Environ. Microbiol. 67 (2001) 2044-50.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:11319079]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Waditee R",
+          "Tanaka Y",
+          "Aoki K",
+          "Hibino T",
+          "Jikuya H",
+          "Takano J",
+          "Takabe T",
+          "Takabe T."
+        ],
+        "title": "Isolation and functional characterization of N-methyltransferases that catalyze betaine synthesis from glycine in a halotolerant photosynthetic organism Aphanothece halophytica.",
+        "journal": "J. Biol. Chem. 278 (2003) 4932-42.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:12466265]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

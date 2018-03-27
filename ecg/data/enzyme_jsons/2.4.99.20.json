@@ -1,0 +1,624 @@
+[
+  {
+    "entry_id": "2.4.99.20",
+    "name": "2'-phospho-ADP-ribosyl cyclase/2'-phospho-cyclic-ADP-ribose transferase",
+    "names": [
+      "2'-phospho-ADP-ribosyl cyclase/2'-phospho-cyclic-ADP-ribose transferase",
+      "diphosphopyridine nucleosidase (ambiguous)",
+      "CD38 (gene name)",
+      "BST1 (gene name)"
+    ],
+    "classes": [
+      "Transferases;",
+      "Glycosyltransferases;",
+      "Transferring other glycosyl groups"
+    ],
+    "sysname": "NADP+:nicotinate ADP-ribosyltransferase",
+    "reaction": "NADP+ + nicotinate = nicotinate-adenine dinucleotide phosphate + nicotinamide (overall reaction) [RN:R00119]; (1a) NADP+ = 2'-phospho-cyclic ADP-ribose + nicotinamide [RN:R10631]; (1b) 2'-phospho-cyclic ADP-ribose + nicotinate = nicotinate-adenine dinucleotide phosphate [RN:R10632]",
+    "all_reac": "R00119 R10631 R10632",
+    "iubmb_reactions": [
+      "R00119 R10631 R10632"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "NADP+ [CPD:C00006]",
+      "nicotinate [CPD:C00253]",
+      "2'-phospho-cyclic ADP-ribose [CPD:C20742]"
+    ],
+    "products": [
+      "nicotinate-adenine dinucleotide phosphate [CPD:C13051]",
+      "nicotinamide [CPD:C00153]",
+      "2'-phospho-cyclic ADP-ribose [CPD:C20742]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This multiunctional enzyme catalyses both the removal of nicotinamide from NADP+, forming 2'-phospho-cyclic ADP-ribose, and the addition of nicotinate to the cyclic product, forming NAADP+, a calcium messenger that can mobilize intracellular Ca2+ stores and activate Ca2+ influx to regulate a wide range of physiological processes. In addition, the enzyme also catalyses EC 3.2.2.6, ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase.",
+    "pathways": {
+      "ec00760": "Nicotinate and nicotinamide metabolism"
+    },
+    "orthologs": {
+      "K01242": "ADP-ribosyl cyclase 1",
+      "K18152": "ADP-ribosyl cyclase 2"
+    },
+    "genes": {
+      "hsa": [
+        "683",
+        "952"
+      ],
+      "ptr": [
+        "461126",
+        "745433"
+      ],
+      "pps": [
+        "100972434",
+        "100974952"
+      ],
+      "ggo": [
+        "101145401",
+        "101149825"
+      ],
+      "pon": [
+        "100174150",
+        "100457558"
+      ],
+      "nle": [
+        "100606064",
+        "100606960"
+      ],
+      "mcc": [
+        "714399",
+        "722848"
+      ],
+      "mcf": [
+        "101926698",
+        "102126394"
+      ],
+      "csab": [
+        "103246326",
+        "103246328"
+      ],
+      "rro": [
+        "104658167",
+        "104658170"
+      ],
+      "rbb": [
+        "108531741",
+        "108531746"
+      ],
+      "cjc": [
+        "100387937",
+        "100402445"
+      ],
+      "sbq": [
+        "101035567",
+        "101036203"
+      ],
+      "mmu": [
+        "12182",
+        "12494"
+      ],
+      "rno": [
+        "25668",
+        "81506"
+      ],
+      "cge": [
+        "100773187",
+        "100773468"
+      ],
+      "ngi": [
+        "103728882",
+        "103728884"
+      ],
+      "hgl": [
+        "101713685",
+        "101720283"
+      ],
+      "ccan": [
+        "109691561",
+        "109691564"
+      ],
+      "ocu": [
+        "100009409",
+        "100351817"
+      ],
+      "tup": [
+        "102468679",
+        "102480083"
+      ],
+      "cfa": [
+        "403756",
+        "488820"
+      ],
+      "aml": [
+        "100463977",
+        "100481326"
+      ],
+      "umr": [
+        "103658313",
+        "103658362"
+      ],
+      "oro": [
+        "101364829",
+        "101365133"
+      ],
+      "fca": [
+        "101101052",
+        "101101308"
+      ],
+      "ptg": [
+        "102955186",
+        "102962771"
+      ],
+      "aju": [
+        "106975627",
+        "106975653"
+      ],
+      "bta": [
+        "327677",
+        "616757"
+      ],
+      "bom": [
+        "102271683",
+        "102273331"
+      ],
+      "biu": [
+        "109560088",
+        "109560687"
+      ],
+      "phd": [
+        "102322294",
+        "102322993"
+      ],
+      "chx": [
+        "102169848",
+        "102172881"
+      ],
+      "oas": [
+        "101116575"
+      ],
+      "ssc": [
+        "100511702",
+        "100625942"
+      ],
+      "cfr": [
+        "102508026",
+        "102508256"
+      ],
+      "cdk": [
+        "105098338",
+        "105098339"
+      ],
+      "bacu": [
+        "103000954",
+        "103020545"
+      ],
+      "lve": [
+        "103087769",
+        "103088314"
+      ],
+      "ecb": [
+        "100068959",
+        "100068968"
+      ],
+      "epz": [
+        "103565758",
+        "103565759"
+      ],
+      "eai": [
+        "106827091",
+        "106827092"
+      ],
+      "myb": [
+        "102252244",
+        "102252530"
+      ],
+      "myd": [
+        "102759158",
+        "102770056"
+      ],
+      "hai": [
+        "109372167",
+        "109372831"
+      ],
+      "rss": [
+        "109435264",
+        "109452142"
+      ],
+      "pale": [
+        "102884937",
+        "102889755"
+      ],
+      "lav": [
+        "100659997",
+        "100660287"
+      ],
+      "tmu": [
+        "101346112",
+        "101346368"
+      ],
+      "mdo": [
+        "100015733",
+        "103094598"
+      ],
+      "shr": [
+        "100915627",
+        "105751033"
+      ],
+      "oaa": [
+        "100074315",
+        "100079912"
+      ],
+      "gga": [
+        "422827",
+        "422828"
+      ],
+      "mgp": [
+        "100546297",
+        "100548136"
+      ],
+      "cjo": [
+        "107313950",
+        "107313951"
+      ],
+      "apla": [
+        "101799363"
+      ],
+      "acyg": [
+        "106033418",
+        "106035386"
+      ],
+      "tgu": [
+        "100224783",
+        "101232999"
+      ],
+      "gfr": [
+        "102032481",
+        "102032646"
+      ],
+      "fab": [
+        "101808664",
+        "101813225"
+      ],
+      "phi": [
+        "102100836",
+        "102101014"
+      ],
+      "pmaj": [
+        "107203272",
+        "107203546"
+      ],
+      "ccw": [
+        "104690721",
+        "104690901"
+      ],
+      "fpg": [
+        "101912278",
+        "101917967"
+      ],
+      "fch": [
+        "102048375",
+        "102048871"
+      ],
+      "clv": [
+        "102089666",
+        "102089855"
+      ],
+      "egz": [
+        "104134476",
+        "104134477"
+      ],
+      "aam": [
+        "106498697",
+        "106498751"
+      ],
+      "asn": [
+        "102376962",
+        "102377198"
+      ],
+      "amj": [
+        "102559494"
+      ],
+      "pss": [
+        "102444728",
+        "102444963"
+      ],
+      "cmy": [
+        "102933631",
+        "102933862"
+      ],
+      "cpic": [
+        "101935271",
+        "101935553"
+      ],
+      "acs": [
+        "100566030"
+      ],
+      "pvt": [
+        "110085956"
+      ],
+      "pbi": [
+        "103059310"
+      ],
+      "gja": [
+        "107120012"
+      ],
+      "xla": [
+        "100036901",
+        "100873156",
+        "101027297"
+      ],
+      "xtr": [
+        "101733556",
+        "496666"
+      ],
+      "npr": [
+        "108799310",
+        "108799313"
+      ],
+      "dre": [
+        "101886891"
+      ],
+      "srx": [
+        "107750973"
+      ],
+      "sanh": [
+        "107693813"
+      ],
+      "sgh": [
+        "107568972"
+      ],
+      "ccar": [
+        "109104929"
+      ],
+      "ipu": [
+        "108256685",
+        "108259605"
+      ],
+      "amex": [
+        "103029242"
+      ],
+      "tru": [
+        "101065178",
+        "101069493",
+        "101074837",
+        "101075059",
+        "105418446",
+        "105418447"
+      ],
+      "tng": [
+        "GSTEN00025533G001",
+        "GSTEN00025534G001"
+      ],
+      "lco": [
+        "104933795",
+        "104933796",
+        "104933803"
+      ],
+      "ncc": [
+        "104942392",
+        "104946571",
+        "104946574"
+      ],
+      "mze": [
+        "101478770",
+        "101479062",
+        "101479335",
+        "101482713"
+      ],
+      "ola": [
+        "101168159",
+        "101168408",
+        "101168658",
+        "101168676"
+      ],
+      "xma": [
+        "102227962",
+        "102228215",
+        "106699822"
+      ],
+      "pret": [
+        "103456798",
+        "103456800",
+        "103456801"
+      ],
+      "csem": [
+        "103377367",
+        "103377368"
+      ],
+      "lcf": [
+        "108900033",
+        "108900035"
+      ],
+      "hcq": [
+        "109517521"
+      ],
+      "bpec": [
+        "110165536",
+        "110165581"
+      ],
+      "sasa": [
+        "106590199",
+        "106590200"
+      ],
+      "els": [
+        "105031580"
+      ],
+      "sfm": [
+        "108922735",
+        "108922775"
+      ],
+      "lcm": [
+        "102348898",
+        "102364780",
+        "106706579",
+        "106707079"
+      ],
+      "cmk": [
+        "103175800"
+      ],
+      "spu": [
+        "100126187",
+        "100859964",
+        "576085",
+        "580868"
+      ],
+      "aplc": [
+        "110977913",
+        "110981710"
+      ],
+      "hro": [
+        "HELRODRAFT_179637",
+        "HELRODRAFT_193621"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_150043",
+        "LOTGIDRAFT_218611"
+      ],
+      "crg": [
+        "105319809"
+      ],
+      "myi": [
+        "110451407",
+        "110458378"
+      ],
+      "lak": [
+        "106153853",
+        "106155009",
+        "106155798",
+        "106159481",
+        "106159482",
+        "106169313",
+        "106180219",
+        "106180220"
+      ],
+      "smm": [
+        "Smp_025830"
+      ],
+      "ovi": [
+        "T265_08021",
+        "T265_08022"
+      ],
+      "nve": [
+        "NEMVE_v1g217601"
+      ],
+      "epa": [
+        "110246357",
+        "110251379"
+      ],
+      "adf": [
+        "107339424",
+        "107340996"
+      ],
+      "hmg": [
+        "100199121",
+        "100199929",
+        "100211840"
+      ],
+      "tad": [
+        "TRIADDRAFT_19184",
+        "TRIADDRAFT_36890",
+        "TRIADDRAFT_51409"
+      ],
+      "aqu": [
+        "105312071",
+        "105312710"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "2.4.99.20"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "2.4.99.20"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "2.4.99.20"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "2.4.99.20"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Chini EN",
+          "Chini CC",
+          "Kato I",
+          "Takasawa S",
+          "Okamoto H"
+        ],
+        "title": "CD38 is the major enzyme responsible for synthesis of nicotinic acid-adenine dinucleotide phosphate in mammalian tissues.",
+        "journal": "Biochem. J. 362 (2002) 125-30.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:11829748]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Moreschi I",
+          "Bruzzone S",
+          "Melone L",
+          "De Flora A",
+          "Zocchi E"
+        ],
+        "title": "NAADP+ synthesis from cADPRP and nicotinic acid by ADP-ribosyl cyclases.",
+        "journal": "Biochem. Biophys. Res. Commun. 345 (2006) 573-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:16690024]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

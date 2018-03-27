@@ -1,0 +1,156 @@
+[
+  {
+    "entry_id": "1.14.13.178",
+    "name": "methylxanthine N1-demethylase",
+    "names": [
+      "methylxanthine N1-demethylase",
+      "ndmA (gene name)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With NADH or NADPH as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "caffeine:oxygen oxidoreductase (N1-demethylating)",
+    "reaction": "(1) caffeine + O2 + NAD(P)H + H+ = theobromine + NAD(P)+ + H2O + formaldehyde [RN:R07955 R07956]; (2) theophylline + O2 + NAD(P)H + H+ = 3-methylxanthine + NAD(P)+ + H2O + formaldehyde [RN:R07973 R07974]; (3) paraxanthine + O2 + NAD(P)H + H+ = 7-methylxanthine + NAD(P)+ + H2O + formaldehyde [RN:R07957 R07958]",
+    "all_reac": "R07955 R07956 R07957 R07958 R07973 R07974; (other) R07969 R07970",
+    "iubmb_reactions": [
+      "R07955 R07956 R07957 R07958 R07973 R07974"
+    ],
+    "kegg_reactions": [
+      "R07969 R07970"
+    ],
+    "substrates": [
+      "caffeine [CPD:C07481]",
+      "O2 [CPD:C00007]",
+      "NADH [CPD:C00004]",
+      "NADPH [CPD:C00005]",
+      "H+ [CPD:C00080]",
+      "theophylline [CPD:C07130]",
+      "paraxanthine [CPD:C13747]"
+    ],
+    "products": [
+      "theobromine [CPD:C07480]",
+      "NAD+ [CPD:C00003]",
+      "NADP+ [CPD:C00006]",
+      "H2O [CPD:C00001]",
+      "formaldehyde [CPD:C00067]",
+      "3-methylxanthine [CPD:C16357]",
+      "7-methylxanthine [CPD:C16353]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "A non-heme iron oxygenase. The enzyme from the bacterium Pseudomonas putida shares an NAD(P)H-FMN reductase subunit with EC 1.14.13.179, methylxanthine N3-demethylase, and has a 5-fold higher activity with NADH than with NADPH [2]. Also demethylate 1-methylxantine with lower efficiency. Forms part of the degradation pathway of methylxanthines.",
+    "pathways": {
+      "ec00232": "Caffeine metabolism",
+      "ec01100": "Metabolic pathways",
+      "ec01110": "Biosynthesis of secondary metabolites",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K21722": "methylxanthine N1-demethylase"
+    },
+    "genes": {
+      "pye": [
+        "A6J80_10900"
+      ],
+      "asz": [
+        "ASN_2329"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.13.178"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.13.178"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.13.178"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.13.178"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Summers RM",
+          "Louie TM",
+          "Yu CL",
+          "Subramanian M"
+        ],
+        "title": "Characterization of a broad-specificity non-haem iron N-demethylase from Pseudomonas putida CBB5 capable of utilizing several purine alkaloids as sole carbon and nitrogen source.",
+        "journal": "Microbiology. 157 (2011) 583-92.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:20966097]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Summers RM",
+          "Louie TM",
+          "Yu CL",
+          "Gakhar L",
+          "Louie KC",
+          "Subramanian M"
+        ],
+        "title": "Novel, highly specific N-demethylases enable bacteria to live on caffeine and related purine alkaloids.",
+        "journal": "J. Bacteriol. 194 (2012) 2041-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:22328667]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

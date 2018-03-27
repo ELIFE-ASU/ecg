@@ -1,0 +1,506 @@
+[
+  {
+    "entry_id": "1.14.18.2",
+    "name": "CMP-N-acetylneuraminate monooxygenase",
+    "names": [
+      "CMP-N-acetylneuraminate monooxygenase",
+      "CMP-N-acetylneuraminic acid hydroxylase",
+      "CMP-Neu5Ac hydroxylase",
+      "cytidine monophosphoacetylneuraminate monooxygenase",
+      "N-acetylneuraminic monooxygenase",
+      "cytidine-5'-monophosphate-N-acetylneuraminic acid hydroxylase"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With another compound as one donor, and incorporation of one atom of oxygen into the other donor"
+    ],
+    "sysname": "CMP-N-acetylneuraminate,ferrocytochrome-b5:oxygen oxidoreductase (N-acetyl-hydroxylating)",
+    "reaction": "CMP-N-acetylneuraminate + 2 ferrocytochrome b5 + O2 + 2 H+ = CMP-N-glycoloylneuraminate + 2 ferricytochrome b5 + H2O [RN:R01115]",
+    "all_reac": "R01115; (other) R01803",
+    "iubmb_reactions": [
+      "R01115"
+    ],
+    "kegg_reactions": [
+      "R01803"
+    ],
+    "substrates": [
+      "CMP-N-acetylneuraminate [CPD:C00128]",
+      "ferrocytochrome b5 [CPD:C00999]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]"
+    ],
+    "products": [
+      "CMP-N-glycoloylneuraminate [CPD:C03691]",
+      "ferricytochrome b5 [CPD:C00996]",
+      "H2O [CPD:C00001]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "This enzyme contains both a Rieske-type [2Fe-2S] cluster and a second iron site. The ferricytochrome b5 produced is reduced by NADH and cytochrome-b5 reductase (EC 1.6.2.2). The enzyme can be activated by Fe2+ or Fe3+.",
+    "pathways": {
+      "ec00520": "Amino sugar and nucleotide sugar metabolism"
+    },
+    "orthologs": {
+      "K08080": "CMP-N-acetylneuraminate monooxygenase"
+    },
+    "genes": {
+      "ptr": [
+        "450121"
+      ],
+      "pps": [
+        "100978297"
+      ],
+      "ggo": [
+        "101153123"
+      ],
+      "pon": [
+        "100450703"
+      ],
+      "nle": [
+        "100581695"
+      ],
+      "mcc": [
+        "574186"
+      ],
+      "mcf": [
+        "102142214"
+      ],
+      "csab": [
+        "103222034"
+      ],
+      "rro": [
+        "104663792"
+      ],
+      "rbb": [
+        "108533655"
+      ],
+      "mmu": [
+        "12763"
+      ],
+      "rno": [
+        "361245"
+      ],
+      "cge": [
+        "100689391"
+      ],
+      "ngi": [
+        "103745175"
+      ],
+      "hgl": [
+        "101718101"
+      ],
+      "ccan": [
+        "109687273"
+      ],
+      "ocu": [
+        "100350827"
+      ],
+      "tup": [
+        "102469254"
+      ],
+      "cfa": [
+        "488248"
+      ],
+      "aml": [
+        "100468655"
+      ],
+      "umr": [
+        "103665030"
+      ],
+      "fca": [
+        "100750220"
+      ],
+      "ptg": [
+        "102967256"
+      ],
+      "aju": [
+        "106968428"
+      ],
+      "bta": [
+        "537017"
+      ],
+      "bom": [
+        "102272785"
+      ],
+      "biu": [
+        "109577194"
+      ],
+      "phd": [
+        "102338808"
+      ],
+      "chx": [
+        "102189920",
+        "108635102"
+      ],
+      "oas": [
+        "101106806"
+      ],
+      "ssc": [
+        "396918"
+      ],
+      "cfr": [
+        "102517286"
+      ],
+      "cdk": [
+        "105089138"
+      ],
+      "bacu": [
+        "102997685"
+      ],
+      "lve": [
+        "103073783"
+      ],
+      "ecb": [
+        "100067842"
+      ],
+      "epz": [
+        "103541420"
+      ],
+      "eai": [
+        "106837858"
+      ],
+      "pale": [
+        "102894513"
+      ],
+      "lav": [
+        "104846471"
+      ],
+      "tmu": [
+        "101341508"
+      ],
+      "mdo": [
+        "100024047"
+      ],
+      "shr": [
+        "100929712"
+      ],
+      "oaa": [
+        "100082782"
+      ],
+      "acs": [
+        "100560576"
+      ],
+      "pvt": [
+        "110072915"
+      ],
+      "xla": [
+        "379989"
+      ],
+      "xtr": [
+        "100216283"
+      ],
+      "npr": [
+        "108786896"
+      ],
+      "dre": [
+        "431739"
+      ],
+      "srx": [
+        "107707959",
+        "107729160"
+      ],
+      "sanh": [
+        "107656456",
+        "107658750"
+      ],
+      "sgh": [
+        "107555874",
+        "107590555"
+      ],
+      "ccar": [
+        "109063653",
+        "109102374",
+        "109108588"
+      ],
+      "ipu": [
+        "108279485"
+      ],
+      "amex": [
+        "103035192"
+      ],
+      "tru": [
+        "777967"
+      ],
+      "tng": [
+        "GSTEN00005973G001"
+      ],
+      "lco": [
+        "104939337",
+        "109138214"
+      ],
+      "ncc": [
+        "104948164"
+      ],
+      "mze": [
+        "101466628",
+        "101474485",
+        "101476433",
+        "101477104"
+      ],
+      "ola": [
+        "105357897"
+      ],
+      "xma": [
+        "102224063",
+        "102230600"
+      ],
+      "pret": [
+        "103459632"
+      ],
+      "bpec": [
+        "110172371"
+      ],
+      "sasa": [
+        "106604887",
+        "106609768",
+        "106609788"
+      ],
+      "sfm": [
+        "108936309"
+      ],
+      "lcm": [
+        "102366592"
+      ],
+      "bfo": [
+        "BRAFLDRAFT_110188",
+        "BRAFLDRAFT_123293",
+        "BRAFLDRAFT_125688",
+        "BRAFLDRAFT_194278",
+        "BRAFLDRAFT_65490",
+        "BRAFLDRAFT_65491"
+      ],
+      "spu": [
+        "586677"
+      ],
+      "aplc": [
+        "110979354",
+        "110986734"
+      ],
+      "sko": [
+        "100367349"
+      ],
+      "ota": [
+        "OT_ostta19g00610"
+      ],
+      "mis": [
+        "MICPUN_53233"
+      ],
+      "hfe": [
+        "HFELIS_01840",
+        "HFELIS_09990"
+      ],
+      "hbi": [
+        "HBZC1_05440"
+      ],
+      "hcm": [
+        "HCD_04105"
+      ],
+      "hhm": [
+        "BN341_7020"
+      ],
+      "hbl": [
+        "XJ32_10870"
+      ],
+      "pphr": [
+        "APZ00_22700"
+      ],
+      "mpro": [
+        "BJP34_15965"
+      ],
+      "nkr": [
+        "NKOR_00480"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.18.2"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.18.2"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.18.2"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.18.2"
+      ],
+      "CAS": [
+        "116036-67-0"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Shaw L",
+          "Schauer R."
+        ],
+        "title": "The biosynthesis of N-glycoloylneuraminic acid occurs by hydroxylation of the CMP-glycoside of N-acetylneuraminic acid.",
+        "journal": "Biol. Chem. Hoppe. Seyler. 369 (1988) 477-86.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:3202954]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kozutsumi Y",
+          "Kawano T",
+          "Yamakawa T",
+          "Suzuki A."
+        ],
+        "title": "Participation of cytochrome b5 in CMP-N-acetylneuraminic acid hydroxylation in mouse liver cytosol.",
+        "journal": "J. Biochem. (Tokyo). 108 (1990) 704-6.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:1964451]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schneckenburger P",
+          "Shaw L",
+          "Schauer R."
+        ],
+        "title": "Purification, characterization and reconstitution of CMP-N-acetylneuraminate hydroxylase from mouse liver.",
+        "journal": "Glycoconj. J. 11 (1994) 194-203.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:7841794]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Kawano T",
+          "Koyama S",
+          "Takematsu H",
+          "Kozutsumi Y",
+          "Kawasaki H",
+          "Kawashima S",
+          "Kawasaki T",
+          "Suzuki A."
+        ],
+        "title": "Molecular cloning of cytidine monophospho-N-acetylneuraminic acid hydroxylase. Regulation of species- and tissue-specific expression of N-glycolylneuraminic acid.",
+        "journal": "J. Biol. Chem. 270 (1995) 16458-63.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:7608218]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Schlenzka W",
+          "Shaw L",
+          "Kelm S",
+          "Schmidt CL",
+          "Bill E",
+          "Trautwein AX",
+          "Lottspeich F",
+          "Schauer R."
+        ],
+        "title": "CMP-N-acetylneuraminic acid hydroxylase: the first cytosolic Rieske iron-sulphur protein to be described in Eukarya.",
+        "journal": "FEBS. Lett. 385 (1996) 197-200.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:8647250]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

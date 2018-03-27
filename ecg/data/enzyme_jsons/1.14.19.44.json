@@ -1,0 +1,530 @@
+[
+  {
+    "entry_id": "1.14.19.44",
+    "name": "acyl-CoA (8-3)-desaturase",
+    "names": [
+      "acyl-CoA (8-3)-desaturase",
+      "FADS1 (gene name)",
+      "acyl-CoA 5-desaturase (methylene-interrupted)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on paired donors, with incorporation or reduction of molecular oxygen;",
+      "With oxidation of a pair of donors resulting in the reduction of O2 to two molecules of water"
+    ],
+    "sysname": "Delta8-acyl-CoA,ferrocytochrome b5:oxygen oxidoreductase (5,6-cis-dehydrogenating)",
+    "reaction": "(1) (8Z,11Z,14Z)-icosa-8,11,14-trienoyl-CoA + 2 ferrocytochrome b5 + O2 + 2 H+ = arachidonoyl-CoA + 2 ferricytochrome b5 + 2 H2O [RN:R11059]; (2) (8Z,11Z,14Z,17Z)-icosa-8,11,14,17-tetraenoyl-CoA + 2 ferrocytochrome b5 + O2 + 2 H+ = (5Z,8Z,11Z,14Z,17Z)-icosa-5,8,11,14,17-pentaenoyl-CoA + 2 ferricytochrome b5 + 2 H2O [RN:R11060]",
+    "all_reac": "R11059 R11060",
+    "iubmb_reactions": [
+      "R11059 R11060"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "(8Z,11Z,14Z)-icosa-8,11,14-trienoyl-CoA [CPD:C03595]",
+      "ferrocytochrome b5 [CPD:C00999]",
+      "O2 [CPD:C00007]",
+      "H+ [CPD:C00080]",
+      "(8Z,11Z,14Z,17Z)-icosa-8,11,14,17-tetraenoyl-CoA [CPD:C16164]"
+    ],
+    "products": [
+      "arachidonoyl-CoA [CPD:C02249]",
+      "ferricytochrome b5 [CPD:C00996]",
+      "H2O [CPD:C00001]",
+      "(5Z,8Z,11Z,14Z,17Z)-icosa-5,8,11,14,17-pentaenoyl-CoA [CPD:C16165]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzyme introduces a cis double bond at carbon 5 of acyl-CoAs that contain a double bond at position 8. The enzymes from algae, mosses, mammals and the protozoan Leishmania major catalyse the desaturation of dihomo-gamma-linoleate [(8Z,11Z,14Z)-icosa-8,11,14-trienoate] and (8Z,11Z,14Z,17Z)-icosa-8,11,14,17-tetraenoate to generate arachidonate and (5Z,8Z,11Z,14Z,17Z)-icosa-5,8,11,14,17-pentaenoate, respectively. The enzyme contains a cytochrome b5 domain that acts as the direct electron donor to the desaturase active site and does not require an external cytochrome. cf. EC 1.14.19.37, acyl-CoA 5-desaturase.",
+    "pathways": {
+      "ec01040": "Biosynthesis of unsaturated fatty acids"
+    },
+    "orthologs": {
+      "K10224": "acyl-CoA (8-3)-desaturase (Delta-5 desaturase)"
+    },
+    "genes": {
+      "hsa": [
+        "3992"
+      ],
+      "ptr": [
+        "451243"
+      ],
+      "pps": [
+        "100981162"
+      ],
+      "ggo": [
+        "101136185"
+      ],
+      "pon": [
+        "100436159"
+      ],
+      "nle": [
+        "100596120"
+      ],
+      "mcc": [
+        "722343"
+      ],
+      "mcf": [
+        "101864778"
+      ],
+      "csab": [
+        "103234224"
+      ],
+      "rro": [
+        "104679375"
+      ],
+      "rbb": [
+        "108533599"
+      ],
+      "cjc": [
+        "100389579"
+      ],
+      "sbq": [
+        "101052172"
+      ],
+      "mmu": [
+        "76267"
+      ],
+      "rno": [
+        "84575"
+      ],
+      "cge": [
+        "100773095"
+      ],
+      "ngi": [
+        "103729124"
+      ],
+      "hgl": [
+        "101698014"
+      ],
+      "ccan": [
+        "109685566"
+      ],
+      "ocu": [
+        "100342403"
+      ],
+      "tup": [
+        "102500595"
+      ],
+      "cfa": [
+        "483793"
+      ],
+      "aml": [
+        "100472955"
+      ],
+      "umr": [
+        "103678230"
+      ],
+      "oro": [
+        "101364825"
+      ],
+      "fca": [
+        "101083966"
+      ],
+      "ptg": [
+        "102968608"
+      ],
+      "aju": [
+        "106986968"
+      ],
+      "bta": [
+        "533107"
+      ],
+      "bom": [
+        "102276098"
+      ],
+      "biu": [
+        "109554369"
+      ],
+      "phd": [
+        "102315978"
+      ],
+      "chx": [
+        "102178247"
+      ],
+      "oas": [
+        "101109049"
+      ],
+      "ssc": [
+        "444995"
+      ],
+      "cfr": [
+        "102506763"
+      ],
+      "cdk": [
+        "105094872"
+      ],
+      "bacu": [
+        "103008410"
+      ],
+      "lve": [
+        "103082696"
+      ],
+      "ecb": [
+        "102150261"
+      ],
+      "epz": [
+        "103543089"
+      ],
+      "eai": [
+        "106847567"
+      ],
+      "myb": [
+        "102261592"
+      ],
+      "myd": [
+        "102773181"
+      ],
+      "hai": [
+        "109389978",
+        "109390020"
+      ],
+      "rss": [
+        "109459517"
+      ],
+      "pale": [
+        "102894313"
+      ],
+      "lav": [
+        "100677495"
+      ],
+      "tmu": [
+        "101347278"
+      ],
+      "mdo": [
+        "100028492"
+      ],
+      "shr": [
+        "100922163"
+      ],
+      "oaa": [
+        "103171425"
+      ],
+      "gga": [
+        "423119",
+        "423120",
+        "428851"
+      ],
+      "mgp": [
+        "100549516",
+        "100549671",
+        "100549825"
+      ],
+      "cjo": [
+        "107314410",
+        "107314438",
+        "107314472"
+      ],
+      "apla": [
+        "101789732",
+        "101799007",
+        "101799800"
+      ],
+      "acyg": [
+        "106033871",
+        "106044856",
+        "106044871"
+      ],
+      "tgu": [
+        "100225746",
+        "100228631"
+      ],
+      "gfr": [
+        "102031677",
+        "102040395",
+        "102040846"
+      ],
+      "fab": [
+        "101809325",
+        "101809791",
+        "101813351"
+      ],
+      "phi": [
+        "102101859",
+        "102112391",
+        "102112775"
+      ],
+      "pmaj": [
+        "107205341",
+        "107205403",
+        "107205404"
+      ],
+      "ccw": [
+        "104697619",
+        "104697620",
+        "104697621"
+      ],
+      "fpg": [
+        "101910435",
+        "101912001",
+        "106112851"
+      ],
+      "fch": [
+        "102049758",
+        "102057911",
+        "106631119"
+      ],
+      "clv": [
+        "102094615",
+        "102098315",
+        "102098790"
+      ],
+      "egz": [
+        "104124680",
+        "104124682",
+        "104124699"
+      ],
+      "aam": [
+        "106490039",
+        "106490040",
+        "106490045"
+      ],
+      "asn": [
+        "102378297",
+        "102382011",
+        "102382251",
+        "102382503",
+        "102382756",
+        "102386118",
+        "102387601",
+        "102388109"
+      ],
+      "amj": [
+        "102558806",
+        "102563927",
+        "102564163",
+        "102564392",
+        "102564994",
+        "102565222",
+        "102574216",
+        "106737005"
+      ],
+      "pss": [
+        "102460779",
+        "102461025"
+      ],
+      "cmy": [
+        "102932384",
+        "102932824",
+        "102933055"
+      ],
+      "cpic": [
+        "101936861",
+        "101937159",
+        "101952648"
+      ],
+      "acs": [
+        "100551618",
+        "100555351",
+        "100555547",
+        "100555740",
+        "100555937"
+      ],
+      "pvt": [
+        "110086171",
+        "110086173",
+        "110086190",
+        "110086192",
+        "110086194",
+        "110086197"
+      ],
+      "pbi": [
+        "103050792",
+        "103052091",
+        "103053493",
+        "103063568",
+        "103065518",
+        "103065763"
+      ],
+      "gja": [
+        "107108850",
+        "107108852",
+        "107121912",
+        "107121913",
+        "107121914"
+      ],
+      "xla": [
+        "108713836",
+        "108715199"
+      ],
+      "xtr": [
+        "100489232"
+      ],
+      "npr": [
+        "108794178"
+      ],
+      "lcm": [
+        "102350226"
+      ],
+      "cmk": [
+        "103174860"
+      ],
+      "lgi": [
+        "LOTGIDRAFT_170234"
+      ],
+      "gtt": [
+        "GUITHDRAFT_104142"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.14.19.44"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.14.19.44"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.14.19.44"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.14.19.44"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Cho HP",
+          "Nakamura M",
+          "Clarke SD"
+        ],
+        "title": "Cloning, expression, and fatty acid regulation of the human delta-5 desaturase.",
+        "journal": "J. Biol. Chem. 274 (1999) 37335-9.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:10601301]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Leonard AE",
+          "Kelder B",
+          "Bobik EG",
+          "Chuang LT",
+          "Parker-Barnes JM",
+          "Thurmond JM",
+          "Kroeger PE",
+          "Kopchick JJ",
+          "Huang YS",
+          "Mukerji P"
+        ],
+        "title": "cDNA cloning and characterization of human Delta5-desaturase involved in the biosynthesis of arachidonic acid.",
+        "journal": "Biochem. J. 347 Pt 3 (2000) 719-24.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:10769175]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tripodi KE",
+          "Buttigliero LV",
+          "Altabe SG",
+          "Uttaro AD"
+        ],
+        "title": "Functional characterization of front-end desaturases from trypanosomatids depicts the first polyunsaturated fatty acid biosynthetic pathway from a parasitic protozoan.",
+        "journal": "FEBS. J. 273 (2006) 271-80.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:16403015]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Tavares S",
+          "Grotkjaer T",
+          "Obsen T",
+          "Haslam RP",
+          "Napier JA",
+          "Gunnarsson N"
+        ],
+        "title": "Metabolic engineering of Saccharomyces cerevisiae for production of Eicosapentaenoic Acid, using a novel {Delta}5-Desaturase from Paramecium tetraurelia.",
+        "journal": "Appl. Environ. Microbiol. 77 (2011) 1854-61.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:21193673]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]

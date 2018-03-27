@@ -1,0 +1,285 @@
+[
+  {
+    "entry_id": "1.7.2.6",
+    "name": "hydroxylamine dehydrogenase",
+    "names": [
+      "hydroxylamine dehydrogenase",
+      "HAO (ambiguous)",
+      "hydroxylamine oxidoreductase (ambiguous)",
+      "hydroxylamine oxidase (misleading)"
+    ],
+    "classes": [
+      "Oxidoreductases;",
+      "Acting on other nitrogenous compounds as donors;",
+      "With a cytochrome as acceptor"
+    ],
+    "sysname": "hydroxylamine:ferricytochrome-c oxidoreductase",
+    "reaction": "(1) hydroxylamine + H2O + 4 ferricytochrome c = nitrite + 4 ferrocytochrome c + 5 H+ [RN:R10164]; (2) hydroxylamine + 3 ferricytochrome c = nitric oxide + 3 ferrocytochrome c + 3 H+ [RN:R10165]",
+    "all_reac": "R10164 R10165",
+    "iubmb_reactions": [
+      "R10164 R10165"
+    ],
+    "kegg_reactions": [
+
+    ],
+    "substrates": [
+      "hydroxylamine [CPD:C00192]",
+      "H2O [CPD:C00001]",
+      "ferricytochrome c [CPD:C00125]"
+    ],
+    "products": [
+      "nitrite [CPD:C00088]",
+      "ferrocytochrome c [CPD:C00126]",
+      "H+ [CPD:C00080]",
+      "nitric oxide [CPD:C00533]"
+    ],
+    "cofactors": [
+
+    ],
+    "efectors": [
+
+    ],
+    "inhibitors": [
+
+    ],
+    "comment": "The enzymes from the nitrifying bacterium Nitrosomonas europaea [1,4] and the methylotrophic bacterium Methylococcus capsulatus [5] are hemoproteins with seven c-type hemes and one specialized P-460-type heme per subunit. The enzyme converts hydroxylamine to nitrite via an enzyme-bound nitroxyl intermediate [3]. While nitrite is the main product, the enzyme from Nitrosomonas europaea can produce nitric oxide as well [2].",
+    "pathways": {
+      "ec00910": "Nitrogen metabolism",
+      "ec01120": "Microbial metabolism in diverse environments"
+    },
+    "orthologs": {
+      "K10535": "hydroxylamine dehydrogenase"
+    },
+    "genes": {
+      "mca": [
+        "MCA0956"
+      ],
+      "mah": [
+        "MEALZ_1830"
+      ],
+      "noc": [
+        "Noc_0892"
+      ],
+      "nhl": [
+        "Nhal_1085"
+      ],
+      "nwa": [
+        "Nwat_0758"
+      ],
+      "neu": [
+        "NE0962",
+        "NE2044",
+        "NE2339"
+      ],
+      "net": [
+        "Neut_1672",
+        "Neut_1793",
+        "Neut_2335"
+      ],
+      "nit": [
+        "NAL212_1807",
+        "NAL212_2138",
+        "NAL212_2750"
+      ],
+      "nii": [
+        "Nit79A3_0807",
+        "Nit79A3_0822",
+        "Nit79A3_2942"
+      ],
+      "nco": [
+        "AAW31_01285",
+        "AAW31_16290",
+        "AAW31_18275"
+      ],
+      "nmu": [
+        "Nmul_A0805",
+        "Nmul_A1082",
+        "Nmul_A2662"
+      ],
+      "msc": [
+        "BN69_3242"
+      ],
+      "sil": [
+        "SPOA0201"
+      ],
+      "min": [
+        "Minf_2434"
+      ],
+      "nio": [
+        "NITINOP_0065"
+      ],
+      "mox": [
+        "DAMO_2473"
+      ]
+    },
+    "dblinks": {
+      "ExplorEnz - The Enzyme Database": [
+        "1.7.2.6"
+      ],
+      "IUBMB Enzyme Nomenclature": [
+        "1.7.2.6"
+      ],
+      "ExPASy - ENZYME nomenclature database": [
+        "1.7.2.6"
+      ],
+      "BRENDA, the Enzyme Database": [
+        "1.7.2.6"
+      ],
+      "CAS": [
+        "9075-43-8"
+      ]
+    },
+    "diseases": [
+
+    ],
+    "motifs": [
+
+    ],
+    "structures": [
+
+    ],
+    "references": [
+      {
+        "authors": [
+          "Rees MK."
+        ],
+        "title": "Studies of the hydroxylamine metabolism of Nitrosomonas europaea. I. Purification of hydroxylamine oxidase.",
+        "journal": "Biochemistry. 7 (1968) 353-66.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "1  [PMID:5758552]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hooper AB",
+          "Terry KR"
+        ],
+        "title": "Hydroxylamine oxidoreductase of Nitrosomonas. Production of nitric oxide from hydroxylamine.",
+        "journal": "Biochim. Biophys. Acta. 571 (1979) 12-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "2  [PMID:497235]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Hooper AB",
+          "Balny C."
+        ],
+        "title": "Reaction of oxygen with hydroxylamine oxidoreductase of Nitrosomonas: fast kinetics.",
+        "journal": "FEBS. Lett. 144 (1982) 299-303.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "3  [PMID:7117545]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Lipscomb JD",
+          "Hooper AB."
+        ],
+        "title": "Resolution of multiple heme centers of hydroxylamine oxidoreductase from Nitrosomonas. 1. Electron paramagnetic resonance spectroscopy.",
+        "journal": "Biochemistry. 21 (1982) 3965-72.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "4  [PMID:6289867]"
+        ],
+        "affiliations": [
+
+        ]
+      },
+      {
+        "authors": [
+          "Poret-Peterson AT",
+          "Graham JE",
+          "Gulledge J",
+          "Klotz MG"
+        ],
+        "title": "Transcription of nitrification genes by the methane-oxidizing bacterium, Methylococcus capsulatus strain Bath.",
+        "journal": "ISME. J. 2 (2008) 1213-20.",
+        "volume": "",
+        "issue": "",
+        "pages": "",
+        "year": "",
+        "pubmed": "",
+        "medline": "",
+        "doi": null,
+        "abstract": "",
+        "url": null,
+        "mesh": [
+
+        ],
+        "embl_gb_record_number": null,
+        "sequence_position": null,
+        "comments": [
+          "5  [PMID:18650926]"
+        ],
+        "affiliations": [
+
+        ]
+      }
+    ]
+  }
+]
