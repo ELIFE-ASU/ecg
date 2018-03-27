@@ -100,9 +100,10 @@ def get_organism_ec_list(fpath,write_dir_to_outfpath=True,write_dir_to_outfname=
             outfname.append(fpath.split('/')[-1])
 
         else:
-            raise Warning("when write_fname_to_outfname==False, \
-                the outfname is not guaranteed to be unique, \
-                and thus may overwrite existing files.")
+            pass
+            # print("Warning--when write_fname_to_outfname==False, \
+            #     the outfname is not guaranteed to be unique, \
+            #     and thus may overwrite existing files.")
 
         if (write_dir_to_outfname==False) and \
            (write_header_to_outfname==False) and \
