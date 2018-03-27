@@ -86,6 +86,12 @@ def get_organism_ec_list(fpath,write_dir_to_outfpath=True,write_dir_to_outfname=
             else:
                 parentdir=fpath.split('/')[-2]
                 outfname.append(parentdir)
+
+        if write_dir_to_outfpath:
+            if fpath.count('/') < 2:
+                raise ValueError("gmls/ does not contain any subdirectories")
+            else:    
+                parentdir=fpath.split('/')[-2]
                 outfpath+=(parentdir+'/')
 
         if write_header_to_outfname:
@@ -108,7 +114,7 @@ def get_organism_ec_list(fpath,write_dir_to_outfpath=True,write_dir_to_outfname=
         if (write_dir_to_outfname==False) and \
            (write_header_to_outfname==False) and \
            (write_fname_to_outfname==False):
-           raise ValueError("all arguments cannot be False. No filename!")
+           raise ValueError("all fname arguments cannot be False. No filename!")
 
     outfname=';'.join(outfname)
     outfpath=outfpath+outfname
@@ -229,16 +235,25 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
     
     ## User data
     outfpath, genome_ec_list = get_organism_ec_list(fpath, \
+        write_dir_to_outfpath=write_dir_to_outfpath, \
         write_dir_to_outfname=write_dir_to_outfname, \
         write_header_to_outfname=write_header_to_outfname, \
         write_fname_to_outfname=write_fname_to_outfname)
     
     ## Bipartite-directed-rxnsub needed for all graphs
 
+    # print "outside ifs 2"
+    # print graphtypes
+
+    # if ('unipartite-directed-sub' or 'unipartite-undirected-subfromdirected') in graphtypes:
+    #     print 'hello'
+
     genome_rxn_list, missing_ec_list = get_organism_rxn_list(genome_ec_list,ec_to_rxn_dict) ## Not outputting missing_ec_list right now
     B, rxns_missing_from_rxn_edges = create_bipartite_directed_rxn_sub_network(genome_rxn_list,rxn_edges,rxn_detailed_json_dir)
 
     if 'bipartite-directed-rxnsub' in graphtypes:
+
+        print 'bipartite-directed-rxnsub'
 
         outfpath_final = gmldir+'bipartite-directed-rxnsub/'+outfpath+'.gml'
         
@@ -246,11 +261,15 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
         
         nx.write_gml(B,outfpath_final)
 
-    if ('bipartite-undirected-rxnsub' or 'unipartite-undirected-rxn' or 'unipartite-undirected-sub') in graphtypes:
+    if {'bipartite-undirected-rxnsub','unipartite-undirected-rxn','unipartite-undirected-sub'} & set(graphtypes):
+
+        print '(bipartite-undirected-rxnsub or unipartite-undirected-rxn or unipartite-undirected-sub)'
 
         B_un = B.to_undirected()
 
         if 'bipartite-undirected-rxnsub' in graphtypes:
+
+            print 'bipartite-undirected-rxnsub'
 
             outfpath_final = gmldir+'bipartite-undirected-rxnsub/'+outfpath+'.gml'
 
@@ -259,6 +278,9 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
             nx.write_gml(B_un,outfpath_final)
 
         if 'unipartite-undirected-rxn' in graphtypes:
+
+            print 'unipartite-undirected-rxn'
+
             G_r = bipartite.projected_graph(B_un,[n for n in B_un.nodes() if n.startswith('R')])
 
             outfpath_final = gmldir+'unipartite-undirected-rxn/'+outfpath+'.gml'
@@ -268,6 +290,9 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
             nx.write_gml(G_r,outfpath_final)
 
         if 'unipartite-undirected-sub' in graphtypes:
+
+            print 'unipartite-undirected-sub'
+
             G_c = bipartite.projected_graph(B_un, [n for n in B_un.nodes() if n.startswith('C')])
 
             outfpath_final = gmldir+'unipartite-undirected-sub/'+outfpath+'.gml'
@@ -276,11 +301,15 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
 
             nx.write_gml(G_c,outfpath_final)
 
-    if ('unipartite-directed-sub' or 'unipartite-undirected-subfromdirected') in graphtypes:
+    if {'unipartite-directed-sub','unipartite-undirected-subfromdirected'} & set(graphtypes):
+
+        print '(unipartite-directed-sub or unipartite-undirected-subfromdirected)'
 
         G_cdir = bipartite.projected_graph(B, [n for n in B.nodes() if n.startswith('C')])
 
         if 'unipartite-directed-sub' in graphtypes:
+
+            print 'unipartite-directed-sub'
             
             outfpath_final = gmldir+'unipartite-directed-sub/'+outfpath+'.gml'
 
@@ -290,6 +319,8 @@ def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite
 
 
         if 'unipartite-undirected-subfromdirected' in graphtypes:
+
+            print 'unipartite-undirected-subfromdirected'
 
             G_cun = G_cdir.to_undirected()
 
