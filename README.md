@@ -1,7 +1,7 @@
 # ecg
 Pulling information from biological databases, and converting it into easy to use gmls for network science.
 
-To install locally, if you haven't navigate to the package directory:
+To install locally, if you haven't navigated to the package directory:
 
 `pip install -e /path/to/package` 
 
