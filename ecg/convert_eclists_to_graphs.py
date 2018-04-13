@@ -116,7 +116,7 @@ def get_organism_ec_list(fpath,write_dir_to_outfpath=True,write_dir_to_outfname=
            (write_fname_to_outfname==False):
            raise ValueError("all fname arguments cannot be False. No filename!")
 
-    outfname=';'.join(outfname)
+    outfname='--'.join(outfname)
     outfpath=outfpath+outfname
     return outfpath, genome_ec_list
 
