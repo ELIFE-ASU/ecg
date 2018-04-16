@@ -1,6 +1,7 @@
 import glob
 import json
 import os
+import random
 from os.path import dirname, abspath, realpath, join
 import networkx as nx
 from networkx.algorithms import bipartite
@@ -363,6 +364,36 @@ def write_graphs_from_many_genomes(fpathdir,gmldir,missingdir,graphtypes=['unipa
             write_dir_to_outfname=write_dir_to_outfname,
             write_header_to_outfname=write_header_to_outfname,
             write_fname_to_outfname=write_fname_to_outfname)
+
+def write_graphs_from_many_genomes_sampled(sample_size,fpathdir,gmldir,missingdir,graphtypes=['unipartite-undirected-subfromdirected'],write_dir_to_outfpath=True,write_dir_to_outfname=True,write_header_to_outfname=True,write_fname_to_outfname=True):
+    """
+    Writes multiple EC lists to one or more gml files.
+
+    See `write_graphs_from_one_genome` docstring for details.
+
+    :param fpathdir: the filepath to the directory of genomes
+    :param sample_size: the number of graphs to make from a random selection of the ec_list
+    """
+
+    all_fpaths = [fpath for fpath in glob.glob(fpathdir+'*.dat')]
+
+    gml_sample = random.sample(all_fpaths,sample_size)
+
+    for fpath in gml_sample:
+
+        print "Creating gml from: %s ..."%fpath
+
+        write_graphs_from_one_genome(
+            fpath,
+            gmldir,
+            missingdir,
+            graphtypes=graphtypes, 
+            write_dir_to_outfpath=write_dir_to_outfpath,
+            write_dir_to_outfname=write_dir_to_outfname,
+            write_header_to_outfname=write_header_to_outfname,
+            write_fname_to_outfname=write_fname_to_outfname)
+
+
 
 
 def main():
