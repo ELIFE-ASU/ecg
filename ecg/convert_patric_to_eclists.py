@@ -33,7 +33,9 @@ def read_patric_files(dirname,subdir = False):
     ## Convert all files to dataframes
     dfs = []
     for fname in fnames:
-        dfs.append(pd.read_csv(fname, sep="\t"))
+        dfs.append(pd.read_csv(fname, sep="\t", dtype={'genome_id': str}))
+
+    # print dfs[0]
 
     return dfs
 
@@ -46,27 +48,35 @@ def create_genome_ec_dict(dfs):
 
     :param dfs: list of all genome dfs
     """
-    genome_dict = {} # genome_name:[eIDs]
+    genome_dict = {} # genome_id: {}, where {} is keyed by: 'ECs'[eIDs],genome_name,genome_name_with_id,duplicate
     all_ECs = set()
     genome_id_duplicates = []
 
     for df in dfs:
 
         if len(set(df['genome_id'])) == 1:
+
             genome_name = df['genome_name'][0]
             genome_id = df['genome_id'][0]
             ECs = set(df['ec_number'])
+            genome_name_with_id = genome_name+' '+str(genome_id)
+
+            genome_dict[genome_id] = {}
+            genome_dict[genome_id]['genome_name'] = genome_name
+            genome_dict[genome_id]['genome_name_with_id'] = genome_name+' '+str(genome_id)
+            genome_dict[genome_id]['duplicate'] = 0
             
-            if genome_id not in genome_id:
-                genome_dict[genome_id] = ECs
+            if 'ECs' not in genome_dict[genome_id]:
+                genome_dict[genome_id]['ECs'] = ECs 
+                # genome_dict[genome_id] = ECs
             
             else:
                 ## If more than 1 genome shares a name, create new name incorporating the genome_id
                 # genome_name_with_id = genome_name+' '+str(genome_id)
                 # genome_dict[genome_name_with_id] = ECs
                 # print "genome_name: %s, id: %s already present in genome_dict. Creating new key: %s."%(genome_name,genome_id,genome_name_with_id)
-                print "Warning-- genome_id: %s has multiple PATHWAY files"%s
-                genome_id_duplicates.append(genome_id)
+                print "Warning-- genome_id: %s has multiple PATHWAY files"%genome_id
+                genome_dict[genome_id]['duplicate'] = 1
 
             all_ECs.update(ECs)
                 
@@ -77,7 +87,7 @@ def create_genome_ec_dict(dfs):
         else:
             raise ValueError("Something went horribly wrong. There is a negative or decimal amount of genome_ids in this file")
 
-    return genome_dict, all_ECs, genome_id_duplicates
+    return genome_dict, all_ECs
 
 def create_boolean_dict(genome_dict,all_ECs):
     """
@@ -91,8 +101,12 @@ def create_boolean_dict(genome_dict,all_ECs):
     boolean_genome_dict = {}
     for genome_id in genome_dict:
         boolean_genome_dict[genome_id] = {}
+        boolean_genome_dict[genome_id]['genome_name'] = genome_dict[genome_id]['genome_name']
+        boolean_genome_dict[genome_id]['genome_name_with_id'] = genome_dict[genome_id]['genome_name_with_id']
+        boolean_genome_dict[genome_id]['duplicate'] = genome_dict[genome_id]['duplicate'] 
+
         for EC in all_ECs:
-            if EC in genome_dict[genome_id]:
+            if EC in genome_dict[genome_id]['ECs']:
                 boolean_genome_dict[genome_id][EC] = 1
             else:
                 boolean_genome_dict[genome_id][EC] = 0
@@ -110,31 +124,47 @@ def create_boolean_df(boolean_genome_dict):
 
     boolean_genome_df = boolean_genome_df.T # transpose to get in same format as 1k and 21k
 
-    boolean_genome_df['sum']=boolean_genome_df.sum(axis=1) # add column for sum
+    # print boolean_genome_df.head()
+
+    col_list = list(boolean_genome_df)#.columns
+
+    # print col_list
+    col_list.remove('duplicate')
+    col_list.remove('genome_name_with_id')
+    col_list.remove('genome_name')
+
+    boolean_genome_df['sum']=boolean_genome_df[col_list].sum(axis=1) # add column for sum
 
     ## Move sum column to front of dataframe
     cols = boolean_genome_df.columns.tolist()
     cols.insert(0, cols.pop(cols.index('sum')))
+    cols.insert(0, cols.pop(cols.index('duplicate')))
+    cols.insert(0, cols.pop(cols.index('genome_name_with_id')))
+    cols.insert(0, cols.pop(cols.index('genome_name')))
+
     boolean_genome_df = boolean_genome_df.reindex(columns=cols)
 
     return boolean_genome_df
 
-def boolean_df_to_ec_lists(boolean_genome_df):
+# def boolean_df_to_ec_lists(boolean_genome_df):
 
-    
+
 
 ###############################################################
 def main():
 
     ## parameters to change --------------------------
-    dirname = 'Archaea' # folder with patric files
-    outfile = 'archaea_genomes.csv' # file to write
+    dirname = 'userdata/PATRIC_Export_pathways' # folder with patric files
+    subdir = True
+    outfile = 'test_patric_parse.csv' # file to write
     ##------------------------------------------------
 
-    dfs = read_patric_files(dirname,subdir=True)
+    dfs = read_patric_files(dirname,subdir=subdir)
     genome_dict, all_ECs = create_genome_ec_dict(dfs)
     boolean_genome_dict = create_boolean_dict(genome_dict,all_ECs)
     boolean_genome_df = create_boolean_df(boolean_genome_dict)
+
+    # print boolean_genome_df
 
     boolean_genome_df.to_csv(outfile,index_label='species') # write to csv
 
