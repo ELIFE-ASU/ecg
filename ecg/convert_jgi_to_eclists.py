@@ -13,13 +13,13 @@ Turns master csv into individual EC lists.
 
 def main():
 
-    dat_dir = 'userdata/test_eukarya_ec_lists/'
+    dat_dir = 'userdata/domain_ec_lists/individual_eukarya/'
 
     if not os.path.exists(dat_dir):
         os.makedirs(dat_dir)
 
     all_eukarya_dict = dict()
-    for json_file in glob.glob('userdata/jgi_eukarya_jsons/*'):
+    for json_file in glob.glob('userdata/jgi_eukarya_jsons_20180403/*'):
         with open(json_file) as f:
             eukaryote_id = json_file.split('/')[-1].split('.json')[0]
             all_eukarya_dict[eukaryote_id] = dict()
@@ -38,13 +38,15 @@ def main():
             for EC in natsorted(all_eukarya_dict[eukaryote_id]):
                 f.write("%s\n" %EC)
 
-    eukarya_df = pd.DataFrame.from_dict(all_eukarya_dict)
+    ## Write csv matrix
 
-    eukarya_df = eukarya_df.T
+    # eukarya_df = pd.DataFrame.from_dict(all_eukarya_dict)
 
-    eukarya_df = eukarya_df.fillna(0).astype(int)
+    # eukarya_df = eukarya_df.T
 
-    eukarya_df.to_csv('test_json_eukarya_parsed.csv')
+    # eukarya_df = eukarya_df.fillna(0).astype(int)
+
+    # eukarya_df.to_csv('test_json_eukarya_parsed.csv')
 
 if __name__=='__main__':
     main()
