@@ -6,7 +6,8 @@ import glob
 
 """
 Turns PATRIC's PATHWAY.tab files into master csv of ECs present in each genome.
-Turns master csv into individual EC lists.
+
+write_boolean_genome_master_csv is the only function in the file meant to be called directly.
 """
 
 def read_patric_files(dirname,subdir = False):
@@ -146,7 +147,28 @@ def create_boolean_df(boolean_genome_dict):
 
     return boolean_genome_df
 
-# def boolean_df_to_ec_lists(boolean_genome_df):
+###############################################################
+def write_boolean_genome_master_csv(dirname,subdir,outfile):
+    """
+    Turns PATRIC's PATHWAY.tab files into master csv of ECs present in each genome.
+    This is the only function in the file meant to be called directly.
+
+    :param dirname: the filepath to the PATRIC files
+    :param subdir: True if the .tab files are within subdirectorys
+    :param outfile: filename to write csv to
+    """
+
+    dfs = read_patric_files(dirname,subdir=subdir)
+    genome_dict, all_ECs = create_genome_ec_dict(dfs)
+    boolean_genome_dict = create_boolean_dict(genome_dict,all_ECs)
+    boolean_genome_df = create_boolean_df(boolean_genome_dict)
+
+    # print boolean_genome_df
+
+    boolean_genome_df.to_csv(outfile,index_label='species') # write to csv
+
+
+## Do i even use the master csv to create the invididual ec list csvs?
 
 
 
@@ -159,14 +181,9 @@ def main():
     outfile = 'test_patric_parse.csv' # file to write
     ##------------------------------------------------
 
-    dfs = read_patric_files(dirname,subdir=subdir)
-    genome_dict, all_ECs = create_genome_ec_dict(dfs)
-    boolean_genome_dict = create_boolean_dict(genome_dict,all_ECs)
-    boolean_genome_df = create_boolean_df(boolean_genome_dict)
+    write_boolean_genome_master_csv(dirname,subdir,outfile)
 
-    # print boolean_genome_df
-
-    boolean_genome_df.to_csv(outfile,index_label='species') # write to csv
+    
 
 
 if __name__=='__main__':
