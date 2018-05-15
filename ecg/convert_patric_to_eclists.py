@@ -5,21 +5,30 @@ import os
 import glob
 
 """
+Turns PATRIC's PATHWAY.tab files into EC lists of ECs present in each genome.
 Turns PATRIC's PATHWAY.tab files into master csv of ECs present in each genome.
+Turns JGI .json files into EC lists of ECs present in each genome or metagenome.
+Turns JGI .json files into master csv of ECs present in each genome or metagenome.
 
-write_boolean_genome_master_csv is the only function in the file meant to be called directly.
+Functions meant to be called directly:
+- write_patric_ec_lists_from_tabs
+- write_patric_boolean_csv_from_tabs
+- write_jgi_ec_lists_from_jsons
+- write_jgi_boolean_csv_from_jsons
 """
-
-def read_patric_files(dirname,subdir = False):
+###############################################################################
+## PATRIC (not directly called)
+###############################################################################
+def read_patric_files(tab_dir,subdir = False):
     """
     Turn PATRIC PATHWAY.tab files into list of dataframes.
 
-    :param dirname: the filepath to the PATRIC files
+    :param tab_dir: the filepath to the PATRIC files
     :param subdir: True if the .tab files are within subdirectorys
     """
 
     if subdir == True:
-        subdirnames = glob.glob(dirname+'/*')
+        subdirnames = glob.glob(tab_dir+'/*')
 
         fnames = []
         for subdir in subdirnames:
@@ -27,7 +36,7 @@ def read_patric_files(dirname,subdir = False):
 
     else:
         ## Read in filenames
-        fnames = glob.glob(dirname+'*.tab')
+        fnames = glob.glob(tab_dir+'*.tab')
     
     fnames.sort()
     
@@ -41,7 +50,7 @@ def read_patric_files(dirname,subdir = False):
     return dfs
 
 
-def create_genome_ec_dict(dfs):
+def create_patric_ec_dict(dfs):
     """
     Convert genomes into dicts,
     Also returns identifies union of all ECs across all genomes
@@ -90,7 +99,7 @@ def create_genome_ec_dict(dfs):
 
     return genome_dict, all_ECs
 
-def create_boolean_dict(genome_dict,all_ECs):
+def create_patric_boolean_dict(genome_dict,all_ECs):
     """
     Create new dict of dicts to store genome names
 
@@ -114,7 +123,7 @@ def create_boolean_dict(genome_dict,all_ECs):
 
     return boolean_genome_dict
 
-def create_boolean_df(boolean_genome_dict):
+def create_patric_boolean_df(boolean_genome_dict):
     """
     Converts boolean_genome_dict to dataframe 
 
@@ -147,41 +156,135 @@ def create_boolean_df(boolean_genome_dict):
 
     return boolean_genome_df
 
-###############################################################
-def write_boolean_genome_master_csv(dirname,subdir,outfile):
+###############################################################################
+## JGI (not directly called)
+###############################################################################
+def create_jgi_ec_dict(json_dir):
+
+    all_eukarya_dict = dict()
+    for json_file in glob.glob(json_dir+'/*'):
+        
+        with open(json_file) as f:
+            eukaryote_id = json_file.split('/')[-1].split('.json')[0]
+            all_eukarya_dict[eukaryote_id] = dict()
+            
+            json_data = json.load(f)
+
+            for EC in natsorted(json_data['genome']):
+                EC_number = EC.split(':')[1]
+                EC_count = int(json_data['genome'][EC][1])
+                all_eukarya_dict[eukaryote_id][EC_number] = EC_count
+
+    return all_eukarya_dict
+
+###############################################################################
+## Functions to directly call (JGI and PATRIC)
+###############################################################################
+
+def write_patric_ec_lists_from_tabs(tab_dir,subdir,output_dir):
+    """
+    Turns PATRIC's PATHWAY.tab files into EC lists of ECs present in each genome.
+
+    :param tab_dir: the filepath to the PATRIC files
+    :param subdir: True if the .tab files are within subdirectorys
+    :param output_dir: dir to write output ec lists
+    """
+
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    dfs = read_patric_files(tab_dir,subdir=subdir)
+    genome_dict, all_ECs = create_patric_ec_dict(dfs)
+    boolean_genome_dict = create_patric_boolean_dict(genome_dict,all_ECs)
+
+    for genome_id in boolean_genome_dict:
+        with open(output_dir+'/'+genome_id+'.dat','w') as f:
+            f.write("# %s\n" %genome_id)
+            for EC in natsorted(boolean_genome_dict[genome_id]):
+                if boolean_genome_dict[genome_id][EC] == 1:
+                    f.write("%s\n" %EC)
+
+def write_patric_boolean_csv_from_tabs(tab_dir,subdir,outfile):
     """
     Turns PATRIC's PATHWAY.tab files into master csv of ECs present in each genome.
-    This is the only function in the file meant to be called directly.
 
-    :param dirname: the filepath to the PATRIC files
+    :param tab_dir: the filepath to the PATRIC files
     :param subdir: True if the .tab files are within subdirectorys
     :param outfile: filename to write csv to
     """
 
-    dfs = read_patric_files(dirname,subdir=subdir)
-    genome_dict, all_ECs = create_genome_ec_dict(dfs)
-    boolean_genome_dict = create_boolean_dict(genome_dict,all_ECs)
-    boolean_genome_df = create_boolean_df(boolean_genome_dict)
-
-    # print boolean_genome_df
+    dfs = read_patric_files(tab_dir,subdir=subdir)
+    genome_dict, all_ECs = create_patric_ec_dict(dfs)
+    boolean_genome_dict = create_patric_boolean_dict(genome_dict,all_ECs)
+    boolean_genome_df = create_patric_boolean_df(boolean_genome_dict)
 
     boolean_genome_df.to_csv(outfile,index_label='species') # write to csv
 
+def write_jgi_ec_lists_from_jsons(json_dir,output_dir):
+    """
+    Turns JGI's .json files into EC lists of ECs present in each meta/genome.
 
-## Do i even use the master csv to create the invididual ec list csvs?
+    :param json_dir: filepath to the jgi json files
+    :param output_dir: dir to write output ec lists
+    """
 
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    all_eukarya_dict = create_jgi_ec_dict(json_dir)
+
+    for eukaryote_id in all_eukarya_dict:
+        with open(output_dir+'/'+eukaryote_id+'.dat','w') as f:
+            f.write("# %s\n" %eukaryote_id)
+            for EC in natsorted(all_eukarya_dict[eukaryote_id]):
+                f.write("%s\n" %EC)
+
+def write_jgi_boolean_csv_from_jsons(json_dir,outfile):
+    """
+    Turns JGI's .json files into master csv of ECs present in each meta/genome.
+
+    :param json_dir: filepath to the jgi json files
+    :param outfile: filename to write csv to
+    """
+
+    all_eukarya_dict = create_jgi_ec_dict(json_dir)
+
+    eukarya_df = pd.DataFrame.from_dict(all_eukarya_dict)
+
+    eukarya_df = eukarya_df.T
+
+    eukarya_df = eukarya_df.fillna(0).astype(int)
+
+    eukarya_df.to_csv(outfile)  
 
 
 ###############################################################
 def main():
 
+    ## PATRIC
     ## parameters to change --------------------------
-    dirname = 'userdata/PATRIC_Export_pathways' # folder with patric files
+    tab_dir = 'userdata/PATRIC_Export_pathways' 
     subdir = True
-    outfile = 'test_patric_parse.csv' # file to write
-    ##------------------------------------------------
+    outfile = 'test_patric_boolean_csv.csv' # file to write
+    ## OR---------------------------------------------
+    output_dir = 'userdata/domain_ec_lists/PATRIC'
+    ## -----------------------------------------------
 
-    write_boolean_genome_master_csv(dirname,subdir,outfile)
+    write_patric_boolean_csv_from_tabs(tab_dir,subdir,outfile)
+    write_patric_ec_lists_from_tabs(tab_dir,subdir,output_dir)
+
+    ##################################################
+
+    ## JGI
+    ## parameters to change --------------------------
+    json_dir = 'userdata/jgi_eukarya_jsons_20180403'
+    output_dir = 'userdata/domain_ec_lists/individual_eukarya'
+    ## OR---------------------------------------------
+    outfile = 'test_jgi_boolean_csv.csv' # file to write
+    ## -----------------------------------------------
+
+    write_jgi_ec_lists_from_jsons(json_dir,output_dir)
+    write_jgi_boolean_csv_from_jsons(json_dir,outfile)
 
     
 
