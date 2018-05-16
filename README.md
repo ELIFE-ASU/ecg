@@ -1,6 +1,8 @@
 # ecg
 Pulling information from biological databases, and converting it into easy to use gmls for network science.
 
+(recommended to open the readme in a markdown editor like Typora https://typora.io/)
+
 [TOC]
 
 #### Local Installation
@@ -23,11 +25,11 @@ The `-e` flag indicates a symlink, and forces the package to upgrade whenever th
 
 ```mermaid
 graph TD
-A[Update KEGG Enzymes and Reactions] -->|Get money| B(Go shopping)
-B --> C{Let me think}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[Car]
+A["Gather KEGG data jsons using Biopython's TogoWS module <br> (Enzymes, Compounds, Reactions, Stats)"] -->|generate_entry_files.py| B["Parse the reactions .json files in order to extract and store the compound IDs"]
+B -->|add_substrates_products_stoichiometry_to_reaction_jsons.py| C["Map reactions to their substrates and products <br> (Create reaction_edges.json)"]
+C -->|generate_reaction_substrate_product_edges_json.py| D[Convert PATRIC tab files and JGI jsons to eclists]
+D -->|convert_patric_to_eclists.py| E[Convert EC lists to graphs]
+E -->|convert_eclists_to_graphs.py| F[Graphs obtained!]
 ```
 
 #### To pull PATRIC data (bacteria and archaea):
@@ -92,7 +94,9 @@ Run `scrape_eukarya_from_jgi` to pull a json for each eukaryote in the JGI datab
 ######Options
 
  ` --database=<db>`    Database to use, either `jgi` or `all` [default: `jgi`]
+
  ` --homepage=<hp>`    url of jgi homepage [default: `https://img.jgi.doe.gov/cgi-bin/m/main.cgi`]
+
  ` --write_concatenated_json=<wj> `    write single concatenated json after all individual jsons are written [default: `True`]
 
 jsons
@@ -202,9 +206,13 @@ Run `scrape_metagenomes_from_jgi` to pull a json for each metagenome in the JGI 
 ######Options
 
  `--database=<db>`    Database to use, either `jgi` or `all` [default: `jgi`]
+
  ` --homepage=<hp>`    url of jgi homepage [default: `https://img.jgi.doe.gov/cgi-bin/m/main.cgi`]
+
  `--ecosystem_classes=<ec>`  list; can be `Engineered`, `Environmental`, or `Host-associated` (these are 3 different links on the homepage) [default: `['Engineered', 'Environmental', 'Host-associated']`]
+
   `--datatypes=<dt>`  list; can be `assembled`, `unassembled`, or `both` (species which type of genomic data to pull ECs from) [default: `['assembled','unassembled','both']`]
+
   `--write_concatenated_json=<wj>`     write single concatenated json after all individual jsons are written [default: `True`]
 
 ###### Output
