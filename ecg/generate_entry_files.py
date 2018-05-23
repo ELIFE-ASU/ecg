@@ -7,6 +7,7 @@ import Bio.TogoWS as TogoWS
 def txt_to_list(filename):
     return [x[0] for x in csv.reader(open(filename,'r'),delimiter='\t')]
 
+## Test
 def test_txt_to_list():
     assert len(txt_to_list("newdata/20171129/compound.txt")) == 18132
     assert len(txt_to_list("newdata/20171129/enzyme.txt")) == 7111
