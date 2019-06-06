@@ -12,12 +12,12 @@ with open("LICENSE") as f:
 
 setup(
     name='ecg',
-    version='0.0.0',
+    version='0.0.1',
     description='Biological databases -> Networks',
     long_description=README,
-    maintainer='Harrison B. Smith',
+    maintainer='Harrison B. Smith; ELIFE',
     maintainer_email='hbs@asu.edu',
-    # url='https://github.com/elife-asu/neet',
+    url='https://github.com/ELIFE-ASU/ecg',
     license=LICENSE,
     requires=['glob', 'json', 'networkx', 'pyinform'],
     packages=['ecg'],
