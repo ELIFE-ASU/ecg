@@ -1,14 +1,19 @@
 import os
+import re
 import json
+import glob
+from Bio.KEGG import REST, Enzyme, Compound, Map
+from tqdm import tqdm
+
 """
 keggdir
-|-get
+|-entries
 |  |-compounds 
 |  |-reactions 
 |  |-enzymes 
 |  |-pathways 
 |
-|-list
+|-lists
 |  |-compounds 
 |  |-reactions 
 |  |-enzymes 
@@ -128,6 +133,8 @@ class Kegg(object):
 
     @path.setter
     def path(self,path):
+        if not os.path.exists(path):
+            os.makedirs(path)
         self.__path = path
 
     @property
@@ -140,26 +147,238 @@ class Kegg(object):
 
         self.__version = version
 
-    def download(self,run_pipeline=True,dbs=["reactions", "compounds", "enzymes", "pathways"]):
+    def download(self,run_pipeline=True,dbs=["pathway","enzyme","reaction","compound"]):
 
         for dirpath, dirnames, files in os.walk(self.path):
             if files:
                 raise ValueError("Directory must be empty to initiate a fresh KEGG download.\
                               Looking to update KEGG? Try `Kegg.update()` instead.")
-            
+        
+        self._download_lists(dbs)
+        self._download_entries(dbs)
+
+
         if run_pipeline:
 
             self._detail_reactions()
             self._linkdbs()
             self._write_master()
 
-    def _detail_reactions(self):
+    def _download_lists(self,dbs=["pathway","enzyme","reaction","compound"]):
+        """
+        Returns db.json of ids and names in dbs (default: map (pathway), ec, rn, cpd).
+        """
 
-        pass
+        lists_path = os.path.join(self.path, "lists")
+        if not os.path.exists(lists_path):
+            os.makedirs(lists_path)
+
+        for db in dbs:
+        
+            ## Retreive all entry ids and names
+            id_name_dict = dict()
+            raw_list = REST.kegg_list(db)
+            id_name_list = [s.split('\t') for s in raw_list.read().splitlines()]
+            for i in id_name_list:
+                id_name_dict[i[0]] = i[1]
+
+            ## Write json of all entry ids and names
+            list_path = os.path.join(lists_path, db+".json")
+            with open(list_path, 'w') as f:   
+                json.dump(id_name_dict, f, indent=2)
+
+    def _download_entries(self,dbs=["pathway","enzyme","reaction","compound"]):
+        """
+        Returns jsons of entries of dbs (default: map (pathway), ec, rn, cpd).
+        """
+
+        ## Get entries on all kegg types
+        for db in dbs:
+
+            ## Read list of all kegg ids
+            list_path = os.path.join(self.path,"lists",db+".json")
+            with open(list_path) as f:    
+                list_data = json.load(f) #[0]
+
+            ## Create dir to store entries in
+            entries_path = os.path.join(self.path,"entries",db)
+            if not os.path.exists(entries_path):
+                os.makedirs(entries_path)
+
+            ## Grab each entry in list
+            for i, entry in enumerate(tqdm(list_data)):
+                
+                entry_id = entry.split(":")[1]
+                entry_fname = entry_id+".json"
+                entry_path = os.path.join(entries_path, entry_fname)
+
+                # print "Saving (verifying) %s entry %s of %s (%s)..."%(db,i+1,len(list_data),entry_id)
+
+                while entry_fname not in os.listdir(entries_path):
+                    try:
+                        handle = TogoWS.entry(db, entry_id, format="json")
+                        with open(entry_path, 'a') as f:
+                            f.write(handle.read())
+                    except:
+                        pass
+
+    def _detail_reactions(self):
+        """
+        Add reaction details in convenient fields for rn jsons.
+        """
+
+        reaction_path = os.path.join(self.path,'entries','reaction')
+        
+        for path in glob.glob(reaction_path+"*.json"):
+            
+            with open(path) as f:    
+                data = json.load(f)
+                
+                equation = data[0]["equation"]
+
+                if re.search(r'(G\d+)',equation) == None: ## Only find entries without glycans
+
+                    for i, side in enumerate(equation.split(" <=> ")):
+
+                        compounds = []
+                        stoichiometries = []
+
+                        ## !!! Need to optimize the code here
+
+                        ## match (n+1) C00001, (m-1) C00001 or similar
+                        matches = re.findall(r'(\(\S*\) C\d+)',side)
+                        # print matches
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = re.search(r'(\(\S*\))',match).group(1)
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match 23n C00001, m C00001 or similar
+                        matches = re.findall(r'(\d*[n,m] C\d+)',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = re.search(r'(\d*[n,m])',match).group(1)
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match C06215(m+n), C06215(23m) or similar
+                        matches = re.findall(r'(C\d+\(\S*\))',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = re.search(r'(\(\S*\))',match).group(1)
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match "3 C00002" or similar (but NOT C00002 without a number)
+                        matches = re.findall(r'(\d+ C\d+)',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = match.split(' '+compound)[0]# re.search(r'(\(\S*\))',match).group(1)
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match "C00001 "at the start of the line (no coefficients)
+                        matches = re.findall(r'(^C\d+) ',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = '1'
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match "+ C00001 " (no coefficients)
+                        matches = re.findall(r'(\+ C\d+ )',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = "1"
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match "+ C00001" at the end of the line (no coefficients)
+                        matches = re.findall(r'(\+ C\d+$)',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = "1"
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        ## match "C00001" which is at the start and end of the line
+                        matches = re.findall(r'(^C\d+$)',side)
+                        if len(matches) != 0:
+                            for match in matches:
+                                compound = re.search(r'(C\d+)',match).group(1)
+                                stoichiometry = "1"
+                                
+                                compounds.append(compound)
+                                stoichiometries.append(stoichiometry)
+
+                        if i==0:
+                            data[0]["left"] = compounds
+                            data[0]["left_stoichiometries"] = stoichiometries
+                        elif i==1:
+                            data[0]["right"] = compounds
+                            data[0]["right_stoichiometries"] = stoichiometries
+
+                        assert len(compounds) == len(stoichiometries)
+                        data[0]["glycans"] = False
+
+                else:
+
+                    data[0]["glycans"] = True
+
+            ## Rewrite file with added detail
+            with open(path, 'w') as f:
+                
+                json.dump(data, f, indent=2)
     
     def _linkdbs(self):
+        """
+        Returns jsons of mappings between each db (default: map (pathway), ec, rn, cpd).
+        """
 
-        pass
+        ## !!! Need to work on below
+        os.listdir(entries_path)
+        # kegg_types = ["pathway","enzyme","reaction","compound"]
+        for targetdb in kegg_types:
+
+            for sourcedb in kegg_types:
+
+                if sourcedb != targetdb:
+
+                    links_raw = REST.kegg_link(targetdb, sourcedb)
+                    links = [s.split('\t') for s in links_raw.read().splitlines()]
+
+                    d = dict()
+                    for i in links:
+                        if i[0] in d:
+                            d[i[0]].append(i[1])
+                        else:
+                            d[i[0]] = [i[1]]
+
+                    ## Write json of all entry ids and names
+                    link_fname = sourcedb+"_"+targetdb
+                    outdir = keggdir+'links/' 
+                    if not os.path.exists(outdir):
+                        os.makedirs(outdir)
+                    outpath = outdir+link_fname+'.json'
+                    with open(outpath, 'w') as outfile:   
+                        json.dump(d, outfile, indent=2)
+
+            pass
 
     def _write_master(self):
 
