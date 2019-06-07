@@ -1,5 +1,6 @@
 import os
-
+import json
+"""
 keggdir
 |-get
 |  |-compounds 
@@ -51,7 +52,19 @@ Kegg.__check_if_updating_kegg_changes_any_dbs #eg the set of reactions, compound
                 {"original":
                     {"release_short":
                      "release_full":
-                     "info":
+                     "dbkeys_added":
+                        {"compounds":
+                         "reactions":
+                         "enzymes":
+                         "pathways":
+                         }
+                    "dbkeys_removed":
+                        {"compounds":
+                         "reactions":
+                         "enzymes":
+                         "pathways":
+                         }
+                     "dbkeys_count":
                         {"compounds":#ncompounds
                          "reactions":#nreactions
                          "enzymes":#nenzymes
@@ -92,8 +105,65 @@ Kegg.__check_if_updating_kegg_changes_any_dbs #eg the set of reactions, compound
             }
 
 ## Each above function should check to make sure necessary prereqs are met
-
+"""
 class Kegg(object):
 
-    def __init__(self,keggdir):
+    def __init__(self,path):
+
+        self.path = path
+        try:
+            version_path = os.path.join(path, "version.json")
+            with open(version_path) as f:    
+                version = json.load(f) #[0]
+            self.version = version
+            # os.path.isfile(path+"version.json")
+        except:
+            self.version = None
+
+        self.dbkeys = None 
+
+    @property
+    def path(self):
+        return self.__path 
+
+    @path.setter
+    def path(self,path):
+        self.__path = path
+
+    @property
+    def version(self):
+
+        return self.__version 
+
+    @version.setter
+    def version(self,version):
+
+        self.__version = version
+
+    def download(self,run_pipeline=True,dbs=["reactions", "compounds", "enzymes", "pathways"]):
+
+        for dirpath, dirnames, files in os.walk(self.path):
+            if files:
+                raise ValueError("Directory must be empty to initiate a fresh KEGG download.\
+                              Looking to update KEGG? Try `Kegg.update()` instead.")
+            
+        if run_pipeline:
+
+            self._detail_reactions()
+            self._linkdbs()
+            self._write_master()
+
+    def _detail_reactions(self):
+
+        pass
+    
+    def _linkdbs(self):
+
+        pass
+
+    def _write_master(self):
+
+        pass
+
+
 
