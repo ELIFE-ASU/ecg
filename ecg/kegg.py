@@ -2,6 +2,7 @@ import os
 import re
 import json
 import glob
+import itertools
 from Bio.KEGG import REST, Enzyme, Compound, Map
 from tqdm import tqdm
 
@@ -345,40 +346,31 @@ class Kegg(object):
                 
                 json.dump(data, f, indent=2)
     
-    def _linkdbs(self):
+    def _linkdbs(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
         Returns jsons of mappings between each db (default: map (pathway), ec, rn, cpd).
         """
+        
+        for sourcedb, targetdb in itertools.permutations(dbs,2):
 
-        ## !!! Need to work on below
-        os.listdir(entries_path)
-        # kegg_types = ["pathway","enzyme","reaction","compound"]
-        for targetdb in kegg_types:
+            links_raw = REST.kegg_link(targetdb, sourcedb)
+            links = [s.split('\t') for s in links_raw.read().splitlines()]
 
-            for sourcedb in kegg_types:
+            d = dict()
+            for i in links:
+                if i[0] in d:
+                    d[i[0]].append(i[1])
+                else:
+                    d[i[0]] = [i[1]]
 
-                if sourcedb != targetdb:
-
-                    links_raw = REST.kegg_link(targetdb, sourcedb)
-                    links = [s.split('\t') for s in links_raw.read().splitlines()]
-
-                    d = dict()
-                    for i in links:
-                        if i[0] in d:
-                            d[i[0]].append(i[1])
-                        else:
-                            d[i[0]] = [i[1]]
-
-                    ## Write json of all entry ids and names
-                    link_fname = sourcedb+"_"+targetdb
-                    outdir = keggdir+'links/' 
-                    if not os.path.exists(outdir):
-                        os.makedirs(outdir)
-                    outpath = outdir+link_fname+'.json'
-                    with open(outpath, 'w') as outfile:   
-                        json.dump(d, outfile, indent=2)
-
-            pass
+            ## Write json of all entry ids and names
+            link_fname = sourcedb+"_"+targetdb
+            links_path = os.path.join(self.path,'links')
+            if not os.path.exists(links_path):
+                os.makedirs(links_path)
+            link_path = os.path.join(links_path, link_fname+".json")
+            with open(link_path, 'w') as f:   
+                json.dump(d, f, indent=2)
 
     def _write_master(self):
 
