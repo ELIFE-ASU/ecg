@@ -4,6 +4,7 @@ import json
 import glob
 import itertools
 from Bio.KEGG import REST, Enzyme, Compound, Map
+import Bio.TogoWS as TogoWS
 from tqdm import tqdm
 
 """
@@ -124,7 +125,7 @@ class Kegg(object):
         except:
             self.version = None
 
-        self.dbkeys = None 
+        # self.dbkeys = None 
 
     @property
     def path(self):
@@ -138,12 +139,10 @@ class Kegg(object):
 
     @property
     def version(self):
-
         return self.__version 
 
     @version.setter
     def version(self,version):
-
         self.__version = version
 
     @property
@@ -227,6 +226,9 @@ class Kegg(object):
 
                 while entry_fname not in os.listdir(entries_path):
                     try:
+                    # print(db,entry_id)
+                    # print(entry_fname)
+                    # print(entry_path)
                         handle = TogoWS.entry(db, entry_id, format="json")
                         with open(entry_path, 'a') as f:
                             f.write(handle.read())
