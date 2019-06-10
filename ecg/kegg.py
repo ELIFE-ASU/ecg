@@ -454,7 +454,7 @@ class Kegg(object):
         ## Note that this does not necessarily match what is returned from lists
         raw_list = REST.kegg_info("kegg")
         split = raw_list.read().splitlines()
-        current["info_count"] = dict()
+        current["count_info"] = dict()
         for line in split:
             split_line = line.split()
             overlap = set(dbs) & set(split_line)
