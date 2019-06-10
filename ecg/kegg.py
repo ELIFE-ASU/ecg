@@ -466,7 +466,17 @@ class Kegg(object):
                 current["count_info"][split_line[0]] = int(split_line[1].replace(',' , ''))
 
         ## Lists of compounds, reactions, etc. and their counts (calculated from these lists)
-        current["lists"] = self.lists
+        # current["lists"] = self.lists
+
+        ## Lists of .... from the directories
+        current["lists"] = dict()
+        for db in dbs:
+            lists_path = os.path.join(self.path, "lists", db, '')
+            db_entries = glob.glob(lists_path+"*.json")
+            current["lists"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
+        self.lists = current["lists"]
+
+        ## Counts based on the lists
         counts = dict()
         for db in self.lists:
             counts[db] = len(self.lists[db])
@@ -480,12 +490,6 @@ class Kegg(object):
         with open(version_path, 'w') as f:   
             json.dump(current, f, indent=2)
 
-        ## Get dbkeys downloaded in current lists directory
-        # for db in dbs:
-        #     lists_path = os.path.join(self.path, "lists", db, '')
-        #     db_entries = glob.glob(lists_path+"*.json")
-        #     _version["dbkeys_list"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
-        
     def _write_master(self,metadata=True):
         """
         Write reaction edges + version info into master.json
