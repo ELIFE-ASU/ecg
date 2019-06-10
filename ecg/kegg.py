@@ -37,6 +37,8 @@ Kegg = ecg.Kegg(keggdir) # keggdir is the top level dir
 
 Kegg.download() #defaults to ["pathway","enzyme",""]. should output all necessary files and dirs
 Kegg.update() #same defaults
+-> Kegg.update(deep=False) #default, only updates based on list changes
+-> Kegg.update(deep=True) #redownloads everything, maintains versioning metadata
 Kegg.detail_reactions() #add detailed information to reactions. need detailed field with true/false.
 Kegg.linkdbs() #create mappings between databases
 Kegg.write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
@@ -59,12 +61,6 @@ Kegg.__check_if_updating_kegg_changes_any_dbs #eg the set of reactions, compound
                     {"release_short":
                      "release_full":
                      "dbkeys_added":
-                        {"compounds":
-                         "reactions":
-                         "enzymes":
-                         "pathways":
-                         }
-                    "dbkeys_removed":
                         {"compounds":
                          "reactions":
                          "enzymes":
@@ -117,11 +113,13 @@ class Kegg(object):
     def __init__(self,path):
 
         self.path = path
+        self.lists = dict()
         try:
             version_path = os.path.join(path, "version.json")
             with open(version_path) as f:    
                 version = json.load(f) #[0]
             self.version = version
+            self.lists = self.version["current"]["dbkeys_lists"]
             # os.path.isfile(path+"version.json")
         except:
             self.version = None
@@ -148,6 +146,27 @@ class Kegg(object):
 
         self.__version = version
 
+    @property
+    def lists(self):
+        return self.__lists 
+    
+    @lists.setter 
+    def lists(self,lists):
+
+        ## pseudocode
+
+        if version not {}:
+            set from existing version_json (not from dirs)
+        else:
+            set when downloading 
+
+        when updating:
+            set when downloading 
+        ## set during download
+        ## or
+
+        self.__lists = lists
+
     def download(self,run_pipeline=True,dbs=["pathway","enzyme","reaction","compound"]):
 
         for dirpath, dirnames, files in os.walk(self.path):
@@ -162,7 +181,8 @@ class Kegg(object):
         if run_pipeline:
 
             self._detail_reactions()
-            self._linkdbs()
+            self._download_links()
+            self._write_version()
             self._write_master()
 
     def _download_lists(self,dbs=["pathway","enzyme","reaction","compound"]):
@@ -182,6 +202,9 @@ class Kegg(object):
             id_name_list = [s.split('\t') for s in raw_list.read().splitlines()]
             for i in id_name_list:
                 id_name_dict[i[0]] = i[1]
+
+            ## Add to self.lists
+            self.lists[db] = set(id_name_dict.keys())
 
             ## Write json of all entry ids and names
             list_path = os.path.join(lists_path, db+".json")
@@ -228,7 +251,7 @@ class Kegg(object):
         Add reaction details in convenient fields for rn jsons.
         """
 
-        reaction_path = os.path.join(self.path,'entries','reaction')
+        reaction_path = os.path.join(self.path,'entries','reaction','')
         
         for path in glob.glob(reaction_path+"*.json"):
             
@@ -346,11 +369,11 @@ class Kegg(object):
                 
                 json.dump(data, f, indent=2)
     
-    def _linkdbs(self,dbs=["pathway","enzyme","reaction","compound"]):
+    def _download_links(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
         Returns jsons of mappings between each db (default: map (pathway), ec, rn, cpd).
         """
-        
+
         for sourcedb, targetdb in itertools.permutations(dbs,2):
 
             links_raw = REST.kegg_link(targetdb, sourcedb)
@@ -372,8 +395,154 @@ class Kegg(object):
             with open(link_path, 'w') as f:   
                 json.dump(d, f, indent=2)
 
+    def _write_version(self,dbs=["pathway","enzyme","reaction","compound"]):
+        """
+        {"version": 
+            {"original":
+                {"release_short":
+                "release_full":
+                "dbkeys_list":
+                    {"compounds":
+                        "reactions":
+                        "enzymes":
+                        "pathways":
+                        }
+                "dbkeys_count":
+                    {"compounds":#ncompounds
+                        "reactions":#nreactions
+                        "enzymes":#nenzymes
+                        "pathways:"#npathways
+                        }
+                }
+            "updates":
+                [{"release_short":
+                "release_full":
+                "dbkeys_count":
+                    {"compounds":#ncompounds
+                        "reactions":#nreactions
+                        "enzymes":#nenzymes
+                        "pathways:"#npathways
+                        }
+                "dbkeys_added":
+                    {"compounds":
+                        "reactions":
+                        "enzymes":
+                        "pathways":
+                        }
+                "dbkeys_removed":
+                    {"compounds":
+                        "reactions":
+                        "enzymes":
+                        "pathways":
+                        }
+                },
+                {"release_short":
+                "release_full":
+                "dbkeys_count":
+                    {"compounds":#ncompounds
+                        "reactions":#nreactions
+                        "enzymes":#nenzymes
+                        "pathways:"#npathways
+                        }
+                "dbkeys_added":
+                    {"compounds":
+                        "reactions":
+                        "enzymes":
+                        "pathways":
+                        }
+                "dbkeys_removed":
+                    {"compounds":
+                        "reactions":
+                        "enzymes":
+                        "pathways":
+                        }
+                },...]
+            "current":
+                {"release_short":
+                "release_full":
+                "dbkeys_count":
+                    {"compounds":#ncompounds
+                        "reactions":#nreactions
+                        "enzymes":#nenzymes
+                        "pathways:"#npathways
+                        }
+                "dbkeys_list":
+                    {"compounds":#ncompounds
+                        "reactions":#nreactions
+                        "enzymes":#nenzymes
+                        "pathways:"#npathways
+                        }
+                }
+            }
+        }
+        """
+        _version = {}
+
+        ## Get info from http://rest.kegg.jp/info/kegg
+        raw_list = REST.kegg_info("kegg")
+        split = raw_list.read().splitlines()
+        _version["dbkeys_count"] = dict()
+        for line in split:
+            split_line = line.split()
+            overlap = set(dbs) & set(split_line)
+            if "Release" in split_line:
+                _version["release_short"] = float(split_line[2].split("/")[0][:-1])
+                release_long = [split_line[2][:-1]]+split_line[3:]
+                _version["release_long"] = ("_").join(release_long)
+            elif overlap:
+                _version["dbkeys_count"][split_line[0]] = int(split_line[1].replace(',' , ''))
+
+        ## Get dbkeys downloaded in current lists directory
+        for db in dbs:
+            lists_path = os.path.join(self.path, "lists", db, '')
+            db_entries = glob.glob(lists_path+"*.json")
+            _version["dbkeys_list"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
+        
     def _write_master(self):
 
+        ##!! Need to reformat this to be as we planned
+
+        big_dict = dict()
+        big_dict["left"] = dict()
+        big_dict["right"] = dict()
+
+        indir = os.path.join(self.path, 'reaction','') ## Should be the detailed reactions
+        for path in glob.glob(indir+"*.json"):
+
+            with open(path) as data_file:    
+                data = json.load(data_file)[0]
+                
+                if data["glycans"] == False:
+
+                    big_dict["left"][data["entry_id"]] = data["left"]
+                    big_dict["right"][data["entry_id"]] = data["right"]
+
+        outpath = os.path.join(self.path,'reaction_edges.json')
+        with open(outpath, 'w') as f:
+                
+            json.dump(big_dict, f, indent=2)
+
+    def update(self):
+        raise Warning("Updating will NOT reflect changes made to invdividual \
+                        entries' fields, and it will NOT remove entries which \
+                        have been removed from KEGG. It will only add entries \
+                        which have been added.\n\n To guarantee the most \
+                        up-to-date KEGG database, a full re-download is \
+                        necessary.")
+
+        self._check_if_release_changed()
+        if True:
+            release_change = True
+        self._check_if_dbkeys_count_changed()
+        if True:
+            count_change = True
+        self._check_if_dbkeys_list_changed()
+        if True:
+            list_change = True
+
+        if release_change and count_change and list_change:
+            update as normal
+        if release_change
         pass
 
 
