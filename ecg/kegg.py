@@ -119,7 +119,7 @@ class Kegg(object):
             with open(version_path) as f:    
                 version = json.load(f) #[0]
             self.version = version
-            self.lists = self.version["current"]["dbkeys_lists"]
+            self.lists = self.version["current"]["lists"]
             # os.path.isfile(path+"version.json")
         except:
             self.version = None
@@ -152,19 +152,6 @@ class Kegg(object):
     
     @lists.setter 
     def lists(self,lists):
-
-        ## pseudocode
-
-        if version not {}:
-            set from existing version_json (not from dirs)
-        else:
-            set when downloading 
-
-        when updating:
-            set when downloading 
-        ## set during download
-        ## or
-
         self.__lists = lists
 
     def download(self,run_pipeline=True,dbs=["pathway","enzyme","reaction","compound"]):
@@ -182,7 +169,7 @@ class Kegg(object):
 
             self._detail_reactions()
             self._download_links()
-            self._write_version()
+            self._get_current_version()
             self._write_master()
 
     def _download_lists(self,dbs=["pathway","enzyme","reaction","compound"]):
@@ -395,48 +382,31 @@ class Kegg(object):
             with open(link_path, 'w') as f:   
                 json.dump(d, f, indent=2)
 
-    def _write_version(self,dbs=["pathway","enzyme","reaction","compound"]):
+    def _get_current_version(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
+        Retrieves version info from KEGG
+        Stores db lists onto Kegg object
+        Writes version.json
+
         {"version": 
             {"original":
                 {"release_short":
                 "release_full":
+                "dbkeys_count":
+                    {"compounds":#ncompounds
+                        "reactions":#nreactions
+                        "enzymes":#nenzymes
+                        "pathways:"#npathways
+                        }
                 "dbkeys_list":
                     {"compounds":
                         "reactions":
                         "enzymes":
                         "pathways":
                         }
-                "dbkeys_count":
-                    {"compounds":#ncompounds
-                        "reactions":#nreactions
-                        "enzymes":#nenzymes
-                        "pathways:"#npathways
-                        }
                 }
             "updates":
                 [{"release_short":
-                "release_full":
-                "dbkeys_count":
-                    {"compounds":#ncompounds
-                        "reactions":#nreactions
-                        "enzymes":#nenzymes
-                        "pathways:"#npathways
-                        }
-                "dbkeys_added":
-                    {"compounds":
-                        "reactions":
-                        "enzymes":
-                        "pathways":
-                        }
-                "dbkeys_removed":
-                    {"compounds":
-                        "reactions":
-                        "enzymes":
-                        "pathways":
-                        }
-                },
-                {"release_short":
                 "release_full":
                 "dbkeys_count":
                     {"compounds":#ncompounds
@@ -476,51 +446,90 @@ class Kegg(object):
             }
         }
         """
-        _version = {}
+        current = {}
 
         ## Get info from http://rest.kegg.jp/info/kegg
+        ## Note that this does not necessarily match what is returned from lists
         raw_list = REST.kegg_info("kegg")
         split = raw_list.read().splitlines()
-        _version["dbkeys_count"] = dict()
+        current["info_count"] = dict()
         for line in split:
             split_line = line.split()
             overlap = set(dbs) & set(split_line)
             if "Release" in split_line:
-                _version["release_short"] = float(split_line[2].split("/")[0][:-1])
+                current["release_short"] = float(split_line[2].split("/")[0][:-1])
                 release_long = [split_line[2][:-1]]+split_line[3:]
-                _version["release_long"] = ("_").join(release_long)
+                current["release_long"] = ("_").join(release_long)
             elif overlap:
-                _version["dbkeys_count"][split_line[0]] = int(split_line[1].replace(',' , ''))
+                current["count_info"][split_line[0]] = int(split_line[1].replace(',' , ''))
+
+        ## Lists of compounds, reactions, etc. and their counts (calculated from these lists)
+        current["lists"] = self.lists
+        counts = dict()
+        for db in self.lists:
+            counts[db] = len(self.lists[db])
+        current["count_lists"] = counts
+
+        ## Assign version info to object
+        self.version = {"current":current}
+
+        ## Write json
+        version_path = os.path.join(self.path, "version.json")
+        with open(version_path, 'w') as f:   
+            json.dump(current, f, indent=2)
 
         ## Get dbkeys downloaded in current lists directory
-        for db in dbs:
-            lists_path = os.path.join(self.path, "lists", db, '')
-            db_entries = glob.glob(lists_path+"*.json")
-            _version["dbkeys_list"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
+        # for db in dbs:
+        #     lists_path = os.path.join(self.path, "lists", db, '')
+        #     db_entries = glob.glob(lists_path+"*.json")
+        #     _version["dbkeys_list"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
         
-    def _write_master(self):
+    def _write_master(self,metadata=True):
+        """
+        Write reaction edges + version info into master.json
 
-        ##!! Need to reformat this to be as we planned
+        :param metadata: metadata fields from "RXXXXX.json"
 
-        big_dict = dict()
-        big_dict["left"] = dict()
-        big_dict["right"] = dict()
+        "reactions":
+            {"R1":
+                {"left":..., 
+                "right":..., 
+                "metadata":...},
+            "R2":
+                {"left":..., 
+                "right":..., 
+                "metadata":...},
+            ...}
+        """
 
+        reactions = dict()
         indir = os.path.join(self.path, 'reaction','') ## Should be the detailed reactions
         for path in glob.glob(indir+"*.json"):
 
-            with open(path) as data_file:    
-                data = json.load(data_file)[0]
+            with open(path) as f:    
+                data = json.load(f)[0]
                 
                 if data["glycans"] == False:
 
-                    big_dict["left"][data["entry_id"]] = data["left"]
-                    big_dict["right"][data["entry_id"]] = data["right"]
+                    ## Main data
+                    rID = data.pop("entry_id")
+                    reactions[rID] = dict()
+                    reactions[rID]["left"] = data.pop("left")
+                    reactions[rID]["right"] = data.pop("right")
 
-        outpath = os.path.join(self.path,'reaction_edges.json')
-        with open(outpath, 'w') as f:
-                
-            json.dump(big_dict, f, indent=2)
+                    ## Metadata
+                    if metadata:
+                        reactions["metadata"] = data
+                    else:
+                        reactions["metadata"] = {}
+
+        master = dict()
+        master["version"] = self.version 
+        master["reactions"] = reactions
+
+        master_path = os.path.join(self.path,'master.json')
+        with open(master_path, 'w') as f:
+            json.dump(master, f, indent=2)
 
     def update(self):
         raise Warning("Updating will NOT reflect changes made to invdividual \
@@ -530,19 +539,19 @@ class Kegg(object):
                         up-to-date KEGG database, a full re-download is \
                         necessary.")
 
-        self._check_if_release_changed()
-        if True:
-            release_change = True
-        self._check_if_dbkeys_count_changed()
-        if True:
-            count_change = True
-        self._check_if_dbkeys_list_changed()
-        if True:
-            list_change = True
+        # self._check_if_release_changed()
+        # if True:
+        #     release_change = True
+        # self._check_if_dbkeys_count_changed()
+        # if True:
+        #     count_change = True
+        # self._check_if_dbkeys_list_changed()
+        # if True:
+        #     list_change = True
 
-        if release_change and count_change and list_change:
-            update as normal
-        if release_change
+        # if release_change and count_change and list_change:
+        #     update as normal
+        # if release_change
         pass
 
 
