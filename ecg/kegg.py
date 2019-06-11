@@ -115,6 +115,7 @@ class Kegg(object):
 
         self.path = path
         self.lists = dict()
+        ## If path not empty, try to load relevent properties
         try:
             version_path = os.path.join(path, "version.json")
             with open(version_path) as f:    
@@ -471,9 +472,12 @@ class Kegg(object):
         ## Lists of .... from the directories
         current["lists"] = dict()
         for db in dbs:
-            lists_path = os.path.join(self.path, "lists", db, '')
-            db_entries = glob.glob(lists_path+"*.json")
-            current["lists"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
+            lists_path = os.path.join(self.path, "lists", db+".json")
+            with open(lists_path) as f:    
+                data = json.load(f)[0]
+            current["lists"][db] = data
+            # db_entries = glob.glob(lists_path+"*.json")
+            # current["lists"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
         self.lists = current["lists"]
 
         ## Counts based on the lists
