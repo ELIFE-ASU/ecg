@@ -513,9 +513,9 @@ class Kegg(object):
         """
 
         reactions = dict()
-        indir = os.path.join(self.path, 'reaction','') ## Should be the detailed reactions
+        indir = os.path.join(self.path, "entries", "reaction",'') ## Should be the detailed reactions
         for path in glob.glob(indir+"*.json"):
-
+            
             with open(path) as f:    
                 data = json.load(f)[0]
                 
@@ -529,9 +529,9 @@ class Kegg(object):
 
                     ## Metadata
                     if metadata:
-                        reactions["metadata"] = data
+                        reactions[rID]["metadata"] = data
                     else:
-                        reactions["metadata"] = {}
+                        reactions[rID]["metadata"] = {}
 
         master = dict()
         master["version"] = self.version 
