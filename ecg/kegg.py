@@ -114,19 +114,20 @@ class Kegg(object):
     def __init__(self,path):
 
         self.path = path
-        self.lists = dict()
         ## If path not empty, try to load relevent properties
         try:
+            ## Set version
             version_path = os.path.join(path, "version.json")
             with open(version_path) as f:    
                 version = json.load(f) #[0]
             self.version = version
+
+            ## Set lists
             self.lists = self.version["current"]["lists"]
             # os.path.isfile(path+"version.json")
         except:
             self.version = None
-
-        # self.dbkeys = None 
+            self.lists = None
 
     @property
     def path(self):
@@ -181,22 +182,25 @@ class Kegg(object):
         if not os.path.exists(lists_path):
             os.makedirs(lists_path)
 
-        for db in dbs:
+
+        self.lists = self.__retrieve_lists(dbs)
+        # for db in dbs:
         
-            ## Retreive all entry ids and names
-            id_name_dict = dict()
-            raw_list = REST.kegg_list(db)
-            id_name_list = [s.split('\t') for s in raw_list.read().splitlines()]
-            for i in id_name_list:
-                id_name_dict[i[0]] = i[1]
+        #     ## Retreive all entry ids and names
+        #     id_name_dict = dict()
+        #     raw_list = REST.kegg_list(db)
+        #     id_name_list = [s.split('\t') for s in raw_list.read().splitlines()]
+        #     for i in id_name_list:
+        #         id_name_dict[i[0]] = i[1]
 
-            ## Add to self.lists
-            self.lists[db] = set(id_name_dict.keys())
+        #     ## Add to self.lists
+        #     self.lists[db] = set(id_name_dict.keys())
 
-            ## Write json of all entry ids and names
+        ## Write json of all entry ids and names
+        for db in dbs:
             list_path = os.path.join(lists_path, db+".json")
             with open(list_path, 'w') as f:   
-                json.dump(id_name_dict, f, indent=2)
+                json.dump(self.lists[db], f, indent=2)
 
     def _download_entries(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
@@ -449,22 +453,23 @@ class Kegg(object):
             }
         }
         """
-        current = {}
+        current = self.__retrieve_info(dbs)
+        # current = {}
 
-        ## Get info from http://rest.kegg.jp/info/kegg
-        ## Note that this does not necessarily match what is returned from lists
-        raw_list = REST.kegg_info("kegg")
-        split = raw_list.read().splitlines()
-        current["count_info"] = dict()
-        for line in split:
-            split_line = line.split()
-            overlap = set(dbs) & set(split_line)
-            if "Release" in split_line:
-                current["release_short"] = float(split_line[2].split("/")[0][:-1])
-                release_long = [split_line[2][:-1]]+split_line[3:]
-                current["release_long"] = ("_").join(release_long)
-            elif overlap:
-                current["count_info"][split_line[0]] = int(split_line[1].replace(',' , ''))
+        # ## Get info from http://rest.kegg.jp/info/kegg
+        # ## Note that this does not necessarily match what is returned from lists
+        # raw_list = REST.kegg_info("kegg")
+        # split = raw_list.read().splitlines()
+        # current["count_info"] = dict()
+        # for line in split:
+        #     split_line = line.split()
+        #     overlap = set(dbs) & set(split_line)
+        #     if "Release" in split_line:
+        #         current["release_short"] = float(split_line[2].split("/")[0][:-1])
+        #         release_long = [split_line[2][:-1]]+split_line[3:]
+        #         current["release_long"] = ("_").join(release_long)
+        #     elif overlap:
+        #         current["count_info"][split_line[0]] = int(split_line[1].replace(',' , ''))
 
         ## Lists of compounds, reactions, etc. and their counts (calculated from these lists)
         # current["lists"] = self.lists
@@ -487,7 +492,7 @@ class Kegg(object):
         current["count_lists"] = counts
 
         ## Assign version info to object
-        self.version = {"current":current}
+        self.version = {"original":current,"updates":[],"current":current}
 
         ## Write json
         version_path = os.path.join(self.path, "version.json")
@@ -549,6 +554,68 @@ class Kegg(object):
                         up-to-date KEGG database, a full re-download is \
                         necessary.")
 
+        # self.__check_short_release_differences()
+
+        # self.__check_list_differences()
+
+        release_change = False
+        list_change = False
+        dbs = list(self.lists.keys())
+
+        ## Check short_release differences
+        old_release_short = self.version["current"]["release_short"]
+        new_release = self.__retrieve_info(dbs)
+        new_release_short = new_release["release_short"]
+
+        if old_release_short != new_release_short:
+
+            raise Warning("Release change")
+            release_change = True
+
+        ## Check list differences
+        new_release["added"] = dict()
+        new_release["removed"] = dict()
+
+        old_lists = self.lists
+        new_lists = self.__retrieve_lists(dbs)
+
+        for db in dbs:
+            old_keys = set(old_lists[db].keys())
+            new_keys = set(new_lists[db].keys())
+            if old_keys != new_keys:
+                list_change = True
+                raise Warning("List content change")
+                new_release["added"][db] = list(new_keys - old_keys)
+                new_release["removed"][db] = list(old_keys - new_keys)
+        
+        ## Update counts based on the lists
+        counts = dict()
+        for db in new_lists:
+            counts[db] = len(new_lists[db])
+        new_release["count_lists"] = counts
+        
+        ## Execute updating
+        if release_change or list_change:
+
+            ## Update version["updates"]
+            self.version["updates"].append(new_release)
+            ## Update version["current"]
+
+            ## Rewrite version.json
+
+            ## Rewrite list jsons (fast)
+
+            ## Rewrite link jsons (fast)
+
+            ## Add to entries jsons
+
+            ## Rewrite master json 
+
+        else:
+            raise Warning("No updates available.")
+
+        # self.__full_update() 
+
         # self._check_if_release_changed()
         # if True:
         #     release_change = True
@@ -562,7 +629,67 @@ class Kegg(object):
         # if release_change and count_change and list_change:
         #     update as normal
         # if release_change
-        pass
+
+    def __check_short_release_differences(self):
+
+        old_release_short = self.version["current"]["release_short"]
+        dbs = list(self.lists.keys())
+        new_release = self.__retrieve_info(dbs)
+        new_release_short = new_release["release_short"]
+        if old_release_short != new_release_short:
+
+            self.version["updates"].append(new_release)
+            return True
+
+        else:
+            return False
+
+    def __check_list_differences(self):
+
+        old_lists = self.lists
+        dbs = list(self.lists.keys())
+        new_lists = self.__retrieve_lists(dbs)
+        for db in dbs:
+            old_keys = set(old_lists[db].keys())
+            new_keys = set(new_lists[db].keys())
+            if old_keys != new_keys:
+                added = new_keys - old_keys
+                removed = old_keys - new_keys
 
 
 
+    def __retrieve_info(self,dbs):
+
+        current = dict()
+        ## Get info from http://rest.kegg.jp/info/kegg
+        ## Note that this does not necessarily match what is returned from lists
+        raw_list = REST.kegg_info("kegg")
+        split = raw_list.read().splitlines()
+        current["count_info"] = dict()
+        for line in split:
+            split_line = line.split()
+            overlap = set(dbs) & set(split_line)
+            if "Release" in split_line:
+                current["release_short"] = float(split_line[2].split("/")[0][:-1])
+                release_long = [split_line[2][:-1]]+split_line[3:]
+                current["release_long"] = ("_").join(release_long)
+            elif overlap:
+                current["count_info"][split_line[0]] = int(split_line[1].replace(',' , ''))
+
+        return current
+
+    def __retrieve_lists(self,dbs):
+        
+        lists = dict()
+        for db in dbs:
+        
+            ## Retreive all entry ids and names
+            id_name_dict = dict()
+            raw_list = REST.kegg_list(db)
+            id_name_list = [s.split('\t') for s in raw_list.read().splitlines()]
+            for i in id_name_list:
+                id_name_dict[i[0]] = i[1]
+
+            lists[db] = set(id_name_dict.keys())
+            
+        return lists
