@@ -475,7 +475,7 @@ class Kegg(object):
             lists_path = os.path.join(self.path, "lists", db+".json")
             with open(lists_path) as f:    
                 data = json.load(f)#[0]
-            current["lists"][db] = data.keys()
+            current["lists"][db] = list(data.keys())
             # db_entries = glob.glob(lists_path+"*.json")
             # current["lists"][db] = [os.path.splitext(os.path.basename(entry))[0] for entry in db_entries]
         self.lists = current["lists"]
