@@ -409,12 +409,12 @@ class Kegg(object):
             json.dump(master, f, indent=2)
 
     def update(self,metadata=True):
-        warnings.warn("Updating will NOT reflect changes made to invdividual \
-                        entries' fields, and it will NOT remove entries which \
-                        have been removed from KEGG. It will only add entries \
-                        which have been added.\n\n To guarantee the most \
-                        up-to-date KEGG database, a full re-download is \
-                        necessary.")
+        warnings.warn("""Updating will NOT reflect changes made to invdividual
+                        entries' fields, and it will NOT remove entries which
+                        have been removed from KEGG. It will only add entries
+                        which have been added. To guarantee the most
+                        up-to-date KEGG database, a full re-download is
+                        necessary.""")
 
         release_change = False
         list_change = False
@@ -427,7 +427,7 @@ class Kegg(object):
 
         if old_release_short != new_release_short:
 
-            warnings.warn("Release change")
+            print("Release change identified")
             release_change = True
 
         ## Check list differences
@@ -442,7 +442,7 @@ class Kegg(object):
             new_keys = set(new_lists[db])
             if old_keys != new_keys:
                 list_change = True
-                warnings.warn("List content change")
+                print("Database list content change identified")
                 new_release["added"][db] = list(new_keys - old_keys)
                 new_release["removed"][db] = list(old_keys - new_keys)
         
@@ -454,6 +454,7 @@ class Kegg(object):
         
         ## Execute updating
         if release_change or list_change:
+            print("Updating local kegg database...")
 
             ## Update version["updates"]
             self.version["updates"].append(new_release)
@@ -508,8 +509,10 @@ class Kegg(object):
             ## Rewrite master json 
             self._write_master(metadata)
 
+            print("Done.")
+
         else:
-            warnings.warn("No updates available.")
+            print("No release or database list changes identified. No updates available.")
 
     def __check_short_release_differences(self):
 
