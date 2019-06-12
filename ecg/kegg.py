@@ -78,11 +78,13 @@ class Kegg(object):
                 version = json.load(f) #[0]
             self.version = version
 
-            ## Set lists
-            self.lists = self.version["current"]["lists"]
-            # os.path.isfile(path+"version.json")
         except:
             self.version = None
+        
+        try:
+            ## Set lists
+            self.lists = self.version["current"]["lists"]
+        except:
             self.lists = None
 
     @property
@@ -357,7 +359,7 @@ class Kegg(object):
         ## Write json
         version_path = os.path.join(self.path, "version.json")
         with open(version_path, 'w') as f:   
-            json.dump(current, f, indent=2)
+            json.dump(self.version, f, indent=2)
 
     def _write_master(self,metadata=True):
         """
