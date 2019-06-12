@@ -409,12 +409,14 @@ class Kegg(object):
             json.dump(master, f, indent=2)
 
     def update(self,metadata=True):
-        warnings.warn("""Updating will NOT reflect changes made to invdividual
+        warnings.warn("""
+                        Updating will NOT reflect changes made to invdividual
                         entries' fields, and it will NOT remove entries which
                         have been removed from KEGG. It will only add entries
                         which have been added. To guarantee the most
                         up-to-date KEGG database, a full re-download is
-                        necessary.""")
+                        necessary.
+                        """)
 
         release_change = False
         list_change = False
@@ -512,7 +514,7 @@ class Kegg(object):
             print("Done.")
 
         else:
-            print("No release or database list changes identified. No updates available.")
+            print("No release or database list changes identified. \nNo updates available.")
 
     def __check_short_release_differences(self):
 
