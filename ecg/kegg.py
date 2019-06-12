@@ -3,6 +3,7 @@ import re
 import json
 import glob
 import itertools
+import warnings
 from Bio.KEGG import REST, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
@@ -546,17 +547,13 @@ class Kegg(object):
         with open(master_path, 'w') as f:
             json.dump(master, f, indent=2)
 
-    def update(self):
-        raise Warning("Updating will NOT reflect changes made to invdividual \
+    def update(self,metadata=True):
+        warnings.warn("Updating will NOT reflect changes made to invdividual \
                         entries' fields, and it will NOT remove entries which \
                         have been removed from KEGG. It will only add entries \
                         which have been added.\n\n To guarantee the most \
                         up-to-date KEGG database, a full re-download is \
                         necessary.")
-
-        # self.__check_short_release_differences()
-
-        # self.__check_list_differences()
 
         release_change = False
         list_change = False
@@ -569,7 +566,7 @@ class Kegg(object):
 
         if old_release_short != new_release_short:
 
-            raise Warning("Release change")
+            warnings.warn("Release change")
             release_change = True
 
         ## Check list differences
@@ -584,7 +581,7 @@ class Kegg(object):
             new_keys = set(new_lists[db].keys())
             if old_keys != new_keys:
                 list_change = True
-                raise Warning("List content change")
+                warnings.warn("List content change")
                 new_release["added"][db] = list(new_keys - old_keys)
                 new_release["removed"][db] = list(old_keys - new_keys)
         
@@ -592,27 +589,66 @@ class Kegg(object):
         counts = dict()
         for db in new_lists:
             counts[db] = len(new_lists[db])
-        new_release["count_lists"] = counts
+        new_release["count_lists"] = counts 
         
         ## Execute updating
         if release_change or list_change:
 
             ## Update version["updates"]
             self.version["updates"].append(new_release)
+            # Includes the following keys:
+            # added
+            # removed
+            # count_lists
+            # count_info
+            # release_short
+            # release_long
+            
             ## Update version["current"]
+            # Adds the key for `lists`
+            self.lists = new_lists
+            new_release["lists"] = self.lists # this won't include entries which
+                                              # have been removed but are still 
+                                              # in the entries dir
+            self.version["current"] = new_release
 
             ## Rewrite version.json
+            version_path = os.path.join(self.path, "version.json")
+            with open(version_path, 'w') as f:   
+                json.dump(new_release, f, indent=2)
 
             ## Rewrite list jsons (fast)
+            lists_path = os.path.join(self.path, "lists")
+            for db in dbs:
+                list_path = os.path.join(lists_path, db+".json")
+                with open(list_path, 'w') as f:   
+                    json.dump(self.lists[db], f, indent=2)
 
             ## Rewrite link jsons (fast)
+            self._download_links(dbs)
 
-            ## Add to entries jsons
+            ## Add to entries jsons (does not remove `removed` entries)
+            for db in new_release["added"]:
+                entries_path = os.path.join(self.path,"entries",db)
+                for i, entry in enumerate(tqdm(new_release["added"][db])):
+
+                    entry_id = entry.split(":")[1]
+                    entry_fname = entry_id+".json"
+                    entry_path = os.path.join(entries_path, entry_fname)
+
+                    while entry_fname not in os.listdir(entries_path):
+                        try:
+                            handle = TogoWS.entry(db, entry_id, format="json")
+                            with open(entry_path, 'a') as f:
+                                f.write(handle.read())
+                        except:
+                            pass
 
             ## Rewrite master json 
+            self._write_master(metadata)
 
         else:
-            raise Warning("No updates available.")
+            warnings.warn("No updates available.")
 
         # self.__full_update() 
 
