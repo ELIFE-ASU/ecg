@@ -438,8 +438,8 @@ class Kegg(object):
         new_lists = self.__retrieve_lists(dbs)
 
         for db in dbs:
-            old_keys = set(old_lists[db].keys())
-            new_keys = set(new_lists[db].keys())
+            old_keys = set(old_lists[db])
+            new_keys = set(new_lists[db])
             if old_keys != new_keys:
                 list_change = True
                 warnings.warn("List content change")
