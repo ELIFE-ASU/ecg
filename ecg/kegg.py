@@ -497,7 +497,7 @@ class Kegg(object):
             ## Add to entries jsons (does not remove `removed` entries)
             for db in new_release["added"]:
                 entries_path = os.path.join(self.path,"entries",db)
-                for i, entry in enumerate(tqdm(new_release["added"][db])):
+                for entry in tqdm(new_release["added"][db]):
 
                     entry_id = entry.split(":")[1]
                     entry_fname = entry_id+".json"
@@ -518,34 +518,6 @@ class Kegg(object):
 
         else:
             print("No release or database list changes identified. \nNo updates available.")
-
-    def __check_short_release_differences(self):
-
-        old_release_short = self.version["current"]["release_short"]
-        dbs = list(self.lists.keys())
-        new_release = self.__retrieve_info(dbs)
-        new_release_short = new_release["release_short"]
-        if old_release_short != new_release_short:
-
-            self.version["updates"].append(new_release)
-            return True
-
-        else:
-            return False
-
-    def __check_list_differences(self):
-
-        old_lists = self.lists
-        dbs = list(self.lists.keys())
-        new_lists = self.__retrieve_lists(dbs)
-        for db in dbs:
-            old_keys = set(old_lists[db].keys())
-            new_keys = set(new_lists[db].keys())
-            if old_keys != new_keys:
-                added = new_keys - old_keys
-                removed = old_keys - new_keys
-
-
 
     def __retrieve_info(self,dbs):
 
