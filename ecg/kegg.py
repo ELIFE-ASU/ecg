@@ -4,7 +4,7 @@ import json
 import glob
 import itertools
 import warnings
-from Bio.KEGG import REST, Enzyme, Compound, Map
+from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
 
@@ -39,76 +39,31 @@ Kegg = ecg.Kegg(keggdir) # keggdir is the top level dir
 
 Kegg.download() #defaults to ["pathway","enzyme",""]. should output all necessary files and dirs
 Kegg.update() #same defaults
--> Kegg.update(deep=False) #default, only updates based on list changes
--> Kegg.update(deep=True) #redownloads everything, maintains versioning metadata
-Kegg.detail_reactions() #add detailed information to reactions. need detailed field with true/false.
-Kegg.linkdbs() #create mappings between databases
-Kegg.write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
+Kegg._detail_reactions() #add detailed information to reactions. need detailed field with true/false.
+Kegg._linkdbs() #create mappings between databases
+Kegg._write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
 
-# properties
-Kegg.release_short # returns release of database eg. 90.0
-Kegg.release_full # returns 90.0+/06-06, Jun 19
-Kegg.info  #returns info from http://rest.kegg.jp/info/kegg
-
-# helper methods
-Kegg.__check_if_already_linked
-Kegg.__check_if_download_dir_empty
-Kegg.__check_if_updating_kegg_changes_release
-Kegg.__check_if_updating_kegg_changes_any_dbs #eg the set of reactions, compounds, enzymes, or pathways
-
-
-# in master_json, store metadata on which cpds/enx/rxn/paths were updated in the update
- kegg_rxns = {"version": 
-                {"original":
-                    {"release_short":
-                     "release_full":
-                     "dbkeys_added":
-                        {"compounds":
-                         "reactions":
-                         "enzymes":
-                         "pathways":
-                         }
-                     "dbkeys_count":
-                        {"compounds":#ncompounds
-                         "reactions":#nreactions
-                         "enzymes":#nenzymes
-                         "pathways:"#npathways
-                         }
-                    }
-                 "updates":
-                    [{"release_short":
-                     "release_full":
-                     "info":
-                        {"compounds":#ncompounds
-                         "reactions":#nreactions
-                         "enzymes":#nenzymes
-                         "pathways:"#npathways
-                         }
-                    },
-                    {"release_short":
-                     "release_full":
-                     "info":
-                        {"compounds":#ncompounds
-                         "reactions":#nreactions
-                         "enzymes":#nenzymes
-                         "pathways:"#npathways
-                         }
-                    },...]
-                "current":
-                    {"release_short":
-                     "release_full":
-                     "info":
-                        {"compounds":#ncompounds
-                         "reactions":#nreactions
-                         "enzymes":#nenzymes
-                         "pathways:"#npathways
-                         }
-                    }
-                }
-            "reactions":{}
-            }
-
-## Each above function should check to make sure necessary prereqs are met
+Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
+|- Kegg.version["original"] = dict()
+    |-Kegg.version["original"]["release_short"] = float # returns release of database eg. 90.0
+    |-Kegg.version["original"]["release_long"] = str # returns 90.0+/06-06, Jun 19
+    |-Kegg.version["original"]["count_info"] = dict()
+        |-Kegg.version["original"]["count_info"]["pathway"] = int
+        |-Kegg.version["original"]["count_info"]["compound"] = int
+        |-Kegg.version["original"]["count_info"]["reaction"] = int
+        |-Kegg.version["original"]["count_info"]["enzyme"] = int
+    |-Kegg.version["original"]["count_lists"] = dict()
+        |-Kegg.version["original"]["count_lists"]["pathway"] = int
+        |-Kegg.version["original"]["count_lists"]["compound"] = int
+        |-Kegg.version["original"]["count_lists"]["reaction"] = int
+        |-Kegg.version["original"]["count_lists"]["enzyme"] = int
+    |-Kegg.version["original"]["lists"] = dict()
+        |-Kegg.version["original"]["lists"]["pathway"] = list()
+        |-Kegg.version["original"]["lists"]["compound"] = list()
+        |-Kegg.version["original"]["lists"]["reaction"] = list()
+        |-Kegg.version["original"]["lists"]["enzyme"] = list()
+|- Kegg.version["updates"] = list()
+|- Kegg.version["current"]
 """
 class Kegg(object):
 
@@ -183,19 +138,7 @@ class Kegg(object):
         if not os.path.exists(lists_path):
             os.makedirs(lists_path)
 
-
         self.lists = self.__retrieve_lists(dbs)
-        # for db in dbs:
-        
-        #     ## Retreive all entry ids and names
-        #     id_name_dict = dict()
-        #     raw_list = REST.kegg_list(db)
-        #     id_name_list = [s.split('\t') for s in raw_list.read().splitlines()]
-        #     for i in id_name_list:
-        #         id_name_dict[i[0]] = i[1]
-
-        #     ## Add to self.lists
-        #     self.lists[db] = set(id_name_dict.keys())
 
         ## Write json of all entry ids and names
         for db in dbs:
@@ -222,19 +165,14 @@ class Kegg(object):
                 os.makedirs(entries_path)
 
             ## Grab each entry in list
-            for i, entry in enumerate(tqdm(list_data)):
+            for entry in tqdm(list_data):
                 
                 entry_id = entry.split(":")[1]
                 entry_fname = entry_id+".json"
                 entry_path = os.path.join(entries_path, entry_fname)
 
-                # print "Saving (verifying) %s entry %s of %s (%s)..."%(db,i+1,len(list_data),entry_id)
-
                 while entry_fname not in os.listdir(entries_path):
                     try:
-                    # print(db,entry_id)
-                    # print(entry_fname)
-                    # print(entry_path)
                         handle = TogoWS.entry(db, entry_id, format="json")
                         with open(entry_path, 'a') as f:
                             f.write(handle.read())
@@ -261,8 +199,6 @@ class Kegg(object):
 
                         compounds = []
                         stoichiometries = []
-
-                        ## !!! Need to optimize the code here
 
                         ## match (n+1) C00001, (m-1) C00001 or similar
                         matches = re.findall(r'(\(\S*\) C\d+)',side)
@@ -395,85 +331,8 @@ class Kegg(object):
         Retrieves version info from KEGG
         Stores db lists onto Kegg object
         Writes version.json
-
-        {"version": 
-            {"original":
-                {"release_short":
-                "release_full":
-                "dbkeys_count":
-                    {"compounds":#ncompounds
-                        "reactions":#nreactions
-                        "enzymes":#nenzymes
-                        "pathways:"#npathways
-                        }
-                "dbkeys_list":
-                    {"compounds":
-                        "reactions":
-                        "enzymes":
-                        "pathways":
-                        }
-                }
-            "updates":
-                [{"release_short":
-                "release_full":
-                "dbkeys_count":
-                    {"compounds":#ncompounds
-                        "reactions":#nreactions
-                        "enzymes":#nenzymes
-                        "pathways:"#npathways
-                        }
-                "dbkeys_added":
-                    {"compounds":
-                        "reactions":
-                        "enzymes":
-                        "pathways":
-                        }
-                "dbkeys_removed":
-                    {"compounds":
-                        "reactions":
-                        "enzymes":
-                        "pathways":
-                        }
-                },...]
-            "current":
-                {"release_short":
-                "release_full":
-                "dbkeys_count":
-                    {"compounds":#ncompounds
-                        "reactions":#nreactions
-                        "enzymes":#nenzymes
-                        "pathways:"#npathways
-                        }
-                "dbkeys_list":
-                    {"compounds":#ncompounds
-                        "reactions":#nreactions
-                        "enzymes":#nenzymes
-                        "pathways:"#npathways
-                        }
-                }
-            }
-        }
         """
         current = self.__retrieve_info(dbs)
-        # current = {}
-
-        # ## Get info from http://rest.kegg.jp/info/kegg
-        # ## Note that this does not necessarily match what is returned from lists
-        # raw_list = REST.kegg_info("kegg")
-        # split = raw_list.read().splitlines()
-        # current["count_info"] = dict()
-        # for line in split:
-        #     split_line = line.split()
-        #     overlap = set(dbs) & set(split_line)
-        #     if "Release" in split_line:
-        #         current["release_short"] = float(split_line[2].split("/")[0][:-1])
-        #         release_long = [split_line[2][:-1]]+split_line[3:]
-        #         current["release_long"] = ("_").join(release_long)
-        #     elif overlap:
-        #         current["count_info"][split_line[0]] = int(split_line[1].replace(',' , ''))
-
-        ## Lists of compounds, reactions, etc. and their counts (calculated from these lists)
-        # current["lists"] = self.lists
 
         ## Lists of .... from the directories
         current["lists"] = dict()
@@ -649,22 +508,6 @@ class Kegg(object):
 
         else:
             warnings.warn("No updates available.")
-
-        # self.__full_update() 
-
-        # self._check_if_release_changed()
-        # if True:
-        #     release_change = True
-        # self._check_if_dbkeys_count_changed()
-        # if True:
-        #     count_change = True
-        # self._check_if_dbkeys_list_changed()
-        # if True:
-        #     list_change = True
-
-        # if release_change and count_change and list_change:
-        #     update as normal
-        # if release_change
 
     def __check_short_release_differences(self):
 
