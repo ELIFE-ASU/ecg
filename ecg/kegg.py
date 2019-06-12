@@ -476,6 +476,9 @@ class Kegg(object):
                                               # in the entries dir
             self.version["current"] = new_release
 
+            print(type(new_release))
+            print(new_release)
+
             ## Rewrite version.json
             version_path = os.path.join(self.path, "version.json")
             with open(version_path, 'w') as f:   
@@ -576,6 +579,6 @@ class Kegg(object):
             for i in id_name_list:
                 id_name_dict[i[0]] = i[1]
 
-            lists[db] = set(id_name_dict.keys())
+            lists[db] = list(id_name_dict.keys())
             
         return lists
