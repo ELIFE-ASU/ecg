@@ -116,7 +116,7 @@ class Kegg(object):
 
     def download(self,run_pipeline=True,dbs=["pathway","enzyme","reaction","compound"]):
 
-        for dirpath, dirnames, files in os.walk(self.path):
+        for _dirpath, _dirnames, files in os.walk(self.path):
             if files:
                 raise ValueError("Directory must be empty to initiate a fresh KEGG download.\
                               Looking to update KEGG? Try `Kegg.update()` instead.")
