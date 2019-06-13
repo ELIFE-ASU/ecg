@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import copy
 import glob
 import itertools
 import warnings
@@ -459,7 +460,7 @@ class Kegg(object):
             print("Updating local kegg database...")
 
             ## Update version["updates"]
-            self.version["updates"].append(new_release)
+            self.version["updates"].append(copy.copy(new_release)) #prevents lists from being written
             # Includes the following keys:
             # added
             # removed
@@ -476,13 +477,13 @@ class Kegg(object):
                                               # in the entries dir
             self.version["current"] = new_release
 
-            print(type(new_release))
-            print(new_release)
+            # print(type(new_release))
+            # print(new_release)
 
             ## Rewrite version.json
             version_path = os.path.join(self.path, "version.json")
             with open(version_path, 'w') as f:   
-                json.dump(new_release, f, indent=2)
+                json.dump(self.version, f, indent=2)
 
             ## Rewrite list jsons (fast)
             lists_path = os.path.join(self.path, "lists")
