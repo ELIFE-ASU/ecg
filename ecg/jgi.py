@@ -1,22 +1,62 @@
-
-## jgi_metagenome_scraping
-
 from selenium import webdriver
 import time
 import os
 import re
 import json
-from bs4 import BeautifulSoup        
+from bs4 import BeautifulSoup   
 
-def activate_driver():
-    """
-    Activate chrome driver used to automate webpage navigation (see: https://sites.google.com/a/chromium.org/chromedriver/)
-    The chrome driver .exec file must be in the home directory
+class Jgi(object):
 
-    returns: driver [object]
-    """
-    homedir = os.path.expanduser('~')
-    return webdriver.Chrome(homedir+'/chromedriver')
+    def __init__(self,chromedriver_path=None, homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
+
+        self.homepage_url = homepage_url
+
+        if not chromedriver_path:
+            self.driver = webdriver.Chrome()
+
+        else:
+            self.driver = webdriver.Chrome(chromedriver_path)
+
+    @property
+    def driver(self):
+        """
+        webdriver.Chrome(os.path.expanduser('~')+'/chromedriver')
+        """
+        return self.__driver
+
+    @driver.setter
+    def driver(self,driver):
+        self.__driver = driver
+
+    @property
+    def homepage_url(self):
+        return self.__homepage_url
+
+    @homepage_url.setter
+    def homepage_url(self,homepage_url):
+        self.__homepage_url = homepage_url
+
+    
+
+
+## jgi_metagenome_scraping
+
+# from selenium import webdriver
+# import time
+# import os
+# import re
+# import json
+# from bs4 import BeautifulSoup        
+
+# def activate_driver():
+#     """
+#     Activate chrome driver used to automate webpage navigation (see: https://sites.google.com/a/chromium.org/chromedriver/)
+#     The chrome driver .exec file must be in the home directory
+
+#     returns: driver [object]
+#     """
+#     homedir = os.path.expanduser('~')
+#     return webdriver.Chrome(homedir+'/chromedriver')
 
 def get_ecosystemclass_url_from_jgi_img_homepage(driver,homepage_url,ecosystemClass,database='jgi'):
     """
