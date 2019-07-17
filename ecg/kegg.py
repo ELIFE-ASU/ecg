@@ -582,16 +582,15 @@ class Kegg(object):
             
         return lists
 
-def printdocopt(arguments):
-    print(arguments)
+def __check_cli_input_types(arguments):
+    """
+    Check docopt input types.
+    
+    Each docopt flag can only take one arg
+    to download more than one database, you need one flag per db
+    ex. `python kegg.py mydir download --db reaction --db compound`
+    """
 
-if __name__ == '__main__':
-    arguments = docopt(__doc__, version='kegg 1.0')
-
-    ## Check docopt input types
-    ## each docopt flag can only take one arg
-    ## to download more than one database, you need one flag per db
-    ## ex. `python kegg.py mydir download --db reaction --db compound`
     dbs = arguments['--db']
     if not isinstance(dbs,list):
         raise TypeError("`db` must be a list")
@@ -601,12 +600,29 @@ if __name__ == '__main__':
     
     run_pipeline = literal_eval((arguments['--run_pipeline']))
     if not isinstance(run_pipeline,bool):
-        raise TypeError("`run_pipeline` must be a boolean")
+        raise TypeError("`run_pipeline` must be a boolean (True or False)")
     
     metadata = literal_eval((arguments['--metadata']))
     if not isinstance(metadata,bool):
-        raise TypeError("`metadata` must be a boolean")
-    
-    print(arguments)
-    # print(arguments["--databases"])
-    # printdocopt(arguments)
+        raise TypeError("`metadata` must be a boolean (True or False)")
+
+def __execute_cli(arguments):
+    """
+    Call appropriate methods based on command line interface input.
+    """
+    ## Convert to True/False bool types
+    run_pipeline = literal_eval((arguments['--run_pipeline']))
+    metadata = literal_eval((arguments['--metadata']))
+
+    if arguments['download'] == True:
+        Kegg = Kegg(arguments['PATH'])
+        Kegg.download(run_pipeline=run_pipeline,dbs=arguments['--db'])
+
+    if arguments['update'] == True:
+        Kegg = Kegg(arguments['PATH'])
+        Kegg.update(metadata=metadata)
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='kegg 1.0')
+    __check_cli_input_types(arguments)
+    __execute_cli(arguments)
