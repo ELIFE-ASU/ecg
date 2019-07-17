@@ -615,12 +615,12 @@ def __execute_cli(arguments):
     metadata = literal_eval((arguments['--metadata']))
 
     if arguments['download'] == True:
-        Kegg = Kegg(arguments['PATH'])
-        Kegg.download(run_pipeline=run_pipeline,dbs=arguments['--db'])
+        K = Kegg(arguments['PATH'])
+        K.download(run_pipeline=run_pipeline,dbs=arguments['--db'])
 
     if arguments['update'] == True:
-        Kegg = Kegg(arguments['PATH'])
-        Kegg.update(metadata=metadata)
+        K = Kegg(arguments['PATH'])
+        K.update(metadata=metadata)
 
 if __name__ == '__main__':
     arguments = docopt(__doc__, version='kegg 1.0')
