@@ -1,15 +1,3 @@
-import os
-import re
-import json
-import copy
-import glob
-import itertools
-import warnings
-import docopt
-from Bio.KEGG import REST #, Enzyme, Compound, Map
-import Bio.TogoWS as TogoWS
-from tqdm import tqdm
-
 ## References: 
 ## https://virantha.com/2016/06/23/elegant-command-line-parsing-in-python/
 ## https://github.com/docopt/docopt
@@ -30,6 +18,20 @@ Options:
   --databases=<dbs>     Databases to download [default: ["pathway","enzyme","reaction","compound"]] 
   --metadata=<md>   Add metadata fields from "RXXXXX.json" into master.json [default: True]
 """
+
+import os
+import re
+import json
+import copy
+import glob
+import itertools
+import warnings
+from docopt import docopt
+from Bio.KEGG import REST #, Enzyme, Compound, Map
+import Bio.TogoWS as TogoWS
+from tqdm import tqdm
+
+
 
 
 # """
@@ -579,9 +581,31 @@ class Kegg(object):
             
         return lists
 
+def printdocopt(arguments):
+    print(arguments)
+
 if __name__ == '__main__':
     arguments = docopt(__doc__, version='kegg 1.0')
+
+    ## Check docopt input types
+    dbs = literal_eval((arguments['--databases']))
+    if not isinstance(dbs,list):
+        raise TypeError("`databases` must be a list")
+    for db in dbs:
+        if not isinstance(db,str):
+            raise TypeError("Each entry in `databases` must be a string")
+    
+    run_pipeline = literal_eval((arguments['--run_pipeline']))
+    if not isinstance(run_pipeline,bool):
+        raise TypeError("`run_pipeline` must be a boolean")
+    
+    metadata = literal_eval((arguments['--metadata']))
+    if not isinstance(metadata,bool):
+        raise TypeError("`metadata` must be a boolean")
+    
     print(arguments)
+    # print(arguments["--databases"])
+    # printdocopt(arguments)
 
     # if not os.path.exists(arguments['SAVE_DIR']):
     #     os.makedirs(arguments['SAVE_DIR'])
