@@ -5,7 +5,7 @@
 Retrieve KEGG databases and format them for use in network expansions.
 
 Usage:
-  kegg.py PATH download [--run_pipeline=<rp>|--databases=<dbs>]
+  kegg.py PATH download [--run_pipeline=<rp>|--db=<db>...]
   kegg.py PATH update [--metadata=<md>]
 
 Arguments:
@@ -15,7 +15,7 @@ Arguments:
 
 Options:
   --run_pipeline=<rp>   Whether or not to run the full pipeline [default: True]
-  --databases=<dbs>     Databases to download [default: ["pathway","enzyme","reaction","compound"]] 
+  --db=<db>...     Databases to download [default: pathway enzyme reaction compound] 
   --metadata=<md>   Add metadata fields from "RXXXXX.json" into master.json [default: True]
 """
 
@@ -27,6 +27,7 @@ import glob
 import itertools
 import warnings
 from docopt import docopt
+from ast import literal_eval
 from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
@@ -588,12 +589,15 @@ if __name__ == '__main__':
     arguments = docopt(__doc__, version='kegg 1.0')
 
     ## Check docopt input types
-    dbs = literal_eval((arguments['--databases']))
+    ## each docopt flag can only take one arg
+    ## to download more than one database, you need one flag per db
+    ## ex. `python kegg.py mydir download --db reaction --db compound`
+    dbs = arguments['--db']
     if not isinstance(dbs,list):
-        raise TypeError("`databases` must be a list")
+        raise TypeError("`db` must be a list")
     for db in dbs:
         if not isinstance(db,str):
-            raise TypeError("Each entry in `databases` must be a string")
+            raise TypeError("Each entry in `db` must be a string")
     
     run_pipeline = literal_eval((arguments['--run_pipeline']))
     if not isinstance(run_pipeline,bool):
@@ -606,13 +610,3 @@ if __name__ == '__main__':
     print(arguments)
     # print(arguments["--databases"])
     # printdocopt(arguments)
-
-    # if not os.path.exists(arguments['SAVE_DIR']):
-    #     os.makedirs(arguments['SAVE_DIR'])
-
-    # scrape_metagenomes_from_jgi(arguments['SAVE_DIR'],
-    #     homepage_url=arguments['--homepage'],
-    #     database=arguments['--database'],
-    #     ecosystemClasses=literal_eval(arguments['--ecosystem_classes']),
-    #     datatypes=literal_eval(arguments['--datatypes']),
-    #     write_concatenated_json=literal_eval((arguments['--write_concatenated_json'])))
