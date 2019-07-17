@@ -32,9 +32,6 @@ from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
 
-
-
-
 # """
 # keggdir
 # |-entries
@@ -67,7 +64,6 @@ from tqdm import tqdm
 # Kegg.download() #defaults to ["pathway","enzyme",""]. should output all necessary files and dirs
 # Kegg.update() #same defaults
 # Kegg._detail_reactions() #add detailed information to reactions. need detailed field with true/false.
-# Kegg._linkdbs() #create mappings between databases
 # Kegg._write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
 
 # Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
