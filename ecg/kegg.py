@@ -5,67 +5,90 @@ import copy
 import glob
 import itertools
 import warnings
+import docopt
 from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
 
+## References: 
+## https://virantha.com/2016/06/23/elegant-command-line-parsing-in-python/
+## https://github.com/docopt/docopt
 """
-keggdir
-|-entries
-|  |-compounds 
-|  |-reactions 
-|  |-enzymes 
-|  |-pathways 
-|
-|-lists
-|  |-compounds 
-|  |-reactions 
-|  |-enzymes 
-|  |-pathways 
-|
-|-links
-|  |-compound_enzyme
-|  |-reaction_compound
-|  |-enzyme_compound
-|  |-pathway_reaction
-|  ...
-|
-version.json # file with all the info that is in the version entry of the master, created upon download and updated upon update
-|
-master.json
+Retrieve KEGG databases and format them for use in network expansions.
 
+Usage:
+  kegg.py PATH download [--run_pipeline=<rp>|--databases=<dbs>]
+  kegg.py PATH update [--metadata=<md>]
 
-Kegg = ecg.Kegg(keggdir) # keggdir is the top level dir 
-                     # which kegg will be stored to or updated in
+Arguments:
+  PATH  Directory will kegg will be downloaded to (or where it already exists)  
+  download  Download KEGG and run pipeline to format data
+  update    Update existing KEGG directory     
 
-Kegg.download() #defaults to ["pathway","enzyme",""]. should output all necessary files and dirs
-Kegg.update() #same defaults
-Kegg._detail_reactions() #add detailed information to reactions. need detailed field with true/false.
-Kegg._linkdbs() #create mappings between databases
-Kegg._write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
-
-Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
-|- Kegg.version["original"] = dict()
-    |-Kegg.version["original"]["release_short"] = float # returns release of database eg. 90.0
-    |-Kegg.version["original"]["release_long"] = str # returns 90.0+/06-06, Jun 19
-    |-Kegg.version["original"]["count_info"] = dict()
-        |-Kegg.version["original"]["count_info"]["pathway"] = int
-        |-Kegg.version["original"]["count_info"]["compound"] = int
-        |-Kegg.version["original"]["count_info"]["reaction"] = int
-        |-Kegg.version["original"]["count_info"]["enzyme"] = int
-    |-Kegg.version["original"]["count_lists"] = dict()
-        |-Kegg.version["original"]["count_lists"]["pathway"] = int
-        |-Kegg.version["original"]["count_lists"]["compound"] = int
-        |-Kegg.version["original"]["count_lists"]["reaction"] = int
-        |-Kegg.version["original"]["count_lists"]["enzyme"] = int
-    |-Kegg.version["original"]["lists"] = dict()
-        |-Kegg.version["original"]["lists"]["pathway"] = list()
-        |-Kegg.version["original"]["lists"]["compound"] = list()
-        |-Kegg.version["original"]["lists"]["reaction"] = list()
-        |-Kegg.version["original"]["lists"]["enzyme"] = list()
-|- Kegg.version["updates"] = list()
-|- Kegg.version["current"]
+Options:
+  --run_pipeline=<rp>   Whether or not to run the full pipeline [default: True]
+  --databases=<dbs>     Databases to download [default: ["pathway","enzyme","reaction","compound"]] 
+  --metadata=<md>   Add metadata fields from "RXXXXX.json" into master.json [default: True]
 """
+
+
+# """
+# keggdir
+# |-entries
+# |  |-compounds 
+# |  |-reactions 
+# |  |-enzymes 
+# |  |-pathways 
+# |
+# |-lists
+# |  |-compounds 
+# |  |-reactions 
+# |  |-enzymes 
+# |  |-pathways 
+# |
+# |-links
+# |  |-compound_enzyme
+# |  |-reaction_compound
+# |  |-enzyme_compound
+# |  |-pathway_reaction
+# |  ...
+# |
+# version.json # file with all the info that is in the version entry of the master, created upon download and updated upon update
+# |
+# master.json
+
+
+# Kegg = ecg.Kegg(keggdir) # keggdir is the top level dir 
+#                      # which kegg will be stored to or updated in
+
+# Kegg.download() #defaults to ["pathway","enzyme",""]. should output all necessary files and dirs
+# Kegg.update() #same defaults
+# Kegg._detail_reactions() #add detailed information to reactions. need detailed field with true/false.
+# Kegg._linkdbs() #create mappings between databases
+# Kegg._write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
+
+# Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
+# |- Kegg.version["original"] = dict()
+#     |-Kegg.version["original"]["release_short"] = float # returns release of database eg. 90.0
+#     |-Kegg.version["original"]["release_long"] = str # returns 90.0+/06-06, Jun 19
+#     |-Kegg.version["original"]["count_info"] = dict()
+#         |-Kegg.version["original"]["count_info"]["pathway"] = int
+#         |-Kegg.version["original"]["count_info"]["compound"] = int
+#         |-Kegg.version["original"]["count_info"]["reaction"] = int
+#         |-Kegg.version["original"]["count_info"]["enzyme"] = int
+#     |-Kegg.version["original"]["count_lists"] = dict()
+#         |-Kegg.version["original"]["count_lists"]["pathway"] = int
+#         |-Kegg.version["original"]["count_lists"]["compound"] = int
+#         |-Kegg.version["original"]["count_lists"]["reaction"] = int
+#         |-Kegg.version["original"]["count_lists"]["enzyme"] = int
+#     |-Kegg.version["original"]["lists"] = dict()
+#         |-Kegg.version["original"]["lists"]["pathway"] = list()
+#         |-Kegg.version["original"]["lists"]["compound"] = list()
+#         |-Kegg.version["original"]["lists"]["reaction"] = list()
+#         |-Kegg.version["original"]["lists"]["enzyme"] = list()
+# |- Kegg.version["updates"] = list()
+# |- Kegg.version["current"]
+# """
 class Kegg(object):
 
     def __init__(self,path):
@@ -555,3 +578,17 @@ class Kegg(object):
             lists[db] = list(id_name_dict.keys())
             
         return lists
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='kegg 1.0')
+    print(arguments)
+
+    # if not os.path.exists(arguments['SAVE_DIR']):
+    #     os.makedirs(arguments['SAVE_DIR'])
+
+    # scrape_metagenomes_from_jgi(arguments['SAVE_DIR'],
+    #     homepage_url=arguments['--homepage'],
+    #     database=arguments['--database'],
+    #     ecosystemClasses=literal_eval(arguments['--ecosystem_classes']),
+    #     datatypes=literal_eval(arguments['--datatypes']),
+    #     write_concatenated_json=literal_eval((arguments['--write_concatenated_json'])))
