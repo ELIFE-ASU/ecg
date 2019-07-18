@@ -68,11 +68,7 @@ class Jgi(object):
             raise ValueError("`domain` must be one of JGI datasets. See: IMG Content table on \
                               img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
         
-        ## Retrieve domain specific URL
-        # self.driver.get(self.homepage_url)
-        # time.sleep(5)
-        # htmlSource = self.driver.page_source
-
+        ## Identify how `domain_url` should be formatted
         if database == 'jgi':
             database_str = "&seq_center=jgi"
         elif database == 'all':
@@ -86,28 +82,34 @@ class Jgi(object):
             alpha_str = ""
 
         domain_url = "https://img.jgi.doe.gov/cgi-bin/m/main.cgi?section=TaxonList&page=taxonListAlpha{0}&domain={1}{2}".format(alpha_str, domain, database_str)
-
-        ## All ampersands (&) must be followed by 'amp;'
-        # if (database == 'jgi') and (domain in alpha2):
-        #     regex = r'href=\"main\.cgi(\?section=TaxonList&amp;page=taxonListAlpha2&amp;domain={0}&amp;seq_center=jgi)\"'.format(domain)
-        # elif (database == 'jgi') and (domain not in alpha2):
-        #     regex = r'href=\"main\.cgi(\?section=TaxonList&amp;page=taxonListAlpha&amp;domain={0}&amp;seq_center=jgi)\"'.format(domain)
-        # elif (database == 'all') and (domain in alpha2):
-        #     regex = r'href=\"main\.cgi(\?section=TaxonList&amp;page=taxonListAlpha2&amp;domain={0})\"'.format(domain)
-        # elif (database == 'all') and (domain not in alpha2):
-        #     regex = r'href=\"main\.cgi(\?section=TaxonList&amp;page=taxonListAlpha&amp;domain={0})\"'.format(domain)
-        # else:
-        #     raise ValueError("`database` must be 'jgi' or 'all'")
-
-        # ## All bacteria html not present on jgi homepage
-        # if domain=='bacteria' and database=='all':
-        #     return "https://img.jgi.doe.gov/cgi-bin/m/main.cgi?section=TaxonList&page=taxonListAlpha&domain=Bacteria"
-
-        # else:
-        #     match = re.search(regex, htmlSource)
-        #     suffix = match.group(1)
-        #     domain_url = homepage_url+suffix
     
+        """
+        load domain_url- > retrieve domain_json_url -> load domain_json_url -> retrieve domain_json
+        
+        driver: the chrome driver object
+        domain_url: url of domain database
+        """
+
+        driver.get(domain_url)
+        time.sleep(5) ## This value might need to be increased to 60 seconds if domain==bacteria and database==all
+        htmlSource = driver.page_source
+        # driver.quit()
+
+        regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
+        match = re.search(regex, htmlSource)
+        domain_json_suffix = match.group(1)
+        domain_url_prefix = domain_url.split('main.cgi')[0]
+        domain_json_url = domain_url_prefix+domain_json_suffix
+
+        driver.get(domain_json_url)
+        time.sleep(5)
+        # jsonSource = driver.page_source
+
+        ## convert the jsonSource into a dict of dicts here
+        domain_json = json.loads(driver.find_element_by_tag_name('body').text)
+
+        return domain_json
+
     def scrape_bunch(taxon_ids):
         ## Taxon IDs must be a list
         pass
