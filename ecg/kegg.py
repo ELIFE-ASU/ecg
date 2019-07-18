@@ -32,62 +32,6 @@ from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
 
-# """
-# keggdir
-# |-entries
-# |  |-compounds 
-# |  |-reactions 
-# |  |-enzymes 
-# |  |-pathways 
-# |
-# |-lists
-# |  |-compounds 
-# |  |-reactions 
-# |  |-enzymes 
-# |  |-pathways 
-# |
-# |-links
-# |  |-compound_enzyme
-# |  |-reaction_compound
-# |  |-enzyme_compound
-# |  |-pathway_reaction
-# |  ...
-# |
-# version.json # file with all the info that is in the version entry of the master, created upon download and updated upon update
-# |
-# master.json
-
-
-# Kegg = ecg.Kegg(keggdir) # keggdir is the top level dir 
-#                      # which kegg will be stored to or updated in
-
-# Kegg.download() #defaults to ["pathway","enzyme",""]. should output all necessary files and dirs
-# Kegg.update() #same defaults
-# Kegg._detail_reactions() #add detailed information to reactions. need detailed field with true/false.
-# Kegg._write_master_json(metadata=True) #this is edges plus metadata. include metadata in metadata field by default. otherwise can include empty metadata field
-
-# Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
-# |- Kegg.version["original"] = dict()
-#     |-Kegg.version["original"]["release_short"] = float # returns release of database eg. 90.0
-#     |-Kegg.version["original"]["release_long"] = str # returns 90.0+/06-06, Jun 19
-#     |-Kegg.version["original"]["count_info"] = dict()
-#         |-Kegg.version["original"]["count_info"]["pathway"] = int
-#         |-Kegg.version["original"]["count_info"]["compound"] = int
-#         |-Kegg.version["original"]["count_info"]["reaction"] = int
-#         |-Kegg.version["original"]["count_info"]["enzyme"] = int
-#     |-Kegg.version["original"]["count_lists"] = dict()
-#         |-Kegg.version["original"]["count_lists"]["pathway"] = int
-#         |-Kegg.version["original"]["count_lists"]["compound"] = int
-#         |-Kegg.version["original"]["count_lists"]["reaction"] = int
-#         |-Kegg.version["original"]["count_lists"]["enzyme"] = int
-#     |-Kegg.version["original"]["lists"] = dict()
-#         |-Kegg.version["original"]["lists"]["pathway"] = list()
-#         |-Kegg.version["original"]["lists"]["compound"] = list()
-#         |-Kegg.version["original"]["lists"]["reaction"] = list()
-#         |-Kegg.version["original"]["lists"]["enzyme"] = list()
-# |- Kegg.version["updates"] = list()
-# |- Kegg.version["current"]
-# """
 class Kegg(object):
 
     def __init__(self,path):
