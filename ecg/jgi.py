@@ -38,6 +38,75 @@ class Jgi(object):
     def homepage_url(self,homepage_url):
         self.__homepage_url = homepage_url
 
+    def __get_domain_url(self,domain,database):
+        if database == 'jgi':
+            database_str = "&seq_center=jgi"
+        elif database == 'all':
+            database_str = ""
+        else:
+            raise ValueError("`database` must be 'jgi' or 'all'")
+        
+        alpha2 = ['*Microbiome','cell','sps','Metatranscriptome'] # these datasets use a different URL pattern
+        if domain in alpha2:
+            alpha_str = "2"
+        else:
+            alpha_str = ""
+
+        domain_url = "https://img.jgi.doe.gov/cgi-bin/m/main.cgi?section=TaxonList&page=taxonListAlpha{0}&domain={1}{2}".format(alpha_str, domain, database_str)
+        return domain_url
+    
+    def __get_domain_json(self,domain_url,domain):
+        ## Identify correct time to allow page to load
+        if (domain=="Bacteria") and (database=="all"):
+            sleep_time = 60
+        else:
+            sleep_time = 5
+        
+        self.driver.get(domain_url)
+        ## Takes a long time to load all bacteria (because there are 60k of them)
+        time.sleep(sleep_time) 
+        htmlSource = self.driver.page_source
+        # driver.quit()
+
+        regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
+        match = re.search(regex, htmlSource)
+        domain_json_suffix = match.group(1)
+        domain_url_prefix = domain_url.split('main.cgi')[0]
+        domain_json_url = domain_url_prefix+domain_json_suffix
+
+        driver.get(domain_json_url)
+        time.sleep(sleep_time)
+        # jsonSource = driver.page_source
+
+        ## convert the jsonSource into a dict of dicts here
+        domain_json = json.loads(driver.find_element_by_tag_name('body').text)
+        return domain_json
+
+    def __get_organism_urls(self,domain_json):
+
+        all_GenomeNameSampleNameDisp =  [d['GenomeNameSampleNameDisp'] for d in domain_json['records']]
+
+        organism_urls = list()
+
+        for htmlandjunk in all_GenomeNameSampleNameDisp:
+            regex = r"<a href='main\.cgi(.*)'>"
+            match = re.search(regex, htmlandjunk)
+            html_suffix = match.group(1)
+            full_url = homepage_url+html_suffix
+            organism_urls.append(full_url)
+        
+        return organism_urls
+
+    ## LEFT OFF BELOW HERE--MAY WANT TO WRIT THIS DIFFERENTLY THIS TIME
+    def __get_organism_htmlSource_and_metadata(self,organism_url):
+        # for organism_url in organism_urls:
+        self.driver.get(organism_url)
+        time.sleep(5)
+
+        organism_htmlSource = self.driver.page_source
+        metadata_table_dict = get_organism_metadata_while_on_organism_page(organism_htmlSource)
+
+
     def scrape_domain(self, domain, database='all', 
                       datatypes = ['assembled','unassembled','both'],
                       write_concatenated_json=True):
@@ -58,9 +127,9 @@ class Jgi(object):
             'sps' (metagenome- single particle sort) UNTESTED
             'Metatranscriptome' UNTESTED
         """
+        ## Validate input
         untested = ['Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome']
         tested = ['Eukaryota','Bacteria','Archaea','*Microbiome']
-        alpha2 = ['*Microbiome','cell','sps','Metatranscriptome'] # these datasets use a different URL pattern
 
         if domain in untested:
             warnings.warn("This domain is untested for this function.")
@@ -68,47 +137,13 @@ class Jgi(object):
             raise ValueError("`domain` must be one of JGI datasets. See: IMG Content table on \
                               img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
         
-        ## Identify how `domain_url` should be formatted
-        if database == 'jgi':
-            database_str = "&seq_center=jgi"
-        elif database == 'all':
-            database_str = ""
-        else:
-            raise ValueError("`database` must be 'jgi' or 'all'")
-        
-        if domain in alpha2:
-            alpha_str = "2"
-        else:
-            alpha_str = ""
+        domain_url = self.__get_domain_url(self,domain,database)
+        domain_json = self.__get_domain_json(self,domain_url,domain)
+        organism_urls = self.__get_organism_urls(self,domain_json)
 
-        domain_url = "https://img.jgi.doe.gov/cgi-bin/m/main.cgi?section=TaxonList&page=taxonListAlpha{0}&domain={1}{2}".format(alpha_str, domain, database_str)
-    
-        """
-        load domain_url- > retrieve domain_json_url -> load domain_json_url -> retrieve domain_json
-        
-        driver: the chrome driver object
-        domain_url: url of domain database
-        """
-
-        driver.get(domain_url)
-        time.sleep(5) ## This value might need to be increased to 60 seconds if domain==bacteria and database==all
-        htmlSource = driver.page_source
-        # driver.quit()
-
-        regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
-        match = re.search(regex, htmlSource)
-        domain_json_suffix = match.group(1)
-        domain_url_prefix = domain_url.split('main.cgi')[0]
-        domain_json_url = domain_url_prefix+domain_json_suffix
-
-        driver.get(domain_json_url)
-        time.sleep(5)
-        # jsonSource = driver.page_source
-
-        ## convert the jsonSource into a dict of dicts here
-        domain_json = json.loads(driver.find_element_by_tag_name('body').text)
-
-        return domain_json
+        ##-----------------------------------------------------------------------------------------
+        ## Retrieve organism htmlSource and metadata
+        ##-----------------------------------------------------------------------------------------
 
     def scrape_bunch(taxon_ids):
         ## Taxon IDs must be a list
