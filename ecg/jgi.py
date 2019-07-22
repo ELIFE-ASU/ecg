@@ -1,5 +1,12 @@
+"""
+
+"""
+## Need to add verbosity tag and find all print statements
+
+
 from selenium import webdriver
 import time
+import tqdm
 import os
 import re
 import json
@@ -8,7 +15,9 @@ from bs4 import BeautifulSoup
 
 class Jgi(object):
 
-    def __init__(self,chromedriver_path=None, 
+    ## Add required path argument and update function
+
+    def __init__(self,path,chromedriver_path=None, 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
         self.homepage_url = homepage_url
@@ -18,6 +27,16 @@ class Jgi(object):
 
         else:
             self.driver = webdriver.Chrome(chromedriver_path)
+
+    @property
+    def path(self):
+        return self.__path 
+
+    @path.setter
+    def path(self,path):
+        if not os.path.exists(path):
+            os.makedirs(path)
+        self.__path = path
 
     @property
     def driver(self):
@@ -76,9 +95,7 @@ class Jgi(object):
 
         driver.get(domain_json_url)
         time.sleep(sleep_time)
-        # jsonSource = driver.page_source
 
-        ## convert the jsonSource into a dict of dicts here
         domain_json = json.loads(driver.find_element_by_tag_name('body').text)
         return domain_json
 
@@ -97,19 +114,101 @@ class Jgi(object):
         
         return organism_urls
 
-    ## LEFT OFF BELOW HERE--MAY WANT TO WRIT THIS DIFFERENTLY THIS TIME
-    def __get_organism_htmlSource_and_metadata(self,organism_url):
-        # for organism_url in organism_urls:
+    def __get_organism_htmlSource(self,organism_url):
         self.driver.get(organism_url)
         time.sleep(5)
+        return self.driver.page_source
 
-        organism_htmlSource = self.driver.page_source
-        metadata_table_dict = get_organism_metadata_while_on_organism_page(organism_htmlSource)
+    def __get_organism_metadata(self,htmlSource):
+        # return dict of metagenome table data
+        bs = BeautifulSoup(htmlSource,"html.parser")
+        metadata_table = bs.findAll('table')[0]
 
+        metadata_table_dict = dict()
+        for row in metadata_table.findAll('tr'):
+
+            if (len(row.findAll('th')) == 1) and (len(row.findAll('td')) == 1):
+
+                row_key = row.findAll('th')[0].text.rstrip()
+                row_value = row.findAll('td')[0].text.rstrip() if row.findAll('td')[0] else None
+                metadata_table_dict[row_key] = row_value
+
+        metadata_table_dict.pop('Project Geographical Map', None)
+
+        ## metadata_table_dict['Taxon Object ID'] should be the way we identify a metagenome
+        return metadata_table_dict
+
+    #### NEED TO ADD METAGENOME SPECIFIC GET COMMANDS FOR ASSEMBLED/UNASSEMBLED/BOTH
+    # assembly_types
+
+    def __get_enzyme_url_metagenome(self,organism_url,htmlSource,assembly_type):
+
+        regex = r'<a href=\"(main\.cgi\?section=MetaDetail&amp;page=enzymes.*data_type=%s.*)\" onclick'%assembly_type
+        match = re.search(regex, htmlSource)
+
+        if match:
+            # print "Metagenome url: %s ...\n...has assembly_type: %s"%(url,assembly_type)
+            enzyme_url_suffix = match.group(1)
+            enzyme_url_prefix = organism_url.split('main.cgi')[0]
+            enzyme_url = enzyme_url_prefix+enzyme_url_suffix
+
+        else:
+            print "Metagenome url: %s ...\n...does not have assembly_type: %s"%(organism_url,assembly_type) 
+            enzyme_url = None
+
+        return enzyme_url
+
+
+    def __get_enzyme_url(self,organism_url,htmlSource):
+        regex = r'<a href=\"(main\.cgi\?section=TaxonDetail&amp;page=enzymes&amp;taxon_oid=\d*)\"'
+        match = re.search(regex, organism_htmlSource)
+
+        print "Getting enzyme_url from organism url: %s"%(organism_url)
+
+        enzyme_url_suffix = match.group(1)
+        enzyme_url_prefix = organism_url.split('main.cgi')[0]
+        enzyme_url = enzyme_url_prefix+enzyme_url_suffix    
+
+        return enzyme_url
+
+    def __get_enzyme_json(self,enzyme_url):
+        self.driver.get(enzyme_url)
+        time.sleep(5)
+        htmlSource = self.driver.page_source
+        # driver.quit()
+
+        regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
+        match = re.search(regex, htmlSource)
+        enzyme_json_suffix = match.group(1)
+        enzyme_url_prefix = enzyme_url.split('main.cgi')[0]
+        enzyme_json_url = enzyme_url_prefix+enzyme_json_suffix
+
+        self.driver.get(enzyme_json_url)
+        time.sleep(5)
+
+        ## JSON formatted object ready to be dumped
+        enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+
+        return enzyme_json
+
+    def __prune_enzyme_json(enzyme_json):
+        """
+        Reduce keys in enzyme json by discarding "display" keys.
+        """
+
+        enzyme_dict = dict() # Dictionary of ec:[enzymeName,genecount] for all ecs in a single metagenome
+
+        for i, singleEnzymeDict in enumerate(enzyme_json['records']):
+            ec = singleEnzymeDict['EnzymeID']
+            enzymeName = singleEnzymeDict['EnzymeName']
+            genecount = singleEnzymeDict['GeneCount']
+
+            enzyme_dict[ec] = [enzymeName,genecount]
+
+        return enzyme_dict
 
     def scrape_domain(self, domain, database='all', 
-                      datatypes = ['assembled','unassembled','both'],
-                      write_concatenated_json=True):
+                      assembly_types = ['assembled','unassembled','both']):
         ## Do scraping functions
         """
         database: choose to use only the jgi database, or all database [default=jgi]
@@ -127,23 +226,90 @@ class Jgi(object):
             'sps' (metagenome- single particle sort) UNTESTED
             'Metatranscriptome' UNTESTED
         """
+        ## Only allow scraping into empty directory
+        for _dirpath, _dirnames, files in os.walk(self.path):
+            if files:
+                raise ValueError("Directory must be empty to initiate a fresh KEGG download.\
+                              Looking to update KEGG? Try `Kegg.update()` instead.")
+        
+
+        ## Assembled or unassembled -- applies to metagenomes only
+        assembly_options = ['assembled','unassembled','both']
+        metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
+        
         ## Validate input
         untested = ['Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome']
         tested = ['Eukaryota','Bacteria','Archaea','*Microbiome']
 
+        ## Validate domain
         if domain in untested:
             warnings.warn("This domain is untested for this function.")
         elif domain not in tested:
-            raise ValueError("`domain` must be one of JGI datasets. See: IMG Content table on \
-                              img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
+            raise ValueError("`domain` must be one of JGI datasets. See: IMG Content table on "+
+                              "img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
         
+        ## Validate assembly_types
+        if domain in metagenome_domains:
+            if not set(assembly_types).issubset(set(assembly_options)):
+                raise ValueError("`assembly_types` must be subset of %s"%assembly_options)
+        
+        ## Get all organism URLs
         domain_url = self.__get_domain_url(self,domain,database)
         domain_json = self.__get_domain_json(self,domain_url,domain)
         organism_urls = self.__get_organism_urls(self,domain_json)
 
-        ##-----------------------------------------------------------------------------------------
-        ## Retrieve organism htmlSource and metadata
-        ##-----------------------------------------------------------------------------------------
+        org_jsons = list()
+        for organism_url in tqdm(organism_urls):
+
+            print "Scraping: %s ..."%(organism_url)
+            
+            ## Get enzyme json for single organism
+            htmlSource = self.__get_organism_htmlSource(self,organism_url)
+            metadata_dict = self.__get_organism_metadata(self,htmlSource)
+            taxon_id = metadata_dict['Taxon ID']
+            org_dict = {'metadata':metadata_dict}
+
+            ## Different methods for metagenomes/genomes
+            if domain in metagenome_domains:
+                for assembly_type in assembly_types:
+                    enzyme_url = self.__get_enzyme_url_metagenome(self,organism_url,htmlSource,assembly_type))
+                    if enzyme_url:
+                        enzyme_json = self.__get_enzyme_json(self,enzyme_url)
+                        enzyme_json = self.__prune_enzyme_json(self,enzyme_json)
+
+                        org_dict[assembly_type] = enzyme_json
+                
+                org_jsons.append(org_dict)
+
+                with open(save_dir+taxon_id+'.json', 'w') as f:
+        
+                    json.dump(org_dict, f)
+
+            else:
+                enzyme_url = self.__get_enzyme_url(self,organism_url,htmlSource)
+                if enzyme_url:
+                    enzyme_json = self.__get_enzyme_json(self,enzyme_url)
+                    enzyme_json = self.__prune_enzyme_json(self,enzyme_json)
+                    
+                    org_dict["enzymes"] = enzyme_json
+                    org_jsons.append(org_dict)
+                
+                with open(save_dir+taxon_id+'.json', 'w') as f:
+        
+                    json.dump(org_dict, f)
+
+        print "Writing combined json to file..."
+        with open(domain+'.json', 'w') as f:
+            
+            json.dump(org_jsons,f)
+
+        print "Done."
+
+        ## Get enzyme json for single organism
+        # htmlSource = self.__get_organism_htmlSource(self,organism_url)
+        # metadata_dict = self.__get_organism_metadata(self,htmlSource)
+        # enzyme_url = self.__get_enzyme_url(self,htmlSource)
+        # enzyme_json = self.__get_enzyme_json(self,enzyme_url)
 
     def scrape_bunch(taxon_ids):
         ## Taxon IDs must be a list
