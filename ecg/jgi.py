@@ -154,7 +154,7 @@ class Jgi(object):
             enzyme_url = enzyme_url_prefix+enzyme_url_suffix
 
         else:
-            print("Metagenome url: %s ...\n...does not have assembly_type: %s"%(organism_url,assembly_type))
+            # print("Metagenome url: %s ...\n...does not have assembly_type: %s"%(organism_url,assembly_type))
             enzyme_url = None
 
         return enzyme_url
@@ -171,7 +171,7 @@ class Jgi(object):
             enzyme_url = enzyme_url_prefix+enzyme_url_suffix    
 
         else:
-            print("Organism url: %s ...\n...does not have enzyme data."%(organism_url))
+            # print("Organism url: %s ...\n...does not have enzyme data."%(organism_url))
             enzyme_url = None
 
         return enzyme_url
@@ -213,7 +213,8 @@ class Jgi(object):
         return enzyme_dict
 
     def scrape_domain(self, domain, database='all', 
-                      assembly_types = ['assembled','unassembled','both']):
+                      assembly_types = ['assembled','unassembled','both'],
+                      write_missing_enzyme_data=True):
         ## Do scraping functions
         """
         database: choose to use only the jgi database, or all database [default=jgi]
@@ -268,9 +269,10 @@ class Jgi(object):
         organism_urls = self.__get_organism_urls(domain_json)
 
         org_jsons = list()
-        for organism_url in tqdm(organism_urls):
+        pbar = tqdm(organism_urls)
+        for organism_url in pbar:
 
-            print("Scraping: %s ..."%(organism_url))
+            pbar.set_description("Scraping %s ..."%(organism_url))
             
             ## Get enzyme json for single organism
             htmlSource = self.__get_organism_htmlSource(organism_url)
@@ -280,6 +282,7 @@ class Jgi(object):
 
             ## Different methods for metagenomes/genomes
             if domain in metagenome_domains:
+                missing_enzyme_data = dict()
                 for assembly_type in assembly_types:
                     enzyme_url = self.__get_enzyme_url_metagenome(organism_url,htmlSource,assembly_type)
                     if enzyme_url:
@@ -287,6 +290,12 @@ class Jgi(object):
                         enzyme_json = self.__prune_enzyme_json(enzyme_json)
 
                         org_dict[assembly_type] = enzyme_json
+                    ## Write missing data to dict
+                    else:
+                        if not taxon_id in missing_enzyme_data:
+                            missing_enzyme_data[taxon_id] = [assembly_type]
+                        else:
+                            missing_enzyme_data[taxon_id].append(assembly_type)
                 
                 org_jsons.append(org_dict)
 
@@ -295,6 +304,7 @@ class Jgi(object):
                     json.dump(org_dict, f)
 
             else:
+                missing_enzyme_data = list()
                 enzyme_url = self.__get_enzyme_url(organism_url,htmlSource)
                 if enzyme_url:
                     enzyme_json = self.__get_enzyme_json(enzyme_url)
@@ -302,10 +312,20 @@ class Jgi(object):
                     
                     org_dict["enzymes"] = enzyme_json
                     org_jsons.append(org_dict)
+                ## Write missing data to list
+                else:
+                    missing_enzyme_data.append(taxon_id)
                 
                 with open(os.path.join(self.path,domain,taxon_id+".json"), 'w') as f:
         
                     json.dump(org_dict, f)
+        
+        print("Missing enzyme data: %s"%missing_enzyme_data)
+        if write_missing_enzyme_data == True:
+            
+            with open(os.path.join(self.path,domain+"_missing_enzymes.json"), 'w') as f:
+            
+                json.dump(missing_enzyme_data,f)
 
         print("Writing combined json to file...")
         with open(os.path.join(self.path,domain+".json"), 'w') as f:
