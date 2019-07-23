@@ -17,10 +17,9 @@ class Jgi(object):
 
     ## Add required path argument and update function
 
-    def __init__(self,path,chromedriver_path=None, 
+    def __init__(self,chromedriver_path=None, 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
-        self.path = path
         self.homepage_url = homepage_url
 
         if not chromedriver_path:
@@ -28,16 +27,6 @@ class Jgi(object):
 
         else:
             self.driver = webdriver.Chrome(chromedriver_path)
-
-    @property
-    def path(self):
-        return self.__path 
-
-    @path.setter
-    def path(self,path):
-        if not os.path.exists(path):
-            os.makedirs(path)
-        self.__path = path
 
     @property
     def driver(self):
@@ -212,12 +201,37 @@ class Jgi(object):
 
         return enzyme_dict
 
-    def scrape_domain(self, domain, database='all', 
+    # def __identify_domain(self,htmlSource):
+
+    #     regex = r'main.cgi?section=FindGenesBlast&page=geneSearchBlast&taxon_oid=%s&domain=(.*)\"\);'%taxon_id
+    #     match = re.search(regex, htmlSource)
+    #     domain_json_suffix = match.group(1)
+
+    def __validate_assembly_types(self,assembly_types):
+        ## Assembled or unassembled -- applies to metagenomes only
+        assembly_options = ['assembled','unassembled','both']
+        if not set(assembly_types).issubset(set(assembly_options)):
+            raise ValueError("`assembly_types` must be subset of %s"%assembly_options)
+
+    def __validate_domain(self,domain):
+
+        untested = ['Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome']
+        tested = ['Eukaryota','Bacteria','Archaea','*Microbiome']
+
+        ## Validate domain
+        if domain in untested:
+            warnings.warn("This domain is untested for this function.")
+        elif domain not in tested:
+            raise ValueError("`domain` must be one of JGI datasets: {0} See: IMG Content table on ".format(tested+untested)+
+                              "img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
+          
+
+    def scrape_domain(self, path, domain, database='all', 
                       assembly_types = ['assembled','unassembled','both'],
                       write_missing_enzyme_data=True):
         ## Do scraping functions
         """
-        database: choose to use only the jgi database, or all database [default=jgi]
+        path: path to store domain directories in and to write combined jsons to        
         domain: one of...
             ## Alpha
             'Eukaryota'
@@ -231,9 +245,14 @@ class Jgi(object):
             'cell' (metagenome- cell enrichment) UNTESTED
             'sps' (metagenome- single particle sort) UNTESTED
             'Metatranscriptome' UNTESTED
+        database: choose to use only the `jgi` database, or `all` database [default=jgi]
+        assembly_types: Only used for metagenomic domains. Ignored for others.
+                        [default=[`unassembled`, `assembled`, `both`]]. 
+        write_missing_enzyme_data: Writes json of ids with missing enzyme data
+                                   [default=True]
         """
-        ## Make save_dir if not exit
-        domain_path = os.path.join(self.path,domain)
+        ## Make save_dir
+        domain_path = os.path.join(path,domain)
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -243,26 +262,15 @@ class Jgi(object):
                 raise ValueError("Directory must be empty to initiate a fresh JGI download."+
                              "Looking to update a JGI domain? Try `Jgi.update()` instead.")        
 
-        ## Assembled or unassembled -- applies to metagenomes only
-        assembly_options = ['assembled','unassembled','both']
+        ## Validate assembly_types
         metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
-        
-        ## Validate input
-        untested = ['Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome']
-        tested = ['Eukaryota','Bacteria','Archaea','*Microbiome']
+        if domain in metagenome_domains:
+            self.__validate_assembly_types(assembly_types)
 
         ## Validate domain
-        if domain in untested:
-            warnings.warn("This domain is untested for this function.")
-        elif domain not in tested:
-            raise ValueError("`domain` must be one of JGI datasets: {0} See: IMG Content table on ".format(tested+untested)+
-                              "img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
-        
-        ## Validate assembly_types
-        if domain in metagenome_domains:
-            if not set(assembly_types).issubset(set(assembly_options)):
-                raise ValueError("`assembly_types` must be subset of %s"%assembly_options)
-        
+        self.__validate_domain(domain)
+
+
         ## Get all organism URLs
         domain_url = self.__get_domain_url(domain,database)
         domain_json = self.__get_domain_json(domain_url,domain,database)
@@ -346,7 +354,16 @@ class Jgi(object):
         # enzyme_url = self.__get_enzyme_url(self,htmlSource)
         # enzyme_json = self.__get_enzyme_json(self,enzyme_url)
 
-    def scrape_bunch(self,taxon_ids):
+    def scrape_urls(self, path, domain, urls,
+                    assembly_types = ['assembled','unassembled','both'],
+                    write_missing_enzyme_data=True):
+        ## Where do i handle putting the metadata?
+        
+        ## urls must be a list and all from the same domain for now
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+    def scrape_ids(self,ids):
         ## Taxon IDs must be a list
         pass
 
