@@ -232,12 +232,16 @@ class Jgi(object):
             'sps' (metagenome- single particle sort) UNTESTED
             'Metatranscriptome' UNTESTED
         """
+        ## Make save_dir if not exit
+        domain_path = os.path.join(self.path,domain)
+        if not os.path.exists(domain_path):
+            os.makedirs(domain_path)
+
         ## Only allow scraping into empty directory
-        for _dirpath, _dirnames, files in os.walk(self.path):
+        for _dirpath, _dirnames, files in os.walk(domain_path):
             if files:
-                raise ValueError("Directory must be empty to initiate a fresh KEGG download.\
-                              Looking to update KEGG? Try `Kegg.update()` instead.")
-        
+                raise ValueError("Directory must be empty to initiate a fresh JGI download."+
+                             "Looking to update a JGI domain? Try `Jgi.update()` instead.")        
 
         ## Assembled or unassembled -- applies to metagenomes only
         assembly_options = ['assembled','unassembled','both']
@@ -259,10 +263,6 @@ class Jgi(object):
             if not set(assembly_types).issubset(set(assembly_options)):
                 raise ValueError("`assembly_types` must be subset of %s"%assembly_options)
         
-        ## Make save_dir if not exit
-        if not os.path.exists(os.path.join(self.path,domain)):
-            os.makedirs(os.path.join(self.path,domain))
-
         ## Get all organism URLs
         domain_url = self.__get_domain_url(domain,database)
         domain_json = self.__get_domain_json(domain_url,domain,database)
@@ -270,6 +270,12 @@ class Jgi(object):
 
         org_jsons = list()
         pbar = tqdm(organism_urls)
+
+        if domain in metagenome_domains:
+            missing_enzyme_data = dict()
+        else:
+            missing_enzyme_data = list()
+
         for organism_url in pbar:
 
             pbar.set_description("Scraping %s ..."%(organism_url))
@@ -282,7 +288,6 @@ class Jgi(object):
 
             ## Different methods for metagenomes/genomes
             if domain in metagenome_domains:
-                missing_enzyme_data = dict()
                 for assembly_type in assembly_types:
                     enzyme_url = self.__get_enzyme_url_metagenome(organism_url,htmlSource,assembly_type)
                     if enzyme_url:
@@ -299,36 +304,37 @@ class Jgi(object):
                 
                 org_jsons.append(org_dict)
 
-                with open(os.path.join(self.path,domain,taxon_id+".json"), 'w') as f:
+                with open(os.path.join(domain_path,taxon_id+".json"), 'w') as f:
         
                     json.dump(org_dict, f)
 
             else:
-                missing_enzyme_data = list()
                 enzyme_url = self.__get_enzyme_url(organism_url,htmlSource)
                 if enzyme_url:
                     enzyme_json = self.__get_enzyme_json(enzyme_url)
                     enzyme_json = self.__prune_enzyme_json(enzyme_json)
                     
                     org_dict["enzymes"] = enzyme_json
-                    org_jsons.append(org_dict)
+
                 ## Write missing data to list
                 else:
                     missing_enzyme_data.append(taxon_id)
+
+                org_jsons.append(org_dict)
                 
-                with open(os.path.join(self.path,domain,taxon_id+".json"), 'w') as f:
+                with open(os.path.join(domain_path,taxon_id+".json"), 'w') as f:
         
                     json.dump(org_dict, f)
         
         print("Missing enzyme data: %s"%missing_enzyme_data)
         if write_missing_enzyme_data == True:
             
-            with open(os.path.join(self.path,domain+"_missing_enzymes.json"), 'w') as f:
+            with open(os.path.join(domain_path+"_missing_enzymes.json"), 'w') as f:
             
                 json.dump(missing_enzyme_data,f)
 
         print("Writing combined json to file...")
-        with open(os.path.join(self.path,domain+".json"), 'w') as f:
+        with open(os.path.join(domain_path+".json"), 'w') as f:
             
             json.dump(org_jsons,f)
 
