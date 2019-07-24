@@ -1,4 +1,6 @@
 """
+WARNING. CLI HAS NOT BEEN TESTED YET.
+
 Retrieve enzyme data from JGI genomes and metagenomes.
 
 Usage:
@@ -25,6 +27,7 @@ import re
 import json
 import warnings
 from selenium import webdriver
+from ast import literal_eval
 from tqdm import tqdm
 from docopt import docopt
 from bs4 import BeautifulSoup   
@@ -435,8 +438,10 @@ def __execute_cli(arguments):
     """
     Call appropriate methods based on command line interface input.
     """
+    chromedriver_path = literal_eval((arguments['--chromedriver_path']))
+
     if arguments['scrape_domain'] == True:
-        J = Jgi(arguments['--chromedriver_path'],arguments['--homepage_url'])
+        J = Jgi(chromedriver_path,arguments['--homepage_url'])
         J.scrape_domain(arguments['PATH'], arguments['DOMAIN'], database=arguments['--database'], assembly_types=arguments['--assembly_types'])
 
     if arguments['scrape_urls'] == True:
