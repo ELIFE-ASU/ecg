@@ -18,9 +18,6 @@ Options:
   --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
   --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
 """
-## Need to add verbosity tag and find all print statements
-
-
 
 import time
 import os
@@ -33,8 +30,6 @@ from docopt import docopt
 from bs4 import BeautifulSoup   
 
 class Jgi(object):
-
-    ## Add required path argument and update function
 
     def __init__(self,chromedriver_path=None, 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
@@ -147,9 +142,6 @@ class Jgi(object):
         ## metadata_table_dict['Taxon Object ID'] should be the way we identify a metagenome
         return metadata_table_dict
 
-    #### NEED TO ADD METAGENOME SPECIFIC GET COMMANDS FOR ASSEMBLED/UNASSEMBLED/BOTH
-    # assembly_types
-
     def __get_enzyme_url_metagenome(self,organism_url,htmlSource,assembly_type):
 
         regex = r'<a href=\"(main\.cgi\?section=MetaDetail&amp;page=enzymes.*data_type=%s.*)\" onclick'%assembly_type
@@ -254,7 +246,7 @@ class Jgi(object):
         ## Get enzyme json for single organism
         htmlSource = self.__get_organism_htmlSource(organism_url)
         metadata_dict = self.__get_organism_metadata(htmlSource)
-        taxon_id = metadata_dict['Taxon ID']
+        taxon_id = metadata_dict['Taxon Object ID']
         org_dict = {'metadata':metadata_dict}
 
         ## Different methods for metagenomes/genomes
@@ -318,7 +310,7 @@ class Jgi(object):
                         [default=[`unassembled`, `assembled`, `both`]]. 
         """
         ## Make save_dir
-        domain_path = os.path.join(path,domain)
+        domain_path = os.path.join(path,domain,"taxon_ids")
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -348,7 +340,7 @@ class Jgi(object):
                     assembly_types = ['assembled','unassembled','both']):
 
         ## Make save_dir
-        domain_path = os.path.join(path,domain)
+        domain_path = os.path.join(path,domain,"taxon_ids")
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -456,20 +448,7 @@ if __name__ == '__main__':
     # __check_cli_input_types(arguments)
     __execute_cli(arguments)
 
-"""
-Arguments:
-  PATH  Directory where JGI data will be downloaded to
-  DOMAIN    JGI valid domain to scrape data from
-  ORGANISM_URLS     (meta)genome URLs to download data from
-  scrape_domain     Download an entire JGI domain and run pipeline to format data
-  scrape_urls   Download data from one or more (meta)genomes by URL
 
-Options:
-  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable [default: None]
-  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
-  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
-  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
-"""
 # ###############################################################
 # ## get URLs for pH specific scraping
 # ###############################################################
