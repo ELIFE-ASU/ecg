@@ -9,7 +9,7 @@ Usage:
   kegg.py PATH update [--metadata=<md>]
 
 Arguments:
-  PATH  Directory will kegg will be downloaded to (or where it already exists)  
+  PATH  Directory where kegg will be downloaded to (or where it already exists)  
   download  Download KEGG and run pipeline to format data
   update    Update existing KEGG directory     
 
