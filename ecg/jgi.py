@@ -1,16 +1,35 @@
 """
+Retrieve enzyme data from JGI genomes and metagenomes.
 
+Usage:
+  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_domain PATH DOMAIN [--database=<db>|--assembly_types=<at>...]
+  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_urls PATH DOMAIN ORGANISM_URLS [--assembly_types=<at>...]
+
+Arguments:
+  PATH  Directory where JGI data will be downloaded to
+  DOMAIN    JGI valid domain to scrape data from
+  ORGANISM_URLS     (meta)genome URLs to download data from
+  scrape_domain     Download an entire JGI domain and run pipeline to format data
+  scrape_urls   Download data from one or more (meta)genomes by URL
+
+Options:
+  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable [default: None]
+  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
+  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
+  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
 """
 ## Need to add verbosity tag and find all print statements
 
 
-from selenium import webdriver
+
 import time
-from tqdm import tqdm
 import os
 import re
 import json
 import warnings
+from selenium import webdriver
+from tqdm import tqdm
+from docopt import docopt
 from bs4 import BeautifulSoup   
 
 class Jgi(object):
@@ -389,17 +408,68 @@ class Jgi(object):
 
         print("Done.")
 
-
-
-
-        ## urls must be a list and all from the same domain for now
-        if not os.path.exists(path):
-            os.makedirs(path)
-
     def scrape_ids(self,ids):
         ## Taxon IDs must be a list
-        pass
 
+        ## Format IDs into organism urls
+
+        ## Call scrape_urls
+        pass
+# def __check_cli_input_types(arguments):
+#     """
+#     Check docopt input types.
+    
+#     Each docopt flag can only take one arg
+#     to download more than one database, you need one flag per db
+#     ex. `python kegg.py mydir download --db reaction --db compound`
+#     """
+
+#     dbs = arguments['--db']
+#     if not isinstance(dbs,list):
+#         raise TypeError("`db` must be a list")
+#     for db in dbs:
+#         if not isinstance(db,str):
+#             raise TypeError("Each entry in `db` must be a string")
+    
+#     run_pipeline = literal_eval((arguments['--run_pipeline']))
+#     if not isinstance(run_pipeline,bool):
+#         raise TypeError("`run_pipeline` must be a boolean (True or False)")
+    
+#     metadata = literal_eval((arguments['--metadata']))
+#     if not isinstance(metadata,bool):
+#         raise TypeError("`metadata` must be a boolean (True or False)")
+
+def __execute_cli(arguments):
+    """
+    Call appropriate methods based on command line interface input.
+    """
+    if arguments['scrape_domain'] == True:
+        J = Jgi(arguments['--chromedriver_path'],arguments['--homepage_url'])
+        J.scrape_domain(arguments['PATH'], arguments['DOMAIN'], database=arguments['--database'], assembly_types=arguments['--assembly_types'])
+
+    if arguments['scrape_urls'] == True:
+        J = Jgi(arguments['--chromedriver_path'],arguments['--homepage_url'])
+        J.scrape_urls(arguments['PATH'], arguments['DOMAIN'], arguments['ORGANISM_URLS'], assembly_types=arguments['--assembly_types'])
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='jgi 1.0')
+    # __check_cli_input_types(arguments)
+    __execute_cli(arguments)
+
+"""
+Arguments:
+  PATH  Directory where JGI data will be downloaded to
+  DOMAIN    JGI valid domain to scrape data from
+  ORGANISM_URLS     (meta)genome URLs to download data from
+  scrape_domain     Download an entire JGI domain and run pipeline to format data
+  scrape_urls   Download data from one or more (meta)genomes by URL
+
+Options:
+  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable [default: None]
+  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
+  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
+  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
+"""
 # ###############################################################
 # ## get URLs for pH specific scraping
 # ###############################################################
