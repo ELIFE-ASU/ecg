@@ -312,7 +312,8 @@ class Jgi(object):
                 
                 org_jsons.append(org_dict)
 
-                with open(os.path.join(domain_path,taxon_id+".json"), 'w') as f:
+                taxon_ids_path = os.path.join(domain_path,"taxon_ids",taxon_id+".json")
+                with open(taxon_ids_path, 'w') as f:
         
                     json.dump(org_dict, f)
 
@@ -330,19 +331,20 @@ class Jgi(object):
 
                 org_jsons.append(org_dict)
                 
-                with open(os.path.join(domain_path,taxon_id+".json"), 'w') as f:
+                taxon_ids_path = os.path.join(domain_path,"taxon_ids",taxon_id+".json")
+                with open(taxon_ids_path, 'w') as f:
         
                     json.dump(org_dict, f)
         
         print("Missing enzyme data: %s"%missing_enzyme_data)
         if write_missing_enzyme_data == True:
             
-            with open(os.path.join(domain_path+"_missing_enzymes.json"), 'w') as f:
+            with open(os.path.join(domain_path,"missing_enzymes.json"), 'w') as f:
             
                 json.dump(missing_enzyme_data,f)
 
         print("Writing combined json to file...")
-        with open(os.path.join(domain_path+".json"), 'w') as f:
+        with open(os.path.join(domain_path,"combined_taxon_ids.json"), 'w') as f:
             
             json.dump(org_jsons,f)
 
@@ -358,7 +360,7 @@ class Jgi(object):
                     assembly_types = ['assembled','unassembled','both'],
                     write_missing_enzyme_data=True):
         ## Where do i handle putting the metadata?
-        
+
         ## urls must be a list and all from the same domain for now
         if not os.path.exists(path):
             os.makedirs(path)
