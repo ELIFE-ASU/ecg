@@ -60,7 +60,7 @@ kegg.lists;
 
 *Note: If more than one user supplied database is provided it must be done so with its own flag. Each flag can only accept one argument.*
 
-Example: `kegg.py mydir download --db compound --db reaction`
+Example: `python kegg.py mydir download --db compound --db reaction`
 
 ```python
 """
