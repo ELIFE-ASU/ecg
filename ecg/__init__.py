@@ -7,3 +7,4 @@
 # from convert_patric_to_eclists import write_patric_boolean_csv_from_tabs, write_patric_ec_lists_from_tabs, write_jgi_ec_lists_from_jsons, write_jgi_boolean_csv_from_jsons
 # from convert_ecjsons_to_ectorxnlistjson import convert_ecjsons_to_ectorxnlistjson
 from .kegg import Kegg
+from .jgi import Jgi
