@@ -9,7 +9,7 @@ Usage:
 
 Arguments:
   PATH  Directory where JGI data will be downloaded to
-  DOMAIN    JGI valid domain to scrape data from
+  DOMAIN    JGI valid domain to scrape data from (one of: 'Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome')
   ORGANISM_URLS     (meta)genome URLs to download data from
   scrape_domain     Download an entire JGI domain and run pipeline to format data
   scrape_urls   Download data from one or more (meta)genomes by URL
