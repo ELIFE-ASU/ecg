@@ -311,7 +311,7 @@ class Jgi(object):
             'cell' (metagenome- cell enrichment) UNTESTED
             'sps' (metagenome- single particle sort) UNTESTED
             'Metatranscriptome' UNTESTED
-        database: choose to use only the `jgi` database, or `all` database [default=jgi]
+        database: choose to use only the `jgi` database, or `all` database [default=all]
         assembly_types: Only used for metagenomic domains. Ignored for others.
                         [default=[`unassembled`, `assembled`, `both`]]. 
         """
