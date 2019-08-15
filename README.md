@@ -1,6 +1,16 @@
 # ecg
 Pulling information from biological databases, and converting it into easy to use jsons/gmls for network science.
 
+## Dependencies
+### kegg.py and jgi.py
+- `docopt` (for CLI)
+- `tqdm` (for visual progress bars)
+### kegg.py only
+- `biopython` (for KEGG REST API and TogoWS)
+### jgi.py only
+- `selenium` (for webdriver)
+- `beautifulsoup4` (for web page parsing)
+
 ## Local Installation
 
 To install locally, if you haven't navigated to the package directory:

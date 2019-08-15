@@ -34,13 +34,16 @@ from bs4 import BeautifulSoup
 
 class Jgi(object):
 
-    def __init__(self,chromedriver_path=None, 
+    def __init__(self,chromedriver_path="", 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
         self.homepage_url = homepage_url
 
-        if not chromedriver_path:
+        if chromedriver_path=="":
             self.driver = webdriver.Chrome()
+        
+        elif chromedriver_path.startswith("~"):
+            self.driver = webdriver.Chrome(os.path.expanduser('~')+chromedriver_path[1:])
 
         else:
             self.driver = webdriver.Chrome(chromedriver_path)
@@ -438,7 +441,8 @@ def __execute_cli(arguments):
     """
     Call appropriate methods based on command line interface input.
     """
-    chromedriver_path = literal_eval((arguments['--chromedriver_path']))
+    # chromedriver_path = literal_eval((arguments['--chromedriver_path']))
+    chromedriver_path = arguments['--chromedriver_path']
 
     if arguments['scrape_domain'] == True:
         J = Jgi(chromedriver_path,arguments['--homepage_url'])
