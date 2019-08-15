@@ -15,7 +15,7 @@ Arguments:
   scrape_urls   Download data from one or more (meta)genomes by URL
 
 Options:
-  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable [default: None]
+  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable (leaving blank defaults to current dir) [default: None]
   --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
   --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
   --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
