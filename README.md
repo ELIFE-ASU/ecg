@@ -143,3 +143,71 @@ Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
 |- Kegg.version["updates"] = list()
 |- Kegg.version["current"]
 ```
+
+## Downloading JGI data
+
+Downloading JGI data can be done through by importing the `ecg` package in a script, or through a command line interface (CLI).
+
+### Using import
+
+#### Downloading and running pipeline
+
+```python
+from ecg import jgi
+import os
+
+chromedriver_path = os.path.expanduser("~")+"/chromedriver" # "~/chromedriver" should also work
+path = "myjgi"
+
+J = jgi.Jgi()
+J.scrape_domain(path,"Eukarayota")
+
+## Built-in public methods
+J.scrape_domain();
+J.scrape_urls(organism_urls); # my_organism_urls should be a list of full urls
+```
+
+### Using CLI
+
+Example: `python jgi.py --chromedriver_path=/Users/Me/Applications/chromedriver scrape_domain myjgidir Bacteria --database=jgi`
+
+```python
+"""
+WARNING. CLI HAS NOT BEEN TESTED YET.
+
+Retrieve enzyme data from JGI genomes and metagenomes.
+
+Usage:
+  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_domain PATH DOMAIN [--database=<db>|--assembly_types=<at>...]
+  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_urls PATH DOMAIN ORGANISM_URLS [--assembly_types=<at>...]
+
+Arguments:
+  PATH  Directory where JGI data will be downloaded to
+  DOMAIN    JGI valid domain to scrape data from (one of: 'Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome')
+  ORGANISM_URLS     (meta)genome URLs to download data from
+  scrape_domain     Download an entire JGI domain and run pipeline to format data
+  scrape_urls   Download data from one or more (meta)genomes by URL
+
+Options:
+  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable (leaving blank defaults to current dir) [default: None]
+  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
+  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
+  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
+"""
+```
+
+### Output format
+
+The default file structure output from `jgi.Jgi().scrape_domain("myjgidir","Eukarayota")` looks like:
+
+```
+myjgidir
+|-Eukarayota
+|  |-combined_taxon_ids 
+|  |-missing_enzymes.json 
+|  |-taxon_ids
+|    |-2789789765.json
+|    |-2789789766.json
+|    ...
+```
+
