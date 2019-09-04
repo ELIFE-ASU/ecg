@@ -26,11 +26,30 @@ import os
 import re
 import json
 import warnings
+import sys, io
 from selenium import webdriver
 from ast import literal_eval
 from tqdm import tqdm
 from docopt import docopt
-from bs4 import BeautifulSoup   
+from bs4 import BeautifulSoup
+
+# Loads the correct pickle program and options.
+if sys.version_info[0] > 2:
+    # python 3 automatically defaults to cPickle
+    import pickle as cPickle
+else:
+    import cPickle
+
+def save(obj,filename):
+    fout = io.open(filename,'wb')
+    cPickle.dump(obj,fout,2)
+    fout.close()
+
+def load(filename):
+    fin = io.open(filename,'rb')
+    obj = cPickle.load(fin)
+    fin.close()
+    return obj
 
 class Jgi(object):
 
@@ -112,17 +131,38 @@ class Jgi(object):
     def __get_organism_urls(self,domain_json):
 
         all_GenomeNameSampleNameDisp =  [d['GenomeNameSampleNameDisp'] for d in domain_json['records']]
-
         organism_urls = list()
 
         for htmlandjunk in all_GenomeNameSampleNameDisp:
             regex = r"<a href='main\.cgi(.*)'>"
             match = re.search(regex, htmlandjunk)
             html_suffix = match.group(1)
-            full_url = self.homepage_url+html_suffix
+            
+            #full_url = self.homepage_url+html_suffix
+            full_url = "https://img.jgi.doe.gov/cgi-bin/m/main.cgi{}".format(html_suffix)
             organism_urls.append(full_url)
         
         return organism_urls
+    
+    # Added pruning function to remove organisms already downloaded.
+    def __prune_organism_urls(self, organism_urls, domain_path):
+        organism_id_list = []
+        for htmlandjunk in organism_urls:
+            m = re.search(r'\d+$', htmlandjunk)
+            organism_id = m.group(0)
+            organism_id_list.append(organism_id)
+
+        remove_list = []
+        for _dirpath, _dirnames, files in os.walk(domain_path):
+            if files:
+                for f in files:
+                    f = f.split('.json')[0]
+                    if f in organism_id_list:
+                        remove_list.append(organism_id_list.pop(organism_id_list.index(f)))
+                
+        new_organism_url_list = [htmlandjunk for htmlandjunk in organism_urls if (re.search(r'\d+$', htmlandjunk).group(0) not in remove_list)]
+
+        return new_organism_url_list
 
     def __get_organism_htmlSource(self,organism_url):
         self.driver.get(organism_url)
@@ -241,7 +281,8 @@ class Jgi(object):
         elif domain not in tested:
             raise ValueError("`domain` must be one of JGI datasets: {0} See: IMG Content table on ".format(tested+untested)+
                               "img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
-          
+
+      
     def __write_taxon_id_json(self,path,domain,taxon_id,org_dict):
 
         taxon_ids_path = os.path.join(path,domain,"taxon_ids",taxon_id+".json")
@@ -321,10 +362,10 @@ class Jgi(object):
             os.makedirs(domain_path)
 
         ## Only allow scraping into empty directory
-        for _dirpath, _dirnames, files in os.walk(domain_path):
-            if files:
-                raise ValueError("Directory must be empty to initiate a fresh JGI download."+
-                             "Looking to update a JGI domain? Try `Jgi.update()` instead.")        
+        #for _dirpath, _dirnames, files in os.walk(domain_path):
+        #    if files:
+        #        raise ValueError("Directory must be empty to initiate a fresh JGI download."+
+        #                     "Looking to update a JGI domain? Try `Jgi.update()` instead.")        
 
         ## Validate assembly_types
         metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
@@ -339,8 +380,13 @@ class Jgi(object):
         domain_url = self.__get_domain_url(domain,database)
         domain_json = self.__get_domain_json(domain_url,domain,database)
         organism_urls = self.__get_organism_urls(domain_json)
+        
+        organism_urls = self.__prune_organism_urls(organism_urls, domain_path)
+        print("*** Warning! ***")
+        print("If directory is not empty, will attempt to finish missing files in domain.")
+        print("Looking to update a JGI domain? Try 'Jgi.update()' instead. ***Function upcoming.")
 
-        self._scrape_urls_unsafe(path,domain,organism_urls,assembly_types=assembly_types)
+        self._scrape_urls_unsafe(path,domain,organism_urls, assembly_types=assembly_types)
         
     def scrape_urls(self, path, domain, organism_urls,
                     assembly_types = ['assembled','unassembled','both']):
@@ -364,6 +410,7 @@ class Jgi(object):
         ## Validate domain
         self.__validate_domain(domain)
 
+        organism_urls = self.__prune_organism_urls(organism_urls, domain_path)
         self._scrape_urls_unsafe(path,domain,organism_urls,assembly_types=assembly_types)
 
     def _scrape_urls_unsafe(self, path, domain, organism_urls,
@@ -374,28 +421,53 @@ class Jgi(object):
         
         metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
         
-        org_jsons = list()
         pbar = tqdm(organism_urls)
 
+        domain_path = os.path.join(path,domain)
+
+        temp_missing_path = os.path.join(domain_path,"missing_enzyme_data.dat")
+        temp_org_jsons_path = os.path.join(domain_path,"org_jsons.dat")
+
+        if os.path.exists(temp_org_jsons_path):
+            org_jsons = load(temp_org_jsons_path)
+        else:
+            org_jsons = list()
+
         if domain in metagenome_domains:
-            missing_enzyme_data = dict()
+            if os.path.exists(temp_missing_path):
+                missing_enzyme_data = load(temp_missing_path)
+            else:
+                missing_enzyme_data = dict()
+         
+
             for organism_url in pbar:
-                pbar.set_description("Scraping %s ..."%(organism_url))
+                pbar.set_description("Scraping %s ..."%(re.search(r'\d+$', organism_url).group(0)))
                 taxon_id, org_dict, missing_enzyme_data = self.__scrape_organism_url_from_metagenome_domain(organism_url,assembly_types,missing_enzyme_data)
 
                 org_jsons.append(org_dict)
                 self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
 
+                save(missing_enzyme_data,temp_missing_path)
+                save(org_jsons,temp_org_jsons_path)
+
         else:
-            missing_enzyme_data = list()
+            if os.path.exists(temp_missing_path):
+                missing_enzyme_data = load(temp_missing_path)
+            else:
+                missing_enzyme_data = list()
+
             for organism_url in pbar:
-                pbar.set_description("Scraping %s ..."%(organism_url))
+                pbar.set_description("Scraping %s ..."%(re.search(r'\d+$', organism_url).group(0)))
                 taxon_id, org_dict, missing_enzyme_data = self.__scrape_organism_url_from_regular_domain(organism_url,missing_enzyme_data)
 
                 org_jsons.append(org_dict)
                 self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
+
+                save(missing_enzyme_data,temp_missing_path)
+                save(org_jsons,temp_org_jsons_path)
+
         
-        domain_path = os.path.join(path,domain)
+        #domain_path = os.path.join(path,domain)
         print("Writing missing enzyme data to file...")
         with open(os.path.join(domain_path,"missing_enzymes.json"), 'w') as f:
             json.dump(missing_enzyme_data,f)
