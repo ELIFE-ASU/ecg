@@ -413,6 +413,12 @@ class Jgi(object):
 
         ## Call scrape_urls
         pass
+
+    def update(self):
+        """
+        to be implemented: function to update local JGI database
+        """
+        pass
 # def __check_cli_input_types(arguments):
 #     """
 #     Check docopt input types.
