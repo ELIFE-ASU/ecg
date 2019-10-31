@@ -188,6 +188,103 @@ class Jgi(object):
         ## metadata_table_dict['Taxon Object ID'] should be the way we identify a metagenome
         return metadata_table_dict
 
+    def __get_organism_statistics(self,htmlSource):
+        # return dict of metagenome table data
+        bs = BeautifulSoup(htmlSource,"html.parser")
+
+        statistics_table = bs.findAll('table')[-1]
+  
+        statistics_table_dict = dict()
+
+        for row in statistics_table.findAll('tr'):
+            if (len(row.findAll('th')) == 1):
+                row_key = row.findAll('th')[0].text.rstrip()
+                row_value = []
+                row_value.append(row.findAll('td')[0].text.rstrip() if row.findAll('td')[0] else None)
+                row_value.append(row.findAll('td')[1].text.rstrip() if row.findAll('td')[1] else None)
+                statistics_table_dict[row_key] = row_value
+
+            elif (len(row.findAll('th')) == 0):
+                row_value = []
+                row_key = row.findAll('td')[0].text.rstrip().strip()
+                row_key = row_key.replace('\xa0','')
+                #regexp = re.compile(r'\s+',re.UNICODE)
+                #row_key = [regexp.sub('',p) for p in row_key]
+
+                row_value.append(row.findAll('td')[1].text.rstrip() if row.findAll('td')[1] else None)
+                row_value.append(row.findAll('td')[2].text.rstrip() if row.findAll('td')[2] else None)
+                statistics_table_dict[row_key] = row_value
+                
+        return statistics_table_dict
+
+    def __get_organism_statistics_metagenome(self,htmlSource):
+        # return dict of metagenome table data
+        bs = BeautifulSoup(htmlSource,"html.parser")
+
+        statistics_table = bs.findAll('table')[-2]
+  
+        statistics_table_dict = dict()
+        assembled_dict = dict()
+        unassembled_dict = dict()
+        total_dict = dict()
+
+        for row in statistics_table.findAll('tr'):
+            if (len(row.findAll('th')) == 1):
+                row_key = row.findAll('th')[0].text.rstrip()
+
+                row_value = []
+                row_value.append(row.findAll('td')[0].text.rstrip() if row.findAll('td')[0] else None)
+                row_value.append(row.findAll('td')[1].text.rstrip() if row.findAll('td')[1] else None)
+                assembled_dict[row_key] = row_value
+
+                try:
+                    row_value = []
+                    row_value.append(row.findAll('td')[2].text.rstrip() if row.findAll('td')[2] else None)
+                    row_value.append(row.findAll('td')[3].text.rstrip() if row.findAll('td')[3] else None)
+                    unassembled_dict[row_key] = row_value
+
+                    row_value = []
+                    row_value.append(row.findAll('td')[4].text.rstrip() if row.findAll('td')[4] else None)
+                    row_value.append(row.findAll('td')[5].text.rstrip() if row.findAll('td')[5] else None)
+                    total_dict[row_key] = row_value
+                except:
+                    pass
+
+                
+
+            elif (len(row.findAll('th')) == 0):
+                if len(row.findAll('td')) > 0:
+                    row_key = row.findAll('td')[0].text.rstrip().strip()
+                    row_key = row_key.replace('\xa0','')
+                    #regexp = re.compile(r'\s+',re.UNICODE)
+                    #row_key = [regexp.sub('',p) for p in row_key]
+
+                    row_value = []
+                    row_value.append(row.findAll('td')[1].text.rstrip() if row.findAll('td')[1] else None)
+                    row_value.append(row.findAll('td')[2].text.rstrip() if row.findAll('td')[2] else None)
+                    assembled_dict[row_key] = row_value
+
+                    try:
+                        row_value = []
+                        row_value.append(row.findAll('td')[3].text.rstrip() if row.findAll('td')[3] else None)
+                        row_value.append(row.findAll('td')[4].text.rstrip() if row.findAll('td')[4] else None)
+                        unassembled_dict[row_key] = row_value
+
+                        row_value = []
+                        row_value.append(row.findAll('td')[5].text.rstrip() if row.findAll('td')[5] else None)
+                        row_value.append(row.findAll('td')[6].text.rstrip() if row.findAll('td')[6] else None)
+                        total_dict[row_key] = row_value
+                    except:
+                        pass
+        
+        statistics_table_dict['assembled'] = assembled_dict
+
+        if unassembled_dict != dict():
+            statistics_table_dict['unassembled'] = unassembled_dict
+            statistics_table_dict['total'] = total_dict
+
+        return statistics_table_dict
+
     def __get_enzyme_url_metagenome(self,organism_url,htmlSource,assembly_type):
 
         regex = r'<a href=\"(main\.cgi\?section=MetaDetail&amp;page=enzymes.*data_type=%s.*)\" onclick'%assembly_type
@@ -204,7 +301,6 @@ class Jgi(object):
             enzyme_url = None
 
         return enzyme_url
-
 
     def __get_enzyme_url(self,organism_url,htmlSource):
         regex = r'<a href=\"(main\.cgi\?section=TaxonDetail&amp;page=enzymes&amp;taxon_oid=\d*)\"'
@@ -293,8 +389,9 @@ class Jgi(object):
         ## Get enzyme json for single organism
         htmlSource = self.__get_organism_htmlSource(organism_url)
         metadata_dict = self.__get_organism_metadata(htmlSource)
+        statistics_dict = self.__get_organism_statistics_metagenome(htmlSource)
         taxon_id = metadata_dict['Taxon Object ID']
-        org_dict = {'metadata':metadata_dict}
+        org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict}
 
         ## Different methods for metagenomes/genomes
         for assembly_type in assembly_types:
@@ -317,8 +414,9 @@ class Jgi(object):
 
         htmlSource = self.__get_organism_htmlSource(organism_url)
         metadata_dict = self.__get_organism_metadata(htmlSource)
+        statistics_dict = self.__get_organism_statistics(htmlSource)
         taxon_id = metadata_dict['Taxon ID']
-        org_dict = {'metadata':metadata_dict}
+        org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict}
 
         enzyme_url = self.__get_enzyme_url(organism_url,htmlSource)
         if enzyme_url:
