@@ -25,6 +25,7 @@ class Ecg(object):
 
     def __init__(self,biosystem_json):
         self.__biosystem_json = biosystem_json
+        self.__ec_rxn_link_json = None
 
     def __load_json(self,fname):
         """
@@ -46,6 +47,9 @@ class Ecg(object):
             json.dump(data, outfile)
     
     def _get_biosystem_eclist(self,biosystem_json):
+        """
+        Converts exhaustive JGI json to only a list of ECs
+        """
 
         biosystem_json = self.__load_json(biosystem_json)
         
@@ -56,49 +60,42 @@ class Ecg(object):
         return ec_list
 
     def _get_biosystem_rxnlist(self,ec_list,ec_rxn_link_json):
-    
-        ec_rxn_link_json =self.__load_json(ec_rxn_link_json)
+        """
+        Converts list of ECs to list of reactions
+        """
+        if self.__ec_rxn_link_json == None:
+            self.__ec_rxn_link_json = self.__load_json(ec_rxn_link_json)
 
         rxn_list = list()
         for ec in ec_list:
             ec_key = 'ec:'+ec
-            if ec_key in ec_rxn_link_json:
-                rxn_list+=ec_rxn_link_json[ec_key].split("rn:")[1]
+            if ec_key in self.__ec_rxn_link_json:
+                rxn_list+=self.__ec_rxn_link_json[ec_key].split("rn:")[1]
             
         return rxn_list
 
     def _write_biosystem_rxns_from_jgi_json_file(self,infile,ec_rxn_link_json,outdir="taxon_reactions"):
         """
-
+        Write a single biosystem's' reaction list (using the JGI json)
         """
         biosystem_json = self.__load_json(infile)
         ec_list = self._get_biosystem_eclist(biosystem_json)
         rxn_list = self._get_biosystem_rxnlist(ec_list,ec_rxn_link_json)
-
-        # if outdir==None:
-        #     splitext = os.path.splitext(infile)[0]
-        #     outpath = splitext+"_rxns.json"
-        
-        
-        # if not os.path.exists(outpath):
-        #     os.makedirs(outpath)
-        # outpath = outpath+os.path.basename(fname)
         outpath = os.path.join(outdir,os.path.basename(infile))
         self.__write_json(rxn_list,outpath)
 
     def _write_biosystem_rxns_from_jgi_json_dir(self,indir,ec_rxn_link_json,outdir="taxon_reactions"):
         """
-        2019-11-1
-        need to check that this will not overwrite the biosystem_json files
-        when i write out the org_rxn list
-        - also need to check for the above function
-        - just write the damn thing. then figure out how to test.
+        Write reaction lists from a directory of biosystems (all JGI jsons)
         """
         for fname in glob.glob(os.path.join(indir, '*.json')):
             self._write_biosystem_rxns_from_jgi_json_file(fname,ec_rxn_link_json,outdir)
 
 
     def write_biosystem_rxns(self,ec_rxn_link_json,outdir="taxon_reactions"):
+        """
+        Write reaction lists from either a single biosystem file or biosystem directory (all JGI jsons)
+        """
 
         if not os.path.exists(outdir):
             os.makedirs(outdir)
