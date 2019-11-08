@@ -1,15 +1,32 @@
+"""
+WARNING. CLI HAS NOT BEEN TESTED YET.
+DO I MAKE THIS A CLASS OR NOT? for gmls, i can just say: if rxn directory exists, use that. if not, run the reaction creation and then create gmls
+
+Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
+
+Usage:
+  ecg.py BIOSYSTEM_JSON write_biosystem_rxns EC_RXN_LINK_JSON [--outdir=<outdir>]
+
+Arguments:
+  BIOSYSTEM_JSON  Directory or file where JGI data is located
+  EC_RXN_LINK_JSON    Json containing relationship between ec numbers and reactions
+  write_biosystem_rxns   Download data from one or more (meta)genomes by URL
+
+Options:
+  --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
+
+"""
+
 import json
 import glob
+import os
 
 class Ecg(object):
 
-    # def __init__(self,chromedriver_path="", 
-    #              homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
-    # def __init__(self,ec_rxn_link_json):
-    #     # self.__master = master_json 
-    #     self.__ec_rxn_link_json = ec_rxn_link_json
-    
-    def __load_json(fname):
+    def __init__(self,biosystem_json):
+        self.__biosystem_json = biosystem_json
+
+    def __load_json(self,fname):
         """
         Wrapper to load json in single line
 
@@ -18,7 +35,7 @@ class Ecg(object):
         with open(fname) as f:
             return json.load(f)
 
-    def __write_json(data,fname):
+    def __write_json(self,data,fname):
         """
         Wrapper to write json in single line
 
@@ -28,19 +45,19 @@ class Ecg(object):
         with open(fname, 'w') as outfile:
             json.dump(data, outfile)
     
-    def _get_org_eclist(organism_json):
+    def _get_biosystem_eclist(self,biosystem_json):
 
-        organism_json = load_json(organism_json)
+        biosystem_json = self.__load_json(biosystem_json)
         
         ec_list = list()
-        for d in organism_json['records']:
+        for d in biosystem_json['records']:
             ec_list.append(d['EnzymeID'].split("EC:")[1])
         
         return ec_list
 
-    def _get_org_rxnlist(ec_list,ec_rxn_link_json):
+    def _get_biosystem_rxnlist(self,ec_list,ec_rxn_link_json):
     
-        ec_rxn_link_json =load_json(ec_rxn_link_json)
+        ec_rxn_link_json =self.__load_json(ec_rxn_link_json)
 
         rxn_list = list()
         for ec in ec_list:
@@ -50,39 +67,47 @@ class Ecg(object):
             
         return rxn_list
 
-    def _write_org_rxns_from_json_file(fname,ec_rxn_link_json,outdir):
+    def _write_biosystem_rxns_from_jgi_json_file(self,infile,ec_rxn_link_json,outdir="taxon_reactions"):
         """
 
         """
-        organism_json = self.__load_json(fname)
-        ec_list = self._get_org_eclist(organism_json)
-        rxn_list = self._get_org_rxnlist(ec_list,ec_rxn_link_json)
+        biosystem_json = self.__load_json(infile)
+        ec_list = self._get_biosystem_eclist(biosystem_json)
+        rxn_list = self._get_biosystem_rxnlist(ec_list,ec_rxn_link_json)
+
+        # if outdir==None:
+        #     splitext = os.path.splitext(infile)[0]
+        #     outpath = splitext+"_rxns.json"
         
-        outpath = outdir+'/'
-        if not os.path.exists(outpath):
-            os.makedirs(outpath)
-        outpath = outpath+os.path.basename(fname)
+        
+        # if not os.path.exists(outpath):
+        #     os.makedirs(outpath)
+        # outpath = outpath+os.path.basename(fname)
+        outpath = os.path.join(outdir,os.path.basename(infile))
         self.__write_json(rxn_list,outpath)
 
-    def _write_org_rxns_from_json_dir(dirname,ec_rxn_link_json,outdir):
+    def _write_biosystem_rxns_from_jgi_json_dir(self,indir,ec_rxn_link_json,outdir="taxon_reactions"):
         """
         2019-11-1
-        need to check that this will not overwrite the org_json files
+        need to check that this will not overwrite the biosystem_json files
         when i write out the org_rxn list
         - also need to check for the above function
         - just write the damn thing. then figure out how to test.
         """
-        for fname in glob.glob(dirname/*.json):
-            self._write_org_rxns_from_json_file(fname,ec_rxn_link_json,outdir)
+        for fname in glob.glob(os.path.join(indir, '*.json')):
+            self._write_biosystem_rxns_from_jgi_json_file(fname,ec_rxn_link_json,outdir)
 
 
-    def write_org_rxns(org_json,ec_rxn_link_json,outdir):
+    def write_biosystem_rxns(self,ec_rxn_link_json,outdir="taxon_reactions"):
 
-        if os.path.isfile(org_json):
-            write_org_rxns_from_json_file(org_json,ec_rxn_link_json,outdir)
+        if not os.path.exists(outdir):
+            os.makedirs(outdir)
+
+        if os.path.isfile(self.__biosystem_json):
+            self._write_biosystem_rxns_from_jgi_json_file(self.__biosystem_json,ec_rxn_link_json,outdir)
         
-        elif os.path.isdir(org_json):
-            write_org_rxns_from_json_dir(org_json,ec_rxn_link_json,outdir)
+        elif os.path.isdir(self.__biosystem_json):
+            self._write_biosystem_rxns_from_jgi_json_dir(self.__biosystem_json,ec_rxn_link_json,outdir)
 
 
 
@@ -91,7 +116,7 @@ class Ecg(object):
     # NEW PLAN
     # require master.json and enzyme_reaction_link.json 
     # if master.json isn't generated, tell user to generate it from the data they have using kegg.py
-    # def get_omic_edges(master_json,ec_rxn_link_json,org_json):
+    # def get_omic_edges(master_json,ec_rxn_link_json,biosystem_json):
     #     """
     #     gets "reaction edges" from one or more genomes/metagenomes
     #     """
