@@ -246,7 +246,7 @@ class Ecg(object):
 
         if {'unipartite-directed-sub','unipartite-undirected-subfromdirected'} & set(graphtypes):
 
-            if verbose: print"(unipartite-directed-sub or unipartite-undirected-subfromdirected)")
+            if verbose: print("(unipartite-directed-sub or unipartite-undirected-subfromdirected)")
 
             G_cdir = bipartite.projected_graph(B, [n for n in B.nodes() if n.startswith('C')])
 
