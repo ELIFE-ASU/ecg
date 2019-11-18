@@ -20,6 +20,7 @@ Options:
 import json
 import glob
 import os
+import networkx as nx
 
 class Ecg(object):
 
@@ -109,60 +110,68 @@ class Ecg(object):
     #######################################################################################################
     ### NX GRAPHS
     #######################################################################################################
-
-    def create_bipartite_directed_rxn_sub_network(genome_rxn_list,rxn_edges,rxn_detailed_json_dir):
+    def __create_base_network(biosys_rxn_json,master_json):
         """
-        Create single bipartite-directed-rxnsub graph 
+        Create single bipartite-directed-rxnsub graph, used to create all subsequent graphs
 
-        :param genome_rxn_list: list of all reactions for a (meta)genome 
-        :param rxn_edges: loaded json of all possible rxn edges in KEGG 
-        :param rxn_detailed_json_dir: path to directory containing json files of all reactions 
+        :param biosys_rxn_json: loaded json of all reactions for a (meta)genome
+        :param master_json: loaded json of all possible rxn edges and detailed data in KEGG 
         """
         G = nx.DiGraph()
+
+        rxn_list = self.__load_json(biosys_rxn_json)
+        master = self.__load_json(master_json)
         
         rxns_missing_from_rxn_edges = list()
-        for rxn in genome_rxn_list:
+        for rxn in rxn_list:
             ## rxn nodes
             G.add_node(rxn,bipartite=0,type=0)
 
-            if (rxn in rxn_edges['substrates']) and (rxn in rxn_edges['products']):
-                ## compound nodes
-                G.add_nodes_from(rxn_edges['products'][rxn],bipartite=1,type=1)
-                G.add_nodes_from(rxn_edges['substrates'][rxn],bipartite=1,type=1)
+            if rxn in master["reactions"]:
+                ## compound nodes- this is needed to assign bipartite type
+                G.add_nodes_from(master["reactions"][rxn]["left"],bipartite=1,type=1)
+                G.add_nodes_from(master["reactions"][rxn]["right"],bipartite=1,type=1)
                 ## edges
-                G.add_edges_from([(rxn,product) for product in rxn_edges['products'][rxn]])
-                G.add_edges_from([(substrate,rxn) for substrate in rxn_edges['substrates'][rxn]])
+                G.add_edges_from([(rxn,cpd) for cpd in master["reactions"][rxn]["right"]])
+                G.add_edges_from([(cpd,rxn) for cpd in master["reactions"][rxn]["left"]])
 
             ## Check if any non-glycan reactions are missing
             else:
-                rxn_json = load_json(rxn_detailed_json_dir+rxn+'.json')
-                if rxn_json[0]['glycans'] == False:
+                if master["reactions"][rxn]['glycans'] == False:
                     rxns_missing_from_rxn_edges.append(rxn)
 
         return G, rxns_missing_from_rxn_edges
 
-    def write_graphs_from_one_genome(fpath,gmldir,missingdir,graphtypes=['unipartite-undirected-subfromdirected'],write_dir_to_outfpath=True,write_dir_to_outfname=True,write_header_to_outfname=True,write_fname_to_outfname=True):
+    def write_graphs_from_one_genome(biosys_rxn_json,
+                                     master_json,
+                                     graphtypes=["unipartite-undirected-subfromdirected"],
+                                     outdir="graphs",
+                                     missingdir="rxns_missing_from_kegg",
+                                     verbose=True):
         """
-        Write single EC list to one or more gml files.
-        Steps:
-        -create directed bipartite graph
-        -project if needed
-        -undirect if needed
+        Write single biosystem's reaction json to one or more gml files.
 
-        :param fpath: the filepath to the ec_list file
-        :param gmldir: the dir to store gml files and subdirs in 
+        :param biosys_rxn_json: the filepath to the biosystem reaction json file
+        :param master_json: the filepath to the json with details information about all KEGG reactions
         :param graphtypes: which types of graphs to write to gml files. see notes
                         below for description of possible inputs.
-        :param write_dir_to_outfpath: if True, use parent dir for outfpath
-        :param write_header_to_outfname: if True, use header row in outfile name
-        :param write_dir_to_outfname: if True, use parent dir in outfile name
-        :param write_fname_to_outfname: if True, use fpath basename in outfile name
+        :param outdir: the dir to store subdirs for each graph type, and subsequent gml files
+        :param missingdir: the dir to store reactions which are missing from biosystems as jsons
+        :param verbose: if True, prints the graph types as they're created
 
-        ------------------------------------------
+        ---------------------------------------------------------------------------------
         Notes: 
-        ------------------------------------------
-        Implemented
-        --------------------
+        ---------------------------------------------------------------------------------
+        Steps involved:
+        1. Creates directed bipartite graph
+        2. Projects graph if needed
+        3. Undirects graph if needed
+
+        These steps allow for less overhead when wishing to produce multiple graph types.
+
+        ------------------------
+        Implemented graph types:
+        ------------------------
         bipartite-directed-rxnsub
         bipartite-undirected-rxnsub
         unipartite-undirected-rxn
@@ -170,9 +179,9 @@ class Ecg(object):
         unipartite-undirected-sub
         unipartite-undirected-subfromdirected --same connection rules used in 
                                                 "Universal Scaling" paper
-        --------------------
-        Not yet implemented
-        --------------------
+        ------------------------
+        Not yet implemented:
+        ------------------------
         rxn-enz (bi directed/undirected)
                 rxn-rxn (uni)
                 enz-enz (uni)
@@ -180,140 +189,90 @@ class Ecg(object):
             enz-enz (uni)
             sub-sub (uni)
             sub-sub-restricted (uni)  
-        ------------------------------------------
-        Scratch notes:
-        ------------------------------------------
-            rxn-sub (bi directed/undirected)
-                rxn-rxn (uni)
-                sub-sub (uni)
-                sub-sub-restricted (uni)
-            rxn-enz (bi directed/undirected)
-                rxn-rxn (uni)
-                enz-enz (uni)
-            enz-sub (bi directed/undirected)
-                enz-enz (uni)
-                sub-sub (uni)
-                sub-sub-restricted (uni)    
-
         """
 
-        ## Package data THESE SHOULD ALL BE FIXED INTERNALLY
-        datapath = os.path.join(os.path.dirname(os.path.abspath(os.path.realpath(__file__))), "data")
+        B, rxns_missing_from_rxn_edges = __create_base_network(biosys_rxn_json,master_json)
+        biosys_id = os.path.splitext(os.path.basename(biosys_rxn_json))[0]
+        for graphtype in graphtypes:
+            dirpath = os.path.join(outdir,graphtype)
+            if not os.path.exists(dirpath):
+                os.makedirs(dirpath)
 
-        ec_to_rxn_dict = load_json(os.path.join(datapath,'ec_to_rxnlist.json'))
-        rxn_edges = load_json(os.path.join(datapath,'reaction_edges.json'))
-        rxn_detailed_json_dir = os.path.join(datapath,'reaction_detailed_jsons/')
-        
-        ## User data
-        outfpath, genome_ec_list = get_organism_ec_list(fpath, \
-            write_dir_to_outfpath=write_dir_to_outfpath, \
-            write_dir_to_outfname=write_dir_to_outfname, \
-            write_header_to_outfname=write_header_to_outfname, \
-            write_fname_to_outfname=write_fname_to_outfname)
-        
-        ## Bipartite-directed-rxnsub needed for all graphs
+        if "bipartite-directed-rxnsub" in graphtypes:
 
-        # print "outside ifs 2"
-        # print graphtypes
+            if verbose: print("bipartite-directed-rxnsub")
 
-        # if ('unipartite-directed-sub' or 'unipartite-undirected-subfromdirected') in graphtypes:
-        #     print 'hello'
-
-        genome_rxn_list, missing_ec_list = get_organism_rxn_list(genome_ec_list,ec_to_rxn_dict) ## Not outputting missing_ec_list right now
-        B, rxns_missing_from_rxn_edges = create_bipartite_directed_rxn_sub_network(genome_rxn_list,rxn_edges,rxn_detailed_json_dir)
-
-        if 'bipartite-directed-rxnsub' in graphtypes:
-
-            print 'bipartite-directed-rxnsub'
-
-            outfpath_final = gmldir+'bipartite-directed-rxnsub/'+outfpath+'.gml'
-            
-            create_dirs_for_path(outfpath_final)
-            
+            outfpath_final = os.path.join(outdir,"bipartite-directed-rxnsub",biosys_id+".gml")           
             nx.write_gml(B,outfpath_final)
-
+        
         if {'bipartite-undirected-rxnsub','unipartite-undirected-rxn','unipartite-undirected-sub'} & set(graphtypes):
 
-            print '(bipartite-undirected-rxnsub or unipartite-undirected-rxn or unipartite-undirected-sub)'
+            if verbose: print("(bipartite-undirected-rxnsub or unipartite-undirected-rxn or unipartite-undirected-sub)")
 
             B_un = B.to_undirected()
 
             if 'bipartite-undirected-rxnsub' in graphtypes:
 
-                print 'bipartite-undirected-rxnsub'
+                if verbose: print("bipartite-undirected-rxnsub")
 
-                outfpath_final = gmldir+'bipartite-undirected-rxnsub/'+outfpath+'.gml'
-
-                create_dirs_for_path(outfpath_final)
-
+                outfpath_final = os.path.join(outdir,"bipartite-undirected-rxnsub",biosys_id+".gml")          
                 nx.write_gml(B_un,outfpath_final)
 
             if 'unipartite-undirected-rxn' in graphtypes:
 
-                print 'unipartite-undirected-rxn'
+                if verbose: print("unipartite-undirected-rxn")
 
                 G_r = bipartite.projected_graph(B_un,[n for n in B_un.nodes() if n.startswith('R')])
-
-                outfpath_final = gmldir+'unipartite-undirected-rxn/'+outfpath+'.gml'
-
-                create_dirs_for_path(outfpath_final)
-
+                outfpath_final = os.path.join(outdir,"unipartite-undirected-rxn",biosys_id+".gml")
                 nx.write_gml(G_r,outfpath_final)
 
             if 'unipartite-undirected-sub' in graphtypes:
 
-                print 'unipartite-undirected-sub'
+                if verbose: print("unipartite-undirected-sub")
 
                 G_c = bipartite.projected_graph(B_un, [n for n in B_un.nodes() if n.startswith('C')])
-
-                outfpath_final = gmldir+'unipartite-undirected-sub/'+outfpath+'.gml'
-
-                create_dirs_for_path(outfpath_final)
-
+                outfpath_final = os.path.join(outdir,"unipartite-undirected-sub",biosys_id+".gml")
                 nx.write_gml(G_c,outfpath_final)
 
         if {'unipartite-directed-sub','unipartite-undirected-subfromdirected'} & set(graphtypes):
 
-            print '(unipartite-directed-sub or unipartite-undirected-subfromdirected)'
+            if verbose: print"(unipartite-directed-sub or unipartite-undirected-subfromdirected)")
 
             G_cdir = bipartite.projected_graph(B, [n for n in B.nodes() if n.startswith('C')])
 
             if 'unipartite-directed-sub' in graphtypes:
 
-                print 'unipartite-directed-sub'
+                if verbose: print("unipartite-directed-sub")
                 
-                outfpath_final = gmldir+'unipartite-directed-sub/'+outfpath+'.gml'
-
-                create_dirs_for_path(outfpath_final)
-
+                outfpath_final = os.path.join(outdir,"unipartite-directed-sub",biosys_id+".gml")
                 nx.write_gml(G_cdir,outfpath_final)
 
 
             if 'unipartite-undirected-subfromdirected' in graphtypes:
 
-                print 'unipartite-undirected-subfromdirected'
+                if verbose: print("unipartite-undirected-subfromdirected")
 
                 G_cun = G_cdir.to_undirected()
-
-                outfpath_final = gmldir+'unipartite-undirected-subfromdirected/'+outfpath+'.gml'
-
-                create_dirs_for_path(outfpath_final)
-
+                outfpath_final = os.path.join(outdir,"unipartite-undirected-subfromdirected",biosys_id+".gml")
                 nx.write_gml(G_cun,outfpath_final)
-
-        ## Write ECs in genome missing from KEGG (if not empty)
-        if missing_ec_list:
-            missing_ec_list_outpath = missingdir+'genomes_containing_ecs_missing_from_kegg/'+outfpath
-            create_dirs_for_path(missing_ec_list_outpath)
-            write_json(missing_ec_list, missing_ec_list_outpath+'.json')
         
         ## Write rxns in genome missing from KEGG (if not empty)
         if rxns_missing_from_rxn_edges:
-            rxns_missing_from_edges_outpath = missingdir+'genomes_containing_rxns_missing_from_kegg/'+outfpath
-            create_dirs_for_path(rxns_missing_from_edges_outpath)
-            write_json(rxns_missing_from_rxn_edges, rxns_missing_from_edges_outpath+'.json')
+            outfpath_final = os.path.join(missingdir,biosys_id+".json")
+            self.__write_json(rxns_missing_from_rxn_edges, outfpath_final)
 
-    def write_graphs_from_many_genomes(fpathdir,gmldir,missingdir,graphtypes=['unipartite-undirected-subfromdirected'],write_dir_to_outfpath=True,write_dir_to_outfname=True,write_header_to_outfname=True,write_fname_to_outfname=True):
+
+
+    #######################################################################################################
+
+    def write_graphs_from_many_genomes(fpathdir,
+                                       gmldir,
+                                       missingdir,
+                                       graphtypes=['unipartite-undirected-subfromdirected'],
+                                       write_dir_to_outfpath=True,
+                                       write_dir_to_outfname=True,
+                                       write_header_to_outfname=True,
+                                       write_fname_to_outfname=True):
         """
         Writes multiple EC lists to one or more gml files.
 
@@ -335,7 +294,15 @@ class Ecg(object):
                 write_header_to_outfname=write_header_to_outfname,
                 write_fname_to_outfname=write_fname_to_outfname)
 
-    def write_graphs_from_many_genomes_sampled(sample_size,fpathdir,gmldir,missingdir,graphtypes=['unipartite-undirected-subfromdirected'],write_dir_to_outfpath=True,write_dir_to_outfname=True,write_header_to_outfname=True,write_fname_to_outfname=True):
+    def write_graphs_from_many_genomes_sampled(sample_size,
+                                               fpathdir,
+                                               gmldir,
+                                               missingdir,
+                                               graphtypes=['unipartite-undirected-subfromdirected'],
+                                               write_dir_to_outfpath=True,
+                                               write_dir_to_outfname=True,
+                                               write_header_to_outfname=True,
+                                               write_fname_to_outfname=True):
         """
         Writes multiple EC lists to one or more gml files.
 
