@@ -308,7 +308,7 @@ class Ecg(object):
                                graphtypes=["unipartite-undirected-subfromdirected"],
                                outdir="graphs",
                                missingdir="rxns_missing_from_kegg",
-                               verbose=True)):
+                               verbose=True):
         
         if not os.path.exists(outdir):
             os.makedirs(outdir)
