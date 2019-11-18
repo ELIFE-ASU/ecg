@@ -1,5 +1,5 @@
 """
-WARNING. CLI HAS NOT BEEN TESTED YET.
+WARNING. CLI HAS NOT IMPLEMENTED OR TESTED YET.
 
 Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
 
@@ -28,6 +28,7 @@ import json
 import glob
 import os
 import networkx as nx
+from networkx.algorithms import bipartite
 from docopt import docopt
 
 class Ecg(object):
@@ -201,7 +202,7 @@ class Ecg(object):
             sub-sub-restricted (uni)  
         """
 
-        B, rxns_missing_from_rxn_edges = __create_base_network(biosys_rxn_json,master_json)
+        B, rxns_missing_from_rxn_edges = self.__create_base_network(biosys_rxn_json,master_json)
         biosys_id = os.path.splitext(os.path.basename(biosys_rxn_json))[0]
         for graphtype in graphtypes:
             dirpath = os.path.join(outdir,graphtype)
@@ -314,7 +315,7 @@ class Ecg(object):
             os.makedirs(outdir)
 
         if os.path.isfile(biosys_rxn_json):
-            self._write_biosystem_graphs_from_jgi_json_file(biosys_rxn_json,master_json,outdir)
+            self._write_biosystem_graphs_from_json_file(biosys_rxn_json,master_json,outdir)
         
         elif os.path.isdir(biosys_rxn_json):
-            self._write_biosystem_graphs_from_jgi_json_dir(biosys_rxn_json,master_json,outdir)
+            self._write_biosystem_graphs_from_json_dir(biosys_rxn_json,master_json,outdir)
