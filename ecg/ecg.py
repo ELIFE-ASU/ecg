@@ -64,8 +64,8 @@ class Ecg(object):
         biosystem_json = self.__load_json(biosystem_json)
         
         ec_list = list()
-        for d in biosystem_json['records']:
-            ec_list.append(d['EnzymeID'].split("EC:")[1])
+        for ec in biosystem_json['enzymes']:
+            ec_list.append(ec.split("EC:")[1])
         
         return ec_list
 
