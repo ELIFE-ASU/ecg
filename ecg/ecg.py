@@ -265,93 +265,32 @@ class Ecg(object):
 
     #######################################################################################################
 
-    def write_graphs_from_many_genomes(fpathdir,
-                                       gmldir,
-                                       missingdir,
-                                       graphtypes=['unipartite-undirected-subfromdirected'],
-                                       write_dir_to_outfpath=True,
-                                       write_dir_to_outfname=True,
-                                       write_header_to_outfname=True,
-                                       write_fname_to_outfname=True):
+    def write_graphs_from_many_genomes(biosys_rxn_json_dir,
+                                       master_json,
+                                       graphtypes=["unipartite-undirected-subfromdirected"],
+                                       outdir="graphs",
+                                       missingdir="rxns_missing_from_kegg",
+                                       verbose=True):)
         """
-        Writes multiple EC lists to one or more gml files.
+        Writes all jsons in biosystem's dir to one or more gml files each.
 
         See `write_graphs_from_one_genome` docstring for details.
 
-        :param fpathdir: the filepath to the directory of genomes
+        :param biosys_rxn_json: the filepath to the biosystem reaction json file
+        :param master_json: the filepath to the json with details information about all KEGG reactions
+        :param graphtypes: which types of graphs to write to gml files. see notes
+                        below for description of possible inputs.
+        :param outdir: the dir to store subdirs for each graph type, and subsequent gml files
+        :param missingdir: the dir to store reactions which are missing from biosystems as jsons
+        :param verbose: if True, prints the graph types as they're created
         """
-        for fpath in glob.glob(fpathdir+'*.dat'):
+        for biosys_rxn_json in glob.glob(os.path.join(biosys_rxn_json_dir,"*.json")):
 
-            print "Creating gml from: %s ..."%fpath
+            if verbose: print("Creating gml from: %s ..."%biosys_rxn_json)
 
-            write_graphs_from_one_genome(
-                fpath,
-                gmldir,
-                missingdir,
-                graphtypes=graphtypes, 
-                write_dir_to_outfpath=write_dir_to_outfpath,
-                write_dir_to_outfname=write_dir_to_outfname,
-                write_header_to_outfname=write_header_to_outfname,
-                write_fname_to_outfname=write_fname_to_outfname)
-
-    def write_graphs_from_many_genomes_sampled(sample_size,
-                                               fpathdir,
-                                               gmldir,
-                                               missingdir,
-                                               graphtypes=['unipartite-undirected-subfromdirected'],
-                                               write_dir_to_outfpath=True,
-                                               write_dir_to_outfname=True,
-                                               write_header_to_outfname=True,
-                                               write_fname_to_outfname=True):
-        """
-        Writes multiple EC lists to one or more gml files.
-
-        See `write_graphs_from_one_genome` docstring for details.
-
-        :param fpathdir: the filepath to the directory of genomes
-        :param sample_size: the number of graphs to make from a random selection of the ec_list
-        """
-
-        all_fpaths = [fpath for fpath in glob.glob(fpathdir+'*.dat')]
-
-        gml_sample = random.sample(all_fpaths,sample_size)
-
-        for fpath in gml_sample:
-
-            print "Creating gml from: %s ..."%fpath
-
-            write_graphs_from_one_genome(
-                fpath,
-                gmldir,
-                missingdir,
-                graphtypes=graphtypes, 
-                write_dir_to_outfpath=write_dir_to_outfpath,
-                write_dir_to_outfname=write_dir_to_outfname,
-                write_header_to_outfname=write_header_to_outfname,
-                write_fname_to_outfname=write_fname_to_outfname)
-
-
-
-
-    # NEW PLAN
-    # require master.json and enzyme_reaction_link.json 
-    # if master.json isn't generated, tell user to generate it from the data they have using kegg.py
-    # def get_omic_edges(master_json,ec_rxn_link_json,biosystem_json):
-    #     """
-    #     gets "reaction edges" from one or more genomes/metagenomes
-    #     """
-
-
-    # def write_graphs_from_many_genomes(fpathdir,gmldir,missingdir,graphtypes=['unipartite-undirected-subfromdirected'],write_dir_to_outfpath=True,write_dir_to_outfname=True,write_header_to_outfname=True,write_fname_to_outfname=True):
-    #     """
-    #     allows depreciating of convert_eclists_to_graphs.py
-    #     allows user to turn their "reaction edges" (whether it's from all or kegg, a single organism, or many organisms)
-    #     into a gml or networkx graph or whatever. ***not used for network expansion***
-    #     """
-    #     pass
-
-    # OLD PLAN
-    # takes as input either: 
-    # master.json (master['reactions']['left'] and master['reactions']['right'])
-    # and 
-    # enzyme_reaction_link.json 
+            write_graphs_from_one_genome(biosys_rxn_json,
+                                         master_json,
+                                         graphtypes=["unipartite-undirected-subfromdirected"],
+                                         outdir="graphs",
+                                         missingdir="rxns_missing_from_kegg",
+                                         verbose=True)
