@@ -4,15 +4,23 @@ WARNING. CLI HAS NOT BEEN TESTED YET.
 Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
 
 Usage:
-  ecg.py BIOSYSTEM_JSON write_biosystem_rxns EC_RXN_LINK_JSON [--outdir=<outdir>]
+  ecg.py write_biosystem_rxns BIOSYSTEM_JSON EC_RXN_LINK_JSON [--outdir=<outdir>]
+  ecg.py write_biosystem_graphs BIOSYS_RXN_JSON MASTER_JSON [--graphtypes=<graphtypes>|--outdir=<outdir>|--missingdir=<missingdir>|--verbose=<verbose>]
 
 Arguments:
-  BIOSYSTEM_JSON  Directory or file where JGI data is located
-  EC_RXN_LINK_JSON    Json containing relationship between ec numbers and reactions
-  write_biosystem_rxns   Download data from one or more (meta)genomes by URL
+  BIOSYSTEM_JSON    the filepath to the directory or file where JGI data is located
+  EC_RXN_LINK_JSON  the filepath to `enzyme_reaction.json` (the json containing relationship between ec numbers and reactions)
+  BIOSYS_RXN_JSON   the filepath to the biosystem reaction json file
+  MASTER_JSON       the filepath to `master.json` (json with details information about all KEGG reactions)
+  write_biosystem_rxns   Write reaction lists from either a single biosystem file or biosystem directory (all JGI jsons)
+  write_biosystem_rxns   Write gmls from either a single biosystem reaction file or biosystem reaction directory (all JGI reaction jsons)
 
 Options:
   --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
+  --graphtypes=<graphtypes> Which types of graphs to write to gml files [default: ["unipartite-undirected-subfromdirected"]]
+  --outdir=<outdir>
+  --missingdir=<missingdir>
+  --verbose=<verbose>
 
 """
 
@@ -20,6 +28,7 @@ import json
 import glob
 import os
 import networkx as nx
+from docopt import docopt
 
 class Ecg(object):
 
@@ -155,7 +164,7 @@ class Ecg(object):
         :param biosys_rxn_json: the filepath to the biosystem reaction json file
         :param master_json: the filepath to the json with details information about all KEGG reactions
         :param graphtypes: which types of graphs to write to gml files. see notes
-                        below for description of possible inputs.
+                           below for description of possible inputs.
         :param outdir: the dir to store subdirs for each graph type, and subsequent gml files
         :param missingdir: the dir to store reactions which are missing from biosystems as jsons
         :param verbose: if True, prints the graph types as they're created
