@@ -5,7 +5,7 @@ Combine KEGG derived reaction data with JGI derived enzyme data to generate reac
 
 Usage:
   ecg.py write_biosystem_rxns BIOSYSTEM_JSON EC_RXN_LINK_JSON [--outdir=<outdir>]
-  ecg.py write_biosystem_graphs BIOSYS_RXN_JSON MASTER_JSON [--graphtypes=<graphtypes>|--outdir=<outdir>|--missingdir=<missingdir>|--verbose=<verbose>]
+  ecg.py write_biosystem_graphs BIOSYS_RXN_JSON MASTER_JSON [--graphtypes=<graphtypes>|--outdir=<graphoutdir>|--missingdir=<missingdir>|--verbose=<verbose>]
 
 Arguments:
   BIOSYSTEM_JSON    the filepath to the directory or file where JGI data is located
@@ -18,9 +18,9 @@ Arguments:
 Options:
   --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
   --graphtypes=<graphtypes> Which types of graphs to write to gml files [default: ["unipartite-undirected-subfromdirected"]]
-  --outdir=<outdir>
-  --missingdir=<missingdir>
-  --verbose=<verbose>
+  --outdir=<graphoutdir> The dir to store subdirs for each graph type, and subsequent gml files [default: "graphs"]
+  --missingdir=<missingdir> The dir to store reactions which are missing from biosystems as jsons [default: "rxns_missing_from_kegg"]
+  --verbose=<verbose> If True, prints the graph types as they're created [default: True]
 
 """
 
