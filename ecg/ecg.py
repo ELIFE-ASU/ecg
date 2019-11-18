@@ -1,6 +1,5 @@
 """
 WARNING. CLI HAS NOT BEEN TESTED YET.
-DO I MAKE THIS A CLASS OR NOT? for gmls, i can just say: if rxn directory exists, use that. if not, run the reaction creation and then create gmls
 
 Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
 
@@ -24,9 +23,11 @@ import networkx as nx
 
 class Ecg(object):
 
-    def __init__(self,biosystem_json):
-        self.__biosystem_json = biosystem_json
+    def __init__(self):
+        self.__biosystem_json = None
+        self.__biosys_rxn_json = None
         self.__ec_rxn_link_json = None
+        self.__master_json = None
 
     def __load_json(self,fname):
         """
@@ -110,7 +111,7 @@ class Ecg(object):
     #######################################################################################################
     ### NX GRAPHS
     #######################################################################################################
-    def __create_base_network(biosys_rxn_json,master_json):
+    def __create_base_network(self,biosys_rxn_json,master_json):
         """
         Create single bipartite-directed-rxnsub graph, used to create all subsequent graphs
 
@@ -142,12 +143,13 @@ class Ecg(object):
 
         return G, rxns_missing_from_rxn_edges
 
-    def write_graphs_from_one_genome(biosys_rxn_json,
-                                     master_json,
-                                     graphtypes=["unipartite-undirected-subfromdirected"],
-                                     outdir="graphs",
-                                     missingdir="rxns_missing_from_kegg",
-                                     verbose=True):
+    def _write_biosystem_graphs_from_json_file(self,
+                                               biosys_rxn_json,
+                                               master_json,
+                                               graphtypes=["unipartite-undirected-subfromdirected"],
+                                               outdir="graphs",
+                                               missingdir="rxns_missing_from_kegg",
+                                               verbose=True):
         """
         Write single biosystem's reaction json to one or more gml files.
 
@@ -261,16 +263,13 @@ class Ecg(object):
             outfpath_final = os.path.join(missingdir,biosys_id+".json")
             self.__write_json(rxns_missing_from_rxn_edges, outfpath_final)
 
-
-
-    #######################################################################################################
-
-    def write_graphs_from_many_genomes(biosys_rxn_json_dir,
-                                       master_json,
-                                       graphtypes=["unipartite-undirected-subfromdirected"],
-                                       outdir="graphs",
-                                       missingdir="rxns_missing_from_kegg",
-                                       verbose=True):)
+    def _write_biosystem_graphs_from_json_dir(self,
+                                              biosys_rxn_json_dir,
+                                              master_json,
+                                              graphtypes=["unipartite-undirected-subfromdirected"],
+                                              outdir="graphs",
+                                              missingdir="rxns_missing_from_kegg",
+                                              verbose=True):
         """
         Writes all jsons in biosystem's dir to one or more gml files each.
 
@@ -288,9 +287,26 @@ class Ecg(object):
 
             if verbose: print("Creating gml from: %s ..."%biosys_rxn_json)
 
-            write_graphs_from_one_genome(biosys_rxn_json,
+            self._write_biosystem_graphs_from_json_file(biosys_rxn_json,
                                          master_json,
                                          graphtypes=["unipartite-undirected-subfromdirected"],
                                          outdir="graphs",
                                          missingdir="rxns_missing_from_kegg",
                                          verbose=True)
+
+    def write_biosystem_graphs(self,
+                               biosys_rxn_json,
+                               master_json,
+                               graphtypes=["unipartite-undirected-subfromdirected"],
+                               outdir="graphs",
+                               missingdir="rxns_missing_from_kegg",
+                               verbose=True)):
+        
+        if not os.path.exists(outdir):
+            os.makedirs(outdir)
+
+        if os.path.isfile(self.__biosystem_json):
+            self._write_biosystem_rxns_from_jgi_json_file(self.__biosystem_json,ec_rxn_link_json,outdir)
+        
+        elif os.path.isdir(self.__biosystem_json):
+            self._write_biosystem_rxns_from_jgi_json_dir(self.__biosystem_json,ec_rxn_link_json,outdir)
