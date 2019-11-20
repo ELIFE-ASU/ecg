@@ -80,7 +80,8 @@ class Ecg(object):
         for ec in ec_list:
             ec_key = 'ec:'+ec
             if ec_key in self.__ec_rxn_link_json:
-                rxn_list+=self.__ec_rxn_link_json[ec_key].split("rn:")[1]
+                for rxn in self.__ec_rxn_link_json[ec_key]:
+                    rxn_list.append(rxn.split("rn:")[1])
             
         return rxn_list
 
@@ -88,8 +89,7 @@ class Ecg(object):
         """
         Write a single biosystem's' reaction list (using the JGI json)
         """
-        biosystem_json = self.__load_json(infile)
-        ec_list = self._get_biosystem_eclist(biosystem_json)
+        ec_list = self._get_biosystem_eclist(infile)
         rxn_list = self._get_biosystem_rxnlist(ec_list,ec_rxn_link_json)
         outpath = os.path.join(outdir,os.path.basename(infile))
         self.__write_json(rxn_list,outpath)
