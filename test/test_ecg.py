@@ -109,6 +109,8 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
     def setup_class(self):
         self.__master_json = "userdata/kegg/master.json"
         self.__taxon_reactions_indir = "userdata/jgi/Eukaryota/taxon_reactions"
+        self.__ec_rxn_link_json = "userdata/kegg/links/enzyme_reaction.json"
+        self.__taxon_ids_indir = "userdata/jgi/Eukaryota/taxon_ids"
 
         ## rxn jsons (will turn to graphs)
         self.__biosystem_json_file_2enz = "1234567890.json"
@@ -134,8 +136,14 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
         self.__files_names = [self.__biosystem_json_file_2enz,
             self.__biosystem_json_file_1enz2rxn,
             self.__biosystem_json_file_2components]
-
+        
         myecg = Ecg()
+        ## Make sure json rxn files are created
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__taxon_reactions_indir,f)
+            if not os.path.exists(f_full_path):
+                myecg.write_biosystem_rxns(f_full_path,self.__ec_rxn_link_json,self.__taxon_reactions_outdir)
+
         for f in self.__files_names:
             myecg.write_biosystem_graphs(f,
                                 self.__master_json,
