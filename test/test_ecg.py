@@ -148,20 +148,22 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
 
         ## Write graphs
         for f in self.__files_names:
-            myecg.write_biosystem_graphs(f+".gml",
+            f_full_path = os.path.join(self.__taxon_reactions_indir,f+".json")
+            myecg.write_biosystem_graphs(f_full_path,
                                 self.__master_json,
                                 graphtypes=self.__graphtypes,
                                 outdir=self.__graphs_outdir,
                                 missingdir=self.__missingdir_outdir,
                                 verbose=True)
+        print("here")
         
-    ## 'bipartite-directed-rxnsub'
-    # def test_bipartite_directed_rxnsub_is_directed(self):
+    # 'bipartite-directed-rxnsub'
+    def test_bipartite_directed_rxnsub_is_directed(self):
 
-    #     for f in self.__files_names:
-    #         f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f)
-    #         G = nx.read_gml(f_full_path)
-    #         self.assertEqual(nx.is_directed(G),True)
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_directed(G),True)
 
     # def test_bipartite_directed_rxnsub_is_bipartite(self):
 
