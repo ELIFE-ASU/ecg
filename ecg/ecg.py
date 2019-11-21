@@ -56,6 +56,10 @@ class Ecg(object):
         with open(fname, 'w') as outfile:
             json.dump(data, outfile, indent=2)
     
+    #######################################################################################################
+    ### RXN JSONS
+    #######################################################################################################
+    
     def _get_biosystem_eclist(self,biosystem_json):
         """
         Converts exhaustive JGI json to only a list of ECs
