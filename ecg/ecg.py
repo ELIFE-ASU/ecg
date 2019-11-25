@@ -19,7 +19,7 @@ Options:
   --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
   --graphtypes=<graphtypes> Which types of graphs to write to gml files [default: ["unipartite-undirected-subfromdirected"]]
   --outdir=<graphoutdir> The dir to store subdirs for each graph type, and subsequent gml files [default: "graphs"]
-  --missingdir=<missingdir> The dir to store reactions which are missing from biosystems as jsons [default: "rxns_missing_from_kegg"]
+  --missingdir=<missingdir> The dir to store reactions which are missing from biosystems as jsons [default: "taxon_with_rxns_missing_from_kegg"]
   --verbose=<verbose> If True, prints the graph types as they're created [default: True]
 
 """
@@ -151,8 +151,8 @@ class Ecg(object):
 
             ## Check if any non-glycan reactions are missing
             else:
-                if self.__master_json["reactions"][rxn]['glycans'] == False:
-                    rxns_missing_from_rxn_edges.append(rxn)
+                # if self.__master_json["reactions"][rxn]['glycans'] == False:
+                rxns_missing_from_rxn_edges.append(rxn)
 
         return G, rxns_missing_from_rxn_edges
 
@@ -161,7 +161,7 @@ class Ecg(object):
                                                master_json,
                                                graphtypes=["unipartite-undirected-subfromdirected"],
                                                outdir="graphs",
-                                               missingdir="rxns_missing_from_kegg",
+                                               missingdir="taxon_with_rxns_missing_from_kegg",
                                                verbose=True):
         """
         Write single biosystem's reaction json to one or more gml files.
@@ -218,14 +218,14 @@ class Ecg(object):
 
             if 'bipartite-undirected-rxnsub' in graphtypes:
 
-                if verbose: print("bipartite-undirected-rxnsub")
+                if verbose: print("- bipartite-undirected-rxnsub")
 
                 outfpath_final = os.path.join(outdir,"bipartite-undirected-rxnsub",biosys_id+".gml")          
                 nx.write_gml(B_un,outfpath_final)
 
             if 'unipartite-undirected-rxn' in graphtypes:
 
-                if verbose: print("unipartite-undirected-rxn")
+                if verbose: print("- unipartite-undirected-rxn")
 
                 G_r = bipartite.projected_graph(B_un,[n for n in B_un.nodes() if n.startswith('R')])
                 outfpath_final = os.path.join(outdir,"unipartite-undirected-rxn",biosys_id+".gml")
@@ -233,7 +233,7 @@ class Ecg(object):
 
             if 'unipartite-undirected-sub' in graphtypes:
 
-                if verbose: print("unipartite-undirected-sub")
+                if verbose: print("- unipartite-undirected-sub")
 
                 G_c = bipartite.projected_graph(B_un, [n for n in B_un.nodes() if n.startswith('C')])
                 outfpath_final = os.path.join(outdir,"unipartite-undirected-sub",biosys_id+".gml")
@@ -247,7 +247,7 @@ class Ecg(object):
 
             if 'unipartite-directed-sub' in graphtypes:
 
-                if verbose: print("unipartite-directed-sub")
+                if verbose: print("- unipartite-directed-sub")
                 
                 outfpath_final = os.path.join(outdir,"unipartite-directed-sub",biosys_id+".gml")
                 nx.write_gml(G_cdir,outfpath_final)
@@ -255,7 +255,7 @@ class Ecg(object):
 
             if 'unipartite-undirected-subfromdirected' in graphtypes:
 
-                if verbose: print("unipartite-undirected-subfromdirected")
+                if verbose: print("- unipartite-undirected-subfromdirected")
 
                 G_cun = G_cdir.to_undirected()
                 outfpath_final = os.path.join(outdir,"unipartite-undirected-subfromdirected",biosys_id+".gml")
@@ -263,6 +263,10 @@ class Ecg(object):
         
         ## Write rxns in genome missing from KEGG (if not empty)
         if rxns_missing_from_rxn_edges:
+
+            if not os.path.exists(missingdir):
+                os.makedirs(missingdir)
+
             outfpath_final = os.path.join(missingdir,biosys_id+".json")
             self.__write_json(rxns_missing_from_rxn_edges, outfpath_final)
 
@@ -271,7 +275,7 @@ class Ecg(object):
                                               master_json,
                                               graphtypes=["unipartite-undirected-subfromdirected"],
                                               outdir="graphs",
-                                              missingdir="rxns_missing_from_kegg",
+                                              missingdir="taxon_with_rxns_missing_from_kegg",
                                               verbose=True):
         """
         Writes all jsons in biosystem's dir to one or more gml files each.
@@ -302,7 +306,7 @@ class Ecg(object):
                                master_json,
                                graphtypes=["unipartite-undirected-subfromdirected"],
                                outdir="graphs",
-                               missingdir="rxns_missing_from_kegg",
+                               missingdir="taxon_with_rxns_missing_from_kegg",
                                verbose=True):
         """
         Converts a directory or file of biosystem reaction jsons to one or more gml files.

@@ -9,7 +9,9 @@ def clear_dir(mydir):
     if os.path.exists(mydir):
         files = glob.glob(os.path.join(mydir,"*.json"))+glob.glob(os.path.join(mydir,"*.gml"))
         for f in files:
-            os.remove(f)
+            ## Keyword to keep certain files during tests
+            if "keep" not in f:
+                os.remove(f)
 
 class TestEcgRxnJsons(unittest.TestCase):
     @classmethod
@@ -125,7 +127,7 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
         
         ## outdirs (cleared before tests)
         self.__graphs_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","graphs")
-        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","rxns_missing_from_kegg")
+        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_with_rxns_missing_from_kegg")
 
         ## test all graphtypes
         self.__graphtypes = ['bipartite-directed-rxnsub',
@@ -703,7 +705,7 @@ class TestEcgGraphsFromDir(unittest.TestCase):
         
         ## outdirs (cleared before tests)
         self.__graphs_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","graphs")
-        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","rxns_missing_from_kegg")
+        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_with_rxns_missing_from_kegg")
 
         ## test all graphtypes
         self.__graphtypes = ['bipartite-directed-rxnsub',
@@ -1271,13 +1273,13 @@ class TestEcgGraphsMissingrxn(unittest.TestCase):
         self.__taxon_ids_indir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_ids")
 
         ## rxn jsons (will turn to graphs)
-        self.__biosystem_json_file_missingrxn = "1234567890missingrxn"
+        self.__biosystem_json_file_missingrxn = "1234567890missingkeep"
         
         self.__files_names = [self.__biosystem_json_file_missingrxn]
         
         ## outdirs (cleared before tests)
         self.__graphs_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","graphs")
-        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","rxns_missing_from_kegg")
+        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_with_rxns_missing_from_kegg")
 
         ## test all graphtypes
         self.__graphtypes = ['bipartite-directed-rxnsub',
@@ -1313,4 +1315,4 @@ class TestEcgGraphsMissingrxn(unittest.TestCase):
             f_full_path = os.path.join(self.__missingdir_outdir,f+".json")
             with open(f_full_path) as fjson:
                 missing_rxns = json.load(fjson)
-            self.assertEqual(["R00000000","R99999999"],missing_rxns)        
+            self.assertEqual(set(["R99999999","R00000000"]),set(missing_rxns))        
