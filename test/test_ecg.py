@@ -165,6 +165,10 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
             self.assertEqual(nx.is_directed(G),True)
 
     def test_bipartite_directed_rxnsub_is_bipartite(self):
+        ## FYI: Unipartite networks aren't necessarily NOT bipartite as far as the check
+        ## by networkx is concerned (e.g. a path network from 0->1,1->2,2->3 is 
+        ## bipartite, but if you add a connection from 3->1 it is no longer bipartite.
+        ## All it checks is if the graph can be returned as a two-color graph.
 
         for f in self.__files_names:
             f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f+".gml")
@@ -360,140 +364,239 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
         for f in expected_edges:
             f_full_path = os.path.join(self.__graphs_outdir,'bipartite-undirected-rxnsub',f+".gml")
             G = nx.read_gml(f_full_path)
-            # self.assertEqual(set(expected_edges[f]),set(G.edges()))
             self.assertEqual(set(expected_edges[f]),set(frozenset(edge) for edge in G.edges()))
 
+    # 'unipartite-undirected-rxn'
+    def test_unipartite_undirected_rxn_is_undirected(self):
 
-# class TestTopologyUnipartiteUndirectedRxn(unittest.TestCase):
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-rxn',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_directed(G),False)
 
-#     ## fpath for testing graphs
-#     gmldir = 'test/userdata/gmls/'
-#     gmltypedir = 'unipartite-undirected-rxn/'
-#     gmlfname = '1.1.1.3;test_ec_1.1.1.3.dat.gml'
-#     fpath=gmldir+gmltypedir+gmlfname
+    def test_unipartite_undirected_rxn_nodes(self):
+        expected_nodes = {self.__biosystem_json_file_2enz: 
+                            ["R05556",
+                             "R02003"],
+                          self.__biosystem_json_file_1enz2rxn:
+                            ["R01773",
+                             "R01775"],
+                          self.__biosystem_json_file_2components:
+                            ["R05556",
+                             "R02003",
+                             "R01773",
+                             "R01775"]}
+        for f in expected_nodes:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-rxn',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_nodes[f]),set(G.nodes()))
 
-#     G = nx.read_gml(fpath)
+    def test_unipartite_undirected_rxn_edges(self):
 
-#     ## 'unipartite-undirected-rxn'
-#     def test_unipartite_undirected_rxn_is_undirected(self):
+        expected_edges = {self.__biosystem_json_file_2enz: 
+                            [frozenset({"R05556","R02003"})],
+                          self.__biosystem_json_file_1enz2rxn:
+                            [frozenset({"R01775","R01773"})],
+                          self.__biosystem_json_file_2components:
+                            [frozenset({"R05556","R02003"}),
+                             frozenset({"R01775","R01773"})]}
 
-#         self.assertEqual(nx.is_directed(self.G),False)
+        for f in expected_edges:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-rxn',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_edges[f]),set(frozenset(edge) for edge in G.edges()))
 
-#     ## Unipartite networks aren't necessarily NOT bipartite as far as the check
-#     ## by networkx is concerned (e.g. a path network from 0->1,1->2,2->3 is 
-#     ## bipartite, but if you add a connection from 3->1 it is no longer bipartite.
-#     # def test_unipartite_undirected_rxn_is_unipartite(self):
+    # 'unipartite-directed-sub'
+    def test_unipartite_directed_sub_is_directed(self):
 
-#     #     self.assertEqual(nx.is_bipartite(self.G),False)
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-directed-sub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_directed(G),True)
 
-#     def test_unipartite_undirected_rxn_nodes(self):
+    def test_unipartite_directed_sub_nodes(self):
+        expected_nodes = {self.__biosystem_json_file_2enz: 
+                            ["C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341"],
+                          self.__biosystem_json_file_1enz2rxn:
+                            ["C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"],
+                          self.__biosystem_json_file_2components:
+                            ["C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341",
+                             "C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"]}
+        for f in expected_nodes:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-directed-sub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_nodes[f]),set(G.nodes()))
 
-#         expected_nodes = {'R01773','R01775'}
+    def test_unipartite_directed_sub_edges(self):
 
-#         self.assertEqual(expected_nodes,set(self.G.nodes()))
+        expected_edges = {self.__biosystem_json_file_2enz: 
+                            [("C00448","C05859"),
+                             ("C00448","C00013"),
+                             ("C00129","C05859"),
+                             ("C00129","C00013"),
+                             ("C00129","C00448"),
+                             ("C00341","C00013"),
+                             ("C00341","C00448")],
+                          self.__biosystem_json_file_1enz2rxn:
+                            [("C00263","C00441"),
+                             ("C00263","C00004"),
+                             ("C00263","C00080"),
+                             ("C00263","C00005"),
+                             ("C00003","C00441"),
+                             ("C00003","C00004"),
+                             ("C00003","C00080"),
+                             ("C00006","C00441"),
+                             ("C00006","C00005"),
+                             ("C00006","C00080")],
+                          self.__biosystem_json_file_2components:
+                            [("C00448","C05859"),
+                             ("C00448","C00013"),
+                             ("C00129","C05859"),
+                             ("C00129","C00013"),
+                             ("C00129","C00448"),
+                             ("C00341","C00013"),
+                             ("C00341","C00448"),
+                             ("C00263","C00441"),
+                             ("C00263","C00004"),
+                             ("C00263","C00080"),
+                             ("C00263","C00005"),
+                             ("C00003","C00441"),
+                             ("C00003","C00004"),
+                             ("C00003","C00080"),
+                             ("C00006","C00441"),
+                             ("C00006","C00005"),
+                             ("C00006","C00080")]}
 
-#     def test_unipartite_undirected_rxn_edges(self):
+        for f in expected_edges:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-directed-sub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_edges[f]),set(G.edges()))
 
-#         expected_edges = [{'R01773','R01775'}]
+    # 'unipartite-undirected-sub'
+    def test_unipartite_undirected_sub_is_undirected(self):
 
-#         self.assertEqual(expected_edges,[set(edge) for edge in self.G.edges()])
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-sub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_directed(G),False)
 
-# class TestTopologyUnipartiteDirectedSub(unittest.TestCase):
+    def test_unipartite_undirected_sub_nodes(self):
+        expected_nodes = {self.__biosystem_json_file_2enz: 
+                            ["C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341"],
+                          self.__biosystem_json_file_1enz2rxn:
+                            ["C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"],
+                          self.__biosystem_json_file_2components:
+                            ["C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341",
+                             "C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"]}
+        for f in expected_nodes:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-sub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_nodes[f]),set(G.nodes()))
 
-#     ## fpath for testing graphs
-#     gmldir = 'test/userdata/gmls/'
-#     gmltypedir = 'unipartite-directed-sub/'
-#     gmlfname = '1.1.1.3;test_ec_1.1.1.3.dat.gml'
-#     fpath=gmldir+gmltypedir+gmlfname
+    def test_unipartite_undirected_sub_edges(self):
 
-#     G = nx.read_gml(fpath)
+        expected_edges = {self.__biosystem_json_file_2enz: 
+                            [frozenset({"C00448","C05859"}),
+                             frozenset({"C00448","C00013"}),
+                             frozenset({"C00129","C05859"}),
+                             frozenset({"C00129","C00013"}),
+                             frozenset({"C00129","C00448"}),
+                             frozenset({"C00341","C00013"}),
+                             frozenset({"C00341","C00448"}),
+                             frozenset({"C05859","C00013"}),
+                             frozenset({"C00341","C00129"})],
+                          self.__biosystem_json_file_1enz2rxn:
+                            [frozenset({"C00263","C00441"}),
+                             frozenset({"C00263","C00004"}),
+                             frozenset({"C00263","C00080"}),
+                             frozenset({"C00263","C00005"}),
+                             frozenset({"C00003","C00441"}),
+                             frozenset({"C00003","C00004"}),
+                             frozenset({"C00003","C00080"}),
+                             frozenset({"C00006","C00441"}),
+                             frozenset({"C00006","C00005"}),
+                             frozenset({"C00006","C00080"}),
+                             frozenset({"C00263","C00003"}),
+                             frozenset({"C00441","C00004"}),
+                             frozenset({"C00441","C00080"}),
+                             frozenset({"C00004","C00080"}),
+                             frozenset({"C00263","C00006"}),
+                             frozenset({"C00441","C00005"}),
+                             frozenset({"C00441","C00080"}),
+                             frozenset({"C00005","C00080"})],
+                          self.__biosystem_json_file_2components:
+                            [frozenset({"C00448","C05859"}),
+                             frozenset({"C00448","C00013"}),
+                             frozenset({"C00129","C05859"}),
+                             frozenset({"C00129","C00013"}),
+                             frozenset({"C00129","C00448"}),
+                             frozenset({"C00341","C00013"}),
+                             frozenset({"C00341","C00448"}),
+                             frozenset({"C05859","C00013"}),
+                             frozenset({"C00341","C00129"}),
+                             frozenset({"C00263","C00441"}),
+                             frozenset({"C00263","C00004"}),
+                             frozenset({"C00263","C00080"}),
+                             frozenset({"C00263","C00005"}),
+                             frozenset({"C00003","C00441"}),
+                             frozenset({"C00003","C00004"}),
+                             frozenset({"C00003","C00080"}),
+                             frozenset({"C00006","C00441"}),
+                             frozenset({"C00006","C00005"}),
+                             frozenset({"C00006","C00080"}),
+                             frozenset({"C00263","C00003"}),
+                             frozenset({"C00441","C00004"}),
+                             frozenset({"C00441","C00080"}),
+                             frozenset({"C00004","C00080"}),
+                             frozenset({"C00263","C00006"}),
+                             frozenset({"C00441","C00005"}),
+                             frozenset({"C00441","C00080"}),
+                             frozenset({"C00005","C00080"})]}
 
-#     ## 'unipartite-directed-sub'
-#     def test_unipartite_directed_sub_is_directed(self):
-
-#         self.assertEqual(nx.is_directed(self.G),True)
-
-#     # def test_unipartite_directed_sub_is_unipartite(self):
-
-#     #     self.assertEqual(nx.is_bipartite(self.G),False)
-
-#     def test_unipartite_directed_sub_nodes(self):
-
-#         expected_nodes = {'C00003',
-#                           'C00004',
-#                           'C00005',
-#                           'C00006',
-#                           'C00080',
-#                           'C00263',
-#                           'C00441'}
-
-#         self.assertEqual(expected_nodes,set(self.G.nodes()))
-
-#     def test_unipartite_directed_sub_edges(self):
-
-#         expected_edges = {('C00003', 'C00004'),
-#                           ('C00003', 'C00080'),
-#                           ('C00003', 'C00441'),
-#                           ('C00263', 'C00004'),
-#                           ('C00263', 'C00441'),
-#                           ('C00263', 'C00080'),
-#                           ('C00263', 'C00005'),
-#                           ('C00006', 'C00005'),
-#                           ('C00006', 'C00080'),
-#                           ('C00006', 'C00441')}
-
-#         self.assertEqual(expected_edges,set(self.G.edges()))
-
-# class TestTopologyUnipartiteUndirectedSub(unittest.TestCase):
-
-#     ## fpath for testing graphs
-#     gmldir = 'test/userdata/gmls/'
-#     gmltypedir = 'unipartite-undirected-sub/'
-#     gmlfname = '1.1.1.3;test_ec_1.1.1.3.dat.gml'
-#     fpath=gmldir+gmltypedir+gmlfname
-
-#     G = nx.read_gml(fpath)
-
-#     # ## 'unipartite-undirected-sub'
-#     def test_unipartite_undirected_sub_is_undirected(self):
-
-#         self.assertEqual(nx.is_directed(self.G),False)
-
-#     # def test_unipartite_undirected_sub_is_unipartite(self):
-
-#     def test_unipartite_undirected_sub_nodes(self):
-
-#         expected_nodes = {'C00003',
-#                           'C00004',
-#                           'C00005',
-#                           'C00006',
-#                           'C00080',
-#                           'C00263',
-#                           'C00441'}
-
-#         self.assertEqual(expected_nodes,set(self.G.nodes()))
-
-#     def test_unipartite_undirected_sub_edges(self):
-
-#         expected_edges = {frozenset({'C00003', 'C00004'}),
-#                           frozenset({'C00003', 'C00080'}),
-#                           frozenset({'C00003', 'C00441'}),
-#                           frozenset({'C00003', 'C00263'}),
-#                           frozenset({'C00004', 'C00080'}),
-#                           frozenset({'C00004', 'C00441'}),
-#                           frozenset({'C00005', 'C00080'}),
-#                           frozenset({'C00005', 'C00441'}),
-#                           frozenset({'C00080', 'C00441'}),
-#                           frozenset({'C00263', 'C00004'}),
-#                           frozenset({'C00263', 'C00441'}),
-#                           frozenset({'C00263', 'C00080'}),
-#                           frozenset({'C00263', 'C00005'}),
-#                           frozenset({'C00263', 'C00006'}),
-#                           frozenset({'C00006', 'C00005'}),
-#                           frozenset({'C00006', 'C00080'}),
-#                           frozenset({'C00006', 'C00441'})}
-
-#         self.assertEqual(expected_edges,set(frozenset(edge) for edge in self.G.edges()))
+        for f in expected_edges:
+            f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-sub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_edges[f]),set(frozenset(edge) for edge in G.edges()))
 
 # class TestTopologyUnipartiteUndirectedSub(unittest.TestCase):
 
