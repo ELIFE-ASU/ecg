@@ -185,7 +185,7 @@ class Ecg(object):
         These steps allow for less overhead when wishing to produce multiple graph types.
 
         ------------------------
-        Implemented graph types:
+        Implemented graphtypes:
         ------------------------
         bipartite-directed-rxnsub
         bipartite-undirected-rxnsub
@@ -194,16 +194,6 @@ class Ecg(object):
         unipartite-undirected-sub
         unipartite-undirected-subfromdirected --same connection rules used in 
                                                 "Universal Scaling" paper
-        ------------------------
-        Not yet implemented:
-        ------------------------
-        rxn-enz (bi directed/undirected)
-                rxn-rxn (uni)
-                enz-enz (uni)
-        enz-sub (bi directed/undirected)
-            enz-enz (uni)
-            sub-sub (uni)
-            sub-sub-restricted (uni)  
         """
 
         B, rxns_missing_from_rxn_edges = self.__create_base_network(biosys_rxn_json,master_json)
@@ -314,6 +304,38 @@ class Ecg(object):
                                outdir="graphs",
                                missingdir="rxns_missing_from_kegg",
                                verbose=True):
+        """
+        Converts a directory or file of biosystem reaction jsons to one or more gml files.
+
+        :param biosys_rxn_json: the filepath to the biosystem reaction json file
+        :param master_json: the filepath to the json with details information about all KEGG reactions
+        :param graphtypes: which types of graphs to write to gml files. see notes
+                           below for description of possible inputs.
+        :param outdir: the dir to store subdirs for each graph type, and subsequent gml files
+        :param missingdir: the dir to store reactions which are missing from biosystems as jsons
+        :param verbose: if True, prints the graph types as they're created
+
+        ---------------------------------------------------------------------------------
+        Notes: 
+        ---------------------------------------------------------------------------------
+        Steps involved:
+        1. Creates directed bipartite graph
+        2. Projects graph if needed
+        3. Undirects graph if needed
+
+        These steps allow for less overhead when wishing to produce multiple graph types.
+
+        ------------------------
+        Implemented graphtypes:
+        ------------------------
+        bipartite-directed-rxnsub
+        bipartite-undirected-rxnsub
+        unipartite-undirected-rxn
+        unipartite-directed-sub
+        unipartite-undirected-sub
+        unipartite-undirected-subfromdirected --same connection rules used in 
+                                                "Universal Scaling" paper
+        """
         
         if not os.path.exists(outdir):
             os.makedirs(outdir)
