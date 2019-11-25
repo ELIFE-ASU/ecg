@@ -119,6 +119,10 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
         self.__biosystem_json_file_1enz2rxn = "1234567891"
         self.__biosystem_json_file_2components = "1234567892"
         
+        self.__files_names = [self.__biosystem_json_file_2enz,
+            self.__biosystem_json_file_1enz2rxn,
+            self.__biosystem_json_file_2components]
+        
         ## outdirs (cleared before tests)
         self.__graphs_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","graphs")
         self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","rxns_missing_from_kegg")
@@ -135,10 +139,7 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
         clear_dir(self.__graphs_outdir)
         clear_dir(self.__missingdir_outdir)
 
-        self.__files_names = [self.__biosystem_json_file_2enz,
-            self.__biosystem_json_file_1enz2rxn,
-            self.__biosystem_json_file_2components]
-        
+
         myecg = Ecg()
         ## Make sure json rxn files are created
         for f in self.__files_names:
@@ -146,9 +147,7 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
             if not os.path.exists(f_full_path):
                 myecg.write_biosystem_rxns(f_full_path,self.__ec_rxn_link_json,self.__taxon_reactions_indir)
 
-        ## Write graphs
-        for f in self.__files_names:
-            f_full_path = os.path.join(self.__taxon_reactions_indir,f+".json")
+            ## Write graphs
             myecg.write_biosystem_graphs(f_full_path,
                                 self.__master_json,
                                 graphtypes=self.__graphtypes,

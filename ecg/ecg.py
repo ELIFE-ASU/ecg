@@ -302,10 +302,10 @@ class Ecg(object):
 
             self._write_biosystem_graphs_from_json_file(biosys_rxn_json,
                                                         master_json,
-                                                        graphtypes=["unipartite-undirected-subfromdirected"],
-                                                        outdir="graphs",
-                                                        missingdir="rxns_missing_from_kegg",
-                                                        verbose=True)
+                                                        graphtypes=graphtypes,
+                                                        outdir=outdir,
+                                                        missingdir=missingdir,
+                                                        verbose=verbose)
 
     def write_biosystem_graphs(self,
                                biosys_rxn_json,
@@ -319,7 +319,17 @@ class Ecg(object):
             os.makedirs(outdir)
 
         if os.path.isfile(biosys_rxn_json):
-            self._write_biosystem_graphs_from_json_file(biosys_rxn_json,master_json,outdir)
+            self._write_biosystem_graphs_from_json_file(biosys_rxn_json,
+                                                        master_json,
+                                                        graphtypes=graphtypes,
+                                                        outdir=outdir,
+                                                        missingdir=missingdir,
+                                                        verbose=verbose)
         
         elif os.path.isdir(biosys_rxn_json):
-            self._write_biosystem_graphs_from_json_dir(biosys_rxn_json,master_json,outdir)
+            self._write_biosystem_graphs_from_json_dir(biosys_rxn_json,
+                                                        master_json,
+                                                        graphtypes=graphtypes,
+                                                        outdir=outdir,
+                                                        missingdir=missingdir,
+                                                        verbose=verbose)
