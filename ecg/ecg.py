@@ -13,7 +13,7 @@ Arguments:
   BIOSYS_RXN_JSON   the filepath to the biosystem reaction json file
   MASTER_JSON       the filepath to `master.json` (json with details information about all KEGG reactions)
   write_biosystem_rxns   Write reaction lists from either a single biosystem file or biosystem directory (all JGI jsons)
-  write_biosystem_rxns   Write gmls from either a single biosystem reaction file or biosystem reaction directory (all JGI reaction jsons)
+  write_biosystem_graphs   Write gmls from either a single biosystem reaction file or biosystem reaction directory (all JGI reaction jsons)
 
 Options:
   --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
