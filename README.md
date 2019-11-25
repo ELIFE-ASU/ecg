@@ -1,6 +1,27 @@
 # ecg
 Pulling information from biological databases, and converting it into easy to use jsons/gmls for network science.
 
+- [ecg](#ecg)
+  - [Dependencies](#dependencies)
+  - [Local Installation](#local-installation)
+  - [Downloading KEGG data (`kegg.py`)](#downloading-kegg-data-keggpy)
+    - [Using import](#using-import)
+      - [Downloading and running pipeline](#downloading-and-running-pipeline)
+      - [Updating KEGG directory with latest entries](#updating-kegg-directory-with-latest-entries)
+    - [Using CLI](#using-cli)
+    - [Output format](#output-format)
+  - [Downloading JGI data (`jgi.py`)](#downloading-jgi-data-jgipy)
+    - [Using import](#using-import-1)
+      - [Downloading and running pipeline](#downloading-and-running-pipeline-1)
+    - [Using CLI](#using-cli-1)
+    - [Output format](#output-format-1)
+  - [Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)](#getting-biosystem-reaction-lists-and-network-graphs-using-kegg-and-jgi-ecgpy)
+    - [Using import](#using-import-2)
+      - [Writing reaction jsons](#writing-reaction-jsons)
+      - [Writing graphs](#writing-graphs)
+    - [Using CLI](#using-cli-2)
+    - [Output format](#output-format-2)
+
 ## Dependencies
 - `docopt`<sup>k,j,e</sup>  (for CLI)
 - `tqdm`<sup>k,j</sup>  (for visual progress bars)
@@ -282,6 +303,10 @@ E.write_biosystem_graphs(biosys_rxn_json,
                         outdir="mydata/jgi/Eukaryota/graphs",
                         missingdir="mydata/jgi/Eukaryota/taxon_with_rxns_missing_from_kegg",
                         verbose=True)
+
+## Built-in public methods
+E.write_biosystem_rxns;
+E.write_biosystem_graphs
 ```
 
 *Note: Implemented `graphtypes` include:*
