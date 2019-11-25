@@ -2,14 +2,19 @@
 Pulling information from biological databases, and converting it into easy to use jsons/gmls for network science.
 
 ## Dependencies
-### kegg.py and jgi.py
-- `docopt` (for CLI)
-- `tqdm` (for visual progress bars)
-### kegg.py only
-- `biopython` (for KEGG REST API and TogoWS)
-### jgi.py only
-- `selenium` (for webdriver)
-- `beautifulsoup4` (for web page parsing)
+- `docopt`<sup>k,j,e</sup>  (for CLI)
+- `tqdm`<sup>k,j</sup>  (for visual progress bars)
+- `biopython`<sup>k</sup>  (for KEGG REST API and TogoWS)
+
+- `selenium`<sup>j</sup>  (for webdriver)
+- `beautifulsoup4`<sup>j</sup>  (for web page parsing)
+- `networkx`<sup>e</sup> (for graphs/networks
+
+<sup>k</sup>Used by `kegg.py`
+
+<sup>j</sup>Used by `jgi.py`
+
+<sup>e</sup>Used by `ecg.py` 
 
 ## Local Installation
 
@@ -27,7 +32,7 @@ To install locally (for user only):
 
 The `-e` flag indicates a symlink, and forces the package to upgrade whenever the source directory changes (e.g. if you pull from github)
 
-## Downloading KEGG data
+## Downloading KEGG data (`kegg.py`)
 
 Downloading and formatting KEGG data can be done through by importing the `ecg` package in a script, or through a command line interface (CLI).
 
@@ -38,7 +43,7 @@ Downloading and formatting KEGG data can be done through by importing the `ecg` 
 ```python
 import ecg
 
-path = "./kegg"
+path = "mydata/kegg"
 kegg = ecg.Kegg(path)
 kegg.download(run_pipeline=True,dbs=["pathway","enzyme","reaction","compound"]) ## These are the default arguments
 ```
@@ -50,14 +55,16 @@ kegg.download(run_pipeline=True,dbs=["pathway","enzyme","reaction","compound"]) 
 ```python
 import ecg
 
-path = "./kegg"
-kegg = ecg.Kegg(path)
-kegg.update(metadata=True) ## These are the default arguments
+path = "mydata/kegg"
+K = ecg.Kegg(path)
+K.update(metadata=True) ## These are the default arguments
 
 ## Built-in public methods
-kegg.path;
-kegg.version;
-kegg.lists;
+K.download;
+K.update;
+K.path;
+K.version;
+K.lists;
 ```
 
 
@@ -93,7 +100,7 @@ Options:
 The default file structure output from `Kegg.download()` looks like:
 
 ```
-keggdir
+mydata/kegg
 |-entries
 |  |-compounds 
 |  |-reactions 
@@ -122,29 +129,29 @@ The defualt structure of the `version.json` file looks approximately like:
 
 ```
 Kegg.version  #returns info from http://rest.kegg.jp/info/kegg
-|- Kegg.version["original"] = dict()
-    |-Kegg.version["original"]["release_short"] = float # returns release of database eg. 90.0
-    |-Kegg.version["original"]["release_long"] = str # returns 90.0+/06-06, Jun 19
-    |-Kegg.version["original"]["count_info"] = dict()
-        |-Kegg.version["original"]["count_info"]["pathway"] = int
-        |-Kegg.version["original"]["count_info"]["compound"] = int
-        |-Kegg.version["original"]["count_info"]["reaction"] = int
-        |-Kegg.version["original"]["count_info"]["enzyme"] = int
-    |-Kegg.version["original"]["count_lists"] = dict()
-        |-Kegg.version["original"]["count_lists"]["pathway"] = int
-        |-Kegg.version["original"]["count_lists"]["compound"] = int
-        |-Kegg.version["original"]["count_lists"]["reaction"] = int
-        |-Kegg.version["original"]["count_lists"]["enzyme"] = int
-    |-Kegg.version["original"]["lists"] = dict()
-        |-Kegg.version["original"]["lists"]["pathway"] = list()
-        |-Kegg.version["original"]["lists"]["compound"] = list()
-        |-Kegg.version["original"]["lists"]["reaction"] = list()
-        |-Kegg.version["original"]["lists"]["enzyme"] = list()
-|- Kegg.version["updates"] = list()
-|- Kegg.version["current"]
+|- Kegg.version["original"] = dict() # KEGG stats at time of initial retrieval
+|    |-...["release_short"] = float # returns release of database eg. 90.0
+|    |-...["release_long"] = str # returns 90.0+/06-06, Jun 19
+|    |-...["count_info"] = dict() # returns number of entries in each of the subcategories as found on KEGG's info page at time of retrieval
+|        |-...["pathway"] = int
+|        |-...["compound"] = int
+|        |-...["reaction"] = int
+|        |-...["enzyme"] = int
+|    |-...["count_lists"] = dict() # returns number of entries in each of the subcategories as found by counting the items in Kegg.version["original"]["lists"]
+|        |-...["pathway"] = int
+|        |-...["compound"] = int
+|        |-...["reaction"] = int
+|        |-...["enzyme"] = int
+|    |-...["lists"] = dict() # returns name of each entry in each of the subcategories
+|        |-...["pathway"] = list()
+|        |-...["compound"] = list()
+|        |-...["reaction"] = list()
+|        |-...["enzyme"] = list()
+|- Kegg.version["updates"] = list(dict(),dict(),...) # KEGG stats after each update
+|- Kegg.version["current"] = dict() # KEGG stats of latest update
 ```
 
-## Downloading JGI data
+## Downloading JGI data (`jgi.py`)
 
 Downloading JGI data can be done through by importing the `ecg` package in a script, or through a command line interface (CLI).
 
@@ -157,14 +164,20 @@ from ecg import jgi
 import os
 
 chromedriver_path = os.path.expanduser("~")+"/chromedriver" # "~/chromedriver" should also work
-path = "myjgi"
+path = "mydata/jgi"
+domain = "Eukaryota"
 
 J = jgi.Jgi()
-J.scrape_domain(path,"Eukarayota")
+J.scrape_domain(path, 
+                domain,
+                database='all', 
+                assembly_types = ['assembled','unassembled','both'])
 
 ## Built-in public methods
-J.scrape_domain();
-J.scrape_urls(organism_urls); # my_organism_urls should be a list of full urls
+J.scrape_domain;
+J.scrape_urls; # argument organism_urls should be a list of full urls
+J.homepage_url;
+J.driver;
 ```
 
 ### Using CLI
@@ -201,7 +214,7 @@ Options:
 The default file structure output from `jgi.Jgi().scrape_domain("myjgidir","Eukarayota")` looks like:
 
 ```
-myjgidir
+mydata/jgi
 |-Eukarayota
 |  |-combined_taxon_ids 
 |  |-missing_enzymes.json 
@@ -209,5 +222,146 @@ myjgidir
 |    |-2789789765.json
 |    |-2789789766.json
 |    ...
+|-Bacteria
+|  ...
+```
+
+## Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)
+
+### Using import
+
+#### Writing reaction jsons
+
+*In preparation for doing network expansions using **BioXP***
+
+```python
+from ecg import ecg
+
+E = ecg.Ecg()
+ec_rxn_link_json = "mydata/kegg/links/enzyme_reaction.json"
+
+## Write reactions from one jgi biosystem file
+biosystem_json = "mydata/jgi/Eukaryota/taxon_ids/2789789765.json"
+E.write_biosystem_rxns(biosystem_json,
+                       ec_rxn_link_json,
+                       outdir="mydata/jgi/Eukaryota/taxon_reactions")
+
+## Write reactions from all jgi biosystem files in the directory
+biosystem_json_dir = "mydata/jgi/Eukaryota/taxon_ids"
+E.write_biosystem_rxns(biosystem_json_dir,
+                       ec_rxn_link_json,
+                       outdir="mydata/jgi/Eukaryota/taxon_reactions")
+```
+
+#### Writing graphs 
+
+*Note: You must generate biosystem reaction jsons first*
+
+*Not required for network expansions using BioXP*
+
+```python
+from ecg import ecg
+
+E = ecg.Ecg()
+master_json = "mydata/kegg/master.json"
+
+## Write graphs from one biosystem rxn file
+biosystem_rxn_json = "mydata/jgi/Eukaryota/taxon_reactions/2789789765.json"
+E.write_biosystem_graphs(biosys_rxn_json,
+                        master_json,
+                        graphtypes=["unipartite-undirected-subfromdirected"],
+                        outdir="mydata/jgi/Eukaryota/graphs",
+                        missingdir="mydata/jgi/Eukaryota/taxon_with_rxns_missing_from_kegg",
+                        verbose=True)
+
+## Write graphs from all biosystem rxn files in the directory
+biosystem_rxn_json_dir = "mydata/jgi/Eukaryota/taxon_reactions"
+E.write_biosystem_graphs(biosys_rxn_json,
+                        master_json,
+                        graphtypes=["unipartite-undirected-subfromdirected"],
+                        outdir="mydata/jgi/Eukaryota/graphs",
+                        missingdir="mydata/jgi/Eukaryota/taxon_with_rxns_missing_from_kegg",
+                        verbose=True)
+```
+
+*Note: Implemented `graphtypes` include:*
+
+```
+bipartite-directed-rxnsub
+bipartite-undirected-rxnsub
+unipartite-undirected-rxn
+unipartite-directed-sub
+unipartite-undirected-sub
+unipartite-undirected-subfromdirected #same connection rules used in "Universal Scaling" paper
+```
+
+### Using CLI
+
+```python
+"""
+WARNING. CLI HAS NOT IMPLEMENTED OR TESTED YET.
+
+Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
+
+Usage:
+  ecg.py write_biosystem_rxns BIOSYSTEM_JSON EC_RXN_LINK_JSON [--outdir=<outdir>]
+  ecg.py write_biosystem_graphs BIOSYS_RXN_JSON MASTER_JSON [--graphtypes=<graphtypes>|--outdir=<graphoutdir>|--missingdir=<missingdir>|--verbose=<verbose>]
+
+Arguments:
+  BIOSYSTEM_JSON    the filepath to the directory or file where JGI data is located
+  EC_RXN_LINK_JSON  the filepath to `enzyme_reaction.json` (the json containing relationship between ec numbers and reactions)
+  BIOSYS_RXN_JSON   the filepath to the biosystem reaction json file
+  MASTER_JSON       the filepath to `master.json` (json with details information about all KEGG reactions)
+  write_biosystem_rxns   Write reaction lists from either a single biosystem file or biosystem directory (all JGI jsons)
+  write_biosystem_graphs   Write gmls from either a single biosystem reaction file or biosystem reaction directory (all JGI reaction jsons)
+
+Options:
+  --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
+  --graphtypes=<graphtypes> Which types of graphs to write to gml files [default: ["unipartite-undirected-subfromdirected"]]
+  --outdir=<graphoutdir> The dir to store subdirs for each graph type, and subsequent gml files [default: "graphs"]
+  --missingdir=<missingdir> The dir to store reactions which are missing from biosystems as jsons [default: "taxon_with_rxns_missing_from_kegg"]
+  --verbose=<verbose> If True, prints the graph types as they're created [default: True]
+
+"""
+```
+
+### Output format
+
+Running `ecg.Ecg()` as intended (and with default arguments) will generate the following new folders: 
+
+- `graphs`
+- `taxon_reactions`
+- `taxon_with_rxns_missing_from_kegg` (directory is only created if your `taxon_ids` contain enzymes with reactions which are missing from the KEGG database)
+
+So your file structure will now look like this:
+
+```
+myjgidir
+|-Eukarayota
+|  |-combined_taxon_ids 
+|  |-graphs
+|     |-bipartite-directed-rxnsub
+|        |-2789789765.json
+|        |-2789789766.json
+|        ...
+|     |-bipartite-directed-rxnsub
+|        |-2789789765.json
+|        |-2789789766.json
+|        ...
+|     ...
+|  |-missing_enzymes.json 
+|  |-taxon_ids
+|     |-2789789765.json
+|     |-2789789766.json
+|     ...
+|  |-taxon_reactions
+|     |-2789789765.json
+|     |-2789789766.json
+|     ...
+|  |-taxon_with_rxns_missing_from_kegg
+|     |-9999999999.json
+|     ...
+|-Bacteria
+|  ...
 ```
 
