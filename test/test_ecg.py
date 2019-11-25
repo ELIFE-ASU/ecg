@@ -164,141 +164,205 @@ class TestEcgGraphsFromFiles(unittest.TestCase):
             G = nx.read_gml(f_full_path)
             self.assertEqual(nx.is_directed(G),True)
 
-    # def test_bipartite_directed_rxnsub_is_bipartite(self):
+    def test_bipartite_directed_rxnsub_is_bipartite(self):
 
-    #     for f in self.__files_names:
-    #         f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f)
-    #         G = nx.read_gml(f_full_path)
-    #         self.assertEqual(nx.is_bipartite(G),True)
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_bipartite(G),True)
 
-    # def test_bipartite_directed_rxnsub_nodes(self):
-    #     expected_nodes = {self.__biosystem_json_file_2enz: 
-    #                         ["C00448",
-    #                          "C05859",
-    #                          "C00129",
-    #                          "C00013",
-    #                          "C00341"],
-    #                       self.__biosystem_json_file_1enz2rxn:
-    #                         ["C00263",
-    #                          "C00441",
-    #                          "C00003",
-    #                          "C00004",
-    #                          "C00006",
-    #                          "C00005",
-    #                          "C00080"],
-    #                       self.__biosystem_json_file_2components:
-    #                         ["C00448",
-    #                          "C05859",
-    #                          "C00129",
-    #                          "C00013",
-    #                          "C00341",
-    #                          "C00263",
-    #                          "C00441",
-    #                          "C00003",
-    #                          "C00004",
-    #                          "C00006",
-    #                          "C00005",
-    #                          "C00080"]}
-    #     for f in expected_nodes:
-    #         f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f)
-    #         G = nx.read_gml(f_full_path)
-    #         self.assertEqual(set(expected_nodes[f]),set(G.nodes()))
+    def test_bipartite_directed_rxnsub_nodes(self):
+        expected_nodes = {self.__biosystem_json_file_2enz: 
+                            ["R05556",
+                             "R02003",
+                             "C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341"],
+                          self.__biosystem_json_file_1enz2rxn:
+                            ["R01773",
+                             "R01775",
+                             "C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"],
+                          self.__biosystem_json_file_2components:
+                            ["R05556",
+                             "R02003",
+                             "R01773",
+                             "R01775",
+                             "C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341",
+                             "C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"]}
+        for f in expected_nodes:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_nodes[f]),set(G.nodes()))
 
-    # def test_bipartite_directed_rxnsub_edges(self):
+    def test_bipartite_directed_rxnsub_edges(self):
 
-    #     expected_edges = {self.__biosystem_json_file_2enz: 
-    #                         [("C00448","R05556"),
-    #                          ("C00129","R05556"),
-    #                          ("R05556","C05859"),
-    #                          ("R05556","C00013"),
-    #                          ("C00341","R02003"),
-    #                          ("C00129","R02003"),
-    #                          ("R02003","C00013"),
-    #                          ("R02003","C00448")],
-    #                       self.__biosystem_json_file_1enz2rxn:
-    #                         [("C00263","R01773"),
-    #                          ("C00003","R01773"),
-    #                          ("R01773","C00441"),
-    #                          ("R01773","C00004"),
-    #                          ("R01773","C00080"),
-    #                          ("C00263","R01775"),
-    #                          ("C00006","R01775"),
-    #                          ("R01775","C00441"),
-    #                          ("R01775","C00005"),
-    #                          ("R01775","C00080")],
-    #                       self.__biosystem_json_file_2components:
-    #                         [("C00448","R05556"),
-    #                          ("C00129","R05556"),
-    #                          ("R05556","C05859"),
-    #                          ("R05556","C00013"),
-    #                          ("C00341","R02003"),
-    #                          ("C00129","R02003"),
-    #                          ("R02003","C00013"),
-    #                          ("R02003","C00448"),
-    #                          ("C00263","R01773"),
-    #                          ("C00003","R01773"),
-    #                          ("R01773","C00441"),
-    #                          ("R01773","C00004"),
-    #                          ("R01773","C00080"),
-    #                          ("C00263","R01775"),
-    #                          ("C00006","R01775"),
-    #                          ("R01775","C00441"),
-    #                          ("R01775","C00005"),
-    #                          ("R01775","C00080")]}
+        expected_edges = {self.__biosystem_json_file_2enz: 
+                            [("C00448","R05556"),
+                             ("C00129","R05556"),
+                             ("R05556","C05859"),
+                             ("R05556","C00013"),
+                             ("C00341","R02003"),
+                             ("C00129","R02003"),
+                             ("R02003","C00013"),
+                             ("R02003","C00448")],
+                          self.__biosystem_json_file_1enz2rxn:
+                            [("C00263","R01773"),
+                             ("C00003","R01773"),
+                             ("R01773","C00441"),
+                             ("R01773","C00004"),
+                             ("R01773","C00080"),
+                             ("C00263","R01775"),
+                             ("C00006","R01775"),
+                             ("R01775","C00441"),
+                             ("R01775","C00005"),
+                             ("R01775","C00080")],
+                          self.__biosystem_json_file_2components:
+                            [("C00448","R05556"),
+                             ("C00129","R05556"),
+                             ("R05556","C05859"),
+                             ("R05556","C00013"),
+                             ("C00341","R02003"),
+                             ("C00129","R02003"),
+                             ("R02003","C00013"),
+                             ("R02003","C00448"),
+                             ("C00263","R01773"),
+                             ("C00003","R01773"),
+                             ("R01773","C00441"),
+                             ("R01773","C00004"),
+                             ("R01773","C00080"),
+                             ("C00263","R01775"),
+                             ("C00006","R01775"),
+                             ("R01775","C00441"),
+                             ("R01775","C00005"),
+                             ("R01775","C00080")]}
 
-    #     for f in expected_edges:
-    #         f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f)
-    #         G = nx.read_gml(f_full_path)
-    #         self.assertEqual(set(expected_edges[f]),set(G.edges()))
+        for f in expected_edges:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-directed-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_edges[f]),set(G.edges()))
 
-####### need to modify below still
-# class TestTopologyBipartiteUndirectedRxnsub(unittest.TestCase):
+    # 'bipartite-undirected-rxnsub'
+    def test_bipartite_undirected_rxnsub_is_undirected(self):
 
-#     ## fpath for testing graphs
-#     gmldir = 'test/userdata/gmls/'
-#     gmltypedir = 'bipartite-undirected-rxnsub/'
-#     gmlfname = '1.1.1.3;test_ec_1.1.1.3.dat.gml'
-#     fpath=gmldir+gmltypedir+gmlfname
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-undirected-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_directed(G),False)
 
-#     G = nx.read_gml(fpath)
+    def test_bipartite_undirected_rxnsub_is_bipartite(self):
 
-#     ## 'bipartite-undirected-rxnsub'
-#     def test_bipartite_undirected_rxnsub_is_undirected(self):
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-undirected-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(nx.is_bipartite(G),True)
 
-#         self.assertEqual(nx.is_directed(self.G),False)
+    def test_bipartite_undirected_rxnsub_nodes(self):
+        expected_nodes = {self.__biosystem_json_file_2enz: 
+                            ["R05556",
+                             "R02003",
+                             "C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341"],
+                          self.__biosystem_json_file_1enz2rxn:
+                            ["R01773",
+                             "R01775",
+                             "C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"],
+                          self.__biosystem_json_file_2components:
+                            ["R05556",
+                             "R02003",
+                             "R01773",
+                             "R01775",
+                             "C00448",
+                             "C05859",
+                             "C00129",
+                             "C00013",
+                             "C00341",
+                             "C00263",
+                             "C00441",
+                             "C00003",
+                             "C00004",
+                             "C00006",
+                             "C00005",
+                             "C00080"]}
+        for f in expected_nodes:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-undirected-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            self.assertEqual(set(expected_nodes[f]),set(G.nodes()))
 
-#     def test_bipartite_undirected_rxnsub_is_bipartite(self):
+    def test_bipartite_undirected_rxnsub_edges(self):
 
-#         self.assertEqual(nx.is_bipartite(self.G),True)
+        expected_edges = {self.__biosystem_json_file_2enz: 
+                            [frozenset({"C00448","R05556"}),
+                             frozenset({"C00129","R05556"}),
+                             frozenset({"R05556","C05859"}),
+                             frozenset({"R05556","C00013"}),
+                             frozenset({"C00341","R02003"}),
+                             frozenset({"C00129","R02003"}),
+                             frozenset({"R02003","C00013"}),
+                             frozenset({"R02003","C00448"})],
+                          self.__biosystem_json_file_1enz2rxn:
+                            [frozenset({"C00263","R01773"}),
+                             frozenset({"C00003","R01773"}),
+                             frozenset({"R01773","C00441"}),
+                             frozenset({"R01773","C00004"}),
+                             frozenset({"R01773","C00080"}),
+                             frozenset({"C00263","R01775"}),
+                             frozenset({"C00006","R01775"}),
+                             frozenset({"R01775","C00441"}),
+                             frozenset({"R01775","C00005"}),
+                             frozenset({"R01775","C00080"})],
+                          self.__biosystem_json_file_2components:
+                            [frozenset({"C00448","R05556"}),
+                             frozenset({"C00129","R05556"}),
+                             frozenset({"R05556","C05859"}),
+                             frozenset({"R05556","C00013"}),
+                             frozenset({"C00341","R02003"}),
+                             frozenset({"C00129","R02003"}),
+                             frozenset({"R02003","C00013"}),
+                             frozenset({"R02003","C00448"}),
+                             frozenset({"C00263","R01773"}),
+                             frozenset({"C00003","R01773"}),
+                             frozenset({"R01773","C00441"}),
+                             frozenset({"R01773","C00004"}),
+                             frozenset({"R01773","C00080"}),
+                             frozenset({"C00263","R01775"}),
+                             frozenset({"C00006","R01775"}),
+                             frozenset({"R01775","C00441"}),
+                             frozenset({"R01775","C00005"}),
+                             frozenset({"R01775","C00080"})]}
 
-#     def test_bipartite_undirected_rxnsub_nodes(self):
+        for f in expected_edges:
+            f_full_path = os.path.join(self.__graphs_outdir,'bipartite-undirected-rxnsub',f+".gml")
+            G = nx.read_gml(f_full_path)
+            # self.assertEqual(set(expected_edges[f]),set(G.edges()))
+            self.assertEqual(set(expected_edges[f]),set(frozenset(edge) for edge in G.edges()))
 
-#         expected_nodes = {'C00003',
-#                           'C00004',
-#                           'C00005',
-#                           'C00006',
-#                           'C00080',
-#                           'C00263',
-#                           'C00441',
-#                           'R01773',
-#                           'R01775'}
-
-#         self.assertEqual(expected_nodes,set(self.G.nodes()))
-
-#     def test_bipartite_undirected_rxnsub_edges(self):
-
-#         expected_edges = {frozenset({'C00441', 'R01775'}),
-#                          frozenset({'C00080', 'R01775'}),
-#                          frozenset({'C00005', 'R01775'}),
-#                          frozenset({'C00080', 'R01773'}),
-#                          frozenset({'C00003', 'R01773'}),
-#                          frozenset({'C00263', 'R01775'}),
-#                          frozenset({'C00006', 'R01775'}),
-#                          frozenset({'C00441', 'R01773'}),
-#                          frozenset({'C00004', 'R01773'}),
-#                          frozenset({'C00263', 'R01773'})}
-
-#         self.assertEqual(expected_edges,set(frozenset(edge) for edge in self.G.edges()))
 
 # class TestTopologyUnipartiteUndirectedRxn(unittest.TestCase):
 
