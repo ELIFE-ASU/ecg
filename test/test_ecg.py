@@ -1260,3 +1260,57 @@ class TestEcgGraphsFromDir(unittest.TestCase):
             f_full_path = os.path.join(self.__graphs_outdir,'unipartite-undirected-subfromdirected',f+".gml")
             G = nx.read_gml(f_full_path)
             self.assertEqual(set(expected_edges[f]),set(frozenset(edge) for edge in G.edges()))
+
+class TestEcgGraphsMissingrxn(unittest.TestCase):
+    @classmethod
+    def setup_class(self):
+        self.__current_dir = os.path.dirname(os.path.abspath(__file__))
+        self.__master_json = os.path.join(self.__current_dir,"userdata","kegg","master.json")
+        self.__taxon_reactions_indir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_reactions")
+        self.__ec_rxn_link_json = os.path.join(self.__current_dir,"userdata","kegg","links","enzyme_reaction.json")
+        self.__taxon_ids_indir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_ids")
+
+        ## rxn jsons (will turn to graphs)
+        self.__biosystem_json_file_missingrxn = "1234567890missingrxn"
+        
+        self.__files_names = [self.__biosystem_json_file_missingrxn]
+        
+        ## outdirs (cleared before tests)
+        self.__graphs_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","graphs")
+        self.__missingdir_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","rxns_missing_from_kegg")
+
+        ## test all graphtypes
+        self.__graphtypes = ['bipartite-directed-rxnsub',
+        'bipartite-undirected-rxnsub',
+        'unipartite-undirected-rxn',
+        'unipartite-directed-sub',
+        'unipartite-undirected-sub',
+        'unipartite-undirected-subfromdirected']
+
+        ## Clear outdirs to ensure tests are fresh each time
+        clear_dir(self.__graphs_outdir)
+        clear_dir(self.__missingdir_outdir)
+
+
+        myecg = Ecg()
+        ## Make sure json rxn files are created
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__taxon_reactions_indir,f+".json")
+            if not os.path.exists(f_full_path):
+                myecg.write_biosystem_rxns(f_full_path,self.__ec_rxn_link_json,self.__taxon_reactions_indir)
+
+            ## Write graphs
+            myecg.write_biosystem_graphs(f_full_path,
+                                self.__master_json,
+                                graphtypes=self.__graphtypes,
+                                outdir=self.__graphs_outdir,
+                                missingdir=self.__missingdir_outdir,
+                                verbose=True)
+
+    def test_missing_rxn_json_formatting(self):
+
+        for f in self.__files_names:
+            f_full_path = os.path.join(self.__missingdir_outdir,f+".json")
+            with open(f_full_path) as fjson:
+                missing_rxns = json.load(fjson)
+            self.assertEqual(["R00000000","R99999999"],missing_rxns)        
