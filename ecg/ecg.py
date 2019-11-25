@@ -359,3 +359,29 @@ class Ecg(object):
                                                         outdir=outdir,
                                                         missingdir=missingdir,
                                                         verbose=verbose)
+
+def __execute_cli(arguments):
+    """
+    Call appropriate methods based on command line interface input.
+    """
+    
+    if arguments['write_biosystem_rxns'] == True:
+        E = Ecg()
+        
+        E.write_biosystem_rxns(arguments['BIOSYSTEM_JSON'],
+                                     arguments['EC_RXN_LINK_JSON'],
+                                     outdir=arguments['--outdir'])
+
+    if arguments['write_biosystem_graphs'] == True:
+        E = Ecg()
+        E.write_biosystem_graphs(arguments['BIOSYS_RXN_JSON'], 
+                                 arguments['MASTER_JSON'],
+                                 graphtypes=arguments['--graphtypes'],
+                                 outdir=arguments['--outdir'],
+                                 missingdir=arguments['--missingdir'],
+                                 verbose=arguments['--verbose'])
+
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='ecg 1.0')
+    # __check_cli_input_types(arguments)
+    __execute_cli(arguments)
