@@ -68,8 +68,14 @@ class Ecg(object):
         biosystem_json = self.__load_json(biosystem_json)
         
         ec_list = list()
-        for ec in biosystem_json['enzymes']:
-            ec_list.append(ec.split("EC:")[1])
+        try:
+            for ec in biosystem_json["enzymes"]:
+                try:
+                    ec_list.append(ec.split("EC:")[1])
+                except:
+                    pass
+        except:
+            pass
         
         return ec_list
 

@@ -23,6 +23,8 @@ class TestEcgRxnJsons(unittest.TestCase):
         self.__biosystem_json_file_2enz = "1234567890.json"
         self.__biosystem_json_file_1enz2rxn = "1234567891.json"
         self.__biosystem_json_file_2components = "1234567892.json"
+        self.__biosystem_json_file_no_enzymes_key = "no_enzymes_key.json"
+        self.__biosystem_json_file_no_ec_keys = "no_ec_keys.json"
         
         self.__taxon_reactions_outdir = os.path.join(self.__current_dir,"userdata","jgi","Eukaryota","taxon_reactions")
 
@@ -80,7 +82,20 @@ class TestEcgRxnJsons(unittest.TestCase):
             f_full_path = os.path.join(self.__taxon_reactions_outdir,f)
             with open(f_full_path) as fjson:
                 self.assertEqual(set(json.load(fjson)),set(files_rxns[f]))
-        
+
+    def test_no_enzymes_key(self):
+
+        myecg = Ecg()
+        f_full_path = os.path.join(self.__taxon_ids_indir,self.__biosystem_json_file_no_enzymes_key)
+        myecg.write_biosystem_rxns(f_full_path,self.__ec_rxn_link_json,self.__taxon_reactions_outdir)
+
+    def test_no_ec_keys(self):
+
+        myecg = Ecg()
+        f_full_path = os.path.join(self.__taxon_ids_indir,self.__biosystem_json_file_no_ec_keys)
+        myecg.write_biosystem_rxns(f_full_path,self.__ec_rxn_link_json,self.__taxon_reactions_outdir)
+
+
     def test_write_biosystem_rxns_dir_names(self):
 
         clear_dir(self.__taxon_reactions_outdir)
@@ -101,6 +116,9 @@ class TestEcgRxnJsons(unittest.TestCase):
         files_rxns = {self.__biosystem_json_file_2enz: ["R05556","R02003"],
             self.__biosystem_json_file_1enz2rxn: ["R01773","R01775"],
             self.__biosystem_json_file_2components: ["R05556","R02003","R01773","R01775"]}
+
+        myecg = Ecg()
+        myecg.write_biosystem_rxns(self.__taxon_ids_indir,self.__ec_rxn_link_json,self.__taxon_reactions_outdir)
 
         for f in files_rxns:
             f_full_path = os.path.join(self.__taxon_reactions_outdir,f)
