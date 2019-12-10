@@ -55,19 +55,21 @@ class Ecg(object):
         """
         with open(fname, 'w') as outfile:
             json.dump(data, outfile, indent=2)
-    
+
     #######################################################################################################
     ### RXN JSONS
     #######################################################################################################
-    
+
     def _get_biosystem_eclist(self,biosystem_json):
         """
         Converts exhaustive JGI json to only a list of ECs
         """
 
         biosystem_json = self.__load_json(biosystem_json)
-        
+
         ec_list = list()
+
+
         try:
             for ec in biosystem_json["enzymes"]:
                 try:
@@ -75,8 +77,22 @@ class Ecg(object):
                 except:
                     pass
         except:
-            pass
-        
+            try:
+                for ec in biosystem_json["assembled"]:
+                    try:
+                        ec_list.append(ec.split("EC:")[1])
+                    except:
+                        pass
+            except:
+                try:
+                    for ec in biosystem_json["unassembled"]:
+                        try:
+                            ec_list.append(ec.split("EC:")[1])
+                        except:
+                            pass
+                except:
+                    pass
+
         return ec_list
 
     def _get_biosystem_rxnlist(self,ec_list,ec_rxn_link_json):
@@ -92,7 +108,7 @@ class Ecg(object):
             if ec_key in self.__ec_rxn_link_json:
                 for rxn in self.__ec_rxn_link_json[ec_key]:
                     rxn_list.append(rxn.split("rn:")[1])
-            
+
         return rxn_list
 
     def _write_biosystem_rxns_from_jgi_json_file(self,infile,ec_rxn_link_json,outdir="taxon_reactions"):
@@ -122,7 +138,7 @@ class Ecg(object):
 
         if os.path.isfile(biosystem_json):
             self._write_biosystem_rxns_from_jgi_json_file(biosystem_json,ec_rxn_link_json,outdir)
-        
+
         elif os.path.isdir(biosystem_json):
             self._write_biosystem_rxns_from_jgi_json_dir(biosystem_json,ec_rxn_link_json,outdir)
 
@@ -134,14 +150,14 @@ class Ecg(object):
         Create single bipartite-directed-rxnsub graph, used to create all subsequent graphs
 
         :param biosys_rxn_json: loaded json of all reactions for a (meta)genome
-        :param master_json: loaded json of all possible rxn edges and detailed data in KEGG 
+        :param master_json: loaded json of all possible rxn edges and detailed data in KEGG
         """
         G = nx.DiGraph()
 
         rxn_list = self.__load_json(biosys_rxn_json)
         if self.__master_json == None:
             self.__master_json = self.__load_json(master_json)
-        
+
         rxns_missing_from_rxn_edges = list()
         for rxn in rxn_list:
             ## rxn nodes
@@ -181,7 +197,7 @@ class Ecg(object):
         :param verbose: if True, prints the graph types as they're created
 
         ---------------------------------------------------------------------------------
-        Notes: 
+        Notes:
         ---------------------------------------------------------------------------------
         Steps involved:
         1. Creates directed bipartite graph
@@ -198,7 +214,7 @@ class Ecg(object):
         unipartite-undirected-rxn
         unipartite-directed-sub
         unipartite-undirected-sub
-        unipartite-undirected-subfromdirected --same connection rules used in 
+        unipartite-undirected-subfromdirected --same connection rules used in
                                                 "Universal Scaling" paper
         """
 
@@ -213,9 +229,9 @@ class Ecg(object):
 
             if verbose: print("bipartite-directed-rxnsub")
 
-            outfpath_final = os.path.join(outdir,"bipartite-directed-rxnsub",biosys_id+".gml")           
+            outfpath_final = os.path.join(outdir,"bipartite-directed-rxnsub",biosys_id+".gml")
             nx.write_gml(B,outfpath_final)
-        
+
         if {'bipartite-undirected-rxnsub','unipartite-undirected-rxn','unipartite-undirected-sub'} & set(graphtypes):
 
             if verbose: print("(bipartite-undirected-rxnsub or unipartite-undirected-rxn or unipartite-undirected-sub)")
@@ -226,7 +242,7 @@ class Ecg(object):
 
                 if verbose: print("- bipartite-undirected-rxnsub")
 
-                outfpath_final = os.path.join(outdir,"bipartite-undirected-rxnsub",biosys_id+".gml")          
+                outfpath_final = os.path.join(outdir,"bipartite-undirected-rxnsub",biosys_id+".gml")
                 nx.write_gml(B_un,outfpath_final)
 
             if 'unipartite-undirected-rxn' in graphtypes:
@@ -254,7 +270,7 @@ class Ecg(object):
             if 'unipartite-directed-sub' in graphtypes:
 
                 if verbose: print("- unipartite-directed-sub")
-                
+
                 outfpath_final = os.path.join(outdir,"unipartite-directed-sub",biosys_id+".gml")
                 nx.write_gml(G_cdir,outfpath_final)
 
@@ -266,7 +282,7 @@ class Ecg(object):
                 G_cun = G_cdir.to_undirected()
                 outfpath_final = os.path.join(outdir,"unipartite-undirected-subfromdirected",biosys_id+".gml")
                 nx.write_gml(G_cun,outfpath_final)
-        
+
         ## Write rxns in genome missing from KEGG (if not empty)
         if rxns_missing_from_rxn_edges:
 
@@ -326,7 +342,7 @@ class Ecg(object):
         :param verbose: if True, prints the graph types as they're created
 
         ---------------------------------------------------------------------------------
-        Notes: 
+        Notes:
         ---------------------------------------------------------------------------------
         Steps involved:
         1. Creates directed bipartite graph
@@ -343,10 +359,10 @@ class Ecg(object):
         unipartite-undirected-rxn
         unipartite-directed-sub
         unipartite-undirected-sub
-        unipartite-undirected-subfromdirected --same connection rules used in 
+        unipartite-undirected-subfromdirected --same connection rules used in
                                                 "Universal Scaling" paper
         """
-        
+
         if not os.path.exists(outdir):
             os.makedirs(outdir)
 
@@ -357,7 +373,7 @@ class Ecg(object):
                                                         outdir=outdir,
                                                         missingdir=missingdir,
                                                         verbose=verbose)
-        
+
         elif os.path.isdir(biosys_rxn_json):
             self._write_biosystem_graphs_from_json_dir(biosys_rxn_json,
                                                         master_json,
@@ -370,17 +386,17 @@ def __execute_cli(arguments):
     """
     Call appropriate methods based on command line interface input.
     """
-    
+
     if arguments['write_biosystem_rxns'] == True:
         E = Ecg()
-        
+
         E.write_biosystem_rxns(arguments['BIOSYSTEM_JSON'],
                                      arguments['EC_RXN_LINK_JSON'],
                                      outdir=arguments['--outdir'])
 
     if arguments['write_biosystem_graphs'] == True:
         E = Ecg()
-        E.write_biosystem_graphs(arguments['BIOSYS_RXN_JSON'], 
+        E.write_biosystem_graphs(arguments['BIOSYS_RXN_JSON'],
                                  arguments['MASTER_JSON'],
                                  graphtypes=arguments['--graphtypes'],
                                  outdir=arguments['--outdir'],
