@@ -366,12 +366,12 @@ myjgidir
 |  |-combined_taxon_ids 
 |  |-graphs
 |     |-bipartite-directed-rxnsub
-|        |-2789789765.json
-|        |-2789789766.json
+|        |-2789789765.gml
+|        |-2789789766.gml
 |        ...
 |     |-bipartite-directed-rxnsub
-|        |-2789789765.json
-|        |-2789789766.json
+|        |-2789789765.gml
+|        |-2789789766.gml
 |        ...
 |     ...
 |  |-missing_enzymes.json 
