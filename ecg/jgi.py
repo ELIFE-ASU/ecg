@@ -1,26 +1,3 @@
-"""
-WARNING. CLI HAS NOT BEEN TESTED YET.
-
-Retrieve enzyme data from JGI genomes and metagenomes.
-
-Usage:
-  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_domain PATH DOMAIN [--database=<db>|--assembly_types=<at>...]
-  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_urls PATH DOMAIN ORGANISM_URLS [--assembly_types=<at>...]
-
-Arguments:
-  PATH  Directory where JGI data will be downloaded to
-  DOMAIN    JGI valid domain to scrape data from (one of: 'Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome')
-  ORGANISM_URLS     (meta)genome URLs to download data from
-  scrape_domain     Download an entire JGI domain and run pipeline to format data
-  scrape_urls   Download data from one or more (meta)genomes by URL
-
-Options:
-  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable (leaving blank defaults to current dir) [default: None]
-  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
-  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
-  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
-"""
-
 import time
 import os
 import re
@@ -29,7 +6,6 @@ import warnings
 import sys, io
 import argparse
 from selenium import webdriver
-from ast import literal_eval
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
@@ -244,12 +220,6 @@ class Jgi(object):
 
         stats = {k:v for k, v in stats.items() if k != ''}
         stats = {k:v for k, v in stats.items() if v}
-
-        #for k, v in stats.items():
-        #    print(k, ':', v)
-    
-        #for k, v in metadata.items():
-        #    print(k, ':', v)
 
         return metadata, stats
 

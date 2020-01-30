@@ -1,24 +1,3 @@
-## References: 
-## https://virantha.com/2016/06/23/elegant-command-line-parsing-in-python/
-## https://github.com/docopt/docopt
-"""
-Retrieve KEGG databases and format them for use in network expansions.
-
-Usage:
-  kegg.py PATH download [--run_pipeline=<rp>|--db=<db>...]
-  kegg.py PATH update [--metadata=<md>]
-
-Arguments:
-  PATH  Directory where kegg will be downloaded to (or where it already exists)  
-  download  Download KEGG and run pipeline to format data
-  update    Update existing KEGG directory     
-
-Options:
-  --run_pipeline=<rp>   Whether or not to run the full pipeline [default: True]
-  --db=<db>...     Databases to download [default: pathway enzyme reaction compound] 
-  --metadata=<md>   Add metadata fields from "RXXXXX.json" into master.json [default: True]
-"""
-
 import os
 import re
 import json
@@ -26,8 +5,7 @@ import copy
 import glob
 import itertools
 import warnings
-from docopt import docopt
-from ast import literal_eval
+import argparse
 from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
@@ -522,47 +500,36 @@ class Kegg(object):
             
         return lists
 
-def __check_cli_input_types(arguments):
-    """
-    Check docopt input types.
-    
-    Each docopt flag can only take one arg
-    to download more than one database, you need one flag per db
-    ex. `python kegg.py mydir download --db reaction --db compound`
-    """
+def __execute_cli(args):
 
-    dbs = arguments['--db']
-    if not isinstance(dbs,list):
-        raise TypeError("`db` must be a list")
-    for db in dbs:
-        if not isinstance(db,str):
-            raise TypeError("Each entry in `db` must be a string")
-    
-    run_pipeline = literal_eval((arguments['--run_pipeline']))
-    if not isinstance(run_pipeline,bool):
-        raise TypeError("`run_pipeline` must be a boolean (True or False)")
-    
-    metadata = literal_eval((arguments['--metadata']))
-    if not isinstance(metadata,bool):
-        raise TypeError("`metadata` must be a boolean (True or False)")
-
-def __execute_cli(arguments):
     """
     Call appropriate methods based on command line interface input.
     """
-    ## Convert to True/False bool types
-    run_pipeline = literal_eval((arguments['--run_pipeline']))
-    metadata = literal_eval((arguments['--metadata']))
+    
+    run_pipeline = args.rp
+    metadata = args.md
+    path = args.path
 
-    if arguments['download'] == True:
-        K = Kegg(arguments['PATH'])
-        K.download(run_pipeline=run_pipeline,dbs=arguments['--db'])
+    if args.download == True:
+        K = Kegg(path)
+        K.download(run_pipeline=run_pipeline,dbs=args.db)
 
-    if arguments['update'] == True:
-        K = Kegg(arguments['PATH'])
+    if args.update == True:
+        K = Kegg(path)
         K.update(metadata=metadata)
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='kegg 1.0')
-    __check_cli_input_types(arguments)
-    __execute_cli(arguments)
+
+    # Initial setup of argparse with description of program.
+    parser = argparse.ArgumentParser(description='Retrieve KEGG databases and format them for use in network expansions.')
+
+    parser.add_argument('--rp',default=True,type=bool,help='Whether or not to run the full pipline. [Default = True]')
+    parser.add_argument('--db',default=['pathway','enzyme','reaction','compound'],type=list,help='Databases to download. For more information on dbs see KEGG DB Links. Choices include: pathway, brite, module, ko, genome, <org>, vg, ag, compound, glycan, reaction, rclass, enzyme, network, hsa_var, disease, drug, dgroup, environ. [Default=["pathway","enzyme","reaction","compound"]]')
+    parser.add_argument('--md',default=True,type=bool,help='Whether to add metadata fields from "RXXXXX.json" into master.json. [Default = True]')
+    parser.add_argument('--path',default=None,required=True,type=str,help='Directory where KEGG will be downloaded to or updated.')
+    parser.add_argument('--download',default=True,type=bool,help='Whether to download KEGG and run pipeline to format data. [Default = True]')
+    parser.add_argument('--update',default=False,type=bool,help='Whether or not to update existing KEGG directory. Note: Updating will NOT reflect changes made to invdividual entry fields, and it will NOT remove entries which have been removed from KEGG. It will only add entries which have been added. To guarantee the most up-to-date KEGG database, a full re-download is necessary. [Default = False]')
+
+    args = parser.parse_args()
+ 
+    __execute_cli(args)
