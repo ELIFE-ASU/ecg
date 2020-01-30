@@ -71,6 +71,7 @@ class Kegg(object):
 
         if run_pipeline:
 
+            self._detail_compounds()
             self._detail_reactions()
             self._download_links()
             self._get_current_version()
@@ -125,6 +126,23 @@ class Kegg(object):
                             f.write(handle.read())
                     except:
                         pass
+    
+    def _detail_compounds(self):
+        """
+        Add information about elements in compounds
+        """
+
+        compound_path = os.path.join(self.path,'entries','compound','')
+
+        for path in glob.glob(compound_path+"*.json"):
+            with open(path) as f:
+                data = json.load(f)[0]
+                elements = re.findall(r"([A-Z][a-z]?)",data['formula'])
+                data["elements"] = list(set(elements))
+
+            ## Rewrite file with added detail
+            with open(path, 'w') as f:
+                json.dump(data, f, indent=2)
 
     def _detail_reactions(self):
         """
@@ -132,6 +150,13 @@ class Kegg(object):
         """
 
         reaction_path = os.path.join(self.path,'entries','reaction','')
+        compound_path = os.path.join(self.path,'entries','compound','')
+
+        compound_dict = dict()
+        for path in glob.glob(compound_path+"*.json"):
+            with open(path) as f:
+                compound_json = json.load(f)[0]
+                compound_dict[compound_json["entry_id"]] = compound_json
         
         for path in glob.glob(reaction_path+"*.json"):
             
@@ -231,10 +256,36 @@ class Kegg(object):
                         if i==0:
                             data[0]["left"] = compounds
                             data[0]["left_stoichiometries"] = stoichiometries
+                            data[0]["left_elements"] = set()
+                            ## Add element data
+                            for c in compounds:
+                                if c in compound_dict:
+                                    data[0]["left_elements"] = data[0]["left_elements"].union(compound_dict[c]['elements'])
+                                else:
+                                    data[0]["left_elements"] = data[0]["left_elements"].union('missing_cid')
+                                    data[0]["contains_missingcid"] = True
                         elif i==1:
                             data[0]["right"] = compounds
                             data[0]["right_stoichiometries"] = stoichiometries
+                            data[0]["right_elements"] = set()
+                            ## Add element data
+                            for c in compounds:
+                                if c in compound_dict:
+                                    data[0]["right_elements"] = data[0]["right_elements"].union(compound_dict[c]['elements'])
+                                else:
+                                    data[0]["right_elements"] = data[0]["right_elements"].union('missing_cid')
+                                    data[0]["contains_missingcid"] = True
+                        
+                        if "contains_missingcid" not in data[0]:
+                            data[0]["contains_missingcid"] = False
 
+                        if data[0]["left_elements"] != data[0]["right_elements"]:
+                            data[0]["element_conservation"] = False
+                            data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
+                        else:
+                            data[0]["element_conservation"] = True
+                            data[0]["elements_mismatched"] = list()
+                        
                         assert len(compounds) == len(stoichiometries)
                         data[0]["glycans"] = False
 
