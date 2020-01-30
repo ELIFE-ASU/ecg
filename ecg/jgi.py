@@ -97,8 +97,7 @@ class Jgi(object):
             match = re.search(regex, htmlandjunk)
             html_suffix = match.group(1)
             
-            #full_url = self.homepage_url+html_suffix
-            full_url = "https://img.jgi.doe.gov/cgi-bin/m/main.cgi{}".format(html_suffix)
+            full_url = self.homepage_url+"{}".format(html_suffix)
             organism_urls.append(full_url)
         
         ## Creates a dictionary of organism urls from parsed html list and sets values to 1.
