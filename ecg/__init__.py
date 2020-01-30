@@ -8,3 +8,4 @@
 # from convert_ecjsons_to_ectorxnlistjson import convert_ecjsons_to_ectorxnlistjson
 from .kegg import Kegg
 from .jgi import Jgi
+from .ecg import Ecg

@@ -13,14 +13,14 @@ with open("LICENSE") as f:
 setup(
     name='ecg',
     version='0.0.1',
-    description='jgi/kegg databases -> biochemical jsons/networks',
+    description='jgi/kegg databases -> biochemical jsons/graphs',
     long_description=README,
     maintainer='Harrison B. Smith; ELIFE',
     maintainer_email='hbs@elsi.jp',
     author='Harrison B. Smith; ELIFE',
     project_urls={"github":'https://github.com/ELIFE-ASU/ecg'},
     license=LICENSE,
-    install_requires=['docopt','tqdm','biopython','selenium','beautifulsoup4'],
+    install_requires=['docopt','tqdm','biopython','selenium','beautifulsoup4','networkx'],
     packages=['ecg'],
     test_suite='nose.collector', #test
     tests_require=['nose'],
