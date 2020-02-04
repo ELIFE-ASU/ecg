@@ -709,21 +709,21 @@ if __name__ == '__main__':
     # Adds --path as an argument. Default value is None, it is a required argument, and it looks for a string.
     # Can access the path variable:
     # PATH = args.path
-    parser.add_argument('--path',default=None,required=True,type=str,help='Directory where JGI data will be downloaded to.')
+    parser.add_argument('--path',default=None,required=True,type=str,help='Directory where JGI data will be downloaded to. (Required)')
     
     # group1 is a mutually exclusive group
     # Example: If you have --scrape_domain as an argument, then you CANNOT have --scrape_urls as an argument.
     group1 = parser.add_mutually_exclusive_group()
-    group1.add_argument('--scrape_domain',default=True,help='Download an entire JGI domain and run pipeline to format data (default).')
-    group1.add_argument('--scrape_urls',default=False,help='Download data from one or more (meta)genomes by URL (optional).')
+    group1.add_argument('--scrape_domain',default=True,help='Download an entire JGI domain and run pipeline to format data (Default = True).')
+    group1.add_argument('--scrape_urls',default=False,help='Download data from one or more (meta)genomes by URL. (Default = False).')
 
-    parser.add_argument('--organism_urls',type=list,help='List of (meta)genomes by URL for scrape_urls (required if scrape_urls == True)')
+    parser.add_argument('--organism_urls',nargs='+',type=str,help='List of (meta)genomes by URL for scrape_urls. (Required only if scrape_urls == True)')
     # domain has limited choices and will return error if variable is not set to one of them.
-    parser.add_argument('--domain',choices=['Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome'],required=True,type=str,help='JGI valid domain to scrape data from.')
-    parser.add_argument('--cd_path',default=None,type=str,help='Path pointing to chromedriver executable.')
-    parser.add_argument('--hp_url',default='https://img.jgi.doe.gov/cgi-bin/m/main.cgi',type=str,help="URL of JGI's homepage (optional).")
-    parser.add_argument('--db',choices = ['jgi','all'],default='all',type=str,help='To use only JGI annotated organisms or all organisms (optional).')
-    parser.add_argument('--at',default=['assembled','unassembled','both'],type=list,help='Assembly types. Only used for metagenomic domains. Ignored for others.(optional)')
+    parser.add_argument('--domain',choices=['Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome'],required=True,type=str,help='JGI valid domain to scrape data from. (Required)')
+    parser.add_argument('--cd_path',default=None,type=str,help='Path pointing to chromedriver executable. (Required)')
+    parser.add_argument('--hp_url',default='https://img.jgi.doe.gov/cgi-bin/m/main.cgi',type=str,help="URL of JGI's homepage. (Optional. Default = https://img.jgi.doe.gov/cgi-bin/m/main.cgi)")
+    parser.add_argument('--db',choices = ['jgi','all'],default='all',type=str,help='To use only JGI annotated organisms or all organisms. (Optional. Default = all)')
+    parser.add_argument('--at',default=['assembled','unassembled','both'],choices = ['assembled','unassembled','both'],nargs='+',type=str,help='Assembly types. Only used for metagenomic domains. Ignored for others. (Optional. Default = [assembled, unassembled, both])')
 
     # Parses the command line arguments.
     args = parser.parse_args()

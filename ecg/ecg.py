@@ -1,35 +1,9 @@
-"""
-WARNING. CLI HAS NOT IMPLEMENTED OR TESTED YET.
-
-Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
-
-Usage:
-  ecg.py write_biosystem_rxns BIOSYSTEM_JSON EC_RXN_LINK_JSON [--outdir=<outdir>]
-  ecg.py write_biosystem_graphs BIOSYS_RXN_JSON MASTER_JSON [--graphtypes=<graphtypes>|--outdir=<graphoutdir>|--missingdir=<missingdir>|--verbose=<verbose>]
-
-Arguments:
-  BIOSYSTEM_JSON    the filepath to the directory or file where JGI data is located
-  EC_RXN_LINK_JSON  the filepath to `enzyme_reaction.json` (the json containing relationship between ec numbers and reactions)
-  BIOSYS_RXN_JSON   the filepath to the biosystem reaction json file
-  MASTER_JSON       the filepath to `master.json` (json with details information about all KEGG reactions)
-  write_biosystem_rxns   Write reaction lists from either a single biosystem file or biosystem directory (all JGI jsons)
-  write_biosystem_graphs   Write gmls from either a single biosystem reaction file or biosystem reaction directory (all JGI reaction jsons)
-
-Options:
-  --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
-  --graphtypes=<graphtypes> Which types of graphs to write to gml files [default: ["unipartite-undirected-subfromdirected"]]
-  --outdir=<graphoutdir> The dir to store subdirs for each graph type, and subsequent gml files [default: "graphs"]
-  --missingdir=<missingdir> The dir to store reactions which are missing from biosystems as jsons [default: "taxon_with_rxns_missing_from_kegg"]
-  --verbose=<verbose> If True, prints the graph types as they're created [default: True]
-
-"""
-
 import json
 import glob
 import os
 import networkx as nx
 from networkx.algorithms import bipartite
-from docopt import docopt
+import argparse
 
 class Ecg(object):
 
@@ -366,28 +340,44 @@ class Ecg(object):
                                                         missingdir=missingdir,
                                                         verbose=verbose)
 
-def __execute_cli(arguments):
+def __execute_cli(args):
     """
     Call appropriate methods based on command line interface input.
     """
     
-    if arguments['write_biosystem_rxns'] == True:
+    if args.write_rxns == True:
         E = Ecg()
         
-        E.write_biosystem_rxns(arguments['BIOSYSTEM_JSON'],
-                                     arguments['EC_RXN_LINK_JSON'],
-                                     outdir=arguments['--outdir'])
+        E.write_biosystem_rxns(args.jgi,
+                                     args.ecrxn,
+                                     outdir=args.outdir)
 
-    if arguments['write_biosystem_graphs'] == True:
+    if args.write_graphs == True:
         E = Ecg()
-        E.write_biosystem_graphs(arguments['BIOSYS_RXN_JSON'], 
-                                 arguments['MASTER_JSON'],
-                                 graphtypes=arguments['--graphtypes'],
-                                 outdir=arguments['--outdir'],
-                                 missingdir=arguments['--missingdir'],
-                                 verbose=arguments['--verbose'])
+        E.write_biosystem_graphs(args.biorxn, 
+                                 args.master,
+                                 graphtypes=args.grapthtypes,
+                                 outdir=args.graphoutdir,
+                                 missingdir=args.missingdir,
+                                 verbose=args.verbose)
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='ecg 1.0')
-    # __check_cli_input_types(arguments)
-    __execute_cli(arguments)
+    # Initial setup of argparse with description of program.
+    parser = argparse.ArgumentParser(description='WARNING. CLI HAS NOT BEEN IMPLEMENTED OR TESTED YET. Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes.')
+
+    parser.add_argument('--jgi',default=None,required=True,type=str,help='Filepath to the directory or file where JGI data is located. (Required)')
+    parser.add_argument('--ecrxn',default=None,required=True,type=str,help='Filepath to "enzyme_reaction.json"; the json containing relationship between ec numbers and reactions. (Required)')
+    parser.add_argument('--biorxn',default=None,required=True,type=str,help='Filepath to the biosystem reaction json file. (Required)')
+    parser.add_argument('--master',default=None,required=True,type=str,help='Filepath to "master.json"; json with information details about all KEGG reactions. (Required)')
+    parser.add_argument('--write_rxns',default=True,type=bool,help='Write reaction lists from either a single biosystem file or biosystem directory; all JGI jsons. (Default = True)')
+    parser.add_argument('--write_graphs',default=True,type=bool,help='Write gmls from either a single biosystem reactionfile or biosystem reaction directory; all JGI reaction jsons. (Default = True)')
+    
+    parser.add_argument('--outdir',default='taxon_reactions',type=str,help='Path where biosystem reactions will be saved. (Default = "taxon_reactions")')
+    parser.add_argument('--graphtypes',default='unipartite-undirected-subfromdirected',choices = ['bipartite-directed-rxnsub','bipartite-undirected-rxnsub','unipartite-undirected-rxn','unipartite-directed-sub','unipartite-undirected-sub','unipartite-undirected-subfromdirected'],nargs='+',type=str,help='Which types of graphs to write to gml files. (Default = "unipartite-undirected-subfromdirected")')
+    parser.add_argument('--graphoutdir',default='graphs',type=str,help='The directory to store subdirs for each graph type, and subsequent gml files. (Default = "graphs")')
+    parser.add_argument('--missingdir',default='taxon_with_rxns_missing_from_kegg',type=str,help='The directory to store reactions which are missing from biosystems as jsons. (Default = "taxon_with_rxns_missing_from_kegg")')
+    parser.add_argument('--verbose',default=True,type=bool,help='If True, prints the graph types as they are created. (Default = True)')
+
+    args = parser.parse_args()
+ 
+    __execute_cli(args)

@@ -560,7 +560,7 @@ def __execute_cli(args):
     run_pipeline = args.rp
     metadata = args.md
     path = args.path
-
+    
     if args.download == True:
         K = Kegg(path)
         K.download(run_pipeline=run_pipeline,dbs=args.db)
@@ -574,12 +574,12 @@ if __name__ == '__main__':
     # Initial setup of argparse with description of program.
     parser = argparse.ArgumentParser(description='Retrieve KEGG databases and format them for use in network expansions.')
 
-    parser.add_argument('--rp',default=True,type=bool,help='Whether or not to run the full pipline. [Default = True]')
-    parser.add_argument('--db',default=['pathway','enzyme','reaction','compound'],type=list,help='Databases to download. For more information on dbs see KEGG DB Links. Choices include: pathway, brite, module, ko, genome, <org>, vg, ag, compound, glycan, reaction, rclass, enzyme, network, hsa_var, disease, drug, dgroup, environ. [Default=["pathway","enzyme","reaction","compound"]]')
-    parser.add_argument('--md',default=True,type=bool,help='Whether to add metadata fields from "RXXXXX.json" into master.json. [Default = True]')
-    parser.add_argument('--path',default=None,required=True,type=str,help='Directory where KEGG will be downloaded to or updated.')
-    parser.add_argument('--download',default=True,type=bool,help='Whether to download KEGG and run pipeline to format data. [Default = True]')
-    parser.add_argument('--update',default=False,type=bool,help='Whether or not to update existing KEGG directory. Note: Updating will NOT reflect changes made to invdividual entry fields, and it will NOT remove entries which have been removed from KEGG. It will only add entries which have been added. To guarantee the most up-to-date KEGG database, a full re-download is necessary. [Default = False]')
+    parser.add_argument('--rp',default=True,type=bool,help='Whether or not to run the full pipline. (Default = True)')
+    parser.add_argument('--db',default=['pathway','enzyme','reaction','compound'],choices = ['pathway', 'brite', 'module', 'ko', 'genome', '<org>', 'vg', 'ag', 'compound', 'glycan', 'reaction', 'rclass', 'enzyme', 'network', 'hsa_var', 'disease', 'drug', 'dgroup', 'environ'],nargs='+',type=str,help='Databases to download. For more information on dbs see KEGG DB Links. (Default = ["pathway", "enzyme", "reaction", "compound"])')
+    parser.add_argument('--md',default=True,type=bool,help='Whether to add metadata fields from "RXXXXX.json" into master.json. (Default = True)')
+    parser.add_argument('--path',default=None,required=True,type=str,help='Directory where KEGG will be downloaded to or updated. (Required)')
+    parser.add_argument('--download',default=True,type=bool,help='Whether to download KEGG and run pipeline to format data. (Default = True)')
+    parser.add_argument('--update',default=False,type=bool,help='Whether or not to update existing KEGG directory. Note: Updating will NOT reflect changes made to invdividual entry fields, and it will NOT remove entries which have been removed from KEGG. It will only add entries which have been added. To guarantee the most up-to-date KEGG database, a full re-download is necessary. (Default = False)')
 
     args = parser.parse_args()
  
