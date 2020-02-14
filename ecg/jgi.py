@@ -1,36 +1,13 @@
-"""
-WARNING. CLI HAS NOT BEEN TESTED YET.
-
-Retrieve enzyme data from JGI genomes and metagenomes.
-
-Usage:
-  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_domain PATH DOMAIN [--database=<db>|--assembly_types=<at>...]
-  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_urls PATH DOMAIN ORGANISM_URLS [--assembly_types=<at>...]
-
-Arguments:
-  PATH  Directory where JGI data will be downloaded to
-  DOMAIN    JGI valid domain to scrape data from (one of: 'Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome')
-  ORGANISM_URLS     (meta)genome URLs to download data from
-  scrape_domain     Download an entire JGI domain and run pipeline to format data
-  scrape_urls   Download data from one or more (meta)genomes by URL
-
-Options:
-  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable (leaving blank defaults to current dir) [default: None]
-  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
-  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
-  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
-"""
-
 import time
 import os
 import re
 import json
 import warnings
+import sys, io
+import argparse
 from selenium import webdriver
-from ast import literal_eval
 from tqdm import tqdm
-from docopt import docopt
-from bs4 import BeautifulSoup   
+from bs4 import BeautifulSoup
 
 class Jgi(object):
 
@@ -86,8 +63,9 @@ class Jgi(object):
     
     def __get_domain_json(self,domain_url,database,domain):
         ## Identify correct time to allow page to load
-        if (domain=="Bacteria") and (database=="all"):
-            sleep_time = 60
+        if (domain=='Bacteria'):
+        #if (domain=="Bacteria") and (database=="all"):
+            sleep_time = 75
         else:
             sleep_time = 5
         
@@ -109,19 +87,47 @@ class Jgi(object):
         domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
         return domain_json
 
-    def __get_organism_urls(self,domain_json):
+    def __get_organism_urls(self,domain_json,organism_url_path):
 
         all_GenomeNameSampleNameDisp =  [d['GenomeNameSampleNameDisp'] for d in domain_json['records']]
-
         organism_urls = list()
 
         for htmlandjunk in all_GenomeNameSampleNameDisp:
             regex = r"<a href='main\.cgi(.*)'>"
             match = re.search(regex, htmlandjunk)
             html_suffix = match.group(1)
-            full_url = self.homepage_url+html_suffix
+            
+            full_url = self.homepage_url+"{}".format(html_suffix)
             organism_urls.append(full_url)
         
+        ## Creates a dictionary of organism urls from parsed html list and sets values to 1.
+        # If url is to be downloaded, then value is 1.
+        # If url is already downloaded, then value is 0.
+        organism_dict = dict.fromkeys(organism_urls,1) 
+
+        self.__write_organism_urls_json(organism_url_path,organism_dict)
+
+        return organism_dict
+
+    # Added pruning function to remove organisms already downloaded.
+    def __prune_organism_urls(self, organism_urls, domain_path):
+
+        stub = re.sub(r'\d+$', "", next(iter(organism_urls)))
+        
+        # Checks all .json files already downloaded and removes from organism_urls
+        for _dirpath, _dirnames, files in os.walk(domain_path):
+            if files:
+                for f in files:
+                    f = f.split('.json')[0]
+                    organism_url = stub + f
+                    if organism_url in organism_urls:
+                        del organism_urls[organism_url]
+
+        # Checks all organism_urls keys for values not 1 and removes them from organism_urls
+        for key, val in organism_urls.items():
+            if val != 1:
+                del organism_urls[key]
+                
         return organism_urls
 
     def __get_organism_htmlSource(self,organism_url):
@@ -129,55 +135,264 @@ class Jgi(object):
         time.sleep(5)
         return self.driver.page_source
 
-    def __get_organism_metadata(self,htmlSource):
-        # return dict of metagenome table data
+    def __get_organism_data(self,htmlSource):
+        # Create Beautiful Soup object for parsing
         bs = BeautifulSoup(htmlSource,"html.parser")
-        metadata_table = bs.findAll('table')[0]
 
-        metadata_table_dict = dict()
-        for row in metadata_table.findAll('tr'):
+        # Parses webpage for the division that contains the tables.
+        test_table = bs.find('div',attrs={'id':'container'})
+        
+        # Initialize dictionaries for metadata and genetic statistics.
+        metadata = {}
+        stats = {}
 
-            if (len(row.findAll('th')) == 1) and (len(row.findAll('td')) == 1):
+        # Splits up the webpage into separate tables.
+        for row in test_table.findAll('div',attrs = {'id':'content_other'}):
+            for table in row.findAll('table'):
+                
+                # Creates entry for first line in table to check if Overview (metadata) table.
+                entry_name = table.findAll('tr',attrs={'class':'img'})
+                try:
+                    test_title = entry_name[0].findAll('th',attrs={'class':'subhead'})
+                    
+                    
+                    # Checks to see if table is the Overview table for metadata.
+                    if len(test_title) == 1:
+                        if test_title[0].text.rstrip() == 'Study Name (Proposal Name)':
+                            for entry in entry_name:
+                                # Parses first line in entry to get category (key) and removes spaces, tabs, etc. from entry.
+                                title = entry.findAll('th',attrs={'class':'subhead'})
 
-                row_key = row.findAll('th')[0].text.rstrip()
-                row_value = row.findAll('td')[0].text.rstrip() if row.findAll('td')[0] else None
-                metadata_table_dict[row_key] = row_value
+                                try:
+                                    row_key = title[0].text.rstrip().strip()
+                                    row_key = row_key.replace('\xa0','')
 
-        metadata_table_dict.pop('Project Geographical Map', None)
+                                    values = entry.findAll('td',attrs={'class':'img'})
+                                    for value in values:
+                                        value = value.text.rstrip().strip()
+                                        value = value.replace('\xa0','')
 
-        ## metadata_table_dict['Taxon Object ID'] should be the way we identify a metagenome
-        return metadata_table_dict
+                                        if metadata.get(row_key):
+                                            if isinstance(metadata[row_key],list):
+                                                metadata.setdefault(row_key,[]).append(value)
+                                            else:
+                                                initial_value = metadata.get(row_key)
+                                                metadata[row_key] = [initial_value,value]
+                                        else:
+                                            metadata[row_key] = value
+                                except IndexError:
+                                    pass
+                        
+                    else:
+                        entry_name = table.findAll('tr')
+                        try:
+                            test_title = table.findAll('th',attrs={'class':'subhead'})[0].text.rstrip()
+                            if test_title == 'DNA, total number of bases':
+                                for entry in entry_name:
+                                    if entry.findAll('th',attrs={'class':'subhead'}):
+                                        row_key = entry.findAll('th',attrs={'class':'subhead'})[0].text.rstrip().strip()
+                                        values = entry.findAll('td',attrs={'class':'img'})
+                                        for i in range(len(values)):
+                                            values[i] = values[i].text.rstrip().strip()
+                                            values[i] = values[i].replace('\xa0','')
+
+                                        stats[row_key] = values
+
+                                    else:
+                                        
+                                        row = entry.findAll('td',attrs={'class':'img'})
+                                        
+                                        for i in range(len(row)):
+                                            if i == 0:
+                                                row_key = row[i].text.rstrip().strip()
+                                                row_key = row_key.replace('\xa0','')
+                                            else:
+                                                row[i] = row[i].text.rstrip().strip()
+                                                row[i] = row[i].replace('\xa0','')
+
+                                        stats[row_key] = row[1:]
+                        except IndexError:
+                            pass
+                except IndexError:
+                    pass
+
+
+        stats = {k:v for k, v in stats.items() if k != ''}
+        stats = {k:v for k, v in stats.items() if v}
+
+        return metadata, stats
+
+    def __get_metagenome_data(self,htmlSource):
+        # Create Beautiful Soup object for parsing
+        bs = BeautifulSoup(htmlSource,"html.parser")
+
+        # Parses webpage for the division that contains the tables.
+        test_table = bs.find('div',attrs={'id':'container'})
+        
+        # Initialize dictionaries for metadata and genetic statistics.
+        metadata = {}
+        stats = {}
+        assembled = dict()
+        unassembled = dict()
+        total = dict()
+
+        # Splits up the webpage into separate tables.
+        for row in test_table.findAll('div',attrs = {'id':'content_other'}):
+            for table in row.findAll('table'):
+                # Creates entry for first line in table to check if Overview (metadata) table.
+                entry_name = table.findAll('tr',attrs={'class':'img'})
+            
+                try:
+                    test_title = entry_name[0].findAll('th',attrs={'class':'subhead'})
+                    # Checks to see if table is the Overview table for metadata.
+                    if len(test_title) == 1:
+                        if test_title[0].text.rstrip() == 'Study Name (Proposal Name)':
+                            for entry in entry_name:
+                                # Parses first line in entry to get category (key) and removes spaces, tabs, etc. from entry.
+                                title = entry.findAll('th',attrs={'class':'subhead'})
+
+                                try:
+                                    row_key = title[0].text.rstrip().strip()
+                                    row_key = row_key.replace('\xa0','')
+
+                                    values = entry.findAll('td',attrs={'class':'img'})
+                                    for value in values:
+                                        value = value.text.rstrip().strip()
+                                        value = value.replace('\xa0','')
+
+                                        if metadata.get(row_key):
+                                            if isinstance(metadata[row_key],list):
+                                                metadata.setdefault(row_key,[]).append(value)
+                                            else:
+                                                initial_value = metadata.get(row_key)
+                                                metadata[row_key] = [initial_value,value]
+                                        else:
+                                            metadata[row_key] = value
+                                except IndexError:
+                                    pass
+                except IndexError:
+                    pass
+                
+                # Checks to see if statistics table is present.
+                entry_name = table.findAll('tr')
+                test_title = entry_name[0].findAll('th',attrs={'class':'img'})
+                if len(test_title) != 0:
+                    for entry in entry_name:
+
+                        # Finds all subhead categories and their entries.
+                        # Appends keys, values to dictionary based on assembly type
+                        title = entry.findAll('th',attrs={'class':'subhead'})
+                        if title:
+                            try:
+                                row_key = title[0].text.rstrip().strip()
+                                row_key = row_key.replace('\xa0','')
+                                
+                                values = entry.findAll('td',attrs={'class':'img'})
+                                for i in range(len(values)):
+                                    value = values[i].text.rstrip().strip()
+                                    
+                                    if i < 2:
+                                        assembled.setdefault(row_key,[]).append(value)
+                                    elif i < 4:
+                                        unassembled.setdefault(row_key,[]).append(value)
+                                    else:
+                                        total.setdefault(row_key,[]).append(value)
+
+                            except:
+                                pass
+
+                        # Finds all subcategories of the above categories and their entries.
+                        # Appends keys, values to dictionary based on assembly type
+                        else:
+                            title = entry.findAll('td',attrs={'class':'img'})
+                            try:
+                                for i in range(len(title)):
+                                    value = title[i].text.rstrip().strip()
+
+                                    if i == 0:
+                                        row_key = value.replace('\xa0','')
+                                    elif i < 3:
+                                        assembled.setdefault(row_key,[]).append(value)
+                                    elif i < 5:
+                                        unassembled.setdefault(row_key,[]).append(value)
+                                    else:
+                                        total.setdefault(row_key,[]).append(value)
+
+                            except:
+                                pass
+        
+        stats['assembled'] = assembled
+               
+        # If unassembled table exists, add it and the total table to statistics table dictionary.
+        if unassembled != dict():
+            stats['unassembled'] = unassembled
+            stats['total'] = total
+
+        return metadata,stats
 
     def __get_enzyme_url_metagenome(self,organism_url,htmlSource,assembly_type):
+        
+        # Create Beautiful Soup object for parsing
+        bs = BeautifulSoup(htmlSource,"html.parser")
 
-        regex = r'<a href=\"(main\.cgi\?section=MetaDetail&amp;page=enzymes.*data_type=%s.*)\" onclick'%assembly_type
-        match = re.search(regex, htmlSource)
+        # Set prefix and initialize suffix for enzyme url
+        prefix = 'https://img.jgi.doe.gov/cgi-bin/m/'
+        suffix = ''
 
-        if match:
-            # print "Metagenome url: %s ...\n...has assembly_type: %s"%(url,assembly_type)
-            enzyme_url_suffix = match.group(1)
-            enzyme_url_prefix = organism_url.split('main.cgi')[0]
-            enzyme_url = enzyme_url_prefix+enzyme_url_suffix
+        # Get list of all <td class='img'></td>
+        td_list = bs.findAll('td',attrs={'class':'img'})
 
+        # Parse above list to find 'with Enzyme' section
+        for i in range(len(td_list)):
+            if td_list[i].text.rstrip().strip() == 'with Enzyme':
+                # Checks assembly type and then looks to see if there is a webpage associated with it. 
+                if assembly_type == 'assembled':
+                    try:
+                        suffix = td_list[i+1].find('a').get('href')
+                    except AttributeError:
+                        pass
+                elif assembly_type == 'unassembled':
+                    try:
+                        suffix = td_list[i+3].find('a').get('href')
+                    except AttributeError:
+                        pass
+                elif assembly_type == 'both':
+                    try:
+                        suffix = td_list[i+5].find('a').get('href')
+                    except AttributeError:
+                        pass
+
+        # If an enzyme url was found, return it. Otherwise, set it to None
+        if suffix:
+            enzyme_url = prefix+suffix
         else:
-            # print("Metagenome url: %s ...\n...does not have assembly_type: %s"%(organism_url,assembly_type))
             enzyme_url = None
-
+       
         return enzyme_url
 
-
     def __get_enzyme_url(self,organism_url,htmlSource):
-        regex = r'<a href=\"(main\.cgi\?section=TaxonDetail&amp;page=enzymes&amp;taxon_oid=\d*)\"'
-        match = re.search(regex, htmlSource)
+        # Create Beautiful Soup object for parsing
+        bs = BeautifulSoup(htmlSource,"html.parser")
 
-        # print("Getting enzyme_url from organism url: %s"%(organism_url))
-        if match:
-            enzyme_url_suffix = match.group(1)
-            enzyme_url_prefix = organism_url.split('main.cgi')[0]
-            enzyme_url = enzyme_url_prefix+enzyme_url_suffix    
+        # Set prefix and initialize suffix for enzyme url
+        prefix = 'https://img.jgi.doe.gov/cgi-bin/m/'
+        suffix = ''
 
+        # Get list of all <td class='img'></td>
+        td_list = bs.findAll('td',attrs={'class':'img'})
+
+        # Parse above list to find 'Protein coding genes with enzymes' section and webpage associated with it, if it exists.
+        for i in range(len(td_list)):
+            if td_list[i].text.rstrip().strip() == 'Protein coding genes with enzymes':
+                try:
+                    suffix = td_list[i+1].find('a').get('href')
+                except AttributeError:
+                    pass
+
+        # If an enzyme url was found, return it. Otherwise, set it to None
+        if suffix:
+            enzyme_url = prefix+suffix
         else:
-            # print("Organism url: %s ...\n...does not have enzyme data."%(organism_url))
             enzyme_url = None
 
         return enzyme_url
@@ -241,19 +456,39 @@ class Jgi(object):
         elif domain not in tested:
             raise ValueError("`domain` must be one of JGI datasets: {0} See: IMG Content table on ".format(tested+untested)+
                               "img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
-          
+
+      
     def __write_taxon_id_json(self,path,domain,taxon_id,org_dict):
 
         taxon_ids_path = os.path.join(path,domain,"taxon_ids",taxon_id+".json")
         with open(taxon_ids_path, 'w') as f:
             json.dump(org_dict, f)
 
-    def __scrape_organism_url_from_metagenome_domain(self,organism_url,assembly_types,missing_enzyme_data):
+    def __write_organism_urls_json(self,organism_url_path,organism_urls):
+
+        with open(organism_url_path, 'w') as f:
+            json.dump(organism_urls, f)
+    
+    def __write_missing_enzyme_json(self,missing_enzyme_path,missing_enzyme_data):
+    
+        with open(missing_enzyme_path,'w') as f:
+            json.dump(missing_enzyme_data, f)
+
+    def __read_missing_enzyme_json(self,missing_enzyme_path):
+
+        with open(missing_enzyme_path,'r') as f:
+            missing_enzyme_data = json.load(f)
+
+        return missing_enzyme_data
+
+    def __scrape_organism_url_from_metagenome_domain(self,path,organism_url,assembly_types):
         ## Get enzyme json for single organism
         htmlSource = self.__get_organism_htmlSource(organism_url)
-        metadata_dict = self.__get_organism_metadata(htmlSource)
+        metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource)
+        
+        missing_enzyme_path = os.path.join(path,"missing_enzyme_data.json")
         taxon_id = metadata_dict['Taxon Object ID']
-        org_dict = {'metadata':metadata_dict}
+        org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict}
 
         ## Different methods for metagenomes/genomes
         for assembly_type in assembly_types:
@@ -263,21 +498,29 @@ class Jgi(object):
                 enzyme_json = self.__prune_enzyme_json(enzyme_json)
 
                 org_dict[assembly_type] = enzyme_json
+
             ## Write missing data to dict
             else:
-                if not taxon_id in missing_enzyme_data:
-                    missing_enzyme_data[taxon_id] = [assembly_type]
-                else:
-                    missing_enzyme_data[taxon_id].append(assembly_type)
-        
-        return taxon_id, org_dict, missing_enzyme_data
+                if os.path.isfile(missing_enzyme_path):
+                    missing_enzyme_data = self.__read_missing_enzyme_json(missing_enzyme_path)
+                    if taxon_id not in missing_enzyme_data:
+                        missing_enzyme_data[taxon_id] = assembly_type
 
-    def __scrape_organism_url_from_regular_domain(self,organism_url,missing_enzyme_data):
+                else:
+                    missing_enzyme_data = {}
+                    missing_enzyme_data[taxon_id] = assembly_type
+        
+        return taxon_id, org_dict
+
+    def __scrape_organism_url_from_regular_domain(self,path,organism_url):
 
         htmlSource = self.__get_organism_htmlSource(organism_url)
-        metadata_dict = self.__get_organism_metadata(htmlSource)
+        metadata_dict, statistics_dict = self.__get_organism_data(htmlSource)
+
+        missing_enzyme_path = os.path.join(path,"missing_enzyme_data.json")
+
         taxon_id = metadata_dict['Taxon ID']
-        org_dict = {'metadata':metadata_dict}
+        org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict}
 
         enzyme_url = self.__get_enzyme_url(organism_url,htmlSource)
         if enzyme_url:
@@ -288,9 +531,18 @@ class Jgi(object):
 
         ## Write missing data to list
         else:
-            missing_enzyme_data.append(taxon_id)
+            if os.path.isfile(missing_enzyme_path):
+                missing_enzyme_data = self.__read_missing_enzyme_json(missing_enzyme_path)
+                if taxon_id not in missing_enzyme_data:
+                    missing_enzyme_data.append(taxon_id)
 
-        return taxon_id, org_dict, missing_enzyme_data
+            else:
+                missing_enzyme_data = []
+                missing_enzyme_data.append(taxon_id)
+
+            self.__write_missing_enzyme_json(missing_enzyme_path,missing_enzyme_data)
+
+        return taxon_id, org_dict
 
 
     def scrape_domain(self, path, domain, database='all', 
@@ -321,10 +573,10 @@ class Jgi(object):
             os.makedirs(domain_path)
 
         ## Only allow scraping into empty directory
-        for _dirpath, _dirnames, files in os.walk(domain_path):
-            if files:
-                raise ValueError("Directory must be empty to initiate a fresh JGI download."+
-                             "Looking to update a JGI domain? Try `Jgi.update()` instead.")        
+        #for _dirpath, _dirnames, files in os.walk(domain_path):
+        #    if files:
+        #        raise ValueError("Directory must be empty to initiate a fresh JGI download."+
+        #                     "Looking to update a JGI domain? Try `Jgi.update()` instead.")        
 
         ## Validate assembly_types
         metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
@@ -336,11 +588,24 @@ class Jgi(object):
 
 
         ## Get all organism URLs
-        domain_url = self.__get_domain_url(domain,database)
-        domain_json = self.__get_domain_json(domain_url,domain,database)
-        organism_urls = self.__get_organism_urls(domain_json)
+        
+        # Checks to see if there is an organism url list already and imports it.
+        organism_url_path = os.path.join(path,domain,'organism_url.json')
+ 
+        if os.path.isfile(organism_url_path):
+            with open(organism_url_path,'r') as f:
+                organism_urls = json.load(f)
 
-        self._scrape_urls_unsafe(path,domain,organism_urls,assembly_types=assembly_types)
+        # If no organism url list present, then creates one.
+        else:
+            domain_url = self.__get_domain_url(domain,database)
+            domain_json = self.__get_domain_json(domain_url,domain,database)
+            organism_urls = self.__get_organism_urls(domain_json,organism_url_path)
+
+        # Prunes list of organism_urls.
+        organism_urls = self.__prune_organism_urls(organism_urls, domain_path)
+
+        self._scrape_urls_unsafe(path,domain,organism_urls, assembly_types=assembly_types)
         
     def scrape_urls(self, path, domain, organism_urls,
                     assembly_types = ['assembled','unassembled','both']):
@@ -364,6 +629,8 @@ class Jgi(object):
         ## Validate domain
         self.__validate_domain(domain)
 
+        # Prunes list of organism_urls
+        organism_urls = self.__prune_organism_urls(organism_urls, domain_path)
         self._scrape_urls_unsafe(path,domain,organism_urls,assembly_types=assembly_types)
 
     def _scrape_urls_unsafe(self, path, domain, organism_urls,
@@ -374,35 +641,41 @@ class Jgi(object):
         
         metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
         
-        org_jsons = list()
         pbar = tqdm(organism_urls)
 
+        domain_path = os.path.join(path,domain)
+        organism_url_path = os.path.join(path,domain,'organism_url.json')
+        
         if domain in metagenome_domains:
-            missing_enzyme_data = dict()
-            for organism_url in pbar:
-                pbar.set_description("Scraping %s ..."%(organism_url))
-                taxon_id, org_dict, missing_enzyme_data = self.__scrape_organism_url_from_metagenome_domain(organism_url,assembly_types,missing_enzyme_data)
 
-                org_jsons.append(org_dict)
+            for organism_url in pbar:
+                pbar.set_description("Scraping %s ..."%(re.search(r'\d+$', organism_url).group(0)))
+                taxon_id, org_dict = self.__scrape_organism_url_from_metagenome_domain(domain_path,organism_url,assembly_types)
+
+                organism_urls[organism_url] = 0
+                self.__write_organism_urls_json(organism_url_path,organism_urls)
+
                 self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
 
         else:
-            missing_enzyme_data = list()
+
             for organism_url in pbar:
-                pbar.set_description("Scraping %s ..."%(organism_url))
-                taxon_id, org_dict, missing_enzyme_data = self.__scrape_organism_url_from_regular_domain(organism_url,missing_enzyme_data)
+                pbar.set_description("Scraping %s ..."%(re.search(r'\d+$', organism_url).group(0)))
+                taxon_id, org_dict = self.__scrape_organism_url_from_regular_domain(domain_path,organism_url)
 
-                org_jsons.append(org_dict)
+                organism_urls[organism_url] = 0
+                self.__write_organism_urls_json(organism_url_path,organism_urls)
+
                 self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
-        
-        domain_path = os.path.join(path,domain)
-        print("Writing missing enzyme data to file...")
-        with open(os.path.join(domain_path,"missing_enzymes.json"), 'w') as f:
-            json.dump(missing_enzyme_data,f)
 
+        ## Parses the .json files in directory and creates a combined taxon id list.
         print("Writing combined json to file...")
+        for _dirpath, _dirnames, files in os.walk(domain_path):
+            if files:
+                combined_taxon_ids = [f.split('.json')[0] for f in files]
+                
         with open(os.path.join(domain_path,"combined_taxon_ids.json"), 'w') as f:  
-            json.dump(org_jsons,f)
+            json.dump(combined_taxon_ids,f)
 
         print("Done.")
 
@@ -414,212 +687,46 @@ class Jgi(object):
         ## Call scrape_urls
         pass
 
-    def update(self):
-        """
-        to be implemented: function to update local JGI database
-        """
-        pass
-# def __check_cli_input_types(arguments):
-#     """
-#     Check docopt input types.
-    
-#     Each docopt flag can only take one arg
-#     to download more than one database, you need one flag per db
-#     ex. `python kegg.py mydir download --db reaction --db compound`
-#     """
-
-#     dbs = arguments['--db']
-#     if not isinstance(dbs,list):
-#         raise TypeError("`db` must be a list")
-#     for db in dbs:
-#         if not isinstance(db,str):
-#             raise TypeError("Each entry in `db` must be a string")
-    
-#     run_pipeline = literal_eval((arguments['--run_pipeline']))
-#     if not isinstance(run_pipeline,bool):
-#         raise TypeError("`run_pipeline` must be a boolean (True or False)")
-    
-#     metadata = literal_eval((arguments['--metadata']))
-#     if not isinstance(metadata,bool):
-#         raise TypeError("`metadata` must be a boolean (True or False)")
-
-def __execute_cli(arguments):
+def __execute_cli(args):
     """
     Call appropriate methods based on command line interface input.
     """
-    # chromedriver_path = literal_eval((arguments['--chromedriver_path']))
-    chromedriver_path = arguments['--chromedriver_path']
+    chromedriver_path = args.cd_path
 
-    if arguments['scrape_domain'] == True:
-        J = Jgi(chromedriver_path,arguments['--homepage_url'])
-        J.scrape_domain(arguments['PATH'], arguments['DOMAIN'], database=arguments['--database'], assembly_types=arguments['--assembly_types'])
+    if args.scrape_domain == True:
+        J = Jgi(chromedriver_path,args.hp_url)
+        J.scrape_domain(args.path, args.domain, database=args.db, assembly_types=args.at)
 
-    if arguments['scrape_urls'] == True:
-        J = Jgi(arguments['--chromedriver_path'],arguments['--homepage_url'])
-        J.scrape_urls(arguments['PATH'], arguments['DOMAIN'], arguments['ORGANISM_URLS'], assembly_types=arguments['--assembly_types'])
+    if args.scrape_urls == True:
+        J = Jgi(chromedriver_path,args.hp_url)
+        J.scrape_urls(args.path, args.domain, args.organism_urls, assembly_types=args.at)
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='jgi 1.0')
-    # __check_cli_input_types(arguments)
-    __execute_cli(arguments)
 
-
-# ###############################################################
-# ## get URLs for pH specific scraping
-# ###############################################################
-# def load_json(fname):
-#     """
-#     Wrapper to load json in single line
-
-#     :param fname: the filepath to the json file
-#     """
-#     with open(fname) as f:
-#         return json.load(f)
-
-# ## Tested and works
-# def check_overlap_number(range_1,i):
-#     if (i>=min(range_1)) and (i<=max(range_1)):
-#         return True
-#     else:
-#         return False
-
-# ## Tested and works
-# def check_overlap_ranges(range_1,range_2):
-#     # order the ranges so that the range with the smallest min is first
-#     # check if the min of range2 is less than the max of range 1
-#     ranges = [range_1,range_2]
-#     if min(range_2)<min(range_1):
-#         ranges = ranges[::-1]
-#     if min(ranges[1])<=max(ranges[0]):
-#         return True
-#     else:
-#         return False
-
-# def get_entries_within_ph_range(records, desired_ph_range):
-#     entries_with_phs_in_range = list()
-#     for entry in records:
-#         in_desired_ph_range = False
-#         ph_range_str = entry['pH'].split('-')
-
-#         if len(ph_range_str) == 1:
-#             try:
-#                 ph = float(ph_range_str[0])
-#                 in_desired_ph_range = check_overlap_number(desired_ph_range,ph)
-
-#             except:
-#                 pass
-#         elif len(ph_range_str) == 2:
-#             try:
-#                 ph_min = float(ph_range_str[0])
-#                 ph_max = float(ph_range_str[1])
-#                 ph = (ph_min,ph_max)
-#                 in_desired_ph_range = check_overlap_ranges(desired_ph_range,ph)
-#             except:
-#                 pass
-        
-#         if in_desired_ph_range == True:
-#             entries_with_phs_in_range.append(entry)
+    # Initial setup of argparse with description of program.
+    parser = argparse.ArgumentParser(description='Retrieve enzyme data from JGI genomes and metagenomes.')
     
-#     return entries_with_phs_in_range
-
-# def format_urls_for_scraping(homepage_url,entries_with_phs_in_range):
-#     all_GenomeNameSampleNameDisp =  [d['GenomeNameSampleNameDisp'] for d in entries_with_phs_in_range]
-
-#     organism_urls = list()
-
-#     for htmlandjunk in all_GenomeNameSampleNameDisp:
-#         regex = r"<a href='main\.cgi(.*)'>"
-#         match = re.search(regex, htmlandjunk)
-#         html_suffix = match.group(1)
-#         full_url = homepage_url+html_suffix
-#         organism_urls.append(full_url)
-
-#     return organism_urls
-
-# def main():
-
-#     driver = activate_driver()
-#     homepage_url = 'https://img.jgi.doe.gov/cgi-bin/m/main.cgi'
-#     domain = 'bacteria'
-#     database = 'all'
-#     save_dir = 'jgi/2018-09-29/ph_jsons/%s/'%domain
-
-#     if not os.path.exists(save_dir):
-#         os.makedirs(save_dir)
-
-#     jgi_eukarya = list()
-
-#     print "Scraping all %s genomes ..."%domain
-
-#     ## Get all urls from the domain
-#     # domain_url = get_domains_url_from_jgi_img_homepage(driver,homepage_url,domain,database=database)
-#     # domain_json = get_domain_json_from_domain_url(driver,domain_url)
-#     # organism_urls = get_organism_urls_from_domain_json(driver,homepage_url,domain_json)
-
-#     ## Get pH specific urls from the domain
-#     if domain=='archaea':
-#         metadata = load_json("jgi/metadata/archaea_metadata.json")
-#     elif domain=='bacteria':
-#         metadata = load_json("jgi/metadata/bacteria_metadata_subset.json")
-#     elif domain=='eukarya':
-#         raise Warning("Eukarya do not have any organisms in range currently")
-#         metadata = load_json("jgi/metadata/eukarya_metadata.json")
-
-#     records = metadata['records']
-#     ph_range = (9.0,11.0)
-#     entries_with_phs_in_range = get_entries_within_ph_range(records,ph_range)
-
-#     entries_to_scrape = []
-#     for entry in entries_with_phs_in_range:
-#         fname = entry['IMGGenomeID']+".json"
-#         future_path = save_dir+fname
-#         if future_path not in glob.glob(save_dir+"*.json"):
-#             entries_to_scrape.append(entry)
-
-#     organism_urls = format_urls_for_scraping(homepage_url,entries_to_scrape)
-
-#     ## 
-#     for organism_url in organism_urls:
-
-#         print "Scraping %s: %s ..."%(domain,organism_url)
-#         organism_htmlSource,metadata_table_dict = get_organism_htmlSource_and_metadata(driver, organism_url)
-
-#         # single_organism_dict = {'metadata':metadata_table_dict}
-#         taxon_id = metadata_table_dict['Taxon ID']
-#         enzyme_url = get_enzyme_url_from_organism_url(organism_url, organism_htmlSource)
-#         enzyme_json = get_enzyme_json_from_enzyme_url(driver,enzyme_url)
-
-#         # enzyme_dict = parse_enzyme_info_from_enzyme_json(enzyme_json)
-#         # single_organism_dict['genome'] = enzyme_dict
-
-#         jgi_eukarya.append(enzyme_json)
-
-#         with open(save_dir+taxon_id+'.json', 'w') as outfile:
+    # Adds --path as an argument. Default value is None, it is a required argument, and it looks for a string.
+    # Can access the path variable:
+    # PATH = args.path
+    parser.add_argument('--path',default=None,required=True,type=str,help='Directory where JGI data will be downloaded to. (Required)')
     
-#             json.dump(enzyme_json,outfile)
+    # group1 is a mutually exclusive group
+    # Example: If you have --scrape_domain as an argument, then you CANNOT have --scrape_urls as an argument.
+    group1 = parser.add_mutually_exclusive_group()
+    group1.add_argument('--scrape_domain',default=True,help='Download an entire JGI domain and run pipeline to format data (Default = True).')
+    group1.add_argument('--scrape_urls',default=False,help='Download data from one or more (meta)genomes by URL. (Default = False).')
 
-#         print "Done scraping %s."%domain
-#         print "-"*80
+    parser.add_argument('--organism_urls',nargs='+',type=str,help='List of (meta)genomes by URL for scrape_urls. (Required only if scrape_urls == True)')
+    # domain has limited choices and will return error if variable is not set to one of them.
+    parser.add_argument('--domain',choices=['Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome'],required=True,type=str,help='JGI valid domain to scrape data from. (Required)')
+    parser.add_argument('--cd_path',default=None,type=str,help='Path pointing to chromedriver executable. (Required)')
+    parser.add_argument('--hp_url',default='https://img.jgi.doe.gov/cgi-bin/m/main.cgi',type=str,help="URL of JGI's homepage. (Optional. Default = https://img.jgi.doe.gov/cgi-bin/m/main.cgi)")
+    parser.add_argument('--db',choices = ['jgi','all'],default='all',type=str,help='To use only JGI annotated organisms or all organisms. (Optional. Default = all)')
+    parser.add_argument('--at',default=['assembled','unassembled','both'],choices = ['assembled','unassembled','both'],nargs='+',type=str,help='Assembly types. Only used for metagenomic domains. Ignored for others. (Optional. Default = [assembled, unassembled, both])')
 
-#     print "Done scraping %s."%domain
-#     print "="*90
+    # Parses the command line arguments.
+    args = parser.parse_args()
 
-
-
-#     print "Writing json to file..."
-
-#     combined_json_fname = 'jgi/2018-09-29/ph_jsons/jgi_ph_%s.json'%domain
-#     with open(combined_json_fname, 'w') as outfile:
-        
-#         json.dump(jgi_eukarya,outfile)
-
-#     print "Done."
-
-#     ## Can i write it so that it scrapes many at a time?
-
-# if __name__ == '__main__':
-#     main()
-
-
-
-
+    # Runs program using command line arguments
+    __execute_cli(args)

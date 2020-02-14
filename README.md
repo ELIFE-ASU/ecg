@@ -94,25 +94,37 @@ K.lists;
 
 *Note: If more than one user supplied database is provided it must be done so with its own flag. Each flag can only accept one argument.*
 
-Example: `python kegg.py mydir download --db compound --db reaction`
+Example: `python kegg.py --path mydir --db compound reaction` 
 
 ```python
 """
+usage: kegg.py [-h] [--rp RP]
+               [--db {pathway,brite,module,ko,genome,<org>,vg,ag,compound,glycan,reaction,rclass,enzyme,network,hsa_var,disease,drug,dgroup,environ} [{pathway,brite,module,ko,genome,<org>,vg,ag,compound,glycan,reaction,rclass,enzyme,network,hsa_var,disease,drug,dgroup,environ} ...]]
+               [--md MD] --path PATH [--download DOWNLOAD] [--update UPDATE]
+
 Retrieve KEGG databases and format them for use in network expansions.
 
-Usage:
-  kegg.py PATH download [--run_pipeline=<rp>|--db=<db>...]
-  kegg.py PATH update [--metadata=<md>]
-
-Arguments:
-  PATH  Directory will kegg will be downloaded to (or where it already exists)  
-  download  Download KEGG and run pipeline to format data
-  update    Update existing KEGG directory     
-
-Options:
-  --run_pipeline=<rp>   Whether or not to run the full pipeline [default: True]
-  --db=<db>...     Databases to download [default: pathway enzyme reaction compound] 
-  --metadata=<md>   Add metadata fields from "RXXXXX.json" into master.json [default: True]
+optional arguments:
+  -h, --help            show this help message and exit
+  --rp RP               Whether or not to run the full pipline. (Default =
+                        True)
+  --db {pathway,brite,module,ko,genome,<org>,vg,ag,compound,glycan,reaction,rclass,enzyme,network,hsa_var,disease,drug,dgroup,environ} [{pathway,brite,module,ko,genome,<org>,vg,ag,compound,glycan,reaction,rclass,enzyme,network,hsa_var,disease,drug,dgroup,environ} ...]
+                        Databases to download. For more information on dbs see
+                        KEGG DB Links. (Default = ["pathway", "enzyme",
+                        "reaction", "compound"])
+  --md MD               Whether to add metadata fields from "RXXXXX.json" into
+                        master.json. (Default = True)
+  --path PATH           Directory where KEGG will be downloaded to or updated.
+                        (Required)
+  --download DOWNLOAD   Whether to download KEGG and run pipeline to format
+                        data. (Default = True)
+  --update UPDATE       Whether or not to update existing KEGG directory.
+                        Note: Updating will NOT reflect changes made to
+                        invdividual entry fields, and it will NOT remove
+                        entries which have been removed from KEGG. It will
+                        only add entries which have been added. To guarantee
+                        the most up-to-date KEGG database, a full re-download
+                        is necessary. (Default = False)
 """
 ```
 
@@ -203,30 +215,43 @@ J.driver;
 
 ### Using CLI
 
-Example: `python jgi.py --chromedriver_path=/Users/Me/Applications/chromedriver scrape_domain myjgidir Bacteria --database=jgi`
+Example: `python jgi.py --cd_path=/usr/bin/chromedriver --path myjgidir --domain Bacteria --db=jgi`
 
 ```python
 """
-WARNING. CLI HAS NOT BEEN TESTED YET.
+usage: jgi.py [-h] --path PATH
+              [--scrape_domain SCRAPE_DOMAIN | --scrape_urls SCRAPE_URLS]
+              [--organism_urls ORGANISM_URLS [ORGANISM_URLS ...]] --domain
+              {Eukaryota,Bacteria,Archaea,*Microbiome,Plasmids,Viruses,GFragment,cell,sps,Metatranscriptome}
+              [--cd_path CD_PATH] [--hp_url HP_URL] [--db {jgi,all}]
+              [--at {assembled,unassembled,both} [{assembled,unassembled,both} ...]]
 
 Retrieve enzyme data from JGI genomes and metagenomes.
 
-Usage:
-  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_domain PATH DOMAIN [--database=<db>|--assembly_types=<at>...]
-  jgi.py [--chromedriver_path=<cd_path>|--homepage_url=<hp_url>] scrape_urls PATH DOMAIN ORGANISM_URLS [--assembly_types=<at>...]
-
-Arguments:
-  PATH  Directory where JGI data will be downloaded to
-  DOMAIN    JGI valid domain to scrape data from (one of: 'Eukaryota','Bacteria','Archaea','*Microbiome','Plasmids','Viruses','GFragment','cell','sps','Metatranscriptome')
-  ORGANISM_URLS     (meta)genome URLs to download data from
-  scrape_domain     Download an entire JGI domain and run pipeline to format data
-  scrape_urls   Download data from one or more (meta)genomes by URL
-
-Options:
-  --chromedriver_path=<cd_path>   Path pointing to the chromedriver executable (leaving blank defaults to current dir) [default: None]
-  --homepage_url=<hp_url>     URL of JGI's homepage [default: "https://img.jgi.doe.gov/cgi-bin/m/main.cgi"] 
-  --database=<db>   To use only JGI annotated organisms or all organisms [default: "all"]
-  --assembly_types=<at>...  Only used for metagenomic domains. Ignored for others [default: unassembled assembled both]
+optional arguments:
+  -h, --help            show this help message and exit
+  --path PATH           Directory where JGI data will be downloaded to.
+                        (Required)
+  --scrape_domain SCRAPE_DOMAIN
+                        Download an entire JGI domain and run pipeline to
+                        format data (Default = True).
+  --scrape_urls SCRAPE_URLS
+                        Download data from one or more (meta)genomes by URL.
+                        (Default = False).
+  --organism_urls ORGANISM_URLS [ORGANISM_URLS ...]
+                        List of (meta)genomes by URL for scrape_urls.
+                        (Required only if scrape_urls == True)
+  --domain {Eukaryota,Bacteria,Archaea,*Microbiome,Plasmids,Viruses,GFragment,cell,sps,Metatranscriptome}
+                        JGI valid domain to scrape data from. (Required)
+  --cd_path CD_PATH     Path pointing to chromedriver executable. (Required)
+  --hp_url HP_URL       URL of JGI's homepage. (Optional. Default =
+                        https://img.jgi.doe.gov/cgi-bin/m/main.cgi)
+  --db {jgi,all}        To use only JGI annotated organisms or all organisms.
+                        (Optional. Default = all)
+  --at {assembled,unassembled,both} [{assembled,unassembled,both} ...]
+                        Assembly types. Only used for metagenomic domains.
+                        Ignored for others. (Optional. Default = [assembled,
+                        unassembled, both])
 """
 ```
 
@@ -321,32 +346,54 @@ unipartite-undirected-subfromdirected #same connection rules used in "Universal 
 ```
 
 ### Using CLI
+Example: `python ecg.py --jgi=mydata/jgi/Eukaryota/taxon_reactions/2789789765.json --master= mydata/kegg/master.json --graphtypes unipartite-undirected-subfromdirected --outdir mydata/jgi/Eukaryota/taxon_reactions --graphoutdir mydata/jgi/Eukaryota/graphs --missingdir mydata/jgi/Eukaryota/taxon_with_rxns_missing_from_kegg`
 
 ```python
 """
-WARNING. CLI HAS NOT IMPLEMENTED OR TESTED YET.
+usage: ecg.py [-h] --jgi JGI --ecrxn ECRXN --biorxn BIORXN --master MASTER
+              [--write_rxns WRITE_RXNS] [--write_graphs WRITE_GRAPHS]
+              [--outdir OUTDIR]
+              [--graphtypes {bipartite-directed-rxnsub,bipartite-undirected-rxnsub,unipartite-undirected-rxn,unipartite-directed-sub,unipartite-undirected-sub,unipartite-undirected-subfromdirected} [{bipartite-directed-rxnsub,bipartite-undirected-rxnsub,unipartite-undirected-rxn,unipartite-directed-sub,unipartite-undirected-sub,unipartite-undirected-subfromdirected} ...]]
+              [--graphoutdir GRAPHOUTDIR] [--missingdir MISSINGDIR]
+              [--verbose VERBOSE]
 
-Combine KEGG derived reaction data with JGI derived enzyme data to generate reaction lists (meta)genomes
+WARNING. CLI HAS NOT BEEN IMPLEMENTED OR TESTED YET. Combine KEGG derived
+reaction data with JGI derived enzyme data to generate reaction lists
+(meta)genomes.
 
-Usage:
-  ecg.py write_biosystem_rxns BIOSYSTEM_JSON EC_RXN_LINK_JSON [--outdir=<outdir>]
-  ecg.py write_biosystem_graphs BIOSYS_RXN_JSON MASTER_JSON [--graphtypes=<graphtypes>|--outdir=<graphoutdir>|--missingdir=<missingdir>|--verbose=<verbose>]
-
-Arguments:
-  BIOSYSTEM_JSON    the filepath to the directory or file where JGI data is located
-  EC_RXN_LINK_JSON  the filepath to `enzyme_reaction.json` (the json containing relationship between ec numbers and reactions)
-  BIOSYS_RXN_JSON   the filepath to the biosystem reaction json file
-  MASTER_JSON       the filepath to `master.json` (json with details information about all KEGG reactions)
-  write_biosystem_rxns   Write reaction lists from either a single biosystem file or biosystem directory (all JGI jsons)
-  write_biosystem_graphs   Write gmls from either a single biosystem reaction file or biosystem reaction directory (all JGI reaction jsons)
-
-Options:
-  --outdir=<outdir>   Path where biosystem reactions will be saved [default: "taxon_reactions"]
-  --graphtypes=<graphtypes> Which types of graphs to write to gml files [default: ["unipartite-undirected-subfromdirected"]]
-  --outdir=<graphoutdir> The dir to store subdirs for each graph type, and subsequent gml files [default: "graphs"]
-  --missingdir=<missingdir> The dir to store reactions which are missing from biosystems as jsons [default: "taxon_with_rxns_missing_from_kegg"]
-  --verbose=<verbose> If True, prints the graph types as they're created [default: True]
-
+optional arguments:
+  -h, --help            show this help message and exit
+  --jgi JGI             Filepath to the directory or file where JGI data is
+                        located. (Required)
+  --ecrxn ECRXN         Filepath to "enzyme_reaction.json"; the json
+                        containing relationship between ec numbers and
+                        reactions. (Required)
+  --biorxn BIORXN       Filepath to the biosystem reaction json file.
+                        (Required)
+  --master MASTER       Filepath to "master.json"; json with information
+                        details about all KEGG reactions. (Required)
+  --write_rxns WRITE_RXNS
+                        Write reaction lists from either a single biosystem
+                        file or biosystem directory; all JGI jsons. (Default =
+                        True)
+  --write_graphs WRITE_GRAPHS
+                        Write gmls from either a single biosystem reactionfile
+                        or biosystem reaction directory; all JGI reaction
+                        jsons. (Default = True)
+  --outdir OUTDIR       Path where biosystem reactions will be saved. (Default
+                        = "taxon_reactions")
+  --graphtypes {bipartite-directed-rxnsub,bipartite-undirected-rxnsub,unipartite-undirected-rxn,unipartite-directed-sub,unipartite-undirected-sub,unipartite-undirected-subfromdirected} [{bipartite-directed-rxnsub,bipartite-undirected-rxnsub,unipartite-undirected-rxn,unipartite-directed-sub,unipartite-undirected-sub,unipartite-undirected-subfromdirected} ...]
+                        Which types of graphs to write to gml files. (Default
+                        = "unipartite-undirected-subfromdirected")
+  --graphoutdir GRAPHOUTDIR
+                        The directory to store subdirs for each graph type,
+                        and subsequent gml files. (Default = "graphs")
+  --missingdir MISSINGDIR
+                        The directory to store reactions which are missing
+                        from biosystems as jsons. (Default =
+                        "taxon_with_rxns_missing_from_kegg")
+  --verbose VERBOSE     If True, prints the graph types as they are created.
+                        (Default = True)
 """
 ```
 
