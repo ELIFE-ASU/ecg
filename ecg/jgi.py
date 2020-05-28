@@ -630,7 +630,7 @@ class Jgi(object):
         self.__validate_domain(domain)
 
         # Prunes list of organism_urls
-        organism_urls = self.__prune_organism_urls(organism_urls, domain_path)
+        organism_urls = self.__prune_organism_urls(dict.fromkeys(organism_urls,1), domain_path)
         self._scrape_urls_unsafe(path,domain,organism_urls,assembly_types=assembly_types)
 
     def _scrape_urls_unsafe(self, path, domain, organism_urls,
