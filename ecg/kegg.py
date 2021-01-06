@@ -276,18 +276,18 @@ class Kegg(object):
                                     data[0]["right_elements"] = data[0]["right_elements"].union('missing_cid')
                                     data[0]["contains_missingcid"] = True
                         
-                        if "contains_missingcid" not in data[0]:
-                            data[0]["contains_missingcid"] = False
+                    if "contains_missingcid" not in data[0]:
+                        data[0]["contains_missingcid"] = False
 
-                        if data[0]["left_elements"] != data[0]["right_elements"]:
-                            data[0]["element_conservation"] = False
-                            data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
-                        else:
-                            data[0]["element_conservation"] = True
-                            data[0]["elements_mismatched"] = list()
-                        
-                        assert len(compounds) == len(stoichiometries)
-                        data[0]["glycans"] = False
+                    if data[0]["left_elements"] != data[0]["right_elements"]:
+                        data[0]["element_conservation"] = False
+                        data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
+                    else:
+                        data[0]["element_conservation"] = True
+                        data[0]["elements_mismatched"] = list()
+                    
+                    assert len(compounds) == len(stoichiometries)
+                    data[0]["glycans"] = False
 
                 else:
 
@@ -296,7 +296,7 @@ class Kegg(object):
             ## Rewrite file with added detail
             with open(path, 'w') as f:
                 
-                json.dump(data, f, indent=2)
+                json.dump(data, f, indent=2, default=serialize_sets)
     
     def _download_links(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
@@ -568,6 +568,12 @@ def __execute_cli(args):
     if args.update == True:
         K = Kegg(path)
         K.update(metadata=metadata)
+
+def serialize_sets(obj):
+    if isinstance(obj, set):
+        return list(obj)
+
+    return obj
 
 if __name__ == '__main__':
 
