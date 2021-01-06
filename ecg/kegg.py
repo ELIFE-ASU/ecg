@@ -136,7 +136,7 @@ class Kegg(object):
 
         for path in glob.glob(compound_path+"*.json"):
             with open(path) as f:
-                data = json.load(f) #[0]
+                data = json.load(f)[0]
                 elements = re.findall(r"([A-Z][a-z]?)",data['formula'])
                 data["elements"] = list(set(elements))
 
@@ -155,7 +155,7 @@ class Kegg(object):
         compound_dict = dict()
         for path in glob.glob(compound_path+"*.json"):
             with open(path) as f:
-                compound_json = json.load(f)[0]
+                compound_json = json.load(f) #[0]
                 compound_dict[compound_json["entry_id"]] = compound_json
         
         for path in glob.glob(reaction_path+"*.json"):
