@@ -37,6 +37,21 @@ Pulling information from biological databases, and converting it into easy to us
 
 <sup>e</sup>Used by `ecg.py` 
 
+## Quickstart
+
+Open your terminal or other Unix/Linux command-line interface. Use it to navigate to your desktop, documents, or other folder in which you tend to store projects (e.g. `cd Desktop/`). Then, copy+paste into the terminal each of the following lines:
+
+```
+mkdir ecgHub
+pip install docopt; pip install tqdm; pip install biopython; pip install selenium; pip install beautifulsoup4; pip install networkx
+cd ecgHub
+git clone https://github.com/ELIFE-ASU/ecg
+cd ecg
+pip install -e .
+mkdir mydata
+```
+The command `import ecg` should now work for any Python scripts or Jupyter Notebooks created and stored in the top-level `ecg` directory (i.e. `ecgHub/ecg`). Files not used by ecg or generated with ecg, but which are relevant or occasionally needed in scripts which `import ecg`, can then be stored in the `ecgHub` folder. (manuscripts, notes, templates, auxiliary csvs, etc.)
+
 ## Local Installation
 
 To install locally, if you haven't navigated to the package directory:
@@ -46,10 +61,6 @@ To install locally, if you haven't navigated to the package directory:
 To install locally, if you're in the package directory:
 
 `pip install -e .` 
-
-To install locally (for user only):
-
-`pip install -e /path/to/package --user` 
 
 The `-e` flag indicates a symlink, and forces the package to upgrade whenever the source directory changes (e.g. if you pull from github)
 
