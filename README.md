@@ -47,7 +47,7 @@ pip install docopt; pip install tqdm; pip install biopython; pip install seleniu
 cd ecgHub
 git clone https://github.com/ELIFE-ASU/ecg
 cd ecg
-pip install -e
+pip install -e .
 mkdir mydata
 ```
 The command `import ecg` should now work for any Python scripts or Jupyter Notebooks created and stored in the top-level `ecg` directory (i.e. `ecgHub/ecg`). Files not used by ecg or generated with ecg, but which are relevant or occasionally needed in scripts which `import ecg`, can then be stored in the `ecgHub` folder. (manuscripts, notes, templates, auxiliary csvs, etc.)
