@@ -11,19 +11,33 @@ from bs4 import BeautifulSoup
 
 class Jgi(object):
 
-    def __init__(self,chromedriver_path="", 
+    def __init__(self,driver_type = "Firefox", driver_path="", 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
         self.homepage_url = homepage_url
 
-        if chromedriver_path=="":
-            self.driver = webdriver.Chrome()
-        
-        elif chromedriver_path.startswith("~"):
-            self.driver = webdriver.Chrome(os.path.expanduser('~')+chromedriver_path[1:])
+        if driver_type == "Firefox":
+            if driver_path=="":
+                self.driver = webdriver.Firefox(firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
+            
+            elif driver_path.startswith("~"):
+                self.driver = webdriver.Firefox(os.path.expanduser('~')+driver_path[1:])
 
+            else:
+                self.driver = webdriver.Firefox(driver_path)
+
+        elif driver_type == "Chrome":
+            raise ValueError("ChromeDriver not currently supported ")
+            # if driver_path=="":
+            #     self.driver = webdriver.Chrome()
+            
+            # elif chromedriver_path.startswith("~"):
+            #     self.driver = webdriver.Chrome(os.path.expanduser('~')+chromedriver_path[1:])
+
+            # else:
+            #     self.driver = webdriver.Chrome(chromedriver_path)
         else:
-            self.driver = webdriver.Chrome(chromedriver_path)
+            raise ValueError("That driver is not supported")
 
     @property
     def driver(self):

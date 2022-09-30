@@ -50,6 +50,14 @@ cd ecg
 pip install -e .
 mkdir mydata
 ```
+
+## Installing and Using a Webdriver
+To use the `jgi` functionality in `ecg` you need to have a webdriver that can be used to drive a browser on your computer. Right now we're devloping this for Firefox. In order to use it you need to have [geckodriver](https://github.com/mozilla/geckodriver/releases) installed and added to your `PATH`. 
+
+To that install the appropriate release of `geckodriver` from the link above. Unzip it and put it somewhere on your computer (for example in a folder on your desktop like `C:\\Users\You\\Desktop\\geckodriver`). Add that directory to your PATH. (For example on Windows I need to "Edit My system environment variables" and add that directory to the PATH variable.)
+
+## Completed Installation
+
 The command `import ecg` should now work for any Python scripts or Jupyter Notebooks created and stored in the top-level `ecg` directory (i.e. `ecgHub/ecg`). Files not used by ecg or generated with ecg, but which are relevant or occasionally needed in scripts which `import ecg`, can then be stored in the `ecgHub` folder. (manuscripts, notes, templates, auxiliary csvs, etc.)
 
 ## Local Installation
