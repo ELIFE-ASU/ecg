@@ -52,9 +52,8 @@ mkdir mydata
 ```
 
 ## Installing and Using a Webdriver
-To use the `jgi` functionality in `ecg` you need to have a webdriver that can be used to drive a browser on your computer. Right now we're devloping this for Firefox. In order to use it you need to have [geckodriver](https://github.com/mozilla/geckodriver/releases) installed and added to your `PATH`. 
+To use the `jgi` functionality in `ecg` you need to have a webdriver that can be used to drive a browser on your computer. Right now we're devloping this for Chrome. In order to use it you need to have [chromedriver](https://chromedriver.chromium.org/downloads) downloaded, unzipped and added to your `PATH`. You also need a compatible version of Chrome installed. To test this you should just be able to run `chromedriver` from you command prompt and see success message. If not check your `PATH` and try again. 
 
-To that install the appropriate release of `geckodriver` from the link above. Unzip it and put it somewhere on your computer (for example in a folder on your desktop like `C:\\Users\You\\Desktop\\geckodriver`). Add that directory to your PATH. (For example on Windows I need to "Edit My system environment variables" and add that directory to the PATH variable.)
 
 ## Completed Installation
 
