@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 
 class Jgi(object):
 
-    def __init__(self,driver_type = "Firefox", driver_path="", 
+    def __init__(self,driver_type = "Chrome", driver_path="", 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
         self.homepage_url = homepage_url
@@ -27,15 +27,19 @@ class Jgi(object):
                 self.driver = webdriver.Firefox(driver_path)
 
         elif driver_type == "Chrome":
-            raise ValueError("ChromeDriver not currently supported ")
-            # if driver_path=="":
-            #     self.driver = webdriver.Chrome()
-            
-            # elif chromedriver_path.startswith("~"):
-            #     self.driver = webdriver.Chrome(os.path.expanduser('~')+chromedriver_path[1:])
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            #raise ValueError("ChromeDriver not currently supported ")
+            if driver_path=="":
 
-            # else:
-            #     self.driver = webdriver.Chrome(chromedriver_path)
+                self.driver = webdriver.Chrome(options=options)
+            
+            elif driver_path.startswith("~"):
+                self.driver = webdriver.Chrome(os.path.expanduser('~')+driver_path[1:],
+                                                options=options)
+
+            else:
+                self.driver = webdriver.Chrome(driver_path, options=options)
         else:
             raise ValueError("That driver is not supported")
 
@@ -473,8 +477,8 @@ class Jgi(object):
 
       
     def __write_taxon_id_json(self,path,domain,taxon_id,org_dict):
-
-        taxon_ids_path = os.path.join(path,domain,"taxon_ids",taxon_id+".json")
+        domain_path = os.path.join(path,domain).replace("*","")
+        taxon_ids_path = os.path.join(domain_path,"taxon_ids",taxon_id+".json")
         with open(taxon_ids_path, 'w') as f:
             json.dump(org_dict, f)
 
@@ -582,7 +586,7 @@ class Jgi(object):
                         [default=[`unassembled`, `assembled`, `both`]]. 
         """
         ## Make save_dir
-        domain_path = os.path.join(path,domain,"taxon_ids")
+        domain_path = os.path.join(path,domain,"taxon_ids").replace("*","")
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -604,7 +608,8 @@ class Jgi(object):
         ## Get all organism URLs
         
         # Checks to see if there is an organism url list already and imports it.
-        organism_url_path = os.path.join(path,domain,'organism_url.json')
+        domain_path = os.path.join(path,domain).replace("*","")
+        organism_url_path = os.path.join(domain_path,'organism_url.json')
  
         if os.path.isfile(organism_url_path):
             with open(organism_url_path,'r') as f:
@@ -625,7 +630,8 @@ class Jgi(object):
                     assembly_types = ['assembled','unassembled','both']):
 
         ## Make save_dir
-        domain_path = os.path.join(path,domain,"taxon_ids")
+        
+        domain_path = os.path.join(path,domain,"taxon_ids").replace("*","")
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -657,8 +663,8 @@ class Jgi(object):
         
         pbar = tqdm(organism_urls)
 
-        domain_path = os.path.join(path,domain)
-        organism_url_path = os.path.join(path,domain,'organism_url.json')
+        domain_path = os.path.join(path,domain).replace("*","")
+        organism_url_path = os.path.join(domain_path,'organism_url.json')
         
         if domain in metagenome_domains:
 
