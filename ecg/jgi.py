@@ -6,6 +6,11 @@ import warnings
 import sys, io
 import argparse
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions as EC
+
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
@@ -89,7 +94,8 @@ class Jgi(object):
         
         self.driver.get(domain_url)
         ## Takes a long time to load all bacteria (because there are 60k of them)
-        time.sleep(sleep_time) 
+        # time.sleep(sleep_time) 
+        WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
         # driver.quit()
 
@@ -100,7 +106,9 @@ class Jgi(object):
         domain_json_url = domain_url_prefix+domain_json_suffix
 
         self.driver.get(domain_json_url)
-        time.sleep(sleep_time)
+        WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        
+        # time.sleep(sleep_time)
 
         domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
         return domain_json
@@ -150,7 +158,8 @@ class Jgi(object):
 
     def __get_organism_htmlSource(self,organism_url):
         self.driver.get(organism_url)
-        time.sleep(5)
+        # time.sleep(5)
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         return self.driver.page_source
 
     def __get_organism_data(self,htmlSource):
@@ -417,7 +426,8 @@ class Jgi(object):
 
     def __get_enzyme_json(self,enzyme_url):
         self.driver.get(enzyme_url)
-        time.sleep(5)
+        # time.sleep(5)
+        WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
         # driver.quit()
 
@@ -428,8 +438,8 @@ class Jgi(object):
         enzyme_json_url = enzyme_url_prefix+enzyme_json_suffix
 
         self.driver.get(enzyme_json_url)
-        time.sleep(5)
-
+        # time.sleep(5)
+        WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         ## JSON formatted object ready to be dumped
         enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
 
@@ -443,11 +453,13 @@ class Jgi(object):
         enzyme_dict = dict() # Dictionary of ec:[enzymeName,genecount] for all ecs in a single metagenome
 
         for singleEnzymeDict in enzyme_json['records']:
-            ec = singleEnzymeDict['EnzymeID']
-            enzymeName = singleEnzymeDict['EnzymeName']
-            genecount = singleEnzymeDict['GeneCount']
+            ec = singleEnzymeDict.get("EnzymeID", None)
+            if ec:
+                # ec = singleEnzymeDict['EnzymeID']
+                enzymeName = singleEnzymeDict['EnzymeName']
+                genecount = singleEnzymeDict['GeneCount']
 
-            enzyme_dict[ec] = [enzymeName,genecount]
+                enzyme_dict[ec] = [enzymeName,genecount]
 
         return enzyme_dict
 
