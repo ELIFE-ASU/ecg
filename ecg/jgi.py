@@ -110,7 +110,9 @@ class Jgi(object):
         
         # time.sleep(sleep_time)
 
-        domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        # domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        domain_json = json.loads(self.driver.find_element(By.TAG_NAME,'body').text)
+
         return domain_json
 
     def __get_organism_urls(self,domain_json,organism_url_path):
@@ -441,7 +443,8 @@ class Jgi(object):
         # time.sleep(5)
         WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         ## JSON formatted object ready to be dumped
-        enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        enzyme_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
 
         return enzyme_json
 
