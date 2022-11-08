@@ -20,7 +20,7 @@ class Kegg(object):
         try:
             ## Set version
             version_path = os.path.join(path, "version.json")
-            with open(version_path) as f:    
+            with open(version_path) as f:
                 version = json.load(f) #[0]
             self.version = version
 
@@ -161,143 +161,143 @@ class Kegg(object):
         
         for path in glob.glob(reaction_path+"*.json"):
             
-            with open(path) as f:    
+            with open(path) as f:
                 data = json.load(f)
-                
-                equation = data[0]["equation"]
+                if data[0].get("entry_id", None):
+                    equation = data[0]["equation"]
 
-                if re.search(r'(G\d+)',equation) == None: ## Only find entries without glycans
+                    if re.search(r'(G\d+)',equation) == None: ## Only find entries without glycans
 
-                    for i, side in enumerate(equation.split(" <=> ")):
+                        for i, side in enumerate(equation.split(" <=> ")):
 
-                        compounds = []
-                        stoichiometries = []
+                            compounds = []
+                            stoichiometries = []
 
-                        ## match (n+1) C00001, (m-1) C00001 or similar
-                        matches = re.findall(r'(\(\S*\) C\d+)',side)
-                        # print matches
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = re.search(r'(\(\S*\))',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match (n+1) C00001, (m-1) C00001 or similar
+                            matches = re.findall(r'(\(\S*\) C\d+)',side)
+                            # print matches
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = re.search(r'(\(\S*\))',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match 23n C00001, m C00001 or similar
-                        matches = re.findall(r'(\d*[n,m] C\d+)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = re.search(r'(\d*[n,m])',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match 23n C00001, m C00001 or similar
+                            matches = re.findall(r'(\d*[n,m] C\d+)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = re.search(r'(\d*[n,m])',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match C06215(m+n), C06215(23m) or similar
-                        matches = re.findall(r'(C\d+\(\S*\))',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = re.search(r'(\(\S*\))',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match C06215(m+n), C06215(23m) or similar
+                            matches = re.findall(r'(C\d+\(\S*\))',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = re.search(r'(\(\S*\))',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "3 C00002" or similar (but NOT C00002 without a number)
-                        matches = re.findall(r'(\d+ C\d+)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = match.split(' '+compound)[0]# re.search(r'(\(\S*\))',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "3 C00002" or similar (but NOT C00002 without a number)
+                            matches = re.findall(r'(\d+ C\d+)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = match.split(' '+compound)[0]# re.search(r'(\(\S*\))',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "C00001 "at the start of the line (no coefficients)
-                        matches = re.findall(r'(^C\d+) ',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = '1'
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "C00001 "at the start of the line (no coefficients)
+                            matches = re.findall(r'(^C\d+) ',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = '1'
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "+ C00001 " (no coefficients)
-                        matches = re.findall(r'(\+ C\d+ )',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = "1"
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "+ C00001 " (no coefficients)
+                            matches = re.findall(r'(\+ C\d+ )',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = "1"
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "+ C00001" at the end of the line (no coefficients)
-                        matches = re.findall(r'(\+ C\d+$)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = "1"
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "+ C00001" at the end of the line (no coefficients)
+                            matches = re.findall(r'(\+ C\d+$)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = "1"
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "C00001" which is at the start and end of the line
-                        matches = re.findall(r'(^C\d+$)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = "1"
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "C00001" which is at the start and end of the line
+                            matches = re.findall(r'(^C\d+$)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = "1"
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        if i==0:
-                            data[0]["left"] = compounds
-                            data[0]["left_stoichiometries"] = stoichiometries
-                            data[0]["left_elements"] = set()
-                            ## Add element data
-                            for c in compounds:
-                                if c in compound_dict:
-                                    data[0]["left_elements"] = data[0]["left_elements"].union(compound_dict[c]['elements'])
-                                else:
-                                    data[0]["left_elements"] = data[0]["left_elements"].union('missing_cid')
-                                    data[0]["contains_missingcid"] = True
-                        elif i==1:
-                            data[0]["right"] = compounds
-                            data[0]["right_stoichiometries"] = stoichiometries
-                            data[0]["right_elements"] = set()
-                            ## Add element data
-                            for c in compounds:
-                                if c in compound_dict:
-                                    data[0]["right_elements"] = data[0]["right_elements"].union(compound_dict[c]['elements'])
-                                else:
-                                    data[0]["right_elements"] = data[0]["right_elements"].union('missing_cid')
-                                    data[0]["contains_missingcid"] = True
+                            if i==0:
+                                data[0]["left"] = compounds
+                                data[0]["left_stoichiometries"] = stoichiometries
+                                data[0]["left_elements"] = set()
+                                ## Add element data
+                                for c in compounds:
+                                    if c in compound_dict:
+                                        data[0]["left_elements"] = data[0]["left_elements"].union(compound_dict[c]['elements'])
+                                    else:
+                                        data[0]["left_elements"] = data[0]["left_elements"].union('missing_cid')
+                                        data[0]["contains_missingcid"] = True
+                            elif i==1:
+                                data[0]["right"] = compounds
+                                data[0]["right_stoichiometries"] = stoichiometries
+                                data[0]["right_elements"] = set()
+                                ## Add element data
+                                for c in compounds:
+                                    if c in compound_dict:
+                                        data[0]["right_elements"] = data[0]["right_elements"].union(compound_dict[c]['elements'])
+                                    else:
+                                        data[0]["right_elements"] = data[0]["right_elements"].union('missing_cid')
+                                        data[0]["contains_missingcid"] = True
+                            
+                        if "contains_missingcid" not in data[0]:
+                            data[0]["contains_missingcid"] = False
+                        print(path)
+                        if data[0]["left_elements"] != data[0]["right_elements"]:
+                            data[0]["element_conservation"] = False
+                            data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
+                        else:
+                            data[0]["element_conservation"] = True
+                            data[0]["elements_mismatched"] = list()
                         
-                    if "contains_missingcid" not in data[0]:
-                        data[0]["contains_missingcid"] = False
+                        assert len(compounds) == len(stoichiometries)
+                        data[0]["glycans"] = False
 
-                    if data[0]["left_elements"] != data[0]["right_elements"]:
-                        data[0]["element_conservation"] = False
-                        data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
                     else:
-                        data[0]["element_conservation"] = True
-                        data[0]["elements_mismatched"] = list()
-                    
-                    assert len(compounds) == len(stoichiometries)
-                    data[0]["glycans"] = False
 
-                else:
+                        data[0]["glycans"] = True
 
-                    data[0]["glycans"] = True
+                ## Rewrite file with added detail
+                with open(path, 'w') as f:
 
-            ## Rewrite file with added detail
-            with open(path, 'w') as f:
-                
-                json.dump(data, f, indent=2, default=serialize_sets)
+                    json.dump(data, f, indent=2, default=serialize_sets)
     
     def _download_links(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
@@ -380,13 +380,14 @@ class Kegg(object):
         indir = os.path.join(self.path, "entries", "reaction",'') ## Should be the detailed reactions
         for path in glob.glob(indir+"*.json"):
             
-            with open(path) as f:    
+            with open(path) as f:
+                print(path)
                 data = json.load(f)[0]
-                
-                if data["glycans"] == False:
-
+                if data.get("glycans", False) == False:
+                    
                     ## Main data
                     rID = data.pop("entry_id")
+                    print(rID)
                     reactions[rID] = dict()
                     reactions[rID]["left"] = data.pop("left")
                     reactions[rID]["right"] = data.pop("right")
