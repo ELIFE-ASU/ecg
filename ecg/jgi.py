@@ -11,9 +11,11 @@ import argparse
 from typing import Union, Optional
 from pathlib import Path
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions as EC
+
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
@@ -72,39 +74,36 @@ def load_json(path:Union[str,Path]) -> dict:
     return file
 
 
-class Jgi(object):
-    """
-    Class to retrieve data from DOE JGI IMG/M website (https://img.jgi.doe.gov/cgi-bin/m/main.cgi).
-
-    Parameters
-    ----------
-    chromedriver_path: str, Path (Optional, default None)
-        Path to the chrome driver.
-    homepage_url: str (Optional, default 'https://img.jgi.doe.gov/cgi-bin/m/main.cgi')
-        Home page url for JGI
-    """
-    def __init__(self,
-                 chromedriver_path:Optional[Union[str,Path]]=None,
-                 homepage_url:Optional[str]='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
+    def __init__(self,driver_type = "Chrome", driver_path="", 
+                 homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
         self.homepage_url = homepage_url
 
-        # Taken from https://stackoverflow.com/a/52878725/10741023
-        # and https://stackoverflow.com/a/69918489.
+        if driver_type == "Firefox":
+            if driver_path=="":
+                self.driver = webdriver.Firefox(firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
+            
+            elif driver_path.startswith("~"):
+                self.driver = webdriver.Firefox(os.path.expanduser('~')+driver_path[1:])
 
-        # This removes the need to pass the chrome driver path. It automatically sets up the
-        # correct chromedriver by downloading the binary and configuring the path automatically.
-        # Service object is used as executable_path has been deprecated.
-        if not chromedriver_path:
-            service = Service(ChromeDriverManager().install())
+            else:
+                self.driver = webdriver.Firefox(driver_path)
 
-        elif chromedriver_path.startswith("~"):
-            service = Service(Path(Path.home(), chromedriver_path[1:]))
+        elif driver_type == "Chrome":
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            #raise ValueError("ChromeDriver not currently supported ")
+            if driver_path=="":
 
+                self.driver = webdriver.Chrome(options=options)
+            
+            elif driver_path.startswith("~"):
+                self.driver = webdriver.Chrome(os.path.expanduser('~')+driver_path[1:],
+                                                options=options)
+            else:
+                self.driver = webdriver.Chrome(driver_path, options=options)
         else:
-            service = Service(chromedriver_path)
-
-        self.driver = webdriver.Chrome(service=service)
+            raise ValueError("That driver is not supported")
 
     @property
     def driver(self):
@@ -188,8 +187,11 @@ class Jgi(object):
 
         self.driver.get(domain_url)
         ## Takes a long time to load all bacteria (because there are 60k of them)
-        time.sleep(sleep_time)
-        htmlsource = self.driver.page_source
+
+        time.sleep(sleep_time) 
+        # WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        htmlSource = self.driver.page_source
+
         # driver.quit()
 
         regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
@@ -199,9 +201,14 @@ class Jgi(object):
         domain_json_url = domain_url_prefix+domain_json_suffix
 
         self.driver.get(domain_json_url)
+        # WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        
         time.sleep(sleep_time)
 
-        domain_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
+        # domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        domain_json = json.loads(self.driver.find_element(By.TAG_NAME,'body').text)
+
+
         return domain_json
 
     def __get_organism_urls(self, domain_json:dict,
@@ -276,6 +283,7 @@ class Jgi(object):
         """
         self.driver.get(organism_url)
         time.sleep(5)
+        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         return self.driver.page_source
 
     def __get_organism_data(self, htmlsource):
@@ -549,7 +557,8 @@ class Jgi(object):
     def __get_enzyme_json(self,enzyme_url):
         self.driver.get(enzyme_url)
         time.sleep(5)
-        htmlsource = self.driver.page_source
+        # WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        htmlSource = self.driver.page_source
         # driver.quit()
 
         regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
@@ -560,8 +569,10 @@ class Jgi(object):
 
         self.driver.get(enzyme_json_url)
         time.sleep(5)
-
+        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         ## JSON formatted object ready to be dumped
+
+        # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
         enzyme_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
 
         return enzyme_json
@@ -573,12 +584,16 @@ class Jgi(object):
         # Dictionary of ec:[enzymeName,genecount] for all ecs in a single metagenome.
         enzyme_dict = dict()
 
-        for single_enzyme_dict in enzyme_json['records']:
-            ec = single_enzyme_dict['EnzymeID']
-            enzyme_name = single_enzyme_dict['EnzymeName']
-            genecount = single_enzyme_dict['GeneCount']
+        enzyme_dict = dict() # Dictionary of ec:[enzymeName,genecount] for all ecs in a single metagenome
 
-            enzyme_dict[ec] = [enzyme_name,genecount]
+        for singleEnzymeDict in enzyme_json['records']:
+            ec = singleEnzymeDict.get("EnzymeID", None)
+            if ec:
+                # ec = singleEnzymeDict['EnzymeID']
+                enzymeName = singleEnzymeDict['EnzymeName']
+                genecount = singleEnzymeDict['GeneCount']
+
+                enzyme_dict[ec] = [enzymeName,genecount]
 
         return enzyme_dict
 
@@ -597,12 +612,16 @@ class Jgi(object):
         if domain in untested:
             warnings.warn("This domain is untested for this function.")
         elif domain not in tested:
-            error_msg = f"`domain` must be one of JGI datasets: {tested+untested} \
-                        See: IMG Content table on \
-                        img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi"
-            raise ValueError(error_msg)
+            raise ValueError("`domain` must be one of JGI datasets: {0} See: IMG Content table on ".format(tested+untested)+
+                              "img/m homepage: https://img.jgi.doe.gov/cgi-bin/m/main.cgi")
 
-    def __write_taxon_id_json(self,path, domain,taxon_id, org_dict):
+      
+    def __write_taxon_id_json(self,path,domain,taxon_id,org_dict):
+        domain_path = os.path.join(path,domain).replace("*","")
+        taxon_ids_path = os.path.join(domain_path,"taxon_ids",taxon_id+".json")
+        with open(taxon_ids_path, 'w') as f:
+            json.dump(org_dict, f)
+
 
         taxon_ids_path = Path(path, domain,"taxon_ids")
         fname = f"{taxon_id}"
@@ -709,8 +728,9 @@ class Jgi(object):
         if not assembly_types:
             assembly_types = ['assembled','unassembled','both']
         ## Make save_dir
-        domain_path = Path(path, domain,"taxon_ids")
+        domain_path = os.path.join(path,domain,"taxon_ids").replace("*","")
         check_folder(domain_path)
+
 
         ## Validate assembly_types
         metagenome_domains = ['*Microbiome','cell','sps','Metatranscriptome']
@@ -723,10 +743,13 @@ class Jgi(object):
 
         ## Get all organism URLs
         # Checks to see if there is an organism url list already and imports it.
-        organism_url_path = Path(path, domain)
+        domain_path = os.path.join(path,domain).replace("*","")
+        organism_url_path = os.path.join(domain_path,'organism_url.json')
+ 
+        if os.path.isfile(organism_url_path):
+            with open(organism_url_path,'r') as f:
+                organism_urls = json.load(f)
 
-        if Path(organism_url_path,'organism_url.json').is_file():
-            organism_urls = load_json(Path(organism_url_path,'organism_url.json'))
 
         # If no organism url list present, then creates one.
         else:
@@ -770,8 +793,10 @@ class Jgi(object):
             assembly_types = ['assembled','unassembled','both']
 
         ## Make save_dir
-        domain_path = Path(path,domain,"taxon_ids")
-        check_folder(domain_path)
+        domain_path = os.path.join(path,domain,"taxon_ids").replace("*","")
+        if not os.path.exists(domain_path):
+            os.makedirs(domain_path)
+
 
         ## Only allow scraping into empty directory
         files = [file.name for file in Path(domain_path).rglob('*.json')]
@@ -802,8 +827,8 @@ class Jgi(object):
 
         pbar = tqdm(organism_urls)
 
-        domain_path = Path(path,domain)
-        organism_url_path = Path(path, domain)
+        domain_path = os.path.join(path,domain).replace("*","")
+        organism_url_path = os.path.join(domain_path,'organism_url.json')
 
         if domain in metagenome_domains:
 
