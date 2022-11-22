@@ -50,6 +50,13 @@ cd ecg
 pip install -e .
 mkdir mydata
 ```
+
+## Installing and Using a Webdriver
+To use the `jgi` functionality in `ecg` you need to have a webdriver that can be used to drive a browser on your computer. Right now we're devloping this for Chrome. In order to use it you need to have [chromedriver](https://chromedriver.chromium.org/downloads) downloaded, unzipped and added to your `PATH`. You also need a compatible version of Chrome installed. To test this you should just be able to run `chromedriver` from you command prompt and see success message. If not check your `PATH` and try again. 
+
+
+## Completed Installation
+
 The command `import ecg` should now work for any Python scripts or Jupyter Notebooks created and stored in the top-level `ecg` directory (i.e. `ecgHub/ecg`). Files not used by ecg or generated with ecg, but which are relevant or occasionally needed in scripts which `import ecg`, can then be stored in the `ecgHub` folder. (manuscripts, notes, templates, auxiliary csvs, etc.)
 
 ## Local Installation
