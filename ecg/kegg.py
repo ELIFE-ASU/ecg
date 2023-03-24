@@ -593,111 +593,90 @@ if __name__ == '__main__':
  
     __execute_cli(args)
 
-def retrieve_ec_transfers(directory='KEGG_Transfers', kegg_filter=False):
-        
-        """
-        Identifies EC#s that have been "transferred" i.e. deprecated and re-labeled.
-        Writes these to text files in directory, if provided
-        
-        Parameters
-        ----------
-        directory : str (optional) 
-            folder to write the files to
-        kegg_filter : bool
-            whether or not to limit outputs to those linked to a reaction in KEGG
-        
-        Returns
-        ----------
-        transfer_info : dict
-            guide to keys...
-                ecs : pandas.Series
-                    Series of all valid EC numbers and names
-                trs_1 : pandas.Series
-                    Series of all 1:1 EC number transfers, i.e. transferred from index to value
-                trs_N : pandas.Series
-                    Series of lists for 1:N EC number transfers, i.e. transferred from index to {value1, value2 ... valueN}
-                trs_1_kegg : pandas.Series
-                    same as trs_1, filtered to include only transfers from index to value WHERE value is linked to a rxn in KEGG,
-                    PLUS entries originally from trs_N WHERE only ONE value (of N values) is linked to a rxn in KEGG
-                trs_N_kegg : pandas.Series
-                    trs_N, filtered to include only transfers with multiple values linked to a rxn in KEGG
-                kegg_ecs : set
-                    set of EC#s tied to at least one reaction in KEGG
-        """
-        if len(directory)>1:
-            directory = directory + '/'
-            if not os.path.exists(directory):
-                os.mkdir(directory)
-        
-        # download catalogue of all EC#s in kegg
-        ecs = pd.Series(dict([i.split('\t') for i in REST.kegg_list('enzyme').read().split('\n')][:-1]))
-        ecs.index = ecs.index.str.lstrip('ec:') 
-        
-        # note which ones have been transferred to *one or more* other EC#s
-        s = 'Transferred to '
-        trs = ecs[ecs.str.contains(s)].str.lstrip(s).str.replace(' and ',', ').str.split(', ') #turns all into lists
-        trs.drop('3.6.3.17', inplace=True)    # new EC# not provided - IntEnz suggests 7.5.2.8, others 7.5.2.-
-        
-        # tag those with only one transfer destination 
-        one = trs.apply(len)==1 
-        
-        # use that info to access their new EC#; retain list of EC#s for others
-        trs_1, trs_N = trs[one].apply(lambda x: x[0]), trs[~one]
-        
-        # write files
-        ecs.to_csv(directory+'EC_db_active.csv')
-        trs_1.to_csv(directory+'EC_transfers_1to1.csv')
-        trs_N.apply(lambda x: ' '.join(x)).to_csv(directory+'EC_transfers_1toN.csv')
-        
-        transfer_info = {'ecs':ecs, 'trs_1':trs_1, 'trs_N':trs_N}
-        
-        if kegg_filter:
-            trs_1_kegg, trs_N_kegg, kegg_ecs = xref_transfers_with_kegg(trs_1=trs_1,trs_N=trs_N, directory=directory)
-            transfer_info.update({'trs_1_kegg':trs_1_kegg, 'trs_N_kegg':trs_N_kegg, 'kegg_ecs': kegg_ecs})
-        
-        return(transfer_info)
-
-def xref_transfers_with_kegg(trs_1, trs_N, directory='KEGG_Transfers/'):
+def retrieve_ec_transfers(): #returns:trs
     """
-    Identifies which enzymes are linked to KEGG reactions; filters and updates transfer lists accordingly.
+    Identifies EC#s that have been "transferred" i.e. deprecated and re-labeled.
+    Returns: trs : pandas.Series, values are list of transfer target(s) for each transferred EC. Note that many targets are NOT tied to KEGG reactions
+    """  
+    # download catalogue of all EC#s with rns in kegg
+    ecs = pd.Series(dict([i.split('\t') for i in REST.kegg_list('enzyme').read().split('\n')][:-1]))
+    # note which ones have been transferred to *one or more* other EC#s
+    trs = ecs[ecs.str.contains('Transferred to')].apply(lambda x: ''.join([i for i in x if i in '0123456789. '])).str.split()
+    trs.drop('3.6.3.17', inplace=True)    # new EC# not provided - IntEnz suggests 7.5.2.8, others 7.5.2.-
+    trs_out = trs.apply(lambda x: [i for i in x if i not in trs.index]) #some xfers point to other xfers...
+    trs_in = (trs.apply(set) - trs_out.apply(set)).explode().dropna()
+    trs_reroutes = trs_in.apply(lambda x: trs_out[x]).groupby(trs_in.index).sum()
+    trs = pd.concat([trs_out.explode(),trs_reroutes.explode()]).groupby(level=0).apply(list)
+    return(trs)
+
+def retrieve_ec_rns(): #returns: ec_rn
+    """
+    Fetches reaction list for each EC#.
+    Returns: ec_rn : pandas.Series, values are list of KEGG reactions with format rn:RXXXXX
+    """
+    ec_rn = pd.DataFrame([i.split('\t') for i in REST.kegg_link('enzyme','reaction').read().split('\n')[:-1]]).rename(columns={0:'rn', 1:'ec'})
+    ec_rn = ec_rn.groupby(by='ec').rn.apply(list)
+    ec_rn.index = ec_rn.index.str.lstrip('ec:')
+    return(ec_rn)
+
+drop_empties = lambda x: x[x.apply(len)>0]
+
+def retrieve_ec_transfers_in_kegg(): #returns: trs_w_rns
+    """
+    Curates EC transfer DB to only include transfers into ECs with KEGG reactions.
+    Returns: trs_w_rns : pandas.Series. index is transferred EC#s, values are list of transfer targets (ECs)
+    """
+    trs = retrieve_ec_transfers()
+    ec_rn = retrieve_ec_rns()
+    trs_w_rns = drop_empties(trs.apply(lambda x: [i for i in x if i in ec_rn.index]))
+    return(trs_w_rns)
+
+def retrieve_ec_rn_transfers(): #returs: ec_rn_trs
+    """
+    Fetches reaction list for each EC#, INCLUDING transferred EC#s (i.e. rns for their targets).
+    Returns: ec_rn_trs : pandas.Series, values are list of KEGG reactions with format rn:RXXXXX
+    """
+    ec_rn = retrieve_ec_rns()
+    trs_w_rns = retrieve_ec_transfers_in_kegg()
+    trs_rns = trs_w_rns.apply(lambda x: list(set(ec_rn.loc[x].sum())))
+    ec_rn_trs = pd.concat([ec_rn, trs_rns])
+    return(ec_rn_trs)
+
+def allocate_xferred_ecs(trs, count_df, index_name): #returns: count_df_distributed
+
+    """
+    Allocates each transferred EC's count equally among transfer targets.
+    Off-label use distributes EC's count between its listed KEGG reactions.
     
     Parameters
     ----------
-    trs_1 : pandas.Series
-        Series of all 1:1 EC number transfers, i.e. from index to value
-    trs_N : pandas.Series
-        Series of lists for 1:N EC number transfers, i.e. transferred from index to {value1, value2, ... valueN}
-    directory : str (optional)
-        folder to write the files to
-    
+    trs : pandas.Series
+        Series with index of transferred EC#s; each value is a list 
+        (lists can be of length 1! Filter things as you see fit.)
+        I recommend using transfer list from retrieve_ec_transfers_in_kegg()
+        so that no enzyme counts are dropped when building reaction networks.
+        Or, filter that Series further if you want to route transferred ECs 
+        to specific targets (e.g. those which catalyze certain reactions,
+        those which are/aren't found in metagenomes already, etc.).
+    count_df : pandas.DataFrame
+        DataFrame with with index OR columns that are ECs
+        (it'll see which one is taxon IDs i.e. fully int-based, and do the other)
+    index_name : str
+        What you want to call the index. Example: if going from raw to xferred ECs,
+        suggest EC; if going from ECs to RNs, suggest RN; etc.
     Returns
-    ----------        
-    trs_1N_kegg_1 : pandas.Series
-        trs_1, filtered to include only transfers from index to value WHERE value is linked to a rxn in KEGG,
-        PLUS entries originally from trs_N WHERE only ONE value (of N values) is linked to a rxn in KEGG
-    trs_N_kegg_N : pandas.Series
-         trs_N, filtered to include only transfers with multiple values linked to a rxn in KEGG
-    """
-    d = directory
-    open(d+'reaction_enzyme_links.csv','w').write(REST.kegg_link('enzyme','reaction').read().replace('\t',',').
-                                           replace('rn:','').replace('ec:',''))
-    RnEz = pd.read_csv(d+'reaction_enzyme_links.csv',names=['rn','ec'], header=None)
-    kegg_ecs = set(RnEz.ec.values)
-    
-    # Some target ECs are linked to KEGG rxns
-    trs_N_kegg = trs_N.apply(lambda x: list(set(x) & kegg_ecs))
-    # Some source ECs have multiple such target ECs
-    trs_N_lengths = trs_N_kegg.apply(len)
-    trs_N_kegg_N = trs_N_kegg[trs_N_lengths>1]
-    # Other source ECs only point to one target EC
-    trs_1N_kegg_1 = pd.concat([trs_1[trs_1.apply(lambda x: x in kegg_ecs)], # 1:1 xfers w/KEGG ties
-                              trs_N_kegg[trs_N_lengths==1].apply(lambda x: x[0])]) # orig 1:N, now 1:1
-    # Prints these filtered catalogues
-    trs_1N_kegg_1.to_csv(d+'EC_transfers_1to1_inkegg.csv')
-    trs_N_kegg_N.apply(lambda x: ' '.join(list(x))).to_csv(d+'EC_transfers_1toN_inkegg.csv')
-    open(d+'ECs_w_kegg_linkage.csv','w').write(' '.join(kegg_ecs))
-
-    return(trs_1N_kegg_1, trs_N_kegg_N, kegg_ecs)
-
-# ecs,trs_1,trs_N = retrieve_ec_transfers(kegg_filter=True, directory='KEGG_Transfers')
-
+    ----------
+    count_df_distributed : pandas.DataFrame
+        DataFrame with relevant indices or columns replaced and re-aggregated
+    """   
+    taxon_rows = str.isnumeric(''.join(count_df.index.astype(str)))
+    if taxon_rows:
+        count_df = count_df.T
+    targets = pd.Series(dict(zip(count_df.index, [[i] for i in count_df.index])))
+    targets.update(trs)
+    count_df_each = (count_df.T / targets.apply(len)).T
+    count_df_each[index_name] = targets
+    count_df_distributed = count_df_each.explode(index_name).groupby(index_name).sum()
+    if taxon_rows:
+        count_df_distributed = count_df_distributed.T
+    return(count_df_distributed)
