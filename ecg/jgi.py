@@ -160,7 +160,7 @@ class Jgi(object):
 
     def __get_organism_htmlSource(self,organism_url):
         self.driver.get(organism_url)
-        time.sleep(5)
+        time.sleep(1) #camerian
         # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         return self.driver.page_source
 
@@ -428,7 +428,7 @@ class Jgi(object):
 
     def __get_enzyme_json(self,enzyme_url):
         self.driver.get(enzyme_url)
-        time.sleep(5)
+        time.sleep(3) #camerian 
         # WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
         # driver.quit()
@@ -440,7 +440,7 @@ class Jgi(object):
         enzyme_json_url = enzyme_url_prefix+enzyme_json_suffix
 
         self.driver.get(enzyme_json_url)
-        time.sleep(5)
+        time.sleep(2) #camerian
         # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         ## JSON formatted object ready to be dumped
         # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
@@ -458,11 +458,11 @@ class Jgi(object):
         for singleEnzymeDict in enzyme_json['records']:
             ec = singleEnzymeDict.get("EnzymeID", None)
             if ec:
-                # ec = singleEnzymeDict['EnzymeID']
-                enzymeName = singleEnzymeDict['EnzymeName']
+                # ec = singleEnzymeDict['EnzymeID'] #camerian
+                # enzymeName = singleEnzymeDict['EnzymeName'] #camerian
                 genecount = singleEnzymeDict['GeneCount']
 
-                enzyme_dict[ec] = [enzymeName,genecount]
+                enzyme_dict[ec] = int(genecount) #camerian[enzymeName,genecount]
 
         return enzyme_dict
 
@@ -517,11 +517,13 @@ class Jgi(object):
     def __scrape_organism_url_from_metagenome_domain(self,path,organism_url,assembly_types):
         ## Get enzyme json for single organism
         htmlSource = self.__get_organism_htmlSource(organism_url)
-        metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource)
+        # metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource) #camerian
         
         missing_enzyme_path = os.path.join(path,"missing_enzyme_data.json")
-        taxon_id = metadata_dict['Taxon Object ID']
-        org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict}
+        taxon_id = organism_url.split('=')[-1]
+        # taxon_id = metadata_dict['Taxon Object ID'] #camerian 
+        # org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict} #camerian
+        org_dict = dict()
 
         ## Different methods for metagenomes/genomes
         for assembly_type in assembly_types:
