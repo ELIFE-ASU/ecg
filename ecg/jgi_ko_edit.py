@@ -15,8 +15,6 @@ import pandas as pd
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
-ko_urls = pd.read_csv('KO_URLs_07172023.csv', header=None, index_col=0)[1]
-
 class Jgi(object):
 
     def __init__(self,driver_type = "Chrome", driver_path="", 
@@ -472,11 +470,12 @@ class Jgi(object):
         return enzyme_url
 
     def __get_enzyme_json(self,enzyme_url):
+        """
+        Actually downloads the file.
+        """
         self.driver.get(enzyme_url)
         time.sleep(3) #camerian 
-        # WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
-        # driver.quit()
 
         regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
         match = re.search(regex, htmlSource)
@@ -486,9 +485,7 @@ class Jgi(object):
 
         self.driver.get(enzyme_json_url)
         time.sleep(2) #camerian
-        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         ## JSON formatted object ready to be dumped
-        # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
         enzyme_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
 
         return enzyme_json
@@ -497,7 +494,6 @@ class Jgi(object):
         """
         Reduce keys in enzyme json by discarding "display" keys.
         """
-
         enzyme_dict = dict() # Dictionary of ec:[enzymeName,genecount] for all ecs in a single metagenome
 
         for singleEnzymeDict in enzyme_json['records']:
@@ -511,6 +507,18 @@ class Jgi(object):
 
                 enzyme_dict[ec] = int(genecount) #camerian[enzymeName,genecount]
 
+        return enzyme_dict
+    
+    def __prune_enzyme_json_alacarte(self,enzyme_json,data_needed):
+        """
+        Reduce keys in enzyme json by discarding "display" keys.
+        """
+        header = {'ecs': ['EnzymeID','EnzymeName'], 'kos': ['KOID','KOName']}
+        enzyme_dict = dict() # Dictionary of function:count for all functions in a single metagenome
+        for singleEnzymeDict in enzyme_json['records']:
+            ec = singleEnzymeDict.get(header[data_needed][0], None) #camerian
+            if ec:
+                enzyme_dict[ec] = int(singleEnzymeDict['GeneCount'])
         return enzyme_dict
 
     # def __identify_domain(self,htmlSource):
@@ -564,7 +572,7 @@ class Jgi(object):
     def __scrape_organism_url_from_metagenome_domain(self,path,organism_url,assembly_types):
         ## Get enzyme json for single organism
         htmlSource = None #self.__get_organism_htmlSource(organism_url) #camerian
-        # metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource) #camerian
+        #metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource) #camerian
         
         missing_enzyme_path = os.path.join(path,"missing_enzyme_data.json")
         taxon_id = organism_url.split('=')[-1]
@@ -574,9 +582,9 @@ class Jgi(object):
 
         ## Different methods for metagenomes/genomes
         for assembly_type in assembly_types:
-#            enzyme_url = self.__get_enzyme_url_metagenome(organism_url,htmlSource,assembly_type)
+            enzyme_url = self.__get_enzyme_url_metagenome(organism_url,htmlSource,assembly_type)
             #enzyme_url = self.__get_ko_url_metagenome(organism_url,htmlSource,assembly_type) #camerian
-            enzyme_url = ko_urls.loc[int(taxon_id)]
+            #enzyme_url = ko_urls.loc[int(taxon_id)]
             if True: #enzyme_url:
                 enzyme_json = self.__get_enzyme_json(enzyme_url)
                 enzyme_json = self.__prune_enzyme_json(enzyme_json)
@@ -776,6 +784,37 @@ class Jgi(object):
             json.dump(combined_taxon_ids,f)
 
         print("Done.")
+        
+        
+    def _scrape_urls_unsafe_alacarte(self, path, domain, data_urls, data_needed, output_frequency = 20):
+        """
+        Does not validate input. Assumes it's being fed a list of valid KO or EC URLs, and only assesses assembled subset.
+        """        
+        domain_path = os.path.join(path,domain).replace("*","")
+        org_dicts = dict() #camerian
+        if domain not in ['*Microbiome','cell','sps','Metatranscriptome']:
+            raise ValueError('Only fetches microbiomes (metagenomes + metatranscriptomes)') 
+        n_tried = 0
+        done = dict()
+        for taxon_id, enzyme_url in data_urls.items():
+            try:
+                enzyme_json = self.__get_enzyme_json(enzyme_url)
+                org_dicts[taxon_id] = self.__prune_enzyme_json_alacarte(enzyme_json,data_needed)
+                done[taxon_id] = True
+            except:
+                done[taxon_id] = False
+            n_tried = n_tried + 1 # camerian
+            print(n_tried, '\t/\t', len(data_urls), end='\r')
+            if (n_tried % output_frequency) == 0 : # camerian
+                org_df = pd.DataFrame(org_dicts).fillna(0).astype(int)
+                org_df.to_csv(path+'/'+path+'_'+data_needed+'.csv')
+        org_df = pd.DataFrame(org_dicts).fillna(0).astype(int)
+        done = pd.Series(done).astype(int)
+        org_df.to_csv(path+'/'+path+'_'+data_needed+'.csv', encoding='utf-8')
+        done.to_csv(path+'/'+path+'_'+data_needed+'_status.csv', encoding='utf-8')
+        print("Done!")
+        return(org_df, done)
+
 
     def scrape_ids(self,ids):
         ## Taxon IDs must be a list
