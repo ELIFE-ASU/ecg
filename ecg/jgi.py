@@ -3,10 +3,12 @@
 """
 Web scraping script to retrieve metadata and genetic statistics from JGI database.
 """
-import time
+
 import re
+import os
 import json
 import warnings
+import logging
 import argparse
 from typing import Union, Optional
 from pathlib import Path
@@ -16,8 +18,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 
+from datetime import date
 from tqdm import tqdm
 from bs4 import BeautifulSoup
+
+TODAY = date.today().strftime("%b-%d-%Y-%H")
 
 def dump_json(json_dict:dict, path:Union[str,Path], filename:str):
     """
@@ -73,10 +78,22 @@ def load_json(path:Union[str,Path]) -> dict:
         file = json.load(f)
     return file
 
-
+class Jgi(object):
+    """
+    Class to retrieve data from DOE JGI IMG/M website (https://img.jgi.doe.gov/cgi-bin/m/main.cgi).
+    Parameters
+    ----------
+    chromedriver_path: str, Path (Optional, default None)
+        Path to the chrome driver.
+    homepage_url: str (Optional, default 'https://img.jgi.doe.gov/cgi-bin/m/main.cgi')
+        Home page url for JGI
+    """
     def __init__(self,driver_type = "Chrome", driver_path="", 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
+        logging.basicConfig(handlers=[logging.FileHandler(f'JGI-{TODAY}.log'),
+                                      logging.StreamHandler()],
+                            format='%(name)s - %(levelname)s - %(message)s')
         self.homepage_url = homepage_url
 
         if driver_type == "Firefox":
@@ -126,6 +143,27 @@ def load_json(path:Union[str,Path]) -> dict:
     @homepage_url.setter
     def homepage_url(self,homepage_url):
         self.__homepage_url = homepage_url
+
+    def safe_web_get(self, url, wait_times=[1,5,60, 60*60, 4*60*60]):
+
+        success = False
+        errors = ["Status: 404", "SCRIPT ERROR"]
+        for time in wait_times:
+            try:
+                self.driver.get(url)
+                WebDriverWait(self.driver, time).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+                htmlSource = self.driver.page_source
+                error_found = [e in htmlSource for e in errors]
+                if sum(error_found) == 0:
+                    success = True
+                    return success
+                else:
+                    logging.warning(f"HTML get failed with time: {time} \n on URL: {url}")
+            except TimeoutError:
+                print(f"Wait time {time} didn't work, trying next timeout")
+                pass
+        
+        return success
 
     def __get_domain_url(self, domain:str, database:str) -> str:
         """
@@ -185,25 +223,23 @@ def load_json(path:Union[str,Path]) -> dict:
         else:
             sleep_time = 5
 
-        self.driver.get(domain_url)
+        self.safe_web_get(domain_url)
         ## Takes a long time to load all bacteria (because there are 60k of them)
-
-        time.sleep(sleep_time) 
+        #time.sleep(sleep_time) 
         # WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
-
         # driver.quit()
 
         regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
-        match = re.search(regex, htmlsource)
+        match = re.search(regex, htmlSource)
         domain_json_suffix = match.group(1)
         domain_url_prefix = domain_url.split('main.cgi')[0]
         domain_json_url = domain_url_prefix+domain_json_suffix
 
-        self.driver.get(domain_json_url)
+        success = self.safe_web_get(domain_json_url)
         # WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         
-        time.sleep(sleep_time)
+        # time.sleep(sleep_time)
 
         # domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
         domain_json = json.loads(self.driver.find_element(By.TAG_NAME,'body').text)
@@ -281,8 +317,8 @@ def load_json(path:Union[str,Path]) -> dict:
         """
         Retrieves html source from organism url page.
         """
-        self.driver.get(organism_url)
-        time.sleep(5)
+        self.safe_web_get(organism_url)
+        # time.sleep(5)
         # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         return self.driver.page_source
 
@@ -555,25 +591,31 @@ def load_json(path:Union[str,Path]) -> dict:
         return enzyme_url
 
     def __get_enzyme_json(self,enzyme_url):
-        self.driver.get(enzyme_url)
-        time.sleep(5)
-        # WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-        htmlSource = self.driver.page_source
-        # driver.quit()
+        enzyme_json = None
+        success = self.safe_web_get(enzyme_url)
+        if success:
+            # time.sleep(5)
+            # WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+            htmlSource = self.driver.page_source
+            # driver.quit()
 
-        regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
-        match = re.search(regex, htmlsource)
-        enzyme_json_suffix = match.group(1)
-        enzyme_url_prefix = enzyme_url.split('main.cgi')[0]
-        enzyme_json_url = enzyme_url_prefix+enzyme_json_suffix
+            regex = r'var myDataSource = new YAHOO\.util\.DataSource\(\"(.*)\"\);'
+            match = re.search(regex, htmlSource)
+            enzyme_json_suffix = match.group(1)
+            enzyme_url_prefix = enzyme_url.split('main.cgi')[0]
+            enzyme_json_url = enzyme_url_prefix+enzyme_json_suffix
 
-        self.driver.get(enzyme_json_url)
-        time.sleep(5)
-        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-        ## JSON formatted object ready to be dumped
+            success = self.safe_web_get(enzyme_json_url)
+            if success:
+                ## JSON formatted object ready to be dumped
+                # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+                enzyme_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
+            else:
+                logging.warning(f"Enzyme JSON failed for URL: {enzyme_url}")
+                enzyme_json = None
 
-        # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
-        enzyme_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
+        else:
+            enzyme_json = None
 
         return enzyme_json
 
@@ -622,10 +664,9 @@ def load_json(path:Union[str,Path]) -> dict:
         with open(taxon_ids_path, 'w') as f:
             json.dump(org_dict, f)
 
-
-        taxon_ids_path = Path(path, domain,"taxon_ids")
-        fname = f"{taxon_id}"
-        dump_json(org_dict, taxon_ids_path, fname)
+        # taxon_ids_path = Path(path, domain,"taxon_ids")
+        # fname = f"{taxon_id}"
+        # dump_json(org_dict, taxon_ids_path, fname)
 
     def __write_missing_enzyme_json(self,missing_enzyme_path,missing_enzyme_data):
 
@@ -636,7 +677,10 @@ def load_json(path:Union[str,Path]) -> dict:
         return load_json(missing_enzyme_path)
 
     def __scrape_organism_url_from_metagenome(self,path,organism_url,assembly_types):
-        ## Get enzyme json for single organism
+
+        # Record whether scrape was successful 
+        successful = False
+        # Get enzyme json for single organism
         htmlsource = self.__get_organism_htmlsource(organism_url)
         metadata_dict, statistics_dict = self.__get_metagenome_data(htmlsource)
 
@@ -649,10 +693,13 @@ def load_json(path:Union[str,Path]) -> dict:
             enzyme_url = self.__get_enzyme_url_metagenome(htmlsource, assembly_type)
             if enzyme_url:
                 enzyme_json = self.__get_enzyme_json(enzyme_url)
-                enzyme_json = self.__prune_enzyme_json(enzyme_json)
 
-                org_dict[assembly_type] = enzyme_json
-
+                if enzyme_json:
+                    enzyme_json = self.__prune_enzyme_json(enzyme_json)
+                    org_dict[assembly_type] = enzyme_json
+                    successful = True
+                else:
+                    logging.warning(f"Enzyme JSON failed for URL: {enzyme_url}")
             ## Write missing data to dict
             else:
                 if missing_enzyme_path.is_file():
@@ -664,10 +711,11 @@ def load_json(path:Union[str,Path]) -> dict:
                     missing_enzyme_data = {}
                     missing_enzyme_data[taxon_id] = assembly_type
 
-        return taxon_id, org_dict
+        return taxon_id, org_dict, successful
 
     def __scrape_organism_url_from_regular_domain(self,path,organism_url):
 
+        successful = False
         htmlsource = self.__get_organism_htmlsource(organism_url)
         metadata_dict, statistics_dict = self.__get_organism_data(htmlsource)
 
@@ -679,10 +727,12 @@ def load_json(path:Union[str,Path]) -> dict:
         enzyme_url = self.__get_enzyme_url(htmlsource)
         if enzyme_url:
             enzyme_json = self.__get_enzyme_json(enzyme_url)
-            enzyme_json = self.__prune_enzyme_json(enzyme_json)
-
-            org_dict["enzymes"] = enzyme_json
-
+            if enzyme_json:
+                enzyme_json = self.__prune_enzyme_json(enzyme_json)
+                org_dict["enzymes"] = enzyme_json
+                successful = True
+            else:
+                logging.warning(f"Enzyme JSON failed for URL: {enzyme_url}")
         ## Write missing data to list
         else:
             if missing_enzyme_path.is_file():
@@ -696,14 +746,14 @@ def load_json(path:Union[str,Path]) -> dict:
 
             self.__write_missing_enzyme_json(missing_enzyme_path,missing_enzyme_data)
 
-        return taxon_id, org_dict
+        return taxon_id, org_dict, successful
 
 
     def scrape_domain(self,
                       path:Optional[Union[str,Path]],
                       domain:str,
                       database:Optional[str]='all',
-                      assembly_types:Optional[list[str]] = None):
+                      assembly_types:Optional[list] = None):
         """
         Scrapes the web for the given domain and retrieves the information from the JGI website.
 
@@ -745,7 +795,7 @@ def load_json(path:Union[str,Path]) -> dict:
         # Checks to see if there is an organism url list already and imports it.
         domain_path = os.path.join(path,domain).replace("*","")
         organism_url_path = os.path.join(domain_path,'organism_url.json')
- 
+
         if os.path.isfile(organism_url_path):
             with open(organism_url_path,'r') as f:
                 organism_urls = json.load(f)
@@ -765,8 +815,8 @@ def load_json(path:Union[str,Path]) -> dict:
     def scrape_urls(self,
                     path:Optional[Union[str,Path]],
                     domain:str,
-                    organism_urls:list[str],
-                    assembly_types:Optional[list[str]] = None):
+                    organism_urls:list,
+                    assembly_types:Optional[list] = None):
         """
         Scrapes the web for the given domain and retrieves the information from the JGI website.
         Uses a list of organism_urls as input to download a specific set of organisms.
@@ -829,33 +879,43 @@ def load_json(path:Union[str,Path]) -> dict:
 
         domain_path = os.path.join(path,domain).replace("*","")
         organism_url_path = os.path.join(domain_path,'organism_url.json')
+        # Log errors
+        error_urls = []
 
         if domain in metagenome_domains:
 
             for organism_url in pbar:
                 taxon_description = re.search(r'\d+$', organism_url).group(0)
                 pbar.set_description(f"Scraping {taxon_description} ...")
-                taxon_id, org_dict = self.__scrape_organism_url_from_metagenome(domain_path,
-                                                                                organism_url,
-                                                                                assembly_types)
+                taxon_id, org_dict, successful = self.__scrape_organism_url_from_metagenome(domain_path,
+                                                                                            organism_url,
+                                                                                            assembly_types)
+                if successful:
+                    organism_urls[organism_url] = 0
+                    dump_json(organism_urls, organism_url_path,'organism_url')
 
-                organism_urls[organism_url] = 0
-                dump_json(organism_urls, organism_url_path,'organism_url')
-
-                self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
+                    self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
+                
+                else:
+                    # More error logging here
+                    error_urls.append(organism_url)
 
         else:
 
             for organism_url in pbar:
                 taxon_description = re.search(r'\d+$', organism_url).group(0)
                 pbar.set_description(f"Scraping {taxon_description} ...")
-                taxon_id, org_dict = self.__scrape_organism_url_from_regular_domain(domain_path,
-                                                                                    organism_url)
+                taxon_id, org_dict, successful = self.__scrape_organism_url_from_regular_domain(domain_path,
+                                                                                                organism_url)
 
-                organism_urls[organism_url] = 0
-                dump_json(organism_urls, organism_url_path,'organism_url')
+                if successful:
+                    organism_urls[organism_url] = 0
+                    dump_json(organism_urls, organism_url_path,'organism_url')
 
-                self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
+                    self.__write_taxon_id_json(path,domain,taxon_id,org_dict)
+                else:
+                    # More error logging here
+                    error_urls.append(organism_url)
 
         ## Parses the .json files in directory and creates a combined taxon id list.
         print("Writing combined json to file...")
