@@ -812,7 +812,10 @@ class Jgi(object):
         done = pd.Series(done).astype(int)
         org_df.to_csv(path+'/'+path+'_'+data_needed+'.csv', encoding='utf-8')
         done.to_csv(path+'/'+path+'_'+data_needed+'_status.csv', encoding='utf-8')
-        print("Done!")
+        if len(done.index)==done.sum():
+            print("Done!")
+        else:
+            print(100.*done.sum()/len(done.index), '%')
         return(org_df, done)
 
 
