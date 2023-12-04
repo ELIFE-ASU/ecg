@@ -298,7 +298,7 @@ See (Gagler et al. 2021)[https://www.pnas.org/doi/10.1073/pnas.2106655119] for m
 
 Use `jgi_pipeline_create_csvs.py` followed by `filter_raw.py` to get clean data. 
 
-These scripts were previously in (Bradley Karas' repository)[https://github.com/ELIFE-ASU/bradley-luca-project]. They were titled `jgi_pipeline.py` and 'filter_raw.py`, respectively. The only changes that have been made between these sets of scripts are the paths, and changing one of the keys from the metadata from "Lineage" to "NCBI Taxonomy Lineage" ("Lineage" as a key no longer existed in the JGI metadata, hence the update). We made this change in the `jgi_pipeline...` script. 
+These scripts were previously in (Bradley Karas' repository)[https://github.com/ELIFE-ASU/bradley-luca-project]. They were titled `jgi_pipeline.py` and `filter_raw.py`, respectively. The only changes that have been made between these sets of scripts are the paths, and changing one of the keys from the metadata from "Lineage" to "NCBI Taxonomy Lineage" ("Lineage" as a key no longer existed in the JGI metadata, hence the update). We made this change in the `jgi_pipeline...` script. 
 
 ## Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)
 
