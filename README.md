@@ -15,6 +15,7 @@ Pulling information from biological databases, and converting it into easy to us
       - [Downloading and running pipeline](#downloading-and-running-pipeline-1)
     - [Using CLI](#using-cli-1)
     - [Output format](#output-format-1)
+  - [Filtering JGI data](#filtering-jgi-data)
   - [Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)](#getting-biosystem-reaction-lists-and-network-graphs-using-kegg-and-jgi-ecgpy)
     - [Using import](#using-import-2)
       - [Writing reaction jsons](#writing-reaction-jsons)
