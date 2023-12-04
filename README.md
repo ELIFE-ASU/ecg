@@ -283,6 +283,21 @@ mydata/jgi
 |  ...
 ```
 
+## Filtering JGI data
+
+We apply the following criteria for filtering EC data from JGI:
+- Remove enzymes with partial names (example: 1.1.1.-)
+- Remove enzymes whose 1st digit is '7'
+- Remove enzymes not found in KEGG (these are apparently associated with glycans)
+- Remove fungal annotated entries in eukaryotes as they are suspect
+- Remove entires that are at extremes of percent functional coding genes (<10% or >90%)
+- Remove entries that are below the minimal gene size: 1364 for prokaryotes and 4718 for eukaryotes.
+
+See Gagler et al. 2021 for more details. 
+
+Use `jgi_pipeline_create_csvs.py` followed by `filter_raw.py` to get clean data. 
+
+
 ## Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)
 
 ### Using import
