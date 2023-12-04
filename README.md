@@ -291,9 +291,9 @@ We apply the following criteria for filtering EC data from JGI:
 - Remove enzymes not found in KEGG (these are apparently associated with glycans)
 - Remove fungal annotated entries in eukaryotes as they are suspect
 - Remove entires that are at extremes of percent functional coding genes (<10% or >90%)
-- Remove entries that are below the minimal gene size: 1364 for prokaryotes and 4718 for eukaryotes.
+- Remove entries that are below the minimal gene size: 1364 for prokaryotes, 4718 for eukaryotes, and 27280 for metagenomes
 
-See Gagler et al. 2021 for more details. 
+See (Gagler et al. 2021)[https://www.pnas.org/doi/10.1073/pnas.2106655119] for more details. 
 
 Use `jgi_pipeline_create_csvs.py` followed by `filter_raw.py` to get clean data. 
 
