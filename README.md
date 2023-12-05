@@ -15,6 +15,7 @@ Pulling information from biological databases, and converting it into easy to us
       - [Downloading and running pipeline](#downloading-and-running-pipeline-1)
     - [Using CLI](#using-cli-1)
     - [Output format](#output-format-1)
+  - [Filtering JGI data](#filtering-jgi-data)
   - [Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)](#getting-biosystem-reaction-lists-and-network-graphs-using-kegg-and-jgi-ecgpy)
     - [Using import](#using-import-2)
       - [Writing reaction jsons](#writing-reaction-jsons)
@@ -282,6 +283,22 @@ mydata/jgi
 |-Bacteria
 |  ...
 ```
+
+## Filtering JGI data
+
+We apply the following criteria for filtering EC data from JGI:
+- Remove enzymes with partial names (example: 1.1.1.-)
+- Remove enzymes whose 1st digit is '7'
+- Remove enzymes not found in KEGG (these are apparently associated with glycans)
+- Remove fungal annotated entries in eukaryotes as they are suspect
+- Remove entires that are at extremes of percent functional coding genes (<10% or >90%)
+- Remove entries that are below the minimal gene size: 1364 for prokaryotes, 4718 for eukaryotes, and 27280 for metagenomes
+
+See [Gagler et al. 2021](https://www.pnas.org/doi/10.1073/pnas.2106655119) for more details. 
+
+Use `jgi_pipeline_create_csvs.py` followed by `filter_raw.py` to get clean data. 
+
+These scripts were previously in [Bradley Karas' repository](https://github.com/ELIFE-ASU/bradley-luca-project). They were titled `jgi_pipeline.py` and `filter_raw.py`, respectively. The only changes that have been made between these sets of scripts are the paths, and changing one of the keys from the metadata from "Lineage" to "NCBI Taxonomy Lineage" ("Lineage" as a key no longer existed in the JGI metadata, hence the update). We made this change in the `jgi_pipeline...` script. 
 
 ## Getting biosystem reaction lists and network graphs using KEGG and JGI (`ecg.py`)
 
