@@ -115,8 +115,10 @@ class Kegg(object):
 
             ## Grab each entry in list
             for entry in tqdm(list_data):
-                
-                entry_id = entry.split(":")[1]
+                # print(entry)
+                # print(entry == None)
+                # entry_id = entry.split(":")[1]
+                entry_id = entry
                 entry_fname = entry_id+".json"
                 entry_path = os.path.join(entries_path, entry_fname)
 
@@ -299,7 +301,7 @@ class Kegg(object):
 
                     json.dump(data, f, indent=2, default=serialize_sets)
     
-    def _download_links(self,dbs=["pathway","enzyme","reaction","compound"]):
+    def _download_links(self,dbs=["pathway","enzyme","reaction","compound", "orthology"]):
         """
         Returns jsons of mappings between each db (default: map (pathway), ec, rn, cpd).
         """
