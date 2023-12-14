@@ -20,6 +20,7 @@ Do you need to update a dataset you've already got? Or do you just need a few ta
         - Eznyme count (not percent)
         - IMG Release/Pipeline Version
         - JGI Data Utilization Status
+        - Add Date
 
 4. Press `Redisplay`, it'll load a table. 
 
