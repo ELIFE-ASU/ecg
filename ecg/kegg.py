@@ -9,6 +9,7 @@ import argparse
 from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
+import pandas as pd
 
 class Kegg(object):
 
@@ -19,7 +20,7 @@ class Kegg(object):
         try:
             ## Set version
             version_path = os.path.join(path, "version.json")
-            with open(version_path) as f:    
+            with open(version_path) as f:
                 version = json.load(f) #[0]
             self.version = version
 
@@ -160,143 +161,143 @@ class Kegg(object):
         
         for path in glob.glob(reaction_path+"*.json"):
             
-            with open(path) as f:    
+            with open(path) as f:
                 data = json.load(f)
-                
-                equation = data[0]["equation"]
+                if data[0].get("entry_id", None):
+                    equation = data[0]["equation"]
 
-                if re.search(r'(G\d+)',equation) == None: ## Only find entries without glycans
+                    if re.search(r'(G\d+)',equation) == None: ## Only find entries without glycans
 
-                    for i, side in enumerate(equation.split(" <=> ")):
+                        for i, side in enumerate(equation.split(" <=> ")):
 
-                        compounds = []
-                        stoichiometries = []
+                            compounds = []
+                            stoichiometries = []
 
-                        ## match (n+1) C00001, (m-1) C00001 or similar
-                        matches = re.findall(r'(\(\S*\) C\d+)',side)
-                        # print matches
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = re.search(r'(\(\S*\))',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match (n+1) C00001, (m-1) C00001 or similar
+                            matches = re.findall(r'(\(\S*\) C\d+)',side)
+                            # print matches
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = re.search(r'(\(\S*\))',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match 23n C00001, m C00001 or similar
-                        matches = re.findall(r'(\d*[n,m] C\d+)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = re.search(r'(\d*[n,m])',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match 23n C00001, m C00001 or similar
+                            matches = re.findall(r'(\d*[n,m] C\d+)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = re.search(r'(\d*[n,m])',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match C06215(m+n), C06215(23m) or similar
-                        matches = re.findall(r'(C\d+\(\S*\))',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = re.search(r'(\(\S*\))',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match C06215(m+n), C06215(23m) or similar
+                            matches = re.findall(r'(C\d+\(\S*\))',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = re.search(r'(\(\S*\))',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "3 C00002" or similar (but NOT C00002 without a number)
-                        matches = re.findall(r'(\d+ C\d+)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = match.split(' '+compound)[0]# re.search(r'(\(\S*\))',match).group(1)
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "3 C00002" or similar (but NOT C00002 without a number)
+                            matches = re.findall(r'(\d+ C\d+)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = match.split(' '+compound)[0]# re.search(r'(\(\S*\))',match).group(1)
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "C00001 "at the start of the line (no coefficients)
-                        matches = re.findall(r'(^C\d+) ',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = '1'
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "C00001 "at the start of the line (no coefficients)
+                            matches = re.findall(r'(^C\d+) ',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = '1'
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "+ C00001 " (no coefficients)
-                        matches = re.findall(r'(\+ C\d+ )',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = "1"
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "+ C00001 " (no coefficients)
+                            matches = re.findall(r'(\+ C\d+ )',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = "1"
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "+ C00001" at the end of the line (no coefficients)
-                        matches = re.findall(r'(\+ C\d+$)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = "1"
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "+ C00001" at the end of the line (no coefficients)
+                            matches = re.findall(r'(\+ C\d+$)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = "1"
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        ## match "C00001" which is at the start and end of the line
-                        matches = re.findall(r'(^C\d+$)',side)
-                        if len(matches) != 0:
-                            for match in matches:
-                                compound = re.search(r'(C\d+)',match).group(1)
-                                stoichiometry = "1"
-                                
-                                compounds.append(compound)
-                                stoichiometries.append(stoichiometry)
+                            ## match "C00001" which is at the start and end of the line
+                            matches = re.findall(r'(^C\d+$)',side)
+                            if len(matches) != 0:
+                                for match in matches:
+                                    compound = re.search(r'(C\d+)',match).group(1)
+                                    stoichiometry = "1"
+                                    
+                                    compounds.append(compound)
+                                    stoichiometries.append(stoichiometry)
 
-                        if i==0:
-                            data[0]["left"] = compounds
-                            data[0]["left_stoichiometries"] = stoichiometries
-                            data[0]["left_elements"] = set()
-                            ## Add element data
-                            for c in compounds:
-                                if c in compound_dict:
-                                    data[0]["left_elements"] = data[0]["left_elements"].union(compound_dict[c]['elements'])
-                                else:
-                                    data[0]["left_elements"] = data[0]["left_elements"].union('missing_cid')
-                                    data[0]["contains_missingcid"] = True
-                        elif i==1:
-                            data[0]["right"] = compounds
-                            data[0]["right_stoichiometries"] = stoichiometries
-                            data[0]["right_elements"] = set()
-                            ## Add element data
-                            for c in compounds:
-                                if c in compound_dict:
-                                    data[0]["right_elements"] = data[0]["right_elements"].union(compound_dict[c]['elements'])
-                                else:
-                                    data[0]["right_elements"] = data[0]["right_elements"].union('missing_cid')
-                                    data[0]["contains_missingcid"] = True
+                            if i==0:
+                                data[0]["left"] = compounds
+                                data[0]["left_stoichiometries"] = stoichiometries
+                                data[0]["left_elements"] = set()
+                                ## Add element data
+                                for c in compounds:
+                                    if c in compound_dict:
+                                        data[0]["left_elements"] = data[0]["left_elements"].union(compound_dict[c]['elements'])
+                                    else:
+                                        data[0]["left_elements"] = data[0]["left_elements"].union('missing_cid')
+                                        data[0]["contains_missingcid"] = True
+                            elif i==1:
+                                data[0]["right"] = compounds
+                                data[0]["right_stoichiometries"] = stoichiometries
+                                data[0]["right_elements"] = set()
+                                ## Add element data
+                                for c in compounds:
+                                    if c in compound_dict:
+                                        data[0]["right_elements"] = data[0]["right_elements"].union(compound_dict[c]['elements'])
+                                    else:
+                                        data[0]["right_elements"] = data[0]["right_elements"].union('missing_cid')
+                                        data[0]["contains_missingcid"] = True
+                            
+                        if "contains_missingcid" not in data[0]:
+                            data[0]["contains_missingcid"] = False
+                        print(path)
+                        if data[0]["left_elements"] != data[0]["right_elements"]:
+                            data[0]["element_conservation"] = False
+                            data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
+                        else:
+                            data[0]["element_conservation"] = True
+                            data[0]["elements_mismatched"] = list()
                         
-                    if "contains_missingcid" not in data[0]:
-                        data[0]["contains_missingcid"] = False
+                        assert len(compounds) == len(stoichiometries)
+                        data[0]["glycans"] = False
 
-                    if data[0]["left_elements"] != data[0]["right_elements"]:
-                        data[0]["element_conservation"] = False
-                        data[0]["elements_mismatched"] = list(data[0]["left_elements"]^data[0]["right_elements"])
                     else:
-                        data[0]["element_conservation"] = True
-                        data[0]["elements_mismatched"] = list()
-                    
-                    assert len(compounds) == len(stoichiometries)
-                    data[0]["glycans"] = False
 
-                else:
+                        data[0]["glycans"] = True
 
-                    data[0]["glycans"] = True
+                ## Rewrite file with added detail
+                with open(path, 'w') as f:
 
-            ## Rewrite file with added detail
-            with open(path, 'w') as f:
-                
-                json.dump(data, f, indent=2, default=serialize_sets)
+                    json.dump(data, f, indent=2, default=serialize_sets)
     
     def _download_links(self,dbs=["pathway","enzyme","reaction","compound"]):
         """
@@ -379,13 +380,14 @@ class Kegg(object):
         indir = os.path.join(self.path, "entries", "reaction",'') ## Should be the detailed reactions
         for path in glob.glob(indir+"*.json"):
             
-            with open(path) as f:    
+            with open(path) as f:
+                print(path)
                 data = json.load(f)[0]
-                
-                if data["glycans"] == False:
-
+                if data.get("glycans", False) == False:
+                    
                     ## Main data
                     rID = data.pop("entry_id")
+                    print(rID)
                     reactions[rID] = dict()
                     reactions[rID]["left"] = data.pop("left")
                     reactions[rID]["right"] = data.pop("right")
@@ -590,3 +592,91 @@ if __name__ == '__main__':
     args = parser.parse_args()
  
     __execute_cli(args)
+
+def retrieve_ec_transfers(): #returns:trs
+    """
+    Identifies EC#s that have been "transferred" i.e. deprecated and re-labeled.
+    Returns: trs : pandas.Series, values are list of transfer target(s) for each transferred EC. Note that many targets are NOT tied to KEGG reactions
+    """  
+    # download catalogue of all EC#s with rns in kegg
+    ecs = pd.Series(dict([i.split('\t') for i in REST.kegg_list('enzyme').read().split('\n')][:-1]))
+    # note which ones have been transferred to *one or more* other EC#s
+    trs = ecs[ecs.str.contains('Transferred to')].apply(lambda x: ''.join([i for i in x if i in '0123456789. '])).str.split()
+    trs.drop('3.6.3.17', inplace=True)    # new EC# not provided - IntEnz suggests 7.5.2.8, others 7.5.2.-
+    trs_out = trs.apply(lambda x: [i for i in x if i not in trs.index]) #some xfers point to other xfers...
+    trs_in = (trs.apply(set) - trs_out.apply(set)).explode().dropna()
+    trs_reroutes = trs_in.apply(lambda x: trs_out[x]).groupby(trs_in.index).sum()
+    trs = pd.concat([trs_out.explode(),trs_reroutes.explode()]).groupby(level=0).apply(list)
+    return(trs)
+
+def retrieve_ec_rns(): #returns: ec_rn
+    """
+    Fetches reaction list for each EC#.
+    Returns: ec_rn : pandas.Series, values are list of KEGG reactions with format rn:RXXXXX
+    """
+    ec_rn = pd.DataFrame([i.split('\t') for i in REST.kegg_link('enzyme','reaction').read().split('\n')[:-1]]).rename(columns={0:'rn', 1:'ec'})
+    ec_rn = ec_rn.groupby(by='ec').rn.apply(list)
+    ec_rn.index = ec_rn.index.str.lstrip('ec:')
+    return(ec_rn)
+
+drop_empties = lambda x: x[x.apply(len)>0]
+
+def retrieve_ec_transfers_in_kegg(): #returns: trs_w_rns
+    """
+    Curates EC transfer DB to only include transfers into ECs with KEGG reactions.
+    Returns: trs_w_rns : pandas.Series. index is transferred EC#s, values are list of transfer targets (ECs)
+    """
+    trs = retrieve_ec_transfers()
+    ec_rn = retrieve_ec_rns()
+    trs_w_rns = drop_empties(trs.apply(lambda x: [i for i in x if i in ec_rn.index]))
+    return(trs_w_rns)
+
+def retrieve_ec_rn_transfers(): #returs: ec_rn_trs
+    """
+    Fetches reaction list for each EC#, INCLUDING transferred EC#s (i.e. rns for their targets).
+    Returns: ec_rn_trs : pandas.Series, values are list of KEGG reactions with format rn:RXXXXX
+    """
+    ec_rn = retrieve_ec_rns()
+    trs_w_rns = retrieve_ec_transfers_in_kegg()
+    trs_rns = trs_w_rns.apply(lambda x: list(set(ec_rn.loc[x].sum())))
+    ec_rn_trs = pd.concat([ec_rn, trs_rns])
+    return(ec_rn_trs)
+
+def allocate_xferred_ecs(trs, count_df, index_name): #returns: count_df_distributed
+
+    """
+    Allocates each transferred EC's count equally among transfer targets.
+    Off-label use distributes EC's count between its listed KEGG reactions.
+    
+    Parameters
+    ----------
+    trs : pandas.Series
+        Series with index of transferred EC#s; each value is a list 
+        (lists can be of length 1! Filter things as you see fit.)
+        I recommend using transfer list from retrieve_ec_transfers_in_kegg()
+        so that no enzyme counts are dropped when building reaction networks.
+        Or, filter that Series further if you want to route transferred ECs 
+        to specific targets (e.g. those which catalyze certain reactions,
+        those which are/aren't found in metagenomes already, etc.).
+    count_df : pandas.DataFrame
+        DataFrame with with index OR columns that are ECs
+        (it'll see which one is taxon IDs i.e. fully int-based, and do the other)
+    index_name : str
+        What you want to call the index. Example: if going from raw to xferred ECs,
+        suggest EC; if going from ECs to RNs, suggest RN; etc.
+    Returns
+    ----------
+    count_df_distributed : pandas.DataFrame
+        DataFrame with relevant indices or columns replaced and re-aggregated
+    """   
+    taxon_rows = str.isnumeric(''.join(count_df.index.astype(str)))
+    if taxon_rows:
+        count_df = count_df.T
+    targets = pd.Series(dict(zip(count_df.index, [[i] for i in count_df.index])))
+    targets.update(trs)
+    count_df_each = (count_df.T / targets.apply(len)).T
+    count_df_each[index_name] = targets
+    count_df_distributed = count_df_each.explode(index_name).groupby(index_name).sum()
+    if taxon_rows:
+        count_df_distributed = count_df_distributed.T
+    return(count_df_distributed)

@@ -6,24 +6,47 @@ import warnings
 import sys, io
 import argparse
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.support import expected_conditions as EC
+
 from tqdm import tqdm
 from bs4 import BeautifulSoup
 
 class Jgi(object):
 
-    def __init__(self,chromedriver_path="", 
+    def __init__(self,driver_type = "Chrome", driver_path="", 
                  homepage_url='https://img.jgi.doe.gov/cgi-bin/m/main.cgi'):
 
         self.homepage_url = homepage_url
 
-        if chromedriver_path=="":
-            self.driver = webdriver.Chrome()
-        
-        elif chromedriver_path.startswith("~"):
-            self.driver = webdriver.Chrome(os.path.expanduser('~')+chromedriver_path[1:])
+        if driver_type == "Firefox":
+            if driver_path=="":
+                self.driver = webdriver.Firefox(firefox_binary="C:\\Program Files\\Mozilla Firefox\\firefox.exe")
+            
+            elif driver_path.startswith("~"):
+                self.driver = webdriver.Firefox(os.path.expanduser('~')+driver_path[1:])
 
+            else:
+                self.driver = webdriver.Firefox(driver_path)
+
+        elif driver_type == "Chrome":
+            options = webdriver.ChromeOptions()
+            options.add_experimental_option('excludeSwitches', ['enable-logging'])
+            #raise ValueError("ChromeDriver not currently supported ")
+            if driver_path=="":
+
+                self.driver = webdriver.Chrome(options=options)
+            
+            elif driver_path.startswith("~"):
+                self.driver = webdriver.Chrome(os.path.expanduser('~')+driver_path[1:],
+                                                options=options)
+
+            else:
+                self.driver = webdriver.Chrome(driver_path, options=options)
         else:
-            self.driver = webdriver.Chrome(chromedriver_path)
+            raise ValueError("That driver is not supported")
 
     @property
     def driver(self):
@@ -72,6 +95,7 @@ class Jgi(object):
         self.driver.get(domain_url)
         ## Takes a long time to load all bacteria (because there are 60k of them)
         time.sleep(sleep_time) 
+        # WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
         # driver.quit()
 
@@ -82,9 +106,13 @@ class Jgi(object):
         domain_json_url = domain_url_prefix+domain_json_suffix
 
         self.driver.get(domain_json_url)
+        # WebDriverWait(self.driver, sleep_time*2).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        
         time.sleep(sleep_time)
 
-        domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        # domain_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        domain_json = json.loads(self.driver.find_element(By.TAG_NAME,'body').text)
+
         return domain_json
 
     def __get_organism_urls(self,domain_json,organism_url_path):
@@ -132,7 +160,8 @@ class Jgi(object):
 
     def __get_organism_htmlSource(self,organism_url):
         self.driver.get(organism_url)
-        time.sleep(5)
+        time.sleep(1) #camerian
+        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         return self.driver.page_source
 
     def __get_organism_data(self,htmlSource):
@@ -399,7 +428,8 @@ class Jgi(object):
 
     def __get_enzyme_json(self,enzyme_url):
         self.driver.get(enzyme_url)
-        time.sleep(5)
+        time.sleep(3) #camerian 
+        # WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         htmlSource = self.driver.page_source
         # driver.quit()
 
@@ -410,10 +440,11 @@ class Jgi(object):
         enzyme_json_url = enzyme_url_prefix+enzyme_json_suffix
 
         self.driver.get(enzyme_json_url)
-        time.sleep(5)
-
+        time.sleep(2) #camerian
+        # WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         ## JSON formatted object ready to be dumped
-        enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        # enzyme_json = json.loads(self.driver.find_element_by_tag_name('body').text)
+        enzyme_json = json.loads(self.driver.find_element(By.TAG_NAME, 'body').text)
 
         return enzyme_json
 
@@ -425,11 +456,13 @@ class Jgi(object):
         enzyme_dict = dict() # Dictionary of ec:[enzymeName,genecount] for all ecs in a single metagenome
 
         for singleEnzymeDict in enzyme_json['records']:
-            ec = singleEnzymeDict['EnzymeID']
-            enzymeName = singleEnzymeDict['EnzymeName']
-            genecount = singleEnzymeDict['GeneCount']
+            ec = singleEnzymeDict.get("EnzymeID", None)
+            if ec:
+                # ec = singleEnzymeDict['EnzymeID'] #camerian
+                # enzymeName = singleEnzymeDict['EnzymeName'] #camerian
+                genecount = singleEnzymeDict['GeneCount']
 
-            enzyme_dict[ec] = [enzymeName,genecount]
+                enzyme_dict[ec] = int(genecount) #camerian[enzymeName,genecount]
 
         return enzyme_dict
 
@@ -459,8 +492,8 @@ class Jgi(object):
 
       
     def __write_taxon_id_json(self,path,domain,taxon_id,org_dict):
-
-        taxon_ids_path = os.path.join(path,domain,"taxon_ids",taxon_id+".json")
+        domain_path = os.path.join(path,domain).replace("*","")
+        taxon_ids_path = os.path.join(domain_path,"taxon_ids",taxon_id+".json")
         with open(taxon_ids_path, 'w') as f:
             json.dump(org_dict, f)
 
@@ -484,11 +517,13 @@ class Jgi(object):
     def __scrape_organism_url_from_metagenome_domain(self,path,organism_url,assembly_types):
         ## Get enzyme json for single organism
         htmlSource = self.__get_organism_htmlSource(organism_url)
-        metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource)
+        # metadata_dict, statistics_dict = self.__get_metagenome_data(htmlSource) #camerian
         
         missing_enzyme_path = os.path.join(path,"missing_enzyme_data.json")
-        taxon_id = metadata_dict['Taxon Object ID']
-        org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict}
+        taxon_id = organism_url.split('=')[-1]
+        # taxon_id = metadata_dict['Taxon Object ID'] #camerian 
+        # org_dict = {'metadata':metadata_dict, 'statistics':statistics_dict} #camerian
+        org_dict = dict()
 
         ## Different methods for metagenomes/genomes
         for assembly_type in assembly_types:
@@ -568,7 +603,7 @@ class Jgi(object):
                         [default=[`unassembled`, `assembled`, `both`]]. 
         """
         ## Make save_dir
-        domain_path = os.path.join(path,domain,"taxon_ids")
+        domain_path = os.path.join(path,domain,"taxon_ids").replace("*","")
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -590,7 +625,8 @@ class Jgi(object):
         ## Get all organism URLs
         
         # Checks to see if there is an organism url list already and imports it.
-        organism_url_path = os.path.join(path,domain,'organism_url.json')
+        domain_path = os.path.join(path,domain).replace("*","")
+        organism_url_path = os.path.join(domain_path,'organism_url.json')
  
         if os.path.isfile(organism_url_path):
             with open(organism_url_path,'r') as f:
@@ -611,7 +647,8 @@ class Jgi(object):
                     assembly_types = ['assembled','unassembled','both']):
 
         ## Make save_dir
-        domain_path = os.path.join(path,domain,"taxon_ids")
+        
+        domain_path = os.path.join(path,domain,"taxon_ids").replace("*","")
         if not os.path.exists(domain_path):
             os.makedirs(domain_path)
 
@@ -643,8 +680,8 @@ class Jgi(object):
         
         pbar = tqdm(organism_urls)
 
-        domain_path = os.path.join(path,domain)
-        organism_url_path = os.path.join(path,domain,'organism_url.json')
+        domain_path = os.path.join(path,domain).replace("*","")
+        organism_url_path = os.path.join(domain_path,'organism_url.json')
         
         if domain in metagenome_domains:
 
