@@ -32,7 +32,7 @@ class FilterRaw:
         self.path = path
 
         # Path to processed kegg enzyme data.
-        self.kegg_path = 'data/enzyme_primary.json'
+        self.kegg_path = '../Processed_data/enzyme_primary.json'
 
         # List of enzymes in KEGG data.
         self.kegg_list = self._create_kegg_list()
@@ -153,13 +153,13 @@ class FilterRaw:
         # Prunes the indexes.
         self.data.drop(drop_index, inplace = True)
 
-    def _remove_minimal_genes(self, prokaryote_min = 1364, eukaryote_min = 4718):
+    def _remove_minimal_genes(self, prokaryote_min = 1354, eukaryote_min = 4718):
         """
         Takes the Pandas DataFrame and removes entries that are below minimal gene size for a
         living organism.
 
         :param prokaryote_min: Minimum gene size for prokaryote. (Bacteria and Archaea)
-                               (Default = 1364)
+                               (Default = 1354)
         :type prokaryote_min: int.
 
         :param eukaryote_min: Minimum gene size for eukaryote (Default = 4718)
@@ -191,7 +191,7 @@ class FilterRaw:
 
     def _save_data(self):
         print('Printing Filtered Combined Data: CSV')
-        self.data.to_csv('data/Clean_Data_Combined.csv', index = False)
+        self.data.to_csv('../Clean_Data_Combined.csv', index = False)
 
 class FilterRawMetagenome(FilterRaw):
     """
@@ -244,7 +244,7 @@ class FilterRawMetagenome(FilterRaw):
         :param max_coding: Maximum coding percentage (Default = 90)
         :type max_coding: int.
         """
-
+ 
         # Finds indexes outside coding boundaries.
         drop_index = self.data[
                     (self.data['with Product Name'] > max_coding) |
@@ -256,13 +256,13 @@ class FilterRawMetagenome(FilterRaw):
         # Prunes the indexes.
         self.data.drop(drop_index, inplace = True)
 
-    def _remove_minimal_genes(self, metagenome_min = 27280):
+    def _remove_minimal_genes(self, metagenome_min = 13540):
         """
         Takes the Pandas DataFrame and removes entries that are below minimal gene size for
         a metagenome. Assumption is that there are at least 20 free living prokaryotes, which
-        gives a minimum size of (20*1364) = 27280.
+        gives a minimum size of (10*1354) = 13540
 
-        :param metagenome_min: Minimum gene size for metagenome. (Default = 27280)
+        :param metagenome_min: Minimum gene size for metagenome. (Default = 13540)
         :type metagenome_min: int.
         """
 
@@ -278,14 +278,14 @@ class FilterRawMetagenome(FilterRaw):
 
     def _save_data(self):
         print('Printing Filtered Combined Metagenome Data: CSV')
-        self.data.to_csv('data/Clean_Metagenome_Data_Combined.csv', index = False)
+        self.data.to_csv('../Clean_Metagenome_Data_Combined.csv', index = False)
 
 def main():
     """
     Calls the FilterRaw class to filter the combined .csv file.
     """
-    # FilterRaw('data/Raw_Data_Combined.csv')
-    FilterRawMetagenome('data/Raw_Metagenome_Data_Combined.csv')
+    FilterRaw('../Raw_Data_Combined.csv')
+    FilterRawMetagenome('../Raw_Metagenome_Data_Combined.csv')
 
 if __name__ == '__main__':
     main()
