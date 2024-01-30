@@ -9,6 +9,7 @@ import argparse
 from Bio.KEGG import REST #, Enzyme, Compound, Map
 import Bio.TogoWS as TogoWS
 from tqdm import tqdm
+import time
 
 class Kegg(object):
 
@@ -94,12 +95,17 @@ class Kegg(object):
             with open(list_path, 'w') as f:   
                 json.dump(self.lists[db], f, indent=2)
 
-    def _download_entries(self,dbs=["pathway","enzyme","reaction","compound"]):
+    def _download_entries(self, dbs = ["pathway","enzyme","reaction","compound"]):
+
         """
         Returns jsons of entries of dbs (default: map (pathway), ec, rn, cpd).
         """
 
-        ## Get entries on all kegg types
+        max_attempts = 3 # Attempts for connecting to KEGG server and pulling all info
+
+
+        # ## Get entries on all kegg types
+        # silent_failures = [] # Keep track of IDs that weren't able to be fetched
         for db in dbs:
 
             ## Read list of all kegg ids
@@ -107,25 +113,90 @@ class Kegg(object):
             with open(list_path) as f:    
                 list_data = json.load(f) #[0]
 
-            ## Create dir to store entries in
+            # Create dir to store entries in
             entries_path = os.path.join(self.path,"entries",db)
             if not os.path.exists(entries_path):
                 os.makedirs(entries_path)
 
-            ## Grab each entry in list
-            for entry in tqdm(list_data):
-                
-                entry_id = entry.split(":")[1]
-                entry_fname = entry_id+".json"
-                entry_path = os.path.join(entries_path, entry_fname)
+            # Reaction data is the fussiest. 
+            if db == "reaction":
+                ## Grab each entry in list
+                files_needed_retry = []
+                files_with_exceptions = []
+                for entry in tqdm(list_data):
+                    
+                    entry_id = entry
+                    entry_fname = entry_id+".json"
+                    entry_path = os.path.join(entries_path, entry_fname)
 
-                while entry_fname not in os.listdir(entries_path):
-                    try:
-                        handle = TogoWS.entry(db, entry_id, format="json")
-                        with open(entry_path, 'a') as f:
-                            f.write(handle.read())
-                    except:
-                        pass
+                    while entry_fname not in os.listdir(entries_path):
+                        attempt = 0 # Initialize attempt counter
+                        while attempt < max_attempts:
+                            try:
+                                with open(entry_path, 'w') as f:
+                                    handle = TogoWS.entry(db, entry_id, format="json")
+                                    data = json.load(handle) # To manipulate the data
+
+                                    while data[0]['entry_id'] is None or data[0]['equation'] is None:
+                                        print("Retrying...")
+                                        files_needed_retry.append(entry_id)
+                                        time.sleep(1) # Add delay before next attempt
+                                        handle = TogoWS.entry(db, entry_id, format = "json")
+                                        data = json.load(handle) 
+
+                                        attempt += 1 # Increment attempt number
+                                        if attempt == max_attempts:
+                                            print(f"Max atttempts reached for {entry_id}. Skipping.")
+                                            break
+                                                            
+
+                                    if data: # Check if data not empty
+                                        json.dump(data, f, indent = 2)
+                                        break
+                                    else:
+                                        print(f"No data for {entry_id}. File will be empty.")
+                                        break
+
+
+                            except Exception as e:
+                                print(f"An error occurred for {entry_id}: {e}")
+                                files_with_exceptions.append(entry_id)
+
+                # Keep track of problem files
+                errors_path = os.path.join(self.path,"errors",db)
+                if not os.path.exists(errors_path):
+                    os.makedirs(errors_path)
+            
+                # Save file names that needed retries
+                data_to_write = '\n'.join(files_needed_retry) 
+                fname = os.path.join(errors_path, "files_needed_retry.txt")
+                with open(fname, 'w') as file:
+                    file.write(data_to_write)
+
+                # Save file names that sparked an exception
+                data_to_write = '\n'.join(files_with_exceptions) 
+                fname = os.path.join(errors_path, "files_with_exceptions.txt")
+                with open(fname, 'w') as file:
+                    file.write(data_to_write)
+            
+            # There is most definitely a succinct way to formulate this logic but I am tired and need to move on. 
+            else: # For compounds, pathways, and enzymes
+                for entry in tqdm(list_data):
+                    
+                    entry_id = entry
+                    entry_fname = entry_id + ".json"
+                    entry_path = os.path.join(entries_path, entry_fname)
+
+                    while entry_fname not in os.listdir(entries_path):
+                        try:
+                            handle = TogoWS.entry(db, entry_id, format="json")
+                            with open(entry_path, 'a') as f:
+                                f.write(handle.read())
+                        except:
+                            pass
+
+
+
     
     def _detail_compounds(self):
         """
@@ -136,7 +207,7 @@ class Kegg(object):
 
         for path in glob.glob(compound_path+"*.json"):
             with open(path) as f:
-                data = json.load(f)[0]
+                data = json.load(f)
                 elements = re.findall(r"([A-Z][a-z]?)",data['formula'])
                 data["elements"] = list(set(elements))
 
