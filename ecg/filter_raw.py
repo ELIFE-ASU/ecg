@@ -71,7 +71,7 @@ class FilterRaw:
             4. Removing entries that are at extremes of percent functional coding genes
                (<10% | > 90%).
             5. Removing entries that are below the minimal gene size:
-               1364 for prokaryotes,4718 for eukaryotes.
+               1354 for prokaryotes, 4718 for eukaryotes.
         """
 
         # Loads the combined raw data for the three domains.
@@ -153,13 +153,13 @@ class FilterRaw:
         # Prunes the indexes.
         self.data.drop(drop_index, inplace = True)
 
-    def _remove_minimal_genes(self, prokaryote_min = 1364, eukaryote_min = 4718):
+    def _remove_minimal_genes(self, prokaryote_min = 1354, eukaryote_min = 4718):
         """
         Takes the Pandas DataFrame and removes entries that are below minimal gene size for a
         living organism.
 
         :param prokaryote_min: Minimum gene size for prokaryote. (Bacteria and Archaea)
-                               (Default = 1364)
+                               (Default = 1354)
         :type prokaryote_min: int.
 
         :param eukaryote_min: Minimum gene size for eukaryote (Default = 4718)
@@ -208,7 +208,7 @@ class FilterRawMetagenome(FilterRaw):
             2. Removing enyzmes not found in kegg (associated with glycans).
             3. Removing entries that are at extremes of percent functional coding genes
                (<10% | > 90%).
-            4. Removing entries that are below the minimal gene size: 27280.
+            4. Removing entries that are below the minimal gene size: 13540.
         """
 
         # Loads the combined raw data for metagenomes. These columns have mixed types and throw
@@ -256,13 +256,13 @@ class FilterRawMetagenome(FilterRaw):
         # Prunes the indexes.
         self.data.drop(drop_index, inplace = True)
 
-    def _remove_minimal_genes(self, metagenome_min = 27280):
+    def _remove_minimal_genes(self, metagenome_min = 13540):
         """
         Takes the Pandas DataFrame and removes entries that are below minimal gene size for
-        a metagenome. Assumption is that there are at least 20 free living prokaryotes, which
-        gives a minimum size of (20*1364) = 27280.
+        a metagenome. Assumption is that there are at least 10 free living prokaryotes, which
+        gives a minimum size of (10*1354) = 13540.
 
-        :param metagenome_min: Minimum gene size for metagenome. (Default = 27280)
+        :param metagenome_min: Minimum gene size for metagenome. (Default = 13540)
         :type metagenome_min: int.
         """
 
